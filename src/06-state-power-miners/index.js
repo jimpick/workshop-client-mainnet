@@ -1,3 +1,5 @@
+/* global BigInt */
+
 import React, { useEffect } from 'react'
 import { useImmer } from 'use-immer'
 import useLotusClient from '../lib/use-lotus-client'
@@ -25,6 +27,15 @@ export default function StatePowerMiners ({ appState }) {
   const sortedMiners =
     miners &&
     [...miners].sort((a, b) => {
+      if (minerInfo[a] && !minerInfo[b]) return -1
+      if (minerInfo[b] && !minerInfo[a]) return 1
+      if (minerInfo[a] && minerInfo[b]) {
+        const powerA = BigInt(minerInfo[a].power.QualityAdjPower)
+        const powerB = BigInt(minerInfo[b].power.QualityAdjPower)
+        const compare = powerB - powerA
+        if (compare > 0) return 1
+        if (compare < 0) return -1
+      }
       return Number(a.slice(1)) - Number(b.slice(1))
     })
 
@@ -55,22 +66,28 @@ export default function StatePowerMiners ({ appState }) {
 
   return (
     <div>
-      <ul>
-        {sortedMiners &&
-          sortedMiners.map(miner => (
-            <li key={miner}>
-              {miner}
-              {minerInfo[miner] && (
-                <span> {formatSectorSize(minerInfo[miner].sectorSize)}</span>
-              )}
-              :
-              {minerInfo[miner] && (
-                <span> {minerInfo[miner].power.QualityAdjPower}</span>
-              )}
-              {annotations[miner] && <span> ({annotations[miner]})</span>}
-            </li>
-          ))}
-      </ul>
+      <table className="minerPower">
+        <tbody>
+          {sortedMiners &&
+            sortedMiners.map(miner => (
+              <tr key={miner}>
+                <td>{miner}</td>
+                <td>
+                  {minerInfo[miner] && (
+                    <span>
+                      {' '}
+                      {formatSectorSize(minerInfo[miner].sectorSize)}
+                    </span>
+                  )}
+                </td>
+                <td>
+                  {minerInfo[miner] && minerInfo[miner].power.QualityAdjPower}
+                </td>
+                <td>{annotations[miner] && annotations[miner]}</td>
+              </tr>
+            ))}
+        </tbody>
+      </table>
     </div>
   )
 }

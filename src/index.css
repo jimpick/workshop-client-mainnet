@@ -14,3 +14,8 @@ body {
 nav a {
   padding: 0.2rem;
 }
+
+.minerPower td {
+  padding: 0.2rem 0.4rem;
+
+}
