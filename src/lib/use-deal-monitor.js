@@ -3,7 +3,7 @@ import { useImmer } from 'use-immer'
 import useLotusClient from './use-lotus-client'
 
 const interval = 3000
-const expireAfter = 15 * 60 * 1000 // 15 minutes
+const expireAfter = 24 * 60 * 60 * 1000 // 24 hours
 
 const terminalStates = new Set([
   // go-fil-markets/storagemarket/types.go
@@ -82,6 +82,7 @@ export default function useDealMonitor ({ appState, updateAppState }) {
   }, [checkSet])
 
   useEffect(() => {
+    // console.log('Run', ticker)
     let state = { canceled: false }
     if (!client) return
     async function run () {

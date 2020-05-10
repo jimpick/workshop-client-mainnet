@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import DealList from './deal-list'
 import useLotusClient from '../lib/use-lotus-client'
 
@@ -25,6 +25,7 @@ export default function Deals ({ appState, updateAppState }) {
                   draft.filterErrors = !filterErrors
                 })
               }}
+              style={{ marginLeft: '1rem' }}
             />
             Filter errors
           </label>
