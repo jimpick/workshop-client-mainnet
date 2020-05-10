@@ -92,7 +92,7 @@ export default function Retrieve ({ appState, updateAppState }) {
                   draft[i] = {
                     state: 'success',
                     url:
-                      `https://lotus.testground.ipfs.team/api/` +
+                      `http://localhost:9000/api/` +
                       `${selectedNode}/testplan/downloads/` +
                       `${cid}-${randomId}.jpg`
                   }

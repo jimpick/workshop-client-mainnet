@@ -4,7 +4,7 @@ import BrowserProvider from '../lotus-client-provider-browser'
 // import schema from '@filecoin-shipyard/lotus-client-schema/prototype/testnet-v3'
 import schema from '../lotus-client-schema-testnet-v3'
 
-const api = 'lotus.testground.ipfs.team/api'
+const api = 'localhost:9000/api'
 
 export default function useTestgroundNet ({ appState, updateAppState }) {
   const updateAvailable = useCallback(
@@ -24,12 +24,12 @@ export default function useTestgroundNet ({ appState, updateAppState }) {
     if (nodesScanned && !(rescan > nodesScanned)) return
     let state = { canceled: false }
     updateAvailable(draft => {
-      draft = []
+      draft.length = 0
     })
     async function run () {
       if (state.canceled) return
       if (!genesisCid) return
-      const paramsUrl = `https://${api}/0/testplan/params`
+      const paramsUrl = `http://${api}/0/testplan/params`
       const response = await fetch(paramsUrl)
       const {
         TestInstanceCount: nodeCount,
@@ -38,17 +38,17 @@ export default function useTestgroundNet ({ appState, updateAppState }) {
       if (state.canceled) return
       const available = {}
       for (let i = 0; i < nodeCount; i++) {
-        const url = `https://${api}/${i}/miner/rpc/v0`
-        const provider = new BrowserProvider(url, { transport: 'http' })
-        const client = new LotusRPC(provider, { schema })
         try {
-          const minerAddress = await client.actorAddress()
-          available[i] = minerAddress
+          const url = `http://${api}/${i}/node/rpc/v0`
+          const provider = new BrowserProvider(url, { transport: 'http' })
+          const client = new LotusRPC(provider, { schema })
+          await client.version()
+          available[i] = true
           updateAvailable(draft => {
-            draft[i] = minerAddress
+            draft[i] = true
           })
         } catch (e) {
-          console.warn('Node error:', i, e)
+          console.warn(`Error connecting to node ${i}`, e)
         }
       }
       updateAppState(draft => {
@@ -74,7 +74,7 @@ export default function useTestgroundNet ({ appState, updateAppState }) {
     let state = { canceled: false }
     async function run () {
       if (state.canceled) return
-      const url = `https://${api}/0/node/rpc/v0`
+      const url = `http://${api}/0/node/rpc/v0`
       const provider = new BrowserProvider(url, { transport: 'http' })
       const client = new LotusRPC(provider, { schema })
       try {

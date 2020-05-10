@@ -8,7 +8,7 @@ import DealList from '../08-deals/deal-list'
 export default function ProposeDeal ({ appState, updateAppState }) {
   const { selectedNode } = appState
   const client = useLotusClient(selectedNode, 'node')
-  const miners = useMiners(client)
+  const [miners, annotations] = useMiners(client)
   const balance = useWatchDefaultWallet({ client, updateAppState })
   const [objectUrlAttribute, setObjectUrlAttribute] = useState()
   const [status, setStatus] = useState()
@@ -18,6 +18,9 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     defaultWalletAddress,
     capture: { width, height }
   } = appState
+  const sortedMiners = miners && [...miners].sort((a, b) => {
+    return Number(a.slice(1)) - Number(b.slice(1))
+  })
   const epochPrice = '2500'
 
   useEffect(() => {
@@ -81,21 +84,23 @@ export default function ProposeDeal ({ appState, updateAppState }) {
         </div>
       </div>
       <h4>3. Click a miner to propose a deal</h4>
-      <div
-        style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}
-      >
-        {miners &&
-          miners.map(miner => {
-            return (
-              <button
-                key={miner}
-                style={{ width: '15vw' }}
-                onClick={() => proposeDeal(miner)}
-              >
-                {miner}
-              </button>
-            )
-          })}
+      <div style={{height: '20rem', overflowY: 'scroll'}}>
+        <div
+          style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}
+        >
+          {sortedMiners &&
+            sortedMiners.map(miner => {
+              return (
+                <button
+                  key={miner}
+                  style={{ width: '20rem', height: '2rem' }}
+                  onClick={() => proposeDeal(miner)}
+                >
+                  {miner}: {annotations[miner]}
+                </button>
+              )
+            })}
+        </div>
       </div>
       <div>{status}</div>
       <br />
@@ -130,11 +135,11 @@ export default function ProposeDeal ({ appState, updateAppState }) {
       EpochPrice: epochPrice,
       MinBlocksDuration: 300
     }
-    setStatus('Proposing...')
+    setStatus(`Proposing to ${targetMiner} ...`)
     try {
       const result = await client.clientStartDeal(dataRef)
       const { '/': proposalCid } = result
-      setStatus('Proposed!')
+      setStatus(`Proposed! ${targetMiner}`)
       updateAppState(draft => {
         draft.proposalCid = proposalCid
         if (!draft.deals) {
@@ -152,7 +157,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
         })
       })
     } catch (e) {
-      setStatus('Error: ' + e.message)
+      setStatus(`Error ${targetMiner}: ` + e.message)
       console.log('Exception', e)
     }
   }

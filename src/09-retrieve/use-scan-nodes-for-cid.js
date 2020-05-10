@@ -12,7 +12,7 @@ export default function useScanNodesForCid ({ appState, cid }) {
 
   useEffect(() => {
     if (!cid || !available) return
-    const api = 'lotus.testground.ipfs.team/api'
+    const api = 'localhost:9000/api'
     let state = { canceled: false }
     updateFound(draft => {
       draft = []
@@ -26,12 +26,12 @@ export default function useScanNodesForCid ({ appState, cid }) {
           currentNode: count++,
           numNodes: available.length
         })
-        const url = `https://${api}/${nodeNum}/node/rpc/v0`
+        const url = `http://${api}/${nodeNum}/node/rpc/v0`
         const provider = new BrowserProvider(url, {
           transport: 'http',
           token: async () => {
             // FIXME: Need to cache these
-            const tokenUrl = `https://${api}/${nodeNum}/testplan/.lotus/token`
+            const tokenUrl = `http://${api}/${nodeNum}/testplan/.lotus/token`
             const response = await fetch(tokenUrl)
             return await response.text()
           }

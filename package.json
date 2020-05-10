@@ -1,5 +1,5 @@
 {
-  "name": "rl1-lotus-workshop",
+  "name": "workshop-client-interopnet",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
@@ -21,6 +21,7 @@
   },
   "scripts": {
     "start": "npm run development",
+    "caddy": "caddy2 run --config Caddyfile.dev",
     "development": "NODE_ENV=development concurrently --kill-others \"npm run client\" \"npm run server\"",
     "production": "npm run build && NODE_ENV=production npm run server",
     "server": "node server/server.js",

@@ -1,13 +1,17 @@
 import React, { useEffect } from 'react'
 import { useImmer } from 'use-immer'
 import useLotusClient from '../lib/use-lotus-client'
+// import useMiners from '../lib/use-miners-all'
 import useMiners from '../lib/use-miners'
 
 export default function StatePowerMiners ({ appState }) {
   const { selectedNode } = appState
   const client = useLotusClient(selectedNode, 'node')
-  const miners = useMiners(client)
+  const [miners, annotations] = useMiners(client)
   const [minerPower, updateMinerPower] = useImmer({})
+  const sortedMiners = miners && [...miners].sort((a, b) => {
+    return Number(a.slice(1)) - Number(b.slice(1))
+  })
 
   useEffect(() => {
     let state = { canceled: false }
@@ -31,10 +35,11 @@ export default function StatePowerMiners ({ appState }) {
   return (
     <div>
       <ul>
-        {miners &&
-          miners.map(miner => (
+        {sortedMiners &&
+          sortedMiners.map(miner => (
             <li key={miner}>
               {miner}: {minerPower[miner] && minerPower[miner].QualityAdjPower}
+              {annotations[miner] && <span> ({annotations[miner]})</span>}
             </li>
           ))}
       </ul>
