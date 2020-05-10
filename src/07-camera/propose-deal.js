@@ -18,9 +18,6 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     defaultWalletAddress,
     capture: { width, height }
   } = appState
-  const sortedMiners = miners && [...miners].sort((a, b) => {
-    return Number(a.slice(1)) - Number(b.slice(1))
-  })
   const epochPrice = '2500'
 
   useEffect(() => {
@@ -84,12 +81,12 @@ export default function ProposeDeal ({ appState, updateAppState }) {
         </div>
       </div>
       <h4>3. Click a miner to propose a deal</h4>
-      <div style={{height: '20rem', overflowY: 'scroll'}}>
+      <div style={{height: '15rem', overflowY: 'scroll'}}>
         <div
           style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}
         >
-          {sortedMiners &&
-            sortedMiners.map(miner => {
+          {miners &&
+            miners.map(miner => {
               return (
                 <button
                   key={miner}

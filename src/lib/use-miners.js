@@ -2,26 +2,26 @@ import { useEffect, useState } from 'react'
 
 const annotations = {
   t010313: 'Jim NUC',
+  t010215: 'active',
+  t09921: 'active',
   t01729: 'sealing',
   t02822: 'sealing',
-  t010230: 'validating (stalled)',
+  t010230: 'sealing',
+  t010292: 'sealing',
+  t010225: 'sealing',
+  t01773: 'sealing',
+  t010202: 'sealing',
+  t01252: 'sealing',
+  t01781: 'sealing',
   t03869: 'validating stream reset',
-  t010202: 'validating stream reset',
-  t010215: 'validating stream reset',
-  t03828: 'eof',
-  t01252: 'stream reset',
+  t03828: 'stream reset',
   t01710: 'stream reset',
   t01765: 'stream reset',
-  t01773: 'stream reset',
-  t01781: 'stream reset',
   t03857: 'stream reset',
   t03875: 'stream reset',
   t03866: 'stream reset',
   t09940: 'stream reset',
   t010023: 'stream reset',
-  t09921: 'stream reset',
-  t010225: 'stream reset',
-  t010292: 'stream reset',
   t01719: 'Power 49240726306816',
   t01250: 'Power 18205829496832',
   t010162: 'Power 12127377031168',
@@ -101,7 +101,7 @@ export default function useMiners (client) {
       // Whitelisted
       const result = Object.keys(annotations)
       if (state.canceled) return
-      setMiners(result.sort())
+      setMiners(result)
     })()
     return () => { state.canceled = true }
   }, [client])

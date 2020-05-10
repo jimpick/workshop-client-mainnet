@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import useMiners from '../lib/use-miners'
 import { format, formatDistance } from 'date-fns'
 import copy from 'clipboard-copy'
 
@@ -40,9 +41,7 @@ function DealHistory ({ dealHistoryData, height }) {
         {dealHistoryData.map((record, i) => {
           return (
             <tr key={i}>
-              <td>
-                {dealStateNames[record[0]]}
-              </td>
+              <td>{dealStateNames[record[0]]}</td>
               <td>{blocks(i)}</td>
               <td>{timeElapsed(i)}</td>
             </tr>
@@ -69,9 +68,10 @@ function DealHistory ({ dealHistoryData, height }) {
   }
 }
 
-export default function DealList ({ client, appState, cid }) {
+export default function DealList ({ client, appState, cid, filterErrors }) {
   const [now, setNow] = useState(Date.now())
   const [height, setHeight] = useState()
+  const [, annotations] = useMiners(client)
 
   useEffect(() => {
     const state = { canceled: false }
@@ -107,10 +107,12 @@ export default function DealList ({ client, appState, cid }) {
         const dealState = clientDealStatus && clientDealStatus.State
         const dealMessage = clientDealStatus && clientDealStatus.Message
         const dealHistoryData = dealHistory && dealHistory[proposalCid]
+        if (filterErrors && dealState === 20) return null
         return (
           <div key={proposalCid} style={{ marginBottom: '1rem' }}>
             <div>
               Node #{fromNode} -> Miner {miner}
+              {annotations[miner] && <span> ({annotations[miner]})</span>}
             </div>
             <div style={{ fontSize: '50%' }}>
               <div>Date: {new Date(date).toString()}</div>
