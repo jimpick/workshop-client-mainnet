@@ -4,6 +4,7 @@ import React, { useEffect } from 'react'
 import { useImmer } from 'use-immer'
 import ip from 'ip'
 import PQueue from 'p-queue'
+import BigNumber from 'bignumber.js'
 import useLotusClient from '../lib/use-lotus-client'
 // import useMiners from '../lib/use-miners-all'
 import useMiners from '../lib/use-miners'
@@ -35,11 +36,15 @@ export default function StatePowerMiners ({ appState }) {
       if (minerPower[a] && !minerPower[b]) return -1
       if (minerPower[b] && !minerPower[a]) return 1
       if (minerPower[a] && minerPower[b]) {
+        /*
         const powerA = BigInt(minerPower[a].QualityAdjPower)
         const powerB = BigInt(minerPower[b].QualityAdjPower)
-        const compare = powerB - powerA
-        if (compare > 0) return 1
-        if (compare < 0) return -1
+        */
+        const powerA = BigNumber(minerPower[a].QualityAdjPower)
+        const powerB = BigNumber(minerPower[b].QualityAdjPower)
+        const compare = powerB.minus(powerA)
+        if (compare.isPositive()) return 1
+        if (compare.isNegative()) return -1
       }
       return Number(a.slice(1)) - Number(b.slice(1))
     })
