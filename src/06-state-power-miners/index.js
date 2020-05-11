@@ -3,9 +3,12 @@
 import React, { useEffect } from 'react'
 import { useImmer } from 'use-immer'
 import ip from 'ip'
+import PQueue from 'p-queue'
 import useLotusClient from '../lib/use-lotus-client'
 // import useMiners from '../lib/use-miners-all'
 import useMiners from '../lib/use-miners'
+
+const concurrency = 8
 
 function formatSectorSize (size) {
   switch (size) {
@@ -74,57 +77,61 @@ export default function StatePowerMiners ({ appState }) {
   useEffect(() => {
     let state = { canceled: false }
     if (!miners) return
-    ;(async function run () {
+    async function run () {
       if (state.canceled) return
+      const queue = new PQueue({ concurrency })
       for (const miner of miners) {
-        const minerInfo = await client.stateMinerInfo(miner, [])
-        const { PeerId: peerId, SectorSize: sectorSize } = minerInfo
-        if (state.canceled) return
-        updateMinerInfo(draft => {
-          if (!draft[miner]) {
-            draft[miner] = {}
-          }
-          const minerData = draft[miner]
-          minerData.sectorSize = sectorSize
-          minerData.peerId = peerId
-          minerData.addrsLoading = true
-        })
-        const ips = new Set()
-        let addrsError
-        try {
-          console.log('Find peers', miner, peerId)
-          const findPeer = await client.netFindPeer(peerId)
-          console.log('Jim findPeer', miner, peerId, findPeer)
-          for (const maddr of findPeer.Addrs) {
-            console.log(`  ${maddr}`)
-            const match = maddr.match(/^\/ip4\/(\d+\.\d+\.\d+\.\d+)/)
-            if (match) {
-              const ipv4Address = match[1]
-              if (!ip.isPrivate(ipv4Address)) {
-                console.log(`    ${ipv4Address}`)
-                ips.add(ipv4Address)
+        queue.add(async () => {
+          const minerInfo = await client.stateMinerInfo(miner, [])
+          const { PeerId: peerId, SectorSize: sectorSize } = minerInfo
+          if (state.canceled) return
+          updateMinerInfo(draft => {
+            if (!draft[miner]) {
+              draft[miner] = {}
+            }
+            const minerData = draft[miner]
+            minerData.sectorSize = sectorSize
+            minerData.peerId = peerId
+            minerData.addrsLoading = true
+          })
+          const ips = new Set()
+          let addrsError
+          try {
+            console.log('Find peers', miner, peerId)
+            const findPeer = await client.netFindPeer(peerId)
+            console.log('Jim findPeer', miner, peerId, findPeer)
+            for (const maddr of findPeer.Addrs) {
+              console.log(`  ${maddr}`)
+              const match = maddr.match(/^\/ip4\/(\d+\.\d+\.\d+\.\d+)/)
+              if (match) {
+                const ipv4Address = match[1]
+                if (!ip.isPrivate(ipv4Address)) {
+                  console.log(`    ${ipv4Address}`)
+                  ips.add(ipv4Address)
+                }
               }
             }
+          } catch (e) {
+            console.warn('Exception finding peer', miner, e.message)
+            addrsError = e.message
           }
-        } catch (e) {
-          console.warn('Exception finding peer', miner, e.message)
-          addrsError = e.message
-        }
-        updateMinerInfo(draft => {
-          const minerData = draft[miner]
-          minerData.addrs = []
-          for (const ipAddr of ips) {
-            minerData.addrs.push({
-              ip: ipAddr
-            })
-          }
-          if (addrsError) {
-            minerData.addrsError = addrsError
-          }
-          delete minerData.addrsLoading
+          updateMinerInfo(draft => {
+            const minerData = draft[miner]
+            minerData.addrs = []
+            for (const ipAddr of ips) {
+              minerData.addrs.push({
+                ip: ipAddr
+              })
+            }
+            if (addrsError) {
+              minerData.addrsError = addrsError
+            }
+            delete minerData.addrsLoading
+          })
         })
       }
-    })()
+    }
+    run()
     return () => {
       state.canceled = true
     }
