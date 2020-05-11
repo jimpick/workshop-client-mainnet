@@ -79,10 +79,10 @@ const annotations = {
   // t03839: 'Power 9216'
 
   // No IPv4 addresses
-  t010209: 'Power 68719476736',
+  // t010209: 'Power 68719476736',
 
   // Zero power
-  t01000: 'Power 1181115392',
+  // t01000: 'Power 1181115392',
 }
 
 export default annotations
