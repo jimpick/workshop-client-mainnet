@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import annotations from '../annotations'
 
 export default function useMinersAll (client) {
   const [miners, setMiners] = useState()
@@ -15,5 +16,5 @@ export default function useMinersAll (client) {
     return () => { state.canceled = true }
   }, [client])
 
-  return miners
+  return [miners, annotations]
 }
