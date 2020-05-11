@@ -22,6 +22,13 @@ function formatSectorSize (size) {
   }
 }
 
+function GeoName({ geo }) {
+  if (!geo) return null
+  return (<span>
+    {' '} {geo.country && geo.country.names && geo.country.names.en}
+    {' '} {geo.city && geo.city.names && geo.city.names.en}
+  </span>)
+}
 export default function StatePowerMiners ({ appState }) {
   const { selectedNode } = appState
   const client = useLotusClient(selectedNode, 'node')
@@ -118,12 +125,24 @@ export default function StatePowerMiners ({ appState }) {
             console.warn('Exception finding peer', miner, e.message)
             addrsError = e.message
           }
+          const geoIp = {}
+          for (const ipAddr of ips) {
+            try {
+              const url = `http://127.0.0.1:3003/ipv4/${ipAddr}`
+              const response = await fetch(url)
+              geoIp[ipAddr] = await response.json()
+            } catch (e) {
+              console.error(`GeoIP error`, e)
+            }
+          }
           updateMinerInfo(draft => {
             const minerData = draft[miner]
             minerData.addrs = []
             for (const ipAddr of ips) {
+              console.log('geoip', ipAddr, geoIp[ipAddr])
               minerData.addrs.push({
-                ip: ipAddr
+                ip: ipAddr,
+                geo: geoIp[ipAddr]
               })
             }
             if (addrsError) {
@@ -183,7 +202,10 @@ export default function StatePowerMiners ({ appState }) {
                     {minerInfo[miner] && minerInfo[miner].addrs && (
                       <ul>
                         {minerInfo[miner].addrs.map((addr, i) => (
-                          <li key={i}>{addr.ip}</li>
+                          <li key={i}>
+                            {addr.ip}
+                            <GeoName geo={addr.geo} />
+                          </li>
                         ))}
                       </ul>
                     )}
