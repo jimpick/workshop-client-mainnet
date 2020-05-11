@@ -1,4 +1,8 @@
 const methods = {
+
+  //  NetFindPeer(context.Context, peer.ID) (peer.AddrInfo, error)
+  NetFindPeer: {}, // FIXME
+
   // Version func(context.Context) (api.Version, error)
   Version: {
     args: [],

@@ -57,6 +57,9 @@ export default function ChainNotify ({ appState }) {
   return (
     <div>
       <h2>Chain</h2>
+      <div style={{marginBottom: '1rem', fontSize: 'small'}}>
+        See also: <a href="https://filscan.io/#/">filscan.io</a>
+      </div>
       {content}
     </div>
   )

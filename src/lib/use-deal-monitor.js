@@ -2,7 +2,7 @@ import { useEffect, useState, useMemo } from 'react'
 import { useImmer } from 'use-immer'
 import useLotusClient from './use-lotus-client'
 
-const interval = 3000
+const interval = 15 * 1000
 const expireAfter = 24 * 60 * 60 * 1000 // 24 hours
 
 const terminalStates = new Set([

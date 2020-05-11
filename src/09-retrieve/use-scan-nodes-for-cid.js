@@ -21,6 +21,7 @@ export default function useScanNodesForCid ({ appState, cid }) {
       if (state.canceled) return
       let count = 1
       for (const nodeNum in available) {
+        console.log(`Scanning node ${count} of ${available.length}`)
         setScanningState({
           state: 'scanning',
           currentNode: count++,
@@ -41,7 +42,7 @@ export default function useScanNodesForCid ({ appState, cid }) {
           if (state.canceled) return
           const hasLocal = await client.clientHasLocal({ '/': cid })
           if (state.canceled) return
-          // console.log('Retrieve hasLocal:', nodeNum, hasLocal)
+          console.log('Retrieve hasLocal:', nodeNum, hasLocal)
           if (hasLocal) {
             updateFound(draft => {
               draft.push({
@@ -52,7 +53,7 @@ export default function useScanNodesForCid ({ appState, cid }) {
           }
           const offers = await client.clientFindData({ '/': cid })
           if (state.canceled) return
-          // console.log('Retrieve findData:', nodeNum, offers)
+          console.log('Retrieve findData:', nodeNum, offers)
           updateFound(draft => {
             for (const offer of offers) {
               if (offer.Err !== '') continue
