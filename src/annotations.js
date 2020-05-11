@@ -1,8 +1,8 @@
 const annotations = {
   t010313: 'Jim NUC, Vancouver',
-  t010215: 'active x2, Palo Alto',
-  t09921: 'active x1, China',
-  t01781: 'active x1, China',
+  t010215: 'active x3, Palo Alto',
+  t09921: 'active x3, China',
+  t01781: 'active x2, China',
   t010292: 'active x1, China',
   t01729: 'sealing, Sichuan Chengdu',
   t010225: 'sealing, Anhui Hefei',

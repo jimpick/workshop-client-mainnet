@@ -1,5 +1,3 @@
-/* global BigInt */
-
 import React, { useEffect } from 'react'
 import { useImmer } from 'use-immer'
 import ip from 'ip'
