@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
+import { useImmer } from 'use-immer'
 import LotusRPC from '../lotus-client-rpc'
 import BrowserProvider from '../lotus-client-provider-browser'
 // import schema from '@filecoin-shipyard/lotus-client-schema/prototype/testnet-v3'
 import schema from '../lotus-client-schema-testnet-v3'
-import { useImmer } from 'use-immer'
+import { api, secure } from '../config'
 
 export default function useScanNodesForCid ({ appState, cid }) {
   const [scanningState, setScanningState] = useState({ state: 'idle' })
@@ -12,7 +13,6 @@ export default function useScanNodesForCid ({ appState, cid }) {
 
   useEffect(() => {
     if (!cid || !available) return
-    const api = 'localhost:9000/api'
     let state = { canceled: false }
     updateFound(draft => {
       draft = []
@@ -27,12 +27,15 @@ export default function useScanNodesForCid ({ appState, cid }) {
           currentNode: count++,
           numNodes: available.length
         })
-        const url = `http://${api}/${nodeNum}/node/rpc/v0`
+        const url =
+          (secure ? 'https://' : 'http://') + `${api}/${nodeNum}/node/rpc/v0`
         const provider = new BrowserProvider(url, {
           transport: 'http',
           token: async () => {
             // FIXME: Need to cache these
-            const tokenUrl = `http://${api}/${nodeNum}/testplan/.lotus/token`
+            const tokenUrl =
+              (secure ? 'https://' : 'http://') +
+              `${nodeNum}/testplan/.lotus/token`
             const response = await fetch(tokenUrl)
             return await response.text()
           }

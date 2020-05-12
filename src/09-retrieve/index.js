@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useHistory, useParams } from 'react-router-dom'
 import { useImmer } from 'use-immer'
+import { api, secure } from '../config'
 import useLotusClient from '../lib/use-lotus-client'
 import useWatchDefaultWallet from '../lib/use-watch-default-wallet'
 import useScanNodesForCid from './use-scan-nodes-for-cid'
@@ -48,7 +49,7 @@ export default function Retrieve ({ appState, updateAppState }) {
                         <div>Error: {retrievals[i].error.message}</div>
                       )}
                       {retrievals[i].url && (
-                        <img src={retrievals[i].url} alt="retrieved" />
+                        <img src={retrievals[i].url} alt='retrieved' />
                       )}
                     </>
                   )}
@@ -92,8 +93,8 @@ export default function Retrieve ({ appState, updateAppState }) {
                   draft[i] = {
                     state: 'success',
                     url:
-                      `http://localhost:9000/api/` +
-                      `${selectedNode}/testplan/downloads/` +
+                      (secure ? 'https://' : 'http://') +
+                      `${api}/${selectedNode}/testplan/downloads/` +
                       `${cid}-${randomId}.jpg`
                   }
                 })

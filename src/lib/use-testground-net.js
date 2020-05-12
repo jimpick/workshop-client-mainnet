@@ -3,8 +3,7 @@ import LotusRPC from '../lotus-client-rpc'
 import BrowserProvider from '../lotus-client-provider-browser'
 // import schema from '@filecoin-shipyard/lotus-client-schema/prototype/testnet-v3'
 import schema from '../lotus-client-schema-testnet-v3'
-
-const api = 'localhost:9000/api'
+import { api, secure } from '../config'
 
 export default function useTestgroundNet ({ appState, updateAppState }) {
   const updateAvailable = useCallback(
@@ -29,7 +28,8 @@ export default function useTestgroundNet ({ appState, updateAppState }) {
     async function run () {
       if (state.canceled) return
       if (!genesisCid) return
-      const paramsUrl = `http://${api}/0/testplan/params`
+      const paramsUrl =
+        (secure ? 'https://' : 'http://') + `${api}/0/testplan/params`
       const response = await fetch(paramsUrl)
       const {
         TestInstanceCount: nodeCount,
@@ -68,7 +68,14 @@ export default function useTestgroundNet ({ appState, updateAppState }) {
     return () => {
       state.canceled = true
     }
-  }, [updateAppState, updateAvailable, nodesScanned, selectedNode, genesisCid, rescan])
+  }, [
+    updateAppState,
+    updateAvailable,
+    nodesScanned,
+    selectedNode,
+    genesisCid,
+    rescan
+  ])
 
   useEffect(() => {
     let state = { canceled: false }
@@ -86,14 +93,16 @@ export default function useTestgroundNet ({ appState, updateAppState }) {
         updateAppState(draft => {
           if (draft.genesisCid && draft.genesisCid !== genesisCid) {
             console.log('Old Genesis is different, resetting', draft.genesisCid)
-            for (const prop in draft) { delete draft[prop] }
+            for (const prop in draft) {
+              delete draft[prop]
+            }
           }
           draft.genesisCid = newGenesisCid
         })
         if (updated) {
           const versionInfo = await client.version()
           console.log('Version Info:', versionInfo)
-          const genesisMinerInfo = await client.stateMinerInfo('t01000',[])
+          const genesisMinerInfo = await client.stateMinerInfo('t01000', [])
           console.log('Genesis Miner Info:', genesisMinerInfo)
           updateAppState(draft => {
             draft.versionInfo = versionInfo
