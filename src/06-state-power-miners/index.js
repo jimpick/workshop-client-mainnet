@@ -6,6 +6,7 @@ import BigNumber from 'bignumber.js'
 import useLotusClient from '../lib/use-lotus-client'
 // import useMiners from '../lib/use-miners-all'
 import useMiners from '../lib/use-miners'
+import { api, secure } from '../config'
 
 const concurrency = 6
 const ipLookupBatchSize = 5
@@ -76,7 +77,7 @@ export default function StatePowerMiners ({ appState }) {
   // Scan miners to collect miner power
   useEffect(() => {
     let state = { canceled: false }
-    if (!miners) return
+    if (!sortedMinersByName) return
     async function run () {
       if (state.canceled) return
       const start = Date.now()
@@ -193,7 +194,9 @@ export default function StatePowerMiners ({ appState }) {
           for (const ipAddr of ips) {
             if (state.canceled) return
             try {
-              const url = `http://127.0.0.1:3003/ipv4/${ipAddr}`
+              const url =
+                (secure ? 'https://' : 'http://') +
+                `${api}/geoip/ipv4/${ipAddr}`
               const response = await fetch(url)
               geoIp[ipAddr] = await response.json()
             } catch (e) {

@@ -9,7 +9,7 @@ log
 
 route @api_node_rpc_0_options {
     header Connection "keep-alive"
-    header Access-Control-Allow-Origin "http://localhost:3000"
+    header Access-Control-Allow-Origin "*"
     header Access-Control-Allow-Methods "POST, GET, PUT, OPTIONS, DELETE"
     header Access-Control-Max-Age "86400"
     header Access-Control-Allow-Headers "*"
@@ -34,7 +34,7 @@ route @api_node_rpc_0 {
 
 route @api_node_rest_0_options {
     header Connection "keep-alive"
-    header Access-Control-Allow-Origin "http://localhost:3000"
+    header Access-Control-Allow-Origin "*"
     header Access-Control-Allow-Methods "POST, GET, PUT, OPTIONS, DELETE"
     header Access-Control-Max-Age "86400"
     header Access-Control-Allow-Headers "*"
@@ -69,7 +69,7 @@ route @api_miner_rpc_0 {
 
 route @api_testplan_0_options {
     header Connection "keep-alive"
-    header Access-Control-Allow-Origin "http://localhost:3000"
+    header Access-Control-Allow-Origin "*"
     header Access-Control-Allow-Methods "POST, GET, PUT, OPTIONS, DELETE"
     header Access-Control-Max-Age "86400"
     header Access-Control-Allow-Headers "*"
@@ -88,5 +88,15 @@ route @api_testplan_0 {
     browse
   }
 }
+
+@api_geoip {
+    path_regexp api ^/api/geoip/(.*)$
+}
+
+route @api_geoip {
+  strip_prefix /api/geoip/* /api/geoip
+  reverse_proxy localhost:3003
+}
+
 
 

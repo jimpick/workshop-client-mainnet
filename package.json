@@ -29,6 +29,7 @@
     "start": "npm run development",
     "caddy": "caddy2 run --config Caddyfile.dev",
     "geoip-server": "node geoip-server/index.js ./geolite2/GeoLite2-City_20200505/GeoLite2-City.mmdb",
+    "ngrok": "ngrok start -config ngrok.yml --all",
     "development": "NODE_ENV=development concurrently --kill-others \"npm run client\" \"npm run server\"",
     "production": "npm run build && NODE_ENV=production npm run server",
     "server": "node server/server.js",

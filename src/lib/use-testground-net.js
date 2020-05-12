@@ -39,7 +39,8 @@ export default function useTestgroundNet ({ appState, updateAppState }) {
       const available = {}
       for (let i = 0; i < nodeCount; i++) {
         try {
-          const url = `http://${api}/${i}/node/rpc/v0`
+          const url =
+            (secure ? 'https://' : 'http://') + `${api}/${i}/node/rpc/v0`
           const provider = new BrowserProvider(url, { transport: 'http' })
           const client = new LotusRPC(provider, { schema })
           await client.version()
@@ -81,7 +82,7 @@ export default function useTestgroundNet ({ appState, updateAppState }) {
     let state = { canceled: false }
     async function run () {
       if (state.canceled) return
-      const url = `http://${api}/0/node/rpc/v0`
+      const url = (secure ? 'https://' : 'http://') + `${api}/0/node/rpc/v0`
       const provider = new BrowserProvider(url, { transport: 'http' })
       const client = new LotusRPC(provider, { schema })
       try {
