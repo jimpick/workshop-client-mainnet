@@ -4,8 +4,8 @@ import ip from 'ip'
 import PQueue from 'p-queue'
 import BigNumber from 'bignumber.js'
 import useLotusClient from '../lib/use-lotus-client'
-import useMiners from '../lib/use-miners-all'
-// import useMiners from '../lib/use-miners'
+// import useMiners from '../lib/use-miners-all'
+import useMiners from '../lib/use-miners'
 
 const concurrency = 6
 const ipLookupBatchSize = 5

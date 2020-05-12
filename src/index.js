@@ -52,7 +52,7 @@ function App () {
     }
   }, [appState, savedState, setSavedState])
 
-  // useDealMonitor({ appState, updateAppState })
+  useDealMonitor({ appState, updateAppState })
 
   const baseProps = {
     appState,
