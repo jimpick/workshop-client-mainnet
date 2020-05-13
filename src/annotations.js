@@ -1,15 +1,24 @@
 const annotations = {
   t02062: 'Jim NUC, Vancouver',
-  t01268: 'new',
-  t02563: 'new',
-  t01000: 'Genesis, USA',
-  t01259: 'new',
-  t03370: 'new',
-  t03372: 'San Francisco',
-  t02845: 'Palo Alto',
-  t02854: 'new',
-  t02567: 'new',
-  t03429: 'China'
+  t03429: 'China 1x active',
+
+  t03848: 'new, China',
+  t03699: 'new, China',
+  t05267: 'new, China',
+  t03859: 'new, Krakow',
+  t05264: 'new, Stratford',
+
+  t03372: 'San Francisco, Jeromy',
+  t02845: 'Palo Alto, Jeromy?',
+
+  t01000: 'Genesis, USA, no routing',
+  t01002: 'Genesis, 32G, no routing',
+  t01259: 'no routing',
+  t01268: 'no routing',
+  t02286: 'no routing',
+  t02563: 'no routing',
+  t02567: 'no routing',
+  t03767: 'no routing'
   
   /*
   t010313: 'Jim NUC, Vancouver',
