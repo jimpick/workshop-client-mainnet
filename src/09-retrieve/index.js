@@ -5,6 +5,7 @@ import { api, secure } from '../config'
 import useLotusClient from '../lib/use-lotus-client'
 import useWatchDefaultWallet from '../lib/use-watch-default-wallet'
 import useScanNodesForCid from './use-scan-nodes-for-cid'
+import { downloadDir } from '../config'
 
 export default function Retrieve ({ appState, updateAppState }) {
   const { cid } = useParams()
@@ -74,7 +75,7 @@ export default function Retrieve ({ appState, updateAppState }) {
                 MinerPeerID: o.MinerPeerID
               }
               const fileRef = {
-                Path: `/root/downloads/${cid}-${randomId}.jpg`,
+                Path: `${downloadDir}/${cid}-${randomId}.jpg`,
                 IsCAR: false
               }
               try {

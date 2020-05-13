@@ -76,6 +76,17 @@ route @api_testplan_0_options {
     respond "" 204
 }
 
+@api_testplan_downloads_0 {
+    path_regexp api ^/api/0/testplan/downloads/(.*)$
+}
+
+route @api_testplan_downloads_0 {
+  strip_prefix /api/0/testplan/downloads/* /api/0/testplan/downloads
+  reverse_proxy 10.0.1.52:5000 {
+    header_down Access-Control-Allow-Origin "*"
+  }
+}
+
 @api_testplan_0 {
     path_regexp api ^/api/0/testplan/(.*)$
 }

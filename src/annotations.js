@@ -1,4 +1,16 @@
 const annotations = {
+  t02062: 'Jim NUC, Vancouver',
+  t01268: 'new',
+  t02563: 'new',
+  t01000: 'Genesis, USA',
+  t01259: 'new',
+  t03370: 'new',
+  t03372: 'San Francisco',
+  t02845: 'Palo Alto',
+  t02854: 'new',
+  t02567: 'new',
+  t03429: 'China'
+  
   /*
   t010313: 'Jim NUC, Vancouver',
   t010215: 'active x3, Palo Alto',

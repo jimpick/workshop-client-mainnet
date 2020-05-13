@@ -35,7 +35,7 @@ export default function useScanNodesForCid ({ appState, cid }) {
             // FIXME: Need to cache these
             const tokenUrl =
               (secure ? 'https://' : 'http://') +
-              `${nodeNum}/testplan/.lotus/token`
+              `${api}/${nodeNum}/testplan/.lotus/token`
             const response = await fetch(tokenUrl)
             return await response.text()
           }

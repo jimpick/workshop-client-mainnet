@@ -81,9 +81,13 @@ export default function ProposeDeal ({ appState, updateAppState }) {
         </div>
       </div>
       <h4>3. Click a miner to propose a deal</h4>
-      <div style={{height: '15rem', overflowY: 'scroll'}}>
+      <div style={{ height: '15rem', overflowY: 'scroll', width: '70vw' }}>
         <div
-          style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'center'
+          }}
         >
           {miners &&
             miners.map(miner => {
