@@ -83,48 +83,51 @@ export default function StatePowerMiners ({ appState }) {
       const start = Date.now()
       let pendingIpLookup = []
       let count = 0
+      const queue = new PQueue({ concurrency: 10 })
       for (const miner of sortedMinersByName) {
         // console.log('Miner Power', miner)
-        setMinersScanned(++count)
-        const result = await client.stateMinerPower(miner, [])
-        if (state.canceled) return
-        /*
-        console.log(
-          'Miner power result',
-          miner,
-          result.MinerPower.QualityAdjPower
-        )
-        */
-        updateMinerPower(draft => {
-          draft[miner] = result.MinerPower
-          draft['total'] = result.TotalPower
-        })
-        const minerInfo = await client.stateMinerInfo(miner, [])
-        const { PeerId: peerId, SectorSize: sectorSize } = minerInfo
-        if (state.canceled) return
-        updateMinerInfo(draft => {
-          if (!draft[miner]) {
-            draft[miner] = {}
+        queue.add(async () => {
+          setMinersScanned(++count)
+          const result = await client.stateMinerPower(miner, [])
+          if (state.canceled) return
+          /*
+          console.log(
+            'Miner power result',
+            miner,
+            result.MinerPower.QualityAdjPower
+          )
+          */
+          updateMinerPower(draft => {
+            draft[miner] = result.MinerPower
+            draft['total'] = result.TotalPower
+          })
+          const minerInfo = await client.stateMinerInfo(miner, [])
+          const { PeerId: peerId, SectorSize: sectorSize } = minerInfo
+          if (state.canceled) return
+          updateMinerInfo(draft => {
+            if (!draft[miner]) {
+              draft[miner] = {}
+            }
+            const minerData = draft[miner]
+            minerData.sectorSize = sectorSize
+            minerData.peerId = peerId
+          })
+          if (result.MinerPower.QualityAdjPower !== '0' || miner === 't01000') {
+            pendingIpLookup.push(miner)
+            console.log('Jim pending', pendingIpLookup)
+            if (
+              pendingIpLookup.length > 0 &&
+              (pendingIpLookup.length === ipLookupBatchSize ||
+                Date.now() - start > ipLookupBatchTimeout)
+            ) {
+              updateIpLookupList(draft => {
+                draft.splice(-1, 0, ...pendingIpLookup)
+              })
+              pendingIpLookup.length = 0
+            }
           }
-          const minerData = draft[miner]
-          minerData.sectorSize = sectorSize
-          minerData.peerId = peerId
+          // await new Promise(resolve => setTimeout(resolve, 100))
         })
-        if (result.MinerPower.QualityAdjPower !== '0' || miner === 't01000') {
-          pendingIpLookup.push(miner)
-          console.log('Jim pending', pendingIpLookup)
-          if (
-            pendingIpLookup.length > 0 &&
-            (pendingIpLookup.length === ipLookupBatchSize ||
-              Date.now() - start > ipLookupBatchTimeout)
-          ) {
-            updateIpLookupList(draft => {
-              draft.splice(-1, 0, ...pendingIpLookup)
-            })
-            pendingIpLookup.length = 0
-          }
-        }
-        // await new Promise(resolve => setTimeout(resolve, 100))
       }
       updateIpLookupList(draft => {
         draft.splice(-1, 0, ...pendingIpLookup)
