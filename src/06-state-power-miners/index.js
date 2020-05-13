@@ -3,6 +3,7 @@ import { useImmer } from 'use-immer'
 import ip from 'ip'
 import PQueue from 'p-queue'
 import BigNumber from 'bignumber.js'
+import prettyBytes from 'pretty-bytes'
 import useLotusClient from '../lib/use-lotus-client'
 // import useMiners from '../lib/use-miners-all'
 import useMiners from '../lib/use-miners'
@@ -291,7 +292,7 @@ export default function StatePowerMiners ({ appState }) {
                     )}
                   </td>
                   <td>
-                    {minerPower[miner] && minerPower[miner].QualityAdjPower}
+                    {minerPower[miner] && prettyBytes(Number(minerPower[miner].QualityAdjPower))}
                   </td>
                   <td>{annotations[miner] && annotations[miner]}</td>
                 </tr>
