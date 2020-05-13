@@ -94,15 +94,15 @@ export default function useDealMonitor ({ appState, updateAppState }) {
         if (state.canceled) return
         const clientDeals = await client.clientListDeals()
         // console.log('Jim clientListDeals', clientDeals)
-        for (const deal of clientDeals) {
-          // console.log('Deal', deal)
-          const {
-            ProposalCid: { '/': proposalCid }
-          } = deal
-          updateAppState(draft => {
-            if (!draft.dealData) {
-              draft.dealData = {}
-            }
+        updateAppState(draft => {
+          if (!draft.dealData) {
+            draft.dealData = {}
+          }
+          for (const deal of clientDeals) {
+            // console.log('Deal', deal)
+            const {
+              ProposalCid: { '/': proposalCid }
+            } = deal
             draft.dealData[proposalCid] = {
               clientDealStatus: deal,
               updatedAtHeight: height,
@@ -124,8 +124,8 @@ export default function useDealMonitor ({ appState, updateAppState }) {
             if (currentState !== previousState) {
               dealHistory.push([currentState, height, now])
             }
-          })
-        }
+          }
+        })
       } catch (e) {
         console.warn('ClientListDeals error', e)
       }

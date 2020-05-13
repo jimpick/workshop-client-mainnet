@@ -1,4 +1,5 @@
 const annotations = {
+  /*
   t010313: 'Jim NUC, Vancouver',
   t010215: 'active x3, Palo Alto',
   t09921: 'active x3, China',
@@ -24,6 +25,7 @@ const annotations = {
   t010361: 'new, China',
   t010375: 'new, China',
   t02822: 'sealing, Guangzhou',
+  */
 
   // Routing not found
   // t010292: 'active x1, China',

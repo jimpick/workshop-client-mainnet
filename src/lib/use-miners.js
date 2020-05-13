@@ -7,16 +7,15 @@ export default function useMiners (client) {
   useEffect(() => {
     if (!client) return
     let state = { canceled: false }
-    ;(async function run () {
+    async function run () {
       if (state.canceled) return
-      /*
       const result = await client.stateListMiners([])
-      */
       // Whitelisted
-      const result = Object.keys(annotations)
+      // const result = Object.keys(annotations)
       if (state.canceled) return
       setMiners(result)
-    })()
+    }
+    run()
     return () => { state.canceled = true }
   }, [client])
 
