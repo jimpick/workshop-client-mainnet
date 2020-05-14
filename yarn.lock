@@ -1054,20 +1054,20 @@
   resolved "https://registry.npmjs.org/@csstools/normalize.css/-/normalize.css-10.1.0.tgz#f0950bba18819512d42f7197e56c518aa491cf18"
   integrity sha512-ij4wRiunFfaJxjB0BdrYHIH8FxBJpOwNPhhAcunlmPdXudL1WQV1qoP9un6JsEBAgQH+7UXyyjh0g7jTxXK6tg==
 
-"@filecoin-shipyard/lotus-client-provider-browser@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.npmjs.org/@filecoin-shipyard/lotus-client-provider-browser/-/lotus-client-provider-browser-0.0.4.tgz#75c56373fe863b84493e76185711716fab5f58a4"
-  integrity sha512-LwMSypj8L+hg/O8icxwLvc7D+6zrSRjcUw8El+qYWeyFfDHWLVw0ZD0+S9VAKjvhkVzMybmvCnIvwLi6GiI8Pg==
+"@filecoin-shipyard/lotus-client-provider-browser@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/@filecoin-shipyard/lotus-client-provider-browser/-/lotus-client-provider-browser-0.0.5.tgz#fdfbd630c70040866d24b85035d8be5275932c94"
+  integrity sha512-bhFTAbvl9c9JQajWIeJe9kXP3/0S0XOOCTlKAcOLT/ij2yRdJ9CnfCCheSZMYleNlwutva8Kj+SzX3VgjF88Cg==
 
-"@filecoin-shipyard/lotus-client-rpc@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.npmjs.org/@filecoin-shipyard/lotus-client-rpc/-/lotus-client-rpc-0.0.4.tgz#ce7c4bdff989f3352ee828393db4aebef62816e9"
-  integrity sha512-ebB2FmKU4xLbCdbknGJyNw46gXzLKaXicCbOutLRn3Zs6i1s3ccavh4W84yZ0lB0nulhZvywzg/h5ua3e447Tw==
+"@filecoin-shipyard/lotus-client-rpc@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/@filecoin-shipyard/lotus-client-rpc/-/lotus-client-rpc-0.0.5.tgz#5ff6b44ac7a306f78d872725b0e0af3f1aa9b345"
+  integrity sha512-Errc1deoLUgwsUDJKZfKIu+UN6eP8Mj9rQd3iKVYhWXnJLP5TltXXMIk+WaZdbatmsBO/iuk01I2+ibV8B1WEA==
 
-"@filecoin-shipyard/lotus-client-schema@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.npmjs.org/@filecoin-shipyard/lotus-client-schema/-/lotus-client-schema-0.0.7.tgz#9f3b25723159f54599aa09e5f349e70e9f069b03"
-  integrity sha512-Bwr6isPIjnholClU2RU7xNzieJrZ0HeVkQjlF1/105GHGZ2ujsJ3NTopnHb9wQQIW0FR+3iMvcnbdRKF5iIzHQ==
+"@filecoin-shipyard/lotus-client-schema@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.npmjs.org/@filecoin-shipyard/lotus-client-schema/-/lotus-client-schema-0.0.8.tgz#a442cefccb7af3c855df5bb4e31111e83367941d"
+  integrity sha512-QR/0kmPHy23+K0reYy1htFlvuPvnt6b742y/OeeGEcdiRh/cDKO2JV0BB4E5ctm/Fx4WoIXfhQcd3Id9l3n8ow==
 
 "@hapi/address@2.x.x":
   version "2.1.4"
@@ -5287,10 +5287,10 @@ immer@1.10.0:
   resolved "https://registry.npmjs.org/immer/-/immer-1.10.0.tgz#bad67605ba9c810275d91e1c2a47d4582e98286d"
   integrity sha512-O3sR1/opvCDGLEVcvrGTMtLac8GJ5IwZC4puPrLuRj3l7ICKvkmA0vGuU9OW8mV9WIBRnaxp5GJh9IEAaNOoYg==
 
-immer@^6.0.3:
-  version "6.0.3"
-  resolved "https://registry.npmjs.org/immer/-/immer-6.0.3.tgz#94d5051cd724668160a900d66d85ec02816f29bd"
-  integrity sha512-12VvNrfSrXZdm/BJgi/KDW2soq5freVSf3I1+4CLunUM8mAGx2/0Njy0xBVzi5zewQZiwM7z1/1T+8VaI7NkmQ==
+immer@^6.0.5:
+  version "6.0.5"
+  resolved "https://registry.npmjs.org/immer/-/immer-6.0.5.tgz#77187d13b71c6cee40dde3b8e87a50a7a636d630"
+  integrity sha512-Q2wd90qrgFieIpLzAO2q9NLEdmyp/sr76Ml4Vm5peUKgyTa2CQa3ey8zuzwSKOlKH7grCeGBGUcLLVCVW1aguA==
 
 import-cwd@^2.0.0:
   version "2.1.0"

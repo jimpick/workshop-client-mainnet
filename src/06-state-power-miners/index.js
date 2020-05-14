@@ -36,8 +36,8 @@ function GeoName ({ geo }) {
     </span>
   )
 }
-export default function StatePowerMiners ({ appState }) {
-  const { selectedNode } = appState
+export default function StatePowerMiners ({ appState, updateAppState }) {
+  const { selectedNode, filterNonRoutable } = appState
   const client = useLotusClient(selectedNode, 'node')
   const [miners, annotations] = useMiners(client)
   const [minerPower, updateMinerPower] = useImmer({})
@@ -83,12 +83,12 @@ export default function StatePowerMiners ({ appState }) {
       if (state.canceled) return
       const start = Date.now()
       let pendingIpLookup = []
-      let count = 0
+      state.count = 0
       const queue = new PQueue({ concurrency: 10 })
       for (const miner of sortedMinersByName) {
         // console.log('Miner Power', miner)
         queue.add(async () => {
-          setMinersScanned(++count)
+          setMinersScanned(++state.count)
           const result = await client.stateMinerPower(miner, [])
           if (state.canceled) return
           /*
@@ -260,6 +260,8 @@ export default function StatePowerMiners ({ appState }) {
       if (!minerPower[miner] && !minerInfo[miner]) return false
       if (minerPower[miner] && minerPower[miner].QualityAdjPower === '0')
         return false
+      if (filterNonRoutable && minerInfo[miner] && minerInfo[miner].addrsError)
+        return false
       return true
     })
 
@@ -270,12 +272,28 @@ export default function StatePowerMiners ({ appState }) {
           Scanning {minersScanned} of {miners.length} miners
         </div>
       )}
+      <div style={{ marginBottom: '1rem' }}>
+        <label>
+          <input
+            type='checkbox'
+            checked={filterNonRoutable}
+            onChange={() => {
+              updateAppState(draft => {
+                draft.filterNonRoutable = !filterNonRoutable
+              })
+            }}
+            style={{ marginLeft: '1rem' }}
+          />
+          Filter non-routable miners
+        </label>
+      </div>
       <table className='minerPower'>
         <tbody>
           {filteredMiners &&
-            filteredMiners.map(miner => (
+            filteredMiners.map((miner, i) => (
               <React.Fragment key={miner}>
                 <tr>
+                  <td>{i + 1}.</td>
                   <td>
                     <a
                       href={`https://filscan.io/#/address/detail?address=${miner}`}
@@ -292,11 +310,13 @@ export default function StatePowerMiners ({ appState }) {
                     )}
                   </td>
                   <td>
-                    {minerPower[miner] && prettyBytes(Number(minerPower[miner].QualityAdjPower))}
+                    {minerPower[miner] &&
+                      prettyBytes(Number(minerPower[miner].QualityAdjPower))}
                   </td>
                   <td>{annotations[miner] && annotations[miner]}</td>
                 </tr>
                 <tr>
+                  <td></td>
                   <td></td>
                   <td>
                     {minerInfo[miner] && minerInfo[miner].peerId && (
