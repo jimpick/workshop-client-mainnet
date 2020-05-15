@@ -218,10 +218,19 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
 
   // Process ipLookupList
   useEffect(() => {
+    const state = {
+      existingJobs: 0,
+      jobsAdded: 0,
+      highPriorityJobs: 0,
+      cacheHits: 0,
+      start: Date.now()
+    }
     async function run () {
       console.log('Process ipLookupList, length', ipLookupList.length)
       for (const { miner, peerId, power, sset } of ipLookupList) {
-        if (!ipScanJobs[miner]) {
+        if (ipScanJobs[miner]) {
+          state.existingJobs++
+        } else {
           const cacheRecord = await idbGet(`minerAddrs:${genesisCid}:${miner}`)
           // console.log('Jim cacheRecord', miner, cacheRecord)
           if (cacheRecord) {
@@ -239,6 +248,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
               }
             })
             processMinerAddrsUpdates()
+            state.cacheHits++
+            ipScanJobs[miner] = true
             continue
           }
           // console.log('Adding job for IP lookup', miner)
@@ -322,13 +333,39 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             processMinerAddrsUpdates()
             console.log('Done scanning IP', miner)
           }
-          ipScanQueue.add(ipScanJobs[miner], {
-            priority: power > 0 || sset > 0 ? 1 : 0
-          })
+          const priority = power > 0 || sset > 0 ? 1 : 0
+          ipScanQueue.add(ipScanJobs[miner], { priority })
+          state.jobsAdded++
+          if (priority) {
+            state.highPriorityJobs++
+          }
         }
       }
+      state.end = Date.now()
     }
     run()
+    return () => {
+      const {
+        existingJobs,
+        jobsAdded,
+        highPriorityJobs,
+        cacheHits,
+        start,
+        end
+      } = state
+      const now = Date.now()
+      const elapsed = end ? end - start : now - start
+      const elapsedWindow = now - start
+      console.log(
+        `Processed ipLookupList, ` +
+          `${existingJobs + jobsAdded + cacheHits} of ${
+            ipLookupList.length
+          } processed ` +
+          `in ${elapsed}ms of ${elapsedWindow}ms, ${jobsAdded} jobs added ` +
+          `(${highPriorityJobs} high priority), ` +
+          `${cacheHits} cache hits`
+      )
+    }
   }, [
     client,
     ipLookupList,
