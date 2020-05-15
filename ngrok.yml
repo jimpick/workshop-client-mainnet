@@ -1,9 +1,0 @@
-tunnels:
-  web:
-    proto: http
-    addr: 3000
-    bind_tls: true
-  api:
-    proto: http
-    addr: 9000
-    bind_tls: true

@@ -10,10 +10,6 @@ import useLotusClient from '../lib/use-lotus-client'
 import useMiners from '../lib/use-miners'
 import { api, secure } from '../config'
 
-const concurrency = 6
-const ipLookupBatchSize = 5
-const ipLookupBatchTimeout = 30 * 1000
-
 function formatSectorSize (size) {
   switch (size) {
     case 536870912:
@@ -43,13 +39,31 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   const [miners, annotations] = useMiners(client)
   const [minerPower, updateMinerPower] = useImmer({})
   const [minerInfo, updateMinerInfo] = useImmer({})
+  const [minerAddrs, updateMinerAddrs] = useImmer({})
+  const [minerAddrsUpdates] = useState([])
   const [ipLookupList, updateIpLookupList] = useImmer([])
-  const [minerIpProcessed, updateMinerIpProcessed] = useImmer({})
   const [minersScanned, setMinersScannedUnthrottled] = useState(0)
+  const [ipScanQueue] = useState(new PQueue({ concurrency: 3 }))
+  const [ipScanJobs] = useState({})
+
   const setMinersScanned = useCallback(
     throttle(setMinersScannedUnthrottled, 250),
     [setMinersScannedUnthrottled]
   )
+
+  const processMinerAddrsUpdates = useCallback(
+    throttle(() => {
+      updateMinerAddrs(draft => {
+        console.log('Jim1', draft, minerAddrsUpdates.length)
+        for (const update of minerAddrsUpdates) {
+          update(draft)
+        }
+        minerAddrsUpdates.length = 0
+      })
+    }, 1000),
+    [updateMinerAddrs, minerAddrsUpdates]
+  )
+
   const sortedMinersByName = useMemo(() => {
     return (
       miners &&
@@ -75,7 +89,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           if (compare.isPositive()) return 1
           if (compare.isNegative()) return -1
         }
-        return Number(a.slice(1)) - Number(b.slice(1))
+        return Number(b.slice(1)) - Number(a.slice(1))
       })
     )
   }, [miners, minerPower])
@@ -85,15 +99,14 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     let state = {
       canceled: false,
       minerPowerUpdates: [],
-      minerInfoUpdates: []
+      minerInfoUpdates: [],
+      ipLookupListUpdates: []
     }
     if (!sortedMinersByName) return
     async function run () {
       if (state.canceled) return
-      const start = Date.now()
-      let pendingIpLookup = []
       state.count = 0
-      const queue = new PQueue({ concurrency: 10 })
+      const queue = new PQueue({ concurrency: 1 })
 
       const processMinerPowerUpdates = throttle(() => {
         updateMinerPower(draft => {
@@ -102,7 +115,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           }
         })
         state.minerPowerUpdates.length = 0
-      }, 1000)
+      }, 2000)
 
       const processMinerInfoUpdates = throttle(() => {
         updateMinerInfo(draft => {
@@ -111,21 +124,28 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           }
         })
         state.minerInfoUpdates.length = 0
-      }, 1000)
+      }, 2000)
+
+      const processIpLookupListUpdates = throttle(() => {
+        updateIpLookupList(draft => {
+          for (const update of state.ipLookupListUpdates) {
+            update(draft)
+          }
+        })
+        state.ipLookupListUpdates.length = 0
+      }, 3000)
 
       for (const miner of sortedMinersByName) {
-        // console.log('Miner Power', miner)
         queue.add(async () => {
+          console.log('Miner Power', miner)
           setMinersScanned(++state.count)
           const result = await client.stateMinerPower(miner, [])
           if (state.canceled) return
-          /*
           console.log(
             'Miner power result',
             miner,
             result.MinerPower.QualityAdjPower
           )
-          */
           state.minerPowerUpdates.push(draft => {
             draft[miner] = result.MinerPower
             draft['total'] = result.TotalPower
@@ -143,27 +163,14 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             minerData.peerId = peerId
           })
           processMinerInfoUpdates()
-          // if (result.MinerPower.QualityAdjPower !== '0' || miner === 't01000') {
-          if (result.MinerPower.QualityAdjPower !== '0') {
-            pendingIpLookup.push(miner)
-            console.log('Jim pending', pendingIpLookup)
-            if (
-              pendingIpLookup.length > 0 &&
-              (pendingIpLookup.length === ipLookupBatchSize ||
-                Date.now() - start > ipLookupBatchTimeout)
-            ) {
-              updateIpLookupList(draft => {
-                draft.splice(-1, 0, ...pendingIpLookup)
-              })
-              pendingIpLookup.length = 0
-            }
-          }
-          // await new Promise(resolve => setTimeout(resolve, 100))
+          // if (result.MinerPower.QualityAdjPower !== '0') {
+          state.ipLookupListUpdates.push(draft => {
+            draft.push(miner)
+          })
+          processIpLookupListUpdates()
+          await new Promise(resolve => setTimeout(resolve, 1000))
         })
       }
-      updateIpLookupList(draft => {
-        draft.splice(-1, 0, ...pendingIpLookup)
-      })
     }
     run()
     return () => {
@@ -180,13 +187,54 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
 
   // Process ipLookupList
   useEffect(() => {
-    let state = { canceled: false }
-    let processed = new Set()
+    let state = {
+      canceled: false
+      // minerAddrsUpdates: [],
+    }
+
+    /*
+    const processMinerAddrsUpdates = throttle(() => {
+      updateMinerAddrs(draft => {
+        console.log('Jim1', draft)
+        for (const update of state.minerAddrsUpdates) {
+          update(draft)
+        }
+      })
+      state.minerAddrsUpdates.length = 0
+    }, 1000)
+    */
+
     async function run () {
       if (state.canceled) return
-      console.log('Process ipLookupList', ipLookupList, minerIpProcessed)
-      const queue = new PQueue({ concurrency })
+      console.log('Process ipLookupList, length', ipLookupList.length)
       for (const miner of ipLookupList) {
+        if (!ipScanJobs[miner]) {
+          console.log('Adding job for IP lookup', miner)
+          ipScanJobs[miner] = async () => {
+            console.log('Scanning IP', miner)
+            minerAddrsUpdates.push(draft => {
+              console.log('Jim2 add', miner)
+              draft[miner] = {
+                state: 'scanning',
+                start: Date.now()
+              }
+            })
+            console.log('Jim4', minerAddrsUpdates.length)
+            processMinerAddrsUpdates()
+            await new Promise(resolve => setTimeout(resolve, 5000))
+            minerAddrsUpdates.push(draft => {
+              console.log('Jim3 update', miner)
+              draft[miner].state = 'scanned'
+              draft[miner].end = Date.now()
+            })
+            console.log('Jim5', minerAddrsUpdates.length)
+            processMinerAddrsUpdates()
+            console.log('Done scanning IP', miner)
+          }
+          ipScanQueue.add(ipScanJobs[miner])
+          //const [minerAddrs, updateMinerAddrs] = useImmer({})
+        }
+        /*
         queue.add(async () => {
           if (minerIpProcessed[miner]) return
           console.log('Miner IP Lookup', miner)
@@ -262,43 +310,54 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           console.log('Jim ipLookupList processed', miner)
           // await new Promise(resolve => setTimeout(resolve, 100))
         })
+        */
       }
-      updateMinerIpProcessed(draft => {
-        console.log('Jim ipLookupList save processed 1', processed)
-        for (const miner of processed) {
-          draft[miner] = true
-        }
-      })
     }
     run()
     return () => {
       state.canceled = true
-      updateMinerIpProcessed(draft => {
-        console.log('Jim ipLookupList save processed 2', processed)
-        for (const miner of processed) {
-          draft[miner] = true
-        }
-      })
     }
-  }, [
-    client,
-    ipLookupList,
-    updateMinerInfo,
-    minerIpProcessed,
-    updateMinerIpProcessed
-  ])
+  }, [client, ipLookupList, updateMinerInfo])
 
+  const now = Date.now()
+  let nonRoutableCount = 0
+  let ipLookupPendingCount = 0
+  const activeIpLookups = []
   const filteredMiners =
     sortedMinersByPower &&
     sortedMinersByPower.filter(miner => {
       // if (miner === 't01000') return true
-      if (!minerPower[miner] && !minerInfo[miner]) return false
+      if (!minerPower[miner] || !minerInfo[miner]) return false
+      /*
       if (minerPower[miner] && minerPower[miner].QualityAdjPower === '0')
         return false
-      if (filterNonRoutable && minerInfo[miner] && minerInfo[miner].addrsError)
+        */
+      if (minerInfo[miner] && !minerAddrs[miner]) {
+        ipLookupPendingCount++
         return false
+      }
+      if (minerInfo[miner] && minerAddrs[miner]) {
+        const { state, start } = minerAddrs[miner]
+        if (state === 'scanning') {
+          activeIpLookups.push({
+            miner,
+            start,
+            elapsed: now - start
+          })
+          return false
+        }
+      }
+      if (
+        filterNonRoutable &&
+        minerInfo[miner] &&
+        minerInfo[miner].addrsError
+      ) {
+        nonRoutableCount++
+        return false
+      }
       return true
     })
+  activeIpLookups.sort(({ start: a }, { start: b }) => a - b)
 
   return (
     <div>
@@ -307,7 +366,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           Scanning {minersScanned} of {miners.length} miners
         </div>
       )}
-      <div style={{ marginBottom: '1rem' }}>
+      <div style={{ marginBottom: '1rem', marginTop: '1rem' }}>
         <label>
           <input
             type='checkbox'
@@ -322,7 +381,20 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           Filter non-routable miners
         </label>
       </div>
-      <table className='minerPower'>
+      {activeIpLookups.length > 0 && (
+        <div style={{ marginTop: '1rem', marginBottom: '1rem' }}>
+          {activeIpLookups.map(({ miner, elapsed }) => (
+            <div key={miner}>
+              IP Lookup: {miner} {(elapsed / 1000).toFixed(1)}s
+            </div>
+          ))}
+        </div>
+      )}
+      {ipLookupPendingCount > 0 && (
+        <div>{ipLookupPendingCount} pending IP lookups</div>
+      )}
+      {nonRoutableCount > 0 && <div>{nonRoutableCount} non-routable</div>}
+      <table className='minerPower' style={{marginTop: '1rem'}}>
         <tbody>
           {filteredMiners &&
             filteredMiners.map((miner, i) => (
