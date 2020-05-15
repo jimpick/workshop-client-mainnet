@@ -2,13 +2,15 @@ import React, { useEffect, useState } from 'react'
 import copy from 'clipboard-copy'
 import useLotusClient from '../lib/use-lotus-client'
 import useWatchDefaultWallet from '../lib/use-watch-default-wallet'
-import useMiners from '../lib/use-miners'
+//import useMiners from '../lib/use-miners'
+import annotations from '../annotations'
 import DealList from '../08-deals/deal-list'
 
 export default function ProposeDeal ({ appState, updateAppState }) {
   const { selectedNode } = appState
   const client = useLotusClient(selectedNode, 'node')
-  const [miners, annotations] = useMiners(client)
+  // const [miners, annotations] = useMiners(client)
+  const miners = Object.keys(annotations)
   const balance = useWatchDefaultWallet({ client, updateAppState })
   const [objectUrlAttribute, setObjectUrlAttribute] = useState()
   const [status, setStatus] = useState()

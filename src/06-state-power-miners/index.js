@@ -5,6 +5,7 @@ import PQueue from 'p-queue'
 import BigNumber from 'bignumber.js'
 import prettyBytes from 'pretty-bytes'
 import throttle from 'lodash.throttle'
+import { get as idbGet, set as idbSet } from 'idb-keyval'
 import useLotusClient from '../lib/use-lotus-client'
 // import useMiners from '../lib/use-miners-all'
 import useMiners from '../lib/use-miners'
@@ -35,7 +36,7 @@ function GeoName ({ geo }) {
 }
 export default function StatePowerMiners ({ appState, updateAppState }) {
   // const { selectedNode, filterNonRoutable: filterNonRoutableRaw } = appState
-  const { selectedNode, filterNonRoutable } = appState
+  const { selectedNode, filterNonRoutable, genesisCid } = appState
   const client = useLotusClient(selectedNode, 'node')
   const [miners, annotations] = useMiners(client)
   const [minerPower, updateMinerPower] = useImmer({})
@@ -59,7 +60,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   // const filterNonRoutable = filterNonRoutableRaw
 
   const setMinersScanned = useCallback(
-    throttle(setMinersScannedUnthrottled, 250),
+    throttle(setMinersScannedUnthrottled, 1000),
     [setMinersScannedUnthrottled]
   )
 
@@ -71,7 +72,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
         }
         minerAddrsUpdates.length = 0
       })
-    }, 1000),
+    }, 2000),
     [updateMinerAddrs, minerAddrsUpdates]
   )
 
@@ -144,7 +145,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           }
         })
         state.ipLookupListUpdates.length = 0
-      }, 3000)
+      }, 5000)
 
       for (const miner of sortedMinersByName) {
         queue.add(async () => {
@@ -152,15 +153,27 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           setMinersScanned(++state.count)
           const result = await client.stateMinerPower(miner, [])
           if (state.canceled) return
-          if (result.MinerPower.QualityAdjPower !== '0') {
+          const sectorCount = await client.stateMinerSectorCount(miner, [])
+          if (state.canceled) return
+          if (
+            result.MinerPower.QualityAdjPower !== '0' ||
+            sectorCount.Sset > 0 ||
+            sectorCount.Pset > 0
+          ) {
             console.log(
-              'Miner power result',
+              'Miner power result, sectors (p/s)',
               miner,
-              result.MinerPower.QualityAdjPower
+              result.MinerPower.QualityAdjPower,
+              sectorCount.Sset,
+              sectorCount.Pset
             )
           }
           state.minerPowerUpdates.push(draft => {
-            draft[miner] = result.MinerPower
+            draft[miner] = {
+              ...result.MinerPower,
+              sectorCountSSet: sectorCount.Sset,
+              sectorCountPSet: sectorCount.Pset
+            }
             draft['total'] = result.TotalPower
           })
           processMinerPowerUpdates()
@@ -181,7 +194,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             draft.push({
               miner,
               peerId,
-              power: Number(result.MinerPower.QualityAdjPower)
+              power: Number(result.MinerPower.QualityAdjPower),
+              sset: Number(sectorCount.Sset)
             })
           })
           processIpLookupListUpdates()
@@ -206,8 +220,27 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   useEffect(() => {
     async function run () {
       console.log('Process ipLookupList, length', ipLookupList.length)
-      for (const { miner, peerId, power } of ipLookupList) {
+      for (const { miner, peerId, power, sset } of ipLookupList) {
         if (!ipScanJobs[miner]) {
+          const cacheRecord = await idbGet(`minerAddrs:${genesisCid}:${miner}`)
+          // console.log('Jim cacheRecord', miner, cacheRecord)
+          if (cacheRecord) {
+            minerAddrsUpdates.push(draft => {
+              draft[miner] = {
+                state: 'scanned',
+                start: cacheRecord.time,
+                end: cacheRecord.time
+              }
+              if (cacheRecord.error) {
+                draft[miner].error = cacheRecord.error
+              }
+              if (cacheRecord.addrs) {
+                draft[miner].addrs = cacheRecord.addrs
+              }
+            })
+            processMinerAddrsUpdates()
+            continue
+          }
           // console.log('Adding job for IP lookup', miner)
           ipScanJobs[miner] = async () => {
             // console.log('Scanning IP', miner, power)
@@ -222,10 +255,10 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             const ips = new Set()
             let addrsError
             try {
-              console.log('Find peers', miner, peerId)
-              console.log('Jim ipLookupList findPeers', miner)
+              // console.log('Find peers', miner, peerId)
+              // console.log('Jim ipLookupList findPeers', miner)
               const findPeer = await client.netFindPeer(peerId)
-              console.log('Jim findPeer', miner, peerId, findPeer)
+              // console.log('Jim findPeer', miner, peerId, findPeer)
               for (const maddr of findPeer.Addrs) {
                 console.log(`  ${maddr}`)
                 const match = maddr.match(/^\/ip4\/(\d+\.\d+\.\d+\.\d+)/)
@@ -271,11 +304,26 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                 }
               }
             })
+            const cacheRecord = {
+              time: Date.now()
+            }
+            if (addrsError) {
+              cacheRecord.error = addrsError
+            } else {
+              cacheRecord.addrs = []
+              for (const ipAddr of ips) {
+                cacheRecord.addrs.push({
+                  ip: ipAddr,
+                  geo: geoIp[ipAddr]
+                })
+              }
+            }
+            idbSet(`minerAddrs:${genesisCid}:${miner}`, cacheRecord)
             processMinerAddrsUpdates()
             console.log('Done scanning IP', miner)
           }
           ipScanQueue.add(ipScanJobs[miner], {
-            priority: power > 0 ? 1 : 0
+            priority: power > 0 || sset > 0 ? 1 : 0
           })
         }
       }
@@ -288,7 +336,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     ipScanJobs,
     ipScanQueue,
     minerAddrsUpdates,
-    processMinerAddrsUpdates
+    processMinerAddrsUpdates,
+    genesisCid
   ])
 
   const now = Date.now()
@@ -307,6 +356,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       if (
         minerPower[miner] &&
         minerPower[miner].QualityAdjPower === '0' &&
+        minerPower[miner].sectorCountSSet === 0 &&
         (!minerAddrs[miner] || minerAddrs[miner].error)
       )
         return false
@@ -357,10 +407,13 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             <div key={miner}>
               IP Lookup: {miner}{' '}
               {minerPower[miner] &&
-                minerPower[miner].QualityAdjPower !== '0' && (
+                (minerPower[miner].QualityAdjPower !== '0' ||
+                  minerPower[miner].sectorCountSSet > 0 ||
+                  minerPower[miner].sectorCountPSet > 0) && (
                   <>
                     (Power{' '}
-                    {prettyBytes(Number(minerPower[miner].QualityAdjPower))})
+                    {prettyBytes(Number(minerPower[miner].QualityAdjPower))}) -{' '}
+                    {minerPower[miner].sectorCountPSet} Sectors
                   </>
                 )}{' '}
               {(elapsed / 1000).toFixed(1)}s
@@ -397,8 +450,12 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                     )}
                   </td>
                   <td>
-                    {minerPower[miner] &&
-                      prettyBytes(Number(minerPower[miner].QualityAdjPower))}
+                    {minerPower[miner] && (
+                      <>
+                        {prettyBytes(Number(minerPower[miner].QualityAdjPower))}{' '}
+                        - {minerPower[miner].sectorCountPSet} sectors
+                      </>
+                    )}
                   </td>
                   <td>{annotations[miner] && annotations[miner]}</td>
                 </tr>
