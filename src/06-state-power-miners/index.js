@@ -17,6 +17,8 @@ function formatSectorSize (size) {
       return '512M'
     case 34359738368:
       return '32G'
+    case 68719476736:
+      return '64G'
     case 2048:
       return '2K'
     default:
@@ -118,7 +120,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     async function run () {
       if (state.canceled) return
       state.count = 0
-      const queue = new PQueue({ concurrency: 10 })
+      const queue = new PQueue({ concurrency: 20 })
 
       const processMinerPowerUpdates = throttle(() => {
         updateMinerPower(draft => {
@@ -127,7 +129,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           }
         })
         state.minerPowerUpdates.length = 0
-      }, 2000)
+      }, 30000)
 
       const processMinerInfoUpdates = throttle(() => {
         updateMinerInfo(draft => {
@@ -136,7 +138,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           }
         })
         state.minerInfoUpdates.length = 0
-      }, 2000)
+      }, 30000)
 
       const processIpLookupListUpdates = throttle(() => {
         updateIpLookupList(draft => {
@@ -145,7 +147,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           }
         })
         state.ipLookupListUpdates.length = 0
-      }, 5000)
+      }, 30000)
 
       for (const miner of sortedMinersByName) {
         queue.add(async () => {
@@ -199,7 +201,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             })
           })
           processIpLookupListUpdates()
-          // await new Promise(resolve => setTimeout(resolve, 1000))
+          // await new Promise(resolve => setTimeout(resolve, 100))
         })
       }
     }
@@ -223,14 +225,43 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       jobsAdded: 0,
       highPriorityJobs: 0,
       cacheHits: 0,
-      start: Date.now()
+      cacheAttempts: 0,
+      start: Date.now(),
+      nextProgressUpdate: Date.now() + 1000,
+      canceled: false
     }
     async function run () {
       console.log('Process ipLookupList, length', ipLookupList.length)
       for (const { miner, peerId, power, sset } of ipLookupList) {
+        if (state.canceled) return
+        const now = Date.now()
+        if (now > state.nextProgressUpdate) {
+          state.nextProgressUpdate = now + 1000
+          const {
+            existingJobs,
+            jobsAdded,
+            highPriorityJobs,
+            cacheHits,
+            cacheAttempts,
+            start
+          } = state
+          const elapsed = now - start
+          console.log(
+            `Progress ipLookupList, ` +
+              `${elapsed / 1000}s: ` +
+              `${existingJobs + jobsAdded + cacheHits} of ${
+                ipLookupList.length
+              } processed, ` +
+              `${existingJobs} existing, ` +
+              `${jobsAdded} jobs added ` +
+              `(${highPriorityJobs} high priority), ` +
+              `${cacheHits} / ${cacheAttempts} cache hits`
+          )
+        }
         if (ipScanJobs[miner]) {
           state.existingJobs++
         } else {
+          state.cacheAttempts++
           const cacheRecord = await idbGet(`minerAddrs:${genesisCid}:${miner}`)
           // console.log('Jim cacheRecord', miner, cacheRecord)
           if (cacheRecord) {
@@ -345,11 +376,13 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     }
     run()
     return () => {
+      state.canceled = true
       const {
         existingJobs,
         jobsAdded,
         highPriorityJobs,
         cacheHits,
+        cacheAttempts,
         start,
         end
       } = state
@@ -361,9 +394,11 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           `${existingJobs + jobsAdded + cacheHits} of ${
             ipLookupList.length
           } processed ` +
-          `in ${elapsed}ms of ${elapsedWindow}ms, ${jobsAdded} jobs added ` +
+          `in ${elapsed}ms of ${elapsedWindow}ms, ` +
+          `${existingJobs} existing, ` +
+          `${jobsAdded} jobs added ` +
           `(${highPriorityJobs} high priority), ` +
-          `${cacheHits} cache hits`
+          `${cacheHits} / ${cacheAttempts} cache hits`
       )
     }
   }, [

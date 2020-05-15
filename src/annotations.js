@@ -13,10 +13,12 @@ const annotations = {
   t03685: 'Poland, Krakow',
   t03714: 'China, Changsha',
   t03739: 'IPv6 only',
-  t04168: 'new, Palo Alto',
+  t04168: 'new, 64G, Palo Alto',
   t014178: 'new, China',
   t014364: 'new, China, Deyang',
-  t014169: 'new, China, Deyang'
+  t014169: 'new, 64G, China, Deyang',
+  t017328: 'new, China, top miner',
+  t067632: 'new, China, top miner'
 }
 
 export default annotations
