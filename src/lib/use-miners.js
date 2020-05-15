@@ -19,13 +19,17 @@ export default function useMiners (client) {
           annotated.push(miner)
         }
       }
-      const notAnnotated = result.filter(miner => !annotations[miner]).slice(0, 20)
+      const notAnnotated = result
+        .filter(miner => !annotations[miner])
+        // .slice(0, 2000)
       // const notAnnotated = []
       if (state.canceled) return
       setMiners([...annotated, ...notAnnotated])
     }
     run()
-    return () => { state.canceled = true }
+    return () => {
+      state.canceled = true
+    }
   }, [client])
 
   return [miners, annotations]
