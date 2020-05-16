@@ -50,7 +50,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   const [minerAddrsUpdates] = useState([])
   const [ipLookupList, updateIpLookupList] = useImmer([])
   const [minersScanned, setMinersScannedUnthrottled] = useState(0)
-  const [ipScanQueue] = useState(new PQueue({ concurrency: 8 }))
+  const [ipScanQueue] = useState(new PQueue({ concurrency: 10 }))
   const [ipScanJobs] = useState({})
 
   // const undefinedToFalse = value => (typeof val === 'undefined' ? false : value)
@@ -86,20 +86,16 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     return (
       miners &&
       [...miners].sort((a, b) => {
-        if (minerPower[a] && !minerPower[b]) return -1
-        if (minerPower[b] && !minerPower[a]) return 1
-        if (minerPower[a] && minerPower[b]) {
-          /* Use this when Safari supports BigInt
-        const powerA = BigInt(minerPower[a].QualityAdjPower)
-        const powerB = BigInt(minerPower[b].QualityAdjPower)
-        */
-          const powerA = BigNumber(minerPower[a].QualityAdjPower)
-          const powerB = BigNumber(minerPower[b].QualityAdjPower)
-          const compare = powerB.minus(powerA)
-          if (compare.isPositive()) return 1
-          if (compare.isNegative()) return -1
-        }
-        return Number(b.slice(1)) - Number(a.slice(1))
+        const powerA = minerPower[a]
+          ? BigNumber(minerPower[a].QualityAdjPower)
+          : BigNumber(0)
+        const powerB = minerPower[b]
+          ? BigNumber(minerPower[b].QualityAdjPower)
+          : BigNumber(0)
+        const compare = powerA.minus(powerB)
+        if (compare.isPositive() && !compare.isZero()) return -1
+        if (compare.isNegative()) return 1
+        return Number(a.slice(1)) - Number(b.slice(1))
       })
     )
   }, [miners, minerPower])
@@ -163,15 +159,23 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           }
         })
         state.ipLookupListUpdates.length = 0
-      }, 30000)
+      }, 10000)
 
-      for (const miner of sortedMinersByName) {
+      // Process in reverse order to make discovery of new miners more quick
+      const reversed = sortedMinersByName
+        .reverse()
+        .filter(miner => !annotations[miner])
+      const processingOrder = [...Object.keys(annotations), ...reversed]
+      for (const miner of processingOrder) {
         queue.add(async () => {
           // console.log('Miner Power', miner)
           setMinersScanned(++state.count)
           const result = await client.stateMinerPower(miner, tipsetKey)
           if (state.canceled) return
-          const sectorCount = await client.stateMinerSectorCount(miner, tipsetKey)
+          const sectorCount = await client.stateMinerSectorCount(
+            miner,
+            tipsetKey
+          )
           if (state.canceled) return
           if (
             result.MinerPower.QualityAdjPower !== '0' ||
@@ -228,6 +232,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   }, [
     client,
     sortedMinersByName,
+    annotations,
     updateMinerPower,
     updateMinerInfo,
     updateIpLookupList,
@@ -279,7 +284,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           state.existingJobs++
         } else {
           state.cacheAttempts++
-          const cacheRecord = await idbGet(`minerAddrs:${genesisCid}:${miner}`)
+          const cacheRecord = await idbGet(`peerId:${genesisCid}:${peerId}`)
           // console.log('Jim cacheRecord', miner, cacheRecord)
           if (cacheRecord) {
             minerAddrsUpdates.push(draft => {
@@ -377,7 +382,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                 })
               }
             }
-            idbSet(`minerAddrs:${genesisCid}:${miner}`, cacheRecord)
+            idbSet(`peerId:${genesisCid}:${peerId}`, cacheRecord)
             processMinerAddrsUpdates()
             console.log('Done scanning IP', miner)
           }
@@ -469,9 +474,9 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           return false
         }
       }
-      if (filterNonRoutable && minerAddrs[miner] && minerAddrs[miner].error) {
+      if (minerAddrs[miner] && minerAddrs[miner].error) {
         nonRoutableCount++
-        return false
+        if (filterNonRoutable) return false
       }
       return true
     })
@@ -495,6 +500,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           QualityAdjPower: {prettyBytes(Number(totalPower.QualityAdjPower))}
         </h3>
       </div>
+      {!miners && <div>Loading miner list...</div>}
       {miners && minersScanned !== miners.length && (
         <div style={{ marginBottom: '1rem' }}>
           Scanning {minersScanned} of {miners.length} miners
@@ -517,7 +523,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             }}
             style={{ marginLeft: '1rem' }}
           />
-          Filter non-routable miners
+          Filter {nonRoutableCount} non-routable miners
         </label>
       </div>
       {activeIpLookups.length > 0 && (
@@ -545,7 +551,6 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           )}
         </div>
       )}
-      {nonRoutableCount > 0 && <div>{nonRoutableCount} non-routable</div>}
       <table className='minerPower' style={{ marginTop: '1rem' }}>
         <tbody>
           {filteredMiners &&
@@ -580,7 +585,13 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                       </>
                     )}
                   </td>
-                  <td>{annotations[miner] && annotations[miner]}</td>
+                  <td>
+                    {annotations[miner] ? (
+                      annotations[miner]
+                    ) : (
+                      <span style={{ color: 'magenta' }}> No annotation</span>
+                    )}
+                  </td>
                 </tr>
                 <tr>
                   <td></td>
