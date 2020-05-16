@@ -15,11 +15,13 @@ export default function ProposeDeal ({ appState, updateAppState }) {
   const [objectUrlAttribute, setObjectUrlAttribute] = useState()
   const [status, setStatus] = useState()
   const {
+    versionInfo,
     cid,
     importedNode,
     defaultWalletAddress,
     capture: { width, height }
   } = appState
+  const blockDelay = versionInfo && versionInfo.BlockDelay
   const epochPrice = '2500'
 
   useEffect(() => {
@@ -136,7 +138,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
       Wallet: defaultWalletAddress,
       Miner: targetMiner,
       EpochPrice: epochPrice,
-      MinBlocksDuration: 300
+      MinBlocksDuration: 7 * 24 * 60 * 60 / blockDelay
     }
     setStatus(`Proposing to ${targetMiner} ...`)
     try {

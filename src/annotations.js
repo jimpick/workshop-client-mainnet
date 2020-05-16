@@ -36,7 +36,7 @@ const annotations = {
   t0122539: 'new, China, Beijing',
   t0123112: 'new, China',
   t0123114: 'new, China, Yongzhou',
-  t0123115: 'new, China',
+  t0123115: 'China',
   t0123124: 'new, China',
   t0123126: 'new, China',
   t0123160: 'new, China',
@@ -86,7 +86,7 @@ const annotations = {
   t0210515: 'NR',
   t0211660: 'NR',
   t0210747: 'NR',
-
+  t0211526: 'NR',
 
   // Bootstrappers
   t01000: 'bootstrap, NR',
