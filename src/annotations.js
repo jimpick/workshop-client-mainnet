@@ -24,6 +24,7 @@ const annotations = {
   t028149: 'new, China',
   t028168: 'China, Hefei',
   t028283: 'China',
+  t038586: 'new, China, Wuhan',
   t067632: 'China, top miner',
   t0123115: 'new, China',
   t0123124: 'new, China',

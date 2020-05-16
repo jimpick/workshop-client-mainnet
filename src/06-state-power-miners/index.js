@@ -500,6 +500,11 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           Scanning {minersScanned} of {miners.length} miners
         </div>
       )}
+      {miners && minersScanned === miners.length && (
+        <div style={{ marginBottom: '1rem' }}>
+          Scanned {miners.length} miners
+        </div>
+      )}
       <div style={{ marginBottom: '1rem', marginTop: '1rem' }}>
         <label>
           <input
