@@ -101,7 +101,7 @@ export default function DealList ({ client, appState, cid, filterErrors }) {
   return (
     <div>
       {deals.map(deal => {
-        const { proposalCid, fromNode, miner, date, cid: cidDeal, type } = deal
+        const { proposalCid, fromNode, miner, date, cid: cidDeal } = deal
         const data = dealData && dealData[proposalCid]
         const clientDealStatus = data && data.clientDealStatus
         const dealState = clientDealStatus && clientDealStatus.State
@@ -116,14 +116,12 @@ export default function DealList ({ client, appState, cid, filterErrors }) {
             </div>
             <div style={{ fontSize: '50%' }}>
               <div>Date: {new Date(date).toString()}</div>
-              <div>Type: {type}</div>
               {!cid && (
                 <div>
                   CID: {cidDeal} <button onClick={copyCid}>Copy</button>
                 </div>
               )}
               <div>Proposal CID: {proposalCid}</div>
-              <div>State: {dealData && dealStateNames[dealState]}</div>
               <div>
                 Last update:{' '}
                 {data && formatDistance(data.updatedAtTime, now) + ' ago'}

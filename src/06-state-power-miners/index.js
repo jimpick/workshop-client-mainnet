@@ -40,7 +40,10 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   // const { selectedNode, filterNonRoutable: filterNonRoutableRaw } = appState
   const { selectedNode, filterNonRoutable, genesisCid } = appState
   const client = useLotusClient(selectedNode, 'node')
-  const [miners, annotations] = useMiners(client)
+  const [height, setHeight] = useState()
+  const [tipsetKey, setTipsetKey] = useState(null)
+  const [totalPower, setTotalPower] = useState()
+  const [miners, annotations] = useMiners(client, tipsetKey)
   const [minerPower, updateMinerPower] = useImmer({})
   const [minerInfo, updateMinerInfo] = useImmer({})
   const [minerAddrs, updateMinerAddrs] = useImmer({})
@@ -49,13 +52,6 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   const [minersScanned, setMinersScannedUnthrottled] = useState(0)
   const [ipScanQueue] = useState(new PQueue({ concurrency: 8 }))
   const [ipScanJobs] = useState({})
-  const [, updateTicker] = useState(0)
-
-  useEffect(() => {
-    setTimeout(() => {
-      updateTicker(Date.now())
-    }, 1000)
-  }, [])
 
   // const undefinedToFalse = value => (typeof val === 'undefined' ? false : value)
   // const filterNonRoutable = undefinedToFalse(filterNonRoutableRaw)
@@ -108,6 +104,26 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     )
   }, [miners, minerPower])
 
+  // Get Height/Tipset
+  useEffect(() => {
+    let state = {
+      canceled: false
+    }
+    if (!client) return
+    async function run () {
+      if (state.canceled) return
+      const { Cids: tipsetKey, Height: height } = await client.chainHead()
+      setHeight(height)
+      setTipsetKey(tipsetKey)
+      const result = await client.stateMinerPower('<empty>', tipsetKey)
+      setTotalPower(result.TotalPower)
+    }
+    run()
+    return () => {
+      state.canceled = true
+    }
+  }, [client])
+
   // Scan miners to collect miner power
   useEffect(() => {
     let state = {
@@ -116,7 +132,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       minerInfoUpdates: [],
       ipLookupListUpdates: []
     }
-    if (!sortedMinersByName) return
+    if (!sortedMinersByName || !tipsetKey) return
     async function run () {
       if (state.canceled) return
       state.count = 0
@@ -153,9 +169,9 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
         queue.add(async () => {
           // console.log('Miner Power', miner)
           setMinersScanned(++state.count)
-          const result = await client.stateMinerPower(miner, [])
+          const result = await client.stateMinerPower(miner, tipsetKey)
           if (state.canceled) return
-          const sectorCount = await client.stateMinerSectorCount(miner, [])
+          const sectorCount = await client.stateMinerSectorCount(miner, tipsetKey)
           if (state.canceled) return
           if (
             result.MinerPower.QualityAdjPower !== '0' ||
@@ -179,7 +195,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             draft['total'] = result.TotalPower
           })
           processMinerPowerUpdates()
-          const minerInfo = await client.stateMinerInfo(miner, [])
+          const minerInfo = await client.stateMinerInfo(miner, tipsetKey)
           const { PeerId: peerId, SectorSize: sectorSize } = minerInfo
           if (state.canceled) return
           state.minerInfoUpdates.push(draft => {
@@ -215,7 +231,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     updateMinerPower,
     updateMinerInfo,
     updateIpLookupList,
-    setMinersScanned
+    setMinersScanned,
+    tipsetKey
   ])
 
   // Process ipLookupList
@@ -375,6 +392,15 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       state.end = Date.now()
     }
     run()
+    function tick () {
+      // For UI
+      minerAddrsUpdates.push(draft => {
+        draft['tick'] = Date.now()
+      })
+      processMinerAddrsUpdates()
+      if (!state.canceled) setTimeout(tick, 1000)
+    }
+    tick()
     return () => {
       state.canceled = true
       const {
@@ -451,8 +477,24 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     })
   activeIpLookups.sort(({ start: a }, { start: b }) => a - b)
 
+  if (!height || !totalPower) {
+    return (
+      <div>
+        <h1>Miners</h1>
+        Loading...
+      </div>
+    )
+  }
+
   return (
     <div>
+      <h1>Miners: Height {height}</h1>
+      <div>
+        <h3>RawBytePower: {prettyBytes(Number(totalPower.RawBytePower))}</h3>
+        <h3>
+          QualityAdjPower: {prettyBytes(Number(totalPower.QualityAdjPower))}
+        </h3>
+      </div>
       {miners && minersScanned !== miners.length && (
         <div style={{ marginBottom: '1rem' }}>
           Scanning {minersScanned} of {miners.length} miners
@@ -525,6 +567,10 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                     {minerPower[miner] && (
                       <>
                         {prettyBytes(Number(minerPower[miner].QualityAdjPower))}{' '}
+                        {minerPower[miner].RawBytePower !== '0' &&
+                          Number(minerPower[miner].QualityAdjPower) /
+                            Number(minerPower[miner].RawBytePower) +
+                            'x'}{' '}
                         - {minerPower[miner].sectorCountPSet} sectors
                       </>
                     )}

@@ -93,9 +93,6 @@ function App () {
             <Route path='/state-list-miners'>
               <StateListMiners {...baseProps} />
             </Route>
-            <Route path='/state-power-miners'>
-              <StatePowerMiners {...baseProps} />
-            </Route>
             <Route path='/deals'>
               <Deals {...baseProps} />
             </Route>
@@ -106,7 +103,7 @@ function App () {
               <IPFS {...baseProps} />
             </Route>
             <Route path='/miners'>
-              <Miners {...baseProps} />
+              <StatePowerMiners {...baseProps} />
             </Route>
             <Route path='/store'>
               <Store {...baseProps} />
@@ -157,16 +154,6 @@ function Store () {
   )
 }
 
-function Miners (props) {
-  return (
-    <div>
-      <h1>Miners</h1>
-      <StatePowerAll {...props} />
-      <StatePowerMiners {...props} />
-    </div>
-  )
-}
-
 function Examples () {
   return (
     <div>
@@ -188,7 +175,7 @@ function Examples () {
           <Link to='/state-list-miners'>List Miners</Link>
         </li>
         <li>
-          <Link to='/state-power-miners'>Power: Miners</Link>
+          <Link to='/miners'>Power: Miners</Link>
         </li>
       </ul>
     </div>

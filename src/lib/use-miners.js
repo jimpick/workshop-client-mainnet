@@ -1,15 +1,16 @@
 import { useEffect, useState } from 'react'
 import annotations from '../annotations'
 
-export default function useMiners (client) {
+export default function useMiners (client, tipsetKey) {
   const [miners, setMiners] = useState()
 
   useEffect(() => {
     if (!client) return
+    if (tipsetKey === null) return
     let state = { canceled: false }
     async function run () {
       if (state.canceled) return
-      const result = await client.stateListMiners([])
+      const result = await client.stateListMiners(tipsetKey ? tipsetKey : [])
       // Whitelisted
       // const result = Object.keys(annotations)
       const resultSet = new Set(result)
@@ -30,7 +31,7 @@ export default function useMiners (client) {
     return () => {
       state.canceled = true
     }
-  }, [client])
+  }, [client, tipsetKey])
 
   return [miners, annotations]
 }
