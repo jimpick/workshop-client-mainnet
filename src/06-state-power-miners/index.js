@@ -9,6 +9,7 @@ import { get as idbGet, set as idbSet } from 'idb-keyval'
 import useLotusClient from '../lib/use-lotus-client'
 // import useMiners from '../lib/use-miners-all'
 import useMiners from '../lib/use-miners'
+import baiduCities from '../lib/baidu-cities'
 import { api, secure } from '../config'
 
 function formatSectorSize (size) {
@@ -26,7 +27,19 @@ function formatSectorSize (size) {
   }
 }
 
-function GeoName ({ geo, geo2 }) {
+function BaiduCity ({ geoBaidu }) {
+  if (!geoBaidu.content || !geoBaidu.content.address_detail) return null
+  const {
+    city,
+    city_code: cityCode,
+    province
+  } = geoBaidu.content.address_detail
+  if (baiduCities[cityCode]) {
+    return baiduCities[cityCode]
+  }
+  return `${province} ${city} (${cityCode})`
+}
+function GeoName ({ geo, geo2, geoBaidu }) {
   if (!geo) return null
   return (
     <div style={{ marginLeft: '1rem' }}>
@@ -41,6 +54,12 @@ function GeoName ({ geo, geo2 }) {
           {geo2.city && geo2.city.names && geo2.city.names.en}
         </>
       )}
+      {geoBaidu && (
+        <>
+          <br />
+          Baidu: China <BaiduCity geoBaidu={geoBaidu} />
+        </>
+      )}
     </div>
   )
 }
@@ -52,7 +71,14 @@ function Addrs ({
   genesisCid,
   peerId
 }) {
-  const { addrs, timeGeoIp2 } = minerAddrsRecord
+  const { addrs, timeGeoIp2, timeBaidu } = minerAddrsRecord
+  let china = false
+  for (const addr of addrs) {
+    if (addr.geo && addr.geo.country && addr.geo.country.names && addr.geo.country.names.en === 'China') {
+      china = true
+      break
+    }
+  }
   return (
     <div>
       <ul>
@@ -60,12 +86,17 @@ function Addrs ({
           <li key={i}>
             <div style={{ display: 'flex' }}>
               <div>{addr.ip}</div>
-              <GeoName geo={addr.geo} geo2={addr.geo2} />
+              <GeoName
+                geo={addr.geo}
+                geo2={addr.geo2}
+                geoBaidu={addr.geoBaidu}
+              />
             </div>
           </li>
         ))}
       </ul>
       {!timeGeoIp2 && <button onClick={getGeoIP2}>Get GeoIP2 Data</button>}
+      {!timeBaidu && china && <button onClick={getBaidu}>Get Baidu Data</button>}
     </div>
   )
 
@@ -98,6 +129,47 @@ function Addrs ({
       for (const addr of draft[miner].addrs) {
         if (geoIp2[addr.ip]) {
           addr.geo2 = geoIp2[addr.ip]
+        }
+      }
+    })
+  }
+
+  async function getBaidu () {
+    const geoBaidu = {}
+    const now = Date.now()
+    let count = 0
+    for (const { ip: ipAddr } of addrs) {
+      try {
+        const url =
+          (secure ? 'https://' : 'http://') +
+          `${api}/geoip/ipv4-via-baidu/${ipAddr}`
+        const response = await fetch(url)
+        const result = await response.json()
+        console.log('geoBaidu', miner, ipAddr, result)
+        if (result.status === 0) {
+          geoBaidu[ipAddr] = result
+          count++
+        }
+      } catch (e) {
+        console.error(`GeoBaidu error`, e)
+      }
+    }
+    if (count === 0) return
+    const key = `peerId:${genesisCid}:${peerId}`
+    const cacheRecord = await idbGet(key)
+    cacheRecord.timeBaidu = now
+    for (const addrRecord of cacheRecord.addrs) {
+      const ipAddr = addrRecord.ip
+      if (geoBaidu[ipAddr]) {
+        addrRecord.geoBaidu = geoBaidu[ipAddr]
+      }
+    }
+    await idbSet(key, cacheRecord)
+    updateMinerAddrs(draft => {
+      draft[miner].timeBaidu = now
+      for (const addr of draft[miner].addrs) {
+        if (geoBaidu[addr.ip]) {
+          addr.geoBaidu = geoBaidu[addr.ip]
         }
       }
     })
@@ -360,7 +432,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                 state: 'scanned',
                 start: cacheRecord.time,
                 end: cacheRecord.time,
-                timeGeoIp2: cacheRecord.timeGeoIp2
+                timeGeoIp2: cacheRecord.timeGeoIp2,
+                timeBaidu: cacheRecord.timeBaidu
               }
               if (cacheRecord.error) {
                 draft[miner].error = cacheRecord.error
