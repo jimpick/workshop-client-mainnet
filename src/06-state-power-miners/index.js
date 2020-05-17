@@ -204,6 +204,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   const [minersScanned, setMinersScannedUnthrottled] = useState(0)
   const [ipScanQueue] = useState(new PQueue({ concurrency: 10 }))
   const [ipScanJobs] = useState({})
+  const [nonRoutableSetUpdated, setNonRoutableSetUpdated] = useState(false)
 
   // const undefinedToFalse = value => (typeof val === 'undefined' ? false : value)
   // const filterNonRoutable = undefinedToFalse(filterNonRoutableRaw)
@@ -698,7 +699,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
         <div>
           New non-routable set: {minerAddrs.newNonRoutableSetCount}
           <button
-            style={{ marginLeft: '1rem' }}
+            style={{ marginLeft: '1rem', marginRight: '1rem' }}
             onClick={() => {
               localStorage.setItem(
                 'nonRoutableSet',
@@ -707,11 +708,12 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                   ...minerAddrs.newNonRoutableSet
                 })
               )
-              alert('Updated, reload to use')
+              setNonRoutableSetUpdated(true)
             }}
           >
             Update
           </button>
+          {nonRoutableSetUpdated && 'Updated! Will be used on next reload.'}
         </div>
       )}
       <div style={{ marginBottom: '1rem', marginTop: '1rem' }}>

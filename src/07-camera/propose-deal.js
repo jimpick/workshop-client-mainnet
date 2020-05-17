@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useMemo } from 'react'
 import copy from 'clipboard-copy'
 import useLotusClient from '../lib/use-lotus-client'
 import useWatchDefaultWallet from '../lib/use-watch-default-wallet'
@@ -7,7 +7,7 @@ import annotations from '../annotations'
 import DealList from '../08-deals/deal-list'
 
 export default function ProposeDeal ({ appState, updateAppState }) {
-  const { selectedNode } = appState
+  const { selectedNode, filterNewMiners } = appState
   const client = useLotusClient(selectedNode, 'node')
   // const [miners, annotations] = useMiners(client)
   const miners = Object.keys(annotations)
@@ -23,6 +23,13 @@ export default function ProposeDeal ({ appState, updateAppState }) {
   } = appState
   const blockDelay = versionInfo && versionInfo.BlockDelay
   const epochPrice = '2500'
+
+  const filteredMiners = useMemo(() => {
+    if (filterNewMiners && miners) {
+      return miners.filter(miner => annotations[miner].match(/^new/))
+    }
+    return miners
+  }, [miners, filterNewMiners])
 
   useEffect(() => {
     const objectUrl = URL.createObjectURL(appState.capture.blob)
@@ -85,6 +92,21 @@ export default function ProposeDeal ({ appState, updateAppState }) {
         </div>
       </div>
       <h4>3. Click a miner to propose a deal</h4>
+      <div style={{ marginBottom: '1rem', marginTop: '1rem' }}>
+        <label>
+          <input
+            type='checkbox'
+            checked={filterNewMiners}
+            onChange={() => {
+              updateAppState(draft => {
+                draft.filterNewMiners = !filterNewMiners
+              })
+            }}
+            style={{ marginLeft: '1rem' }}
+          />
+          Filter only miners with 'new' annotation
+        </label>
+      </div>
       <div style={{ height: '15rem', overflowY: 'scroll', width: '70vw' }}>
         <div
           style={{
@@ -93,8 +115,8 @@ export default function ProposeDeal ({ appState, updateAppState }) {
             justifyContent: 'center'
           }}
         >
-          {miners &&
-            miners.map(miner => {
+          {filteredMiners &&
+            filteredMiners.map(miner => {
               return (
                 <button
                   key={miner}
