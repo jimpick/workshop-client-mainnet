@@ -26,16 +26,84 @@ function formatSectorSize (size) {
   }
 }
 
-function GeoName ({ geo }) {
+function GeoName ({ geo, geo2 }) {
   if (!geo) return null
   return (
-    <span>
-      {' '}
-      {geo.country && geo.country.names && geo.country.names.en}{' '}
+    <div style={{ marginLeft: '1rem' }}>
+      GeoLite2: {geo.country && geo.country.names && geo.country.names.en}{' '}
       {geo.city && geo.city.names && geo.city.names.en}
-    </span>
+      {geo2 && (
+        <>
+          <br />
+          GeoIP2: {geo2.country &&
+            geo2.country.names &&
+            geo2.country.names.en}{' '}
+          {geo2.city && geo2.city.names && geo2.city.names.en}
+        </>
+      )}
+    </div>
   )
 }
+
+function Addrs ({
+  minerAddrsRecord,
+  miner,
+  updateMinerAddrs,
+  genesisCid,
+  peerId
+}) {
+  const { addrs, timeGeoIp2 } = minerAddrsRecord
+  return (
+    <div>
+      <ul>
+        {addrs.map((addr, i) => (
+          <li key={i}>
+            <div style={{ display: 'flex' }}>
+              <div>{addr.ip}</div>
+              <GeoName geo={addr.geo} geo2={addr.geo2} />
+            </div>
+          </li>
+        ))}
+      </ul>
+      {!timeGeoIp2 && <button onClick={getGeoIP2}>Get GeoIP2 Data</button>}
+    </div>
+  )
+
+  async function getGeoIP2 () {
+    const geoIp2 = {}
+    const now = Date.now()
+    for (const { ip: ipAddr } of addrs) {
+      try {
+        const url =
+          (secure ? 'https://' : 'http://') +
+          `${api}/geoip/ipv4-via-api/${ipAddr}`
+        const response = await fetch(url)
+        geoIp2[ipAddr] = await response.json()
+      } catch (e) {
+        console.error(`GeoIP2 error`, e)
+      }
+    }
+    const key = `peerId:${genesisCid}:${peerId}`
+    const cacheRecord = await idbGet(key)
+    cacheRecord.timeGeoIp2 = now
+    for (const addrRecord of cacheRecord.addrs) {
+      const ipAddr = addrRecord.ip
+      if (geoIp2[ipAddr]) {
+        addrRecord.geo2 = geoIp2[ipAddr]
+      }
+    }
+    await idbSet(key, cacheRecord)
+    updateMinerAddrs(draft => {
+      draft[miner].timeGeoIp2 = now
+      for (const addr of draft[miner].addrs) {
+        if (geoIp2[addr.ip]) {
+          addr.geo2 = geoIp2[addr.ip]
+        }
+      }
+    })
+  }
+}
+
 export default function StatePowerMiners ({ appState, updateAppState }) {
   // const { selectedNode, filterNonRoutable: filterNonRoutableRaw } = appState
   const { selectedNode, filterNonRoutable, genesisCid } = appState
@@ -291,7 +359,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
               draft[miner] = {
                 state: 'scanned',
                 start: cacheRecord.time,
-                end: cacheRecord.time
+                end: cacheRecord.time,
+                timeGeoIp2: cacheRecord.timeGeoIp2
               }
               if (cacheRecord.error) {
                 draft[miner].error = cacheRecord.error
@@ -606,16 +675,17 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                     )}
                   </td>
                   <td colSpan='2'>
-                    {minerAddrs[miner] && minerAddrs[miner].addrs && (
-                      <ul>
-                        {minerAddrs[miner].addrs.map((addr, i) => (
-                          <li key={i}>
-                            {addr.ip}
-                            <GeoName geo={addr.geo} />
-                          </li>
-                        ))}
-                      </ul>
-                    )}
+                    {minerAddrs[miner] &&
+                      minerAddrs[miner].addrs &&
+                      minerInfo[miner].peerId && (
+                        <Addrs
+                          miner={miner}
+                          minerAddrsRecord={minerAddrs[miner]}
+                          updateMinerAddrs={updateMinerAddrs}
+                          genesisCid={genesisCid}
+                          peerId={minerInfo[miner].peerId}
+                        />
+                      )}
                     {minerAddrs[miner] && minerAddrs[miner].error && (
                       <ul>
                         <li>

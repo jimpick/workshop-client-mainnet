@@ -1,6 +1,10 @@
 const fs = require('fs')
 const fastify = require('fastify')()
 const Reader = require('@maxmind/geoip2-node').Reader
+const WebServiceClient = require('@maxmind/geoip2-node').WebServiceClient
+require('dotenv').config()
+
+const client = new WebServiceClient(process.env.MAXMIND_USER, process.env.MAXMIND_KEY)
 
 let reader
 
@@ -10,6 +14,17 @@ fastify.get('/ipv4/:ip', async (request, reply) => {
   console.log('IP:', request.params.ip)
   try {
     const response = reader.city(request.params.ip)
+    return response
+  } catch (e) {
+    reply.code(400)
+    return { error: e.message }
+  }
+})
+
+fastify.get('/ipv4-via-api/:ip', async (request, reply) => {
+  console.log('IP via API:', request.params.ip)
+  try {
+    const response = await client.city(request.params.ip)
     return response
   } catch (e) {
     reply.code(400)

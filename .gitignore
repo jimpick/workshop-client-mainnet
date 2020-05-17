@@ -25,3 +25,4 @@ yarn-error.log*
 testplan
 geolite2
 ngrok.private.yml
+.env
