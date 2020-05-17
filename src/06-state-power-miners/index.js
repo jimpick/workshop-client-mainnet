@@ -12,6 +12,8 @@ import useMiners from '../lib/use-miners'
 import baiduCities from '../lib/baidu-cities'
 import { api, secure } from '../config'
 
+const quickMode = true
+
 function formatSectorSize (size) {
   switch (size) {
     case 536870912:
@@ -74,7 +76,12 @@ function Addrs ({
   const { addrs, timeGeoIp2, timeBaidu } = minerAddrsRecord
   let china = false
   for (const addr of addrs) {
-    if (addr.geo && addr.geo.country && addr.geo.country.names && addr.geo.country.names.en === 'China') {
+    if (
+      addr.geo &&
+      addr.geo.country &&
+      addr.geo.country.names &&
+      addr.geo.country.names.en === 'China'
+    ) {
       china = true
       break
     }
@@ -96,7 +103,9 @@ function Addrs ({
         ))}
       </ul>
       {!timeGeoIp2 && <button onClick={getGeoIP2}>Get GeoIP2 Data</button>}
-      {!timeBaidu && china && <button onClick={getBaidu}>Get Baidu Data</button>}
+      {!timeBaidu && china && (
+        <button onClick={getBaidu}>Get Baidu Data</button>
+      )}
     </div>
   )
 
@@ -180,6 +189,9 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   // const { selectedNode, filterNonRoutable: filterNonRoutableRaw } = appState
   const { selectedNode, filterNonRoutable, genesisCid } = appState
   const client = useLotusClient(selectedNode, 'node')
+  const [nonRoutableSet] = useState(
+    JSON.parse(localStorage.getItem('nonRoutableSet')) || {}
+  )
   const [height, setHeight] = useState()
   const [tipsetKey, setTipsetKey] = useState(null)
   const [totalPower, setTotalPower] = useState()
@@ -210,35 +222,50 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
         }
         minerAddrsUpdates.length = 0
       })
-    }, 2000),
+    }, quickMode ? 1000 : 2000),
     [updateMinerAddrs, minerAddrsUpdates]
   )
 
+  const filteredNonRoutableMiners = useMemo(() => {
+    return miners &&
+      [...miners]
+        .filter(miner => !nonRoutableSet[miner])
+  }, [miners, nonRoutableSet])
+
+  const filteredAnnotationKeys = useMemo(() => {
+    return annotations &&
+      [...Object.keys(annotations)]
+        .filter(miner => !nonRoutableSet[miner])
+  }, [annotations, nonRoutableSet])
+
   const sortedMinersByName = useMemo(() => {
     return (
-      miners &&
-      [...miners].sort((a, b) => {
-        return Number(a.slice(1)) - Number(b.slice(1))
-      })
+      filteredNonRoutableMiners &&
+      [...filteredNonRoutableMiners]
+        .sort((a, b) => {
+          return Number(a.slice(1)) - Number(b.slice(1))
+        })
     )
-  }, [miners])
+  }, [filteredNonRoutableMiners])
+
   const sortedMinersByPower = useMemo(() => {
     return (
-      miners &&
-      [...miners].sort((a, b) => {
-        const powerA = minerPower[a]
-          ? BigNumber(minerPower[a].QualityAdjPower)
-          : BigNumber(0)
-        const powerB = minerPower[b]
-          ? BigNumber(minerPower[b].QualityAdjPower)
-          : BigNumber(0)
-        const compare = powerA.minus(powerB)
-        if (compare.isPositive() && !compare.isZero()) return -1
-        if (compare.isNegative()) return 1
-        return Number(a.slice(1)) - Number(b.slice(1))
-      })
+      filteredNonRoutableMiners &&
+      [...filteredNonRoutableMiners]
+        .sort((a, b) => {
+          const powerA = minerPower[a]
+            ? BigNumber(minerPower[a].QualityAdjPower)
+            : BigNumber(0)
+          const powerB = minerPower[b]
+            ? BigNumber(minerPower[b].QualityAdjPower)
+            : BigNumber(0)
+          const compare = powerA.minus(powerB)
+          if (compare.isPositive() && !compare.isZero()) return -1
+          if (compare.isNegative()) return 1
+          return Number(a.slice(1)) - Number(b.slice(1))
+        })
     )
-  }, [miners, minerPower])
+  }, [filteredNonRoutableMiners, minerPower])
 
   // Get Height/Tipset
   useEffect(() => {
@@ -281,7 +308,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           }
         })
         state.minerPowerUpdates.length = 0
-      }, 30000)
+      }, quickMode ? 1000 : 30000)
 
       const processMinerInfoUpdates = throttle(() => {
         updateMinerInfo(draft => {
@@ -290,7 +317,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           }
         })
         state.minerInfoUpdates.length = 0
-      }, 30000)
+      }, quickMode ? 1000 : 30000)
 
       const processIpLookupListUpdates = throttle(() => {
         updateIpLookupList(draft => {
@@ -299,13 +326,13 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           }
         })
         state.ipLookupListUpdates.length = 0
-      }, 10000)
+      }, quickMode ? 1000 : 15000)
 
       // Process in reverse order to make discovery of new miners more quick
       const reversed = sortedMinersByName
         .reverse()
         .filter(miner => !annotations[miner])
-      const processingOrder = [...Object.keys(annotations), ...reversed]
+      const processingOrder = [...filteredAnnotationKeys, ...reversed]
       for (const miner of processingOrder) {
         queue.add(async () => {
           // console.log('Miner Power', miner)
@@ -373,11 +400,13 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     client,
     sortedMinersByName,
     annotations,
+    filteredAnnotationKeys,
     updateMinerPower,
     updateMinerInfo,
     updateIpLookupList,
     setMinersScanned,
-    tipsetKey
+    tipsetKey,
+    nonRoutableSet
   ])
 
   // Process ipLookupList
@@ -437,6 +466,14 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
               }
               if (cacheRecord.error) {
                 draft[miner].error = cacheRecord.error
+                if (!draft.newNonRoutableSet) {
+                  draft.newNonRoutableSet = {}
+                  draft.newNonRoutableSetCount = 0
+                }
+                if (!nonRoutableSet[miner]) {
+                  draft.newNonRoutableSet[miner] = true
+                  draft.newNonRoutableSetCount++
+                }
               }
               if (cacheRecord.addrs) {
                 draft[miner].addrs = cacheRecord.addrs
@@ -539,6 +576,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       state.end = Date.now()
     }
     run()
+    /*
     function tick () {
       // For UI
       minerAddrsUpdates.push(draft => {
@@ -548,6 +586,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       if (!state.canceled) setTimeout(tick, 1000)
     }
     tick()
+    */
     return () => {
       state.canceled = true
       const {
@@ -582,7 +621,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     ipScanQueue,
     minerAddrsUpdates,
     processMinerAddrsUpdates,
-    genesisCid
+    genesisCid,
+    nonRoutableSet
   ])
 
   const now = Date.now()
@@ -643,14 +683,35 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
         </h3>
       </div>
       {!miners && <div>Loading miner list...</div>}
-      {miners && minersScanned !== miners.length && (
+      {miners && minersScanned !== sortedMinersByName.length && (
         <div style={{ marginBottom: '1rem' }}>
-          Scanning {minersScanned} of {miners.length} miners
+          Scanning {minersScanned} of {sortedMinersByName.length} miners,{' '}
+          {miners.length} total
         </div>
       )}
       {miners && minersScanned === miners.length && (
         <div style={{ marginBottom: '1rem' }}>
           Scanned {miners.length} miners
+        </div>
+      )}
+      {miners && minerAddrs && (
+        <div>
+          New non-routable set: {minerAddrs.newNonRoutableSetCount}
+          <button
+            style={{ marginLeft: '1rem' }}
+            onClick={() => {
+              localStorage.setItem(
+                'nonRoutableSet',
+                JSON.stringify({
+                  ...nonRoutableSet,
+                  ...minerAddrs.newNonRoutableSet
+                })
+              )
+              alert('Updated, reload to use')
+            }}
+          >
+            Update
+          </button>
         </div>
       )}
       <div style={{ marginBottom: '1rem', marginTop: '1rem' }}>
