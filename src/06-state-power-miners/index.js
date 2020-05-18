@@ -77,10 +77,14 @@ function Addrs ({
   let china = false
   for (const addr of addrs) {
     if (
-      addr.geo &&
-      addr.geo.country &&
-      addr.geo.country.names &&
-      addr.geo.country.names.en === 'China'
+      (addr.geo &&
+        addr.geo.country &&
+        addr.geo.country.names &&
+        addr.geo.country.names.en === 'China') ||
+      (addr.geo2 &&
+        addr.geo2.country &&
+        addr.geo2.country.names &&
+        addr.geo2.country.names.en === 'China')
     ) {
       china = true
       break
@@ -187,7 +191,12 @@ function Addrs ({
 
 export default function StatePowerMiners ({ appState, updateAppState }) {
   // const { selectedNode, filterNonRoutable: filterNonRoutableRaw } = appState
-  const { selectedNode, filterNonRoutable, genesisCid } = appState
+  const {
+    selectedNode,
+    filterNonRoutable,
+    genesisCid,
+    minerCacheInvalidate
+  } = appState
   const client = useLotusClient(selectedNode, 'node')
   const [nonRoutableSet] = useState(
     JSON.parse(localStorage.getItem('nonRoutableSet')) || {}
@@ -216,55 +225,55 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   )
 
   const processMinerAddrsUpdates = useCallback(
-    throttle(() => {
-      updateMinerAddrs(draft => {
-        for (const update of minerAddrsUpdates) {
-          update(draft)
-        }
-        minerAddrsUpdates.length = 0
-      })
-    }, quickMode ? 1000 : 2000),
+    throttle(
+      () => {
+        updateMinerAddrs(draft => {
+          for (const update of minerAddrsUpdates) {
+            update(draft)
+          }
+          minerAddrsUpdates.length = 0
+        })
+      },
+      quickMode ? 1000 : 2000
+    ),
     [updateMinerAddrs, minerAddrsUpdates]
   )
 
   const filteredNonRoutableMiners = useMemo(() => {
-    return miners &&
-      [...miners]
-        .filter(miner => !nonRoutableSet[miner])
+    return miners && [...miners].filter(miner => !nonRoutableSet[miner])
   }, [miners, nonRoutableSet])
 
   const filteredAnnotationKeys = useMemo(() => {
-    return annotations &&
-      [...Object.keys(annotations)]
-        .filter(miner => !nonRoutableSet[miner])
+    return (
+      annotations &&
+      [...Object.keys(annotations)].filter(miner => !nonRoutableSet[miner])
+    )
   }, [annotations, nonRoutableSet])
 
   const sortedMinersByName = useMemo(() => {
     return (
       filteredNonRoutableMiners &&
-      [...filteredNonRoutableMiners]
-        .sort((a, b) => {
-          return Number(a.slice(1)) - Number(b.slice(1))
-        })
+      [...filteredNonRoutableMiners].sort((a, b) => {
+        return Number(a.slice(1)) - Number(b.slice(1))
+      })
     )
   }, [filteredNonRoutableMiners])
 
   const sortedMinersByPower = useMemo(() => {
     return (
       filteredNonRoutableMiners &&
-      [...filteredNonRoutableMiners]
-        .sort((a, b) => {
-          const powerA = minerPower[a]
-            ? BigNumber(minerPower[a].QualityAdjPower)
-            : BigNumber(0)
-          const powerB = minerPower[b]
-            ? BigNumber(minerPower[b].QualityAdjPower)
-            : BigNumber(0)
-          const compare = powerA.minus(powerB)
-          if (compare.isPositive() && !compare.isZero()) return -1
-          if (compare.isNegative()) return 1
-          return Number(a.slice(1)) - Number(b.slice(1))
-        })
+      [...filteredNonRoutableMiners].sort((a, b) => {
+        const powerA = minerPower[a]
+          ? BigNumber(minerPower[a].QualityAdjPower)
+          : BigNumber(0)
+        const powerB = minerPower[b]
+          ? BigNumber(minerPower[b].QualityAdjPower)
+          : BigNumber(0)
+        const compare = powerA.minus(powerB)
+        if (compare.isPositive() && !compare.isZero()) return -1
+        if (compare.isNegative()) return 1
+        return Number(a.slice(1)) - Number(b.slice(1))
+      })
     )
   }, [filteredNonRoutableMiners, minerPower])
 
@@ -302,32 +311,41 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       state.count = 0
       const queue = new PQueue({ concurrency: 20 })
 
-      const processMinerPowerUpdates = throttle(() => {
-        updateMinerPower(draft => {
-          for (const update of state.minerPowerUpdates) {
-            update(draft)
-          }
-        })
-        state.minerPowerUpdates.length = 0
-      }, quickMode ? 1000 : 30000)
+      const processMinerPowerUpdates = throttle(
+        () => {
+          updateMinerPower(draft => {
+            for (const update of state.minerPowerUpdates) {
+              update(draft)
+            }
+          })
+          state.minerPowerUpdates.length = 0
+        },
+        quickMode ? 1000 : 30000
+      )
 
-      const processMinerInfoUpdates = throttle(() => {
-        updateMinerInfo(draft => {
-          for (const update of state.minerInfoUpdates) {
-            update(draft)
-          }
-        })
-        state.minerInfoUpdates.length = 0
-      }, quickMode ? 1000 : 30000)
+      const processMinerInfoUpdates = throttle(
+        () => {
+          updateMinerInfo(draft => {
+            for (const update of state.minerInfoUpdates) {
+              update(draft)
+            }
+          })
+          state.minerInfoUpdates.length = 0
+        },
+        quickMode ? 1000 : 30000
+      )
 
-      const processIpLookupListUpdates = throttle(() => {
-        updateIpLookupList(draft => {
-          for (const update of state.ipLookupListUpdates) {
-            update(draft)
-          }
-        })
-        state.ipLookupListUpdates.length = 0
-      }, quickMode ? 1000 : 15000)
+      const processIpLookupListUpdates = throttle(
+        () => {
+          updateIpLookupList(draft => {
+            for (const update of state.ipLookupListUpdates) {
+              update(draft)
+            }
+          })
+          state.ipLookupListUpdates.length = 0
+        },
+        quickMode ? 1000 : 15000
+      )
 
       // Process in reverse order to make discovery of new miners more quick
       const reversed = sortedMinersByName
@@ -456,7 +474,12 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           state.cacheAttempts++
           const cacheRecord = await idbGet(`peerId:${genesisCid}:${peerId}`)
           // console.log('Jim cacheRecord', miner, cacheRecord)
-          if (cacheRecord) {
+          if (
+            cacheRecord &&
+            (!minerCacheInvalidate ||
+              !minerCacheInvalidate[miner] ||
+              cacheRecord.time > minerCacheInvalidate[miner])
+          ) {
             minerAddrsUpdates.push(draft => {
               draft[miner] = {
                 state: 'scanned',
@@ -508,7 +531,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                 const match = maddr.match(/^\/ip4\/(\d+\.\d+\.\d+\.\d+)/)
                 if (match) {
                   const ipv4Address = match[1]
-                  if (!ip.isPrivate(ipv4Address)) {
+                  if (!ip.isPrivate(ipv4Address) && !ip.isEqual('0.0.0.0')) {
                     console.log(`    ${ipv4Address}`)
                     ips.add(ipv4Address)
                   }
@@ -823,13 +846,27 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                         />
                       )}
                     {minerAddrs[miner] && minerAddrs[miner].error && (
-                      <ul>
-                        <li>
-                          <span style={{ color: 'red' }}>
-                            {minerAddrs[miner].error}
-                          </span>
-                        </li>
-                      </ul>
+                      <>
+                        <ul>
+                          <li>
+                            <span style={{ color: 'red' }}>
+                              {minerAddrs[miner].error}
+                            </span>
+                          </li>
+                        </ul>
+                        <button
+                          onClick={() => {
+                            updateAppState(draft => {
+                              if (!draft.minerCacheInvalidate) {
+                                draft.minerCacheInvalidate = {}
+                              }
+                              draft.minerCacheInvalidate[miner] = Date.now()
+                            })
+                          }}
+                        >
+                          Invalidate
+                        </button>
+                      </>
                     )}
                     {minerAddrs[miner] &&
                       minerAddrs[miner].addrs &&

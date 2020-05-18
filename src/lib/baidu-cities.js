@@ -18,6 +18,7 @@ const baiduCities = {
   176: 'Taiyuan', // 太原市
   179: 'Hangzhou', // 杭州市
   180: 'Ningbo', // 宁波市
+  181: 'Zhongwei', // 中卫市
   186: 'Yibin', // 宜宾市
   187: 'Zhongshan', // 中山市
   218: 'Wuhan', // 武汉市
