@@ -92,6 +92,8 @@ const annotations = {
   t0212667: 'China, Ningxia',
   t0212670: 'South Korea, Yongin-si',
   t0212689: 'China, Foshan',
+  t0212943: 'new, China, Cangzhou',
+  t0220265: 'new, China, Yunnan',
 
   // Non-routables (with power)
   t01020: 'NR',
@@ -123,6 +125,9 @@ const annotations = {
   t0211648: 'NR',
   t0211656: 'NR',
   t0211669: 'NR',
+  t0211674: 'NR',
+  t0212714: 'NR',
+  t0211988: 'NR',
 
   // Bootstrappers
   t01000: 'bootstrap, NR',

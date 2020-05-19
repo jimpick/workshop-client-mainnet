@@ -478,7 +478,9 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             cacheRecord &&
             (!minerCacheInvalidate ||
               !minerCacheInvalidate[miner] ||
-              cacheRecord.time > minerCacheInvalidate[miner])
+              cacheRecord.time > minerCacheInvalidate[miner]
+              // Number(miner.slice(1)) > 210000
+            )
           ) {
             minerAddrsUpdates.push(draft => {
               draft[miner] = {
@@ -531,7 +533,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                 const match = maddr.match(/^\/ip4\/(\d+\.\d+\.\d+\.\d+)/)
                 if (match) {
                   const ipv4Address = match[1]
-                  if (!ip.isPrivate(ipv4Address) && !ip.isEqual('0.0.0.0')) {
+                  if (!ip.isPrivate(ipv4Address) && ipv4Address !== '0.0.0.0') {
                     console.log(`    ${ipv4Address}`)
                     ips.add(ipv4Address)
                   }
@@ -646,7 +648,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     minerAddrsUpdates,
     processMinerAddrsUpdates,
     genesisCid,
-    nonRoutableSet
+    nonRoutableSet,
+    minerCacheInvalidate
   ])
 
   const now = Date.now()
@@ -697,6 +700,40 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     )
   }
 
+  const routableMiners =
+    filteredMiners &&
+    filteredMiners.map(miner => {
+      let lng, lat
+      if (!minerAddrs[miner].addrs) return null
+      for (const addr of minerAddrs[miner].addrs) {
+        const { geo, geo2, geoBaidu } = addr
+        if (geoBaidu && geoBaidu.content && geoBaidu.content.point) {
+          lng = geoBaidu.content.point.x
+          lat = geoBaidu.content.point.y
+          break
+        } else if (geo2 && geo2.location) {
+          lng = geo2.location.longitude
+          lat = geo2.location.latitude
+          break
+        } else if (geo && geo.location) {
+          lng = geo.location.longitude
+          lat = geo.location.latitude
+          break
+        }
+      }
+
+      if (lng && lat) {
+        return {
+          miner,
+          annotation: annotations[miner],
+          longitude: Number(lng),
+          latitude: Number(lat)
+        }
+      } else {
+        return null
+      }
+    })
+
   return (
     <div>
       <h1>Miners: Height {height}</h1>
@@ -724,10 +761,15 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           <button
             style={{ marginLeft: '1rem', marginRight: '1rem' }}
             onClick={() => {
+              const fixedNonRoutableSet = {}
+              for (const miner in nonRoutableSet) {
+                // if (Number(miner.slice(1)) > 210000) continue
+                fixedNonRoutableSet[miner] = nonRoutableSet[miner]
+              }
               localStorage.setItem(
                 'nonRoutableSet',
                 JSON.stringify({
-                  ...nonRoutableSet,
+                  ...fixedNonRoutableSet,
                   ...minerAddrs.newNonRoutableSet
                 })
               )
@@ -837,13 +879,27 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                     {minerAddrs[miner] &&
                       minerAddrs[miner].addrs &&
                       minerInfo[miner].peerId && (
-                        <Addrs
-                          miner={miner}
-                          minerAddrsRecord={minerAddrs[miner]}
-                          updateMinerAddrs={updateMinerAddrs}
-                          genesisCid={genesisCid}
-                          peerId={minerInfo[miner].peerId}
-                        />
+                        <>
+                          <Addrs
+                            miner={miner}
+                            minerAddrsRecord={minerAddrs[miner]}
+                            updateMinerAddrs={updateMinerAddrs}
+                            genesisCid={genesisCid}
+                            peerId={minerInfo[miner].peerId}
+                          />
+                          <button
+                            onClick={() => {
+                              updateAppState(draft => {
+                                if (!draft.minerCacheInvalidate) {
+                                  draft.minerCacheInvalidate = {}
+                                }
+                                draft.minerCacheInvalidate[miner] = Date.now()
+                              })
+                            }}
+                          >
+                            Invalidate
+                          </button>
+                        </>
                       )}
                     {minerAddrs[miner] && minerAddrs[miner].error && (
                       <>
@@ -895,6 +951,10 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             ))}
         </tbody>
       </table>
+      <h2>Routable JSON</h2>
+      <details>
+        <pre>{JSON.stringify(routableMiners, null, 2)}</pre>
+      </details>
     </div>
   )
 }
