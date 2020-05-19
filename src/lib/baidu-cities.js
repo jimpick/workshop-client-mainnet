@@ -7,6 +7,7 @@ const baiduCities = {
   29: 'Zhejiang', // 浙江省
   32: 'Sichuan', // 四川省
   75: 'Chengdu', // 成都市
+  119: 'Dongguan', // 东莞市
   127: 'Hefei', // 合肥市
   131: 'Beijing', // 北京市
   132: 'Chongqing', // 重庆市
@@ -21,6 +22,7 @@ const baiduCities = {
   181: 'Zhongwei', // 中卫市
   186: 'Yibin', // 宜宾市
   187: 'Zhongshan', // 中山市
+  194: 'Xiamen', // 厦门市
   218: 'Wuhan', // 武汉市
   224: 'Suzhou', // 苏州市
   226: 'Fuzhou', // 抚州市
