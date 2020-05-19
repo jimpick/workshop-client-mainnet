@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import prettyBytes from 'pretty-bytes'
+import bytes from 'bytes-iec'
 import useLotusClient from '../lib/use-lotus-client'
 
 export default function StatePowerAll ({ appState }) {
@@ -26,9 +26,13 @@ export default function StatePowerAll ({ appState }) {
   } else {
     content = (
       <div>
-        <h3>RawBytePower: {prettyBytes(Number(totalPower.RawBytePower))}</h3>
         <h3>
-          QualityAdjPower: {prettyBytes(Number(totalPower.QualityAdjPower))}
+          RawBytePower:{' '}
+          {bytes(Number(totalPower.RawBytePower), { mode: 'binary' })}
+        </h3>
+        <h3>
+          QualityAdjPower:{' '}
+          {bytes(Number(totalPower.QualityAdjPower), { mode: 'binary' })}
         </h3>
       </div>
     )

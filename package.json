@@ -9,6 +9,7 @@
     "@maxmind/geoip2-node": "^1.4.0",
     "@openworklabs/filecoin-number": "^0.0.6",
     "bignumber.js": "^9.0.0",
+    "bytes-iec": "^3.1.0",
     "clipboard-copy": "^3.1.0",
     "concurrently": "^5.2.0",
     "date-fns": "^2.13.0",

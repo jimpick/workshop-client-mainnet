@@ -2538,6 +2538,11 @@ builtin-status-codes@^3.0.0:
   resolved "https://registry.npmjs.org/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
 
+bytes-iec@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.npmjs.org/bytes-iec/-/bytes-iec-3.1.0.tgz#01b23bfd1f964c1bfe9c3ceb378a868ceeb6fd6f"
+  integrity sha512-FKhnc8ENaOrXLZlMI/OQOTqiA/FAGcu2x+eYfucPrtQ4Qj3ytjr/XO5dignErNF/xfPWCsLAz5NQFtqeSNz+Ug==
+
 bytes@3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/bytes/-/bytes-3.0.0.tgz#d32815404d689699f85a4ea4fa8755dd13a96048"

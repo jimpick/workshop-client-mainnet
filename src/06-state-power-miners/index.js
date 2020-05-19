@@ -3,7 +3,7 @@ import { useImmer } from 'use-immer'
 import ip from 'ip'
 import PQueue from 'p-queue'
 import BigNumber from 'bignumber.js'
-import prettyBytes from 'pretty-bytes'
+import bytes from 'bytes-iec'
 import throttle from 'lodash.throttle'
 import { get as idbGet, set as idbSet } from 'idb-keyval'
 import useLotusClient from '../lib/use-lotus-client'
@@ -478,9 +478,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             cacheRecord &&
             (!minerCacheInvalidate ||
               !minerCacheInvalidate[miner] ||
-              cacheRecord.time > minerCacheInvalidate[miner]
-              // Number(miner.slice(1)) > 210000
-            )
+              cacheRecord.time > minerCacheInvalidate[miner])
+            // Number(miner.slice(1)) > 210000
           ) {
             minerAddrsUpdates.push(draft => {
               draft[miner] = {
@@ -738,9 +737,13 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     <div>
       <h1>Miners: Height {height}</h1>
       <div>
-        <h3>RawBytePower: {prettyBytes(Number(totalPower.RawBytePower))}</h3>
         <h3>
-          QualityAdjPower: {prettyBytes(Number(totalPower.QualityAdjPower))}
+          RawBytePower:{' '}
+          {bytes(Number(totalPower.RawBytePower), { mode: 'binary' })}
+        </h3>
+        <h3>
+          QualityAdjPower:{' '}
+          {bytes(Number(totalPower.QualityAdjPower), { mode: 'binary' })}
         </h3>
       </div>
       {!miners && <div>Loading miner list...</div>}
@@ -807,8 +810,10 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                   minerPower[miner].sectorCountPSet > 0) && (
                   <>
                     (Power{' '}
-                    {prettyBytes(Number(minerPower[miner].QualityAdjPower))}) -{' '}
-                    {minerPower[miner].sectorCountPSet} Sectors
+                    {bytes(Number(minerPower[miner].QualityAdjPower), {
+                      mode: 'binary'
+                    })}
+                    ) - {minerPower[miner].sectorCountPSet} Sectors
                   </>
                 )}{' '}
               {(elapsed / 1000).toFixed(1)}s
@@ -846,7 +851,9 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                   <td>
                     {minerPower[miner] && (
                       <>
-                        {prettyBytes(Number(minerPower[miner].QualityAdjPower))}{' '}
+                        {bytes(Number(minerPower[miner].QualityAdjPower), {
+                          mode: 'binary'
+                        })}{' '}
                         {minerPower[miner].RawBytePower !== '0' &&
                           Number(minerPower[miner].QualityAdjPower) /
                             Number(minerPower[miner].RawBytePower) +
