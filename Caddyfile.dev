@@ -21,11 +21,18 @@ route @api_node_rpc_0_options {
 }
 
 route @api_node_rpc_0 {
-  strip_prefix /api/0/node/* /api/0/node
-  reverse_proxy localhost:9200 {
-    header_down Access-Control-Allow-Origin "*"
-  }
+ uri strip_prefix /api/0/node
+ reverse_proxy localhost:9200 {
+   header_down Access-Control-Allow-Origin "*"
+ }
 }
+
+#route @api_node_rpc_0 {
+#  uri replace /api/0/ /tour_api/1/
+#  reverse_proxy http://lotus.testground.ipfs.team {
+#    header_down Access-Control-Allow-Origin "*"
+#  }
+#}
 
 @api_node_rest_0_options {
     path_regexp api ^/api/0/node/rest/(.*)$
@@ -46,19 +53,25 @@ route @api_node_rest_0_options {
 }
 
 route @api_node_rest_0 {
-  strip_prefix /api/0/node/* /api/0/node
+  uri strip_prefix /api/0/node
   reverse_proxy localhost:9200 {
     header_down Access-Control-Allow-Origin "*"
   }
 }
 
+#route @api_node_rest_0 {
+#  uri replace /api/0/ /tour_api/1/
+#  reverse_proxy http://lotus.testground.ipfs.team {
+#    header_down Access-Control-Allow-Origin "*"
+#  }
+#}
 
 @api_miner_rpc_0 {
     path_regexp api ^/api/0/miner/rpc/(.*)$
 }
 
 route @api_miner_rpc_0 {
-  strip_prefix /api/0/miner/* /api/0/miner
+  uri strip_prefix /api/0/miner
   reverse_proxy localhost:9201
 }
 
@@ -81,7 +94,7 @@ route @api_testplan_0_options {
 }
 
 route @api_testplan_downloads_0 {
-  strip_prefix /api/0/testplan/downloads/* /api/0/testplan/downloads
+  uri strip_prefix /api/0/testplan/downloads
   reverse_proxy 10.0.1.52:5000 {
     header_down Access-Control-Allow-Origin "*"
   }
@@ -92,7 +105,7 @@ route @api_testplan_downloads_0 {
 }
 
 route @api_testplan_0 {
-  strip_prefix /api/0/testplan/* /api/0/testplan
+  uri strip_prefix /api/0/testplan
   header Access-Control-Allow-Origin "*"
   file_server {
     root ./testplan
@@ -105,7 +118,7 @@ route @api_testplan_0 {
 }
 
 route @api_geoip {
-  strip_prefix /api/geoip/* /api/geoip
+  uri strip_prefix /api/geoip
   reverse_proxy localhost:3003
 }
 
