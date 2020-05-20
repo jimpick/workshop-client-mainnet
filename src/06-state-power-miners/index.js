@@ -6,6 +6,7 @@ import BigNumber from 'bignumber.js'
 import bytes from 'bytes-iec'
 import throttle from 'lodash.throttle'
 import { get as idbGet, set as idbSet } from 'idb-keyval'
+import copy from 'clipboard-copy'
 import useLotusClient from '../lib/use-lotus-client'
 // import useMiners from '../lib/use-miners-all'
 import useMiners from '../lib/use-miners'
@@ -753,9 +754,9 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           {miners.length} total
         </div>
       )}
-      {miners && minersScanned === miners.length && (
+      {miners && minersScanned === sortedMinersByName.length && (
         <div style={{ marginBottom: '1rem' }}>
-          Scanned {miners.length} miners
+          Scanned {sortedMinersByName.length} monitored miners of {miners.length} total
         </div>
       )}
       {miners && minerAddrs && (
@@ -960,8 +961,17 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       </table>
       <h2>Routable JSON</h2>
       <details>
-        <pre>{JSON.stringify(routableMiners, null, 2)}</pre>
+        <button onClick={copyRoutableMiners}>Copy to Clipboard</button>
+        <pre>
+          {JSON.stringify(routableMiners, null, 2)}
+        </pre>
       </details>
     </div>
   )
+
+  async function copyRoutableMiners () {
+    console.log('Copying to clipboard', routableMiners)
+    await copy(JSON.stringify(routableMiners, null, 2))
+    console.log('Copied.')
+  }
 }
