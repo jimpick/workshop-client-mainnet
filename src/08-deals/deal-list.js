@@ -100,7 +100,7 @@ export default function DealList ({ client, appState, cid, filterErrors }) {
 
   return (
     <div>
-      {deals.map(deal => {
+      {deals.map((deal, i) => {
         const { proposalCid, fromNode, miner, date, cid: cidDeal } = deal
         const data = dealData && dealData[proposalCid]
         const clientDealStatus = data && data.clientDealStatus
@@ -111,7 +111,7 @@ export default function DealList ({ client, appState, cid, filterErrors }) {
         return (
           <div key={proposalCid} style={{ marginBottom: '1rem' }}>
             <div>
-              Node #{fromNode} -> Miner {miner}
+              {i + 1}. Node #{fromNode} -> Miner {miner}
               {annotations[miner] && <span> ({annotations[miner]})</span>}
             </div>
             <div style={{ fontSize: '50%' }}>
