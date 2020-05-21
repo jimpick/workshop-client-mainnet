@@ -113,6 +113,13 @@ const annotations = {
   t0225900: 'China, Chengdu',
   t0225914: 'China, Ningxia',
   t0229193: 'China, Beijing',
+  t0230933: 'new, China, Shenyang',
+  t0231070: 'new, China, Guilin',
+  t0232051: 'new, China, Shanghai',
+  t0232056: 'new, China, Shanghai',
+  t0232239: 'new, USA, San Jose',
+  t0232256: 'new, China, Foshan',
+  t0232856: 'new, China, Wuhan',
 
   // Non-routables (with power)
   t01020: 'NR',

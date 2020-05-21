@@ -6,6 +6,7 @@ const baiduCities = {
   28: 'Yunnan', // 云南省
   29: 'Zhejiang', // 浙江省
   32: 'Sichuan', // 四川省
+  58: 'Shenyang', // 沈阳市
   75: 'Chengdu', // 成都市
   119: 'Dongguan', // 东莞市
   127: 'Hefei', // 合肥市
