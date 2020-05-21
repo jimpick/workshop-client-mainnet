@@ -58,7 +58,7 @@ export default function ChainNotify ({ appState }) {
     <div>
       <h2>Chain</h2>
       <div style={{marginBottom: '1rem', fontSize: 'small'}}>
-        See also: <a href="https://filscan.io/#/">filscan.io</a>
+        See also: <a href="https://filscan.io/#/">filscan.io</a> <a href="https://filscout.io/en/">filscout.io</a> <a href="https://stats.testnet.filecoin.io/d/z6FtI92Zz/chain/?orgId=1&refresh=45s&from=now-30m&to=now&kiosk">stats dashboard</a>
       </div>
       {content}
     </div>
