@@ -13,6 +13,7 @@ const baiduCities = {
   131: 'Beijing', // 北京市
   132: 'Chongqing', // 重庆市
   138: 'Foshan', // 佛山市
+  139: 'Maoming', // 茂名市
   142: 'Guilin', // 桂林市
   146: 'Guiyang', // 贵阳市
   149: 'Cangzhou', // 沧州市
