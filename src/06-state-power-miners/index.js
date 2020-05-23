@@ -7,6 +7,7 @@ import bytes from 'bytes-iec'
 import throttle from 'lodash.throttle'
 import { get as idbGet, set as idbSet } from 'idb-keyval'
 import copy from 'clipboard-copy'
+import { formatRelative } from 'date-fns'
 import useLotusClient from '../lib/use-lotus-client'
 // import useMiners from '../lib/use-miners-all'
 import useMiners from '../lib/use-miners'
@@ -238,22 +239,24 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   const filteredNonRoutableMiners = useMemo(() => {
     return (
       miners &&
-      [...miners].filter(miner => (
-        !nonRoutableSet[miner] ||
+      [...miners].filter(
+        miner =>
+          !nonRoutableSet[miner] ||
           (queryAllMinersWithAnnotations && annotations[miner])
-      ))
+      )
     )
   }, [miners, nonRoutableSet, queryAllMinersWithAnnotations, annotations])
 
   const filteredAnnotationKeys = useMemo(() => {
     return (
       annotations &&
-      [...Object.keys(annotations)].filter(miner => (
-        !nonRoutableSet[miner] ||
+      [...Object.keys(annotations)].filter(
+        miner =>
+          !nonRoutableSet[miner] ||
           (queryAllMinersWithAnnotations && annotations[miner])
-      ))
+      )
     )
-  }, [annotations, nonRoutableSet, queryAllMinersWithAnnotations, annotations])
+  }, [annotations, nonRoutableSet, queryAllMinersWithAnnotations])
 
   const sortedMinersByName = useMemo(() => {
     return (
@@ -513,6 +516,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             ipScanJobs[miner] = true
             continue
           }
+          const oldCacheRecord = cacheRecord
           // console.log('Adding job for IP lookup', miner)
           ipScanJobs[miner] = async () => {
             // console.log('Scanning IP', miner, power)
@@ -579,6 +583,14 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             const cacheRecord = {
               time: Date.now()
             }
+            if (oldCacheRecord) {
+              const { previous, ...rest } = oldCacheRecord
+              if (previous) {
+                cacheRecord.previous = [rest, ...previous]
+              } else {
+                cacheRecord.previous = [rest]
+              }
+            }
             if (addrsError) {
               cacheRecord.error = addrsError
             } else {
@@ -605,17 +617,17 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       state.end = Date.now()
     }
     run()
-    /*
-    function tick () {
-      // For UI
-      minerAddrsUpdates.push(draft => {
-        draft['tick'] = Date.now()
-      })
-      processMinerAddrsUpdates()
-      if (!state.canceled) setTimeout(tick, 1000)
+    if (quickMode) {
+      function tick () {
+        // For UI
+        minerAddrsUpdates.push(draft => {
+          draft['tick'] = Date.now()
+        })
+        processMinerAddrsUpdates()
+        if (!state.canceled) setTimeout(tick, 1000)
+      }
+      tick()
     }
-    tick()
-    */
     return () => {
       state.canceled = true
       const {
@@ -656,7 +668,6 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   ])
 
   const now = Date.now()
-  let nonRoutableCount = 0
   let ipLookupPendingCount = 0
   const activeIpLookups = []
   const filteredMiners =
@@ -685,9 +696,6 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           })
           return false
         }
-      }
-      if (minerAddrs[miner] && minerAddrs[miner].error) {
-        nonRoutableCount++
       }
       return true
     })
@@ -898,6 +906,9 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                             genesisCid={genesisCid}
                             peerId={minerInfo[miner].peerId}
                           />
+                          <span>
+                            {formatRelative(minerAddrs[miner].end, now) + ' '}
+                          </span>
                           <button
                             onClick={() => {
                               updateAppState(draft => {
@@ -921,6 +932,9 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                             </span>
                           </li>
                         </ul>
+                        <span>
+                          {formatRelative(minerAddrs[miner].end, now) + ' '}
+                        </span>
                         <button
                           onClick={() => {
                             updateAppState(draft => {
