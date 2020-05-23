@@ -191,12 +191,11 @@ function Addrs ({
 }
 
 export default function StatePowerMiners ({ appState, updateAppState }) {
-  // const { selectedNode, filterNonRoutable: filterNonRoutableRaw } = appState
   const {
     selectedNode,
-    filterNonRoutable,
     genesisCid,
-    minerCacheInvalidate
+    minerCacheInvalidate,
+    queryAllMinersWithAnnotations
   } = appState
   const client = useLotusClient(selectedNode, 'node')
   const [nonRoutableSet] = useState(
@@ -215,10 +214,6 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   const [ipScanQueue] = useState(new PQueue({ concurrency: 10 }))
   const [ipScanJobs] = useState({})
   const [nonRoutableSetUpdated, setNonRoutableSetUpdated] = useState(false)
-
-  // const undefinedToFalse = value => (typeof val === 'undefined' ? false : value)
-  // const filterNonRoutable = undefinedToFalse(filterNonRoutableRaw)
-  // const filterNonRoutable = filterNonRoutableRaw
 
   const setMinersScanned = useCallback(
     throttle(setMinersScannedUnthrottled, 1000),
@@ -241,15 +236,24 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   )
 
   const filteredNonRoutableMiners = useMemo(() => {
-    return miners && [...miners].filter(miner => !nonRoutableSet[miner])
-  }, [miners, nonRoutableSet])
+    return (
+      miners &&
+      [...miners].filter(miner => (
+        !nonRoutableSet[miner] ||
+          (queryAllMinersWithAnnotations && annotations[miner])
+      ))
+    )
+  }, [miners, nonRoutableSet, queryAllMinersWithAnnotations, annotations])
 
   const filteredAnnotationKeys = useMemo(() => {
     return (
       annotations &&
-      [...Object.keys(annotations)].filter(miner => !nonRoutableSet[miner])
+      [...Object.keys(annotations)].filter(miner => (
+        !nonRoutableSet[miner] ||
+          (queryAllMinersWithAnnotations && annotations[miner])
+      ))
     )
-  }, [annotations, nonRoutableSet])
+  }, [annotations, nonRoutableSet, queryAllMinersWithAnnotations, annotations])
 
   const sortedMinersByName = useMemo(() => {
     return (
@@ -425,8 +429,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     updateMinerInfo,
     updateIpLookupList,
     setMinersScanned,
-    tipsetKey,
-    nonRoutableSet
+    tipsetKey
   ])
 
   // Process ipLookupList
@@ -685,7 +688,6 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       }
       if (minerAddrs[miner] && minerAddrs[miner].error) {
         nonRoutableCount++
-        if (filterNonRoutable) return false
       }
       return true
     })
@@ -756,7 +758,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       )}
       {miners && minersScanned === sortedMinersByName.length && (
         <div style={{ marginBottom: '1rem' }}>
-          Scanned {sortedMinersByName.length} monitored miners of {miners.length} total
+          Scanned {sortedMinersByName.length} monitored miners of{' '}
+          {miners.length} total
         </div>
       )}
       {miners && minerAddrs && (
@@ -789,15 +792,15 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
         <label>
           <input
             type='checkbox'
-            checked={filterNonRoutable}
+            checked={queryAllMinersWithAnnotations}
             onChange={() => {
               updateAppState(draft => {
-                draft.filterNonRoutable = !filterNonRoutable
+                draft.queryAllMinersWithAnnotations = !queryAllMinersWithAnnotations
               })
             }}
             style={{ marginLeft: '1rem' }}
           />
-          Filter {nonRoutableCount} non-routable miners
+          All miners with annotations
         </label>
       </div>
       {activeIpLookups.length > 0 && (
@@ -962,9 +965,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       <h2>Routable JSON</h2>
       <details>
         <button onClick={copyRoutableMiners}>Copy to Clipboard</button>
-        <pre>
-          {JSON.stringify(routableMiners, null, 2)}
-        </pre>
+        <pre>{JSON.stringify(routableMiners, null, 2)}</pre>
       </details>
     </div>
   )
