@@ -7,7 +7,7 @@ import annotations from '../annotations'
 import DealList from '../08-deals/deal-list'
 
 export default function ProposeDeal ({ appState, updateAppState }) {
-  const { selectedNode, filterNewMiners } = appState
+  const { selectedNode, filterNewMiners, filterPowerMiners, filterTopMiners } = appState
   const client = useLotusClient(selectedNode, 'node')
   // const [miners, annotations] = useMiners(client)
   const miners = Object.keys(annotations)
@@ -28,8 +28,14 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     if (filterNewMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/^new/))
     }
+    if (filterPowerMiners && miners) {
+      return miners.filter(miner => annotations[miner].match(/power/i))
+    }
+    if (filterTopMiners && miners) {
+      return miners.filter(miner => annotations[miner].match(/top miner/i))
+    }
     return miners
-  }, [miners, filterNewMiners])
+  }, [miners, filterNewMiners, filterPowerMiners, filterTopMiners])
 
   useEffect(() => {
     const objectUrl = URL.createObjectURL(appState.capture.blob)
@@ -104,7 +110,33 @@ export default function ProposeDeal ({ appState, updateAppState }) {
             }}
             style={{ marginLeft: '1rem' }}
           />
-          Filter only miners with 'new' annotation
+          Filter 'new'
+        </label>
+        <label>
+          <input
+            type='checkbox'
+            checked={filterPowerMiners}
+            onChange={() => {
+              updateAppState(draft => {
+                draft.filterPowerMiners = !filterPowerMiners
+              })
+            }}
+            style={{ marginLeft: '1rem' }}
+          />
+          Filter 'power'
+        </label>
+        <label>
+          <input
+            type='checkbox'
+            checked={filterTopMiners}
+            onChange={() => {
+              updateAppState(draft => {
+                draft.filterTopMiners = !filterTopMiners
+              })
+            }}
+            style={{ marginLeft: '1rem' }}
+          />
+          Filter 'top'
         </label>
       </div>
       <div style={{ height: '15rem', overflowY: 'scroll', width: '70vw' }}>

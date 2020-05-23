@@ -248,13 +248,12 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   }, [miners, nonRoutableSet, queryAllMinersWithAnnotations, annotations])
 
   const filteredAnnotationKeys = useMemo(() => {
+    if (queryAllMinersWithAnnotations) {
+      return [...Object.keys(annotations)]
+    }
     return (
       annotations &&
-      [...Object.keys(annotations)].filter(
-        miner =>
-          !nonRoutableSet[miner] ||
-          (queryAllMinersWithAnnotations && annotations[miner])
-      )
+      [...Object.keys(annotations)].filter(miner => !nonRoutableSet[miner])
     )
   }, [annotations, nonRoutableSet, queryAllMinersWithAnnotations])
 
@@ -680,6 +679,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
         return false
       }
       if (
+        !queryAllMinersWithAnnotations &&
         minerPower[miner] &&
         minerPower[miner].QualityAdjPower === '0' &&
         minerPower[miner].sectorCountSSet === 0 &&
