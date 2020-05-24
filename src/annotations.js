@@ -92,7 +92,7 @@ const annotations = {
   t0233297: 'China, Shanghai',
   t0233717: 'China, Shenzen, power, top miner',
   t0233530: 'China, Shanghai',
-  t0233686: 'China, Xi\'an',
+  t0233686: 'China, Xi\'an, power',
   t0233895: 'China, Changsha',
   t0233951: 'China, Beijing',
   t0233960: 'China, Hangzhou',
