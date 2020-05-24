@@ -97,6 +97,10 @@ const annotations = {
   t0233951: 'China, Beijing',
   t0233960: 'China, Hangzhou',
   t0233973: 'Latvia, Riga',
+  t0234147: 'China, Zhejiang',
+  t0234198: 'China, Ningxia',
+  t0234726: 'China, Taiyuan',
+  t0234891: 'China, Guangdong',
 
   // Non-routables (with power)
   t01020: 'NR, power, top miner',
@@ -169,6 +173,7 @@ const annotations = {
   t0222660: 'NR - China, Shenzen',
   t0222681: 'NR - China, Hangzhou',
   t0233291: 'NR, power',
+  t0234698: 'NR, power',
 
   // Bootstrappers
   t01000: 'bootstrap, NR',
