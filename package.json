@@ -60,8 +60,5 @@
       "last 1 safari version"
     ]
   },
-  "engines": {
-    "node": "13.x"
-  },
   "license": "MIT"
 }
