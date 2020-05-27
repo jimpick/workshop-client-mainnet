@@ -33,7 +33,7 @@
   },
   "scripts": {
     "start": "npm run development",
-    "caddy": "caddy2 run --config Caddyfile.dev",
+    "caddy": "caddy run --config Caddyfile.dev",
     "geoip-server": "node geoip-server/index.js ./geolite2/GeoLite2-City_20200505/GeoLite2-City.mmdb",
     "ngrok": "ngrok start -config ngrok.yml --all",
     "ngrok-private": "ngrok start -config ngrok.private.yml --all",
