@@ -1,5 +1,6 @@
 const baiduCities = {
   7: 'Guangdong', // 广东省
+  18: 'Jiangsu', // 江苏省
   20: 'Ningxia', // 宁夏回族自治区
   25: 'Hebei', // 河北省
   27: 'Shaanxi', // 陕西省
@@ -34,6 +35,7 @@ const baiduCities = {
   294: 'Huzhou', // 湖州市
   317: 'Wuxi', // 无锡市
   331: 'Luzhou', // 泸州市
+  334: 'Jiaxing', // 嘉兴市
   340: 'Shenzhen', // 深圳市
   363: 'Huaihua', // 怀化市
   364: 'Shangrao', // 上饶市

@@ -23,6 +23,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
   } = appState
   const blockDelay = versionInfo && versionInfo.BlockDelay
   const epochPrice = '2500'
+  // const epochPrice = '20000'
 
   const filteredMiners = useMemo(() => {
     if (filterNewMiners && miners) {

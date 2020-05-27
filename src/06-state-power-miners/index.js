@@ -14,7 +14,7 @@ import useMiners from '../lib/use-miners'
 import baiduCities from '../lib/baidu-cities'
 import { api, secure } from '../config'
 
-const quickMode = true
+const quickMode = false
 
 function formatSectorSize (size) {
   switch (size) {
