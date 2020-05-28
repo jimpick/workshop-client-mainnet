@@ -131,7 +131,7 @@ const annotations = {
   t0234726: 'China, Taiyuan',
   t0234765: 'error, China, Shenzhen',
   t0234891: 'China, Guangdong',
-  t0234987: 'sealing, China, Zhongshan, power, top miner',
+  t0234987: 'active, China, Zhongshan, power, top miner',
   t0235206: 'error, China, Shenzhen',
   t0235511: 'sealing, China, Sichuan, power, top miner',
   t0235646: 'sealing, China, Wuxi',
