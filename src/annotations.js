@@ -149,7 +149,7 @@ const annotations = {
   t0236105: 'error, Canada, Mitchell',
   t0236108: 'error, USA, Irvine',
   t0236119: 'sealing, China, Shenzhen',
-  t0236726: 'sealing, China, Huzhou',
+  t0236726: 'sealing, China, Huzhou, power, top miner',
 
   // Non-routables (with power)
   t01020: 'NR, power, top miner',
