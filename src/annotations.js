@@ -31,6 +31,7 @@ const annotations = {
   t070863: 'China, Shanghai',
   t074792: 'Latvia, Riga',
   t084935: 'China, Guangdong',
+  t097661: 'China, Shenzhen',
   t093645: 'China, Guilin, power, top miner',
   t099349: 'China, Shaanxi',
   t0122539: 'China, Beijing',
