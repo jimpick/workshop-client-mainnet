@@ -361,6 +361,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       for (const miner of processingOrder) {
         queue.add(async () => {
           // console.log('Miner Power', miner)
+          if (state.canceled) return
           setMinersScanned(++state.count)
           const result = await client.stateMinerPower(miner, tipsetKey)
           if (state.canceled) return
@@ -703,6 +704,15 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
         (!minerAddrs[miner] || minerAddrs[miner].error)
       )
         return false
+      if (
+        queryAllMinersWithAnnotations &&
+        minerPower[miner] &&
+        minerPower[miner].QualityAdjPower === '0' &&
+        minerPower[miner].sectorCountSSet === 0 &&
+        (!minerAddrs[miner] || minerAddrs[miner].error) &&
+        !annotations[miner]
+      )
+        return false
       if (minerInfo[miner] && minerAddrs[miner]) {
         const { state, start } = minerAddrs[miner]
         if (state === 'scanning') {
@@ -875,13 +885,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
               <React.Fragment key={miner}>
                 <tr>
                   <td>{i + 1}.</td>
-                  <td>
-                    <a
-                      href={`https://filscan.io/#/address/detail?address=${miner}`}
-                    >
-                      {miner}
-                    </a>
-                  </td>
+                  <td>{miner}</td>
                   <td>
                     {minerInfo[miner] && (
                       <span>
