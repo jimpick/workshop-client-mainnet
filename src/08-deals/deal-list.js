@@ -100,16 +100,25 @@ export default function DealList ({ client, appState, cid, filterErrors }) {
     : [...appState.deals]
   deals.sort(({ date: a }, { date: b }) => b - a)
 
+  const filteredDeals = deals.filter(deal => {
+    if (!filterErrors) return true
+    const { proposalCid } = deal
+    const data = dealData && dealData[proposalCid]
+    const clientDealStatus = data && data.clientDealStatus
+    const dealState = clientDealStatus && clientDealStatus.State
+    return dealState !== 21
+  })
+
   return (
     <div>
-      {deals.map((deal, i) => {
+      {filteredDeals.map((deal, i) => {
         const { proposalCid, fromNode, miner, date, cid: cidDeal } = deal
         const data = dealData && dealData[proposalCid]
         const clientDealStatus = data && data.clientDealStatus
-        const dealState = clientDealStatus && clientDealStatus.State
+        // const dealState = clientDealStatus && clientDealStatus.State
         const dealMessage = clientDealStatus && clientDealStatus.Message
         const dealHistoryData = dealHistory && dealHistory[proposalCid]
-        if (filterErrors && dealState === 21) return null
+        // if (filterErrors && dealState === 21) return null
         return (
           <div key={proposalCid} style={{ marginBottom: '1rem' }}>
             <div>
