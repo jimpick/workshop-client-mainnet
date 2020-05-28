@@ -84,6 +84,7 @@ const annotations = {
   t0222648: 'China, Guangdong',
   t0222659: 'USA, Irvine, power',
   t0222660: 'China, Shenzen',
+  t0222688: 'China, Beijing',
   t0224841: 'Australia, Melbourne',
   t0225866: 'Korea, Dongjak-gu',
   t0225898: 'China, Guangdong',
@@ -125,6 +126,8 @@ const annotations = {
   t0234891: 'China, Guangdong',
   t0234987: 'China, Zhongshan, power, top miner',
   t0235511: 'China, Sichuan, power, top miner',
+  t0235934: 'China, Ningxia',
+  t0235943: 'China, Guangdong',
   t0236726: 'China, Huzhou, sealing',
 
   // Non-routables (with power)
