@@ -768,7 +768,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       if (lng && lat) {
         return {
           miner,
-          annotation: annotations[miner],
+          annotation: annotations[miner].replace(/^([a-z][^,]+, )/, ''),
           longitude: Number(lng),
           latitude: Number(lat)
         }
