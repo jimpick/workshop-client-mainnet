@@ -14,8 +14,6 @@ import useMiners from '../lib/use-miners'
 import baiduCities from '../lib/baidu-cities'
 import { api, secure } from '../config'
 
-const quickMode = false
-
 function formatSectorSize (size) {
   switch (size) {
     case 536870912:
@@ -215,6 +213,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   const [ipScanQueue] = useState(new PQueue({ concurrency: 10 }))
   const [ipScanJobs] = useState({})
   const [nonRoutableSetUpdated, setNonRoutableSetUpdated] = useState(false)
+  const [quickMode, setQuickMode] = useState(true)
 
   const setMinersScanned = useCallback(
     throttle(setMinersScannedUnthrottled, 1000),
@@ -233,7 +232,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       },
       quickMode ? 1000 : 2000
     ),
-    [updateMinerAddrs, minerAddrsUpdates]
+    [updateMinerAddrs, minerAddrsUpdates, quickMode]
   )
 
   const filteredNonRoutableMiners = useMemo(() => {
@@ -431,7 +430,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     updateMinerInfo,
     updateIpLookupList,
     setMinersScanned,
-    tipsetKey
+    tipsetKey,
+    quickMode
   ])
 
   // Process ipLookupList
@@ -497,13 +497,16 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
               }
               if (cacheRecord.error) {
                 draft[miner].error = cacheRecord.error
-                if (!draft.newNonRoutableSet) {
-                  draft.newNonRoutableSet = {}
-                  draft.newNonRoutableSetCount = 0
-                }
-                if (!nonRoutableSet[miner]) {
-                  draft.newNonRoutableSet[miner] = true
-                  draft.newNonRoutableSetCount++
+                if (!queryAllMinersWithAnnotations ||
+                    !annotations[miner]) {
+                  if (!draft.newNonRoutableSet) {
+                    draft.newNonRoutableSet = {}
+                    draft.newNonRoutableSetCount = 0
+                  }
+                  if (!nonRoutableSet[miner]) {
+                    draft.newNonRoutableSet[miner] = true
+                    draft.newNonRoutableSetCount++
+                  }
                 }
               }
               if (cacheRecord.addrs) {
@@ -568,6 +571,17 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
               draft[miner].end = Date.now()
               if (addrsError) {
                 draft[miner].error = addrsError
+                if (!queryAllMinersWithAnnotations ||
+                    !annotations[miner]) {
+                  if (!draft.newNonRoutableSet) {
+                    draft.newNonRoutableSet = {}
+                    draft.newNonRoutableSetCount = 0
+                  }
+                  if (!nonRoutableSet[miner]) {
+                    draft.newNonRoutableSet[miner] = true
+                    draft.newNonRoutableSetCount++
+                  }
+                }
               } else {
                 draft[miner].addrs = []
                 for (const ipAddr of ips) {
@@ -663,7 +677,10 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     processMinerAddrsUpdates,
     genesisCid,
     nonRoutableSet,
-    minerCacheInvalidate
+    minerCacheInvalidate,
+    annotations,
+    quickMode,
+    queryAllMinersWithAnnotations
   ])
 
   const now = Date.now()
@@ -700,6 +717,12 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       return true
     })
   activeIpLookups.sort(({ start: a }, { start: b }) => a - b)
+
+  useEffect(() => {
+    if ((sortedMinersByName && (sortedMinersByName.length - minersScanned > 2000)) || ipLookupPendingCount > 2000) {
+      setQuickMode(false)
+    }
+  }, [minersScanned, sortedMinersByName, ipLookupPendingCount, setQuickMode])
 
   if (!height || !totalPower) {
     return (
@@ -747,6 +770,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   return (
     <div>
       <h1>Miners: Height {height}</h1>
+      {quickMode || <div style={{color: 'red'}}>Slowing down screen updates to speed up large scan...</div>}
       <div>
         <h3>
           RawBytePower:{' '}
@@ -781,12 +805,18 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                 // if (Number(miner.slice(1)) > 210000) continue
                 fixedNonRoutableSet[miner] = nonRoutableSet[miner]
               }
-              localStorage.setItem(
-                'nonRoutableSet',
-                JSON.stringify({
+              const newNonRoutableSet = {
                   ...fixedNonRoutableSet,
                   ...minerAddrs.newNonRoutableSet
-                })
+              }
+              if (queryAllMinersWithAnnotations) {
+                for (const annotatedMiner in annotations) {
+                  delete newNonRoutableSet[annotatedMiner]
+                }
+              }
+              localStorage.setItem(
+                'nonRoutableSet',
+                JSON.stringify(newNonRoutableSet)
               )
               setNonRoutableSetUpdated(true)
             }}

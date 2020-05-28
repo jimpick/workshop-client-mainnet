@@ -10,6 +10,7 @@ const annotations = {
   t02926: 'China, Chongqing, power, top miner',
   t03066: 'China, Sichuan, power, top miner',
   t03150: 'USA, Irvine, power, verified',
+  t03607: 'China, Hangzhou',
   t03685: 'Poland, Krakow, power',
   t03714: 'China, Changsha, power',
   t05151: 'China, Wuxi',
