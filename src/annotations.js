@@ -152,7 +152,12 @@ const annotations = {
   t0236119: 'sealing, China, Shenzhen',
   t0236726: 'sealing, China, Huzhou, power, top miner',
   t0236976: 'new, China, Suzhou',
-  t0237243: 'new, Chian, Huaihua',
+  t0237243: 'new, China, Huaihua',
+  t0237370: 'new, China, Chengdu',
+  t0237374: 'new, China, Shenzhen + USA',
+  t0237376: 'new, China, Shenzhen + USA',
+  t0237416: 'new, China, Hefei',
+  t0237711: 'new, China, Foshan',
 
   // Non-routables (with power)
   t01020: 'NR, power, top miner',
