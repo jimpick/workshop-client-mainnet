@@ -64,7 +64,7 @@ function App () {
       <div>
         <nav style={{ display: 'flex', flexWrap: 'wrap' }}>
           <Link to='/'>Home</Link>
-          <Link to='/select-node'>Node: #{selectedNode}</Link>
+          <Link to='/select-node'>Testnet Node: #{selectedNode}</Link>
           <Link to='/chain-notify'>Chain</Link>
           <Link to='/miners'>Miners</Link>
         </nav>
