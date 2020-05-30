@@ -7,7 +7,7 @@ import annotations from '../annotations'
 import DealList from '../08-deals/deal-list'
 
 export default function ProposeDeal ({ appState, updateAppState }) {
-  const { selectedNode, filterNewMiners, filterPowerMiners, filterTopMiners } = appState
+  const { selectedNode, filterNewMiners, filterActiveMiners, filterPowerMiners, filterTopMiners } = appState
   const client = useLotusClient(selectedNode, 'node')
   // const [miners, annotations] = useMiners(client)
   const miners = Object.keys(annotations)
@@ -29,6 +29,9 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     if (filterNewMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/^new/))
     }
+    if (filterActiveMiners && miners) {
+      return miners.filter(miner => annotations[miner].match(/^active/))
+    }
     if (filterPowerMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/power/i))
     }
@@ -36,7 +39,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
       return miners.filter(miner => annotations[miner].match(/top miner/i))
     }
     return miners
-  }, [miners, filterNewMiners, filterPowerMiners, filterTopMiners])
+  }, [miners, filterNewMiners, filterActiveMiners, filterPowerMiners, filterTopMiners])
 
   useEffect(() => {
     const objectUrl = URL.createObjectURL(appState.capture.blob)
@@ -100,6 +103,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
       </div>
       <h4>3. Click a miner to propose a deal</h4>
       <div style={{ marginBottom: '1rem', marginTop: '1rem' }}>
+        Filters:
         <label>
           <input
             type='checkbox'
@@ -111,7 +115,20 @@ export default function ProposeDeal ({ appState, updateAppState }) {
             }}
             style={{ marginLeft: '1rem' }}
           />
-          Filter 'new'
+          'new'
+        </label>
+        <label>
+          <input
+            type='checkbox'
+            checked={filterActiveMiners}
+            onChange={() => {
+              updateAppState(draft => {
+                draft.filterActiveMiners = !filterActiveMiners
+              })
+            }}
+            style={{ marginLeft: '1rem' }}
+          />
+          'active'
         </label>
         <label>
           <input
@@ -124,7 +141,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
             }}
             style={{ marginLeft: '1rem' }}
           />
-          Filter 'power'
+          'power'
         </label>
         <label>
           <input
@@ -137,7 +154,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
             }}
             style={{ marginLeft: '1rem' }}
           />
-          Filter 'top'
+          'top'
         </label>
       </div>
       <div style={{ height: '15rem', overflowY: 'scroll', width: '70vw' }}>

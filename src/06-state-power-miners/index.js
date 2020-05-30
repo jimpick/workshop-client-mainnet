@@ -12,7 +12,7 @@ import useLotusClient from '../lib/use-lotus-client'
 // import useMiners from '../lib/use-miners-all'
 import useMiners from '../lib/use-miners'
 import baiduCities from '../lib/baidu-cities'
-import { api, secure } from '../config'
+import { geoApi, geoSecure } from '../config'
 
 function formatSectorSize (size) {
   switch (size) {
@@ -119,8 +119,8 @@ function Addrs ({
     for (const { ip: ipAddr } of addrs) {
       try {
         const url =
-          (secure ? 'https://' : 'http://') +
-          `${api}/geoip/ipv4-via-api/${ipAddr}`
+          (geoSecure ? 'https://' : 'http://') +
+          `${geoApi}/geoip/ipv4-via-api/${ipAddr}`
         const response = await fetch(url)
         geoIp2[ipAddr] = await response.json()
       } catch (e) {
@@ -154,8 +154,8 @@ function Addrs ({
     for (const { ip: ipAddr } of addrs) {
       try {
         const url =
-          (secure ? 'https://' : 'http://') +
-          `${api}/geoip/ipv4-via-baidu/${ipAddr}`
+          (geoSecure ? 'https://' : 'http://') +
+          `${geoApi}/geoip/ipv4-via-baidu/${ipAddr}`
         const response = await fetch(url)
         const result = await response.json()
         console.log('geoBaidu', miner, ipAddr, result)
@@ -558,8 +558,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             for (const ipAddr of ips) {
               try {
                 const url =
-                  (secure ? 'https://' : 'http://') +
-                  `${api}/geoip/ipv4/${ipAddr}`
+                  (geoSecure ? 'https://' : 'http://') +
+                  `${geoApi}/geoip/ipv4/${ipAddr}`
                 const response = await fetch(url)
                 geoIp[ipAddr] = await response.json()
               } catch (e) {

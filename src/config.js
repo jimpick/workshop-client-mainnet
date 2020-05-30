@@ -1,7 +1,8 @@
+/*
 export const api = 'localhost:9000/api'
 export const secure = false
 export const downloadDir = '/home/lotus1/downloads'
-
+*/
 
 // Ngrok example: https://xxxxxx.ngrok.io
 /*
@@ -10,8 +11,8 @@ export const secure = true
 export const downloadDir = '/home/lotus1/downloads'
 */
 
-/*
-export const api = 'lotus.testground.ipfs.team/api'
+export const api = 'lotus.testground.ipfs.team/tour_api'
 export const secure = true
 export const downloadDir = '/root/downloads'
-*/
+export const geoApi = 'localhost:9000/api'
+export const geoSecure = false
