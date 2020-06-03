@@ -3,7 +3,7 @@ import { useImmer } from 'use-immer'
 import useLotusClient from './use-lotus-client'
 
 const interval = 15 * 1000
-const expireAfter = 24 * 60 * 60 * 1000 // 24 hours
+const expireAfter = 7 * 24 * 60 * 60 * 1000 // 7 days
 
 const terminalStates = new Set([
   // go-fil-markets/storagemarket/types.go
