@@ -17,7 +17,9 @@ const testnetLocalConfig = {
   downloadDir: '/tmp/not_supported_yet',
   geoApi: 'localhost:9000/api',
   geoSecure: false,
-  networkName: 'testnet'
+  networkName: 'testnet',
+  useGeoIp2: true,
+  useBaidu: true
 }
 
 const interopnetLocalConfig = {
@@ -26,7 +28,9 @@ const interopnetLocalConfig = {
   downloadDir: '/tmp/not_supported_yet',
   geoApi: 'localhost:9000/api',
   geoSecure: false,
-  networkName: 'interopnet'
+  networkName: 'interopnet',
+  useGeoIp2: true,
+  useBaidu: true
 }
 
 const interopnetPublicConfig = {
@@ -54,3 +58,5 @@ export const downloadDir = getConfig().downloadDir
 export const geoApi = getConfig().geoApi
 export const geoSecure = getConfig().geoSecure
 export const networkName = getConfig().networkName
+export const useGeoIp2 = getConfig().useGeoIp2
+export const useBaidu = getConfig().useBaidu

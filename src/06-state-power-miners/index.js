@@ -12,7 +12,7 @@ import useLotusClient from '../lib/use-lotus-client'
 // import useMiners from '../lib/use-miners-all'
 import useMiners from '../lib/use-miners'
 import baiduCities from '../lib/baidu-cities'
-import { geoApi, geoSecure, networkName } from '../config'
+import { geoApi, geoSecure, networkName, useGeoIp2, useBaidu } from '../config'
 
 const nonRoutableSetKey = `nonRoutableSet-${networkName}`
 
@@ -108,8 +108,8 @@ function Addrs ({
           </li>
         ))}
       </ul>
-      {false && !timeGeoIp2 && <button onClick={getGeoIP2}>Get GeoIP2 Data</button>}
-      {false && !timeBaidu && china && (
+      {useGeoIp2 && !timeGeoIp2 && <button onClick={getGeoIP2}>Get GeoIP2 Data</button>}
+      {useBaidu && !timeBaidu && china && (
         <button onClick={getBaidu}>Get Baidu Data</button>
       )}
     </div>
