@@ -11,17 +11,46 @@ export const secure = true
 export const downloadDir = '/home/lotus1/downloads'
 */
 
-/*
-// Testnet
-export const api = 'lotus.testground.ipfs.team/tour_api'
-export const secure = true
-export const downloadDir = '/root/downloads'
-export const geoApi = 'localhost:9000/api'
-export const geoSecure = false
-*/
+const testnetLocalConfig = {
+  api: 'lotus.testground.ipfs.team/tour_api',
+  secure: true,
+  downloadDir: '/tmp/not_supported_yet',
+  geoApi: 'localhost:9000/api',
+  geoSecure: false,
+  networkName: 'testnet'
+}
 
-export const api = 'lotus.testground.ipfs.team/interop61_api'
-export const secure = true
-export const downloadDir = '/home/ubuntu/downloads'
-export const geoApi = 'lotus.testground.ipfs.team/api'
-export const geoSecure = true
+const interopnetLocalConfig = {
+  api: 'lotus.testground.ipfs.team/interop61_api',
+  secure: true,
+  downloadDir: '/tmp/not_supported_yet',
+  geoApi: 'localhost:9000/api',
+  geoSecure: false,
+  networkName: 'interopnet'
+}
+
+const interopnetPublicConfig = {
+  api: 'lotus.testground.ipfs.team/interop61_api',
+  secure: true,
+  downloadDir: '/tmp/not_supported_yet',
+  geoApi: 'lotus.testground.ipfs.team/api',
+  geoSecure: true,
+  networkName: 'interopnet'
+}
+
+function getConfig () {
+  if (document.location.hostname === 'testnet') {
+    return testnetLocalConfig
+  }
+  if (document.location.hostname === 'interopnet') {
+    return interopnetLocalConfig
+  }
+  return interopnetPublicConfig
+}
+
+export const api = getConfig().api
+export const secure = getConfig().secure
+export const downloadDir = getConfig().downloadDir
+export const geoApi = getConfig().geoApi
+export const geoSecure = getConfig().geoSecure
+export const networkName = getConfig().networkName
