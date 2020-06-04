@@ -108,7 +108,9 @@ function Addrs ({
           </li>
         ))}
       </ul>
-      {useGeoIp2 && !timeGeoIp2 && <button onClick={getGeoIP2}>Get GeoIP2 Data</button>}
+      {useGeoIp2 && !timeGeoIp2 && (
+        <button onClick={getGeoIP2}>Get GeoIP2 Data</button>
+      )}
       {useBaidu && !timeBaidu && china && (
         <button onClick={getBaidu}>Get Baidu Data</button>
       )}
@@ -196,11 +198,12 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     selectedNode,
     genesisCid,
     minerCacheInvalidate,
-    queryAllMinersWithAnnotations
+    queryAllMinersWithAnnotations,
+    queryAllMinersWithPower
   } = appState
   const client = useLotusClient(selectedNode, 'node')
   const [nonRoutableSet] = useState(
-    JSON.parse(localStorage.getItem(nonRoutableSetKey))|| {}
+    JSON.parse(localStorage.getItem(nonRoutableSetKey)) || {}
   )
   const [height, setHeight] = useState()
   const [tipsetKey, setTipsetKey] = useState(null)
@@ -238,6 +241,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   )
 
   const filteredNonRoutableMiners = useMemo(() => {
+    if (queryAllMinersWithPower) return miners
     return (
       miners &&
       [...miners].filter(
@@ -246,7 +250,13 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           (queryAllMinersWithAnnotations && annotations[miner])
       )
     )
-  }, [miners, nonRoutableSet, queryAllMinersWithAnnotations, annotations])
+  }, [
+    miners,
+    nonRoutableSet,
+    queryAllMinersWithAnnotations,
+    queryAllMinersWithPower,
+    annotations
+  ])
 
   const filteredAnnotationKeys = useMemo(() => {
     if (queryAllMinersWithAnnotations) {
@@ -500,8 +510,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
               }
               if (cacheRecord.error) {
                 draft[miner].error = cacheRecord.error
-                if (!queryAllMinersWithAnnotations ||
-                    !annotations[miner]) {
+                if (!queryAllMinersWithAnnotations || !annotations[miner]) {
                   if (!draft.newNonRoutableSet) {
                     draft.newNonRoutableSet = {}
                     draft.newNonRoutableSetCount = 0
@@ -574,8 +583,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
               draft[miner].end = Date.now()
               if (addrsError) {
                 draft[miner].error = addrsError
-                if (!queryAllMinersWithAnnotations ||
-                    !annotations[miner]) {
+                if (!queryAllMinersWithAnnotations || !annotations[miner]) {
                   if (!draft.newNonRoutableSet) {
                     draft.newNonRoutableSet = {}
                     draft.newNonRoutableSetCount = 0
@@ -702,7 +710,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
         !queryAllMinersWithAnnotations &&
         minerPower[miner] &&
         minerPower[miner].QualityAdjPower === '0' &&
-        minerPower[miner].sectorCountSSet === 0 &&
+        minerPower[miner].sectorCountPSet === 0 &&
         (!minerAddrs[miner] || minerAddrs[miner].error)
       )
         return false
@@ -710,9 +718,16 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
         queryAllMinersWithAnnotations &&
         minerPower[miner] &&
         minerPower[miner].QualityAdjPower === '0' &&
-        minerPower[miner].sectorCountSSet === 0 &&
+        minerPower[miner].sectorCountPSet === 0 &&
         (!minerAddrs[miner] || minerAddrs[miner].error) &&
         !annotations[miner]
+      )
+        return false
+      if (
+        queryAllMinersWithPower &&
+        minerPower[miner] &&
+        minerPower[miner].QualityAdjPower === '0' &&
+        minerPower[miner].sectorCountPSet === 0
       )
         return false
       if (minerInfo[miner] && minerAddrs[miner]) {
@@ -731,7 +746,11 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   activeIpLookups.sort(({ start: a }, { start: b }) => a - b)
 
   useEffect(() => {
-    if ((sortedMinersByName && (sortedMinersByName.length - minersScanned > 2000)) || ipLookupPendingCount > 2000) {
+    if (
+      (sortedMinersByName &&
+        sortedMinersByName.length - minersScanned > 2000) ||
+      ipLookupPendingCount > 2000
+    ) {
       setQuickMode(false)
     }
   }, [minersScanned, sortedMinersByName, ipLookupPendingCount, setQuickMode])
@@ -770,7 +789,9 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       if (lng && lat) {
         return {
           miner,
-          annotation: annotations[miner] && annotations[miner].replace(/^([a-z][^,]+, )/, ''),
+          annotation:
+            annotations[miner] &&
+            annotations[miner].replace(/^([a-z][^,]+, )/, ''),
           longitude: Number(lng),
           latitude: Number(lat)
         }
@@ -782,7 +803,11 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   return (
     <div>
       <h1>Miners: Height {height}</h1>
-      {quickMode || <div style={{color: 'red'}}>Slowing down screen updates to speed up large scan...</div>}
+      {quickMode || (
+        <div style={{ color: 'red' }}>
+          Slowing down screen updates to speed up large scan...
+        </div>
+      )}
       <div>
         <h3>
           RawBytePower:{' '}
@@ -818,8 +843,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                 fixedNonRoutableSet[miner] = nonRoutableSet[miner]
               }
               const newNonRoutableSet = {
-                  ...fixedNonRoutableSet,
-                  ...minerAddrs.newNonRoutableSet
+                ...fixedNonRoutableSet,
+                ...minerAddrs.newNonRoutableSet
               }
               if (queryAllMinersWithAnnotations) {
                 for (const annotatedMiner in annotations) {
@@ -851,6 +876,21 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             style={{ marginLeft: '1rem' }}
           />
           All miners with annotations
+        </label>
+      </div>
+      <div>
+        <label>
+          <input
+            type='checkbox'
+            checked={queryAllMinersWithPower}
+            onChange={() => {
+              updateAppState(draft => {
+                draft.queryAllMinersWithPower = !queryAllMinersWithPower
+              })
+            }}
+            style={{ marginLeft: '1rem' }}
+          />
+          All miners with power
         </label>
       </div>
       {activeIpLookups.length > 0 && (
