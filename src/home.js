@@ -6,7 +6,7 @@ export default function Home () {
     <div>
       <h2>Home</h2>
       <p>
-        Workshop Client - Testnet version
+        Workshop Client - Testnet/Interopnet edition
       </p>
       <p>
         Looking for <Link to='/examples'>simpler code examples</Link>?
