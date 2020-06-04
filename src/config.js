@@ -11,8 +11,17 @@ export const secure = true
 export const downloadDir = '/home/lotus1/downloads'
 */
 
+/*
+// Testnet
 export const api = 'lotus.testground.ipfs.team/tour_api'
 export const secure = true
 export const downloadDir = '/root/downloads'
+export const geoApi = 'localhost:9000/api'
+export const geoSecure = false
+*/
+
+export const api = 'lotus.testground.ipfs.team/interop61_api'
+export const secure = true
+export const downloadDir = '/home/ubuntu/downloads'
 export const geoApi = 'localhost:9000/api'
 export const geoSecure = false

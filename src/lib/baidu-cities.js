@@ -18,6 +18,7 @@ const baiduCities = {
   142: 'Guilin', // 桂林市
   146: 'Guiyang', // 贵阳市
   149: 'Cangzhou', // 沧州市
+  150: 'Shijiazhuang', // 石家庄市
   158: 'Changsha', // 长沙市
   176: 'Taiyuan', // 太原市
   179: 'Hangzhou', // 杭州市
