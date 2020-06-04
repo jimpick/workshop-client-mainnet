@@ -106,8 +106,8 @@ function Addrs ({
           </li>
         ))}
       </ul>
-      {!timeGeoIp2 && <button onClick={getGeoIP2}>Get GeoIP2 Data</button>}
-      {!timeBaidu && china && (
+      {false && !timeGeoIp2 && <button onClick={getGeoIP2}>Get GeoIP2 Data</button>}
+      {false && !timeBaidu && china && (
         <button onClick={getBaidu}>Get Baidu Data</button>
       )}
     </div>
