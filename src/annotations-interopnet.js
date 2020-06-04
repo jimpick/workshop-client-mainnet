@@ -10,7 +10,7 @@ const annotations = {
   t01563: 'active, Latvia, Riga, power, top miner',
   t01570: 'sealing, 32G, China, Wuhan, power',
   t01595: 'sealing, China, Shanghai',
-  t01608: 'sealing, Poland, Krakow, power, verified',
+  t01608: 'active, Poland, Krakow, power, verified',
   t01625: 'sealing, 32G, Latvia, Riga, power',
   t01626: 'sealing, China, Sichuan, power, top miner',
   t01630: 'sealing, China, Shenyang',
