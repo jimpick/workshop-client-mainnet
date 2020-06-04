@@ -48,6 +48,8 @@ const annotations = {
   t01586: 'NR, 32G, power',
   t01589: 'NR, power',
   t01596: 'NR, 32G, power',
+  t01605: 'NR',
+  t01606: 'NR',
   t01615: 'NR, 32G, power',
   t01653: 'NR, power',
   t01657: 'NR, power',
@@ -58,6 +60,7 @@ const annotations = {
   t01706: 'NR, power',
   t01716: 'NR, power',
   t01728: 'NR, power',
+  t01743: 'NR',
   t01750: 'NR, power',
 
   // Bootstrappers
