@@ -17,6 +17,7 @@ import Camera from './07-camera'
 import Deals from './08-deals'
 import Retrieve from './09-retrieve'
 import Home from './home'
+import { networkName } from './config'
 import './index.css'
 
 let initialState
@@ -64,7 +65,10 @@ function App () {
       <div>
         <nav style={{ display: 'flex', flexWrap: 'wrap' }}>
           <Link to='/'>Home</Link>
-          <Link to='/select-node'>Interopnet Node: #{selectedNode}</Link>
+          <Link to='/select-node'>
+            {networkName[0].toUpperCase()}{networkName.slice(1)} Node: #
+            {selectedNode}
+          </Link>
           <Link to='/chain-notify'>Chain</Link>
           <Link to='/miners'>Miners</Link>
         </nav>
