@@ -11,8 +11,25 @@ export const secure = true
 export const downloadDir = '/home/lotus1/downloads'
 */
 
-export const api = 'lotus.testground.ipfs.team/tour_api'
-export const secure = true
-export const downloadDir = '/root/downloads'
-export const geoApi = 'localhost:9000/api'
-export const geoSecure = false
+const testnetConfig = {
+  api: 'lotus.testground.ipfs.team/tour_api',
+  secure: true,
+  downloadDir: '/tmp/not_supported_yet',
+  geoApi: 'localhost:9000/api',
+  geoSecure: false,
+  networkName: 'testnet'
+}
+
+function getConfig () {
+  if (document.location.hostname === 'testnet') {
+    return testnetConfig
+  }
+  throw new Error('Couldn\'t match hostname for config')
+}
+
+export const api = getConfig().api
+export const secure = getConfig().secure
+export const downloadDir = getConfig().downloadDir
+export const geoApi = getConfig().geoApi
+export const geoSecure = getConfig().geoSecure
+export const networkName = getConfig().networkName

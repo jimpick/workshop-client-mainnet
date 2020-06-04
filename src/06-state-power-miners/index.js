@@ -12,7 +12,9 @@ import useLotusClient from '../lib/use-lotus-client'
 // import useMiners from '../lib/use-miners-all'
 import useMiners from '../lib/use-miners'
 import baiduCities from '../lib/baidu-cities'
-import { geoApi, geoSecure } from '../config'
+import { geoApi, geoSecure, networkName } from '../config'
+
+const nonRoutableSetKey = `nonRoutableSet-${networkName}`
 
 function formatSectorSize (size) {
   switch (size) {
@@ -198,7 +200,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   } = appState
   const client = useLotusClient(selectedNode, 'node')
   const [nonRoutableSet] = useState(
-    JSON.parse(localStorage.getItem('nonRoutableSet')) || {}
+    JSON.parse(localStorage.getItem(nonRoutableSetKey))|| {}
   )
   const [height, setHeight] = useState()
   const [tipsetKey, setTipsetKey] = useState(null)
@@ -825,7 +827,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                 }
               }
               localStorage.setItem(
-                'nonRoutableSet',
+                nonRoutableSetKey,
                 JSON.stringify(newNonRoutableSet)
               )
               setNonRoutableSetUpdated(true)
