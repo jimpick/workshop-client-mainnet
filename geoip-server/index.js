@@ -5,10 +5,12 @@ const Reader = require('@maxmind/geoip2-node').Reader
 const WebServiceClient = require('@maxmind/geoip2-node').WebServiceClient
 require('dotenv').config()
 
+/*
 const client = new WebServiceClient(
   process.env.MAXMIND_USER,
   process.env.MAXMIND_KEY
 )
+*/
 
 let reader
 
@@ -25,6 +27,7 @@ fastify.get('/ipv4/:ip', async (request, reply) => {
   }
 })
 
+/*
 fastify.get('/ipv4-via-api/:ip', async (request, reply) => {
   console.log('IP via API:', request.params.ip)
   try {
@@ -51,6 +54,7 @@ fastify.get('/ipv4-via-baidu/:ip', async (request, reply) => {
     return { error: e.message }
   }
 })
+*/
 
 const dbFile = process.argv[2]
 console.log('Opening', dbFile)
