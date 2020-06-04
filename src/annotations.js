@@ -176,6 +176,10 @@ const annotations = {
   t0239618: 'new, China, Shenzhen',
   t0239624: 'new, China, Guangdong, power',
   t0239720: 'new, China, Guangdong',
+  t0239752: 'new, China, Guangdong',
+  t0239781: 'new, USA, Irvine',
+  t0239797: 'new, China, Dongguan',
+  t0239859: 'new, China, Shenzhen',
 
   // Non-routables (with power)
   t01020: 'NR, power, top miner',
@@ -298,12 +302,11 @@ const annotations = {
   t0236987: 'NR',
   t0237055: 'NR, power, top miner',
   t0237123: 'NR',
-  t0239647: 'NR, power',
-  t0239657: 'NR, power',
   t0239641: 'NR, power',
   t0239647: 'NR, power',
   t0239657: 'NR, power',
   t0239670: 'NR, power',
+  t0239738: 'NR, power',
 
   // Bootstrappers
   t01000: 'bootstrap, NR',
