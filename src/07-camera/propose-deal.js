@@ -7,7 +7,7 @@ import annotations from '../annotations'
 import DealList from '../08-deals/deal-list'
 
 export default function ProposeDeal ({ appState, updateAppState }) {
-  const { selectedNode, filterNewMiners, filterActiveMiners, filterPowerMiners, filterTopMiners, filterDeals } = appState
+  const { selectedNode, filterNewMiners, filterActiveMiners, filterPowerMiners, filterTopMiners, filterDeals, filterNonRoutable } = appState
   const client = useLotusClient(selectedNode, 'node')
   // const [miners, annotations] = useMiners(client)
   const miners = Object.keys(annotations)
@@ -41,8 +41,11 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     if (filterDeals && miners) {
       return miners.filter(miner => annotations[miner].match(/deals/i))
     }
+    if (filterNonRoutable && miners) {
+      return miners.filter(miner => !annotations[miner].match(/^NR/i))
+    }
     return miners
-  }, [miners, filterNewMiners, filterActiveMiners, filterPowerMiners, filterTopMiners, filterDeals])
+  }, [miners, filterNewMiners, filterActiveMiners, filterPowerMiners, filterTopMiners, filterDeals, filterNonRoutable])
 
   useEffect(() => {
     const objectUrl = URL.createObjectURL(appState.capture.blob)
@@ -171,6 +174,19 @@ export default function ProposeDeal ({ appState, updateAppState }) {
             style={{ marginLeft: '1rem' }}
           />
           'deals'
+        </label>
+        <label>
+          <input
+            type='checkbox'
+            checked={filterNonRoutable}
+            onChange={() => {
+              updateAppState(draft => {
+                draft.filterNonRoutable = !filterNonRoutable
+              })
+            }}
+            style={{ marginLeft: '1rem' }}
+          />
+          'NR'
         </label>
       </div>
       <div style={{ height: '15rem', overflowY: 'scroll', width: '70vw' }}>
