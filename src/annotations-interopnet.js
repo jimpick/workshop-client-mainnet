@@ -31,7 +31,6 @@ const annotations = {
   t01788: 'new, China, Hangzhou',
   t01790: 'new, China, Suzhou',
   t01792: 'new, China, Zhejiang',
-  t01792: 'new, China, Guangdong',
   t01796: 'new, China, Guangdong',
   t01821: 'new, China, Shanghai',
 

@@ -43,10 +43,10 @@ const interopnetPublicConfig = {
 }
 
 function getConfig () {
-  if (document.location.hostname === 'testnet') {
+  if (document.location.hostname === 'testnet.localhost') {
     return testnetLocalConfig
   }
-  if (document.location.hostname === 'interopnet') {
+  if (document.location.hostname === 'interopnet.localhost') {
     return interopnetLocalConfig
   }
   return interopnetPublicConfig

@@ -1,4 +1,4 @@
-:9000
+interopnet.localhost:9000, testnet.localhost:9000
 
 log
 
@@ -122,5 +122,12 @@ route @api_geoip {
   reverse_proxy localhost:3003
 }
 
+route /jim {
+  respond "Hello"
+}
+
+route * {
+  reverse_proxy localhost:3000
+}
 
 
