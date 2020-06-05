@@ -15,8 +15,8 @@ const testnetLocalConfig = {
   api: 'lotus.testground.ipfs.team/tour_api',
   secure: true,
   downloadDir: '/tmp/not_supported_yet',
-  geoApi: 'localhost:9000/api',
-  geoSecure: false,
+  geoApi: 'testnet.localhost:9000/api',
+  geoSecure: true,
   networkName: 'testnet',
   useGeoIp2: true,
   useBaidu: true
@@ -26,8 +26,8 @@ const interopnetLocalConfig = {
   api: 'lotus.testground.ipfs.team/interop61_api',
   secure: true,
   downloadDir: '/tmp/not_supported_yet',
-  geoApi: 'localhost:9000/api',
-  geoSecure: false,
+  geoApi: 'interopnet.localhost:9000/api',
+  geoSecure: true,
   networkName: 'interopnet',
   useGeoIp2: true,
   useBaidu: true
