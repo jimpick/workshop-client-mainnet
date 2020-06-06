@@ -25,7 +25,7 @@ const testnetLocalConfig = {
 const interopnetLocalConfig = {
   api: 'lotus.testground.ipfs.team/interop66_api',
   secure: true,
-  downloadDir: '/tmp/not_supported_yet',
+  downloadDir: '/home/ubuntu/downloads',
   geoApi: 'interopnet.localhost:9000/api',
   geoSecure: true,
   networkName: 'interopnet',
@@ -36,7 +36,7 @@ const interopnetLocalConfig = {
 const interopnetPublicConfig = {
   api: 'lotus.testground.ipfs.team/interop66_api',
   secure: true,
-  downloadDir: '/tmp/not_supported_yet',
+  downloadDir: '/home/ubuntu/downloads',
   geoApi: 'lotus.testground.ipfs.team/api',
   geoSecure: true,
   networkName: 'interopnet'
