@@ -9,6 +9,7 @@ import { get as idbGet, set as idbSet } from 'idb-keyval'
 import copy from 'clipboard-copy'
 import { formatRelative } from 'date-fns'
 import PeerId from 'peer-id'
+import isIPFS from 'is-ipfs'
 import useLotusClient from '../lib/use-lotus-client'
 // import useMiners from '../lib/use-miners-all'
 import useMiners from '../lib/use-miners'
@@ -407,10 +408,17 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           processMinerPowerUpdates()
           const minerInfo = await client.stateMinerInfo(miner, tipsetKey)
           // console.log('Jim minerInfo', minerInfo)
-          const { PeerId: encodedPeerId, SectorSize: sectorSize } = minerInfo
-          const binPeerId = Buffer.from(encodedPeerId, 'base64')
-          // console.log('Jim binPeerId', binPeerId)
-          const peerId = PeerId.createFromBytes(binPeerId)
+          let peerId
+          const { PeerId: wirePeerId, SectorSize: sectorSize } = minerInfo
+          if (isIPFS.multihash(wirePeerId)) {
+            peerId = wirePeerId
+          } else {
+            // PeerID is bas634 encoded binary (bug in interopnet)
+            const binPeerId = Buffer.from(wirePeerId, 'base64')
+            // console.log('Jim binPeerId', binPeerId)
+            const peerIdStruct = PeerId.createFromBytes(binPeerId)
+            peerId = peerIdStruct.toString()
+          }
           // console.log('Jim peerId', peerId.toB58String())
           if (state.canceled) return
           state.minerInfoUpdates.push(draft => {
@@ -419,14 +427,14 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             }
             const minerData = draft[miner]
             minerData.sectorSize = sectorSize
-            minerData.peerId = peerId.toString()
+            minerData.peerId = peerId
           })
           processMinerInfoUpdates()
           // if (result.MinerPower.QualityAdjPower !== '0') {
           state.ipLookupListUpdates.push(draft => {
             draft.push({
               miner,
-              peerId: peerId.toString(),
+              peerId,
               power: Number(result.MinerPower.QualityAdjPower),
               sset: Number(sectorCount.Sset)
             })
