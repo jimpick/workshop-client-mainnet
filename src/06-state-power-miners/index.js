@@ -8,6 +8,7 @@ import throttle from 'lodash.throttle'
 import { get as idbGet, set as idbSet } from 'idb-keyval'
 import copy from 'clipboard-copy'
 import { formatRelative } from 'date-fns'
+import PeerId from 'peer-id'
 import useLotusClient from '../lib/use-lotus-client'
 // import useMiners from '../lib/use-miners-all'
 import useMiners from '../lib/use-miners'
@@ -405,7 +406,12 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           })
           processMinerPowerUpdates()
           const minerInfo = await client.stateMinerInfo(miner, tipsetKey)
-          const { PeerId: peerId, SectorSize: sectorSize } = minerInfo
+          // console.log('Jim minerInfo', minerInfo)
+          const { PeerId: encodedPeerId, SectorSize: sectorSize } = minerInfo
+          const binPeerId = Buffer.from(encodedPeerId, 'base64')
+          // console.log('Jim binPeerId', binPeerId)
+          const peerId = PeerId.createFromBytes(binPeerId)
+          // console.log('Jim peerId', peerId.toB58String())
           if (state.canceled) return
           state.minerInfoUpdates.push(draft => {
             if (!draft[miner]) {
@@ -413,14 +419,14 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             }
             const minerData = draft[miner]
             minerData.sectorSize = sectorSize
-            minerData.peerId = peerId
+            minerData.peerId = peerId.toString()
           })
           processMinerInfoUpdates()
           // if (result.MinerPower.QualityAdjPower !== '0') {
           state.ipLookupListUpdates.push(draft => {
             draft.push({
               miner,
-              peerId,
+              peerId: peerId.toString(),
               power: Number(result.MinerPower.QualityAdjPower),
               sset: Number(sectorCount.Sset)
             })
@@ -545,7 +551,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             const ips = new Set()
             let addrsError
             try {
-              // console.log('Find peers', miner, peerId)
+              console.log('Find peers', miner, peerId)
               // console.log('Jim ipLookupList findPeers', miner)
               const findPeer = await client.netFindPeer(peerId)
               // console.log('Jim findPeer', miner, peerId, findPeer)

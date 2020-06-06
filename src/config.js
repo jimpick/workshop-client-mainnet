@@ -23,7 +23,7 @@ const testnetLocalConfig = {
 }
 
 const interopnetLocalConfig = {
-  api: 'lotus.testground.ipfs.team/interop61_api',
+  api: 'lotus.testground.ipfs.team/interop66_api',
   secure: true,
   downloadDir: '/tmp/not_supported_yet',
   geoApi: 'interopnet.localhost:9000/api',
@@ -34,7 +34,7 @@ const interopnetLocalConfig = {
 }
 
 const interopnetPublicConfig = {
-  api: 'lotus.testground.ipfs.team/interop61_api',
+  api: 'lotus.testground.ipfs.team/interop66_api',
   secure: true,
   downloadDir: '/tmp/not_supported_yet',
   geoApi: 'lotus.testground.ipfs.team/api',

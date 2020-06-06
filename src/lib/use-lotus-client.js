@@ -25,10 +25,19 @@ export default function useLotusClient (nodeNumber, nodeOrMiner) {
         return await response.text()
       }
     })
-    const client = new LotusRPC(provider, { schema })
-    setClient(client)
+    let client
+    try {
+      client = new LotusRPC(provider, { schema })
+      setClient(client)
+    } catch (e) {
+      console.warn('use-lotus-client new client error', e)
+    }
     return () => {
-      client.destroy()
+      try {
+        client.destroy()
+      } catch (e) {
+        console.warn('use-lotus-client destroy error', e)
+      }
     }
   }, [nodeNumber, nodeOrMiner])
 
