@@ -551,7 +551,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             const ips = new Set()
             let addrsError
             try {
-              console.log('Find peers', miner, peerId)
+              // console.log('Jim Find peers', miner, peerId)
               // console.log('Jim ipLookupList findPeers', miner)
               const findPeer = await client.netFindPeer(peerId)
               // console.log('Jim findPeer', miner, peerId, findPeer)
