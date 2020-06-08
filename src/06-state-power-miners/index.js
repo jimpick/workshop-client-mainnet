@@ -921,7 +921,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                     {bytes(Number(minerPower[miner].QualityAdjPower), {
                       mode: 'binary'
                     })}
-                    ) - {minerPower[miner].sectorCountPSet} Sectors
+                    ) - {minerPower[miner].sectorCountPSet} proving {minerPower[miner].sectorCountSSet !== minerPower[miner].sectorCountPSet && <span>{minerPower[miner].sectorCountSSet} stored</span>}
                   </>
                 )}{' '}
               {(elapsed / 1000).toFixed(1)}s
@@ -960,7 +960,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                           Number(minerPower[miner].QualityAdjPower) /
                             Number(minerPower[miner].RawBytePower) +
                             'x'}{' '}
-                        - {minerPower[miner].sectorCountPSet} sectors
+                        - {minerPower[miner].sectorCountPSet} proving {minerPower[miner].sectorCountSSet !== minerPower[miner].sectorCountPSet && <span>{minerPower[miner].sectorCountSSet} stored</span>}
                       </>
                     )}
                   </td>
