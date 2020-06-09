@@ -416,8 +416,13 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             // PeerID is bas634 encoded binary (bug in interopnet)
             const binPeerId = Buffer.from(wirePeerId, 'base64')
             // console.log('Jim binPeerId', binPeerId)
-            const peerIdStruct = PeerId.createFromBytes(binPeerId)
-            peerId = peerIdStruct.toString()
+            try {
+              const peerIdStruct = PeerId.createFromBytes(binPeerId)
+              peerId = peerIdStruct.toString()
+            } catch (e) {
+              console.warn(`Error loading PeerId from binary for ${miner}`, e, binPeerId)
+              return
+            }
           }
           // console.log('Jim peerId', peerId.toB58String())
           if (state.canceled) return
