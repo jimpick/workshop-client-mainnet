@@ -6,6 +6,7 @@ const annotations = {
   t02600: 'error, China, Wuxi, power, top miner',
   t03607: 'error, China, Hangzhou',
   t03714: 'China, Changsha, power, top miner',
+  t05230: 'new, China, Wuxi',
   t014169: '64G, China, Luzhou',
   t014178: 'error, China, Hangzhou',
   t014364: 'China, Luzhou',
@@ -168,6 +169,7 @@ const annotations = {
   t0239644: 'error, China, Chongqing', // routing not found
   t0239720: 'error, China, Guangdong', // routing not found
   t0239752: 'error, China, Guangdong', // routing not found
+  t0239722: 'new, Korea, Taian',
   t0239795: 'error, China, Shenzhen', // routing not found
   t0239797: 'sealing, China, Dongguan',
   t0239859: 'error, China, Shenzhen', // routing not found
