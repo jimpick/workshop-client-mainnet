@@ -9,7 +9,7 @@ const annotations = {
   t01928: 'sealing, China, Dongguan',
   t02023: 'sealing, China, Yunnan',
   t02026: 'sealing, China, Shaanxi',
-  t02036: 'error, China, Yunnan', // clientMarketBalance.Available too small (retry)
+  t02036: 'sealing, China, Yunnan',
   t02051: 'sealing, China, Foshan',
   t02067: 'sealing, USA, Los Angeles',
   t02092: 'sealing, China, Dongguan',
