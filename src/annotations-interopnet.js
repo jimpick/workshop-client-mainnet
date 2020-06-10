@@ -17,8 +17,10 @@ const annotations = {
   t02067: 'sealing, USA, Los Angeles',
   t02092: 'sealing, China, Dongguan',
   t02094: 'sealing, China, Zhejiang',
+  t02098: 'new, China, Wuhan',
   t02112: 'new, China, Yunnan',
   t02114: 'new, China, Shaanxi',
+  t02147: 'new, China, Nanning',
   t02162: 'new, China, Shenyang',
 
   // Non-routables (with power)
