@@ -1,7 +1,7 @@
 import { useEffect, useCallback } from 'react'
-import LotusRPC from '@filecoin-shipyard/lotus-client-rpc'
-import BrowserProvider from '@filecoin-shipyard/lotus-client-provider-browser'
-import schema from '@filecoin-shipyard/lotus-client-schema/prototype/testnet-v3'
+import { LotusRPC } from '@filecoin-shipyard/lotus-client-rpc'
+import { BrowserProvider } from '@filecoin-shipyard/lotus-client-provider-browser'
+import { testnet } from '@filecoin-shipyard/lotus-client-schema'
 import { api, secure } from '../config'
 
 export default function useTestgroundNet ({ appState, updateAppState }) {
@@ -41,7 +41,7 @@ export default function useTestgroundNet ({ appState, updateAppState }) {
           const url =
             (secure ? 'https://' : 'http://') + `${api}/${i}/node/rpc/v0`
           const provider = new BrowserProvider(url, { transport: 'http' })
-          const client = new LotusRPC(provider, { schema })
+          const client = new LotusRPC(provider, { schema: testnet.fullNode })
           await client.version()
           available[i] = true
           updateAvailable(draft => {
@@ -87,7 +87,7 @@ export default function useTestgroundNet ({ appState, updateAppState }) {
       if (state.canceled) return
       const url = (secure ? 'https://' : 'http://') + `${api}/0/node/rpc/v0`
       const provider = new BrowserProvider(url, { transport: 'http' })
-      const client = new LotusRPC(provider, { schema })
+      const client = new LotusRPC(provider, { schema: testnet.fullNode })
       try {
         const {
           Cids: [{ '/': newGenesisCid }]
