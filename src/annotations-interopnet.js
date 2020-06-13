@@ -2,7 +2,7 @@ const annotations = {
 
   // Routables
   t01803: 'active, USA, Boardman, AWS - Jim',
-  t01812: 'new, China, Sichuan, power, top miner',
+  t01812: 'sealing, China, Sichuan, power, top miner',
   t01824: 'active, China, Yangzhou',
   t01841: 'active, China, Zhejiang, verified',
   t01845: 'sealing, China, Zhejiang, top miner, verified',
@@ -17,13 +17,13 @@ const annotations = {
   t02094: 'active, China, Zhejiang',
   t02114: 'sealing, China, Shaanxi',
   t02162: 'active, China, Shenyang',
-  t02318: 'new, China, Shenzhen, power, 32G',
-  t02339: 'new, China, Ningbo, 32G',
-  t02405: 'new, China, Weifang, 32G',
-  t02411: 'new, China, Changsha, power',
-  t02418: 'new, China, Shaanxi',
-  t02430: 'new, China, Yunnan, power',
-  t02443: 'new, China, Yunnan, power',
+  t02318: 'sealing, China, Shenzhen, power, 32G',
+  t02339: 'sealing, China, Ningbo, 32G',
+  t02405: 'sealing, China, Weifang, 32G',
+  t02411: 'active, China, Changsha, power',
+  t02418: 'sealing, China, Shaanxi',
+  t02430: 'active, China, Yunnan, power',
+  t02443: 'active, China, Yunnan, power',
 
   // Non-routables (with power)
   t01805: 'NR, power',
