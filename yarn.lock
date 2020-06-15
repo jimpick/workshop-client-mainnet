@@ -1054,15 +1054,15 @@
   resolved "https://registry.npmjs.org/@csstools/normalize.css/-/normalize.css-10.1.0.tgz#f0950bba18819512d42f7197e56c518aa491cf18"
   integrity sha512-ij4wRiunFfaJxjB0BdrYHIH8FxBJpOwNPhhAcunlmPdXudL1WQV1qoP9un6JsEBAgQH+7UXyyjh0g7jTxXK6tg==
 
-"@filecoin-shipyard/lotus-client-provider-browser@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.npmjs.org/@filecoin-shipyard/lotus-client-provider-browser/-/lotus-client-provider-browser-0.0.13.tgz#b06c3e08c8c2669164ee93bc6d6d2c7a0905f36f"
-  integrity sha512-wcIQ/P8tOMgtZmcvTBugxgO1H3lUYABCKycxPpfM5hxT45W4Dq6F2J1iMTN+QAecj9N6ceJ8DC+806/544DnKA==
+"@filecoin-shipyard/lotus-client-provider-browser@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@filecoin-shipyard/lotus-client-provider-browser/-/lotus-client-provider-browser-0.0.14.tgz#28268cd1a940627b08e06378527f5f34fea0db75"
+  integrity sha512-rFH2aUA65fa9C+3d8JoKxL/UGYPbEqIjhJ9ZMJS50aKFELMA1FJ/l10Tpgkx0p6KrdygfIytHneITvpgcumR4g==
 
-"@filecoin-shipyard/lotus-client-rpc@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.npmjs.org/@filecoin-shipyard/lotus-client-rpc/-/lotus-client-rpc-0.0.10.tgz#9f84a5ad727c3ec39ff21f8cb546c17e5c72eb58"
-  integrity sha512-0shqzGJJnAbYQ2V4kvOfrKGaAm3KNXkrY8JhJznyMj8VOLsIEmMfG6+qj/SJkj2tfzMhaRHUB6IDHTczS2xmnA==
+"@filecoin-shipyard/lotus-client-rpc@^0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@filecoin-shipyard/lotus-client-rpc/-/lotus-client-rpc-0.0.11.tgz#60d6953dee4ff583ca982aae45d57e05a68ad89b"
+  integrity sha512-7ZgT7tyB+5fp5mC9yC4Da9vj3M8PiVPNuxFkFAaDRu8blDuKg/tNh4OMZr5pqs/uuwjRZuXslGl8dOb2Iz+rZg==
 
 "@filecoin-shipyard/lotus-client-schema@^0.0.10":
   version "0.0.10"

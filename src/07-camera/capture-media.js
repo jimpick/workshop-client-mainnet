@@ -139,7 +139,7 @@ export default function CaptureMedia ({ appState, updateAppState }) {
       const blob = await promise
       if (blob && blob.size <= maxSize) {
         try {
-          const cid = await client.import(blob)
+          const cid = await client.importFile(blob)
           console.log('Imported', cid)
           updateAppState(draft => {
             draft.capture = {
