@@ -24,6 +24,8 @@ const annotations = {
   t02418: 'sealing, China, Shaanxi',
   t02430: 'active, China, Yunnan, power',
   t02443: 'active, China, Yunnan, power',
+  t02541: 'new, China, Ningbo, power, top miner',
+  t02544: 'new, China, Guilin, power',
 
   // Non-routables (with power)
   t01805: 'NR, power',
