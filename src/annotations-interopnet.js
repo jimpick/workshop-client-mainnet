@@ -13,10 +13,10 @@ const annotations = {
   t02192: 'sealing, China, Guilin',
 
   // Non-routables (with power)
+  t01850: 'NR - China, Hong Kong, 32G, top miner',
 
   // Bootstrappers
   t01000: 'NR - bootstrap',
-  t01850: 'NR - China, Hong Kong, 32G, top miner',
 
 }
 
