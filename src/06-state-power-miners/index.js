@@ -8,11 +8,15 @@ import throttle from 'lodash.throttle'
 import { get as idbGet, set as idbSet } from 'idb-keyval'
 import copy from 'clipboard-copy'
 import { formatRelative } from 'date-fns'
+import PeerId from 'peer-id'
+import isIPFS from 'is-ipfs'
 import useLotusClient from '../lib/use-lotus-client'
 // import useMiners from '../lib/use-miners-all'
 import useMiners from '../lib/use-miners'
 import baiduCities from '../lib/baidu-cities'
-import { geoApi, geoSecure } from '../config'
+import { geoApi, geoSecure, networkName, useGeoIp2, useBaidu } from '../config'
+
+const nonRoutableSetKey = `nonRoutableSet-${networkName}`
 
 function formatSectorSize (size) {
   switch (size) {
@@ -106,8 +110,10 @@ function Addrs ({
           </li>
         ))}
       </ul>
-      {false && !timeGeoIp2 && <button onClick={getGeoIP2}>Get GeoIP2 Data</button>}
-      {false && !timeBaidu && china && (
+      {useGeoIp2 && !timeGeoIp2 && (
+        <button onClick={getGeoIP2}>Get GeoIP2 Data</button>
+      )}
+      {useBaidu && !timeBaidu && china && (
         <button onClick={getBaidu}>Get Baidu Data</button>
       )}
     </div>
@@ -194,11 +200,12 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     selectedNode,
     genesisCid,
     minerCacheInvalidate,
-    queryAllMinersWithAnnotations
+    queryAllMinersWithAnnotations,
+    queryAllMinersWithPower
   } = appState
   const client = useLotusClient(selectedNode, 'node')
   const [nonRoutableSet] = useState(
-    JSON.parse(localStorage.getItem('nonRoutableSet')) || {}
+    JSON.parse(localStorage.getItem(nonRoutableSetKey)) || {}
   )
   const [height, setHeight] = useState()
   const [tipsetKey, setTipsetKey] = useState(null)
@@ -236,6 +243,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   )
 
   const filteredNonRoutableMiners = useMemo(() => {
+    if (queryAllMinersWithPower) return miners
     return (
       miners &&
       [...miners].filter(
@@ -244,7 +252,13 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           (queryAllMinersWithAnnotations && annotations[miner])
       )
     )
-  }, [miners, nonRoutableSet, queryAllMinersWithAnnotations, annotations])
+  }, [
+    miners,
+    nonRoutableSet,
+    queryAllMinersWithAnnotations,
+    queryAllMinersWithPower,
+    annotations
+  ])
 
   const filteredAnnotationKeys = useMemo(() => {
     if (queryAllMinersWithAnnotations) {
@@ -393,7 +407,24 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           })
           processMinerPowerUpdates()
           const minerInfo = await client.stateMinerInfo(miner, tipsetKey)
-          const { PeerId: peerId, SectorSize: sectorSize } = minerInfo
+          // console.log('Jim minerInfo', minerInfo)
+          let peerId
+          const { PeerId: wirePeerId, SectorSize: sectorSize } = minerInfo
+          if (isIPFS.multihash(wirePeerId)) {
+            peerId = wirePeerId
+          } else {
+            // PeerID is bas634 encoded binary (bug in interopnet)
+            const binPeerId = Buffer.from(wirePeerId, 'base64')
+            // console.log('Jim binPeerId', binPeerId)
+            try {
+              const peerIdStruct = PeerId.createFromBytes(binPeerId)
+              peerId = peerIdStruct.toString()
+            } catch (e) {
+              console.warn(`Error loading PeerId from binary for ${miner}`, e, binPeerId)
+              return
+            }
+          }
+          // console.log('Jim peerId', peerId.toB58String())
           if (state.canceled) return
           state.minerInfoUpdates.push(draft => {
             if (!draft[miner]) {
@@ -498,8 +529,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
               }
               if (cacheRecord.error) {
                 draft[miner].error = cacheRecord.error
-                if (!queryAllMinersWithAnnotations ||
-                    !annotations[miner]) {
+                if (!queryAllMinersWithAnnotations || !annotations[miner]) {
                   if (!draft.newNonRoutableSet) {
                     draft.newNonRoutableSet = {}
                     draft.newNonRoutableSetCount = 0
@@ -534,7 +564,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             const ips = new Set()
             let addrsError
             try {
-              // console.log('Find peers', miner, peerId)
+              // console.log('Jim Find peers', miner, peerId)
               // console.log('Jim ipLookupList findPeers', miner)
               const findPeer = await client.netFindPeer(peerId)
               // console.log('Jim findPeer', miner, peerId, findPeer)
@@ -572,8 +602,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
               draft[miner].end = Date.now()
               if (addrsError) {
                 draft[miner].error = addrsError
-                if (!queryAllMinersWithAnnotations ||
-                    !annotations[miner]) {
+                if (!queryAllMinersWithAnnotations || !annotations[miner]) {
                   if (!draft.newNonRoutableSet) {
                     draft.newNonRoutableSet = {}
                     draft.newNonRoutableSetCount = 0
@@ -700,7 +729,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
         !queryAllMinersWithAnnotations &&
         minerPower[miner] &&
         minerPower[miner].QualityAdjPower === '0' &&
-        minerPower[miner].sectorCountSSet === 0 &&
+        minerPower[miner].sectorCountPSet === 0 &&
         (!minerAddrs[miner] || minerAddrs[miner].error)
       )
         return false
@@ -708,9 +737,16 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
         queryAllMinersWithAnnotations &&
         minerPower[miner] &&
         minerPower[miner].QualityAdjPower === '0' &&
-        minerPower[miner].sectorCountSSet === 0 &&
+        minerPower[miner].sectorCountPSet === 0 &&
         (!minerAddrs[miner] || minerAddrs[miner].error) &&
         !annotations[miner]
+      )
+        return false
+      if (
+        queryAllMinersWithPower &&
+        minerPower[miner] &&
+        minerPower[miner].QualityAdjPower === '0' &&
+        minerPower[miner].sectorCountPSet === 0
       )
         return false
       if (minerInfo[miner] && minerAddrs[miner]) {
@@ -729,7 +765,11 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   activeIpLookups.sort(({ start: a }, { start: b }) => a - b)
 
   useEffect(() => {
-    if ((sortedMinersByName && (sortedMinersByName.length - minersScanned > 2000)) || ipLookupPendingCount > 2000) {
+    if (
+      (sortedMinersByName &&
+        sortedMinersByName.length - minersScanned > 2000) ||
+      ipLookupPendingCount > 2000
+    ) {
       setQuickMode(false)
     }
   }, [minersScanned, sortedMinersByName, ipLookupPendingCount, setQuickMode])
@@ -768,7 +808,9 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       if (lng && lat) {
         return {
           miner,
-          annotation: annotations[miner] && annotations[miner].replace(/^([a-z][^,]+, )/, ''),
+          annotation:
+            annotations[miner] &&
+            annotations[miner].replace(/^([a-z][^,]+, )/, ''),
           longitude: Number(lng),
           latitude: Number(lat)
         }
@@ -780,7 +822,11 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   return (
     <div>
       <h1>Miners: Height {height}</h1>
-      {quickMode || <div style={{color: 'red'}}>Slowing down screen updates to speed up large scan...</div>}
+      {quickMode || (
+        <div style={{ color: 'red' }}>
+          Slowing down screen updates to speed up large scan...
+        </div>
+      )}
       <div>
         <h3>
           RawBytePower:{' '}
@@ -816,8 +862,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                 fixedNonRoutableSet[miner] = nonRoutableSet[miner]
               }
               const newNonRoutableSet = {
-                  ...fixedNonRoutableSet,
-                  ...minerAddrs.newNonRoutableSet
+                ...fixedNonRoutableSet,
+                ...minerAddrs.newNonRoutableSet
               }
               if (queryAllMinersWithAnnotations) {
                 for (const annotatedMiner in annotations) {
@@ -825,7 +871,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                 }
               }
               localStorage.setItem(
-                'nonRoutableSet',
+                nonRoutableSetKey,
                 JSON.stringify(newNonRoutableSet)
               )
               setNonRoutableSetUpdated(true)
@@ -851,6 +897,21 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           All miners with annotations
         </label>
       </div>
+      <div>
+        <label>
+          <input
+            type='checkbox'
+            checked={queryAllMinersWithPower}
+            onChange={() => {
+              updateAppState(draft => {
+                draft.queryAllMinersWithPower = !queryAllMinersWithPower
+              })
+            }}
+            style={{ marginLeft: '1rem' }}
+          />
+          All miners with power
+        </label>
+      </div>
       {activeIpLookups.length > 0 && (
         <div style={{ marginTop: '1rem', marginBottom: '1rem' }}>
           {activeIpLookups.map(({ miner, elapsed }) => (
@@ -865,7 +926,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                     {bytes(Number(minerPower[miner].QualityAdjPower), {
                       mode: 'binary'
                     })}
-                    ) - {minerPower[miner].sectorCountPSet} Sectors
+                    ) - {minerPower[miner].sectorCountPSet} proving {minerPower[miner].sectorCountSSet !== minerPower[miner].sectorCountPSet && <span>{minerPower[miner].sectorCountSSet} stored</span>}
                   </>
                 )}{' '}
               {(elapsed / 1000).toFixed(1)}s
@@ -904,7 +965,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                           Number(minerPower[miner].QualityAdjPower) /
                             Number(minerPower[miner].RawBytePower) +
                             'x'}{' '}
-                        - {minerPower[miner].sectorCountPSet} sectors
+                        - {minerPower[miner].sectorCountPSet} proving {minerPower[miner].sectorCountSSet !== minerPower[miner].sectorCountPSet && <span>{minerPower[miner].sectorCountSSet} stored</span>}
                       </>
                     )}
                   </td>

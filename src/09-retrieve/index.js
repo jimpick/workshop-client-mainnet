@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { useHistory, useParams } from 'react-router-dom'
 import { useImmer } from 'use-immer'
-import { api, secure } from '../config'
 import useLotusClient from '../lib/use-lotus-client'
 import useWatchDefaultWallet from '../lib/use-watch-default-wallet'
 import useScanNodesForCid from './use-scan-nodes-for-cid'
-import { downloadDir } from '../config'
+import { api, secure, downloadDir } from '../config'
 
 export default function Retrieve ({ appState, updateAppState }) {
   const { cid } = useParams()
@@ -33,7 +32,8 @@ export default function Retrieve ({ appState, updateAppState }) {
           } else {
             return (
               <div key={i}>
-                Node #{entry.node}: Via Miner {entry.remoteOffer.Miner}
+                Node #{entry.node}: Via miner owned by account{' '}
+                {entry.remoteOffer.Miner}
                 <div style={{ fontSize: '70%', margin: '0.5rem 1rem' }}>
                   Retrieval Price: {entry.remoteOffer.MinPrice}
                   <br />

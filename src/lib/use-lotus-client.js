@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react'
-import LotusRPC from '@filecoin-shipyard/lotus-client-rpc'
-import BrowserProvider from '@filecoin-shipyard/lotus-client-provider-browser'
-// import schema from '@filecoin-shipyard/lotus-client-schema/prototype/testnet-v3'
-import schema from '../schema'
+import { LotusRPC } from '@filecoin-shipyard/lotus-client-rpc'
+import { BrowserProvider } from '@filecoin-shipyard/lotus-client-provider-browser'
+import { testnet } from '@filecoin-shipyard/lotus-client-schema'
 import { api, secure } from '../config'
 
 export default function useLotusClient (nodeNumber, nodeOrMiner) {
@@ -25,10 +24,19 @@ export default function useLotusClient (nodeNumber, nodeOrMiner) {
         return await response.text()
       }
     })
-    const client = new LotusRPC(provider, { schema })
-    setClient(client)
-    return () => {
-      client.destroy()
+    let client
+    try {
+      client = new LotusRPC(provider, { schema: testnet.fullNode })
+      setClient(client)
+    } catch (e) {
+      console.warn('use-lotus-client new client error', e)
+    }
+    return async () => {
+      try {
+        await client.destroy()
+      } catch (e) {
+        console.warn('use-lotus-client destroy error', e)
+      }
     }
   }, [nodeNumber, nodeOrMiner])
 

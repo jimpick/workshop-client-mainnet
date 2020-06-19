@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import useLotusClient from '../lib/use-lotus-client'
 import { useImmer } from 'use-immer'
+import { networkName } from '../config'
 
 export default function ChainNotify ({ appState }) {
   const { selectedNode } = appState
@@ -57,8 +58,12 @@ export default function ChainNotify ({ appState }) {
   return (
     <div>
       <h2>Chain</h2>
-      {false && <div style={{marginBottom: '1rem', fontSize: 'small'}}>
-        See also: <a href="https://filscan.io/#/">filscan.io</a> <a href="https://filscout.io/en/">filscout.io</a> <a href="https://stats.testnet.filecoin.io/d/z6FtI92Zz/chain/?orgId=1&refresh=45s&from=now-30m&to=now&kiosk">stats dashboard</a>
+      {networkName === 'testnet' && <div style={{marginBottom: '1rem', fontSize: 'small'}}>
+        See also: <a href="https://filscan.io/#/">filscan.io</a> <a href="https://filscout.io/en/">filscout.io</a> <a href="https://filfox.io/">filfox.io</a> <a href="https://stats.testnet.filecoin.io/d/z6FtI92Zz/chain/?orgId=1&refresh=45s&from=now-30m&to=now&kiosk">stats dashboard</a>
+      </div>}
+      {networkName === 'interopnet' && <div style={{marginBottom: '1rem', fontSize: 'small'}}>
+        See also: <a href="https://interopnet.filscan.io/">filscan</a> {' '}
+        <a href="https://interopnet.filfox.io/">filfox</a>
       </div>}
       {content}
     </div>

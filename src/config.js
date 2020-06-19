@@ -11,17 +11,62 @@ export const secure = true
 export const downloadDir = '/home/lotus1/downloads'
 */
 
-/*
-// Testnet
-export const api = 'lotus.testground.ipfs.team/tour_api'
-export const secure = true
-export const downloadDir = '/root/downloads'
-export const geoApi = 'localhost:9000/api'
-export const geoSecure = false
-*/
+const testnetLocalConfig = {
+  api: 'lotus.testground.ipfs.team/testnet_api',
+  secure: true,
+  downloadDir: '/tmp/not_supported_yet',
+  geoApi: 'testnet.localhost:9000/api',
+  geoSecure: true,
+  networkName: 'testnet',
+  useGeoIp2: true,
+  useBaidu: true
+}
 
-export const api = 'lotus.testground.ipfs.team/interop61_api'
-export const secure = true
-export const downloadDir = '/home/ubuntu/downloads'
-export const geoApi = 'lotus.testground.ipfs.team/api'
-export const geoSecure = true
+const interopnetLocalConfig = {
+  api: 'lotus.testground.ipfs.team/interop616_api',
+  secure: true,
+  downloadDir: '/home/ubuntu/downloads',
+  geoApi: 'interopnet.localhost:9000/api',
+  geoSecure: true,
+  networkName: 'interopnet',
+  useGeoIp2: true,
+  useBaidu: true
+}
+
+const interopnetPublicConfig = {
+  api: 'lotus.testground.ipfs.team/interop616_api',
+  secure: true,
+  downloadDir: '/home/ubuntu/downloads',
+  geoApi: 'lotus.testground.ipfs.team/api',
+  geoSecure: true,
+  networkName: 'interopnet'
+}
+
+const testnetPublicConfig = {
+  api: 'lotus.testground.ipfs.team/testnet_api',
+  secure: true,
+  downloadDir: '/home/ubuntu/downloads',
+  geoApi: 'lotus.testground.ipfs.team/api',
+  geoSecure: true,
+  networkName: 'testnet'
+}
+
+function getConfig () {
+  if (document.location.hostname === 'testnet.localhost') {
+    return testnetLocalConfig
+  }
+  if (document.location.hostname === 'interopnet.localhost') {
+    return interopnetLocalConfig
+  }
+  // return interopnetPublicConfig
+  return testnetPublicConfig
+}
+
+export const api = getConfig().api
+export const secure = getConfig().secure
+export const downloadDir = getConfig().downloadDir
+export const geoApi = getConfig().geoApi
+export const geoSecure = getConfig().geoSecure
+export const networkName = getConfig().networkName
+export const useGeoIp2 = getConfig().useGeoIp2
+export const useBaidu = getConfig().useBaidu

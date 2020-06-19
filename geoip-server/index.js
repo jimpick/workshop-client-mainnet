@@ -5,10 +5,14 @@ const Reader = require('@maxmind/geoip2-node').Reader
 const WebServiceClient = require('@maxmind/geoip2-node').WebServiceClient
 require('dotenv').config()
 
-const client = new WebServiceClient(
-  process.env.MAXMIND_USER,
-  process.env.MAXMIND_KEY
-)
+let client
+
+if (process.env.MAXMIND_USER && process.env.MAXMIND_KEY) {
+  client = new WebServiceClient(
+    process.env.MAXMIND_USER,
+    process.env.MAXMIND_KEY
+  )
+}
 
 let reader
 
@@ -25,32 +29,36 @@ fastify.get('/ipv4/:ip', async (request, reply) => {
   }
 })
 
-fastify.get('/ipv4-via-api/:ip', async (request, reply) => {
-  console.log('IP via API:', request.params.ip)
-  try {
-    const response = await client.city(request.params.ip)
-    return response
-  } catch (e) {
-    reply.code(400)
-    return { error: e.message }
-  }
-})
+if (client) {
+  fastify.get('/ipv4-via-api/:ip', async (request, reply) => {
+    console.log('IP via API:', request.params.ip)
+    try {
+      const response = await client.city(request.params.ip)
+      return response
+    } catch (e) {
+      reply.code(400)
+      return { error: e.message }
+    }
+  })
+}
 
-fastify.get('/ipv4-via-baidu/:ip', async (request, reply) => {
-  console.log('IP via Baidu:', request.params.ip)
-  try {
-    const url =
-      `https://api.map.baidu.com/location/ip?` +
-      `ak=${process.env.BAIDU_KEY}&` +
-      `ip=${request.params.ip}&coor=bd09ll`
-    const response = await fetch(url)
-    const json = await response.json()
-    return json
-  } catch (e) {
-    reply.code(400)
-    return { error: e.message }
-  }
-})
+if (process.env.BAIDU_KEY) {
+  fastify.get('/ipv4-via-baidu/:ip', async (request, reply) => {
+    console.log('IP via Baidu:', request.params.ip)
+    try {
+      const url =
+        `https://api.map.baidu.com/location/ip?` +
+        `ak=${process.env.BAIDU_KEY}&` +
+        `ip=${request.params.ip}&coor=bd09ll`
+      const response = await fetch(url)
+      const json = await response.json()
+      return json
+    } catch (e) {
+      reply.code(400)
+      return { error: e.message }
+    }
+  })
+}
 
 const dbFile = process.argv[2]
 console.log('Opening', dbFile)

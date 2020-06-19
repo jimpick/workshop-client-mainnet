@@ -1,4 +1,4 @@
-:9000
+interopnet.localhost:9000, testnet.localhost:9000
 
 log
 
@@ -113,14 +113,57 @@ route @api_testplan_0 {
   }
 }
 
+@api_geoip_options {
+    path_regexp api ^/api/geoip/(.*)$
+    method OPTIONS
+}
+
+route @api_geoip_options {
+    header Connection "keep-alive"
+    header Access-Control-Allow-Origin "*"
+    header Access-Control-Allow-Methods "POST, GET, PUT, OPTIONS, DELETE"
+    header Access-Control-Max-Age "86400"
+    header Access-Control-Allow-Headers "*"
+    respond "" 204
+}
+
 @api_geoip {
     path_regexp api ^/api/geoip/(.*)$
 }
 
 route @api_geoip {
   uri strip_prefix /api/geoip
-  reverse_proxy localhost:3003
+  reverse_proxy localhost:3003 {
+    header_down Access-Control-Allow-Origin "*"
+  }
 }
 
+@sockjs_options {
+    path_regexp sockjs ^/sockjs-node$
+    method OPTIONS
+}
+
+route @sockjs_options {
+    header Connection "keep-alive"
+    header Access-Control-Allow-Origin "*"
+    header Access-Control-Allow-Methods "POST, GET, PUT, OPTIONS, DELETE"
+    header Access-Control-Max-Age "86400"
+    header Access-Control-Allow-Headers "*"
+    respond "" 204
+}
+
+route ^/sockjs-node$ {
+  reverse_proxy localhost:3000 {
+    header_down Access-Control-Allow-Origin "*"
+  }
+}
+
+route /jim {
+  respond "Hello"
+}
+
+route * {
+  reverse_proxy localhost:3000
+}
 
 

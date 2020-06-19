@@ -17,20 +17,20 @@ const dealStateNames = [
 
   // Internal
   'FundsEnsured', // 9 Deposited funds as neccesary to create a deal, ready to move forward
-  // 'WaitingForDataRequest', // 10 Client is waiting for a request for the deal data
-  'Validating', // 10 Verifying that deal parameters are good
-  'AcceptWait', // 11 Deciding whether or not to accept the deal
-  'Transferring', // 12 Moving data
-  'WaitingForData', // 13 Manual transfer
-  'VerifyData', // 14 Verify transferred data - generate CAR / piece data
-  'EnsureProviderFunds', // 15 Ensuring that provider collateral is sufficient
-  'EnsureClientFunds', // 16 Ensuring that client funds are sufficient
-  'ProviderFunding', // 17 Waiting for funds to appear in Provider balance
-  'ClientFunding', // 18 Waiting for funds to appear in Client balance
-  'Publish', // 19 Publishing deal to chain
-  'Publishing', // 20 Waiting for deal to appear on chain
-  'Error', // 21 deal failed with an unexpected error
-  'Completed' // 22 on provider side, indicates deal is active and info for retrieval is recorded
+  'WaitingForDataRequest', // 10 Client is waiting for a request for the deal data
+  'Validating', // 11 Verifying that deal parameters are good
+  'AcceptWait', // 12 Deciding whether or not to accept the deal
+  'Transferring', // 13 Moving data
+  'WaitingForData', // 14 Manual transfer
+  'VerifyData', // 15 Verify transferred data - generate CAR / piece data
+  'EnsureProviderFunds', // 16 Ensuring that provider collateral is sufficient
+  'EnsureClientFunds', // 17 Ensuring that client funds are sufficient
+  'ProviderFunding', // 18 Waiting for funds to appear in Provider balance
+  'ClientFunding', // 19 Waiting for funds to appear in Client balance
+  'Publish', // 20 Publishing deal to chain
+  'Publishing', // 21 Waiting for deal to appear on chain
+  'Error', // 22 deal failed with an unexpected error
+  'Completed' // 23 on provider side, indicates deal is active and info for retrieval is recorded
 ]
 
 function DealHistory ({ dealHistoryData, height }) {
@@ -106,7 +106,7 @@ export default function DealList ({ client, appState, cid, filterErrors }) {
     const data = dealData && dealData[proposalCid]
     const clientDealStatus = data && data.clientDealStatus
     const dealState = clientDealStatus && clientDealStatus.State
-    return dealState !== 21
+    return dealState !== 22
   })
 
   return (
@@ -118,7 +118,7 @@ export default function DealList ({ client, appState, cid, filterErrors }) {
         // const dealState = clientDealStatus && clientDealStatus.State
         const dealMessage = clientDealStatus && clientDealStatus.Message
         const dealHistoryData = dealHistory && dealHistory[proposalCid]
-        // if (filterErrors && dealState === 21) return null
+        // if (filterErrors && dealState === 22) return null
         return (
           <div key={proposalCid} style={{ marginBottom: '1rem' }}>
             <div>

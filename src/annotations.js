@@ -1,54 +1,13 @@
-const annotations = {
+import interopnetAnnotations from './annotations-interopnet'
+import testnetAnnotations from './annotations-testnet'
+import { networkName } from './config'
 
-  t01462: 'active, China, Zhejiang, power, top miner',
-  t01473: 'active, China, Shenzhen, power',
-  t01481: 'sealing, China, Shenzhen',
-  t01483: 'sealing, China, Zhejiang, power',
-  t01502: 'sealing, China, Shenyang, power',
-  t01540: 'active, China, Zhejiang, power, top miner',
-  t01554: 'active, China, Yunnan, power',
-  t01563: 'active, Latvia, Riga, power, top miner',
-  t01570: 'sealing, 32G, China, Wuhan, power',
-  t01595: 'sealing, China, Shanghai',
-  t01608: 'sealing, Poland, Krakow, power, verified',
-  t01625: 'sealing, 32G, Latvia, Riga, power',
-  t01626: 'sealing, China, Sichuan, power, top miner',
-  t01630: 'sealing, China, Shenyang',
-  t01632: 'sealing, 32G, China, Zhejiang, power',
-  t01666: 'sealing, China, Beijing',
-  t01672: 'sealing, China, Hangzhou',
-  t01684: 'sealing, 32G, China, Shijiazhuang, power',
-  t01686: 'sealing, China, Hangzhou',
-  t01711: 'active, China, Yunnan, power',
-  t01713: 'sealing, China, Yunnan',
-  t01725: 'active, China, Changsha',
-  t01730: 'sealing, China, Shaanxi',
-
-  // Non-routables (with power)
-  t01459: 'NR, power',
-  t01464: 'NR, 32G, power',
-  t01471: 'NR, power',
-  t01485: 'NR, 32G, power',
-  t01490: 'NR, 32G, power',
-  t01512: 'NR, power',
-  t01514: 'NR, power',
-  t01536: 'NR, 32G, power',
-  t01546: 'NR, power',
-  t01560: 'NR, 32G, power',
-  t01578: 'NR, 32G, power',
-  t01586: 'NR, 32G, power',
-  t01589: 'NR, power',
-  t01596: 'NR, 32G, power',
-  t01653: 'NR, power',
-  t01657: 'NR, power',
-  t01676: 'NR, power',
-  t01682: 'NR, 32G, power',
-  t01690: 'NR - China, Hefei, power',
-  t01706: 'NR, power',
-  t01716: 'NR, power',
-
-  // Bootstrappers
-  t01000: 'NR - bootstrap',
+let annotations = {}
+if (networkName === 'interopnet') {
+  annotations = interopnetAnnotations
+}
+if (networkName === 'testnet') {
+  annotations = testnetAnnotations
 }
 
 export default annotations
