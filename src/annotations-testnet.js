@@ -14,15 +14,17 @@ const annotations = {
   t08293: 'sealing, China, Shangrao',
   t08459: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 7
   t09833: 'sealing, China, Sichuan',
+  t013836: 'new, China, Guangdong',
   t013966: 'sealing, China, Guangdong',
   t020889: 'sealing, China, Shenzhen',
   t020894: 'sealing, China, Xiamen',
   t029571: 'sealing, Korea, Seongnam-si',
   t033740: 'sealing, China, Ningbo',
+  t039025: 'new, USA, San Francisco',
   t040585: 'sealing, China, Shanghai',
   t052328: 'sealing, China, Beijing',
-  t055393: 'new, China',
-  t056726: 'new, China',
+  t056726: 'new, China, Hunan',
+  t0102008: 'new, China, Wuxi',
 
   // Bootstrappers
   t01000: 'bootstrap, NR',
