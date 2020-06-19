@@ -2,6 +2,10 @@
 
 Build a JS web app for Filecoin Lotus
 
+## GitHub
+
+* [jimpick/workshop-client-testnet](https://github.com/jimpick/workshop-client-testnet)
+
 ## Glitch
 
 * [lotus-client-workshop-testnet](https://glitch.com/edit/#!/lotus-client-workshop-testnet)
