@@ -32,6 +32,7 @@ const baiduCities = {
   224: 'Suzhou', // 苏州市
   226: 'Fuzhou', // 抚州市
   233: 'Xi\'an', // 西安市
+  240: 'Mianyang', // 绵阳市
   257: 'Guangzhou', // 广州市
   287: 'Weifang', // 潍坊市
   289: 'Shanghai', // 上海市
