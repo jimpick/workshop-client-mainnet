@@ -12,7 +12,7 @@ export const downloadDir = '/home/lotus1/downloads'
 */
 
 const testnetLocalConfig = {
-  api: 'lotus.testground.ipfs.team/tour_api',
+  api: 'lotus.testground.ipfs.team/testnet_api',
   secure: true,
   downloadDir: '/tmp/not_supported_yet',
   geoApi: 'testnet.localhost:9000/api',
