@@ -40,6 +40,7 @@ const baiduCities = {
   334: 'Jiaxing', // 嘉兴市
   340: 'Shenzhen', // 深圳市
   346: 'Yangzhou', // 扬州市
+  348: 'Changzhou', // 常州市
   363: 'Huaihua', // 怀化市
   364: 'Shangrao', // 上饶市
   2912: 'Hong Kong', // 香港特别行政区
