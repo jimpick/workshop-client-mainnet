@@ -42,6 +42,15 @@ const interopnetPublicConfig = {
   networkName: 'interopnet'
 }
 
+const testnetPublicConfig = {
+  api: 'lotus.testground.ipfs.team/testnet_api',
+  secure: true,
+  downloadDir: '/home/ubuntu/downloads',
+  geoApi: 'lotus.testground.ipfs.team/api',
+  geoSecure: true,
+  networkName: 'testnet'
+}
+
 function getConfig () {
   if (document.location.hostname === 'testnet.localhost') {
     return testnetLocalConfig
@@ -49,7 +58,8 @@ function getConfig () {
   if (document.location.hostname === 'interopnet.localhost') {
     return interopnetLocalConfig
   }
-  return interopnetPublicConfig
+  // return interopnetPublicConfig
+  return testnetPublicConfig
 }
 
 export const api = getConfig().api
