@@ -1,6 +1,10 @@
-# workshop-client-interopnet
+# workshop-client-testnet
 
 Build a JS web app for Filecoin Lotus
+
+## Glitch
+
+* [lotus-client-workshop-testnet](https://glitch.com/edit/#!/lotus-client-workshop-testnet)
 
 ## License
 
