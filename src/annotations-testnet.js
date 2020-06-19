@@ -21,6 +21,8 @@ const annotations = {
   t033740: 'sealing, China, Ningbo',
   t040585: 'sealing, China, Shanghai',
   t052328: 'sealing, China, Beijing',
+  t055393: 'new, China',
+  t056726: 'new, China',
 
   // Bootstrappers
   t01000: 'bootstrap, NR',
