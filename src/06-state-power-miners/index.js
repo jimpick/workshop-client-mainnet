@@ -568,16 +568,18 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
               // console.log('Jim ipLookupList findPeers', miner)
               const findPeer = await client.netFindPeer(peerId)
               // console.log('Jim findPeer', miner, peerId, findPeer)
-              for (const maddr of findPeer.Addrs) {
-                console.log(`  ${maddr}`)
-                const match = maddr.match(/^\/ip4\/(\d+\.\d+\.\d+\.\d+)/)
-                if (match) {
-                  const ipv4Address = match[1]
-                  if (!ip.isPrivate(ipv4Address) && ipv4Address !== '0.0.0.0') {
-                    console.log(`    ${ipv4Address}`)
-                    ips.add(ipv4Address)
+              if (findPeer.Addrs) {
+                for (const maddr of findPeer.Addrs) {
+                  console.log(`  ${maddr}`)
+                  const match = maddr.match(/^\/ip4\/(\d+\.\d+\.\d+\.\d+)/)
+                  if (match) {
+                    const ipv4Address = match[1]
+                    if (!ip.isPrivate(ipv4Address) && ipv4Address !== '0.0.0.0') {
+                      console.log(`    ${ipv4Address}`)
+                      ips.add(ipv4Address)
+                    }
+                    // FIXME: IPv6
                   }
-                  // FIXME: IPv6
                 }
               }
             } catch (e) {
