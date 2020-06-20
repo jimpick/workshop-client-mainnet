@@ -21,8 +21,13 @@ const annotations = {
   t040585: 'sealing, China, Shanghai',
   t052328: 'sealing, China, Beijing',
   t056726: 'sealing, China, Hunan',
+  t0105366: 'sealing, China, Shenzen',
   t0106575: 'sealing, China, Beijing',
   t0106603: 'sealing, Germany',
+  t0106436: 'sealing, China, Shenyang',
+  t0106446: 'sealing, China, Hangzhou',
+  t0106399: 'sealing, Japan, Heiwajima',
+  t0109282: 'new, China, Cangzhou',
 
   // Error
   t07211: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 7
