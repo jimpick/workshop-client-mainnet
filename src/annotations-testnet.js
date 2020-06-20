@@ -30,6 +30,7 @@ const annotations = {
   t0106399: 'sealing, Japan, Heiwajima',
   t0109282: 'sealing, China, Cangzhou',
   t0109538: 'sealing, China, Changsha',
+  t0109589: 'sealing, China, Shenzhen',
   t0109648: 'sealing, China, Beijing',
   t0109653: 'sealing, China, Weifang',
   t0109776: 'sealing, China, Jinan',
