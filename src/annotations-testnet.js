@@ -3,25 +3,25 @@ const annotations = {
   // Routable
   t01025: 'sealing, China, Yangzhou',
   t01215: 'sealing, China, Zhongshan',
-  t01459: 'sealing, China, Guilin',
+  t01459: 'active, China, Guilin',
   t01784: 'sealing, China, Shenzhen',
   t02020: 'active, China, Chengdu',
   t04463: 'sealing, China, Dongguan',
-  t04842: 'sealing, China, Changsha',
+  t04842: 'active, China, Changsha',
   t05900: 'active, China, Changzhou',
   t08293: 'sealing, China, Shangrao',
   t09833: 'sealing, China, Mianyang',
   t013836: 'sealing, China, Guangdong',
   t013966: 'sealing, China, Guangdong',
   t020889: 'sealing, China, Shenzhen',
-  t020894: 'sealing, China, Xiamen',
+  t020894: 'active, China, Xiamen',
   t029571: 'sealing, Korea, Seongnam-si',
   t033740: 'sealing, China, Ningbo',
   t039025: 'sealing, USA, San Francisco',
   t040585: 'sealing, China, Shanghai',
   t052328: 'sealing, China, Beijing',
   t056726: 'sealing, China, Hunan',
-  t0101180: 'sealing, China, Foshan',
+  t0101180: 'active, China, Foshan',
   t0105366: 'sealing, China, Shenzen',
   t0106575: 'sealing, China, Beijing',
   t0106603: 'sealing, Germany',
@@ -29,7 +29,10 @@ const annotations = {
   t0106446: 'sealing, China, Hangzhou',
   t0106399: 'sealing, Japan, Heiwajima',
   t0109282: 'sealing, China, Cangzhou',
-  t0109329: 'error, China, Shenzhen', // sending proposal to storage provider failed: failed to dial
+  t0109538: 'sealing, China, Changsha',
+  t0109648: 'sealing, China, Beijing',
+  t0109653: 'sealing, China, Weifang',
+  t0109776: 'sealing, China, Jinan',
 
   // Error
   t07211: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 7
@@ -40,6 +43,7 @@ const annotations = {
   // Non-routable
   t055393: 'NR - China, Beijing',
   t091046: 'NR - Singapore',
+  t0109329: 'NR - China, Shenzhen',
 
   // Bootstrappers
   t01000: 'bootstrap, NR',

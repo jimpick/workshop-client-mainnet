@@ -78,6 +78,7 @@ function Addrs ({
   peerId
 }) {
   const { addrs, timeGeoIp2, timeBaidu } = minerAddrsRecord
+  if (addrs.length === 0) return null
   let china = false
   for (const addr of addrs) {
     if (
@@ -527,8 +528,10 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                 timeGeoIp2: cacheRecord.timeGeoIp2,
                 timeBaidu: cacheRecord.timeBaidu
               }
-              if (cacheRecord.error) {
-                draft[miner].error = cacheRecord.error
+              if (cacheRecord.error || (cacheRecord.addrs && cacheRecord.addrs.length === 0)) {
+                if (cacheRecord.error) {
+                  draft[miner].error = cacheRecord.error
+                }
                 if (!queryAllMinersWithAnnotations || !annotations[miner]) {
                   if (!draft.newNonRoutableSet) {
                     draft.newNonRoutableSet = {}
