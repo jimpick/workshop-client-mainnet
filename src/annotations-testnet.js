@@ -2,6 +2,7 @@ const annotations = {
 
   // Routable
   t01025: 'sealing, China, Yangzhou',
+  t01027: 'new, China, Chengdu',
   t01215: 'sealing, China, Zhongshan',
   t01459: 'active, China, Guilin',
   t01784: 'sealing, China, Shenzhen',
@@ -14,6 +15,7 @@ const annotations = {
   t013836: 'sealing, China, Guangdong',
   t013966: 'sealing, China, Guangdong',
   t020889: 'sealing, China, Shenzhen',
+  t020890: 'new, China, Huzhou',
   t020894: 'active, China, Xiamen',
   t029571: 'sealing, Korea, Seongnam-si',
   t033740: 'sealing, China, Ningbo',
@@ -40,13 +42,21 @@ const annotations = {
   t01985: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 7
   t08459: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 7
   t0102008: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 7
-  
-  // Non-routable
+
+  // Non-routable top miners
+  t01009: 'NR, top miner', 
+  t01102: 'NR, top miner', 
+  t01546: 'NR, top miner', 
+  t011101: 'NR, top miner', 
+  t021661: 'NR, top miner', 
+  t039272: 'NR, top miner', 
+ 
+  // Non-routable former geo-located
   t055393: 'NR - China, Beijing',
   t091046: 'NR - Singapore',
   t0109329: 'NR - China, Shenzhen',
 
-  // Bootstrappers
+  // Non-routable Bootstrappers
   t01000: 'bootstrap, NR',
   t01001: 'bootstrap, NR',
   t01002: 'bootstrap, NR'

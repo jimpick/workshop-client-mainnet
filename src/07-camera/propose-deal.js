@@ -189,7 +189,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
           'NR'
         </label>
       </div>
-      <div style={{ height: '15rem', overflowY: 'scroll', width: '70vw' }}>
+      <div style={{ maxHeight: '15rem', overflowY: 'scroll', width: '70vw' }}>
         <div
           style={{
             display: 'flex',
