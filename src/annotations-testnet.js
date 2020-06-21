@@ -37,6 +37,10 @@ const annotations = {
   t0109776: 'sealing, China, Jinan',
   t0111839: 'new, China, Chongqing',
   t0111870: 'new, China, Shenyang',
+  t0111921: 'new, USA, Ashburn',
+  t0111923: 'new, China, Shenzhen',
+  t0111939: 'new, China, Shenyang',
+  t0111994: 'new, China, Shijiazhuang',
 
   // Error
   t07211: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 7
