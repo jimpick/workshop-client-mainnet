@@ -23,8 +23,8 @@ const testnetLocalConfig = {
 }
 
 const interopnetLocalConfig = {
-  // api: 'lotus.testground.ipfs.team/interop616_api',
-  api: 'localhost:9000/api',
+  api: 'lotus.testground.ipfs.team/interop616_api',
+  // api: 'interopnet.localhost:9000/api',
   secure: true,
   downloadDir: '/home/ubuntu/downloads',
   geoApi: 'interopnet.localhost:9000/api',

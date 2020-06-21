@@ -11,6 +11,12 @@ const annotations = {
   t02041: 'sealing, China, Chengdu, power, verified',
   t02053: 'sealing, China, Shenzhen, power',
   t02192: 'sealing, China, Guilin',
+  t02231: 'new, China, Zhejiang',
+  t02310: 'new, China, Fuzhou',
+  t02320: 'new, China, Guangdong',
+  t02367: 'new, China, Shaanxi',
+  t04729: 'new, China, Foshan',
+  t04825: 'new, China, Ningbo',
 
   // Non-routables (with power)
   t01850: 'NR - China, Hong Kong, 32G, top miner',
