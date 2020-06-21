@@ -22,7 +22,7 @@ route @api_node_rpc_0_options {
 
 route @api_node_rpc_0 {
  uri strip_prefix /api/0/node
- reverse_proxy localhost:9200 {
+ reverse_proxy localhost:1234 {
    header_down Access-Control-Allow-Origin "*"
  }
 }
@@ -54,7 +54,7 @@ route @api_node_rest_0_options {
 
 route @api_node_rest_0 {
   uri strip_prefix /api/0/node
-  reverse_proxy localhost:9200 {
+  reverse_proxy localhost:1234 {
     header_down Access-Control-Allow-Origin "*"
   }
 }
@@ -72,7 +72,7 @@ route @api_node_rest_0 {
 
 route @api_miner_rpc_0 {
   uri strip_prefix /api/0/miner
-  reverse_proxy localhost:9201
+  reverse_proxy localhost:2345
 }
 
 @api_testplan_0_options {
@@ -89,16 +89,16 @@ route @api_testplan_0_options {
     respond "" 204
 }
 
-@api_testplan_downloads_0 {
-    path_regexp api ^/api/0/testplan/downloads/(.*)$
-}
+#@api_testplan_downloads_0 {
+#    path_regexp api ^/api/0/testplan/downloads/(.*)$
+#}
 
-route @api_testplan_downloads_0 {
-  uri strip_prefix /api/0/testplan/downloads
-  reverse_proxy 10.0.1.52:5000 {
-    header_down Access-Control-Allow-Origin "*"
-  }
-}
+#route @api_testplan_downloads_0 {
+#  uri strip_prefix /api/0/testplan/downloads
+#  reverse_proxy 10.0.1.52:5000 {
+#    header_down Access-Control-Allow-Origin "*"
+#  }
+#}
 
 @api_testplan_0 {
     path_regexp api ^/api/0/testplan/(.*)$
