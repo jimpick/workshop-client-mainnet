@@ -1,7 +1,7 @@
 const annotations = {
 
   // Routable
-  t01027: 'new, China, Chengdu',
+  t01027: 'sealing, China, Chengdu',
   t01215: 'sealing, China, Zhongshan',
   t01459: 'active, China, Guilin',
   t01784: 'sealing, China, Shenzhen',
@@ -14,7 +14,7 @@ const annotations = {
   t013836: 'sealing, China, Guangdong',
   t013966: 'sealing, China, Guangdong',
   t020889: 'sealing, China, Shenzhen',
-  t020890: 'new, China, Huzhou',
+  t020890: 'sealing, China, Huzhou',
   t020894: 'active, China, Xiamen',
   t029571: 'sealing, Korea, Seongnam-si',
   t033740: 'sealing, China, Ningbo',
@@ -27,16 +27,16 @@ const annotations = {
   t0106575: 'sealing, China, Beijing',
   t0106603: 'sealing, Germany',
   t0106436: 'sealing, China, Shenyang',
-  t0106446: 'sealing, China, Hangzhou',
+  t0106446: 'active, China, Hangzhou',
   t0106399: 'sealing, Japan, Heiwajima',
   t0109282: 'sealing, China, Cangzhou',
-  t0109538: 'sealing, China, Changsha',
+  t0109538: 'active, China, Changsha',
   t0109589: 'sealing, China, Shenzhen',
   t0109648: 'sealing, China, Beijing',
-  t0109653: 'sealing, China, Weifang',
+  t0109653: 'active, China, Weifang',
   t0109776: 'sealing, China, Jinan',
-  t0111839: 'new, China, Chongqing',
-  t0111870: 'new, China, Shenyang',
+  t0111839: 'error, China, Chongqing', // error reading Response message: stream reset
+  t0111870: 'error, China, Shenyang', // deal failed: (State=7) generating piece committment: failed to build tree Caused by: 0: failed to create data store 1: No such file or directory (os error 2)
   t0111921: 'new, USA, Ashburn',
   t0111923: 'new, China, Shenzhen',
   t0111939: 'new, China, Shenyang',
