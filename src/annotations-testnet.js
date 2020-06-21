@@ -1,7 +1,6 @@
 const annotations = {
 
   // Routable
-  t01025: 'sealing, China, Yangzhou',
   t01027: 'new, China, Chengdu',
   t01215: 'sealing, China, Zhongshan',
   t01459: 'active, China, Guilin',
@@ -36,6 +35,8 @@ const annotations = {
   t0109648: 'sealing, China, Beijing',
   t0109653: 'sealing, China, Weifang',
   t0109776: 'sealing, China, Jinan',
+  t0111839: 'new, China, Chongqing',
+  t0111870: 'new, China, Shenyang',
 
   // Error
   t07211: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 7
@@ -52,6 +53,7 @@ const annotations = {
   t039272: 'NR, top miner', 
  
   // Non-routable former geo-located
+  t01025: 'NR - China, Yangzhou',
   t055393: 'NR - China, Beijing',
   t091046: 'NR - Singapore',
   t0109329: 'NR - China, Shenzhen',
