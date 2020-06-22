@@ -52,6 +52,9 @@ const annotations = {
   t011101: 'NR, top miner', 
   t021661: 'NR, top miner', 
   t039272: 'NR, top miner', 
+
+  // Non-routable with deals
+  t055280: 'NR, deals',
  
   // Non-routable former geo-located
   t01025: 'NR - China, Yangzhou',
