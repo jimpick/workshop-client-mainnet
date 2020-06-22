@@ -35,6 +35,7 @@ const annotations = {
   t0109653: 'active, China, Weifang',
   t0109776: 'active, China, Jinan',
   t0111994: 'sealing, China, Shijiazhuang',
+  t0114215: 'sealing, China, Shenyang',
   t0114231: 'sealing, China, Meishan',
 
   // Error
@@ -67,7 +68,6 @@ const annotations = {
   t0111921: 'NR - USA, Ashburn',
   t0111923: 'NR - China, Shenzhen',
   t0111939: 'NR - China, Shenyang',
-  t0114215: 'NR - China, Shenyang',
 
   // Non-routable Bootstrappers
   t01000: 'NR, bootstrap',
