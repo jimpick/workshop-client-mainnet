@@ -1,13 +1,13 @@
 const annotations = {
 
   // Routable
+  t01019: 'sealing, China, Chengdu',
   t01027: 'sealing, China, Chengdu',
   t01215: 'sealing, China, Zhongshan',
   t01459: 'active, China, Guilin',
   t01784: 'sealing, China, Shenzhen',
   t02020: 'active, China, Chengdu',
   t04463: 'sealing, China, Dongguan',
-  t04842: 'active, China, Changsha',
   t05900: 'active, China, Changzhou',
   t08293: 'sealing, China, Shangrao',
   t09833: 'sealing, China, Mianyang',
@@ -15,7 +15,6 @@ const annotations = {
   t013966: 'sealing, China, Guangdong',
   t020889: 'sealing, China, Shenzhen',
   t020890: 'sealing, China, Huzhou',
-  t020894: 'active, China, Xiamen',
   t029571: 'sealing, Korea, Seongnam-si',
   t033740: 'sealing, China, Ningbo',
   t039025: 'sealing, USA, San Francisco',
@@ -34,38 +33,46 @@ const annotations = {
   t0109589: 'sealing, China, Shenzhen',
   t0109648: 'sealing, China, Beijing',
   t0109653: 'active, China, Weifang',
-  t0109776: 'sealing, China, Jinan',
-  t0111839: 'error, China, Chongqing', // error reading Response message: stream reset
-  t0111870: 'error, China, Shenyang', // deal failed: (State=7) generating piece committment: failed to build tree Caused by: 0: failed to create data store 1: No such file or directory (os error 2)
-  t0111921: 'new, USA, Ashburn',
-  t0111923: 'new, China, Shenzhen',
-  t0111939: 'new, China, Shenyang',
-  t0111994: 'new, China, Shijiazhuang',
+  t0109776: 'active, China, Jinan',
+  t0111994: 'sealing, China, Shijiazhuang',
+  t0114231: 'sealing, China, Meishan',
 
   // Error
-  t07211: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 7
-  t01985: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 7
-  t08459: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 7
-  t0102008: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 7
+  t0113893: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 7
 
   // Non-routable top miners
+  t01007: 'NR, top miner',
   t01009: 'NR, top miner', 
   t01102: 'NR, top miner', 
   t01546: 'NR, top miner', 
+  t01985: 'NR, top miner - China, Wuxi',
+  t09084: 'NR, top miner',
+  t010581: 'NR, top miner',
   t011101: 'NR, top miner', 
   t021661: 'NR, top miner', 
   t039272: 'NR, top miner', 
  
   // Non-routable former geo-located
   t01025: 'NR - China, Yangzhou',
+  t04842: 'NR - China, Changsha',
+  t07211: 'NR - China, Wuxi',
+  t08459: 'NR - China, Wuxi',
+  t020894: 'NR - China, Xiamen',
   t055393: 'NR - China, Beijing',
   t091046: 'NR - Singapore',
+  t0102008: 'NR - China, Wuxi',
   t0109329: 'NR - China, Shenzhen',
+  t0111839: 'NR - China, Chongqing',
+  t0111870: 'NR - China, Shenyang',
+  t0111921: 'NR - USA, Ashburn',
+  t0111923: 'NR - China, Shenzhen',
+  t0111939: 'NR - China, Shenyang',
+  t0114215: 'NR - China, Shenyang',
 
   // Non-routable Bootstrappers
-  t01000: 'bootstrap, NR',
-  t01001: 'bootstrap, NR',
-  t01002: 'bootstrap, NR'
+  t01000: 'NR, bootstrap',
+  t01001: 'NR, bootstrap',
+  t01002: 'NR, bootstrap'
 }
 
 export default annotations
