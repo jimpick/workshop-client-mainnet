@@ -2,7 +2,6 @@ const annotations = {
 
   // Routable
   t01019: 'sealing, China, Chengdu',
-  t01027: 'sealing, China, Chengdu',
   t01215: 'sealing, China, Zhongshan',
   t01459: 'active, China, Guilin',
   t01784: 'sealing, China, Shenzhen',
@@ -14,7 +13,7 @@ const annotations = {
   t013836: 'sealing, China, Guangdong',
   t013966: 'sealing, China, Guangdong',
   t020889: 'sealing, China, Shenzhen',
-  t020890: 'sealing, China, Huzhou',
+  t020894: 'new, China, Xiamen',
   t029571: 'sealing, Korea, Seongnam-si',
   t033740: 'sealing, China, Ningbo',
   t039025: 'sealing, USA, San Francisco',
@@ -22,7 +21,6 @@ const annotations = {
   t052328: 'sealing, China, Beijing',
   t056726: 'sealing, China, Hunan',
   t0101180: 'active, China, Foshan',
-  t0105366: 'sealing, China, Shenzen',
   t0106575: 'sealing, China, Beijing',
   t0106603: 'sealing, Germany',
   t0106436: 'sealing, China, Shenyang',
@@ -32,11 +30,14 @@ const annotations = {
   t0109538: 'active, China, Changsha',
   t0109589: 'sealing, China, Shenzhen',
   t0109648: 'sealing, China, Beijing',
-  t0109653: 'active, China, Weifang',
   t0109776: 'active, China, Jinan',
   t0111994: 'sealing, China, Shijiazhuang',
   t0114215: 'sealing, China, Shenyang',
   t0114231: 'sealing, China, Meishan',
+  t0116001: 'new, China, Chongqing',
+  t0116085: 'new, Singapore',
+  t0116113: 'new, China, Shenyang',
+  t0116210: 'new, China, Beijing',
 
   // Error
   t0113893: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 7
@@ -58,14 +59,17 @@ const annotations = {
  
   // Non-routable former geo-located
   t01025: 'NR - China, Yangzhou',
+  t01027: 'NR - China, Chengdu',
   t04842: 'NR - China, Changsha',
   t07211: 'NR - China, Wuxi',
   t08459: 'NR - China, Wuxi',
-  t020894: 'NR - China, Xiamen',
+  t020890: 'NR - China, Huzhou',
   t055393: 'NR - China, Beijing',
   t091046: 'NR - Singapore',
   t0102008: 'NR - China, Wuxi',
+  t0105366: 'NR - China, Shenzhen',
   t0109329: 'NR - China, Shenzhen',
+  t0109653: 'NR - China, Weifang',
   t0111839: 'NR - China, Chongqing',
   t0111870: 'NR - China, Shenyang',
   t0111921: 'NR - USA, Ashburn',
