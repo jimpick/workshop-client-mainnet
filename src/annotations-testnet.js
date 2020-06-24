@@ -13,7 +13,6 @@ const annotations = {
   t013836: 'sealing, China, Guangdong',
   t013966: 'sealing, China, Guangdong',
   t020889: 'sealing, China, Shenzhen',
-  t020894: 'new, China, Xiamen',
   t029571: 'sealing, Korea, Seongnam-si',
   t033740: 'sealing, China, Ningbo',
   t039025: 'sealing, USA, San Francisco',
@@ -34,10 +33,9 @@ const annotations = {
   t0111994: 'sealing, China, Shijiazhuang',
   t0114215: 'sealing, China, Shenyang',
   t0114231: 'sealing, China, Meishan',
-  t0116001: 'new, China, Chongqing',
-  t0116085: 'new, Singapore',
-  t0116113: 'new, China, Shenyang',
-  t0116210: 'new, China, Beijing',
+  t0116001: 'sealing, China, Chongqing',
+  t0116085: 'sealing, Singapore',
+  t0116210: 'sealing, China, Beijing',
 
   // Error
   t0113893: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 7
@@ -64,6 +62,7 @@ const annotations = {
   t07211: 'NR - China, Wuxi',
   t08459: 'NR - China, Wuxi',
   t020890: 'NR - China, Huzhou',
+  t020894: 'NR - China, Xiamen',
   t055393: 'NR - China, Beijing',
   t091046: 'NR - Singapore',
   t0102008: 'NR - China, Wuxi',
@@ -75,6 +74,7 @@ const annotations = {
   t0111921: 'NR - USA, Ashburn',
   t0111923: 'NR - China, Shenzhen',
   t0111939: 'NR - China, Shenyang',
+  t0116113: 'NR - China, Shenyang',
 
   // Non-routable Bootstrappers
   t01000: 'NR, bootstrap',
