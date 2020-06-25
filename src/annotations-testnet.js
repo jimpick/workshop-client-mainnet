@@ -40,6 +40,7 @@ const annotations = {
   t0116001: 'sealing, China, Chongqing',
   t0116034: 'sealing, China, Shenzhen',
   t0116037: 'sealing, China, Hong Kong',
+  t0116082: 'sealing, USA, Boardman, Jim',
   t0116085: 'sealing, Singapore',
   t0116103: 'waitingfordata, China, Shenzhen',
   t0116113: 'sealing, China, Shenyang',
