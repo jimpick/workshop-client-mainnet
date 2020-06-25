@@ -31,12 +31,15 @@ export default function useLotusClient (nodeNumber, nodeOrMiner) {
     } catch (e) {
       console.warn('use-lotus-client new client error', e)
     }
-    return async () => {
-      try {
-        await client.destroy()
-      } catch (e) {
-        console.warn('use-lotus-client destroy error', e)
+    return () => {
+      async function cleanup () {
+        try {
+          await client.destroy()
+        } catch (e) {
+          console.warn('use-lotus-client destroy error', e)
+        }
       }
+      cleanup()
     }
   }, [nodeNumber, nodeOrMiner])
 
