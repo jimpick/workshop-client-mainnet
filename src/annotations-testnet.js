@@ -42,6 +42,7 @@ const annotations = {
   // Error
   t01985: 'error, China, Wuxi, former top miner', // unexpected deal status while waiting for data request: 7
   t0113893: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 7
+  t0109648: 'error, China, Beijing', // sending proposal to storage provider failed: routing: not found
   t0116197: 'error, Australia, Chatswood', // unexpected deal status while waiting for data request: 7
   t0117386: 'error, USA', // unexpected deal status while waiting for data request: 7
 
@@ -81,7 +82,6 @@ const annotations = {
   t0106603: 'NR - Germany',
   t0109329: 'NR - China, Shenzhen',
   t0109589: 'NR - China, Shenzhen',
-  t0109648: 'NR - China, Beijing',
   t0109776: 'NR - China, Jinan',
   t0116085: 'NR - Singapore',
   t0117396: 'NR - China, Beijing',
