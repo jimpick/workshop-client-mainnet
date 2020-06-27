@@ -59,10 +59,10 @@ class LotusRPC {
     if (options.noErrors) {
       // React in development mode seems to have trouble handling async
       // exceptions in useEffect() cleanup functions
-      try {
-        await this.provider.destroy()
-      } catch (e) {
-      }
+      // try {
+        this.provider.destroy()
+      //} catch (e) {
+      // }
     } else {
       await this.provider.destroy()
     }

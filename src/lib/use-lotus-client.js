@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 // import { LotusRPC } from '@filecoin-shipyard/lotus-client-rpc'
 import { LotusRPC } from '../lotus-client-rpc.js'
-import { BrowserProvider } from '@filecoin-shipyard/lotus-client-provider-browser'
+// import { BrowserProvider } from '@filecoin-shipyard/lotus-client-provider-browser'
+import { BrowserProvider } from '../lotus-client-provider-browser.js'
 import { testnet } from '@filecoin-shipyard/lotus-client-schema'
 import { api, secure } from '../config'
 
@@ -32,7 +33,8 @@ export default function useLotusClient (nodeNumber, nodeOrMiner) {
     } catch (e) {
       console.warn('use-lotus-client new client error', e)
     }
-    return () => client.destroy({ noErrors: true })
+    // return () => client.destroy({ noErrors: true })
+    return () => client.provider.destroy()
   }, [nodeNumber, nodeOrMiner])
 
   return client
