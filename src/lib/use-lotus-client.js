@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-// import { LotusRPC } from '@filecoin-shipyard/lotus-client-rpc'
-import { LotusRPC } from '../lotus-client-rpc.js'
-// import { BrowserProvider } from '@filecoin-shipyard/lotus-client-provider-browser'
-import { BrowserProvider } from '../lotus-client-provider-browser.js'
+import { LotusRPC } from '@filecoin-shipyard/lotus-client-rpc'
+// import { LotusRPC } from '../lotus-client-rpc.js'
+import { BrowserProvider } from '@filecoin-shipyard/lotus-client-provider-browser'
+// import { BrowserProvider } from '../lotus-client-provider-browser.js'
 import { testnet } from '@filecoin-shipyard/lotus-client-schema'
 import { api, secure } from '../config'
 
