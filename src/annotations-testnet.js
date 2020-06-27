@@ -2,6 +2,7 @@ const annotations = {
 
   // Routable
   t01019: 'sealing, China, Chengdu',
+  t01025: 'sealing, China, Yangzhou',
   t01215: 'sealing, China, Zhongshan',
   t01459: 'active, China, Guilin',
   t01784: 'sealing, China, Shenzhen',
@@ -15,12 +16,15 @@ const annotations = {
   t039025: 'sealing, USA, San Francisco',
   t040585: 'sealing, China, Shanghai',
   t0101180: 'active, China, Foshan',
+  t0102830: 'sealing, China, Beijing',
   t0105366: 'sealing, China, Shenzhen',
-  t0106446: 'active, China, Hangzhou',
   t0106399: 'sealing, Japan, Heiwajima',
+  t0106446: 'active, China, Hangzhou',
+  t0106549: 'sealing, China, Wuhan',
   t0109282: 'sealing, China, Cangzhou',
   t0109538: 'active, China, Changsha',
   t0109653: 'active, China, Weifang',
+  t0114252: 'sealing, China',
   t0115997: 'sealing, China, Shaanxi',
   t0116001: 'sealing, China, Chongqing',
   t0116034: 'active, China, Shenzhen',
@@ -32,19 +36,23 @@ const annotations = {
   t0117348: 'sealing, China, Beijing',
   t0117363: 'active, China, Shijiazhuang',
   t0117390: 'sealing, China, Beijing',
+  t0117482: 'validating, USA',
   t0117595: 'sealing, China, Beijing',
   t0117597: 'sealing, USA, Clarksville',
   t0117599: 'active, China, Shenzhen',
   t0117600: 'sealing, China, Shenzhen',
   t0117719: 'sealing, China, Guandong, 64G',
+  t0117734: 'validating, USA',
   t0117756: 'sealing, USA, Boardman',
-  t0117803: 'new, China, Shenzhen',
-  t0117826: 'new, China, Beijing',
+  t0117803: 'validating, China, Shenzhen',
+  t0117826: 'validating, China, Beijing',
 
   // Error
   t01985: 'error, China, Wuxi, former top miner', // unexpected deal status while waiting for data request: 7
-  t0113893: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 7
+  t0104765: 'error, China, Yunnan', // error reading Response message: stream reset
   t0109648: 'error, China, Beijing', // sending proposal to storage provider failed: routing: not found
+  t0113893: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 7
+  t0114172: 'error, China', // unexpected deal status while waiting for data request: 7
   t0116197: 'error, Australia, Chatswood', // unexpected deal status while waiting for data request: 7
   t0117386: 'error, USA', // unexpected deal status while waiting for data request: 7
 
@@ -63,7 +71,6 @@ const annotations = {
   t055280: 'NR, deals',
  
   // Non-routable former geo-located
-  t01025: 'NR - China, Yangzhou',
   t01027: 'NR - China, Chengdu',
   t04842: 'NR - China, Changsha',
   t05900: 'NR - China, Changzhou',
