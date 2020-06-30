@@ -3,14 +3,13 @@ const annotations = {
   // Routable
   t01019: 'sealing, China, Chengdu',
   t01025: 'sealing, China, Yangzhou',
-  t01215: 'sealing, China, Zhongshan',
   t01459: 'active, China, Guilin',
   t01784: 'sealing, China, Shenzhen',
   t02020: 'active, China, Chengdu',
   t04463: 'sealing, China, Dongguan',
   t08293: 'sealing, China, Shangrao',
   t013966: 'sealing, China, Guangdong',
-  t020889: 'sealing, China, Shenzhen',
+  t020890: 'sealing, China, Huzhou',
   t029571: 'sealing, Korea, Seongnam-si',
   t033740: 'sealing, China, Ningbo',
   t039025: 'sealing, USA, San Francisco',
@@ -24,15 +23,14 @@ const annotations = {
   t0109282: 'sealing, China, Cangzhou',
   t0109538: 'active, China, Changsha',
   t0109653: 'active, China, Weifang',
-  t0114252: 'sealing, China',
+  t0109776: 'sealing, China, Jinan',
+  t0114252: 'active, China, Ningbo',
   t0115997: 'sealing, China, Shaanxi',
   t0116001: 'sealing, China, Chongqing',
   t0116034: 'active, China, Shenzhen',
   t0116037: 'sealing, China, Hong Kong',
-  t0116082: 'active, USA, Boardman, Jim',
   t0116113: 'active, China, Shenyang',
   t0116210: 'sealing, China, Beijing',
-  t0117284: 'sealing, China, Guilin',
   t0117348: 'sealing, China, Beijing',
   t0117363: 'active, China, Shijiazhuang',
   t0117390: 'sealing, China, Beijing',
@@ -45,16 +43,19 @@ const annotations = {
   t0117734: 'sealing, USA',
   t0117756: 'sealing, USA, Boardman',
   t0117803: 'validating, China, Shenzhen',
-  t0117826: 'validating, China, Beijing',
+  t0117926: 'sealing, China, Ningxia',
+  t0117933: 'sealing, China, Meishan',
+  t0118078: 'sealing, USA, Santa Clara',
+  t0118133: 'sealing, China, Shijiazhuang',
+  t0118144: 'sealing, China, Hangzhou',
+  t0118150: 'sealing, China, Shenzhen',
+  t0118186: 'sealing, Korea, Seongnam-si',
+  t0118477: 'sealing, USA, Boardman, Jim',
 
   // Error
   t01985: 'error, China, Wuxi, former top miner', // unexpected deal status while waiting for data request: 7
-  t0104765: 'error, China, Yunnan', // error reading Response message: stream reset
-  t0109648: 'error, China, Beijing', // sending proposal to storage provider failed: routing: not found
-  t0113893: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 7
-  t0114172: 'error, China', // unexpected deal status while waiting for data request: 7
   t0116197: 'error, Australia, Chatswood', // unexpected deal status while waiting for data request: 7
-  t0117386: 'error, USA', // unexpected deal status while waiting for data request: 7
+  t0118388: 'error, China, Hangzhou', // NR
 
   // Non-routable top miners
   t01007: 'NR, top miner',
@@ -72,27 +73,32 @@ const annotations = {
  
   // Non-routable former geo-located
   t01027: 'NR - China, Chengdu',
+  t01215: 'NR - China, Zhongshan',
   t04842: 'NR - China, Changsha',
   t05900: 'NR - China, Changzhou',
   t07211: 'NR - China, Wuxi',
   t08459: 'NR - China, Wuxi',
   t09833: 'NR - China, Mianyang',
   t013836: 'NR - China, Guangdong',
-  t020890: 'NR - China, Huzhou',
+  t020889: 'NR - China, Shenzhen',
   t020894: 'NR - China, Xiamen',
   t052328: 'NR - China, Beijing',
   t055393: 'NR - China, Beijing',
   t056726: 'NR - China, Hunan',
   t091046: 'NR - Singapore',
   t0102008: 'NR - China, Wuxi',
-  t0116103: 'NR - China, Shenzhen',
+  t0104765: 'NR - China, Yunnan',
   t0106436: 'NR - China, Shenyang',
   t0106575: 'NR - China, Beijing',
   t0106603: 'NR - Germany',
   t0109329: 'NR - China, Shenzhen',
   t0109589: 'NR - China, Shenzhen',
-  t0109776: 'NR - China, Jinan',
+  t0109648: 'NR - China, Beijing',
+  t0113893: 'NR - China, Wuxi',
+  t0114172: 'NR - China',
+  t0116082: 'NR - USA, Boardman, Jim',
   t0116085: 'NR - Singapore',
+  t0116103: 'NR - China, Shenzhen',
   t0117396: 'NR - China, Beijing',
   t0117576: 'NR - China, Jinan',
   t0117613: 'NR - China, Shenzhen',
@@ -105,6 +111,12 @@ const annotations = {
   t0111994: 'NR - China, Shijiazhuang',
   t0114215: 'NR - China, Shenyang',
   t0114231: 'NR - China, Meishan',
+  t0117284: 'NR - China, Guilin',
+  t0117386: 'NR - USA',
+  t0117826: 'NR - China, Beijing',
+  t0118155: 'NR - USA, Irvine',
+  t0118238: 'NR - China, Shenzhen',
+  t0118304: 'NR - China, Guangdong',
 
   // Non-routable Bootstrappers
   t01000: 'NR, bootstrap',
