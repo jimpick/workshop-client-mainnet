@@ -18,11 +18,11 @@ const annotations = {
   t0102830: 'sealing, China, Beijing',
   t0105366: 'sealing, China, Shenzhen',
   t0106399: 'sealing, Japan, Heiwajima',
-  t0106549: 'sealing, China, Wuhan',
+  t0106549: 'active, China, Wuhan',
   t0109282: 'sealing, China, Cangzhou',
   t0109538: 'active, China, Changsha',
   t0109653: 'active, China, Weifang',
-  t0109776: 'sealing, China, Jinan',
+  t0109776: 'active, China, Jinan',
   t0114252: 'active, China, Ningbo',
   t0115997: 'sealing, China, Shaanxi',
   t0116001: 'sealing, China, Chongqing',
@@ -31,29 +31,34 @@ const annotations = {
   t0116113: 'active, China, Shenyang',
   t0116210: 'sealing, China, Beijing',
   t0117348: 'sealing, China, Beijing',
-  t0117363: 'error, China, Shijiazhuang', // stream reset
   t0117390: 'sealing, China, Beijing',
   t0117482: 'sealing, USA',
   t0117595: 'sealing, China, Beijing',
   t0117597: 'sealing, USA, Clarksville',
-  t0117599: 'error, China, Shenzhen', // NR
   t0117600: 'sealing, China, Shenzhen',
   t0117719: 'sealing, China, Guandong, 64G',
-  t0117734: 'sealing, USA',
+  t0117734: 'active, USA',
   t0117756: 'sealing, USA, Boardman',
   t0117803: 'validating, China, Shenzhen',
   t0117926: 'sealing, China, Ningxia',
   t0117933: 'sealing, China, Meishan',
   t0118078: 'sealing, USA, Santa Clara',
   t0118133: 'sealing, China, Shijiazhuang',
-  t0118144: 'sealing, China, Hangzhou',
+  t0118144: 'active, China, Hangzhou',
   t0118150: 'sealing, China, Shenzhen',
   t0118186: 'sealing, Korea, Seongnam-si',
-  t0118477: 'sealing, USA, Boardman, Jim',
+  t0118477: 'active, USA, Boardman, Jim',
+  t0118579: 'new, China, Guangdong',
+  t0118595: 'new, Singapore',
+  t0118797: 'new, China, Huzhou',
+  t0118821: 'new, China, Shenzhen',
+  t0118867: 'new, China, Shenzhen',
 
   // Error
   t01985: 'error, China, Wuxi, former top miner', // unexpected deal status while waiting for data request: 7
   t0116197: 'error, Australia, Chatswood', // unexpected deal status while waiting for data request: 7
+  t0117363: 'error, China, Shijiazhuang', // stream reset
+  t0117599: 'error, China, Shenzhen', // NR
   t0118388: 'error, China, Hangzhou', // NR
 
   // Non-routable top miners
