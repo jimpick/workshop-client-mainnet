@@ -23,8 +23,7 @@ const annotations = {
   t0117600: 'sealing, China, Shenzhen',
   t0117734: 'active, USA',
   t0117756: 'sealing, USA, Boardman',
-  t0117803: 'validating, China, Shenzhen',
-  t0117926: 'sealing, China, Ningxia',
+  t0117926: 'active, China, Ningxia',
   t0118078: 'sealing, USA, Santa Clara',
   t0118133: 'sealing, China, Shijiazhuang',
   t0118144: 'active, China, Hangzhou',
@@ -34,7 +33,8 @@ const annotations = {
   t0118579: 'sealing, China, Guangdong',
   t0118595: 'sealing, Singapore',
   t0118797: 'sealing, China, Huzhou',
-  t0118867: 'sealing, China, Shenzhen',
+  t0118867: 'active, China, Shenzhen',
+  t0118999: 'sealing, Japan, Osaka',
 
   // Error
   t01019: 'error, China, Chengdu', // NR
@@ -57,6 +57,7 @@ const annotations = {
   t0117595: 'error, China, Beijing', // NR
   t0117599: 'error, China, Shenzhen', // NR
   t0117719: 'error, China, Guandong, 64G', // NR
+  t0117803: 'error, China, Shenzhen', // Stuck validating
   t0117933: 'error, China, Meishan', // NR
   t0118388: 'error, China, Hangzhou', // NR
   t0118821: 'error, China, Shenzhen', // stream reset
