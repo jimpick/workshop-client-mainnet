@@ -7,7 +7,7 @@ import annotations from '../annotations'
 import DealList from '../08-deals/deal-list'
 
 export default function ProposeDeal ({ appState, updateAppState }) {
-  const { selectedNode, filterNewMiners, filterActiveMiners, filterPowerMiners, filterTopMiners, filterDeals, filterNonRoutable } = appState
+  const { selectedNode, filterNewMiners, filterRecycleMiners, filterActiveMiners, filterPowerMiners, filterErrorMiners, filterTopMiners, filterDeals, filterNonRoutable } = appState
   const client = useLotusClient(selectedNode, 'node')
   // const [miners, annotations] = useMiners(client)
   const miners = Object.keys(annotations)
@@ -29,11 +29,17 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     if (filterNewMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/^new/))
     }
+    if (filterRecycleMiners && miners) {
+      return miners.filter(miner => annotations[miner].match(/^recycle/))
+    }
     if (filterActiveMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/^active/))
     }
     if (filterPowerMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/power/i))
+    }
+    if (filterErrorMiners && miners) {
+      return miners.filter(miner => annotations[miner].match(/^error/i))
     }
     if (filterTopMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/top miner/i))
@@ -45,7 +51,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
       return miners.filter(miner => !annotations[miner].match(/^NR/i))
     }
     return miners
-  }, [miners, filterNewMiners, filterActiveMiners, filterPowerMiners, filterTopMiners, filterDeals, filterNonRoutable])
+  }, [miners, filterNewMiners, filterRecycleMiners, filterActiveMiners, filterPowerMiners, filterErrorMiners, filterTopMiners, filterDeals, filterNonRoutable])
 
   useEffect(() => {
     const objectUrl = URL.createObjectURL(appState.capture.blob)
@@ -126,6 +132,19 @@ export default function ProposeDeal ({ appState, updateAppState }) {
         <label>
           <input
             type='checkbox'
+            checked={filterRecycleMiners}
+            onChange={() => {
+              updateAppState(draft => {
+                draft.filterRecycleMiners = !filterRecycleMiners
+              })
+            }}
+            style={{ marginLeft: '1rem' }}
+          />
+          'recycle'
+        </label>
+        <label>
+          <input
+            type='checkbox'
             checked={filterActiveMiners}
             onChange={() => {
               updateAppState(draft => {
@@ -148,6 +167,19 @@ export default function ProposeDeal ({ appState, updateAppState }) {
             style={{ marginLeft: '1rem' }}
           />
           'power'
+        </label>
+        <label>
+          <input
+            type='checkbox'
+            checked={filterErrorMiners}
+            onChange={() => {
+              updateAppState(draft => {
+                draft.filterErrorMiners = !filterErrorMiners
+              })
+            }}
+            style={{ marginLeft: '1rem' }}
+          />
+          'error'
         </label>
         <label>
           <input
