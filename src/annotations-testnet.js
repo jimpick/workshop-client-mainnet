@@ -1,40 +1,43 @@
 const annotations = {
 
-  // Routable
-  t01025: 'sealing, China, Yangzhou',
+  // Routable - active
   t01459: 'active, China, Guilin',
-  t01784: 'sealing, China, Shenzhen',
   t02020: 'active, China, Chengdu',
-  t04463: 'sealing, China, Dongguan',
-  t040585: 'sealing, China, Shanghai',
   t0101180: 'active, China, Foshan',
-  t0102830: 'sealing, China, Beijing',
-  t0105366: 'sealing, China, Shenzhen',
-  t0106399: 'sealing, Japan, Heiwajima',
   t0106549: 'active, China, Wuhan',
-  t0109538: 'active, China, Changsha',
   t0109653: 'active, China, Weifang',
   t0109776: 'active, China, Jinan',
   t0114252: 'active, China, Ningbo',
   t0116034: 'active, China, Shenzhen',
   t0116113: 'active, China, Shenyang',
-  t0116210: 'sealing, China, Beijing',
-  t0117597: 'sealing, USA, Clarksville',
-  t0117600: 'sealing, China, Shenzhen',
   t0117734: 'active, USA',
-  t0117756: 'sealing, USA, Boardman',
   t0117926: 'active, China, Ningxia',
-  t0118078: 'sealing, USA, Santa Clara',
-  t0118133: 'sealing, China, Shijiazhuang',
   t0118144: 'active, China, Hangzhou',
-  t0118150: 'sealing, China, Shenzhen',
-  t0118186: 'sealing, Korea, Seongnam-si',
   t0118477: 'active, USA, Boardman, Jim',
-  t0118579: 'sealing, China, Guangdong',
-  t0118595: 'sealing, Singapore',
-  t0118797: 'sealing, China, Huzhou',
-  t0118867: 'active, China, Shenzhen',
-  t0118999: 'sealing, Japan, Osaka',
+
+  // Routable - new, sealing
+  t01025: 'sealing, China, Yangzhou, 1 day',
+  t01784: 'sealing, China, Shenzhen, 1 day',
+  t04463: 'sealing, China, Dongguan, 1 day',
+  t040585: 'sealing, China, Shanghai, 1 day',
+  t0102830: 'sealing, China, Beijing, 1 day',
+  t0105366: 'sealing, China, Shenzhen, 1 day',
+  t0117600: 'sealing, China, Shenzhen, 1 day',
+  t0117756: 'sealing, USA, Boardman, 1 day',
+  t0118078: 'sealing, USA, Santa Clara, 1 day',
+  t0118133: 'sealing, China, Shijiazhuang, 1 day',
+  t0118150: 'sealing, China, Shenzhen, 1 day',
+  t0118186: 'sealing, Korea, Seongnam-si, 23 hours',
+  t0118595: 'sealing, Singapore, 1 day',
+  t0118797: 'sealing, China, Huzhou, 1 day',
+  t0118999: 'sealing, Japan, Osaka, 15 hours',
+  t0119018: 'sealing, China, Shenzhen, new',
+  t0119030: 'sealing, Singapore, new',
+  t0119045: 'sealing, China, Beijing, new',
+  t0119061: 'sealing, China, Shenzhen, new',
+  t0119064: 'sealing, China, Chengdu, new',
+  t0119101: 'sealing, China, Chongqing, new',
+  t0119143: 'sealing, China, Shenzhen, new',
 
   // Error
   t01019: 'error, China, Chengdu', // NR
@@ -45,22 +48,28 @@ const annotations = {
   t029571: 'error, Korea, Seongnam-si', // NR
   t033740: 'error, China, Ningbo', // NR
   t039025: 'error, USA, San Francisco', // NR
+  t0106399: 'error, Japan, Heiwajima', // Stuck at validating
   t0109282: 'error, China, Cangzhou', // NR
+  t0109538: 'error, China, Changsha, was active', // failed to dial
   t0115997: 'error, China, Shaanxi', // NR
   t0116001: 'error, China, Chongqing', // NR
   t0116037: 'error, China, Hong Kong', // NR
   t0116197: 'error, Australia, Chatswood', // unexpected deal status while waiting for data request: 7
+  t0116210: 'error, China, Beijing', // stream reset
   t0117348: 'error, China, Beijing', // NR
   t0117363: 'error, China, Shijiazhuang', // stream reset
   t0117390: 'error, China, Beijing', // NR
   t0117482: 'error, USA', // NR
   t0117595: 'error, China, Beijing', // NR
+  t0117597: 'error, USA, Clarksville', // stream reset
   t0117599: 'error, China, Shenzhen', // NR
   t0117719: 'error, China, Guandong, 64G', // NR
   t0117803: 'error, China, Shenzhen', // Stuck validating
   t0117933: 'error, China, Meishan', // NR
   t0118388: 'error, China, Hangzhou', // NR
+  t0118579: 'error, China, Guangdong, was active', // unexpected deal status while waiting for data request: 7
   t0118821: 'error, China, Shenzhen', // stream reset
+  t0118867: 'error, China, Shenzhen, was active', // NR
 
   // Non-routable top miners
   t01007: 'NR, top miner',
