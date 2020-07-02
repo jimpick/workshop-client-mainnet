@@ -3,7 +3,7 @@ const annotations = {
   // Routable - active
   t01459: 'active, China, Guilin',
   t02020: 'active, China, Chengdu',
-  t0101180: 'active, China, Foshan, seal times: 15h',
+  t0101180: 'active, China, Foshan, seal times: 15h, 6h',
   t0106549: 'active, China, Wuhan, seal times: 21h',
   t0109653: 'active, China, Weifang, seal times: 11h',
   t0114252: 'active, China, Ningbo, seal times: 9h, 21h',
@@ -43,6 +43,7 @@ const annotations = {
   t0119064: 'sealing, China, Chengdu, new',
   t0119101: 'sealing, China, Chongqing, new',
   t0119143: 'sealing, China, Shenzhen, new',
+  t0119228: 'sealing, China, Shaanxi, new',
 
   // Error
   t01985: 'error, China, Wuxi, former top miner', // unexpected deal status while waiting for data request: 7
