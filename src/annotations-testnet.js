@@ -12,7 +12,6 @@ const annotations = {
   t0117734: 'active, USA, seal times: 19h',
   t0117926: 'active, China, Ningxia, seal times: 17h, 23h',
   t0118144: 'active, China, Hangzhou, seal times: 12h',
-  t0118477: 'active, USA, Boardman, Jim, seal times: 13h',
 
   // Routable - new, recycle, sealing
   t01025: 'sealing, China, Yangzhou, 1 day',
@@ -44,6 +43,7 @@ const annotations = {
   t0119101: 'sealing, China, Chongqing, new',
   t0119143: 'sealing, China, Shenzhen, new',
   t0119228: 'sealing, China, Shaanxi, new',
+  t0119263: 'sealing, USA, Boardman, Jim, new',
 
   // Error
   t01985: 'error, China, Wuxi, former top miner', // unexpected deal status while waiting for data request: 7
@@ -133,6 +133,7 @@ const annotations = {
   t0118238: 'NR - China, Shenzhen',
   t0118304: 'NR - China, Guangdong',
   t0118388: 'NR - China, Hangzhou',
+  t0118477: 'NR - USA, Boardman, Jim, seal times: 13h',
 
   // Non-routable Bootstrappers
   t01000: 'NR, bootstrap',
