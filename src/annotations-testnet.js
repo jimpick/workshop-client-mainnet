@@ -1,21 +1,13 @@
 const annotations = {
 
   // Routable - active
-  t01459: 'active, China, Guilin',
-  t02020: 'active, China, Chengdu',
   t0101180: 'active, China, Foshan, seal times: 15h, 6h',
-  t0106549: 'active, China, Wuhan, seal times: 21h',
   t0116034: 'active, China, Shenzhen, seal times: 10h',
-  t0116113: 'active, China, Shenyang',
-  t0117734: 'active, USA, seal times: 19h', // validating
+  t0117734: 'active, USA, seal times: 19h',
   t0117803: 'active, China, Shenzhen, seal times: 10h',
-  t0117926: 'active, China, Ningxia, seal times: 17h, 23h, 24h',
   t0118144: 'active, China, Hangzhou, seal times: 12h',
   t0118155: 'active, USA, Irvine, seal times: 15h',
-  t0118821: 'active, China, Shenzhen, seal times: 13h',
-  t0119018: 'active, China, Shenzhen, seal times: 14h',
   t0119101: 'active, China, Chongqing, seal times: 17h',
-  t0119143: 'active, China, Shenzhen, seal times: 22h',
 
   // Routable - new, recycle, sealing
   t01025: 'sealing, China, Yangzhou',
@@ -55,16 +47,9 @@ const annotations = {
   t0119698: 'sealing, China, Shanghai, new',
 
   // Error
-  t01985: 'error, China, Wuxi, former top miner', // unexpected deal status while waiting for data request: 7
-  t08293: 'error, China, Shangrao', // unexpected deal status while waiting for data request: 7
-  t0106399: 'error, Japan, Heiwajima', // Stuck at validating
   t0109653: 'error, China, Weifang, seal times: 11h', // unexpected deal status while waiting for data request: 7
   t0109776: 'error, China, Jinan', // Stuck at WaitForDataRequest
-  t0113893: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 9
-  t0114252: 'error, China, Ningbo, seal times: 9h, 21h, 12h', // unexpected deal status while waiting for data request: 7
-  t0116210: 'error, China, Beijing', // stream reset
   t0118186: 'error, Korea, Seongnam-si', // stuck validating
-  t0118579: 'error, China, Guangdong, was active', // unexpected deal status while waiting for data request: 7
   t0119591: 'error, China, Beijing', // stream reset
 
   // Non-routable top miners
@@ -72,7 +57,9 @@ const annotations = {
   t01019: 'NR, China, Chengdu, top miner',
   t01009: 'NR, top miner', 
   t01102: 'NR, top miner', 
+  t01459: 'NR, China, Guilin, top miner', 
   t01546: 'NR, former top miner', 
+  t02020: 'NR - China, Chengdu, top miner',
   t09084: 'NR, top miner',
   t010581: 'NR, top miner',
   t011101: 'NR, top miner', 
@@ -85,9 +72,11 @@ const annotations = {
  
   // Non-routable former geo-located
   t01027: 'NR - China, Chengdu',
+  t01985: 'NR - China, Wuxi, former top miner',
   t04842: 'NR - China, Changsha',
   t05900: 'NR - China, Changzhou',
   t07211: 'NR - China, Wuxi',
+  t08293: 'NR - China, Shangrao',
   t08459: 'NR - China, Wuxi',
   t09833: 'NR - China, Mianyang',
   t013836: 'NR - China, Guangdong',
@@ -103,8 +92,10 @@ const annotations = {
   t091046: 'NR - Singapore',
   t0102008: 'NR - China, Wuxi',
   t0104765: 'NR - China, Yunnan',
+  t0106399: 'NR - Japan, Heiwajima',
   t0106436: 'NR - China, Shenyang',
   t0106446: 'NR - China, Hangzhou',
+  t0106549: 'NR - China, Wuhan, seal times: 21h',
   t0106575: 'NR - China, Beijing',
   t0106603: 'NR - Germany',
   t0109282: 'NR - China, Cangzhou',
@@ -117,8 +108,10 @@ const annotations = {
   t0111923: 'NR - China, Shenzhen',
   t0111939: 'NR - China, Shenyang',
   t0111994: 'NR - China, Shijiazhuang',
+  t0113893: 'NR - China, Wuxi',
   t0114215: 'NR - China, Shenyang',
   t0114231: 'NR - China, Meishan',
+  t0114252: 'NR - China, Ningbo, seal times: 9h, 21h, 12h',
   t0114172: 'NR - China',
   t0115997: 'NR - China, Shaanxi',
   t0116001: 'NR - China, Chongqing',
@@ -126,7 +119,9 @@ const annotations = {
   t0116082: 'NR - USA, Boardman, Jim',
   t0116085: 'NR - Singapore',
   t0116103: 'NR - China, Shenzhen',
+  t0116113: 'NR - China, Shenyang, was active',
   t0116197: 'NR - Australia, Chatswood',
+  t0116210: 'NR - China, Beijing',
   t0117284: 'NR - China, Guilin',
   t0117348: 'NR - China, Beijing',
   t0117363: 'NR - China, Shijiazhuang',
@@ -143,14 +138,19 @@ const annotations = {
   t0117613: 'NR - China, Shenzhen',
   t0117719: 'NR - China, Guandong, 64G',
   t0117826: 'NR - China, Beijing',
+  t0117926: 'NR - China, Ningxia, seal times: 17h, 23h, 24h',
   t0118078: 'NR - USA, Santa Clara',
   t0118150: 'NR - China, Shenzhen',
   t0118238: 'NR - China, Shenzhen',
   t0118304: 'NR - China, Guangdong',
   t0118388: 'NR - China, Hangzhou',
   t0118477: 'NR - USA, Boardman, Jim, seal times: 13h',
+  t0118579: 'NR - China, Guangdong, was active',
   t0118595: 'NR - Singapore',
+  t0118821: 'NR - China, Shenzhen, seal times: 13h',
   t0118867: 'NR - China, Shenzhen, was active',
+  t0119018: 'NR - China, Shenzhen, seal times: 14h',
+  t0119143: 'NR - China, Shenzhen, seal times: 22h',
   t0119263: 'NR - USA, Boardman, Jim',
 
   // Non-routable Bootstrappers
