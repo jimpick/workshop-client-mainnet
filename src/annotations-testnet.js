@@ -8,6 +8,10 @@ const annotations = {
   t0118144: 'active, China, Hangzhou, seal times: 12h',
   t0118155: 'active, USA, Irvine, seal times: 15h',
   t0119101: 'active, China, Chongqing, seal times: 17h',
+  t0119574: 'active, China, Guilin, seal times: 11h',
+  t0119593: 'active, China, Changsha, seal times: 8h',
+  t0119618: 'active, China, Hangzhou, seal times: 12h',
+  t0119695: 'active, USA, Boardman, Jim, seal times: 13h',
 
   // Routable - new, recycle, sealing
   t01025: 'sealing, China, Yangzhou',
@@ -19,38 +23,31 @@ const annotations = {
   t0105366: 'sealing, China, Shenzhen',
   t0109538: 'sealing, China, Changsha',
   t0117756: 'sealing, USA, Boardman',
-  t0117933: 'sealing, China, Meishan',
   t0118133: 'sealing, China, Shijiazhuang',
   t0118797: 'sealing, China, Huzhou',
-  t0118999: 'sealing, Japan, Osaka',
-  t0119030: 'sealing, Singapore',
-  t0119045: 'sealing, China, Beijing',
-  t0119061: 'sealing, China, Shenzhen',
   t0119064: 'sealing, China, Chengdu',
   t0119228: 'sealing, China, Shaanxi',
-  t0119277: 'sealing, China, Chongqing',
-  t0119287: 'sealing, China, Hangzhou',
-  t0119326: 'sealing, USA, Santa Clara',
   t0119332: 'sealing, China, Shenzhen',
-  t0119350: 'sealing, China, Hebei',
-  t0119370: 'sealing, China, Shenzhen',
-  t0119442: 'sealing, USA, Clarksville, new',
-  t0119462: 'sealing, China, Guilin, new',
-  t0119544: 'sealing, China, Shenzhen, new',
-  t0119547: 'sealing, China, Shenzhen, new',
-  t0119574: 'sealing, China, Guilin, new',
-  t0119579: 'sealing, China, Shenzhen, new',
-  t0119593: 'sealing, China, Changsha, new',
-  t0119618: 'sealing, China, Hangzhou, new',
-  t0119659: 'sealing, China, Shanghai, new',
-  t0119695: 'sealing, USA, Boardman, Jim, new',
-  t0119698: 'sealing, China, Shanghai, new',
+  t0119442: 'sealing, USA, Clarksville',
+  t0119462: 'sealing, China, Guilin',
+  t0119544: 'sealing, China, Shenzhen',
+  t0119547: 'sealing, China, Shenzhen',
+  t0119579: 'sealing, China, Shenzhen',
+  t0119659: 'sealing, China, Shanghai',
+  t0119698: 'sealing, China, Shanghai',
+  t0119753: 'sealing, China, Xiamen',
+  t0119785: 'sealing, China, Beijing',
+  t0119806: 'sealing, China, Hefei',
+  t0119808: 'sealing, China, Hunan',
+  t0119826: 'sealing, China, Shenzhen',
+  t0119858: 'new, China, Hangzhou',
 
   // Error
   t0109653: 'error, China, Weifang, seal times: 11h', // unexpected deal status while waiting for data request: 7
   t0109776: 'error, China, Jinan', // Stuck at WaitForDataRequest
   t0118186: 'error, Korea, Seongnam-si', // stuck validating
-  t0119591: 'error, China, Beijing', // stream reset
+  t0119822: 'error, China, Beijing', // deal failed: (State=7) generating piece committment: failed to build tree Caused by: 0: failed to create data store 1: No such file or directory (os error 2)
+  t0119832: 'error, China, Beijing', // stuck waiting for data request
 
   // Non-routable top miners
   t01007: 'NR, top miner',
@@ -139,6 +136,7 @@ const annotations = {
   t0117719: 'NR - China, Guandong, 64G',
   t0117826: 'NR - China, Beijing',
   t0117926: 'NR - China, Ningxia, seal times: 17h, 23h, 24h',
+  t0117933: 'NR - China, Meishan',
   t0118078: 'NR - USA, Santa Clara',
   t0118150: 'NR - China, Shenzhen',
   t0118238: 'NR - China, Shenzhen',
@@ -149,9 +147,19 @@ const annotations = {
   t0118595: 'NR - Singapore',
   t0118821: 'NR - China, Shenzhen, seal times: 13h',
   t0118867: 'NR - China, Shenzhen, was active',
+  t0118999: 'NR - Japan, Osaka',
   t0119018: 'NR - China, Shenzhen, seal times: 14h',
+  t0119030: 'NR - Singapore',
+  t0119045: 'NR - China, Beijing',
+  t0119061: 'NR - China, Shenzhen',
   t0119143: 'NR - China, Shenzhen, seal times: 22h',
   t0119263: 'NR - USA, Boardman, Jim',
+  t0119277: 'NR - China, Chongqing',
+  t0119287: 'NR - China, Hangzhou',
+  t0119326: 'NR - USA, Santa Clara',
+  t0119350: 'NR - China, Hebei',
+  t0119370: 'NR - China, Shenzhen',
+  t0119591: 'NR - China, Beijing',
 
   // Non-routable Bootstrappers
   t01000: 'NR, bootstrap',
