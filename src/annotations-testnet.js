@@ -2,15 +2,17 @@ const annotations = {
 
   // Routable - active
   t0101180: 'active, China, Foshan, seal times: 15h, 6h, 7h',
-  t0116034: 'active, China, Shenzhen, seal times: 10h',
+  t0116034: 'active, China, Shenzhen, seal times: 10h, 11h',
   t0117734: 'active, USA, seal times: 19h',
-  t0117803: 'active, China, Shenzhen, seal times: 10h',
+  t0117803: 'active, China, Shenzhen, seal times: 10h, 9h',
+  t0118133: 'active, China, Shijiazhuang, seal times: 12h',
   t0118144: 'active, China, Hangzhou, seal times: 12h',
-  t0118155: 'active, USA, Irvine, seal times: 15h',
+  t0118155: 'active, USA, Irvine, seal times: 15h, 7h',
   t0119101: 'active, China, Chongqing, seal times: 17h',
-  t0119574: 'active, China, Guilin, seal times: 11h',
-  t0119593: 'active, China, Changsha, seal times: 8h',
-  t0119618: 'active, China, Hangzhou, seal times: 12h',
+  t0119332: 'active, China, Shenzhen, seal times: 7h',
+  t0119574: 'active, China, Guilin, seal times: 11h, 10h',
+  t0119593: 'active, China, Changsha, seal times: 8h, 8h',
+  t0119618: 'active, China, Hangzhou, seal times: 12h, 10h',
   t0119695: 'active, USA, Boardman, Jim, seal times: 13h',
   t0119826: 'active, China, Shenzhen, seal times: 7h',
 
@@ -24,11 +26,9 @@ const annotations = {
   t0105366: 'sealing, China, Shenzhen',
   t0109538: 'sealing, China, Changsha',
   t0117756: 'sealing, USA, Boardman',
-  t0118133: 'sealing, China, Shijiazhuang',
   t0118797: 'sealing, China, Huzhou',
   t0119064: 'sealing, China, Chengdu',
   t0119228: 'sealing, China, Shaanxi',
-  t0119332: 'sealing, China, Shenzhen',
   t0119442: 'sealing, USA, Clarksville',
   t0119462: 'sealing, China, Guilin',
   t0119544: 'sealing, China, Shenzhen',
@@ -41,6 +41,8 @@ const annotations = {
   t0119806: 'sealing, China, Hefei',
   t0119808: 'sealing, China, Hunan',
   t0119858: 'sealing, China, Hangzhou',
+  t0119896: 'sealing, China, Hebei',
+  t0119900: 'sealing, China, Hunan',
 
   // Error
   t0109653: 'error, China, Weifang, seal times: 11h', // unexpected deal status while waiting for data request: 7
