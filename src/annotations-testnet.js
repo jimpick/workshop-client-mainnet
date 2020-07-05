@@ -1,7 +1,7 @@
 const annotations = {
 
   // Routable - active
-  t0101180: 'active, China, Foshan, seal times: 15h, 6h',
+  t0101180: 'active, China, Foshan, seal times: 15h, 6h, 7h',
   t0116034: 'active, China, Shenzhen, seal times: 10h',
   t0117734: 'active, USA, seal times: 19h',
   t0117803: 'active, China, Shenzhen, seal times: 10h',
@@ -12,6 +12,7 @@ const annotations = {
   t0119593: 'active, China, Changsha, seal times: 8h',
   t0119618: 'active, China, Hangzhou, seal times: 12h',
   t0119695: 'active, USA, Boardman, Jim, seal times: 13h',
+  t0119826: 'active, China, Shenzhen, seal times: 7h',
 
   // Routable - new, recycle, sealing
   t01025: 'sealing, China, Yangzhou',
@@ -39,8 +40,7 @@ const annotations = {
   t0119785: 'sealing, China, Beijing',
   t0119806: 'sealing, China, Hefei',
   t0119808: 'sealing, China, Hunan',
-  t0119826: 'sealing, China, Shenzhen',
-  t0119858: 'new, China, Hangzhou',
+  t0119858: 'sealing, China, Hangzhou',
 
   // Error
   t0109653: 'error, China, Weifang, seal times: 11h', // unexpected deal status while waiting for data request: 7
