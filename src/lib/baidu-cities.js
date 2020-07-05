@@ -1,5 +1,6 @@
 const baiduCities = {
   7: 'Guangdong', // 广东省
+  8: 'Shandong', // 山东省
   18: 'Jiangsu', // 江苏省
   20: 'Ningxia', // 宁夏回族自治区
   25: 'Hebei', // 河北省

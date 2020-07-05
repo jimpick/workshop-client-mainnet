@@ -262,14 +262,19 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   ])
 
   const filteredAnnotationKeys = useMemo(() => {
-    if (queryAllMinersWithAnnotations) {
+    if (queryAllMinersWithAnnotations || queryAllMinersWithPower) {
       return [...Object.keys(annotations)]
     }
     return (
       annotations &&
       [...Object.keys(annotations)].filter(miner => !nonRoutableSet[miner])
     )
-  }, [annotations, nonRoutableSet, queryAllMinersWithAnnotations])
+  }, [
+    annotations,
+    nonRoutableSet,
+    queryAllMinersWithAnnotations,
+    queryAllMinersWithPower
+  ])
 
   const sortedMinersByName = useMemo(() => {
     return (
@@ -421,7 +426,11 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
               const peerIdStruct = PeerId.createFromBytes(binPeerId)
               peerId = peerIdStruct.toString()
             } catch (e) {
-              console.warn(`Error loading PeerId from binary for ${miner}`, e, binPeerId)
+              console.warn(
+                `Error loading PeerId from binary for ${miner}`,
+                e,
+                binPeerId
+              )
               return
             }
           }
@@ -528,7 +537,10 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                 timeGeoIp2: cacheRecord.timeGeoIp2,
                 timeBaidu: cacheRecord.timeBaidu
               }
-              if (cacheRecord.error || (cacheRecord.addrs && cacheRecord.addrs.length === 0)) {
+              if (
+                cacheRecord.error ||
+                (cacheRecord.addrs && cacheRecord.addrs.length === 0)
+              ) {
                 if (cacheRecord.error) {
                   draft[miner].error = cacheRecord.error
                 }
@@ -577,7 +589,10 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                   const match = maddr.match(/^\/ip4\/(\d+\.\d+\.\d+\.\d+)/)
                   if (match) {
                     const ipv4Address = match[1]
-                    if (!ip.isPrivate(ipv4Address) && ipv4Address !== '0.0.0.0') {
+                    if (
+                      !ip.isPrivate(ipv4Address) &&
+                      ipv4Address !== '0.0.0.0'
+                    ) {
                       console.log(`    ${ipv4Address}`)
                       ips.add(ipv4Address)
                     }
@@ -931,7 +946,11 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                     {bytes(Number(minerPower[miner].QualityAdjPower), {
                       mode: 'binary'
                     })}
-                    ) - {minerPower[miner].sectorCountPSet} proving {minerPower[miner].sectorCountSSet !== minerPower[miner].sectorCountPSet && <span>{minerPower[miner].sectorCountSSet} stored</span>}
+                    ) - {minerPower[miner].sectorCountPSet} proving{' '}
+                    {minerPower[miner].sectorCountSSet !==
+                      minerPower[miner].sectorCountPSet && (
+                      <span>{minerPower[miner].sectorCountSSet} stored</span>
+                    )}
                   </>
                 )}{' '}
               {(elapsed / 1000).toFixed(1)}s
@@ -970,7 +989,13 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                           Number(minerPower[miner].QualityAdjPower) /
                             Number(minerPower[miner].RawBytePower) +
                             'x'}{' '}
-                        - {minerPower[miner].sectorCountPSet} proving {minerPower[miner].sectorCountSSet !== minerPower[miner].sectorCountPSet && <span>{minerPower[miner].sectorCountSSet} stored</span>}
+                        - {minerPower[miner].sectorCountPSet} proving{' '}
+                        {minerPower[miner].sectorCountSSet !==
+                          minerPower[miner].sectorCountPSet && (
+                          <span>
+                            {minerPower[miner].sectorCountSSet} stored
+                          </span>
+                        )}
                       </>
                     )}
                   </td>
