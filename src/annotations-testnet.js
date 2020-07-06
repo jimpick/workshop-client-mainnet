@@ -1,27 +1,33 @@
 const annotations = {
 
   // Routable - active
+  t01015: 'active, Poland, Krakow, @magik6k, seal times: 12h',
   t0101180: 'active, China, Foshan, seal times: 15h, 6h, 7h',
   t0116034: 'active, China, Shenzhen, seal times: 10h, 11h',
-  t0117734: 'active, USA, seal times: 19h',
+  t0117734: 'active, USA, seal times: 19h, 24h',
   t0117803: 'active, China, Shenzhen, seal times: 10h, 9h',
   t0118133: 'active, China, Shijiazhuang, seal times: 12h',
   t0118144: 'active, China, Hangzhou, seal times: 12h',
   t0118155: 'active, USA, Irvine, seal times: 15h, 7h',
+  t0119228: 'active, China, Shaanxi, seal times: 24h',
+  t0119252: 'active, China, Hangzhou, seal times: 8h',
   t0119332: 'active, China, Shenzhen, seal times: 7h',
+  t0119390: 'active, China, Shenzen, seal times: 9h',
   t0119442: 'active, USA, Clarksville, seal times: 24h, 18h',
   t0119574: 'active, China, Guilin, seal times: 11h, 10h',
   t0119593: 'active, China, Changsha, seal times: 8h, 8h',
   t0119618: 'active, China, Hangzhou, seal times: 12h, 10h',
-  t0119695: 'active, USA, Boardman, Jim, seal times: 13h, 16h, 19h',
+  t0119695: 'active, USA, Boardman, @jimpick, seal times: 13h, 16h, 19h',
   t0119698: 'active, China, Shanghai, 13h',
   t0119826: 'active, China, Shenzhen, seal times: 7h',
+  t0119858: 'active, China, Hangzhou, seal times: 24h',
   t0119896: 'active, China, Hebei, seal times: 15h',
   t0119900: 'active, China, Hunan, seal times: 15h',
   t0119995: 'active, China, Shandong, seal times: 4h',
+  t0120000: 'active, China, Chongqing, seal times: 13h',
+  t0120029: 'active, China, Ningxia, seal times: 16h',
 
   // Routable - new, recycle, sealing
-  t01015: 'sealing, Poland, Krakow, new',
   t01025: 'sealing, China, Yangzhou, top miner',
   t01459: 'sealing, China, Guilin, top miner, new', 
   t01215: 'sealing, China, Zhongshan',
@@ -39,16 +45,12 @@ const annotations = {
   t0114193: 'sealing, Canada, St. Marys, new',
   t0116113: 'sealing, China, Shenyang, was active, new',
   t0117756: 'sealing, USA, Boardman',
-  t0117879: 'sealing, China, Hong Kong, new',
   t0118502: 'sealing, China, Jinan, new',
   t0118797: 'sealing, China, Huzhou, top miner',
   t0118821: 'sealing, China, Shenzhen, seal times: 13h, new',
   t0119018: 'sealing, China, Shenzhen, seal times: 14h, new',
   t0119064: 'sealing, China, Chengdu',
-  t0119228: 'sealing, China, Shaanxi',
-  t0119252: 'sealing, China, Hangzhou, new',
   t0119282: 'sealing, China, Chongqing, new',
-  t0119390: 'sealing, China, Shenzen, new',
   t0119462: 'sealing, China, Guilin',
   t0119544: 'sealing, China, Shenzhen',
   t0119547: 'sealing, China, Shenzhen',
@@ -59,11 +61,8 @@ const annotations = {
   t0119785: 'sealing, China, Beijing',
   t0119806: 'sealing, China, Hefei',
   t0119808: 'sealing, China, Hunan',
-  t0119858: 'sealing, China, Hangzhou',
   t0119951: 'sealing, Canada, Surrey, new',
-  t0120000: 'sealing, China, Chongqing, new',
   t0120023: 'sealing, China, Chengdu, new',
-  t0120029: 'sealing, China, Ningxia, new',
 
   // Error
   t01886: 'error, China, Chengdu, top miner', // stream reset
@@ -77,6 +76,7 @@ const annotations = {
   t0113893: 'error, China, Shanghai', // unexpected deal status while waiting for data request: 9
   t0114172: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 9
   t0114252: 'error, China, Ningbo, seal times: 9h, 21h, 12h', // unexpected deal status while waiting for data request: 7
+  t0117879: 'error, China, Hong Kong', // stream reset
   t0118186: 'error, Korea, Seongnam-si', // stuck validating
   t0119822: 'error, China, Beijing', // deal failed: (State=7) generating piece committment: failed to build tree Caused by: 0: failed to create data store 1: No such file or directory (os error 2)
   t0119832: 'error, China, Beijing', // stuck waiting for data request
