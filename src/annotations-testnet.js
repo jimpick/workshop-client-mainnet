@@ -16,16 +16,22 @@ const annotations = {
   t0119695: 'active, USA, Boardman, Jim, seal times: 13h, 16h, 19h',
   t0119698: 'active, China, Shanghai, 13h',
   t0119826: 'active, China, Shenzhen, seal times: 7h',
+  t0119896: 'active, China, Hebei, seal times: 15h',
+  t0119900: 'active, China, Hunan, seal times: 15h',
+  t0119995: 'active, China, Shandong, seal times: 4h',
 
   // Routable - new, recycle, sealing
+  t01015: 'sealing, Poland, Krakow, new',
   t01025: 'sealing, China, Yangzhou, top miner',
   t01459: 'sealing, China, Guilin, top miner, new', 
   t01215: 'sealing, China, Zhongshan',
   t01784: 'sealing, China, Shenzhen',
   t04463: 'sealing, China, Dongguan, top miner',
+  t04503: 'sealing, China, Beijing, new',
   t011101: 'sealing, China, Shanghai, top miner, new', 
   t040585: 'sealing, China, Shanghai, top miner',
   t046856: 'sealing, China, Guiyang, new',
+  t078580: 'sealing, Latvia, Riga, new',
   t0102830: 'sealing, China, Beijing',
   t0105366: 'sealing, China, Shenzhen, top miner',
   t0106549: 'sealing, China, Wuhan, seal times: 21h, new',
@@ -48,10 +54,7 @@ const annotations = {
   t0119806: 'sealing, China, Hefei',
   t0119808: 'sealing, China, Hunan',
   t0119858: 'sealing, China, Hangzhou',
-  t0119896: 'sealing, China, Hebei',
-  t0119900: 'sealing, China, Hunan',
   t0119951: 'sealing, Canada, Surrey, new',
-  t0119995: 'sealing, China, Shandong, new',
   t0120000: 'sealing, China, Chongqing, new',
   t0120023: 'sealing, China, Chengdu, new',
   t0120029: 'sealing, China, Ningxia, new',
@@ -59,7 +62,9 @@ const annotations = {
   // Error
   t01886: 'error, China, Chengdu, top miner', // stream reset
   t01985: 'error, China, Wuxi, ex-top', // unexpected deal status while waiting for data request: 9
+  t08275: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 9
   t08293: 'error, China, Shangrao', // unexpected deal status while waiting for data request: 7
+  t070999: 'error, China, Foshan', // unexpected deal status while waiting for data request: 7
   t0106399: 'error, Japan, Heiwajima', // stream reset
   t0109653: 'error, China, Weifang, seal times: 11h', // unexpected deal status while waiting for data request: 7
   t0109776: 'error, China, Jinan', // Stuck at WaitForDataRequest
