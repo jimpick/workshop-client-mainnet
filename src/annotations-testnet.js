@@ -15,7 +15,7 @@ const annotations = {
   t0119695: 'active, USA, Boardman, @jimpick, seal times: 13h, 16h, 19h',
   t0119858: 'active, China, Hangzhou, seal times: 24h',
   t0119896: 'active, China, Hebei, seal times: 15h',
-  t0119995: 'active, China, Shandong, seal times: 4h',
+  t0119995: 'active, China, Shandong, seal times: 4h, 4h',
   t0120000: 'active, China, Chongqing, seal times: 13h',
   t0120029: 'active, China, Ningxia, seal times: 16h',
 
