@@ -1,5 +1,4 @@
 const annotations = {
-
   // Routable - active
   t01015: 'active, Poland, Krakow, @magik6k, seal times: 12h',
   t0101180: 'active, China, Foshan, seal times: 15h, 6h, 7h',
@@ -7,9 +6,9 @@ const annotations = {
   t0117803: 'active, China, Shenzhen, seal times: 10h, 9h',
   t0118133: 'active, China, Shijiazhuang, seal times: 12h',
   t0118155: 'active, USA, Irvine, seal times: 15h, 7h',
+  t0118502: 'active, China, Jinan, seal times: 15h',
   t0119228: 'active, China, Shaanxi, seal times: 24h',
   t0119390: 'active, China, Shenzen, seal times: 9h',
-  t0119442: 'active, USA, Clarksville, seal times: 24h, 18h',
   t0119574: 'active, China, Guilin, seal times: 11h, 10h',
   t0119593: 'active, China, Changsha, seal times: 8h, 8h',
   t0119618: 'active, China, Hangzhou, seal times: 12h, 10h',
@@ -22,55 +21,50 @@ const annotations = {
 
   // Routable - new, recycle, sealing
   t01025: 'sealing, China, Yangzhou, top miner',
-  t01459: 'sealing, China, Guilin, top miner, new', 
+  t01459: 'sealing, China, Guilin, top miner',
   t01215: 'sealing, China, Zhongshan',
   t01784: 'sealing, China, Shenzhen',
   t04463: 'sealing, China, Dongguan, top miner',
-  t04503: 'sealing, China, Beijing, new',
-  t011101: 'sealing, China, Shanghai, top miner, new', 
+  t04503: 'sealing, China, Beijing',
+  t011101: 'sealing, China, Shanghai, top miner',
   t040585: 'sealing, China, Shanghai, top miner',
-  t046856: 'sealing, China, Guiyang, new',
-  t078580: 'sealing, Latvia, Riga, new',
+  t046856: 'sealing, China, Guiyang',
   t0102830: 'sealing, China, Beijing',
   t0105366: 'sealing, China, Shenzhen, top miner',
-  t0106549: 'sealing, China, Wuhan, seal times: 21h, new',
+  t0106549: 'sealing, China, Wuhan, seal times: 21h',
   t0109538: 'sealing, China, Changsha',
-  t0109604: 'sealing, China, Beijing, new',
-  t0114193: 'sealing, Canada, St. Marys, new',
-  t0116113: 'sealing, China, Shenyang, was active, new',
-  t0117628: 'sealing, China, Nanjing, new',
+  t0109604: 'sealing, China, Beijing',
+  t0109776: 'sealing, China, Jinan',
+  t0114193: 'sealing, Canada, St. Marys',
+  t0116113: 'sealing, China, Shenyang, was active',
+  t0117628: 'sealing, China, Nanjing',
   t0117756: 'sealing, USA, Boardman',
-  t0118498: 'sealing, China, Nanchong, new',
-  t0118502: 'sealing, China, Jinan, new',
+  t0117879: 'sealing, China, Hong Kong',
+  t0118498: 'sealing, China, Nanchong',
   t0118797: 'sealing, China, Huzhou, top miner',
-  t0118821: 'sealing, China, Shenzhen, seal times: 13h, new',
-  t0119018: 'sealing, China, Shenzhen, seal times: 14h, new',
+  t0118821: 'sealing, China, Shenzhen, seal times: 13h',
+  t0119018: 'sealing, China, Shenzhen, seal times: 14h',
   t0119064: 'sealing, China, Chengdu',
-  t0119224: 'sealing, USA, San Francisco, new',
-  t0119282: 'sealing, China, Chongqing, new',
-  t0119462: 'sealing, China, Guilin',
-  t0119544: 'sealing, China, Shenzhen',
+  t0119224: 'sealing, USA, San Francisco',
+  t0119282: 'sealing, China, Chongqing',
   t0119547: 'sealing, China, Shenzhen',
-  t0119553: 'sealing, China, Qingdao, new',
-  t0119579: 'sealing, China, Shenzhen',
-  t0119591: 'sealing, China, Beijing, new',
-  t0119659: 'sealing, China, Shanghai',
+  t0119553: 'sealing, China, Qingdao',
+  t0119591: 'sealing, China, Beijing',
   t0119753: 'sealing, China, Xiamen',
-  t0119785: 'sealing, China, Beijing',
-  t0119792: 'sealing, China, Hong Kong, new',
+  t0119792: 'sealing, China, Hong Kong',
   t0119806: 'sealing, China, Hefei',
-  t0119808: 'sealing, China, Hunan',
-  t0119951: 'sealing, Canada, Surrey, new',
-  t0120023: 'sealing, China, Chengdu, new',
-  t0120064: 'sealing, Hungary, new',
-  t0120129: 'sealing, China, Xi\'an, new',
-  t0120155: 'sealing, Korea, Gwangju, new',
-  t0120174: 'sealing, China, Shenzhen, new',
-  t0120177: 'sealing, China, Guilin, new',
-  t0120195: 'sealing, China, Shenzhen, new',
-  t0120199: 'sealing, China, Changsha, new',
-  t0120206: 'sealing, China, Beijing, new',
-  t0120221: 'sealing, China, Yibin, new',
+  t0119822: 'sealing, China, Beijing',
+  t0119951: 'sealing, Canada, Surrey',
+  t0120023: 'sealing, China, Chengdu',
+  t0120064: 'sealing, Hungary',
+  t0120129: "sealing, China, Xi'an",
+  t0120155: 'sealing, Korea, Gwangju',
+  t0120174: 'sealing, China, Shenzhen',
+  t0120177: 'sealing, China, Guilin',
+  t0120195: 'sealing, China, Shenzhen',
+  t0120199: 'sealing, China, Changsha',
+  t0120206: 'sealing, China, Beijing',
+  t0120221: 'sealing, China, Yibin',
 
   // Error
   t01886: 'error, China, Chengdu, top miner', // stream reset
@@ -78,16 +72,14 @@ const annotations = {
   t08275: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 9
   t08293: 'error, China, Shangrao', // unexpected deal status while waiting for data request: 7
   t070999: 'error, China, Foshan', // unexpected deal status while waiting for data request: 7
+  t078580: 'error, Latvia, Riga', // stream reset
   t0106399: 'error, Japan, Heiwajima', // stream reset
   t0109653: 'error, China, Weifang, seal times: 11h', // unexpected deal status while waiting for data request: 7
-  t0109776: 'error, China, Jinan', // Stuck at WaitForDataRequest
   t0113893: 'error, China, Shanghai', // unexpected deal status while waiting for data request: 9
   t0114172: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 9
   t0114252: 'error, China, Ningbo, seal times: 9h, 21h, 12h', // unexpected deal status while waiting for data request: 7
-  t0117879: 'error, China, Hong Kong', // stream reset
   t0118186: 'error, Korea, Seongnam-si', // stuck validating
-  t0119822: 'error, China, Beijing', // deal failed: (State=7) generating piece committment: failed to build tree Caused by: 0: failed to create data store 1: No such file or directory (os error 2)
-  t0119832: 'error, China, Beijing', // stuck waiting for data request
+  t0119442: 'error, USA, Clarksville, seal times: 24h, 18h', // stream reset
 
   // Stuck
   t02020: 'transferring, China, Chengdu, top miner',
@@ -98,26 +90,26 @@ const annotations = {
   // Non-routable top miners
   t01007: 'NR, top miner',
   t01019: 'NR, China, Chengdu, top miner',
-  t01009: 'NR, top miner', 
-  t01102: 'NR, top miner', 
+  t01009: 'NR, top miner',
+  t01102: 'NR, top miner',
   t09084: 'NR, top miner',
   t09833: 'NR, China, Mianyang, top miner',
   t020890: 'NR, China, Huzhou, top miner',
-  t021661: 'NR, top miner', 
-  t032055: 'NR, top miner', 
-  t039272: 'NR, top miner', 
+  t021661: 'NR, top miner',
+  t032055: 'NR, top miner',
+  t039272: 'NR, top miner',
   t0118696: 'NR, top miner',
   t0118768: 'NR, top miner',
   t0119320: 'NR, top miner',
   t0119666: 'NR, top miner',
 
   // Ex-top miners
-  t01546: 'NR, ex-top', 
+  t01546: 'NR, ex-top',
   t010581: 'NR, ex-top',
 
   // Non-routable with deals
   t055280: 'NR, deals',
- 
+
   // Non-routable former geo-located
   t01027: 'NR - China, Chengdu',
   t04842: 'NR - China, Changsha',
@@ -204,8 +196,15 @@ const annotations = {
   t0119332: 'NR - China, Shenzhen, seal times: 7h',
   t0119350: 'NR - China, Hebei',
   t0119370: 'NR - China, Shenzhen',
+  t0119462: 'NR - China, Guilin',
+  t0119544: 'NR - China, Shenzhen',
+  t0119579: 'NR - China, Shenzhen',
+  t0119659: 'NR - China, Shanghai',
   t0119698: 'NR - China, Shanghai, 13h',
+  t0119785: 'NR - China, Beijing',
+  t0119808: 'NR - China, Hunan',
   t0119826: 'NR - China, Shenzhen, seal times: 7h',
+  t0119832: 'NR - China, Beijing',
   t0119900: 'NR - China, Hunan, seal times: 15h',
 
   // Non-routable Bootstrappers

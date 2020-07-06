@@ -7,7 +7,18 @@ import annotations from '../annotations'
 import DealList from '../08-deals/deal-list'
 
 export default function ProposeDeal ({ appState, updateAppState }) {
-  const { selectedNode, filterNewMiners, filterRecycleMiners, filterActiveMiners, filterPowerMiners, filterErrorMiners, filterTopMiners, filterDeals, filterNonRoutable } = appState
+  const {
+    selectedNode,
+    filterNewMiners,
+    filterRecycleMiners,
+    filterSealingMiners,
+    filterActiveMiners,
+    filterPowerMiners,
+    filterErrorMiners,
+    filterTopMiners,
+    filterDeals,
+    filterNonRoutable
+  } = appState
   const client = useLotusClient(selectedNode, 'node')
   // const [miners, annotations] = useMiners(client)
   const miners = Object.keys(annotations)
@@ -32,6 +43,9 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     if (filterRecycleMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/^recycle/))
     }
+    if (filterSealingMiners && miners) {
+      return miners.filter(miner => annotations[miner].match(/^sealing/))
+    }
     if (filterActiveMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/^active/))
     }
@@ -51,7 +65,18 @@ export default function ProposeDeal ({ appState, updateAppState }) {
       return miners.filter(miner => !annotations[miner].match(/^NR/i))
     }
     return miners
-  }, [miners, filterNewMiners, filterRecycleMiners, filterActiveMiners, filterPowerMiners, filterErrorMiners, filterTopMiners, filterDeals, filterNonRoutable])
+  }, [
+    miners,
+    filterNewMiners,
+    filterRecycleMiners,
+    filterSealingMiners,
+    filterActiveMiners,
+    filterPowerMiners,
+    filterErrorMiners,
+    filterTopMiners,
+    filterDeals,
+    filterNonRoutable
+  ])
 
   useEffect(() => {
     const objectUrl = URL.createObjectURL(appState.capture.blob)
@@ -141,6 +166,19 @@ export default function ProposeDeal ({ appState, updateAppState }) {
             style={{ marginLeft: '1rem' }}
           />
           'recycle'
+        </label>
+        <label>
+          <input
+            type='checkbox'
+            checked={filterSealingMiners}
+            onChange={() => {
+              updateAppState(draft => {
+                draft.filterSealingMiners = !filterSealingMiners
+              })
+            }}
+            style={{ marginLeft: '1rem' }}
+          />
+          'sealing'
         </label>
         <label>
           <input
@@ -274,7 +312,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
       Wallet: defaultWalletAddress,
       Miner: targetMiner,
       EpochPrice: epochPrice,
-      MinBlocksDuration: 7 * 24 * 60 * 60 / blockDelay
+      MinBlocksDuration: (7 * 24 * 60 * 60) / blockDelay
     }
     setStatus(`Proposing to ${targetMiner} ...`)
     try {
