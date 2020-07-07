@@ -19,6 +19,7 @@ const annotations = {
   t0119995: 'active, China, Shandong, seal times: 4h, 4h, tue',
   t0120000: 'active, China, Chongqing, seal times: 13h, 9h, tue',
   t0120029: 'active, China, Ningxia, seal times: 16h, 15h, tue',
+  t0120177: 'active, China, Guilin, seal times: 24h',
   t0120221: 'active, China, Yibin, seal times: 7h, tue',
 
   // Routable - new, recycle, sealing
@@ -54,7 +55,6 @@ const annotations = {
   t0120129: "sealing, China, Xi'an, mon",
   t0120155: 'sealing, Korea, Gwangju, mon',
   t0120174: 'sealing, China, Shenzhen, mon',
-  t0120177: 'sealing, China, Guilin, mon',
   t0120195: 'sealing, China, Shenzhen, mon',
   t0120199: 'sealing, China, Changsha, mon',
   t0120206: 'sealing, China, Beijing, mon',
@@ -69,7 +69,7 @@ const annotations = {
   t0120422: 'sealing, China, Shenzhen, tue',
   t0120432: 'sealing, China, Cangzhou, tue',
   t0120434: 'sealing, China, Shenzhen, tue',
-  t0120511: 'new, China, Chengdu',
+  t0120511: 'sealing, China, Chengdu, tue',
 
   // Error
   t01985: 'error, China, Wuxi, ex-top', // unexpected deal status while waiting for data request: 9
