@@ -65,19 +65,17 @@ const annotations = {
   t0120195: 'sealing, China, Shenzhen',
   t0120199: 'sealing, China, Changsha',
   t0120206: 'sealing, China, Beijing',
-  t0120295: 'new, China, Beijing',
-  t0120297: 'new, Korea, Ansan-si',
-  t0120304: 'new, China, Beijing',
-  t0120336: 'new, China, Shenzhen',
-  t0120339: 'new, China, Beijing',
-  t0120369: 'new, China, Shenzhen',
-  t0120378: 'new, China, Foshan, 64G',
-  t0120387: 'new, China, Shenzhen',
-  t0120403: 'new, China, Wuxi',
-  t0120422: 'new, China, Shenzhen',
-  t0120432: 'new, China, Cangzhou',
-  t0120434: 'new, China, Shenzhen',
-  t0120443: 'new, China, Shanghai',
+  t0120295: 'sealing, China, Beijing, tue',
+  t0120297: 'sealing, Korea, Ansan-si, tue',
+  t0120304: 'sealing, China, Beijing, tue',
+  t0120336: 'sealing, China, Shenzhen, tue',
+  t0120339: 'sealing, China, Beijing, tue',
+  t0120369: 'sealing, China, Shenzhen, tue',
+  t0120378: 'sealing, China, Foshan, 64G, tue',
+  t0120387: 'sealing, China, Shenzhen, tue',
+  t0120422: 'sealing, China, Shenzhen, tue',
+  t0120432: 'sealing, China, Cangzhou, tue',
+  t0120511: 'new, China, Chengdu',
 
   // Error
   t01886: 'error, China, Chengdu, top miner', // stream reset
@@ -93,12 +91,15 @@ const annotations = {
   t0114252: 'error, China, Ningbo, seal times: 9h, 21h, 12h', // unexpected deal status while waiting for data request: 7
   t0118186: 'error, Korea, Seongnam-si', // stuck validating
   t0119442: 'error, USA, Clarksville, seal times: 24h, 18h', // stream reset
+  t0120403: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 16
+  t0120443: 'error, China, Shanghai', // sending proposal to storage provider failed: failed to dial
 
   // Stuck
   t02020: 'transferring, China, Chengdu, top miner',
   t0109755: 'validating, China, Fuzhou',
   t0119961: 'transferring, Korea, Gwangju',
   t0120011: 'transferring, China, Chongqing',
+  t0120434: 'transferring, China, Shenzhen',
 
   // Non-routable top miners
   t01007: 'NR, top miner',
