@@ -1,8 +1,8 @@
 const annotations = {
   // Routable - active
   t01015: 'active, Poland, Krakow, @magik6k, seal times: 12h, mon',
-  t01459: 'active, China, Guilin, top miner, seal times: 24hi, tue',
-  t0101180: 'active, China, Foshan, seal times: 15h, 6h, 7h, 8h,tue ',
+  t01459: 'active, China, Guilin, top miner, seal times: 24h, tue',
+  t0101180: 'active, China, Foshan, seal times: 15h, 6h, 7h, 8h, tue',
   t0102830: 'active, China, Beijing, seal times: 48h, mon',
   t0106549: 'active, China, Wuhan, seal times: 21h, 24h, tue',
   t0117734: 'active, USA, seal times: 19h, 24h, mon',
