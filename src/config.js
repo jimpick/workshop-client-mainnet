@@ -22,6 +22,15 @@ const testnetLocalConfig = {
   useBaidu: true
 }
 
+const testnetPublicConfig = {
+  api: 'lotus.testground.ipfs.team/testnet_api',
+  secure: true,
+  downloadDir: '/home/ubuntu/downloads',
+  geoApi: 'lotus.testground.ipfs.team/api',
+  geoSecure: true,
+  networkName: 'testnet'
+}
+
 const interopnetLocalConfig = {
   api: 'lotus.testground.ipfs.team/interop616_api',
   // api: 'interopnet.localhost:9000/api',
@@ -34,6 +43,18 @@ const interopnetLocalConfig = {
   useBaidu: true
 }
 
+const nerpaLocalConfig = {
+  api: 'lotus.testground.ipfs.team/nerpa_api',
+  secure: true,
+  downloadDir: '/tmp/not_supported_yet',
+  geoApi: 'nerpa.localhost:9000/api',
+  geoSecure: true,
+  networkName: 'nerpa',
+  useGeoIp2: true,
+  useBaidu: true
+}
+
+/*
 const interopnetPublicConfig = {
   api: 'lotus.testground.ipfs.team/interop616_api',
   secure: true,
@@ -42,15 +63,7 @@ const interopnetPublicConfig = {
   geoSecure: true,
   networkName: 'interopnet'
 }
-
-const testnetPublicConfig = {
-  api: 'lotus.testground.ipfs.team/testnet_api',
-  secure: true,
-  downloadDir: '/home/ubuntu/downloads',
-  geoApi: 'lotus.testground.ipfs.team/api',
-  geoSecure: true,
-  networkName: 'testnet'
-}
+*/
 
 function getConfig () {
   if (document.location.hostname === 'testnet.localhost') {
@@ -58,6 +71,9 @@ function getConfig () {
   }
   if (document.location.hostname === 'interopnet.localhost') {
     return interopnetLocalConfig
+  }
+  if (document.location.hostname === 'nerpa.localhost') {
+    return nerpaLocalConfig
   }
   // return interopnetPublicConfig
   return testnetPublicConfig
