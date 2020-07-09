@@ -2,7 +2,7 @@ const annotations = {
   // Routable - active
   t01015: 'active, Poland, Krakow, @magik6k, seal times: 12h, wed',
   t01459: 'active, China, Guilin, top miner, seal times: 24h, tue',
-  t078580: 'active, Latvia, Riga, seal times: 17h, 17h',
+  t078580: 'active, Latvia, Riga, seal times: 72h, 17h, 17h, wed',
   t0101180: 'active, China, Foshan, seal times: 15h, 6h, 7h, 8h, 7h, 6h',
   t0106549: 'active, China, Wuhan, seal times: 21h, 24h, tue',
   t0117734: 'active, USA, seal times: 19h, 24h, 24h, wed',
@@ -18,7 +18,7 @@ const annotations = {
   t0119858: 'active, China, Hangzhou, seal times: 24h, 24h, wed',
   t0119995: 'active, China, Shandong, seal times: 4h, 4h, 6h, 3h',
   t0120177: 'active, China, Guilin, seal times: 24h, wed',
-  t0120221: 'active, China, Yibin, seal times: 7h, 5h, 5h',
+  t0120221: 'active, China, Yibin, seal times: 7h, 5h, 5h, wed',
   t0120295: 'active, China, Beijing, seal times: 24h',
   t0120422: 'active, China, Shenzhen, seal times: 8h, wed',
   t0120434: 'active, China, Shenzhen, seal times: 24h',
@@ -38,6 +38,7 @@ const annotations = {
   t0118498: 'sealing, China, Nanchong, wed',
   t0118797: 'sealing, China, Huzhou, top miner, wed',
   t0119064: 'sealing, China, Chengdu, wed',
+  t0119228: 'sealing, China, Shaanxi, seal times: 24h, mon, wed',
   t0119282: 'sealing, China, Chongqing, wed',
   t0119553: 'sealing, China, Qingdao, wed',
   t0119792: 'sealing, China, Hong Kong, wed',
@@ -55,8 +56,15 @@ const annotations = {
   t0120579: 'sealing, China, Shanghai, wed',
   t0120642: 'sealing, China, Chongqing, wed',
   t0120663: 'sealing, China, Shenzhen, wed',
-  t0120741: 'sealing, USA, Boardman, @jimpick, wed',
-  t0120775: 'new, USA, Bellevue',
+  t0120741: 'sealing, USA, Boardman, @jimpick, thu',
+  t0120775: 'sealing, USA, Bellevue, wed',
+  t0120786: 'new, China, Xianning',
+  t0120798: 'new, China, Shenzhen',
+  t0120802: 'new, China, Shenzhen',
+  t0120804: 'new, China, Shenzhen',
+  t0120859: 'new, China, Beijing',
+  t0120905: 'new, China, Hangzhou',
+  t0120937: 'new, USA, Clarksville',
 
   // Error
   t01886: 'error, China, Chengdu, top miner', // stream reset
@@ -73,7 +81,6 @@ const annotations = {
 
   // Stuck
   t0109776: 'transferring, China, Jinan, seal times: 48h',
-  t0119228: 'validating, China, Shaanxi, seal times: 24h, mon, wed',
   t0119753: 'validating, China, Xiamen, mon',
  
   // Error - NR
