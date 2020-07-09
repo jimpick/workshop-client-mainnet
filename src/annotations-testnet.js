@@ -14,7 +14,6 @@ const annotations = {
   t0119574: 'active, China, Guilin, seal times: 11h, 10h, 12h, 12h, wed',
   t0119591: 'active, China, Beijing, seal times: 48h, tue',
   t0119618: 'active, China, Hangzhou, seal times: 12h, 10h, 12h, 14h, wed',
-  t0119695: 'active, USA, Boardman, @jimpick, seal times: 13h, 16h, 19h, tue, wed',
   t0119822: 'active, China, Beijing, seal times: 24h, wed',
   t0119858: 'active, China, Hangzhou, seal times: 24h, 24h, wed',
   t0119995: 'active, China, Shandong, seal times: 4h, 4h, 6h, wed',
@@ -56,6 +55,7 @@ const annotations = {
   t0120579: 'sealing, China, Shanghai, wed',
   t0120642: 'sealing, China, Chongqing, wed',
   t0120663: 'sealing, China, Shenzhen, wed',
+  t0120741: 'sealing, USA, Boardman, @jimpick, wed',
 
   // Error
   t01886: 'error, China, Chengdu, top miner', // stream reset
@@ -208,6 +208,7 @@ const annotations = {
   t0119579: 'NR - China, Shenzhen',
   t0119593: 'NR - China, Changsha, seal times: 8h, 8h, 8h',
   t0119659: 'NR - China, Shanghai',
+  t0119695: 'NR - USA, Boardman, @jimpick, seal times: 13h, 16h, 19h',
   t0119698: 'NR - China, Shanghai, 13h',
   t0119785: 'NR - China, Beijing',
   t0119806: 'NR - China, Hefei',
