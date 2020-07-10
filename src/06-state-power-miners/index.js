@@ -10,6 +10,7 @@ import copy from 'clipboard-copy'
 import { formatRelative } from 'date-fns'
 import PeerId from 'peer-id'
 import isIPFS from 'is-ipfs'
+import Multiaddr from 'multiaddr'
 import useLotusClient from '../lib/use-lotus-client'
 // import useMiners from '../lib/use-miners-all'
 import useMiners from '../lib/use-miners'
@@ -413,9 +414,12 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           })
           processMinerPowerUpdates()
           const minerInfo = await client.stateMinerInfo(miner, tipsetKey)
-          // console.log('Jim minerInfo', minerInfo)
           let peerId
-          const { PeerId: wirePeerId, SectorSize: sectorSize } = minerInfo
+          const {
+            PeerId: wirePeerId,
+            SectorSize: sectorSize,
+            Multiaddrs: maddrs
+          } = minerInfo
           if (isIPFS.multihash(wirePeerId)) {
             peerId = wirePeerId
           } else {
@@ -434,6 +438,22 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
               return
             }
           }
+          const addresses = []
+          if (maddrs) {
+            for (const maddr of maddrs) {
+              try {
+                const address = new Multiaddr(Buffer.from(maddr, 'base64'))
+                console.log(`Miner: ${miner} maddr ${address}`)
+                addresses.push(address.toString())
+              } catch (e) {
+                console.warn(
+                  `Error loading Multiaddr from binary for ${miner}`,
+                  e,
+                  maddr
+                )
+              }
+            }
+          }
           // console.log('Jim peerId', peerId.toB58String())
           if (state.canceled) return
           state.minerInfoUpdates.push(draft => {
@@ -443,6 +463,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             const minerData = draft[miner]
             minerData.sectorSize = sectorSize
             minerData.peerId = peerId
+            minerData.addresses = addresses
           })
           processMinerInfoUpdates()
           // if (result.MinerPower.QualityAdjPower !== '0') {
