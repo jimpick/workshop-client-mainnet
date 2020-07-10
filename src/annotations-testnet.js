@@ -18,6 +18,7 @@ const annotations = {
   t0119822: 'active, China, Beijing, seal times: 24h, 9h, 8h, fri',
   t0119995: 'active, China, Shandong, seal times: 4h, 4h, 6h, 3h, 9h, fri',
   t0120221: 'active, China, Yibin, seal times: 7h, 5h, 5h, wed, fri',
+  t0120295: 'active, China, Beijing, seal times: 24h, 24h, fri',
   t0120405: 'active, China, Dongguan, seal times: 9h, fri',
   t0120434: 'active, China, Shenzhen, seal times: 24h, thu',
   t0120458: 'active, China, Suzhou, seal times: 17h, fri',
@@ -42,9 +43,10 @@ const annotations = {
   t0119064: 'sealing, China, Chengdu, wed, fri',
   t0119228: 'sealing, China, Shaanxi, seal times: 24h, mon, wed, fri',
   t0119282: 'sealing, China, Chongqing, wed, fri',
+  t0119753: 'sealing, China, Xiamen, thu',
   t0119792: 'sealing, China, Hong Kong, wed, fri',
-  t0119858: 'recycle, China, Hangzhou, seal times: 24h, 24h, wed',
-  t0120155: 'recycle, Korea, Gwangju, wed',
+  t0120029: 'sealing, China, Ningxia, seal times: 16h, 15h, 9h, fri',
+  t0120155: 'sealing, Korea, Gwangju, wed, fri',
   t0120206: 'sealing, China, Beijing, wed, fri',
   t0120304: 'sealing, China, Beijing, tue, fri',
   t0120313: 'sealing, USA, Boardman, thu',
@@ -53,6 +55,7 @@ const annotations = {
   t0120511: 'sealing, China, Chengdu, tue, fri',
   t0120523: 'sealing, China, Zhongshan, thu',
   t0120545: 'sealing, Singapore, thu',
+  t0120572: 'sealing, Finland, Helsinki, fri',
   t0120621: 'sealing, Singapore, thu',
   t0120638: 'sealing, China, Guilin, thu',
   t0120642: 'sealing, China, Chongqing, wed, fri',
@@ -81,19 +84,11 @@ const annotations = {
   t0109653: 'error, China, Weifang, seal times: 11h', // unexpected deal status while waiting for data request: 7
   t0109755: 'error, China, Fuzhou', // stream reset
   t0114252: 'error, China, Ningbo, seal times: 9h, 21h, 12h', // unexpected deal status while waiting for data request: 7
-  t0119591: 'error, China, Beijing, seal times: 48h, tue', // error reading Response message: EOF
-  t0120029: 'error, China, Ningxia, seal times: 16h, 15h, 9h', // sending proposal to storage provider failed: failed to dial
+  t0119858: 'error, China, Hangzhou, seal times: 24h, 24h, wed, fri', // unexpected deal status while waiting for data request: 7
   t0120403: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 16
-  t0120572: 'error, Finland, Helsinki', // stream reset
-  t0120661: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 16
-  t0120859: 'error, China, Beijing', // sending proposal to storage provider failed: context deadline exceeded
-  t0121029: 'error, China, Beijing', // stream reset
 
   // Stuck
-  t0109776: 'transferring, China, Jinan, seal times: 48h',
-  t0119022: 'transferring, China, Shenzhen',
-  t0119753: 'validating, China, Xiamen, mon',
-  t0120295: 'validating, China, Beijing, seal times: 24h',
+  t0119022: 'error, China, Shenzhen', // transferring
  
   // Error - NR
 
@@ -157,6 +152,7 @@ const annotations = {
   t0109538: 'NR - China, Changsha',
   t0109589: 'NR - China, Shenzhen',
   t0109648: 'NR - China, Beijing',
+  t0109776: 'NR - China, Jinan, seal times: 48h',
   t0111839: 'NR - China, Chongqing',
   t0111870: 'NR - China, Shenyang',
   t0111921: 'NR - USA, Ashburn',
@@ -229,6 +225,7 @@ const annotations = {
   t0119547: 'NR - China, Shenzhen',
   t0119553: 'NR - China, Qingdao, wed',
   t0119579: 'NR - China, Shenzhen',
+  t0119591: 'NR - China, Beijing, seal times: 48h, tue',
   t0119593: 'NR - China, Changsha, seal times: 8h, 8h, 8h',
   t0119659: 'NR - China, Shanghai',
   t0119695: 'NR - USA, Boardman, @jimpick, seal times: 13h, 16h, 19h',
@@ -260,10 +257,13 @@ const annotations = {
   t0120432: 'NR - China, Cangzhou, tue',
   t0120443: 'NR - China, Shanghai',
   t0120579: 'NR - China, Shanghai, wed',
+  t0120661: 'NR - China, Wuxi',
   t0120663: 'NR - China, Shenzhen, wed',
   t0120775: 'NR - USA, Bellevue, wed',
   t0120786: 'NR - China, Xianning',
   t0120798: 'NR - China, Shenzhen, seal times: 6h',
+  t0120859: 'NR - China, Beijing',
+  t0121029: 'NR - China, Beijing',
 
   // Non-routable Bootstrappers
   t01000: 'NR, bootstrap',
