@@ -31,14 +31,14 @@ const testnetPublicConfig = {
   networkName: 'testnet'
 }
 
-const interopnetLocalConfig = {
-  api: 'lotus.testground.ipfs.team/interop616_api',
-  // api: 'interopnet.localhost:9000/api',
+const butterflyLocalConfig = {
+  api: 'lotus.testground.ipfs.team/butterfly_api',
+  // api: 'butterfly.localhost:9000/api',
   secure: true,
   downloadDir: '/home/ubuntu/downloads',
-  geoApi: 'interopnet.localhost:9000/api',
+  geoApi: 'butterfly.localhost:9000/api',
   geoSecure: true,
-  networkName: 'interopnet',
+  networkName: 'butterfly',
   useGeoIp2: true,
   useBaidu: true
 }
@@ -55,13 +55,13 @@ const nerpaLocalConfig = {
 }
 
 /*
-const interopnetPublicConfig = {
-  api: 'lotus.testground.ipfs.team/interop616_api',
+const butterflyPublicConfig = {
+  api: 'lotus.testground.ipfs.team/butterfly_api',
   secure: true,
   downloadDir: '/home/ubuntu/downloads',
   geoApi: 'lotus.testground.ipfs.team/api',
   geoSecure: true,
-  networkName: 'interopnet'
+  networkName: 'butterfly'
 }
 */
 
@@ -69,13 +69,13 @@ function getConfig () {
   if (document.location.hostname === 'testnet.localhost') {
     return testnetLocalConfig
   }
-  if (document.location.hostname === 'interopnet.localhost') {
-    return interopnetLocalConfig
+  if (document.location.hostname === 'butterfly.localhost') {
+    return butterflyLocalConfig
   }
   if (document.location.hostname === 'nerpa.localhost') {
     return nerpaLocalConfig
   }
-  // return interopnetPublicConfig
+  // return butterflyPublicConfig
   return testnetPublicConfig
 }
 
