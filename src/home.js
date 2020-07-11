@@ -6,7 +6,7 @@ export default function Home () {
     <div>
       <h2>Home</h2>
       <p>
-        Workshop Client - Testnet/Butterfly edition
+        Workshop Client - Butterfly net edition
       </p>
       <p>
         Looking for <Link to='/examples'>simpler code examples</Link>?

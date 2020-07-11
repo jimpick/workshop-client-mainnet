@@ -75,8 +75,8 @@ function getConfig () {
   if (document.location.hostname === 'nerpa.localhost') {
     return nerpaLocalConfig
   }
-  // return butterflyPublicConfig
-  return testnetPublicConfig
+  return butterflyPublicConfig
+  // return testnetPublicConfig
 }
 
 export const api = getConfig().api
