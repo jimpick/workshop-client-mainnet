@@ -1,12 +1,12 @@
 const annotations = {
   // Active
+  t01012: 'active, China, Guangdong, 1h',
+  t01025: 'active, Poland, Krakow, @magik6k, 1h',
+  t01027: 'active, China, Foshan, 1h',
+  t01005: 'active, China, Guilin, 36m',
 
   // New, sealing, recycle
-  t01012: 'sealing, China, Guangdong, fri',
   t01021: 'sealing, Brazil, São Paulo, 32G, fri',
-  t01025: 'sealing, Poland, Krakow, @magik6k, fri',
-  t01027: 'sealing, China, Foshan, fri',
-  t01005: 'sealing, China, Guilin, fri',
 
   // Error
 
