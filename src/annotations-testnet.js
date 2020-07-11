@@ -1,30 +1,32 @@
 const annotations = {
   // Routable - active
   t01459: 'active, China, Guilin, top miner, seal times: 24h, tue, thu',
-  t078580: 'active, Latvia, Riga, seal times: 72h, 17h, 17h, wed, fri',
+  t078580: 'active, Latvia, Riga, seal times: 72h, 17h, 17h, 12h',
   t0101180: 'active, China, Foshan, seal times: 15h, 6h, 7h, 8h, 7h, 6h, ' +
-    '5h, fri',
-  t0106549: 'active, China, Wuhan, seal times: 21h, 24h, tue, thu',
+    '5h, 12h',
+  t0106549: 'active, China, Wuhan, seal times: 21h, 24h, 24h',
   t0117734: 'active, USA, seal times: 19h, 24h, 24h, wed, fri',
   t0117803: 'active, China, Shenzhen, seal times: 10h, 9h, 9h, tue, thu',
   t0118133: 'active, China, Shijiazhuang, seal times: 12h, 15h, 12h, ' +
-    'wed, fri',
-  t0118155: 'active, USA, Irvine, seal times: 15h, 7h, 7h, 6h, 6h, 6h, fri',
+    '12h',
+  t0118155: 'active, USA, Irvine, seal times: 15h, 7h, 7h, 6h, 6h, 6h, 12h',
   t0119390: 'active, China, Shenzen, seal times: 9h, 9h, 12h, 8h, thu',
   t0119574: 'active, China, Guilin, seal times: 11h, 10h, 12h, 12h, 8h, ' +
-    'fri',
+    '12h',
   t0119618: 'active, China, Hangzhou, seal times: 12h, 10h, 12h, 14h, wed' +
     'fri',
   t0119822: 'active, China, Beijing, seal times: 24h, 9h, 8h, fri',
-  t0119995: 'active, China, Shandong, seal times: 4h, 4h, 6h, 3h, 9h, fri',
+  t0119995: 'active, China, Shandong, seal times: 4h, 4h, 6h, 3h, 9h, 3h',
   t0120221: 'active, China, Yibin, seal times: 7h, 5h, 5h, wed, fri',
   t0120295: 'active, China, Beijing, seal times: 24h, 24h, fri',
-  t0120405: 'active, China, Dongguan, seal times: 9h, fri',
+  t0120405: 'active, China, Dongguan, seal times: 9h, 12h',
   t0120434: 'active, China, Shenzhen, seal times: 24h, thu',
   t0120458: 'active, China, Suzhou, seal times: 17h, fri',
+  t0120638: 'active, China, Guilin, seal times: 21h',
+  t0120642: 'active, China, Chongqing, seal times: 12h',
   t0120741: 'active, USA, Boardman, @jimpick, seal times: 13h, fri',
   t0120804: 'active, China, Shenzhen, seal times: 7h, fri',
-  t0120905: 'active, China, Hangzhou, seal times: 14h, fri',
+  t0120905: 'active, China, Hangzhou, seal times: 14h, 12h',
 
   // Routable - new, recycle, sealing
   t01025: 'sealing, China, Yangzhou, top miner, wed, fri',
@@ -57,8 +59,6 @@ const annotations = {
   t0120545: 'sealing, Singapore, thu',
   t0120572: 'sealing, Finland, Helsinki, fri',
   t0120621: 'sealing, Singapore, thu',
-  t0120638: 'sealing, China, Guilin, thu',
-  t0120642: 'sealing, China, Chongqing, wed, fri',
   t0120647: 'sealing, China, Shenzhen, thu',
   t0120770: 'sealing, Singapore, thu',
   t0120782: 'sealing, China, Chengdu, thu',
