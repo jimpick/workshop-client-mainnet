@@ -1,14 +1,17 @@
 const annotations = {
-
   // Active
- 
+
   // New, sealing, recycle
-  t01012: 'new, China, Guangdong',
-  t01021: 'new, Brazil, São Paulo, 32G',
-  t01025: 'new, Poland, Krakow, @magik6k',
-  t01027: 'new, China, Foshan',
-  t01062: 'new, USA, Coeur d\'Alene, @why?',
-  t01005: 'new, China, Guilin',
+  t01012: 'sealing, China, Guangdong, fri',
+  t01021: 'sealing, Brazil, São Paulo, 32G, fri',
+  t01025: 'sealing, Poland, Krakow, @magik6k, fri',
+  t01027: 'sealing, China, Foshan, fri',
+  t01005: 'sealing, China, Guilin, fri',
+
+  // Error
+
+  // Stuck
+  t01062: "StorageDealCheckForAcceptance, USA, Coeur d'Alene",
 
   // Non-routables (with power)
   t01020: 'NR, power, 32G',
@@ -19,8 +22,7 @@ const annotations = {
   // Bootstrappers
   t01000: 'NR - bootstrap',
   t01001: 'NR - bootstrap',
-  t01003: 'NR - bootstrap',
-
+  t01003: 'NR - bootstrap'
 }
 
 export default annotations
