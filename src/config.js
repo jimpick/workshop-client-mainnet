@@ -54,7 +54,6 @@ const nerpaLocalConfig = {
   useBaidu: true
 }
 
-/*
 const butterflyPublicConfig = {
   api: 'lotus.testground.ipfs.team/butterfly_api',
   secure: true,
@@ -63,7 +62,6 @@ const butterflyPublicConfig = {
   geoSecure: true,
   networkName: 'butterfly'
 }
-*/
 
 function getConfig () {
   if (document.location.hostname === 'testnet.localhost') {
