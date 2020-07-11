@@ -1064,10 +1064,10 @@
   resolved "https://registry.yarnpkg.com/@filecoin-shipyard/lotus-client-rpc/-/lotus-client-rpc-0.0.11.tgz#60d6953dee4ff583ca982aae45d57e05a68ad89b"
   integrity sha512-7ZgT7tyB+5fp5mC9yC4Da9vj3M8PiVPNuxFkFAaDRu8blDuKg/tNh4OMZr5pqs/uuwjRZuXslGl8dOb2Iz+rZg==
 
-"@filecoin-shipyard/lotus-client-schema@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.npmjs.org/@filecoin-shipyard/lotus-client-schema/-/lotus-client-schema-0.0.10.tgz#2fe996e497552304bb20576b6c5e21df8470ae71"
-  integrity sha512-Emx05Y8EKELn1o9FfGts3WoyS0h8akAKaU70VzwRzVEr56mNBR8r882orD5cLcnH74DcASYULeiuKPmQuxQC6Q==
+"@filecoin-shipyard/lotus-client-schema@^0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@filecoin-shipyard/lotus-client-schema/-/lotus-client-schema-0.0.11.tgz#824d2fe2cc0003ed8b2496cbc6284b02f7b54306"
+  integrity sha512-iXe8HKhrqlB3XIZMnFjjltEALuxC2uCd1xS986W0Lt6fpccZRkGCNHDCs7vWCxDLMLQiItH34w6j4hHWqPQXvw==
 
 "@hapi/address@2.x.x":
   version "2.1.4"
