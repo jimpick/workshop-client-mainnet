@@ -6,12 +6,8 @@ const interval = 15 * 1000
 const expireAfter = 7 * 24 * 60 * 60 * 1000 // 7 days
 
 const terminalStates = new Set([
-  // go-fil-markets/storagemarket/types.go
-  1, // StorageDealProposalNotFound
-  2, // StorageDealProposalRejected
-  8, // StorageDealNotFound
-  22, // StorageDealError
-  23 // StorageDealCompleted
+  // go-fil-markets/storagemarket/dealstatus.go
+  26 // StorageDealError
 ])
 
 export default function useDealMonitor ({ appState, updateAppState }) {
