@@ -54,6 +54,15 @@ const nerpaLocalConfig = {
   useBaidu: true
 }
 
+const nerpaPublicConfig = {
+  api: 'lotus.testground.ipfs.team/nerpa_api',
+  secure: true,
+  downloadDir: '/home/ubuntu/downloads',
+  geoApi: 'lotus.testground.ipfs.team/api',
+  geoSecure: true,
+  networkName: 'nerpa'
+}
+
 /*
 const butterflyPublicConfig = {
   api: 'lotus.testground.ipfs.team/butterfly_api',
@@ -76,7 +85,8 @@ function getConfig () {
     return nerpaLocalConfig
   }
   // return butterflyPublicConfig
-  return testnetPublicConfig
+  // return testnetPublicConfig
+  return nerpaPublicConfig
 }
 
 export const api = getConfig().api
