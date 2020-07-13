@@ -1,15 +1,18 @@
 const annotations = {
   // Active
-  t01025: 'active, Poland, Krakow, @magik6k, 1h, 1h, 1h, sun',
-  t01027: 'active, China, Foshan, 1h, 1h, 9h, sun',
-  t01135: 'active, Finland, Helsinki, 3h, 1h, sun',
-  t01154: 'active, Canada, Vancouver, @jimpick, 25m, sun',
+  t01025: 'active, Poland, Krakow, @magik6k, 1h, 1h, 1h, 1h',
+  t01027: 'active, China, Foshan, 1h, 1h, 9h, 1h',
+  t01135: 'active, Finland, Helsinki, 3h, 1h, 1h',
+  t01154: 'active, Canada, Vancouver, @jimpick, 25m, 27m',
 
   // New, sealing, recycle
   t01021: 'sealing, Brazil, São Paulo, 32G, fri, sun',
+  t01119: 'sealing, China, Guandong, 32G, sun',
+  t09095: 'new, China, Foshan',
+  t09096: 'new, China, Foshan',
+  t09114: 'new, China, Suzhou',
 
   // Error
-  t01119: 'error, China, Guandong, 32G', // unexpected deal status while waiting for data request: 11 (StorageDealFailing). Provider message: deal rejected: clientMarketBalance.Available too small
 
   // Stuck
   t01062: "StorageDealCheckForAcceptance, USA, Coeur d'Alene",
