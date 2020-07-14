@@ -30,6 +30,7 @@ const baiduCities = {
   186: 'Yibin', // 宜宾市
   187: 'Zhongshan', // 中山市
   194: 'Xiamen', // 厦门市
+  200: 'Heyuan', // 河源市
   218: 'Wuhan', // 武汉市
   224: 'Suzhou', // 苏州市
   226: 'Fuzhou', // 抚州市
