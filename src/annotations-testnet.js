@@ -4,34 +4,38 @@ const annotations = {
     'sat, mon',
   t078580: 'active, Latvia, Riga, seal times: 72h, 17h, 17h, 12h, sat, mon',
   t0101180: 'active, China, Foshan, seal times: 15h, 6h, 7h, 8h, 7h, 6h, ' +
-    '5h, 12h, 5h, 7h, <20h, tue',
+    '5h, 12h, 5h, 7h, <20h, 19h',
   t0106549: 'active, China, Wuhan, seal times: 21h, 24h, 24h, 1d, 9h, ' +
-    '<20h, tue',
-  t0117734: 'active, USA, seal times: 19h, 24h, 24h, 19h, mon',
+    '<20h, 15h',
+  t0117734: 'active, USA, seal times: 19h, 24h, 24h, 19h, 1d',
   t0117803: 'active, China, Shenzhen, seal times: 10h, 9h, 9h, 10h, <20h,' +
-    'tue',
+    '9h',
   t0118133: 'active, China, Shijiazhuang, seal times: 12h, 15h, 12h, ' +
-    '12h, 1h, <20h, tue',
+    '12h, 1h, <20h, 16h',
   t0118155: 'active, USA, Irvine, seal times: 15h, 7h, 7h, 6h, 6h, 6h, ' +
-    '12h, 6h, 6h, <20h, tue',
+    '12h, 6h, 6h, <20h, 9h',
   t0119822: 'active, China, Beijing, seal times: 24h, 9h, 8h, 1d, mon',
   t0119390: 'active, China, Shenzen, seal times: 9h, 9h, 12h, 8h, 9h, ' +
-    '9h, 8h, <20, tue',
+    '9h, 8h, <20, 10h',
   t0119618: 'active, China, Hangzhou, seal times: 12h, 10h, 12h, 14h, ' +
     'wed, fri, sun, tue',
   t0119995: 'active, China, Shandong, seal times: 4h, 4h, 6h, 3h, 9h, ' +
-    '3h, 6h, 8h, <20h, tue',
+    '3h, 6h, 8h, <20h, 4h',
   t0120221: 'active, China, Yibin, seal times: 7h, 5h, 5h, 19h, sat, mon',
-  t0120295: 'active, China, Beijing, seal times: 24h, 24h, 24h, 2d, mon',
+  t0120295: 'active, China, Beijing, seal times: 24h, 24h, 24h, 2d, 1d',
   t0120458: 'active, China, Suzhou, seal times: 17h, 13h, sat, mon',
-  t0120642: 'active, China, Chongqing, seal times: 12h, 11h, 11h, <20h,' +
-    'tue',
+  t0120642: 'active, China, Chongqing, seal times: 12h, 11h, 11h, <20h, ' +
+    '10h',
   t0120741: 'active, USA, Boardman, @jimpick, seal times: 13h, 13h, 9h, ' +
-    '1d, <20h, tue',
+    '1d, <20h, 19h',
   t0120905: 'active, China, Hangzhou, seal times: 14h, 12h, 15h, 12h, mon',
-  t0120972: 'active, China, Chengdu, seal times: 15h, 11h, 10h, <20h, tue',
+  t0120972: 'active, China, Chengdu, seal times: 15h, 11h, 10h, <20h, 10h',
+  t0120993: 'active, China, Hunan, seal times: 22h, 11h, 10h, <20h, 14h',
   t0121097: 'active, China, Shenzhen, seal times: 13h, 1d, <20h, tue',
-  t0121477: 'active, China, Jinan, seal times: 8h, <20h, tue',
+  t0121477: 'active, China, Jinan, seal times: 8h, <20h, 13h',
+  t0121762: 'active, China, Shenzhen, seal times: 22h',
+  t0121763: 'active, China, Beijing, seal times: 23h',
+  t0121797: 'active, China, Hangzhou, seal times: 7h',
 
   // Routable - new, recycle, sealing
   t01025: 'sealing, China, Yangzhou, top miner, wed, fri, sun, tue',
@@ -59,14 +63,21 @@ const annotations = {
   t0121645: 'sealing, Hungary, mon',
   t0121652: 'sealing, China, Zhongshan, mon',
   t0121655: 'sealing, China, Guangdong, mon',
-  t0121762: 'sealing, China, Shenzhen, tue',
-  t0121763: 'sealing, China, Beijing, tue',
   t0121765: 'transferring, China, Heyuan, tue',
-  t0121797: 'sealing, China, Hangzhou, tue',
   t0121813: 'sealing, China, Shenzhen, tue',
   t0121852: 'sealing, China, Ningxia, tue',
   t0121864: 'sealing, Korea, Bucheon-si, tue',
   t0121879: 'sealing, Germany, Wiesloch, tue',
+  t0121953: 'new, China, Zhongshan',
+  t0121985: 'new, China, Beijing',
+  t0121994: 'new, China, Hangzhou',
+  t0122046: 'new, China, Zhongshan',
+  t0122065: 'new, China, Zhongshan',
+  t0122067: 'new, China, Zhongshan',
+  t0122074: 'new, China, Shanghai',
+  t0122088: 'new, China, Beijing',
+  t0122106: 'new, Canada, St. Marys',
+  t0122108: 'new, China, Chongqing',
 
   // Error
   t01886: 'error, China, Chengdu, top miner', // stream reset
@@ -79,7 +90,6 @@ const annotations = {
   t0120403: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 16
   t0120770: 'error, Singapore, thu', // stream reset
   t0120937: 'error, USA, Clarksville, seal times: 1d, 1d', // error reading Response message: EOF
-  t0120993: 'error, China, Hunan, seal times: 22h, 11h, 10h, <20h', // stream reset
   t0121475: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 16
   t0121681: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 16
   t0121685: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 16
