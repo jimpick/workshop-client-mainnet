@@ -3,73 +3,67 @@ const annotations = {
   t078580: 'active, Latvia, Riga, seal times: 72h, 17h, 17h, 12h, sat, ' +
     'mon, wed',
   t0106549: 'active, China, Wuhan, seal times: 21h, 24h, 24h, 1d, 9h, ' +
-    '<20h, 15h, wed',
-  t0117734: 'active, USA, seal times: 19h, 24h, 24h, 19h, 1d, wed',
+    '<20h, 15h, 19h, thu',
+  t0117734: 'active, USA, seal times: 19h, 24h, 24h, 19h, 1d, 18h, thu',
   t0117803: 'active, China, Shenzhen, seal times: 10h, 9h, 9h, 10h, ' +
-    '<20h, 9h, wed',
+    '<20h, 9h, 12h, thu',
   t0118133: 'active, China, Shijiazhuang, seal times: 12h, 15h, 12h, ' +
     '12h, 1h, <20h, 16h, wed',
-  t0118155: 'active, USA, Irvine, seal times: 15h, 7h, 7h, 6h, 6h, 6h, ' +
-    '12h, 6h, 6h, <20h, 9h, wed',
-  t0119822: 'active, China, Beijing, seal times: 24h, 9h, 8h, 1d, mon, ' +
-    'wed',
+  t0119822: 'active, China, Beijing, seal times: 24h, 9h, 8h, 1d, 3d, ' +
+    '1d',
   t0119390: 'active, China, Shenzen, seal times: 9h, 9h, 12h, 8h, 9h, ' +
-    '9h, 8h, <20, 10h, wed',
-  t0119618: 'active, China, Hangzhou, seal times: 12h, 10h, 12h, 14h, ' +
-    'wed, fri, sun, tue',
+    '9h, 8h, <20, 10h, 9h, thu',
   t0119995: 'active, China, Shandong, seal times: 4h, 4h, 6h, 3h, 9h, ' +
-    '3h, 6h, 8h, <20h, 4h, wed',
+    '3h, 6h, 8h, <20h, 4h, 8h, thu',
   t0120458: 'active, China, Suzhou, seal times: 17h, 13h, sat, mon, wed',
   t0120642: 'active, China, Chongqing, seal times: 12h, 11h, 11h, <20h, ' +
-    '10h, wed',
+    '10h, 11h, thu',
   t0120741: 'active, USA, Boardman, @jimpick, seal times: 13h, 13h, 9h, ' +
     '1d, <20h, 19h, wed',
   t0120972: 'active, China, Chengdu, seal times: 15h, 11h, 10h, <20h, ' +
-    '10h, wed',
+    '10h, 10h, thu',
   t0120993: 'active, China, Hunan, seal times: 22h, 11h, 10h, <20h, 14h, ' +
-    'wed',
-  t0121097: 'active, China, Shenzhen, seal times: 13h, 1d, <20h, tue',
-  t0121477: 'active, China, Jinan, seal times: 8h, <20h, 13h, wed',
-  t0121762: 'active, China, Shenzhen, seal times: 22h, wed',
-  t0121763: 'active, China, Beijing, seal times: 23h, wed',
+    '11h, thu',
+  t0121097: 'active, China, Shenzhen, seal times: 13h, 1d, <20h, tue, thu',
+  t0121477: 'active, China, Jinan, seal times: 8h, <20h, 13h, 6h, thu',
+  t0121655: 'active, China, Guangdong, 15h, thu',
+  t0121762: 'active, China, Shenzhen, seal times: 22h, 19h, thu',
+  t0121763: 'active, China, Beijing, seal times: 23h, 10h, thu',
+  t0121985: 'active, China, Beijing, seal times: 19h, thu',
 
   // Routable - new, recycle, sealing
-  t01025: 'sealing, China, Yangzhou, top miner, wed, fri, sun, tue',
-  t01784: 'sealing, China, Shenzhen, wed, fri, sun, tue',
-  t02020: 'sealing, China, Chengdu, top miner, tue, fri, sun, tue',
-  t040585: 'sealing, China, Shanghai, top miner, wed, fri, sun, tue',
+  t01025: 'sealing, China, Yangzhou, top miner, wed, fri, sun, tue, thu',
+  t01784: 'sealing, China, Shenzhen, wed, fri, sun, tue, thu',
+  t02020: 'sealing, China, Chengdu, top miner, tue, fri, sun, tue, thu',
   t0109604: 'validating, China, Beijing, wed, fri, sun, tue',
-  t0116113: 'sealing, China, Shenyang, was active, tue, fri, sun, tue',
-  t0117628: 'sealing, China, Nanjing, wed, fri, sun, tue',
-  t0117756: 'sealing, USA, Boardman, wed, fri, sun, tue',
-  t0118498: 'sealing, China, Nanchong, wed, fri, sun, tue',
-  t0118797: 'sealing, China, Huzhou, top miner, wed, fri, sun, tue',
-  t0119792: 'sealing, China, Hong Kong, wed, fri, sun, tue',
-  t0120206: 'sealing, China, Beijing, wed, fri, sun, tue',
-  t0120304: 'sealing, China, Beijing, tue, fri, sun, tue',
+  t0116113: 'sealing, China, Shenyang, was active, tue, fri, sun, tue, ' +
+    'thu',
+  t0117628: 'sealing, China, Nanjing, wed, fri, sun, tue, thu',
+  t0118797: 'sealing, China, Huzhou, top miner, wed, fri, sun, tue, thu',
+  t0119792: 'sealing, China, Hong Kong, wed, fri, sun, tue, thu',
+  t0120206: 'sealing, China, Beijing, wed, fri, sun, tue, thu',
+  t0120304: 'sealing, China, Beijing, tue, fri, sun, tue, thu',
   t0120337: 'sealing, China, Chengdu, thu, sat, mon, wed',
-  t0120339: 'sealing, China, Beijing, tue, fri, sun, tue',
+  t0120339: 'sealing, China, Beijing, tue, fri, sun, tue, thu',
   t0120545: 'sealing, Singapore, thu, sat, mon, wed',
   t0120796: 'sealing, China, Shanghai, 64G, thu, sat, mon, wed',
-  t0121040: 'sealing, China, Beijing, fri, sun, tue',
   t0121324: "sealing, China, Xi'an, sat, mon, wed",
   t0121652: 'sealing, China, Zhongshan, mon, wed',
-  t0121655: 'sealing, China, Guangdong, mon, wed',
-  t0121765: 'transferring, China, Heyuan, tue',
-  t0121813: 'sealing, China, Shenzhen, tue',
-  t0121852: 'sealing, China, Ningxia, tue',
-  t0121864: 'sealing, Korea, Bucheon-si, tue',
-  t0121879: 'sealing, Germany, Wiesloch, tue',
-  t0121953: 'transferring, China, Zhongshan, wed',
-  t0121985: 'sealing, China, Beijing, wed',
+  t0121813: 'sealing, China, Shenzhen, tue, thu',
+  t0121852: 'sealing, China, Ningxia, tue, thu',
   t0121994: 'sealing, China, Hangzhou, wed',
-  t0122046: 'transferring, China, Zhongshan, wed',
-  t0122065: 'transferring, China, Zhongshan, wed',
+  t0122046: 'sealing, China, Zhongshan, thu',
+  t0122065: 'sealing, China, Zhongshan, thu',
   t0122067: 'sealing, China, Zhongshan, wed',
   t0122074: 'sealing, China, Shanghai, wed',
   t0122088: 'sealing, China, Beijing, wed',
   t0122106: 'sealing, Canada, St. Marys, wed',
   t0122108: 'sealing, China, Chongqing, wed',
+  t0122137: 'sealing, Korea, Bucheon-si, thu',
+  t0122232: 'sealing, China, Chengdu, thu',
+  t0122244: 'sealing, China, Chengdu, thu',
+  t0122287: 'sealing, China, Beijing, thu',
+  t0122290: 'sealing, China, Guangdong, thu',
 
   // Error
   t01459: 'error, China, Guilin, top miner, seal times: 24h, tue, thu, ' +
@@ -89,6 +83,8 @@ const annotations = {
   t0121475: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 16
   t0121681: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 16
   t0121685: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 16
+  t0121765: 'error, China, Heyuan', // stream reset
+  t0121953: 'error, China, Zhongshan', // stream reset
 
   // Stuck
  
@@ -107,6 +103,7 @@ const annotations = {
   t032055: 'NR, top miner',
   t039272: 'NR, top miner',
   t0105366: 'NR, China, Shenzhen, top miner',
+  t0117756: 'NR, USA, Boardman, wed, fri, sun, tue',
   t0118696: 'NR, top miner',
   t0118768: 'NR, top miner',
   t0119320: 'NR, top miner',
@@ -139,6 +136,7 @@ const annotations = {
   t029571: 'NR - Korea, Seongnam-si',
   t033740: 'NR - China, Ningbo',
   t039025: 'NR - USA, San Francisco',
+  t040585: 'NR, China, Shanghai, top miner, wed, fri, sun, tue',
   t046856: 'NR - China, Guiyang, seal times: 24h',
   t052328: 'NR - China, Beijing',
   t055393: 'NR - China, Beijing',
@@ -200,11 +198,14 @@ const annotations = {
   t0118078: 'NR - USA, Santa Clara',
   t0118144: 'NR - China, Hangzhou, seal times: 12h',
   t0118150: 'NR - China, Shenzhen',
+  t0118155: 'NR, USA, Irvine, seal times: 15h, 7h, 7h, 6h, 6h, 6h, ' +
+    '12h, 6h, 6h, <20h, 9h, 21h',
   t0118186: 'NR - Korea, Seongnam-si',
   t0118238: 'NR - China, Shenzhen',
   t0118304: 'NR - China, Guangdong',
   t0118388: 'NR - China, Hangzhou',
   t0118477: 'NR - USA, Boardman, Jim, seal times: 13h',
+  t0118498: 'NR, China, Nanchong, wed, fri, sun, tue',
   t0118502: 'NR - China, Jinan, seal times: 15h, 7h',
   t0118579: 'NR - China, Guangdong, was active',
   t0118595: 'NR - Singapore',
@@ -240,6 +241,8 @@ const annotations = {
   t0119579: 'NR - China, Shenzhen',
   t0119591: 'NR - China, Beijing, seal times: 48h',
   t0119593: 'NR - China, Changsha, seal times: 8h, 8h, 8h',
+  t0119618: 'NR, China, Hangzhou, seal times: 12h, 10h, 12h, 14h, ' +
+    'wed, fri, sun, tue',
   t0119659: 'NR - China, Shanghai',
   t0119695: 'NR - USA, Boardman, @jimpick, seal times: 13h, 16h, 19h',
   t0119698: 'NR - China, Shanghai, 13h',
@@ -298,6 +301,7 @@ const annotations = {
   t0120974: 'NR - China, Shenzhen, fri',
   t0121029: 'NR - China, Beijing',
   t0121033: 'NR - Netherlands, Purmerend, fri, sun',
+  t0121040: 'NR, China, Beijing, fri, sun, tue',
   t0121080: 'NR, China, Beijing, seal times: 1d, sat',
   t0121108: 'NR - China, Zhongshan, fri, sun',
   t0121182: 'NR, USA, Bellevue, sat',
@@ -313,6 +317,8 @@ const annotations = {
   t0121645: 'NR - Hungary, mon',
   t0121677: 'NR - China, Shenzhen, mon',
   t0121797: 'NR - China, Hangzhou, seal times: 7h',
+  t0121864: 'NR, Korea, Bucheon-si, tue',
+  t0121879: 'NR, Germany, Wiesloch, tue',
 
   // Non-routable Bootstrappers
   t01000: 'NR, bootstrap',
