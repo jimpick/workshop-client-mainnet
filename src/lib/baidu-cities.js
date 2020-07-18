@@ -43,6 +43,7 @@ const baiduCities = {
   289: 'Shanghai', // 上海市
   291: 'Nanchong', // 南充市
   294: 'Huzhou', // 湖州市
+  307: 'Baoding', // 保定市
   315: 'Nanjing', // 南京市
   317: 'Wuxi', // 无锡市
   331: 'Luzhou', // 泸州市
