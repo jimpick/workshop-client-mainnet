@@ -20,6 +20,8 @@ const annotations = {
   t0121985: 'active, China, Beijing, seal times: 19h, thu, sat',
 
   // Routable - new, recycle, sealing
+  t01025: 'sealing, China, Yangzhou, top miner, sat',
+  t01459: 'sealing, China, Guilin, top miner, seal times: 24h, sat',
   t01784: 'sealing, China, Shenzhen, sat',
   t02020: 'sealing, China, Chengdu, top miner, sat',
   t0116113: 'sealing, China, Shenyang, sat',
@@ -64,9 +66,6 @@ const annotations = {
   t0123014: 'sealing, China, Fuzhou, sat',
 
   // Error
-  t01025: 'error, China, Yangzhou, top miner, wed, fri, sun, tue, thu', // stream reset
-  t01459: 'error, China, Guilin, top miner, seal times: 24h, tue, thu, ' +
-    'sat, mon', // error reading Response message: EOF
   t0101180: 'error, China, Foshan, seal times: 15h, 6h, 7h, 8h, 7h, 6h, ' +
     '5h, 12h, 5h, 7h, <20h, 19h',
   t0106399: 'error, Japan, Heiwajima', // stream reset
