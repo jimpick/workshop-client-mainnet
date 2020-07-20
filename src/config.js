@@ -36,7 +36,7 @@ const butterflyLocalConfig = {
   // api: 'butterfly.localhost:9000/api',
   secure: true,
   downloadDir: '/home/ubuntu/downloads',
-  geoApi: 'butterfly.localhost:9000/api',
+  geoApi: 'butterfly.localhost:9021/api',
   geoSecure: true,
   networkName: 'butterfly',
   useGeoIp2: true,
