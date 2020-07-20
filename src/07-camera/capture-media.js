@@ -9,7 +9,7 @@ export default function CaptureMedia ({ appState, updateAppState }) {
   const [opened, setOpened] = useState()
   const [height, setHeight] = useState(75)
   const [error, setError] = useState()
-  const width = 100
+  const width = 300
   const stream = appState.stream
 
   const canPlay = useCallback(ev => {
@@ -123,8 +123,8 @@ export default function CaptureMedia ({ appState, updateAppState }) {
     if (!canvasRef.current) return
     var context = canvasRef.current.getContext('2d')
     context.drawImage(videoRef.current, 0, 0, width, height)
-    const maxSize = 1930
-    for (let quality = 0.8; quality > 0; quality -= 0.05) {
+    const maxSize = 193000
+    for (let quality = 0.999; quality > 0; quality -= 0.05) {
       const promise = new Promise((resolve, reject) => {
         if (!canvasRef.current) return
         canvasRef.current.toBlob(

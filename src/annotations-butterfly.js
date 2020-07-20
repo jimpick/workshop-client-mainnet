@@ -1,15 +1,16 @@
 const annotations = {
   // Active
   t01013: 'active, Poland, Krakow, @magik6k, seal times: 2h',
+  t01021: 'active, USA, Sandpoint, @why',
+  t01603: 'active, USA, Boardman, @ribasushi',
 
   // New, sealing, recycle
-  t01018: 'new, Canada, Vancouver, @jimpick',
-  t01021: 'new, USA, Sandpoint, @why',
-  t01598: 'new, China, Wuhan',
+  t01598: 'sealing, China, Wuhan, 32G, mon',
 
   // Asks
 
   // Error
+  t01018: 'error, Canada, Vancouver, @jimpick',
 
   // Stuck
 
