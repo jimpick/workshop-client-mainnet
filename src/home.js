@@ -9,8 +9,12 @@ export default function Home () {
         Workshop Client - Calibration net edition
       </p>
       <p>
-        Looking for <Link to='/examples'>simpler code examples</Link>?
+        This is connected to a public Lotus node run by @jimpick.
       </p>
+      <ul>
+        <li>Experiment with this on <a href="https://codesandbox.io/s/github/jimpick/workshop-client-testnet/tree/calibration?file=/src/annotations-calibration.js">Code Sandbox</a></li>
+        <li>Source on GitHub: <a href="https://github.com/jimpick/workshop-client-testnet/tree/calibration">jimpick/workshop-client-testnet</a> (calibration branch)</li>
+      </ul>
     </div>
   )
 }
