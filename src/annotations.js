@@ -1,9 +1,9 @@
-import butterflyAnnotations from './annotations-butterfly'
+import calibrationAnnotations from './annotations-calibration'
 import { networkName } from './config'
 
 let annotations = {}
-if (networkName === 'butterfly') {
-  annotations = butterflyAnnotations
+if (networkName === 'calibration') {
+  annotations = calibrationAnnotations
 }
 
 export default annotations

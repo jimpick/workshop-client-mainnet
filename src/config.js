@@ -31,14 +31,14 @@ const testnetPublicConfig = {
   networkName: 'testnet'
 }
 
-const butterflyLocalConfig = {
-  api: 'lotus.testground.ipfs.team/butterfly_api',
-  // api: 'butterfly.localhost:9000/api',
+const calibrationLocalConfig = {
+  api: 'lotus.testground.ipfs.team/calibration_api',
+  // api: 'calibration.localhost:9000/api',
   secure: true,
   downloadDir: '/home/ubuntu/downloads',
-  geoApi: 'butterfly.localhost:9021/api',
+  geoApi: 'calibration.localhost:9021/api',
   geoSecure: true,
-  networkName: 'butterfly',
+  networkName: 'calibration',
   useGeoIp2: true,
   useBaidu: true
 }
@@ -54,26 +54,26 @@ const nerpaLocalConfig = {
   useBaidu: true
 }
 
-const butterflyPublicConfig = {
-  api: 'lotus.testground.ipfs.team/butterfly_api',
+const calibrationPublicConfig = {
+  api: 'lotus.testground.ipfs.team/calibration_api',
   secure: true,
   downloadDir: '/home/ubuntu/downloads',
   geoApi: 'lotus.testground.ipfs.team/api',
   geoSecure: true,
-  networkName: 'butterfly'
+  networkName: 'calibration'
 }
 
 function getConfig () {
   if (document.location.hostname === 'testnet.localhost') {
     return testnetLocalConfig
   }
-  if (document.location.hostname === 'butterfly.localhost') {
-    return butterflyLocalConfig
+  if (document.location.hostname === 'calibration.localhost') {
+    return calibrationLocalConfig
   }
   if (document.location.hostname === 'nerpa.localhost') {
     return nerpaLocalConfig
   }
-  return butterflyPublicConfig
+  return calibrationPublicConfig
   // return testnetPublicConfig
 }
 
