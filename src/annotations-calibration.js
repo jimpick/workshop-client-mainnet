@@ -38,6 +38,7 @@ const annotations = {
   t04458: 'sealing, Netherlands + USA, Dallas, 32G, tue',
   t04480: 'sealing, China, Changsha, 32G, tue',
   t04501: 'sealing, China, Changsha, 32G, tue',
+  t04547: 'sealing, China, Changsha, 32G, wed',
   t04610: 'sealing, China, Hangzhou, 512M, wed',
   t04622: 'sealing, China, Shenzhen, 512M, wed',
   t04663: 'sealing, China, Changsha, 512M, wed',
