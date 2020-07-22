@@ -407,8 +407,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           state.minerPowerUpdates.push(draft => {
             draft[miner] = {
               ...result.MinerPower,
-              sectorCountSSet: sectorCount.Sset,
-              sectorCountPSet: sectorCount.Pset
+              sectorCountSectors: sectorCount.Sectors,
+              sectorCountActive: sectorCount.Active
             }
             draft['total'] = result.TotalPower
           })
@@ -770,7 +770,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
         !queryAllMinersWithAnnotations &&
         minerPower[miner] &&
         minerPower[miner].QualityAdjPower === '0' &&
-        minerPower[miner].sectorCountPSet === 0 &&
+        minerPower[miner].sectorCountActive === 0 &&
         (!minerAddrs[miner] || minerAddrs[miner].error)
       )
         return false
@@ -778,7 +778,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
         queryAllMinersWithAnnotations &&
         minerPower[miner] &&
         minerPower[miner].QualityAdjPower === '0' &&
-        minerPower[miner].sectorCountPSet === 0 &&
+        minerPower[miner].sectorCountActive === 0 &&
         (!minerAddrs[miner] || minerAddrs[miner].error) &&
         !annotations[miner]
       )
@@ -787,7 +787,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
         queryAllMinersWithPower &&
         minerPower[miner] &&
         minerPower[miner].QualityAdjPower === '0' &&
-        minerPower[miner].sectorCountPSet === 0
+        minerPower[miner].sectorCountActive === 0
       )
         return false
       if (minerInfo[miner] && minerAddrs[miner]) {
@@ -960,17 +960,17 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
               IP Lookup: {miner}{' '}
               {minerPower[miner] &&
                 (minerPower[miner].QualityAdjPower !== '0' ||
-                  minerPower[miner].sectorCountSSet > 0 ||
-                  minerPower[miner].sectorCountPSet > 0) && (
+                  minerPower[miner].sectorCountSectors > 0 ||
+                  minerPower[miner].sectorCountActive > 0) && (
                   <>
                     (Power{' '}
                     {bytes(Number(minerPower[miner].QualityAdjPower), {
                       mode: 'binary'
                     })}
-                    ) - {minerPower[miner].sectorCountPSet} proving{' '}
-                    {minerPower[miner].sectorCountSSet !==
-                      minerPower[miner].sectorCountPSet && (
-                      <span>{minerPower[miner].sectorCountSSet} stored</span>
+                    ) - {minerPower[miner].sectorCountActive} proving{' '}
+                    {minerPower[miner].sectorCountSectors !==
+                      minerPower[miner].sectorCountActive && (
+                      <span>{minerPower[miner].sectorCountSectors} stored</span>
                     )}
                   </>
                 )}{' '}
@@ -1010,11 +1010,11 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                           Number(minerPower[miner].QualityAdjPower) /
                             Number(minerPower[miner].RawBytePower) +
                             'x'}{' '}
-                        - {minerPower[miner].sectorCountPSet} proving{' '}
-                        {minerPower[miner].sectorCountSSet !==
-                          minerPower[miner].sectorCountPSet && (
+                        - {minerPower[miner].sectorCountActive} proving{' '}
+                        {minerPower[miner].sectorCountSectors !==
+                          minerPower[miner].sectorCountActive && (
                           <span>
-                            {minerPower[miner].sectorCountSSet} stored
+                            {minerPower[miner].sectorCountSectors} stored
                           </span>
                         )}
                       </>
