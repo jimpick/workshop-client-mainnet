@@ -28,8 +28,11 @@ const annotations = {
   t04076: 'sealing, China, Guilin, 32G, tue',
   t04086: 'sealing, China, Shenyang, 512M, tue',
   t04089: 'sealing, China, Zhongshan, 32G, tue',
+  t04115: 'new, Korea, Gwangju, 64G',
+  t04147: 'new, China, Beijing, 64G',
   t04163: 'sealing, China, Beijing, 32G, tue',
   t04174: 'sealing, USA, Sandpoint, 512M, @why, tue',
+  t04297: 'new, Germany, Frankfurt am Main, 64G',
   t04302: 'sealing, China, Shenzhem, 32G, tue',
   t04303: 'sealing, USA, Boardman, 512M, tue',
   t04305: 'sealing, USA, Boardman, 512M, tue',
@@ -40,6 +43,11 @@ const annotations = {
   t04421: 'sealing, China, Shenzhen, 32G, tue',
   t04451: 'sealing, China, Shenzhen, 32G, tue',
   t04458: 'sealing, Netherlands + USA, Dallas, 32G, tue',
+  t04480: 'new, China, Changsha, 32G',
+  t04486: 'new, China, Changsha, 512M',
+  t04501: 'new, China, Changsha, 32G',
+  t04533: 'new, China, Shenzhen, 512M',
+  t04576: 'new, China, Foshan, 512M',
 
 
   // Asks
