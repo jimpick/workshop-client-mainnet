@@ -4,6 +4,8 @@ const annotations = {
   t03850: 'active, China, Beijing, 512M, 2h',
   t04030: 'active, China, Beijing, 512M, 7h, tue',
   t04251: 'active, Canada, Vancouver, 512M, @jimpick, 1h, tue',
+  t04303: 'active, USA, Boardman, 512M, 1h',
+  t04305: 'active, USA, Boardman, 512M, 1h',
 
   // New, sealing, recycle
   t01852: 'sealing, China, Shenzhen, 64G, tue',
@@ -28,14 +30,10 @@ const annotations = {
   t04076: 'sealing, China, Guilin, 32G, tue',
   t04086: 'sealing, China, Shenyang, 512M, tue',
   t04089: 'sealing, China, Zhongshan, 32G, tue',
-  t04115: 'new, Korea, Gwangju, 64G',
-  t04147: 'new, China, Beijing, 64G',
+  t04115: 'sealing, Korea, Gwangju, 64G, tue',
   t04163: 'sealing, China, Beijing, 32G, tue',
-  t04174: 'sealing, USA, Sandpoint, 512M, @why, tue',
-  t04297: 'new, Germany, Frankfurt am Main, 64G',
+  t04297: 'sealing, Germany, Frankfurt am Main, 64G, tue',
   t04302: 'sealing, China, Shenzhem, 32G, tue',
-  t04303: 'sealing, USA, Boardman, 512M, tue',
-  t04305: 'sealing, USA, Boardman, 512M, tue',
   t04388: 'sealing, China, Guangong, 512M, tue',
   t04411: 'sealing, China, Foshan, 32G, tue',
   t04417: 'sealing, Korea, Seoul, 32G, tue',
@@ -43,11 +41,10 @@ const annotations = {
   t04421: 'sealing, China, Shenzhen, 32G, tue',
   t04451: 'sealing, China, Shenzhen, 32G, tue',
   t04458: 'sealing, Netherlands + USA, Dallas, 32G, tue',
-  t04480: 'new, China, Changsha, 32G',
-  t04486: 'new, China, Changsha, 512M',
-  t04501: 'new, China, Changsha, 32G',
-  t04533: 'new, China, Shenzhen, 512M',
-  t04576: 'new, China, Foshan, 512M',
+  t04480: 'sealing, China, Changsha, 32G, tue',
+  t04501: 'sealing, China, Changsha, 32G, tue',
+  t04533: 'sealing, China, Shenzhen, 512M, tue',
+  t04576: 'sealing, China, Foshan, 512M, tue',
 
 
   // Asks
@@ -56,10 +53,13 @@ const annotations = {
   t04051: 'error, China, Chengdu, 32G', // sending proposal to storage provider failed: dial backoff
   t04304: 'error, USA, Boardman, 512M', // failed getting peer ID: (get ssize) failed to load miner actor state: read actor head: cbor input had wrong number of fields
   t02200: 'error, USA+China, Galveston+Guangdong, 32G', // deal failed: (State=26) handing off deal to node: AddPiece failed: adding piece to sector: writing piece: RPC error (-32700): unmarshaling params for 'Filecoin.AddPiece' (param: *io.Reader): json: cannot unmarshal object into Go value of type io.Reader
+  t04486: 'error, China, Changsha, 512M', // sending proposal to storage provider failed: failed to dial
 
   // Stuck
-  t01910: 'new, China, Shijiazhuang, 512M', // StorageDealCheckForAcceptance
+  t01910: 'error, China, Shijiazhuang, 512M', // StorageDealCheckForAcceptance
   t02150: 'error, China, Hong Kong, 512M', // StorageDealCheckForAcceptance
+  t04147: 'error, China, Beijing, 64G', // StorageDealCheckForAcceptance
+  t04174: 'error, USA, Sandpoint, 512M, @why, tue', // StorageDealCheckForAcceptance
  
   // XNR
 
