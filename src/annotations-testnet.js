@@ -6,15 +6,17 @@ const annotations = {
     '12h, 1h, <20h, 16h, wed, fri, sun',
   t0118797: 'active, China, Huzhou, top miner, seal times: 13h, sat, mon',
   t0119390: 'active, China, Shenzen, seal times: 9h, 9h, 12h, 8h, 9h, ' +
-    '9h, 8h, <20, 10h, 9h, 11h, mon',
+    '9h, 8h, <20, 10h, 9h, 11h, 10h',
   t0119822: 'active, China, Beijing, seal times: 24h, 9h, 8h, 1d, 3d, ' +
-    '1d, 9h, 1d, 23h, mon',
+    '1d, 9h, 1d, 23h, <1d',
   t0120642: 'active, China, Chongqing, seal times: 12h, 11h, 11h, <20h, ' +
     '10h, 11h, 9h, 12h, 12h, 9h, mon',
   t0120972: 'active, China, Chengdu, seal times: 15h, 11h, 10h, <20h, ' +
     '10h, 10h, 20h, 9h, mon',
   t0120993: 'active, China, Hunan, seal times: 22h, 11h, 10h, <20h, 14h, ' +
     '11h, 3d, sat, mon',
+  t0121477: 'active, China, Jinan, seal times: 8h, <20h, 13h, 6h, 1d, ' +
+    '11h, <1d',
   t0121763: 'active, China, Beijing, seal times: 23h, 10h, 17h, 14h, ' +
     '13h, sun',
   t0121852: 'active, China, Ningxia, seal times: 2d, 18h, 23h, mon',
@@ -23,6 +25,11 @@ const annotations = {
   t0122821: 'active, China, Dongguan, 13h, mon',
   t0122908: 'active, China, Wuhan, seal times: 9h, sun',
   t0122928: 'active, China, Baoding, seal times: 11h, sun',
+  t0123308: 'active, Korea, Seongnam-si, seal times: <1d',
+  t0123392: 'active, China, Shanghai, seal times: <1d',
+  t0123404: 'active, China, Shanghai, seal times: <1d',
+  t0123416: 'active, China, Yibin, seal times: <1d',
+  t0123498: 'active, China, Shenzhen, seal times: <1d',
 
   // Routable - new, recycle, sealing
   t01025: 'sealing, China, Yangzhou, top miner, sat, mon',
@@ -31,14 +38,18 @@ const annotations = {
   t0117628: 'sealing, China, Nanjing, sat, mon',
   t0117734: 'sealing, USA, seal times: 19h, 24h, 24h, 19h, 1d, 18h, thu, ' +
     'fri, sun',
+  t0119792: 'sealing, China, Hong Kong, sat, mon',
   t0120304: 'sealing, China, Beijing, sat',
   t0120545: 'sealing, Singapore, fri, sun, mon',
   t0120796: 'sealing, China, Shanghai, 64G, fri, sun',
   t0121324: "sealing, China, Xi'an, fri, sun",
+  t0121652: 'sealing, China, Zhongshan, sat, mon',
   t0121762: 'sealing, China, Shenzhen, seal times: 22h, 19h, 13h, fri, sun',
+  t0121953: 'sealing, China, Zhongshan, seal times: 7h, 9h, mon',
   t0122088: 'sealing, China, Beijing, wed, fri, sun',
   t0122106: 'sealing, Canada, St. Marys, wed, fri, sun',
   t0122244: 'sealing, China, Chengdu, thu, sat, mon',
+  t0122389: 'sealing, Korea, Seoul, seal times: 20h, mon',
   t0122398: 'sealing, China, Beijing, fri, sun ',
   t0122401: 'sealing, Korea, Seoul, fri, sun',
   t0122466: 'sealing, China, Yangzhou, fri, sun',
@@ -52,18 +63,19 @@ const annotations = {
   t0123032: 'sealing, China, Fuzhou, sun',
   t0123189: 'sealing, China, Shenzhen, sun',
   t0123289: 'sealing, China, Shandong, sun',
-  t0123308: 'sealing, Korea, Seongnam-si, mon',
   t0123336: 'sealing, China, Chengdu, mon',
   t0123338: 'sealing, China, Shenzhen, mon',
-  t0123392: 'sealing, China, Shanghai, mon',
-  t0123404: 'sealing, China, Shanghai, mon',
   t0123406: 'sealing, China, Shanghai, mon',
-  t0123416: 'sealing, China, Yibin, mon',
   t0123492: "sealing, China, Xi'an, mon",
   t0123505: 'sealing, Canada, Embrun, mon',
   t0123507: 'sealing, China, Shanghai, mon',
   t0124469: 'sealing, China, Fuzhou, mon',
-
+  t0124520: 'new, China, Wuxi',
+  t0124584: 'new, China, Shandong',
+  t0124719: 'new, China, Shandong',
+  t0125040: 'new, China, Guiyang',
+  t0125093: 'new, China, Yibin',
+  t0125917: 'new, Ireland, Dublin',
 
   // Error
   t0101180: 'error, China, Foshan, seal times: 15h, 6h, 7h, 8h, 7h, 6h, ' +
@@ -81,19 +93,12 @@ const annotations = {
   t0121681: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 16
   t0121685: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 16
   t0121813: 'error, China, Shenzhen, tue, thu', // error reading Response message: EOF
-  t0122389: 'error, Korea, Seoul, seal times: 20h', // sending proposal to storage provider failed: failed to dial
   t0122513: 'error, China, Shandong', // unexpected deal status while waiting for data request: 7
   t0122955: 'error, China, Shenzhen, sat', // sending proposal to storage provider failed: failed to dial
 
   // Stuck
   t01784: 'error, China, Shenzhen, sat, mon', // transferring
-  t0119792: 'error, China, Hong Kong, sat, mon', // validating
-  t0121477: 'error, China, Jinan, seal times: 8h, <20h, 13h, 6h, 1d, ' +
-    '11h, sun', // transferring
-  t0121652: 'error, China, Zhongshan, sat, mon', // transferring
-  t0121953: 'error, China, Zhongshan, seal times: 7h, 9h',  // transferring
   t0123249: 'error, China, Chongqing, sun', // validating
-  t0123498: 'error, China, Shenzhen, mon', // transferring
  
   // Error - NR
 
