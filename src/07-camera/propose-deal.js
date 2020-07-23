@@ -272,7 +272,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
               return (
                 <button
                   key={miner}
-                  style={{ width: '20rem', height: '2rem' }}
+                  style={{ width: '20rem', height: '4rem' }}
                   onClick={() => proposeDeal(miner)}
                 >
                   {miner}: {annotations[miner]}

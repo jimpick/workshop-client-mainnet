@@ -12,8 +12,10 @@ const baiduCities = {
   58: 'Shenyang', // 沈阳市
   75: 'Chengdu', // 成都市
   77: 'Meishan', // 眉山市
+  90: 'Ili', // 伊犁哈萨克自治州
   119: 'Dongguan', // 东莞市
   127: 'Hefei', // 合肥市
+  129: 'Wuhu', // 芜湖市
   131: 'Beijing', // 北京市
   132: 'Chongqing', // 重庆市
   138: 'Foshan', // 佛山市
