@@ -36,6 +36,7 @@ const annotations = {
   t01459: 'sealing, China, Guilin, top miner, seal times: 24h, sat, mon, ' +
     'wed',
   t02020: 'sealing, China, Chengdu, top miner, sat, mon, wed',
+  t09833: 'sealing, China, Mianyang, top miner, thu',
   t0117628: 'sealing, China, Nanjing, sat, mon, wed',
   t0117734: 'sealing, USA, seal times: 19h, 24h, 24h, 19h, 1d, 18h, thu, ' +
     'fri, sun, wed',
@@ -58,7 +59,6 @@ const annotations = {
   t0124469: 'sealing, China, Fuzhou, mon, we, wedd',
   t0125040: 'sealing, China, Guiyang, wed',
   t0125917: 'sealing, Ireland, Dublin, wed',
-  t0126046: 'new, China, Wuhu',
   t0126221: 'sealing, China, Shanghai, thu',
   t0126226: 'sealing, China, Ili, thu',
   t0126303: 'sealing, China, Foshan, thu',
@@ -78,6 +78,7 @@ const annotations = {
   t0124520: 'error, China, Wuxi', // unexpected deal status while waiting for data request: 16
   t0124584: 'error, China, Shandong', // unexpected deal status while waiting for data request: 7
   t0126022: 'error, China, Fuzhou', // error reading Response message: EOF
+  t0126046: 'error, China, Wuhu', // sending proposal to storage provider failed: routing: not found
 
   // Stuck
   t01784: 'error, China, Shenzhen, sat, mon', // transferring
@@ -90,7 +91,6 @@ const annotations = {
   t01009: 'NR, top miner',
   t01102: 'NR, top miner',
   t09084: 'NR, top miner',
-  t09833: 'NR, China, Mianyang, top miner',
   t011101: 'NR, China, Shanghai, top miner',
   t020890: 'NR, China, Huzhou, top miner',
   t021661: 'NR, top miner',
