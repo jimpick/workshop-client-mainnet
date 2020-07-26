@@ -33,7 +33,7 @@ const annotations = {
   t03068: 'sealing, China, Shijiazhuang, 32G, fri, sun',
   t03172: 'sealing, China, Guilin, 32G, fri, sun',
   t03203: 'sealing, China, Wuhan, 32G, 12h, sun',
-  t03210: 'new, China, Beijing, 512M',
+  t03210: 'sealing, China, Beijing, 512M, sun',
   t03233: 'sealing, China, Shijiazhuang, 512M, fri, sat, sun',
   t03316: 'sealing, China, Wuxi, 32G, fri, sun',
   t03318: 'sealing, China, Wuxi, 32G, fri, sun',
@@ -61,7 +61,7 @@ const annotations = {
   t03779: 'sealing, China, Dongguan, 512M, sun',
   t03782: 'sealing, China, Jinan, 32G, sun',
   t03783: 'sealing, China, Shanghai, 32G, sun',
-  t03806: 'new, Korea, Geumcheon-gu, 512M',
+  t03806: 'sealing, Korea, Geumcheon-gu, 512M, sun',
 
   // Asks
   t01513: 'minask, China, Foshan, 512M, 2h', // unexpected deal status while waiting for data request: 11 (StorageDealFailing). Provider message: deal rejected: storage price per epoch less than asking price: 2000000 < 610351562500
