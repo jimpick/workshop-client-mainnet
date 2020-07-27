@@ -10,12 +10,13 @@ const annotations = {
   t03038: 'active, Poland, Krakow, 512M, @magik6k, 6h, 19h, mon',
   t03289: 'active, China, Beijing, 512M, 1h, 2h, mon',
   t03360: 'active, USA, Boardman, 512M, @ribasushi, 1h, 1h, 1h, 1h, 1h',
-  t03361: 'active, USA, Boardman, 512M, @ribasushi, 1h, 1h, 1h, 1h, mon',
-  t03590: 'active, China, Zhongshan, 512M, 2h, 2h, mon',
-  t03646: 'active, Finland, Helsinki, 512M, 2h, 2h, mon',
+  t03361: 'active, USA, Boardman, 512M, @ribasushi, 1h, 1h, 1h, 1h, 1h',
+  t03590: 'active, China, Zhongshan, 512M, 2h, 2h, 1h',
+  t03646: 'active, Finland, Helsinki, 512M, 2h, 2h, 2h',
   t03749: 'active, China, Shandong, 512M, 2h, mon',
   t03776: 'active, Malaysia, Johor Bahru, 512M, 2h, mon',
-  t03806: 'active, Korea, Geumcheon-gu, 512M, 2h, mon',
+  t03806: 'active, Korea, Geumcheon-gu, 512M, 2h, 2h',
+  t03888: 'active, Singapore, 512M, 2h',
 
   // New, sealing, recycle
   t01050: 'sealing, China, Chongqing, 32G, mon',
@@ -39,9 +40,12 @@ const annotations = {
   t03440: 'sealing, China, Chengdu, 32G, sat, sun',
   t03518: 'sealing, China, Luzhou, 32G, mon',
   t03549: 'sealing, Germany, Frankfurt, 32G, mon',
+  t03637: 'sealing, China, Hong Kong, 512M, mon',
+  t03653: 'sealing, Canada, Embrun, 32G, mon',
   t03692: 'sealing, Russia, Novosibirsk, 32G, sun',
   t03709: 'sealing, USA, Bellevue, 32G, sun',
   t03730: 'sealing, Singapore, 32G, sun',
+  t03779: 'sealing, China, Dongguan, 512M, 2h, mon',
   t03782: 'sealing, China, Jinan, 32G, sun',
   t03783: 'sealing, China, Shanghai, 32G, sun',
   t03812: 'sealing, Korea, Guro-go, 32G, mon',
@@ -54,7 +58,6 @@ const annotations = {
   t03865: 'sealing, China, Hangzhou, 32G, mon',
   t03878: "sealing, China, Xi'an, 512M, mon",
   t03884: 'sealing, China, Wuhan, 32G, mon',
-  t03888: 'sealing, Singapore, 512M, mon',
   t03896: 'sealing, China, Wuhan, 32G, mon',
   t03902: 'sealing, China, Beijing, 32G, mon',
   t03928: 'sealing, China, Guilin, 512M, mon',
@@ -74,8 +77,6 @@ const annotations = {
   // Error
   t01072: 'error, USA, Galveston + China, Guangdong, 32G, fri', // deal failed: (State=26) handing off deal to node: AddPiece failed: adding piece to sector: writing piece: RPC error (-32700): unmarshaling params for 'Filecoin.AddPiece' (param: *io.Reader): json: cannot unmarshal object into Go value of type io.Reader
   t01199: 'error, China, Guangdong, 32G, thu', // deal failed: (State=26) deal data verification failed: error generating CommP: failed to build tree Caused by: 0: failed to create data store 1: No such file or directory (os error 2)
-  t03637: 'error, China, Hong Kong, 512M, sat, sun', // failed to initiate data transfer: deal data transfer failed
-  t03653: 'error, Canada, Embrun, 32G', // deal failed: (State=26) handing off deal to node: AddPiece failed: adding piece to sector: writing piece: maybeSchedRequest didn't find any good workers
   t03733: 'error, Korea, Uijeongbu-si, 32G', // deal failed: (State=26) deal data verification failed: error generating CommP: Rust panic: no unwind information
   t04008: 'error, China, Guilin, 32G', // deal failed: (State=26) handing off deal to node: AddPiece failed: adding piece to sector: writing piece: file not found:open /root/.lotusminer/fstmp087665370: no such file or directory
 
@@ -86,7 +87,6 @@ const annotations = {
   t02836: 'stuck, China, Shenzhen, 512M, 3h, sat', // xfr
   t03532: 'stuck, China, Wuxi, 32G, sat', // cfa
   t03591: 'stuck, China, Chengdu, 32G, 9h', // cfa
-  t03779: 'stuck, China, Dongguan, 512M, 2h', // xfr
  
   // XNR
 
