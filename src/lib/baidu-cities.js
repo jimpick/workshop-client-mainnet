@@ -23,6 +23,7 @@ const baiduCities = {
   149: 'Cangzhou', // 沧州市
   150: 'Shijiazhuang', // 石家庄市
   158: 'Changsha', // 长沙市
+  167: 'Dalian', // 大连市
   176: 'Taiyuan', // 太原市
   179: 'Hangzhou', // 杭州市
   180: 'Ningbo', // 宁波市
