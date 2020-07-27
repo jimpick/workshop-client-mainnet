@@ -40,6 +40,7 @@ const baiduCities = {
   236: 'Qingdao', // 青岛市
   240: 'Mianyang', // 绵阳市
   257: 'Guangzhou', // 广州市
+  268: 'Zhengzhou', // 郑州市
   287: 'Weifang', // 潍坊市
   288: 'Jinan', // 济南市
   289: 'Shanghai', // 上海市

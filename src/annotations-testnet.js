@@ -2,8 +2,13 @@ const annotations = {
   // Routable - active
 
   // Routable - new, recycle, sealing
-  t09833: 'sealing, China, Mianyang, top miner, sun',
+  t0117879: 'sealing, China, Hong Kong, mon',
+  t0119792: 'recycle, China, Hong Kong',
   t0123492: "sealing, China, Xi'an, sun",
+  t0127514: 'sealing, China, Foshan, mon',
+  t0127408: 'sealing, Korea, Gwangju, mon',
+  t0127564: 'sealing, China, Zhengzhou, mon',
+  t0127593: 'sealing, Korea, Seongnam-si, mon',
 
   // Error
   t0101180: 'error, China, Foshan, seal times: 15h, 6h, 7h, 8h, 7h, 6h, ' +
@@ -15,7 +20,6 @@ const annotations = {
     '1d, <20h, 19h, wed', // unexpected deal status while waiting for data request: 7
   t0120770: 'error, Singapore, thu', // stream reset
   t0120937: 'error, USA, Clarksville, seal times: 1d, 1d', // error reading Response message: EOF
-  t0121097: 'error, China, Shenzhen, seal times: 13h, 1d, <20h, tue, thu', // stream reset
   t0122856: 'error, China, Guilin, thu', // stream reset
   t0126305: 'error, China, Beijing, thu', // stream reset
 
@@ -24,17 +28,9 @@ const annotations = {
   t02020: 'error, China, Chengdu, top miner, sun', // wfdr
   t0117803: 'error, China, Shenzhen, seal times: 10h, 9h, 9h, 10h, ' +
     '<20h, 9h, 12h, thu, sat, mon, wed', // wfdr
-  t0117879: 'error, China, Hong Kong, sun', // wfdr
-  t0118133: 'error, China, Shijiazhuang, seal times: 12h, 15h, 12h, ' +
-    '12h, 1h, <20h, 16h, wed, fri, sun, wed, thu', // wfdr
-  t0119792: 'error, China, Hong Kong, sun', // wfdr
   t0120304: 'error, China, Beijing, sun', // wfdr
-  t0120642: 'error, China, Chongqing, seal times: 12h, 11h, 11h, <20h, ' +
-    '10h, 11h, 9h, 12h, 12h, 9h, <1d, 6h', // wfdr
   t0120796: 'error, China, Shanghai, 64G, sun', // wfdr
   t0121953: 'error, China, Zhongshan, seal times: 7h, 9h, sun', // wfdr
-  t0123498: 'error, China, Shenzhen, seal times: <1d, <1d, 1d, sun', // wfdr
-  t0124719: 'error, China, Shandong, seal times: <1d, 12h, sun', // wfdr
   t0125917: 'error, Ireland, Dublin, sun', // wfdr
   t0126518: 'error, China, Shenzhen', // wfdr
  
@@ -82,6 +78,7 @@ const annotations = {
   t08293: 'NR - China, Shangrao', // unexpected deal status while waiting for data request: 7
   t08459: 'NR - China, Wuxi',
   t08275: 'NR - China, Wuxi',
+  t09833: 'NR, China, Mianyang, top miner, 6h',
   t013836: 'NR - China, Guangdong',
   t013966: 'NR - China, Guangdong',
   t020889: 'NR - China, Shenzhen',
@@ -161,6 +158,8 @@ const annotations = {
   t0117926: 'NR - China, Ningxia, seal times: 17h, 23h, 24h',
   t0117933: 'NR - China, Meishan',
   t0118078: 'NR - USA, Santa Clara',
+  t0118133: 'NR, China, Shijiazhuang, seal times: 12h, 15h, 12h, ' +
+    '12h, 1h, <20h, 16h, wed, fri, sun, wed, thu',
   t0118144: 'NR - China, Hangzhou, seal times: 12h',
   t0118150: 'NR - China, Shenzhen',
   t0118155: 'NR, USA, Irvine, seal times: 15h, 7h, 7h, 6h, 6h, 6h, ' +
@@ -263,6 +262,8 @@ const annotations = {
   t0120579: 'NR - China, Shanghai',
   t0120621: 'NR - Singapore, thu, sat, mon',
   t0120638: 'NR, China, Guilin, seal times: 21h, sat',
+  t0120642: 'NR, China, Chongqing, seal times: 12h, 11h, 11h, <20h, ' +
+    '10h, 11h, 9h, 12h, 12h, 9h, <1d, 6h',
   t0120647: 'NR, China, Shenzhen, thu, sat',
   t0120661: 'NR - China, Wuxi',
   t0120663: 'NR - China, Shenzhen',
@@ -284,6 +285,7 @@ const annotations = {
   t0121033: 'NR - Netherlands, Purmerend, fri, sun',
   t0121040: 'NR, China, Beijing, fri, sun, tue',
   t0121080: 'NR, China, Beijing, seal times: 1d, sat',
+  t0121097: 'NR, China, Shenzhen, seal times: 13h, 1d, <20h, tue, thu',
   t0121108: 'NR - China, Zhongshan, fri, sun',
   t0121182: 'NR, USA, Bellevue, sat',
   t0121083: 'NR - China, Shenzhen, fri',
@@ -365,11 +367,13 @@ const annotations = {
   t0123406: 'NR, China, Shanghai, mon, wed',
   t0123416: 'NR, China, Yibin, seal times: <1d, wed',
   t0123480: 'NR, China, Yangzhou',
+  t0123498: 'NR, China, Shenzhen, seal times: <1d, <1d, 1d, sun',
   t0123505: 'NR, Canada, Embrun, mon',
   t0123507: 'NR, China, Shanghai, mon, wed',
   t0124469: 'NR, China, Fuzhou, mon, we, wedd',
   t0124520: 'NR, China, Wuxi', // unexpected deal status while waiting for data request: 16
   t0124584: 'NR, China, Shandong', // unexpected deal status while waiting for data request: 7
+  t0124719: 'NR, China, Shandong, seal times: <1d, 12h, sun',
   t0125040: 'NR, China, Guiyang, wed',
   t0125093: 'NR, China, Yibin, seal times: <1d, 22h',
   t0126022: 'NR, China, Fuzhou', // error reading Response message: EOF
