@@ -1,6 +1,7 @@
 const baiduCities = {
   7: 'Guangdong', // 广东省
   8: 'Shandong', // 山东省
+  16: 'Fujian', // 福建省
   18: 'Jiangsu', // 江苏省
   20: 'Ningxia', // 宁夏回族自治区
   25: 'Hebei', // 河北省
@@ -37,7 +38,9 @@ const baiduCities = {
   233: 'Xi\'an', // 西安市
   236: 'Qingdao', // 青岛市
   240: 'Mianyang', // 绵阳市
+  246: 'Guyuan', // 固原市
   257: 'Guangzhou', // 广州市
+  259: 'Jieyang', // 揭阳市
   287: 'Weifang', // 潍坊市
   288: 'Jinan', // 济南市
   289: 'Shanghai', // 上海市
