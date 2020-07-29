@@ -9,81 +9,81 @@ const annotations = {
 
   // Sealing
   t01118: 'sealing, China, Guyuan, 512M, wed',
+  t01233: 'sealing, China, Yangzhou, 32G, wed',
+  t01322: 'sealing, China, Wuhan, 32G, wed',
+  t02456: 'sealing, Canada, Embrun, 32G, wed',
+  t02962: 'sealing, China, Shenzhen+Jieyang, 32G, wed',
+  t04721: 'sealing, China, Chengdu, 32G, wed',
+  t04723: 'sealing, China, Guangdong, 32G, wed',
   t05182: 'sealing, China, Wuxi, 32G, tue',
   t05183: 'sealing, China, Wuxi, 32G, tue',
   t05184: 'sealing, China, Wuxi, 32G, tue',
   t05185: 'sealing, China, Wuxi, 32G, tue',
   t05987: 'sealing, China, Wuhan, 32G, tue',
+  t07392: 'sealing, China, Wuhan, 512M, wed',
+  t09066: 'sealing, Korea, Guro-gu, 512M, wed',
+  t09067: 'sealing, Korea, Geumcheon-gu, 512M, wed',
+  t09068: 'sealing, Korea, Geumcheon-gu, 512M, wed',
+  t09287: 'sealing, Korea, Geumcheon-gu, 512M, wed',
+  t09509: 'sealing, maddr only, 32G, wed',
+  t09596: 'sealing, China, Jieyang, 512M, wed',
+  t09599: 'sealing, USA, San Jose, 32G, wed',
+  t010048: 'sealing, China, Shenzhen, 32G, wed',
+  t010135: 'sealing, China, Shandong, 512M, wed',
+  t010936: 'sealing, China, Shandong, 32G, wed',
+  t015036: 'sealing, China, Shijiazhuang, 512M, wed',
+  t016827: 'sealing, China, Changsha, 512M, wed',
+  t016968: 'sealing, China, Wuxi, 512M, wed',
+  t017625: 'sealing, China, Fujian, 512M, wed',
+  t018901: 'sealing, China, Shenzhen, 512M, wed',
   t019481: 'sealing, China, Hong Kong, 512M, wed',
+  t013370: 'sealing, China, Fujian, 512M, wed',
 
-  // New, sealing, recycle
-  t01233: 'new, China, Yangzhou, 32G',
-  t01322: 'new, China, Wuhan, 32G',
-  t01434: 'new, China, Hong Kong, 512M',
-  t02039: 'new, China, Hong Kong, 32G',
-  t02456: 'new, Canada, Embrun, 32G',
-  t02712: 'new, China, Shenzhen, 32G',
-  t02962: 'new, China, Shenzhen+Jieyang, 32G',
-  t04143: 'new, China, Beijing, 32G',
-  t04366: 'new, China, Chengdu, 32G',
-  t04645: 'new, China, Beijing, 32G',
-  t04721: 'new, China, Chengdu, 32G',
-  t04723: 'new, China, Guangdong, 32G',
-  t04904: 'new, China, Shijiazhuang, 512M',
-  t07108: 'new, China, Chengdu, 32G',
-  t07191: 'new, China, Guyuan, 32G',
-  t07349: 'new, China, Guangzhou, 32G',
-  t07392: 'new, China, Wuhan, 512M',
-  t09066: 'new, Korea, Guro-gu, 512M',
-  t09067: 'new, Korea, Geumcheon-gu, 512M',
-  t09068: 'new, Korea, Geumcheon-gu, 512M',
-  t09287: 'new, Korea, Geumcheon-gu, 512M',
-  t09331: "new, China, Xi'an, 512M",
-  t09507: 'new, China, Changsha, 512M',
-  t09596: 'new, China, Jieyang, 512M',
-  t09599: 'new, USA, San Jose, 32G',
-  t010048: 'new, China, Shenzhen, 32G',
-  t010135: 'new, China, Shandong, 512M',
+  // New, recycle
+  t05017: 'new, China, Shijiazhuang, 32G',
   t010220: 'new, Korea, Yangcheon-gu, 32G',
   t010487: 'new, China, Wuxi, 32G',
   t010624: 'new, Sweden, Stockholm, 32G',
-  t010936: 'new, China, Shandong, 32G',
-  t013370: 'new, China, Fujian, 512M',
-  t014888: 'new, China, Zhongshan, 512M',
-  t015036: 'new, China, Shijiazhuang, 512M',
-  t015485: 'new, China, Shijiazhuang, 512M',
-  t016827: 'new, China, Changsha, 512M',
-  t016968: 'new, China, Wuxi, 512M',
-  t017625: 'new, China, Fujian, 512M',
-  t017805: 'new, China, Dongguan, 512M',
-  t018901: 'new, China, Shenzhen, 512M',
 
   // maddr only
-  t04280: 'new, maddr only',
-  t05017: 'new, China, Shijiazhuang, 32G',
-  t05235: 'new, maddr only',
-  t06734: 'new, China, Guangzhou, 32G',
-  t06866: 'new, maddr only',
-  t07487: 'new, maddr only',
-  t09466: 'new, maddr only',
-  t09509: 'new, maddr only',
-  t010483: 'new, maddr only',
-  t013628: 'new, maddr only',
-  t015164: 'new, maddr only',
   
   // Asks
 
   // No-online deals
 
   // Error
+  t01434: 'error, China, Hong Kong, 512M', // nr
   t01915: 'error, China, Zhongshan, 512M', // sending proposal to storage provider failed: failed to dial
-  t02251: 'error, China, Shenzhen, 512M',
+  t02039: 'error, China, Hong Kong, 32G', // deal failed: (State=26) handing off deal to node: AddPiece failed: adding piece to sector: writing piece: no suitable P1 workers found
+  t02251: 'error, China, Shenzhen, 512M', // sending proposal to storage provider failed: failed to dial
+  t02712: 'error, China, Shenzhen, 32G', // sending proposal to storage provider failed: failed to dial
   t02974: 'error, China, Shijiazhuang, 512M', // deal failed: (State=26) error calling node: AddFunds errored: handler: websocket connection closed
   t03335: 'error, Australia, Moggill, 32G', // failed to initiate data transfer: deal data transfer failed
+  t04280: 'error, maddr only, 512M', // nr
+  t04904: 'error, China, Shijiazhuang, 512M', // sending proposal to storage provider failed: failed to dial
+  t05235: 'error, maddr only, 32G', // nr
+  t06734: 'error, China, Guangzhou, 32G', // sending proposal to storage provider failed: failed to dial
+  t06866: 'error, maddr only, 512M', // sending proposal to storage provider failed: failed to dial
+  t07108: 'error, China, Chengdu, 32G', // sending proposal to storage provider failed: failed to dial
+  t07487: 'error, maddr only, 32G', // nr
+  t09466: 'error, maddr only, 32G', // sending proposal to storage provider failed: failed to dial
+  t010483: 'error, maddr only, 512M', // nr
+  t013628: 'error, maddr only, 512M', // nr
+  t014888: 'error, China, Zhongshan, 512M', // dial backoff
+  t015164: 'error, maddr only, 512M', // sending proposal to storage provider failed: dial backoff
+  t015485: 'error, China, Shijiazhuang, 512M', // sending proposal to storage provider failed: dial backoff
+  t017805: 'error, China, Dongguan, 512M', // deal failed: (State=26) error calling node: ensuring funds: estimating gas limit: message execution failed: exit 16, reason: balance to add must be greater than zero (RetCode=16)
 
   // Stuck
   t03678: 'stuck, China, Shijiazhuang, 512M', // cfa
+  t04143: 'stuck, China, Beijing, 32G', // cfa
   t04278: 'stuck, Canada, Vancouver, 512M, @jimpick', // cfa
+  t04366: 'stuck, China, Chengdu, 32G', // cfa
+  t04645: 'stuck, China, Beijing, 32G', // cfa
+  t07191: 'stuck, China, Guyuan, 32G', // cfa
+  t07349: 'stuck, China, Guangzhou, 32G', // cfa
+  t09331: "stuck, China, Xi'an, 512M", // xfr
+  t09507: 'stuck, China, Changsha, 512M', // cfa
  
   // XNR
 
