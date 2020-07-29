@@ -13,20 +13,21 @@ const annotations = {
   t06187: 'sealing, China, Zhongshan, 512M, mon',
 
   // New, sealing, recycle
-  t01060: 'ynew',
-  t01095: 'ynew',
-  t01513: 'ynew',
+  // t01060: 'new',
+  // t01095: 'new',
+  // t01513: 'new',
   t01915: 'xnew, China, Zhongshan, 512M',
-  t02471: 'ynew',
-  t02681: 'ynew',
+  t02251: 'xnew, China, Shenzhen, 512M',
+  // t02471: 'new',
+  // t02681: 'new',
   t02974: 'xnew, China, Shijiazhuang, 512M',
   t03335: 'xnew, Australia, Moggill, 32G',
   t03678: 'xnew, China, Shijiazhuang, 512M',
-  t04120: 'ynew',
-  t04263: 'ynew',
+  // t04120: 'new',
+  // t04263: 'new',
   t04278: 'xnew, Canada, Vancouver, 512M, @jimpick',
-  t05987: 'new', // On-chain
-  t07253: 'new, China, Zhongshan, 512M',
+  t05987: 'xnew', // On-chain
+  t07253: 'xnew, China, Zhongshan, 512M',
 
   // Asks
 
