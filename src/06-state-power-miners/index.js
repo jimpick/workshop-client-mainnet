@@ -440,6 +440,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           }
           const addresses = []
           if (maddrs) {
+            console.log('Miner Info:', miner, minerInfo)
             for (const maddr of maddrs) {
               try {
                 const address = new Multiaddr(Buffer.from(maddr, 'base64'))

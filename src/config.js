@@ -22,6 +22,7 @@ const testnetLocalConfig = {
   useBaidu: true
 }
 
+/*
 const testnetPublicConfig = {
   api: 'lotus.testground.ipfs.team/testnet_api',
   secure: true,
@@ -30,6 +31,7 @@ const testnetPublicConfig = {
   geoSecure: true,
   networkName: 'testnet'
 }
+*/
 
 const calibrationLocalConfig = {
   api: 'lotus.testground.ipfs.team/calibration_api',

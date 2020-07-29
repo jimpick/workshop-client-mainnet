@@ -95,7 +95,7 @@ export default function useDealMonitor ({ appState, updateAppState }) {
             draft.dealData = {}
           }
           for (const deal of clientDeals) {
-            console.log('Deal', deal)
+            // console.log('Deal', deal)
             const {
               ProposalCid: { '/': proposalCid }
             } = deal

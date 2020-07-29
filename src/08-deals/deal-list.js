@@ -134,8 +134,8 @@ export default function DealList ({ client, appState, cid, filterErrors }) {
                 </div>
               )}
               <div>Proposal CID: {proposalCid}</div>
-              <div>Deal ID: {clientDealStatus.DealID}</div>
-              <div>Size: {clientDealStatus.Size}</div>
+              <div>Deal ID: {clientDealStatus && clientDealStatus.DealID}</div>
+              <div>Size: {clientDealStatus && clientDealStatus.Size}</div>
               <div>
                 Last update:{' '}
                 {data && formatDistance(data.updatedAtTime, now) + ' ago'}
