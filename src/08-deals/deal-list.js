@@ -120,6 +120,15 @@ export default function DealList ({ client, appState, cid, filterErrors }) {
         const dealMessage = clientDealStatus && clientDealStatus.Message
         const dealHistoryData = dealHistory && dealHistory[proposalCid]
         // if (filterErrors && dealState === 22) return null
+        const retrieveScript = clientDealStatus &&
+          dealStateNames[clientDealStatus.State] === 'Active' &&
+          `(TIMESTAMP=\`date +%s\`; /usr/bin/time lotus ` +
+          `client retrieve --miner=${miner} ${cidDeal} ` +
+          `/home/ubuntu/downloads/${miner}-` +
+          `${clientDealStatus && clientDealStatus.DealID}-$TIMESTAMP.jpg ` +
+          `2>&1 | tee /home/ubuntu/downloads/${miner}-` +
+          `${clientDealStatus && clientDealStatus.DealID}-$TIMESTAMP.log)`
+
         return (
           <div key={proposalCid} style={{ marginBottom: '1rem' }}>
             <div>
@@ -143,12 +152,26 @@ export default function DealList ({ client, appState, cid, filterErrors }) {
               {dealMessage && <div>Message: {dealMessage}</div>}
             </div>
             <DealHistory dealHistoryData={dealHistoryData} height={height} />
+            {retrieveScript &&
+              <div>
+                <details>
+                  <summary>Retrieve Script</summary>
+                  <pre>{retrieveScript}</pre>
+                  <button onClick={copyShellRetrieve}>Copy to Clipboard</button>
+                </details>
+              </div>
+            }
           </div>
         )
 
         async function copyCid () {
           console.log('Copying to clipboard', cidDeal)
           await copy(cidDeal)
+          console.log('Copied.')
+        }
+        async function copyShellRetrieve () {
+          console.log('Copying to clipboard', retrieveScript)
+          await copy(retrieveScript)
           console.log('Copied.')
         }
       })}
