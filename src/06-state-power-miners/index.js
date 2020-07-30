@@ -76,7 +76,8 @@ function Addrs ({
   miner,
   updateMinerAddrs,
   genesisCid,
-  peerId
+  peerId,
+  idbKey
 }) {
   const { addrs, timeGeoIp2, timeBaidu } = minerAddrsRecord
   if (addrs.length === 0) return null
@@ -135,8 +136,7 @@ function Addrs ({
         console.error(`GeoIP2 error`, e)
       }
     }
-    const key = `peerId:${genesisCid}:${peerId}`
-    const cacheRecord = await idbGet(key)
+    const cacheRecord = await idbGet(idbKey)
     cacheRecord.timeGeoIp2 = now
     for (const addrRecord of cacheRecord.addrs) {
       const ipAddr = addrRecord.ip
@@ -144,7 +144,7 @@ function Addrs ({
         addrRecord.geo2 = geoIp2[ipAddr]
       }
     }
-    await idbSet(key, cacheRecord)
+    await idbSet(idbKey, cacheRecord)
     updateMinerAddrs(draft => {
       draft[miner].timeGeoIp2 = now
       for (const addr of draft[miner].addrs) {
@@ -176,8 +176,7 @@ function Addrs ({
       }
     }
     if (count === 0) return
-    const key = `peerId:${genesisCid}:${peerId}`
-    const cacheRecord = await idbGet(key)
+    const cacheRecord = await idbGet(idbKey)
     cacheRecord.timeBaidu = now
     for (const addrRecord of cacheRecord.addrs) {
       const ipAddr = addrRecord.ip
@@ -185,7 +184,7 @@ function Addrs ({
         addrRecord.geoBaidu = geoBaidu[ipAddr]
       }
     }
-    await idbSet(key, cacheRecord)
+    await idbSet(idbKey, cacheRecord)
     updateMinerAddrs(draft => {
       draft[miner].timeBaidu = now
       for (const addr of draft[miner].addrs) {
@@ -1149,6 +1148,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                             updateMinerAddrs={updateMinerAddrs}
                             genesisCid={genesisCid}
                             peerId={minerInfo[miner].peerId}
+                            idbKey={`minerAddrs:${genesisCid}:${miner}`}
                           />
                         </>
                       )}
@@ -1163,6 +1163,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                             updateMinerAddrs={updateDhtMinerAddrs}
                             genesisCid={genesisCid}
                             peerId={minerInfo[miner].peerId}
+                            idbKey={`peerId:${genesisCid}:${minerInfo[miner].peerId}`}
                           />
                           <span>
                             {formatRelative(dhtMinerAddrs[miner].end, now) +

@@ -43,7 +43,8 @@ const annotations = {
   t09068: 'sealing, Korea, Geumcheon-gu, 512M, wed',
   t09287: 'sealing, Korea, Geumcheon-gu, 512M, wed',
   t09331: "sealing, China, Xi'an, 512M, wed",
-  t09509: 'sealing, maddr only, 32G, wed',
+  t09466: 'sealing, China, Hong Kong, 32G, thu',
+  t09509: 'sealing, China, Chengdu, 32G, wed',
   t09596: 'sealing, China, Jieyang, 512M, wed',
   t09599: 'sealing, USA, San Jose, 32G, wed',
   t010048: 'sealing, China, Shenzhen, 32G, wed',
@@ -64,7 +65,7 @@ const annotations = {
   t019908: 'sealing, Germany, Frankfurt, 32G, wed',
   t019954: 'sealing, China, Jinan, 32G, wed',
   t019960: 'sealing, USA, Rochester, 512M, wed',
-  t020008: 'sealing, China, Ningbo, 32M, wed',
+  t020008: 'sealing, China, Ningbo, 32G, wed',
   t020047: 'sealing, China, Shanghai, 32G, wed',
   t020089: 'sealing, China, Shanghai, 32G, wed',
   t020117: 'sealing, Russia, 32G, wed',
@@ -73,9 +74,11 @@ const annotations = {
   t021695: 'sealing, China, Zhongshan, 32G, wed',
   t023080: 'sealing, China, Fujian, 32G, wed',
   t023116: 'sealing, USA, Boardman, 32G, @jimpick, wed',
+  t023117: 'sealing, China, Chengdu, 512M, thu',
 
   // New, recycle
 
+  t07349: 'xfr, China, Guangzhou, 32G, thu',
   t023082: 'new, China, Zhangjiakou, 32G',
   t023151: 'new, China, Beijing, 32G',
   t023156: 'new, China, Foshan, 512M',
@@ -108,32 +111,26 @@ const annotations = {
 
   // Error
   t02039: 'error, China, Hong Kong, 32G', // deal failed: (State=26) handing off deal to node: AddPiece failed: adding piece to sector: writing piece: no suitable P1 workers found
-  t04366: 'stuck, China, Chengdu, 32G', // deal failed: (State=26) error calling node: ensuring funds: estimating gas limit: message execution failed: exit 16, reason: balance to add must be greater than zero (RetCode=16)
-  t04645: 'error, China, Beijing, 32G', // dial backoff
-  t05235: 'error, maddr only, 32G', // nr
-  t06730: 'error, China, Yibin, 512M', // stream reset
+  t04904: 'error, China, Shijiazhuang, 512M', // failed to dial
+  t05235: 'error, China, Liaoning, 32G', // nr
+  t06730: 'error, China, Yibin, China, Liaoning512M', // stream reset
   t06734: 'error, China, Guangzhou, 32G', // deal failed: (State=26) error calling node: AddFunds errored: found message with equal nonce as the one we are looking for (F:bafy2bzaceai2gbtcz2mdthuujjox2umppdoztbjyovc3j3p45f52iaopajw7g n 3729, TS: bafy2bzaced66rnd37bqakprxnzp6tafshm5p3vvahkjpgutzep33m2zhhq2sq n3729)
-  t07487: 'error, maddr only, 32G', // nr
+  t07487: 'error, China, Guangzhou, 32G', // nr
   t08883: 'error, China, Shenzhen, 512M', // failed to dial
-  t09466: 'error, maddr only, 32G', // sending proposal to storage provider failed: failed to dial
-  t010483: 'error, maddr only, 512M', // nr
-  t015579: "error, China, Xi'an, 32G", // dial backoff
-  t017935: 'error, Netherlands, Purmerend, 32G', // (State=26) handing off deal to node: AddPiece failed: adding piece to sector: writing piece: cann't get worker by ip: mongo: no documents in result
-  t023117: 'error, China, Chengdu, 512M', // stream reset
+  t014692: 'error, Netherlands, Amersfoort, 32G', // failed to dial
+
+  // Dial backoff
+  t02712: 'backoff, China, Shenzhen, 32G', // cfa
+  t03335: 'backoff, Australia, Moggill, 32G', // cfa
+  t04143: 'backoff, China, Beijing, 32G', // cfa
+  t04645: 'backoff, China, Beijing, 32G', // dial backoff
+  t09507: 'backoff, China, Changsha, 512M', // dial backoff
+  t017888: 'backoff, China, Wuxi, 32G', // dial backoff
+  t020106: 'backoff, USA, Grand Rapids, 512M', // dial backoff
+  t021680: 'backoff, China, Shenzhen, 512M', // dial backoff
 
   // Stuck
-  t02712: 'stuck, China, Shenzhen, 32G', // cfa
-  t03335: 'stuck, Australia, Moggill, 32G', // cfa
-  t04143: 'stuck, China, Beijing, 32G', // cfa
-  t04904: 'stuck, China, Shijiazhuang, 512M', // cfa
-  t05017: 'stuck, China, Shijiazhuang, 32G', // cfs
   t05323: "stuck, China, Xi'an, 32G", // cfa
-  t07349: 'stuck, China, Guangzhou, 32G', // cfa
-  t09507: 'stuck, China, Changsha, 512M', // cfa
-  t014692: 'stuck, Netherlands, Amersfoort, 32G', // cfa
-  t017888: 'stuck, China, Wuxi, 32G', // cfa
-  t020106: 'stuck, USA, Grand Rapids, 512M', // cfa
-  t021680: 'stuck, China, Shenzhen, 512M', // cfa
 
  
   // XNR
@@ -142,10 +139,15 @@ const annotations = {
   t02251: 'xnr, China, Shenzhen, 512M',
   t02974: 'xnr, China, Shijiazhuang, 512M',
   t03678: 'xnr, China, Shijiazhuang, 512M',
-  t04280: 'xnr, maddr only, 512M',
+  t04280: 'xnr, China, Shanghai, 512M',
+  t04366: 'xnr, China, Chengdu, 32G', // deal failed: (State=26) error calling node: ensuring funds: estimating gas limit: message execution failed: exit 16, reason: balance to add must be greater than zero (RetCode=16)
+  t05017: 'xnr, China, Shijiazhuang, 32G',
   t07191: 'xnr, China, Guyuan, 32G',
-  t013628: 'xnr, maddr only, 512M',
-  t015164: 'xnr, maddr only, 512M',
+  t010483: 'xnr, Sweden, Stockholm, 512M', // maddr only
+  t013628: 'xnr, China, Zhongshan, 512M', // maddr only
+  t015164: 'xnr, China, Zhongshan, 512M', // maddr only
+  t015579: "xnr, China, Xi'an, 32G", // dial backoff
+  t017935: 'xnr, Netherlands, Purmerend, 32G', // (State=26) handing off deal to node: AddPiece failed: adding piece to sector: writing piece: cann't get worker by ip: mongo: no documents in result
   t017977: 'xnr, USA, Ashburn, 512M',
   t020022: 'xnr, China, Beijing, 32G',
 
