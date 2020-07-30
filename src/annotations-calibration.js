@@ -75,8 +75,31 @@ const annotations = {
   t023116: 'sealing, USA, Boardman, 32G, @jimpick, wed',
 
   // New, recycle
-  t05323: "stuck, China, Xi'an, 32G", // cfa
- 
+
+  t023082: 'new, China, Zhangjiakou, 32G',
+  t023151: 'new, China, Beijing, 32G',
+  t023156: 'new, China, Foshan, 512M',
+  t023158: 'new, China, Chengdu, 32G',
+  t023159: 'new, China, Foshan, 512M',
+  t023162: 'new, China, Foshan, 512M',
+  t023195: 'new, China, Ningxia, 32G',
+  t023197: 'new, China, Hangzhou, 32G',
+  t023204: 'new, China, Shenzhen, 32G',
+  t023213: 'new, China, Dalian, 32G',
+  t023214: 'new, New Zealand, Auckland, 32G',
+  t023290: 'new, China, Chengdu, 32G',
+  t023300: 'new, China, Shijiazhuang, 32G',
+  t023323: 'new, China, Guyuan, 32G',
+  t023326: 'new, China, Zhongshan, 32G',
+  t023376: 'new, Latvia, Riga, 512M',
+  t023380: 'new, China, Wuxi, 32G',
+  t023384: 'new, China, Beijing, 512M',
+  t023406: 'new, China, Guangzhou, 32G',
+  t023426: 'new, China, Shandong, 32G',
+  t023430: 'new, China, Shenzhen, 32G',
+  t023449: 'new, China, Shenzhen, 32G',
+
+
   // maddr only
   
   // Asks
@@ -104,6 +127,7 @@ const annotations = {
   t04143: 'stuck, China, Beijing, 32G', // cfa
   t04904: 'stuck, China, Shijiazhuang, 512M', // cfa
   t05017: 'stuck, China, Shijiazhuang, 32G', // cfs
+  t05323: "stuck, China, Xi'an, 32G", // cfa
   t07349: 'stuck, China, Guangzhou, 32G', // cfa
   t09507: 'stuck, China, Changsha, 512M', // cfa
   t014692: 'stuck, Netherlands, Amersfoort, 32G', // cfa

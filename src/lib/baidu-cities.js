@@ -40,6 +40,7 @@ const baiduCities = {
   240: 'Mianyang', // 绵阳市
   246: 'Guyuan', // 固原市
   257: 'Guangzhou', // 广州市
+  264: 'Zhangjiakou', // 张家口市
   259: 'Jieyang', // 揭阳市
   287: 'Weifang', // 潍坊市
   288: 'Jinan', // 济南市
