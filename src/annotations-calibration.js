@@ -8,6 +8,8 @@ const annotations = {
   t06187: 'active, China, Zhongshan, 512M, 1h',
   t06866: 'active, China, Hangzhou, 512M, 2h',
   t07253: 'active, China, Zhongshan, 512M, 1h',
+  t09019: 'active, Korea, Geumcheon-gu, 512M, 2h',
+  t09065: 'active, Korea, Geumcheon-gu, 512M, 3h',
   t014888: 'active, China, Zhongshan, 512M, 1h',
   t015485: 'active, China, Shijiazhuang, 512M, 1h',
   t016968: 'active, China, Wuxi, 512M, 1h',
@@ -27,8 +29,10 @@ const annotations = {
   t05184: 'sealing, China, Wuxi, 32G, tue',
   t05185: 'sealing, China, Wuxi, 32G, tue',
   t05987: 'sealing, China, Wuhan, 32G, tue',
+  t06072: 'sealing, China, Wuhan, 32G, wed',
   t07108: 'sealing, China, Chengdu, 32G, wed',
   t07392: 'sealing, China, Wuhan, 512M, wed',
+  t07576: 'sealing, China, Wuxi, 32G, wed',
   t09066: 'sealing, Korea, Guro-gu, 512M, wed',
   t09067: 'sealing, Korea, Geumcheon-gu, 512M, wed',
   t09068: 'sealing, Korea, Geumcheon-gu, 512M, wed',
@@ -60,15 +64,19 @@ const annotations = {
   t020204: 'sealing, USA, Kellogg, 32G, wed',
 
   // New, recycle
+  t02276: 'new, China, Shenzhen, 32G',
   t04448: 'stuck, China, Hangzhou, 32G', // cfa
-  t05323: "new, China, Xi'an, 32G",
-  t06072: 'new, China, Wuhan, 32G',
+  t05323: "stuck, China, Xi'an, 32G", // cfa
   t06650: 'stuck, China, Hangzhou, 512M', // cfa
   t06733: 'stuck, China, Beijing, 32G', // cfa
   t06818: 'stuck, Korea, Bucheon-si, 512M', // cfa
-  t07576: 'new, China, Wuxi, 32G',
-  t09019: 'stuck, Korea, Geumcheon-gu, 512M', // cfa
-  t09065: 'stuck, Korea, Geumcheon-gu, 512M', // cfa
+  t020008: 'new, China, Ningbo, 32M',
+  t020022: 'new, China, Beijing, 32G',
+  t021680: 'new, China, Shenzhen, 512M',
+  t021695: 'new, China, Zhongshan, 32G',
+  t023080: 'new, China, Fujian, 32G',
+  t023116: 'new, USA, Boardman, 32G, @jimpick',
+  t023117: 'new, China, Chengdu, 512M',
  
   // maddr only
   
