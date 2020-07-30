@@ -231,6 +231,21 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     [setMinersScannedUnthrottled]
   )
 
+  const processMinerAddrsUpdates = useCallback(
+    throttle(
+      () => {
+        updateMinerAddrs(draft => {
+          for (const update of minerAddrsUpdates) {
+            update(draft)
+          }
+          minerAddrsUpdates.length = 0
+        })
+      },
+      quickMode ? 1000 : 2000
+    ),
+    [updateMinerAddrs, minerAddrsUpdates, quickMode]
+  )
+
   const processDhtMinerAddrsUpdates = useCallback(
     throttle(
       () => {
@@ -442,20 +457,99 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           }
           const addresses = []
           if (maddrs) {
-            console.log('Miner Info:', miner, minerInfo)
-            for (const maddr of maddrs) {
+            // console.log('Miner Info:', miner, minerInfo)
+            const ips = new Set()
+            let addrsError
+            for (const maddrBin of maddrs) {
               try {
-                const address = new Multiaddr(Buffer.from(maddr, 'base64'))
-                console.log(`Miner: ${miner} maddr ${address}`)
-                addresses.push(address.toString())
+                const maddr = new Multiaddr(
+                  Buffer.from(maddrBin, 'base64')
+                ).toString()
+                console.log(`Miner: ${miner} maddr ${maddr}`)
+                addresses.push(maddr)
+                const match = maddr.match(/^\/ip4\/(\d+\.\d+\.\d+\.\d+)/)
+                if (match) {
+                  const ipv4Address = match[1]
+                  if (!ip.isPrivate(ipv4Address) && ipv4Address !== '0.0.0.0') {
+                    console.log(`    ${ipv4Address}`)
+                    ips.add(ipv4Address)
+                  }
+                  // FIXME: IPv6
+                }
               } catch (e) {
                 console.warn(
                   `Error loading Multiaddr from binary for ${miner}`,
                   e,
-                  maddr
+                  maddrBin
                 )
               }
             }
+            const geoIp = {}
+            for (const ipAddr of ips) {
+              try {
+                const url =
+                  (geoSecure ? 'https://' : 'http://') +
+                  `${geoApi}/geoip/ipv4/${ipAddr}`
+                const response = await fetch(url)
+                geoIp[ipAddr] = await response.json()
+              } catch (e) {
+                console.error(`GeoIP error`, e)
+              }
+            }
+            // await new Promise(resolve => setTimeout(resolve, 5000))
+            minerAddrsUpdates.push(draft => {
+              draft[miner] = {}
+              draft[miner].state = 'scanned'
+              draft[miner].end = Date.now()
+              if (addrsError) {
+                draft[miner].error = addrsError
+                if (!queryAllMinersWithAnnotations || !annotations[miner]) {
+                  if (!draft.newNonRoutableSet) {
+                    draft.newNonRoutableSet = {}
+                    draft.newNonRoutableSetCount = 0
+                  }
+                  if (!nonRoutableSet[miner]) {
+                    draft.newNonRoutableSet[miner] = true
+                    draft.newNonRoutableSetCount++
+                  }
+                }
+              } else {
+                draft[miner].addrs = []
+                for (const ipAddr of ips) {
+                  console.log('geoip', ipAddr, geoIp[ipAddr])
+                  draft[miner].addrs.push({
+                    ip: ipAddr,
+                    geo: geoIp[ipAddr]
+                  })
+                }
+              }
+            })
+            const cacheRecord = {
+              time: Date.now()
+            }
+            /*
+            if (oldCacheRecord) {
+              const { previous, ...rest } = oldCacheRecord
+              if (previous) {
+                cacheRecord.previous = [rest, ...previous]
+              } else {
+                cacheRecord.previous = [rest]
+              }
+            }
+            */
+            if (addrsError) {
+              cacheRecord.error = addrsError
+            } else {
+              cacheRecord.addrs = []
+              for (const ipAddr of ips) {
+                cacheRecord.addrs.push({
+                  ip: ipAddr,
+                  geo: geoIp[ipAddr]
+                })
+              }
+            }
+            idbSet(`minerAddrs:${genesisCid}:${miner}`, cacheRecord)
+            processMinerAddrsUpdates()
           }
           // console.log('Jim peerId', peerId.toB58String())
           if (state.canceled) return
@@ -894,9 +988,9 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           {miners.length} total
         </div>
       )}
-      {miners && minerAddrs && (
+      {miners && dhtMinerAddrs && (
         <div>
-          New non-routable set: {minerAddrs.newNonRoutableSetCount}
+          New non-routable set: {dhtMinerAddrs.newNonRoutableSetCount}
           <button
             style={{ marginLeft: '1rem', marginRight: '1rem' }}
             onClick={() => {
@@ -907,7 +1001,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
               }
               const newNonRoutableSet = {
                 ...fixedNonRoutableSet,
-                ...minerAddrs.newNonRoutableSet
+                ...dhtMinerAddrs.newNonRoutableSet
               }
               if (queryAllMinersWithAnnotations) {
                 for (const annotatedMiner in annotations) {
@@ -1044,10 +1138,25 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                     )}
                   </td>
                   <td colSpan='2'>
+                    {minerAddrs[miner] &&
+                      minerAddrs[miner].addrs &&
+                      minerInfo[miner].peerId && (
+                        <>
+                          Chain:
+                          <Addrs
+                            miner={miner}
+                            minerAddrsRecord={minerAddrs[miner]}
+                            updateMinerAddrs={updateMinerAddrs}
+                            genesisCid={genesisCid}
+                            peerId={minerInfo[miner].peerId}
+                          />
+                        </>
+                      )}
                     {dhtMinerAddrs[miner] &&
                       dhtMinerAddrs[miner].addrs &&
                       minerInfo[miner].peerId && (
                         <>
+                          DHT:
                           <Addrs
                             miner={miner}
                             minerAddrsRecord={dhtMinerAddrs[miner]}
@@ -1056,7 +1165,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                             peerId={minerInfo[miner].peerId}
                           />
                           <span>
-                            {formatRelative(dhtMinerAddrs[miner].end, now) + ' '}
+                            {formatRelative(dhtMinerAddrs[miner].end, now) +
+                              ' '}
                           </span>
                           <button
                             onClick={() => {
