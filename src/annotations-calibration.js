@@ -65,6 +65,7 @@ const annotations = {
   t020089: 'new, China, Shanghai, 32G',
   t020106: 'new, USA, Grand Rapids, 512M',
   t020117: 'new, Russia, 32G',
+  t020185: 'new, China, Shanghai, 32G',
 
   // maddr only
   

@@ -63,7 +63,10 @@ export default function ChainNotify ({ appState }) {
       </div>}
       {networkName === 'calibration' && <div style={{marginBottom: '1rem', fontSize: 'small'}}>
         See also: <a href="https://stats.calibration.fildev.network/">stats dashboard</a> {' '}
-        <a href="https://faucet.calibration.fildev.network/">faucet</a>
+        <a href="https://faucet.calibration.fildev.network/">faucet</a> {' '}
+        <a href="https://calibration.spacerace.filecoin.io/">space race</a> {' '}
+        <a href="https://calibration.filfox.io/en">filfox</a> {' '}
+        <a href="https://filscan.io/#/">filscan</a> {' '}
       </div>}
       {content}
     </div>

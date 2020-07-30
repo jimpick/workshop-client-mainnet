@@ -217,6 +217,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   const [minerInfo, updateMinerInfo] = useImmer({})
   const [minerAddrs, updateMinerAddrs] = useImmer({})
   const [minerAddrsUpdates] = useState([])
+  const [dhtMinerAddrs, updateDhtMinerAddrs] = useImmer({})
+  const [dhtMinerAddrsUpdates] = useState([])
   const [ipLookupList, updateIpLookupList] = useImmer([])
   const [minersScanned, setMinersScannedUnthrottled] = useState(0)
   const [ipScanQueue] = useState(new PQueue({ concurrency: 10 }))
@@ -229,19 +231,19 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     [setMinersScannedUnthrottled]
   )
 
-  const processMinerAddrsUpdates = useCallback(
+  const processDhtMinerAddrsUpdates = useCallback(
     throttle(
       () => {
-        updateMinerAddrs(draft => {
-          for (const update of minerAddrsUpdates) {
+        updateDhtMinerAddrs(draft => {
+          for (const update of dhtMinerAddrsUpdates) {
             update(draft)
           }
-          minerAddrsUpdates.length = 0
+          dhtMinerAddrsUpdates.length = 0
         })
       },
       quickMode ? 1000 : 2000
     ),
-    [updateMinerAddrs, minerAddrsUpdates, quickMode]
+    [updateDhtMinerAddrs, dhtMinerAddrsUpdates, quickMode]
   )
 
   const filteredNonRoutableMiners = useMemo(() => {
@@ -551,7 +553,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
               cacheRecord.time > minerCacheInvalidate[miner])
             // Number(miner.slice(1)) > 210000
           ) {
-            minerAddrsUpdates.push(draft => {
+            dhtMinerAddrsUpdates.push(draft => {
               draft[miner] = {
                 state: 'scanned',
                 start: cacheRecord.time,
@@ -581,7 +583,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                 draft[miner].addrs = cacheRecord.addrs
               }
             })
-            processMinerAddrsUpdates()
+            processDhtMinerAddrsUpdates()
             state.cacheHits++
             ipScanJobs[miner] = true
             continue
@@ -590,13 +592,13 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           // console.log('Adding job for IP lookup', miner)
           ipScanJobs[miner] = async () => {
             // console.log('Scanning IP', miner, power)
-            minerAddrsUpdates.push(draft => {
+            dhtMinerAddrsUpdates.push(draft => {
               draft[miner] = {
                 state: 'scanning',
                 start: Date.now()
               }
             })
-            processMinerAddrsUpdates()
+            processDhtMinerAddrsUpdates()
 
             const ips = new Set()
             let addrsError
@@ -639,7 +641,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
               }
             }
             // await new Promise(resolve => setTimeout(resolve, 5000))
-            minerAddrsUpdates.push(draft => {
+            dhtMinerAddrsUpdates.push(draft => {
               draft[miner].state = 'scanned'
               draft[miner].end = Date.now()
               if (addrsError) {
@@ -688,7 +690,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
               }
             }
             idbSet(`peerId:${genesisCid}:${peerId}`, cacheRecord)
-            processMinerAddrsUpdates()
+            processDhtMinerAddrsUpdates()
             console.log('Done scanning IP', miner)
           }
           const priority = power > 0 || sset > 0 ? 1 : 0
@@ -705,10 +707,10 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     if (quickMode) {
       function tick () {
         // For UI
-        minerAddrsUpdates.push(draft => {
+        dhtMinerAddrsUpdates.push(draft => {
           draft['tick'] = Date.now()
         })
-        processMinerAddrsUpdates()
+        processDhtMinerAddrsUpdates()
         if (!state.canceled) setTimeout(tick, 1000)
       }
       tick()
@@ -745,8 +747,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     updateMinerInfo,
     ipScanJobs,
     ipScanQueue,
-    minerAddrsUpdates,
-    processMinerAddrsUpdates,
+    dhtMinerAddrsUpdates,
+    processDhtMinerAddrsUpdates,
     genesisCid,
     nonRoutableSet,
     minerCacheInvalidate,
@@ -763,7 +765,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     sortedMinersByPower.filter(miner => {
       // if (miner === 't01000') return true
       if (!minerPower[miner] || !minerInfo[miner]) return false
-      if (minerInfo[miner] && !minerAddrs[miner]) {
+      if (minerInfo[miner] && !dhtMinerAddrs[miner]) {
         ipLookupPendingCount++
         return false
       }
@@ -772,7 +774,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
         minerPower[miner] &&
         minerPower[miner].QualityAdjPower === '0' &&
         minerPower[miner].sectorCountActive === 0 &&
-        (!minerAddrs[miner] || minerAddrs[miner].error)
+        (!dhtMinerAddrs[miner] || dhtMinerAddrs[miner].error)
       )
         return false
       if (
@@ -780,7 +782,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
         minerPower[miner] &&
         minerPower[miner].QualityAdjPower === '0' &&
         minerPower[miner].sectorCountActive === 0 &&
-        (!minerAddrs[miner] || minerAddrs[miner].error) &&
+        (!dhtMinerAddrs[miner] || dhtMinerAddrs[miner].error) &&
         !annotations[miner]
       )
         return false
@@ -791,8 +793,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
         minerPower[miner].sectorCountActive === 0
       )
         return false
-      if (minerInfo[miner] && minerAddrs[miner]) {
-        const { state, start } = minerAddrs[miner]
+      if (minerInfo[miner] && dhtMinerAddrs[miner]) {
+        const { state, start } = dhtMinerAddrs[miner]
         if (state === 'scanning') {
           activeIpLookups.push({
             miner,
@@ -829,8 +831,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     filteredMiners &&
     filteredMiners.map(miner => {
       let lng, lat
-      if (!minerAddrs[miner].addrs) return null
-      for (const addr of minerAddrs[miner].addrs) {
+      if (!dhtMinerAddrs[miner].addrs) return null
+      for (const addr of dhtMinerAddrs[miner].addrs) {
         const { geo, geo2, geoBaidu } = addr
         if (geoBaidu && geoBaidu.content && geoBaidu.content.point) {
           lng = geoBaidu.content.point.x
@@ -1042,19 +1044,19 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                     )}
                   </td>
                   <td colSpan='2'>
-                    {minerAddrs[miner] &&
-                      minerAddrs[miner].addrs &&
+                    {dhtMinerAddrs[miner] &&
+                      dhtMinerAddrs[miner].addrs &&
                       minerInfo[miner].peerId && (
                         <>
                           <Addrs
                             miner={miner}
-                            minerAddrsRecord={minerAddrs[miner]}
-                            updateMinerAddrs={updateMinerAddrs}
+                            minerAddrsRecord={dhtMinerAddrs[miner]}
+                            updateMinerAddrs={updateDhtMinerAddrs}
                             genesisCid={genesisCid}
                             peerId={minerInfo[miner].peerId}
                           />
                           <span>
-                            {formatRelative(minerAddrs[miner].end, now) + ' '}
+                            {formatRelative(dhtMinerAddrs[miner].end, now) + ' '}
                           </span>
                           <button
                             onClick={() => {
@@ -1070,17 +1072,17 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                           </button>
                         </>
                       )}
-                    {minerAddrs[miner] && minerAddrs[miner].error && (
+                    {dhtMinerAddrs[miner] && dhtMinerAddrs[miner].error && (
                       <>
                         <ul>
                           <li>
                             <span style={{ color: 'red' }}>
-                              {minerAddrs[miner].error}
+                              {dhtMinerAddrs[miner].error}
                             </span>
                           </li>
                         </ul>
                         <span>
-                          {formatRelative(minerAddrs[miner].end, now) + ' '}
+                          {formatRelative(dhtMinerAddrs[miner].end, now) + ' '}
                         </span>
                         <button
                           onClick={() => {
@@ -1096,23 +1098,13 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                         </button>
                       </>
                     )}
-                    {minerAddrs[miner] &&
-                      minerAddrs[miner].addrs &&
-                      minerAddrs[miner].addrs.length === 0 && (
+                    {dhtMinerAddrs[miner] &&
+                      dhtMinerAddrs[miner].addrs &&
+                      dhtMinerAddrs[miner].addrs.length === 0 && (
                         <ul>
                           <li>
                             <span style={{ color: 'red' }}>
                               No IPv4 addresses found
-                            </span>
-                          </li>
-                        </ul>
-                      )}
-                    {minerAddrs[miner] &&
-                      minerAddrs[miner].state === 'scanning' && (
-                        <ul>
-                          <li>
-                            <span style={{ color: 'green' }}>
-                              Finding IPs...
                             </span>
                           </li>
                         </ul>
