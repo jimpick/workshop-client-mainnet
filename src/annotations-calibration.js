@@ -78,6 +78,11 @@ const annotations = {
 
   // New, recycle
 
+  t023461: 'new, China, Quanzhou, 32G',
+  t023485: 'new, Canada, Huran East, 32G',
+  t023498: 'new, China, Zhengzhou, 32G',
+  t023512: 'new, USA, Boardman, 512M, @ribasushi',
+  t023515: 'new, USA, Boardman, 512M, @ribasushi',
 
   // maddr only
   

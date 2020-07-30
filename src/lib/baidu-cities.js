@@ -18,6 +18,7 @@ const baiduCities = {
   127: 'Hefei', // 合肥市
   131: 'Beijing', // 北京市
   132: 'Chongqing', // 重庆市
+  134: 'Quanzhou', // 泉州市
   138: 'Foshan', // 佛山市
   139: 'Maoming', // 茂名市
   142: 'Guilin', // 桂林市
@@ -43,6 +44,7 @@ const baiduCities = {
   257: 'Guangzhou', // 广州市
   264: 'Zhangjiakou', // 张家口市
   259: 'Jieyang', // 揭阳市
+  268: 'Zhengzhou', // 郑州市
   287: 'Weifang', // 潍坊市
   288: 'Jinan', // 济南市
   289: 'Shanghai', // 上海市
