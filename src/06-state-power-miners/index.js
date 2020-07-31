@@ -47,11 +47,15 @@ function BaiduCity ({ geoBaidu }) {
   return `${province} ${city} (${cityCode})`
 }
 function GeoName ({ geo, geo2, geoBaidu }) {
-  if (!geo) return null
+  if (!geo && !geo2 && !geoBaidu) return null
   return (
     <div style={{ marginLeft: '1rem' }}>
-      GeoLite2: {geo.country && geo.country.names && geo.country.names.en}{' '}
-      {geo.city && geo.city.names && geo.city.names.en}
+      {geo && (
+        <>
+          GeoLite2: {geo.country && geo.country.names && geo.country.names.en}{' '}
+          {geo.city && geo.city.names && geo.city.names.en}
+        </>
+      )}
       {geo2 && (
         <>
           <br />
@@ -137,6 +141,7 @@ function Addrs ({
       }
     }
     const cacheRecord = await idbGet(idbKey)
+    console.log('Jim idbKey', idbKey, cacheRecord)
     cacheRecord.timeGeoIp2 = now
     for (const addrRecord of cacheRecord.addrs) {
       const ipAddr = addrRecord.ip
@@ -145,6 +150,7 @@ function Addrs ({
       }
     }
     await idbSet(idbKey, cacheRecord)
+    console.log('Jim idbKey2', idbKey, cacheRecord)
     updateMinerAddrs(draft => {
       draft[miner].timeGeoIp2 = now
       for (const addr of draft[miner].addrs) {

@@ -87,7 +87,18 @@ const annotations = {
 
   // New, recycle
 
-  t023559: 'xnr, USA, Berkeley, 32G', // nr
+  t023580: 'new, USA, Grand Rapids, 512M',
+  t023602: 'new, China, Quanzhou, 32G',
+  t023631: 'new, China, Shenzhen, 64G',
+  t023766: 'new, China, Beijing, 32G',
+  t023785: 'new, Sweden, Stockholm, 512M',
+  t023796: 'new, China, Shenzhen, 32G',
+  t023807: 'new, China, Chengdu, 32G',
+  t023819: 'new, China, Chengdu, 512M',
+  t023823: 'new, Korea, Wanju, 512M',
+  t023836: 'new, China, Guyuan, 32G',
+  t023846: 'new, China, Wuhan, 512M',
+
 
   // maddr only
   
@@ -158,6 +169,7 @@ const annotations = {
   t018901: 'xnr, China, Shenzhen, 512M, wed',
   t019960: 'xnr, USA, Rochester, 512M, wed',
   t020022: 'xnr, China, Beijing, 32G',
+  t023559: 'xnr, USA, Berkeley, 32G', // nr
 
   // NR
 
