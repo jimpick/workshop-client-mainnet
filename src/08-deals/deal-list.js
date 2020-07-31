@@ -122,12 +122,13 @@ export default function DealList ({ client, appState, cid, filterErrors }) {
         // if (filterErrors && dealState === 22) return null
         const retrieveScript = clientDealStatus &&
           dealStateNames[clientDealStatus.State] === 'Active' &&
-          `(TIMESTAMP=\`date +%s\`; /usr/bin/time lotus ` +
-          `client retrieve --miner=${miner} ${cidDeal} ` +
+          `(TIMESTAMP=\`date +%s\`; /usr/bin/time timeout -k 11m 10m ` +
+          `lotus client retrieve --miner=${miner} ${cidDeal} ` +
           `/home/ubuntu/downloads/${miner}-` +
           `${clientDealStatus && clientDealStatus.DealID}-$TIMESTAMP.jpg ` +
           `2>&1 | tee /home/ubuntu/downloads/${miner}-` +
-          `${clientDealStatus && clientDealStatus.DealID}-$TIMESTAMP.log)`
+          `${clientDealStatus && clientDealStatus.DealID}-$TIMESTAMP.log); ` +
+          `sleep 5`
 
         return (
           <div key={proposalCid} style={{ marginBottom: '1rem' }}>
