@@ -12,6 +12,7 @@ const baiduCities = {
   29: 'Zhejiang', // 浙江省
   32: 'Sichuan', // 四川省
   58: 'Shenyang', // 沈阳市
+  74: 'Deyang', // 德阳市
   75: 'Chengdu', // 成都市
   77: 'Meishan', // 眉山市
   119: 'Dongguan', // 东莞市
