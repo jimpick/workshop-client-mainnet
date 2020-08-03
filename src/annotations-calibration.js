@@ -7,7 +7,7 @@ const annotations = {
   // New, recycle
   
   t01119: 'new, China, Deyang, 32G',
-  t05220: 'new, CHina, Guangzhou, 32G',
+  t05220: 'new, China, Guangzhou, 32G',
 
   // maddr only
   
