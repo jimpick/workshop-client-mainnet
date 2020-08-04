@@ -110,6 +110,7 @@ export default function DealList ({ client, appState, cid, filterErrors }) {
     return dealState !== 26
   })
 
+  const allRetrieveScripts = []
   return (
     <div>
       {filteredDeals.map((deal, i) => {
@@ -129,6 +130,9 @@ export default function DealList ({ client, appState, cid, filterErrors }) {
           `2>&1 | tee /home/ubuntu/downloads/${miner}-` +
           `${clientDealStatus && clientDealStatus.DealID}-$TIMESTAMP.log); ` +
           `sleep 5`
+        if (retrieveScript) {
+          allRetrieveScripts.push(retrieveScript)
+        }
 
         return (
           <div key={proposalCid} style={{ marginBottom: '1rem' }}>
@@ -176,6 +180,18 @@ export default function DealList ({ client, appState, cid, filterErrors }) {
           console.log('Copied.')
         }
       })}
+      <div>
+        <details>
+          <summary>All Retrieve Scripts</summary>
+          <pre>{allRetrieveScripts.join('\n')}</pre>
+          <button onClick={copyShellAllRetrieve}>Copy to Clipboard</button>
+        </details>
+      </div>
     </div>
   )
+  async function copyShellAllRetrieve () {
+    console.log('Copying to clipboard', allRetrieveScripts)
+    await copy(allRetrieveScripts.join('\n'))
+    console.log('Copied.')
+  }
 }
