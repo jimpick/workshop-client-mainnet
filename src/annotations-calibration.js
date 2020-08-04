@@ -101,10 +101,38 @@ const annotations = {
 
   // New, recycle
 
+  t026418: 'new, China, Changsha, 512M',
+  t026425: 'new, China, Shanghai, 32G',
+  t026434: 'new, China, Shenzhen, 32G',
+  t026443: 'new, China, Foshan, 32G',
+  t026444: 'new, China, Wuhan, 32G',
+  t026446: 'new, China, Guangdong, 32G',
+  t026448: 'new, China, Shenzhen, 32G',
+  t026449: 'new, China, Shenzhen, 512M',
+  t026450: 'new, China, Hong Kong, 32G',
+  t026454: 'new, China, Yibin, chain only, 512M',
+  t026466: 'new, China, Hangzhou, 512M',
+  t026481: 'new, Korea, Wanju, 32G',
+  t026482: 'new, China, Guangzhou, 32G',
+  t026484: 'new, China, Weifang, 32G',
+  t026497: 'new, China, Beijing, 32G',
+  t026498: 'new, China, Wuhan, chain only, 512M',
+  t026511: 'new, China, Shandong, 512M',
+  t026521: 'new, China, Changsha, 32G',
+  t026775: 'new, China, Hangzhou, 512M',
+  t026924: 'new, USA, Grand Rapids, 32G',
+  t027935: 'new, China, Guangdong, 32G',
+  t027936: 'new, China, Qinhuangdao, 512M',
+  t028970: 'new, China, Chengdu, 32G',
+  t029114: 'new, China, Guangzhou, 32G',
+  t029268: 'new, China, Qinhuangdao, 512M',
+  t029850: 'new, China, Hangzhou, 32G',
+  t030202: 'new, China, Jiangsu, 32G',
 
 
 
-  // maddr only
+
+  // chain only
   
   // Asks
 
@@ -123,7 +151,7 @@ const annotations = {
   t06812: 'error, China, Chengdu, 32G', // deal failed: (State=26) handing off deal to node: AddPiece failed: adding piece to sector: writing piece: maybeSchedRequest didn't find any good workers
   t016991: 'error, China, Shenzhen+Jieyang, 512M', // failed to dial
   t020658: 'error, China, Chongqing, 32G', // stream reset
-  t020726: 'error, Russia, maddr only, 32G', // failed to dial
+  t020726: 'error, Russia, chain only, 32G', // failed to dial
   t020744: 'error, China, Changzhou, 32G', // failed to dial
   t021033: 'error, New Zealand, Auckland, 32G', // deal failed: (State=26) handing off deal to node: AddPiece failed: adding piece to sector: writing piece: maybeSchedRequest didn't find any good workers
   t022694: 'error, Singapore, 32G', // failed to dial
@@ -174,8 +202,8 @@ const annotations = {
   t022418: 'xnr, USA, Berkeley, 32G',
   t022644: 'xnr, China, Taizhou, 512M',
   t022725: 'xnr, China, Beijing, 512M',
-  t023003: 'xnr, China, Weifang, maddr only, 512M',
-  t024446: 'xnr, Singapore, maddr only, 512M',
+  t023003: 'xnr, China, Weifang, chain only, 512M',
+  t024446: 'xnr, Singapore, chain only, 512M',
   t024604: 'xnr, China, Qiqihar, 512M',
   t025498: 'xnr, China, Fujian, 512M',
 
