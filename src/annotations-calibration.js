@@ -3,6 +3,7 @@ const annotations = {
   // Active - Tue
   t02644: 'active, China, Beijing, 32G, 9h, tue',
   t03496: 'active, USA, Irvine, 32G, 8h, tue',
+  t03508: 'active, Japan, Tokushima, 32G, 8h',
   t04390: 'active, China, Beijing, 512M, 3h, 3h',
   t05992: 'active, Poland, Krakow, @magik6k, 512M, 3h, 2h',
   t06027: 'active, China, Jiangmen, 512M, 2h',
@@ -34,12 +35,12 @@ const annotations = {
   t024670: 'active, China, Luzhou, 512M, 2h, 2h',
   t024689: 'active, Latvia, Riga, 512M, 3h, 3h',
   t024729: "active, USA, Coeur d'Alene, 512M, 2h, 2h",
-  t024763: 'active, China, Zhongshan, 512M, 1h, 2h',
   t024768: 'active, USA, Boardman, 512M, 2h, 1h',
   t024771: 'active, USA, Boardman, 512M, 2h, 1h',
   t024790: 'active, USA, Boardman, 512M, 2h, 2h',
   t024791: 'active, USA, Boardman, 512M, 2h, 2h',
-  t024799: 'active, China, Shenzhen, 512M, 2h, 2h',
+  t026446: 'active, China, Guangdong, 32G, 21h',
+  t026450: 'active, China, Hong Kong, 32G, 23h',
   t026466: 'active, China, Hangzhou, 512M, 2h',
   t026497: 'active, China, Beijing, 32G, 8h',
   t026511: 'active, China, Shandong, 512M, 2h',
@@ -47,6 +48,7 @@ const annotations = {
   t025837: 'active, China, Fujian, 512M, 2h, 2h',
   t027936: 'active, China, Qinhuangdao, 512M, 7h',
   t029268: 'active, China, Qinhuangdao, 512M, 2h',
+  t029850: 'active, China, Hangzhou, 32G, 23h',
 
   // Active - Mon
 
@@ -58,7 +60,6 @@ const annotations = {
 
   t01119: 'sealing, China, Deyang, 32G, tue',
   t02296: 'sealing, China, Hong Kong, 512M, tue',
-  t03508: 'sealing, Japan, Tokushima, 32G, tue',
   t04504: 'sealing, China, Shenzhen, 32G, tue',
   t04555: 'sealing, China, Shanghai, 32G, tue',
   t06810: 'sealing, China, Shanghai, 32G, tue',
@@ -70,16 +71,13 @@ const annotations = {
   t026230: 'sealing, China, Fuzhou, 32G, tue',
   t026434: 'sealing, China, Shenzhen, 32G, tue',
   t026443: 'sealing, China, Foshan, 32G, tue',
-  t026446: 'sealing, China, Guangdong, 32G, tue',
   t026448: 'sealing, China, Shenzhen, 32G, tue',
-  t026450: 'sealing, China, Hong Kong, 32G, tue',
   t026481: 'sealing, Korea, Wanju, 32G, tue',
   t026482: 'sealing, China, Guangzhou, 32G, tue',
   t026521: 'sealing, China, Changsha, 32G, tue',
   t026924: 'sealing, USA, Grand Rapids, 32G, tue',
   t027935: 'sealing, China, Guangdong, 32G, tue',
   t029114: 'sealing, China, Guangzhou, 32G, tue',
-  t029850: 'sealing, China, Hangzhou, 32G, tue',
 
   // Sealing - mon
  
@@ -187,6 +185,8 @@ const annotations = {
   t022452: 'stuck, China, Qingdao, 32G', // cfa
   t022608: 'stuck, China, Shanghai, 512M', // cfa
   t022765: 'stuck, China, Shenzhen, 512M', // cfa
+  t024763: 'stuck, China, Zhongshan, 512M, 1h, 2h', // cfa
+  t024799: 'stuck, China, Shenzhen, 512M, 2h, 2h', // xfr
   t026425: 'stuck, China, Shanghai, 32G', // cfa
   t026449: 'stuck, China, Shenzhen, 512M', // xfr
 
