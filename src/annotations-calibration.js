@@ -81,7 +81,7 @@ const annotations = {
   t035067: 'sealing, China, Chongqing, 32G, wed',
   t035170: 'sealing, USA, Columbus, 32G, wed',
   t036436: 'sealing, China, Ili, 32G, wed',
-
+  t040978: 'sealing, USA, Boardman, 512M, @ribasushi, wed',
 
   // Sealing - tue
 
@@ -126,6 +126,7 @@ const annotations = {
   t024781: 'sealing, Denmark, Kobenhavn S, 32G, wed',
 
   // New, recycle
+
 
   // chain only
   
