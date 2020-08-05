@@ -130,7 +130,39 @@ const annotations = {
 
   // New, recycle
 
-
+  t030213: 'new, China, Wuxi, 32G',
+  t030220: 'new, USA, Irvine, 32G',
+  t030226: 'new, China, Tianjin, 32G',
+  t030233: 'new, Korea, Seongnam-si, 32G',
+  t030256: 'new, Finland, Helsinki, 32G',
+  t030317: "new, China, Xi'an, 32G",
+  t030350: 'new, Korea, Bucheon-si, 512M',
+  t030372: 'new, Korea, Donghak-gu, 32G',
+  t030465: 'new, China, Jiaxing, chain only, 32G',
+  t031070: 'new, China, Shenzhen+Chengdu, 32G',
+  t031119: 'new, China, Shijiazhuang, 32G',
+  t031122: 'new, China, Guilin, 32G',
+  t031123: 'new, China, Guiyang, 32G',
+  t031127: 'new, China, Wuhan, 512M',
+  t031144: 'new, China, Dongguan, 512M',
+  t031154: 'new, Korea, 32G',
+  t031159: 'new, China, Shenzhen, 512M',
+  t031173: 'new, Netherlands, 32G',
+  t031192: 'new, China, Hangzhou, 32G',
+  t031302: 'new, China, Shenzhen, 32G',
+  t031872: 'new, China, Zhongshan, 512M',
+  t032335: 'new, China, Guilin, 32G',
+  t032348: 'new, China, Guangdong, 32G',
+  t032690: 'new, Korea, Wanju, 32G',
+  t032691: 'new, China, Beijing, 32G',
+  t032692: 'new, China, Shenzhen, 32G',
+  t032704: 'new, China, Fuzhou, 32G',
+  t032705: 'new, China, Changsha, 512M',
+  t033977: 'new, China, Shandong, 32G',
+  t034475: 'new, Ireland, Dublin, 512M',
+  t035067: 'new, China, Chongqing, 32G',
+  t035170: 'new, USA, Columbus, 32G',
+  t036436: 'new, China, Ili, 32G',
 
   // chain only
   
