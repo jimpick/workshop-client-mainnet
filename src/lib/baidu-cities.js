@@ -60,6 +60,7 @@ const baiduCities = {
   293: 'Shaoxing', // 绍兴市
   294: 'Huzhou', // 湖州市
   300: 'Fuzhou', // 福州市
+  301: 'Huizhou', // 惠州市
   302: 'Jiangmen', // 江门市
   307: 'Baoding', // 保定市
   315: 'Nanjing', // 南京市
