@@ -1,5 +1,8 @@
 const annotations = {
 
+  // Active - Thu
+
+
   // Active - Wed
  
   t04390: 'active, China, Beijing, 512M, 3h, 3h, 3h',
@@ -7,6 +10,8 @@ const annotations = {
   t06027: 'active, China, Jiangmen, 512M, 2h, 3h',
   t06029: 'active, China, Guangdong, 512M, 3h, 3h, 3h',
   t06043: 'active, China, Shijiazhuang, 512M, 2h, 2h, 3h',
+  t06047: 'active, China, Luzhou, 32G, 16h',
+  t06049: 'active, Korea, Yangcheon-gu, 32G, 20h',
   t06102: 'active, China, Shijiazhuang, 512M, 1h, 3h',
   t07124: 'active, China, Foshan, 512M, 2h, 2h, 3h',
   t016991: 'active, China, Shenzhen+Jieyang, 512M, 3h',
@@ -17,22 +22,35 @@ const annotations = {
   t020464: 'active, Korea, Geumcheon-gu, 512M, 5h, 3h, 3h',
   t022350: 'active, Malaysia, Johor Bahru, 512M, 2h, 2h, 3h',
   t022640: 'active, Sweden, Alvsjo, 512M, 2h, 2h, 3h',
+  t022701: 'active, China, Guangzhou, 32G, 6h',
   t022862: 'active, China, Guangdong, 512M, 2h, 2h, 3h',
+  t022890: 'active, China, Hunan, 32G, 11h, 15h',
   t022917: 'active, China, Hangzhou, 512M, 2h, 2h, 3h',
   t024670: 'active, China, Luzhou, 512M, 2h, 2h, 3h',
+  t024689: 'active, Latvia, Riga, 512M, 3h, 3h, 6h',
   t024768: 'active, USA, Boardman, 512M, 2h, 1h, 3h',
   t024771: 'active, USA, Boardman, 512M, 2h, 1h, 3h',
+  t024781: 'active, Denmark, Kobenhavn S, 32G, 13h',
   t024790: 'active, USA, Boardman, 512M, 2h, 2h, 3h',
   t024791: 'active, USA, Boardman, 512M, 2h, 2h, 3h',
   t024799: 'active, China, Shenzhen, 512M, 2h, 2h, 3h',
   t025837: 'active, China, Fujian, 512M, 2h, 2h, 3h',
   t026449: 'active, China, Shenzhen, 512M, 3h',
   t026466: 'active, China, Hangzhou, 512M, 2h, 3h',
+  t026497: 'active, China, Beijing, 32G, 8h, 9h',
   t026511: 'active, China, Shandong, 512M, 2h, 3h',
   t026775: 'active, China, Hangzhou, 512M, 2h, 3h',
+  t027936: 'active, China, Qinhuangdao, 512M, 7h, 4h',
   t029268: 'active, China, Qinhuangdao, 512M, 2h, 3h',
   t030350: 'active, Korea, Bucheon-si, 512M, 3h',
+  t031119: 'active, China, Shijiazhuang, 32G, 10h',
   t031127: 'active, China, Wuhan, 512M, 3h',
+  t031144: 'active, China, Dongguan, 512M, 2h',
+  t031159: 'active, China, Shenzhen, 512M, 4h',
+  t031192: 'active, China, Hangzhou, 32G, 13h',
+  t031302: 'active, China, Shenzhen, 32G, 8h',
+  t032692: 'active, China, Shenzhen, 32G, 16h',
+  t040978: 'active, USA, Boardman, 512M, @ribasushi, 2h',
 
   // Active - Tue
 
@@ -42,13 +60,9 @@ const annotations = {
   t06905: 'active, China, Beijing, 32G, 12h, tue',
   t021669: 'active, China, Shenzhen, 32G, 9h, tue',
   t022454: 'active, China, Shandong, 32G, 8h, tue',
-  t022890: 'active, China, Hunan, 32G, 11h, tue',
   t023889: 'active, China, Shenzhen, 32G, 15h, wed',
-  t024689: 'active, Latvia, Riga, 512M, 3h, 3h, wed',
   t026446: 'active, China, Guangdong, 32G, 21h, wed',
   t026450: 'active, China, Hong Kong, 32G, 23h, wed',
-  t026497: 'active, China, Beijing, 32G, 8h, wed',
-  t027936: 'active, China, Qinhuangdao, 512M, 7h, wed',
 
   // Sealing - wed
 
@@ -65,23 +79,17 @@ const annotations = {
   t030317: "sealing, China, Xi'an, 32G, wed",
   t030372: 'sealing, Korea, Donghak-gu, 32G, wed',
   t031070: 'sealing, China, Shenzhen+Chengdu, 32G, wed',
-  t031119: 'sealing, China, Shijiazhuang, 32G, wed',
   t031122: 'sealing, China, Guilin, 32G, wed',
   t031123: 'sealing, China, Guiyang, 32G, wed',
-  t031159: 'sealing, China, Shenzhen, 512M, wed',
   t031173: 'sealing, Netherlands, 32G, wed',
-  t031192: 'sealing, China, Hangzhou, 32G, wed',
-  t031302: 'sealing, China, Shenzhen, 32G, wed',
   t032335: 'sealing, China, Guilin, 32G, wed',
   t032348: 'sealing, China, Guangdong, 32G, wed',
   t032690: 'sealing, Korea, Wanju, 32G, wed',
-  t032692: 'sealing, China, Shenzhen, 32G, wed',
   t032705: 'sealing, China, Changsha, 512M, wed',
   t033977: 'sealing, China, Shandong, 32G, wed',
   t035067: 'sealing, China, Chongqing, 32G, wed',
   t035170: 'sealing, USA, Columbus, 32G, wed',
   t036436: 'sealing, China, Ili, 32G, wed',
-  t040978: 'sealing, USA, Boardman, 512M, @ribasushi, wed',
 
   // Sealing - tue
 
@@ -108,8 +116,6 @@ const annotations = {
   t01148: 'sealing, China, Hanzhong, 32G, wed',
   t04240: 'sealing, Netherlands, Amersfoort, 32G, wed',
   t06030: 'sealing, China, Shenzhen, 32G, wed',
-  t06047: 'sealing, China, Luzhou, 32G, wed',
-  t06049: 'sealing, Korea, Yangcheon-gu, 32G, wed',
   t08702: 'sealing, China, Bozhou, 32G, wed',
   t08818: 'sealing, China, Chengdu, 512M, wed',
   t018574: 'sealing, China, Wuxi, 32G, wed',
@@ -121,9 +127,7 @@ const annotations = {
   t022352: 'sealing, China, Guiyang, 32G, wed',
   t022611: 'sealing, China, Hangzhou, 32G, wed',
   t022670: 'sealing, Canada, Dublin, 32G, wed',
-  t022701: 'sealing, China, Guangzhou, 32G, wed',
   t024736: 'sealing, China, Dongguan, 32G, wed',
-  t024781: 'sealing, Denmark, Kobenhavn S, 32G, wed',
 
   // New, recycle
 
@@ -194,7 +198,6 @@ const annotations = {
   t019631: 'stuck, Australia, 32G, mon', // funds ensured
   t021033: 'stuck, New Zealand, Auckland, 32G', // cfa
   t022883: "stuck, China, Xi'an, 512M, 3h", // cfa
-  t031144: 'stuck, China, Dongguan, 512M', // cfa
 
   // XNR
 
