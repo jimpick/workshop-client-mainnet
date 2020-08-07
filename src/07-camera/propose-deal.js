@@ -15,9 +15,8 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     filterActiveMiners,
     filterPowerMiners,
     filterErrorMiners,
+    filterBackoffMiners,
     filterStuckMiners,
-    filterTopMiners,
-    filterDeals,
     filterNonRoutable
   } = appState
   const client = useLotusClient(selectedNode, 'node')
@@ -58,14 +57,11 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     if (filterErrorMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/^error/i))
     }
+    if (filterBackoffMiners && miners) {
+      return miners.filter(miner => annotations[miner].match(/^backoff/i))
+    }
     if (filterStuckMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/^stuck/i))
-    }
-    if (filterTopMiners && miners) {
-      return miners.filter(miner => annotations[miner].match(/top miner/i))
-    }
-    if (filterDeals && miners) {
-      return miners.filter(miner => annotations[miner].match(/deals/i))
     }
     if (filterNonRoutable && miners) {
       return miners.filter(miner => !annotations[miner].match(/^NR/i))
@@ -79,9 +75,8 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     filterActiveMiners,
     filterPowerMiners,
     filterErrorMiners,
+    filterBackoffMiners,
     filterStuckMiners,
-    filterTopMiners,
-    filterDeals,
     filterNonRoutable
   ])
 
@@ -229,6 +224,19 @@ export default function ProposeDeal ({ appState, updateAppState }) {
         <label>
           <input
             type='checkbox'
+            checked={filterBackoffMiners}
+            onChange={() => {
+              updateAppState(draft => {
+                draft.filterBackoffMiners = !filterBackoffMiners
+              })
+            }}
+            style={{ marginLeft: '1rem' }}
+          />
+          'backoff'
+        </label>
+        <label>
+          <input
+            type='checkbox'
             checked={filterStuckMiners}
             onChange={() => {
               updateAppState(draft => {
@@ -238,32 +246,6 @@ export default function ProposeDeal ({ appState, updateAppState }) {
             style={{ marginLeft: '1rem' }}
           />
           'stuck'
-        </label>
-        <label>
-          <input
-            type='checkbox'
-            checked={filterTopMiners}
-            onChange={() => {
-              updateAppState(draft => {
-                draft.filterTopMiners = !filterTopMiners
-              })
-            }}
-            style={{ marginLeft: '1rem' }}
-          />
-          'top'
-        </label>
-        <label>
-          <input
-            type='checkbox'
-            checked={filterDeals}
-            onChange={() => {
-              updateAppState(draft => {
-                draft.filterDeals = !filterDeals
-              })
-            }}
-            style={{ marginLeft: '1rem' }}
-          />
-          'deals'
         </label>
         <label>
           <input
