@@ -19,6 +19,7 @@ const annotations = {
   t01444: 'active, China, Zhongshan, 512M, <9h, 2h',
   t01455: 'active, China, Guangdong, chain only, 32G, 11h',
   t01484: 'active, China, Beijing, 512M, <8h',
+  t01485: 'active, China, Beijing, 32G, 16h',
   t01500: 'active, China, Chengdu, 512M, <8h, 2h',
   t01548: 'active, China, Shenzhen, 32G, 15h',
   t01638: 'active, Poland, Krakow, 512M, @magik6k, 4h',
@@ -28,6 +29,7 @@ const annotations = {
   t01855: 'active, Korea, Geumcheon-gu, 512M, 5h',
   t01908: 'active, China, Hangzhou, 512M, 4h',
   t01937: 'active, Japan, Tokushima, 512M, 3h',
+  t01998: 'active, Finland, Helsinki, 512M, 2h',
 
   // Active - fri
 
@@ -82,7 +84,6 @@ const annotations = {
   t01979: 'sealing, UK, Hartlepool, 32G, sat',
   t01993: 'sealing, Ireland, Dublin, 32G, sat',
   t01995: 'sealing, USA, Redmond, 32G, sat',
-  t01998: 'sealing, Finland, Helsinki, 512M, sat',
   t02012: 'sealing, USA, Boardman, 32G, @jimpick, sat',
 
   // Sealing - fri
@@ -105,7 +106,6 @@ const annotations = {
   t01409: 'sealing, China, Chengdu, 32G, fri',
   t01414: 'sealing, Denmark, Kobenhavn S, 32G, fri',
   t01419: 'sealing, China, Tongling, 32G, fri',
-  t01485: 'sealing, China, Beijing, 32G, fri',
   t01487: 'sealing, China, Zhejiang, 512M, fri',
   t01496: 'sealing, Kenya, Nairobi, 32G, fri',
   t01513: 'sealing, China, Shanghai, 32G, fri',
