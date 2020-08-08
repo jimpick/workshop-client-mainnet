@@ -13,6 +13,7 @@ const annotations = {
   t01119: 'sealing, Korea, Seongnam-si, 32G, fri',
   t01124: 'sealing, China, Jiaxing, 32G, fri',
   t01127: 'sealing, China, Guangdong, 32G, fri',
+  t01138: 'sealing, China, Shijiazhuang, 512M, fri',
   t01184: "sealing, China, Xi'an, 32G, fri",
   t01202: 'sealing, China, Hong Kong, 32G, fri',
   t01206: 'sealing, China, Shandong, 32G, fri',
@@ -42,13 +43,21 @@ const annotations = {
   t01414: 'sealing, Denmark, Kobenhavn S, 32G, fri',
   t01419: 'sealing, China, Tongling, 32G, fri',
   t01444: 'sealing, China, Zhongshan, 512M, fri',
+  t01455: 'sealing, China, Guangdong, chain only, 32G, fri',
   t01484: 'sealing, China, Beijing, 512M, fri',
   t01485: 'sealing, China, Beijing, 32G, fri',
   t01487: 'sealing, China, Zhejiang, 512M, fri',
   t01496: 'sealing, Kenya, Nairobi, 32G, fri',
   t01500: 'sealing, China, Chengdu, 512M, fri',
+  t01547: 'sealing, China, Hangzhou, 32G, fri',
+  t01548: 'sealing, China, Shenzhen, 32G, fri',
+  t01549: 'sealing, China, Hong Kong, 32G, fri',
+  t01553: 'sealing, China, Chongqing, 32G, fri',
+  t01571: 'sealing, China, Beijing, 32G, fri',
 
   // New, recycle
+
+  t01559: 'stuck, China, Guangzhou, 32G', // cfa
 
   // Asks
 
@@ -63,6 +72,7 @@ const annotations = {
   t01464: 'error, Germany, Hamburg, 32G', // out of gas
   t01478: 'error, China, Guangzhou, 512M', // failed to dial
   t01513: 'error, China, Shanghai, 32G', // failed to dial
+  t01546: 'error, Netherlands, 32G', // out of gas
 
 
   // Dial backoff
