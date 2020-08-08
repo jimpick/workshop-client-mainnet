@@ -2,20 +2,60 @@ const annotations = {
 
   // Active - fri
 
-  t01054: 'active, China, Hong Kong, 512M, 2h',
-  t01058: 'active, China, Zhongshan, 512M, 1h',
+  t01054: 'active, China, Hong Kong, 512M, 2h', // cfa
+  t01058: 'active, China, Zhongshan, 512M, 1h, sat',
   t01115: 'active, China, Shijiazhuang, 512M, 2h',
-  t01138: 'active, China, Shijiazhuang, 512M, <8h',
-  t01183: 'active, Canada, Vancouver, 512M, @jimpick, 2h',
-  t01184: "active, China, Xi'an, 32G, <11h",
+  t01138: 'active, China, Shijiazhuang, 512M, <8h, sat',
+  t01183: 'active, Canada, Vancouver, 512M, @jimpick, 2h, sat',
+  t01184: "active, China, Xi'an, 32G, <11h", // xfr
   t01217: 'active, China, Guilin, 512M, 2h',
-  t01233: "active, USA, Coeur d'Alene, 512M, @why, 2h, 2h",
-  t01270: 'active, China, Weifang, 512M, 2h',
-  t01314: 'active, Korea, Uijeongbu-si, 512M, <10h',
-  t01364: 'active, China, Shijiazhuang, 512M, <9h',
+  t01233: "active, USA, Coeur d'Alene, 512M, @why, 2h, 2h, sat",
+  t01270: 'active, China, Weifang, 512M, 2h', // cfa
+  t01314: 'active, Korea, Uijeongbu-si, 512M, <10h, sat',
+  t01364: 'active, China, Shijiazhuang, 512M, <9h, sat',
   t01378: 'active, China, Ordos, 512M, <9h',
-  t01444: 'active, China, Zhongshan, 512M, <9h',
-  t01500: 'active, China, Chengdu, 512M, <8h',
+  t01444: 'active, China, Zhongshan, 512M, <9h, sat',
+  t01500: 'active, China, Chengdu, 512M, <8h', // xfr
+
+  // Sealing - sat
+  t01278: 'sealing, Australia, 32G, sat',
+  t01324: 'sealing, China, Wuxi, 32G, sat',
+  t01345: 'sealing, Australia, 32G, sat',
+  t01484: 'sealing, China, Beijing, 512M, sat',
+  t01492: 'sealing, Sweden, Stockholm, 32G, sat',
+  t01598: 'sealing, China, Fujian, 32G, sat',
+  t01599: 'sealing, China, Shanghai, 32G, sat',
+  t01615: 'sealing, Canada, Surrey, 32G, sat',
+  t01638: 'sealing, Poland, Krakow, 512M, @magik6k, sat',
+  t01646: 'sealing, China, Beijing, 32G, sat',
+  t01652: 'sealing, China, Shanghai, 32G, sat',
+  t01657: 'sealing, China, Ordos, 512M, sat',
+  t01660: 'sealing, China, Beijing, 32G, sat',
+  t01664: 'sealing, Korea, Seoul, 32G, sat',
+  t01673: 'sealing, China, Guangdong, 32G, sat',
+  t01677: 'sealing, USA, 32G, sat',
+  t01680: 'sealing, China, Taiyuan, 32G, sat',
+  t01698: 'sealing, China, Shenzhen, 32G, sat',
+  t01699: 'sealing, China, Beijing, 32G, sat',
+  t01701: 'sealing, Malaysia, Johor Bahru, 512M, sat',
+  t01703: 'sealing, Netherlands, Amersfoort, 32G, sat',
+  t01725: 'sealing, China, Shenzhen, 32G, sat',
+  t01731: 'sealing, China, Dongguan, 32G, sat',
+  t01745: 'sealing, China, Wuhan, 512M, sat',
+  t01760: 'sealing, China, Ili, 32G, sat',
+  t01773: 'sealing, China, Chongqing, 32G, sat',
+  t01812: 'sealing, China, Changsha, 512M, sat',
+  t01817: 'sealing, Japan, Setagaya-ku, 32G, sat',
+  t01819: 'sealing, China, Shenzhen, 32G, sat',
+  t01828: 'sealing, China, Shenzhen, 32G, sat',
+  t01843: 'sealing, China, Guangzhou, 512M, sat',
+  t01851: 'sealing, China, Wuhan, 32G, sat',
+  t01853: 'sealing, Korea, Geumcheon-gu, 512M, sat',
+  t01855: 'sealing, Korea, Geumcheon-gu, 512M, sat',
+  t01857: 'sealing, Korea, Bucheon-si, 512M, sat',
+  t01858: 'sealing, China, Beijing, 32G, sat',
+  t01886: 'sealing, Netherlands, Purmerend, 32G, sat',
+  t01937: 'sealing, Japan, Tokushima, 512M, sat',
 
   // Sealing - fri
 
@@ -45,7 +85,6 @@ const annotations = {
   t01414: 'sealing, Denmark, Kobenhavn S, 32G, fri',
   t01419: 'sealing, China, Tongling, 32G, fri',
   t01455: 'sealing, China, Guangdong, chain only, 32G, fri',
-  t01484: 'sealing, China, Beijing, 512M, fri',
   t01485: 'sealing, China, Beijing, 32G, fri',
   t01487: 'sealing, China, Zhejiang, 512M, fri',
   t01496: 'sealing, Kenya, Nairobi, 32G, fri',
@@ -59,58 +98,23 @@ const annotations = {
 
   // New, recycle
 
-  t01492: 'new, Sweden, Stockholm, 32G',
   t01528: 'new, China, Deyang, chain only, 512M',
-  t01596: 'new, Australia, Brisbane, chain only, 512M',
-  t01598: 'new, China, Fujian, 32G',
-  t01599: 'new, China, Shanghai, 32G',
-  t01615: 'new, Canada, Surrey, 32G',
   t01619: 'new, China, Guyuan, 512M',
   t01627: 'new, China, Beijing, 32G',
   t01629: 'new, Netherlands, Horn, 32G',
-  t01638: 'new, Poland, Krakow, 512M, @magik6k',
   t01644: 'new, USA, Columbus, 32G',
-  t01646: 'new, China, Beijing, 32G',
   t01649: 'new, China, Hangzhou, 512M',
-  t01652: 'new, China, Shanghai, 32G',
-  t01657: 'new, China, Ordos, 512M',
-  t01660: 'new, China, Beijing, 32G',
-  t01664: 'new, Korea, Seoul, 32G',
-  t01673: 'new, China, Guangdong, 32G',
-  t01677: 'new, USA, 32G',
-  t01680: 'new, China, Taiyuan, 32G',
   t01684: 'new, China, Changsha, 32G',
-  t01698: 'new, China, Shenzhen, 32G',
-  t01699: 'new, China, Beijing, 32G',
-  t01701: 'new, Malaysia, Johor Bahru, 512M',
-  t01703: 'new, Netherlands, Amersfoort, 32G',
   t01717: 'new, Switzerland, Muhlau, 32G',
   t01723: 'new, China, Fuzhou, 32G',
-  t01725: 'new, China, Shenzhen, 32G',
-  t01731: 'new, China, Dongguan, 32G',
   t01738: 'new, China, Guilin, 32G',
-  t01745: 'new, China, Wuhan, 512M',
   t01750: 'new, China, Dongguan, 512M',
-  t01760: 'new, China, Ili, 32G',
-  t01773: 'new, China, Chongqing, 32G',
   t01787: 'new, China, Changzhou, 32G',
-  t01812: 'new, China, Changsha, 512M',
-  t01817: 'new, Japan, Setagaya-ku, 32G',
-  t01819: 'new, China, Shenzhen, 32G',
   t01827: 'new, Korea, Guro-gu, 512M',
-  t01828: 'new, China, Shenzhen, 32G',
   t01829: 'new, Korea, Guro-gu, 512M',
-  t01843: 'new, China, Guangzhou, 512M',
-  t01847: 'new, China, Shenzhen, 512M',
-  t01851: 'new, China, Wuhan, 32G',
-  t01853: 'new, Korea, Geumcheon-gu, 512M',
-  t01855: 'new, Korea, Geumcheon-gu, 512M',
-  t01857: 'new, Korea, Bucheon-si, 512M',
-  t01858: 'new, China, Beijing, 32G',
-  t01886: 'new, Netherlands, Purmerend, 32G',
   t01908: 'new, China, Hangzhou, 512M',
   t01913: 'new, China, Zhejiang, 32G',
-  t01937: 'new, Japan, Tokushima, 512M',
+  t01847: 'new, China, Shenzhen, 512M',
 
   // Asks
 
@@ -119,12 +123,10 @@ const annotations = {
 
   // Error
 
-  t01278: 'error, Australia, 32G', // out of gas
-  t01324: 'error, China, Wuxi, 32G', // out of gas
-  t01345: 'error, Australia, 32G', // out of gas
   t01464: 'error, Germany, Hamburg, 32G', // out of gas
   t01478: 'error, China, Guangzhou, 512M', // failed to dial
   t01546: 'error, Netherlands, 32G', // out of gas
+  t01596: 'error, Australia, Brisbane, chain only, 512M', // failed to dial
 
 
   // Dial backoff
