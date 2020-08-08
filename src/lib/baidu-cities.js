@@ -69,6 +69,7 @@ const baiduCities = {
   331: 'Luzhou', // 泸州市
   332: 'Tianjin', // 天津市
   334: 'Jiaxing', // 嘉兴市
+  337: 'Tongling', // 铜陵市
   340: 'Shenzhen', // 深圳市
   346: 'Yangzhou', // 扬州市
   348: 'Changzhou', // 常州市
