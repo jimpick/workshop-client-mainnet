@@ -23,8 +23,10 @@ const annotations = {
   t01306: 'sealing, Japan, Tokushima, 32G, fri',
   t01314: 'sealing, Korea, Uijeongbu-si, 512M, fri',
   t01319: 'sealing, Korea, Dongjak-gu, 32G, fri',
+  t01325: 'sealing, China, Wuxi, 32G, fri',
   t01329: 'sealing, Canada, Brampton, 32G, fri',
   t01340: 'sealing, China, Guangzhou, 32G, fri',
+  t01341: 'sealing, China, Wuxi, 32G, fri',
   t01352: 'sealing, Germany, Frankfurst + China, Beijing, 32G, fri',
   t01362: 'sealing, China, Beijing, 32G, fri',
   t01364: 'sealing, China, Shijiazhuang, 512M, fri',
@@ -36,26 +38,17 @@ const annotations = {
   t01384: 'sealing, China, Wuxi, 32G, fri',
   t01403: 'sealing, China, Shenzhen, 32G, fri',
   t01405: 'sealing, China, Wuxi, 32G, fri',
+  t01409: 'sealing, China, Chengdu, 32G, fri',
   t01414: 'sealing, Denmark, Kobenhavn S, 32G, fri',
+  t01419: 'sealing, China, Tongling, 32G, fri',
   t01444: 'sealing, China, Zhongshan, 512M, fri',
+  t01484: 'sealing, China, Beijing, 512M, fri',
+  t01485: 'sealing, China, Beijing, 32G, fri',
+  t01487: 'sealing, China, Zhejiang, 512M, fri',
+  t01496: 'sealing, Kenya, Nairobi, 32G, fri',
+  t01500: 'sealing, China, Chengdu, 512M, fri',
 
   // New, recycle
-
-  t01278: 'new, Australia, 32G',
-  t01324: 'new, China, Wuxi, 32G',
-  t01325: 'new, China, Wuxi, 32G',
-  t01341: 'new, China, Wuxi, 32G',
-  t01345: 'new, Australia, 32G',
-  t01409: 'new, China, Chengdu, 32G',
-  t01419: 'new, China, Tongling, 32G',
-  t01464: 'new, Germany, Hamburg, 32G',
-  t01478: 'new, China, Guangzhou, 512M',
-  t01484: 'new, China, Beijing, 512M',
-  t01485: 'new, China, Beijing, 32G',
-  t01487: 'new, China, Zhejiang, 512M',
-  t01496: 'new, Kenya, Nairobi, 32G',
-  t01500: 'new, China, Chengdu, 512M',
-  t01513: 'new, China, Shanghai, 32G',
 
   // Asks
 
@@ -63,6 +56,13 @@ const annotations = {
   // No-online deals
 
   // Error
+
+  t01278: 'error, Australia, 32G', // out of gas
+  t01324: 'error, China, Wuxi, 32G', // out of gas
+  t01345: 'error, Australia, 32G', // out of gas
+  t01464: 'error, Germany, Hamburg, 32G', // out of gas
+  t01478: 'error, China, Guangzhou, 512M', // failed to dial
+  t01513: 'error, China, Shanghai, 32G', // failed to dial
 
 
   // Dial backoff
