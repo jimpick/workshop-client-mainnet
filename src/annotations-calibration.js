@@ -8,11 +8,18 @@ const annotations = {
   t01208: 'active, China, Sichuan, 32G, 12h',
   t01306: 'active, Japan, Tokushima, 32G, 10h',
   t01352: 'active, Germany, Frankfurst + China, Beijing, 32G, 10h',
+  t01362: 'active, China, Beijing, 32G, 12h',
+  t01366: 'active, China, Shijiazhuang, 32G, 11h',
   t01444: 'active, China, Zhongshan, 512M, <9h, 2h',
+  t01455: 'active, China, Guangdong, chain only, 32G, 11h',
+  t01484: 'active, China, Beijing, 512M, <8h',
+  t01843: 'active, China, Guangzhou, 512M, 3h',
+  t01937: 'active, Japan, Tokushima, 512M, 3h',
 
   // Active - fri
 
   t01054: 'active, China, Hong Kong, 512M, 2h, sat-cfa',
+  t01115: 'active, China, Shijiazhuang, 512M, 2h, sat',
   t01184: "active, China, Xi'an, 32G, <11h, sat",
   t01233: "active, USA, Coeur d'Alene, 512M, @why, 2h, 2h, sat",
   t01270: 'active, China, Weifang, 512M, 2h, sat-cfa',
@@ -23,13 +30,11 @@ const annotations = {
 
   // Sealing - sat
 
-  t01115: 'sealing, China, Shijiazhuang, 512M, 2h, sat',
   t01278: 'sealing, Australia, 32G, sat',
   t01279: 'sealing, USA, Grand Rapids, 32G, @stuberman, sat',
   t01324: 'sealing, China, Wuxi, 32G, sat',
   t01345: 'sealing, Australia, 32G, sat',
   t01464: 'sealing, Germany, Hamburg, 32G, sat',
-  t01484: 'sealing, China, Beijing, 512M, sat',
   t01492: 'sealing, Sweden, Stockholm, 32G, sat',
   t01528: 'sealing, China, Deyang, chain only, 512M, sat',
   t01546: 'sealing, Netherlands, 32G, sat',
@@ -63,7 +68,6 @@ const annotations = {
   t01827: 'sealing, Korea, Guro-gu, 512M, sat',
   t01828: 'sealing, China, Shenzhen, 32G, sat',
   t01829: 'sealing, Korea, Guro-gu, 512M, sat',
-  t01843: 'sealing, China, Guangzhou, 512M, sat',
   t01851: 'sealing, China, Wuhan, 32G, sat',
   t01853: 'sealing, Korea, Geumcheon-gu, 512M, sat',
   t01855: 'sealing, Korea, Geumcheon-gu, 512M, sat',
@@ -72,7 +76,6 @@ const annotations = {
   t01886: 'sealing, Netherlands, Purmerend, 32G, sat',
   t01908: 'sealing, China, Hangzhou, 512M, sat',
   t01913: 'sealing, China, Zhejiang, 32G, sat',
-  t01937: 'sealing, Japan, Tokushima, 512M, sat',
 
   // Sealing - fri
 
@@ -87,9 +90,7 @@ const annotations = {
   t01329: 'sealing, Canada, Brampton, 32G, fri',
   t01340: 'sealing, China, Guangzhou, 32G, fri',
   t01341: 'sealing, China, Wuxi, 32G, fri',
-  t01362: 'sealing, China, Beijing, 32G, fri',
   t01365: 'sealing, Korea, Seoul, 32G, fri',
-  t01366: 'sealing, China, Shijiazhuang, 32G, fri',
   t01371: 'sealing, China, Beijing, 32G, fri',
   t01383: 'sealing, China, Wuxi, 32G, fri',
   t01384: 'sealing, China, Wuxi, 32G, fri',
@@ -98,7 +99,6 @@ const annotations = {
   t01409: 'sealing, China, Chengdu, 32G, fri',
   t01414: 'sealing, Denmark, Kobenhavn S, 32G, fri',
   t01419: 'sealing, China, Tongling, 32G, fri',
-  t01455: 'sealing, China, Guangdong, chain only, 32G, fri',
   t01485: 'sealing, China, Beijing, 32G, fri',
   t01487: 'sealing, China, Zhejiang, 512M, fri',
   t01496: 'sealing, Kenya, Nairobi, 32G, fri',
