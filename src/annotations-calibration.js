@@ -6,15 +6,19 @@ const annotations = {
   t01115: 'active, China, Shijiazhuang, 512M, 2h, 2h',
   t01138: 'active, China, Shijiazhuang, 512M, <8h, 1h',
   t01183: 'active, Canada, Vancouver, 512M, @jimpick, 2h, 2h',
+  t01184: "active, China, Xi'an, 32G, <11h, 13h",
   t01208: 'active, China, Sichuan, 32G, 12h',
   t01233: "active, USA, Coeur d'Alene, 512M, @why, 2h, 2h, 5h",
   t01306: 'active, Japan, Tokushima, 32G, 10h',
   t01314: 'active, Korea, Uijeongbu-si, 512M, <10h, 3h',
+  t01319: 'active, Korea, Dongjak-gu, 32G, 22h',
+  t01329: 'active, Canada, Brampton, 32G, 22h',
   t01352: 'active, Germany, Frankfurst + China, Beijing, 32G, 10h',
   t01362: 'active, China, Beijing, 32G, 12h',
   t01364: 'active, China, Shijiazhuang, 512M, <9h, 3h',
   t01366: 'active, China, Shijiazhuang, 32G, 11h',
   t01371: 'active, China, Beijing, 32G, 13h',
+  t01378: 'active, China, Ordos, 512M, <9h, 9h',
   t01405: 'active, China, Wuxi, 32G, 16h',
   t01444: 'active, China, Zhongshan, 512M, <9h, 2h',
   t01455: 'active, China, Guangdong, chain only, 32G, 11h',
@@ -22,21 +26,30 @@ const annotations = {
   t01485: 'active, China, Beijing, 32G, 16h',
   t01500: 'active, China, Chengdu, 512M, <8h, 2h',
   t01548: 'active, China, Shenzhen, 32G, 15h',
+  t01598: 'active, China, Fujian, 32G, 16h',
   t01638: 'active, Poland, Krakow, 512M, @magik6k, 4h',
+  t01646: 'active, China, Beijing, 32G, 13h',
+  t01660: 'active, China, Beijing, 32G, 24h',
+  t01664: 'active, Korea, Seoul, 32G, 20h',
+  t01699: 'active, China, Beijing, 32G, 13h',
+  t01673: 'active, China, Guangdong, 32G, 13h',
   t01701: 'active, Malaysia, Johor Bahru, 512M, 7h',
+  t01731: 'active, China, Dongguan, 32G, 13h',
+  t01738: 'active, China, Guilin, 32G, 15h',
+  t01773: 'active, China, Chongqing, 32G, 13h',
+  t01819: 'active, China, Shenzhen, 32G, 17h',
   t01843: 'active, China, Guangzhou, 512M, 3h',
   t01853: 'active, Korea, Geumcheon-gu, 512M, 5h',
   t01855: 'active, Korea, Geumcheon-gu, 512M, 5h',
   t01908: 'active, China, Hangzhou, 512M, 4h',
+  t01913: 'active, China, Zhejiang, 32G, 10h',
   t01937: 'active, Japan, Tokushima, 512M, 3h',
   t01998: 'active, Finland, Helsinki, 512M, 2h',
 
   // Active - fri
 
   t01054: 'active, China, Hong Kong, 512M, 2h, sat-cfa',
-  t01184: "active, China, Xi'an, 32G, <11h, sat",
   t01270: 'active, China, Weifang, 512M, 2h, sat-cfa',
-  t01378: 'active, China, Ordos, 512M, <9h, sat-cfa',
 
   // Sealing - sat
 
@@ -48,31 +61,21 @@ const annotations = {
   t01492: 'sealing, Sweden, Stockholm, 32G, sat',
   t01528: 'sealing, China, Deyang, chain only, 512M, sat',
   t01546: 'sealing, Netherlands, 32G, sat',
-  t01598: 'sealing, China, Fujian, 32G, sat',
   t01599: 'sealing, China, Shanghai, 32G, sat',
   t01615: 'sealing, Canada, Surrey, 32G, sat',
   t01629: 'sealing, Netherlands, Horn, 32G, sat',
-  t01646: 'sealing, China, Beijing, 32G, sat',
   t01652: 'sealing, China, Shanghai, 32G, sat',
   t01657: 'sealing, China, Ordos, 512M, sat',
-  t01660: 'sealing, China, Beijing, 32G, sat',
-  t01664: 'sealing, Korea, Seoul, 32G, sat',
-  t01673: 'sealing, China, Guangdong, 32G, sat',
   t01677: 'sealing, USA, 32G, sat',
   t01680: 'sealing, China, Taiyuan, 32G, sat',
   t01698: 'sealing, China, Shenzhen, 32G, sat',
-  t01699: 'sealing, China, Beijing, 32G, sat',
   t01703: 'sealing, Netherlands, Amersfoort, 32G, sat',
   t01723: 'sealing, China, Fuzhou, 32G, sat',
   t01725: 'sealing, China, Shenzhen, 32G, sat',
-  t01731: 'sealing, China, Dongguan, 32G, sat',
-  t01738: 'sealing, China, Guilin, 32G, sat',
   t01745: 'sealing, China, Wuhan, 512M, sat',
   t01760: 'sealing, China, Ili, 32G, sat',
-  t01773: 'sealing, China, Chongqing, 32G, sat',
   t01812: 'sealing, China, Changsha, 512M, sat',
   t01817: 'sealing, Japan, Setagaya-ku, 32G, sat',
-  t01819: 'sealing, China, Shenzhen, 32G, sat',
   t01827: 'sealing, Korea, Guro-gu, 512M, sat',
   t01828: 'sealing, China, Shenzhen, 32G, sat',
   t01829: 'sealing, Korea, Guro-gu, 512M, sat',
@@ -80,11 +83,16 @@ const annotations = {
   t01857: 'sealing, Korea, Bucheon-si, 512M, sat',
   t01858: 'sealing, China, Beijing, 32G, sat',
   t01886: 'sealing, Netherlands, Purmerend, 32G, sat',
-  t01913: 'sealing, China, Zhejiang, 32G, sat',
   t01979: 'sealing, UK, Hartlepool, 32G, sat',
   t01993: 'sealing, Ireland, Dublin, 32G, sat',
   t01995: 'sealing, USA, Redmond, 32G, sat',
   t02012: 'sealing, USA, Boardman, 32G, @jimpick, sat',
+  t02053: 'sealing, China, Xinxiang, 32G, sat',
+  t02056: 'sealing, China, Donguan, 32G, sat',
+  t02109: 'sealing, China, Hunan, 32G, sat',
+  t02124: 'sealing, China, Shijiazhuang, 32G, sat',
+  t02128: 'sealing, China, Shenzhen, 32G, sat',
+  t02133: 'sealing, China, Beijing, 32G, sat',
 
   // Sealing - fri
 
@@ -94,9 +102,7 @@ const annotations = {
   t01202: 'sealing, China, Hong Kong, 32G, fri',
   t01206: 'sealing, China, Shandong, 32G, fri',
   t01305: 'sealing, China, Guangzhou, 32G, fri',
-  t01319: 'sealing, Korea, Dongjak-gu, 32G, fri',
   t01325: 'sealing, China, Wuxi, 32G, fri',
-  t01329: 'sealing, Canada, Brampton, 32G, fri',
   t01340: 'sealing, China, Guangzhou, 32G, fri',
   t01341: 'sealing, China, Wuxi, 32G, fri',
   t01365: 'sealing, Korea, Seoul, 32G, fri',
@@ -118,6 +124,7 @@ const annotations = {
   // New, recycle
 
 
+
   // Asks
 
 
@@ -132,6 +139,9 @@ const annotations = {
   t01847: 'error, China, Shenzhen, 512M', // stream reset
   t01950: 'error, China, Zhengzhou, 512M', // dial
   t01973: 'error, Germany, Roesrath, 512M', // dial
+  t02035: 'error, China, Hong Kong, 512M', // adding market funds failed: estimating gas used: message execution failed: exit SysErrInsufficientFunds(6), reason: failed to transfer funds (RetCode=6): transfer failed when deducting funds (3630168.00003008386143681 FIL): not enough funds (RetCode=6)
+  t02040: 'error, Canada, Embrun, 32G', // dial
+  t02105: 'error, China, Wanju, 32G', // dial
 
 
   // Dial backoff
@@ -145,6 +155,7 @@ const annotations = {
   t01644: 'stuck, USA, Columbus, 32G', // cfa
   t01649: 'stuck, China, Hangzhou, 512M', // cfa
   t01750: 'stuck, China, Dongguan, 512M', // cfa
+  t02071: 'stuck, China, Wuhan, 512M', // cfa
 
 
 
