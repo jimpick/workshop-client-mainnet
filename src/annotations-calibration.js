@@ -6,6 +6,7 @@ const annotations = {
   t01314: 'active, Korea, Uijeongbu-si, 512M, <10h, 3h, 4h',
   t01701: 'active, Malaysia, Johor Bahru, 512M, 7h, 2h, 3h',
   t01857: 'active, Korea, Bucheon-si, 512M, 2h, 3h',
+  t01998: 'active, Finland, Helsinki, 512M, 2h, 5h, 4h',
   t02258: 'active, China, Wuxi, 512M, 2h, 3h',
   t02261: 'active, Korea, Geumcheon-gu, 512M, 2h, 4h',
   t02275: 'active, Korea, Guro-gu, 512M, 2h, 4h',
@@ -27,7 +28,7 @@ const annotations = {
   t01858: 'active, China, Beijing, 32G, 2d, mon',
   t01908: 'active, China, Hangzhou, 512M, 4h, mon',
   t01937: 'active, Japan, Tokushima, 512M, 3h, 2h, mon',
-  t01998: 'active, Finland, Helsinki, 512M, 2h, 5h, mon',
+  t02251: 'active, China, Liaoning, 32G, 12h, mon',
 
   // Active - sun
 
@@ -36,7 +37,6 @@ const annotations = {
   t01500: 'active, China, Chengdu, 512M, <8h, 2h, 3h, mon-xfr',
   t01638: 'active, Poland, Krakow, 512M, @magik6k, 4h, 2h, mon-xfr',
   t02124: 'active, China, Shijiazhuang, 32G, 12h, mon-cfa',
-  t02251: 'active, China, Liaoning, 32G, 12h, mon-cfa',
   t02262: 'active, Korea, Geomcheon-gu, 512M, 2h, mon-cfa',
 
   // Active/sealing - sun
@@ -118,6 +118,9 @@ const annotations = {
   t01341: 'stuck, China, Wuxi, 32G, mon-cfa',
   t01657: 'stuck, China, Ordos, 512M, mon-xfr',
   t01827: 'stuck, Korea, Guro-gu, 512M, mon-cfa',
+  t01829: 'stuck, Korea, Guro-gu, 512M, mon-cfa',
+  t01853: 'stuck, Korea, Geumcheon-gu, 512M, 5h, mon-cfa',
+  t01855: 'stuck, Korea, Geumcheon-gu, 512M, 5h, mon-cfa',
   t02012: 'stuck, USA, Boardman, 32G, @jimpick, mon-cfa',
   t02461: 'stuck, China, Dongguan, 32G, mon-xfr',
   t02787: 'stuck, China, Hangzhou, 512M, mon-cfa',
@@ -181,11 +184,8 @@ const annotations = {
   t01738: 'error, China, Guilin, 32G, 15h, sun-cfa', // dial
   t01773: 'error, China, Chongqing, 32G, 13h', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzacecx4llbuzy5u7go5udwqyj4nklhoj6y4f7t7qtyf26eai4a3ivj7y n 3045, TS: bafy2bzaced2dmb7d33xqbleg3shxxgtjbh2pxkclya52ja3svp2z2nveqb2xg n3045)
   t01817: 'error, Japan, Setagaya-ku, 32G, sat', // dial
-  t01829: 'error, Korea, Guro-gu, 512M', // error in deal activation: failed to set up called handler: called check error (h: 7458): client: failed to look up deal on chain: deal 12966 not found
   t01843: 'error, China, Guangzhou, 512M, 3h', // dial
   t01851: 'error, China, Wuhan, 32G, sat', // dial
-  t01853: 'error, Korea, Geumcheon-gu, 512M, 5h', // error in deal activation: failed to set up called handler: called check error (h: 7458): client: failed to look up deal on chain: deal 12816 not found
-  t01855: 'error, Korea, Geumcheon-gu, 512M, 5h',  // error in deal activation: failed to set up called handler: called check error (h: 7458): client: failed to look up deal on chain: deal 12836 not found
   t01886: 'error, Netherlands, Purmerend, 32G, sat', // gas
   t01950: 'error, China, Zhengzhou, 512M', // dial
   t01973: 'error, Germany, Roesrath, 512M', // dial
