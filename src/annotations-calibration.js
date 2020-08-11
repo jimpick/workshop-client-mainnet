@@ -158,6 +158,23 @@ const annotations = {
 
   // New, recycle
 
+  t03305: 'new, China, Shenyang, 512M',
+  t03213: 'new, USA, Boardman, 512M',
+  t03220: 'new, China, Shenzhen, 32G',
+  t03236: 'new, USA, Grand Rapids, 32G',
+  t03247: 'new, Canada, Brampton, 32G',
+  t03269: 'new, China, Dongguan, 32G',
+  t03308: 'new, USA, Sammamish, 32G',
+  t03312: 'new, Finland, Helsinki, 32G',
+  t03324: 'new, China, Wuxi, 32G',
+  t03329: 'new, China, Shijiazhuang, 32G',
+  t03331: 'new, China, Wuxi, 32G',
+  t03334: 'new, China, Liaoning, 512M',
+  t03349: 'new, China, Chongqing, 32G',
+  t03365: 'new, Ireland, Dublin, 32G',
+  t03399: 'new, China, Wuhan, 32G',
+  t03422: 'new, China, Changsha, 32G',
+
   // Asks
 
 
