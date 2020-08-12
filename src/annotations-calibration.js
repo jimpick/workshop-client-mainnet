@@ -30,6 +30,7 @@ const annotations = {
   t01233: "active, USA, Coeur d'Alene, 512M, @why, 2h, 2h, 5h, tue",
   t01306: 'active, Japan, Tokushima, 32G, 10h, 1d, tue',
   t01549: 'active, China, Hong Kong, 32G, 1d, tue',
+  t01638: 'active, Poland, Krakow, 512M, @magik6k, 4h, 2h, tue',
   t01701: 'active, Malaysia, Johor Bahru, 512M, 7h, 2h, 3h, tue',
   t01857: 'active, Korea, Bucheon-si, 512M, 2h, 3h, tue',
   t01908: 'active, China, Hangzhou, 512M, 4h, tue',
@@ -55,25 +56,15 @@ const annotations = {
   // Active/sealing - mon
  
   t01183: 'active, Canada, Vancouver, 512M, @jimpick, 2h, 2h, tue-xfr',
-  t01184: "active, China, Xi'an, 32G, <11h, 13h, 13h, mon",
-  t01513: 'active, China, Shanghai, 32G, 10h, mon',
-  t01548: 'active, China, Shenzhen, 32G, 15h, 12h, mon',
-  t01664: 'active, Korea, Seoul, 32G, 20h, mon',
-  t01858: 'active, China, Beijing, 32G, 2d, mon',
-  t02124: 'active, China, Shijiazhuang, 32G, 12h, mon',
-  t02251: 'active, China, Liaoning, 32G, 12h, mon',
+  t01513: 'active, China, Shanghai, 32G, 10h, tue-xfr',
+  t01664: 'active, Korea, Seoul, 32G, 20h, tue-xfr',
 
 
-  // Active - sun
-
-  t01638: 'active, Poland, Krakow, 512M, @magik6k, 4h, 2h, tue-xfr',
 
   // Active/sealing - sun
  
-  t01362: 'active, China, Beijing, 32G, 12h, sun',
-  t01405: 'active, China, Wuxi, 32G, 16h, sun',
-  t01455: 'active, China, Guangdong, chain only, 32G, 11h, sun',
-  t01598: 'active, China, Fujian, 32G, 16h, sun',
+  t01362: 'active, China, Beijing, 32G, 12h, tue-xfr',
+  t01455: 'active, China, Guangdong, chain only, 32G, 11h, tue-cfa',
   t01819: 'active, China, Shenzhen, 32G, 17h, sun',
 
   // Active - sat
@@ -248,73 +239,27 @@ const annotations = {
 
   // Error
 
-
   t01045: 'error, China, Hangzhou, chain only, 32G', // stream reset
   t01054: 'error, China, Hong Kong, 512M, 2h, sat-cfa', // deal failed: (State=26) handing off deal to node: AddPiece failed: adding piece to sector: writing piece: no suitable P1 workers
-  t01115: 'error, China, Shijiazhuang, 512M, 2h, 2h, 4h, 3h', // dial
-  t01124: 'error, China, Jiaxing, 32G, fri', // dial
   t01127: 'error, China, Guangdong, 32G, fri', // deal failed: (State=26) handing off deal to node: AddPiece failed: adding piece to sector: writing piece: RPC error (-32700): unmarshaling params for 'Filecoin.AddPiece' (param: *io.Reader): json: cannot unmarshal object into Go value of type io.Reader
-  t01128: 'error, China, Jiangsu, 32G', // dial
-  t01217: 'error, China, Guilin, 512M, 2h', // dial
-  t01279: 'error, USA, Grand Rapids, 32G, @stuberman, sat', // dial
-  t01280: 'error, China, Ningbo, chain only, 32G', // dial
   t01319: 'error, Korea, Dongjak-gu, 32G, 22h', // stream reset
-  t01323: 'error, China, Hangzhou, chain only, 32G', // dial
-  t01329: 'error, Canada, Brampton, 32G, 22h, 1d', // dial
-  t01331: 'error, China, Shenzhen, chain only, 512M', // dial
-  t01336: 'error, China, Zhengzhou, chain only, 32G', // dial
   t01352: 'error, Germany, Frankfurst + China, Beijing, 32G, 10h', // sending proposal to storage provider failed: protocol not supported
-  t01426: 'error, China, Shaanxi, chain only, 512M', // dial
-  t01528: 'error, China, Deyang, chain only, 512M, sat', // dial
-  t01596: 'error, Australia, Brisbane, chain only, 512M', // dial
-  t01606: 'error, Singapore, chain only, 512M', // dial
+  t01598: 'error, China, Fujian, 32G, 16h, sun', // gas
   t01657: 'error, China, Ordos, 512M, mon-xfr', // sending proposal to storage provider failed: protocol not supported
-  t01660: 'error, China, Beijing, 32G, 24h', // dial
-  t01677: 'error, USA, 32G, sat', // dial
-  t01698: 'error, China, Shenzhen, 32G, sat', // dial
-  t01723: 'error, China, Fuzhou, 32G, sat', // dial
-  t01738: 'error, China, Guilin, 32G, 15h, sun-cfa', // dial
-  t01762: 'error, Norway, Oslo, chain only, 512M', // dial
-  t01805: 'error, China, Shenzhen, chain only, 512M', // dial
-  t01817: 'error, Japan, Setagaya-ku, 32G, sat', // dial
-  t01851: 'error, China, Wuhan, 32G, sat', // dial
-  t01880: 'error, China, Fuzhou, chain only, 32G', // dial
   t01886: 'error, Netherlands, Purmerend, 32G, sat', // gas
-  t01937: 'error, Japan, Tokushima, 512M, 3h, 2h, 12h', // dial
-  t01950: 'error, China, Zhengzhou, 512M', // dial
-  t01973: 'error, Germany, Roesrath, 512M', // dial
-  t01979: 'error, UK, Hartlepool, 32G, sat', // dial
-  t01993: 'error, Ireland, Dublin, 32G, sat', // dial
-  t01995: 'error, USA, Redmond, 32G, 11h', // dial
-  t02040: 'error, Canada, Embrun, 32G', // dial
-  t02109: 'error, China, Hunan, 32G, 20h', // dial
-  t02128: 'error, China, Shenzhen, 32G, sat', // dial
-  t02226: 'error, Germany, Frankfurt, 512M, sun', // dial
-  t02426: 'error, USA, Bay Shore, 32G', // dial
-  t02466: 'error, China, Jiangmen, 512M', // dial
-  t02540: 'error, China, Qiquihar, chain only, 32G', // dial
   t02550: 'error, Australia, Sydney, 512M, 3h', // stream reset
   t02705: 'error, USA, Boardman, 512M', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzacechih6xgp4n4bhar56ik4o2zbrnfnsa4r3q65canjm5veptbrwszu n 120, TS: bafy2bzaceazydjp7qswjo3ld6ac2kwgyapsxm3liqwlue6sycyagfm5p7scsw n120)
-  t02712: 'error, China, Hangzhou, chain only, 32G', // dial
   t02876: 'error, China, Hong Kong, chain only, 32G', // stream reset
   t02948: 'error, USA, Boardman, 512M, 7h', // stream reset
   t02949: 'error, USA, Boardman, 512M', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzaceddf6i32byuotqfexsyyiirtz3nifflcvurrexnyktkacmyyktloq n 120, TS: bafy2bzaceazydjp7qswjo3ld6ac2kwgyapsxm3liqwlue6sycyagfm5p7scsw n120)
   t03028: 'error, China, Wuhan, 512M, 3h', // stream reset
   t03053: 'error, China, Changsha, 512M, mon-cfa', // stream reset
-  t03123: 'error, China, Chongqing, 32G', // dial
   t03148: 'error, China, Changzhou, chain only, 32G', // stream reset
-  t03216: 'error, China, Hangzhou, chain only, 512M', // dial
   t03305: 'error, China, Shenyang, 512M', // gas
   t03308: 'error, USA, Sammamish, 32G', // deal data transfer failed
-  t03357: 'error, China, Hangzhou, chain only, 512M', // dial
   t03399: 'error, China, Wuhan, 32G', // stream reset
-  t03427: 'error, China, Beijing, 32G', // dial
   t03595: 'error, China, Wuhan, 32G', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
-  t03601: 'error, China, Hong Kong, 32G', // dial
   t03619: 'error, Netherlands, Purmerend, 32G', // stream reset
-
-
-
 
   // Dial backoff
 
@@ -335,16 +280,64 @@ const annotations = {
   t03622: 'backoff, China, Ili, 32G',
 
 
-  // Stuck
+  // Dial errors
+
+  t01115: 'dial, China, Shijiazhuang, 512M, 2h, 2h, 4h, 3h',
+  t01124: 'dial, China, Jiaxing, 32G, fri',
+  t01128: 'dial, China, Jiangsu, 32G',
+  t01217: 'dial, China, Guilin, 512M, 2h',
+  t01279: 'dial, USA, Grand Rapids, 32G, @stuberman, sat',
+  t01280: 'dial, China, Ningbo, chain only, 32G',
+  t01426: 'dial, China, Shaanxi, chain only, 512M',
+  t01323: 'dial, China, Hangzhou, chain only, 32G',
+  t01329: 'dial, Canada, Brampton, 32G, 22h, 1d',
+  t01331: 'dial, China, Shenzhen, chain only, 512M',
+  t01336: 'dial, China, Zhengzhou, chain only, 32G',
+  t01528: 'dial, China, Deyang, chain only, 512M, sat',
+  t01548: 'dial, China, Shenzhen, 32G, 15h, 12h, mon',
+  t01596: 'dial, Australia, Brisbane, chain only, 512M',
+  t01606: 'dial, Singapore, chain only, 512M',
+  t01660: 'dial, China, Beijing, 32G, 24h',
+  t01677: 'dial, USA, 32G, sat',
+  t01698: 'dial, China, Shenzhen, 32G, sat',
+  t01723: 'dial, China, Fuzhou, 32G, sat',
+  t01738: 'dial, China, Guilin, 32G, 15h, sun-cfa',
+  t01762: 'dial, Norway, Oslo, chain only, 512M',
+  t01805: 'dial, China, Shenzhen, chain only, 512M',
+  t01817: 'dial, Japan, Setagaya-ku, 32G, sat',
+  t01851: 'dial, China, Wuhan, 32G, sat',
+  t01880: 'dial, China, Fuzhou, chain only, 32G',
+  t01937: 'dial, Japan, Tokushima, 512M, 3h, 2h, 12h',
+  t01950: 'dial, China, Zhengzhou, 512M',
+  t01973: 'dial, Germany, Roesrath, 512M',
+  t01979: 'dial, UK, Hartlepool, 32G, sat',
+  t01993: 'dial, Ireland, Dublin, 32G, sat',
+  t01995: 'dial, USA, Redmond, 32G, 11h',
+  t02040: 'dial, Canada, Embrun, 32G',
+  t02109: 'dial, China, Hunan, 32G, 20h',
+  t02128: 'dial, China, Shenzhen, 32G, sat',
+  t02226: 'dial, Germany, Frankfurt, 512M, sun',
+  t02426: 'dial, USA, Bay Shore, 32G',
+  t02466: 'dial, China, Jiangmen, 512M',
+  t02540: 'dial, China, Qiquihar, chain only, 32G',
+  t02712: 'dial, China, Hangzhou, chain only, 32G',
+  t03123: 'dial, China, Chongqing, 32G',
+  t03216: 'dial, China, Hangzhou, chain only, 512M',
+  t03357: 'dial, China, Hangzhou, chain only, 512M',
+  t03427: 'dial, China, Beijing, 32G',
+  t03601: 'dial, China, Hong Kong, 32G',
+
 
 
   // XNR
 
+  t01184: "xnr, China, Xi'an, 32G, <11h, 13h, 13h, mon",
   t01305: 'xnr, China, Guangzhou, 32G, sun-xfr',
   t01340: 'xnr, China, Guangzhou, 32G, fri',
   t01365: 'xnr, Korea, Seoul, 32G, fri',
   t01378: 'xnr, China, Ordos, 512M, <9h, 9h',
   t01403: 'xnr, China, Shenzhen, 32G, fri',
+  t01405: 'xnr, China, Wuxi, 32G, 16h, sun',
   t01419: 'xnr, China, Tongling, 32G, fri',
   t01444: 'xnr, China, Zhongshan, 512M, <9h, 2h, 6h',
   t01478: 'xnr, China, Guangzhou, 512M',
@@ -363,13 +356,16 @@ const annotations = {
   t01750: 'xnr, China, Dongguan, 512M',
   t01787: 'xnr, China, Changzhou, 32G',
   t01812: 'xnr, China, Changsha, 512M, sat',
+  t01858: 'xnr, China, Beijing, 32G, 2d, mon',
   t01913: 'xnr, China, Zhejiang, 32G, 10h, sun-cfa',
   t01998: 'xnr, Finland, Helsinki, 512M, 2h, 5h, 4h',
   t02035: 'xnr, China, Hong Kong, 512M',
   t02056: 'xnr, China, Donguan, 32G, sat',
   t02071: 'xnr, China, Wuhan, 512M, sun-cfa',
   t02105: 'xnr, China, Wanju, 32G',
+  t02124: 'xnr, China, Shijiazhuang, 32G, 12h, mon',
   t02133: 'xnr, China, Beijing, 32G, sat',
+  t02251: 'xnr, China, Liaoning, 32G, 12h, mon',
   t02265: 'xnr, Korea, Geomcheon-gu, 512M, 2h',
   t02293: 'xnr, China, Changsha, 512M, sun',
   t02407: 'xnr, China, Fuzhou, 32G',
