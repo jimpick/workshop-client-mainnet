@@ -125,9 +125,9 @@ export default function DealList ({ client, appState, cid, filterErrors }) {
           dealStateNames[clientDealStatus.State] === 'Active' &&
           `(TIMESTAMP=\`date +%s\`; /usr/bin/time timeout -k 11m 10m ` +
           `lotus client retrieve --miner=${miner} ${cidDeal} ` +
-          `/home/ubuntu/downloads/${miner}-` +
+          `/home/lotus1/downloads/${miner}-` +
           `${clientDealStatus && clientDealStatus.DealID}-$TIMESTAMP.jpg ` +
-          `2>&1 | tee /home/ubuntu/downloads/${miner}-` +
+          `2>&1 | tee /home/lotus1/downloads/${miner}-` +
           `${clientDealStatus && clientDealStatus.DealID}-$TIMESTAMP.log); ` +
           `sleep 5`
         if (retrieveScript) {

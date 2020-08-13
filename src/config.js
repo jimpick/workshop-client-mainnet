@@ -11,30 +11,8 @@ export const secure = true
 export const downloadDir = '/home/lotus1/downloads'
 */
 
-const testnetLocalConfig = {
-  api: 'lotus.testground.ipfs.team/testnet_api',
-  secure: true,
-  downloadDir: '/tmp/not_supported_yet',
-  geoApi: 'testnet.localhost:9000/api',
-  geoSecure: true,
-  networkName: 'testnet',
-  useGeoIp2: true,
-  useBaidu: true
-}
-
-/*
-const testnetPublicConfig = {
-  api: 'lotus.testground.ipfs.team/testnet_api',
-  secure: true,
-  downloadDir: '/home/ubuntu/downloads',
-  geoApi: 'lotus.testground.ipfs.team/api',
-  geoSecure: true,
-  networkName: 'testnet'
-}
-*/
-
 const calibrationLocalConfig = {
-  api: 'lotus.testground.ipfs.team/calibration_api',
+  api: 'lotus.jimpick.com/calibration_api',
   // api: 'calibration.localhost:9000/api',
   secure: true,
   downloadDir: '/home/ubuntu/downloads',
@@ -45,38 +23,20 @@ const calibrationLocalConfig = {
   useBaidu: true
 }
 
-const nerpaLocalConfig = {
-  api: 'lotus.testground.ipfs.team/nerpa_api',
-  secure: true,
-  downloadDir: '/tmp/not_supported_yet',
-  geoApi: 'nerpa.localhost:9000/api',
-  geoSecure: true,
-  networkName: 'nerpa',
-  useGeoIp2: true,
-  useBaidu: true
-}
-
 const calibrationPublicConfig = {
-  api: 'lotus.testground.ipfs.team/calibration_api',
+  api: 'lotus.jimpick.com/calibration_api',
   secure: true,
   downloadDir: '/home/ubuntu/downloads',
-  geoApi: 'lotus.testground.ipfs.team/api',
+  geoApi: 'lotus.jimpick.com/api',
   geoSecure: true,
   networkName: 'calibration'
 }
 
 function getConfig () {
-  if (document.location.hostname === 'testnet.localhost') {
-    return testnetLocalConfig
-  }
   if (document.location.hostname === 'calibration.localhost') {
     return calibrationLocalConfig
   }
-  if (document.location.hostname === 'nerpa.localhost') {
-    return nerpaLocalConfig
-  }
   return calibrationPublicConfig
-  // return testnetPublicConfig
 }
 
 export const api = getConfig().api
