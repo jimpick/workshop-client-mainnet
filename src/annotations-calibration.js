@@ -10,6 +10,7 @@ const annotations = {
   // Active/sealing - fri
  
   t01036: 'active, Canada, Brampton, 32G, <20h, fri',
+  t01046: 'active, China, Shandong, 32G, 7h, fri',
   t01114: 'active, Singapore, 32G, 5h, fri',
   t01229: 'active, China, Yibin, 512M, 3h, fri',
   t01238: 'active, Sweden, Stockholm, 32G, 17h, fri',
@@ -24,18 +25,34 @@ const annotations = {
   // Sealing - fri
 
   t01061: 'sealing, Singapore, 32G, fri',
+  t01125: 'sealing, China, Sichuan, 32G, 18h, fri',
   t01127: 'sealing, China, Yibin, 32G, fri',
   t01345: 'sealing, China, Guangzhou, 32G, fri',
   t01399: 'sealing, China, Wuhan, 32G, fri',
+  t01429: 'sealing, China, Shanghai, 512M, fri',
+  t01595: 'sealing, China, Jiangmen, 512M, fri',
+  t01598: 'sealing, China, Liaoning, 512M, fri',
   t01665: 'sealing, China, Hangzhou, 32G, fri',
   t01689: 'sealing, China, Wuhan, 32G, fri',
   t01694: 'sealing, China, Wuhan, 32G, fri',
   t01705: 'sealing, China, Wuxi, 32G, fri',
   t01813: 'sealing, China, Wuxi, 32G, fri',
   t01847: 'sealing, USA, Ashburn, 512M, fri',
+  t01872: 'sealing, China, Shenzhen, 512M, fri',
+  t01923: 'sealing, Singapore, 512M, fri',
+  t01945: 'sealing, China, Guyuan, 512M, fri',
+  t01966: 'sealing, China, Taizhou, 512M, fri',
+  t02035: 'sealing, China, Guyuan, 512M, fri',
+  t02125: 'sealing, China, Guangzhou, 512M, fri',
+  t02209: 'sealing, China, Xiamen, 512M, fri',
+  t02329: 'sealing, USA, Boardman, 512M, fri',
+
 
   // Stuck - fri
  
+  t01161: 'stuck, China, Guangzhou + Hong Kong, 32G, fri-cfa',
+  t01638: 'stuck, China, Beijing, 32G, fri-cfa',
+
   // Sealing - thu
 
   t01039: 'sealing, China, Liaoning, 32G, thu',
@@ -65,10 +82,6 @@ const annotations = {
 
   // New, recycle
 
-  t01161: 'stuck, China, Guangzhou + Hong Kong, 32G, fri-cfa',
-  t01638: 'stuck, China, Beijing, 32G, fri-cfa',
-
-
 
   // Asks
 
@@ -90,20 +103,26 @@ const annotations = {
 
   // Error
 
-  t01046: 'error, China, Shandong, 32G, 7h', // context
   t01051: 'error, Singapore, 32G, 7h', // deal failed: (State=11) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01051: escrow balance 10142789741860 < locked 10142789741860 + required 3117275609982 (RetCode=19)
   t01056: 'error, China, Chengdu, 32G', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01056: escrow balance 6240582445724 < locked 6240582445724 + required 3115156326638 (RetCode=19)
   t01087: 'error, China, Wuhan, 32G, 7h', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01087: escrow balance 7020986981788 < locked 7020986981788 + required 3117275609982 (RetCode=19)
   t01088: 'error, Germany, Roesrath, 32G', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01088: escrow balance 63835006290395253 < locked 63835006290395253 + required 3115156326638 (RetCode=19)
-  t01109: 'error, China, Shijiazhuang, 512M', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01109: escrow balance 3199144288625385 < locked 3199144288625385 + required 780961667882 (RetCode=19)
-  t01125: 'error, China, Sichuan, 32G, 18h', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01125: escrow balance 7490664594504 < locked 7490664594504 + required 3117275609982 (RetCode=19)
   t01139: 'error, China, Fujian, 32G, 15h', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01139: escrow balance 3124181947248 < locked 2818236063919 + required 3117275609982 (RetCode=19)
   t01176: 'error, China, Guangdong, 512M, thu-xfr', // deal failed: (State=11) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01176: escrow balance 56224836596018 < locked 56224836596018 + required 3116990832122 (RetCode=19)
+  t01242: 'error, Finland, Helsinki, 512M',
   t01309: 'error, USA, Ashburn, 512M', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01309: escrow balance 780961667882 < locked 12203117448 + required 780961667882 (RetCode=19)
   t01331: 'error, China, Weifang, 32G', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01331: escrow balance 3124181947248 < locked 3124181947248 + required 780961667882 (RetCode=19)
   t01332: 'error, China, Weifang, 512M, <11h', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01332: escrow balance 9363255836950 < locked 9363255836950 + required 3117275609982 (RetCode=19)
   t01363: 'error, China, Shanghai, 32G, thu-xfr', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01363: escrow balance 7018488242530 < locked 7018488242530 + required 3116990832122 (RetCode=19)
   t01968: 'error, Korea, Guro-gu, 512M', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01968: escrow balance 12779801900406868 < locked 12779801900406868 + required 3115156326638 (RetCode=19)
+  t02017: 'error, China, Shenzhen, 512M',
+  t02040: 'error, China, Zhongshan, 512M',
+  t02327: 'error, USA, Boardman, 512M',
+  t02328: 'error, USA, Boardman, 512M',
+  t02330: 'error, USA, Boardman, 512M',
+  t02331: 'error, USA, Boardman, 512M',
+  t02332: 'error, USA, Boardman, 512M',
+
 
 
   // Dial backoff
@@ -113,16 +132,23 @@ const annotations = {
   // Dial errors
 
   t01037: 'dial, China, Shenzhen, 32G, <20h',
+  t01109: 'dial, China, Shijiazhuang, 512M',
   t01121: 'dial, China, Beijing, 32G',
   t01147: 'dial, China, Hong Kong, 32G',
   t01211: 'dial, China, Tongling, 32G',
   t01274: 'dial, USA, Berkeley, 512M',
   t01413: 'dial, China, Shenzhen, 512M, <11h',
+  t01434: 'dial, China, Shaanxi, 512M',
+  t01578: 'dial, Korea, Uiwang, 512M',
+  t01633: 'dial, China, Foshan, 512M',
+  t02178: 'dial, China, Chengdu, 512M',
+
 
 
   // XNR
 
   t01335: 'xnr, China, Hangzhou, 32G, thu-cfa',
+  t02078: 'xnr, China, Shenzhen, 512M',
 
   // Bootstrappers
   t01000: 'NR - bootstrap',
