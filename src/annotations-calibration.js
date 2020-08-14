@@ -2,16 +2,18 @@ const annotations = {
 
   // Active - fri
 
+  t01024: 'active, China, Shenzhen, 512M, 2h, 2h',
+  t01065: 'active, China, Shijiazhuang, 512M, 2h, 2h',
+  t01076: 'active, Canada, Vancouver, 512M, @jimpick, 2h, 2h',
+  t01256: 'active, France, Aubervilliers, 512M, 2h',
+  t01290: 'active, China, Beijing, 512M, <11h, 2h',
+
   // Active/sealing - fri
  
-  t01024: 'active, China, Shenzhen, 512M, 2h, fri',
   t01036: 'active, Canada, Brampton, 32G, <20h, fri',
-  t01065: 'active, China, Shijiazhuang, 512M, 2h, fri',
-  t01076: 'active, Canada, Vancouver, 512M, @jimpick, 2h, fri',
   t01114: 'active, Singapore, 32G, 5h, fri',
   t01229: 'active, China, Yibin, 512M, 3h, fri',
   t01238: 'active, Sweden, Stockholm, 32G, 17h, fri',
-  t01290: 'active, China, Beijing, 512M, <11h, fri',
   t01294: 'active, China, Luzhou, 32G, 10h, fri',
 
   // Active - thu
@@ -22,8 +24,15 @@ const annotations = {
 
   // Sealing - fri
 
-  t01256: 'sealing, France, Aubervilliers, 512M, fri',
+  t01061: 'sealing, Singapore, 32G, fri',
+  t01127: 'sealing, China, Yibin, 32G, fri',
   t01345: 'sealing, China, Guangzhou, 32G, fri',
+  t01399: 'sealing, China, Wuhan, 32G, fri',
+  t01689: 'sealing, China, Wuhan, 32G, fri',
+  t01694: 'sealing, China, Wuhan, 32G, fri',
+  t01705: 'sealing, China, Wuxi, 32G, fri',
+  t01813: 'sealing, China, Wuxi, 32G, fri',
+  t01847: 'sealing, USA, Ashburn, 512M, fri',
 
   // Stuck - fri
  
@@ -56,6 +65,13 @@ const annotations = {
 
   // New, recycle
 
+  t01056: 'new, China, Chengdu, 32G',
+  t01088: 'new, Germany, Roesrath, 32G',
+  t01161: 'new, China, Guangzhou + Hong Kong, 32G',
+  t01638: 'new, China, Beijing, 32G',
+  t01665: 'new, China, Hangzhou, 32G',
+  t01968: 'new, Korea, Guro-gu, 512M',
+
 
 
   // Asks
@@ -68,10 +84,12 @@ const annotations = {
   t01047: 'deals',
   t01053: 'deals',
   t01105: 'deals',
-  t01127: 'deals',
+  t01111: 'deals',
+  t01132: 'deals',
   t01133: 'deals',
   t01148: 'deals',
   t01202: 'deals',
+  t01244: 'deals',
 
   // Error
 
