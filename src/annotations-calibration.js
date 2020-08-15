@@ -2,6 +2,10 @@ const annotations = {
 
   // Active - sat
   
+  t01148: 'active, China, Beijing, 512M, 4h',
+  t01290: 'active, China, Beijing, 512M, <11h, 2h, 4h',
+  t01429: 'active, China, Shanghai, 512M, Deal Rank 9, 6h, 2h',
+
   // Active/sealing - sat
  
   t01024: 'active, China, Shenzhen, 512M, 2h, 2h, sat',
@@ -11,8 +15,6 @@ const annotations = {
   t01125: 'active, China, Sichuan, 32G, 18h, 12h, sat',
   t01229: 'active, China, Yibin, 512M, 3h, sat',
   t01238: 'active, Sweden, Stockholm, 32G, 17h, 13h, sat',
-  t01290: 'active, China, Beijing, 512M, <11h, 2h, sat',
-  t01429: 'active, China, Shanghai, 512M, Deal Rank 9, 6h, sat',
   t01665: 'active, China, Hangzhou, 32G, Power Rank 10, 11h, sat',
   t01705: 'active, China, Wuxi, 32G, 14h, sat',
   t01813: 'active, China, Wuxi, 32G, Power Rank 3, 9h, sat',
@@ -42,7 +44,6 @@ const annotations = {
   t01074: 'sealing, China, Fujian, 32G, sat',
   t01087: 'sealing, China, Wuhan, 32G, Power Rank 1, 7h, sat',
   t01089: 'sealing, Singapore, 32G, Power Rank 4, Deal Rank 1, 17h, sat',
-  t01148: 'sealing, China, Beijing, 512M, sat',
   t01202: 'sealing, China, Hong Kong, 32G, sat',
   t01209: 'sealing, Switzerland, Muhlau, 32G, sat',
   t01213: 'sealing, USA, Grand Rapids, 32G, sat',
@@ -111,7 +112,6 @@ const annotations = {
   // Escrow errors
 
   t01047: "escrow, USA, Coeur d'Alene, 512M, @why",
-  t01088: 'escrow, Germany, Roesrath, 32G',
   t01111: 'escrow, USA, Mountain View, 32G',
   t01132: 'escrow, Latvia, Riga, 32G',
   t01133: 'escrow, Singapore, 32G',
@@ -119,17 +119,11 @@ const annotations = {
   t01231: 'escrow, USA, Rochester, 32G, thu',
   t01244: "escrow, USA, Coeur d'Alene, 512M, @why",
   t01256: 'escrow, France, Aubervilliers, 512M, 2h',
-  t01294: 'escrow, China, Luzhou, 32G, 10h, fri',
   t01309: 'escrow, USA, Ashburn, 512M',
   t01315: 'escrow, China, Shenzhen, 32G, Deal Rank 8, thu',
   t01332: 'escrow, China, Weifang, 512M, <11h, 2h',
   t01410: 'escrow, USA, 32G, Deal Rank 6',
   t01847: 'escrow, USA, Ashburn, 512M, 9h',
-  t02088: 'escrow, China, Ordos, 32G',
-  t02327: 'escrow, USA, Boardman, 512M',
-  t02328: 'escrow, USA, Boardman, 512M',
-  t02330: 'escrow, USA, Boardman, 512M',
-  t02331: 'escrow, USA, Boardman, 512M',
 
 
   // Dial backoff
@@ -140,6 +134,7 @@ const annotations = {
 
   // Dial errors
 
+  t01088: 'dial, Germany, Roesrath, 32G',
   t01037: 'dial, China, Shenzhen, 32G, <20h',
   t01038: 'dial, China, Hong Kong + Guangdong, 32G, Power Rank 5, fri-cfa',
   t01109: 'dial, China, Shijiazhuang, 512M',
@@ -147,6 +142,7 @@ const annotations = {
   t01147: 'dial, China, Hong Kong, 32G',
   t01211: 'dial, China, Tongling, 32G',
   t01274: 'dial, USA, Berkeley, 512M',
+  t01294: 'dial, China, Luzhou, 32G, 10h, fri',
   t01299: 'dial, China, Guangzhou, 32G, thu',
   t01318: 'dial, China, Jiaxing, 32G, thu',
   t01412: 'dial, China, Fujian, 32G, thu',
@@ -154,10 +150,15 @@ const annotations = {
   t01434: 'dial, China, Shaanxi, 512M',
   t01578: 'dial, Korea, Uiwang, 512M',
   t01633: 'dial, China, Foshan, 512M',
+  t02088: 'dial, China, Ordos, 32G',
   t02114: 'dial, Australia, 32G',
   t02178: 'dial, China, Chengdu, 512M',
   t02209: 'dial, China, Xiamen, 512M, 6h',
+  t02327: 'dial, USA, Boardman, 512M',
+  t02328: 'dial, USA, Boardman, 512M',
   t02329: 'dial, USA, Boardman, 512M, 10h',
+  t02330: 'dial, USA, Boardman, 512M',
+  t02331: 'dial, USA, Boardman, 512M',
   t02332: 'dial, USA, Boardman, 512M, 2h',
   t02458: 'dial, China, Changsha, 512M',
 
