@@ -30,6 +30,7 @@ const annotations = {
   t01125: 'sealing, China, Sichuan, 32G, 18h, fri',
   t01127: 'sealing, China, Yibin, 32G, fri',
   t01151: 'sealing, Singapore, 32G, fri',
+  t01176: 'sealing, China, Guangdong, 512M, fri',
   t01270: 'sealing, China, Guangzhou, 32G, fri',
   t01345: 'sealing, China, Guangzhou, 32G, fri',
   t01399: 'sealing, China, Wuhan, 32G, fri',
@@ -90,7 +91,6 @@ const annotations = {
   // New, recycle
 
   t01074: 'new, China, Fujian, 32G',
-  t01127: 'new, China, Yibin, 32G',
   t01410: 'new, USA, 32G',
   t01662: 'new, China, Jiangsu, 32G',
   t01737: 'new, China, Jiaxing, 32G',
@@ -123,7 +123,6 @@ const annotations = {
   t01056: 'error, China, Chengdu, 32G', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01056: escrow balance 6240582445724 < locked 6240582445724 + required 3115156326638 (RetCode=19)
   t01087: 'error, China, Wuhan, 32G, 7h', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01087: escrow balance 7020986981788 < locked 7020986981788 + required 3117275609982 (RetCode=19)
   t01088: 'error, Germany, Roesrath, 32G', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01088: escrow balance 63835006290395253 < locked 63835006290395253 + required 3115156326638 (RetCode=19)
-  t01176: 'error, China, Guangdong, 512M, thu-xfr', // deal failed: (State=11) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01176: escrow balance 56224836596018 < locked 56224836596018 + required 3116990832122 (RetCode=19)
   t01242: 'error, Finland, Helsinki, 512M',
   t01309: 'error, USA, Ashburn, 512M', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01309: escrow balance 780961667882 < locked 12203117448 + required 780961667882 (RetCode=19)
   t01331: 'error, China, Weifang, 32G', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01331: escrow balance 3124181947248 < locked 3124181947248 + required 780961667882 (RetCode=19)
