@@ -12,6 +12,7 @@ const annotations = {
   t01036: 'active, Canada, Brampton, 32G, <20h, fri',
   t01046: 'active, China, Shandong, 32G, 7h, fri',
   t01114: 'active, Singapore, 32G, 5h, fri',
+  t01139: 'active, China, Fujian, 32G, 15h, fri',
   t01229: 'active, China, Yibin, 512M, 3h, fri',
   t01238: 'active, Sweden, Stockholm, 32G, 17h, fri',
   t01294: 'active, China, Luzhou, 32G, 10h, fri',
@@ -24,9 +25,12 @@ const annotations = {
 
   // Sealing - fri
 
+
   t01061: 'sealing, Singapore, 32G, fri',
   t01125: 'sealing, China, Sichuan, 32G, 18h, fri',
   t01127: 'sealing, China, Yibin, 32G, fri',
+  t01151: 'sealing, Singapore, 32G, fri',
+  t01270: 'sealing, China, Guangzhou, 32G, fri',
   t01345: 'sealing, China, Guangzhou, 32G, fri',
   t01399: 'sealing, China, Wuhan, 32G, fri',
   t01429: 'sealing, China, Shanghai, 512M, fri',
@@ -37,12 +41,15 @@ const annotations = {
   t01694: 'sealing, China, Wuhan, 32G, fri',
   t01705: 'sealing, China, Wuxi, 32G, fri',
   t01813: 'sealing, China, Wuxi, 32G, fri',
+  t01822: 'sealing, China, Wuxi, 32G, fri',
   t01847: 'sealing, USA, Ashburn, 512M, fri',
   t01872: 'sealing, China, Shenzhen, 512M, fri',
   t01923: 'sealing, Singapore, 512M, fri',
   t01945: 'sealing, China, Guyuan, 512M, fri',
   t01966: 'sealing, China, Taizhou, 512M, fri',
   t02035: 'sealing, China, Guyuan, 512M, fri',
+  t02056: "sealing, China, Xi'an, 32G, fri",
+  t02057: 'sealing, China, Shandong, 32G, fri',
   t02125: 'sealing, China, Guangzhou, 512M, fri',
   t02209: 'sealing, China, Xiamen, 512M, fri',
   t02329: 'sealing, USA, Boardman, 512M, fri',
@@ -82,6 +89,15 @@ const annotations = {
 
   // New, recycle
 
+  t01074: 'new, China, Fujian, 32G',
+  t01127: 'new, China, Yibin, 32G',
+  t01410: 'new, USA, 32G',
+  t01662: 'new, China, Jiangsu, 32G',
+  t01737: 'new, China, Jiaxing, 32G',
+  t02088: 'new, China, Ordos, 32G',
+  t02139: 'new, Korea, Yangcheon-gu, 32G',
+  t02114: 'new, Australia, 32G',
+  t02127: 'new, Australia, 32G',
 
   // Asks
 
@@ -107,7 +123,6 @@ const annotations = {
   t01056: 'error, China, Chengdu, 32G', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01056: escrow balance 6240582445724 < locked 6240582445724 + required 3115156326638 (RetCode=19)
   t01087: 'error, China, Wuhan, 32G, 7h', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01087: escrow balance 7020986981788 < locked 7020986981788 + required 3117275609982 (RetCode=19)
   t01088: 'error, Germany, Roesrath, 32G', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01088: escrow balance 63835006290395253 < locked 63835006290395253 + required 3115156326638 (RetCode=19)
-  t01139: 'error, China, Fujian, 32G, 15h', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01139: escrow balance 3124181947248 < locked 2818236063919 + required 3117275609982 (RetCode=19)
   t01176: 'error, China, Guangdong, 512M, thu-xfr', // deal failed: (State=11) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01176: escrow balance 56224836596018 < locked 56224836596018 + required 3116990832122 (RetCode=19)
   t01242: 'error, Finland, Helsinki, 512M',
   t01309: 'error, USA, Ashburn, 512M', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01309: escrow balance 780961667882 < locked 12203117448 + required 780961667882 (RetCode=19)
