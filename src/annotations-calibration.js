@@ -1,103 +1,97 @@
 const annotations = {
 
+  // Active - sat
+  
+  // Active/sealing - sat
+ 
+  t01024: 'active, China, Shenzhen, 512M, 2h, 2h, sat',
+  t01036: 'active, Canada, Brampton, 32G, Deal Rank 4, <20h, 21h, sat',
+  t01093: 'active, Singapore, 32G, Power Rank 9, Deal Rank 3, 16h, sat',
+  t01114: 'active, Singapore, 32G, 5h, Power Rank 6, Deal Rank 2, 5h, sat',
+  t01125: 'active, China, Sichuan, 32G, 18h, 12h, sat',
+  t01229: 'active, China, Yibin, 512M, 3h, sat',
+  t01238: 'active, Sweden, Stockholm, 32G, 17h, 13h, sat',
+  t01290: 'active, China, Beijing, 512M, <11h, 2h, sat',
+  t01429: 'active, China, Shanghai, 512M, Deal Rank 9, 6h, sat',
+  t01665: 'active, China, Hangzhou, 32G, Power Rank 10, 11h, sat',
+  t01705: 'active, China, Wuxi, 32G, 14h, sat',
+  t01813: 'active, China, Wuxi, 32G, Power Rank 3, 9h, sat',
+  t01822: 'active, China, Wuxi, 32G, 10h, sat',
+  t01923: 'active, Singapore, 512M, 2h, sat',
+  t01945: 'active, China, Guyuan, 512M, 3h, sat',
+  t02056: "active, China, Xi'an, 32G, 12h, sat",
+
   // Active - fri
 
-  t01024: 'active, China, Shenzhen, 512M, 2h, 2h',
-  t01065: 'active, China, Shijiazhuang, 512M, 2h, 2h',
-  t01256: 'active, France, Aubervilliers, 512M, 2h',
-  t01290: 'active, China, Beijing, 512M, <11h, 2h',
+  t01872: 'active, China, Shenzhen, 512M, 2h, sat-xfr',
+  t01966: 'active, China, Taizhou, 512M, 6h, sat-xfr',
 
   // Active/sealing - fri
  
-  t01036: 'active, Canada, Brampton, 32G, <20h, fri',
-  t01046: 'active, China, Shandong, 32G, 7h, fri',
-  t01114: 'active, Singapore, 32G, 5h, fri',
-  t01139: 'active, China, Fujian, 32G, 15h, fri',
-  t01229: 'active, China, Yibin, 512M, 3h, fri',
-  t01238: 'active, Sweden, Stockholm, 32G, 17h, fri',
-  t01294: 'active, China, Luzhou, 32G, 10h, fri',
+  t01139: 'active, China, Fujian, 32G, 15h, sat-funds',
 
   // Active - thu
 
-  t01025: 'active, China, Beijing, 512M, 2h',
+  t01025: 'active, China, Beijing, 512M, 2h, sat-cfa',
 
-  // Active/sealing - thu
+  // Sealing - sat
+ 
+  t01039: 'sealing, China, Liaoning, 32G, sat',
+  t01053: 'sealing, Korea, Seongnam-si, 32G, Deal Rank 10, sat',
+  t01074: 'sealing, China, Fujian, 32G, sat',
+  t01089: 'sealing, Singapore, 32G, Power Rank 4, Deal Rank 1, 17h, sat',
+  t01148: 'sealing, China, Beijing, 512M, sat',
+  t01202: 'sealing, China, Hong Kong, 32G, sat',
+  t01209: 'sealing, Switzerland, Muhlau, 32G, sat',
+  t01213: 'sealing, USA, Grand Rapids, 32G, sat',
+  t01214: 'sealing, China, Shijiazhuang, 32G, sat',
+  t01235: 'sealing, USA, San Jose, 32G, sat',
+  t01240: 'sealing, Singapore, 32G, Deal Rank 5, sat',
+  t01242: 'sealing, Finland, Helsinki, 512M, sat',
+  t01259: 'sealing, China, Beijing, 32G, sat',
+  t01313: 'sealing, USA, Irvine, 32G, sat',
+  t01331: 'sealing, China, Weifang, 32G, sat',
+  t01363: 'sealing, China, Shanghai, 32G, sat',
+  t01598: 'sealing, China, Liaoning, 512M, sat',
+  t01737: 'sealing, China, Jiaxing, 32G, sat',
+  t01817: 'sealing, China, Wuxi, 32G, sat',
+  t01819: 'sealing, China, Wuxi, 32G, Power Rank 10, sat',
+  t01968: 'sealing, Korea, Guro-gu, 512M, sat',
+  t01200: 'sealing, China, Hong Kong, 32G, Power Rank 8, sat',
+  t02139: 'sealing, Korea, Yangcheon-gu, 32G, sat',
+  t02366: 'sealing, China, Shenyang, 512M, sat',
+  t02428: 'sealing, China, Jiangmen, 512M, sat',
+
+  // Stuck - sat
+ 
+  t01056: 'stuck, China, Chengdu, 32G, sat-xfr',
+  t01161: 'stuck, China, Guangzhou + Hong Kong, 32G, sat-cfa',
+  t01595: 'stuck, China, Jiangmen, 512M, sat-xfr',
+  t01638: 'stuck, China, Beijing, 32G, sat-cfa',
+  t01662: 'stuck, China, Jiangsu, 32G, sat-cfa',
+  t02017: 'stuck, China, Shenzhen, 512M, sat-xfr',
+  t02443: 'stuck, China, Zhongshen, 512M, sat-xfr',
 
   // Sealing - fri
 
-
   t01061: 'sealing, Singapore, 32G, fri',
-  t01125: 'sealing, China, Sichuan, 32G, 18h, fri',
   t01127: 'sealing, China, Yibin, 32G, fri',
   t01151: 'sealing, Singapore, 32G, fri',
-  t01176: 'sealing, China, Guangdong, 512M, fri',
   t01270: 'sealing, China, Guangzhou, 32G, fri',
   t01345: 'sealing, China, Guangzhou, 32G, fri',
   t01399: 'sealing, China, Wuhan, 32G, fri',
-  t01429: 'sealing, China, Shanghai, 512M, fri',
-  t01595: 'sealing, China, Jiangmen, 512M, fri',
-  t01598: 'sealing, China, Liaoning, 512M, fri',
-  t01665: 'sealing, China, Hangzhou, 32G, fri',
-  t01689: 'sealing, China, Wuhan, 32G, fri',
   t01694: 'sealing, China, Wuhan, 32G, fri',
-  t01705: 'sealing, China, Wuxi, 32G, fri',
-  t01813: 'sealing, China, Wuxi, 32G, fri',
-  t01822: 'sealing, China, Wuxi, 32G, fri',
-  t01847: 'sealing, USA, Ashburn, 512M, fri',
-  t01872: 'sealing, China, Shenzhen, 512M, fri',
-  t01923: 'sealing, Singapore, 512M, fri',
-  t01945: 'sealing, China, Guyuan, 512M, fri',
-  t01966: 'sealing, China, Taizhou, 512M, fri',
-  t02035: 'sealing, China, Guyuan, 512M, fri',
-  t02056: "sealing, China, Xi'an, 32G, fri",
   t02057: 'sealing, China, Shandong, 32G, fri',
-  t02125: 'sealing, China, Guangzhou, 512M, fri',
-  t02209: 'sealing, China, Xiamen, 512M, fri',
-  t02329: 'sealing, USA, Boardman, 512M, fri',
-
 
   // Stuck - fri
  
-  t01161: 'stuck, China, Guangzhou + Hong Kong, 32G, fri-cfa',
-  t01638: 'stuck, China, Beijing, 32G, fri-cfa',
 
   // Sealing - thu
 
-  t01039: 'sealing, China, Liaoning, 32G, thu',
-  t01045: 'sealing, Netherlands, Amersfoort, 32G, @Rob, thu',
-  t01089: 'sealing, Singapore, 32G, thu',
-  t01093: 'sealing, Singapore, 32G, thu',
-  t01187: 'sealing, China, Zhongshan, 32G, thu',
-  t01209: 'sealing, Switzerland, Muhlau, 32G, thu',
-  t01213: 'sealing, USA, Grand Rapids, 32G, thu',
-  t01214: 'sealing, China, Shijiazhuang, 32G, thu',
-  t01227: 'sealing, China, Shandong, 32G, thu',
-  t01231: 'sealing, USA, Rochester, 32G, thu',
-  t01235: 'sealing, USA, San Jose, 32G, thu',
-  t01259: 'sealing, China, Beijing, 32G, thu',
-  t01269: 'sealing, China, Xinxiang, 32G, thu',
-  t01299: 'sealing, China, Guangzhou, 32G, thu',
-  t01313: 'sealing, USA, Irvine, 32G, thu',
-  t01315: 'sealing, China, Shenzhen, 32G, thu',
-  t01318: 'sealing, China, Jiaxing, 32G, thu',
-  t01412: 'sealing, China, Fujian, 32G, thu',
-  t01819: 'sealing, China, Wuxi, 32G, thu',
-  t01240: 'sealing, Singapore, 32G, thu',
 
-  // Stuck - thu
 
-  t01038: 'stuck, China, Hong Kong + Guangdong, 32G, fri-cfa',
+  // New
 
-  // New, recycle
-
-  t01074: 'new, China, Fujian, 32G',
-  t01410: 'new, USA, 32G',
-  t01662: 'new, China, Jiangsu, 32G',
-  t01737: 'new, China, Jiaxing, 32G',
-  t02088: 'new, China, Ordos, 32G',
-  t02139: 'new, Korea, Yangcheon-gu, 32G',
-  t02114: 'new, Australia, 32G',
-  t02127: 'new, Australia, 32G',
 
   // Asks
 
@@ -105,63 +99,77 @@ const annotations = {
 
   // No-online deals
 
-  // Deals, but no routing
- 
-  t01047: 'deals',
-  t01053: 'deals',
-  t01105: 'deals',
-  t01111: 'deals',
-  t01132: 'deals',
-  t01133: 'deals',
-  t01148: 'deals',
-  t01202: 'deals',
-  t01244: 'deals',
-
   // Error
 
-  t01051: 'error, Singapore, 32G, 7h', // deal failed: (State=11) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01051: escrow balance 10142789741860 < locked 10142789741860 + required 3117275609982 (RetCode=19)
-  t01056: 'error, China, Chengdu, 32G', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01056: escrow balance 6240582445724 < locked 6240582445724 + required 3115156326638 (RetCode=19)
-  t01087: 'error, China, Wuhan, 32G, 7h', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01087: escrow balance 7020986981788 < locked 7020986981788 + required 3117275609982 (RetCode=19)
-  t01088: 'error, Germany, Roesrath, 32G', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01088: escrow balance 63835006290395253 < locked 63835006290395253 + required 3115156326638 (RetCode=19)
-  t01242: 'error, Finland, Helsinki, 512M',
-  t01309: 'error, USA, Ashburn, 512M', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01309: escrow balance 780961667882 < locked 12203117448 + required 780961667882 (RetCode=19)
-  t01331: 'error, China, Weifang, 32G', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01331: escrow balance 3124181947248 < locked 3124181947248 + required 780961667882 (RetCode=19)
-  t01332: 'error, China, Weifang, 512M, <11h', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01332: escrow balance 9363255836950 < locked 9363255836950 + required 3117275609982 (RetCode=19)
-  t01363: 'error, China, Shanghai, 32G, thu-xfr', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01363: escrow balance 7018488242530 < locked 7018488242530 + required 3116990832122 (RetCode=19)
-  t01968: 'error, Korea, Guro-gu, 512M', // deal failed: (State=26) error calling node: publishing deal: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr t01968: escrow balance 12779801900406868 < locked 12779801900406868 + required 3115156326638 (RetCode=19)
-  t02017: 'error, China, Shenzhen, 512M',
-  t02040: 'error, China, Zhongshan, 512M',
-  t02327: 'error, USA, Boardman, 512M',
-  t02328: 'error, USA, Boardman, 512M',
-  t02330: 'error, USA, Boardman, 512M',
-  t02331: 'error, USA, Boardman, 512M',
-  t02332: 'error, USA, Boardman, 512M',
+  t01051: 'error, Singapore, 32G, Power Rank 2, 7h', // rejected
+  t01689: 'error, China, Wuhan, 32G, Power Rank 7, 9h', // rejected
+  t02035: 'error, China, Guyuan, 512M, 3h', // rejected
+  t02125: 'error, China, Guangzhou, 512M, fri', // reset
 
+  // Escrow errors
+
+  t01047: "escrow, USA, Coeur d'Alene, 512M, @why",
+  t01065: 'escrow, China, Shijiazhuang, 512M, 2h, 2h',
+  t01087: 'escrow, China, Wuhan, 32G, Power Rank 1, 7h',
+  t01088: 'escrow, Germany, Roesrath, 32G',
+  t01111: 'escrow, USA, Mountain View, 32G',
+  t01132: 'escrow, Latvia, Riga, 32G',
+  t01133: 'escrow, Singapore, 32G',
+  t01176: 'escrow, China, Guangdong, 512M, 2h',
+  t01231: 'escrow, USA, Rochester, 32G, thu',
+  t01244: "escrow, USA, Coeur d'Alene, 512M, @why",
+  t01256: 'escrow, France, Aubervilliers, 512M, 2h',
+  t01294: 'escrow, China, Luzhou, 32G, 10h, fri',
+  t01309: 'escrow, USA, Ashburn, 512M',
+  t01315: 'escrow, China, Shenzhen, 32G, Deal Rank 8, thu',
+  t01332: 'escrow, China, Weifang, 512M, <11h, 2h',
+  t01410: 'escrow, USA, 32G, Deal Rank 6',
+  t01847: 'escrow, USA, Ashburn, 512M, 9h',
+  t02088: 'escrow, China, Ordos, 32G',
+  t02327: 'escrow, USA, Boardman, 512M',
+  t02328: 'escrow, USA, Boardman, 512M',
+  t02330: 'escrow, USA, Boardman, 512M',
+  t02331: 'escrow, USA, Boardman, 512M',
 
 
   // Dial backoff
 
+  t01046: 'backoff, China, Shandong, 32G, 7h, fri',
+  t02127: 'backoff, Australia, 32G',
 
 
   // Dial errors
 
   t01037: 'dial, China, Shenzhen, 32G, <20h',
+  t01038: 'dial, China, Hong Kong + Guangdong, 32G, Power Rank 5, fri-cfa',
   t01109: 'dial, China, Shijiazhuang, 512M',
-  t01121: 'dial, China, Beijing, 32G',
+  t01121: 'dial, China, Beijing, Deal Rank 7, 32G',
   t01147: 'dial, China, Hong Kong, 32G',
   t01211: 'dial, China, Tongling, 32G',
   t01274: 'dial, USA, Berkeley, 512M',
+  t01299: 'dial, China, Guangzhou, 32G, thu',
+  t01318: 'dial, China, Jiaxing, 32G, thu',
+  t01412: 'dial, China, Fujian, 32G, thu',
   t01413: 'dial, China, Shenzhen, 512M, <11h',
   t01434: 'dial, China, Shaanxi, 512M',
   t01578: 'dial, Korea, Uiwang, 512M',
   t01633: 'dial, China, Foshan, 512M',
+  t02114: 'dial, Australia, 32G',
   t02178: 'dial, China, Chengdu, 512M',
-
+  t02209: 'dial, China, Xiamen, 512M, 6h',
+  t02329: 'dial, USA, Boardman, 512M, 10h',
+  t02332: 'dial, USA, Boardman, 512M, 2h',
+  t02458: 'dial, China, Changsha, 512M',
 
 
   // XNR
 
+  t01045: 'xnr, Netherlands, Amersfoort, 32G, @Rob, thu',
+  t01187: 'xnr, China, Zhongshan, 32G, thu',
+  t01227: 'xnr, China, Shandong, 32G, thu',
+  t01269: 'xnr, China, Xinxiang, 32G, thu',
   t01335: 'xnr, China, Hangzhou, 32G, thu-cfa',
+  t02040: 'xnr, China, Zhongshan, 512M',
   t02078: 'xnr, China, Shenzhen, 512M',
 
   // Bootstrappers

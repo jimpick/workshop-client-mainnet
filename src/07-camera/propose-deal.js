@@ -10,10 +10,10 @@ export default function ProposeDeal ({ appState, updateAppState }) {
   const {
     selectedNode,
     filterNewMiners,
-    filterRecycleMiners,
+    filterEscrowMiners,
     filterSealingMiners,
     filterActiveMiners,
-    filterPowerMiners,
+    filterDialMiners,
     filterErrorMiners,
     filterBackoffMiners,
     filterStuckMiners,
@@ -42,8 +42,8 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     if (filterNewMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/^new/))
     }
-    if (filterRecycleMiners && miners) {
-      return miners.filter(miner => annotations[miner].match(/^recycle/))
+    if (filterEscrowMiners && miners) {
+      return miners.filter(miner => annotations[miner].match(/^escrow/))
     }
     if (filterSealingMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/^sealing/))
@@ -51,8 +51,8 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     if (filterActiveMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/^active/))
     }
-    if (filterPowerMiners && miners) {
-      return miners.filter(miner => annotations[miner].match(/power/i))
+    if (filterDialMiners && miners) {
+      return miners.filter(miner => annotations[miner].match(/dial/i))
     }
     if (filterErrorMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/^error/i))
@@ -64,16 +64,16 @@ export default function ProposeDeal ({ appState, updateAppState }) {
       return miners.filter(miner => annotations[miner].match(/^stuck/i))
     }
     if (filterNonRoutable && miners) {
-      return miners.filter(miner => !annotations[miner].match(/^NR/i))
+      return miners.filter(miner => !annotations[miner].match(/^xnr/i))
     }
     return miners
   }, [
     miners,
     filterNewMiners,
-    filterRecycleMiners,
+    filterEscrowMiners,
     filterSealingMiners,
     filterActiveMiners,
-    filterPowerMiners,
+    filterDialMiners,
     filterErrorMiners,
     filterBackoffMiners,
     filterStuckMiners,
@@ -159,15 +159,15 @@ export default function ProposeDeal ({ appState, updateAppState }) {
         <label>
           <input
             type='checkbox'
-            checked={filterRecycleMiners}
+            checked={filterActiveMiners}
             onChange={() => {
               updateAppState(draft => {
-                draft.filterRecycleMiners = !filterRecycleMiners
+                draft.filterActiveMiners = !filterActiveMiners
               })
             }}
             style={{ marginLeft: '1rem' }}
           />
-          'recycle'
+          'active'
         </label>
         <label>
           <input
@@ -185,28 +185,15 @@ export default function ProposeDeal ({ appState, updateAppState }) {
         <label>
           <input
             type='checkbox'
-            checked={filterActiveMiners}
+            checked={filterStuckMiners}
             onChange={() => {
               updateAppState(draft => {
-                draft.filterActiveMiners = !filterActiveMiners
+                draft.filterStuckMiners = !filterStuckMiners
               })
             }}
             style={{ marginLeft: '1rem' }}
           />
-          'active'
-        </label>
-        <label>
-          <input
-            type='checkbox'
-            checked={filterPowerMiners}
-            onChange={() => {
-              updateAppState(draft => {
-                draft.filterPowerMiners = !filterPowerMiners
-              })
-            }}
-            style={{ marginLeft: '1rem' }}
-          />
-          'power'
+          'stuck'
         </label>
         <label>
           <input
@@ -224,6 +211,19 @@ export default function ProposeDeal ({ appState, updateAppState }) {
         <label>
           <input
             type='checkbox'
+            checked={filterEscrowMiners}
+            onChange={() => {
+              updateAppState(draft => {
+                draft.filterEscrowMiners = !filterEscrowMiners
+              })
+            }}
+            style={{ marginLeft: '1rem' }}
+          />
+          'escrow'
+        </label>
+        <label>
+          <input
+            type='checkbox'
             checked={filterBackoffMiners}
             onChange={() => {
               updateAppState(draft => {
@@ -237,15 +237,15 @@ export default function ProposeDeal ({ appState, updateAppState }) {
         <label>
           <input
             type='checkbox'
-            checked={filterStuckMiners}
+            checked={filterDialMiners}
             onChange={() => {
               updateAppState(draft => {
-                draft.filterStuckMiners = !filterStuckMiners
+                draft.filterDialMiners = !filterDialMiners
               })
             }}
             style={{ marginLeft: '1rem' }}
           />
-          'stuck'
+          'dial'
         </label>
         <label>
           <input
@@ -258,7 +258,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
             }}
             style={{ marginLeft: '1rem' }}
           />
-          'NR'
+          'xnr'
         </label>
       </div>
       <div style={{ maxHeight: '15rem', overflowY: 'scroll', width: '70vw' }}>
@@ -274,7 +274,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
               return (
                 <button
                   key={miner}
-                  style={{ width: '20rem', height: '2rem' }}
+                  style={{ width: '20rem', height: '4rem' }}
                   onClick={() => proposeDeal(miner)}
                 >
                   {miner}: {annotations[miner]}
