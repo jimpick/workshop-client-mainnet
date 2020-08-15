@@ -38,7 +38,9 @@ const annotations = {
  
   t01039: 'sealing, China, Liaoning, 32G, sat',
   t01053: 'sealing, Korea, Seongnam-si, 32G, Deal Rank 10, sat',
+  t01065: 'sealing, China, Shijiazhuang, 512M, 2h, 2h, sat',
   t01074: 'sealing, China, Fujian, 32G, sat',
+  t01087: 'sealing, China, Wuhan, 32G, Power Rank 1, 7h, sat',
   t01089: 'sealing, Singapore, 32G, Power Rank 4, Deal Rank 1, 17h, sat',
   t01148: 'sealing, China, Beijing, 512M, sat',
   t01202: 'sealing, China, Hong Kong, 32G, sat',
@@ -109,8 +111,6 @@ const annotations = {
   // Escrow errors
 
   t01047: "escrow, USA, Coeur d'Alene, 512M, @why",
-  t01065: 'escrow, China, Shijiazhuang, 512M, 2h, 2h',
-  t01087: 'escrow, China, Wuhan, 32G, Power Rank 1, 7h',
   t01088: 'escrow, Germany, Roesrath, 32G',
   t01111: 'escrow, USA, Mountain View, 32G',
   t01132: 'escrow, Latvia, Riga, 32G',
