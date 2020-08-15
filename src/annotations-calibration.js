@@ -2,6 +2,7 @@ const annotations = {
 
   // Active - sat
   
+  t01065: 'active, China, Shijiazhuang, 512M, 2h, 2h, 2h',
   t01148: 'active, China, Beijing, 512M, 4h',
   t01290: 'active, China, Beijing, 512M, <11h, 2h, 4h',
   t01429: 'active, China, Shanghai, 512M, Deal Rank 9, 6h, 2h',
@@ -40,7 +41,6 @@ const annotations = {
  
   t01039: 'sealing, China, Liaoning, 32G, sat',
   t01053: 'sealing, Korea, Seongnam-si, 32G, Deal Rank 10, sat',
-  t01065: 'sealing, China, Shijiazhuang, 512M, 2h, 2h, sat',
   t01074: 'sealing, China, Fujian, 32G, sat',
   t01087: 'sealing, China, Wuhan, 32G, Power Rank 1, 7h, sat',
   t01089: 'sealing, Singapore, 32G, Power Rank 4, Deal Rank 1, 17h, sat',
