@@ -3,11 +3,13 @@ const annotations = {
   // Active - sat
   
   t01065: 'active, China, Shijiazhuang, 512M, 2h, 2h, 2h',
+  t01093: 'active, Singapore, 32G, Power Rank 9, Deal Rank 3, 16h, 11h',
   t01114: 'active, Singapore, 32G, 5h, Power Rank 6, Deal Rank 2, 5h, 10h',
   t01125: 'active, China, Sichuan, 32G, 18h, 12h, 12h',
   t01148: 'active, China, Beijing, 512M, 4h',
   t01200: 'active, China, Hong Kong, 32G, Power Rank 8, 10h',
   t01209: 'active, Switzerland, Muhlau, 32G, 10h',
+  t01214: 'active, China, Shijiazhuang, 32G, 12h',
   t01240: 'active, Singapore, 32G, Deal Rank 5, 9h',
   t01259: 'active, China, Beijing, 32G, 10h',
   t01290: 'active, China, Beijing, 512M, <11h, 2h, 4h',
@@ -21,7 +23,6 @@ const annotations = {
  
   t01024: 'active, China, Shenzhen, 512M, 2h, 2h, sat',
   t01036: 'active, Canada, Brampton, 32G, Deal Rank 4, <20h, 21h, sat',
-  t01093: 'active, Singapore, 32G, Power Rank 9, Deal Rank 3, 16h, sat',
   t01229: 'active, China, Yibin, 512M, 3h, sat',
   t01238: 'active, Sweden, Stockholm, 32G, 17h, 13h, sat',
   t01705: 'active, China, Wuxi, 32G, 14h, sat',
@@ -51,7 +52,6 @@ const annotations = {
   t01089: 'sealing, Singapore, 32G, Power Rank 4, Deal Rank 1, 17h, sat',
   t01202: 'sealing, China, Hong Kong, 32G, sat',
   t01213: 'sealing, USA, Grand Rapids, 32G, sat',
-  t01214: 'sealing, China, Shijiazhuang, 32G, sat',
   t01235: 'sealing, USA, San Jose, 32G, sat',
   t01242: 'sealing, Finland, Helsinki, 512M, sat',
   t01313: 'sealing, USA, Irvine, 32G, sat',
