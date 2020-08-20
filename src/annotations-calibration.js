@@ -1,28 +1,49 @@
 const annotations = {
 
+  // Active - thu
+
+  // Active/sealing - thu
+
+  t01327: 'active, China, Guangdong, 512M, 2h, thu',
+  t01591: 'active, China, Beijing, 512M, 1h, thu',
+  t01593: 'active, USA, Athol, 512M, @why, 2h, thu',
+  t01699: 'active, Poland, Krakow, 512M, @magik6k, 2h, thu',
+  t01708: 'active, China, Shenzhen, 512M, 2h, thu',
+  t01819: 'active, China, Shijiazhuang, 512M, 2h, thu',
+  t01824: 'active, China, Guilin, 512M, 2h, thu',
+  t01827: 'active, China, Shenyang, 512M, 2h, thu',
+  t01902: 'active, China, Shanghai, 512M, 2h, thu',
+  t01945: 'active, China, Shanghai, 512M, 2h, thu',
+  t02014: 'active, Canada, Vancouver, 512M, @jimpick, 2h, thu',
+  t02098: 'active, China, Guyuan, 512M, 2h, thu',
+ 
   // Active - wed
   
-  t01327: 'active, China, Guangdong, 512M, 2h',
-  t01591: 'active, China, Beijing, 512M, 1h',
-  t01593: 'active, USA, Athol, 512M, @why, 2h',
-  t01699: 'active, Poland, Krakow, 512M, @magik6k, 2h',
-  t01708: 'active, China, Shenzhen, 512M, 2h',
-  t01819: 'active, China, Shijiazhuang, 512M, 2h',
-  t01824: 'active, China, Guilin, 512M, 2h',
-  t01827: 'active, China, Shenyang, 512M, 2h',
-  t01902: 'active, China, Shanghai, 512M, 2h',
-  t01920: 'active, China, Hong Kong + Jieyang + Shenzhen, 512M, 2h',
-  t01945: 'active, China, Shanghai, 512M, 2h',
-  t02014: 'active, Canada, Vancouver, 512M, @jimpick, 2h',
-  t02098: 'active, China, Guyuan, 512M, 2h',
-  t02125: 'active, USA, Concord, 512M, 4h',
+  t01920: 'stuck, China, Hong Kong + Jieyang + Shenzhen, 512M, 2h, thu-xfr',
 
   t01017: 'active32, China, Shandong, 32G, 7h',
   t01337: 'active32, China, Shandong, 32G, 10h',
 
+  // Sealing - thu
+ 
+  t02182: 'sealing, China, Zhongshan, 512M, thu',
+  t02197: 'sealing, China, Taizhou, 512M, thu',
+  t02206: 'sealing, USA, Boardman, 512M, thu',
+  t02249: 'sealing, China, Guangdong, 512M, thu',
+  t02263: 'sealing, USA, Boardman, 512M, thu',
+  t02264: 'sealing, USA, Boardman, 512M, thu',
+  t02315: 'sealing, USA, Boardman, 512M, thu',
+  t02301: 'sealing, China, Liaoning, 512M, thu',
+  t02302: 'sealing, China, Xiamen, 512M, thu',
+  t02306: 'sealing, China, Shijiazhuang, 512M, thu',
+  t02533: 'sealing, France, Aubervilliers, 512M, thu',
+  t02555: 'sealing, China, Guiyang, 512M, thu',
+  t02556: 'sealing, China, Xiamen, 512M, thu',
+  t02641: 'sealing, China, Shenzhen, 512M, thu',
+
   // Sealing - wed
  
-  t01581: 'sealing, Australia, Sydney, 512M, wed',
+  t01581: 'stuck, Australia, Sydney, 512M, wed-sealing',
 
   t01307: 'sealing32, China, Fujian, 32G, wed',
   t01308: 'sealing32, Sweden, Alvsjo, 32G, wed',
@@ -36,28 +57,12 @@ const annotations = {
 
   // New
 
-  t02182: 'new, China, Zhongshan, 512M',
-  t02197: 'new, China, Taizhou, 512M',
-  t02206: 'new, USA, Boardman, 512M',
-  t02231: 'new, UK, Lower Slaughter, 512M',
-  t02249: 'new, China, Guangdong, 512M',
-  t02263: 'new, USA, Boardman, 512M',
-  t02264: 'new, USA, Boardman, 512M',
-  t02315: 'new, USA, Boardman, 512M',
-  t02301: 'new, China, Liaoning, 512M',
-  t02302: 'new, China, Xiamen, 512M',
-  t02306: 'new, China, Shijiazhuang, 512M',
-  t02533: 'new, France, Aubervilliers, 512M',
-  t02553: 'new, China, Shenzhen, 512M',
-  t02555: 'new, China, Guiyang, 512M',
-  t02556: 'new, China, Xiamen, 512M',
-  t02641: 'new, China, Shenzhen, 512M',
-  t02673: 'new, China, Shandong, 512M',
-
 
   // Asks
 
-  // No-online deals
+  // No-online deals / rejected
+
+  t02553: 'rejected, China, Shenzhen, 512M',
 
   // Error
 
@@ -80,6 +85,10 @@ const annotations = {
   t01072: 'dial, China, Fujian + Netherlands, 32G',
   t01766: 'dial, China, Shenzhen, 512M',
   t01948: 'dial, Malaysia, Johor Bahru, 512M',
+  t02125: 'dial, USA, Concord, 512M, 4h',
+  t02231: 'dial, UK, Lower Slaughter, 512M',
+  t02673: 'dial, China, Shandong, 512M',
+
 
   // XNR
 
