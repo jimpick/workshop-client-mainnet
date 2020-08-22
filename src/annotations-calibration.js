@@ -13,6 +13,7 @@ const annotations = {
   t01902: 'active, China, Shanghai, 512M, 2h, 2h, 2h',
   t01909: 'active, China, Shenzhen, 512M, 3h',
   t01945: 'active, China, Shanghai, 512M, 2h, 2h, 2h',
+  t02014: 'active, Canada, Vancouver, 512M, @jimpick, 2h, 2h, 4h',
   t02098: 'active, China, Guyuan, 512M, 2h, 2h, 3h',
   t02182: 'active, China, Zhongshan, 512M, 2h, 2h',
   t02197: 'active, China, Taizhou, 512M, 3h, 2h',
@@ -33,9 +34,8 @@ const annotations = {
 
   // Active/sealing - fri
 
-  t01699: 'active, Poland, Krakow, 512M, @magik6k, 2h, 2h, fri',
-  t02014: 'active, Canada, Vancouver, 512M, @jimpick, 2h, 2h, fri',
-  t02263: 'active, USA, Boardman, 512M, 3h, fri',
+  t01699: 'active-stuck, Poland, Krakow, 512M, @magik6k, 2h, 2h, fri-sealing',
+  t02263: 'active-stuck, USA, Boardman, 512M, 3h, fri-sealing',
  
   // Active - thu
 
@@ -54,10 +54,10 @@ const annotations = {
 
   // Sealing - fri
 
-  t02004: 'sealing, China, Zhejiang + USA, 512M, fri',
-  t02301: 'sealing, China, Liaoning, 512M, fri',
-  t02984: 'sealing, China, Ordos, 512M, fri',
-  t03014: 'sealing, China, Guangzhou, 512M, fri',
+  t02004: 'stuck, China, Zhejiang + USA, 512M, fri-sealing',
+  t02301: 'stuck, China, Liaoning, 512M, fri-sealing',
+  t02984: 'stuck, China, Ordos, 512M, fri-sealing',
+  t03014: 'stuck, China, Guangzhou, 512M, fri-sealing',
 
   // Stuck - fri
 
