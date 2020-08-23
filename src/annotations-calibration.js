@@ -57,6 +57,15 @@ const annotations = {
 
   // New
 
+  t02156: 'new, China, Xiamen, 512M',
+  t02332: 'new, USA, 512M',
+  t03045: 'new, China, Shenzhen, 512M',
+  t096370: 'new, China, Chengdu, 512M',
+  t0123650: 'new, China, Jieyang, 512M',
+  t0123652: 'new, UK, Lower Slaughter, 512M',
+  t0151229: 'new, China, Shandong, 512M',
+
+
   // Asks
 
   // No-online deals / rejected
@@ -66,6 +75,7 @@ const annotations = {
   t02845: 'rejected, China, Ningbo, 512M',
   t02953: 'rejected, China, Shanghai, 512M',
   t05036: 'rejected, China, Hong Kong + Shenzhen + Jieyang, 512M, 3h',
+  t0123645: 'rejected, China, Shanghai, 512M',
 
   // Error
 

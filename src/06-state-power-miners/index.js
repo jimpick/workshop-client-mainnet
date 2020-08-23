@@ -211,9 +211,12 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     queryAllMinersWithPower
   } = appState
   const client = useLotusClient(selectedNode, 'node')
-  const [nonRoutableSet] = useState(
+  /*
+  const [nonRoutableSet, setNonRoutableSet] = useState(
     JSON.parse(localStorage.getItem(nonRoutableSetKey)) || {}
   )
+  */
+  const [nonRoutableSet, setNonRoutableSet] = useState({})
   const [height, setHeight] = useState()
   const [tipsetKey, setTipsetKey] = useState(null)
   const [totalPower, setTotalPower] = useState()
@@ -230,6 +233,22 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   const [ipScanJobs] = useState({})
   const [nonRoutableSetUpdated, setNonRoutableSetUpdated] = useState(false)
   const [quickMode, setQuickMode] = useState(true)
+
+  useEffect(() => {
+    idbGet(nonRoutableSetKey).then(data => {
+      try {
+        const nonRoutableSet = JSON.parse(data)
+        setNonRoutableSet(nonRoutableSet)
+        console.log("Loaded non-routable set from idb", nonRoutableSetKey)
+      } catch (e) {
+        console.log(
+          'Failed parsing non-routable set from idb',
+          nonRoutableSetKey,
+          data
+        )
+      }
+    })
+  }, [setNonRoutableSet])
 
   const setMinersScanned = useCallback(
     throttle(setMinersScannedUnthrottled, 1000),
@@ -1013,10 +1032,13 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                   delete newNonRoutableSet[annotatedMiner]
                 }
               }
+              /*
               localStorage.setItem(
                 nonRoutableSetKey,
                 JSON.stringify(newNonRoutableSet)
               )
+              */
+              idbSet(nonRoutableSetKey, JSON.stringify(newNonRoutableSet))
               setNonRoutableSetUpdated(true)
             }}
           >

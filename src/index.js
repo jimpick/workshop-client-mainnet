@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import ErrorBoundary from './error-boundary.js'
 import { useImmer } from 'use-immer'
+import { get as idbGet, set as idbSet } from 'idb-keyval'
 import produce from 'immer'
 import useTestgroundNet from './lib/use-testground-net'
 import useDealMonitor from './lib/use-deal-monitor'
@@ -20,22 +21,32 @@ import Home from './home'
 import { networkName } from './config'
 import './index.css'
 
-let initialState
-const initialStateJson = localStorage.getItem('state')
-try {
-  initialState = JSON.parse(initialStateJson) || {}
-  if (Object.keys(initialState).length === 0) {
-    localStorage.setItem('state', '{}')
-  }
-} catch (e) {
-  initialState = {}
-}
-
 function App () {
-  const [appState, updateAppState] = useImmer(initialState)
+  const [appState, updateAppState] = useImmer({})
   const [savedState, setSavedState] = useState()
   useTestgroundNet({ appState, updateAppState })
   const { selectedNode } = appState
+
+  useEffect(() => {
+    let initialState
+    //const initialStateJson = localStorage.getItem('state')
+    idbGet('state').then(initialStateJson => {
+      try {
+        initialState = JSON.parse(initialStateJson) || {}
+        if (Object.keys(initialState).length === 0) {
+          //localStorage.setItem('state', '{}')
+          idbSet('state', '{}')
+        }
+        updateAppState(draft => {
+          draft = initialState
+        })
+      } catch (e) {
+        updateAppState(draft => {
+          draft = {}
+        })
+      }
+    })
+  }, [updateAppState])
 
   useEffect(() => {
     const stateToSave = produce(appState, draft => {
@@ -48,7 +59,9 @@ function App () {
         // User deleted state in browser localStorage
         return
       }
-      localStorage.setItem('state', jsonStateToSave)
+      // localStorage.setItem('state', jsonStateToSave)
+      // idbSet('state', '{}') // FIXME: Async
+      idbSet('state', jsonStateToSave) // FIXME: Async
       setSavedState(jsonStateToSave)
     }
   }, [appState, savedState, setSavedState])
