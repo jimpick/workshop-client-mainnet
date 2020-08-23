@@ -22,6 +22,7 @@ import { networkName } from './config'
 import './index.css'
 
 function App () {
+  const [stateLoaded, setStateLoaded] = useState()
   const [appState, updateAppState] = useImmer({})
   const [savedState, setSavedState] = useState()
   useTestgroundNet({ appState, updateAppState })
@@ -37,18 +38,35 @@ function App () {
           //localStorage.setItem('state', '{}')
           idbSet('state', '{}')
         }
+        const stateLoaded = Date.now()
         updateAppState(draft => {
-          draft = initialState
+          for (const key in initialState) {
+            draft[key] = initialState[key]
+          }
+          draft.stateLoaded = stateLoaded
         })
+        setStateLoaded(stateLoaded)
+        // console.log('Jim loaded state, deals:', initialState.deals, stateLoaded)
       } catch (e) {
+        const stateLoaded = Date.now()
         updateAppState(draft => {
           draft = {}
+          draft.stateLoaded = stateLoaded
         })
+        setStateLoaded(true)
       }
     })
-  }, [updateAppState])
+  }, [updateAppState, setStateLoaded])
 
   useEffect(() => {
+    /*
+    console.log(
+      'Jim stateLoaded appState.stateLoaded',
+      stateLoaded,
+      appState.stateLoaded
+    )
+    */
+    if (!stateLoaded || appState.stateLoaded !== stateLoaded) return
     const stateToSave = produce(appState, draft => {
       delete draft.capture
       delete draft.stream
@@ -62,9 +80,10 @@ function App () {
       // localStorage.setItem('state', jsonStateToSave)
       // idbSet('state', '{}') // FIXME: Async
       idbSet('state', jsonStateToSave) // FIXME: Async
+      console.log('Jim saved state, deals:', stateToSave.deals, stateToSave)
       setSavedState(jsonStateToSave)
     }
-  }, [appState, savedState, setSavedState])
+  }, [stateLoaded, appState, savedState, setSavedState])
 
   useDealMonitor({ appState, updateAppState })
 
@@ -79,8 +98,8 @@ function App () {
         <nav style={{ display: 'flex', flexWrap: 'wrap' }}>
           <Link to='/'>Home</Link>
           <Link to='/select-node'>
-            {networkName[0].toUpperCase()}{networkName.slice(1)} Node: #
-            {selectedNode}
+            {networkName[0].toUpperCase()}
+            {networkName.slice(1)} Node: #{selectedNode}
           </Link>
           <Link to='/chain-notify'>Chain</Link>
           <Link to='/miners'>Miners</Link>

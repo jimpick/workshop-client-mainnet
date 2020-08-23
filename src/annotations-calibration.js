@@ -1,5 +1,9 @@
 const annotations = {
 
+  // Active - sun
+
+  // Active/sealing - sun
+
   // Active - sat
 
   t01819: 'active, China, Shijiazhuang, 512M, 2h, 2h, 2h, <4h',
@@ -43,6 +47,22 @@ const annotations = {
   t02675: 'active-stuck, USA, Boardman, 512M, 2h, sat-funds',
   t01920: 'active-stuck, China, Hong Kong + Jieyang + Shenzhen, 512M, 2h, sat-xfr',
 
+  // Sealing - sun
+ 
+  t02156: 'sealing, China, Xiamen, 512M, sun',
+  t02332: 'sealing, USA, 512M, sun',
+  t03045: 'sealing, China, Shenzhen, 512M, sun',
+  t096370: 'sealing, China, Chengdu, 512M, sun',
+  t0151229: 'sealing, China, Shandong, 512M, sun',
+  t0202344: 'sealing, Netherlands, 512M, sun',
+  t0202358: 'sealing, USA, 512M, sun',
+  t0211954: 'sealing, USA, Arlington, 512M, sun',
+
+  // Stuck - sun
+ 
+  t0123650: 'stuck, China, Jieyang, 512M, sun-xfr',
+  t0202249: 'stuck, China, Guangdong, 512M, sun-cfa',
+
   // Sealing - sat
 
   t096589: 'sealing, China, Changsha, 512M, sat',
@@ -57,13 +77,6 @@ const annotations = {
 
   // New
 
-  t02156: 'new, China, Xiamen, 512M',
-  t02332: 'new, USA, 512M',
-  t03045: 'new, China, Shenzhen, 512M',
-  t096370: 'new, China, Chengdu, 512M',
-  t0123650: 'new, China, Jieyang, 512M',
-  t0123652: 'new, UK, Lower Slaughter, 512M',
-  t0151229: 'new, China, Shandong, 512M',
 
 
   // Asks
@@ -83,6 +96,7 @@ const annotations = {
   t01300: 'error, Canada, Brampton, 32G', // unexpected deal status while waiting for data request: 11 (StorageDealFailing). Provider message: deal rejected: jq: error: syntax error, unexpected '|' (Unix shell quoting issues?) at <top-level>, line 1: .Proposal.Client == "t12thv7e3x3tomo5nuunsvzqnl5txflpztdqcbtai" || .Proposal.Client == "t1capnpwjvm4gfbdlbavblmvjldwqzdo6ukh7mmqq" || .Proposal.Client == "t12heuwfbg654jgdnctywyafxrqbmcidwj6osecha" jq: 1 compile error
   t01306: 'error, USA, Grand Rapids, 32G', // unexpected deal status while waiting for data request: 11 (StorageDealFailing). Provider message: deal rejected: false
   t01339: 'error, Canada, Brampton, 32G', // unexpected deal status while waiting for data request: 11 (StorageDealFailing). Provider message: deal rejected: jq: error: syntax error, unexpected '|' (Unix shell quoting issues?) at <top-level>, line 1: .Proposal.Client == "t12thv7e3x3tomo5nuunsvzqnl5txflpztdqcbtai" || .Proposal.Client == "t1capnpwjvm4gfbdlbavblmvjldwqzdo6ukh7mmqq" || .Proposal.Client == "t12heuwfbg654jgdnctywyafxrqbmcidwj6osecha" jq: 1 compile error
+  t0241898: 'error, China, Yibin, 512M', // unexpected deal status while waiting for data request: 11 (StorageDealFailing). Provider message: deal rejected: jq: error: syntax error, unexpected '|' (Unix shell quoting issues?) at <top-level>, line 1: .Proposal.Client == "t12thv7e3x3tomo5nuunsvzqnl5txflpztdqcbtai" || .Proposal.Client == "t1capnpwjvm4gfbdlbavblmvjldwqzdo6ukh7mmq" || .Proposal.Client == "t12heuwfbg654jgdnctywyafxrqbmcidwj6osecha" jq: 1 compile error
 
   // Escrow errors
 
@@ -128,6 +142,7 @@ const annotations = {
   t02984: 'dial, China, Ordos, 512M, fri-sealing',
   t03043: 'dial, China, Hangzhou, 512M',
   t096361: 'dial, China, Beijing, 512M',
+  t0123652: 'dial, UK, Lower Slaughter, 512M',
 
   // XNR
 
@@ -140,6 +155,7 @@ const annotations = {
   t02641: 'xnr, China, Shenzhen, 512M, thu',
   t02933: 'xnr, Germany, 512M',
   t03014: 'xnr, China, Guangzhou, 512M, fri-sealing',
+  t0253095: 'xnr, China, Liaoning, 512M',
 
   // Bootstrappers
   t01000: 'NR - bootstrap',
