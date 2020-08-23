@@ -4,53 +4,53 @@ const annotations = {
 
   // Active/sealing - sun
 
+  t01699: 'active, Poland, Krakow, 512M, @magik6k, 2h, 2h, sun',
+  t01819: 'active, China, Shijiazhuang, 512M, 2h, 2h, 2h, <4h, sun',
+  t01824: 'active, China, Guilin, 512M, 2h, 2h, 2h, sun',
+  t01827: 'active, China, Shenyang, 512M, 2h, 2h, 2h, <4h, sun',
+  t01902: 'active, China, Shanghai, 512M, 2h, 2h, 2h, sun',
   t01909: 'active, China, Shenzhen, 512M, 3h, <4h, sun',
+  t01920: 'active, China, Hong Kong + Jieyang + Shenzhen, 512M, 2h, sun',
+  t01945: 'active, China, Shanghai, 512M, 2h, 2h, 2h, sun', 
+  t01988: 'active, China, Shaanxi, 512M, <4h, sun',
+  t02004: 'active, China, Zhejiang + USA, 512M, 3h, sun',
+  t02014: 'active, Canada, Vancouver, 512M, @jimpick, 2h, 2h, 4h, sun',
   t02098: 'active, China, Guyuan, 512M, 2h, 2h, 3h, <4h, sun',
+  t02197: 'active, China, Taizhou, 512M, 3h, 2h, sun',
+  t02249: 'active, China, Guangdong, 512M, 2h, <4h, sun',
+  t02302: 'active, China, Xiamen, 512M, 2h, 2h, <4h, sun',
+  t02750: 'active, Finland, Helsinki, 512M, 3h, <4h, sun',
+  t02810: 'active, China, Shenzhen, 512M, 3h, sun',
+  t02896: 'active, China, Shenzhen, 512M, 2h, <4h, sun',
+  t02965: 'active, Korea, Guro-gu, 512M, 2h, sun',
+  t02981: 'active, China, Weifang, 512M, 3h, <4h, sun',
+  t03052: 'active, China, Guiyang, 512M, 2h, <4h, sun',
+  t05025: 'active, China, Fujian, 512M, 2h, <4h, sun',
+  t069967: 'active, USA, Somerset, 512M, <4h, sun',
+  t096492: 'active, China, Foshan, 512M, <4h, sun',
 
   // Active - sat
 
-  t01819: 'error, China, Shijiazhuang, 512M, 2h, 2h, 2h, <4h', // dnf
-  t01827: 'error, China, Shenyang, 512M, 2h, 2h, 2h, <4h', // dnf
-  t01988: 'error, China, Shaanxi, 512M, <4h', // dnf
-  t02004: 'error, China, Zhejiang + USA, 512M, 3h', // dnf
-  t02182: 'error, China, Zhongshan, 512M, 2h, 2h, <4h', // dnf
-  t02249: 'error, China, Guangdong, 512M, 2h, <4h', // dnf
-  t02302: 'error, China, Xiamen, 512M, 2h, 2h, <4h', // dnf
-  t02750: 'error, Finland, Helsinki, 512M, 3h, <4h', // dnf
-  t02810: 'error, China, Shenzhen, 512M, 3h', // dnf
-  t02896: 'error, China, Shenzhen, 512M, 2h, <4h', // dnf
-  t02981: 'error, China, Weifang, 512M, 3h, <4h', // dnf
-  t03052: 'error, China, Guiyang, 512M, 2h, <4h', // dnf
-  t05025: 'error, China, Fujian, 512M, 2h, <4h', // dnf
-  t069967: 'error, USA, Somerset, 512M, <4h', // dnf
-  t096492: 'error, China, Foshan, 512M, <4h', // dnf
-
-  // Active/sealing - sat
-  
-  t01699: 'error, Poland, Krakow, 512M, @magik6k, 2h, 2h, sat', // dnf
-  t01824: 'error, China, Guilin, 512M, 2h, 2h, 2h, sat', // dnf
-  t01902: 'error, China, Shanghai, 512M, 2h, 2h, 2h, sat', // dnf
-  t01945: 'error, China, Shanghai, 512M, 2h, 2h, 2h, sat', // dnf
-  t02014: 'error, Canada, Vancouver, 512M, @jimpick, 2h, 2h, 4h, sat', // dnf
-  t02197: 'error, China, Taizhou, 512M, 3h, 2h, sat', // dnf
-  t02965: 'error, Korea, Guro-gu, 512M, 2h, sat', // dnf
+  t02182: 'active-stuck, China, Zhongshan, 512M, 2h, 2h, <4h, sun-xfr',
 
   // Active/stuck
  
   t01708: 'active-stuck, China, Shenzhen, 512M, 2h, 2h, 2h, sun-xfr',
-  t01920: 'error, China, Hong Kong + Jieyang + Shenzhen, 512M, 2h, sat-xfr', // dnf
 
   // Sealing - sun
  
-  t02156: 'error, China, Xiamen, 512M, sun', // dnf
-  t02332: 'error, USA, 512M, sun', // dnf
-  t03045: 'error, China, Shenzhen, 512M, sun', // dnf
-  t096370: 'error, China, Chengdu, 512M, sun', // dnf
+  t01307: 'sealing, China, Fujian, 32G, sun',
+  t02156: 'sealing, China, Xiamen, 512M, sun',
+  t02332: 'sealing, USA, 512M, sun',
+  t02556: 'sealing, China, Xiamen, 512M, sun',
+  t03045: 'sealing, China, Shenzhen, 512M, sun',
+  t096370: 'sealing, China, Chengdu, 512M, sun',
+  t096589: 'sealing, China, Changsha, 512M, sun',
   t096605: 'sealing, China, Shenzhen, 512M, sun',
   t0123650: 'sealing, China, Jieyang, 512M, sun',
-  t0151229: 'error, China, Shandong, 512M, sun', // dnf
-  t0202344: 'error, Netherlands, 512M, sun', // dnf
-  t0202358: 'error, USA, 512M, sun', // dnf
+  t0151229: 'sealing, China, Shandong, 512M, sun',
+  t0202344: 'sealing, Netherlands, 512M, sun',
+  t0202358: 'sealing, USA, 512M, sun',
 
   // Stuck - sun
  
@@ -58,7 +58,6 @@ const annotations = {
 
   // Sealing - sat
 
-  t096589: 'error, China, Changsha, 512M, sat',  // dnf
 
   // Stuck - sat
 
@@ -73,9 +72,7 @@ const annotations = {
   // Error
 
   t01743: 'error, China, Hong Kong, 512M, 3h, sat-xfr', // deal failed: (State=26) handing off deal to node: AddPiece failed: adding piece to sector: writing piece: acquire unsealed sector: local acquire error: finding best storage for allocating : no good path found
-  t02046: 'error, China, Yibin, 512M, sun-funds', // EOF
-  t02556: 'error, China, Xiamen, 512M', // dnf
-  t01307: 'error, China, Fujian, 32G, wed', // dnf
+  t02046: 'error, China, Yibin, 512M, sun', // reset
 
   // Dial backoff
 
