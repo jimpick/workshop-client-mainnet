@@ -11,32 +11,32 @@ export const secure = true
 export const downloadDir = '/home/lotus1/downloads'
 */
 
-const calibrationLocalConfig = {
-  api: 'lotus.jimpick.com/calibration_api',
-  // api: 'calibration.localhost:9000/api',
+const spaceraceLocalConfig = {
+  api: 'lotus.jimpick.com/spacerace_api',
+  // api: 'spacerace.localhost:9000/api',
   secure: true,
   downloadDir: '/home/ubuntu/downloads',
-  geoApi: 'calibration.localhost:9021/api',
+  geoApi: 'spacerace.localhost:9021/api',
   geoSecure: true,
-  networkName: 'calibration',
+  networkName: 'spacerace',
   useGeoIp2: true,
   useBaidu: true
 }
 
-const calibrationPublicConfig = {
-  api: 'lotus.jimpick.com/calibration_api',
+const spaceracePublicConfig = {
+  api: 'lotus.jimpick.com/spacerace_api',
   secure: true,
   downloadDir: '/home/ubuntu/downloads',
   geoApi: 'lotus.jimpick.com/api',
   geoSecure: true,
-  networkName: 'calibration'
+  networkName: 'spacerace'
 }
 
 function getConfig () {
-  if (document.location.hostname === 'calibration.localhost') {
-    return calibrationLocalConfig
+  if (document.location.hostname === 'spacerace.localhost') {
+    return spaceraceLocalConfig
   }
-  return calibrationPublicConfig
+  return spaceracePublicConfig
 }
 
 export const api = getConfig().api

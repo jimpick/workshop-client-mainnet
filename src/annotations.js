@@ -1,9 +1,9 @@
-import calibrationAnnotations from './annotations-calibration'
+import spaceraceAnnotations from './annotations-spacerace'
 import { networkName } from './config'
 
 let annotations = {}
-if (networkName === 'calibration') {
-  annotations = calibrationAnnotations
+if (networkName === 'spacerace') {
+  annotations = spaceraceAnnotations
 }
 
 export default annotations
