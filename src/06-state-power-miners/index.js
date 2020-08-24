@@ -461,7 +461,13 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             SectorSize: sectorSize,
             Multiaddrs: maddrs
           } = minerInfo
-          if (isIPFS.multihash(wirePeerId)) {
+          if (!wirePeerId) {
+            console.warn(
+              `Error PeerId was falsey for ${miner}`,
+              wirePeerId
+            )
+            return
+          } else if (isIPFS.multihash(wirePeerId)) {
             peerId = wirePeerId
           } else {
             // PeerID is bas634 encoded binary (bug in interopnet)
