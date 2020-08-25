@@ -50,10 +50,9 @@ function App () {
       } catch (e) {
         const stateLoaded = Date.now()
         updateAppState(draft => {
-          draft = {}
           draft.stateLoaded = stateLoaded
         })
-        setStateLoaded(true)
+        setStateLoaded(stateLoaded)
       }
     })
   }, [updateAppState, setStateLoaded])
@@ -73,10 +72,12 @@ function App () {
     })
     const jsonStateToSave = JSON.stringify(stateToSave)
     if (jsonStateToSave !== savedState) {
+      /*
       if (!localStorage.getItem('state')) {
         // User deleted state in browser localStorage
         return
       }
+      */
       // localStorage.setItem('state', jsonStateToSave)
       // idbSet('state', '{}') // FIXME: Async
       idbSet('state', jsonStateToSave) // FIXME: Async
