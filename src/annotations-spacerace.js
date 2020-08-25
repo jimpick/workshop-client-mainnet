@@ -28,7 +28,6 @@ const annotations = {
   t02424: 'sealing, Korea, Wanju, mon',
   t02518: 'sealing, China, Shaanxi, mon',
   t02540: 'sealing, USA, Rochester, mon',
-  t02533: 'sealing, Spain, Terrassa, mon',
   t02574: 'sealing, Japan, Minamata, mon',
   t02575: 'sealing, USA, Davis, mon',
   t02608: 'sealing, USA, San Jose, mon',
@@ -48,18 +47,24 @@ const annotations = {
   t03344: 'sealing, China, Guangzhou, mon',
   t03345: 'sealing, China, Fuzhou, mon',
   t03351: 'sealing, China, Chengdu, mon',
-  t03361: 'sealing, China, Guangzhou, mon',
   t03427: 'sealing, Russia, mon',
   t03428: 'sealing, China, Beijing + Jiaxing + Germany, Frankfurt, mon',
   t03512: 'sealing, New Zealand, Auckland, mon',
-  t03766: 'sealing, China, Weifang, mon',
-  t04921: 'sealing, China, Shanghai, mon',
   t06262: 'sealing, China, Guangzhou, mon',
   t06775: 'sealing, China, Shenzhen, mon',
   t07451: 'sealing, China, Hangzhou, mon',
   t07709: 'sealing, Korea, Dongjak-gu, mon',
+  t07710: 'sealing, Hong Kong, mon', 
+  t07717: 'sealing, China, Shenyang, mon',
   t07796: 'sealing, China, Hunan, mon',
   t07806: 'sealing, China, Wuhan, mon',
+  t07848: 'sealing, China, Wuhan, mon',
+  t07857: 'sealing, China, Zhengzhou, mon',
+  t07924: 'sealing, USA, mon',
+  t07947: 'sealing, China, Zhengzhou, mon',
+  t07956: 'sealing, Russia, mon',
+  t07961: 'sealing, China, Changzhou, mon',
+  t07964: 'sealing, USA, Ashburn, mon',
 
 
   // Stuck - mon
@@ -67,13 +72,11 @@ const annotations = {
 
   // New
 
+
   // Asks
 
   // Error
 
-  t02436: 'error, Netherlands', // AddPiece failed
-  t07710: 'error, Hong Kong', // reset
-  t07717: 'error, China, Shenyang', // reset
 
   // Dial backoff
 
@@ -121,17 +124,27 @@ const annotations = {
   t03286: 'rejected, China, Mianyang',
   t03325: 'rejected, Germany, Frankfurt',
   t03347: 'rejected, China, Shenzhen',
+  t03361: 'rejected, China, Guangzhou, mon',
   t03487: 'rejected, China, Yibin',
+  t04921: 'rejected, China, Shanghai, mon',
+  t07833: 'rejected, China, Changzhou',
+  t07851: 'rejected, Netherlands, Purmerend',
+  t07866: 'rejected, China, Foshan',
+  t07919: 'rejected, China, Beijing, Shanghai, Hunan',
 
   // Dial errors
 
   t01229: 'dial, China, Hong Kong',
+  t02533: 'dial, Spain, Terrassa, mon',
   t03269: 'dial, Australia',
   t03302: 'dial, China, Chengdu',
   t03327: 'dial, Kenya, Nairobi',
+  t03766: 'dial, China, Weifang, mon',
   t07819: 'dial, China, Wuxi',
 
   // XNR
+
+  t02436: 'xnr, Netherlands', // AddPiece failed
 
   // Bootstrappers
   t01000: 'NR - bootstrap',
