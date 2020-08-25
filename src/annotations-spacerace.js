@@ -58,14 +58,14 @@ const annotations = {
   t06775: 'sealing, China, Shenzhen, mon',
   t07451: 'sealing, China, Hangzhou, mon',
   t07709: 'sealing, Korea, Dongjak-gu, mon',
+  t07796: 'sealing, China, Hunan, mon',
+  t07806: 'sealing, China, Wuhan, mon',
+
 
   // Stuck - mon
 
 
   // New
-
-  t07796: 'new, China, Hunan',
-  t07806: 'new, China, Wuhan',
 
   // Asks
 
