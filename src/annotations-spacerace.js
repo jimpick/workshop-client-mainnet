@@ -1,30 +1,33 @@
 const annotations = {
 
+  // Active - tue
+  
+  // Active/sealing - tue
+ 
   // Active - mon
   
-
-  // Active/sealing - mon
- 
-
+  t02304: 'active, USA, Mountain View, 6h',
+  t01101: 'active, China, Shanghai, 5h',
+  t01102: 'active, China, Shandong, 5h',
+  t01274: 'active, China, Guangdong, 11h',
+  t02381: 'active, China, Dongguan, 12h',
+  t02419: 'active, China, Shanghai, 10h',
+  t02420: 'active, China, Wuhan, 7h',
+  t03143: 'active, China, Shijiazhuang + Hong Kong, 12h',
+  t03351: 'active, China, Chengdu, 10h',
+  t07961: 'active, China, Changzhou, 9h',
 
   // Sealing - mon
 
-  t01101: 'sealing, China, Shanghai, mon',
-  t01102: 'sealing, China, Shandong, mon',
   t01152: 'sealing, China, Beijing, mon',
   t01156: 'sealing, China, Hangzhou, mon',
   t01232: 'sealing, China, Hangzhou, mon',
-  t01274: 'sealing, China, Guangdong, mon',
   t01288: 'sealing, China, Yibin, mon',
   t01799: 'sealing, China, Jinan, mon',
   t02301: 'sealing, USA, mon',
-  t02304: 'sealing, USA, Mountain View, mon',
-  t02381: 'sealing, China, Dongguan, mon',
   t02382: 'sealing, China, Zhongshan, mon',
   t02385: 'sealing, USA, East Islip, mon',
   t02404: 'sealing, Korea, Seoul, mon',
-  t02419: 'sealing, China, Shanghai, mon',
-  t02420: 'sealing, China, Wuhan, mon',
   t02424: 'sealing, Korea, Wanju, mon',
   t02540: 'sealing, USA, Rochester, mon',
   t02575: 'sealing, USA, Davis, mon',
@@ -33,7 +36,6 @@ const annotations = {
   t02658: 'sealing, China, Ningbo, mon',
   t02665: 'sealing, Netherlands, Amsterdam, mon',
   t03140: 'sealing, China, QingDao, mon',
-  t03143: 'sealing, China, Shijiazhuang + Hong Kong, mon',
   t03194: 'sealing, China, Shenzhen, mon',
   t03264: 'sealing, Korea, Bucheon-si, mon',
   t03314: 'sealing, China, Zhangjiakou, mon',
@@ -41,7 +43,6 @@ const annotations = {
   t03340: "sealing, China, Xi, mon",
   t03344: 'sealing, China, Guangzhou, mon',
   t03345: 'sealing, China, Fuzhou, mon',
-  t03351: 'sealing, China, Chengdu, mon',
   t03427: 'sealing, Russia, mon',
   t03512: 'sealing, New Zealand, Auckland, mon',
   t06262: 'sealing, China, Guangzhou, mon',
@@ -56,7 +57,6 @@ const annotations = {
   t07924: 'sealing, USA, mon',
   t07947: 'sealing, China, Zhengzhou, mon',
   t07956: 'sealing, Russia, mon',
-  t07961: 'sealing, China, Changzhou, mon',
   t07964: 'sealing, USA, Ashburn, mon',
 
 
@@ -70,7 +70,7 @@ const annotations = {
 
   // Error
 
-  t01272: 'error, Singapore, mon', // reset
+  t01272: 'error, Singapore, 12h', // reset
   t03225: 'error, China, Guyuan, mon', // protocol not supported
 
   // Dial backoff
