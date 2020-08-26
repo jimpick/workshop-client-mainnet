@@ -1,11 +1,26 @@
 const annotations = {
 
   // Active - tue
+
+  t01101: 'active, China, Shanghai, 5h, 5h',
+  t01102: 'active, China, Shandong, 5h, 7h',
+  t01800: 'active, China, Shenzhen + Chengdu, 8h',
+  t02385: 'active, USA, East Islip, 20h',
+  t02404: 'active, Korea, Seoul, 10h',
+  t02540: 'active, USA, Rochester, 12h',
+  t02613: 'active, China, Chongqing, 10h',
+  t02620: 'active, Poland, Krakow, @magik6k, 20h',
+  t03002: 'active, China, Chongqing, 11h',
+  t03344: 'active, China, Guangzhou, 13h',
+  t03484: 'active, Netherlands, 14h',
+  t03485: 'active, Netherlands, 13h, 14h',
+  t03638: 'active, USA, 13h',
+  t07709: 'active, Korea, Dongjak-gu, 13h',
+  t07775: 'active, China, Shenzhen, 16h',
+  t07829: 'active, Japan, 21h',
   
   // Active/sealing - tue
 
-  t01101: 'active, China, Shanghai, 5h, tue',
-  t01102: 'active, China, Shandong, 5h, tue',
   t02304: 'active, USA, Mountain View, 6h, tue',
  
   // Active - mon
@@ -17,22 +32,14 @@ const annotations = {
   // Sealing - tue
 
   t01289: 'sealing, China, Hangzhou + USA, tue',
-  t01800: 'sealing, China, Shenzhen + Chengdu, tue',
   t02505: 'sealing, China, Wuhan, tue',
-  t02613: 'sealing, China, Chongqing, tue',
   t02774: 'sealing, Australia, Sydney, tue',
-  t03002: 'sealing, China, Chongqing, tue',
   t03120: 'sealing, China, Guangzhou, tue',
   t03225: 'sealing, China, Guyuan, tue',
   t03326: 'sealing, USA, Seattle, tue',
   t03345: 'sealing, China, Fuzhou, tue',
-  t03484: 'sealing, Netherlands, tue',
-  t03485: 'sealing, Netherlands, tue',
   t03523: 'sealing, China, Wuxi, tue',
-  t03638: 'sealing, USA, tue',
   t07717: 'sealing, China, Shenyang, tue',
-  t07775: 'sealing, China, Shenzhen, tue',
-  t07829: 'sealing, Japan, tue',
   t07998: 'sealing, China, Hangzhou, tue',
   t08076: 'sealing, Netherlands, Alphen aan den Rijn, tue',
 
@@ -57,12 +64,8 @@ const annotations = {
   t01156: 'sealing, China, Hangzhou, mon, tue-xfr',
   t01232: 'sealing, China, Hangzhou, mon, tue-xfr',
   t01799: 'sealing, China, Jinan, mon, tue-xfr',
-  t02385: 'sealing, USA, East Islip, mon, tue',
-  t02404: 'sealing, Korea, Seoul, mon, tue',
   t02424: 'sealing, Korea, Wanju, mon, tue',
-  t02540: 'sealing, USA, Rochester, mon, tue',
   t02575: 'sealing, USA, Davis, mon, tue',
-  t02620: 'sealing, Poland, Krakow, @magik6k, mon, tue',
   t02658: 'sealing, China, Ningbo, mon, tue-xfr',
   t02665: 'sealing, Netherlands, Amsterdam, mon, tue-xfr',
   t03140: 'sealing, China, QingDao, mon, tue',
@@ -70,10 +73,8 @@ const annotations = {
   t03264: 'sealing, Korea, Bucheon-si, mon, tue',
   t03314: 'sealing, China, Zhangjiakou, mon, tue-xfr',
   t03340: "sealing, China, Xi, mon, tue-xfr",
-  t03344: 'sealing, China, Guangzhou, mon, tue',
   t03512: 'sealing, New Zealand, Auckland, mon, tue',
   t06262: 'sealing, China, Guangzhou, mon, tue-xfr',
-  t07709: 'sealing, Korea, Dongjak-gu, mon, tue',
   t07710: 'sealing, Hong Kong, mon, tue', 
   t07806: 'sealing, China, Wuhan, mon, tue-xfr',
   t07848: 'sealing, China, Wuhan, mon, tue',
