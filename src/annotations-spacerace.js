@@ -41,6 +41,19 @@ const annotations = {
   t07775: 'active, China, Shenzhen, 16h, wed',
   t07829: 'active, Japan, 21h, wed',
 
+  // Sealing - thu
+
+  t09559: 'sealing, Canada, Waterloo, thu',
+  t09573: 'sealing, China, Xiamen, thu',
+  t09589: 'sealing, China, Changsha, thu',
+  t09610: 'sealing, China, Beijing, thu',
+  t09643: 'sealing, China, Beijing, thu',
+  t09707: 'sealing, China, Guangdong, thu',
+
+  // Stuck - thu
+
+  t09710: 'stuck, China, Jieyang, thu-xfr',
+
   // Sealing - wed
 
   t01152: 'sealing, China, Beijing, wed',
@@ -119,6 +132,42 @@ const annotations = {
  
 
   // New
+
+  t03764: 'new, China, Beijing',
+  t08109: 'new, USA',
+  t08149: 'new, China, Jiangmen',
+  t08497: 'new, Brazil, Sao Paulo',
+  t08953: 'new, China, Fuzhou',
+  t08985: 'new, USA',
+  t09036: 'new, China, Chengdu',
+  t09056: 'new, China, Shenzhen',
+  t09087: 'new, USA',
+  t09091: 'new, Netherlands',
+  t09523: 'new, China, Beijing',
+  t09689: 'new, USA, Portland',
+  t09712: 'new, China, Chengdu',
+  t09719: 'new, Korea, Geumcheon-gu',
+  t09723: 'new, China, Xiamen',
+  t09731: 'new, China, Guiyang',
+  t09733: 'new, China, Chongqing',
+  t09734: 'new, China, Dongguan',
+  t09736: 'new, China, Guangdong',
+  t09737: 'new, USA, Sudbury',
+  t09753: 'new, Korea, Pyeongtaek-si',
+  t09762: 'new, China, Guangdong',
+  t09763: 'new, China, Mianyang',
+  t09789: 'new, USA',
+  t09792: 'new, USA, Council Bluffs',
+  t09797: 'new, China, Fuzhou',
+  t09801: 'new, China, Fuzhou',
+  t09805: 'new, China, Fuzhou',
+  t09808: 'new, China, Fuzhou',
+  t09809: 'new, China, Fuzhou',
+  t09810: 'new, China, Fuzhou',
+  t09811: 'new, China, Dongguan',
+  t09813: 'new, China, Fuzhou',
+  t09814: 'new, China, Fuzhou',
+  t09817: 'new, China, Fuzhou',
 
 
   // Asks
@@ -317,6 +366,20 @@ const annotations = {
   t09029: 'rejected, China, Wuhan',
   t09037: 'rejected, Singapore',
   t09048: 'rejected, China, Fuzhou',
+  t09560: 'rejected, Ukraine, Odessa',
+  t09565: 'rejected, Ukraine, Odessa',
+  t09592: 'rejected, Japan, Minamata',
+  t09605: 'rejected, Ukraine, Odessa',
+  t09619: 'rejected, China, Shanghai',
+  t09620: 'rejected, China, Weifang',
+  t09642: 'rejected, Sweden, Alvsjo',
+  t09653: 'rejected, China, Chengdu',
+  t09662: 'rejected, Canada, Surrey',
+  t09671: 'rejected, China, Chongqing',
+  t09672: 'rejected, China, Chengdu',
+  t09675: 'rejected, China, Weifang',
+  t09680: 'rejected, Japan, Ebisunishi',
+
 
   // Dial errors
 
@@ -369,6 +432,7 @@ const annotations = {
   t08396: 'dial, France, Fontenay-sous-Bois',
   t08793: 'dial, China, Fuzhou',
   t08928: 'dial, USA, Arlington',
+  t09631: 'dial, China, Changzhou',
 
 
   // XNR
@@ -409,15 +473,28 @@ const annotations = {
   t08238: 'NR',
   t08290: 'NR',
   t08293: 'NR',
+  t08327: 'NR',
   t08385: 'NR',
   t08393: 'NR',
+  t08425: 'NR',
+  t08429: 'NR',
   t08460: 'NR',
+  t08474: 'NR',
   t08503: 'NR',
   t08791: 'NR',
   t08893: 'NR',
+  t08902: 'NR',
   t08964: 'NR',
   t08986: 'NR',
   t08994: 'NR',
+  t09006: 'NR',
+  t09035: 'NR',
+  t09076: 'NR',
+  t09529: 'NR',
+  t09561: 'NR',
+  t09594: 'NR',
+  t09639: 'NR',
+  t09656: 'NR',
   
   // Bootstrappers
   t01000: 'NR - bootstrap',
