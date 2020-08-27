@@ -194,7 +194,7 @@ const annotations = {
   t01241: 'rejected, USA, Portland',
   t01243: 'rejected, Ukraine, Odessa',
   t01247: 'rejected, Canada, Montreal, mon',
-  t01248: 'rejected, Germany, Frankfurst + China, Guangdong',
+  t01248: 'rejected, Germany, Frankfurt + China, Guangdong',
   t01272: 'rejected, Singapore, 12h',
   t01275: 'rejected, Korea, Seongnam-si',
   t01276: 'rejected, Canada, Brampton',
@@ -379,7 +379,7 @@ const annotations = {
   // Dial errors
 
   t01229: 'dial, China, Hong Kong',
-  t01475: 'dial, China, Wuhan',
+  t01475: 'dial, China, Wuhan + Germany',
   t02386: 'dial, Latvia, Riga',
   t02400: 'dial, China, Beijing',
   t02414: "dial, China, Xi'an",
