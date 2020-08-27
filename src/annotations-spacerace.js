@@ -43,16 +43,26 @@ const annotations = {
 
   // Sealing - thu
 
+  t09036: 'sealing, China, Chengdu, thu',
   t09559: 'sealing, Canada, Waterloo, thu',
   t09573: 'sealing, China, Xiamen, thu',
   t09589: 'sealing, China, Changsha, thu',
   t09610: 'sealing, China, Beijing, thu',
   t09643: 'sealing, China, Beijing, thu',
   t09707: 'sealing, China, Guangdong, thu',
+  t09712: 'sealing, China, Chengdu, thu',
+  t09731: 'sealing, China, Guiyang, thu',
+  t09733: 'sealing, China, Chongqing, thu',
+  t09736: 'sealing, China, Guangdong, thu',
+  t09762: 'sealing, China, Guangdong, thu',
+  t09763: 'sealing, China, Mianyang, thu',
+  t09789: 'sealing, USA, thu',
+  t09792: 'sealing, USA, Council Bluffs, thu',
 
   // Stuck - thu
 
   t09710: 'stuck, China, Jieyang, thu-xfr',
+  t09753: 'stuck, Korea, Pyeongtaek-si, thu-cfa',
 
   // Sealing - wed
 
@@ -133,44 +143,9 @@ const annotations = {
 
   // New
 
-  t03764: 'new, China, Beijing',
-  t08109: 'new, USA',
-  t08149: 'new, China, Jiangmen',
-  t08497: 'new, Brazil, Sao Paulo',
-  t08953: 'new, China, Fuzhou',
-  t08985: 'new, USA',
-  t09036: 'new, China, Chengdu',
-  t09056: 'new, China, Shenzhen',
-  t09087: 'new, USA',
-  t09091: 'new, Netherlands',
-  t09523: 'new, China, Beijing',
-  t09689: 'new, USA, Portland',
-  t09712: 'new, China, Chengdu',
-  t09719: 'new, Korea, Geumcheon-gu',
-  t09723: 'new, China, Xiamen',
-  t09731: 'new, China, Guiyang',
-  t09733: 'new, China, Chongqing',
-  t09734: 'new, China, Dongguan',
-  t09736: 'new, China, Guangdong',
-  t09737: 'new, USA, Sudbury',
-  t09753: 'new, Korea, Pyeongtaek-si',
-  t09762: 'new, China, Guangdong',
-  t09763: 'new, China, Mianyang',
-  t09789: 'new, USA',
-  t09792: 'new, USA, Council Bluffs',
-  t09797: 'new, China, Fuzhou',
-  t09801: 'new, China, Fuzhou',
-  t09805: 'new, China, Fuzhou',
-  t09808: 'new, China, Fuzhou',
-  t09809: 'new, China, Fuzhou',
-  t09810: 'new, China, Fuzhou',
-  t09811: 'new, China, Dongguan',
-  t09813: 'new, China, Fuzhou',
-  t09814: 'new, China, Fuzhou',
-  t09817: 'new, China, Fuzhou',
-
-
   // Asks
+
+  t09056: 'min-ask, China, Shenzhen',
 
   // Error
 
@@ -187,11 +162,16 @@ const annotations = {
   t06775: 'error, China, Shenzhen, wed', // reset
   t07924: 'error, USA, wed-funds', // reset
   t08076: 'error, Netherlands, Alphen aan den Rijn, tue', // deal failed: (State=26) handing off deal to node: AddPiece failed: getting available sector: too many sectors sealing
+  t08109: 'error, USA', // reset
   t08205: 'error, Brazil, Sao Paulo', // market balance
   t08406: 'error, China, Shenzhen', // reset
   t08572: 'error, Brazil, Sao Paulo', // market balance
   t09077: 'error, China, Xiamen', // reset
   t09261: 'error, Brazil, Sao Paulo', // market balance
+  t09734: 'error, China, Dongguan', // reset
+  t09811: 'error, China, Dongguan', // deal failed: (State=26) deal data verification failed: error generating CommP: failed to build tree Caused by: 0: failed to create data store 1: No such file or directory (os error 2)
+  t09814: 'error, China, Fuzhou', // reset
+
 
 
   // Dial backoff
@@ -361,11 +341,14 @@ const annotations = {
   t08895: 'rejected, Japan, Ebisunishi',
   t08949: 'rejected, Norway, Oslo',
   t08958: 'rejected, China, Fuzhou',
+  t08985: 'rejected, USA',
   t08995: 'rejected, China, Fuzhou',
   t09005: 'rejected, China, Fuzhou',
   t09029: 'rejected, China, Wuhan',
   t09037: 'rejected, Singapore',
   t09048: 'rejected, China, Fuzhou',
+  t09087: 'rejected, USA',
+  t09523: 'rejected, China, Beijing',
   t09560: 'rejected, Ukraine, Odessa',
   t09565: 'rejected, Ukraine, Odessa',
   t09592: 'rejected, Japan, Minamata',
@@ -379,6 +362,18 @@ const annotations = {
   t09672: 'rejected, China, Chengdu',
   t09675: 'rejected, China, Weifang',
   t09680: 'rejected, Japan, Ebisunishi',
+  t09689: 'rejected, USA, Portland',
+  t09723: 'rejected, China, Xiamen',
+  t09737: 'rejected, USA, Sudbury',
+  t09797: 'rejected, China, Fuzhou',
+  t09801: 'rejected, China, Fuzhou',
+  t09805: 'rejected, China, Fuzhou',
+  t09808: 'rejected, China, Fuzhou',
+  t09809: 'rejected, China, Fuzhou',
+  t09810: 'rejected, China, Fuzhou',
+  t09813: 'rejected, China, Fuzhou',
+  t09817: 'rejected, China, Fuzhou',
+
 
 
   // Dial errors
@@ -412,6 +407,7 @@ const annotations = {
   t03351: 'dial, China, Chengdu, 10h',
   t03359: 'dial, China, Shanghai',
   t03367: 'dial, Singapore',
+  t03764: 'dial, China, Beijing',
   t03766: 'dial, China, Weifang, mon',
   t05317: 'dial, USA, Portland',
   t07451: 'dial, China, Hangzhou, mon',
@@ -424,14 +420,18 @@ const annotations = {
   t08032: 'dial, China, Weifang',
   t08047: 'dial, China, Hangzhou',
   t08101: 'dial, China, Wuxi',
+  t08149: 'dial, China, Jiangmen',
   t08150: 'dial, China, Hangzhou',
   t08203: 'dial, Germany, Frankfurt',
   t08330: 'dial, China, Chengdu',
   t08344: 'dial, UK, Hartlepool',
   t08358: 'dial, China, Shenzhen',
   t08396: 'dial, France, Fontenay-sous-Bois',
+  t08497: 'dial, Brazil, Sao Paulo',
   t08793: 'dial, China, Fuzhou',
   t08928: 'dial, USA, Arlington',
+  t08953: 'dial, China, Fuzhou',
+  t09091: 'dial, Netherlands',
   t09631: 'dial, China, Changzhou',
 
 
@@ -445,6 +445,7 @@ const annotations = {
   t07717: 'xnr, China, Shenyang, tue',
   t07796: 'xnr, China, Hunan, mon',
   t08097: 'xnr, Korea, Pyeongtaek-si, mon',
+  t09719: 'xnr, Korea, Geumcheon-gu',
 
   // NR
   t01013: 'NR',
