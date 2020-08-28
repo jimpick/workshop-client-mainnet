@@ -24,8 +24,6 @@ const annotations = {
   t08284: 'active, China, Liaoning, <19h',
   t08301: 'active, Japan, Setagaya-ku, MEIK, <19h',
   t08311: 'active, China, Shenzhen, <19h',
-  t08388: 'active, China, Taizhou, <19h',
-  t08390: 'active, China, Shenzhen, <19h',
   t08904: 'active, China, Deyang, <19h',
   t08911: 'active, Korea, Wanju, <19h',
 
@@ -47,7 +45,6 @@ const annotations = {
   t09559: 'sealing, Canada, Waterloo, thu',
   t09573: 'sealing, China, Xiamen, thu',
   t09589: 'sealing, China, Changsha, thu',
-  t09610: 'sealing, China, Beijing, thu',
   t09643: 'sealing, China, Beijing, thu',
   t09707: 'sealing, China, Guangdong, thu',
   t09712: 'sealing, China, Chengdu, thu',
@@ -56,7 +53,6 @@ const annotations = {
   t09736: 'sealing, China, Guangdong, thu',
   t09762: 'sealing, China, Guangdong, thu',
   t09763: 'sealing, China, Mianyang, thu',
-  t09789: 'sealing, USA, thu',
   t09792: 'sealing, USA, Council Bluffs, thu',
 
   // Stuck - thu
@@ -67,7 +63,6 @@ const annotations = {
   // Sealing - wed
 
   t01152: 'sealing, China, Beijing, wed',
-  t01232: 'sealing, China, Hangzhou, wed',
   t02307: 'sealing, China, Taiyuan, filecoin.monster, wed',
   t02418: 'sealing, China, Fujian + Netherlands, wed',
   t02506: 'sealing, USA, Clarksville, wed',
@@ -98,12 +93,10 @@ const annotations = {
   t07945: 'sealing, China, Dongguan, wed',
   t07964: 'sealing, USA, Ashburn, wed',
   t07987: 'sealing, China, Beijing, wed',
-  t07998: 'sealing, China, Hangzhou, wed',
   t08006: 'sealing, China, Shaanxi, wed',
   t08063: 'sealing, China, Huizhou, wed',
   t08073: 'sealing, China, Qiqihar, QY7TT, wed',
   t08094: 'sealing, China, Guangzhou, dongshao, wed',
-  t08161: 'sealing, China, Weifang, wed',
   t08178: 'sealing, China, Jiaxing, CAAP-金华, wed',
   t08225: 'sealing, Australia, Sydney, wed',
   t08229: 'sealing, China, Nanchang, wed',
@@ -114,10 +107,7 @@ const annotations = {
   t08361: 'sealing, Malaysia, Kulai, wed',
   t08399: 'sealing, USA, Sammamish, wed',
   t08402: 'sealing, China, Sichuan, wed',
-  t08405: 'sealing, China, Guangdong, wed',
-  t08424: 'sealing, China, Chengdu, wed',
   t08432: 'sealing, China, Taizhou, wed',
-  t08440: 'sealing, France, Fontenay-sous-Bois, wed',
   t08448: 'sealing, China, Guangdong, wed',
   t08482: 'sealing, USA, Athol, @why, Why, wed',
   t08574: 'sealing, USA, wed',
@@ -143,7 +133,6 @@ const annotations = {
 
   // New
 
-  t09721: 'new, ???, CD-oursoft-1',
 
   // Asks
 
@@ -179,6 +168,10 @@ const annotations = {
   // Dial backoff
 
   t03149: 'backoff, USA, Newton, mon',
+  t08161: 'backoff, China, Weifang, wed', // backoff?
+  t08390: 'backoff, China, Shenzhen, <19h',
+  t08440: 'backoff, France, Fontenay-sous-Bois, wed',
+  t09789: 'backoff, USA, thu',
 
   // Rejected
 
@@ -189,7 +182,7 @@ const annotations = {
   t01155: 'rejected, China, Shanghai, DianCun Tech',
   t01231: 'rejected, Singapore',
   t01234: 'rejected, Belgium, De Klinge, Eliovp',
-  t01235: 'rejected, Singapore',
+  t01235: 'rejected, Singapore, IPFSMain',
   t01236: 'rejected, Singapore',
   t01238: 'rejected, Vietnam, Hanoi, FILECOIN-VIETNAM',
   t01240: 'rejected, Netherlands, HidNand',
@@ -304,6 +297,7 @@ const annotations = {
   t07961: 'rejected, China, Changzhou, 9h',
   t07969: 'rejected, China, Hangzhou, FME',
   t07990: 'rejected, China, Hong Kong',
+  t07998: 'rejected, China, Hangzhou, wed', // dial?
   t08022: 'rejected, China, Yibin',
   t08025: 'rejected, China, Hong Kong',
   t08040: 'rejected, Australia, Sydney',
@@ -429,6 +423,7 @@ const annotations = {
   t08344: 'dial, UK, Hartlepool',
   t08358: 'dial, China, Shenzhen',
   t08396: 'dial, France, Fontenay-sous-Bois',
+  t08405: 'dial, China, Guangdong, wed',
   t08497: 'dial, Brazil, Sao Paulo',
   t08793: 'dial, China, Fuzhou',
   t08928: 'dial, USA, Arlington, theartist',
@@ -440,6 +435,7 @@ const annotations = {
   // XNR
 
   t01101: 'xnr, China, Shanghai, 5h, 5h',
+  t01232: 'xnr, China, Hangzhou, wed',
   t02424: 'xnr, Korea, Wanju, mon, tue',
   t02436: 'xnr, Netherlands',
   t02518: 'xnr, China, Shaanxi, mon',
@@ -447,7 +443,11 @@ const annotations = {
   t07717: 'xnr, China, Shenyang, tue',
   t07796: 'xnr, China, Hunan, mon',
   t08097: 'xnr, Korea, Pyeongtaek-si, mon',
+  t08388: 'xnr, China, Taizhou, <19h',
+  t08424: 'xnr, China, Chengdu, wed',
+  t09610: 'xnr, China, Beijing, thu',
   t09719: 'xnr, Korea, Geumcheon-gu',
+  t09721: 'xnr, ???, CD-oursoft-1',
 
   // NR
   t01013: 'NR',
