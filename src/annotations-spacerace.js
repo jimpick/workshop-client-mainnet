@@ -77,7 +77,7 @@ const annotations = {
   t03264: 'sealing, Korea, Bucheon-si, wed',
   t03307: 'sealing, Australia, wed',
   t03328: 'sealing, China, Xinxiang, wed',
-  t03337: 'sealing, China, Sichuan, 朝日&网科巨力, wed',
+  t03337: 'retest, China, Sichuan, 朝日&网科巨力, wed', // rejected
   t03339: 'sealing, China, Luzhou, benxun, wed',
   t03512: 'sealing, New Zealand, Auckland, NZFILECOIN01, wed',
   t03519: 'sealing, USA, wed',
