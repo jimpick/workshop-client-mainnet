@@ -15,7 +15,7 @@ const annotations = {
   t03306: 'active, Australia, <19h',
   t03340: "active, China, Xi'an, <19h",
   t03345: 'active, China, Fuzhou, chh, <19h',
-  t03346: 'active, China, Huzhou, wckj, <19h',
+  t03346: 'reset, China, Huzhou, wckj, <19h', // error reset?
   t07710: 'reset, Hong Kong, <19h',  // backoff?
   t07772: 'active, China, Dongguan, <19h',
   t07826: 'active, China, Shenzhen, 星际医生, <19h',
@@ -35,9 +35,9 @@ const annotations = {
   t02540: 'active, USA, Rochester, 12h, wed',
   t02620: 'active, Poland, Krakow, @magik6k, 20h, wed',
   t03484: 'active, Netherlands, 14h, wed',
-  t07709: 'active, Korea, Dongjak-gu, 13h, WIGO M.C., wed',
+  t07709: 'retest, Korea, Dongjak-gu, 13h, WIGO M.C., wed', // rejected?
   t07775: 'active, China, Shenzhen, 16h, wed',
-  t07829: 'active, Japan, 21h, wed',
+  t07829: 'retest, Japan, 21h, wed', // rejected?
 
   // Sealing - thu
 
@@ -94,7 +94,7 @@ const annotations = {
   t07964: 'sealing, USA, Ashburn, wed',
   t07987: 'sealing, China, Beijing, wed',
   t08006: 'sealing, China, Shaanxi, wed',
-  t08063: 'sealing, China, Huizhou, wed',
+  t08063: 'retest, China, Huizhou, wed', // dial?
   t08073: 'sealing, China, Qiqihar, QY7TT, wed',
   t08094: 'sealing, China, Guangzhou, dongshao, wed',
   t08178: 'retest, China, Jiaxing, CAAP-金华, wed', // error reset?
