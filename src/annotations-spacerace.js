@@ -2,8 +2,8 @@ const annotations = {
 
   // Active - wed
  
-  t01289: 'active, China, Hangzhou + USA, <19h',
-  t01799: 'active, China, Jinan, TokenHome, <19h',
+  t01289: 'retest, China, Hangzhou + USA, <19h', // rejected?
+  t01799: 'retest, China, Jinan, TokenHome, <19h', // rejected?
   t02301: 'active, USA, <19h',
   t02421: 'active, China, Deyang + Singapore, <19h, 腾盛科技',
   t02613: 'active, China, Chongqing, 10h, <19h',
