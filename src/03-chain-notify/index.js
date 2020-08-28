@@ -61,11 +61,11 @@ export default function ChainNotify ({ appState }) {
       {networkName === 'testnet' && <div style={{marginBottom: '1rem', fontSize: 'small'}}>
         See also: <a href="https://filscan.io/#/">filscan.io</a> <a href="https://filscout.io/en/">filscout.io</a> <a href="https://filfox.io/">filfox.io</a> <a href="https://filplorer.com/">filplorer.com</a> <a href="https://stats.testnet.filecoin.io/d/z6FtI92Zz/chain/?orgId=1&refresh=45s&from=now-30m&to=now&kiosk">stats dashboard</a>
       </div>}
-      {networkName === 'calibration' && <div style={{marginBottom: '1rem', fontSize: 'small'}}>
-        See also: <a href="https://stats.calibration.fildev.network/">stats dashboard</a> {' '}
-        <a href="https://faucet.calibration.fildev.network/">faucet</a> {' '}
-        <a href="https://calibration.spacerace.filecoin.io/">space race</a> {' '}
-        <a href="https://calibration.filfox.io/en">filfox</a> {' '}
+      {networkName === 'spacerace' && <div style={{marginBottom: '1rem', fontSize: 'small'}}>
+        See also: <a href="https://stats.testnet.filecoin.io/">stats dashboard</a> {' '}
+        <a href="https://spacerace.faucet.glif.io/">faucet</a> {' '}
+        <a href="https://spacerace.filecoin.io/">space race</a> {' '}
+        <a href="https://filfox.info/en">filfox</a> {' '}
         <a href="https://filscan.io/#/">filscan</a> {' '}
       </div>}
       {content}
