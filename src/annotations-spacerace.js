@@ -2,8 +2,6 @@ const annotations = {
 
   // Active - wed
  
-  t01289: 'rejected, China, Hangzhou + USA, <19h',
-  t01799: 'error, China, Jinan, TokenHome, <19h', // reset
   t02301: 'active, USA, <19h',
   t02421: 'active, China, Deyang + Singapore, <19h, 腾盛科技',
   t02613: 'active, China, Chongqing, 10h, <19h',
@@ -24,26 +22,22 @@ const annotations = {
   t08284: 'active, China, Liaoning, <19h',
   t08301: 'active, Japan, Setagaya-ku, MEIK, <19h',
   t08311: 'active, China, Shenzhen, <19h',
-  t08904: 'dial, China, Deyang, <19h',
   t08911: 'active, Korea, Wanju, <19h',
 
   // Active/sealing - wed
  
-  t02385: 'xnr, USA, East Islip, 20h, wed',
   t02404: 'active, Korea, Seoul, 10h, TVCC& BLOCK DATA BANK, wed',
   t02419: 'active, China, Shanghai, 10h, yuantai, wed',
   t02540: 'active, USA, Rochester, 12h, wed',
   t02620: 'active, Poland, Krakow, @magik6k, 20h, wed',
   t03484: 'active, Netherlands, 14h, wed',
-  t07709: 'rejected, Korea, Dongjak-gu, 13h, WIGO M.C., wed',
   t07775: 'active, China, Shenzhen, 16h, wed',
-  t07829: 'rejected, Japan, 21h, wed',
 
   // Sealing - fri
 
   t03360: 'sealing, China, Shaanxi, fri',
   t08178: 'sealing, China, Jiaxing, CAAP-金华, fri',
-  t08295: 'sealing, China, Suzhou, IPFS Cloud, fri',
+  t08295: 'retest, China, Suzhou, IPFS Cloud, fri', // dial
   t08854: 'sealing, China, Dongguan, fri',
   t09573: 'sealing, China, Xiamen, fri',
   t09597: 'sealing, China, Shanghai, fri',
@@ -84,57 +78,39 @@ const annotations = {
 
   t01152: 'sealing, China, Beijing, wed',
   t02307: 'sealing, China, Taiyuan, filecoin.monster, wed',
-  t02418: 'dial, China, Fujian + Netherlands, wed',
   t02506: 'sealing, USA, Clarksville, wed',
-  t02575: 'xnr, USA, Davis, wed',
   t02658: 'sealing, China, Ningbo, bluematrix, wed',
   t02665: 'sealing, Netherlands, Amsterdam, fm-ops, wed',
-  t03120: 'dial, China, Guangzhou, wed',
   t03136: "sealing, China, Xi'an, Zhejiang Yun Chu Technology Co., Ltd, wed",
-  t03140: 'dial, China, QingDao, wed',
-  t03222: 'rejected, China, Yuncheong, 星云矿池, wed',
   t03264: 'sealing, Korea, Bucheon-si, wed',
   t03307: 'sealing, Australia, wed',
   t03328: 'sealing, China, Xinxiang, wed',
-  t03337: 'rejected, China, Sichuan, 朝日&网科巨力, wed',
   t03339: 'sealing, China, Luzhou, benxun, wed',
   t03512: 'sealing, New Zealand, Auckland, NZFILECOIN01, wed',
   t03519: 'sealing, USA, wed',
   t03523: 'sealing, China, Wuxi, YC--wuxi, wed',
   t03544: 'sealing, China, Guiyang, wed',
   t03620: 'sealing, Germany, Frankfurt, wed',
-  t06262: 'xnr, China, Guangzhou, wed',
   t07806: 'sealing, China, Wuhan, HelloXP, wed',
   t07827: 'sealing, China, Wuhan, 天际合, wed',
-  t07848: 'backoff, China, Wuhan, wed',
   t07944: 'sealing, China, Hangzhou, SupremeTreasure, wed',
   t07945: 'sealing, China, Dongguan, wed',
   t07964: 'sealing, USA, Ashburn, wed',
   t07987: 'sealing, China, Beijing, wed',
   t08006: 'sealing, China, Shaanxi, wed',
-  t08063: 'dial, China, Huizhou, wed',
   t08073: 'sealing, China, Qiqihar, QY7TT, wed',
   t08094: 'sealing, China, Guangzhou, dongshao, wed',
   t08225: 'sealing, Australia, Sydney, wed',
-  t08229: 'rejected, China, Nanchang, wed',
   t08246: 'sealing, USA, wed',
-  t08315: 'xnr, China, Chongqing, wed',
-  t08346: 'error, Korea, wed', // reset
   t08361: 'sealing, Malaysia, Kulai, wed',
   t08399: 'sealing, USA, Sammamish, wed',
   t08402: 'sealing, China, Sichuan, wed',
   t08432: 'sealing, China, Taizhou, wed',
   t08448: 'sealing, China, Guangdong, wed',
   t08482: 'sealing, USA, Athol, @why, Why, wed',
-  t08574: 'xnr, USA, wed',
   t08937: 'sealing, China, Wuxi, YC--wuxi, wed',
-  t08980: 'xnr, USA, San Jose, wed',
   t08988: 'retest, Korea, Hwaseong-si, wed', // dial
-  t08991: 'dial, China, Ili, wed',
-  t09007: 'xnr, Korea, Hwaseong-si, wed',
   t09053: 'sealing, China, Shenzhen, wed',
-  t09055: 'xnr, China, Jieyang, wed',
-  t09088: 'dial, China, Changsha, wed',
 
   // Stuck - wed
 
@@ -157,6 +133,7 @@ const annotations = {
   // Error
 
   t01102: 'error, China, Shandong, 5h, 7h', // reset
+  t01799: 'error, China, Jinan, TokenHome, <19h', // reset
   t02304: 'error, USA, Mountain View, 6h, tue', // EOF
   t03002: 'error, China, Chongqing, 11h, wed-cfa', // PublishStorageDeals errored: handler: websocket connection closed
   t03326: 'error, USA, Seattle, tue', // market balance
@@ -171,6 +148,7 @@ const annotations = {
   t08076: 'error, Netherlands, Alphen aan den Rijn, Ang, tue', // deal failed: (State=26) handing off deal to node: AddPiece failed: getting available sector: too many sectors sealing
   t08109: 'error, USA, qianyuanyunshuo', // reset
   t08205: 'error, Brazil, Sao Paulo', // market balance
+  t08346: 'error, Korea, wed', // reset
   t08406: 'error, China, Shenzhen', // reset
   t08572: 'error, Brazil, Sao Paulo', // market balance
   t09077: 'error, China, Xiamen', // reset
@@ -184,6 +162,7 @@ const annotations = {
   // Dial backoff
 
   t03149: 'backoff, USA, Newton, mon',
+  t07848: 'backoff, China, Wuhan, wed',
   t08161: 'backoff, China, Weifang, wed', // backoff?
   t08390: 'backoff, China, Shenzhen, <19h',
   t08440: 'backoff, France, Fontenay-sous-Bois, wed',
@@ -215,6 +194,7 @@ const annotations = {
   t01280: 'rejected, China, Wuxi, 了凡超算',
   t01287: 'rejected, China, Jiaxing, MaiTian',
   t01288: 'rejected, China, Yibin, BlackStone, mon',
+  t01289: 'rejected, China, Hangzhou + USA, <19h',
   t01291: 'rejected, Sweden, Stockholm, tvsthlm',
   t01782: 'rejected, China, Hong Kong + Singapore + USA, Portland, hellofil.com',
   t01800: 'rejected, China, Shenzhen + Chengdu, 8h',
@@ -272,6 +252,7 @@ const annotations = {
   t03143: 'rejected, China, Shijiazhuang + Hong Kong, 12h, 任鹏网络',
   t03144: 'rejected, Germany, Frankfurt',
   t03176: 'rejected, USA, San Mateo, Five Star-Helmsman&Heiben',
+  t03222: 'rejected, China, Yuncheong, 星云矿池, wed',
   t03224: 'rejected, Ukraine, Irpin, oboltusov',
   t03266: 'rejected, USA',
   t03273: 'rejected, USA, Portland',
@@ -283,6 +264,7 @@ const annotations = {
   t03314: 'rejected, China, Zhangjiakou, mon, tue-xfr',
   t03317: 'rejected, China, Shenzhen + Hong Kong + Jieyang',
   t03325: 'rejected, Germany, Frankfurt',
+  t03337: 'rejected, China, Sichuan, 朝日&网科巨力, wed',
   t03347: 'rejected, China, Shenzhen',
   t03361: 'rejected, China, Guangzhou, mon',
   t03362: 'rejected, Germany, Berlin',
@@ -303,6 +285,8 @@ const annotations = {
   t04921: 'rejected, China, Shanghai, mon',
   t05315: 'rejected, USA, Portland',
   t05316: 'rejected, USA, Portland',
+  t07709: 'rejected, Korea, Dongjak-gu, 13h, WIGO M.C., wed',
+  t07829: 'rejected, Japan, 21h, wed',
   t07830: 'rejected, Singapore',
   t07833: 'rejected, China, Changzhou, 星巢',
   t07850: 'rejected, USA, Portland',
@@ -329,6 +313,7 @@ const annotations = {
   t08183: 'rejected, USA, Irvine',
   t08197: 'rejected, China, Foshan',
   t08199: 'rejected, USA, Sudbury',
+  t08229: 'rejected, China, Nanchang, wed',
   t08235: 'rejected, China, Beijing + Jiaxing + Germany, Frankfurt, 星河华讯&中科星际',
   t08240: 'rejected, Russia, Novosibirsk, Rabinovitch',
   t08242: 'rejected, China, Weifang',
@@ -404,6 +389,7 @@ const annotations = {
   t02386: 'dial, Latvia, Riga',
   t02400: 'dial, China, Beijing',
   t02414: "dial, China, Xi'an, zhejiangyunchu",
+  t02418: 'dial, China, Fujian + Netherlands, wed',
   t02438: 'dial, Singapore',
   t02490: 'dial, China, Fujian',
   t02529: 'dial, China, Chongqing',
@@ -419,7 +405,9 @@ const annotations = {
   t02725: 'dial, China, Hong Kong',
   t02731: 'dial, Singapore',
   t02774: 'dial, Australia, Sydney, tue',
+  t03120: 'dial, China, Guangzhou, wed',
   t03134: 'dial, China, Cangzhou, 乔木信息',
+  t03140: 'dial, China, QingDao, wed',
   t03269: 'dial, Australia',
   t03276: 'dial, China, Dongguan, tue',
   t03302: 'dial, China, Chengdu',
@@ -440,6 +428,7 @@ const annotations = {
   t07991: 'dial, China, Changsha',
   t08032: 'dial, China, Weifang',
   t08047: 'dial, China, Hangzhou',
+  t08063: 'dial, China, Huizhou, wed',
   t08101: 'dial, China, Wuxi',
   t08149: 'dial, China, Jiangmen',
   t08150: 'dial, China, Hangzhou',
@@ -451,8 +440,11 @@ const annotations = {
   t08405: 'dial, China, Guangdong, wed',
   t08497: 'dial, Brazil, Sao Paulo',
   t08793: 'dial, China, Fuzhou',
+  t08904: 'dial, China, Deyang, <19h',
   t08928: 'dial, USA, Arlington, theartist',
   t08953: 'dial, China, Fuzhou',
+  t08991: 'dial, China, Ili, wed',
+  t09088: 'dial, China, Changsha, wed',
   t09091: 'dial, Netherlands',
   t09631: 'dial, China, Changzhou',
   t09859: 'dial, USA, fri',
@@ -462,15 +454,23 @@ const annotations = {
 
   t01101: 'xnr, China, Shanghai, 5h, 5h',
   t01232: 'xnr, China, Hangzhou, wed',
+  t02385: 'xnr, USA, East Islip, 20h, wed',
   t02424: 'xnr, Korea, Wanju, mon, tue',
   t02436: 'xnr, Netherlands',
   t02518: 'xnr, China, Shaanxi, mon',
+  t02575: 'xnr, USA, Davis, wed',
   t02608: 'xnr, USA, San Jose, mon',
+  t06262: 'xnr, China, Guangzhou, wed',
   t07717: 'xnr, China, Shenyang, tue',
   t07796: 'xnr, China, Hunan, mon',
   t08097: 'xnr, Korea, Pyeongtaek-si, mon',
+  t08315: 'xnr, China, Chongqing, wed',
   t08388: 'xnr, China, Taizhou, <19h',
   t08424: 'xnr, China, Chengdu, wed',
+  t08574: 'xnr, USA, wed',
+  t08980: 'xnr, USA, San Jose, wed',
+  t09007: 'xnr, Korea, Hwaseong-si, wed',
+  t09055: 'xnr, China, Jieyang, wed',
   t09610: 'xnr, China, Beijing, thu',
   t09719: 'xnr, Korea, Geumcheon-gu',
   t09721: 'xnr, ???, CD-oursoft-1',
