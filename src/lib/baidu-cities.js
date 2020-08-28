@@ -73,6 +73,7 @@ const baiduCities = {
   328: 'Yuncheong', // 运城市
   331: 'Luzhou', // 泸州市
   332: 'Tianjin', // 天津市
+  333: 'Jinhua', // 金华市
   334: 'Jiaxing', // 嘉兴市
   337: 'Tongling', // 铜陵市
   340: 'Shenzhen', // 深圳市

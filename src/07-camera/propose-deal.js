@@ -10,7 +10,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
   const {
     selectedNode,
     filterNewMiners,
-    filterEscrowMiners,
+    filterRetestMiners,
     filterSealingMiners,
     filterActiveMiners,
     filterDialMiners,
@@ -42,8 +42,8 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     if (filterNewMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/^new/))
     }
-    if (filterEscrowMiners && miners) {
-      return miners.filter(miner => annotations[miner].match(/^escrow/))
+    if (filterRetestMiners && miners) {
+      return miners.filter(miner => annotations[miner].match(/^retest/))
     }
     if (filterSealingMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/^sealing/))
@@ -70,7 +70,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
   }, [
     miners,
     filterNewMiners,
-    filterEscrowMiners,
+    filterRetestMiners,
     filterSealingMiners,
     filterActiveMiners,
     filterDialMiners,
@@ -159,6 +159,19 @@ export default function ProposeDeal ({ appState, updateAppState }) {
         <label>
           <input
             type='checkbox'
+            checked={filterRetestMiners}
+            onChange={() => {
+              updateAppState(draft => {
+                draft.filterRetestMiners = !filterRetestMiners
+              })
+            }}
+            style={{ marginLeft: '1rem' }}
+          />
+          'retest'
+        </label>
+        <label>
+          <input
+            type='checkbox'
             checked={filterActiveMiners}
             onChange={() => {
               updateAppState(draft => {
@@ -207,19 +220,6 @@ export default function ProposeDeal ({ appState, updateAppState }) {
             style={{ marginLeft: '1rem' }}
           />
           'error'
-        </label>
-        <label>
-          <input
-            type='checkbox'
-            checked={filterEscrowMiners}
-            onChange={() => {
-              updateAppState(draft => {
-                draft.filterEscrowMiners = !filterEscrowMiners
-              })
-            }}
-            style={{ marginLeft: '1rem' }}
-          />
-          'escrow'
         </label>
         <label>
           <input
