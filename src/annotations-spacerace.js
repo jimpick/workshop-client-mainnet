@@ -24,7 +24,7 @@ const annotations = {
   t08284: 'active, China, Liaoning, <19h',
   t08301: 'active, Japan, Setagaya-ku, MEIK, <19h',
   t08311: 'active, China, Shenzhen, <19h',
-  t08904: 'active, China, Deyang, <19h',
+  t08904: 'retest, China, Deyang, <19h', // backoff?
   t08911: 'active, Korea, Wanju, <19h',
 
   // Active/sealing - wed
@@ -88,7 +88,7 @@ const annotations = {
   t06262: 'retest, China, Guangzhou, wed', // xnr?
   t07806: 'sealing, China, Wuhan, HelloXP, wed',
   t07827: 'sealing, China, Wuhan, 天际合, wed',
-  t07848: 'sealing, China, Wuhan, wed',
+  t07848: 'retest, China, Wuhan, wed', // backoff?
   t07944: 'sealing, China, Hangzhou, SupremeTreasure, wed',
   t07945: 'sealing, China, Dongguan, wed',
   t07964: 'sealing, USA, Ashburn, wed',
@@ -103,7 +103,7 @@ const annotations = {
   t08246: 'sealing, USA, wed',
   t08295: 'sealing, China, Suzhou, IPFS Cloud, wed',
   t08315: 'sealing, China, Chongqing, wed',
-  t08346: 'sealing, Korea, wed',
+  t08346: 'retest, Korea, wed', // dial?
   t08361: 'sealing, Malaysia, Kulai, wed',
   t08399: 'sealing, USA, Sammamish, wed',
   t08402: 'sealing, China, Sichuan, wed',
