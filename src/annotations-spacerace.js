@@ -43,7 +43,7 @@ const annotations = {
 
   t09036: 'sealing, China, Chengdu, CD-oursoft, thu',
   t09559: 'sealing, Canada, Waterloo, thu',
-  t09573: 'sealing, China, Xiamen, thu',
+  t09573: 'retest, China, Xiamen, thu', // dial?
   t09589: 'sealing, China, Changsha, thu',
   t09643: 'sealing, China, Beijing, thu',
   t09707: 'sealing, China, Guangdong, thu',
@@ -64,9 +64,9 @@ const annotations = {
 
   t01152: 'sealing, China, Beijing, wed',
   t02307: 'sealing, China, Taiyuan, filecoin.monster, wed',
-  t02418: 'sealing, China, Fujian + Netherlands, wed',
+  t02418: 'retest, China, Fujian + Netherlands, wed', // dial?
   t02506: 'sealing, USA, Clarksville, wed',
-  t02575: 'sealing, USA, Davis, wed',
+  t02575: 'retest, USA, Davis, wed', // xnr?
   t02658: 'sealing, China, Ningbo, bluematrix, wed',
   t02665: 'sealing, Netherlands, Amsterdam, fm-ops, wed',
   t03120: 'sealing, China, Guangzhou, wed',
@@ -85,7 +85,7 @@ const annotations = {
   t03544: 'sealing, China, Guiyang, wed',
   t03620: 'sealing, Germany, Frankfurt, wed',
   t03646: 'sealing, China, Beijing, JingTang, wed',
-  t06262: 'sealing, China, Guangzhou, wed',
+  t06262: 'retest, China, Guangzhou, wed', // xnr?
   t07806: 'sealing, China, Wuhan, HelloXP, wed',
   t07827: 'sealing, China, Wuhan, 天际合, wed',
   t07848: 'sealing, China, Wuhan, wed',
@@ -97,7 +97,7 @@ const annotations = {
   t08063: 'sealing, China, Huizhou, wed',
   t08073: 'sealing, China, Qiqihar, QY7TT, wed',
   t08094: 'sealing, China, Guangzhou, dongshao, wed',
-  t08178: 'sealing, China, Jiaxing, CAAP-金华, wed',
+  t08178: 'retest, China, Jiaxing, CAAP-金华, wed', // error reset?
   t08225: 'sealing, Australia, Sydney, wed',
   t08229: 'sealing, China, Nanchang, wed',
   t08246: 'sealing, USA, wed',
@@ -110,16 +110,16 @@ const annotations = {
   t08432: 'sealing, China, Taizhou, wed',
   t08448: 'sealing, China, Guangdong, wed',
   t08482: 'sealing, USA, Athol, @why, Why, wed',
-  t08574: 'sealing, USA, wed',
+  t08574: 'retest, USA, wed', // xnr?
   t08854: 'sealing, China, Dongguan, wed',
   t08937: 'sealing, China, Wuxi, YC--wuxi, wed',
   t08980: 'sealing, USA, San Jose, wed',
   t08988: 'sealing, Korea, Hwaseong-si, wed',
   t08991: 'sealing, China, Ili, wed',
-  t09007: 'sealing, Korea, Hwaseong-si, wed',
+  t09007: 'retest, Korea, Hwaseong-si, wed', // backoff?
   t09053: 'sealing, China, Shenzhen, wed',
   t09055: 'sealing, China, Jieyang, wed',
-  t09088: 'sealing, China, Changsha, wed',
+  t09088: 'retest, China, Changsha, wed', // dial?
 
   // Stuck - wed
 
