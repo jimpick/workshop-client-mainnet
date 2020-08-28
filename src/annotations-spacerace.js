@@ -13,11 +13,11 @@ const annotations = {
   t03223: 'active, USA, <19h',
   t03305: 'active, Kenya, Nairobi, <19h',
   t03306: 'active, Australia, <19h',
-  t03340: "active, China, Xi'an, <19h",
+  t03340: "retest, China, Xi'an, <19h", // dial
   t03345: 'active, China, Fuzhou, chh, <19h',
-  t03346: 'reset, China, Huzhou, wckj, <19h', // error reset?
-  t07710: 'reset, Hong Kong, <19h',  // backoff?
-  t07772: 'active, China, Dongguan, <19h',
+  t03346: 'retest, China, Huzhou, wckj, <19h', // error reset?
+  t07710: 'retest, Hong Kong, <19h',  // backoff?
+  t07772: 'retest, China, Dongguan, <19h', // xnr
   t07826: 'active, China, Shenzhen, 星际医生, <19h',
   t08019: 'active, China, Yantai, 三合, <19h',
   t08220: 'active, China, Shenzhen, <19h',
@@ -63,7 +63,7 @@ const annotations = {
 
   t03225: 'sealing, China, Guyuan, fri',
   t09036: 'sealing, China, Chengdu, CD-oursoft, thu',
-  t09559: 'sealing, Canada, Waterloo, thu',
+  t09559: 'retest, Canada, Waterloo, thu', // dial
   t09589: 'sealing, China, Changsha, thu',
   t09643: 'sealing, China, Beijing, thu',
   t09707: 'sealing, China, Guangdong, thu',
@@ -71,7 +71,7 @@ const annotations = {
   t09731: 'sealing, China, Guiyang, thu',
   t09733: 'sealing, China, Chongqing, thu',
   t09736: 'sealing, China, Guangdong, thu',
-  t09762: 'sealing, China, Guangdong, thu',
+  t09762: 'retest, China, Guangdong, thu', // xnr
   t09763: 'sealing, China, Mianyang, thu',
   t09792: 'sealing, USA, Council Bluffs, thu',
 
@@ -129,7 +129,7 @@ const annotations = {
   t08574: 'xnr, USA, wed',
   t08937: 'sealing, China, Wuxi, YC--wuxi, wed',
   t08980: 'xnr, USA, San Jose, wed',
-  t08988: 'sealing, Korea, Hwaseong-si, wed',
+  t08988: 'retest, Korea, Hwaseong-si, wed', // dial
   t08991: 'dial, China, Ili, wed',
   t09007: 'xnr, Korea, Hwaseong-si, wed',
   t09053: 'sealing, China, Shenzhen, wed',
