@@ -12,7 +12,7 @@ const annotations = {
   t02625: 'retest, China, Shanghai, IPFS星际工厂, <19h', // dial
   t02627: 'active, China, Guilin, <19h',
   t03194: 'retest, China, Shenzhen, 成都云存&Npool, <19h', // xnr
-  t03223: 'active, USA, <19h',
+  t03223: 'retest, USA, <19h', // rejected
   t03305: 'active, Kenya, Nairobi, <19h',
   t03306: 'active, Australia, <19h',
   t03340: "retest, China, Xi'an, <19h", // dial
@@ -42,7 +42,7 @@ const annotations = {
   t03360: 'retest, China, Shaanxi, fri', // backoff
   t08178: 'sealing, China, Jiaxing, CAAP-金华, fri',
   t08295: 'retest, China, Suzhou, IPFS Cloud, fri', // dial
-  t08854: 'sealing, China, Dongguan, fri',
+  t08854: 'retest, China, Dongguan, fri', // dial
   t09573: 'sealing, China, Xiamen, fri',
   t09597: 'sealing, China, Shanghai, fri',
   t010227: 'retest, China, Xiamen, fri', // xnr
@@ -79,7 +79,7 @@ const annotations = {
 
   // Sealing - wed
 
-  t01152: 'sealing, China, Beijing, wed',
+  t01152: 'retest, China, Beijing, wed', // rejected
   t02307: 'sealing, China, Taiyuan, filecoin.monster, wed',
   t02506: 'retest, USA, Clarksville, wed', // xnr
   t02658: 'sealing, China, Ningbo, bluematrix, wed',
@@ -97,7 +97,7 @@ const annotations = {
   t07806: 'sealing, China, Wuhan, HelloXP, wed',
   t07827: 'retest, China, Wuhan, 天际合, wed', // context canceled
   t07944: 'sealing, China, Hangzhou, SupremeTreasure, wed',
-  t07945: 'sealing, China, Dongguan, wed',
+  t07945: 'retest, China, Dongguan, wed', // backoff
   t07964: 'sealing, USA, Ashburn, wed',
   t07987: 'sealing, China, Beijing, wed',
   t08006: 'retest, China, Shaanxi, wed', // backoff
