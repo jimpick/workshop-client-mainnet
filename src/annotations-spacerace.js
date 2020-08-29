@@ -1,5 +1,9 @@
 const annotations = {
 
+  // Active - fri
+ 
+  t09833: 'sealing, USA, San Jose, <13h',
+
   // Active - wed
  
   t02301: 'active, USA, <19h',
@@ -7,7 +11,7 @@ const annotations = {
   t02613: 'active, China, Chongqing, 10h, <19h',
   t02625: 'active, China, Shanghai, IPFS星际工厂, <19h',
   t02627: 'active, China, Guilin, <19h',
-  t03194: 'active, China, Shenzhen, 成都云存&Npool, <19h',
+  t03194: 'retest, China, Shenzhen, 成都云存&Npool, <19h', // xnr
   t03223: 'active, USA, <19h',
   t03305: 'active, Kenya, Nairobi, <19h',
   t03306: 'active, Australia, <19h',
@@ -26,7 +30,7 @@ const annotations = {
 
   // Active/sealing - wed
  
-  t02404: 'active, Korea, Seoul, 10h, TVCC& BLOCK DATA BANK, wed',
+  t02404: 'retest, Korea, Seoul, 10h, TVCC& BLOCK DATA BANK, wed', // xnr
   t02419: 'active, China, Shanghai, 10h, yuantai, wed',
   t02540: 'active, USA, Rochester, 12h, wed',
   t02620: 'active, Poland, Krakow, @magik6k, 20h, wed',
@@ -41,12 +45,11 @@ const annotations = {
   t08854: 'sealing, China, Dongguan, fri',
   t09573: 'sealing, China, Xiamen, fri',
   t09597: 'sealing, China, Shanghai, fri',
-  t09833: 'sealing, USA, San Jose, fri',
-  t010227: 'sealing, China, Xiamen, fri',
+  t010227: 'retest, China, Xiamen, fri', // xnr
   t010244: 'sealing, USA, Newton, fri',
   t010257: 'sealing, China, Hong Kong, fri',
   t010275: 'sealing, Korea, Cheongju-si + USA, fri',
-  t010283: 'sealing, Brazil, Sao Paulo, fri',
+  t010283: 'retest, Brazil, Sao Paulo, fri', // xnr
 
   // Stuck - fri
  
@@ -78,7 +81,7 @@ const annotations = {
 
   t01152: 'sealing, China, Beijing, wed',
   t02307: 'sealing, China, Taiyuan, filecoin.monster, wed',
-  t02506: 'sealing, USA, Clarksville, wed',
+  t02506: 'retest, USA, Clarksville, wed', // xnr
   t02658: 'sealing, China, Ningbo, bluematrix, wed',
   t02665: 'sealing, Netherlands, Amsterdam, fm-ops, wed',
   t03136: "sealing, China, Xi'an, Zhejiang Yun Chu Technology Co., Ltd, wed",
@@ -88,26 +91,26 @@ const annotations = {
   t03339: 'sealing, China, Luzhou, benxun, wed',
   t03512: 'sealing, New Zealand, Auckland, NZFILECOIN01, wed',
   t03519: 'sealing, USA, wed',
-  t03523: 'sealing, China, Wuxi, YC--wuxi, wed',
+  t03523: 'retest, China, Wuxi, YC--wuxi, wed', // reset
   t03544: 'sealing, China, Guiyang, wed',
   t03620: 'sealing, Germany, Frankfurt, wed',
   t07806: 'sealing, China, Wuhan, HelloXP, wed',
-  t07827: 'sealing, China, Wuhan, 天际合, wed',
+  t07827: 'retest, China, Wuhan, 天际合, wed', // context canceled
   t07944: 'sealing, China, Hangzhou, SupremeTreasure, wed',
   t07945: 'sealing, China, Dongguan, wed',
   t07964: 'sealing, USA, Ashburn, wed',
   t07987: 'sealing, China, Beijing, wed',
-  t08006: 'sealing, China, Shaanxi, wed',
+  t08006: 'retest, China, Shaanxi, wed', // backoff
   t08073: 'sealing, China, Qiqihar, QY7TT, wed',
   t08094: 'sealing, China, Guangzhou, dongshao, wed',
-  t08225: 'sealing, Australia, Sydney, wed',
-  t08246: 'sealing, USA, wed',
+  t08225: 'retest, Australia, Sydney, wed', // xnr
+  t08246: 'retest, USA, wed', // xnr
   t08361: 'sealing, Malaysia, Kulai, wed',
   t08399: 'sealing, USA, Sammamish, wed',
   t08402: 'sealing, China, Sichuan, wed',
-  t08432: 'sealing, China, Taizhou, wed',
+  t08432: 'retest, China, Taizhou, wed', // xnr
   t08448: 'sealing, China, Guangdong, wed',
-  t08482: 'sealing, USA, Athol, @why, Why, wed',
+  t08482: 'sealing, USA, Athol, @why, wed',
   t08937: 'sealing, China, Wuxi, YC--wuxi, wed',
   t08988: 'retest, Korea, Hwaseong-si, wed', // dial
   t09053: 'sealing, China, Shenzhen, wed',
@@ -238,7 +241,7 @@ const annotations = {
   t02621: "rejected, China, Xi'an",
   t02622: 'rejected, USA, Portland',
   t02623: 'rejected, USA, Portland',
-  t02624: 'rejected, China, Shanghai, filecoin.cn',
+  t02624: 'retest, China, Shanghai, filecoin.cn', // dial
   t02626: 'rejected, China, Guangzhou + Hong Kong',
   t02633: 'rejected, China, Hong Kong',
   t02726: 'rejected, USA, Brooklyn',
