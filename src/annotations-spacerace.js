@@ -48,7 +48,7 @@ const annotations = {
   t010227: 'retest, China, Xiamen, fri', // xnr
   t010244: 'sealing, USA, Newton, fri',
   t010257: 'sealing, China, Hong Kong, fri',
-  t010275: 'sealing, Korea, Cheongju-si + USA, fri',
+  t010275: 'retest, Korea, Cheongju-si + USA, fri', // xnr
   t010283: 'retest, Brazil, Sao Paulo, fri', // xnr
 
   // Stuck - fri
@@ -85,7 +85,7 @@ const annotations = {
   t02658: 'sealing, China, Ningbo, bluematrix, wed',
   t02665: 'sealing, Netherlands, Amsterdam, fm-ops, wed',
   t03136: "sealing, China, Xi'an, Zhejiang Yun Chu Technology Co., Ltd, wed",
-  t03264: 'sealing, Korea, Bucheon-si, wed',
+  t03264: 'retest, Korea, Bucheon-si, wed', // xnr
   t03307: 'sealing, Australia, wed',
   t03328: 'sealing, China, Xinxiang, wed',
   t03339: 'sealing, China, Luzhou, benxun, wed',
