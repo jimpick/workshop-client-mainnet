@@ -9,7 +9,7 @@ const annotations = {
   t02301: 'active, USA, <19h',
   t02421: 'active, China, Deyang + Singapore, <19h, 腾盛科技',
   t02613: 'active, China, Chongqing, 10h, <19h',
-  t02625: 'active, China, Shanghai, IPFS星际工厂, <19h',
+  t02625: 'retest, China, Shanghai, IPFS星际工厂, <19h', // dial
   t02627: 'active, China, Guilin, <19h',
   t03194: 'retest, China, Shenzhen, 成都云存&Npool, <19h', // xnr
   t03223: 'active, USA, <19h',
@@ -39,7 +39,7 @@ const annotations = {
 
   // Sealing - fri
 
-  t03360: 'sealing, China, Shaanxi, fri',
+  t03360: 'retest, China, Shaanxi, fri', // backoff
   t08178: 'sealing, China, Jiaxing, CAAP-金华, fri',
   t08295: 'retest, China, Suzhou, IPFS Cloud, fri', // dial
   t08854: 'sealing, China, Dongguan, fri',
@@ -59,7 +59,7 @@ const annotations = {
   // Sealing - thu
 
   t03225: 'sealing, China, Guyuan, fri',
-  t09036: 'sealing, China, Chengdu, CD-oursoft, thu',
+  t09036: 'retest, China, Chengdu, CD-oursoft, thu', // context
   t09559: 'retest, Canada, Waterloo, thu', // dial
   t09589: 'sealing, China, Changsha, thu',
   t09643: 'sealing, China, Beijing, thu',
@@ -101,11 +101,11 @@ const annotations = {
   t07964: 'sealing, USA, Ashburn, wed',
   t07987: 'sealing, China, Beijing, wed',
   t08006: 'retest, China, Shaanxi, wed', // backoff
-  t08073: 'sealing, China, Qiqihar, QY7TT, wed',
+  t08073: 'retest, China, Qiqihar, QY7TT, wed', // dial
   t08094: 'sealing, China, Guangzhou, dongshao, wed',
   t08225: 'retest, Australia, Sydney, wed', // xnr
   t08246: 'retest, USA, wed', // xnr
-  t08361: 'sealing, Malaysia, Kulai, wed',
+  t08361: 'retest, Malaysia, Kulai, wed', // xnr
   t08399: 'sealing, USA, Sammamish, wed',
   t08402: 'sealing, China, Sichuan, wed',
   t08432: 'retest, China, Taizhou, wed', // xnr
