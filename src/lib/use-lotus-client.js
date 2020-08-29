@@ -10,6 +10,8 @@ export default function useLotusClient (nodeNumber, nodeOrMiner) {
   const [client, setClient] = useState()
 
   useEffect(() => {
+    if (nodeNumber === undefined) return
+
     const wsUrl =
       (secure ? 'wss://' : 'ws://') +
       api +
