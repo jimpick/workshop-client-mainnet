@@ -28,8 +28,10 @@ const annotations = {
  
   t02404: 'sealing, Korea, Seoul, 10h, TVCC& BLOCK DATA BANK, sun',
   t02613: 'sealing, China, Chongqing, 10h, <19h, sun',
+  t02627: 'sealing, China, Guilin, <19h, sun',
   t02658: 'sealing, China, Ningbo, bluematrix, sun',
   t02775: 'sealing, China, Hong Kong, sun',
+  t03002: 'sealing, China, Chongqing, 11h, sun',
   t03194: 'sealing, China, Shenzhen, 成都云存&Npool, <19h, sun',
   t03225: 'sealing, China, Guyuan, sun',
   t03328: 'sealing, China, Xinxiang, sun',
@@ -38,11 +40,15 @@ const annotations = {
   t03344: 'sealing, China, Guangzhou, 13h, sun',
   t03512: 'sealing, New Zealand, Auckland, NZFILECOIN01, sun',
   t03523: 'sealing, China, Wuxi, YC--wuxi, sun',
+  t06775: 'sealing, China, Shenzhen, IPSB&CAAP, sun',
   t07806: 'sealing, China, Wuhan, HelloXP, sun',
   t07827: 'sealing, China, Wuhan, 天际合, sun',
+  t07944: 'sealing, China, Hangzhou, SupremeTreasure, sun',
   t08094: 'sealing, China, Guangzhou, dongshao, sun',
+  t08109: 'sealing, USA, qianyuanyunshuo, sun',
   t08178: 'sealing, China, Jiaxing, CAAP-金华, sun',
   t08371: 'sealing, China, Chengdu, sun',
+  t08399: 'sealing, USA, Sammamish, sun',
   t08448: 'sealing, China, Guangdong, sun',
   t08482: 'sealing, USA, Athol, @why, sun',
   t08937: 'sealing, China, Wuxi, YC--wuxi, sun',
@@ -59,6 +65,7 @@ const annotations = {
   t09997: 'sealing, USA, sun',
   t010152: 'sealing, Germany, sun',
   t010173: 'sealing, Korea, Pyeongtaek-si, sun',
+  t010223: 'sealing, China, Ordos, <19h, sun',
   t010225: 'sealing, China, Ordos, sun',
   t010297: 'sealing, USA, Howell, sun',
   t010303: 'sealing, China, Guangdong, sun',
@@ -67,6 +74,7 @@ const annotations = {
   t010399: 'sealing, China, Guangzhou, sun',
   t010433: 'sealing, Korea, Seoul, sun',
   t010438: 'sealing, USA, sun',
+  t010446: 'sealing, Netherlands, sun',
   t010449: 'sealing, China, Jiangmen, sun',
   t010453: 'sealing, China, Shaanxi, sun',
   t010468: 'sealing, China, Guangzhou, sun',
@@ -85,8 +93,6 @@ const annotations = {
   // Stuck - sat
  
   t02382: 'stuck, China, Zhongshan, sun-cfa',
-  t02627: 'stuck, China, Guilin, <19h, sun-accepted',
-  t010446: 'stuck, Netherlands, sun-cfa',
  
 
   // New
@@ -99,7 +105,7 @@ const annotations = {
   t09056: 'min-ask, China, Shenzhen, SZSQ1',
 
   // Error
-  t03002: 'error, China, Chongqing, 11h, wed-cfa', // reset
+
   t03305: 'error, Kenya, Nairobi, <19h', // market balance
   t03306: 'error, Australia, <19h', // market balance
   t03307: 'error, Australia, wed', // market balance
@@ -111,12 +117,9 @@ const annotations = {
   t03519: 'error, USA, wed', // market balance
   t03619: 'error, China, Xiamen', // (State=26) handing off deal to node: AddPiece failed: getting available sector: getting sector number: filemist has not start seal yet
   t03620: 'error, Germany, Frankfurt, wed', // market balance
-  t06775: 'error, China, Shenzhen, IPSB&CAAP, wed', // reset
   t07987: 'error, China, Beijing, wed', // reset
-  t08109: 'error, USA, qianyuanyunshuo', // unmarshaling t.Signature pointer: stream reset
   t08205: 'error, Brazil, Sao Paulo', // market balance
   t08390: 'error, China, Shenzhen, <19h', // EOF
-  t08399: 'error, USA, Sammamish, wed', // reset
   t08402: 'error, China, Sichuan, wed', // EOF
   t08406: 'error, China, Shenzhen', // reset
   t08432: 'error, China, Taizhou, wed', //  No space left on device
@@ -124,14 +127,12 @@ const annotations = {
   t09053: 'error, China, Shenzhen, wed', // reset
   t09261: 'error, Brazil, Sao Paulo', // market balance
   t09763: 'error, China, Mianyang,  <13h', // market balance
-  t010223: 'error, China, Ordos, <19h', // reset
   t010257: 'error, China, Hong Kong, sat', // reset
 
   // Dial backoff
 
   t07826: 'backoff, China, Shenzhen, 星际医生, <19h',
   t07848: 'backoff, China, Wuhan, wed',
-  t07944: 'backoff, China, Hangzhou, SupremeTreasure, wed',
   t08073: 'backoff, China, Qiqihar, QY7TT, sat-cfa',
   t010005: 'backoff, China, Zhongshan, sat',
   t010507: 'backoff, China, Hangzhou, <19h',
