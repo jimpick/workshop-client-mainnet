@@ -1,194 +1,136 @@
 const annotations = {
 
-  // Active - sun
- 
-  t02301: 'active, USA, <19h, <16h, 9h',
-  t02404: 'active, Korea, Seoul, 10h, TVCC& BLOCK DATA BANK, <22h',
-  t02613: 'active, China, Chongqing, 10h, <19h, 8h',
-  t03002: 'active, China, Chongqing, 11h, 9h',
-  t03194: 'active, China, Shenzhen, 成都云存&Npool, <19h, <22h',
-  t03328: 'active, China, Xinxiang, <22h',
-  t03345: 'active, China, Fuzhou, chh, <19h, <16h, 8h',
-  t03523: 'active, China, Wuxi, YC--wuxi, 12h',
-  t07775: 'active, China, Shenzhen, 16h, <22h',
-  t08019: 'active, China, Yantai, 三合, <19h, <22h',
-  t08094: 'active, China, Guangzhou, dongshao, 10h',
-  t08178: 'active, China, Jiaxing, CAAP-金华, 12h',
-  t08854: 'active, China, Dongguan, <16h, 10h',
-  t08937: 'active, China, Wuxi, YC--wuxi, <22h',
-  t09833: 'active, USA, San Jose, <13h, 8h',
-  t010223: 'active, China, Ordos, <19h, <20h',
-  t010225: 'active, China, Ordos, 11h',
-  t010533: 'active, China, Ordos, 12h',
-  t010538: 'active, China, Ordos, 13h',
-  t010551: 'active, China, Shenyang, 10h',
-  t010553: 'active, China, Ordos, 10h',
-  t014233: 'active, China, Shanghai, <22h',
-  t014328: 'active, Canada, Waterloo, 12h',
-
-  // Active/sealing - sun
-
-  t02419: 'active, China, Shanghai, yuantai, 10h, sun',
-  t02421: 'active, China, Deyang + Singapore, 腾盛科技, <19h, sun',
-  t02540: 'active, USA, Rochester, 12h, sun',
-  t02620: 'active, Poland, Krakow, @magik6k, 20h, <16h, sun',
-  t08301: 'active, Japan, Setagaya-ku, MEIK, <19h, sun',
-
-  // Active - sat
+  // Active - mon
   
-  t09589: 'active, China, Changsha, <13h, sun-xfr',
+  // Active/sealing - mon
+ 
+  t02301: 'active, USA, <19h, <16h, 9h, mon',
+  t02404: 'active, Korea, Seoul, 10h, TVCC& BLOCK DATA BANK, <22h, mon',
+  t02419: 'active, China, Shanghai, yuantai, 10h, mon',
+  t02540: 'active, USA, Rochester, 12h, mon',
+  t02613: 'active, China, Chongqing, 10h, <19h, 8h, mon',
+  t02620: 'active, Poland, Krakow, @magik6k, 20h, <16h, mon',
+  t03002: 'active, China, Chongqing, 11h, 9h, mon',
+  t03328: 'active, China, Xinxiang, <22h, mon',
+  t03345: 'active, China, Fuzhou, chh, <19h, <16h, 8h, mon',
+  t03523: 'active, China, Wuxi, YC--wuxi, 12h, mon',
+  t07775: 'active, China, Shenzhen, 16h, <22h, mon',
+  t08019: 'active, China, Yantai, 三合, <19h, <22h, mon',
+  t08094: 'active, China, Guangzhou, dongshao, 10h, mon',
+  t08178: 'active, China, Jiaxing, CAAP-金华, 12h, mon',
+  t08854: 'active, China, Dongguan, <16h, 10h, mon',
+  t08937: 'active, China, Wuxi, YC--wuxi, <22h, mon',
+  t09589: 'active, China, Changsha, <13h, mon',
+  t09833: 'active, USA, San Jose, <13h, 8h, mon',
+  t010223: 'active, China, Ordos, <19h, <20h, mon',
+  t010225: 'active, China, Ordos, 11h, mon',
+  t010533: 'active, China, Ordos, 12h, mon',
+  t010538: 'active, China, Ordos, 13h, mon',
+  t014233: 'active, China, Shanghai, <22h, mon',
+  t014328: 'active, Canada, Waterloo, 12h, mon',
 
   // Active/sealing - sat
 
-  t08220: 'active, China, Shenzhen, <19h, sun-xfr',
+  t08220: 'active, China, Shenzhen, <19h, mon-xfr',
 
-  // Sealing - sun
- 
-  t02627: 'sealing, China, Guilin, <19h, sun',
-  t02658: 'sealing, China, Ningbo, bluematrix, sun',
-  t02775: 'sealing, China, Hong Kong, sun',
-  t03225: 'sealing, China, Guyuan, sun',
-  t03339: 'sealing, China, Luzhou, benxun, sun',
-  t03340: "sealing, China, Xi'an, <19h, sun", 
-  t03344: 'sealing, China, Guangzhou, 13h, sun',
-  t03512: 'sealing, New Zealand, Auckland, NZFILECOIN01, sun',
-  t06775: 'sealing, China, Shenzhen, IPSB&CAAP, sun',
-  t07806: 'sealing, China, Wuhan, HelloXP, sun',
-  t07827: 'sealing, China, Wuhan, 天际合, sun',
-  t07944: 'sealing, China, Hangzhou, SupremeTreasure, sun',
-  t08109: 'sealing, USA, qianyuanyunshuo, sun',
-  t08371: 'sealing, China, Chengdu, sun',
-  t08399: 'sealing, USA, Sammamish, sun',
-  t08448: 'sealing, China, Guangdong, sun',
-  t08482: 'sealing, USA, Athol, @why, sun',
-  t08988: 'sealing, Korea, Hwaseong-si, sun',
-  t09573: 'sealing, China, Xiamen, sun',
-  t09597: 'sealing, China, Shanghai, sun',
-  t09707: 'sealing, China, Guangdong, sun',
-  t09712: 'sealing, China, Chengdu, sun',
-  t09731: 'sealing, China, Guiyang, sun',
-  t09736: 'sealing, China, Guangdong, sun',
-  t09771: 'sealing, China, Hangzhou, sun',
-  t09792: 'sealing, USA, Council Bluffs, sun',
-  t09811: 'sealing, China, Dongguan, sun',
-  t09997: 'sealing, USA, sun',
-  t010152: 'sealing, Germany, sun',
-  t010173: 'sealing, Korea, Pyeongtaek-si, sun',
-  t010297: 'sealing, USA, Howell, sun',
-  t010303: 'sealing, China, Guangdong, sun',
-  t010311: 'sealing, Korea, Hwaseong-si, sun',
-  t010346: 'sealing, China, Karamay, sun',
-  t010399: 'sealing, China, Guangzhou, sun',
-  t010433: 'sealing, Korea, Seoul, sun',
-  t010438: 'sealing, USA, sun',
-  t010446: 'sealing, Netherlands, sun',
-  t010449: 'sealing, China, Jiangmen, sun',
-  t010453: 'sealing, China, Shaanxi, sun',
-  t010468: 'sealing, China, Guangzhou, sun',
-  t010491: 'sealing, China, Shenzhen, sun',
-  t010542: 'sealing, China, Ordos, sun',
-  t010549: 'sealing, China, Ordos, sun',
-  t010603: 'sealing, China, Baoding, sun',
-  t014207: 'sealing, USA, sun',
+  // Sealing - mon
 
-  // Stuck - sat
- 
-  t02382: 'stuck, China, Zhongshan, sun-cfa',
- 
+  t02627: 'sealing, China, Guilin, <19h, mon',
+  t03225: 'sealing, China, Guyuan, mon',
+  t03339: 'sealing, China, Luzhou, benxun, mon',
+  t03340: "sealing, China, Xi'an, <19h, mon", 
+  t03344: 'sealing, China, Guangzhou, 13h, mon',
+  t03512: 'sealing, New Zealand, Auckland, NZFILECOIN01, mon',
+  t03619: 'sealing, China, Xiamen, mon',
+  t06775: 'sealing, China, Shenzhen, IPSB&CAAP, mon',
+  t07806: 'sealing, China, Wuhan, HelloXP, mon',
+  t07827: 'sealing, China, Wuhan, 天际合, mon',
+  t07987: 'sealing, China, Beijing, mon',
+  t08109: 'sealing, USA, qianyuanyunshuo, mon',
+  t08371: 'sealing, China, Chengdu, mon',
+  t08399: 'sealing, USA, Sammamish, mon',
+  t08432: 'sealing, China, Taizhou, mon',
+  t08482: 'sealing, USA, Athol, @why, mon',
+  t08988: 'sealing, Korea, Hwaseong-si, mon',
+  t09053: 'sealing, China, Shenzhen, mon',
+  t09573: 'sealing, China, Xiamen, mon',
+  t09597: 'sealing, China, Shanghai, mon',
+  t09707: 'sealing, China, Guangdong, mon',
+  t09712: 'sealing, China, Chengdu, mon',
+  t09731: 'sealing, China, Guiyang, mon',
+  t09771: 'sealing, China, Hangzhou, mon',
+  t09792: 'sealing, USA, Council Bluffs, mon',
+  t010152: 'sealing, Germany, mon',
+  t010173: 'sealing, Korea, Pyeongtaek-si, mon',
+  t010257: 'sealing, China, Hong Kong, mon',
+  t010311: 'sealing, Korea, Hwaseong-si, mon',
+  t010346: 'sealing, China, Karamay, mon',
+  t010402: 'sealing, China, Shenyang, mon',
+  t014311: 'sealing, China, Ordos, mon',
+  t014314: 'sealing, Korea, Bucheon-si, mon',
+  t014327: 'sealing, China, Ningbo, mon',
+  t014394: 'sealing, China, Suzhou, mon',
+  t014432: 'sealing, China, Chengdu, mon',
+  t014436: 'sealing, China, Chengdu, mon',
+  t010449: 'sealing, China, Jiangmen, mon',
+  t014464: 'sealing, China, Hangzhou + Singapore, mon',
+  t010468: 'sealing, China, Guangzhou, mon',
+  t010551: 'sealing, China, Shenyang, 10h, mon',
+  t010553: 'sealing, China, Ordos, 10h, mon',
+  t014207: 'sealing, USA, mon',
+  t014388: 'sealing, China, Guangdong, mon',
+  t014472: 'sealing, China, Ningbo, mon',
+  t014483: 'sealing, USA, Clarksville, mon',
+  t014556: 'sealing, Korea, Bucheon-si, mon',
+  t014640: 'sealing, Hungary, mon',
+  t014745: 'sealing, China, Shenyang, mon',
+  t014764: 'sealing, Korea, Wanju, mon',
+  t014803: 'sealing, China, Beijing, mon',
+  t015231: 'sealing, China, Wuxi, mon',
+  t015232: 'sealing, Poland, Warsaw, mon',
+  t015643: 'sealing, China, Ordos, mon',
+  t015662: 'sealing, China, Beijing, mon',
+  t015709: 'sealing, China, Hefei, mon',
+  t015714: 'sealing, China, Ordos, mon',
+  t015724: 'sealing, China, Guangdong, mon',
+  t015731: 'sealing, China, Ordos, mon',
+  t015733: 'sealing, China, Ordos, mon',
+  t015737: 'sealing, Brazil, Sao Paulo, mon',
+  t015747: 'sealing, Japan, Setagaya-ku, mon',
+  t015753: 'sealing, China, Guyuan, mon',
+  t015756: 'sealing, Finland, Helsinki, mon',
+  t015760: 'sealing, Kenya, Nairobi',
+  t015771: 'sealing, Brazil, Sao Paulo',
+  t015782: 'sealing, Australia, mon',
+  t015833: 'sealing, China, Baoding, mon',
+  t015891: 'sealing, China, Shanghai, mon',
+  t015898: 'sealing, Lithuania, mon',
+  t015905: 'sealing, Lithuania, mon',
+
+  // Stuck - mon
+
+  t02382: 'stuck, China, Zhongshan, mon-cfa',
+  t015647: 'stuck, China, Shenzhen, mon-xfr',
+
 
   // New
 
-  t08264: 'new, China, Xianning, mon',
-  t010402: 'new, China, Shenyang, mon',
-  t014246: 'new, China, Shenzhen, mon',
-  t014271: 'new, China, Fuzhou, mon',
-  t014311: 'new, China, Ordos, mon',
-  t014314: 'new, Korea, Bucheon-si, mon',
-  t014327: 'new, China, Ningbo, mon',
-  t014329: 'new, China, Hong Kong, mon',
-  t014331: 'new, China, Chongqing, mon',
-  t014388: 'new, China, Guangdong, mon',
-  t014348: 'new, Brazil, Sao Paulo, mon',
-  t014354: 'new, USA, Concord, mon',
-  t014379: 'new, Japan, Ebisunishi, mon',
-  t014389: 'new, China, Chongqing, mon',
-  t014394: 'new, China, Suzhou, mon',
-  t014395: 'new, China, Dongguan, mon',
-  t014409: 'new, USA, Waxhaw, mon',
-  t014419: 'new, USA, San Diego, mon',
-  t014420: 'new, Russia, Samara, mon',
-  t014432: 'new, China, Chengdu, mon',
-  t014436: 'new, China, Chengdu, mon',
-  t014464: 'new, China, Hangzhou + Singapore, mon',
-  t014472: 'new, China, Ningbo, mon',
-  t014477: 'new, China, Hangzhou, mon',
-  t014478: 'new, Finland, mon',
-  t014483: 'new, USA, Clarksville, mon',
-  t014514: 'new, China, Fuzhou, mon',
-  t014533: 'new, China, Fuzhou, mon',
-  t014540: 'new, USA, Newton, mon',
-  t014547: 'new, China, Fuzhou, mon',
-  t014556: 'new, Korea, Bucheon-si, mon',
-  t014573: 'new, China, Fuzhou, mon',
-  t014606: 'new, Australia, Sydney, mon',
-  t014609: 'new, China, Fuzhou, mon',
-  t014632: 'new, Canada, mon',
-  t014634: 'new, USA, Boardman, mon',
-  t014640: 'new, Hungary, mon',
-  t015643: 'new, China, Ordos, mon',
-  t015647: 'new, China, Shenzhen, mon',
-  t014660: 'new, Korea, Busan, mon',
-  t014685: 'new, Hong Kong, mon',
-  t014741: 'new, China, Wuhan, mon',
-  t014745: 'new, China, Shenyang, mon',
-  t014764: 'new, Korea, Wanju, mon',
-  t014786: 'new, China, Xiamen, mon',
-  t014799: 'new, China, Chongqing, mon',
-  t014803: 'new, China, Beijing, mon',
-  t014813: 'new, China, Hangzhou + USA, mon',
-  t015231: 'new, China, Wuxi, mon',
-  t015232: 'new, Poland, Warsaw, mon',
-  t015655: 'new, Korea, Geumcheon-gu, mon',
-  t015662: 'new, China, Beijing, mon',
-  t015709: 'new, China, Hefei, mon',
-  t015714: 'new, China, Ordos, mon',
-  t015724: 'new, China, Guangdong, mon',
-  t015731: 'new, China, Ordos, mon',
-  t015733: 'new, China, Ordos, mon',
-  t015737: 'new, Brazil, Sao Paulo, mon',
-  t015747: 'new, Japan, Setagaya-ku, mon',
-  t015751: 'new, Canada, Huron East, mon',
-  t015753: 'new, China, Guyuan, mon',
-  t015756: 'new, Finland, Helsinki, mon',
-  t015760: 'new, Kenya, Nairobi',
-  t015771: 'new, Brazil, Sao Paulo',
-  t015782: 'new, Australia, mon',
-  t015818: 'new, Netherlands, mon',
-  t015827: 'new, Russia, mon',
-  t015829: 'new, China, Beijing, mon',
-  t015833: 'new, China, Baoding, mon',
-  t015860: 'new, Ukraine, Odessa, mon',
-  t015861: 'new, Ukraine, Odessa, mon',
-  t015867: 'new, Netherlands, Amsterdam, mon',
-  t015870: 'new, China, Hangzhou, mon',
-  t015873: 'new, China, Fuzhou, mon',
-  t015875: 'new, China, Fuzhou, mon',
-  t015891: 'new, China, Shanghai, mon',
-  t015898: 'new, Lithuania, mon',
-  t015905: 'new, Lithuania, mon',
 
 
 
 
+  // Min Size
 
+  t014786: 'min-size, China, Xiamen, mon', // piece size less than minimum required size: 131072 < 204800
 
-  // Asks
+  // Min Ask
 
   t03136: "min-ask, China, Xi'an, Zhejiang Yun Chu Technology Co., Ltd, sat",
   t09056: 'min-ask, China, Shenzhen, SZSQ1',
 
   // Error
 
+  t03194: 'error, China, Shenzhen, 成都云存&Npool, <19h, <22h', // reset
   t03305: 'error, Kenya, Nairobi, <19h', // market balance
   t03306: 'error, Australia, <19h', // market balance
   t03307: 'error, Australia, wed', // market balance
@@ -197,28 +139,35 @@ const annotations = {
   t03484: 'error, Netherlands, 14h, wed', // market balance
   t03485: 'error, Netherlands, 13h, 14h', // market balance
   t03517: 'error, China, Wuhan + Wuxi', // getting client market balance failed
-  t03519: 'error, USA, wed', // market balance
-  t03619: 'error, China, Xiamen', // (State=26) handing off deal to node: AddPiece failed: getting available sector: getting sector number: filemist has not start seal yet
+  t03519: 'dial, USA, wed', // market balance
   t03620: 'error, Germany, Frankfurt, wed', // market balance
-  t07987: 'error, China, Beijing, wed', // reset
+  t08073: 'error, China, Qiqihar, QY7TT, sat-cfa', // too many sectors sealing
   t08205: 'error, Brazil, Sao Paulo', // market balance
   t08390: 'error, China, Shenzhen, <19h', // EOF
-  t08402: 'error, China, Sichuan, wed', // EOF
+  t08402: 'xnr, China, Sichuan, wed',
   t08406: 'error, China, Shenzhen', // reset
-  t08432: 'error, China, Taizhou, wed', //  No space left on device
   t08572: 'error, Brazil, Sao Paulo', // market balance
-  t09053: 'error, China, Shenzhen, wed', // reset
   t09261: 'error, Brazil, Sao Paulo', // market balance
   t09763: 'error, China, Mianyang,  <13h', // market balance
-  t010257: 'error, China, Hong Kong, sat', // reset
+  t010297: 'error, USA, Howell, sun', // reset
+  t010399: 'error, China, Guangzhou, sun', // PublishStorageDeals errored: handler: websocket connection closed
+  t010446: 'error, Netherlands, sun', // PublishStorageDeals errored: handler: websocket connection closed
+  t014606: 'error, Australia, Sydney, mon', // response rejected
+  t014609: 'error, China, Fuzhou, mon', // EOF
+  t015655: 'error, Korea, Geumcheon-gu, mon', // context
+
 
   // Dial backoff
 
   t07826: 'backoff, China, Shenzhen, 星际医生, <19h',
   t07848: 'backoff, China, Wuhan, wed',
-  t08073: 'backoff, China, Qiqihar, QY7TT, sat-cfa',
+  t07944: 'backoff, China, Hangzhou, SupremeTreasure, sun',
+  t08448: 'backoff, China, Guangdong, sun',
   t010005: 'backoff, China, Zhongshan, sat',
   t010507: 'backoff, China, Hangzhou, <19h',
+  t010438: 'backoff, USA, sun',
+  t010491: 'backoff, China, Shenzhen, sun',
+  t015873: 'backoff, China, Fuzhou, mon',
 
   // Rejected
 
@@ -297,12 +246,14 @@ const annotations = {
   t02625: 'rejected, China, Shanghai, IPFS星际工厂, <19h',
   t02626: 'rejected, China, Guangzhou + Hong Kong',
   t02633: 'rejected, China, Hong Kong',
+  t02658: 'rejected, China, Ningbo, bluematrix, sun',
   t02665: 'rejected, Netherlands, Amsterdam, fm-ops, sat', // no online
   t02726: 'rejected, USA, Brooklyn',
   t02732: 'rejected, USA',
   t02755: 'rejected, China, Shijiazhuang',
   t02768: 'rejected, China, Hong Kong',
   t02770: 'rejected, China, Hong Kong',
+  t02775: 'rejected, China, Hong Kong, sun',
   t02838: 'rejected, China, Chengdu, IPFS Harbor-星际港湾',
   t03021: 'rejected, China, Hong Kong',
   t03131: 'rejected, China, Changsha',
@@ -479,10 +430,27 @@ const annotations = {
   t014241: 'rejected, Norway, Borgen, sun',
   t014251: 'rejected, Singapore, sun',
   t014261: 'rejected, China, Fuzhou, sun',
+  t014271: 'rejected, China, Fuzhou, mon',
+  t014329: 'rejected, China, Hong Kong, mon',
+  t014348: 'rejected, Brazil, Sao Paulo, mon',
   t014365: 'rejected, Australia, Marrickville + Japan, Heiwajima, sun',
+  t014379: 'rejected, Japan, Ebisunishi, mon',
   t014392: 'rejected, Russia, Khabarovsk + USA + Japan, Heiwajima, sun',
-
-
+  t014395: 'rejected, China, Dongguan, mon',
+  t014409: 'rejected, USA, Waxhaw, mon',
+  t014632: 'rejected, Canada, mon',
+  t014634: 'rejected, USA, Boardman, mon',
+  t014741: 'rejected, China, Wuhan, mon',
+  t015751: 'rejected, Canada, Huron East, mon', // no online
+  t014799: 'rejected, China, Chongqing, mon',
+  t014813: 'rejected, China, Hangzhou + USA, mon',
+  t015818: 'rejected, Netherlands, mon',
+  t015827: 'rejected, Russia, mon',
+  t015829: 'rejected, China, Beijing, mon',
+  t015860: 'rejected, Ukraine, Odessa, mon',
+  t015867: 'rejected, Netherlands, Amsterdam, mon',
+  t015870: 'rejected, China, Hangzhou, mon',
+  t015875: 'rejected, China, Fuzhou, mon',
 
   // Dial errors
 
@@ -492,6 +460,7 @@ const annotations = {
   t02400: 'dial, China, Beijing',
   t02414: "dial, China, Xi'an, zhejiangyunchu",
   t02418: 'dial, China, Fujian + Netherlands, wed',
+  t02421: 'dial, China, Deyang + Singapore, 腾盛科技, <19h, sun',
   t02438: 'dial, Singapore',
   t02490: 'dial, China, Fujian',
   t02529: 'dial, China, Chongqing',
@@ -546,6 +515,7 @@ const annotations = {
   t08161: 'dial, China, Weifang, wed',
   t08203: 'dial, Germany, Frankfurt',
   t08295: 'dial, China, Suzhou, IPFS Cloud, sat',
+  t08301: 'dial, Japan, Setagaya-ku, MEIK, <19h, sun',
   t08330: 'dial, China, Chengdu, oursoft',
   t08344: 'dial, UK, Hartlepool',
   t08346: 'dial, Korea, wed',
@@ -555,6 +525,7 @@ const annotations = {
   t08418: 'dial, China, Chansha + USA, sat',
   t08243: 'dial, USA, Queens, sat',
   t08497: 'dial, Brazil, Sao Paulo',
+  t08264: 'dial, China, Xianning, mon',
   t08793: 'dial, China, Fuzhou',
   t08904: 'dial, China, Deyang, <19h',
   t08928: 'dial, USA, Arlington, theartist',
@@ -571,6 +542,7 @@ const annotations = {
   t09664: 'dial, Australia, Sydney, sat',
   t09729: 'dial, China, Dongguan, sat',
   t09734: 'dial, China, Dongguan',
+  t09736: 'dial, China, Guangdong, sun',
   t09789: 'dial, USA, thu',
   t09814: 'dial, China, Fuzhou',
   t09830: 'dial, Korea, Geumcheon-gu, sat',
@@ -587,6 +559,11 @@ const annotations = {
   t010598: 'dial, Canada, Waterloo, sat',
   t010612: 'dial, USA, Mountain View, sat',
   t010613: 'dial, Canada, Waterloo, sat',
+  t014420: 'dial, Russia, Samara, mon',
+  t014547: 'dial, China, Fuzhou, mon',
+  t014573: 'dial, China, Fuzhou, mon',
+  t015861: 'dial, Ukraine, Odessa, mon',
+
 
   // XNR
 
@@ -637,6 +614,8 @@ const annotations = {
   t09840: 'xnr, China, Baoding, sat',
   t09912: 'xnr, USA, Concord, sat',
   t09974: 'xnr, Canada, Calgary, sat',
+  t09811: 'xnr, China, Dongguan, sun',
+  t09997: 'xnr, USA, sun',
   t010009: 'xnr, USA, East Islip, sat',
   t010028: 'xnr, USA, Berkeley, sat',
   t010227: 'xnr, China, Xiamen, fri',
@@ -646,9 +625,27 @@ const annotations = {
   t010281: 'xnr, China, Shanghai, fri-cfa',
   t010282: 'xnr, USA, San Francisco, fri',
   t010283: 'xnr, Brazil, Sao Paulo, fri',
+  t010303: 'xnr, China, Guangdong, sun',
   t010310: 'xnr, Canada, Surrey, sat',
   t010315: 'xnr, Canada, Surrey, sat',
+  t010433: 'xnr, Korea, Seoul, sun',
+  t010453: 'xnr, China, Shaanxi, sun',
+  t010542: 'xnr, China, Ordos, sun',
+  t010549: 'xnr, China, Ordos, sun',
   t010593: 'xnr, USA, East Islip, <19h',
+  t010603: 'xnr, China, Baoding, sun',
+  t014246: 'xnr, China, Shenzhen, mon',
+  t014331: 'xnr, China, Chongqing, mon',
+  t014354: 'xnr, USA, Concord, mon',
+  t014389: 'xnr, China, Chongqing, mon',
+  t014419: 'xnr, USA, San Diego, mon',
+  t014477: 'xnr, China, Hangzhou, mon',
+  t014478: 'xnr, Finland, mon',
+  t014514: 'xnr, China, Fuzhou, mon',
+  t014533: 'xnr, China, Fuzhou, mon',
+  t014540: 'xnr, USA, Newton, mon',
+  t014660: 'xnr, Korea, Busan, mon',
+  t014685: 'xnr, Hong Kong, mon',
 
 
   // NR
