@@ -97,6 +97,49 @@ const annotations = {
 
   // New
 
+  t08264: 'new, China, Xianning, mon',
+  t010402: 'new, China, Shenyang, mon',
+  t014246: 'new, China, Shenzhen, mon',
+  t014271: 'new, China, Fuzhou, mon',
+  t014311: 'new, China, Ordos, mon',
+  t014314: 'new, Korea, Bucheon-si, mon',
+  t014327: 'new, China, Ningbo, mon',
+  t014329: 'new, China, Hong Kong, mon',
+  t014331: 'new, China, Chongqing, mon',
+  t014388: 'new, China, Guangdong, mon',
+  t014348: 'new, Brazil, Sao Paulo, mon',
+  t014354: 'new, USA, Concord, mon',
+  t014379: 'new, Japan, Ebisunishi, mon',
+  t014389: 'new, China, Chongqing, mon',
+  t014394: 'new, China, Suzhou, mon',
+  t014395: 'new, China, Dongguan, mon',
+  t014409: 'new, USA, Waxhaw, mon',
+  t014419: 'new, USA, San Diego, mon',
+  t014420: 'new, Russia, Samara, mon',
+  t014432: 'new, China, Chengdu, mon',
+  t014436: 'new, China, Chengdu, mon',
+  t014464: 'new, China, Hangzhou + Singapore, mon',
+  t014472: 'new, China, Ningbo, mon',
+  t014477: 'new, China, Hangzhou, mon',
+  t014478: 'new, Finland, mon',
+  t014483: 'new, USA, Clarksville, mon',
+  t014514: 'new, China, Fuzhou, mon',
+  t014533: 'new, China, Fuzhou, mon',
+  t014540: 'new, USA, Newton, mon',
+  t014547: 'new, China, Fuzhou, mon',
+  t014556: 'new, Korea, Bucheon-si, mon',
+  t014573: 'new, China, Fuzhou, mon',
+  t014606: 'new, Australia, Sydney, mon',
+  t014609: 'new, China, Fuzhou, mon',
+  t014632: 'new, Canada, mon',
+  t014634: 'new, USA, Boardman, mon',
+  t014640: 'new, Hungary, mon',
+  t014660: 'new, Korea, Busan, mon',
+  t014685: 'new, Hong Kong, mon',
+
+
+
+
 
 
   // Asks
