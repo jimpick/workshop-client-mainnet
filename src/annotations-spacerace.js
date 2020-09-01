@@ -34,7 +34,7 @@ const annotations = {
   t015643: 'active, China, Ordos, <23h, tue',
   t015662: 'active, China, Beijing, <23h, tue',
   t015714: 'active, China, Ordos, <23h, tue',
-  t015747: 'active, Japan, Setagaya-ku, <23h, tue',
+  t015747: 'retest, Japan, Setagaya-ku, <23h, tue',
 
   // Sealing - tue
 
