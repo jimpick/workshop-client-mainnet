@@ -89,7 +89,7 @@ const annotations = {
   t015231: 'retest, China, Wuxi, mon',
   t015232: 'retest, Poland, Warsaw, mon',
   t015643: 'sealing, China, Ordos, mon',
-  t015662: 'sealing, China, Beijing, mon',
+  t015662: 'retest, China, Beijing, mon',
   t015709: 'sealing, China, Hefei, mon',
   t015714: 'sealing, China, Ordos, mon',
   t015724: 'retest, China, Guangdong, mon',
