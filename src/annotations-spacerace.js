@@ -51,7 +51,7 @@ const annotations = {
   t08371: 'sealing, China, Chengdu, tue',
   t08432: 'sealing, China, Taizhou, tue',
   t08482: 'sealing, USA, Athol, @why, tue',
-  t08988: 'sealing, Korea, Hwaseong-si, tue',
+  t08988: 'retest, Korea, Hwaseong-si, tue',
   t09053: 'sealing, China, Shenzhen, tue',
   t09707: 'sealing, China, Guangdong, tue',
   t09731: 'sealing, China, Guiyang, tue',
