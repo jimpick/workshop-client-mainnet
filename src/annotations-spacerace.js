@@ -1,14 +1,16 @@
 const annotations = {
 
   // Active - mon
+
+  t02301: 'active, USA, <19h, <16h, 9h, 8h',
+  t09833: 'active, USA, San Jose, <13h, 8h, 8h',
   
   // Active/sealing - mon
  
-  t02301: 'active, USA, <19h, <16h, 9h, mon',
   t02404: 'active, Korea, Seoul, 10h, TVCC& BLOCK DATA BANK, <22h, mon',
   t02419: 'active, China, Shanghai, yuantai, 10h, mon',
   t02540: 'active, USA, Rochester, 12h, mon',
-  t02613: 'active, China, Chongqing, 10h, <19h, 8h, mon',
+  t02613: 'retest, China, Chongqing, 10h, <19h, 8h, mon',
   t02620: 'active, Poland, Krakow, @magik6k, 20h, <16h, mon',
   t03002: 'active, China, Chongqing, 11h, 9h, mon',
   t03328: 'active, China, Xinxiang, <22h, mon',
@@ -21,8 +23,7 @@ const annotations = {
   t08854: 'active, China, Dongguan, <16h, 10h, mon',
   t08937: 'active, China, Wuxi, YC--wuxi, <22h, mon',
   t09589: 'active, China, Changsha, <13h, mon',
-  t09833: 'active, USA, San Jose, <13h, 8h, mon',
-  t010223: 'active, China, Ordos, <19h, <20h, mon',
+  t010223: 'retest, China, Ordos, <19h, <20h, mon',
   t010225: 'active, China, Ordos, 11h, mon',
   t010533: 'active, China, Ordos, 12h, mon',
   t010538: 'active, China, Ordos, 13h, mon',
@@ -61,7 +62,7 @@ const annotations = {
   t09771: 'sealing, China, Hangzhou, mon',
   t09792: 'sealing, USA, Council Bluffs, mon',
   t010152: 'retest, Germany, mon',
-  t010173: 'sealing, Korea, Pyeongtaek-si, mon',
+  t010173: 'retest, Korea, Pyeongtaek-si, mon',
   t010257: 'retest, China, Hong Kong, mon',
   t010311: 'retest, Korea, Hwaseong-si, mon',
   t010346: 'sealing, China, Karamay, mon',
@@ -85,7 +86,7 @@ const annotations = {
   t014640: 'retest, Hungary, mon',
   t014745: 'sealing, China, Shenyang, mon',
   t014764: 'sealing, Korea, Wanju, mon',
-  t014803: 'sealing, China, Beijing, mon',
+  t014803: 'retest, China, Beijing, mon',
   t015231: 'retest, China, Wuxi, mon',
   t015232: 'retest, Poland, Warsaw, mon',
   t015643: 'sealing, China, Ordos, mon',
