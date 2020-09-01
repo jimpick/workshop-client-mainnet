@@ -15,7 +15,7 @@ const annotations = {
   t03345: 'active, China, Fuzhou, chh, <19h, <16h, 8h, mon',
   t03523: 'active, China, Wuxi, YC--wuxi, 12h, mon',
   t07775: 'active, China, Shenzhen, 16h, <22h, mon',
-  t08019: 'active, China, Yantai, 三合, <19h, <22h, mon',
+  t08019: 'rett, China, Yantai, 三合, <19h, <22h, mon',
   t08094: 'active, China, Guangzhou, dongshao, 10h, mon',
   t08178: 'active, China, Jiaxing, CAAP-金华, 12h, mon',
   t08854: 'active, China, Dongguan, <16h, 10h, mon',
