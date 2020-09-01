@@ -74,7 +74,7 @@ const annotations = {
   t014436: 'sealing, China, Chengdu, mon',
   t010449: 'sealing, China, Jiangmen, mon',
   t014464: 'retest, China, Hangzhou + Singapore, mon',
-  t010468: 'sealing, China, Guangzhou, mon',
+  t010468: 'retest, China, Guangzhou, mon',
   t010551: 'retest, China, Shenyang, 10h, mon',
   t010553: 'sealing, China, Ordos, 10h, mon',
   t014207: 'retest, USA, mon',
@@ -104,7 +104,7 @@ const annotations = {
   t015782: 'sealing, Australia, mon',
   t015833: 'retest, China, Baoding, mon',
   t015891: 'sealing, China, Shanghai, mon',
-  t015898: 'sealing, Lithuania, mon',
+  t015898: 'retest, Lithuania, mon',
   t015905: 'sealing, Lithuania, mon',
 
   // Stuck - mon
