@@ -60,7 +60,7 @@ const annotations = {
   t010005: 'sealing, China, Zhongshan, tue',
   t010152: 'sealing, Germany, tue',
   t010173: 'sealing, Korea, Pyeongtaek-si, tue',
-  t010297: 'sealing, USA, Howell, tue',
+  t010297: 'retest, USA, Howell, tue',
   t010346: 'sealing, China, Karamay, tue',
   t010399: 'sealing, China, Guangzhou, tue',
   t010446: 'sealing, Netherlands, tue',
