@@ -43,6 +43,21 @@ const annotations = {
   t015714: 'retest, China, Ordos, <23h, tue',
   t015747: 'retest, Japan, Setagaya-ku, <23h, tue',
 
+  // Sealing - wed
+
+  t09838: 'sealing, Russia, Irkutsk, wed',
+  t014279: 'sealing, Finland, Helsinki, wed',
+  t014380: 'sealing, China, Hangzhou + Wuhan + Singapore, wed',
+  t014481: 'sealing, China, Shanghai, wed',
+  t014487: 'sealing, China, Shanghai, wed',
+  t016436: 'sealing, Korea, Seoul, wed',
+  t016462: 'sealing, USA, Clarksville, wed',
+
+  // Stuck - wed
+ 
+  t014366: 'stuck, USA, Mountain View, wed-cfa',
+  t015862: 'stuck, Ukraine, Odessa, wed-funds',
+
   // Sealing - tue
 
   t03194: 'retest, China, Shenzhen, 成都云存&Npool, <19h, <22h, tue',
@@ -114,31 +129,6 @@ const annotations = {
 
   // New
 
-  t09838: 'new, Russia, Irkutsk, wed',
-  t014279: 'new, Finland, Helsinki, wed',
-  t014281: 'new, Netherlands, Permerend, wed',
-  t014366: 'new, USA, Mountain View, wed',
-  t014380: 'new, China, Hangzhou + Wuhan + Singapore, wed',
-  t014393: 'new, China, Zhejiang, wed',
-  t014744: 'new, China, Taiyuan, wed',
-  t014481: 'new, China, Shanghai, wed',
-  t014487: 'new, China, Shanghai, wed',
-  t014805: 'new, China, Ningbo, wed',
-  t015642: 'new, China, Fuzhou, wed',
-  t015862: 'new, Ukraine, Odessa, wed',
-  t015907: 'new, Canada, Calgary, wed',
-  t016056: 'new, USA, Arlington, wed',
-  t016297: 'new, China, Mianyang + USA, wed',
-  t016302: 'new, China, Fuzhou, wed',
-  t016303: 'new, USA, Boardman, @ribasushi, wed',
-  t016304: 'new, USA, Boardman, @ribasushi, wed',
-  t016305: 'new, USA, Boardman, @ribasushi, wed',
-  t016306: 'new, USA, Boardman, @ribasushi, wed', 
-  t016309: 'new, USA, Boardman, @ribasushi, wed', 
-  t016412: 'new, China, Taiwan, Taipei, wed',
-  t016436: 'new, Korea, Seoul, wed',
-  t016462: 'new, USA, Clarksville, wed',
-
 
   // Min Size
 
@@ -174,6 +164,7 @@ const annotations = {
   t015231: 'error, China, Wuxi, mon', // market balance
   t015928: 'error, China, Fuzhou, tue', // protocol not supported
   t016262: 'error, China, Fuzhou, tue', // error generating CommP: open /root/.lotusminer/fstmp898140909: no such file or directory
+  t016297: 'error, China, Mianyang + USA, wed', // market balance
 
 
   // Dial backoff
@@ -452,6 +443,7 @@ const annotations = {
   t014251: 'rejected, Singapore, sun',
   t014261: 'rejected, China, Fuzhou, sun',
   t014271: 'rejected, China, Fuzhou, mon',
+  t014281: 'rejected, Netherlands, Permerend, wed',
   t014302: 'rejected, China, Ningbo, tue',
   t014327: 'rejected, China, Ningbo, mon',
   t014329: 'rejected, China, Hong Kong, mon',
@@ -472,9 +464,12 @@ const annotations = {
   t014701: 'rejected, China, Changzhou, tue',
   t014706: 'rejected, China, Ordos, tue',
   t014741: 'rejected, China, Wuhan, mon',
+  t014744: 'rejected, China, Taiyuan, wed',
   t014778: 'rejected, China, Ordos, tue',
   t014804: 'rejected, China, Ordos, tue',
+  t014805: 'rejected, China, Ningbo, wed',
   t015232: 'rejected, Poland, Warsaw, mon',
+  t015642: 'rejected, China, Fuzhou, wed',
   t015720: 'rejected, China, Ningbo, tue',
   t015732: 'rejected, USA, Portland, tue',
   t015742: 'rejected, China, Ningbo, tue',
@@ -489,13 +484,23 @@ const annotations = {
   t015870: 'rejected, China, Hangzhou, mon',
   t015873: 'rejected, China, Fuzhou, mon',
   t015875: 'rejected, China, Fuzhou, mon',
+  t015907: 'rejected, Canada, Calgary, wed',
   t015910: 'rejected, Turkey, tue',
   t015918: 'rejected, China, Fuzhou, tue',
   t015927: 'rejected, USA, East Islip, tue',
   t015942: 'rejected, China, Ningbo, tue',
   t016024: 'rejected, China, Fuzhou, tue',
+  t016056: 'rejected, USA, Arlington, wed',
   t016140: 'rejected, China, Beijing, tue',
   t016279: 'rejected, Finland, Helsinki, tue',
+  t016302: 'rejected, China, Fuzhou, wed',
+  t016303: 'rejected, USA, Boardman, @ribasushi, wed',
+  t016304: 'rejected, USA, Boardman, @ribasushi, wed',
+  t016305: 'rejected, USA, Boardman, @ribasushi, wed',
+  t016306: 'rejected, USA, Boardman, @ribasushi, wed', 
+  t016309: 'rejected, USA, Boardman, @ribasushi, wed', 
+  t016412: 'rejected, China, Taiwan, Taipei, wed',
+
 
   // Dial errors
 
@@ -611,6 +616,7 @@ const annotations = {
   t010598: 'dial, Canada, Waterloo, sat',
   t010612: 'dial, USA, Mountain View, sat',
   t010613: 'dial, Canada, Waterloo, sat',
+  t014393: 'dial, China, Zhejiang, wed',
   t014420: 'dial, Russia, Samara, mon',
   t014547: 'dial, China, Fuzhou, mon',
   t014573: 'dial, China, Fuzhou, mon',
@@ -760,7 +766,9 @@ const annotations = {
   t09006: 'NR',
   t09035: 'NR',
   t09076: 'NR',
+  t09084: 'NR',
   t09529: 'NR',
+  t09538: 'NR',
   t09561: 'NR',
   t09569: 'NR',
   t09594: 'NR',
@@ -772,7 +780,9 @@ const annotations = {
   t09966: 'NR',
   t09969: 'NR',
   t010033: 'NR',
+  t010084: 'NR',
   t010088: 'NR',
+  t010213: 'NR',
   t010222: 'NR',
   t010241: 'NR',
   t010253: 'NR',
@@ -786,6 +796,12 @@ const annotations = {
   t010566: 'NR',
   t010601: 'NR',
   t010616: 'NR',
+  t014324: 'NR',
+  t014377: 'NR',
+  t014486: 'NR',
+  t014522: 'NR',
+  t016238: 'NR',
+  t016426: 'NR',
   
   // Bootstrappers
   t01000: 'NR - bootstrap',
