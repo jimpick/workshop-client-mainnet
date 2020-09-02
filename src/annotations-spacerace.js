@@ -99,7 +99,7 @@ const annotations = {
   t016162: 'retest, France, Borgo, tue',
   t016172: 'sealing, China, Guangdong, tue',
   t016203: 'sealing, China, Chengdu, tue',
-  t016217: 'sealing, China, Nanchong, tue',
+  t016217: 'retest, China, Nanchong, tue',
   t016228: 'sealing, China, Chengdu, tue',
   t016263: 'retest, Australia, Sydney, tue',
   t016271: 'sealing, Korea, Seodaemun-gu, tue',
