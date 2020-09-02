@@ -27,7 +27,7 @@ const annotations = {
   t010538: 'active, China, Ordos, 13h, <22h, wed',
   t014233: 'active, China, Shanghai, <22h, 14h, wed',
   t014311: 'active, China, Ordos, 10h, wed',
-  t014328: 'active, Canada, Waterloo, 12h, wed',
+  t014328: 'retest, Canada, Waterloo, 12h, wed',
   t014382: 'active, Singapore, 10h, wed',
   t014386: 'active, Singapore, <22h, wed',
   t014431: 'active, Singapore, 10h, wed',
