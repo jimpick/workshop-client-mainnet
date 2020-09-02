@@ -114,6 +114,30 @@ const annotations = {
 
   // New
 
+  t09838: 'new, Russia, Irkutsk, wed',
+  t014279: 'new, Finland, Helsinki, wed',
+  t014281: 'new, Netherlands, Permerend, wed',
+  t014366: 'new, USA, Mountain View, wed',
+  t014380: 'new, China, Hangzhou + Wuhan + Singapore, wed',
+  t014393: 'new, China, Zhejiang, wed',
+  t014744: 'new, China, Taiyuan, wed',
+  t014481: 'new, China, Shanghai, wed',
+  t014487: 'new, China, Shanghai, wed',
+  t014805: 'new, China, Ningbo, wed',
+  t015642: 'new, China, Fuzhou, wed',
+  t015862: 'new, Ukraine, Odessa, wed',
+  t015907: 'new, Canada, Calgary, wed',
+  t016056: 'new, USA, Arlington, wed',
+  t016297: 'new, China, Mianyang + USA, wed',
+  t016302: 'new, China, Fuzhou, wed',
+  t016303: 'new, USA, Boardman, @ribasushi, wed',
+  t016304: 'new, USA, Boardman, @ribasushi, wed',
+  t016305: 'new, USA, Boardman, @ribasushi, wed',
+  t016306: 'new, USA, Boardman, @ribasushi, wed', 
+  t016309: 'new, USA, Boardman, @ribasushi, wed', 
+  t016412: 'new, China, Taiwan, Taipei, wed',
+  t016436: 'new, Korea, Seoul, wed',
+  t016462: 'new, USA, Clarksville, wed',
 
 
   // Min Size
