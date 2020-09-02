@@ -40,7 +40,7 @@ const annotations = {
 
   t03194: 'retest, China, Shenzhen, 成都云存&Npool, <19h, <22h, tue',
   t03225: 'sealing, China, Guyuan, tue',
-  t03339: 'sealing, China, Luzhou, benxun, tue',
+  t03339: 'retest, China, Luzhou, benxun, tue',
   t03344: 'sealing, China, Guangzhou, 13h, tue',
   t03512: 'retest, New Zealand, Auckland, NZFILECOIN01, tue',
   t03619: 'sealing, China, Xiamen, tue',
