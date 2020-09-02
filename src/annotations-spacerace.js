@@ -72,7 +72,7 @@ const annotations = {
   t014311: 'sealing, China, Ordos, tue',
   t014314: 'sealing, Korea, Bucheon-si, tue',
   t014382: 'sealing, Singapore, tue',
-  t014386: 'sealing, Singapore, tue',
+  t014386: 'retest, Singapore, tue',
   t014388: 'retest, China, Guangdong, tue',
   t014394: 'sealing, China, Suzhou, tue',
   t014431: 'sealing, Singapore, tue',
