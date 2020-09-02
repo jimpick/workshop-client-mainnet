@@ -45,7 +45,7 @@ const annotations = {
   t03339: 'sealing, China, Luzhou, benxun, wed',
   t03344: 'sealing, China, Guangzhou, 13h, wed',
   t03512: 'sealing, New Zealand, Auckland, NZFILECOIN01, wed',
-  t03619: 'sealing, China, Xiamen, wed',
+  t03619: 'retest, China, Xiamen, wed',
   t06775: 'sealing, China, Shenzhen, IPSB&CAAP, <23h, wed',
   t07827: 'sealing, China, Wuhan, 天际合, wed',
   t07987: 'sealing, China, Beijing, wed',
