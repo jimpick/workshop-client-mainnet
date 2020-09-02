@@ -101,7 +101,7 @@ const annotations = {
   t016203: 'sealing, China, Chengdu, tue',
   t016217: 'sealing, China, Nanchong, tue',
   t016228: 'sealing, China, Chengdu, tue',
-  t016263: 'sealing, Australia, Sydney, tue',
+  t016263: 'retest, Australia, Sydney, tue',
   t016271: 'sealing, Korea, Seodaemun-gu, tue',
 
   // Stuck - tue
