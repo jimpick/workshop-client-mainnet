@@ -33,14 +33,14 @@ const annotations = {
   t014431: 'active, Singapore, 10h, wed',
   t014436: 'active, China, Chengdu, <23h, wed',
   t014745: 'active, China, Shenyang, <22h, wed',
-  t015643: 'active, China, Ordos, <23h, wed',
+  t015643: 'retest, China, Ordos, <23h, wed',
   t015662: 'active, China, Beijing, <23h, <22h, wed',
   t015747: 'active, Japan, Setagaya-ku, <23h, wed',
   t015753: 'active, China, Guyuan, <22h, wed',
 
   // Sealing - wed
  
-  t02627: 'sealing, China, Guilin, <19h, wed',
+  t02627: 'retest, China, Guilin, <19h, wed',
   t03225: 'sealing, China, Guyuan, wed',
   t03339: 'sealing, China, Luzhou, benxun, wed',
   t03344: 'sealing, China, Guangzhou, 13h, wed',
