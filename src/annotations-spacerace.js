@@ -2,6 +2,18 @@ const annotations = {
 
   // Active - thu
 
+  t02627: 'active, China, Guilin, <19h, 12h',
+  t03245: 'active, USA, Los Angeles, <1d',
+  t08854: 'active, China, Dongguan, <16h, 10h, <23h, 11h',
+  t08917: 'active, China, Beijing, thu',
+  t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h',
+  t010491: 'active, China, Shenzhen, <23h',
+  t014394: 'active, China, Suzhou, <23h',
+  t014380: 'active, China, Hangzhou + Wuhan + Singapore, 10h, 9h',
+  t014745: 'active, China, Shenyang, <22h, <24h',
+  t016594: 'active, Germany, 10h',
+  t017251: 'active, USA, <1d',
+
   // Active/sealing - thu
 
   t02404: 'active, Korea, Seoul, 10h, TVCC& BLOCK DATA BANK, <22h, thu',
@@ -13,19 +25,15 @@ const annotations = {
   t07806: 'active, China, Wuhan, HelloXP, <23h, thu',
   t08073: 'active, China, Qiqihar, QY7TT, <23h, thu',
   t08220: 'active, China, Shenzhen, <19h, thu',
-  t08854: 'active, China, Dongguan, <16h, 10h, <23h, thu',
   t08937: 'active, China, Wuxi, YC--wuxi, <22h, 14h, thu',
   t09573: 'active, China, Xiamen, 13h, thu',
-  t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, thu',
   t010225: 'active, China, Ordos, 11h, 8h, thu',
   t010257: 'active, China, Hong Kong, <23h, thu',
   t010538: 'active, China, Ordos, 13h, <22h, <23h, thu',
   t014233: 'active, China, Shanghai, <22h, 14h, <23h, thu',
   t014311: 'active, China, Ordos, 10h, thu',
-  t014380: 'active, China, Hangzhou + Wuhan + Singapore, 10h, thu',
   t014382: 'active, Singapore, 10h, thu',
   t016436: 'active, Korea, Seoul, 8h, thu',
-  t014745: 'active, China, Shenyang, <22h, thu',
   t015662: 'active, China, Beijing, <23h, <22h, thu',
   t015753: 'active, China, Guyuan, <22h, thu',
 
@@ -36,9 +44,7 @@ const annotations = {
   // Sealing - thu
 
   t02613: 'sealing, China, Chongqing, 10h, <19h, 8h, thu',
-  t02627: 'sealing, China, Guilin, <19h, thu',
   t03194: 'sealing, China, Shenzhen, 成都云存&Npool, <19h, <22h, thu',
-  t03245: 'sealing, USA, Los Angeles, thu',
   t03339: 'sealing, China, Luzhou, benxun, thu',
   t03344: 'sealing, China, Guangzhou, 13h, thu',
   t03512: 'sealing, New Zealand, Auckland, NZFILECOIN01, thu',
@@ -48,7 +54,6 @@ const annotations = {
   t07987: 'sealing, China, Beijing, thu',
   t08432: 'sealing, China, Taizhou, thu',
   t08482: 'sealing, USA, Athol, @why, thu',
-  t08917: 'sealing, China, Beijing, thu',
   t09053: 'sealing, China, Shenzhen, thu',
   t09597: 'sealing, China, Shanghai, thu',
   t09707: 'sealing, China, Guangdong, thu',
@@ -60,12 +65,10 @@ const annotations = {
   t010399: 'sealing, China, Guangzhou, thu',
   t010446: 'sealing, Netherlands, thu',
   t010449: 'sealing, China, Jiangmen, thu',
-  t010491: 'sealing, China, Shenzhen, thu',
   t010558: 'sealing, China, Shenzhen + Hong Kong, thu',
   t014207: 'sealing, USA, thu',
   t014279: 'sealing, Finland, Helsinki, thu',
   t014366: 'sealing, USA, Mountain View, thu',
-  t014394: 'sealing, China, Suzhou, thu',
   t014432: 'sealing, China, Chengdu, thu',
   t014487: 'sealing, China, Shanghai, thu',
   t014556: 'sealing, Korea, Bucheon-si, thu',
@@ -87,7 +90,6 @@ const annotations = {
   t016456: 'sealing, China, Zhejiang, thu',
   t016462: 'sealing, USA, Clarksville, thu',
   t016563: 'sealing, China, Deyang, thu',
-  t016594: 'sealing, Germany, thu',
   t016659: 'sealing, USA, Alpharetta, thu',
   t016688: 'sealing, Germany, Frankfurt, thu',
   t016706: 'sealing, China, Guangzhou, thu',
@@ -97,7 +99,6 @@ const annotations = {
   t017181: 'sealing, China, Nanchong, thu',
   t017186: 'sealing, China, Jiaxing, thu',
   t017194: 'sealing, China, Hefei, thu',
-  t017251: 'sealing, USA, thu',
   t017294: 'sealing, China, Shenzhen, thu',
 
   // Stuck - thu
