@@ -416,13 +416,13 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       )
 
       // Process in reverse order to make discovery of new miners more quick
-      const reversed = sortedMinersByName
+      const reversed = [...sortedMinersByName]
         .reverse()
         .filter(miner => !annotations[miner])
       const processingOrder = [...filteredAnnotationKeys, ...reversed]
       for (const miner of processingOrder) {
         queue.add(async () => {
-          // console.log('Miner Power', miner)
+          // console.log('Miner Power', miner, annotations[miner])
           if (state.canceled) return
           setMinersScanned(++state.count)
           const result = await client.stateMinerPower(miner, tipsetKey)

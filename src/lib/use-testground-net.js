@@ -16,9 +16,10 @@ export default function useTestgroundNet ({ appState, updateAppState }) {
     },
     [updateAppState]
   )
-  const { selectedNode, nodesScanned, rescan, genesisCid } = appState
+  const { stateLoaded, selectedNode, nodesScanned, rescan, genesisCid } = appState
 
   useEffect(() => {
+    if (!stateLoaded) return
     if (nodesScanned && !(rescan > nodesScanned)) return
     let state = { canceled: false }
     updateAvailable(draft => {
@@ -73,6 +74,7 @@ export default function useTestgroundNet ({ appState, updateAppState }) {
       state.canceled = true
     }
   }, [
+    stateLoaded,
     updateAppState,
     updateAvailable,
     nodesScanned,
