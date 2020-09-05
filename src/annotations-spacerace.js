@@ -1,6 +1,17 @@
 const annotations = {
 
   // Active - fri
+
+  t03002: 'active, China, Chongqing, 11h, 9h, <22h, 9h',
+  t09573: 'active, China, Xiamen, 13h, <15h',
+  t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h',
+  t014207: 'active, USA, <15h',
+  t014233: 'active, China, Shanghai, <22h, 14h, <23h, <15h',
+  t014394: 'active, China, Suzhou, <23h, 12h',
+  t015647: 'active, China, Shenzhen, 9h',
+  t016436: 'active, Korea, Seoul, 8h, <15h',
+  t016563: 'active, China, Deyang, <15h',
+  t017665: 'active, China, Shenyang, 11h',
  
   // Active/sealing - fri
 
@@ -15,21 +26,15 @@ const annotations = {
   t08220: 'active, China, Shenzhen, <19h, fri',
   t08854: 'active, China, Dongguan, <16h, 10h, <23h, 11h, fri',
   t08937: 'active, China, Wuxi, YC--wuxi, <22h, 14h, fri',
-  t09573: 'active, China, Xiamen, 13h, fri',
-  t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, fri',
   t010257: 'active, China, Hong Kong, <23h, fri',
   t010538: 'active, China, Ordos, 13h, <22h, <23h, fri',
-  t014233: 'active, China, Shanghai, <22h, 14h, <23h, fri',
-  t014394: 'active, China, Suzhou, <23h, fri',
   t015747: 'active, Japan, Setagaya-ku, <23h, fri',
   t015753: 'active, China, Guyuan, <22h, fri',
-  t016436: 'active, Korea, Seoul, 8h, fri',
   t016594: 'active, Germany, 10h, fri',
   t017251: 'active, USA, <1d, fri',
 
   // Sealing - fri
 
-  t03002: 'sealing, China, Chongqing, 11h, 9h, <22h, fri',
   t03225: 'sealing, China, Guyuan, fri',
   t03339: 'sealing, China, Luzhou, benxun, fri',
   t03344: 'sealing, China, Guangzhou, 13h, fri',
@@ -47,14 +52,12 @@ const annotations = {
   t010399: 'sealing, China, Guangzhou, fri',
   t010449: 'sealing, China, Jiangmen, fri',
   t010558: 'sealing, China, Shenzhen + Hong Kong, fri',
-  t014207: 'sealing, USA, fri',
   t014366: 'sealing, USA, Mountain View, fri',
   t014432: 'sealing, China, Chengdu, fri',
   t014436: 'sealing, China, Chengdu, <23h, fri',
   t014556: 'sealing, Korea, Bucheon-si, fri',
   t014638: 'sealing, USA, fri',
   t014803: 'sealing, China, Beijing, fri',
-  t015647: 'sealing, China, Shenzhen, fri',
   t015709: 'sealing, China, Hefei, fri',
   t015757: 'sealing, China, Hangzhou, fri',
   t015763: 'sealing, South Africa, Cape Town, fri',
@@ -67,7 +70,6 @@ const annotations = {
   t016299: 'sealing, China, Shanghai, fri',
   t016456: 'sealing, China, Zhejiang, fri',
   t016509: 'sealing, China, Fuzhou, fri',
-  t016563: 'sealing, China, Deyang, fri',
   t016659: 'sealing, USA, Alpharetta, fri',
   t016688: 'sealing, Germany, Frankfurt, fri',
   t016706: 'sealing, China, Guangzhou, fri',
@@ -79,7 +81,6 @@ const annotations = {
   t017488: 'sealing, USA, Council Bluffs, fri',
   t017618: 'sealing, Korea, Wanju, fri',
   t017635: 'sealing, China, Nanchong, fri',
-  t017665: 'sealing, China, Shenyang, fri',
   t017794: 'sealing, USA, Columbus, fri',
   t017795: 'sealing, USA, Columbus, fri',
   t018088: 'sealing, USA, Mountain View, fri',
