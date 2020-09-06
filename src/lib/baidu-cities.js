@@ -19,6 +19,7 @@ const baiduCities = {
   75: 'Chengdu', // 成都市
   77: 'Meishan', // 眉山市
   90: 'Ili', // 伊犁哈萨克自治州
+  111: 'Dali', // 大理白族自治州
   119: 'Dongguan', // 东莞市
   127: 'Hefei', // 合肥市
   131: 'Beijing', // 北京市
