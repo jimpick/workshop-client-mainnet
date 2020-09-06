@@ -46,7 +46,7 @@ const annotations = {
   t09053: 'sealing, China, Shenzhen, sat',
   t09597: 'sealing, China, Shanghai, sat',
   t09707: 'sealing, China, Guangdong, sat',
-  t09731: 'sealing, China, Guiyang, sat',
+  t09731: 'retest, China, Guiyang, sat',
   t010152: 'sealing, Germany, sat',
   t010173: 'sealing, Korea, Pyeongtaek-si, sat',
   t010399: 'sealing, China, Guangzhou, sat',
@@ -88,7 +88,7 @@ const annotations = {
   t018425: 'retest, USA, Howell, sat',
   t018440: 'sealing, Russia, St. Petersburg, sat',
   t018441: 'sealing, USA, sat',
-  t018446: 'sealing, China, Dongguan, sat',
+  t018446: 'retest, China, Dongguan, sat',
   t018464: 'sealing, Sweden, Stockholm, sat',
   t018490: 'sealing, Korea, Hwaseong-si, sat',
 
