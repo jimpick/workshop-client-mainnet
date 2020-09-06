@@ -6,7 +6,6 @@ const annotations = {
 
   t02404: 'active, Korea, Seoul, 10h, TVCC& BLOCK DATA BANK, <22h, sat',
   t02419: 'active, China, Shanghai, yuantai, 10h, 14h, <23h, sat',
-  t02620: 'active, Poland, Krakow, @magik6k, 20h, <16h, 13h, sat',
   t02627: 'active, China, Guilin, <19h, 12h, sat',
   t03002: 'active, China, Chongqing, 11h, 9h, <22h, 9h, sat',
   t03328: 'active, China, Xinxiang, <22h, sat',
@@ -29,11 +28,11 @@ const annotations = {
   t016436: 'active, Korea, Seoul, 8h, <15h, sat',
   t016563: 'active, China, Deyang, <15h, sat',
   t016594: 'active, Germany, 10h, sat',
-  t017665: 'active, China, Shenyang, 11h, sat',
+  t017665: 'retest, China, Shenyang, 11h, sat',
  
   // Sealing - sat
 
-  t03194: 'sealing, China, Shenzhen, 成都云存&Npool, <19h, <22h, sat',
+  t03194: 'retest, China, Shenzhen, 成都云存&Npool, <19h, <22h, sat',
   t03225: 'sealing, China, Guyuan, sat',
   t03339: 'sealing, China, Luzhou, benxun, sat',
   t03340: "sealing, China, Xi'an, <19h, <23h, sat", 
@@ -54,7 +53,7 @@ const annotations = {
   t010449: 'sealing, China, Jiangmen, sat',
   t010491: 'sealing, China, Shenzhen, <23h, sat',
   t010516: 'sealing, Brazil, Sao Paulo, sat',
-  t010558: 'sealing, China, Shenzhen + Hong Kong, sat',
+  t010558: 'retest, China, Shenzhen + Hong Kong, sat',
   t014366: 'sealing, USA, Mountain View, sat',
   t014432: 'sealing, China, Chengdu, sat',
   t014436: 'sealing, China, Chengdu, <23h, sat',
@@ -62,12 +61,12 @@ const annotations = {
   t014638: 'sealing, USA, sat',
   t014803: 'sealing, China, Beijing, sat',
   t015757: 'sealing, China, Hangzhou, sat',
-  t015763: 'sealing, South Africa, Cape Town, sat',
+  t015763: 'retest, South Africa, Cape Town, sat',
   t015777: 'sealing, Australia, Sydney, sat',
   t015795: 'sealing, Brazil, Sao Paulo, sat',
   t015848: 'sealing, China, Ordos, sat',
   t015891: 'sealing, China, Shanghai, sat',
-  t015938: 'sealing, Canada, Waterloo, sat',
+  t015938: 'retest, Canada, Waterloo, sat',
   t015940: 'sealing, Netherlands, Amsterdam, sat',
   t016299: 'sealing, China, Shanghai, sat',
   t016456: 'sealing, China, Zhejiang, sat',
@@ -77,7 +76,7 @@ const annotations = {
   t016688: 'sealing, Germany, Frankfurt, sat',
   t016917: 'sealing, China, Guangdong, sat',
   t017117: 'sealing, Russia, Samara, sat',
-  t017294: 'sealing, China, Shenzhen, sat',
+  t017294: 'retest, China, Shenzhen, sat',
   t017430: 'sealing, Australia, Alexandria, sat',
   t017488: 'sealing, USA, Council Bluffs, sat',
   t017635: 'sealing, China, Nanchong, sat',
@@ -86,7 +85,7 @@ const annotations = {
   t018119: 'sealing, China, Dongguan, sat',
   t018164: 'sealing, USA, Howell, sat',
   t018311: "sealing, China, Xi'an, sat",
-  t018425: 'sealing, USA, Howell, sat',
+  t018425: 'retest, USA, Howell, sat',
   t018440: 'sealing, Russia, St. Petersburg, sat',
   t018441: 'sealing, USA, sat',
   t018446: 'sealing, China, Dongguan, sat',
@@ -104,6 +103,7 @@ const annotations = {
 
   // Busy - sat
 
+  t02620: 'active-busy, Poland, Krakow, @magik6k, 20h, <16h, 13h, sat',
   t018203: 'new-busy, Finland, Helsinki, sat',
   t018429: 'new-busy, Korea, Hwaseong-si, sat',
  
