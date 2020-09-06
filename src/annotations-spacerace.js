@@ -89,7 +89,7 @@ const annotations = {
   t018440: 'sealing, Russia, St. Petersburg, sat',
   t018441: 'sealing, USA, sat',
   t018446: 'retest, China, Dongguan, sat',
-  t018464: 'sealing, Sweden, Stockholm, sat',
+  t018464: 'retest, Sweden, Stockholm, sat',
   t018490: 'sealing, Korea, Hwaseong-si, sat',
 
   // Stuck - sat
