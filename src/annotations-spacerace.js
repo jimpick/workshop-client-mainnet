@@ -2,12 +2,24 @@ const annotations = {
 
   // Active - sat
 
+  t03002: 'active, China, Chongqing, 11h, 9h, <22h, 9h, <23h',
+  t09573: 'active, China, Xiamen, 13h, <15h, <23h',
+  t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h, 7h',
+  t010538: 'active, China, Ordos, 13h, <22h, <23h, <23h',
+  t014207: 'active, USA, <15h, <23h',
+  t014233: 'active, China, Shanghai, <22h, 14h, <23h, <15h, <22h',
+  t014394: 'active, China, Suzhou, <23h, 12h, <23h',
+  t015647: 'active, China, Shenzhen, 9h, <23h',
+  t015795: 'active, Brazil, Sao Paulo, <22h',
+  t016563: 'active, China, Deyang, <15h, <23h',
+  t016594: 'active, Germany, 10h, <23h',
+  t018311: "active, China, Xi'an, <23h",
+
   // Active/sealing - sat
 
   t02404: 'active, Korea, Seoul, 10h, TVCC& BLOCK DATA BANK, <22h, sat',
   t02419: 'active, China, Shanghai, yuantai, 10h, 14h, <23h, sat',
   t02627: 'active, China, Guilin, <19h, 12h, sat',
-  t03002: 'active, China, Chongqing, 11h, 9h, <22h, 9h, sat',
   t03328: 'active, China, Xinxiang, <22h, sat',
   t03345: 'active, China, Fuzhou, chh, <19h, <16h, 8h, <23h, 10h, sat',
   t07775: 'active, China, Shenzhen, 16h, <22h, <23h, sat',
@@ -15,19 +27,10 @@ const annotations = {
   t08220: 'active, China, Shenzhen, <19h, sat',
   t08854: 'active, China, Dongguan, <16h, 10h, <23h, 11h, sat',
   t08937: 'retest, China, Wuxi, YC--wuxi, <22h, 14h, sat',
-  t09573: 'active, China, Xiamen, 13h, <15h, sat',
-  t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h, sat',
   t010257: 'active, China, Hong Kong, <23h, sat',
-  t010538: 'active, China, Ordos, 13h, <22h, <23h, sat',
-  t014207: 'active, USA, <15h, sat',
-  t014233: 'active, China, Shanghai, <22h, 14h, <23h, <15h, sat',
-  t014394: 'active, China, Suzhou, <23h, 12h, sat',
-  t015647: 'active, China, Shenzhen, 9h, sat',
   t015747: 'active, Japan, Setagaya-ku, <23h, sat',
   t015753: 'active, China, Guyuan, <22h, sat',
   t016436: 'active, Korea, Seoul, 8h, <15h, sat',
-  t016563: 'active, China, Deyang, <15h, sat',
-  t016594: 'active, Germany, 10h, sat',
   t017665: 'retest, China, Shenyang, 11h, sat',
  
   // Sealing - sat
@@ -63,7 +66,6 @@ const annotations = {
   t015757: 'retest, China, Hangzhou, sat',
   t015763: 'retest, South Africa, Cape Town, sat',
   t015777: 'sealing, Australia, Sydney, sat',
-  t015795: 'sealing, Brazil, Sao Paulo, sat',
   t015848: 'sealing, China, Ordos, sat',
   t015891: 'sealing, China, Shanghai, sat',
   t015938: 'retest, Canada, Waterloo, sat',
@@ -84,7 +86,6 @@ const annotations = {
   t017795: 'sealing, USA, Columbus, sat',
   t018119: 'sealing, China, Dongguan, sat',
   t018164: 'sealing, USA, Howell, sat',
-  t018311: "sealing, China, Xi'an, sat",
   t018425: 'retest, USA, Howell, sat',
   t018440: 'sealing, Russia, St. Petersburg, sat',
   t018441: 'sealing, USA, sat',
