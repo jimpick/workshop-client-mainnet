@@ -31,10 +31,12 @@ const annotations = {
   // Sealing - sun
 
   t03225: 'sealing, China, Guyuan, sun',
+  t03245: 'sealing, USA, Los Angeles, <1d, sun',
   t03339: 'sealing, China, Luzhou, benxun, sun',
   t03340: "sealing, China, Xi'an, <19h, <23h, sun", 
   t03344: 'sealing, China, Guangzhou, 13h, sun',
   t03619: 'sealing, China, Xiamen, sun',
+  t06775: 'sealing, China, Shenzhen, IPSB&CAAP, <23h, sun',
   t07827: 'sealing, China, Wuhan, 天际合, sun',
   t08094: 'sealing, China, Guangzhou, dongshao, 10h, <22h, sun',
   t08371: 'sealing, China, Chengdu, sun',
@@ -43,8 +45,10 @@ const annotations = {
   t09053: 'sealing, China, Shenzhen, sun',
   t09597: 'sealing, China, Shanghai, sun',
   t09731: 'sealing, China, Guiyang, sun',
+  t010040: 'sealing, China, Shenzhen, sun',
   t010152: 'sealing, Germany, sun',
   t010399: 'sealing, China, Guangzhou, sun',
+  t010446: 'sealing, Netherlands, sun',
   t010449: 'sealing, China, Jiangmen, sun',
   t010516: 'sealing, Brazil, Sao Paulo, sun',
   t010558: 'sealing, China, Shenzhen + Hong Kong, sun',
@@ -99,21 +103,12 @@ const annotations = {
 
   // Sealing - sat
 
-  t010173: 'xnr, Korea, Pyeongtaek-si, sat',
-  t014556: 'xnr, Korea, Bucheon-si, sat',
-  t015848: 'error, China, Ordos, sat', // reset
-  t015891: 'backoff, China, Shanghai, sat',
-  t017117: 'xnr, Russia, Samara, sat',
-  t018490: 'xnr, Korea, Hwaseong-si, sat',
 
   // Stuck - sat
 
-  t06775: 'stuck, China, Shenzhen, IPSB&CAAP, <23h, sat-funds',
-  t010446: 'stuck, Netherlands, sat-cfa',
-  t015709: 'stuck, China, Hefei, sat-funds',
-  t016706: 'stuck, China, Guangzhou, sat-xfr',
-  t017618: 'stuck, Korea, Wanju, sat-funds',
-  t018484: 'stuck, China, Shanghai, sat-cfa',
+  t015709: 'error, China, Hefei, sat-funds', // eof
+  t016706: 'error, China, Guangzhou, sat-xfr', // deal failed: (State=26) handing off deal to node: AddPiece failed: adding piece to sector: writing piece: opening unsealed sector file: file '/mnt/data2/.lotusstorage20200902/unsealed/s-t016706-183' has inconsistent length; has 34359738368 bytes; expected 34359738372 (4 trailer, 34359738368 sector data)
+  t018484: 'backoff, China, Shanghai, sat-cfa',
 
   // Busy - sat
 
@@ -151,7 +146,6 @@ const annotations = {
   t08406: 'error, China, Shenzhen', // reset
   t08572: 'error, Brazil, Sao Paulo', // market balance
   t09261: 'error, Brazil, Sao Paulo', // market balance
-  t010040: 'error, China, Shenzhen, fri', // reset
   t014380: 'error, China, Hangzhou + Wuhan + Singapore, 10h, 9h', // market balance
   t014382: 'error, Singapore, 10h, thu', // market balance
   t014386: 'error, Singapore, <22h, <23h, thu-cfa', // market balance
@@ -165,23 +159,18 @@ const annotations = {
   t015763: 'error, South Africa, Cape Town, sat', // eof
   t015771: 'error, Brazil, Sao Paulo, wed-funds', // reset
   t015782: 'error, Australia, thu', // market balance
-  t015947: 'error, Finland, Helsinki, thu', // eof
+  t015848: 'error, China, Ordos, sat', // reset
   t016228: 'error, China, Chengdu, tue', // reset
   t016297: 'error, China, Mianyang + USA, wed', // market balance
-  t018397: 'error, USA, Howell, sat', // nonce
 
 
   // Dial backoff
 
   t02627: 'backoff, China, Guilin, <19h, 12h, sat',
-  t03245: 'backoff, USA, Los Angeles, <1d',
   t08109: 'backoff, USA, qianyuanyunshuo, wed-funds', // reset
-  t014279: 'backoff, Finland, Helsinki, thu',
   t014487: 'backoff, China, Shanghai, thu',
-  t015905: 'backoff, Lithuania, wed',
-  t016579: 'backoff, USA, Howell, thu',
+  t015891: 'backoff, China, Shanghai, sat',
   t017285: 'backoff, China, Maoming, sun',
-  t018088: 'backoff, USA, Mountain View, fri',
 
   // Rejected
 
@@ -730,10 +719,11 @@ const annotations = {
   t010607: 'dial, China, Guangzhou, tue',
   t010612: 'dial, USA, Mountain View, sat',
   t010613: 'dial, Canada, Waterloo, sat',
+  t014279: 'dial, Finland, Helsinki, thu',
+  t014328: 'dial, Canada, Waterloo, 12h, wed',
   t014393: 'dial, China, Zhejiang, wed',
   t014407: 'dial, China, Shanghai, thu',
   t014420: 'dial, Russia, Samara, mon',
-  t014328: 'dial, Canada, Waterloo, 12h, wed',
   t014481: 'dial, China, Shanghai, <23h',
   t014547: 'dial, China, Fuzhou, mon',
   t014573: 'dial, China, Fuzhou, mon',
@@ -747,9 +737,11 @@ const annotations = {
   t015756: 'dial, Finland, Helsinki, mon',
   t015861: 'dial, Ukraine, Odessa, mon',
   t015898: 'dial, Lithuania, mon',
+  t015905: 'dial, Lithuania, wed',
   t015914: 'dial, China, Fuzhou, tue',
   t015928: 'dial, China, Fuzhou, tue',
   t015933: 'dial, Finland, Helskinki, tue',
+  t015947: 'dial, Finland, Helsinki, thu',
   t016172: 'dial, China, Guangdong, tue',
   t016263: 'dial, Australia, Sydney, tue',
   t016276: 'dial, China, Beijing, fri',
@@ -757,15 +749,16 @@ const annotations = {
   t016364: 'dial, China, Hefei, thu',
   t016419: 'dial, USA, Mountain View, thu',
   t016479: 'dial, China, Dongguan, thu',
+  t016579: 'dial, USA, Howell, thu',
   t017038: 'dial, China, Fuzhou, thu',
   t017186: 'dial, China, Jiaxing, thu',
   t017194: 'dial, China, Hefei, thu',
   t017266: 'dial, China, Fuzhou, thu',
   t017672: 'dial, China, Cangzhou, fri',
+  t018088: 'dial, USA, Mountain View, fri',
   t018128: 'dial, China, Dongguan, fri',
   t018440: 'dial, Russia, St. Petersburg, sat',
   t018464: 'dial, Sweden, Stockholm, sat',
-
 
   // XNR
 
@@ -824,6 +817,7 @@ const annotations = {
   t09997: 'xnr, USA, sun',
   t010009: 'xnr, USA, East Islip, sat',
   t010028: 'xnr, USA, Berkeley, sat',
+  t010173: 'xnr, Korea, Pyeongtaek-si, sat',
   t010227: 'xnr, China, Xiamen, fri',
   t010244: 'xnr, USA, Newton, fri',
   t010248: 'xnr, China, Yibin, fri',
@@ -857,6 +851,7 @@ const annotations = {
   t014514: 'xnr, China, Fuzhou, mon',
   t014533: 'xnr, China, Fuzhou, mon',
   t014540: 'xnr, USA, Newton, mon',
+  t014556: 'xnr, Korea, Bucheon-si, sat',
   t014660: 'xnr, Korea, Busan, mon',
   t014685: 'xnr, Hong Kong, mon',
   t015655: 'xnr, Korea, Geumcheon-gu, mon',
@@ -872,14 +867,19 @@ const annotations = {
   t016234: 'xnr, China, Chengdu, thu',
   t016262: 'xnr, China, Fuzhou, tue',
   t016271: 'xnr, Korea, Seodaemun-gu, tue',
+  t017117: 'xnr, Russia, Samara, sat',
   t017181: 'xnr, China, Nanchong, thu',
   t017215: 'xnr, Finland, fri',
   t017251: 'xnr, USA, <1d, fri',
   t017334: 'xnr, China, Fuzhou, fri',
+  t017618: 'xnr, Korea, Wanju, sat-funds',
   t017970: 'xnr, China, Baoding, fri',
   t018311: "xnr, China, Xi'an, <23h",
+  t018397: 'xnr, USA, Howell, sat',
   t018429: 'xnr, Korea, Hwaseong-si, sat',
   t018446: 'xnr, China, Dongguan, sat',
+  t018490: 'xnr, Korea, Hwaseong-si, sat',
+
 
 
   // NR
