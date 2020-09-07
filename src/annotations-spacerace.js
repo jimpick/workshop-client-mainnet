@@ -26,7 +26,7 @@ const annotations = {
   t016436: 'active, Korea, Seoul, 8h, <15h, sun',
   t016563: 'active, China, Deyang, <15h, <23h, sun',
   t016594: 'active, Germany, 10h, <23h, sun',
-  t017665: 'active, China, Shenyang, 11h, sun',
+  t017665: 'retest, China, Shenyang, 11h, sun',
 
   // Sealing - sun
 
