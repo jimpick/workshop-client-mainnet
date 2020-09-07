@@ -29,7 +29,7 @@ const annotations = {
   // Sealing - mon
  
   t02627: 'sealing, China, Guilin, <19h, 12h, mon',
-  t03194: 'sealing, China, Shenzhen, 成都云存&Npool, <19h, <22h, mon',
+  t03194: 'retest, China, Shenzhen, 成都云存&Npool, <19h, <22h, mon',
   t03339: 'sealing, China, Luzhou, benxun, mon',
   t03344: 'sealing, China, Guangzhou, 13h, mon',
   t03619: 'sealing, China, Xiamen, mon',
