@@ -4,7 +4,7 @@ const annotations = {
  
   // Active/sealing - mon
 
-  t02620: 'active, Poland, Krakow, @magik6k, 20h, <16h, 13h, mon',
+  t02620: 'retest, Poland, Krakow, @magik6k, 20h, <16h, 13h, mon',
   t03002: 'active, China, Chongqing, 11h, 9h, <22h, 9h, <23h, mon',
   t03328: 'active, China, Xinxiang, <22h, mon',
   t03345: 'active, China, Fuzhou, chh, <19h, <16h, 8h, <23h, 10h, mon',
