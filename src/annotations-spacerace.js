@@ -63,7 +63,7 @@ const annotations = {
   t016456: 'sealing, China, Zhejiang, sun',
   t016462: 'sealing, USA, Clarksville, sun',
   t016509: 'sealing, China, Fuzhou, sun',
-  t016659: 'sealing, USA, Alpharetta, sun',
+  t016659: 'retest, USA, Alpharetta, sun',
   t016688: 'sealing, Germany, Frankfurt, sun',
   t016917: 'retest, China, Guangdong, sun',
   t017294: 'sealing, China, Shenzhen, sun',
