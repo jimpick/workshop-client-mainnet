@@ -16,7 +16,7 @@ const annotations = {
   t010538: 'active, China, Ordos, 13h, <22h, <23h, <23h, <20h, mon',
   t014207: 'active, USA, <15h, <23h, mon',
   t014233: 'retest, China, Shanghai, <22h, 14h, <23h, <15h, <22h, mon',
-  t014394: 'active, China, Suzhou, <23h, 12h, <23h, 8h, mon',
+  t014394: 'retest, China, Suzhou, <23h, 12h, <23h, 8h, mon',
   t015647: 'active, China, Shenzhen, 9h, <23h, mon',
   t015753: 'active, China, Guyuan, <22h, mon',
   t015795: 'active, Brazil, Sao Paulo, <22h, mon',
