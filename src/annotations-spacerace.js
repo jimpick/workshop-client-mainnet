@@ -72,7 +72,7 @@ const annotations = {
   t018484: 'retest, China, Shanghai, mon',
   t018506: 'sealing, USA, New York, mon',
   t018517: 'sealing, USA, Columbus, mon',
-  t018525: 'sealing, USA, Queens, mon',
+  t018525: 'retest, USA, Queens, mon',
   t018530: 'retest, China, Shaanxi, mon',
   t018531: 'sealing, China, Shaanxi, mon',
   t018542: 'sealing, China, Chongqing, mon',
@@ -109,6 +109,12 @@ const annotations = {
 
   // New
 
+  t010041: 'new, USA, Jackson, mon',
+  t010579: 'new, South Africa, Johannesburg, mon',
+  t010586: 'new, China, Fuzhou, mon',
+  t015884: 'new, China, Fuzhou, mon',
+  t015888: 'new, China, Fuzhou, mon',
+  t015897: 'new, China, Guangdong, mon',
 
   // Min Size
 
