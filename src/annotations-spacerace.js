@@ -52,7 +52,7 @@ const annotations = {
   t010449: 'sealing, China, Jiangmen, sun',
   t010516: 'sealing, Brazil, Sao Paulo, sun',
   t010558: 'sealing, China, Shenzhen + Hong Kong, sun',
-  t014366: 'sealing, USA, Mountain View, sun',
+  t014366: 'retest, USA, Mountain View, sun',
   t014432: 'sealing, China, Chengdu, sun',
   t014436: 'sealing, China, Chengdu, <23h, sun',
   t014638: 'sealing, USA, sun',
