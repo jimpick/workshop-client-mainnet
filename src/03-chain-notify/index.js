@@ -67,6 +67,7 @@ export default function ChainNotify ({ appState }) {
         <a href="https://spacerace.filecoin.io/">space race</a> {' '}
         <a href="https://filfox.info/en">filfox</a> {' '}
         <a href="https://filscan.io/#/">filscan</a> {' '}
+        <a href="https://filscout.io/en/">filscout</a>
       </div>}
       {content}
     </div>
