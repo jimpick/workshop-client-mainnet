@@ -1,36 +1,39 @@
 const annotations = {
 
   // Active - mon
+
+  t02627: 'active, China, Guilin, <19h, 12h, <1d',
+  t03002: 'active, China, Chongqing, 11h, 9h, <22h, 9h, <23h, 12h',
+  t03339: 'active, China, Luzhou, benxun, <1d',
+  t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h, 7h, <20h, 12h',
+  t010538: 'active, China, Ordos, 13h, <22h, <23h, <23h, <20h, 12h',
+  t014233: 'active, China, Shanghai, <22h, 14h, <23h, <15h, <22h, 12h',
+  t014307: 'active, China, Dongguan, 12h',
+  t015647: 'active, China, Shenzhen, 9h, <23h, <1d',
+  t015747: 'active, Japan, Setagaya-ku, <23h, <1d',
+  t016563: 'active, China, Deyang, <15h, <23h, <20h, 12h',
+  t016594: 'active, Germany, 10h, <23h, <20h, 12h',
  
   // Active/sealing - mon
 
   t02620: 'retest, Poland, Krakow, @magik6k, 20h, <16h, 13h, mon',
-  t03002: 'active, China, Chongqing, 11h, 9h, <22h, 9h, <23h, mon',
   t03328: 'active, China, Xinxiang, <22h, mon',
   t03345: 'active, China, Fuzhou, chh, <19h, <16h, 8h, <23h, 10h, mon',
   t07806: 'active, China, Wuhan, HelloXP, <23h, mon',
   t08854: 'active, China, Dongguan, <16h, 10h, <23h, 11h, mon',
   t08937: 'retest, China, Wuxi, YC--wuxi, <22h, 14h, mon',
   t09573: 'active, China, Xiamen, 13h, <15h, <23h, mon',
-  t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h, 7h, <20h, mon',
-  t010538: 'active, China, Ordos, 13h, <22h, <23h, <23h, <20h, mon',
   t014207: 'active, USA, <15h, <23h, mon',
-  t014233: 'retest, China, Shanghai, <22h, 14h, <23h, <15h, <22h, mon',
   t014394: 'retest, China, Suzhou, <23h, 12h, <23h, 8h, mon',
-  t015647: 'retest, China, Shenzhen, 9h, <23h, mon',
   t015753: 'active, China, Guyuan, <22h, mon',
   t015795: 'active, Brazil, Sao Paulo, <22h, mon',
   t016436: 'active, Korea, Seoul, 8h, <15h, mon',
-  t016563: 'active, China, Deyang, <15h, <23h, <20h, mon',
-  t016594: 'active, Germany, 10h, <23h, <20h, mon',
   t017665: 'active, China, Shenyang, 11h, mon',
   t018790: 'active, China, Chengdu, <20h, mon',
 
   // Sealing - mon
  
-  t02627: 'sealing, China, Guilin, <19h, 12h, mon',
   t03194: 'retest, China, Shenzhen, 成都云存&Npool, <19h, <22h, mon',
-  t03339: 'sealing, China, Luzhou, benxun, mon',
   t03344: 'sealing, China, Guangzhou, 13h, mon',
   t03619: 'sealing, China, Xiamen, mon',
   t07827: 'sealing, China, Wuhan, 天际合, mon',
@@ -47,10 +50,8 @@ const annotations = {
   t010449: 'sealing, China, Jiangmen, mon',
   t010516: 'sealing, Brazil, Sao Paulo, mon',
   t010558: 'sealing, China, Shenzhen + Hong Kong, mon',
-  t014307: 'sealing, China, Dongguan, mon',
   t014436: 'sealing, China, Chengdu, <23h, mon',
   t014638: 'sealing, USA, mon',
-  t015747: 'retest, Japan, Setagaya-ku, <23h, mon',
   t015757: 'retest, China, Hangzhou, mon',
   t015777: 'sealing, Australia, Sydney, mon',
   t015891: 'retest, China, Shanghai, mon',
