@@ -110,12 +110,26 @@ const annotations = {
 
   // New
 
-  t010041: 'new, USA, Jackson, mon',
-  t010579: 'new, South Africa, Johannesburg, mon',
-  t010586: 'new, China, Fuzhou, mon',
-  t015884: 'new, China, Fuzhou, mon',
-  t015888: 'new, China, Fuzhou, mon',
-  t015897: 'new, China, Guangdong, mon',
+  t010041: 'new, USA, Jackson, tue',
+  t010230: 'new, China, Beijing, tue',
+  t010528: 'new, China, Chongqing, tue',
+  t010579: 'new, South Africa, Johannesburg, tue',
+  t010586: 'new, China, Fuzhou, tue',
+  t015884: 'new, China, Fuzhou, tue',
+  t015888: 'new, China, Fuzhou, tue',
+  t015897: 'new, China, Guangdong, tue',
+  t018780: 'new, Singapore + Germany, Frankfurt + USA, tue',
+  t018781: 'new, Singapore + Germany, Frankfurt + USA, tue',
+  t018782: 'new, Singapore + Germany, Frankfurt + USA, tue',
+  t018783: 'new, Singapore + Germany, Frankfurt + USA, tue',
+  t018784: 'new, Singapore + Germany, Frankfurt + USA, tue',
+  t018785: 'new, Singapore + Germany, Frankfurt + USA, tue',
+  t018911: 'new, USA, Portlan, tue',
+  t019002: 'new, USA, tue',
+  t019006: 'new, Vietman, Ho Chi Minh City + China, Hong Kong, tue',
+  t019007: 'new, China, Shenzhen + Hong Kong, tue',
+  t019015: 'new, China, Hangzhou + Singapore, tue',
+
 
   // Min Size
 
@@ -1016,7 +1030,10 @@ const annotations = {
   t018513: 'NR',
   t018538: 'NR',
   t018836: 'NR',
+  t018844: 'NR',
   t018869: 'NR',
+  t019002: 'NR',
+  t019022: 'NR',
   
   // Bootstrappers
   t01000: 'NR - bootstrap',
