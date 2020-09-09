@@ -2,27 +2,31 @@ const annotations = {
 
   // Active - tue
 
+  t03339: 'active, China, Luzhou, benxun, <1d, <20h',
+  t08371: 'active, China, Chengdu, <19h',
+  t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h, 7h, <20h, 12h, <20h',
+  t014233: 'active, China, Shanghai, <22h, 14h, <23h, <15h, <22h, 12h, <19h',
+  t015647: 'active, China, Shenzhen, 9h, <23h, <1d, <20h',
+  t016563: 'active, China, Deyang, <15h, <23h, <20h, 12h, <20h',
+  t016594: 'active, Germany, 10h, <23h, <20h, 12h, <19h',
+  t018544: 'active, Korea, Uijeongbu-si, <20h, <19h',
+  t019087: 'active, South Africa, Johannesburg, <13h',
+
   // Active/sealing - tue
 
   t02620: 'active, Poland, Krakow, @magik6k, 20h, <16h, 13h, tue',
   t03328: 'active, China, Xinxiang, <22h, tue',
-  t03339: 'active, China, Luzhou, benxun, <1d, tue',
   t03345: 'active, China, Fuzhou, chh, <19h, <16h, 8h, <23h, 10h, tue',
   t07806: 'retest, China, Wuhan, HelloXP, <23h, tue',
   t08854: 'active, China, Dongguan, <16h, 10h, <23h, 11h, tue',
   t08937: 'active, China, Wuxi, YC--wuxi, <22h, 14h, tue',
   t09573: 'active, China, Xiamen, 13h, <15h, <23h, tue',
-  t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h, 7h, <20h, 12h, tue',
   t010538: 'active, China, Ordos, 13h, <22h, <23h, <23h, <20h, 12h, tue',
   t014207: 'active, USA, <15h, <23h, tue',
-  t014233: 'retest, China, Shanghai, <22h, 14h, <23h, <15h, <22h, 12h, tue',
   t014307: 'active, China, Dongguan, 12h, tue',
   t014394: 'active, China, Suzhou, <23h, 12h, <23h, 8h, tue',
-  t015647: 'active, China, Shenzhen, 9h, <23h, <1d, tue',
   t015747: 'active, Japan, Setagaya-ku, <23h, <1d, tue',
   t015753: 'active, China, Guyuan, <22h, tue',
-  t016563: 'active, China, Deyang, <15h, <23h, <20h, 12h, tue',
-  t016594: 'active, Germany, 10h, <23h, <20h, 12h, tue',
   t017665: 'active, China, Shenyang, 11h, tue',
   t018790: 'retest, China, Chengdu, <20h, tue',
 
@@ -35,7 +39,6 @@ const annotations = {
   t03340: "sealing, China, Xi'an, <19h, <23h, tue", 
   t03344: 'sealing, China, Guangzhou, 13h, tue',
   t08094: 'sealing, China, Guangzhou, dongshao, 10h, <22h, tue',
-  t08371: 'sealing, China, Chengdu, tue',
   t08432: 'retest, China, Taizhou, tue',
   t08220: 'retest, China, Shenzhen, <19h, tue',
   t010257: 'sealing, China, Hong Kong, <23h, tue',
@@ -50,13 +53,23 @@ const annotations = {
   t017294: 'retest, China, Shenzhen, tue',
   t017488: 'retest, USA, Council Bluffs, tue',
   t017635: 'retest, China, Nanchong, tue',
+  t018506: 'sealing, USA, New York, tue',
   t018517: 'retest, USA, Columbus, tue',
   t018525: 'retest, USA, Queens, tue',
   t018509: 'retest, China, Dongguan, tue',
-  t018544: 'sealing, Korea, Uijeongbu-si, <20h, tue',
   t018802: 'retest, China, Dongguan, tue',
   t018809: 'sealing, USA, New York, tue',
   t018851: 'sealing, China, Deyang + Singapore, tue',
+  t019048: 'sealing, Brazil, Sao Paulo, tue',
+  t019062: 'sealing, Germany, tue',
+  t019071: 'sealing, USA, New York, tue',
+  t019090: 'sealing, South Africa, Johannesburg, tue',
+  t019094: 'sealing, Brazil, Sao Paulo, tue',
+  t019090: 'sealing, China, Hong Kong, tue',
+  t019099: 'sealing, China, Hong Kong, tue',
+  t019114: 'sealing, USA, Howell, tue',
+  t019118: 'sealing, China, Jiaxing, tue',
+
 
   // Stuck - tue
 
@@ -83,32 +96,13 @@ const annotations = {
   t018518: "stuck, China, Xi'an, tue",
   t018879: 'stuck, Korea, Geumcheon-gu, tue-cfa',
   t019007: 'stuck, China, Shenzhen + Hong Kong, tue-cfa',
-
-  // Sealing - mon
- 
-  t018506: 'sealing, USA, New York, mon',
-
-  // Stuck - mon
-
-
-  // Busy - mon
+  t019017: 'stuck, China, Wenzhou, tue-cfa',
+  t019024: 'stuck, China, Sichuan, tue-cfa',
 
 
   // New
 
-  t019017: 'new, China, Wenzhou, tue',
-  t019024: 'new, China, Sichuan, tue',
-  t019042: 'new, China, Shanghai, tue',
-  t019048: 'new, Brazil, Sao Paulo, tue',
-  t019062: 'new, Germany, tue',
-  t019071: 'new, USA, New York, tue',
-  t019087: 'new, South Africa, Johannesburg, tue',
-  t019090: 'new, South Africa, Johannesburg, tue',
-  t019094: 'new, Brazil, Sao Paulo, tue',
-  t019090: 'new, China, Hong Kong, tue',
-  t019099: 'new, China, Hong Kong, tue',
-  t019114: 'new, USA, Howell, tue',
-  t019118: 'new, China, Jiaxing, tue',
+  t019042: 'new, China, Shanghai, wed',
 
 
 
