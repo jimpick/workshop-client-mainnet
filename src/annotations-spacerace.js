@@ -52,7 +52,7 @@ const annotations = {
   t017635: 'retest, China, Nanchong, tue',
   t018517: 'retest, USA, Columbus, tue',
   t018525: 'retest, USA, Queens, tue',
-  t018509: 'sealing, China, Dongguan, tue',
+  t018509: 'retest, China, Dongguan, tue',
   t018544: 'sealing, Korea, Uijeongbu-si, <20h, tue',
   t018802: 'retest, China, Dongguan, tue',
   t018809: 'sealing, USA, New York, tue',
