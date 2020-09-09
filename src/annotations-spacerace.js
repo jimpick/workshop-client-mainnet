@@ -24,7 +24,7 @@ const annotations = {
   t016563: 'active, China, Deyang, <15h, <23h, <20h, 12h, tue',
   t016594: 'active, Germany, 10h, <23h, <20h, 12h, tue',
   t017665: 'active, China, Shenyang, 11h, tue',
-  t018790: 'active, China, Chengdu, <20h, tue',
+  t018790: 'retest, China, Chengdu, <20h, tue',
 
   // Sealing - tue
 
@@ -54,7 +54,7 @@ const annotations = {
   t018525: 'sealing, USA, Queens, tue',
   t018509: 'sealing, China, Dongguan, tue',
   t018544: 'sealing, Korea, Uijeongbu-si, <20h, tue',
-  t018802: 'sealing, China, Dongguan, tue',
+  t018802: 'retest, China, Dongguan, tue',
   t018809: 'sealing, USA, New York, tue',
   t018851: 'sealing, China, Deyang + Singapore, tue',
 
