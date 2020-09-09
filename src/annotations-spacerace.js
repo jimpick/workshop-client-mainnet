@@ -96,7 +96,22 @@ const annotations = {
 
   // New
 
-  t019002: 'new, USA, tue',
+  t019017: 'new, China, Wenzhou, tue',
+  t019024: 'new, China, Sichuan, tue',
+  t019042: 'new, China, Shanghai, tue',
+  t019048: 'new, Brazil, Sao Paulo, tue',
+  t019062: 'new, Germany, tue',
+  t019071: 'new, USA, New York, tue',
+  t019087: 'new, South Africa, Johannesburg, tue',
+  t019090: 'new, South Africa, Johannesburg, tue',
+  t019094: 'new, Brazil, Sao Paulo, tue',
+  t019090: 'new, China, Hong Kong, tue',
+  t019099: 'new, China, Hong Kong, tue',
+  t019114: 'new, USA, Howell, tue',
+  t019118: 'new, China, Jiaxing, tue',
+
+
+
 
 
   // Min Size
@@ -143,7 +158,6 @@ const annotations = {
   t015940: 'error, Netherlands, Amsterdam, mon', // reset
   t016297: 'error, China, Mianyang + USA, wed', // market balance
   t018441: 'error, USA, mon', // actor balance 
-  t018540: 'dial, Netherlands, mon', // os
   t018803: 'error, Korea, Seodaemun-gu, mon', // actor balance
   t018812: 'error, South Africa, Cape Town, mon', // actor balance
   t018864: 'error, Korea, Busan, mon', // actor balance
@@ -151,6 +165,7 @@ const annotations = {
   t018899: 'error, China, Shanghai, mon', // actor balance
   t018911: 'error, USA, Portland, tue', // incorrect provider
   t019015: 'error, China, Hangzhou + Singapore, tue', // market balance
+  t019109: 'error, USA, Howell, tue', // reset
 
 
   // Dial backoff
@@ -601,6 +616,13 @@ const annotations = {
   t018806: 'rejected, Finland, Helsinki, mon',
   t018837: 'rejected, China, Shaanxi, mon',
   t018884: 'rejected, Russia, mon',
+  t018905: 'rejected, Brazil, Sao Paulo, tue',
+  t019029: 'rejected, Serbia, Boljevac, tue',
+  t019041: 'rejected, Singapore, tue',
+  t019074: 'rejected, China, Guangdong, tue',
+  t019053: 'rejected, Singapore, tue',
+  t019104: 'rejected, Canada, Chambly, tue',
+
 
 
   // Dial errors
@@ -783,7 +805,9 @@ const annotations = {
   t018203: 'dial, Finland, Helsinki, mon',
   t018440: 'dial, Russia, St. Petersburg, sat',
   t018464: 'dial, Sweden, Stockholm, sat',
+  t018540: 'dial, Netherlands, mon', // os
   t018562: 'dial, New Zealand, Masterton, mon',
+  t019002: 'dial, USA, tue',
 
 
   // XNR
