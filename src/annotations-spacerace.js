@@ -28,34 +28,48 @@ const annotations = {
 
   // Sealing - tue
 
+  t02404: 'sealing, Korea, Seoul, 10h, TVCC& BLOCK DATA BANK, <22h, tue',
+  t02419: 'sealing, China, Shanghai, yuantai, 10h, 14h, <23h, tue',
   t03194: 'sealing, China, Shenzhen, 成都云存&Npool, <19h, <22h, tue',
+  t03245: 'sealing, USA, Los Angeles, <1d, tue',
+  t03340: "sealing, China, Xi'an, <19h, <23h, tue", 
   t03344: 'sealing, China, Guangzhou, 13h, tue',
   t08094: 'sealing, China, Guangzhou, dongshao, 10h, <22h, tue',
   t08371: 'sealing, China, Chengdu, tue',
   t08432: 'sealing, China, Taizhou, tue',
+  t08220: 'sealing, China, Shenzhen, <19h, tue',
   t010257: 'sealing, China, Hong Kong, <23h, tue',
   t010399: 'sealing, China, Guangzhou, tue',
   t014436: 'sealing, China, Chengdu, <23h, tue',
+  t014432: 'sealing, China, Chengdu, tue',
   t015777: 'sealing, Australia, Sydney, tue',
   t015891: 'sealing, China, Shanghai, tue',
+  t015938: 'sealing, Canada, Waterloo, tue',
   t016917: 'sealing, China, Guangdong, tue',
   t017285: 'sealing, China, Maoming, tue',
+  t017294: 'sealing, China, Shenzhen, tue',
   t017488: 'sealing, USA, Council Bluffs, tue',
   t017635: 'sealing, China, Nanchong, tue',
   t018517: 'sealing, USA, Columbus, tue',
   t018525: 'sealing, USA, Queens, tue',
+  t018509: 'sealing, China, Dongguan, tue',
+  t018544: 'sealing, Korea, Uijeongbu-si, <20h, tue',
   t018802: 'sealing, China, Dongguan, tue',
   t018809: 'sealing, USA, New York, tue',
+  t018851: 'sealing, China, Deyang + Singapore, tue',
 
   // Stuck - tue
 
   t03619: 'stuck, China, Xiamen, tue-cfa',
+  t06775: 'stuck, China, Shenzhen, IPSB&CAAP, <23h, tue',
+  t07987: 'stuck, China, Beijing, tue',
   t09053: 'stuck, China, Shenzhen, tue-cfa',
   t09597: 'stuck, China, Shanghai, tue-cfa',
   t09731: 'stuck, China, Guiyang, tue-cfa',
+  t010040: 'stuck, China, Shenzhen, tue',
   t010152: 'stuck, Germany, tue-cfa',
   t010449: 'stuck, China, Jiangmen, tue-cfa',
-  t010558: 'stuck, China, Shenzhen + Hong Kong, thue-cfa',
+  t010558: 'stuck, China, Shenzhen + Hong Kong, tue-cfa',
   t014638: 'stuck, USA, tue-cfa',
   t015757: 'stuck, China, Hangzhou, tue-cfa',
   t016456: 'stuck, China, Zhejiang, tue-cfa',
@@ -66,6 +80,7 @@ const annotations = {
   t017430: 'stuck, Australia, Alexandria, tue-cfa',
   t017794: 'stuck, USA, Columbus, tue-cfa',
   t017795: 'stuck, USA, Columbus, tue-cfa',
+  t018518: "stuck, China, Xi'an, tue",
   t018879: 'stuck, Korea, Geumcheon-gu, tue-cfa',
   t019007: 'stuck, China, Shenzhen + Hong Kong, tue-cfa',
 
@@ -75,19 +90,6 @@ const annotations = {
 
   // Stuck - mon
 
-  t02419: 'stuck, China, Shanghai, yuantai, 10h, 14h, <23h, mon-xfr',
-  t03245: 'stuck, USA, Los Angeles, <1d, mon-cfa',
-  t03340: "stuck, China, Xi'an, <19h, <23h, mon-cfa", 
-  t06775: 'stuck, China, Shenzhen, IPSB&CAAP, <23h, mon-cfa',
-  t07987: 'stuck, China, Beijing, mon-funds',
-  t08220: 'stuck, China, Shenzhen, <19h, mon-xfr',
-  t010040: 'stuck, China, Shenzhen, mon-cfa',
-  t015938: 'stuck, Canada, Waterloo, mon-cfa',
-  t018119: 'stuck, China, Dongguan, mon-cfa',
-  t018509: 'stuck, China, Dongguan, mon-cfa',
-  t018518: "stuck, China, Xi'an, mon-xfr",
-  t018537: 'stuck, China, Shaanxi, mon-cfa',
-  t018544: 'stuck, Korea, Uijeongbu-si, <20h, mon-cfa',
 
   // Busy - mon
 
@@ -110,7 +112,6 @@ const annotations = {
 
   // Error
 
-  t02404: 'error, Korea, Seoul, 10h, TVCC& BLOCK DATA BANK, <22h, sun', // publish - no funds
   t03305: 'error, Kenya, Nairobi, <19h', // market balance
   t03306: 'error, Australia, <19h', // market balance
   t03307: 'error, Australia, wed', // market balance
@@ -131,7 +132,6 @@ const annotations = {
   t014386: 'error, Singapore, <22h, <23h, thu-cfa', // market balance
   t014425: 'error, Singapore, tue', // market balance
   t014431: 'error, Singapore, 10h, thu-cfa', // market balance
-  t014432: 'error, China, Chengdu, sun', // reset
   t014433: 'error, Singapore, thu-cfa', // market balance
   t014464: 'error, China, Hangzhou + Singapore, <23h, tue', // market balance
   t015231: 'error, China, Wuxi, mon', // market balance
@@ -142,14 +142,12 @@ const annotations = {
   t015782: 'error, Australia, thu', // market balance
   t015940: 'error, Netherlands, Amsterdam, mon', // reset
   t016297: 'error, China, Mianyang + USA, wed', // market balance
-  t017294: 'error, China, Shenzhen, sun', // os
   t018441: 'error, USA, mon', // actor balance 
-  t018540: 'error, Netherlands, mon', // os
+  t018540: 'dial, Netherlands, mon', // os
   t018803: 'error, Korea, Seodaemun-gu, mon', // actor balance
   t018812: 'error, South Africa, Cape Town, mon', // actor balance
-  t018851: 'error, China, Deyang + Singapore, mon', // os
   t018864: 'error, Korea, Busan, mon', // actor balance
-  t018865: 'error, China, Chengdu, mon', // os
+  t018865: 'xnr, China, Chengdu, mon', // os
   t018899: 'error, China, Shanghai, mon', // actor balance
   t018911: 'error, USA, Portland, tue', // incorrect provider
   t019015: 'error, China, Hangzhou + Singapore, tue', // market balance
@@ -158,7 +156,7 @@ const annotations = {
   // Dial backoff
 
   t03225: 'backoff, China, Guyuan, sun',
-  t08109: 'backoff, USA, qianyuanyunshuo, wed-funds', // reset
+  t018119: 'backoff, China, Dongguan, mon-cfa',
   t010579: 'backoff, South Africa, Johannesburg, tue',
   t019006: 'backoff, Vietman, Ho Chi Minh City + China, Hong Kong, tue',
 
@@ -593,6 +591,7 @@ const annotations = {
   t018520: 'rejected, China, sun',
   t018530: 'rejected, China, Shaanxi, mon',
   t018531: 'rejected, China, Shaanxi, mon',
+  t018537: 'rejected, China, Shaanxi, mon-cfa',
   t018780: 'rejected, Singapore + Germany, Frankfurt + USA, tue',
   t018781: 'rejected, Singapore + Germany, Frankfurt + USA, tue',
   t018782: 'rejected, Singapore + Germany, Frankfurt + USA, tue',
@@ -602,7 +601,6 @@ const annotations = {
   t018806: 'rejected, Finland, Helsinki, mon',
   t018837: 'rejected, China, Shaanxi, mon',
   t018884: 'rejected, Russia, mon',
-
 
 
   // Dial errors
@@ -671,6 +669,7 @@ const annotations = {
   t08063: 'dial, China, Huizhou, wed',
   t08076: 'dial, Netherlands, Alphen aan den Rijn, Ang, tue',
   t08101: 'dial, China, Wuxi',
+  t08109: 'dial, USA, qianyuanyunshuo, wed-funds', // reset
   t08149: 'dial, China, Jiangmen',
   t08150: 'dial, China, Hangzhou',
   t08161: 'dial, China, Weifang, wed',
