@@ -39,7 +39,7 @@ const annotations = {
   t014436: 'retest, China, Chengdu, <23h, wed',
   t015757: 'sealing, China, Hangzhou, wed',
   t015777: 'sealing, Australia, Sydney, wed',
-  t015891: 'sealing, China, Shanghai, wed',
+  t015891: 'retest, China, Shanghai, wed',
   t015938: 'sealing, Canada, Waterloo, wed',
   t016917: 'retest, China, Guangdong, wed',
   t017285: 'sealing, China, Maoming, wed',
