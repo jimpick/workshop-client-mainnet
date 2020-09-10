@@ -21,8 +21,8 @@ const annotations = {
   t015753: 'active, China, Guyuan, <22h, wed',
   t016563: 'active, China, Deyang, <15h, <23h, <20h, 12h, <20h, wed',
   t016594: 'active, Germany, 10h, <23h, <20h, 12h, <19h, wed',
-  t017665: 'active, China, Shenyang, 11h, wed',
-  t018544: 'active, Korea, Uijeongbu-si, <20h, <19h, wed',
+  t017665: 'retest, China, Shenyang, 11h, wed',
+  t018544: 'retest, Korea, Uijeongbu-si, <20h, <19h, wed',
   t019087: 'retest, South Africa, Johannesburg, <13h, wed',
 
   // Sealing - wed
@@ -34,7 +34,7 @@ const annotations = {
   t08220: 'sealing, China, Shenzhen, <19h, wed',
   t09731: 'sealing, China, Guiyang, wed',
   t010257: 'sealing, China, Hong Kong, <23h, wed',
-  t010516: 'sealing, Brazil, Sao Paulo, wed',
+  t010516: 'retest, Brazil, Sao Paulo, wed',
   t014432: 'retest, China, Chengdu, wed',
   t014436: 'retest, China, Chengdu, <23h, wed',
   t015757: 'sealing, China, Hangzhou, wed',
@@ -54,7 +54,7 @@ const annotations = {
   t019094: 'sealing, Brazil, Sao Paulo, wed',
   t019090: 'sealing, China, Hong Kong, wed',
   t019099: 'sealing, China, Hong Kong, wed',
-  t019100: 'sealing, Romania, Cluj-Napoca, wed',
+  t019100: 'retest, Romania, Cluj-Napoca, wed',
   t019118: 'sealing, China, Jiaxing, wed',
   t019123: 'sealing, China, Dongguan, wed',
   t019160: 'sealing, USA, Fremont, wed',
