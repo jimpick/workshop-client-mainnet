@@ -12,7 +12,7 @@ const annotations = {
   t08854: 'active, China, Dongguan, <16h, 10h, <23h, 11h, wed',
   t09573: 'retest, China, Xiamen, 13h, <15h, <23h, wed',
   t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h, 7h, <20h, 12h, <20h, wed',
-  t010538: 'active, China, Ordos, 13h, <22h, <23h, <23h, <20h, 12h, wed',
+  t010538: 'retest, China, Ordos, 13h, <22h, <23h, <23h, <20h, 12h, wed',
   t014233: 'active, China, Shanghai, <22h, 14h, <23h, <15h, <22h, 12h, <19h, wed',
   t014307: 'active, China, Dongguan, 12h, wed',
   t014394: 'active, China, Suzhou, <23h, 12h, <23h, 8h, wed',
@@ -28,7 +28,7 @@ const annotations = {
   // Sealing - wed
 
   t02419: 'sealing, China, Shanghai, yuantai, 10h, 14h, <23h, wed',
-  t03340: "sealing, China, Xi'an, <19h, <23h, wed", 
+  t03340: "retest, China, Xi'an, <19h, <23h, wed", 
   t03344: 'sealing, China, Guangzhou, 13h, wed',
   t08094: 'sealing, China, Guangzhou, dongshao, 10h, <22h, wed',
   t08220: 'sealing, China, Shenzhen, <19h, wed',
