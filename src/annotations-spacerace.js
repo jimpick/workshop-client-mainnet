@@ -19,7 +19,7 @@ const annotations = {
   t015753: 'active, China, Guyuan, <22h, thu',
   t016563: 'active, China, Deyang, <15h, <23h, <20h, 12h, <20h, thu',
   t017665: 'active, China, Shenyang, 11h, thu',
-  t018544: 'active, Korea, Uijeongbu-si, <20h, <19h, thu',
+  t018544: 'retest, Korea, Uijeongbu-si, <20h, <19h, thu',
   t019087: 'active, South Africa, Johannesburg, <13h, thu',
 
   // Active/stuck - thu
@@ -40,8 +40,8 @@ const annotations = {
   t015938: 'sealing, Canada, Waterloo, thu',
   t017294: 'sealing, China, Shenzhen, thu',
   t018441: 'sealing, USA, thu',
-  t018506: 'sealing, USA, New York, thu',
-  t018851: 'sealing, China, Deyang + Singapore, thu',
+  t018506: 'retest, USA, New York, thu',
+  t018851: 'retest, China, Deyang + Singapore, thu',
   t018809: 'sealing, USA, New York, thu',
   t019007: 'sealing, China, Shenzhen + Hong Kong, thu',
   t019042: 'sealing, China, Shanghai, thu',
@@ -59,7 +59,7 @@ const annotations = {
   t019399: 'sealing, Korea, Busan, thu',
   t019401: 'sealing, Brazil, Sao Paulo, thu',
   t019422: 'retest, South Africa, Johannesburg, thu',
-  t019423: 'sealing, South Africa, Johannesburg, thu',
+  t019423: 'retest, South Africa, Johannesburg, thu',
   t019437: 'sealing, Korea, Guro-gu, thu',
 
   // Stuck - thu
