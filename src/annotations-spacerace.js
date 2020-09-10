@@ -93,6 +93,23 @@ const annotations = {
 
   // New
 
+  t019056: 'new, South Africa, Cape Town, thu',
+  t019145: 'new, Brazil, Sao Paulo, thu',
+  t019155: 'new, China, Chongqing, thu',
+  t019239: 'new, China, Jiaxing, thu',
+  t019243: 'new, USA, Jackson, thu',
+  t019249: 'new, USA, Council Bluffs, thu',
+  t019279: 'new, Canada, Calgary, thu',
+  t019280: 'new, China, Fuzhou, thu',
+  t019281: 'new, South Africa, Johannesburg, thu',
+  t019284: 'new, China, Foshan, thu',
+  t019362: 'new, China, Hangzhou, thu',
+  t019378: 'new, China, Changzhou, thu',
+  t019399: 'new, Korea, Busan, thu',
+  t019401: 'new, Brazil, Sao Paulo, thu',
+  t019422: 'new, South Africa, Johannesburg, thu',
+  t019423: 'new, South Africa, Johannesburg, thu',
+  t019437: 'new, Korea, Guro-gu, thu',
 
   // Min Size
 
