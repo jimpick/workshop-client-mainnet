@@ -45,7 +45,7 @@ const annotations = {
   t018809: 'sealing, USA, New York, thu',
   t019007: 'sealing, China, Shenzhen + Hong Kong, thu',
   t019042: 'sealing, China, Shanghai, thu',
-  t019048: 'sealing, Brazil, Sao Paulo, thu',
+  t019048: 'retest, Brazil, Sao Paulo, thu',
   t019062: 'sealing, Germany, thu',
   t019071: 'sealing, USA, New York, thu',
   t019090: 'sealing, South Africa, Johannesburg, thu',
@@ -58,7 +58,7 @@ const annotations = {
   t019378: 'sealing, China, Changzhou, thu',
   t019399: 'sealing, Korea, Busan, thu',
   t019401: 'sealing, Brazil, Sao Paulo, thu',
-  t019422: 'sealing, South Africa, Johannesburg, thu',
+  t019422: 'retest, South Africa, Johannesburg, thu',
   t019423: 'sealing, South Africa, Johannesburg, thu',
   t019437: 'sealing, Korea, Guro-gu, thu',
 
