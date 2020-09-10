@@ -8,7 +8,7 @@ const annotations = {
   t03339: 'active, China, Luzhou, benxun, <1d, <20h, wed',
   t03345: 'active, China, Fuzhou, chh, <19h, <16h, 8h, <23h, 10h, wed',
   t07806: 'retest, China, Wuhan, HelloXP, <23h, wed',
-  t08371: 'active, China, Chengdu, <19h, wed',
+  t08371: 'retest, China, Chengdu, <19h, wed',
   t08854: 'active, China, Dongguan, <16h, 10h, <23h, 11h, wed',
   t09573: 'retest, China, Xiamen, 13h, <15h, <23h, wed',
   t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h, 7h, <20h, 12h, <20h, wed',
