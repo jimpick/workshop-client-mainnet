@@ -23,7 +23,7 @@ const annotations = {
   t016594: 'active, Germany, 10h, <23h, <20h, 12h, <19h, wed',
   t017665: 'active, China, Shenyang, 11h, wed',
   t018544: 'active, Korea, Uijeongbu-si, <20h, <19h, wed',
-  t019087: 'active, South Africa, Johannesburg, <13h, wed',
+  t019087: 'retest, South Africa, Johannesburg, <13h, wed',
 
   // Sealing - wed
 
@@ -59,7 +59,7 @@ const annotations = {
   t019123: 'sealing, China, Dongguan, wed',
   t019160: 'sealing, USA, Fremont, wed',
   t019173: 'sealing, China, Nanchong, wed',
-  t019174: 'sealing, UK, Halifax, wed',
+  t019174: 'retest, UK, Halifax, wed',
   t019218: 'sealing, China, Dali, wed',
 
   // Stuck - wed
