@@ -48,7 +48,7 @@ const annotations = {
   t019437: 'sealing, Korea, Guro-gu, fri',
   t019528: 'sealing, Peru, fri',
   t019596: 'sealing, USA, Queens, fri',
-  t019638: 'sealing, Germany, Frankfurt, fri',
+  t019638: 'retest, Germany, Frankfurt, fri',
   t019660: 'sealing, South Korea, Cheonan, fri',
 
   // Stuck - fri
