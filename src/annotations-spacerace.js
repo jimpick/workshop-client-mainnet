@@ -84,6 +84,14 @@ const annotations = {
   t017665: 'active-busy, China, Shenyang, 11h, fri',
   t019525: 'new-busy, USA, Berkeley, fri',
 
+  // Invite only
+ 
+  t016303: 'invite-sealing, USA, Boardman, @ribasushi, fri',
+  t016304: 'invite-sealing, USA, Boardman, @ribasushi, fri',
+  t016305: 'invite-sealing, USA, Boardman, @ribasushi, fri',
+  t016306: 'invite-sealing, USA, Boardman, @ribasushi, fri', 
+  t016309: 'invite-sealing, USA, Boardman, @ribasushi, fri', 
+
   // New
 
 
@@ -555,11 +563,6 @@ const annotations = {
   t016202: 'rejected, Korea, Songpa-gu, sun',
   t016279: 'rejected, Finland, Helsinki, tue',
   t016302: 'rejected, China, Fuzhou, wed',
-  t016303: 'rejected, USA, Boardman, @ribasushi, wed',
-  t016304: 'rejected, USA, Boardman, @ribasushi, wed',
-  t016305: 'rejected, USA, Boardman, @ribasushi, wed',
-  t016306: 'rejected, USA, Boardman, @ribasushi, wed', 
-  t016309: 'rejected, USA, Boardman, @ribasushi, wed', 
   t016398: 'rejected, Singapore, fri',
   t016412: 'rejected, China, Taiwan, Taipei, wed',
   t016482: 'rejected, USA, Aliquippa, thu',
