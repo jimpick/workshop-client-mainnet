@@ -42,7 +42,7 @@ const annotations = {
   t019249: 'sealing, USA, Council Bluffs, fri',
   t019362: 'sealing, China, Hangzhou, fri',
   t019378: 'sealing, China, Changzhou, fri',
-  t019401: 'sealing, Brazil, Sao Paulo, fri',
+  t019401: 'retest, Brazil, Sao Paulo, fri',
   t019422: 'sealing, South Africa, Johannesburg, fri',
   t019423: 'sealing, South Africa, Johannesburg, fri',
   t019437: 'sealing, Korea, Guro-gu, fri',
