@@ -88,6 +88,24 @@ const annotations = {
 
   // New
 
+  t010541: 'new, China, Chengdu, fri',
+  t019068: "new, China, Ya'an, fri",
+  t019097: 'new, Russia, Irkutsk, fri',
+  t019182: 'new, China, Chongqing, fri',
+  t019196: 'new, China, Shenzhen + Hong Kong, fri',
+  t019233: 'new, Russia, fri',
+  t019325: 'new, China, Chongqing, fri',
+  t019326: 'new, China, Chongqing, fri',
+  t019327: 'new, China, Chongqing, fri',
+  t019354: 'new, Germany, Frankfurt, fri',
+  t019525: 'new, USA, Berkeley, fri',
+  t019528: 'new, Peru, fri',
+  t019596: 'new, USA, Queens, fri',
+  t019637: 'new, China, Nanchang, fri',
+  t019638: 'new, Germany, Frankfurt, fri',
+  t019645: 'new, Russia, St. Petersburg, fri',
+  t019660: 'new, South Korea, Cheonan, fri',
+
   // Min Size
 
   t014786: 'min-size, China, Xiamen, mon', // piece size less than minimum required size: 131072 < 204800
@@ -1054,6 +1072,7 @@ const annotations = {
   t014782: 'NR',
   t015233: 'NR',
   t015685: 'NR',
+  t015932: 'NR',
   t016238: 'NR',
   t016408: 'NR',
   t016426: 'NR',
@@ -1082,6 +1101,11 @@ const annotations = {
   t019031: 'NR',
   t019069: 'NR',
   t019091: 'NR',
+  t019240: 'NR',
+  t019376: 'NR',
+  t019434: 'NR',
+  t019459: 'NR',
+  t019515: 'NR',
   
   // Bootstrappers
   t01000: 'NR - bootstrap',
