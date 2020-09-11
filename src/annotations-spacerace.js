@@ -49,7 +49,7 @@ const annotations = {
   t019062: 'retest, Germany, thu',
   t019071: 'sealing, USA, New York, thu',
   t019090: 'sealing, South Africa, Johannesburg, thu',
-  t019094: 'sealing, Brazil, Sao Paulo, thu',
+  t019094: 'retest, Brazil, Sao Paulo, thu',
   t019123: 'sealing, China, Dongguan, thu',
   t019229: 'sealing, USA, Queens, thu',
   t019243: 'sealing, USA, Jackson, thu',
