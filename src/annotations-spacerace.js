@@ -95,6 +95,15 @@ const annotations = {
 
   // New
 
+  t09693: 'new, USA, Portland + Singapore, sat',
+  t014572: 'new, USA, sat',
+  t019317: 'new, Brazil, Sao Paulo, sat',
+  t019352: 'new, China, Chongqing, sat',
+  t019462: 'new, Netherlands, Groningen, sat',
+  t019523: 'new, USA, Los Angeles, sat',
+  t019547: 'new, Peru, sat',
+  t019661: 'new, Russia, Pyatigorsk, sat',
+  t019723: 'new, China, Zhongshan, sat',
 
   // Min Size
 
@@ -1103,6 +1112,8 @@ const annotations = {
   t019069: 'NR',
   t019091: 'NR',
   t019240: 'NR',
+  t019248: 'NR',
+  t019264: 'NR',
   t019376: 'NR',
   t019434: 'NR',
   t019459: 'NR',
