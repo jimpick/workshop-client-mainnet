@@ -2,19 +2,25 @@ const annotations = {
 
   // Active - fri
  
+  t08371: 'active, China, Chengdu, <19h, 10h',
+  t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h, 7h, <20h, 12h, <20h, <20h',
+  t014233: 'active, China, Shanghai, <22h, 14h, <23h, <15h, <22h, 12h, <19h, <20h',
+  t019087: 'active, South Africa, Johannesburg, <13h, <20h',
+  t019090: 'active, South Africa, Johannesburg, <20h',
+  t019100: 'active, Romania, Cluj-Napoca, <20h',
+  t019239: 'active, China, Jiaxing, 10h',
+  t019437: 'active, Korea, Guro-gu, 9h',
+  t019638: 'active, Germany, Frankfurt, <20h',
+
   // Active/sealing - fri
  
   t02620: 'active, Poland, Krakow, @magik6k, 20h, <16h, 13h, fri',
   t03328: 'active, China, Xinxiang, <22h, fri',
   t03339: 'active, China, Luzhou, benxun, <1d, <20h, fri',
   t03345: 'active, China, Fuzhou, chh, <19h, <16h, 8h, <23h, 10h, fri',
-  t08371: 'active, China, Chengdu, <19h, fri',
   t09573: 'active, China, Xiamen, 13h, <15h, <23h, fri',
-  t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h, 7h, <20h, 12h, <20h, fri',
   t010538: 'active, China, Ordos, 13h, <22h, <23h, <23h, <20h, 12h, fri',
-  t014233: 'active, China, Shanghai, <22h, 14h, <23h, <15h, <22h, 12h, <19h, fri',
   t016563: 'active, China, Deyang, <15h, <23h, <20h, 12h, <20h, fri',
-  t019087: 'active, South Africa, Johannesburg, <13h, fri',
 
   // Sealing - fri
 
@@ -32,23 +38,18 @@ const annotations = {
   t018441: 'sealing, USA, fri',
   t018809: 'sealing, USA, New York, fri',
   t019071: 'sealing, USA, New York, fri',
-  t019090: 'sealing, South Africa, Johannesburg, fri',
   t019094: 'sealing, Brazil, Sao Paulo, fri',
-  t019100: 'sealing, Romania, Cluj-Napoca, fri',
   t019173: 'sealing, China, Nanchong, fri',
   t019196: 'sealing, China, Shenzhen + Hong Kong, fri',
   t019233: 'sealing, Russia, fri',
-  t019239: 'sealing, China, Jiaxing, fri',
   t019249: 'sealing, USA, Council Bluffs, fri',
   t019362: 'retest, China, Hangzhou, fri',
   t019378: 'retest, China, Changzhou, fri',
   t019401: 'retest, Brazil, Sao Paulo, fri',
   t019422: 'sealing, South Africa, Johannesburg, fri',
   t019423: 'sealing, South Africa, Johannesburg, fri',
-  t019437: 'sealing, Korea, Guro-gu, fri',
   t019528: 'sealing, Peru, fri',
   t019596: 'sealing, USA, Queens, fri',
-  t019638: 'retest, Germany, Frankfurt, fri',
   t019660: 'sealing, South Korea, Cheonan, fri',
 
   // Stuck - fri
