@@ -4,7 +4,6 @@ const annotations = {
 
   // Active/sealing - sat
 
-  t02620: 'active, Poland, Krakow, @magik6k, 20h, <16h, 13h, sat',
   t03328: 'active, China, Xinxiang, <22h, sat',
   t03339: 'active, China, Luzhou, benxun, <1d, <20h, sat',
   t08371: 'active, China, Chengdu, <19h, 10h, sat',
@@ -28,9 +27,9 @@ const annotations = {
   t016594: 'sealing, Germany, 10h, <23h, <20h, 12h, <19h, sat',
   t018506: 'sealing, USA, New York, sat',
   t018809: 'sealing, USA, New York, sat',
-  t019042: 'sealing, China, Shanghai, sat',
+  t019042: 'retest, China, Shanghai, sat',
   t019173: 'sealing, China, Nanchong, sat',
-  t019233: 'sealing, Russia, sat',
+  t019233: 'retest, Russia, sat',
   t019249: 'sealing, USA, Council Bluffs, sat',
   t019399: 'sealing, Korea, Busan, sat',
   t019401: 'sealing, Brazil, Sao Paulo, sat',
@@ -72,6 +71,7 @@ const annotations = {
 
   // Busy - sat
 
+  t02620: 'active-busy, Poland, Krakow, @magik6k, 20h, <16h, 13h, sat',
   t017665: 'active-busy, China, Shenyang, 11h, sat',
   t019114: 'stuck-busy, USA, Howell, sat',
   t019596: 'sealing-busy, USA, Queens, sat',
