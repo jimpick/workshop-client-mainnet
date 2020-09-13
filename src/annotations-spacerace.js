@@ -48,7 +48,6 @@ const annotations = {
   t019422: 'sealing, South Africa, Johannesburg, sun',
   t019547: 'sealing, Peru, sun',
   t019551: 'sealing, UK, sun',
-  t019596: 'sealing, USA, Queens, sun',
   t019723: 'sealing, China, Zhongshan, sun',
   t019804: 'sealing, China, Chengdu, sun',
   t019820: 'sealing, Germany, sun',
@@ -65,6 +64,10 @@ const annotations = {
   t017795: 'stuck, USA, Columbus, sun-cfa',
   t019024: 'stuck, China, Sichuan, sun-cfa',
   t019645: 'stuck, Russia, St. Petersburg, sun-cfa',
+
+  // Busy - sun
+ 
+  t019596: 'sealing-busy, USA, Queens, sun',
 
   // Invite only
  
