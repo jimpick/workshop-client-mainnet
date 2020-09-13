@@ -87,6 +87,13 @@ const annotations = {
 
   // New
 
+  t014708: 'new, China, Beijing, sun',
+  t019551: 'new, UK, sun',
+  t019710: 'new, Australia, Sydney, sun',
+  t019804: 'new, China, Chengdu, sun',
+  t019820: 'new, Germany, sun',
+  t019825: 'new, China, Hong Kong, sun',
+
 
   // Min Size
 
@@ -1001,6 +1008,7 @@ const annotations = {
   t03363: 'NR',
   t03622: 'NR, 黑犇科技',
   t03702: 'NR, LianDongJingLing',
+  t04444: 'NR',
   t05664: 'NR, 艾比特网络科技',
   t07731: 'NR',
   t07756: 'NR',
@@ -1118,6 +1126,10 @@ const annotations = {
   t019434: 'NR',
   t019459: 'NR',
   t019515: 'NR',
+  t019734: 'NR',
+  t019757: 'NR',
+  t019809: 'NR',
+  t019812: 'NR',
   
   // Bootstrappers
   t01000: 'NR - bootstrap',
