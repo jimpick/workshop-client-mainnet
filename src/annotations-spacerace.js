@@ -2,6 +2,14 @@ const annotations = {
 
   // Active - sat
 
+  t08937: 'active, China, Wuxi, YC--wuxi, <22h, 14h, <1d',
+  t014394: 'active, China, Suzhou, <23h, 12h, <23h, 8h, <1d',
+  t016563: 'active, China, Deyang, <15h, <23h, <20h, 12h, <20h, 10h',
+  t019087: 'active, South Africa, Johannesburg, <13h, <20h, <1d',
+  t019094: 'active, Brazil, Sao Paulo, <1d',
+  t019378: 'active, China, Changzhou, 10h',
+  t019437: 'active, Korea, Guro-gu, 9h, <20h',
+
   // Active/sealing - sat
 
   t03328: 'active, China, Xinxiang, <22h, sat',
@@ -9,7 +17,6 @@ const annotations = {
   t08371: 'active, China, Chengdu, <19h, 10h, sat',
   t09573: 'active, China, Xiamen, 13h, <15h, <23h, sat',
   t014233: 'active, China, Shanghai, <22h, 14h, <23h, <15h, <22h, 12h, <19h, <20h, sat',
-  t016563: 'active, China, Deyang, <15h, <23h, <20h, 12h, <20h, sat',
   t019090: 'retest, South Africa, Johannesburg, <20h, sat',
   t019239: 'active, China, Jiaxing, 10h, sat',
 
@@ -18,10 +25,8 @@ const annotations = {
   t03344: 'sealing, China, Guangzhou, 13h, sat',
   t06775: 'sealing, China, Shenzhen, IPSB&CAAP, <23h, sat',
   t08220: 'sealing, China, Shenzhen, <19h, sat',
-  t08937: 'sealing, China, Wuxi, YC--wuxi, <22h, 14h, sat',
   t010399: 'sealing, China, Guangzhou, sat',
   t014207: 'sealing, USA, <15h, <23h, sat',
-  t014394: 'sealing, China, Suzhou, <23h, 12h, <23h, 8h, sat',
   t015647: 'retest, China, Shenzhen, 9h, <23h, <1d, <20h, 11h, sat',
   t015757: 'sealing, China, Hangzhou, sat',
   t016594: 'sealing, Germany, 10h, <23h, <20h, 12h, <19h, sat',
@@ -56,15 +61,11 @@ const annotations = {
   t017794: 'stuck, USA, Columbus, sat-cfa',
   t017795: 'stuck, USA, Columbus, sat-cfa',
   t019024: 'stuck, China, Sichuan, sat-cfa',
-  t019087: 'stuck, South Africa, Johannesburg, <13h, <20h, sat-cfa',
-  t019094: 'stuck, Brazil, Sao Paulo, sat-cfa',
   t019099: 'stuck, China, Hong Kong, sat-cfa',
   t019118: 'stuck, China, Jiaxing, sat-cfa',
   t019196: 'stuck, China, Shenzhen + Hong Kong, sat-cfa',
   t019243: 'stuck, USA, Jackson, sat-cfa',
-  t019378: 'stuck, China, Changzhou, sat-cfa',
   t019423: 'stuck, South Africa, Johannesburg, sat-funds',
-  t019437: 'stuck, Korea, Guro-gu, 9h, sat-cfa',
   t019638: 'stuck, Germany, Frankfurt, <20h, sat-cfa',
   t019645: 'stuck, Russia, St. Petersburg, sat-cfa',
   t019723: 'stuck, China, Zhongshan, sat-cfa',
