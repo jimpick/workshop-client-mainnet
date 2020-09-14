@@ -80,6 +80,9 @@ const annotations = {
 
   // New
 
+  t014798: 'new, Brazil, Sao Paulo, mon',
+  t020276: 'new, China, Xiamen, mon',
+  t020281: 'new, Korea, Uijeongbu-si, mon',
 
 
   // Min Size
@@ -1129,8 +1132,10 @@ const annotations = {
   t019515: 'NR',
   t019734: 'NR',
   t019757: 'NR',
+  t019806: 'NR',
   t019809: 'NR',
   t019812: 'NR',
+  t020241: 'NR',
   
   // Bootstrappers
   t01000: 'NR - bootstrap',
