@@ -2,36 +2,37 @@ const annotations = {
 
   // Active - sun
 
+  t03339: 'active, China, Luzhou, benxun, <1d, <20h, <20h',
+  t03340: "active, China, Xi'an, <19h, <23h, <20h", 
+  t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h, 7h, <20h, 12h, <20h, <20h, <20h',
+  t014233: 'active, China, Shanghai, <22h, 14h, <23h, <15h, <22h, 12h, <19h, <20h, <20h',
+  t015747: 'active, Japan, Setagaya-ku, <23h, <1d, <20h',
+  t016563: 'active, China, Deyang, <15h, <23h, <20h, 12h, <20h, 10h, <20h',
+  t019090: 'active, South Africa, Johannesburg, <20h, <20h',
+  t019437: 'active, Korea, Guro-gu, 9h, <20h, <20h',
+
   // Active/sealing - sun
 
   t03328: 'active, China, Xinxiang, <22h, sun',
-  t03339: 'active, China, Luzhou, benxun, <1d, <20h, sun',
   t08371: 'active, China, Chengdu, <19h, 10h, sun',
   t08937: 'active, China, Wuxi, YC--wuxi, <22h, 14h, <1d, sun',
   t09573: 'active, China, Xiamen, 13h, <15h, <23h, sun',
-  t014233: 'active, China, Shanghai, <22h, 14h, <23h, <15h, <22h, 12h, <19h, <20h, sun',
   t014394: 'active, China, Suzhou, <23h, 12h, <23h, 8h, <1d, sun',
-  t016563: 'active, China, Deyang, <15h, <23h, <20h, 12h, <20h, 10h, sun',
   t017665: 'active, China, Shenyang, 11h, sun',
-  t019090: 'active, South Africa, Johannesburg, <20h, sun',
   t019094: 'active, Brazil, Sao Paulo, <1d, sun',
-  t019437: 'active, Korea, Guro-gu, 9h, <20h, sun',
 
   // Sealing - sun
 
-  t03340: "retest, China, Xi'an, <19h, <23h, sun", 
   t03344: 'sealing, China, Guangzhou, 13h, sun',
   t06775: 'sealing, China, Shenzhen, IPSB&CAAP, <23h, sun',
   t07806: 'sealing, China, Wuhan, HelloXP, <23h, sun',
   t08094: 'sealing, China, Guangzhou, dongshao, 10h, <22h, sun',
   t08220: 'sealing, China, Shenzhen, <19h, sun',
   t08854: 'sealing, China, Dongguan, <16h, 10h, <23h, 11h, sun',
-  t09833: 'sealing, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h, 7h, <20h, 12h, <20h, <20h, sun',
   t010538: 'sealing, China, Ordos, 13h, <22h, <23h, <23h, <20h, 12h, sun',
   t014207: 'sealing, USA, <15h, <23h, sun',
   t014432: 'sealing, China, Chengdu, sun',
   t014436: 'sealing, China, Chengdu, <23h, sun',
-  t015747: 'sealing, Japan, Setagaya-ku, <23h, <1d, sun',
   t015753: 'sealing, China, Guyuan, <22h, sun',
   t015757: 'sealing, China, Hangzhou, sun',
   t016594: 'sealing, Germany, 10h, <23h, <20h, 12h, <19h, sun',
