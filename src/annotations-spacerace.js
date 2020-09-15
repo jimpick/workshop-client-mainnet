@@ -2,25 +2,28 @@ const annotations = {
 
   // Active - mon
 
+  t03339: 'active, China, Luzhou, benxun, <1d, <20h, <20h, <22h',
+  t08371: 'active, China, Chengdu, <19h, 10h, <22h',
+  t014233: 'active, China, Shanghai, <22h, 14h, <23h, <15h, <22h, 12h, <19h, <20h, <20h, <22h',
+  t014394: 'active, China, Suzhou, <23h, 12h, <23h, 8h, <1d, <22h',
+  t015747: 'active, Japan, Setagaya-ku, <23h, <1d, <20h, <22h',
+  t016563: 'active, China, Deyang, <15h, <23h, <20h, 12h, <20h, 10h, <20h, <22h',
+  t016594: 'active, Germany, 10h, <23h, <20h, 12h, <19h, <22h',
+  t019196: 'active, China, Shenzhen + Hong Kong, <22h',
+  t019437: 'active, Korea, Guro-gu, 9h, <20h, <20h, <22h',
+
   // Active/sealing - mon
 
   t02620: 'active, Poland, Krakow, @magik6k, 20h, <16h, 13h, mon',
   t03328: 'active, China, Xinxiang, <22h, mon',
-  t03339: 'active, China, Luzhou, benxun, <1d, <20h, <20h, mon',
-  t08371: 'active, China, Chengdu, <19h, 10h, mon',
   t08937: 'active, China, Wuxi, YC--wuxi, <22h, 14h, <1d, mon',
   t09573: 'active, China, Xiamen, 13h, <15h, <23h, mon',
   t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h, 7h, <20h, 12h, <20h, <20h, <20h, mon',
-  t014233: 'active, China, Shanghai, <22h, 14h, <23h, <15h, <22h, 12h, <19h, <20h, <20h, mon',
-  t014394: 'active, China, Suzhou, <23h, 12h, <23h, 8h, <1d, mon',
   t015647: 'active, China, Shenzhen, 9h, <23h, <1d, <20h, 11h, mon',
-  t015747: 'active, Japan, Setagaya-ku, <23h, <1d, <20h, mon',
-  t016563: 'active, China, Deyang, <15h, <23h, <20h, 12h, <20h, 10h, <20h, mon',
   t017665: 'active, China, Shenyang, 11h, mon',
   t019087: 'active, South Africa, Johannesburg, <13h, <20h, <1d, mon',
   t019090: 'active, South Africa, Johannesburg, <20h, <20h, mon',
   t019094: 'active, Brazil, Sao Paulo, <1d, mon',
-  t019437: 'active, Korea, Guro-gu, 9h, <20h, <20h, mon',
 
   // Sealing - mon
 
@@ -38,13 +41,11 @@ const annotations = {
   t014432: 'sealing, China, Chengdu, mon',
   t014436: 'sealing, China, Chengdu, <23h, mon',
   t015757: 'sealing, China, Hangzhou, sun',
-  t016594: 'sealing, Germany, 10h, <23h, <20h, 12h, <19h, mon',
   t018441: 'sealing, USA, mon',
   t018506: 'sealing, USA, New York, mon',
   t018809: 'sealing, USA, New York, mon',
   t019042: 'sealing, China, Shanghai, mon',
   t019099: 'sealing, China, Hong Kong, mon',
-  t019196: 'sealing, China, Shenzhen + Hong Kong, mon',
   t019233: 'sealing, Russia, mon',
   t019399: 'sealing, Korea, Busan, mon',
   t019422: 'sealing, South Africa, Johannesburg, mon',
