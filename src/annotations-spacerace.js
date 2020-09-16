@@ -37,7 +37,7 @@ const annotations = {
   t015747: 'sealing, Japan, Setagaya-ku, <23h, <1d, <20h, <22h, wed',
   t018441: 'sealing, USA, wed',
   t019099: 'sealing, China, Hong Kong, wed',
-  t019233: 'sealing, Russia, wed',
+  t019233: 'retest, Russia, wed',
   t019399: 'sealing, Korea, Busan, wed',
   t019422: 'sealing, South Africa, Johannesburg, wed',
   t019723: 'sealing, China, Zhongshan, wed',
