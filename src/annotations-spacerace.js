@@ -84,7 +84,11 @@ const annotations = {
 
   // New
 
-  t020401: 'new, USA, Raleigh, tue',
+  t020401: 'new, USA, Raleigh, wed',
+  t020408: 'new, China, Hong Kong, wed',
+  t020432: 'new, Korea, Wanju, wed',
+  t020439: 'new, China, Chengdu, wed',
+  t020453: 'new, China, Chengdu, wed',
 
 
   // Min Size
@@ -1152,6 +1156,9 @@ const annotations = {
   t020241: 'NR',
   t020260: 'NR',
   t020330: 'NR',
+  t020331: 'NR',
+  t020352: 'NR',
+  t020390: 'NR',
   
   // Bootstrappers
   t01000: 'NR - bootstrap',
