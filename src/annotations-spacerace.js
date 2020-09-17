@@ -1,25 +1,28 @@
 const annotations = {
 
   // Active - wed
+
+  t02620: 'active, Poland, Krakow, @magik6k, 20h, <16h, 13h, <22h, <23h',
+  t03339: 'active, China, Luzhou, benxun, <1d, <20h, <20h, <22h, <24h, <23h',
+  t08937: 'active, China, Wuxi, YC--wuxi, <22h, 14h, <1d, <22h, <23h',
+  t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h, 7h, <20h, 12h, <20h, <20h, <20h, <22h, 9h',
+  t014394: 'active, China, Suzhou, <23h, 12h, <23h, 8h, <1d, <22h, <22h, 10h',
+  t015747: 'active, Japan, Setagaya-ku, <23h, <1d, <20h, <22h, <23h',
+  t016563: 'active, China, Deyang, <15h, <23h, <20h, 12h, <20h, 10h, <20h, <22h, <22h, 18h',
+  t017665: 'active, China, Shenyang, 11h, <22h, <23h',
+  t019196: 'active, China, Shenzhen + Hong Kong, <22h, <22h, <23h',
+  t019437: 'active, Korea, Guro-gu, 9h, <20h, <20h, <22h, <22h, <23h',
+  t020378: 'active, Bulgaria, Asenovgrad, <24h, <23h',
+  t020385: 'active, Korea, Incheon, <23h',
  
   // Active/sealing - wed
 
-  t02620: 'active, Poland, Krakow, @magik6k, 20h, <16h, 13h, <22h, wed',
   t03328: 'active, China, Xinxiang, <22h, wed',
-  t03339: 'active, China, Luzhou, benxun, <1d, <20h, <20h, <22h, <24h, wed',
   t03344: 'active, China, Guangzhou, 13h, 9h, wed',
-  t08937: 'active, China, Wuxi, YC--wuxi, <22h, 14h, <1d, <22h, wed',
   t09573: 'active, China, Xiamen, 13h, <15h, <23h, wed',
-  t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h, 7h, <20h, 12h, <20h, <20h, <20h, <22h, wed',
-  t014394: 'active, China, Suzhou, <23h, 12h, <23h, 8h, <1d, <22h, <22h, wed',
   t015647: 'active, China, Shenzhen, 9h, <23h, <1d, <20h, 11h, wed',
-  t016563: 'active, China, Deyang, <15h, <23h, <20h, 12h, <20h, 10h, <20h, <22h, <22h, wed',
   t016594: 'active, Germany, 10h, <23h, <20h, 12h, <19h, <22h, <22h, wed',
-  t017665: 'active, China, Shenyang, 11h, <22h, wed',
   t019094: 'active, Brazil, Sao Paulo, <1d, wed',
-  t019196: 'active, China, Shenzhen + Hong Kong, <22h, <22h, wed',
-  t019437: 'active, Korea, Guro-gu, 9h, <20h, <20h, <22h, <22h, wed',
-  t020378: 'active, Bulgaria, Asenovgrad, <24h, wed',
 
   // Sealing - wed
 
@@ -34,7 +37,6 @@ const annotations = {
   t014207: 'sealing, USA, <15h, <23h, wed',
   t014432: 'sealing, China, Chengdu, wed',
   t014436: 'sealing, China, Chengdu, <23h, wed',
-  t015747: 'sealing, Japan, Setagaya-ku, <23h, <1d, <20h, <22h, wed',
   t018441: 'sealing, USA, wed',
   t019099: 'sealing, China, Hong Kong, wed',
   t019233: 'retest, Russia, wed',
@@ -42,7 +44,6 @@ const annotations = {
   t019422: 'retest, South Africa, Johannesburg, wed',
   t019723: 'sealing, China, Zhongshan, wed',
   t019824: 'retest, USA, wed',
-  t020385: 'sealing, Korea, Incheon, wed',
   t020388: 'sealing, Korea, Uijeongbu-si, wed',
   t020432: 'sealing, Korea, Wanju, wed',
   t020453: 'sealing, China, Chengdu, wed',
