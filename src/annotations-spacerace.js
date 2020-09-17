@@ -83,8 +83,11 @@ const annotations = {
 
   // New
 
+  t018772: 'new, Australia, thu',
   t020358: 'new, China, Xinxiang, thu',
   t020398: 'new, China, Zhangjiakou, thu',
+  t020436: 'new, China, Beijing, thu',
+  t020489: 'new, China, Lioaning, thu',
   t020525: 'new, China, Dongguan, thu',
   t020559: 'new, China, Liaoning, thu',
   t020563: 'new, China, Dongguan, thu',
