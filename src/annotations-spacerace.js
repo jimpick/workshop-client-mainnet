@@ -2,16 +2,19 @@ const annotations = {
 
   // Active - thu
 
+  t03339: 'active, China, Luzhou, benxun, <1d, <20h, <20h, <22h, <24h, <23h, <19h',
+  t08937: 'active, China, Wuxi, YC--wuxi, <22h, 14h, <1d, <22h, <23h, <19h',
+  t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h, 7h, <20h, 12h, <20h, <20h, <20h, <22h, 9h, <19h',
+  t014394: 'active, China, Suzhou, <23h, 12h, <23h, 8h, <1d, <22h, <22h, 10h, <19h',
+  t014432: 'active, China, Chengdu, <19h',
+  t020489: 'active, China, Lioaning, <19h',
+
   // Active/sealing - thu
 
   t02620: 'active, Poland, Krakow, @magik6k, 20h, <16h, 13h, <22h, <23h, thu',
   t03328: 'active, China, Xinxiang, <22h, thu',
-  t03339: 'active, China, Luzhou, benxun, <1d, <20h, <20h, <22h, <24h, <23h, thu',
   t03344: 'active, China, Guangzhou, 13h, 9h, thu',
-  t08937: 'active, China, Wuxi, YC--wuxi, <22h, 14h, <1d, <22h, <23h, thu',
   t09573: 'active, China, Xiamen, 13h, <15h, <23h, thu',
-  t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h, 7h, <20h, 12h, <20h, <20h, <20h, <22h, 9h, thu',
-  t014394: 'active, China, Suzhou, <23h, 12h, <23h, 8h, <1d, <22h, <22h, 10h, thu',
   t015647: 'active, China, Shenzhen, 9h, <23h, <1d, <20h, 11h, thu',
   t015747: 'active, Japan, Setagaya-ku, <23h, <1d, <20h, <22h, <23h, thu',
   t016563: 'active, China, Deyang, <15h, <23h, <20h, 12h, <20h, 10h, <20h, <22h, <22h, 18h, thu',
@@ -39,7 +42,6 @@ const annotations = {
   t010538: 'sealing, China, Ordos, 13h, <22h, <23h, <23h, <20h, 12h, thu',
   t014207: 'sealing, USA, <15h, <23h, thu',
   t014233: 'sealing, China, Shanghai, <22h, 14h, <23h, <15h, <22h, 12h, <19h, <20h, <20h, <22h, thu',
-  t014432: 'sealing, China, Chengdu, thu',
   t014436: 'sealing, China, Chengdu, <23h, thu',
   t015757: 'sealing, China, Hangzhou, thu',
   t018772: 'sealing, Australia, thu',
@@ -50,7 +52,6 @@ const annotations = {
   t019824: 'sealing, USA, thu',
   t020358: 'sealing, China, Xinxiang, thu',
   t020453: 'sealing, China, Chengdu, thu',
-  t020489: 'sealing, China, Lioaning, thu',
   t020525: 'sealing, China, Dongguan, thu',
   t020559: 'sealing, China, Liaoning, thu',
   t020563: 'sealing, China, Dongguan, thu',
