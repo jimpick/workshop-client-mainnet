@@ -34,6 +34,7 @@ const annotations = {
   t014207: 'sealing, USA, <15h, <23h, sat',
   t014436: 'sealing, China, Chengdu, <23h, sat',
   t015757: 'sealing, China, Hangzhou, sat',
+  t018772: 'sealing, Australia, sat',
   t019099: 'sealing, China, Hong Kong, sat',
   t019399: 'sealing, Korea, Busan, sat',
   t019422: 'sealing, South Africa, Johannesburg, sat',
@@ -56,10 +57,6 @@ const annotations = {
   // Busy - sat
 
   t019114: 'error-busy, USA, Howell, sat', // too many sectors
-
-  // Busy - fri
- 
-  t018772: 'sealing-busy, Australia, fri', // too many sectors
 
 
   // Invite
