@@ -55,7 +55,6 @@ const annotations = {
 
   t020578: 'stuck, Korea, Wanju, 16h, 10h, sun-cfa',
   t020904: 'stuck, Korea, Uijeongbu-si, sun-cfa',
-  t020967: 'stuck, China, Chengdu, sun-xfr',
 
   // Busy - sun
 
@@ -852,7 +851,7 @@ const annotations = {
   t020626: 'dial, USA, Berkeley, fri',
   t020816: 'dial, China, Dongguan, sat',
   t020891: 'dial, China, Wenzhou, sat',
-
+  t020967: 'dial, China, Chengdu, sun-xfr',
 
 
   // XNR
