@@ -2,6 +2,18 @@ const annotations = {
 
   // Active - sun
 
+  t014394: 'active, China, Suzhou, <23h, 12h, <23h, 8h, <1d, <22h, <22h, 10h, <19h, 12h, <23h, 9h',
+  t015747: 'active, Japan, Setagaya-ku, <23h, <1d, <20h, <22h, <23h, 17h',
+  t016563: 'active, China, Deyang, <15h, <23h, <20h, 12h, <20h, 10h, <20h, <22h, <22h, 18h, 10h, 8h, 13h',
+  t016594: 'active, Germany, 10h, <23h, <20h, 12h, <19h, <22h, <22h, 10h, 12h, 12h',
+  t019196: 'active, China, Shenzhen + Hong Kong, <22h, <22h, <23h, 15h, 14h, 15h',
+  t020523: 'active, China, Suzhou, <23h, 15h',
+  t020578: 'active, Korea, Wanju, 16h, 10h, 15h',
+  t020631: 'active, China, Zhejiang, <23h, <21h',
+  t020814: 'active, China, Dongguan, 6h, 7h',
+  t020899: 'active, China, Chengdu, 7h, 15h',
+  t020975: 'active, China, Shandong, 9h',
+
   // Active/sealing - sun
 
   t02620: 'active, Poland, Krakow, @magik6k, 20h, <16h, 13h, <22h, <23h, 14h, sun',
@@ -10,21 +22,12 @@ const annotations = {
   t08937: 'active, China, Wuxi, YC--wuxi, <22h, 14h, <1d, <22h, <23h, <19h, sun',
   t09573: 'active, China, Xiamen, 13h, <15h, <23h, sun',
   t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h, 7h, <20h, 12h, <20h, <20h, <20h, <22h, 9h, <19h, 10h, 6h, sun',
-  t014394: 'active, China, Suzhou, <23h, 12h, <23h, 8h, <1d, <22h, <22h, 10h, <19h, 12h, <23h, sun',
   t014432: 'active, China, Chengdu, <19h, sun',
   t015647: 'active, China, Shenzhen, 9h, <23h, <1d, <20h, 11h, sun',
-  t015747: 'active, Japan, Setagaya-ku, <23h, <1d, <20h, <22h, <23h, sun',
-  t016563: 'active, China, Deyang, <15h, <23h, <20h, 12h, <20h, 10h, <20h, <22h, <22h, 18h, 10h, 8h, sun',
-  t016594: 'active, Germany, 10h, <23h, <20h, 12h, <19h, <22h, <22h, 10h, 12h, sun',
   t017665: 'active, China, Shenyang, 11h, <22h, <23h, <23h, sun',
-  t019196: 'active, China, Shenzhen + Hong Kong, <22h, <22h, <23h, 15h, 14h, sun',
   t019437: 'active, Korea, Guro-gu, 9h, <20h, <20h, <22h, <22h, <23h, sun',
   t020385: 'active, Korea, Incheon, <23h, sun',
   t020489: 'active, China, Lioaning, <19h, 12h, sun',
-  t020523: 'active, China, Suzhou, <23h, sun',
-  t020631: 'active, China, Zhejiang, <23h, sun',
-  t020814: 'active, China, Dongguan, 6h, sun',
-  t020899: 'active, China, Chengdu, 7h, sun',
   t020961: 'active, China, Shanghai, <23h, sun',
 
   // Sealing - sun
@@ -48,12 +51,10 @@ const annotations = {
   t020747: 'sealing, China, Xiamen, sun',
   t020775: 'sealing, Japan, Osaka, sun',
   t020786: 'sealing, China, Shenzhen, sun',
-  t020975: 'sealing, China, Shandong, sun',
   t020993: 'sealing, China, Hong Kong, sun',
 
   // Stuck - sun
 
-  t020578: 'stuck, Korea, Wanju, 16h, 10h, sun-cfa',
   t020904: 'stuck, Korea, Uijeongbu-si, sun-cfa',
 
   // Busy - sun
