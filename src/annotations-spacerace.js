@@ -1,5 +1,9 @@
 const annotations = {
 
+  // Active - tue
+
+  // Active/sealing - tue
+
   // Active - mon
 
   t03339: 'active, China, Luzhou, benxun, <1d, <20h, <20h, <22h, <24h, <23h, <19h, 9h, 11h, 12h',
@@ -26,6 +30,12 @@ const annotations = {
   t019437: 'active, Korea, Guro-gu, 9h, <20h, <20h, <22h, <22h, <23h, mon',
   t020385: 'active, Korea, Incheon, <23h, mon',
   t020961: 'active, China, Shanghai, <23h, mon',
+
+  // Sealing - tue
+
+  // Stuck - tue
+
+  // Busy - tue
 
   // Sealing - mon
 
@@ -78,6 +88,14 @@ const annotations = {
   t016309: 'invite-active, USA, Boardman', 
 
   // New
+
+  t021428: 'new, Norway, Borgen, tue',
+  t021463: 'new, China, Mianyang, tue',
+  t021475: 'new, China, Dongguan, tue',
+  t021483: 'new, China, Beijing, tue',
+  t021535: 'new, China, Chengdu, tue',
+  t021583: 'new, China, Jiaxing, tue',
+  t021616: 'new, China, Shanghai, tue',
 
 
   // Min Size
@@ -1223,15 +1241,28 @@ const annotations = {
   t020648: 'NR',
   t020682: 'NR',
   t020691: 'NR',
+  t020742: 'NR',
   t020789: 'NR',
   t020914: 'NR',
+  t020923: 'NR',
   t020928: 'NR',
   t020934: 'NR',
   t020939: 'NR',
   t020957: 'NR',
+  t021083: 'NR',
   t021092: 'NR',
   t021095: 'NR',
   t021254: 'NR',
+  t021255: 'NR',
+  t021265: 'NR',
+  t021311: 'NR',
+  t021418: 'NR',
+  t021461: 'NR',
+  t021479: 'NR',
+  t021525: 'NR',
+  t021527: 'NR',
+  t021547: 'NR',
+  t021574: 'NR',
   
   // Bootstrappers
   t01000: 'NR - bootstrap',
