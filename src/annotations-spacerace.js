@@ -2,6 +2,18 @@ const annotations = {
 
   // Active - tue
 
+  t014394: 'active, China, Suzhou, <23h, 12h, <23h, 8h, <1d, <22h, <22h, 10h, <19h, 12h, <23h, 9h, <17h',
+  t015747: 'active, Japan, Setagaya-ku, <23h, <1d, <20h, <22h, <23h, 17h, 12h',
+  t016563: 'active, China, Deyang, <15h, <23h, <20h, 12h, <20h, 10h, <20h, <22h, <22h, 18h, 10h, 8h, 13h, 10h, 9h',
+  t020523: 'active, China, Suzhou, <23h, 15h, 13h, <17h',
+  t020631: 'active, China, Zhejiang, <23h, <21h, <1d, 13h',
+  t020975: 'active, China, Shandong, 9h, 8h, 5h',
+  t021274: 'active, China, Shanghai, <1d, <17h',
+  t021428: 'active, Norway, Borgen, 10h',
+  t021535: 'active, China, Chengdu, <17h',
+  t021583: 'active, China, Jiaxing, 13h',
+  t021616: 'active, China, Shanghai, <17h',
+
   // Active/sealing - tue
 
   t02620: 'active, Poland, Krakow, @magik6k, 20h, <16h, 13h, <22h, <23h, 14h, tue',
@@ -10,19 +22,13 @@ const annotations = {
   t08937: 'active, China, Wuxi, YC--wuxi, <22h, 14h, <1d, <22h, <23h, <19h, <1d, tue',
   t09573: 'active, China, Xiamen, 13h, <15h, <23h, tue',
   t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h, 7h, <20h, 12h, <20h, <20h, <20h, <22h, 9h, <19h, 10h, 6h, tue',
-  t014394: 'active, China, Suzhou, <23h, 12h, <23h, 8h, <1d, <22h, <22h, 10h, <19h, 12h, <23h, 9h, tue',
   t014432: 'active, China, Chengdu, <19h, tue',
-  t016563: 'active, China, Deyang, <15h, <23h, <20h, 12h, <20h, 10h, <20h, <22h, <22h, 18h, 10h, 8h, 13h, 10h, tue',
   t019196: 'active, China, Shenzhen + Hong Kong, <22h, <22h, <23h, 15h, 14h, 15h, <1d, tue',
   t019437: 'active, Korea, Guro-gu, 9h, <20h, <20h, <22h, <22h, <23h, tue',
   t020385: 'active, Korea, Incheon, <23h, tue',
   t020489: 'active, China, Lioaning, <19h, 12h, <1d, tue',
-  t020523: 'active, China, Suzhou, <23h, 15h, 13h, tue',
-  t020631: 'active, China, Zhejiang, <23h, <21h, <1d, tue',
   t020904: 'active, Korea, Uijeongbu-si, <1d, tue',
   t020961: 'active, China, Shanghai, <23h, tue',
-  t020975: 'active, China, Shandong, 9h, 8h, tue',
-  t021274: 'active, China, Shanghai, <1d, tue',
   t021339: 'active, China, Jiaxing, 12h, tue',
 
   // Sealing - tue
@@ -35,7 +41,6 @@ const annotations = {
   t014207: 'sealing, USA, <15h, <23h, tue',
   t014436: 'sealing, China, Chengdu, <23h, tue',
   t015647: 'sealing, China, Shenzhen, 9h, <23h, <1d, <20h, 11h, tue',
-  t015747: 'sealing, Japan, Setagaya-ku, <23h, <1d, <20h, <22h, <23h, 17h, tue',
   t015757: 'sealing, China, Hangzhou, tue',
   t019099: 'sealing, China, Hong Kong, tue',
   t019399: 'sealing, Korea, Busan, tue',
@@ -47,11 +52,8 @@ const annotations = {
   t020747: 'sealing, China, Xiamen, tue',
   t020786: 'sealing, China, Shenzhen, tue',
   t021262: 'sealing, China, Shanghai, tue',
-  t021428: 'sealing, Norway, Borgen, tue',
   t021463: 'sealing, China, Mianyang, tue',
   t021483: 'sealing, China, Beijing, tue',
-  t021535: 'sealing, China, Chengdu, tue',
-  t021583: 'sealing, China, Jiaxing, tue',
 
   // Stuck - tue
 
@@ -60,7 +62,6 @@ const annotations = {
   t020993: 'stuck, China, Hong Kong, tue-funds',
   t021286: 'stuck, China, Shaanxi, tue-funds',
   t021475: 'stuck, China, Dongguan, tue-cfa',
-  t021616: 'stuck, China, Shanghai, tue-cfa',
 
   // Busy - tue
 
