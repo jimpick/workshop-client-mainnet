@@ -2,28 +2,29 @@ const annotations = {
 
   // Active - wed
 
+  t014394: 'active, China, Suzhou, <23h, 12h, <23h, 8h, <1d, <22h, <22h, 10h, <19h, 12h, <23h, 9h, <17h, <17h',
+  t016563: 'active, China, Deyang, <15h, <23h, <20h, 12h, <20h, 10h, <20h, <22h, <22h, 18h, 10h, 8h, 13h, 10h, 9h, 9h',
+  t020523: 'active, China, Suzhou, <23h, 15h, 13h, <17h, 13h',
+  t020631: 'active, China, Zhejiang, <23h, <21h, <1d, 13h, <17h',
+  t021274: 'active, China, Shanghai, <1d, <17h, 13h',
+  t021428: 'active, Norway, Borgen, 10h, 10h',
+  t021535: 'active, China, Chengdu, <17h, <16h',
+  t021583: 'active, China, Jiaxing, 13h, 14h',
+  t021616: 'active, China, Shanghai, <17h, <16h',
+
   // Active/sealing - wed
 
   t03328: 'active, China, Xinxiang, <22h, wed',
   t03339: 'active, China, Luzhou, benxun, <1d, <20h, <20h, <22h, <24h, <23h, <19h, 9h, 11h, 12h, wed',
   t09573: 'active, China, Xiamen, 13h, <15h, <23h, wed',
   t09833: 'active, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h, 7h, <20h, 12h, <20h, <20h, <20h, <22h, 9h, <19h, 10h, 6h, wed',
-  t014394: 'active, China, Suzhou, <23h, 12h, <23h, 8h, <1d, <22h, <22h, 10h, <19h, 12h, <23h, 9h, <17h, wed',
   t015747: 'active, Japan, Setagaya-ku, <23h, <1d, <20h, <22h, <23h, 17h, 12h, wed',
-  t016563: 'active, China, Deyang, <15h, <23h, <20h, 12h, <20h, 10h, <20h, <22h, <22h, 18h, 10h, 8h, 13h, 10h, 9h, wed',
   t019437: 'active, Korea, Guro-gu, 9h, <20h, <20h, <22h, <22h, <23h, wed',
   t020385: 'active, Korea, Incheon, <23h, wed',
   t020489: 'active, China, Lioaning, <19h, 12h, <1d, wed',
-  t020523: 'active, China, Suzhou, <23h, 15h, 13h, <17h, wed',
-  t020631: 'active, China, Zhejiang, <23h, <21h, <1d, 13h, wed',
   t020961: 'active, China, Shanghai, <23h, wed',
   t020975: 'active, China, Shandong, 9h, 8h, 5h, wed',
-  t021274: 'active, China, Shanghai, <1d, <17h, wed',
   t021339: 'active, China, Jiaxing, 12h, wed',
-  t021428: 'active, Norway, Borgen, 10h, wed',
-  t021535: 'active, China, Chengdu, <17h, wed',
-  t021583: 'active, China, Jiaxing, 13h, wed',
-  t021616: 'active, China, Shanghai, <17h, wed',
 
   // Sealing - wed
 
