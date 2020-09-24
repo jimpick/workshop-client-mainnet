@@ -17,6 +17,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     filterErrorMiners,
     filterBackoffMiners,
     filterStuckMiners,
+    filterRejectedMiners,
     filterNonRoutable
   } = appState
   const client = useLotusClient(selectedNode, 'node')
@@ -62,6 +63,9 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     }
     if (filterStuckMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/^stuck/i))
+    }
+    if (filterRejectedMiners && miners) {
+      return miners.filter(miner => annotations[miner].match(/^rejected/i))
     }
     if (filterNonRoutable && miners) {
       return miners.filter(miner => !annotations[miner].match(/^xnr/i))
@@ -233,6 +237,19 @@ export default function ProposeDeal ({ appState, updateAppState }) {
             style={{ marginLeft: '1rem' }}
           />
           'backoff'
+        </label>
+        <label>
+          <input
+            type='checkbox'
+            checked={filterRejectedMiners}
+            onChange={() => {
+              updateAppState(draft => {
+                draft.filterRejectedMiners = !filterRejectedMiners
+              })
+            }}
+            style={{ marginLeft: '1rem' }}
+          />
+          'rejected'
         </label>
         <label>
           <input

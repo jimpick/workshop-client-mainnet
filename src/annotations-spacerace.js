@@ -10,9 +10,13 @@ const annotations = {
 
   // Sealing - thu
 
+  t01231: 'sealing, Singapore, thu',
+  t01278: 'sealing, USA, Grand Rapids, MiMiner, thu',
   t02419: 'sealing, China, Shanghai, yuantai, 10h, 14h, <23h, thu',
   t02620: 'sealing, Poland, Krakow, @magik6k, 20h, <16h, 13h, <22h, <23h, 14h, thu',
-  t08937: 'sealing, China, Wuxi, YC--wuxi, <22h, 14h, <1d, <22h, <23h, <19h, <1d, thu',
+  t08103: 'sealing, China, Foshan, 花生酱肠粉, thu',
+  t08371: 'sealing, China, Chengdu, <19h, 10h, <22h, <22h, thu',
+  t08937: 'sealing, China, Wuxi, YC--wuxi, <22h, 14h, <1d, <2, thu2h, <23h, <19h, <1d, thu',
   t014432: 'sealing, China, Chengdu, <19h, thu',
   t019399: 'sealing, Korea, Busan, thu',
   t020608: 'sealing, Russia, thu',
@@ -128,7 +132,6 @@ const annotations = {
   t01152: 'rejected, China, Beijing, wed',
   t01154: 'rejected, Sweden, Alvsjo',
   t01155: 'rejected, China, Shanghai, DianCun Tech',
-  t01231: 'rejected, Singapore',
   t01234: 'rejected, Belgium, De Klinge, Eliovp',
   t01235: 'rejected, Singapore, IPFSMain',
   t01236: 'rejected, Singapore',
@@ -142,7 +145,6 @@ const annotations = {
   t01275: 'rejected, Korea, Seongnam-si',
   t01276: 'rejected, Canada, Brampton, NBFS Canada',
   t01277: 'rejected, Sweden, Stockholm, tvsthlm',
-  t01278: 'rejected, USA, Grand Rapids, MiMiner',
   t01279: 'rejected, China, Sichuan',
   t01280: 'rejected, China, Wuxi, 了凡超算',
   t01287: 'rejected, China, Jiaxing, MaiTian',
@@ -278,7 +280,6 @@ const annotations = {
   t08088: 'rejected, China, Dongguan',
   t08095: 'rejected, Canada, Surrey',
   t08096: 'rejected, China, Wuhan',
-  t08103: 'rejected, China, Foshan, 花生酱肠粉',
   t08136: "rejected, China, Xi'an",
   t08148: 'rejected, China, Shanghai',
   t08157: 'rejected, China, Beijing + Germany, Frankfurt, 超星际',
@@ -296,7 +297,6 @@ const annotations = {
   t08338: 'rejected, China, Weifang',
   t08347: 'rejected, China, Chengdu',
   t08349: 'rejected, China, Guangzhou, hkicloud',
-  t08371: 'rejected, China, Chengdu, <19h, 10h, <22h, <22h',
   t08383: 'rejected, USA, Portland',
   t08384: 'rejected, China, Shandong + Hong Kong + Japan, Heiwajima + ' +
     'Russia, Khabarovsk',
