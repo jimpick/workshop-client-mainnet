@@ -25,7 +25,7 @@ const annotations = {
   t020608: 'sealing, Russia, thu',
   t022084: 'sealing, China, Shaanxi, thu',
   t022142: 'sealing, USA, Queens, thu',
-  t022166: 'sealing, Norway, Borgen, thu',
+  t022166: 'retest, Norway, Borgen, thu',
   t022171: 'sealing, China, Shanghai, thu',
 
   // Stuck - thu
