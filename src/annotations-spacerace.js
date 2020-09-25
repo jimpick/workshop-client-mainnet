@@ -2,6 +2,10 @@ const annotations = {
 
   // Active - thu
 
+  t08937: 'active, China, Wuxi, YC--wuxi, <22h, 14h, <1d, <2, thu2h, <23h, <19h, <1d, 13h',
+  t022142: 'active, USA, Queens, 14h',
+  t022166: 'active, Norway, Borgen, 17h',
+
   // Active/sealing - thu
 
   t015747: 'active, Japan, Setagaya-ku, <23h, <1d, <20h, <22h, <23h, 17h, 12h, thu',
@@ -16,7 +20,6 @@ const annotations = {
   t02620: 'sealing, Poland, Krakow, @magik6k, 20h, <16h, 13h, <22h, <23h, 14h, thu',
   t08103: 'retest, China, Foshan, 花生酱肠粉, thu',
   t08371: 'sealing, China, Chengdu, <19h, 10h, <22h, <22h, thu',
-  t08937: 'sealing, China, Wuxi, YC--wuxi, <22h, 14h, <1d, <2, thu2h, <23h, <19h, <1d, thu',
   t014432: 'sealing, China, Chengdu, <19h, thu',
   t016398: 'sealing, Singapore, thu',
   t016482: 'sealing, USA, Aliquippa, thu',
@@ -24,8 +27,6 @@ const annotations = {
   t020408: 'retest, China, Hong Kong, thu',
   t020608: 'sealing, Russia, thu',
   t022084: 'sealing, China, Shaanxi, thu',
-  t022142: 'sealing, USA, Queens, thu',
-  t022166: 'retest, Norway, Borgen, thu',
   t022171: 'sealing, China, Shanghai, thu',
 
   // Stuck - thu
