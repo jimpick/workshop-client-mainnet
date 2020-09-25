@@ -90,6 +90,26 @@ const annotations = {
 
   // New
 
+  t08532: 'new, USA, fri',
+  t017734: 'new, Australia, Sydney, fri',
+  t022146: 'new, China, Fuzhou, fri',
+  t022157: 'new, China, Fuzhou, fri',
+  t022262: 'new, China, Hong Kong, fri',
+  t022276: 'new, Korea, Seoul, fri',
+  t022284: 'new, China, Shaanxi, fri',
+  t022289: 'new, China, Mianyang, fri',
+  t022304: 'new, China, Taiyuan, fri',
+  t022320: 'new, Korea, Seoul, fri',
+  t022321: 'new, China, Hong Kong, fri',
+  t022333: 'new, China, Dongguan, fri',
+  t022343: 'new, China, Dongguan, fri',
+  t022351: 'new, Korea, Guri-si, fri',
+  t022352: 'new, Norway, Borgen, fri',
+  t022372: 'new, China, Chengdu, fri',
+  t022373: 'new, Singapore, fri',
+  t022376: 'new, China, Dongguan, fri',
+  t022399: 'new, China, Beijing, fri',
+
   // Min Size
 
   t014786: 'min-size, China, Xiamen, mon', // piece size less than minimum required size: 131072 < 204800
@@ -502,7 +522,7 @@ const annotations = {
   t015866: 'rejected, China, Fuzhou, fri',
   t015867: 'rejected, Netherlands, Amsterdam, mon',
   t015870: 'rejected, China, Hangzhou, mon',
-  t015872: 'rejected, CHina, Fuzhou, mon',
+  t015872: 'rejected, China, Fuzhou, mon',
   t015873: 'rejected, China, Fuzhou, mon',
   t015875: 'rejected, China, Fuzhou, mon',
   t015877: 'rejected, China, Jiaxing + USA, thu',
@@ -1284,8 +1304,11 @@ const annotations = {
   t021870: 'NR',
   t021961: 'NR',
   t022016: 'NR',
+  t022033: 'NR',
   t022038: 'NR',
   t022072: 'NR',
+  t022091: 'NR',
+  t022122: 'NR',
   
   // Bootstrappers
   t01000: 'NR - bootstrap',
