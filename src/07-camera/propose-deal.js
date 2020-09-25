@@ -31,13 +31,23 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     cid,
     importedNode,
     defaultWalletAddress,
-    capture: { width, height }
+    capture: { width, height },
+    deals
   } = appState
   const blockDelay = versionInfo && versionInfo.BlockDelay
   // const epochPrice = '2500'
   // const epochPrice = '976562'
   const epochPrice = '2000000'
   // const epochPrice = '20000'
+
+  const dealMiners = useMemo(() => {
+    const dealMiners = new Set()
+    if (!deals) return dealMiners
+    for (const { miner } of deals) {
+      dealMiners.add(miner)
+    }
+    return dealMiners
+  }, [deals])
 
   const filteredMiners = useMemo(() => {
     if (filterNewMiners && miners) {
@@ -294,7 +304,9 @@ export default function ProposeDeal ({ appState, updateAppState }) {
                   style={{ width: '20rem', height: '4rem' }}
                   onClick={() => proposeDeal(miner)}
                 >
-                  {miner}: {annotations[miner]}
+                  {dealMiners.has(miner) ?
+                    <strike>{miner}: {annotations[miner]}</strike> :
+                    <span>{miner}: {annotations[miner]}</span>}
                 </button>
               )
             })}
