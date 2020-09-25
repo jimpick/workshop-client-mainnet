@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useMemo } from 'react'
 import copy from 'clipboard-copy'
+import delay from 'delay'
 import useLotusClient from '../lib/use-lotus-client'
 import useWatchDefaultWallet from '../lib/use-watch-default-wallet'
 //import useMiners from '../lib/use-miners'
@@ -288,6 +289,14 @@ export default function ProposeDeal ({ appState, updateAppState }) {
           'xnr'
         </label>
       </div>
+      {filteredMiners && dealMiners && (
+        <div>
+          Miners: {filteredMiners.filter(miner => dealMiners.has(miner)).length}{' '}
+          / {filteredMiners.length} {' '}
+          <button onClick={() => proposeBatch(10)}>Propose 10</button>
+          <button onClick={() => proposeBatch(100)}>Propose 100</button>
+        </div>
+      )}
       <div style={{ maxHeight: '15rem', overflowY: 'scroll', width: '70vw' }}>
         <div
           style={{
@@ -304,9 +313,15 @@ export default function ProposeDeal ({ appState, updateAppState }) {
                   style={{ width: '20rem', height: '4rem' }}
                   onClick={() => proposeDeal(miner)}
                 >
-                  {dealMiners.has(miner) ?
-                    <strike>{miner}: {annotations[miner]}</strike> :
-                    <span>{miner}: {annotations[miner]}</span>}
+                  {dealMiners.has(miner) ? (
+                    <strike>
+                      {miner}: {annotations[miner]}
+                    </strike>
+                  ) : (
+                    <span>
+                      {miner}: {annotations[miner]}
+                    </span>
+                  )}
                 </button>
               )
             })}
@@ -371,6 +386,17 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     } catch (e) {
       setStatus(`Error ${targetMiner}: ` + e.message)
       console.log('Exception', e)
+    }
+  }
+
+  async function proposeBatch (num) {
+    const candidates = filteredMiners.filter(miner => !dealMiners.has(miner))
+    if (candidates.length > num) {
+      candidates.length = num
+    }
+    for (const miner of candidates) {
+      await proposeDeal(miner)
+      await delay(1000)
     }
   }
 }

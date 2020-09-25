@@ -135,9 +135,6 @@ const annotations = {
 
   // Rejected
 
-  t01012: 'rejected, China, Hong Kong + Guangzhou',
-  t01100: 'rejected, Serbia, Belgrade, filmine.io',
-  t01151: 'rejected, USA, Waxhaw',
   t01152: 'rejected, China, Beijing, wed',
   t01154: 'rejected, Sweden, Alvsjo',
   t01155: 'rejected, China, Shanghai, DianCun Tech',
@@ -627,6 +624,9 @@ const annotations = {
 
   // Dial errors
 
+  t01012: 'dial, China, Hong Kong + Guangzhou',
+  t01100: 'dial, Serbia, Belgrade, filmine.io',
+  t01151: 'dial, USA, Waxhaw',
   t01229: 'dial, China, Hong Kong',
   t01475: 'dial, China, Wuhan + Germany',
   t02382: 'dial, China, Zhongshan, tue-cfa',
