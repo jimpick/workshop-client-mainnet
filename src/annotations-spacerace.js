@@ -1,84 +1,88 @@
 const annotations = {
+  // Active - fri
 
-  // Active - thu
+  // Active/sealing - fri
 
-  t08937: 'active, China, Wuxi, YC--wuxi, <22h, 14h, <1d, <2, thu2h, <23h, <19h, <1d, 13h',
-  t022142: 'active, USA, Queens, 14h',
-  t022166: 'active, Norway, Borgen, 17h',
+  t08937: 'active, China, Wuxi, YC--wuxi, <22h, 14h, <1d, <2, thu2h, <23h, <19h, <1d, 13h, fri',
+  t015747: 'active, Japan, Setagaya-ku, <23h, <1d, <20h, <22h, <23h, 17h, 12h, fri',
+  t020385: 'active, Korea, Incheon, <23h, fri',
+  t021339: 'active, China, Jiaxing, 12h, fri',
+  t022142: 'active, USA, Queens, 14h, fri',
 
-  // Active/sealing - thu
+  // Sealing - fri
 
-  t015747: 'active, Japan, Setagaya-ku, <23h, <1d, <20h, <22h, <23h, 17h, 12h, thu',
-  t020385: 'active, Korea, Incheon, <23h, thu',
-  t021339: 'active, China, Jiaxing, 12h, thu',
+  t01278: 'sealing, USA, Grand Rapids, MiMiner, fri',
+  t02620: 'sealing, Poland, Krakow, @magik6k, 20h, <16h, 13h, <22h, <23h, 14h, fri',
+  t08371: 'sealing, China, Chengdu, <19h, 10h, <22h, <22h, fri',
+  t014394: 'sealing, China, Suzhou, <23h, 12h, <23h, 8h, <1d, <22h, <22h, 10h, <19h, 12h, <23h, 9h, <17h, <17h, fri',
+  t016482: 'sealing, USA, Aliquippa, fri',
+  t021328: 'sealing, China, Dongguan, fri',
+  t022284: 'sealing, China, Shaanxi, fri',
+  t022304: 'sealing, China, Taiyuan, fri',
+  t022320: 'sealing, Korea, Seoul, fri',
+  t022351: 'sealing, Korea, Guri-si, fri',
+  t022399: 'sealing, China, Beijing, fri',
 
-  // Sealing - thu
+  // Stuck - fri
 
-  t01231: 'sealing, Singapore, thu',
-  t01278: 'sealing, USA, Grand Rapids, MiMiner, thu',
-  t02419: 'sealing, China, Shanghai, yuantai, 10h, 14h, <23h, thu',
-  t02620: 'sealing, Poland, Krakow, @magik6k, 20h, <16h, 13h, <22h, <23h, 14h, thu',
-  t08103: 'retest, China, Foshan, 花生酱肠粉, thu',
-  t08371: 'sealing, China, Chengdu, <19h, 10h, <22h, <22h, thu',
-  t014432: 'sealing, China, Chengdu, <19h, thu',
-  t016398: 'sealing, Singapore, thu',
-  t016482: 'sealing, USA, Aliquippa, thu',
-  t019399: 'sealing, Korea, Busan, thu',
-  t020408: 'retest, China, Hong Kong, thu',
-  t020608: 'sealing, Russia, thu',
-  t022084: 'sealing, China, Shaanxi, thu',
-  t022171: 'sealing, China, Shanghai, thu',
+  t02419: 'stuck, China, Shanghai, yuantai, 10h, 14h, <23h, fri-cfa',
+  t03345: 'stuck, China, Fuzhou, chh, <19h, <16h, 8h, <23h, 10h, fri-xfr',
+  t03339: 'stuck, China, Luzhou, benxun, <1d, <20h, <20h, <22h, <24h, <23h, <19h, 9h, 11h, 12h, fri-xfr',
+  t08094: 'stuck, China, Guangzhou, dongshao, 10h, <22h, fri-xfr',
+  t08220: 'stuck, China, Shenzhen, <19h, fri-xfr',
+  t08532: 'stuck, USA, fri-xfr',
+  t08854: 'stuck, China, Dongguan, <16h, 10h, <23h, 11h, fri-xfr',
+  t09573: 'stuck, China, Xiamen, 13h, <15h, <23h, fri-xfr',
+  t09833: 'stuck, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h, 7h, <20h, 12h, <20h, <20h, <20h, <22h, 9h, <19h, 10h, 6h, fri-xfr',
+  t010399: 'stuck, China, Guangzhou, fri-xfr',
+  t014386: 'stuck, Singapore, <22h, <23h, fri-xfr',
+  t014464: 'stuck, China, Hangzhou + Singapore, <23h, fri-funds',
+  t014793: 'stuck, China, Hangzhou, fri-xfr',
+  t015647: 'stuck, China, Shenzhen, 9h, <23h, <1d, <20h, 11h, fri-xfr',
+  t015753: 'stuck, China, Guyuan, <22h, fri-funds',
+  t016563: 'stuck, China, Deyang, <15h, <23h, <20h, 12h, <20h, 10h, <20h, <22h, <22h, 18h, 10h, 8h, 13h, 10h, 9h, 9h, fri-xfr',
+  t016594: 'stuck, Germany, 10h, <23h, <20h, 12h, <19h, <22h, <22h, 10h, 12h, 12h, fri-xfr',
+  t017734: 'stuck, Australia, Sydney, fri-xfr',
+  t018772: 'stuck, Australia, fri-xfr',
+  t019099: 'stuck, China, Hong Kong, fri-xfr',
+  t019114: 'stuck, USA, Howell, fri-xfr',
+  t019437: 'stuck, Korea, Guro-gu, 9h, <20h, <20h, <22h, <22h, <23h, fri-xfr',
+  t019422: 'stuck, South Africa, Johannesburg, fri-xfr',
+  t019779: 'stuck, China, Xuancheng, fri-xfr',
+  t020408: 'stuck, China, Hong Kong, fri-xfr',
+  t020489: 'stuck, China, Lioaning, <19h, 12h, <1d, fri-xfr',
+  t020523: 'stuck, China, Suzhou, <23h, 15h, 13h, <17h, 13h, fri-xfr',
+  t020608: 'stuck, Russia, fri-xfr',
+  t020631: 'stuck, China, Zhejiang, <23h, <21h, <1d, 13h, <17h, fri-xfr',
+  t020786: 'stuck, China, Shenzhen, fri-xfr',
+  t020904: 'stuck, Korea, Uijeongbu-si, <1d, fri-xfr',
+  t020993: 'stuck, China, Hong Kong, fri-funds',
+  t021075: 'stuck, China, Chengdu, fri-xfr',
+  t021262: 'stuck, China, Shanghai, fri-xfr',
+  t021274: 'stuck, China, Shanghai, <1d, <17h, 13h, fri-xfr',
+  t021475: 'stuck, China, Dongguan, fri-xfr',
+  t021535: 'stuck, China, Chengdu, <17h, <16h, fri-xfr',
+  t021583: 'stuck, China, Jiaxing, 13h, 14h, fri-xfr',
+  t021616: 'stuck, China, Shanghai, <17h, <16h, fri-xfr',
+  t021716: 'stuck, New Zealand, Wellington, fri-xfr',
+  t022084: 'stuck, China, Shaanxi, fri-funds',
+  t022108: 'stuck, China, Luzhou, fri-xfr',
+  t022111: 'stuck, China, Quanzhou, fri-xfr',
+  t022119: 'stuck, USA, Lovettsville, fri-xfr',
+  t022125: 'stuck, China, Shenzhen, fri-xfr',
+  t022132: 'stuck, China, Dongguan, fri-xfr',
+  t022262: 'stuck, China, Hong Kong, fri-xfr',
+  t022276: 'stuck, Korea, Seoul, fri-xfr',
+  t022289: 'stuck, China, Mianyang, fri-xfr',
+  t022321: 'stuck, China, Hong Kong, fri-xfr',
+  t022333: 'stuck, China, Dongguan, fri-xfr',
+  t022343: 'stuck, China, Dongguan, fri-xfr',
+  t022352: 'stuck, Norway, Borgen, fri-xfr',
+  t022376: 'stuck, China, Dongguan, fri-xfr',
 
-  // Stuck - thu
+  // Busy - fri
 
-  t03345: 'stuck, China, Fuzhou, chh, <19h, <16h, 8h, <23h, 10h, thu-xfr',
-  t03339: 'stuck, China, Luzhou, benxun, <1d, <20h, <20h, <22h, <24h, <23h, <19h, 9h, 11h, 12h, thu-xfr',
-  t08094: 'stuck, China, Guangzhou, dongshao, 10h, <22h, thu-xfr',
-  t08220: 'stuck, China, Shenzhen, <19h, thu-xfr',
-  t08854: 'stuck, China, Dongguan, <16h, 10h, <23h, 11h, thu-xfr',
-  t09573: 'stuck, China, Xiamen, 13h, <15h, <23h, thu-xfr',
-  t09833: 'stuck, USA, San Jose, <13h, 8h, 8h, 7h, 6h, 7h, 7h, 7h, <20h, 12h, <20h, <20h, <20h, <22h, 9h, <19h, 10h, 6h, thu-xfr',
-  t010399: 'stuck, China, Guangzhou, thu-xfr',
-  t014207: 'stuck, USA, <15h, <23h, thu-xfr',
-  t014386: 'stuck, Singapore, <22h, <23h, thu-xfr',
-  t014394: 'stuck, China, Suzhou, <23h, 12h, <23h, 8h, <1d, <22h, <22h, 10h, <19h, 12h, <23h, 9h, <17h, <17h, thu-xfr',
-  t014464: 'stuck, China, Hangzhou + Singapore, <23h, thu-funds',
-  t014793: 'stuck, China, Hangzhou, thu-xfr',
-  t015647: 'stuck, China, Shenzhen, 9h, <23h, <1d, <20h, 11h, thu-xfr',
-  t015753: 'stuck, China, Guyuan, <22h, thu-funds',
-  t015757: 'stuck, China, Hangzhou, thu-xfr',
-  t016563: 'stuck, China, Deyang, <15h, <23h, <20h, 12h, <20h, 10h, <20h, <22h, <22h, 18h, 10h, 8h, 13h, 10h, 9h, 9h, thu-xfr',
-  t016594: 'stuck, Germany, 10h, <23h, <20h, 12h, <19h, <22h, <22h, 10h, 12h, 12h, thu-xfr',
-  t018772: 'stuck, Australia, thu-xfr',
-  t019099: 'stuck, China, Hong Kong, thu-xfr',
-  t019114: 'stuck, USA, Howell, thu-xfr',
-  t019437: 'stuck, Korea, Guro-gu, 9h, <20h, <20h, <22h, <22h, <23h, thu-xfr',
-  t019422: 'stuck, South Africa, Johannesburg, thu-xfr',
-  t019551: 'stuck, UK, thu-xfr',
-  t019779: 'stuck, China, Xuancheng, thu-xfr',
-  t020489: 'stuck, China, Lioaning, <19h, 12h, <1d, thu-xfr',
-  t020523: 'stuck, China, Suzhou, <23h, 15h, 13h, <17h, 13h, thu-xfr',
-  t020631: 'stuck, China, Zhejiang, <23h, <21h, <1d, 13h, <17h, thu-xfr',
-  t020786: 'stuck, China, Shenzhen, thu-xfr',
-  t020904: 'stuck, Korea, Uijeongbu-si, <1d, thu-xfr',
-  t020975: 'stuck, China, Shandong, 9h, 8h, 5h, thu-xfr',
-  t020993: 'stuck, China, Hong Kong, thu-funds',
-  t021075: 'stuck, China, Chengdu, thu-xfr',
-  t021262: 'stuck, China, Shanghai, thu-xfr',
-  t021274: 'stuck, China, Shanghai, <1d, <17h, 13h, thu-xfr',
-  t021475: 'stuck, China, Dongguan, thu-xfr',
-  t021535: 'stuck, China, Chengdu, <17h, <16h, thu-xfr',
-  t021583: 'stuck, China, Jiaxing, 13h, 14h, thu-xfr',
-  t021616: 'stuck, China, Shanghai, <17h, <16h, thu-xfr',
-  t021716: 'stuck, New Zealand, Wellington, thu-xfr',
-  t022015: 'stuck, China, Hangzhou, thu-xfr',
-  t022108: 'stuck, China, Luzhou, thu-xfr',
-  t022111: 'stuck, China, Quanzhou, thu-xfr',
-  t022119: 'stuck, USA, Lovettsville, thu-xfr',
-  t022125: 'stuck, China, Shenzhen, thu-xfr',
-  t022132: 'stuck, China, Dongguan, thu-xfr',
-
-  // Busy - thu
+  t019551: 'stuck-busy, UK, fri-xfr', // 94438
 
   // Invite
  
@@ -89,26 +93,6 @@ const annotations = {
   t016309: 'invite-active, USA, Boardman', 
 
   // New
-
-  t08532: 'new, USA, fri',
-  t017734: 'new, Australia, Sydney, fri',
-  t022146: 'new, China, Fuzhou, fri',
-  t022157: 'new, China, Fuzhou, fri',
-  t022262: 'new, China, Hong Kong, fri',
-  t022276: 'new, Korea, Seoul, fri',
-  t022284: 'new, China, Shaanxi, fri',
-  t022289: 'new, China, Mianyang, fri',
-  t022304: 'new, China, Taiyuan, fri',
-  t022320: 'new, Korea, Seoul, fri',
-  t022321: 'new, China, Hong Kong, fri',
-  t022333: 'new, China, Dongguan, fri',
-  t022343: 'new, China, Dongguan, fri',
-  t022351: 'new, Korea, Guri-si, fri',
-  t022352: 'new, Norway, Borgen, fri',
-  t022372: 'new, China, Chengdu, fri',
-  t022373: 'new, Singapore, fri',
-  t022376: 'new, China, Dongguan, fri',
-  t022399: 'new, China, Beijing, fri',
 
   // Min Size
 
@@ -127,7 +111,7 @@ const annotations = {
   t03305: 'error, Kenya, Nairobi, <19h', // market balance
   t03306: 'error, Australia, <19h', // market balance
   t03307: 'error, Australia, wed', // market balance
-  t03366: 'error, China, Wuhan + Wuxi', // market balance
+  t03366: 'dial, China, Wuhan + Wuxi',
   t03484: 'error, Netherlands, 14h, wed', // market balance
   t03485: 'error, Netherlands, 13h, 14h', // market balance
   t03620: 'error, Germany, Frankfurt, wed', // market balance
@@ -142,11 +126,13 @@ const annotations = {
   t017795: 'error, USA, Columbus, thu-cfa', // actor not found
   t019196: 'error, China, Shenzhen + Hong Kong, <22h, <22h, <23h, 15h, 14h, 15h, <1d, tue', // eof
   t019229: 'error, USA, Queens, thu', // market balance
+  t019399: 'error, Korea, Busan, thu', // publish nonce
   t019645: 'error, Russia, St. Petersburg, thu-cfa', // actor not found
-  t021328: 'error, China, Dongguan, mon-cfa', // reset
   t022089: 'error, China, Beijing, thu', // reset
 
   // Dial backoff
+
+  t014432: 'backoff, China, Chengdu, <19h, thu',
 
   // Rejected
 
@@ -156,6 +142,7 @@ const annotations = {
   t01152: 'rejected, China, Beijing, wed',
   t01154: 'rejected, Sweden, Alvsjo',
   t01155: 'rejected, China, Shanghai, DianCun Tech',
+  t01231: 'rejected, Singapore, thu',
   t01234: 'rejected, Belgium, De Klinge, Eliovp',
   t01235: 'rejected, Singapore, IPFSMain',
   t01236: 'rejected, Singapore',
@@ -304,6 +291,7 @@ const annotations = {
   t08088: 'rejected, China, Dongguan',
   t08095: 'rejected, Canada, Surrey',
   t08096: 'rejected, China, Wuhan',
+  t08103: 'rejected, China, Foshan, 花生酱肠粉, thu',
   t08136: "rejected, China, Xi'an",
   t08148: 'rejected, China, Shanghai',
   t08157: 'rejected, China, Beijing + Germany, Frankfurt, 超星际',
@@ -552,6 +540,7 @@ const annotations = {
   t016202: 'rejected, Korea, Songpa-gu, sun',
   t016279: 'rejected, Finland, Helsinki, tue',
   t016302: 'rejected, China, Fuzhou, wed',
+  t016398: 'rejected, Singapore, thu',
   t016412: 'rejected, China, Taiwan, Taipei, wed',
   t016850: 'rejected, Japan, thu',
   t016866: 'rejected, China, Fuzhou, thu',
@@ -631,6 +620,8 @@ const annotations = {
   t021714: 'rejected, China, Hong Kong, wed',
   t022130: 'rejected, Korea, Seodaemun-gu, thu', // no online
   t022144: 'rejected, China, Fuzhou, thu',
+  t022157: 'rejected, China, Fuzhou, fri',
+  t022373: 'rejected, Singapore, fri',
 
 
 
@@ -811,6 +802,7 @@ const annotations = {
   t015733: 'dial, China, Ordos, wed-funds',
   t015737: 'dial, Brazil, Sao Paulo, mon',
   t015756: 'dial, Finland, Helsinki, mon',
+  t015757: 'dial, China, Hangzhou, thu-xfr',
   t015760: 'dial, Kenya, Nairobi, wed-funds',
   t015777: 'dial, Australia, Sydney, wed',
   t015795: 'dial, Brazil, Sao Paulo, <22h, mon',
@@ -896,6 +888,9 @@ const annotations = {
   t021428: 'dial, Norway, Borgen, 10h, 10h',
   t021463: 'dial, China, Mianyang, wed',
   t021483: 'dial, China, Beijing, tue',
+  t022146: 'dial, China, Fuzhou, fri',
+  t022166: 'dial, Norway, Borgen, 17h',
+  t022372: 'dial, China, Chengdu, fri',
 
 
   // XNR
@@ -986,6 +981,7 @@ const annotations = {
   t010549: 'xnr, China, Ordos, sun',
   t010593: 'xnr, USA, East Islip, <19h',
   t010603: 'xnr, China, Baoding, sun',
+  t014207: 'xnr, USA, <15h, <23h, thu-xfr',
   t014246: 'xnr, China, Shenzhen, mon',
   t014314: 'xnr, Korea, Bucheon-si, wed',
   t014331: 'xnr, China, Chongqing, mon',
@@ -1101,12 +1097,15 @@ const annotations = {
   t020822: 'xnr, China, Shanghai, fri',
   t020899: 'xnr, China, Chengdu, 7h, 15h',
   t020961: 'xnr, China, Shanghai, <23h, wed',
+  t020975: 'xnr, China, Shandong, 9h, 8h, 5h, thu-xfr',
   t021286: 'xnr, China, Shaanxi, tue-funds',
   t021307: 'xnr, China, Chengdu, mon',
   t021316: 'xnr, China, Yangzhou, mon-cfa',
   t021346: 'xnr, China, Shanghai, mon',
   t021357: 'xnr, China, Shanghai, mon',
   t021509: 'xnr, China, Fuzhou, wed-funds',
+  t022015: 'xnr, China, Hangzhou, thu-xfr',
+  t022171: 'xnr, China, Shanghai, thu',
 
   // NR
   t01013: 'NR',
