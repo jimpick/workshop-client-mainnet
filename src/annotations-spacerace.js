@@ -1,5 +1,12 @@
 const annotations = {
+
   // Active - fri
+
+  t03339: 'active, China, Luzhou, benxun, <1d, <20h, <20h, <22h, <24h, <23h, <19h, 9h, 11h, 12h, 12h',
+  t014386: 'active, Singapore, <22h, <23h, 10h',
+  t014793: 'active, China, Hangzhou, 5h',
+  t019437: 'active, Korea, Guro-gu, 9h, <20h, <20h, <22h, <22h, <23h, 9h',
+  t022111: 'active, China, Quanzhou, 9h',
 
   // Active/sealing - fri
 
@@ -29,7 +36,6 @@ const annotations = {
   t03134: 'sealing, China, Cangzhou, 乔木信息, fri',
   t03223: 'sealing, USA, <19h, fri',
   t03264: 'sealing, Korea, Bucheon-si, fri',
-  t03339: 'sealing, China, Luzhou, benxun, <1d, <20h, <20h, <22h, <24h, <23h, <19h, 9h, 11h, 12h, fri',
   t03340: "sealing, China, Xi'an, <19h, <23h, <20h, fri", 
   t03345: 'sealing, China, Fuzhou, chh, <19h, <16h, 8h, <23h, 10h, fri',
   t03347: 'sealing, China, Shenzhen, fri',
@@ -71,11 +77,9 @@ const annotations = {
   t010616: 'sealing, China, Ordos + Singapore, fri',
   t010617: 'sealing, Canada, Surrey, fri',
   t014233: 'sealing, China, Shanghai, <22h, 14h, <23h, <15h, <22h, 12h, <19h, <20h, <20h, <22h, fri',
-  t014386: 'sealing, Singapore, <22h, <23h, fri',
   t014394: 'sealing, China, Suzhou, <23h, 12h, <23h, 8h, <1d, <22h, <22h, 10h, <19h, 12h, <23h, 9h, <17h, <17h, fri',
   t014487: 'sealing, China, Shanghai, fri',
   t014768: 'retest, Singapore, fri',
-  t014793: 'retest, China, Hangzhou, fri',
   t015647: 'sealing, China, Shenzhen, 9h, <23h, <1d, <20h, 11h, fri',
   t015751: 'sealing, Canada, Huron East, fri',
   t015877: 'sealing, China, Jiaxing + USA, fri',
@@ -91,7 +95,6 @@ const annotations = {
   t019174: 'sealing, UK, Halifax, fri',
   t019240: 'sealing, China, Beijing, fri',
   t019362: 'sealing, China, Hangzhou, fri',
-  t019437: 'sealing, Korea, Guro-gu, 9h, <20h, <20h, <22h, <22h, <23h, fri',
   t019422: 'sealing, South Africa, Johannesburg, fri',
   t019779: 'sealing, China, Xuancheng, fri',
   t020378: 'sealing, Bulgaria, Asenovgrad, <24h, <23h, fri',
@@ -118,7 +121,6 @@ const annotations = {
   t021716: 'sealing, New Zealand, Wellington, fri',
   t021870: 'sealing, USA, Portland, fri',
   t022108: 'sealing, China, Luzhou, fri',
-  t022111: 'sealing, China, Quanzhou, fri',
   t022125: 'sealing, China, Shenzhen, fri',
   t022132: 'sealing, China, Dongguan, fri',
   t022262: 'sealing, China, Hong Kong, fri',
