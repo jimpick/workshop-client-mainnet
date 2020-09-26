@@ -167,6 +167,11 @@ const annotations = {
 
   // New
 
+  t022202: 'new, USA, Howell, sat',
+  t022227: 'new, China, Jiangsu, sat',
+  t022494: 'new, China, Dongguan, sat',
+  t022512: 'new, Canada, Embrun, sat',
+  t022517: 'new, China, Taiwan, Taipei, sat',
 
   // Min Size
 
@@ -1311,6 +1316,12 @@ const annotations = {
   t022072: 'NR',
   t022091: 'NR',
   t022122: 'NR',
+  t022250: 'NR',
+  t022313: 'NR',
+  t022361: 'NR',
+  t022374: 'NR',
+  t022503: 'NR',
+  t022518: 'NR',
   
   // Bootstrappers
   t01000: 'NR - bootstrap',
