@@ -295,6 +295,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
           / {filteredMiners.length} {' '}
           <button onClick={() => proposeBatch(10)}>Propose 10</button>
           <button onClick={() => proposeBatch(100)}>Propose 100</button>
+          <button onClick={() => proposeBatch(1000)}>Propose 1000</button>
         </div>
       )}
       <div style={{ maxHeight: '15rem', overflowY: 'scroll', width: '70vw' }}>
