@@ -79,7 +79,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
       return miners.filter(miner => annotations[miner].match(/^rejected/i))
     }
     if (filterNonRoutable && miners) {
-      return miners.filter(miner => !annotations[miner].match(/^xnr/i))
+      return miners.filter(miner => annotations[miner].match(/^xnr/i))
     }
     return miners
   }, [
