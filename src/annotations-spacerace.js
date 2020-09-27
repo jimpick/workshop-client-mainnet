@@ -1,5 +1,9 @@
 const annotations = {
 
+  // Active - sun
+
+  // Active/sealing - sun
+
   // Active - sat
 
   t01152: 'active, China, Beijing, <23h',
@@ -87,6 +91,25 @@ const annotations = {
   t08937: 'active, China, Wuxi, YC--wuxi, <22h, 14h, <1d, <2, thu2h, <23h, <19h, <1d, 13h, sat',
   t015747: 'active, Japan, Setagaya-ku, <23h, <1d, <20h, <22h, <23h, 17h, 12h, sat',
   t014386: 'active, Singapore, <22h, <23h, 10h, sat',
+
+  // Sealing - sun
+
+  t017244: 'sealing, Korea, Seoul, sun',
+  t022748: 'sealing, China, Xinyang, sun',
+  t022755: 'sealing, China, Shenzhen, sun',
+  t022780: 'sealing, Korea, Guri-si, sun',
+  t022787: 'sealing, Korea, Guri-si, sun',
+  t022790: 'sealing, China, Luzhou, sun',
+  t022820: 'sealing, China, Guangdong, sun',
+  t022832: 'sealing, China, sun',
+  t022836: 'sealing, China, Chongqing, sun',
+  t022841: 'sealing, China, Zhongshan, sun',
+
+  // Stuck - sun
+
+  t022501: 'stuck, Japan, Osaka, sun-cfa',
+
+  // Busy - sun
 
   // Sealing - sat
 
@@ -226,26 +249,6 @@ const annotations = {
 
   // New
 
-  t02773: 'new, China, Chengdu, sun',
-  t017244: 'new, Korea, Seoul, sun',
-  t022395: 'new, USA, Los Angeles, sun',
-  t022501: 'new, Japan, Osaka, sun',
-  t022505: 'new, China, Shanghai, sun',
-  t022687: 'new, China, Chengdu, sun',
-  t022737: 'new, Korea, Gangnum-gu, sun',
-  t022748: 'new, China, Xinyang, sun',
-  t022755: 'new, China, Shenzhen, sun',
-  t022776: 'new, Korea, Guri-si, sun',
-  t022780: 'new, Korea, Guri-si, sun',
-  t022787: 'new, Korea, Guri-si, sun',
-  t022790: 'new, China, Luzhou, sun',
-  t022804: 'new, China, Yibin, sun',
-  t022820: 'new, China, Guangdong, sun',
-  t022832: 'new, China, sun',
-  t022836: 'new, China, Chongqing, sun',
-  t022838: 'new, China, Hong Kong, sun',
-  t022841: 'new, China, Zhongshan, sun',
-
   // Min Size
 
   t014786: 'min-size, China, Xiamen, mon', // piece size less than minimum required size: 131072 < 204800
@@ -289,6 +292,11 @@ const annotations = {
   t022089: 'error, China, Beijing, thu', // reset
   t022119: 'error, USA, Lovettsville, fri-xfr', // os
   t022494: 'error, China, Dongguan, sat', // reset
+  t022737: 'error, Korea, Gangnum-gu, sun', // commP
+  t022776: 'error, Korea, Guri-si, sun', // reset
+  t022804: 'error, China, Yibin, sun', // publish eof
+  t022838: 'error, China, Hong Kong, sun', // os
+
 
   // Dial backoff
 
@@ -736,6 +744,7 @@ const annotations = {
   t02723: 'dial, China, Hong Kong',
   t02725: 'dial, China, Hong Kong',
   t02731: 'dial, Singapore',
+  t02773: 'dial, China, Chengdu, sun',
   t02774: 'dial, Australia, Sydney, tue',
   t03120: 'dial, China, Guangzhou, wed',
   t03140: 'dial, China, QingDao, wed',
@@ -962,7 +971,7 @@ const annotations = {
   t022166: 'dial, Norway, Borgen, 17h',
   t022320: 'dial, Korea, Seoul, fri',
   t022372: 'dial, China, Chengdu, fri',
-
+  t022395: 'dial, USA, Los Angeles, sun',
 
   // XNR
 
@@ -1169,7 +1178,9 @@ const annotations = {
   t022084: 'xnr, China, Shaanxi, fri-funds',
   t022171: 'xnr, China, Shanghai, thu',
   t022284: 'xnr, China, Shaanxi, fri',
+  t022505: 'xnr, China, Shanghai, sun',
   t022517: 'xnr, China, Taiwan, Taipei, sat',
+  t022687: 'xnr, China, Chengdu, sun',
 
 
   // NR
