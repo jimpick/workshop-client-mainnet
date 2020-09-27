@@ -235,13 +235,13 @@ const annotations = {
   // Busy - sat
 
 
-  // Invite
+  // Deprecated
  
-  t016303: 'xinvite-sealing, USA, Boardman',
-  t016304: 'xinvite-sealing, USA, Boardman',
-  t016305: 'xinvite-sealing, USA, Boardman',
-  t016306: 'xinvite-sealing, USA, Boardman', 
-  t016309: 'xinvite-active, USA, Boardman', 
+  t016303: 'deprecated, USA, Boardman',
+  t016304: 'deprecated, USA, Boardman',
+  t016305: 'deprecated, USA, Boardman',
+  t016306: 'deprecated, USA, Boardman', 
+  t016309: 'deprecated, USA, Boardman', 
 
   // New
 
