@@ -247,6 +247,11 @@ const annotations = {
 
   // New
 
+  t021069: 'new, ???, mon', // requested by Brian Y
+  t022031: 'new, China, Maoming, mon',
+  t022261: 'new, China, Luzhou, mon',
+  t022853: 'new, China, Fuzhou, mon',
+
   // Min Size
 
   t014786: 'min-size, China, Xiamen, mon', // piece size less than minimum required size: 131072 < 204800
@@ -1311,7 +1316,6 @@ const annotations = {
   t020939: 'NR',
   t020940: 'NR',
   t020957: 'NR',
-  t021069: 'NR',
   t021083: 'NR',
   t021092: 'NR',
   t021095: 'NR',

@@ -356,9 +356,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       const { Cids: tipsetKey, Height: height } = await client.chainHead()
       setHeight(height)
       setTipsetKey(tipsetKey)
-      //const result = await client.stateMinerPower('<empty>', tipsetKey)
-      //setTotalPower(result.TotalPower)
-      setTotalPower({}) // FIXME - regression?
+      const result = await client.stateMinerPower('<empty>', tipsetKey)
+      setTotalPower(result.TotalPower)
     }
     run()
     return () => {
