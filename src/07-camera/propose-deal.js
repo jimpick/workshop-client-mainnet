@@ -17,6 +17,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     filterDialMiners,
     filterErrorMiners,
     filterBackoffMiners,
+    filterMinMiners,
     filterStuckMiners,
     filterRejectedMiners,
     filterNonRoutable
@@ -72,6 +73,9 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     if (filterBackoffMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/^backoff/i))
     }
+    if (filterMinMiners && miners) {
+      return miners.filter(miner => annotations[miner].match(/^min-/i))
+    }
     if (filterStuckMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/^stuck/i))
     }
@@ -91,6 +95,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     filterDialMiners,
     filterErrorMiners,
     filterBackoffMiners,
+    filterMinMiners,
     filterStuckMiners,
     filterNonRoutable
   ])
@@ -209,6 +214,19 @@ export default function ProposeDeal ({ appState, updateAppState }) {
             style={{ marginLeft: '1rem' }}
           />
           'sealing'
+        </label>
+        <label>
+          <input
+            type='checkbox'
+            checked={filterMinMiners}
+            onChange={() => {
+              updateAppState(draft => {
+                draft.filterMinMiners = !filterMinMiners
+              })
+            }}
+            style={{ marginLeft: '1rem' }}
+          />
+          'min-*'
         </label>
         <label>
           <input
