@@ -165,6 +165,7 @@ const annotations = {
   t019118: 'sealing, China, Jiaxing, 13h, tue',
   t019133: 'sealing, UK, Mansfield, tue',
   t019174: 'sealing, UK, Halifax, tue',
+  t019185: 'sealing, China, Beijing, tue',
   t019354: 'sealing, Germany, Frankfurt, tue',
   t019362: 'sealing, China, Hangzhou, tue',
   t019399: 'sealing, Korea, Busan, tue',
@@ -211,7 +212,12 @@ const annotations = {
   t022976: 'sealing, Korea, Cheongju-si, tue',
   t023001: 'sealing, China, Changsha, tue',
   t023013: 'sealing, China, Hong Kong, tue',
+  t023021: 'sealing, Korea, Yeongdeungpo-dong, tue',
   t023108: 'sealing, China, Dongguan, tue',
+  t023179: 'sealing, China, Fuzhou, tue',
+  t023202: 'sealing, China, Wuxi, tue',
+  t023207: 'sealing, Australia, Brisbane, tue',
+  t023210: 'sealing, China, Dongguan, tue',
 
   // Stuck - tue
 
@@ -243,13 +249,6 @@ const annotations = {
 
 
   // New
-
-  t019185: 'new, China, Beijing, tue',
-  t023021: 'new, Korea, Yeongdeungpo-dong, tue',
-  t023179: 'new, China, Fuzhou, tue',
-  t023202: 'new, China, Wuxi, tue',
-  t023207: 'new, Australia, Brisbane, tue',
-  t023210: 'new, China, Dongguan, tue',
 
 
   // Min Size
