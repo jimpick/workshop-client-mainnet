@@ -16,6 +16,7 @@ import StateListMiners from './05-state-list-miners'
 import StatePowerMiners from './06-state-power-miners'
 import Camera from './07-camera'
 import Deals from './08-deals'
+import DealState from './08-deals/deal-state'
 import Retrieve from './09-retrieve'
 import Home from './home'
 import { networkName } from './config'
@@ -109,6 +110,7 @@ function App () {
           <Link to='/camera'>Store: Camera</Link>
           <Link to='/retrieve'>Retrieve</Link>
           <Link to='/deals'>My Deals</Link>
+          <Link to='/deals/deal-state'>Deal State</Link>
         </nav>
         <ErrorBoundary>
           <Switch>
@@ -132,6 +134,9 @@ function App () {
             </Route>
             <Route path='/deals'>
               <Deals {...baseProps} />
+            </Route>
+            <Route path='/deal-state'>
+              <DealState {...baseProps} />
             </Route>
             <Route path='/camera'>
               <Camera {...baseProps} />
