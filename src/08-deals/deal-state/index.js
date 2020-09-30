@@ -111,76 +111,86 @@ function bucketizeDeal (deal) {
 }
 
 function BucketDealList ({ bucket, deals, dealData, dealHistory, height, now }) {
+  const minerEntries = []
+  for (let i in deals) {
+    const deal=deals[i]
+    const [fromTag, shortAnnotation] = bucketizeDeal(deal)
+    if (fromTag !== bucket) continue
+    
+    const { proposalCid, fromNode, miner, date, cid: cidDeal } = deal
+    const data = dealData && dealData[proposalCid]
+    const clientDealStatus = data && data.clientDealStatus
+    // const dealState = clientDealStatus && clientDealStatus.State
+    const dealMessage = clientDealStatus && clientDealStatus.Message
+    const dealHistoryData = dealHistory && dealHistory[proposalCid]
+    // if (filterErrors && dealState === 22) return null
+    const retrieveScript =
+      clientDealStatus &&
+      dealStateNames[clientDealStatus.State] === 'Active' &&
+      `(TIMESTAMP=\`date +%s\`; /usr/bin/time timeout -k 11m 10m ` +
+        `lotus client retrieve --miner=${miner} ${cidDeal} ` +
+        `/home/lotus1/downloads/${miner}-` +
+        `${clientDealStatus && clientDealStatus.DealID}-$TIMESTAMP.jpg ` +
+        `2>&1 | tee /home/lotus1/downloads/${miner}-` +
+        `${clientDealStatus && clientDealStatus.DealID}-$TIMESTAMP.log); ` +
+        `sleep 5`
+
+        const entry = (
+      <div key={proposalCid} style={{ marginBottom: '1rem' }}>
+        <div>
+          {Number(i) + 1}. Node #{fromNode} {'->'} Miner {miner} [{fromTag}]
+  {' '} {shortAnnotation}
+        </div>
+        <div style={{ fontSize: '50%' }}>
+          <div>Date: {new Date(date).toString()}</div>
+          {!cidDeal && (
+            <div>
+              CID: {cidDeal} <button onClick={copyCid}>Copy</button>
+            </div>
+          )}
+          <div>Proposal CID: {proposalCid}</div>
+          <div>Deal ID: {clientDealStatus && clientDealStatus.DealID}</div>
+          <div>Size: {clientDealStatus && clientDealStatus.Size}</div>
+          <div>
+            Last update:{' '}
+            {data && formatDistance(data.updatedAtTime, now) + ' ago'}
+          </div>
+          {dealMessage && <div>Message: {dealMessage}</div>}
+        </div>
+        <DealHistory dealHistoryData={dealHistoryData} height={height} />
+        {retrieveScript && (
+          <div>
+            <details>
+              <summary>Retrieve Script</summary>
+              <pre>{retrieveScript}</pre>
+              <button onClick={copyShellRetrieve}>Copy to Clipboard</button>
+            </details>
+          </div>
+        )}
+      </div>
+    )
+    minerEntries.push([miner, entry])
+
+    async function copyCid () {
+      console.log('Copying to clipboard', cidDeal)
+      await copy(cidDeal)
+      console.log('Copied.')
+    }
+
+    async function copyShellRetrieve () {
+      console.log('Copying to clipboard', retrieveScript)
+      await copy(retrieveScript)
+      console.log('Copied.')
+    }
+  }
+
+  minerEntries.sort(([a], [b]) => {
+    return Number(a.slice(1)) - Number(b.slice(1))
+  })
+
   return (
     <div>
-      {deals.map((deal, i) => {
-        const [fromTag, shortAnnotation] = bucketizeDeal(deal)
-        if (fromTag !== bucket) return null
-        
-        const { proposalCid, fromNode, miner, date, cid: cidDeal } = deal
-        const data = dealData && dealData[proposalCid]
-        const clientDealStatus = data && data.clientDealStatus
-        // const dealState = clientDealStatus && clientDealStatus.State
-        const dealMessage = clientDealStatus && clientDealStatus.Message
-        const dealHistoryData = dealHistory && dealHistory[proposalCid]
-        // if (filterErrors && dealState === 22) return null
-        const retrieveScript =
-          clientDealStatus &&
-          dealStateNames[clientDealStatus.State] === 'Active' &&
-          `(TIMESTAMP=\`date +%s\`; /usr/bin/time timeout -k 11m 10m ` +
-            `lotus client retrieve --miner=${miner} ${cidDeal} ` +
-            `/home/lotus1/downloads/${miner}-` +
-            `${clientDealStatus && clientDealStatus.DealID}-$TIMESTAMP.jpg ` +
-            `2>&1 | tee /home/lotus1/downloads/${miner}-` +
-            `${clientDealStatus && clientDealStatus.DealID}-$TIMESTAMP.log); ` +
-            `sleep 5`
-
-        return (
-          <div key={proposalCid} style={{ marginBottom: '1rem' }}>
-            <div>
-              {i + 1}. Node #{fromNode} {'->'} Miner {miner} [{fromTag}]
-      {' '} {shortAnnotation}
-            </div>
-            <div style={{ fontSize: '50%' }}>
-              <div>Date: {new Date(date).toString()}</div>
-              {!cidDeal && (
-                <div>
-                  CID: {cidDeal} <button onClick={copyCid}>Copy</button>
-                </div>
-              )}
-              <div>Proposal CID: {proposalCid}</div>
-              <div>Deal ID: {clientDealStatus && clientDealStatus.DealID}</div>
-              <div>Size: {clientDealStatus && clientDealStatus.Size}</div>
-              <div>
-                Last update:{' '}
-                {data && formatDistance(data.updatedAtTime, now) + ' ago'}
-              </div>
-              {dealMessage && <div>Message: {dealMessage}</div>}
-            </div>
-            <DealHistory dealHistoryData={dealHistoryData} height={height} />
-            {retrieveScript && (
-              <div>
-                <details>
-                  <summary>Retrieve Script</summary>
-                  <pre>{retrieveScript}</pre>
-                  <button onClick={copyShellRetrieve}>Copy to Clipboard</button>
-                </details>
-              </div>
-            )}
-          </div>
-        )
-
-        async function copyCid () {
-          console.log('Copying to clipboard', cidDeal)
-          await copy(cidDeal)
-          console.log('Copied.')
-        }
-        async function copyShellRetrieve () {
-          console.log('Copying to clipboard', retrieveScript)
-          await copy(retrieveScript)
-          console.log('Copied.')
-        }
-      })}
+      {minerEntries.map(([miner, entry]) => entry)}
     </div>
   )
 }
