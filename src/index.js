@@ -110,7 +110,7 @@ function App () {
           <Link to='/camera'>Store: Camera</Link>
           <Link to='/retrieve'>Retrieve</Link>
           <Link to='/deals'>My Deals</Link>
-          <Link to='/deals/deal-state'>Deal State</Link>
+          <Link to='/deal-state'>Deal State</Link>
         </nav>
         <ErrorBoundary>
           <Switch>
