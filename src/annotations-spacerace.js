@@ -111,7 +111,7 @@ const annotations = {
   t023108: 'active-sealing, China, Dongguan | <1d',
 
   // Sealing - wed
-
+ 
   t01240: 'sealing, Netherlands, HidNand, tue',
   t02299: 'sealing, China, Dongguan, Yolo, tue',
   t02381: 'sealing, China, Dongguan, 西野七濑迷叔, 12h, tue',
@@ -119,18 +119,23 @@ const annotations = {
   t02492: 'sealing, China, Shenzhen, tue',
   t02540: 'sealing, USA, Rochester, 12h, tue',
   t02613: 'sealing, China, Chongqing, 10h, <19h, 8h, <23h, 10h, tue',
+  t02645: 'sealing, China, Hong Kong, <20h, 7h, 7h',
   t02665: 'sealing, Netherlands, Amsterdam, fm-ops, tue',
+  t02772: 'sealing, China, Chengdu',
   t03002: 'sealing, China, Chongqing, 11h, 9h, <22h, 9h, <23h, 12h, tue',
   t03264: 'sealing, Korea, Bucheon-si, tue',
+  t03302: 'sealing, China, Chengdu, <20h',
   t03340: "sealing, China, Xi'an, <19h, <23h, <20h, tue", 
   t03345: 'sealing, China, Fuzhou, chh, <19h, <16h, 8h, <23h, 10h, tue',
   t03347: 'sealing, China, Shenzhen, tue',
   t03482: 'sealing, China, Wuxi, tue',
   t03488: 'sealing, Korea, Geumcheon-gu, tue',
+  t03491: 'sealing, China, Hong Kong, 8h, 7h',
   t03512: 'sealing, New Zealand, Auckland, NZFILECOIN01, tue',
   t05664: 'sealing, China, Shenzhen, 艾比特网络科技, tue',
   t07806: 'sealing, China, Wuhan, HelloXP, <23h, tue',
   t08019: 'sealing, China, Yantai, 三合, <19h, <22h, tue',
+  t08094: 'sealing, China, Guangzhou, dongshao, 10h, <22h, <22h',
   t08204: 'sealing, USA, St. Louis, tue',
   t08220: 'sealing, China, Shenzhen, <19h, tue',
   t08311: 'sealing, China, Shenzhen, <19h, tue',
@@ -140,10 +145,14 @@ const annotations = {
   t09569: 'sealing, China, Beijing, tue',
   t09573: 'sealing, China, Xiamen, 13h, <15h, <23h, tue',
   t09675: 'sealing, China, Weifang, tue',
+  t010084: 'sealing, China, Beijing, 10h, <22h',
   t010257: 'sealing, China, Hong Kong, <23h, tue',
   t010399: 'sealing, China, Guangzhou, tue',
+  t010400: 'sealing, China, Shenyang, <23h, 10h',
+  t010446: 'sealing, Netherlands, <23h, <23h',
   t010493: 'sealing, China, Shanghai, tue',
   t010498: 'sealing, China, Shenzhen, tue',
+  t010507: 'sealing, China, Hangzhou, <19h, <20h, <20h',
   t010616: 'sealing, China, Ordos + Singapore, tue',
   t015647: 'sealing, China, Shenzhen, 9h, <23h, <1d, <20h, 11h, tue',
   t016482: 'sealing, USA, Aliquippa, tue',
@@ -151,6 +160,7 @@ const annotations = {
   t018772: 'sealing, Australia, tue',
   t019074: 'sealing, China, Guangdong, tue',
   t019090: 'sealing, South Africa, Johannesburg, <20h, <20h, tue',
+  t019099: 'sealing, China, Hong Kong | <23h, <23h, <21h',
   t019104: 'sealing, Canada, Chambly, tue',
   t019118: 'sealing, China, Jiaxing, 13h, tue',
   t019133: 'sealing, UK, Mansfield, tue',
@@ -162,6 +172,7 @@ const annotations = {
   t020358: 'sealing, China, Xinxiang, tue',
   t020523: 'sealing, China, Suzhou, <23h, 15h, 13h, <17h, 13h, tue',
   t021069: 'sealing, USA, tue',
+  t021075: 'sealing, China, Chengdu',
   t021255: 'sealing, China, Suzhou + Netherlands, tue',
   t021339: 'sealing, China, Jiaxing, 12h, tue',
   t021483: 'sealing, China, Beijing, tue',
@@ -169,6 +180,7 @@ const annotations = {
   t021870: 'sealing, USA, Portland, 7h, <22h, tue',
   t022132: 'sealing, China, Dongguan, tue',
   t022227: 'sealing, China, Jiangsu, tue',
+  t022289: 'sealing, China, Mianyang, 8h',
   t022395: 'sealing, USA, Los Angeles, tue',
   t022405: 'sealing, Russia, tue',
   t022753: 'sealing, China, Hong Kong, tue',
@@ -177,6 +189,7 @@ const annotations = {
   t022820: 'sealing, China, Guangdong, <23h, tue',
   t022836: 'sealing, China, Chongqing, tue',
   t022841: 'sealing, China, Zhongshan, tue',
+  t022969: 'sealing, China, Chengdu',
   t023001: 'sealing, China, Changsha, tue',
   t023013: 'sealing, China, Hong Kong, tue',
   t023179: 'sealing, China, Fuzhou, tue',
@@ -185,12 +198,11 @@ const annotations = {
 
   // Stuck - wed
 
-  t01280: 'xstuck, China, Wuxi, 了凡超算 | <20h, wed-cfa',
-  t03364: 'xstuck, China, Guangzhou, wed-cfa',
-  t07998: 'xstuck, China, Hangzhou | <23h, <23h, <22h, wed-funds',
-  t010528: 'xstuck, China, Chongqing | <23h, <1d, wed-cfa',
-  t019099: 'xstuck, China, Hong Kong | <23h, <23h, <21h, wed-cfa',
-  t019422: 'xstuck, South Africa, Johannesburg, wed-funds',
+  t01280: 'stuck, China, Wuxi, 了凡超算 | <20h, wed-cfa',
+  t03364: 'stuck, China, Guangzhou, wed-cfa',
+  t07998: 'stuck, China, Hangzhou | <23h, <23h, <22h, wed-funds',
+  t010528: 'stuck, China, Chongqing | <23h, <1d, wed-cfa',
+  t019422: 'stuck, South Africa, Johannesburg, wed-funds',
 
   // Busy - wed
 
@@ -199,24 +211,12 @@ const annotations = {
 
   // Stuck - tue
 
-  t02645: 'stuck, China, Hong Kong, <20h, 7h, 7h, tue-xfr',
-  t02772: 'stuck, China, Chengdu, tue-xfr', // 1
-  t03302: 'stuck, China, Chengdu, <20h, tue-xfr',
-  t03491: 'stuck, China, Hong Kong, 8h, 7h, tue-xfr',
-  t08094: 'stuck, China, Guangzhou, dongshao, 10h, <22h, <22h, tue-xfr',
   t08854: 'stuck, China, Dongguan, <16h, 10h, <23h, 11h, tue-funds', // 1
   t09597: 'stuck, China, Shanghai, tue-cfa', // 2
-  t010084: 'stuck, China, Beijing, 10h, <22h, tue-xfr',
-  t010400: 'stuck, China, Shenyang, <23h, 10h, tue-xfr',
-  t010446: 'stuck, Netherlands, <23h, <23h, tue-cfa',
-  t010507: 'stuck, China, Hangzhou, <19h, <20h, <20h, tue-xfr',
   t015751: 'stuck, Canada, Huron East, tue-cfa', // 2
   t019114: 'stuck, USA, Howell, tue-cfa', // 2
   t019551: 'stuck, UK, tue-xfr', // 1
-  t021075: 'stuck, China, Chengdu, tue-xfr',
   t022202: 'stuck, USA, Howell, tue-cfa', // 2
-  t022289: 'stuck, China, Mianyang, 8h, tue-xfr',
-  t022969: 'stuck, China, Chengdu, tue-xfr',
 
   // Busy - tue
 
