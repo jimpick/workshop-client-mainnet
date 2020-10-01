@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import useMiners from '../../lib/use-miners'
 import { format, formatDistance } from 'date-fns'
 import copy from 'clipboard-copy'
 import useLotusClient from '../../lib/use-lotus-client'
@@ -91,22 +90,45 @@ const buckets = [
 ]
 const bucketSet = new Set(buckets)
 
-function bucketizeDeal (deal) {
+function proposedNewBucket (deal, previous, dealData, dealHistory) {
+  const { proposalCid, fromNode, miner, date, cid: cidDeal } = deal
+  const data = dealData && dealData[proposalCid]
+  const clientDealStatus = data && data.clientDealStatus
+  // const dealState = clientDealStatus && clientDealStatus.State
+  const dealMessage = clientDealStatus && clientDealStatus.Message
+  const dealHistoryData = dealHistory && dealHistory[proposalCid]
+  if (previous === 'active') {
+    const lastHistory = dealHistoryData && dealHistoryData[dealHistoryData.length - 1]
+    if (lastHistory && dealStateNames[lastHistory[0]] === 'Sealing') {
+      return 'active-sealing'
+    }
+  }
+  if (previous === 'active-sealing') {
+    const lastHistory = dealHistoryData && dealHistoryData[dealHistoryData.length - 1]
+    if (lastHistory && dealStateNames[lastHistory[0]] === 'Sealing') {
+      return 'active-sealing'
+    }
+    return 'active-sealing-old'
+  }
+  return previous
+}
+
+function bucketizeDeal (deal, dealData, dealHistory) {
   const miner = deal.miner
   const annotation = annotations[miner]
   const match1 = annotation.match(/^([^,]*), (.*)/)
   if (!match1) {
-    return ['unknown', annotation]
+    return ['unknown', proposedNewBucket(deal, 'unknown', dealData, dealHistory), annotation]
   }
   const bucket = match1[1]
   const annotation1 = match1[2]
 
-  console.log('Jim bucketize', miner, bucket, annotation1)
+  // console.log('Jim bucketize', miner, bucket, annotation1)
 
   if (bucketSet.has(bucket)) {
-    return [bucket, annotation1]
+    return [bucket, proposedNewBucket(deal, bucket, dealData, dealHistory), annotation1]
   } else {
-    return ['unknown', annotation1]
+    return ['unknown', proposedNewBucket(deal, 'unknown', dealData, dealHistory), annotation1]
   }
 }
 
@@ -114,7 +136,7 @@ function BucketDealList ({ bucket, deals, dealData, dealHistory, height, now }) 
   const minerEntries = []
   for (let i in deals) {
     const deal=deals[i]
-    const [fromTag, shortAnnotation] = bucketizeDeal(deal)
+    const [fromTag, toTag, shortAnnotation] = bucketizeDeal(deal, dealData, dealHistory)
     if (fromTag !== bucket) continue
     
     const { proposalCid, fromNode, miner, date, cid: cidDeal } = deal
@@ -138,7 +160,8 @@ function BucketDealList ({ bucket, deals, dealData, dealHistory, height, now }) 
         const entry = (
       <div key={proposalCid} style={{ marginBottom: '1rem' }}>
         <div>
-          {Number(i) + 1}. Node #{fromNode} {'->'} Miner {miner} [{fromTag}]
+          {Number(i) + 1}. Node #{fromNode} {'->'} Miner {miner}
+          {' '} [{fromTag} {'->'} {toTag}]
   {' '} {shortAnnotation}
         </div>
         <div style={{ fontSize: '50%' }}>
@@ -231,14 +254,14 @@ export default function DealList ({ appState, cid, filterErrors }) {
     <>
       <h1>Annotations / Deals</h1>
       <div>
-        {buckets.map(bucket => <><a href={`#${bucket}`}>{bucket}</a>{' '}</>)}
+        {buckets.map(bucket => <><a key={bucket} href={`#${bucket}`}>{bucket}</a>{' '}</>)}
       </div>
       <div>
         {buckets.map(bucket => (
-          <>
+          <div key={bucket}>
             <h2 id={bucket}>Bucket: {bucket}</h2>
             {BucketDealList({ bucket, deals, dealData, dealHistory, height, now })}
-          </>
+          </div>
         ))}
       </div>
     </>

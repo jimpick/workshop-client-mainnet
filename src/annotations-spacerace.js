@@ -1,5 +1,9 @@
 const annotations = {
 
+  // Active - thu
+
+  // Active-sealing - thu
+ 
   // Active - wed
 
   t01152: 'active, China, Beijing',
@@ -133,6 +137,12 @@ const annotations = {
   t022853: 'active-sealing, China, Fuzhou | <22h, 6h',
   t022922: 'active-sealing, China, Shenzhen | <1d',
   t023108: 'active-sealing, China, Dongguan | <1d',
+
+  // Sealing - thu
+
+  // Stuck - thu
+
+  // Busy - thu
 
   // Sealing - wed
 
