@@ -256,6 +256,16 @@ const annotations = {
 
   // New
 
+  t023549: 'new, China, Zhejiang',
+  t023647: 'new, Korea, Gangseo-gu',
+  t023649: 'new, Korea, Seoul',
+  t023654: 'new, China, Hong Kong',
+  t023655: 'new, Australia, Brisbane',
+  t023660: 'new, China, Fuzhou',
+  t023661: 'new, China, Zhejiang',
+  t023662: 'new, China, Fuzhou',
+  t023674: 'new, China, Fuzhou',
+
   // Debugging
 
   t020940: 'new, @fu',
@@ -1398,6 +1408,7 @@ const annotations = {
   t022791: 'NR',
   t022797: 'NR',
   t022834: 'NR',
+  t022857: 'NR',
   t022906: 'NR',
   t022912: 'NR',
   t022926: 'NR',
@@ -1405,10 +1416,17 @@ const annotations = {
   t022996: 'NR',
   t023016: 'NR',
   t023159: 'NR',
+  t023181: 'NR',
   t023198: 'NR',
   t023200: 'NR',
   t023205: 'NR',
+  t023219: 'NR',
   t023482: 'NR',
+  t023499: 'NR',
+  t023568: 'NR',
+  t023626: 'NR',
+  t023627: 'NR',
+  t023651: 'NR',
   
   // Deprecated
  
