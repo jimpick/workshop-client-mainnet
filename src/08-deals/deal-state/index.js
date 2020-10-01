@@ -231,9 +231,12 @@ export default function DealList ({ appState, cid, filterErrors }) {
     <>
       <h1>Annotations / Deals</h1>
       <div>
+        {buckets.map(bucket => <><a href={`#${bucket}`}>{bucket}</a>{' '}</>)}
+      </div>
+      <div>
         {buckets.map(bucket => (
           <>
-            <h2>Bucket: {bucket}</h2>
+            <h2 id={bucket}>Bucket: {bucket}</h2>
             {BucketDealList({ bucket, deals, dealData, dealHistory, height, now })}
           </>
         ))}
