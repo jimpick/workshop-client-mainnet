@@ -258,6 +258,29 @@ const annotations = {
 
   // New
 
+  t02305: 'new, China, Dongguan',
+  t03363: 'new, Singapore',
+  t010512: 'new, China, Zhengzhou',
+  t020923: 'new, China, Cangzhou',
+  t023190: 'new, China, Hefei',
+  t023678: 'new, China, Jiaxing',
+  t023798: 'new, China, Shanghai',
+  t023801: 'new, China, Dongguan',
+  t023825: 'new, USA, Portland',
+  t023826: 'new, USA, Germantown',
+  t023853: 'new, China, Fuzhou',
+  t023854: 'new, China, Fuzhou',
+  t023855: 'new, China, Fuzhou',
+  t023858: 'new, China, Fuzhou',
+  t023859: 'new, China, Fuzhou',
+  t023861: 'new, China, Fuzhou',
+  t023868: 'new, China, Fuzhou',
+  t023869: 'new, China, Fuzhou',
+  t023870: 'new, China, Fuzhou',
+  t023871: 'new, China, Fuzhou',
+  t023876: 'new, China, Fuzhou',
+  t023881: 'new, China, Fuzhou',
+
   // Debugging
 
   // Min Size
@@ -1289,6 +1312,7 @@ const annotations = {
   t014377: 'NR',
   t014486: 'NR',
   t014522: 'NR',
+  t014569: 'NR',
   t014629: 'NR',
   t014782: 'NR',
   t015932: 'NR',
@@ -1416,8 +1440,11 @@ const annotations = {
   t023200: 'NR',
   t023205: 'NR',
   t023219: 'NR',
+  t023463: 'NR',
   t023482: 'NR',
   t023499: 'NR',
+  t023505: 'NR',
+  t023560: 'NR',
   t023568: 'NR',
   t023626: 'NR',
   t023627: 'NR',
