@@ -281,6 +281,7 @@ function BucketDealList ({
     })
     .join('\n')
 
+  const nextBucket = buckets[buckets.indexOf(bucket) + 1]
   return (
     <>
       <div style={{ marginBottom: '1rem' }}>
@@ -288,6 +289,7 @@ function BucketDealList ({
           <summary>
             New entries{' '}
             <button onClick={copyNewEntries}>Copy to Clipboard</button>
+            {' '} {nextBucket && <a href={`#${nextBucket}`}>⇨ {nextBucket}</a>}
           </summary>
           <pre>{toAnnotationsOut}</pre>
         </details>
@@ -344,11 +346,11 @@ export default function DealList ({ appState, cid, filterErrors }) {
           right: '0.5rem',
           zIndex: 1
         }}
+      >
+        <a href="#"
         onClick={() => {
           scrollEl.current.scrollTop = 0
-        }}
-      >
-        Top
+        }}>Top</a>
       </div>
       <div style={{ overflowY: 'auto', flex: 1 }} ref={scrollEl}>
         <div>
