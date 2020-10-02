@@ -320,7 +320,7 @@ function BucketDealList ({
   })
   let toAnnotationsOut = toAnnotations
     .map(([miner, { shortAnnotation, comment }]) => {
-      return `\t${miner}: ${JSON.stringify(`${bucket}, ${shortAnnotation}`)}` +
+      return `\t${miner}: ${JSON.stringify(`${bucket}, ${shortAnnotation}`)},` +
       (comment && comment !== '' ? ` // ${comment}` : '')
     })
     .join('\n')
@@ -331,7 +331,7 @@ function BucketDealList ({
       <div style={{ marginBottom: '1rem' }}>
         <details>
           <summary>
-            New entries{' '}
+            New entries ({toAnnotationsOut === '' ? 0 : toAnnotationsOut.split('\n').length}) {' '}
             <button onClick={copyNewEntries}>Copy to Clipboard</button>{' '}
             {nextBucket && <a href={`#${nextBucket}`}>⇨ {nextBucket}</a>}
           </summary>
