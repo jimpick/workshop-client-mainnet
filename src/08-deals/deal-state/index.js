@@ -95,56 +95,93 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
   const data = dealData && dealData[proposalCid]
   const clientDealStatus = data && data.clientDealStatus
   // const dealState = clientDealStatus && clientDealStatus.State
-  const dealMessage = clientDealStatus && clientDealStatus.Message
+  const dealMessage = clientDealStatus && clientDealStatus.Message.replace(/\n/g, '')
   const dealHistoryData = dealHistory && dealHistory[proposalCid]
   const lastHistory =
     dealHistoryData && dealHistoryData[dealHistoryData.length - 1]
   const lastDealState = lastHistory && dealStateNames[lastHistory[0]]
+  const now = Date.now()
+  let elapsed = ''
+  let elapsedNow = ''
+  if (lastHistory && dealHistoryData.length > 0) {
+    elapsedNow = timeElapsed(dealHistoryData.length - 1)
+  }
+  if (lastHistory && dealHistoryData.length > 1) {
+    elapsed = timeElapsed(dealHistoryData.length - 2)
+  }
   if (previous === 'active' || previous === 'active-sealing') {
     if (lastDealState === 'Sealing') {
-      return 'active-sealing'
+      return ['active-sealing', '']
     }
   }
   if (lastDealState === 'Sealing') {
-    return 'sealing'
+    return ['sealing', '']
   }
   if (lastDealState === 'Active') {
-    return 'active'
+    return ['active', elapsed]
   }
   if (lastDealState === 'Transferring') {
-    return 'stuck'
+    return ['stuck', `xfr: ${elapsedNow}`]
   }
   if (lastDealState === 'StorageDealCheckForAcceptance') {
-    return 'stuck'
+    return ['stuck', `cfa: ${elapsedNow}`]
   }
   if (lastDealState === 'FundsEnsured') {
-    return 'stuck'
+    return ['stuck', `funds: ${elapsedNow}`]
   }
   if (lastDealState === 'Error') {
-    if (/deal rejected: cannot seal a sector before/.test(dealMessage)) {
-      return 'busy' // FIXME, add extra info
+    const matchBusy = dealMessage.match(/deal rejected: (cannot seal a sector before .*)/)
+    if (matchBusy) {
+      return ['busy', matchBusy[1].trim()]
     }
     if (/Provider message: deal rejected: false/.test(dealMessage)) {
-      return 'rejected'
+      return ['rejected', '']
     }
     if (/miner is not considering online storage deals/.test(dealMessage)) {
-      return 'rejected'
+      return ['rejected', 'no online']
     }
-    if (/failed to dial/.test(dealMessage)) {
-      return 'dial'
+    if (/Provider message: deal rejected: false/.test(dealMessage)) {
+      return ['rejected', '']
+    }
+    const matchRejected = dealMessage.match(/deal rejected: (.*)/)
+    if (matchRejected) {
+      return ['rejected', matchRejected[1].trim()]
+    }
+    const matchDial = dealMessage.match(/all dials failed (.*)/)
+    if (matchDial) {
+      return ['dial', matchDial[1].trim()]
     }
     if (/err: routing: not found/.test(dealMessage)) {
-      return 'xnr'
+      return ['xnr', '']
     }
-    if (/storage price per epoch less than asking price/.test(dealMessage)) {
-      return 'min-ask'
+    const matchMinAsk = dealMessage.match(/storage price per epoch less than asking price (.*)/)
+    if (matchMinAsk) {
+      return ['min-ask', matchMinAsk[1].trim()]
     }
     if (/dial backoff/.test(dealMessage)) {
-      return 'backoff'
+      return ['backoff', '']
     }
-    return 'error'
+    const matchErrorProvider = dealMessage.match(/Provider message: (.*)/)
+    if (matchErrorProvider) {
+      return ['error', matchErrorProvider[1].trim()]
+    }
+    const matchErrorResponse = dealMessage.match(/error reading Response message: (.*)/)
+    if (matchErrorResponse) {
+      return ['error', matchErrorResponse[1].trim()]
+    }
+    const matchErrorAddPiece = dealMessage.match(/(AddPiece failed: .*)/)
+    if (matchErrorAddPiece) {
+      return ['error', matchErrorAddPiece[1].trim()]
+    }
+    return ['error', dealMessage.trim()]
   }
-  return 'unknown'
+  return ['unknown', '']
+
+  function timeElapsed (i) {
+    const start = dealHistoryData[i][2]
+    const end = i < dealHistoryData.length - 1 ? dealHistoryData[i + 1][2] : now
+    return formatDistance(start, end, { includeSeconds: true })
+  }
 }
 
 function bucketizeDeal (deal, dealData, dealHistory) {
@@ -152,11 +189,13 @@ function bucketizeDeal (deal, dealData, dealHistory) {
   const annotation = annotations[miner]
   const match1 = annotation && annotation.match(/^([^,]*), (.*)/)
   if (!match1) {
-    return [
+    const [newBucket, comment] = proposedNewBucket(
+      deal,
       'unknown',
-      proposedNewBucket(deal, 'unknown', dealData, dealHistory),
-      annotation
-    ]
+      dealData,
+      dealHistory
+    )
+    return ['unknown', newBucket, annotation, comment]
   }
   const bucket = match1[1]
   const annotation1 = match1[2]
@@ -164,17 +203,21 @@ function bucketizeDeal (deal, dealData, dealHistory) {
   // console.log('Jim bucketize', miner, bucket, annotation1)
 
   if (bucketSet.has(bucket)) {
-    return [
+    const [newBucket, comment] = proposedNewBucket(
+      deal,
       bucket,
-      proposedNewBucket(deal, bucket, dealData, dealHistory),
-      annotation1
-    ]
+      dealData,
+      dealHistory
+    )
+    return [bucket, newBucket, annotation1, comment]
   } else {
-    return [
+    const [newBucket, comment] = proposedNewBucket(
+      deal,
       'unknown',
-      proposedNewBucket(deal, 'unknown', dealData, dealHistory),
-      annotation1
-    ]
+      dealData,
+      dealHistory
+    )
+    return ['unknown', newBucket, annotation1, comment]
   }
 }
 
@@ -191,13 +234,13 @@ function BucketDealList ({
   for (let i in deals) {
     const deal = deals[i]
     const { proposalCid, fromNode, miner, date, cid: cidDeal } = deal
-    const [fromTag, toTag, shortAnnotation] = bucketizeDeal(
+    const [fromTag, toTag, shortAnnotation, comment] = bucketizeDeal(
       deal,
       dealData,
       dealHistory
     )
     if (toTag === bucket) {
-      toAnnotationsMap[miner] = shortAnnotation
+      toAnnotationsMap[miner] = { shortAnnotation, comment }
     }
     if (fromTag !== bucket) continue
 
@@ -276,8 +319,9 @@ function BucketDealList ({
     return Number(a.slice(1)) - Number(b.slice(1))
   })
   let toAnnotationsOut = toAnnotations
-    .map(([miner, shortAnnotation]) => {
-      return `\t${miner}: ${JSON.stringify(`${bucket}, ${shortAnnotation}`)},`
+    .map(([miner, { shortAnnotation, comment }]) => {
+      return `\t${miner}: ${JSON.stringify(`${bucket}, ${shortAnnotation}`)}` +
+      (comment && comment !== '' ? ` // ${comment}` : '')
     })
     .join('\n')
 
@@ -288,8 +332,8 @@ function BucketDealList ({
         <details>
           <summary>
             New entries{' '}
-            <button onClick={copyNewEntries}>Copy to Clipboard</button>
-            {' '} {nextBucket && <a href={`#${nextBucket}`}>⇨ {nextBucket}</a>}
+            <button onClick={copyNewEntries}>Copy to Clipboard</button>{' '}
+            {nextBucket && <a href={`#${nextBucket}`}>⇨ {nextBucket}</a>}
           </summary>
           <pre>{toAnnotationsOut}</pre>
         </details>
@@ -347,10 +391,14 @@ export default function DealList ({ appState, cid, filterErrors }) {
           zIndex: 1
         }}
       >
-        <a href="#"
-        onClick={() => {
-          scrollEl.current.scrollTop = 0
-        }}>Top</a>
+        <a
+          href='#'
+          onClick={() => {
+            scrollEl.current.scrollTop = 0
+          }}
+        >
+          Top
+        </a>
       </div>
       <div style={{ overflowY: 'auto', flex: 1 }} ref={scrollEl}>
         <div>
