@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { format, formatDistance } from 'date-fns'
 import copy from 'clipboard-copy'
 import useLotusClient from '../../lib/use-lotus-client'
@@ -97,28 +97,66 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
   // const dealState = clientDealStatus && clientDealStatus.State
   const dealMessage = clientDealStatus && clientDealStatus.Message
   const dealHistoryData = dealHistory && dealHistory[proposalCid]
-  if (previous === 'active') {
-    const lastHistory = dealHistoryData && dealHistoryData[dealHistoryData.length - 1]
-    if (lastHistory && dealStateNames[lastHistory[0]] === 'Sealing') {
+  const lastHistory =
+    dealHistoryData && dealHistoryData[dealHistoryData.length - 1]
+  const lastDealState = lastHistory && dealStateNames[lastHistory[0]]
+  if (previous === 'active' || previous === 'active-sealing') {
+    if (lastDealState === 'Sealing') {
       return 'active-sealing'
     }
   }
-  if (previous === 'active-sealing') {
-    const lastHistory = dealHistoryData && dealHistoryData[dealHistoryData.length - 1]
-    if (lastHistory && dealStateNames[lastHistory[0]] === 'Sealing') {
-      return 'active-sealing'
-    }
-    return 'active-sealing-old'
+  if (lastDealState === 'Sealing') {
+    return 'sealing'
   }
-  return previous
+  if (lastDealState === 'Active') {
+    return 'active'
+  }
+  if (lastDealState === 'Transferring') {
+    return 'stuck'
+  }
+  if (lastDealState === 'StorageDealCheckForAcceptance') {
+    return 'stuck'
+  }
+  if (lastDealState === 'FundsEnsured') {
+    return 'stuck'
+  }
+  if (lastDealState === 'Error') {
+    if (/deal rejected: cannot seal a sector before/.test(dealMessage)) {
+      return 'busy' // FIXME, add extra info
+    }
+    if (/Provider message: deal rejected: false/.test(dealMessage)) {
+      return 'rejected'
+    }
+    if (/miner is not considering online storage deals/.test(dealMessage)) {
+      return 'rejected'
+    }
+    if (/failed to dial/.test(dealMessage)) {
+      return 'dial'
+    }
+    if (/err: routing: not found/.test(dealMessage)) {
+      return 'xnr'
+    }
+    if (/storage price per epoch less than asking price/.test(dealMessage)) {
+      return 'min-ask'
+    }
+    if (/dial backoff/.test(dealMessage)) {
+      return 'backoff'
+    }
+    return 'error'
+  }
+  return 'unknown'
 }
 
 function bucketizeDeal (deal, dealData, dealHistory) {
   const miner = deal.miner
   const annotation = annotations[miner]
-  const match1 = annotation.match(/^([^,]*), (.*)/)
+  const match1 = annotation && annotation.match(/^([^,]*), (.*)/)
   if (!match1) {
-    return ['unknown', proposedNewBucket(deal, 'unknown', dealData, dealHistory), annotation]
+    return [
+      'unknown',
+      proposedNewBucket(deal, 'unknown', dealData, dealHistory),
+      annotation
+    ]
   }
   const bucket = match1[1]
   const annotation1 = match1[2]
@@ -126,20 +164,43 @@ function bucketizeDeal (deal, dealData, dealHistory) {
   // console.log('Jim bucketize', miner, bucket, annotation1)
 
   if (bucketSet.has(bucket)) {
-    return [bucket, proposedNewBucket(deal, bucket, dealData, dealHistory), annotation1]
+    return [
+      bucket,
+      proposedNewBucket(deal, bucket, dealData, dealHistory),
+      annotation1
+    ]
   } else {
-    return ['unknown', proposedNewBucket(deal, 'unknown', dealData, dealHistory), annotation1]
+    return [
+      'unknown',
+      proposedNewBucket(deal, 'unknown', dealData, dealHistory),
+      annotation1
+    ]
   }
 }
 
-function BucketDealList ({ bucket, deals, dealData, dealHistory, height, now }) {
-  const minerEntries = []
+function BucketDealList ({
+  bucket,
+  deals,
+  dealData,
+  dealHistory,
+  height,
+  now
+}) {
+  const minerMap = {}
+  const toAnnotationsMap = {}
   for (let i in deals) {
-    const deal=deals[i]
-    const [fromTag, toTag, shortAnnotation] = bucketizeDeal(deal, dealData, dealHistory)
-    if (fromTag !== bucket) continue
-    
+    const deal = deals[i]
     const { proposalCid, fromNode, miner, date, cid: cidDeal } = deal
+    const [fromTag, toTag, shortAnnotation] = bucketizeDeal(
+      deal,
+      dealData,
+      dealHistory
+    )
+    if (toTag === bucket) {
+      toAnnotationsMap[miner] = shortAnnotation
+    }
+    if (fromTag !== bucket) continue
+
     const data = dealData && dealData[proposalCid]
     const clientDealStatus = data && data.clientDealStatus
     // const dealState = clientDealStatus && clientDealStatus.State
@@ -157,12 +218,11 @@ function BucketDealList ({ bucket, deals, dealData, dealHistory, height, now }) 
         `${clientDealStatus && clientDealStatus.DealID}-$TIMESTAMP.log); ` +
         `sleep 5`
 
-        const entry = (
+    const entry = (
       <div key={proposalCid} style={{ marginBottom: '1rem' }}>
         <div>
-          {Number(i) + 1}. Node #{fromNode} {'->'} Miner {miner}
-          {' '} [{fromTag} {'->'} {toTag}]
-  {' '} {shortAnnotation}
+          {Number(i) + 1}. Node #{fromNode} {'->'} Miner {miner} [{fromTag}{' '}
+          {'->'} {toTag}] {shortAnnotation}
         </div>
         <div style={{ fontSize: '50%' }}>
           <div>Date: {new Date(date).toString()}</div>
@@ -192,7 +252,7 @@ function BucketDealList ({ bucket, deals, dealData, dealHistory, height, now }) 
         )}
       </div>
     )
-    minerEntries.push([miner, entry])
+    minerMap[miner] = entry
 
     async function copyCid () {
       console.log('Copying to clipboard', cidDeal)
@@ -207,15 +267,40 @@ function BucketDealList ({ bucket, deals, dealData, dealHistory, height, now }) 
     }
   }
 
+  const minerEntries = Object.entries(minerMap)
   minerEntries.sort(([a], [b]) => {
     return Number(a.slice(1)) - Number(b.slice(1))
   })
+  const toAnnotations = Object.entries(toAnnotationsMap)
+  toAnnotations.sort(([a], [b]) => {
+    return Number(a.slice(1)) - Number(b.slice(1))
+  })
+  let toAnnotationsOut = toAnnotations
+    .map(([miner, shortAnnotation]) => {
+      return `\t${miner}: ${JSON.stringify(`${bucket}, ${shortAnnotation}`)},`
+    })
+    .join('\n')
 
   return (
-    <div>
-      {minerEntries.map(([miner, entry]) => entry)}
-    </div>
+    <>
+      <div style={{ marginBottom: '1rem' }}>
+        <details>
+          <summary>
+            New entries{' '}
+            <button onClick={copyNewEntries}>Copy to Clipboard</button>
+          </summary>
+          <pre>{toAnnotationsOut}</pre>
+        </details>
+      </div>
+      <div>{minerEntries.map(([miner, entry]) => entry)}</div>
+    </>
   )
+
+  async function copyNewEntries () {
+    console.log('Copying to clipboard', toAnnotationsOut)
+    await copy(toAnnotationsOut)
+    console.log('Copied.')
+  }
 }
 
 export default function DealList ({ appState, cid, filterErrors }) {
@@ -223,6 +308,7 @@ export default function DealList ({ appState, cid, filterErrors }) {
   const [now, setNow] = useState(Date.now())
   const [height, setHeight] = useState()
   const client = useLotusClient(selectedNode, 'node')
+  const scrollEl = useRef(null)
 
   useEffect(() => {
     const state = { canceled: false }
@@ -249,21 +335,48 @@ export default function DealList ({ appState, cid, filterErrors }) {
     : [...appState.deals]
   deals.sort(({ date: a }, { date: b }) => b - a)
 
-  const allRetrieveScripts = []
   return (
-    <>
-      <h1>Annotations / Deals</h1>
-      <div>
-        {buckets.map(bucket => <><a key={bucket} href={`#${bucket}`}>{bucket}</a>{' '}</>)}
+    <React.Fragment>
+      <div
+        style={{
+          position: 'absolute',
+          top: '0.5rem',
+          right: '0.5rem',
+          zIndex: 1
+        }}
+        onClick={() => {
+          scrollEl.current.scrollTop = 0
+        }}
+      >
+        Top
       </div>
-      <div>
-        {buckets.map(bucket => (
-          <div key={bucket}>
-            <h2 id={bucket}>Bucket: {bucket}</h2>
-            {BucketDealList({ bucket, deals, dealData, dealHistory, height, now })}
+      <div style={{ overflowY: 'auto', flex: 1 }} ref={scrollEl}>
+        <div>
+          <h1>Annotations / Deals</h1>
+          <div>
+            {buckets.map(bucket => (
+              <React.Fragment key={bucket}>
+                <a href={`#${bucket}`}>{bucket}</a>{' '}
+              </React.Fragment>
+            ))}
           </div>
-        ))}
+          <div>
+            {buckets.map(bucket => (
+              <div key={bucket}>
+                <h2 id={bucket}>Bucket: {bucket}</h2>
+                {BucketDealList({
+                  bucket,
+                  deals,
+                  dealData,
+                  dealHistory,
+                  height,
+                  now
+                })}
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-    </>
+    </React.Fragment>
   )
 }

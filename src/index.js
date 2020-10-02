@@ -96,7 +96,13 @@ function App () {
 
   return (
     <Router>
-      <div>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          height: '99vh'
+        }}
+      >
         <nav style={{ display: 'flex', flexWrap: 'wrap' }}>
           <Link to='/'>Home</Link>
           <Link to='/select-node'>
