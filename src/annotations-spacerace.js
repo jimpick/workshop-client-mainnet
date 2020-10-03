@@ -254,6 +254,24 @@ const annotations = {
 
   // New
 
+  t023571: 'new, NR',
+  t023928: 'new, China, Fuzhou',
+  t022930: 'new, NR',
+  t023971: 'new, NR',
+  t023977: 'new, China, Fuzhou',
+  t023978: 'new, China, Fuzhou',
+  t023980: 'new, China, Fuzhou',
+  t023981: 'new, China, Fuzhou',
+  t023982: 'new, China, Chongqing',
+  t023986: 'new, Korea, Seoul',
+  t024006: 'new, China, Fuzhou',
+  t024007: 'new, China, Fuzhou',
+  t024008: 'new, China, Fuzhou',
+  t024012: 'new, China, Fuzhou',
+  t024013: 'new, China, Fuzhou',
+  t024014: 'new, China, Fuzhou',
+  t024030: 'new, Korea, Gwangju',
+
   // Min Size
 
   // Min Ask
