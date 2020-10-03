@@ -18,11 +18,11 @@ const annotations = {
   // New
 
 
-  // Debugging
-
   // Min Size
 
+
   // Min Ask
+
 
   // Error
 
@@ -36,8 +36,7 @@ const annotations = {
   // Dial errors
 
 
-  // XNR
-
+  // XNR (Not routable, tested)
 
 }
 

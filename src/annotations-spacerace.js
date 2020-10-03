@@ -1,161 +1,168 @@
 const annotations = {
   // Active
 
-  // Active-sealing (active, with in-flight sealing)
+  t01152: 'active, China, Beijing', // about 14 hours
+  t01238: 'active, Vietnam, Hanoi, FILECOIN-VIETNAM', // about 10 hours
+  t01240: 'active, Netherlands, HidNand', // about 19 hours
+  t01276: 'active, Canada, Brampton, NBFS Canada', // about 14 hours
+  t01278: 'active, USA, Grand Rapids, MiMiner', // about 20 hours
+  t02388: 'active, Netherlands, Amersfoort, Kroketje', // about 15 hours
+  t02401: 'active, Canada, Chambly, NBFS Canada', // about 15 hours
+  t02405: 'active, China, Shenzhen', // about 18 hours
+  t02415: 'active, China, Hong Kong', // about 9 hours
+  t02576: 'active, Denmark, Gjerlev, BenjaminH', // about 13 hours
+  t02619: 'active, China, Beijing, Blockcasting', // about 10 hours
+  t03131: 'active, China, Changsha', // about 9 hours
+  t03134: 'active, China, Cangzhou, 乔木信息', // about 14 hours
+  t03143: 'active, China, Shijiazhuang + Hong Kong', // about 9 hours
+  t03176: 'active, USA, San Mateo, Five Star-Helmsman&Heiben', // about 8 hours
+  t03325: 'active, Germany, Frankfurt', // about 10 hours
+  t03339: 'active, China, Luzhou, benxun', // about 10 hours
+  t03363: 'active, Singapore', // about 16 hours
+  t03488: 'active, Korea, Geumcheon-gu', // about 9 hours
+  t04443: 'active, China, Shanghai, 罗良科技', // about 20 hours
+  t07709: 'active, Korea, Dongjak-gu', // about 18 hours
+  t07819: 'active, China, Wuxi, YC--wuxi', // about 23 hours
+  t07824: 'active, China, Shanghai', // about 13 hours
+  t08094: 'active, China, Guangzhou, dongshao', // about 10 hours
+  t08157: 'active, China, Beijing + Germany, Frankfurt, 超星际', // about 17 hours
+  t08264: 'active, China, Xianning', // about 10 hours
+  t08285: 'active, Latvia, Riga, stander', // about 20 hours
+  t08403: 'active, UK, Lower Slaughter', // about 16 hours
+  t08474: 'active, lone', // about 21 hours
+  t09639: 'active, China, Fuzhou', // about 15 hours
+  t09848: 'active, USA', // about 10 hours
+  t010048: 'active, China, Shanghai', // about 12 hours
+  t010247: 'active, China, Yantai', // about 9 hours
+  t010400: 'active, China, Shenyang', // about 9 hours
+  t010438: 'active, USA', // about 12 hours
+  t010446: 'active, Netherlands', // about 17 hours
+  t014394: 'active, China, Suzhou', // about 10 hours
+  t015877: 'active, China, Jiaxing + USA', // about 13 hours
+  t016563: 'active, China, Deyang', // about 15 hours
+  t018501: 'active, China, Beijing', // about 18 hours
+  t018782: 'active, Singapore + Germany, Frankfurt + USA', // about 9 hours
+  t019029: 'active, Serbia, Boljevac', // about 14 hours
+  t019041: 'active, Singapore', // about 16 hours
+  t019099: 'active, China, Hong Kong', // about 15 hours
+  t019240: 'active, China, Beijing', // about 18 hours
+  t019437: 'active, Korea, Guro-gu', // about 14 hours
+  t019459: 'active, USA, Alpharetta', // about 16 hours
+  t019638: 'active, Germany, Frankfurt', // about 9 hours
+  t020385: 'active, Korea, Incheon', // about 19 hours
+  t020436: 'active, China, Beijing', // about 19 hours
+  t020742: 'active, China, Shanghai + Hangzhou + Shaoxing', // about 9 hours
+  t020923: 'active, China, Cangzhou', // about 10 hours
+  t021255: 'active, China, Suzhou + Netherlands', // about 10 hours
+  t021274: 'active, China, Shanghai', // about 16 hours
+  t021479: 'active, China, Qingdao', // about 11 hours
+  t021535: 'active, China, Chengdu', // about 10 hours
+  t022261: 'active, China, Luzhou', // about 10 hours
+  t022287: 'active, China, Dongguan', // about 12 hours
+  t022352: 'active, Norway, Borgen', // about 9 hours
+  t022376: 'active, China, Dongguan', // about 19 hours
+  t022512: 'active, Canada, Embrun', // about 9 hours
+  t023181: 'active, NR', // about 14 hours
+  t023490: 'active, Ukraine, Kyiv', // about 17 hours
+  t023495: 'active, China, Beijing + USA, Portland', // about 9 hours
+  t023526: 'active, China, Chongqing', // about 11 hours
+  t023647: 'active, Korea, Gangseo-gu', // about 9 hours
+  t023649: 'active, Korea, Seoul', // about 10 hours
+  t023678: 'active, China, Jiaxing', // about 11 hours
 
-  t01152: 'active-sealing, China, Beijing',
-  t01234: 'active-sealing, Belgium, De Klinge, Eliovp',
-  t01238: 'active-sealing, Vietnam, Hanoi, FILECOIN-VIETNAM',
-  t01240: 'active-sealing, Netherlands, HidNand',
-  t01241: 'active-sealing, USA, Portland',
-  t01272: 'active-sealing, Singapore',
-  t01276: 'active-sealing, Canada, Brampton, NBFS Canada',
-  t01277: 'active-sealing, Sweden, Stockholm, tvsthlm',
-  t01278: 'active-sealing, USA, Grand Rapids, MiMiner',
-  t02301: 'active-sealing, USA',
-  t02387: 'active-sealing, Canada, Brampton, NBFS Canada',
-  t02388: 'active-sealing, Netherlands, Amersfoort, Kroketje',
-  t02401: 'active-sealing, Canada, Chambly, NBFS Canada',
-  t02405: 'active-sealing, China, Shenzhen',
-  t02415: 'active-sealing, China, Hong Kong',
-  t02421: 'active-sealing, China, Deyang + Singapore, 腾盛科技',
-  t02500: 'active-sealing, Korea, Seongnam-si',
-  t02501: 'active-sealing, USA, Portland',
-  t02514: 'active-sealing, USA, Portland',
-  t02576: 'active-sealing, Denmark, Gjerlev, BenjaminH',
-  t02613: 'active-sealing, China, Chongqing',
-  t02619: 'active-sealing, China, Beijing, Blockcasting',
-  t02622: 'active-sealing, USA, Portland',
-  t02623: 'active-sealing, USA, Portland',
-  t02633: 'active-sealing, China, Hong Kong',
-  t02645: 'active-sealing, China, Hong Kong',
-  t03131: 'active-sealing, China, Changsha',
-  t03134: 'active-sealing, China, Cangzhou, 乔木信息',
-  t03143: 'active-sealing, China, Shijiazhuang + Hong Kong',
-  t03176: 'active-sealing, USA, San Mateo, Five Star-Helmsman&Heiben',
-  t03223: 'active-sealing, USA',
-  t03273: 'active-sealing, USA, Portland',
-  t03274: 'active-sealing, USA, Portland',
-  t03275: 'active-sealing, USA, Portland',
-  t03325: 'active-sealing, Germany, Frankfurt',
-  t03328: 'active-sealing, China, Xinxiang',
-  t03339: 'active-sealing, China, Luzhou, benxun',
-  t03491: 'active-sealing, China, Hong Kong',
-  t03624: 'active-sealing, Germany, Chemnitz, ode',
-  t04443: 'active-sealing, China, Shanghai, 罗良科技',
-  t05315: 'active-sealing, USA, Portland',
-  t05316: 'active-sealing, USA, Portland',
-  t05317: 'active-sealing, USA, Portland',
-  t07709: 'active-sealing, Korea, Dongjak-gu',
-  t07819: 'active-sealing, China, Wuxi, YC--wuxi',
-  t07850: 'active-sealing, USA, Portland',
-  t07919: 'active-sealing, China, Beijing, Shanghai, Hunan',
-  t07990: 'active-sealing, China, Hong Kong',
-  t07998: 'active-sealing, China, Hangzhou',
-  t08025: 'active-sealing, China, Hong Kong',
-  t08094: 'active-sealing, China, Guangzhou, dongshao',
-  t08157: 'active-sealing, China, Beijing + Germany, Frankfurt, 超星际',
-  t08204: 'active-sealing, USA, St. Louis',
-  t08240: 'active-sealing, Russia, Novosibirsk, Rabinovitch',
-  t08264: 'active-sealing, China, Xianning',
-  t08285: 'active-sealing, Latvia, Riga, stander',
-  t08383: 'active-sealing, USA, Portland',
-  t09639: 'active-sealing, China, Fuzhou',
-  t09693: 'active-sealing, USA, Portland + Singapore',
-  t09848: 'active-sealing, USA',
-  t010048: 'active-sealing, China, Shanghai',
-  t010247: 'active-sealing, China, Yantai',
-  t010438: 'active-sealing, USA',
-  t010479: 'active-sealing, France, Fontenay-sous-Bois',
-  t014281: 'active-sealing, Netherlands, Permerend',
-  t014394: 'active-sealing, China, Suzhou',
-  t015877: 'active-sealing, China, Jiaxing + USA',
-  t015927: 'active-sealing, USA, East Islip',
-  t016563: 'active-sealing, China, Deyang',
-  t017244: 'active-sealing, Korea, Seoul',
-  t018501: 'active-sealing, China, Beijing',
-  t018780: 'active-sealing, Singapore + Germany, Frankfurt + USA',
-  t018782: 'active-sealing, Singapore + Germany, Frankfurt + USA',
-  t018783: 'active-sealing, Singapore + Germany, Frankfurt + USA',
-  t019041: 'active-sealing, Singapore',
-  t019099: 'active-sealing, China, Hong Kong',
-  t019240: 'active-sealing, China, Beijing',
-  t019437: 'active-sealing, Korea, Guro-gu',
-  t019459: 'active-sealing, USA, Alpharetta',
-  t020385: 'active-sealing, Korea, Incheon',
-  t020489: 'active-sealing, China, Lioaning',
-  t020605: 'active-sealing, China, Yibin',
-  t021265: 'active-sealing, China, Wuhan',
-  t021316: 'active-sealing, China, Yangzhou',
-  t021346: 'active-sealing, China, Shanghai',
-  t021535: 'active-sealing, China, Chengdu',
-  t021710: 'active-sealing, China, Shijiazhuang',
-  t022261: 'active-sealing, China, Luzhou',
-  t022352: 'active-sealing, Norway, Borgen',
-  t022376: 'active-sealing, China, Dongguan',
-  t022512: 'active-sealing, Canada, Embrun',
-  t022820: 'active-sealing, China, Guangdong',
-  t022832: 'active-sealing, China',
-  t023467: 'active-sealing, Norway, Oslo',
-  t023526: 'active-sealing, China, Chongqing',
+  // Active-sealing (active, with in-flight sealing)
 
   // Sealing
 
+  t01234: 'sealing, Belgium, De Klinge, Eliovp',
+  t01241: 'sealing, USA, Portland',
+  t01272: 'sealing, Singapore',
+  t01277: 'sealing, Sweden, Stockholm, tvsthlm',
   t01280: 'sealing, China, Wuxi, 了凡超算',
   t01287: 'sealing, China, Jiaxing, MaiTian',
   t02299: 'sealing, China, Dongguan, Yolo',
+  t02301: 'sealing, USA',
   t02305: 'sealing, China, Dongguan',
   t02381: 'sealing, China, Dongguan, 西野七濑迷叔',
+  t02387: 'sealing, Canada, Brampton, NBFS Canada',
   t02399: 'sealing, China, Zhejiang',
   t02419: 'sealing, China, Shanghai, yuantai',
+  t02421: 'sealing, China, Deyang + Singapore, 腾盛科技',
   t02423: 'sealing, Ukraine, Kyiv, igowreck',
+  t02500: 'sealing, Korea, Seongnam-si',
+  t02501: 'sealing, USA, Portland',
+  t02514: 'sealing, USA, Portland',
   t02529: 'sealing, China, Chongqing',
+  t02613: 'sealing, China, Chongqing',
+  t02622: 'sealing, USA, Portland',
+  t02623: 'sealing, USA, Portland',
   t02625: 'sealing, China, Shanghai, IPFS星际工厂',
   t02627: 'sealing, China, Guilin',
+  t02633: 'sealing, China, Hong Kong',
+  t02645: 'sealing, China, Hong Kong',
   t02665: 'sealing, Netherlands, Amsterdam, fm-ops',
   t02772: 'sealing, China, Chengdu',
   t03222: 'sealing, China, Yuncheong, 星云矿池',
+  t03223: 'sealing, USA',
   t03264: 'sealing, Korea, Bucheon-si',
+  t03273: 'sealing, USA, Portland',
+  t03274: 'sealing, USA, Portland',
+  t03275: 'sealing, USA, Portland',
+  t03328: 'sealing, China, Xinxiang',
   t03345: 'sealing, China, Fuzhou, chh',
   t03347: 'sealing, China, Shenzhen',
-  t03363: 'sealing, Singapore',
   t03482: 'sealing, China, Wuxi',
-  t03488: 'sealing, Korea, Geumcheon-gu',
+  t03491: 'sealing, China, Hong Kong',
   t03512: 'sealing, New Zealand, Auckland, NZFILECOIN01',
+  t03544: 'sealing, China, Guiyang',
+  t03624: 'sealing, Germany, Chemnitz, ode',
+  t05315: 'sealing, USA, Portland',
+  t05316: 'sealing, USA, Portland',
+  t05317: 'sealing, USA, Portland',
   t05664: 'sealing, China, Shenzhen, 艾比特网络科技',
-  t07824: 'sealing, China, Shanghai',
+  t07850: 'sealing, USA, Portland',
+  t07919: 'sealing, China, Beijing, Shanghai, Hunan',
+  t07990: 'sealing, China, Hong Kong',
+  t07998: 'sealing, China, Hangzhou',
+  t08025: 'sealing, China, Hong Kong',
   t08073: 'sealing, China, Qiqihar, QY7TT',
+  t08204: 'sealing, USA, St. Louis',
   t08220: 'sealing, China, Shenzhen',
+  t08240: 'sealing, Russia, Novosibirsk, Rabinovitch',
   t08311: 'sealing, China, Shenzhen',
   t08346: 'sealing, Korea',
-  t08403: 'sealing, UK, Lower Slaughter',
-  t08474: 'sealing, lone',
+  t08383: 'sealing, USA, Portland',
   t08482: 'sealing, USA, Athol, @why',
   t09002: 'sealing, Singapore',
   t09569: 'sealing, China, Beijing',
   t09573: 'sealing, China, Xiamen',
   t09675: 'sealing, China, Weifang',
+  t09693: 'sealing, USA, Portland + Singapore',
+  t010084: 'sealing, China, Beijing',
   t010088: 'sealing, NR',
   t010241: 'sealing, China, Beijing + USA, Portland',
   t010253: 'sealing, China, Beijing + USA, Portland',
   t010399: 'sealing, China, Guangzhou',
-  t010400: 'sealing, China, Shenyang',
-  t010446: 'sealing, Netherlands',
+  t010479: 'sealing, France, Fontenay-sous-Bois',
   t010495: 'sealing, China, Tainjin',
   t010507: 'sealing, China, Hangzhou',
   t010523: 'sealing, China, Beijing',
   t010617: 'sealing, Canada, Surrey, @feiya200',
+  t014281: 'sealing, Netherlands, Permerend',
   t014324: 'sealing, Canada, Vancouver',
   t014749: 'sealing, China, Chongqing',
   t015747: 'sealing, Japan, Setagaya-ku',
   t015897: 'sealing, China, Guangdong',
+  t015927: 'sealing, USA, East Islip',
   t015941: 'sealing, Ukraine, Kyiv',
   t016056: 'sealing, USA, Arlington',
   t016482: 'sealing, USA, Aliquippa',
   t016594: 'sealing, Germany',
+  t017244: 'sealing, Korea, Seoul',
   t017734: 'sealing, Australia, Sydney',
   t018772: 'sealing, Australia',
-  t019029: 'sealing, Serbia, Boljevac',
+  t018780: 'sealing, Singapore + Germany, Frankfurt + USA',
+  t018783: 'sealing, Singapore + Germany, Frankfurt + USA',
   t019074: 'sealing, China, Guangdong',
   t019090: 'sealing, South Africa, Johannesburg',
   t019118: 'sealing, China, Jiaxing',
@@ -164,35 +171,35 @@ const annotations = {
   t019354: 'sealing, Germany, Frankfurt',
   t019399: 'sealing, Korea, Busan',
   t019422: 'sealing, South Africa, Johannesburg',
-  t019638: 'sealing, Germany, Frankfurt',
-  t020436: 'sealing, China, Beijing',
+  t020489: 'sealing, China, Lioaning',
   t020523: 'sealing, China, Suzhou',
+  t020605: 'sealing, China, Yibin',
   t020608: 'sealing, Russia',
-  t020742: 'sealing, China, Shanghai + Hangzhou + Shaoxing',
   t020891: 'sealing, China, Wenzhou',
-  t020923: 'sealing, China, Cangzhou',
   t020975: 'sealing, China, Shandong',
   t021069: 'sealing, USA',
-  t021255: 'sealing, China, Suzhou + Netherlands',
-  t021274: 'sealing, China, Shanghai',
+  t021265: 'sealing, China, Wuhan',
+  t021316: 'sealing, China, Yangzhou',
   t021328: 'sealing, China, Dongguan',
   t021339: 'sealing, China, Jiaxing',
+  t021346: 'sealing, China, Shanghai',
   t021444: 'sealing, China, Guangzhou',
-  t021479: 'sealing, China, Qingdao',
   t021483: 'sealing, China, Beijing',
   t021540: 'sealing, Germany, Frankfurt, @hsanjuan',
   t021616: 'sealing, China, Shanghai',
+  t021710: 'sealing, China, Shijiazhuang',
   t021716: 'sealing, New Zealand, Wellington',
   t021870: 'sealing, USA, Portland',
   t022072: 'sealing, China, Jieyang',
   t022132: 'sealing, China, Dongguan',
   t022142: 'sealing, USA, Queens',
-  t022287: 'sealing, China, Dongguan',
   t022289: 'sealing, China, Mianyang',
   t022395: 'sealing, USA, Los Angeles',
   t022405: 'sealing, Russia',
   t022566: 'sealing, China, Nanchong',
   t022753: 'sealing, China, Hong Kong',
+  t022820: 'sealing, China, Guangdong',
+  t022832: 'sealing, China',
   t022836: 'sealing, China, Chongqing',
   t022841: 'sealing, China, Zhongshan',
   t022969: 'sealing, China, Chengdu',
@@ -200,64 +207,35 @@ const annotations = {
   t023001: 'sealing, China, Changsha',
   t023013: 'sealing, China, Hong Kong',
   t023179: 'sealing, China, Fuzhou',
-  t023181: 'sealing, NR',
   t023207: 'sealing, undefined',
-  t023490: 'sealing, Ukraine, Kyiv',
-  t023495: 'sealing, China, Beijing + USA, Portland',
+  t023229: 'sealing, China, Shandong',
+  t023467: 'sealing, Norway, Oslo',
   t023518: 'sealing, China, Taiyuan',
   t023581: 'sealing, China, Hong Kong',
   t023583: 'sealing, Korea, Guri-si',
-  t023647: 'sealing, Korea, Gangseo-gu',
-  t023649: 'sealing, Korea, Seoul',
   t023655: 'sealing, Australia, Brisbane',
-  t023678: 'sealing, China, Jiaxing',
   t023826: 'sealing, USA, Germantown',
 
   // Stuck
 
-  t01247: 'stuck, Canada, Montreal, BigChungus™', // cfa: about 3 hours
-  t02416: 'stuck, China, Guangdong, 星际无限', // cfa: about 3 hours
-  t02654: 'stuck, China, Shanghai', // cfa: about 3 hours
-  t02668: 'stuck, China, Chengdu', // xfr: about 3 hours
-  t03302: 'stuck, China, Chengdu', // xfr: about 3 hours
-  t03340: "stuck, China, Xi'an", // xfr: about 3 hours
-  t03364: 'stuck, China, Guangzhou', // cfa: about 3 hours
-  t03544: 'stuck, China, Guiyang', // cfa: about 3 hours
-  t07806: 'stuck, China, Wuhan, HelloXP', // funds: about 3 hours
-  t08371: 'stuck, China, Chengdu', // xfr: about 3 hours
-  t08854: 'stuck, China, Dongguan', // cfa: about 3 hours
-  t09002: 'stuck, Singapore', // cfa: about 3 hours
-  t09597: 'stuck, China, Shanghai', // cfa: about 3 hours
-  t010063: 'stuck, China, Mianyang', // cfa: about 3 hours
-  t010084: 'stuck, China, Beijing', // cfa: about 3 hours
-  t010257: 'stuck, China, Hong Kong', // cfa: about 3 hours
-  t010493: 'stuck, China, Shanghai', // cfa: about 3 hours
-  t015233: 'stuck, China, Nanjing', // cfa: about 3 hours
-  t015647: 'stuck, China, Shenzhen', // cfa: about 3 hours
-  t015751: 'stuck, Canada, Huron East', // cfa: about 3 hours
-  t015753: 'stuck, China, Guyuan', // funds: about 3 hours
-  t016511: 'stuck, China, Beijing', // funds: about 2 hours
-  t017794: 'stuck, USA, Columbus', // funds: about 3 hours
-  t018781: 'stuck, Singapore + Germany, Frankfurt + USA', // xfr: about 3 hours
-  t018784: 'stuck, Singapore + Germany, Frankfurt + USA', // xfr: about 3 hours
-  t018785: 'stuck, Singapore + Germany, Frankfurt + USA', // xfr: about 3 hours
-  t019024: 'stuck, China, Sichuan', // cfa: about 3 hours
-  t019114: 'stuck, USA, Howell', // cfa: about 3 hours
-  t019133: 'stuck, UK, Mansfield', // cfa: about 3 hours
-  t020398: 'stuck, China, Zhangjiakou', // cfa: about 3 hours
-  t020904: 'stuck, Korea, Uijeongbu-si', // cfa: about 3 hours
-  t021262: 'stuck, China, Shanghai', // cfa: about 3 hours
-  t021357: 'stuck, China, Shanghai', // cfa: about 3 hours
-  t021536: 'stuck, NR', // cfa: about 2 hours
-  t021583: 'stuck, China, Jiaxing', // cfa: about 3 hours
-  t022031: 'stuck, China, Maoming', // cfa: about 3 hours
-  t022202: 'stuck, USA, Howell', // cfa: about 3 hours
-  t022227: 'stuck, China, Jiangsu', // cfa: about 3 hours
-  t023202: 'stuck, China, Wuxi', // cfa: about 3 hours
-  t023229: 'stuck, China, Shandong', // cfa: about 3 hours
-  t023462: 'stuck, China, Chengdu', // funds: about 3 hours
-  t023501: 'stuck, China, Mianyang', // cfa: about 3 hours
-  t023876: 'stuck, China, Fuzhou', // cfa: about 3 hours
+  t01247: 'stuck, Canada, Montreal, BigChungus™', // cfa: 1 day
+  t02654: 'stuck, China, Shanghai', // cfa: 1 day
+  t03364: 'stuck, China, Guangzhou', // cfa: 1 day
+  t08854: 'stuck, China, Dongguan', // cfa: 1 day
+  t09597: 'stuck, China, Shanghai', // cfa: 1 day
+  t010257: 'stuck, China, Hong Kong', // cfa: 1 day
+  t015233: 'stuck, China, Nanjing', // cfa: 1 day
+  t015647: 'stuck, China, Shenzhen', // cfa: 1 day
+  t015751: 'stuck, Canada, Huron East', // cfa: 1 day
+  t019024: 'stuck, China, Sichuan', // cfa: 1 day
+  t019114: 'stuck, USA, Howell', // cfa: 1 day
+  t019133: 'stuck, UK, Mansfield', // cfa: 1 day
+  t021262: 'stuck, China, Shanghai', // cfa: 1 day
+  t021357: 'stuck, China, Shanghai', // cfa: 1 day
+  t021536: 'stuck, NR', // cfa: about 23 hours
+  t021583: 'stuck, China, Jiaxing', // cfa: 1 day
+  t022031: 'stuck, China, Maoming', // cfa: 1 day
+  t023202: 'stuck, China, Wuxi', // cfa: 1 day
 
   // Busy
 
@@ -276,26 +254,32 @@ const annotations = {
 
   // New
 
-  // Debugging
-
   // Min Size
 
   // Min Ask
 
   // Error
 
+  t02416: 'error, China, Guangdong, 星际无限', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   t02417: 'error, China, Liaoning', // stream reset
   t02490: 'error, China, Fujian', // AddPiece failed: adding piece to sector: writing piece: creating unsealed sector file: openning partial file '/lotus_data/unsealed/s-t02490-43361': open /lotus_data/unsealed/s-t02490-43361: no such file or directory
   t02492: 'error, China, Shenzhen', // stream reset
+  t02668: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: response rejected
   t02731: 'error, Singapore', // stream reset
   t03002: 'error, China, Chongqing', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.099999999959183746 FIL, balance: 0.085877990901195787 FIL): not enough funds to execute transaction
+  t03302: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: response rejected
+  t03340: "error, China, Xi'an", // failed to initiate data transfer: deal data transfer failed: response rejected
+  t07806: 'error, China, Wuhan, HelloXP', // EOF
   t07987: 'error, China, Beijing', // stream reset
   t08203: 'error, Germany, Frankfurt', // stream reset
   t08207: 'error, Australia, Brisbane', // stream reset
+  t08371: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: response rejected
   t08532: 'error, USA', // deal failed: (State=26) error calling node: publishing deal: GasEstimateMessageGas error: estimating gas used: message execution failed: exit SysErrSenderStateInvalid(2), reason: actor balance less than needed: 0 FIL < 0.00000101 FIL (RetCode=2)
   t09696: 'error, USA, Portland + Singapore', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.099999999984513415 FIL, balance: 0.085987617245965039 FIL): not enough funds to execute transaction
   t09731: 'error, China, Guiyang', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.099999999957315065 FIL, balance: 0.068913767917956703 FIL): not enough funds to execute transaction
   t09833: 'error, USA, San Jose', // stream reset
+  t010063: 'error, China, Mianyang', // AddPiece failed: adding piece to sector: normal shutdown of state machine
+  t010493: 'error, China, Shanghai', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   t010498: 'error, China, Shenzhen', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.099999999962328425 FIL, balance: 0.047242382130732691 FIL): not enough funds to execute transaction
   t010501: 'error, China, Hangzhou', // stream reset
   t010505: 'error, China, Wuhan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.099999999967385595 FIL, balance: 0.020182718070093442 FIL): not enough funds to execute transaction
@@ -308,21 +292,31 @@ const annotations = {
   t014793: 'error, China, Hangzhou', // stream reset
   t015655: 'error, Korea, Geumcheon-gu', // stream reset
   t015709: 'error, China, Hefei', // EOF
+  t015753: 'error, China, Guyuan', // EOF
   t015757: 'error, China, Hangzhou', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: context deadline exceeded
   t015763: 'error, South Africa, Cape Town', // EOF
   t015771: 'error, Brazil, Sao Paulo', // stream reset
+  t016511: 'error, China, Beijing', // EOF
+  t017794: 'error, USA, Columbus', // EOF
   t017795: 'error, USA, Columbus', // stream reset
+  t018781: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: failed to open push data channel: Unable to send request: context deadline exceeded
+  t018784: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: failed to open push data channel: Unable to send request: context deadline exceeded
+  t018785: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: failed to open push data channel: Unable to send request: context deadline exceeded
   t019104: 'error, Canada, Chambly', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   t019362: 'error, China, Hangzhou', // stream reset
   t019645: 'error, Russia, St. Petersburg', // stream reset
   t019661: 'error, Russia, Pyatigorsk', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 0.549999999855570418 FIL, balance: 0.474906410717812678 FIL): validation failure
   t019820: 'error, Germany', // stream reset
+  t020398: 'error, China, Zhangjiakou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  t020904: 'error, Korea, Uijeongbu-si', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   t020993: 'error, China, Hong Kong', // stream reset
   t022070: 'error, China, Jieyang', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzaceaylbl6kehmips467rrasuxcjgwdbpbn6yyl7tato23sfhpznreek n 2132, TS: bafy2bzacedtl5yqskyuidr7b7ogozmlqdttbvrddbt4vufl666tkqq5w6blym n2132)
   t022089: 'error, China, Beijing', // stream reset
   t022119: 'error, USA, Lovettsville', // deal failed: (State=26) deal data verification failed: error generating CommP: failed to build treeCaused by:    0: failed to create data store    1: No such file or directory (os error 2)
   t022125: 'error, China, Shenzhen', // stream reset
   t022144: 'error, China, Fuzhou', // stream reset
+  t022202: 'error, USA, Howell', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  t022227: 'error, China, Jiangsu', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   t022326: 'error, China, Zhongshan', // EOF
   t022333: 'error, China, Dongguan', // stream reset
   t022737: 'error, Korea, Gangnum-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 0.199999999912986688 FIL, balance: 0.144238592370639307 FIL): validation failure
@@ -334,12 +328,15 @@ const annotations = {
   t023021: 'error, Korea, Yeongdeungpo-dong', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   t023108: 'error, China, Dongguan', // stream reset
   t023210: 'error, China, Dongguan', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.09999999999140913 FIL, balance: 0.031380766608862231 FIL): not enough funds to execute transaction
+  t023462: 'error, China, Chengdu', // EOF
+  t023501: 'error, China, Mianyang', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzacearhmid5q75ob7inp7i6dwwd6lznoiftbe5huuimemoguoeggqxcc n 5, TS: bafy2bzacebkas4tgd53g3gfhumrlwrvytth2g5x5yfkufhsfzjqi5n4erdsj4 n5)
   t023530: 'error, China, Shanghai', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: protocol not supported
   t023534: 'error, China, Chongqing', // stream reset
   t023549: 'error, China, Zhejiang', // EOF
   t023561: 'error, China, Shenzhen', // stream reset
   t023661: 'error, China, Zhejiang', // deal failed: (State=26) deal data verification failed: error generating CommP: failed to build treeCaused by:    0: failed to create data store    1: No such file or directory (os error 2)
   t023825: 'error, USA, Portland', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.099999999969251256 FIL, balance: 0.065348544471389551 FIL): not enough funds to execute transaction
+  t023876: 'error, China, Fuzhou', // deal failed: (State=26) error calling node: publishing deal: GasEstimateMessageGas error: estimating gas used: message execution failed: exit 16, reason: cannot publish duplicate deals (RetCode=16)
 
   // Dial backoff
 
@@ -1164,6 +1161,7 @@ const annotations = {
   t010602: 'xnr, China, Guangdong',
   t010603: 'xnr, China, Baoding',
   t010612: 'xnr, USA, Mountain View',
+  t010617: 'xnr, Canada, Surrey, @feiya200',
   t014207: 'xnr, USA',
   t014261: 'xnr, China, Fuzhou',
   t014271: 'xnr, China, Fuzhou',

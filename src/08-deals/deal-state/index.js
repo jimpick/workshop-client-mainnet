@@ -109,9 +109,15 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
   if (lastHistory && dealHistoryData.length > 1) {
     elapsed = timeElapsed(dealHistoryData.length - 2)
   }
-  if (previous === 'active' || previous === 'active-sealing') {
+  if (previous === 'active') {
     if (lastDealState === 'Sealing') {
       return ['active-sealing', '']
+    }
+  }
+  if (previous === 'active-sealing') {
+    if (lastDealState === 'Sealing') {
+      return ['sealing', ''] // final
+      // return ['active-sealing', ''] // in-flight
     }
   }
   if (lastDealState === 'Sealing') {
