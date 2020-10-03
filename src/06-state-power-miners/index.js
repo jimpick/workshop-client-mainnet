@@ -497,14 +497,19 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                 ).toString()
                 console.log(`Miner: ${miner} maddr ${maddr}`)
                 addresses.push(maddr)
-                const match = maddr.match(/^\/ip4\/(\d+\.\d+\.\d+\.\d+)/)
-                if (match) {
-                  const ipv4Address = match[1]
+                const matchIpv4 = maddr.match(/^\/ip4\/(\d+\.\d+\.\d+\.\d+)/)
+                if (matchIpv4) {
+                  const ipv4Address = matchIpv4[1]
                   if (!ip.isPrivate(ipv4Address) && ipv4Address !== '0.0.0.0') {
                     console.log(`    ${ipv4Address}`)
                     ips.add(ipv4Address)
                   }
                   // FIXME: IPv6
+                }
+                const matchDns4 = maddr.match(/^\/dns4\/([^/]+)/)
+                if (matchDns4) {
+                  console.log(`    FIXME: ${miner} Resolve ${matchDns4[1]}`)
+                  // Look up IPv4 using geoip-server endpoint
                 }
               } catch (e) {
                 console.warn(
