@@ -116,8 +116,8 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
   }
   if (previous === 'active-sealing') {
     if (lastDealState === 'Sealing') {
-      return ['sealing', ''] // final
-      // return ['active-sealing', ''] // in-flight
+      // return ['sealing', ''] // final
+      return ['active-sealing', ''] // in-flight
     }
   }
   if (lastDealState === 'Sealing') {
@@ -235,7 +235,7 @@ function BucketDealList ({
   height,
   now
 }) {
-  const minerMap = {}
+  const minerEntries = []
   const toAnnotationsMap = {}
   for (let i in deals) {
     const deal = deals[i]
@@ -246,7 +246,9 @@ function BucketDealList ({
       dealHistory
     )
     if (toTag === bucket) {
-      toAnnotationsMap[miner] = { shortAnnotation, comment }
+      if (!toAnnotationsMap[miner] || toAnnotationsMap[miner].date < date) {
+        toAnnotationsMap[miner] = { shortAnnotation, comment, date }
+      }
     }
     if (fromTag !== bucket) continue
 
@@ -301,7 +303,7 @@ function BucketDealList ({
         )}
       </div>
     )
-    minerMap[miner] = entry
+    minerEntries.push([miner, entry])
 
     async function copyCid () {
       console.log('Copying to clipboard', cidDeal)
@@ -316,13 +318,14 @@ function BucketDealList ({
     }
   }
 
-  const minerEntries = Object.entries(minerMap)
   minerEntries.sort(([a], [b]) => {
     return Number(a.slice(1)) - Number(b.slice(1))
   })
   const toAnnotations = Object.entries(toAnnotationsMap)
-  toAnnotations.sort(([a], [b]) => {
-    return Number(a.slice(1)) - Number(b.slice(1))
+  toAnnotations.sort(([a, , dateA], [b, , dateB]) => {
+    const compare = Number(a.slice(1)) - Number(b.slice(1))
+    if (compare !== 0) return compare
+    return dateA.getTime() - dateB.getTime()
   })
   let toAnnotationsOut = toAnnotations
     .map(([miner, { shortAnnotation, comment }]) => {
