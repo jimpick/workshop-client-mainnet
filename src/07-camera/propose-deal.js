@@ -39,7 +39,8 @@ export default function ProposeDeal ({ appState, updateAppState }) {
   const blockDelay = versionInfo && versionInfo.BlockDelay
   // const epochPrice = '2500'
   // const epochPrice = '976562'
-  const epochPrice = '2000000'
+  // const epochPrice = '2000000'
+  const epochPrice = '20000000'
   // const epochPrice = '20000'
 
   const dealMiners = useMemo(() => {
