@@ -152,22 +152,27 @@ const annotations = {
 
   // Live
 
-  t02387: 'live, Canada, Brampton, NBFS Canada',
-  t02388: 'live, Netherlands, Amersfoort, Kroketje', // 131072 < 134217728
-  t08240: 'live, Russia, Novosibirsk, Rabinovitch', // 131072 < 134217728
-  t08482: 'live, USA, Athol, @why',
-  t010617: 'live, Canada, Surrey, @feiya200', // 131072 < 134217728
-  t015941: 'live, Ukraine, Kyiv', // 131072 < 134217728
-  t021540: 'live, Germany, Frankfurt, @hsanjuan',
-  t023971: 'live, USA, @Brian Y',
-
   // Testing
 
-  t01152: 'testing, China, Beijing',
-  t01238: 'testing, Vietnam, Hanoi, FILECOIN-VIETNAM' // 131072 < 134217728
-  t01241: 'testing, USA, Portland, 6block',
-  t01272: 'testing, Singapore',
-  t01278: 'testing, USA, Grand Rapids, MiMiner', // 131072 < 134217728
+  t01238: 'testing, Vietnam, Hanoi, FILECOIN-VIETNAM', // 131072 < 134217728
+  t02387: 'testing, Canada, Brampton, NBFS Canada',
+  t02388: 'testing, Netherlands, Amersfoort, Kroketje', // 131072 < 134217728
+  t08482: 'testing, USA, Athol, @why',
+  t010617: 'testing, Canada, Surrey, @feiya200', // 131072 < 134217728
+  t015941: 'testing, Ukraine, Kyiv', // 131072 < 134217728
+  t021540: 'testing, Germany, Frankfurt, @hsanjuan',
+  t023971: 'testing, USA, @Brian Y',
+
+  // Sealing
+
+  t01152: 'sealing, China, Beijing',
+  t01241: 'sealing, USA, Portland, 6block',
+  t01272: 'sealing, Singapore',
+  t01278: 'sealing, USA, Grand Rapids, MiMiner', // 131072 < 134217728
+
+  // Error
+
+  t08240: 'error, Russia, Novosibirsk, Rabinovitch', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.097613489554111557 FIL, balance: 0.092623923120394973 FIL): not enough funds to execute transaction
 
 }
 
