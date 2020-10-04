@@ -7,7 +7,7 @@ const annotations = {
   t01238: 'retest, Vietnam, Hanoi, FILECOIN-VIETNAM',
   t01240: 'retest, Netherlands, HidNand',
   t01276: 'retest, Canada, Brampton, NBFS Canada',
-  t02388: 'rest, Netherlands, Amersfoort, Kroketje',
+  t02388: 'retest, Netherlands, Amersfoort, Kroketje',
   t02401: 'active-sealing, Canada, Chambly, NBFS Canada',
   t02405: 'retest, China, Shenzhen',
   t02415: 'retest, China, Hong Kong',
@@ -54,7 +54,7 @@ const annotations = {
   t023490: 'active-sealing, Ukraine, Kyiv',
   t023495: 'retest, China, Beijing + USA, Portland',
   t023526: 'active-sealing, China, Chongqing',
-  t023647: 'active-sealing, Korea, Gangseo-gu',
+  t023647: 'retest, Korea, Gangseo-gu',
   t023649: 'active-sealing, Korea, Seoul',
   t023678: 'retest, China, Jiaxing',
 
