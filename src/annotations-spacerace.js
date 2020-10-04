@@ -180,6 +180,7 @@ const annotations = {
   t010088: 'stuck, DNS:purumine.com', // cfa: 18 minutes
   t010400: 'stuck, China, Shenyang', // cfa: 21 minutes
   t010505: 'stuck, China, Wuhan', // cfa: 18 minutes
+	t010507: "stuck, China, Hangzhou", // cfa: 4 minutes
   t010523: 'stuck, China, Beijing', // cfa: 25 minutes
   t015233: 'stuck, China, Nanjing', // cfa: 21 minutes
   t015647: 'stuck, China, Shenzhen', // cfa: 21 minutes
@@ -225,20 +226,19 @@ const annotations = {
 
   // Min Size
 
-  t023490: 'min-size, Ukraine, Kyiv', // 131072 < 1048576
+  t02388: "min-size, Netherlands, Amersfoort, Kroketje", // 65536 < 134217728
+	t02576: "min-size, Denmark, Gjerlev, BenjaminH", // 65536 < 134217728
+	t08403: "min-size, UK, Lower Slaughter", // 65536 < 134217728
+	t010512: "min-size, China, Zhengzhou", // 65536 < 134217728
+	t010617: "min-size, Canada, Surrey, @feiya200", // 65536 < 134217728
+	t015747: "min-size, Japan, Setagaya-ku", // 65536 < 134217728
+	t022855: "min-size, Finland, Helsinki", // 65536 < 134217728
+	t022913: "min-size, Korea, Uiwang", // 65536 < 536870912
+	t023467: "min-size, Norway, Oslo", // 65536 < 134217728
+  t023490: "min-size, Ukraine, Kyiv", // 65536 < 1048576
 
   // Min Ask
 
-  t02388: 'min-ask, Netherlands, Amersfoort, Kroketje', // 2000000 < 12207031
-  t02576: 'min-ask, Denmark, Gjerlev, BenjaminH', // 2000000 < 12207031
-  t08403: 'min-ask, UK, Lower Slaughter', // 2000000 < 10986328
-  t010507: 'min-ask, China, Hangzhou', // 2000000 < 12207031
-  t010512: 'min-ask, China, Zhengzhou', // 2000000 < 12207031
-  t010617: 'min-ask, Canada, Surrey, @feiya200', // 2000000 < 12207031
-  t015747: 'min-ask, Japan, Setagaya-ku', // 2000000 < 12207031
-  t022855: 'min-ask, Finland, Helsinki', // 2000000 < 12207031
-  t022913: 'min-ask, Korea, Uiwang', // 2000000 < 12207031
-  t023467: 'min-ask, Norway, Oslo', // 2000000 < 12207031
 
   // Error
 
