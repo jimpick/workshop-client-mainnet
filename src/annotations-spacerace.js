@@ -3,11 +3,11 @@ const annotations = {
 
   // Active-sealing (active, with in-flight sealing)
 
-  t01152: 'active-sealing, China, Beijing',
+  t01152: 'retest, China, Beijing',
   t01238: 'retest, Vietnam, Hanoi, FILECOIN-VIETNAM',
   t01240: 'retest, Netherlands, HidNand',
   t01276: 'retest, Canada, Brampton, NBFS Canada',
-  t02388: 'active-sealing, Netherlands, Amersfoort, Kroketje',
+  t02388: 'rest, Netherlands, Amersfoort, Kroketje',
   t02401: 'active-sealing, Canada, Chambly, NBFS Canada',
   t02405: 'retest, China, Shenzhen',
   t02415: 'retest, China, Hong Kong',
@@ -23,7 +23,7 @@ const annotations = {
   t07819: 'active-sealing, China, Wuxi, YC--wuxi',
   t07824: 'active-sealing, China, Shanghai',
   t08094: 'active-sealing, China, Guangzhou, dongshao',
-  t08157: 'active-sealing, China, Beijing + Germany, Frankfurt, 超星际',
+  t08157: 'retest, China, Beijing + Germany, Frankfurt, 超星际',
   t08264: 'retest, China, Xianning',
   t08403: 'retest, UK, Lower Slaughter',
   t08474: 'retest, China, Hong Kong',
@@ -52,11 +52,11 @@ const annotations = {
   t022512: 'active-sealing, Canada, Embrun',
   t023181: 'active-sealing, DNS:poseidon.technology',
   t023490: 'active-sealing, Ukraine, Kyiv',
-  t023495: 'active-sealing, China, Beijing + USA, Portland',
+  t023495: 'retest, China, Beijing + USA, Portland',
   t023526: 'active-sealing, China, Chongqing',
   t023647: 'active-sealing, Korea, Gangseo-gu',
   t023649: 'active-sealing, Korea, Seoul',
-  t023678: 'active-sealing, China, Jiaxing',
+  t023678: 'retest, China, Jiaxing',
 
   // Sealing
 
