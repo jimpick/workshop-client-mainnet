@@ -47,7 +47,7 @@ const annotations = {
   t021274: 'active-sealing, China, Shanghai',
   t021535: 'retest, China, Chengdu',
   t022261: 'retest, China, Luzhou',
-  t022287: 'active-sealing, China, Dongguan',
+  t022287: 'retest, China, Dongguan',
   t022376: 'active-sealing, China, Dongguan',
   t022512: 'retest, Canada, Embrun',
   t023181: 'retest, DNS:poseidon.technology',
