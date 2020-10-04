@@ -155,9 +155,12 @@ const annotations = {
 
   // Testing
 
-  t01238: 'testing, Vietnam, Hanoi, FILECOIN-VIETNAM', // 131072 < 134217728
-  t02387: 'testing, Canada, Brampton, NBFS Canada',
-  t010617: 'testing, Canada, Surrey, @feiya200', // 131072 < 134217728
+
+  // Stuck - CheckForAcceptance
+
+  t01238: 'stuck-cfa, Vietnam, Hanoi, FILECOIN-VIETNAM', // 10.04: 254 MiB, 0.012995375 FIL
+  t02387: 'stuck-cfa, Canada, Brampton, NBFS Canada', // 10.04: 254 MiB, 0.0000001299395 FIL
+  t010617: 'stuck-cfa, Canada, Surrey, @feiya200', // 10.04: 254 MiB, 0.013022075 FIL
 
   // Sealing - supercheap
 
@@ -165,7 +168,7 @@ const annotations = {
 
   // Sealing - cheap
 
-  t01152: 'sealing-cheap, China, Beijing', // 10.04: 254 MiB, 0.000013028375 FIL 
+  t01152: 'sealing-cheap, China, Beijing', // 10.04: 254 MiB, 0.000013028375 FIL
   t01241: 'sealing-cheap, USA, Portland, 6block', // 10.04: 254 MiB, 0.0000130052 FIL
   t01272: 'sealing-cheap, Singapore', // 10.04: 254 MiB, 0.000065066125 FIL
   t08482: 'sealing-cheap, USA, Athol, @why', // 10.04: 254 MiB, 0.000065117 FIL
@@ -173,14 +176,13 @@ const annotations = {
   // Sealing - expensive
 
   t01278: 'sealing-expensive, USA, Grand Rapids, MiMiner', // 10.04: 254 MiB, 0.013011475 FIL
-  t02388: 'sealing-expensive, Netherlands, Amersfoort, Kroketje', // 10.04: 254 MiB, 0.012982425 FIL 
+  t02388: 'sealing-expensive, Netherlands, Amersfoort, Kroketje', // 10.04: 254 MiB, 0.012982425 FIL
   t015941: 'sealing-expensive, Ukraine, Kyiv', // 10.04: 254 MiB, 0.012973375 FIL
 
   // Error
 
   t08240: 'error, Russia, Novosibirsk, Rabinovitch', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.097613489554111557 FIL, balance: 0.092623923120394973 FIL): not enough funds to execute transaction
-  t023971: 'error, USA, @Brian Y', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzacedkhfvfff45aco2a34swvdjukzsja2lleprqjhkbacqg7obrvrmfy n 216, TS: bafy2bzaceajiwne4xupdkbbvjf3on5frce25o5nxpsdkhh3ghhmnkpqvtvs7w n216)
-
+  t023971: 'error, USA, @Brian Y' // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzacedkhfvfff45aco2a34swvdjukzsja2lleprqjhkbacqg7obrvrmfy n 216, TS: bafy2bzaceajiwne4xupdkbbvjf3on5frce25o5nxpsdkhh3ghhmnkpqvtvs7w n216)
 }
 
 export default annotations
