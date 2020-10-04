@@ -8,8 +8,6 @@ const annotations = {
   t01800: 'candidate, China, Shenzhen + Chengdu',
   t02305: 'candidate, China, Dongguan',
   t02381: 'candidate, China, Dongguan, 西野七濑迷叔',
-  t02387: 'candidate, Canada, Brampton, NBFS Canada',
-  t02388: 'candidate, Netherlands, Amersfoort, Kroketje', // 131072 < 134217728
   t02399: 'candidate, China, Zhejiang',
   t02405: 'candidate, China, Shenzhen',
   t02415: 'candidate, China, Hong Kong',
@@ -53,13 +51,11 @@ const annotations = {
   t07990: 'candidate, China, Hong Kong',
   t08025: 'candidate, China, Hong Kong',
   t08220: 'candidate, China, Shenzhen',
-  t08240: 'candidate, Russia, Novosibirsk, Rabinovitch', // 131072 < 134217728
   t08264: 'candidate, China, Xianning', // 131072 < 134217728
   t08311: 'candidate, China, Shenzhen',
   t08371: 'candidate, China, Chengdu',
   t08383: 'candidate, USA, Portland, 6block',
   t08403: 'candidate, UK, Lower Slaughter', // 131072 < 134217728
-  t08482: 'candidate, USA, Athol, @why',
   t09675: 'candidate, China, Weifang',
   t09693: 'candidate, USA, Portland + Singapore',
   t09696: 'candidate, USA, Portland + Singapore',
@@ -80,13 +76,11 @@ const annotations = {
   t010507: 'candidate, China, Hangzhou',
   t010512: 'candidate, China, Zhengzhou',
   t010558: 'candidate, China, Shenzhen + Hong Kong',
-  t010617: 'candidate, Canada, Surrey, @feiya200', // 131072 < 134217728
   t014394: 'candidate, China, Suzhou',
   t014768: 'candidate, Singapore',
   t015877: 'candidate, China, Jiaxing + USA',
   t015897: 'candidate, China, Guangdong',
   t015927: 'candidate, USA, East Islip', // 131072 < 134217728
-  t015941: 'candidate, Ukraine, Kyiv', // 131072 < 134217728
   t016482: 'candidate, USA, Aliquippa',
   t016594: 'candidate, Germany', // 131072 < 134217728
   t017734: 'candidate, Australia, Sydney',
@@ -121,7 +115,6 @@ const annotations = {
   t021328: 'candidate, China, Dongguan',
   t021339: 'candidate, China, Jiaxing',
   t021479: 'candidate, China, Qingdao',
-  t021540: 'candidate, Germany, Frankfurt, @hsanjuan',
   t021583: 'candidate, China, Jiaxing',
   t021710: 'candidate, China, Shijiazhuang',
   t022070: 'candidate, China, Jieyang',
@@ -150,7 +143,6 @@ const annotations = {
   t023678: 'candidate, China, Jiaxing',
   t023825: 'candidate, USA, Portland',
   t023843: 'candidate, NR',
-  t023971: 'candidate, USA, @Brian Y',
   t023986: 'candidate, Korea, Seoul',
   t024015: 'candidate, USA, Portland',
   t024016: 'candidate, USA, Portland',
@@ -160,14 +152,23 @@ const annotations = {
 
   // Live
 
-  t01241: 'live, USA, Portland, 6block',
-  t01272: 'live, Singapore',
-  t01278: 'live, USA, Grand Rapids, MiMiner', // 131072 < 134217728
+  t02387: 'live, Canada, Brampton, NBFS Canada',
+  t02388: 'live, Netherlands, Amersfoort, Kroketje', // 131072 < 134217728
+  t08240: 'live, Russia, Novosibirsk, Rabinovitch', // 131072 < 134217728
+  t08482: 'live, USA, Athol, @why',
+  t010617: 'live, Canada, Surrey, @feiya200', // 131072 < 134217728
+  t015941: 'live, Ukraine, Kyiv', // 131072 < 134217728
+  t021540: 'live, Germany, Frankfurt, @hsanjuan',
+  t023971: 'live, USA, @Brian Y',
 
   // Testing
 
   t01152: 'testing, China, Beijing',
   t01238: 'testing, Vietnam, Hanoi, FILECOIN-VIETNAM' // 131072 < 134217728
+  t01241: 'testing, USA, Portland, 6block',
+  t01272: 'testing, Singapore',
+  t01278: 'testing, USA, Grand Rapids, MiMiner', // 131072 < 134217728
+
 }
 
 export default annotations
