@@ -164,7 +164,7 @@ const annotations = {
   // Testing
 
   t01152: 'testing, China, Beijing',
-  t01238: 'testing, Vietnam, Hanoi, FILECOIN-VIETNAM' // 131072 < 134217728
+  t01238: 'testing, Vietnam, Hanoi, FILECOIN-VIETNAM', // 131072 < 134217728
   t01241: 'testing, USA, Portland, 6block',
   t01272: 'testing, Singapore',
   t01278: 'testing, USA, Grand Rapids, MiMiner', // 131072 < 134217728
