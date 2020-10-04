@@ -1,3 +1,8 @@
+// Small file test results
+//
+// Additional testing will be performed with larger files with
+// selected miners
+
 const annotations = {
   // Active
 
