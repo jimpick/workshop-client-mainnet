@@ -5,11 +5,6 @@
 const annotations = {
   // Candidates
 
-  t01152: 'candidate, China, Beijing',
-  t01238: 'candidate, Vietnam, Hanoi, FILECOIN-VIETNAM', // 131072 < 134217728
-  t01241: 'candidate, USA, Portland, 6block',
-  t01272: 'candidate, Singapore',
-  t01278: 'candidate, USA, Grand Rapids, MiMiner', // 131072 < 134217728
   t01800: 'candidate, China, Shenzhen + Chengdu',
   t02305: 'candidate, China, Dongguan',
   t02381: 'candidate, China, Dongguan, 西野七濑迷叔',
@@ -161,7 +156,18 @@ const annotations = {
   t024016: 'candidate, USA, Portland',
   t024070: 'candidate, Japan, Setagaya-ku', // 131072 < 134217728
   t024074: 'candidate, NR',
-  t024129: 'candidate, China, Zhejiang'
+  t024129: 'candidate, China, Zhejiang',
+
+  // Live
+
+  t01241: 'live, USA, Portland, 6block',
+  t01272: 'live, Singapore',
+  t01278: 'live, USA, Grand Rapids, MiMiner', // 131072 < 134217728
+
+  // Testing
+
+  t01152: 'testing, China, Beijing',
+  t01238: 'testing, Vietnam, Hanoi, FILECOIN-VIETNAM' // 131072 < 134217728
 }
 
 export default annotations
