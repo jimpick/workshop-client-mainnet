@@ -39,7 +39,7 @@ const annotations = {
   t019240: 'retest, China, Beijing',
   t019437: 'retest, Korea, Guro-gu',
   t019459: 'retest, USA, Alpharetta',
-  t019638: 'active-sealing, Germany, Frankfurt',
+  t019638: 'retest, Germany, Frankfurt',
   t020436: 'retest, China, Beijing',
   t020742: 'retest, China, Shanghai + Hangzhou + Shaoxing',
   t020923: 'retest, China, Cangzhou',
