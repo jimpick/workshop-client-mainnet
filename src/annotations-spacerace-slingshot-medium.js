@@ -14,9 +14,6 @@ const annotations = {
   t02423: 'candidate, Ukraine, Kyiv, igowreck',
   t02500: 'candidate, Korea, Seongnam-si', // 131072 < 134217728
   t02501: 'candidate, USA, Portland, 6block',
-  t02514: 'candidate, USA, Portland, 6block',
-  t02576: 'candidate, Denmark, Gjerlev, BenjaminH', // 131072 < 134217728
-  t02620: 'candidate, Poland, Krakow, @magik6k', // 20000000 < 114746093
   t02622: 'candidate, USA, Portland, 6block',
   t02623: 'candidate, USA, Portland, 6block',
   t02633: 'candidate, China, Hong Kong',
@@ -29,25 +26,21 @@ const annotations = {
   t03264: 'candidate, Korea, Bucheon-si', // 131072 < 134217728
   t03273: 'candidate, USA, Portland, 6block',
   t03274: 'candidate, USA, Portland, 6block',
-  t03275: 'candidate, USA, Portland, 6block',
   t03302: 'candidate, China, Chengdu',
   t03325: 'candidate, Germany, Frankfurt',
   t03328: 'candidate, China, Xinxiang',
-  t03339: 'candidate, China, Luzhou, benxun',
   t03340: "sealing, China, Xi'an",
   t03347: 'candidate, China, Shenzhen',
   t03363: 'candidate, Singapore',
   t03482: 'candidate, China, Wuxi',
   t03491: 'candidate, China, Hong Kong',
   t03512: 'candidate, New Zealand, Auckland, NZFILECOIN01',
-  t03624: 'candidate, Germany, Chemnitz, ode',
   t04443: 'candidate, China, Shanghai, 罗良科技',
   t05315: 'candidate, USA, Portland, 6block',
   t05316: 'candidate, USA, Portland, 6block',
   t05317: 'candidate, USA, Portland',
   t07709: 'candidate, Korea, Dongjak-gu', // 131072 < 134217728
   t07850: 'candidate, USA, Portland, 6block',
-  t07919: 'candidate, China, Beijing, Shanghai, Hunan',
   t07990: 'candidate, China, Hong Kong',
   t08025: 'candidate, China, Hong Kong',
   t08220: 'candidate, China, Shenzhen',
@@ -92,7 +85,7 @@ const annotations = {
   t018783: 'candidate, Singapore + Germany, Frankfurt + USA',
   t018784: 'candidate, Singapore + Germany, Frankfurt + USA',
   t018785: 'candidate, Singapore + Germany, Frankfurt + USA',
-  t019022: "sealing, China, Xi'an",
+  t019022: "candidate, China, Xi'an",
   t019029: 'candidate, Serbia, Boljevac', // 131072 < 134217728
   t019041: 'candidate, Singapore',
   t019074: 'candidate, China, Guangdong',
@@ -107,7 +100,6 @@ const annotations = {
   t019459: 'candidate, USA, Alpharetta',
   t020489: 'candidate, China, Lioaning',
   t020523: 'candidate, China, Suzhou',
-  t020742: 'candidate, China, Shanghai + Hangzhou + Shaoxing',
   t020747: 'candidate, China, Xiamen', // 131072 < 134217728
   t020904: 'candidate, Korea, Uijeongbu-si', // 131072 < 134217728
   t020923: 'candidate, China, Cangzhou',
@@ -118,7 +110,6 @@ const annotations = {
   t021583: 'candidate, China, Jiaxing',
   t021710: 'candidate, China, Shijiazhuang',
   t022070: 'candidate, China, Jieyang',
-  t022072: 'candidate, China, Jieyang',
   t022289: 'candidate, China, Mianyang',
   t022352: 'candidate, Norway, Borgen', // 131072 < 134217728
   t022399: 'candidate, China, Beijing', // 131072 < 134217728
@@ -135,7 +126,7 @@ const annotations = {
   t022969: 'candidate, China, Chengdu',
   t023001: 'candidate, China, Changsha',
   t023013: 'candidate, China, Hong Kong', // 20000000 < 24414062
-  t023207: 'candidate, undefined',
+  t023207: 'candidate, ??',
   t023229: 'candidate, China, Shandong', // 131072 < 134217728
   t023495: 'candidate, China, Beijing + USA, Portland',
   t023526: 'candidate, China, Chongqing',
@@ -152,27 +143,43 @@ const annotations = {
 
   // Live
 
+  t02514: 'live, USA, Portland, 6block',
+  t02576: 'live, Denmark, Gjerlev, BenjaminH', // 131072 < 134217728
+  t02620: 'live, Poland, Krakow, @magik6k', // 20000000 < 114746093
+  t03275: 'live, USA, Portland, 6block', // top miner
+  t03339: 'live, China, Luzhou, benxun', // top miner
+  t03624: 'live, Germany, Chemnitz, ode', // top miner
+  t07919: 'live, China, Beijing, Shanghai, Hunan', // top miner
+  t020742: 'live, China, Shanghai + Hangzhou + Shaoxing', // top miner
+  t022072: 'live, China, Jieyang', // top miner
+
   // Testing
 
   t01238: 'testing, Vietnam, Hanoi, FILECOIN-VIETNAM', // 131072 < 134217728
   t02387: 'testing, Canada, Brampton, NBFS Canada',
-  t02388: 'testing, Netherlands, Amersfoort, Kroketje', // 131072 < 134217728
-  t08482: 'testing, USA, Athol, @why',
   t010617: 'testing, Canada, Surrey, @feiya200', // 131072 < 134217728
-  t015941: 'testing, Ukraine, Kyiv', // 131072 < 134217728
-  t021540: 'testing, Germany, Frankfurt, @hsanjuan',
-  t023971: 'testing, USA, @Brian Y',
 
-  // Sealing
+  // Sealing - supercheap
 
-  t01152: 'sealing, China, Beijing',
-  t01241: 'sealing, USA, Portland, 6block',
-  t01272: 'sealing, Singapore',
-  t01278: 'sealing, USA, Grand Rapids, MiMiner', // 131072 < 134217728
+  t021540: 'sealing-supercheap, Germany, Frankfurt, @hsanjuan', // 10.04: 254 MiB, 0.00000006487625 FIL
+
+  // Sealing - cheap
+
+  t01152: 'sealing-cheap, China, Beijing', // 10.04: 254 MiB, 0.000013028375 FIL 
+  t01241: 'sealing-cheap, USA, Portland, 6block', // 10.04: 254 MiB, 0.0000130052 FIL
+  t01272: 'sealing-cheap, Singapore', // 10.04: 254 MiB, 0.000065066125 FIL
+  t08482: 'sealing-cheap, USA, Athol, @why', // 10.04: 254 MiB, 0.000065117 FIL
+
+  // Sealing - expensive
+
+  t01278: 'sealing-expensive, USA, Grand Rapids, MiMiner', // 10.04: 254 MiB, 0.013011475 FIL
+  t02388: 'sealing-expensive, Netherlands, Amersfoort, Kroketje', // 10.04: 254 MiB, 0.012982425 FIL 
+  t015941: 'sealing-expensive, Ukraine, Kyiv', // 10.04: 254 MiB, 0.012973375 FIL
 
   // Error
 
   t08240: 'error, Russia, Novosibirsk, Rabinovitch', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.097613489554111557 FIL, balance: 0.092623923120394973 FIL): not enough funds to execute transaction
+  t023971: 'error, USA, @Brian Y', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzacedkhfvfff45aco2a34swvdjukzsja2lleprqjhkbacqg7obrvrmfy n 216, TS: bafy2bzaceajiwne4xupdkbbvjf3on5frce25o5nxpsdkhh3ghhmnkpqvtvs7w n216)
 
 }
 
