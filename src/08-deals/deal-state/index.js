@@ -128,13 +128,16 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
     return ['active', elapsed]
   }
   if (lastDealState === 'Transferring') {
-    return ['stuck', `xfr: ${elapsedNow}`]
+    return ['stuck', `Transferring: ${elapsedNow}`]
   }
   if (lastDealState === 'StorageDealCheckForAcceptance') {
-    return ['stuck', `cfa: ${elapsedNow}`]
+    return ['stuck', `CheckForAcceptance: ${elapsedNow}`]
+  }
+  if (lastDealState === 'ProposalAccepted') {
+    return ['stuck', `ProposalAccepted: ${elapsedNow}`]
   }
   if (lastDealState === 'FundsEnsured') {
-    return ['stuck', `funds: ${elapsedNow}`]
+    return ['stuck', `FundsEnsured: ${elapsedNow}`]
   }
   if (lastDealState === 'Error') {
     const matchBusy = dealMessage.match(/deal rejected: (cannot seal a sector before .*)/)
