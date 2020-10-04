@@ -3,81 +3,27 @@ const annotations = {
 
   // Active-sealing (active, with in-flight sealing)
 
-  t01152: 'retest, China, Beijing',
-  t01238: 'retest, Vietnam, Hanoi, FILECOIN-VIETNAM',
-  t01240: 'retest, Netherlands, HidNand',
-  t01276: 'retest, Canada, Brampton, NBFS Canada',
-  t02388: 'retest, Netherlands, Amersfoort, Kroketje',
-  t02401: 'retest, Canada, Chambly, NBFS Canada',
-  t02405: 'retest, China, Shenzhen',
-  t02415: 'retest, China, Hong Kong',
-  t02576: 'retest, Denmark, Gjerlev, BenjaminH',
-  t02619: 'retest, China, Beijing, Blockcasting',
-  t03131: 'retest, China, Changsha',
-  t03134: 'retest, China, Cangzhou, 乔木信息',
-  t03143: 'retest, China, Shijiazhuang + Hong Kong',
-  t03325: 'retest, Germany, Frankfurt',
-  t03339: 'retest, China, Luzhou, benxun',
-  t03363: 'retest, Singapore',
-  t07709: 'retest, Korea, Dongjak-gu',
-  t07819: 'retest, China, Wuxi, YC--wuxi',
-  t07824: 'retest, China, Shanghai',
-  t08094: 'retest, China, Guangzhou, dongshao',
-  t08157: 'retest, China, Beijing + Germany, Frankfurt, 超星际',
-  t08264: 'retest, China, Xianning',
-  t08403: 'retest, UK, Lower Slaughter',
-  t08474: 'retest, China, Hong Kong',
-  t09639: 'retest, China, Fuzhou',
-  t010048: 'retest, China, Shanghai',
   t010247: 'active-sealing, China, Yantai',
-  t010438: 'retest, USA',
-  t014394: 'retest, China, Suzhou',
-  t015877: 'retest, China, Jiaxing + USA',
-  t018782: 'retest, Singapore + Germany, Frankfurt + USA',
-  t019041: 'retest, Singapore',
-  t019099: 'retest, China, Hong Kong',
-  t019240: 'retest, China, Beijing',
-  t019437: 'retest, Korea, Guro-gu',
-  t019459: 'retest, USA, Alpharetta',
-  t019638: 'retest, Germany, Frankfurt',
-  t020436: 'retest, China, Beijing',
-  t020742: 'retest, China, Shanghai + Hangzhou + Shaoxing',
-  t020923: 'retest, China, Cangzhou',
-  t021255: 'retest, China, Suzhou + Netherlands',
-  t021274: 'retest, China, Shanghai',
-  t021535: 'retest, China, Chengdu',
-  t022261: 'retest, China, Luzhou',
-  t022287: 'retest, China, Dongguan',
-  t022376: 'retest, China, Dongguan',
-  t022512: 'retest, Canada, Embrun',
-  t023181: 'retest, DNS:poseidon.technology',
-  t023490: 'retest, Ukraine, Kyiv',
-  t023495: 'retest, China, Beijing + USA, Portland',
-  t023526: 'retest, China, Chongqing',
-  t023647: 'retest, Korea, Gangseo-gu',
-  t023649: 'retest, Korea, Seoul',
-  t023678: 'retest, China, Jiaxing',
 
   // Sealing
 
+  t01152: 'sealing, China, Beijing',
+  t01238: 'sealing, Vietnam, Hanoi, FILECOIN-VIETNAM',
   t01241: 'sealing, USA, Portland, 6block',
   t01272: 'sealing, Singapore',
+  t01276: 'sealing, Canada, Brampton, NBFS Canada',
   t01279: 'sealing, China, Sichuan',
-  t01287: 'sealing, China, Jiaxing, MaiTian',
-  t01782: 'sealing, China, Hong Kong + Singapore + USA, Portland, hellofil.com',
   t01800: 'sealing, China, Shenzhen + Chengdu',
-  t02299: 'sealing, China, Dongguan, Yolo',
-  t02301: 'sealing, USA',
   t02381: 'sealing, China, Dongguan, 西野七濑迷叔',
   t02387: 'sealing, Canada, Brampton, NBFS Canada',
   t02399: 'sealing, China, Zhejiang',
-  t02416: 'sealing, China, Guangdong, 星际无限',
+  t02401: 'sealing, Canada, Chambly, NBFS Canada',
+  t02405: 'sealing, China, Shenzhen',
+  t02415: 'sealing, China, Hong Kong',
   t02421: 'sealing, China, Deyang + Singapore, 腾盛科技',
-  t02423: 'sealing, Ukraine, Kyiv, igowreck',
-  t02492: 'sealing, China, Shenzhen',
-  t02500: 'sealing, Korea, Seongnam-si',
   t02501: 'sealing, USA, Portland, 6block',
   t02514: 'sealing, USA, Portland, 6block',
+  t02619: 'sealing, China, Beijing, Blockcasting',
   t02622: 'sealing, USA, Portland, 6block',
   t02623: 'sealing, USA, Portland, 6block',
   t02625: 'sealing, China, Shanghai, IPFS星际工厂',
@@ -85,16 +31,19 @@ const annotations = {
   t02645: 'sealing, China, Hong Kong',
   t02665: 'sealing, Netherlands, Amsterdam, fm-ops',
   t02772: 'sealing, China, Chengdu',
-  t03223: 'sealing, USA',
+  t03131: 'sealing, China, Changsha',
+  t03134: 'sealing, China, Cangzhou, 乔木信息',
+  t03143: 'sealing, China, Shijiazhuang + Hong Kong',
   t03264: 'sealing, Korea, Bucheon-si',
   t03273: 'sealing, USA, Portland, 6block',
   t03274: 'sealing, USA, Portland, 6block',
   t03275: 'sealing, USA, Portland, 6block',
   t03302: 'sealing, China, Chengdu',
+  t03325: 'sealing, Germany, Frankfurt',
   t03328: 'sealing, China, Xinxiang',
+  t03339: 'sealing, China, Luzhou, benxun',
   t03340: "sealing, China, Xi'an",
-  t03345: 'sealing, China, Fuzhou, chh',
-  t03347: 'sealing, China, Shenzhen',
+  t03363: 'sealing, Singapore',
   t03482: 'sealing, China, Wuxi',
   t03491: 'sealing, China, Hong Kong',
   t03512: 'sealing, New Zealand, Auckland, NZFILECOIN01',
@@ -103,21 +52,23 @@ const annotations = {
   t05316: 'sealing, USA, Portland, 6block',
   t05317: 'sealing, USA, Portland',
   t05664: 'sealing, China, Shenzhen, 艾比特网络科技',
+  t07709: 'sealing, Korea, Dongjak-gu',
   t07850: 'sealing, USA, Portland, 6block',
   t07919: 'sealing, China, Beijing, Shanghai, Hunan',
   t07982: 'sealing, China, Shenzhen',
   t07990: 'sealing, China, Hong Kong',
   t07998: 'sealing, China, Hangzhou',
   t08025: 'sealing, China, Hong Kong',
-  t08073: 'sealing, China, Qiqihar, QY7TT',
   t08091: 'sealing, USA',
+  t08157: 'sealing, China, Beijing + Germany, Frankfurt, 超星际',
   t08220: 'sealing, China, Shenzhen',
+  t08264: 'sealing, China, Xianning',
   t08311: 'sealing, China, Shenzhen',
-  t08346: 'sealing, Korea',
   t08371: 'sealing, China, Chengdu',
   t08383: 'sealing, USA, Portland, 6block',
+  t08474: 'sealing, China, Hong Kong',
   t08482: 'sealing, USA, Athol, @why',
-  t09002: 'sealing, Singapore',
+  t09639: 'sealing, China, Fuzhou',
   t09675: 'sealing, China, Weifang',
   t09693: 'sealing, USA, Portland + Singapore',
   t09696: 'sealing, USA, Portland + Singapore',
@@ -127,12 +78,14 @@ const annotations = {
   t010253: 'sealing, China, Beijing + USA, Portland',
   t010254: 'sealing, Japan, Minamata',
   t010399: 'sealing, China, Guangzhou',
+  t010438: 'sealing, USA',
+  t010446: 'sealing, Netherlands',
   t010495: 'sealing, China, Tainjin',
-  t010507: 'sealing, China, Hangzhou',
-  t010523: 'sealing, China, Beijing',
   t010558: 'sealing, China, Shenzhen + Hong Kong',
   t014281: 'sealing, Netherlands, Permerend',
+  t014394: 'sealing, China, Suzhou',
   t014768: 'sealing, Singapore',
+  t015877: 'sealing, China, Jiaxing + USA',
   t015897: 'sealing, China, Guangdong',
   t016482: 'sealing, USA, Aliquippa',
   t016594: 'sealing, Germany',
@@ -141,37 +94,45 @@ const annotations = {
   t018772: 'sealing, Australia',
   t018780: 'sealing, Singapore + Germany, Frankfurt + USA',
   t018781: 'sealing, Singapore + Germany, Frankfurt + USA',
+  t018782: 'sealing, Singapore + Germany, Frankfurt + USA',
   t018783: 'sealing, Singapore + Germany, Frankfurt + USA',
   t018784: 'sealing, Singapore + Germany, Frankfurt + USA',
   t018785: 'sealing, Singapore + Germany, Frankfurt + USA',
   t019022: "sealing, China, Xi'an",
+  t019041: 'sealing, Singapore',
   t019074: 'sealing, China, Guangdong',
   t019090: 'sealing, South Africa, Johannesburg',
   t019118: 'sealing, China, Jiaxing',
+  t019240: 'sealing, China, Beijing',
   t019354: 'sealing, Germany, Frankfurt',
   t019399: 'sealing, Korea, Busan',
   t019422: 'sealing, South Africa, Johannesburg',
+  t019459: 'sealing, USA, Alpharetta',
   t020489: 'sealing, China, Lioaning',
+  t020523: 'sealing, China, Suzhou',
   t020605: 'sealing, China, Yibin',
+  t020742: 'sealing, China, Shanghai + Hangzhou + Shaoxing',
   t020891: 'sealing, China, Wenzhou',
+  t020923: 'sealing, China, Cangzhou',
   t020975: 'sealing, China, Shandong',
   t021075: 'sealing, China, Chengdu',
   t021265: 'sealing, China, Wuhan',
-  t021316: 'sealing, China, Yangzhou',
+  t021274: 'sealing, China, Shanghai',
   t021328: 'sealing, China, Dongguan',
-  t021339: 'sealing, China, Jiaxing',
   t021444: 'sealing, China, Guangzhou',
   t021483: 'sealing, China, Beijing',
   t021540: 'sealing, Germany, Frankfurt, @hsanjuan',
   t021583: 'sealing, China, Jiaxing',
-  t021616: 'sealing, China, Shanghai',
   t021710: 'sealing, China, Shijiazhuang',
   t021870: 'sealing, USA, Portland',
-  t022070: 'sealing, China, Jieyang',
-  t022072: 'sealing, China, Jieyang',
   t022132: 'sealing, China, Dongguan',
   t022227: 'sealing, China, Jiangsu',
+  t022261: 'sealing, China, Luzhou',
+  t022287: 'sealing, China, Dongguan',
   t022289: 'sealing, China, Mianyang',
+  t022333: 'sealing, China, Dongguan',
+  t022376: 'sealing, China, Dongguan',
+  t022512: 'sealing, Canada, Embrun',
   t022566: 'sealing, China, Nanchong',
   t022832: 'sealing, China',
   t022836: 'sealing, China, Chongqing',
@@ -182,60 +143,81 @@ const annotations = {
   t023001: 'sealing, China, Changsha',
   t023021: 'sealing, Korea, Yeongdeungpo-dong',
   t023108: 'sealing, China, Dongguan',
-  t023179: 'sealing, China, Fuzhou',
+  t023181: 'sealing, DNS:poseidon.technology',
   t023200: 'sealing, China, Shanghai',
   t023207: 'sealing, undefined',
   t023229: 'sealing, China, Shandong',
+  t023495: 'sealing, China, Beijing + USA, Portland',
+  t023526: 'sealing, China, Chongqing',
   t023661: 'sealing, China, Zhejiang',
+  t023678: 'sealing, China, Jiaxing',
   t023825: 'sealing, USA, Portland',
-  t023971: 'sealing, USA, @Brian Y',
   t023986: 'sealing, Korea, Seoul',
-  t024030: 'sealing, Korea, Gwangju',
 
   // Stuck
 
-  t02305: 'stuck, China, Dongguan', // cfa: about 4 hours
-  t02654: 'stuck, China, Shanghai', // cfa: about 4 hours
-  t02731: 'stuck, Singapore', // funds: about 4 hours
-  t03176: 'stuck, USA, San Mateo, Five Star-Helmsman&Heiben', // cfa: about 4 hours
-  t03364: 'stuck, China, Guangzhou', // cfa: about 4 hours
-  t07987: 'stuck, China, Beijing', // funds: about 4 hours
-  t08854: 'stuck, China, Dongguan', // cfa: about 4 hours
-  t09573: 'stuck, China, Xiamen', // cfa: about 4 hours
-  t09597: 'stuck, China, Shanghai', // cfa: about 4 hours
-  t010400: 'stuck, China, Shenyang', // cfa: about 4 hours
-  t010446: 'stuck, Netherlands', // funds: about 4 hours
-  t010512: 'stuck, China, Zhengzhou', // cfa: about 4 hours
-  t014324: 'stuck, Canada, Vancouver', // funds: about 4 hours
-  t015233: 'stuck, China, Nanjing', // cfa: about 4 hours
-  t015647: 'stuck, China, Shenzhen', // cfa: about 4 hours
-  t015751: 'stuck, Canada, Huron East', // cfa: about 4 hours
-  t015771: 'stuck, Brazil, Sao Paulo', // funds: about 4 hours
-  t016056: 'stuck, USA, Arlington', // cfa: about 4 hours
-  t016511: 'stuck, China, Beijing', // funds: about 4 hours
-  t017794: 'stuck, USA, Columbus', // funds: about 4 hours
-  t019024: 'stuck, China, Sichuan', // cfa: about 4 hours
-  t019104: 'stuck, Canada, Chambly', // cfa: about 4 hours
-  t019114: 'stuck, USA, Howell', // cfa: about 4 hours
-  t019362: 'stuck, China, Hangzhou', // funds: about 4 hours
-  t019645: 'stuck, Russia, St. Petersburg', // funds: about 4 hours
-  t020523: 'stuck, China, Suzhou', // xfr: about 4 hours
-  t020993: 'stuck, China, Hong Kong', // funds: about 4 hours
-  t021262: 'stuck, China, Shanghai', // cfa: about 4 hours
-  t021346: 'stuck, China, Shanghai', // cfa: about 4 hours
-  t021357: 'stuck, China, Shanghai', // cfa: about 4 hours
-  t022202: 'stuck, USA, Howell', // cfa: about 4 hours
-  t022737: 'stuck, Korea, Gangnum-gu', // cfa: about 4 hours
-  t022753: 'stuck, China, Hong Kong', // cfa: about 4 hours
-  t022780: 'stuck, Korea, Guri-si', // cfa: about 4 hours
-  t022787: 'stuck, Korea, Guri-si', // cfa: about 4 hours
-  t022913: 'stuck, Korea, Uiwang', // cfa: about 1 hour
-  t022976: 'stuck, Korea, Cheongju-si', // cfa: about 4 hours
-  t023210: 'stuck, China, Dongguan', // xfr: about 4 hours
-  t023501: 'stuck, China, Mianyang', // cfa: about 4 hours
-  t023518: 'stuck, China, Taiyuan', // cfa: about 4 hours
-  t023581: 'stuck, China, Hong Kong', // xfr: about 4 hours
-  t023826: 'stuck, USA, Germantown', // cfa: about 4 hours
+  t01240: 'stuck, Netherlands, HidNand', // cfa: 30 minutes
+  t01287: 'stuck, China, Jiaxing, MaiTian', // cfa: 27 minutes
+  t02301: 'stuck, USA', // cfa: 27 minutes
+  t02305: 'stuck, China, Dongguan', // cfa: 21 minutes
+  t02416: 'stuck, China, Guangdong, 星际无限', // cfa: 27 minutes
+  t02490: 'stuck, China, Fujian', // cfa: 18 minutes
+  t02492: 'stuck, China, Shenzhen', // cfa: 27 minutes
+  t02500: 'stuck, Korea, Seongnam-si', // cfa: 27 minutes
+  t02654: 'stuck, China, Shanghai', // cfa: 21 minutes
+  t02668: 'stuck, China, Chengdu', // cfa: 18 minutes
+  t03176: 'stuck, USA, San Mateo, Five Star-Helmsman&Heiben', // cfa: 21 minutes
+  t03223: 'stuck, USA', // cfa: 27 minutes
+  t03345: 'stuck, China, Fuzhou, chh', // cfa: 26 minutes
+  t03364: 'stuck, China, Guangzhou', // cfa: 21 minutes
+  t08073: 'stuck, China, Qiqihar, QY7TT', // cfa: 26 minutes
+  t08094: 'stuck, China, Guangzhou, dongshao', // cfa: 29 minutes
+  t08346: 'stuck, Korea', // cfa: 25 minutes
+  t08854: 'stuck, China, Dongguan', // cfa: 21 minutes
+  t09573: 'stuck, China, Xiamen', // funds: 21 minutes
+  t09597: 'stuck, China, Shanghai', // cfa: 21 minutes
+  t010048: 'stuck, China, Shanghai', // cfa: 29 minutes
+  t010088: 'stuck, DNS:purumine.com', // cfa: 18 minutes
+  t010400: 'stuck, China, Shenyang', // cfa: 21 minutes
+  t010505: 'stuck, China, Wuhan', // cfa: 18 minutes
+  t010523: 'stuck, China, Beijing', // cfa: 25 minutes
+  t015233: 'stuck, China, Nanjing', // cfa: 21 minutes
+  t015647: 'stuck, China, Shenzhen', // cfa: 21 minutes
+  t015655: 'stuck, Korea, Geumcheon-gu', // cfa: 18 minutes
+  t015751: 'stuck, Canada, Huron East', // cfa: 21 minutes
+  t015753: 'stuck, China, Guyuan', // funds: 18 minutes
+  t015771: 'stuck, Brazil, Sao Paulo', // funds: 21 minutes
+  t016056: 'stuck, USA, Arlington', // cfa: 21 minutes
+  t016511: 'stuck, China, Beijing', // funds: 21 minutes
+  t017794: 'stuck, USA, Columbus', // funds: 21 minutes
+  t019024: 'stuck, China, Sichuan', // cfa: 20 minutes
+  t019099: 'stuck, China, Hong Kong', // cfa: 28 minutes
+  t019104: 'stuck, Canada, Chambly', // cfa: 21 minutes
+  t019114: 'stuck, USA, Howell', // cfa: 21 minutes
+  t019362: 'stuck, China, Hangzhou', // funds: 21 minutes
+  t019437: 'stuck, Korea, Guro-gu', // cfa: 28 minutes
+  t020398: 'stuck, China, Zhangjiakou', // cfa: 17 minutes
+  t020436: 'stuck, China, Beijing', // cfa: 28 minutes
+  t021255: 'stuck, China, Suzhou + Netherlands', // cfa: 28 minutes
+  t021262: 'stuck, China, Shanghai', // cfa: 20 minutes
+  t021316: 'stuck, China, Yangzhou', // cfa: 23 minutes
+  t021339: 'stuck, China, Jiaxing', // cfa: 23 minutes
+  t021346: 'stuck, China, Shanghai', // cfa: 19 minutes
+  t021357: 'stuck, China, Shanghai', // cfa: 19 minutes
+  t021616: 'stuck, China, Shanghai', // cfa: 23 minutes
+  t022070: 'stuck, China, Jieyang', // cfa: 23 minutes
+  t022072: 'stuck, China, Jieyang', // cfa: 23 minutes
+  t022202: 'stuck, USA, Howell', // cfa: 19 minutes
+  t022753: 'stuck, China, Hong Kong', // cfa: 19 minutes
+  t022976: 'stuck, Korea, Cheongju-si', // cfa: 19 minutes
+  t023179: 'stuck, China, Fuzhou', // cfa: 22 minutes
+  t023501: 'stuck, China, Mianyang', // cfa: 19 minutes
+  t023581: 'stuck, China, Hong Kong', // cfa: 19 minutes
+  t023647: 'stuck, Korea, Gangseo-gu', // cfa: 28 minutes
+  t023649: 'stuck, Korea, Seoul', // cfa: 28 minutes
+  t023826: 'stuck, USA, Germantown', // cfa: 19 minutes
+  t023971: 'stuck, USA, @Brian Y', // cfa: 19 minutes
+  t024030: 'stuck, Korea, Gwangju', // cfa: 22 minutes
 
   // Busy
 
@@ -243,78 +225,78 @@ const annotations = {
 
   // Min Size
 
+  t023490: 'min-size, Ukraine, Kyiv', // 131072 < 1048576
+
   // Min Ask
+
+  t02388: 'min-ask, Netherlands, Amersfoort, Kroketje', // 2000000 < 12207031
+  t02576: 'min-ask, Denmark, Gjerlev, BenjaminH', // 2000000 < 12207031
+  t08403: 'min-ask, UK, Lower Slaughter', // 2000000 < 10986328
+  t010507: 'min-ask, China, Hangzhou', // 2000000 < 12207031
+  t010512: 'min-ask, China, Zhengzhou', // 2000000 < 12207031
+  t010617: 'min-ask, Canada, Surrey, @feiya200', // 2000000 < 12207031
+  t015747: 'min-ask, Japan, Setagaya-ku', // 2000000 < 12207031
+  t022855: 'min-ask, Finland, Helsinki', // 2000000 < 12207031
+  t022913: 'min-ask, Korea, Uiwang', // 2000000 < 12207031
+  t023467: 'min-ask, Norway, Oslo', // 2000000 < 12207031
 
   // Error
 
-  t01247: 'error, Canada, Montreal, BigChungus™', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 2.505045049553825355 FIL, balance: 2.406283655736804121 FIL): validation failure
-  t01277: 'error, Sweden, Stockholm, tvsthlm', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 2.332922919582373079 FIL, balance: 2.277168986916955886 FIL): validation failure
+  t01247: 'error, Canada, Montreal, BigChungus™', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 2.505045049561761655 FIL, balance: 2.406283655736804121 FIL): validation failure
+  t01277: 'error, Sweden, Stockholm, tvsthlm', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 2.332922919582433757 FIL, balance: 2.277168986916955886 FIL): validation failure
+  t02299: 'error, China, Dongguan, Yolo', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.099999999981321216 FIL, balance: 0.048366213731889477 FIL): not enough funds to execute transaction
   t02417: 'error, China, Liaoning', // stream reset
-  t02490: 'error, China, Fujian', // AddPiece failed: adding piece to sector: writing piece: creating unsealed sector file: openning partial file '/lotus_data/unsealed/s-t02490-43393': open /lotus_data/unsealed/s-t02490-43393: no such file or directory
-  t02540: 'error, USA, Rochester', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 2.205578138750897895 FIL, balance: 2.118026249139897479 FIL): validation failure
+  t02423: 'error, Ukraine, Kyiv, igowreck', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.09999999998966586 FIL, balance: 0.080360431248002492 FIL): not enough funds to execute transaction
+  t02540: 'error, USA, Rochester', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 2.205578138770151259 FIL, balance: 2.118026249139897479 FIL): validation failure
   t02614: 'error, Singapore', // stream reset
-  t02668: 'error, China, Chengdu', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzacecjdzuuylrciqsatw3ybduudhfecb23ptwar4insgfuvxn7psblhg n 298411, TS: bafy2bzaceanoreulobukc6su2svkgkyujm3matxpytwdxwhf6htltu3bgudd6 n298411)
-  t03002: 'error, China, Chongqing', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.09999999994949418 FIL, balance: 0.085877990901195787 FIL): not enough funds to execute transaction
-  t04443: 'error, China, Shanghai, 罗良科技', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.09999999998116722 FIL, balance: 0.098830713785663743 FIL): not enough funds to execute transaction
+  t02731: 'error, Singapore', // stream reset
+  t03002: 'error, China, Chongqing', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.099999999964536376 FIL, balance: 0.085877990901195787 FIL): not enough funds to execute transaction
+  t03347: 'error, China, Shenzhen', // stream reset
+  t07819: 'error, China, Wuxi, YC--wuxi', // deal failed: (State=11) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 1.499999999591178123 FIL, balance: 1.444134058926145448 FIL): validation failure
+  t07824: 'error, China, Shanghai', // stream reset
   t07944: 'error, China, Hangzhou, SupremeTreasure', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: context deadline exceeded
-  t08240: 'error, Russia, Novosibirsk, Rabinovitch', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 2.496745060680960105 FIL, balance: 2.493819289825287558 FIL): validation failure
+  t07987: 'error, China, Beijing', // stream reset
+  t08240: 'error, Russia, Novosibirsk, Rabinovitch', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 2.496745060692222177 FIL, balance: 2.493819289825287558 FIL): validation failure
   t08532: 'error, USA', // deal failed: (State=26) error calling node: publishing deal: GasEstimateMessageGas error: estimating gas used: message execution failed: exit SysErrSenderStateInvalid(2), reason: actor balance less than needed: 0 FIL < 0.00000101 FIL (RetCode=2)
+  t09002: 'error, Singapore', // EOF
   t09689: 'error, USA, Portland', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: context deadline exceeded
   t010063: 'error, China, Mianyang', // stream reset
-  t010088: 'error, DNS:purumine.com', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: failed to get messages for block: loading bls messages for block: failed to get message: (bafy2bzacedjfr6gnkqb5epdw5ccsmj43cgxj62xtbtggbbv6xattl27m3hc2y):0: datastore closed
-  t010493: 'error, China, Shanghai', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
-  t010498: 'error, China, Shenzhen', // stream reset
+  t010493: 'error, China, Shanghai', // stream reset
   t010501: 'error, China, Hangzhou', // stream reset
-  t010505: 'error, China, Wuhan', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   t010528: 'error, China, Chongqing', // stream reset
-  t010617: 'error, Canada, Surrey, @feiya200', // stream reset
-  t015655: 'error, Korea, Geumcheon-gu', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  t014324: 'error, Canada, Vancouver', // stream reset
   t015709: 'error, China, Hefei', // EOF
-  t015747: 'error, Japan, Setagaya-ku', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 4.475242864302681297 FIL, balance: 4.415997798166193855 FIL): validation failure
-  t015753: 'error, China, Guyuan', // stream reset
   t015763: 'error, South Africa, Cape Town', // EOF
-  t015941: 'error, Ukraine, Kyiv', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.09999999996620049 FIL, balance: 0.05545600258706496 FIL): not enough funds to execute transaction
-  t016303: 'error, USA, Boardman', // stream reset
-  t016304: 'error, USA, Boardman', // stream reset
-  t016305: 'error, USA, Boardman', // stream reset
-  t016306: 'error, USA, Boardman', // stream reset
-  t016309: 'error, USA, Boardman', // stream reset
+  t015941: 'error, Ukraine, Kyiv', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.099999999988009265 FIL, balance: 0.05545600258706496 FIL): not enough funds to execute transaction
   t017795: 'error, USA, Columbus', // stream reset
   t019174: 'error, UK, Halifax', // stream reset
+  t019645: 'error, Russia, St. Petersburg', // stream reset
   t019820: 'error, Germany', // stream reset
-  t020398: 'error, China, Zhangjiakou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 2.549999999236064215 FIL, balance: 2.454658610834926047 FIL): validation failure
-  t020608: 'error, Russia', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
-  t020904: 'error, Korea, Uijeongbu-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 2.521018072419405622 FIL, balance: 2.50776403258638734 FIL): validation failure
-  t021479: 'error, China, Qingdao', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzaceawycqazoz4hbdpafqh7olmsjda35oec3rte5wen7qsmio4cnqysm n 173204, TS: bafy2bzacealxk6uqhunizo4ypwjpv52qswk2xy2sehe4uyjrsfaev65wa7kn2 n173204)
-  t022031: 'error, China, Maoming', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 2.169939336341730635 FIL, balance: 2.094691719172155714 FIL): validation failure
+  t020904: 'error, Korea, Uijeongbu-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 2.521018072417059192 FIL, balance: 2.50776403258638734 FIL): validation failure
+  t020993: 'error, China, Hong Kong', // stream reset
+  t021479: 'error, China, Qingdao', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzacebnkiaiyzzxby3ez4tacoebqkxjfb75vpw5iw36avrgpgadchzakq n 179862, TS: bafy2bzacebkrhscs5qpiattuqk4k74jw4rhxdvf6n2i3utq5rzrel3b33iczi n179862)
+  t021535: 'error, China, Chengdu', // stream reset
   t022089: 'error, China, Beijing', // stream reset
   t022119: 'error, USA, Lovettsville', // deal failed: (State=26) deal data verification failed: error generating CommP: failed to build treeCaused by:    0: failed to create data store    1: No such file or directory (os error 2)
   t022125: 'error, China, Shenzhen', // stream reset
   t022326: 'error, China, Zhongshan', // EOF
-  t022333: 'error, China, Dongguan', // stream reset
-  t022405: 'error, Russia', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.099999999968397525 FIL, balance: 0.078044965033971855 FIL): not enough funds to execute transaction
-  t022755: 'error, China, Shenzhen', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.09999999998699615 FIL, balance: 0.098548316249065696 FIL): not enough funds to execute transaction
+  t022405: 'error, Russia', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.099999999978747176 FIL, balance: 0.078044965033971855 FIL): not enough funds to execute transaction
+  t022737: 'error, Korea, Gangnum-gu', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: context deadline exceeded
+  t022755: 'error, China, Shenzhen', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.099999999999818168 FIL, balance: 0.098548316249065696 FIL): not enough funds to execute transaction
+  t022780: 'error, Korea, Guri-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 0.704237601759362738 FIL, balance: 0.622727779810265647 FIL): validation failure
+  t022787: 'error, Korea, Guri-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 0.704237601772980398 FIL, balance: 0.622727779810265647 FIL): validation failure
   t022820: 'error, China, Guangdong', // stream reset
-  t022855: 'error, Finland, Helsinki', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.09999999996111125 FIL, balance: 0.017518185007940305 FIL): not enough funds to execute transaction
-  t023013: 'error, China, Hong Kong', // stream reset
-  t023202: 'error, China, Wuxi', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 1.046873228091643513 FIL, balance: 1.016966457438648838 FIL): validation failure
-  t023467: 'error, Norway, Oslo', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 1.519340475612209329 FIL, balance: 1.426440803275827437 FIL): validation failure
+  t023202: 'error, China, Wuxi', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 1.046873228053628138 FIL, balance: 1.016966457438648838 FIL): validation failure
+  t023210: 'error, China, Dongguan', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.09999999999424557 FIL, balance: 0.012317318359317456 FIL): not enough funds to execute transaction
+  t023518: 'error, China, Taiyuan', // stream reset
   t023530: 'error, China, Shanghai', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: protocol not supported
   t023583: 'error, Korea, Guri-si', // stream reset
-  t023971: 'error, USA, @Brian Y', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: protocol not supported
 
   // Dial backoff
 
-  t08293: 'backoff, China, Xinxiang',
-  t014241: 'backoff, Norway, Borgen',
-  t014640: 'backoff, Hungary',
-  t015662: 'backoff, China, Beijing',
-  t015733: 'backoff, China, Ordos',
-  t019094: 'backoff, Brazil, Sao Paulo',
   t019133: 'backoff, UK, Mansfield',
   t020631: 'backoff, China, Zhejiang',
-  t022967: 'backoff, Korea, Seoul',
-  t023654: 'backoff, China, Hong Kong',
+  t022031: 'backoff, China, Maoming',
 
   // Rejected
 
@@ -328,6 +310,8 @@ const annotations = {
   t01280: 'rejected, China, Wuxi, 了凡超算',
   t01289: 'rejected, China, Hangzhou + USA',
   t01291: 'rejected, Sweden, Stockholm, tvsthlm', // sh: 1: dealfilter.pl: not found
+  t01782:
+    'rejected, China, Hong Kong + Singapore + USA, Portland, hellofil.com', // Possible attempt to separate words with commas at /hdd/lotusminer/dealfilter.pl line 16.
   t02303: 'rejected, China, Hong Kong + Jiangsu + Netherlands',
   t02420: 'rejected, China, Wuhan',
   t02422: "rejected, China, Xi'an",
@@ -432,6 +416,11 @@ const annotations = {
   t015925: 'rejected, China, Ordos',
   t015927: 'rejected, USA, East Islip', // no online
   t015942: 'rejected, China, Ningbo',
+  t016303: 'rejected, USA, Boardman', // This miner is for testing purposes only, it is no longer part of the slingshot competition
+  t016304: 'rejected, USA, Boardman', // This miner is for testing purposes only, it is no longer part of the slingshot competition
+  t016305: 'rejected, USA, Boardman', // This miner is for testing purposes only, it is no longer part of the slingshot competition
+  t016306: 'rejected, USA, Boardman', // This miner is for testing purposes only, it is no longer part of the slingshot competition
+  t016309: 'rejected, USA, Boardman', // This miner is for testing purposes only, it is no longer part of the slingshot competition
   t016398: 'rejected, Singapore',
   t017665: 'rejected, China, Shenyang',
   t018501: 'rejected, China, Beijing', // piece size less than minimum required size: 131072 < 134217728
@@ -447,6 +436,7 @@ const annotations = {
   t020522: 'rejected, Singapore',
   t020604: 'rejected, Singapore',
   t020648: 'rejected, China, Shenzhen',
+  t020608: 'rejected, Russia', // no online
   t020747: 'rejected, China, Xiamen', // sh: 1: dealfilter.pl: not found
   t020928: 'rejected, China, Deyang + Singapore', // sh: 1: /lotus/lotus/script/dealfilter.pl: not found
   t021525: 'rejected, China, Guangdong',
@@ -570,6 +560,7 @@ const annotations = {
   t03702: 'dial, China, Shenzhen + Singapore, LianDongJingLing', // * [/ip4/218.17.190.89/tcp/10240] dial tcp4 0.0.0.0:40391->218.17.190.89:10240: i/o timeout  * [/ip4/8.209.113.21/tcp/7002] dial tcp4 0.0.0.0:40391->8.209.113.21:7002: i/o timeout
   t03764: 'dial, China, Beijing, foobar', // * [/ip4/123.115.217.138/tcp/24002] dial tcp4 0.0.0.0:40391->123.115.217.138:24002: i/o timeout
   t03766: 'dial, China, Weifang', // * [/ip4/111.17.220.237/tcp/6666] dial tcp4 111.17.220.237:6666: connect: connection refused
+  t04443: 'dial, China, Shanghai, 罗良科技', // * [/ip4/116.225.76.185/tcp/29847] dial tcp4 116.225.76.185:29847: connect: connection refused
   t04921: 'dial, China, Shanghai', // * [/ip4/121.46.237.2/tcp/51818] dial tcp4 0.0.0.0:40391->121.46.237.2:51818: i/o timeout
   t06775: 'dial, China, Shenzhen, IPSB&CAAP', // * [/ip4/103.39.218.169/tcp/2346] dial tcp4 103.39.218.169:2346: connect: connection refused
   t07451: 'dial, China, Hangzhou', // * [/ip4/221.12.20.5/tcp/6000] dial tcp4 0.0.0.0:40391->221.12.20.5:6000: i/o timeout
@@ -617,6 +608,7 @@ const annotations = {
   t08243: 'dial, USA, Queens', // * [/ip4/108.41.171.148/tcp/55243] dial tcp4 0.0.0.0:40391->108.41.171.148:55243: i/o timeout  * [/ip4/108.41.171.148/tcp/55242] dial tcp4 0.0.0.0:40391->108.41.171.148:55242: i/o timeout  * [/ip4/108.41.171.148/tcp/55244] dial tcp4 0.0.0.0:40391->108.41.171.148:55244: i/o timeout  * [/ip4/108.41.171.148/tcp/55241] dial tcp4 0.0.0.0:40391->108.41.171.148:55241: i/o timeout
   t08285: 'dial, Latvia, Riga, stander', // * [/ip4/109.73.97.103/tcp/10240] dial tcp4 0.0.0.0:40391->109.73.97.103:10240: i/o timeout
   t08289: 'dial, Canada, Embrun', // * [/ip4/148.59.149.162/tcp/10240] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWR8hBuB593YUujHBYAT9Zp48FgfzYeLbPdqow59ZF3dFg, but remote key matches 12D3KooWKi8JTyGdSAL1TFpdF6gmyjXeMeknqNWT6Eft1cxrSzAq
+  t08293: 'dial, China, Xinxiang', // * [/ip4/27.50.142.73/tcp/1347] dial tcp4 27.50.142.73:1347: connect: connection refused
   t08295: 'dial, China, Suzhou, IPFS Cloud', // * [/ip4/222.92.5.150/tcp/40699] dial tcp4 0.0.0.0:40391->222.92.5.150:40699: i/o timeout
   t08301: 'dial, Japan, Setagaya-ku, MEIK', // * [/ip4/126.159.22.156/tcp/50320] dial tcp4 0.0.0.0:40391->126.159.22.156:50320: i/o timeout
   t08330: 'dial, China, Chengdu, oursoft', // * [/ip4/125.69.0.37/tcp/55009] dial tcp4 125.69.0.37:55009: connect: connection refused
@@ -736,6 +728,7 @@ const annotations = {
   t010424: 'dial, Australia, Sydney', // * [/ip4/43.241.189.214/tcp/39438] dial tcp4 0.0.0.0:40391->43.241.189.214:39438: i/o timeout
   t010449: 'dial, China, Jiangmen', // * [/ip4/183.36.3.160/tcp/60007] dial tcp4 183.36.3.160:60007: connect: connection refused
   t010496: 'dial, China, Guangzhou', // * [/ip4/183.2.157.213/tcp/666] dial tcp4 183.2.157.213:666: connect: connection refused
+  t010498: 'dial, China, Shenzhen', // * [/ip4/183.60.90.5/tcp/21735] dial tcp4 183.60.90.5:21735: connect: connection refused
   t010513: 'dial, China, Chongqing', // * [/ip4/117.23.58.108/tcp/21736] dial tcp4 117.23.58.108:21736: connect: connection refused  * [/ip4/117.23.58.107/tcp/21735] dial tcp4 117.23.58.107:21735: connect: connection refused
   t010516: 'dial, Brazil, Sao Paulo', // * [/ip4/18.230.25.100/tcp/18888] dial tcp4 0.0.0.0:40391->18.230.25.100:18888: i/o timeout
   t010527: 'dial, China, Shanghai', // * [/ip4/116.228.53.133/tcp/10240] failed to negotiate security protocol: unexpected EOF
@@ -753,6 +746,7 @@ const annotations = {
   t010609: 'dial, China, Fuzhou', // * [/ip4/182.99.0.100/tcp/36666] dial tcp4 0.0.0.0:40391->182.99.0.100:36666: i/o timeout
   t010613: 'dial, Canada, Waterloo', // * [/ip4/99.250.201.0/tcp/20002] dial tcp4 0.0.0.0:40391->99.250.201.0:20002: i/o timeout
   t014230: 'dial, China, Fuzhou', // * [/ip4/185.23.181.67/tcp/23450] dial tcp4 0.0.0.0:40391->185.23.181.67:23450: i/o timeout
+  t014241: 'dial, Norway, Borgen', // * [/ip4/0.0.0.0/tcp/1347] dial tcp4 0.0.0.0:1347: connect: connection refused  * [/ip4/79.160.78.193/tcp/1347] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWNczL8NwzKEd2Np4uiDs42GB3pKcmoABTdM8JJ8v9MRGB, but remote key matches 12D3KooWDaYp2U3XiDeYvXVruQ5BwGUxwobQA62fASdvZGZVb4n8
   t014246: 'dial, China, Shenzhen', // * [/ip4/103.40.249.212/tcp/44299] dial tcp4 0.0.0.0:40391->103.40.249.212:44299: i/o timeout
   t014248: 'dial, Turkey', // * [/ip4/185.23.180.67/tcp/23450] dial tcp4 0.0.0.0:40391->185.23.180.67:23450: i/o timeout
   t014259: 'dial, China, Fuzhou', // * [/ip4/45.192.184.193/tcp/23450] dial tcp4 0.0.0.0:40391->45.192.184.193:23450: i/o timeout
@@ -786,6 +780,7 @@ const annotations = {
   t014609: 'dial, China, Fuzhou', // * [/ip4/182.99.0.109/tcp/23450] dial tcp4 0.0.0.0:40391->182.99.0.109:23450: i/o timeout
   t014632: 'dial, Canada', // * [/ip4/148.59.149.162/tcp/10240] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWGeBVKYsVXc7PcMCKtovVv5wztHSLmfMwWFKADV8wbj26, but remote key matches 12D3KooWKi8JTyGdSAL1TFpdF6gmyjXeMeknqNWT6Eft1cxrSzAq
   t014634: 'dial, USA, Boardman', // * [/ip4/54.148.63.7/tcp/10240] dial tcp4 0.0.0.0:40391->54.148.63.7:10240: i/o timeout
+  t014640: 'dial, Hungary', // * [/ip4/87.229.53.110/tcp/44163] dial tcp4 0.0.0.0:40391->87.229.53.110:44163: i/o timeout
   t014644: 'dial, USA, Berkeley', // * [/ip4/73.158.16.48/tcp/30390] dial tcp4 0.0.0.0:40391->73.158.16.48:30390: i/o timeout
   t014683: 'dial, China, Shenzhen', // * [/ip4/103.220.72.230/tcp/41113] failed to negotiate security protocol: read tcp4 10.0.1.52:40391->103.220.72.230:41113: read: connection reset by peer
   t014744: 'dial, China, Taiyuan', // * [/ip4/1.71.191.196/tcp/33411] dial tcp4 0.0.0.0:40391->1.71.191.196:33411: i/o timeout
@@ -797,10 +792,12 @@ const annotations = {
   t015231: 'dial, China, Wuxi', // * [/ip4/193.118.43.158/tcp/7090] failed to negotiate security protocol: EOF
   t015642: 'dial, China, Fuzhou', // * [/ip4/220.176.125.20/tcp/23450] dial tcp4 0.0.0.0:40391->220.176.125.20:23450: i/o timeout
   t015643: 'dial, China, Ordos', // * [/ip4/47.57.188.137/tcp/12317] dial tcp4 0.0.0.0:40391->47.57.188.137:12317: i/o timeout
+  t015662: 'dial, China, Beijing', // * [/ip4/203.93.121.130/tcp/38886] dial tcp4 203.93.121.130:38886: i/o timeout
   t015685: 'dial, China, Shanghai', // * [/ip4/222.64.141.185/tcp/40321] dial tcp4 222.64.141.185:40321: connect: connection refused
   t015714: 'dial, China, Ordos', // * [/ip4/47.57.188.137/tcp/12318] dial tcp4 0.0.0.0:40391->47.57.188.137:12318: i/o timeout
   t015720: 'dial, China, Ningbo', // * [/ip4/149.28.89.24/tcp/7102] dial tcp4 149.28.89.24:7102: connect: connection refused  * [/ip4/104.156.230.123/tcp/7104] dial tcp4 0.0.0.0:40391->104.156.230.123:7104: i/o timeout  * [/ip4/45.77.72.195/tcp/7103] dial tcp4 0.0.0.0:40391->45.77.72.195:7103: i/o timeout  * [/ip4/45.32.19.57/tcp/7106] dial tcp4 0.0.0.0:40391->45.32.19.57:7106: i/o timeout  * [/ip4/155.138.144.135/tcp/7107] dial tcp4 0.0.0.0:40391->155.138.144.135:7107: i/o timeout  * [/ip4/45.77.89.14/tcp/7105] dial tcp4 0.0.0.0:40391->45.77.89.14:7105: i/o timeout  * [/ip4/141.164.50.170/tcp/7201] dial tcp4 0.0.0.0:40391->141.164.50.170:7201: i/o timeout
   t015732: 'dial, USA, Portland', // * [/ip4/47.254.31.111/tcp/23456] dial tcp4 0.0.0.0:40391->47.254.31.111:23456: i/o timeout  * [/ip4/47.254.145.29/tcp/23456] dial tcp4 0.0.0.0:40391->47.254.145.29:23456: i/o timeout
+  t015733: 'dial, China, Ordos', // * [/ip4/47.57.188.137/tcp/12500] dial tcp4 0.0.0.0:40391->47.57.188.137:12500: i/o timeout
   t015742: 'dial, China, Ningbo', // * [/ip4/149.28.89.24/tcp/7002] dial tcp4 149.28.89.24:7002: connect: connection refused  * [/ip4/104.156.230.123/tcp/7004] dial tcp4 0.0.0.0:40391->104.156.230.123:7004: i/o timeout  * [/ip4/45.32.19.57/tcp/7006] dial tcp4 0.0.0.0:40391->45.32.19.57:7006: i/o timeout  * [/ip4/45.77.72.195/tcp/7003] dial tcp4 0.0.0.0:40391->45.77.72.195:7003: i/o timeout  * [/ip4/155.138.144.135/tcp/7007] dial tcp4 0.0.0.0:40391->155.138.144.135:7007: i/o timeout  * [/ip4/141.164.50.170/tcp/7001] dial tcp4 0.0.0.0:40391->141.164.50.170:7001: i/o timeout  * [/ip4/45.77.89.14/tcp/7005] dial tcp4 0.0.0.0:40391->45.77.89.14:7005: i/o timeout
   t015756: 'dial, Finland, Helsinki', // * [/ip4/95.216.99.39/tcp/46717] dial tcp4 0.0.0.0:40391->95.216.99.39:46717: i/o timeout
   t015757: 'dial, China, Hangzhou', // * [/ip4/103.46.128.45/tcp/57670] failed to negotiate security protocol: context deadline exceeded
@@ -924,6 +921,7 @@ const annotations = {
   t019073: 'dial, Germany, Frankfurt', // * [/ip4/18.157.80.183/tcp/30005] dial tcp4 0.0.0.0:40391->18.157.80.183:30005: i/o timeout
   t019087: 'dial, South Africa, Johannesburg', // * [/ip4/152.32.140.119/tcp/41116] failed to negotiate security protocol: EOF
   t019091: 'dial, China, Chengdu', // * [/ip4/182.131.4.194/tcp/10080] dial tcp4 182.131.4.194:10080: connect: connection refused
+  t019094: 'dial, Brazil, Sao Paulo', // * [/ip4/177.71.173.122/tcp/8888] dial tcp4 0.0.0.0:40391->177.71.173.122:8888: i/o timeout
   t019097: 'dial, Russia, Irkutsk', // * [/ip4/90.188.227.20/tcp/46717] dial tcp4 90.188.227.20:46717: i/o timeout
   t019145: 'dial, Brazil, Sao Paulo', // * [/ip4/54.232.153.175/tcp/16088] dial tcp4 0.0.0.0:40391->54.232.153.175:16088: i/o timeout
   t019150: 'dial, China, Fuzhou', // * [/ip4/220.176.125.4/tcp/23450] dial tcp4 0.0.0.0:40391->220.176.125.4:23450: i/o timeout
@@ -948,6 +946,7 @@ const annotations = {
   t019551: 'dial, UK', // * [/ip6/2a04:7340:0:1002::205/tcp/1347] dial tcp6 [2a04:7340:0:1002::205]:1347: connect: network is unreachable  * [/ip4/185.37.216.70/tcp/1347] dial tcp4 185.37.216.70:1347: connect: connection refused
   t019596: 'dial, USA, Queens', // * [/ip4/24.90.181.106/tcp/24002] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWJ7XhEorySoQkEyajCdcsr9qcesafyFqS8apNeWwF26Ke, but remote key matches 12D3KooWHcpqZ9Ps8cXHk2JaQVqAhjC7cPiLM14YKTmfAXT1LN3M
   t019637: 'dial, China, Nanchang', // * [/ip4/220.176.125.4/tcp/23450] dial tcp4 0.0.0.0:40391->220.176.125.4:23450: i/o timeout
+  t019638: 'dial, Germany, Frankfurt', // * [/ip4/54.255.34.95/tcp/30005] dial tcp4 0.0.0.0:40391->54.255.34.95:30005: i/o timeout
   t019660: 'dial, South Korea, Cheonan', // * [/ip4/112.167.204.88/tcp/10241] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWFpprephiSDBSbp4T3zQ4LwZHpzDjWNAgDwfhZ9yFFnB3, but remote key matches 12D3KooWB3P21Rppp5Z1Wh4iEwqnMic7Z8wuaFtbCseH88F2ZNCw
   t019710: 'dial, Australia, Sydney', // * [/ip4/13.55.45.217/tcp/27002] dial tcp4 0.0.0.0:40391->13.55.45.217:27002: i/o timeout
   t019779: 'dial, China, Xuancheng', // * [/ip4/117.71.104.68/tcp/10000] dial tcp4 117.71.104.68:10000: connect: connection refused
@@ -992,12 +991,14 @@ const annotations = {
   t022364: 'dial, Korea, Jungang-gu', // * [/ip4/125.129.37.73/tcp/10241] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWPeUhT58UnaGom7QL13Hr45ij7yHzvAgrNQoEyjyyPG4o, but remote key matches 12D3KooWLrJH5TW2fnh6Z5JFq3mNX34CXHNsEhSXzBCsnbK3GBSV
   t022518: 'dial, DNS:poseidon.technology', // * [/ip4/61.230.3.99/tcp/24000] dial tcp4 61.230.3.99:24000: connect: connection refused
   t022687: 'dial, China, Chengdu', // * [/ip4/182.131.4.194/tcp/10080] dial tcp4 182.131.4.194:10080: connect: connection refused
+  t022967: 'dial, Korea, Seoul', // * [/ip4/218.144.46.55/tcp/24001] dial tcp4 218.144.46.55:24001: connect: connection refused
   t023016: 'dial, NR', // * [/ip4/10.6.1.121/tcp/61121] dial tcp4 0.0.0.0:40391->10.6.1.121:61121: i/o timeout
   t023190: 'dial, China, Hefei', // * [/ip4/36.33.216.70/tcp/10240] dial tcp4 36.33.216.70:10240: connect: no route to host
   t023205: 'dial, NR', // * [/ip4/10.10.33.154/tcp/14567] dial tcp4 0.0.0.0:40391->10.10.33.154:14567: i/o timeout
   t023549: 'dial, China, Zhejiang', // * [/ip4/47.102.202.230/tcp/5472] failed to negotiate security protocol: EOF
   t023565: 'dial, China, Fuzhou', // * [/ip4/220.176.125.100/tcp/23450] dial tcp4 0.0.0.0:40391->220.176.125.100:23450: i/o timeout
   t023586: 'dial, USA, Germantown', // * [/ip4/96.255.216.221/tcp/23432] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWKycqajq8JbTtT68So2eNLu2cdxTABmBxY4eQKYoSra3y, but remote key matches 12D3KooWHugZC8nLQ9P2A9gE5GSjVUaqWuiTjgWKrXynR623xxQF
+  t023654: 'dial, China, Hong Kong', // * [/ip4/103.100.152.118/tcp/24001] dial tcp4 103.100.152.118:24001: connect: connection refused
   t023674: 'dial, China, Fuzhou', // * [/ip4/220.176.125.99/tcp/23450] dial tcp4 220.176.125.99:23450: connect: connection refused
 
   // XNR (Not routable, tested)
@@ -1449,6 +1450,7 @@ const annotations = {
   t022930: 'xnr, NR',
   t022970: 'xnr, NR',
   t022996: 'xnr, NR',
+  t023013: 'xnr, China, Hong Kong',
   t023159: 'xnr, NR',
   t023198: 'xnr, NR',
   t023219: 'xnr, NR',

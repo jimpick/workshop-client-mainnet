@@ -73,6 +73,7 @@ function DealHistory ({ dealHistoryData, height }) {
 }
 
 const buckets = [
+  'retest',
   'active',
   'active-sealing',
   'sealing',
@@ -149,10 +150,6 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
     if (/Provider message: deal rejected: false/.test(dealMessage)) {
       return ['rejected', '']
     }
-    const matchRejected = dealMessage.match(/deal rejected: (.*)/)
-    if (matchRejected) {
-      return ['rejected', matchRejected[1].trim()]
-    }
     const matchDial = dealMessage.match(/all dials failed (.*)/)
     if (matchDial) {
       return ['dial', matchDial[1].trim()]
@@ -160,9 +157,17 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
     if (/err: routing: not found/.test(dealMessage)) {
       return ['xnr', '']
     }
-    const matchMinAsk = dealMessage.match(/storage price per epoch less than asking price (.*)/)
+    const matchMinSize = dealMessage.match(/piece size less than minimum required size: (.*)/)
+    if (matchMinSize) {
+      return ['min-size', matchMinSize[1].trim()]
+    }
+    const matchMinAsk = dealMessage.match(/storage price per epoch less than asking price: (.*)/)
     if (matchMinAsk) {
       return ['min-ask', matchMinAsk[1].trim()]
+    }
+    const matchRejected = dealMessage.match(/deal rejected: (.*)/)
+    if (matchRejected) {
+      return ['rejected', matchRejected[1].trim()]
     }
     if (/dial backoff/.test(dealMessage)) {
       return ['backoff', '']
