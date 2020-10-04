@@ -12,7 +12,7 @@ const annotations = {
   t02405: 'retest, China, Shenzhen',
   t02415: 'retest, China, Hong Kong',
   t02576: 'retest, Denmark, Gjerlev, BenjaminH',
-  t02619: 'active-sealing, China, Beijing, Blockcasting',
+  t02619: 'retest, China, Beijing, Blockcasting',
   t03131: 'retest, China, Changsha',
   t03134: 'active-sealing, China, Cangzhou, 乔木信息',
   t03143: 'retest, China, Shijiazhuang + Hong Kong',
