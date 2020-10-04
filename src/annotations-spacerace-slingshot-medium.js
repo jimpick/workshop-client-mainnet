@@ -155,9 +155,7 @@ const annotations = {
 
   t01238: 'stuck-cfa, Vietnam, Hanoi, FILECOIN-VIETNAM', // 10.04: 254 MiB, 0.012995375 FIL
   t02387: 'stuck-cfa, Canada, Brampton, NBFS Canada', // 10.04: 254 MiB, 0.0000001299395 FIL
-  t07919: 'stuck-cfa, China, Beijing, Shanghai, Hunan', // top miner - 10.04: 254 MiB, 0.00001307075 FIL
   t010617: 'stuck-cfa, Canada, Surrey, @feiya200', // 10.04: 254 MiB, 0.013022075 FIL
-  t020742: 'stuck-cfa, China, Shanghai + Hangzhou + Shaoxing', // top miner - 10.04: 254 MiB, 0.00001303045 FIL
 
   // Sealing - supercheap
 
@@ -171,7 +169,9 @@ const annotations = {
   t02514: 'sealing-cheap, USA, Portland, 6block', // top miner - 10.04: 254 MiB, 0.000013100375 FIL
   t03275: 'sealing-cheap, USA, Portland, 6block', // top miner - 10.04: 254 MiB, 0.0000130888 FIL
   t03624: 'sealing-cheap, Germany, Chemnitz, ode', // top miner - 10.04: 254 MiB, 0.000065231 FIL 
+  t07919: 'sealing-cheap, China, Beijing, Shanghai, Hunan', // top miner - 10.04: 254 MiB, 0.00001307075 FIL
   t08482: 'sealing-cheap, USA, Athol, @why', // 10.04: 254 MiB, 0.000065117 FIL
+  t020742: 'sealing-cheap, China, Shanghai + Hangzhou + Shaoxing', // top miner - 10.04: 254 MiB, 0.00001303045 FIL
 
   // Sealing - expensive
 
