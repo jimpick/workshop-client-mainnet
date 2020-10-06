@@ -10,10 +10,8 @@ const annotations = {
   f01287: 'candidate, China, Jiaxing, MaiTian',
   f01799: 'candidate, China, Jinan, TokenHome',
   f01800: 'candidate, China, Shenzhen + Chengdu',
-  f02299: 'candidate, China, Dongguan, Yolo',
   f02301: 'candidate, USA',
   f02305: 'candidate, China, Dongguan',
-  f02381: 'candidate, China, Dongguan, 西野七濑迷叔',
   f02399: 'candidate, China, Zhejiang',
   f02401: 'candidate, Canada, Chambly, NBFS Canada',
   f02405: 'candidate, China, Shenzhen',
@@ -36,7 +34,6 @@ const annotations = {
   f03131: 'candidate, China, Changsha',
   f03134: 'candidate, China, Cangzhou, 乔木信息',
   f03143: 'candidate, China, Shijiazhuang + Hong Kong',
-  f03176: 'candidate, USA, San Mateo, Five Star-Helmsman&Heiben',
   f03223: 'candidate, USA',
   f03224: 'candidate, Ukraine, Irpin, oboltusov', // 131072 < 134217728
   f03264: 'candidate, Korea, Bucheon-si',
@@ -46,23 +43,19 @@ const annotations = {
   f03340: "candidate, China, Xi'an",
   f03363: 'candidate, Singapore',
   f03482: 'candidate, China, Wuxi',
-  f03491: 'candidate, China, Hong Kong',
   f03512: 'candidate, New Zealand, Auckland, NZFILECOIN01',
   f03544: 'candidate, China, Guiyang',
   f04443: 'candidate, China, Shanghai, 罗良科技',
-  f05316: 'candidate, USA, Portland, 6block',
   f05317: 'candidate, USA, Portland',
   f05664: 'candidate, China, Shenzhen, 艾比特网络科技',
   f07824: 'candidate, China, Shanghai',
   f07850: 'candidate, USA, Portland, 6block',
   f07982: 'candidate, China, Shenzhen', // 131072 < 134217728
   f07990: 'candidate, China, Hong Kong',
-  f08025: 'candidate, China, Hong Kong',
   f08157: 'candidate, China, Beijing + Germany, Frankfurt, 超星际',
   f08220: 'candidate, China, Shenzhen',
   f08264: 'candidate, China, Xianning', // 131072 < 134217728
   f08285: 'candidate, Latvia, Riga, stander',
-  f08311: 'candidate, China, Shenzhen',
   f08371: 'candidate, China, Chengdu',
   f08403: 'candidate, UK, Lower Slaughter',
   f08474: 'candidate, China, Hong Kong',
@@ -73,7 +66,6 @@ const annotations = {
   f09833: 'candidate, USA, San Jose',
   f09848: 'candidate, USA', // 131072 < 134217728
   f010084: 'candidate, China, Beijing',
-  f010088: 'candidate, DNS:purumine.com',
   f010253: 'candidate, China, Beijing + USA, Portland',
   f010257: 'candidate, China, Hong Kong, DNS:feiyuipfs.com',
   f010400: 'candidate, China, Shenyang',
@@ -88,19 +80,16 @@ const annotations = {
   f014394: 'candidate, China, Suzhou', // 131072 < 134217728
   f014768: 'candidate, Singapore',
   f015747: 'candidate, Japan, Setagaya-ku',
-  f015897: 'candidate, China, Guangdong',
   f016482: 'candidate, USA, Aliquippa',
   f016594: 'candidate, Germany', // 131072 < 134217728
   f017734: 'candidate, Australia, Sydney',
   f018501: 'candidate, China, Beijing', // 131072 < 134217728
-  f018772: 'candidate, Australia',
   f018780: 'candidate, Singapore + Germany, Frankfurt + USA',
   f018781: 'candidate, Singapore + Germany, Frankfurt + USA',
   f018782: 'candidate, Singapore + Germany, Frankfurt + USA',
   f018783: 'candidate, Singapore + Germany, Frankfurt + USA',
   f018784: 'candidate, Singapore + Germany, Frankfurt + USA',
   f018785: 'candidate, Singapore + Germany, Frankfurt + USA',
-  f019041: 'candidate, Singapore',
   f019074: 'candidate, China, Guangdong',
   f019090: 'candidate, South Africa, Johannesburg',
   f019100: 'candidate, Romania, Cluj-Napoca',
@@ -126,10 +115,8 @@ const annotations = {
   f022376: 'candidate, China, Dongguan',
   f022753: 'candidate, China, Hong Kong',
   f022820: 'candidate, China, Guangdong',
-  f022836: 'candidate, China, Chongqing',
   f022841: 'candidate, China, Zhongshan',
   f022855: 'candidate, Finland, Helsinki', // 131072 < 134217728
-  f022969: 'candidate, China, Chengdu',
   f023013: 'candidate, China, Hong Kong', // 20000000 < 24414062
   f023108: 'candidate, China, Dongguan',
   f023179: 'candidate, China, Fuzhou',
@@ -145,25 +132,36 @@ const annotations = {
   f023939: 'candidate, NR',
   f024015: 'candidate, USA, Portland',
   f024070: 'candidate, Japan, Setagaya-ku',
-  f024101: 'candidate, China, Guiyang', // 131072 < 1048576
   f024150: 'candidate, UK, Mansfield',
   f024184: 'candidate, Korea, Gangnam-gu',
   f024468: 'candidate, China, Shenzhen',
-  f024521: 'candidate, Korea, Gyeonggi-do',
 
   // Live
 
   // Testing
 
+  f02381: 'testing, China, Dongguan, 西野七濑迷叔',
+  f03176: 'testing, USA, San Mateo, Five Star-Helmsman&Heiben',
   f03302: 'testing, China, Chengdu',
+  f03491: 'testing, China, Hong Kong',
   f05315: 'testing, USA, Portland, 6block',
+  f05316: 'testing, USA, Portland, 6block',
+  f08025: 'testing, China, Hong Kong',
+  f08311: 'testing, China, Shenzhen',
   f08383: 'testing, USA, Portland, 6block',
+  f010088: 'testing, DNS:purumine.com',
   f014409: 'testing, USA, Waxhaw', // 131072 < 1073741824
   f015877: 'testing, China, Jiaxing + USA',
+  f018772: 'testing, Australia',
+  f019041: 'testing, Singapore',
   f019437: 'testing, Korea, Guro-gu',
   f020605: 'testing, China, Yibin',
   f022227: 'testing, China, Jiangsu',
+  f022836: 'testing, China, Chongqing',
+  f022969: 'testing, China, Chengdu',
   f024025: 'testing, China, Chengdu',
+  f024101: 'testing, China, Guiyang', // 131072 < 1048576
+  f024521: 'testing, Korea, Gyeonggi-do',
 
   // Transferring
 
@@ -213,7 +211,9 @@ const annotations = {
 
   // Timeout during ask
 
-  f023986: 'timeout-ask, Korea, Seoul',
+  f02299: 'timeout-ask, China, Dongguan, Yolo', // 10.06
+  f015897: 'timeout-ask, China, Guangdong', // 10.06
+  f023986: 'timeout-ask, Korea, Seoul', // 10.05
 
 }
 
