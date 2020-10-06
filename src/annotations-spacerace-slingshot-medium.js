@@ -185,14 +185,17 @@ const annotations = {
 
   t021540: 'sealing-a, Germany, Frankfurt, @hsanjuan', // 10.04: 254 MiB, 0.00000006487625 FIL
 
+  // Active - price tier b
+	
+  t01152: 'active-b, China, Beijing', // 10.04: 254 MiB, 0.000013028375 FIL
+  t01241: 'active-b, USA, Portland, 6block', // 10.04: 254 MiB, 0.0000130052 FIL
+  t01272: 'active-b, Singapore', // 10.04: 254 MiB, 0.000065066125 FIL
+  t02514: 'active-b, USA, Portland, 6block', // top miner - 10.04: 254 MiB, 0.000013100375 FIL
+  t07919: 'active-b, China, Beijing, Shanghai, Hunan', // top miner - 10.04: 254 MiB, 0.00001307075 FIL
+
   // Sealing - price tier b
 
-  t01152: 'sealing-b, China, Beijing', // 10.04: 254 MiB, 0.000013028375 FIL
-  t01241: 'sealing-b, USA, Portland, 6block', // 10.04: 254 MiB, 0.0000130052 FIL
-  t01272: 'sealing-b, Singapore', // 10.04: 254 MiB, 0.000065066125 FIL
-  t02514: 'sealing-b, USA, Portland, 6block', // top miner - 10.04: 254 MiB, 0.000013100375 FIL
   t03275: 'sealing-b, USA, Portland, 6block', // top miner - 10.04: 254 MiB, 0.0000130888 FIL
-  t07919: 'sealing-b, China, Beijing, Shanghai, Hunan', // top miner - 10.04: 254 MiB, 0.00001307075 FIL
   t08482: 'sealing-b, USA, Athol, @why', // 10.04: 254 MiB, 0.000065117 FIL
 
   // Sealing - price tier c
