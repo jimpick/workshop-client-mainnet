@@ -141,17 +141,12 @@ const annotations = {
   t024074: 'candidate, NR',
   t024129: 'candidate, China, Zhejiang',
 
+  // Candidates - expensive
+
+  t03339: 'candidate, China, Luzhou, benxun', // top miner
+
   // Live
 
-  t02514: 'live, USA, Portland, 6block',
-  t02576: 'live, Denmark, Gjerlev, BenjaminH', // 131072 < 134217728
-  t02620: 'live, Poland, Krakow, @magik6k', // 20000000 < 114746093
-  t03275: 'live, USA, Portland, 6block', // top miner
-  t03339: 'live, China, Luzhou, benxun', // top miner
-  t03624: 'live, Germany, Chemnitz, ode', // top miner
-  t07919: 'live, China, Beijing, Shanghai, Hunan', // top miner
-  t020742: 'live, China, Shanghai + Hangzhou + Shaoxing', // top miner
-  t022072: 'live, China, Jieyang', // top miner
 
   // Testing
 
@@ -170,7 +165,12 @@ const annotations = {
   t01152: 'sealing-cheap, China, Beijing', // 10.04: 254 MiB, 0.000013028375 FIL
   t01241: 'sealing-cheap, USA, Portland, 6block', // 10.04: 254 MiB, 0.0000130052 FIL
   t01272: 'sealing-cheap, Singapore', // 10.04: 254 MiB, 0.000065066125 FIL
+  t02514: 'sealing-cheap, USA, Portland, 6block', // top miner - 10.04: 254 MiB, 0.000013100375 FIL
+  t03275: 'sealing-cheap, USA, Portland, 6block', // top miner - 10.04: 254 MiB, 0.0000130888 FIL
+  t03624: 'sealing-cheap, Germany, Chemnitz, ode', // top miner - 10.04: 254 MiB, 0.000065231 FIL 
+  t07919: 'sealing-cheap, China, Beijing, Shanghai, Hunan', // top miner - 10.04: 254 MiB, 0.00001307075 FIL
   t08482: 'sealing-cheap, USA, Athol, @why', // 10.04: 254 MiB, 0.000065117 FIL
+  t020742: 'sealing-cheap, China, Shanghai + Hangzhou + Shaoxing', // top miner - 10.04: 254 MiB, 0.00001303045 FIL
 
   // Sealing - expensive
 
@@ -178,9 +178,15 @@ const annotations = {
   t02388: 'sealing-expensive, Netherlands, Amersfoort, Kroketje', // 10.04: 254 MiB, 0.012982425 FIL
   t015941: 'sealing-expensive, Ukraine, Kyiv', // 10.04: 254 MiB, 0.012973375 FIL
 
+  // Min-size
+
+  t02576: 'min-size, Denmark, Gjerlev, BenjaminH', // 10.04: 268435456 < 943718400 (~1GiB)
+
   // Error
 
+  t02620: 'error, Poland, Krakow, @magik6k', // adding market funds failed: GasEstimateMessageGas error: estimating gas used: message execution failed: exit SysErrInsufficientFunds(6), reason: failed to transfer funds (RetCode=6): transfer failed when deducting funds (0.10916997805 FIL): not enough funds (RetCode=6)
   t08240: 'error, Russia, Novosibirsk, Rabinovitch', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.097613489554111557 FIL, balance: 0.092623923120394973 FIL): not enough funds to execute transaction
+  t022072: 'error, China, Jieyang', // top miner - deal failed: (State=26) error calling node: publishing deal: not enough funds including pending messages (required: 2.049999999252595803 FIL, balance: 1.976012017627415308 FIL): validation failure
   t023971: 'error, USA, @Brian Y' // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzacedkhfvfff45aco2a34swvdjukzsja2lleprqjhkbacqg7obrvrmfy n 216, TS: bafy2bzaceajiwne4xupdkbbvjf3on5frce25o5nxpsdkhh3ghhmnkpqvtvs7w n216)
 }
 
