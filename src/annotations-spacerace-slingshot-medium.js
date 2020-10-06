@@ -14,6 +14,7 @@ const annotations = {
   f02301: 'candidate, USA',
   f02305: 'candidate, China, Dongguan',
   f02381: 'candidate, China, Dongguan, 西野七濑迷叔',
+  f02399: 'candidate, China, Zhejiang',
   f02401: 'candidate, Canada, Chambly, NBFS Canada',
   f02405: 'candidate, China, Shenzhen',
   f02415: 'candidate, China, Hong Kong',
@@ -49,7 +50,6 @@ const annotations = {
   f03512: 'candidate, New Zealand, Auckland, NZFILECOIN01',
   f03544: 'candidate, China, Guiyang',
   f04443: 'candidate, China, Shanghai, 罗良科技',
-  f05315: 'candidate, USA, Portland, 6block',
   f05316: 'candidate, USA, Portland, 6block',
   f05317: 'candidate, USA, Portland',
   f05664: 'candidate, China, Shenzhen, 艾比特网络科技',
@@ -64,7 +64,6 @@ const annotations = {
   f08285: 'candidate, Latvia, Riga, stander',
   f08311: 'candidate, China, Shenzhen',
   f08371: 'candidate, China, Chengdu',
-  f08383: 'candidate, USA, Portland, 6block',
   f08403: 'candidate, UK, Lower Slaughter',
   f08474: 'candidate, China, Hong Kong',
   f09675: 'candidate, China, Weifang',
@@ -110,7 +109,6 @@ const annotations = {
   f019240: 'candidate, China, Beijing',
   f019243: 'candidate, USA, Jackson',
   f019354: 'candidate, Germany, Frankfurt',
-  f019437: 'candidate, Korea, Guro-gu',
   f019638: 'candidate, Germany, Frankfurt',
   f020361: 'candidate, Colombia, Medellin', // 131072 < 134217728
   f020398: 'candidate, China, Zhangjiakou',
@@ -146,7 +144,6 @@ const annotations = {
   f023825: 'candidate, USA, Portland',
   f023939: 'candidate, NR',
   f024015: 'candidate, USA, Portland',
-  f024025: 'candidate, China, Chengdu',
   f024070: 'candidate, Japan, Setagaya-ku',
   f024101: 'candidate, China, Guiyang', // 131072 < 1048576
   f024150: 'candidate, UK, Mansfield',
@@ -159,10 +156,14 @@ const annotations = {
   // Testing
 
   f03302: 'testing, China, Chengdu',
+  f05315: 'testing, USA, Portland, 6block',
+  f08383: 'testing, USA, Portland, 6block',
   f014409: 'testing, USA, Waxhaw', // 131072 < 1073741824
   f015877: 'testing, China, Jiaxing + USA',
+  f019437: 'testing, Korea, Guro-gu',
   f020605: 'testing, China, Yibin',
   f022227: 'testing, China, Jiangsu',
+  f024025: 'testing, China, Chengdu',
 
   // Transferring
 
@@ -186,7 +187,6 @@ const annotations = {
 
   // Sealing - price tier b
 
-  f02399: 'sealing-b, China, Zhejiang', // 10.05: 254 MiB, 0.000013008825 FIL
   f03273: 'sealing-b, USA, Portland, 6block', // 10.05: 254 MiB, 0.000013015 FIL
   f03275: 'sealing-b, USA, Portland, 6block', // top miner - 10.04: 254 MiB, 0.0000130888 FIL
   f08482: 'sealing-b, USA, Athol, @why', // 10.04: 254 MiB, 0.000065117 FIL
