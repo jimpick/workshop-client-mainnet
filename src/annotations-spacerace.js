@@ -6,134 +6,149 @@
 const annotations = {
   // Active
 
-  // Active-sealing (active, with in-flight sealing)
+  t01238: 'active, Vietnam, Hanoi, FILECOIN-VIETNAM', // about 8 hours
+  t01272: 'active, Singapore', // about 6 hours
+  t01279: 'active, China, Sichuan', // about 13 hours
+  t01799: 'active, China, Jinan, TokenHome', // about 13 hours
+  t02301: 'active, USA', // about 8 hours
+  t02415: 'active, China, Hong Kong', // about 7 hours
+  t02490: 'active, China, Fujian', // about 7 hours
+  t02492: 'active, China, Shenzhen', // about 7 hours
+  t02501: 'active, USA, Portland, 6block', // about 6 hours
+  t02514: 'active, USA, Portland, 6block', // about 5 hours
+  t02622: 'active, USA, Portland, 6block', // about 7 hours
+  t02633: 'active, China, Hong Kong', // about 9 hours
+  t02645: 'active, China, Hong Kong', // about 7 hours
+  t03143: 'active, China, Shijiazhuang + Hong Kong', // about 8 hours
+  t03176: 'active, USA, San Mateo, Five Star-Helmsman&Heiben', // about 13 hours
+  t03273: 'active, USA, Portland, 6block', // about 8 hours
+  t03274: 'active, USA, Portland, 6block', // about 7 hours
+  t03275: 'active, USA, Portland, 6block', // about 7 hours
+  t03339: 'active, China, Luzhou, benxun', // about 8 hours
+  t03363: 'active, Singapore', // about 10 hours
+  t03491: 'active, China, Hong Kong', // about 7 hours
+  t05315: 'active, USA, Portland, 6block', // about 13 hours
+  t05316: 'active, USA, Portland, 6block', // about 6 hours
+  t05317: 'active, USA, Portland', // about 7 hours
+  t07824: 'active, China, Shanghai', // about 13 hours
+  t07850: 'active, USA, Portland, 6block', // about 7 hours
+  t07919: 'active, China, Beijing, Shanghai, Hunan', // about 6 hours
+  t07990: 'active, China, Hong Kong', // about 7 hours
+  t08025: 'active, China, Hong Kong', // about 9 hours
+  t08285: 'active, Latvia, Riga, stander', // about 13 hours
+  t08383: 'active, USA, Portland, 6block', // about 7 hours
+  t09693: 'active, USA, Portland + Singapore', // about 6 hours
+  t09696: 'active, USA, Portland + Singapore', // about 7 hours
+  t010084: 'active, China, Beijing', // about 13 hours
+  t010241: 'active, China, Beijing + USA, Portland', // about 7 hours
+  t010247: 'active, China, Yantai', // about 13 hours
+  t010253: 'active, China, Beijing + USA, Portland', // about 6 hours
+  t010400: 'active, China, Shenyang', // about 9 hours
+  t010479: 'active, France, Fontenay-sous-Bois', // about 9 hours
+  t010507: 'active, China, Hangzhou', // about 13 hours
+  t018780: 'active, Singapore + Germany, Frankfurt + USA', // about 7 hours
+  t018781: 'active, Singapore + Germany, Frankfurt + USA', // about 7 hours
+  t018782: 'active, Singapore + Germany, Frankfurt + USA', // about 7 hours
+  t018783: 'active, Singapore + Germany, Frankfurt + USA', // about 7 hours
+  t018784: 'active, Singapore + Germany, Frankfurt + USA', // about 8 hours
+  t018785: 'active, Singapore + Germany, Frankfurt + USA', // about 7 hours
+  t019022: "active, China, Xi'an", // about 8 hours
+  t019240: 'active, China, Beijing', // about 9 hours
+  t019437: 'active, Korea, Guro-gu', // about 9 hours
+  t019638: 'active, Germany, Frankfurt', // about 8 hours
+  t020928: 'active, China, Deyang + Singapore', // about 7 hours
+  t021255: 'active, China, Suzhou + Netherlands', // about 9 hours
+  t021316: 'active, China, Yangzhou', // about 7 hours
+  t021710: 'active, China, Shijiazhuang', // about 8 hours
+  t023200: 'active, China, Shanghai', // about 13 hours
+  t023495: 'active, China, Beijing + USA, Portland', // about 13 hours
+  t023526: 'active, China, Chongqing', // about 10 hours
+  t023647: 'active, Korea, Gangseo-gu', // about 9 hours
+  t023649: 'active, Korea, Seoul', // about 13 hours
+  t023825: 'active, USA, Portland', // about 6 hours
+  t024015: 'active, USA, Portland', // about 6 hours
+  t024016: 'active, USA, Portland', // about 6 hours
 
-  t010247: 'active-sealing, China, Yantai',
+  // Active-sealing (active, with in-flight sealing)
 
   // Sealing
 
   t01152: 'sealing, China, Beijing',
-  t01238: 'sealing, Vietnam, Hanoi, FILECOIN-VIETNAM',
+  t01234: 'sealing, Belgium, De Klinge, Eliovp',
   t01241: 'sealing, USA, Portland, 6block',
-  t01272: 'sealing, Singapore',
-  t01279: 'sealing, China, Sichuan',
   t01287: 'sealing, China, Jiaxing, MaiTian',
-  t01799: 'sealing, China, Jinan, TokenHome',
   t01800: 'sealing, China, Shenzhen + Chengdu',
   t02299: 'sealing, China, Dongguan, Yolo',
-  t02301: 'sealing, USA',
   t02305: 'sealing, China, Dongguan',
   t02381: 'sealing, China, Dongguan, 西野七濑迷叔',
   t02387: 'sealing, Canada, Brampton, NBFS Canada',
   t02399: 'sealing, China, Zhejiang',
   t02401: 'sealing, Canada, Chambly, NBFS Canada',
   t02405: 'sealing, China, Shenzhen',
-  t02415: 'sealing, China, Hong Kong',
-  t02490: 'sealing, China, Fujian',
-  t02492: 'sealing, China, Shenzhen',
-  t02501: 'sealing, USA, Portland, 6block',
-  t02514: 'sealing, USA, Portland, 6block',
-  t02622: 'sealing, USA, Portland, 6block',
   t02623: 'sealing, USA, Portland, 6block',
   t02625: 'sealing, China, Shanghai, IPFS星际工厂',
-  t02633: 'sealing, China, Hong Kong',
-  t02645: 'sealing, China, Hong Kong',
   t02654: 'sealing, China, Shanghai',
   t02668: 'sealing, China, Chengdu',
   t03131: 'sealing, China, Changsha',
   t03134: 'sealing, China, Cangzhou, 乔木信息',
-  t03143: 'sealing, China, Shijiazhuang + Hong Kong',
-  t03176: 'sealing, USA, San Mateo, Five Star-Helmsman&Heiben',
   t03223: 'sealing, USA',
   t03264: 'sealing, Korea, Bucheon-si',
-  t03273: 'sealing, USA, Portland, 6block',
-  t03274: 'sealing, USA, Portland, 6block',
-  t03275: 'sealing, USA, Portland, 6block',
   t03302: 'sealing, China, Chengdu',
-  t03339: 'sealing, China, Luzhou, benxun',
   t03340: "sealing, China, Xi'an",
-  t03363: 'sealing, Singapore',
   t03482: 'sealing, China, Wuxi',
-  t03491: 'sealing, China, Hong Kong',
   t03512: 'sealing, New Zealand, Auckland, NZFILECOIN01',
   t03544: 'sealing, China, Guiyang',
   t04443: 'sealing, China, Shanghai, 罗良科技',
-  t05315: 'sealing, USA, Portland, 6block',
-  t05316: 'sealing, USA, Portland, 6block',
-  t05317: 'sealing, USA, Portland',
   t05664: 'sealing, China, Shenzhen, 艾比特网络科技',
-  t07824: 'sealing, China, Shanghai',
-  t07850: 'sealing, USA, Portland, 6block',
-  t07919: 'sealing, China, Beijing, Shanghai, Hunan',
-  t07990: 'sealing, China, Hong Kong',
   t08019: 'sealing, China, Yantai, 三合',
-  t08025: 'sealing, China, Hong Kong',
   t08157: 'sealing, China, Beijing + Germany, Frankfurt, 超星际',
   t08220: 'sealing, China, Shenzhen',
-  t08285: 'sealing, Latvia, Riga, stander',
   t08311: 'sealing, China, Shenzhen',
   t08371: 'sealing, China, Chengdu',
-  t08383: 'sealing, USA, Portland, 6block',
   t08403: 'sealing, UK, Lower Slaughter',
   t08474: 'sealing, China, Hong Kong',
   t08482: 'sealing, USA, Athol, @why',
   t09675: 'sealing, China, Weifang',
-  t09693: 'sealing, USA, Portland + Singapore',
-  t09696: 'sealing, USA, Portland + Singapore',
   t09770: "sealing, China, Xi'an",
   t09833: 'sealing, USA, San Jose',
-  t010084: 'sealing, China, Beijing',
   t010088: 'sealing, DNS:purumine.com',
-  t010241: 'sealing, China, Beijing + USA, Portland',
-  t010253: 'sealing, China, Beijing + USA, Portland',
   t010257: 'sealing, China, Hong Kong, DNS:feiyuipfs.com',
-  t010400: 'sealing, China, Shenyang',
   t010446: 'sealing, Netherlands',
-  t010479: 'sealing, France, Fontenay-sous-Bois',
   t010501: 'sealing, China, Hangzhou',
   t010505: 'sealing, China, Wuhan',
-  t010507: 'sealing, China, Hangzhou',
   t010512: 'sealing, China, Zhengzhou',
   t010513: 'sealing, China, Chongqing',
+  t014324: 'sealing, Canada, Vancouver',
   t014768: 'sealing, Singapore',
+  t015233: 'sealing, China, Nanjing',
   t015747: 'sealing, Japan, Setagaya-ku',
   t015877: 'sealing, China, Jiaxing + USA',
   t015897: 'sealing, China, Guangdong',
   t016482: 'sealing, USA, Aliquippa',
   t017734: 'sealing, Australia, Sydney',
   t018772: 'sealing, Australia',
-  t018780: 'sealing, Singapore + Germany, Frankfurt + USA',
-  t018781: 'sealing, Singapore + Germany, Frankfurt + USA',
-  t018782: 'sealing, Singapore + Germany, Frankfurt + USA',
-  t018783: 'sealing, Singapore + Germany, Frankfurt + USA',
-  t018784: 'sealing, Singapore + Germany, Frankfurt + USA',
-  t018785: 'sealing, Singapore + Germany, Frankfurt + USA',
-  t019022: "sealing, China, Xi'an",
   t019041: 'sealing, Singapore',
   t019074: 'sealing, China, Guangdong',
   t019090: 'sealing, South Africa, Johannesburg',
+  t019099: 'sealing, China, Hong Kong',
   t019100: 'sealing, Romania, Cluj-Napoca',
   t019104: 'sealing, Canada, Chambly',
   t019118: 'sealing, China, Jiaxing',
-  t019240: 'sealing, China, Beijing',
   t019243: 'sealing, USA, Jackson',
   t019354: 'sealing, Germany, Frankfurt',
-  t019437: 'sealing, Korea, Guro-gu',
-  t019638: 'sealing, Germany, Frankfurt',
   t020398: 'sealing, China, Zhangjiakou',
   t020605: 'sealing, China, Yibin',
-  t020928: 'sealing, China, Deyang + Singapore',
-  t021255: 'sealing, China, Suzhou + Netherlands',
-  t021316: 'sealing, China, Yangzhou',
+  t020742: 'sealing, China, Shanghai + Hangzhou + Shaoxing',
+  t021262: 'sealing, China, Shanghai',
   t021339: 'sealing, China, Jiaxing',
   t021444: 'sealing, China, Guangzhou',
   t021540: 'sealing, Germany, Frankfurt, @hsanjuan',
   t021583: 'sealing, China, Jiaxing',
-  t021710: 'sealing, China, Shijiazhuang',
   t022070: 'sealing, China, Jieyang',
   t022227: 'sealing, China, Jiangsu',
   t022261: 'sealing, China, Luzhou',
   t022376: 'sealing, China, Dongguan',
+  t022517: 'sealing, China, Taiwan, Taipei',
   t022753: 'sealing, China, Hong Kong',
   t022820: 'sealing, China, Guangdong',
   t022836: 'sealing, China, Chongqing',
@@ -141,17 +156,10 @@ const annotations = {
   t022969: 'sealing, China, Chengdu',
   t023108: 'sealing, China, Dongguan',
   t023179: 'sealing, China, Fuzhou',
-  t023200: 'sealing, China, Shanghai',
-  t023495: 'sealing, China, Beijing + USA, Portland',
-  t023526: 'sealing, China, Chongqing',
   t023571: 'sealing, NR',
-  t023647: 'sealing, Korea, Gangseo-gu',
-  t023649: 'sealing, Korea, Seoul',
-  t023825: 'sealing, USA, Portland',
+  t023583: 'sealing, Korea, Guri-si',
   t023939: 'sealing, NR',
   t023986: 'sealing, Korea, Seoul',
-  t024015: 'sealing, USA, Portland',
-  t024016: 'sealing, USA, Portland',
   t024025: 'sealing, China, Chengdu',
   t024070: 'sealing, Japan, Setagaya-ku',
   t024150: 'sealing, UK, Mansfield',
@@ -161,62 +169,39 @@ const annotations = {
 
   // Stuck
 
-  t01234: 'stuck, Belgium, De Klinge, Eliovp', // CheckForAcceptance: about 2 hours
-  t01276: 'stuck, Canada, Brampton, NBFS Canada', // CheckForAcceptance: about 2 hours
-  t02416: 'stuck, China, Guangdong, 星际无限', // CheckForAcceptance: about 2 hours
-  t02627: 'stuck, China, Guilin', // FundsEnsured: about 2 hours
-  t02665: 'stuck, Netherlands, Amsterdam, fm-ops', // CheckForAcceptance: about 1 hour
-  t02772: 'stuck, China, Chengdu', // FundsEnsured: about 2 hours
-  t03002: 'stuck, China, Chongqing', // FundsEnsured: about 1 hour
-  t03222: 'stuck, China, Yuncheong, 星云矿池', // CheckForAcceptance: about 1 hour
-  t03347: 'stuck, China, Shenzhen', // CheckForAcceptance: about 2 hours
-  t07987: 'stuck, China, Beijing', // FundsEnsured: about 1 hour
-  t08204: 'stuck, USA, St. Louis', // CheckForAcceptance: about 2 hours
-  t08240: 'stuck, Russia, Novosibirsk, Rabinovitch', // CheckForAcceptance: about 2 hours
-  t08346: 'stuck, Korea', // CheckForAcceptance: about 2 hours
-  t09597: 'stuck, China, Shanghai', // CheckForAcceptance: about 2 hours
-  t010048: 'stuck, China, Shanghai', // FundsEnsured: about 2 hours
-  t010491: 'stuck, China, Shenzhen', // CheckForAcceptance: about 2 hours
-  t014324: 'stuck, Canada, Vancouver', // CheckForAcceptance: about 1 hour
-  t014386: 'stuck, Singapore', // CheckForAcceptance: about 1 hour
-  t015233: 'stuck, China, Nanjing', // CheckForAcceptance: about 2 hours
-  t015647: 'stuck, China, Shenzhen', // CheckForAcceptance: about 2 hours
-  t015751: 'stuck, Canada, Huron East', // CheckForAcceptance: about 2 hours
-  t015753: 'stuck, China, Guyuan', // FundsEnsured: about 1 hour
-  t015771: 'stuck, Brazil, Sao Paulo', // FundsEnsured: about 1 hour
-  t015927: 'stuck, USA, East Islip', // CheckForAcceptance: about 2 hours
-  t016511: 'stuck, China, Beijing', // FundsEnsured: about 1 hour
-  t017794: 'stuck, USA, Columbus', // FundsEnsured: about 1 hour
-  t018081: 'stuck, Germany', // FundsEnsured: 19 minutes
-  t018884: 'stuck, Russia', // FundsEnsured: about 1 hour
-  t019024: 'stuck, China, Sichuan', // CheckForAcceptance: about 2 hours
-  t019099: 'stuck, China, Hong Kong', // CheckForAcceptance: about 2 hours
-  t019114: 'stuck, USA, Howell', // CheckForAcceptance: about 2 hours
-  t019362: 'stuck, China, Hangzhou', // CheckForAcceptance: about 1 hour
-  t019422: 'stuck, South Africa, Johannesburg', // CheckForAcceptance: about 1 hour
-  t019645: 'stuck, Russia, St. Petersburg', // FundsEnsured: about 1 hour
-  t019820: 'stuck, Germany', // FundsEnsured: about 1 hour
-  t020523: 'stuck, China, Suzhou', // CheckForAcceptance: about 2 hours
-  t020541: 'stuck, China, Shanghai', // CheckForAcceptance: about 1 hour
-  t020742: 'stuck, China, Shanghai + Hangzhou + Shaoxing', // CheckForAcceptance: about 2 hours
-  t020993: 'stuck, China, Hong Kong', // FundsEnsured: about 1 hour
-  t021262: 'stuck, China, Shanghai', // CheckForAcceptance: about 2 hours
-  t021265: 'stuck, China, Wuhan', // CheckForAcceptance: about 1 hour
-  t021535: 'stuck, China, Chengdu', // FundsEnsured: about 1 hour
-  t021536: 'stuck, NR', // CheckForAcceptance: 42 minutes
-  t022202: 'stuck, USA, Howell', // CheckForAcceptance: about 1 hour
-  t022395: 'stuck, USA, Los Angeles', // CheckForAcceptance: about 1 hour
-  t022512: 'stuck, Canada, Embrun', // CheckForAcceptance: about 2 hours
-  t022517: 'stuck, China, Taiwan, Taipei', // CheckForAcceptance: 12 minutes
-  t022755: 'stuck, China, Shenzhen', // CheckForAcceptance: about 2 hours
-  t022922: 'stuck, China, Shenzhen', // CheckForAcceptance: about 2 hours
-  t023501: 'stuck, China, Mianyang', // CheckForAcceptance: about 2 hours
-  t023518: 'stuck, China, Taiyuan', // CheckForAcceptance: about 2 hours
-  t023583: 'stuck, Korea, Guri-si', // CheckForAcceptance: about 1 hour
-  t023643: 'stuck, NR', // CheckForAcceptance: about 1 hour
-  t023826: 'stuck, USA, Germantown', // CheckForAcceptance: about 1 hour
-  t023971: 'stuck, USA, @Brian Y', // CheckForAcceptance: about 2 hours
-  t024130: 'stuck, Korea', // CheckForAcceptance: about 2 hours
+  t02416: 'stuck, China, Guangdong, 星际无限', // CheckForAcceptance: about 14 hours
+  t02627: 'stuck, China, Guilin', // FundsEnsured: about 13 hours
+  t03222: 'stuck, China, Yuncheong, 星云矿池', // CheckForAcceptance: about 13 hours
+  t03347: 'stuck, China, Shenzhen', // CheckForAcceptance: about 14 hours
+  t08204: 'stuck, USA, St. Louis', // CheckForAcceptance: about 14 hours
+  t08346: 'stuck, Korea', // CheckForAcceptance: about 14 hours
+  t014386: 'stuck, Singapore', // CheckForAcceptance: about 13 hours
+  t015647: 'stuck, China, Shenzhen', // CheckForAcceptance: about 14 hours
+  t015751: 'stuck, Canada, Huron East', // CheckForAcceptance: about 14 hours
+  t015771: 'stuck, Brazil, Sao Paulo', // FundsEnsured: about 13 hours
+  t015927: 'stuck, USA, East Islip', // CheckForAcceptance: about 14 hours
+  t016511: 'stuck, China, Beijing', // FundsEnsured: about 13 hours
+  t017794: 'stuck, USA, Columbus', // FundsEnsured: about 13 hours
+  t018884: 'stuck, Russia', // FundsEnsured: about 13 hours
+  t019024: 'stuck, China, Sichuan', // CheckForAcceptance: about 14 hours
+  t019114: 'stuck, USA, Howell', // CheckForAcceptance: about 14 hours
+  t019362: 'stuck, China, Hangzhou', // CheckForAcceptance: about 13 hours
+  t019645: 'stuck, Russia, St. Petersburg', // FundsEnsured: about 13 hours
+  t019820: 'stuck, Germany', // FundsEnsured: about 13 hours
+  t020523: 'stuck, China, Suzhou', // CheckForAcceptance: about 14 hours
+  t020993: 'stuck, China, Hong Kong', // FundsEnsured: about 13 hours
+  t021265: 'stuck, China, Wuhan', // CheckForAcceptance: about 13 hours
+  t021536: 'stuck, NR', // CheckForAcceptance: about 13 hours
+  t022202: 'stuck, USA, Howell', // CheckForAcceptance: about 13 hours
+  t022395: 'stuck, USA, Los Angeles', // CheckForAcceptance: about 13 hours
+  t022512: 'stuck, Canada, Embrun', // CheckForAcceptance: about 14 hours
+  t022755: 'stuck, China, Shenzhen', // CheckForAcceptance: about 14 hours
+  t022922: 'stuck, China, Shenzhen', // CheckForAcceptance: about 14 hours
+  t023518: 'stuck, China, Taiyuan', // CheckForAcceptance: about 14 hours
+  t023643: 'stuck, NR', // CheckForAcceptance: about 13 hours
+  t023826: 'stuck, USA, Germantown', // CheckForAcceptance: about 13 hours
+  t023971: 'stuck, USA, @Brian Y', // CheckForAcceptance: about 14 hours
+  t024130: 'stuck, Korea', // CheckForAcceptance: about 14 hours
 
   // Busy
 
@@ -261,23 +246,32 @@ const annotations = {
   // Error
 
   t01247: 'error, Canada, Montreal, BigChungus™', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 2.505045049591121939 FIL, balance: 2.406283655736804121 FIL): validation failure
+  t01276: 'error, Canada, Brampton, NBFS Canada', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   t02540: 'error, USA, Rochester', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 2.205578138740989023 FIL, balance: 2.118026249139897479 FIL): validation failure
+  t02665: 'error, Netherlands, Amsterdam, fm-ops', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  t02772: 'error, China, Chengdu', // stream reset
+  t03002: 'error, China, Chongqing', // stream reset
   t03364: 'error, China, Guangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.09999999997736108 FIL, balance: 0.044288846063250016 FIL): not enough funds to execute transaction
   t03624: 'error, Germany, Chemnitz, ode', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.09999999997760752 FIL, balance: 0.077243430189113819 FIL): not enough funds to execute transaction
   t07806: 'error, China, Wuhan, HelloXP', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.0303030302917932 FIL, balance: 0.017488223886837071 FIL): not enough funds to execute transaction
   t07819: 'error, China, Wuxi, YC--wuxi', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 1.532998128399864286 FIL, balance: 1.444134058926145448 FIL): validation failure
+  t07987: 'error, China, Beijing', // stream reset
   t07998: 'error, China, Hangzhou', // AddPiece failed: adding piece to sector: writing piece: pieceCid error: generating piece commitment: failed to build treeCaused by:    0: failed to populate data    1: No space left on device (os error 28)
   t08073: 'error, China, Qiqihar, QY7TT', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 4.22230979535929363 FIL, balance: 4.199234281678166071 FIL): validation failure
   t08091: 'error, USA', // AddPiece failed: adding piece to sector: writing piece: acquire unsealed sector: local acquire error: couldn't find a suitable path for a sector
   t08094: 'error, China, Guangzhou, dongshao', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.099999999957305825 FIL, balance: 0.044733607045765552 FIL): not enough funds to execute transaction
   t08203: 'error, Germany, Frankfurt', // stream reset
+  t08240: 'error, Russia, Novosibirsk, Rabinovitch', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   t08532: 'error, USA', // deal failed: (State=26) error calling node: publishing deal: GasEstimateMessageGas error: estimating gas used: message execution failed: exit SysErrSenderStateInvalid(2), reason: actor balance less than needed: 0 FIL < 0.00000101 FIL (RetCode=2)
   t08854: 'error, China, Dongguan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 1.083729694812742637 FIL, balance: 1.009093139418046558 FIL): validation failure
   t09002: 'error, Singapore', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.099999999960074424 FIL, balance: 0.011219195830517241 FIL): not enough funds to execute transaction
   t09569: 'error, China, Beijing', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 2.493759637956054826 FIL, balance: 2.394012631262358916 FIL): validation failure
+  t09597: 'error, China, Shanghai', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   t09639: 'error, China, Fuzhou', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.099999999963383005 FIL, balance: 0.015032977828835632 FIL): not enough funds to execute transaction
   t09731: 'error, China, Guiyang', // stream reset
+  t010048: 'error, China, Shanghai', // stream reset
   t010399: 'error, China, Guangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 3.113999999587670624 FIL, balance: 3.079975804003816336 FIL): validation failure
+  t010491: 'error, China, Shenzhen', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   t010493: 'error, China, Shanghai', // stream reset
   t010498: 'error, China, Shenzhen', // stream reset
   t010523: 'error, China, Beijing', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 32.987240012543597515 FIL, balance: 32.956926609011129828 FIL): validation failure
@@ -288,15 +282,19 @@ const annotations = {
   t014329: 'error, China, Hong Kong', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.099999999953244864 FIL, balance: 0.044288846063250016 FIL): not enough funds to execute transaction
   t014464: 'error, China, Hangzhou + Singapore', // stream reset
   t015709: 'error, China, Hefei', // EOF
+  t015753: 'error, China, Guyuan', // stream reset
   t015763: 'error, South Africa, Cape Town', // EOF
   t016056: 'error, USA, Arlington', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 5.65683600807920325 FIL, balance: 5.637147559779723551 FIL): validation failure
   t017795: 'error, USA, Columbus', // stream reset
   t019029: 'error, Serbia, Boljevac', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.099999999990594355 FIL, balance: 0.026094683556185367 FIL): not enough funds to execute transaction
   t019174: 'error, UK, Halifax', // deal failed: (State=11) error calling node: publishing deal: not enough funds (required: 0.099999999977407848 FIL, balance: 0.08815034307334442 FIL): not enough funds to execute transaction
+  t019422: 'error, South Africa, Johannesburg', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  t020541: 'error, China, Shanghai', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   t020618: 'error, Singapore', // deal failed: (State=26) error calling node: publishing deal: handler: websocket connection closed
   t020904: 'error, Korea, Uijeongbu-si', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   t021328: 'error, China, Dongguan', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.099999999972467322 FIL, balance: 0.074796124348981209 FIL): not enough funds to execute transaction
   t021479: 'error, China, Qingdao', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzaceahhq3x3hv73ophdgpcbcsybi2vwsh444bqcw2bsqvepitntt3uai n 226587, TS: bafy2bzaceb5uttomvvdz23n4ljzwvaygehuekkcsycvgxzergx6l4yqqydwim n226587)
+  t021535: 'error, China, Chengdu', // stream reset
   t022031: 'error, China, Maoming', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 2.169939336353927493 FIL, balance: 2.094691719172155714 FIL): validation failure
   t022072: 'error, China, Jieyang', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzacecuypud2x3iqoq2v6ksahtbowqei5d6jsenok5frfxsjr4xkw3qlm n 3296, TS: bafy2bzacedhzwvaobg7cgx5im34yu4gsq76bcpn63mx5wn6wtjm4b5txso5au n3296)
   t022089: 'error, China, Beijing', // stream reset
@@ -310,6 +308,7 @@ const annotations = {
   t022853: 'error, China, Fuzhou', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.099999999961320136 FIL, balance: 0.053296741972056574 FIL): not enough funds to execute transaction
   t023202: 'error, China, Wuxi', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 1.046873228054947518 FIL, balance: 1.016966457438648838 FIL): validation failure
   t023467: 'error, Norway, Oslo', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 0.199999999976495357 FIL, balance: 0.116137965173748252 FIL): validation failure
+  t023501: 'error, China, Mianyang', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals exit code: SysErrInsufficientFunds(6)
   t023530: 'error, China, Shanghai', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: protocol not supported
   t023661: 'error, China, Zhejiang', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.09999999999291369 FIL, balance: 0.016843867264433245 FIL): not enough funds to execute transaction
   t023843: 'error, NR', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 0.8499999997268703 FIL, balance: 0.793220188977102502 FIL): validation failure
