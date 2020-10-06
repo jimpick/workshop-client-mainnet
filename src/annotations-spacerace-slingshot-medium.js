@@ -166,9 +166,6 @@ const annotations = {
 
   // Transferring
 
-  f08019: 'transferring, China, Yantai, 三合', // 10.05: 254 MiB, 0.01307425 FIL
-  f019022: "transferring, China, Xi'an", // 10.05: 254 MiB, 0.000013055075 FIL
-  f021339: 'transferring, China, Jiaxing', // 10.05: 254 MiB, 0.000065297375 FIL
 
   // Stuck - CheckForAcceptance
 
@@ -194,7 +191,6 @@ const annotations = {
   f03275: 'sealing-b, USA, Portland, 6block', // top miner - 10.04: 254 MiB, 0.0000130888 FIL
   f08482: 'sealing-b, USA, Athol, @why', // 10.04: 254 MiB, 0.000065117 FIL
   f010241: 'sealing-b, China, Beijing + USA, Portland', // 10.05: 254 MiB, 0.0000130651 FIL
-  f010247: 'sealing-b, China, Yantai', // 10.05: 254 MiB, 0.0000130597 FIL
   f023649: 'sealing-b, Korea, Seoul', // 10.05: 508 MiB, 0.00013032625 FIL
   f024016: 'sealing-b, USA, Portland', // 10.05: 254 MiB, 0.00006534 FIL
 
@@ -210,6 +206,10 @@ const annotations = {
   // Error
 
   f02620: 'error, Poland, Krakow, @magik6k', // adding market funds failed: GasEstimateMessageGas error: estimating gas used: message execution failed: exit SysErrInsufficientFunds(6), reason: failed to transfer funds (RetCode=6): transfer failed when deducting funds (0.10916997805 FIL): not enough funds (RetCode=6)
+  f08019: 'error, China, Yantai, 三合', // 10.06: failed to initiate data transfer: deal data transfer failed: response rejected
+  f010247: 'error, China, Yantai', // 10.06: failed to initiate data transfer: deal data transfer failed: response rejected
+  f019022: "error, China, Xi'an", // 10.06: failed to initiate data transfer: deal data transfer failed: response rejected
+  f021339: 'error, China, Jiaxing', // 10.06: failed to initiate data transfer: deal data transfer failed: response rejected
 
   // Timeout during ask
 
