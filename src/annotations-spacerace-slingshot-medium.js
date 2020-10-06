@@ -155,7 +155,6 @@ const annotations = {
 
   // Testing
 
-
   // Stuck - CheckForAcceptance
 
   t01238: 'stuck-cfa, Vietnam, Hanoi, FILECOIN-VIETNAM', // 10.04: 254 MiB, 0.012995375 FIL
