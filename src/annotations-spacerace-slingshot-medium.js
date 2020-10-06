@@ -14,7 +14,6 @@ const annotations = {
   t02301: 'candidate, USA',
   t02305: 'candidate, China, Dongguan',
   t02381: 'candidate, China, Dongguan, 西野七濑迷叔',
-  t02399: 'candidate, China, Zhejiang',
   t02401: 'candidate, Canada, Chambly, NBFS Canada',
   t02405: 'candidate, China, Shenzhen',
   t02415: 'candidate, China, Hong Kong',
@@ -40,10 +39,10 @@ const annotations = {
   t03223: 'candidate, USA',
   t03224: 'candidate, Ukraine, Irpin, oboltusov', // 131072 < 134217728
   t03264: 'candidate, Korea, Bucheon-si',
-  t03273: 'candidate, USA, Portland, 6block',
   t03274: 'candidate, USA, Portland, 6block',
   t03302: 'candidate, China, Chengdu',
   t03328: 'candidate, China, Xinxiang', // 131072 < 134217728
+  t03339: 'candidate, China, Luzhou, benxun', // top miner
   t03340: "candidate, China, Xi'an",
   t03363: 'candidate, Singapore',
   t03482: 'candidate, China, Wuxi',
@@ -59,7 +58,6 @@ const annotations = {
   t07850: 'candidate, USA, Portland, 6block',
   t07982: 'candidate, China, Shenzhen', // 131072 < 134217728
   t07990: 'candidate, China, Hong Kong',
-  t08019: 'candidate, China, Yantai, 三合',
   t08025: 'candidate, China, Hong Kong',
   t08157: 'candidate, China, Beijing + Germany, Frankfurt, 超星际',
   t08220: 'candidate, China, Shenzhen',
@@ -78,8 +76,6 @@ const annotations = {
   t09848: 'candidate, USA', // 131072 < 134217728
   t010084: 'candidate, China, Beijing',
   t010088: 'candidate, DNS:purumine.com',
-  t010241: 'candidate, China, Beijing + USA, Portland',
-  t010247: 'candidate, China, Yantai',
   t010253: 'candidate, China, Beijing + USA, Portland',
   t010257: 'candidate, China, Hong Kong, DNS:feiyuipfs.com',
   t010400: 'candidate, China, Shenyang',
@@ -108,7 +104,6 @@ const annotations = {
   t018783: 'candidate, Singapore + Germany, Frankfurt + USA',
   t018784: 'candidate, Singapore + Germany, Frankfurt + USA',
   t018785: 'candidate, Singapore + Germany, Frankfurt + USA',
-  t019022: "candidate, China, Xi'an",
   t019041: 'candidate, Singapore',
   t019074: 'candidate, China, Guangdong',
   t019090: 'candidate, South Africa, Johannesburg',
@@ -128,7 +123,6 @@ const annotations = {
   t021075: 'candidate, China, Chengdu', // 131072 < 134217728
   t021255: 'candidate, China, Suzhou + Netherlands',
   t021316: 'candidate, China, Yangzhou',
-  t021339: 'candidate, China, Jiaxing',
   t021444: 'candidate, China, Guangzhou',
   t021583: 'candidate, China, Jiaxing',
   t021710: 'candidate, China, Shijiazhuang',
@@ -153,13 +147,10 @@ const annotations = {
   t023571: 'candidate, NR',
   t023581: 'candidate, China, Hong Kong', // 131072 < 134217728
   t023647: 'candidate, Korea, Gangseo-gu',
-  t023649: 'candidate, Korea, Seoul',
   t023678: 'candidate, China, Jiaxing', // 131072 < 134217728
   t023825: 'candidate, USA, Portland',
   t023939: 'candidate, NR',
-  t023986: 'candidate, Korea, Seoul',
   t024015: 'candidate, USA, Portland',
-  t024016: 'candidate, USA, Portland',
   t024025: 'candidate, China, Chengdu',
   t024070: 'candidate, Japan, Setagaya-ku',
   t024101: 'candidate, China, Guiyang', // 131072 < 1048576
@@ -168,13 +159,15 @@ const annotations = {
   t024468: 'candidate, China, Shenzhen',
   t024521: 'candidate, Korea, Gyeonggi-do',
 
-  // Candidates - price tier c
-
-  t03339: 'candidate-tier-c, China, Luzhou, benxun', // top miner
-
   // Live
 
   // Testing
+
+  // Transferring
+
+  t08019: 'transferring, China, Yantai, 三合', // 10.05: 254 MiB, 0.01307425 FIL
+  t019022: "transferring, China, Xi'an", // 10.05: 254 MiB, 0.000013055075 FIL
+  t021339: 'transferring, China, Jiaxing', // 10.05: 254 MiB, 0.000065297375 FIL
 
   // Stuck - CheckForAcceptance
 
@@ -195,8 +188,14 @@ const annotations = {
 
   // Sealing - price tier b
 
+  t02399: 'sealing-b, China, Zhejiang', // 10.05: 254 MiB, 0.000013008825 FIL
+  t03273: 'sealing-b, USA, Portland, 6block', // 10.05: 254 MiB, 0.000013015 FIL
   t03275: 'sealing-b, USA, Portland, 6block', // top miner - 10.04: 254 MiB, 0.0000130888 FIL
   t08482: 'sealing-b, USA, Athol, @why', // 10.04: 254 MiB, 0.000065117 FIL
+  t010241: 'sealing-b, China, Beijing + USA, Portland', // 10.05: 254 MiB, 0.0000130651 FIL
+  t010247: 'sealing-b, China, Yantai', // 10.05: 254 MiB, 0.0000130597 FIL
+  t023649: 'sealing-b, Korea, Seoul', // 10.05: 508 MiB, 0.00013032625 FIL
+  t024016: 'sealing-b, USA, Portland', // 10.05: 254 MiB, 0.00006534 FIL
 
   // Sealing - price tier c
 
@@ -210,6 +209,11 @@ const annotations = {
   // Error
 
   t02620: 'error, Poland, Krakow, @magik6k' // adding market funds failed: GasEstimateMessageGas error: estimating gas used: message execution failed: exit SysErrInsufficientFunds(6), reason: failed to transfer funds (RetCode=6): transfer failed when deducting funds (0.10916997805 FIL): not enough funds (RetCode=6)
+
+  // Timeout during ask
+
+  t023986: 'timeout-ask, Korea, Seoul',
+
 }
 
 export default annotations
