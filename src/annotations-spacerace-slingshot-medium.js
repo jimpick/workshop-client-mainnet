@@ -40,7 +40,6 @@ const annotations = {
   f03224: 'candidate, Ukraine, Irpin, oboltusov', // 131072 < 134217728
   f03264: 'candidate, Korea, Bucheon-si',
   f03274: 'candidate, USA, Portland, 6block',
-  f03302: 'candidate, China, Chengdu',
   f03328: 'candidate, China, Xinxiang', // 131072 < 134217728
   f03339: 'candidate, China, Luzhou, benxun', // top miner
   f03340: "candidate, China, Xi'an",
@@ -88,10 +87,8 @@ const annotations = {
   f010512: 'candidate, China, Zhengzhou',
   f010513: 'candidate, China, Chongqing',
   f014394: 'candidate, China, Suzhou', // 131072 < 134217728
-  f014409: 'candidate, USA, Waxhaw', // 131072 < 1073741824
   f014768: 'candidate, Singapore',
   f015747: 'candidate, Japan, Setagaya-ku',
-  f015877: 'candidate, China, Jiaxing + USA',
   f015897: 'candidate, China, Guangdong',
   f016482: 'candidate, USA, Aliquippa',
   f016594: 'candidate, Germany', // 131072 < 134217728
@@ -118,7 +115,6 @@ const annotations = {
   f020361: 'candidate, Colombia, Medellin', // 131072 < 134217728
   f020398: 'candidate, China, Zhangjiakou',
   f020489: 'candidate, China, Lioaning', // 131072 < 134217728
-  f020605: 'candidate, China, Yibin',
   f020928: 'candidate, China, Deyang + Singapore',
   f021075: 'candidate, China, Chengdu', // 131072 < 134217728
   f021255: 'candidate, China, Suzhou + Netherlands',
@@ -128,7 +124,6 @@ const annotations = {
   f021710: 'candidate, China, Shijiazhuang',
   f021870: 'candidate, USA, Portland', // 131072 < 134217728
   f022070: 'candidate, China, Jieyang',
-  f022227: 'candidate, China, Jiangsu',
   f022261: 'candidate, China, Luzhou',
   f022376: 'candidate, China, Dongguan',
   f022753: 'candidate, China, Hong Kong',
@@ -162,6 +157,12 @@ const annotations = {
   // Live
 
   // Testing
+
+  f03302: 'testing, China, Chengdu',
+  f014409: 'testing, USA, Waxhaw', // 131072 < 1073741824
+  f015877: 'testing, China, Jiaxing + USA',
+  f020605: 'testing, China, Yibin',
+  f022227: 'testing, China, Jiangsu',
 
   // Transferring
 
@@ -208,7 +209,7 @@ const annotations = {
 
   // Error
 
-  f02620: 'error, Poland, Krakow, @magik6k' // adding market funds failed: GasEstimateMessageGas error: estimating gas used: message execution failed: exit SysErrInsufficientFunds(6), reason: failed to transfer funds (RetCode=6): transfer failed when deducting funds (0.10916997805 FIL): not enough funds (RetCode=6)
+  f02620: 'error, Poland, Krakow, @magik6k', // adding market funds failed: GasEstimateMessageGas error: estimating gas used: message execution failed: exit SysErrInsufficientFunds(6), reason: failed to transfer funds (RetCode=6): transfer failed when deducting funds (0.10916997805 FIL): not enough funds (RetCode=6)
 
   // Timeout during ask
 
