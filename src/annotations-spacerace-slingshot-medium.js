@@ -147,7 +147,6 @@ const annotations = {
 
   // Live
 
-
   // Testing
 
   // Stuck - CheckForAcceptance
@@ -167,7 +166,7 @@ const annotations = {
   t01272: 'sealing-cheap, Singapore', // 10.04: 254 MiB, 0.000065066125 FIL
   t02514: 'sealing-cheap, USA, Portland, 6block', // top miner - 10.04: 254 MiB, 0.000013100375 FIL
   t03275: 'sealing-cheap, USA, Portland, 6block', // top miner - 10.04: 254 MiB, 0.0000130888 FIL
-  t03624: 'sealing-cheap, Germany, Chemnitz, ode', // top miner - 10.04: 254 MiB, 0.000065231 FIL 
+  t03624: 'sealing-cheap, Germany, Chemnitz, ode', // top miner - 10.04: 254 MiB, 0.000065231 FIL
   t07919: 'sealing-cheap, China, Beijing, Shanghai, Hunan', // top miner - 10.04: 254 MiB, 0.00001307075 FIL
   t08482: 'sealing-cheap, USA, Athol, @why', // 10.04: 254 MiB, 0.000065117 FIL
   t020742: 'sealing-cheap, China, Shanghai + Hangzhou + Shaoxing', // top miner - 10.04: 254 MiB, 0.00001303045 FIL
