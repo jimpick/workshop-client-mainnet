@@ -167,12 +167,6 @@ const annotations = {
 
   // Transferring
 
-  f03302: 'transferring, China, Chengdu', // 10.06: 254 MiB, 0.000065022375 FIL
-  f019437: 'transferring, Korea, Guro-gu', // 10.06: 254 MiB, 0.00006497525 FIL
-  f022227: 'transferring, China, Jiangsu', // 10.06: 254 MiB, 0.000064958625 FIL
-  f022836: 'transferring, China, Chongqing', // 10.06: 254 MiB, 0 FIL
-  f022969: 'transferring, China, Chengdu', // 10.06: 254 MiB, 0.0000648725 FIL 
-
   // Stuck - CheckForAcceptance
 
 
@@ -223,9 +217,17 @@ const annotations = {
   f014409: 'sealing-c, USA, Waxhaw', // 10.06, 451782: 254 MiB, 0.01297545 FIL
   f015877: 'sealing-c, China, Jiaxing + USA', // 10.06, 451761: 254 MiB, 0.013009225 FIL
 
-// Min-size
+  // Min-size
 
   f02576: 'min-size, Denmark, Gjerlev, BenjaminH', // 10.04: 268435456 < 943718400 (~1GiB)
+
+  // Transfer failed - failed to initiate data transfer: deal data transfer failed: response rejected
+
+  f03302: 'xfr-failed, China, Chengdu', // 10.06: 254 MiB, 0.000065022375 FIL
+  f019437: 'xfr-failed, Korea, Guro-gu', // 10.06: 254 MiB, 0.00006497525 FIL
+  f022227: 'xfr-failed, China, Jiangsu', // 10.06: 254 MiB, 0.000064958625 FIL
+  f022836: 'xfr-failed, China, Chongqing', // 10.06: 254 MiB, 0 FIL
+  f022969: 'xfr-failed, China, Chengdu', // 10.06: 254 MiB, 0.0000648725 FIL 
 
   // Error
 
