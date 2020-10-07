@@ -140,64 +140,65 @@ const annotations = {
 
   // Testing
 
-  f02381: 'testing, China, Dongguan, 西野七濑迷叔',
-  f03176: 'testing, USA, San Mateo, Five Star-Helmsman&Heiben',
-  f03302: 'testing, China, Chengdu',
-  f03491: 'testing, China, Hong Kong',
-  f05315: 'testing, USA, Portland, 6block',
-  f05316: 'testing, USA, Portland, 6block',
-  f08025: 'testing, China, Hong Kong',
-  f08311: 'testing, China, Shenzhen',
-  f08383: 'testing, USA, Portland, 6block',
-  f010088: 'testing, DNS:purumine.com',
-  f014409: 'testing, USA, Waxhaw', // 131072 < 1073741824
-  f015877: 'testing, China, Jiaxing + USA',
-  f018772: 'testing, Australia',
-  f019041: 'testing, Singapore',
-  f019437: 'testing, Korea, Guro-gu',
-  f020605: 'testing, China, Yibin',
-  f022227: 'testing, China, Jiangsu',
-  f022836: 'testing, China, Chongqing',
-  f022969: 'testing, China, Chengdu',
-  f024025: 'testing, China, Chengdu',
-  f024101: 'testing, China, Guiyang', // 131072 < 1048576
-  f024521: 'testing, Korea, Gyeonggi-do',
-
   // Transferring
 
+  f03302: 'transferring, China, Chengdu', // 10.06: 254 MiB, 0.000065022375 FIL
+  f019437: 'transferring, Korea, Guro-gu', // 10.06: 254 MiB, 0.00006497525 FIL
+  f022227: 'transferring, China, Jiangsu', // 10.06: 254 MiB, 0.000064958625 FIL
+  f022836: 'transferring, China, Chongqing', // 10.06: 254 MiB, 0 FIL
+  f022969: 'transferring, China, Chengdu', // 10.06: 254 MiB, 0.0000648725 FIL 
 
   // Stuck - CheckForAcceptance
 
-  f01238: 'stuck-cfa, Vietnam, Hanoi, FILECOIN-VIETNAM', // 10.04: 254 MiB, 0.012995375 FIL
-  f02387: 'stuck-cfa, Canada, Brampton, NBFS Canada', // 10.04: 254 MiB, 0.0000001299395 FIL
 
-  // Sealing - price tier a
+  // Price tier A - 5+ leading zero
 
-  f021540: 'sealing-a, Germany, Frankfurt, @hsanjuan', // 10.04: 254 MiB, 0.00000006487625 FIL
+  f021540: 'active-a, Germany, Frankfurt, @hsanjuan', // 10.04, 421264: 254 MiB, 0.00000006487625 FIL
 
-  // Active - price tier b
+  f02387: 'sealing-a, Canada, Brampton, NBFS Canada', // 10.04, 422140: 254 MiB, 0.0000001299395 FIL
+  f024101: 'sealing-a, China, Guiyang', // 10.06, 452703: 254 MiB, 0.00000000001299985 FIL
+
+  // Price tier B - 3-4 leading zero
 	
-  f01152: 'active-b, China, Beijing', // 10.04: 254 MiB, 0.000013028375 FIL
-  f01241: 'active-b, USA, Portland, 6block', // 10.04: 254 MiB, 0.0000130052 FIL
-  f01272: 'active-b, Singapore', // 10.04: 254 MiB, 0.000065066125 FIL
-  f02514: 'active-b, USA, Portland, 6block', // top miner - 10.04: 254 MiB, 0.000013100375 FIL
-  f07919: 'active-b, China, Beijing, Shanghai, Hunan', // top miner - 10.04: 254 MiB, 0.00001307075 FIL
+  f01152: 'active-b, China, Beijing', // 10.04, 421060: 254 MiB, 0.000013028375 FIL
+  f01241: 'active-b, USA, Portland, 6block', // 10.04, 421193: 254 MiB, 0.0000130052 FIL
+  f01272: 'active-b, Singapore', // 10.04: 254 MiB, 421238: 0.000065066125 FIL
+  f02514: 'active-b, USA, Portland, 6block', // top miner - 10.04, 421660: 254 MiB, 0.000013100375 FIL
+  f03273: 'active-b, USA, Portland, 6block', // 10.05, 435212: 254 MiB, 0.000013015 FIL
+  f07919: 'active-b, China, Beijing, Shanghai, Hunan', // top miner - 10.04, 421690: 254 MiB, 0.00001307075 FIL
+  f010241: 'active-b, China, Beijing + USA, Portland', // 10.05, 435316: 254 MiB, 0.0000130651 FIL
+  f023649: 'active-b, Korea, Seoul', // 10.05, 435377: 508 MiB, 0.00013032625 FIL
+  f024016: 'active-b, USA, Portland', // 10.05, 435225: 254 MiB, 0.00006534 FIL
 
-  // Sealing - price tier b
 
-  f03273: 'sealing-b, USA, Portland, 6block', // 10.05: 254 MiB, 0.000013015 FIL
-  f03275: 'sealing-b, USA, Portland, 6block', // top miner - 10.04: 254 MiB, 0.0000130888 FIL
-  f08482: 'sealing-b, USA, Athol, @why', // 10.04: 254 MiB, 0.000065117 FIL
-  f010241: 'sealing-b, China, Beijing + USA, Portland', // 10.05: 254 MiB, 0.0000130651 FIL
-  f023649: 'sealing-b, Korea, Seoul', // 10.05: 508 MiB, 0.00013032625 FIL
-  f024016: 'sealing-b, USA, Portland', // 10.05: 254 MiB, 0.00006534 FIL
+  f02381: 'sealing-b, China, Dongguan, 西野七濑迷叔', // 10.06, 452668: 254 MiB, 0.00006490125 FIL
+  f03176: 'sealing-, USA, San Mateo, Five Star-Helmsman&Heiben', // 10.06, 452689: 254 MiB, 0.000013007 FIL
+  f03275: 'sealing-b, USA, Portland, 6block', // top miner - 10.04, 421645: 254 MiB, 0.0000130888 FIL
+  f03491: 'sealing-b, China, Hong Kong', // 10.06, 452684: // 254 MiB, 0.00001299995 FIL
+  f05315: 'sealing-b, USA, Portland, 6block', // 10.06, 452378: 254 MiB, 0.000013006275 FIL
+  f05316: 'sealing-b, USA, Portland, 6block', // 10.06, 452724: 254 MiB, 0.00001297695 FIL
+  f08025: 'sealing-b, China, Hong Kong', // 10.06, 452628: 254 MiB, 0.000013004475 FIL
+  f08311: 'sealing-b, China, Shenzhen', // 10.06, 452766: 508 MiB, 0.0001309705 FIL
+  f08383: 'sealing-b, USA, Portland, 6block', // 10.06, 452344: 254 MiB, 0.000013006925 FIL
+  f08482: 'sealing-b, USA, Athol, @why', // 10.04, 421320: 254 MiB, 0.000065117 FIL
+  f010088: 'sealing-b, DNS:purumine.com', // 10.06, 452624: 254 MiB, 0.00001300305 FIL
+  f018772: 'sealing-b, Australia', // 10.06, 452748: 254 MiB, 0.00006502625 FIL
+  f019041: 'sealing-b, Singapore', // 10.06, 452753: 254 MiB, 0.0000650085 FIL
+  f020605: 'sealing-b, China, Yibin', // 10.06, 451710: 254 MiB, 0.000012995775 FIL
+  f024025: 'sealing-b, China, Chengdu', // 10.06, 452452: 254 MiB, 0.000064868125 FIL
+  f024521: 'sealing-b, Korea, Gyeonggi-do', // 10.06, 452657: 254 MiB, 0.000065130375 FIL
 
-  // Sealing - price tier c
 
-  f01278: 'sealing-c, USA, Grand Rapids, MiMiner', // 10.04: 254 MiB, 0.013011475 FIL
-  f02388: 'sealing-c, Netherlands, Amersfoort, Kroketje', // 10.04: 254 MiB, 0.012982425 FIL
+  // Price tier C - <= 2 leading zero
 
-  // Min-size
+  f01238: 'active-c, Vietnam, Hanoi, FILECOIN-VIETNAM', // 10.04, 431954: 254 MiB, 0.012995375 FIL
+  f01278: 'active-c, USA, Grand Rapids, MiMiner', // 10.04, 421214: 254 MiB, 0.013011475 FIL
+  f02388: 'active-c, Netherlands, Amersfoort, Kroketje', // 10.04, 421256: 254 MiB, 0.012982425 FIL
+
+  f014409: 'sealing-c, USA, Waxhaw', // 10.06, 451782: 254 MiB, 0.01297545 FIL
+  f015877: 'sealing-c, China, Jiaxing + USA', // 10.06, 451761: 254 MiB, 0.013009225 FIL
+
+// Min-size
 
   f02576: 'min-size, Denmark, Gjerlev, BenjaminH', // 10.04: 268435456 < 943718400 (~1GiB)
 
