@@ -5,6 +5,30 @@
 const annotations = {
   // Candidates
 
+  f01247: "candidate, Canada, Montreal, BigChungus™",
+  f02606: "candidate, China, Shanghai",
+  f02619: "candidate, China, Beijing, Blockcasting",
+  f07982: "candidate, China, Shenzhen",
+  f08091: "candidate, USA",
+  f08094: "candidate, China, Guangzhou, dongshao",
+  f08157: "candidate, China, Beijing + Germany, Frankfurt, 超星际",
+  f08264: "candidate, China, Xianning",
+  f08474: "candidate, China, Hong Kong",
+  f010498: "candidate, China, Shenzhen",
+  f010617: "candidate, Canada, Surrey, @feiya200",
+  f015927: "candidate, USA, East Islip",
+  f020398: "candidate, China, Zhangjiakou",
+  f020742: "candidate, China, Shanghai + Hangzhou + Shaoxing",
+  f020923: "candidate, China, Cangzhou",
+  f020975: "candidate, China, Shandong",
+  f021444: "candidate, China, Guangzhou",
+  f022070: "candidate, China, Jieyang",
+  f022309: "candidate, Korea, Chuncheon",
+  f022522: "candidate, China, Dongguan",
+  f022913: "candidate, Korea, Uiwang",
+  f023943: "candidate, USA, Ashburn",
+  f025017: "candidate, China, Hefei",
+
   // Live
 
   // Testing
