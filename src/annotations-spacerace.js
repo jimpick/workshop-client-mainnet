@@ -215,6 +215,10 @@ const annotations = {
 
   // New
 
+  f029344: 'new, Korea, Seongnam-si',
+  f029368: 'new, Korea, Gangseo-gu',
+  f029421: 'new, China, Hong Kong',
+
   // Min Size
 
   f01152: 'min-size, China, Beijing', // 131072 < 134217728
