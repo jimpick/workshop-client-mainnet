@@ -33,6 +33,7 @@ export default function useDealMonitor ({ appState, updateAppState }) {
   const checkSet = useMemo(() => {
     // console.log('Jim terminated', terminated)
     const checkSet = new Set()
+    checkSet.add(1) // Slingshot deals
     if (deals) {
       const now = Date.now()
       for (const deal of deals) {
@@ -49,7 +50,7 @@ export default function useDealMonitor ({ appState, updateAppState }) {
         }
       }
     }
-    // console.log('checkSet', checkSet)
+    console.log('checkSet', checkSet)
 
     return checkSet
   }, [deals, terminated])

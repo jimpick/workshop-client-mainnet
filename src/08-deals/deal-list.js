@@ -114,7 +114,7 @@ export default function DealList ({ client, appState, cid, filterErrors }) {
   return (
     <div>
       {filteredDeals.map((deal, i) => {
-        const { proposalCid, fromNode, miner, date, cid: cidDeal } = deal
+        const { proposalCid, fromNode, miner, date, cid: cidDeal, type } = deal
         const data = dealData && dealData[proposalCid]
         const clientDealStatus = data && data.clientDealStatus
         // const dealState = clientDealStatus && clientDealStatus.State
@@ -141,7 +141,7 @@ export default function DealList ({ client, appState, cid, filterErrors }) {
               {annotations[miner] && <span> ({annotations[miner]})</span>}
             </div>
             <div style={{ fontSize: '50%' }}>
-              <div>Date: {new Date(date).toString()}</div>
+              <div>Type: {type} Date: {new Date(date).toString()}</div>
               {!cid && (
                 <div>
                   CID: {cidDeal} <button onClick={copyCid}>Copy</button>

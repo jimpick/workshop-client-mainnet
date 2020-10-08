@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState, useRef, useMemo } from 'react'
 import { format, formatDistance } from 'date-fns'
 import copy from 'clipboard-copy'
 import useLotusClient from '../../lib/use-lotus-client'
@@ -96,7 +96,8 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
   const data = dealData && dealData[proposalCid]
   const clientDealStatus = data && data.clientDealStatus
   // const dealState = clientDealStatus && clientDealStatus.State
-  const dealMessage = clientDealStatus && clientDealStatus.Message.replace(/\n/g, '')
+  const dealMessage =
+    clientDealStatus && clientDealStatus.Message.replace(/\n/g, '')
   const dealHistoryData = dealHistory && dealHistory[proposalCid]
   const lastHistory =
     dealHistoryData && dealHistoryData[dealHistoryData.length - 1]
@@ -140,7 +141,9 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
     return ['stuck', `FundsEnsured: ${elapsedNow}`]
   }
   if (lastDealState === 'Error') {
-    const matchBusy = dealMessage.match(/deal rejected: (cannot seal a sector before .*)/)
+    const matchBusy = dealMessage.match(
+      /deal rejected: (cannot seal a sector before .*)/
+    )
     if (matchBusy) {
       return ['busy', matchBusy[1].trim()]
     }
@@ -160,11 +163,15 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
     if (/err: routing: not found/.test(dealMessage)) {
       return ['xnr', '']
     }
-    const matchMinSize = dealMessage.match(/piece size less than minimum required size: (.*)/)
+    const matchMinSize = dealMessage.match(
+      /piece size less than minimum required size: (.*)/
+    )
     if (matchMinSize) {
       return ['min-size', matchMinSize[1].trim()]
     }
-    const matchMinAsk = dealMessage.match(/storage price per epoch less than asking price: (.*)/)
+    const matchMinAsk = dealMessage.match(
+      /storage price per epoch less than asking price: (.*)/
+    )
     if (matchMinAsk) {
       return ['min-ask', matchMinAsk[1].trim()]
     }
@@ -179,7 +186,9 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
     if (matchErrorProvider) {
       return ['error', matchErrorProvider[1].trim()]
     }
-    const matchErrorResponse = dealMessage.match(/error reading Response message: (.*)/)
+    const matchErrorResponse = dealMessage.match(
+      /error reading Response message: (.*)/
+    )
     if (matchErrorResponse) {
       return ['error', matchErrorResponse[1].trim()]
     }
@@ -337,8 +346,10 @@ function BucketDealList ({
   })
   let toAnnotationsOut = toAnnotations
     .map(([miner, { shortAnnotation, comment }]) => {
-      return `\t${miner}: ${JSON.stringify(`${bucket}, ${shortAnnotation}`)},` +
-      (comment && comment !== '' ? ` // ${comment}` : '')
+      return (
+        `\t${miner}: ${JSON.stringify(`${bucket}, ${shortAnnotation}`)},` +
+        (comment && comment !== '' ? ` // ${comment}` : '')
+      )
     })
     .join('\n')
 
@@ -348,7 +359,8 @@ function BucketDealList ({
       <div style={{ marginBottom: '1rem' }}>
         <details>
           <summary>
-            New entries ({toAnnotationsOut === '' ? 0 : toAnnotationsOut.split('\n').length}) {' '}
+            New entries (
+            {toAnnotationsOut === '' ? 0 : toAnnotationsOut.split('\n').length}){' '}
             <button onClick={copyNewEntries}>Copy to Clipboard</button>{' '}
             {nextBucket && <a href={`#${nextBucket}`}>⇨ {nextBucket}</a>}
           </summary>
@@ -367,7 +379,7 @@ function BucketDealList ({
 }
 
 export default function DealList ({ appState, cid, filterErrors }) {
-  const { selectedNode } = appState
+  const { selectedNode, deals: originalDeals } = appState
   const [now, setNow] = useState(Date.now())
   const [height, setHeight] = useState()
   const client = useLotusClient(selectedNode, 'node')
@@ -390,12 +402,17 @@ export default function DealList ({ appState, cid, filterErrors }) {
     }
   }, [client])
 
-  if (!appState.deals) return null
+  const cameraDeals = useMemo(() => {
+    return originalDeals && originalDeals.filter(deal => deal.type === 'camera')
+  }, [originalDeals])
+
+  if (!cameraDeals) return null
+
   const { dealData, dealHistory } = appState
 
   let deals = cid
-    ? appState.deals.filter(deal => deal.cid === cid)
-    : [...appState.deals]
+    ? cameraDeals.filter(deal => deal.cid === cid)
+    : [...cameraDeals]
   deals.sort(({ date: a }, { date: b }) => b - a)
 
   return (
