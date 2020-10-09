@@ -208,7 +208,6 @@ const annotations = {
   f018782: 'stuck, Singapore + Germany, Frankfurt + USA', // Transferring: about 3 hours
   f019114: 'stuck, USA, Howell', // CheckForAcceptance: about 3 hours
   f019118: 'stuck, China, Jiaxing', // Transferring: about 3 hours
-  f019243: 'stuck, USA, Jackson', // CheckForAcceptance: about 3 hours
   f019399: 'stuck, Korea, Busan', // CheckForAcceptance: about 3 hours
   f019616: 'stuck, USA, Marlborough', // CheckForAcceptance: about 3 hours
   f020385: 'stuck, Korea, Incheon', // CheckForAcceptance: about 3 hours
