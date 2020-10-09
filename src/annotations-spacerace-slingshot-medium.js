@@ -5,17 +5,6 @@
 const annotations = {
   // Candidates
 
-  f01276: "candidate, Canada, Brampton, NBFS Canada",
-  f03345: "candidate, China, Fuzhou, chh",
-  f014329: "candidate, China, Hong Kong",
-  f017665: "candidate, China, Shenyang",
-  f021265: "candidate, China, Wuhan",
-  f022072: "candidate, China, Jieyang",
-  f024066: "candidate, NR",
-  f024617: "candidate, Korea, Bucheon-si",
-  f024944: "candidate, Korea, Yeongdeungpo-dong",
-  f024986: "candidate, China, Zhongshan",
-  f025019: "candidate, China, Taiwan, Hsinchu",
 
   // Live
 
@@ -24,6 +13,7 @@ const annotations = {
   f01234: "testing, Belgium, De Klinge, Eliovp",
   f01240: "testing, Netherlands, HidNand",
   f01247: "testing, Canada, Montreal, BigChungus™",
+  f01276: "testing, Canada, Brampton, NBFS Canada",
   f01279: "testing, China, Sichuan",
   f01287: "testing, China, Jiaxing, MaiTian",
   f01799: "testing, China, Jinan, TokenHome",
@@ -59,6 +49,7 @@ const annotations = {
   f03224: "testing, Ukraine, Irpin, oboltusov",
   f03274: "testing, USA, Portland, 6block",
   f03339: "testing, China, Luzhou, benxun",
+  f03345: "testing, China, Fuzhou, chh",
   f03363: "testing, Singapore",
   f03364: "testing, China, Guangzhou",
   f03544: "testing, China, Guiyang",
@@ -113,6 +104,7 @@ const annotations = {
   f010528: "testing, China, Chongqing",
   f010558: "testing, China, Shenzhen + Hong Kong",
   f014281: "testing, Netherlands, Permerend",
+  f014329: "testing, China, Hong Kong",
   f014394: "testing, China, Suzhou",
   f014569: "testing, NR",
   f014768: "testing, Singapore",
@@ -122,6 +114,7 @@ const annotations = {
   f016482: "testing, USA, Aliquippa",
   f016563: "testing, China, Deyang",
   f016594: "testing, Germany",
+  f017665: "testing, China, Shenyang",
   f017734: "testing, Australia, Sydney",
   f017970: "testing, China, Baoding",
   f018501: "testing, China, Beijing",
@@ -154,6 +147,7 @@ const annotations = {
   f020975: "testing, China, Shandong",
   f021075: "testing, China, Chengdu",
   f021255: "testing, China, Suzhou + Netherlands",
+  f021265: "testing, China, Wuhan",
   f021316: "testing, China, Yangzhou",
   f021328: "testing, China, Dongguan",
   f021479: "testing, China, Qingdao",
@@ -161,6 +155,7 @@ const annotations = {
   f021710: "testing, China, Shijiazhuang",
   f021870: "testing, USA, Portland",
   f022070: "testing, China, Jieyang",
+  f022072: "testing, China, Jieyang",
   f022142: "testing, USA, Queens",
   f022163: "testing, NR",
   f022261: "testing, China, Luzhou",
@@ -196,15 +191,19 @@ const annotations = {
   f023943: "testing, USA, Ashburn",
   f023971: "testing, USA, @Brian Y",
   f024015: "testing, USA, Portland",
+  f024066: "testing, NR",
   f024184: "testing, Korea, Gangnam-gu",
   f024468: "testing, China, Shenzhen",
   f024496: "testing, China, Dongguan",
   f024550: "testing, China, Wenzhou",
+  f024617: "testing, Korea, Bucheon-si",
   f024902: "testing, Korea, Incheon",
   f024903: "testing, China, Mianyang",
   f024983: "testing, China, Hong Kong",
+  f024986: "testing, China, Zhongshan",
   f025007: "testing, Korea, Gyeonggi-do",
   f025017: "testing, China, Hefei",
+  f025019: "testing, China, Taiwan, Hsinchu",
   f029421: "testing, China, Hong Kong",
 
   // Transferring
@@ -299,6 +298,7 @@ const annotations = {
   f021616: "timeout-ask, China, Shanghai", // 10.07
   f024030: "timeout-ask, Korea, Gwangju", // 10.07
   f024070: "timeout-ask, Japan, Setagaya-ku", // 10.07
+  f024944: "timeout-ask, Korea, Yeongdeungpo-dong", // 10.07
 
   // Error during ask
   f03131: "error-ask, China, Changsha", // failed to open stream to miner: exhausted 5 attempts but failed to open stream, err: context canceled
