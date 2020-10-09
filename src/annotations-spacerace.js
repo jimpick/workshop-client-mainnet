@@ -198,6 +198,29 @@ const annotations = {
 
   // New
 
+  f023009: 'new, USA, Berkeley',
+  f023152: 'new, China, Quanzhou',
+  f023882: 'new, NR',
+  f024800: 'new, China, Hong Kong',
+  f025025: 'new, China, Qingdao',
+  f025044: 'new, NR',
+  f029412: 'new, China, Hefei',
+  f029416: 'new, NR',
+  f029425: 'new, NR',
+  f029490: 'new, NR',
+  f029529: 'new, China, Dongguan',
+  f029552: 'new, China, Changsha',
+  f029566: 'new, NR',
+  f022954: 'new, NR',
+  f024969: 'new, NR',
+  f029477: 'new, NR',
+  f029556: 'new, China, Wuxi',
+  f029587: 'new, Hungary',
+  f029595: 'new, China, Guangdong',
+  f029619: 'new, China, Hefei',
+  f029628: 'new, Australia, Brisbane',
+  f029649: 'new, China, Beijing',
+
   // Min Size
 
   f01152: 'min-size, China, Beijing', // 131072 < 134217728
