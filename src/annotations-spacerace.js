@@ -6,82 +6,96 @@
 const annotations = {
   // Active
 
+  f01247: 'active, Canada, Montreal, BigChungus™', // about 17 hours
+  f01272: 'active, Singapore', // about 7 hours
+  f01799: 'active, China, Jinan, TokenHome', // about 17 hours
+  f01800: 'active, China, Shenzhen + Chengdu', // about 14 hours
+  f02388: 'active, Netherlands, Amersfoort, Kroketje', // about 11 hours
+  f02421: 'active, China, Deyang + Singapore, 腾盛科技', // about 14 hours
+  f02606: 'active, China, Shanghai', // about 11 hours
+  f02619: 'active, China, Beijing, Blockcasting', // about 17 hours
+  f02622: 'active, USA, Portland, 6block', // about 6 hours
+  f02654: 'active, China, Shanghai', // about 15 hours
+  f03134: 'active, China, Cangzhou, 乔木信息', // about 17 hours
+  f03143: 'active, China, Shijiazhuang + Hong Kong', // about 17 hours
+  f03176: 'active, USA, San Mateo, Five Star-Helmsman&Heiben', // about 16 hours
+  f03223: 'active, USA', // about 13 hours
+  f03302: 'active, China, Chengdu', // about 15 hours
+  f03345: 'active, China, Fuzhou, chh', // about 23 hours
+  f05664: 'active, China, Shenzhen, 艾比特网络科技', // about 17 hours
+  f07998: 'active, China, Hangzhou', // about 10 hours
+  f08019: 'active, China, Yantai, 三合', // about 14 hours
+  f08240: 'active, Russia, Novosibirsk, Rabinovitch', // about 15 hours
+  f08474: 'active, China, Hong Kong', // about 17 hours
+  f010088: 'active, DNS:purumine.com', // about 15 hours
+  f010247: 'active, China, Yantai', // about 13 hours
+  f010400: 'active, China, Shenyang', // about 9 hours
+  f010479: 'active, France, Fontenay-sous-Bois', // about 17 hours
+  f010491: 'active, China, Shenzhen', // about 17 hours
+  f010505: 'active, China, Wuhan', // about 16 hours
+  f010513: 'active, China, Chongqing', // about 17 hours
+  f014768: 'active, Singapore', // about 17 hours
+  f015233: 'active, China, Nanjing', // about 14 hours
+  f019022: "active, China, Xi'an", // about 10 hours
+  f019240: 'active, China, Beijing', // about 17 hours
+  f019638: 'active, Germany, Frankfurt', // about 21 hours
+  f020742: 'active, China, Shanghai + Hangzhou + Shaoxing', // about 17 hours
+  f021265: 'active, China, Wuhan', // about 12 hours
+  f022261: 'active, China, Luzhou', // about 13 hours
+  f022566: 'active, China, Nanchong', // about 12 hours
+  f022853: 'active, China, Fuzhou', // about 17 hours
+  f023200: 'active, China, Shanghai', // about 12 hours
+  f023526: 'active, China, Chongqing', // about 17 hours
+  f023565: 'active, China, Fuzhou', // about 17 hours
+  f023678: 'active, China, Jiaxing', // about 18 hours
+  f024030: 'active, Korea, Gwangju', // about 14 hours
+  f025017: 'active, China, Hefei', // about 17 hours
+
   // Active-sealing (active, with in-flight sealing)
 
   f01234: 'active-sealing, Belgium, De Klinge, Eliovp',
-  f01272: 'active-sealing, Singapore',
   f01279: 'active-sealing, China, Sichuan',
   f01287: 'active-sealing, China, Jiaxing, MaiTian',
-  f01799: 'active-sealing, China, Jinan, TokenHome',
-  f01800: 'active-sealing, China, Shenzhen + Chengdu',
   f02301: 'active-sealing, USA',
   f02387: 'active-sealing, Canada, Brampton, NBFS Canada',
   f02401: 'active-sealing, Canada, Chambly, NBFS Canada',
   f02490: 'active-sealing, China, Fujian',
-  f02492: 'active-sealing, China, Shenzhen',
-  f02606: 'active-sealing, China, Shanghai',
-  f02619: 'active-sealing, China, Beijing, Blockcasting',
-  f02622: 'active-sealing, USA, Portland, 6block',
   f02668: 'active-sealing, China, Chengdu',
-  f03134: 'active-sealing, China, Cangzhou, 乔木信息',
-  f03143: 'active-sealing, China, Shijiazhuang + Hong Kong',
-  f03223: 'active-sealing, USA',
-  f03302: 'active-sealing, China, Chengdu',
   f03339: 'active-sealing, China, Luzhou, benxun',
   f03488: 'active-sealing, Korea, Geumcheon-gu',
   f03624: 'active-sealing, Germany, Chemnitz, ode',
-  f05664: 'active-sealing, China, Shenzhen, 艾比特网络科技',
   f07824: 'active-sealing, China, Shanghai',
-  f07998: 'active-sealing, China, Hangzhou',
-  f08019: 'active-sealing, China, Yantai, 三合',
   f08094: 'active-sealing, China, Guangzhou, dongshao',
   f08157: 'active-sealing, China, Beijing + Germany, Frankfurt, 超星际',
-  f08240: 'active-sealing, Russia, Novosibirsk, Rabinovitch',
   f08285: 'active-sealing, Latvia, Riga, stander',
-  f08474: 'active-sealing, China, Hong Kong',
   f09770: "active-sealing, China, Xi'an",
-  f010088: 'active-sealing, DNS:purumine.com',
-  f010247: 'active-sealing, China, Yantai',
-  f010400: 'active-sealing, China, Shenyang',
-  f010479: 'active-sealing, France, Fontenay-sous-Bois',
-  f010505: 'active-sealing, China, Wuhan',
   f010507: 'active-sealing, China, Hangzhou',
   f010558: 'active-sealing, China, Shenzhen + Hong Kong',
-  f014768: 'active-sealing, Singapore',
-  f015233: 'active-sealing, China, Nanjing',
   f019029: 'active-sealing, Serbia, Boljevac',
   f019099: 'active-sealing, China, Hong Kong',
   f019100: 'active-sealing, Romania, Cluj-Napoca',
-  f019638: 'active-sealing, Germany, Frankfurt',
   f019824: 'active-sealing, USA',
   f020975: 'active-sealing, China, Shandong',
-  f022853: 'active-sealing, China, Fuzhou',
-  f023200: 'active-sealing, China, Shanghai',
-  f023526: 'active-sealing, China, Chongqing',
   f023843: 'active-sealing, NR',
-  f025017: 'active-sealing, China, Hefei',
 
   // Sealing
 
-  f01247: 'sealing, Canada, Montreal, BigChungus™',
   f01276: 'sealing, Canada, Brampton, NBFS Canada',
   f02299: 'sealing, China, Dongguan, Yolo',
   f02305: 'sealing, China, Dongguan',
-  f02388: 'sealing, Netherlands, Amersfoort, Kroketje',
   f02399: 'sealing, China, Zhejiang',
   f02405: 'sealing, China, Shenzhen',
   f02416: 'sealing, China, Guangdong, 星际无限',
-  f02421: 'sealing, China, Deyang + Singapore, 腾盛科技',
+  f02419: 'sealing, China, Shanghai, yuantai',
   f02423: 'sealing, Ukraine, Kyiv, igowreck',
   f02500: 'sealing, Korea, Seongnam-si',
   f02625: 'sealing, China, Shanghai, IPFS星际工厂',
-  f02654: 'sealing, China, Shanghai',
   f02665: 'sealing, Netherlands, Amsterdam, fm-ops',
   f02772: 'sealing, China, Chengdu',
   f03131: 'sealing, China, Changsha',
-  f03176: 'sealing, USA, San Mateo, Five Star-Helmsman&Heiben',
+  f03224: 'sealing, Ukraine, Irpin, oboltusov',
   f03340: "sealing, China, Xi'an",
-  f03345: 'sealing, China, Fuzhou, chh',
+  f03347: 'sealing, China, Shenzhen',
   f03364: 'sealing, China, Guangzhou',
   f03482: 'sealing, China, Wuxi',
   f03512: 'sealing, New Zealand, Auckland, NZFILECOIN01',
@@ -97,13 +111,12 @@ const annotations = {
   f09731: 'sealing, China, Guiyang',
   f09833: 'sealing, USA, San Jose',
   f010048: 'sealing, China, Shanghai',
+  f010084: 'sealing, China, Beijing',
   f010399: 'sealing, China, Guangzhou',
-  f010491: 'sealing, China, Shenzhen',
   f010493: 'sealing, China, Shanghai',
   f010498: 'sealing, China, Shenzhen',
   f010501: 'sealing, China, Hangzhou',
   f010512: 'sealing, China, Zhengzhou',
-  f010513: 'sealing, China, Chongqing',
   f010523: 'sealing, China, Beijing',
   f010528: 'sealing, China, Chongqing',
   f014329: 'sealing, China, Hong Kong',
@@ -116,13 +129,11 @@ const annotations = {
   f017734: 'sealing, Australia, Sydney',
   f017970: 'sealing, China, Baoding',
   f018772: 'sealing, Australia',
-  f019022: "sealing, China, Xi'an",
   f019024: 'sealing, China, Sichuan',
   f019041: 'sealing, Singapore',
   f019074: 'sealing, China, Guangdong',
   f019104: 'sealing, Canada, Chambly',
   f019118: 'sealing, China, Jiaxing',
-  f019240: 'sealing, China, Beijing',
   f019243: 'sealing, USA, Jackson',
   f019354: 'sealing, Germany, Frankfurt',
   f019362: 'sealing, China, Hangzhou',
@@ -133,10 +144,9 @@ const annotations = {
   f020489: 'sealing, China, Lioaning',
   f020541: 'sealing, China, Shanghai',
   f020608: 'sealing, Russia',
-  f020742: 'sealing, China, Shanghai + Hangzhou + Shaoxing',
   f020923: 'sealing, China, Cangzhou',
   f021262: 'sealing, China, Shanghai',
-  f021265: 'sealing, China, Wuhan',
+  f021274: 'sealing, China, Shanghai',
   f021316: 'sealing, China, Yangzhou',
   f021339: 'sealing, China, Jiaxing',
   f021540: 'sealing, Germany, Frankfurt, @hsanjuan',
@@ -147,23 +157,18 @@ const annotations = {
   f022072: 'sealing, China, Jieyang',
   f022142: 'sealing, USA, Queens',
   f022163: 'sealing, NR',
-  f022261: 'sealing, China, Luzhou',
   f022376: 'sealing, China, Dongguan',
   f022522: 'sealing, China, Dongguan',
-  f022566: 'sealing, China, Nanchong',
   f022753: 'sealing, China, Hong Kong',
   f022836: 'sealing, China, Chongqing',
   f022841: 'sealing, China, Zhongshan',
   f022922: 'sealing, China, Shenzhen',
   f022969: 'sealing, China, Chengdu',
   f023179: 'sealing, China, Fuzhou',
-  f023565: 'sealing, China, Fuzhou',
   f023571: 'sealing, NR',
-  f023678: 'sealing, China, Jiaxing',
   f023939: 'sealing, NR',
   f023943: 'sealing, USA, Ashburn',
   f023971: 'sealing, USA, @Brian Y',
-  f024030: 'sealing, Korea, Gwangju',
   f024066: 'sealing, NR',
   f024496: 'sealing, China, Dongguan',
   f024521: 'sealing, Korea, Gyeonggi-do',
@@ -180,29 +185,14 @@ const annotations = {
 
   // Stuck
 
-  f01240: 'stuck, Netherlands, HidNand', // CheckForAcceptance: about 4 hours
-  f01280: 'stuck, China, Wuxi, 了凡超算', // CheckForAcceptance: about 4 hours
-  f02381: 'stuck, China, Dongguan, 西野七濑迷叔', // Transferring: about 4 hours
-  f02419: 'stuck, China, Shanghai, yuantai', // CheckForAcceptance: about 4 hours
-  f03224: 'stuck, Ukraine, Irpin, oboltusov', // CheckForAcceptance: about 4 hours
-  f03347: 'stuck, China, Shenzhen', // CheckForAcceptance: about 4 hours
-  f08371: 'stuck, China, Chengdu', // Transferring: about 4 hours
-  f010084: 'stuck, China, Beijing', // CheckForAcceptance: about 4 hours
-  f019114: 'stuck, USA, Howell', // CheckForAcceptance: about 4 hours
-  f019616: 'stuck, USA, Marlborough', // CheckForAcceptance: about 4 hours
-  f020523: 'stuck, China, Suzhou', // CheckForAcceptance: about 4 hours
-  f021274: 'stuck, China, Shanghai', // CheckForAcceptance: about 4 hours
-  f021357: 'stuck, China, Shanghai', // CheckForAcceptance: about 4 hours
-  f021444: 'stuck, China, Guangzhou', // Transferring: about 4 hours
-  f022089: 'stuck, China, Beijing', // CheckForAcceptance: about 4 hours
-  f022125: 'stuck, China, Shenzhen', // CheckForAcceptance: about 4 hours
-  f022202: 'stuck, USA, Howell', // CheckForAcceptance: about 4 hours
-  f022755: 'stuck, China, Shenzhen', // CheckForAcceptance: about 4 hours
-  f023501: 'stuck, China, Mianyang', // CheckForAcceptance: about 3 hours
-  f023518: 'stuck, China, Taiyuan', // CheckForAcceptance: about 4 hours
-  f024130: 'stuck, Korea', // CheckForAcceptance: about 4 hours
-  f024468: 'stuck, China, Shenzhen', // Transferring: about 4 hours
-  f024526: 'stuck, Korea', // CheckForAcceptance: about 4 hours
+  f01280: 'stuck, China, Wuxi, 了凡超算', // CheckForAcceptance: about 23 hours
+  f019114: 'stuck, USA, Howell', // CheckForAcceptance: about 23 hours
+  f019616: 'stuck, USA, Marlborough', // CheckForAcceptance: about 23 hours
+  f020523: 'stuck, China, Suzhou', // CheckForAcceptance: about 23 hours
+  f022089: 'stuck, China, Beijing', // CheckForAcceptance: about 23 hours
+  f022202: 'stuck, USA, Howell', // CheckForAcceptance: about 23 hours
+  f022755: 'stuck, China, Shenzhen', // CheckForAcceptance: about 23 hours
+  f023518: 'stuck, China, Taiyuan', // CheckForAcceptance: about 23 hours
 
   // Busy
 
@@ -267,6 +257,9 @@ const annotations = {
 
   // Error
 
+  f01240: 'error, Netherlands, HidNand', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f02381: 'error, China, Dongguan, 西野七濑迷叔', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f02492: 'error, China, Shenzhen', // error in deal activation: handling applied event: deal wasn't active: deal=509832, parentState=bafy2bzaceauxx74ntvduzvioqnvm3xyx5xlmbgs5rlkeo2nud2leuvxw23vra, h=130652
   f02529: 'error, China, Chongqing', // stream reset
   f02613: 'error, China, Chongqing', // stream reset
   f02627: 'error, China, Guilin', // stream reset
@@ -281,6 +274,7 @@ const annotations = {
   f08091: 'error, USA', // AddPiece failed: adding piece to sector: writing piece: acquire unsealed sector: local acquire error: couldn't find a suitable path for a sector
   f08290: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.26891531073635752 FIL, balance: 0.260387247993226643 FIL): validation failure
   f08315: 'error, China, Chongqing', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.268915310332475959 FIL, balance: 0.260387247993226643 FIL): validation failure
+  f08371: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: response rejected
   f08393: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.264391840736705178 FIL, balance: 0.24478239052826967 FIL): validation failure
   f08532: 'error, USA', // stream reset
   f08854: 'error, China, Dongguan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 1.101924638479012387 FIL, balance: 1.009093139418046558 FIL): validation failure
@@ -419,7 +413,9 @@ const annotations = {
   f021328: 'error, China, Dongguan', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.099999999961506435 FIL, balance: 0.058993697109191307 FIL): not enough funds to execute transaction
   f021337: 'error, China, Beijing', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.04824721005519411 FIL, balance: 0.03963510966092124 FIL): validation failure
   f021346: 'error, China, Shanghai', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 1.595180235084375323 FIL, balance: 1.591923227039515519 FIL): validation failure
+  f021357: 'error, China, Shanghai', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f021418: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.048247210278233181 FIL, balance: 0.03963510966092124 FIL): validation failure
+  f021444: 'error, China, Guangzhou', // failed to initiate data transfer: deal data transfer failed: response rejected
   f021479: 'error, China, Qingdao', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzacecljnby3jc6tewizm43ybr25bbpgrlzcj7derzk2r3qrqicthmwxi n 283176, TS: bafy2bzacecemxnzod4bfutz6rqrw63rrxqmwvvliaeszojfvbus75vmki6lic n283176)
   f021494: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.048247211290951125 FIL, balance: 0.03963510966092124 FIL): validation failure
   f021509: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.048242478879016202 FIL, balance: 0.03963510966092124 FIL): validation failure
@@ -438,6 +434,7 @@ const annotations = {
   f022033: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.044636505228751563 FIL, balance: 0.037566138543481729 FIL): validation failure
   f022119: 'error, USA, Lovettsville', // deal failed: (State=26) deal data verification failed: error generating CommP: failed to build treeCaused by:    0: failed to create data store    1: No such file or directory (os error 2)
   f022122: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.044636503100838264 FIL, balance: 0.037566138543481729 FIL): validation failure
+  f022125: 'error, China, Shenzhen', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f022132: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.04463200836314425 FIL, balance: 0.037566138543481729 FIL): validation failure
   f022250: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.044636495710408506 FIL, balance: 0.037566138543481729 FIL): validation failure
   f022276: 'error, Korea, Seoul', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.04463650118390787 FIL, balance: 0.037566138543481729 FIL): validation failure
@@ -476,6 +473,7 @@ const annotations = {
   f023462: 'error, China, Chengdu', // stream reset
   f023463: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.048035973552920536 FIL, balance: 0.026174416322952708 FIL): validation failure
   f023490: 'error, Ukraine, Kyiv', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 0.151515151386493597 FIL, balance: 0.126400318666756969 FIL): validation failure
+  f023501: 'error, China, Mianyang', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals error unmarshalling result: EOF
   f023505: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.048040958164546917 FIL, balance: 0.026174416322952708 FIL): validation failure
   f023530: 'error, China, Shanghai', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: protocol not supported
   f023534: 'error, China, Chongqing', // stream reset
@@ -501,8 +499,11 @@ const annotations = {
   f024031: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.023350145936229771 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f024101: 'error, China, Guiyang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.023354982320853051 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f024129: 'error, China, Zhejiang', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.099999999959988864 FIL, balance: 0.093670516525413172 FIL): not enough funds to execute transaction
+  f024130: 'error, Korea', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f024156: 'error, USA', // AddPiece failed: adding piece to sector: writing piece: pieceCid error: generating piece commitment: Rust panic: no unwind information
   f024165: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.023095980111052394 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
+  f024468: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f024526: 'error, Korea', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f024556: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.023100761579964129 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f024557: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.023095968593774531 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f024559: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.023100763352220531 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
