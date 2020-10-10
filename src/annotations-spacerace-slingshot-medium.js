@@ -5,6 +5,12 @@
 const annotations = {
   // Candidates
 
+  f023853: "candidate, China, Fuzhou",
+  f023855: "candidate, China, Fuzhou",
+  f029404: "candidate, USA, Portland + New Castle",
+  f030152: "candidate, China, Changsha",
+  f030219: "candidate, China, Changsha",
+
   // Live
 
   // Testing
