@@ -5,12 +5,6 @@
 const annotations = {
   // Candidates
 
-  f023853: "candidate, China, Fuzhou",
-  f023855: "candidate, China, Fuzhou",
-  f029404: "candidate, USA, Portland + New Castle",
-  f030152: "candidate, China, Changsha",
-  f030219: "candidate, China, Changsha",
-
   // Live
 
   // Testing
@@ -203,6 +197,8 @@ const annotations = {
   f023678: "testing, China, Jiaxing",
   f023825: "testing, USA, Portland",
   f023843: "testing, NR",
+  f023853: "testing, China, Fuzhou",
+  f023855: "testing, China, Fuzhou",
   f023939: "testing, NR",
   f023943: "testing, USA, Ashburn",
   f023971: "testing, USA, @Brian Y",
@@ -224,6 +220,7 @@ const annotations = {
   f025017: "testing, China, Hefei",
   f025019: "testing, China, Taiwan, Hsinchu",
   f025025: "testing, China, Qingdao",
+  f029404: "testing, USA, Portland + New Castle",
   f029421: "testing, China, Hong Kong",
   f029425: "testing, NR",
   f029490: "testing, NR",
@@ -231,6 +228,8 @@ const annotations = {
   f029595: "testing, China, Guangdong",
   f029619: "testing, China, Hefei",
   f029628: "testing, Australia, Brisbane",
+  f030152: "testing, China, Changsha",
+  f030219: "testing, China, Changsha",
 
   // Transferring
 
