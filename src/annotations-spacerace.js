@@ -6,89 +6,122 @@
 const annotations = {
   // Active
 
+  f01241: 'active, USA, Portland, 6block', // about 7 hours
+  f01247: 'active, Canada, Montreal, BigChungus™', // about 10 hours
+  f01280: 'active, China, Wuxi, 了凡超算', // about 22 hours
+  f01799: 'active, China, Jinan, TokenHome', // about 10 hours
+  f02299: 'active, China, Dongguan, Yolo', // about 11 hours
+  f02415: 'active, China, Hong Kong', // about 7 hours
+  f02416: 'active, China, Guangdong, 星际无限', // about 7 hours
+  f02501: 'active, USA, Portland, 6block', // about 10 hours
+  f02514: 'active, USA, Portland, 6block', // about 10 hours
+  f02606: 'active, China, Shanghai', // about 11 hours
+  f02619: 'active, China, Beijing, Blockcasting', // about 21 hours
+  f02620: 'active, Poland, Krakow, @magik6k', // about 15 hours
+  f02622: 'active, USA, Portland, 6block', // about 7 hours
+  f02623: 'active, USA, Portland, 6block', // about 7 hours
+  f02633: 'active, China, Hong Kong', // about 6 hours
+  f02645: 'active, China, Hong Kong', // about 7 hours
+  f02654: 'active, China, Shanghai', // about 15 hours
+  f03143: 'active, China, Shijiazhuang + Hong Kong', // about 8 hours
+  f03176: 'active, USA, San Mateo, Five Star-Helmsman&Heiben', // about 8 hours
+  f03224: 'active, Ukraine, Irpin, oboltusov', // about 14 hours
+  f03273: 'active, USA, Portland, 6block', // about 7 hours
+  f03274: 'active, USA, Portland, 6block', // about 7 hours
+  f03275: 'active, USA, Portland, 6block', // about 7 hours
+  f03302: 'active, China, Chengdu', // about 15 hours
+  f03339: 'active, China, Luzhou, benxun', // about 10 hours
+  f05317: 'active, USA, Portland', // about 7 hours
+  f05664: 'active, China, Shenzhen, 艾比特网络科技', // about 13 hours
+  f07819: 'active, China, Wuxi, YC--wuxi', // about 12 hours
+  f07998: 'active, China, Hangzhou', // about 22 hours
+  f08019: 'active, China, Yantai, 三合', // about 14 hours
+  f08025: 'active, China, Hong Kong', // about 6 hours
+  f08073: 'active, China, Qiqihar, QY7TT', // about 14 hours
+  f08157: 'active, China, Beijing + Germany, Frankfurt, 超星际', // about 17 hours
+  f08285: 'active, Latvia, Riga, stander', // about 20 hours
+  f08383: 'active, USA, Portland, 6block', // about 10 hours
+  f09693: 'active, USA, Portland + Singapore', // about 10 hours
+  f010048: 'active, China, Shanghai', // about 16 hours
+  f010084: 'active, China, Beijing', // about 15 hours
+  f010253: 'active, China, Beijing + USA, Portland', // about 6 hours
+  f010479: 'active, France, Fontenay-sous-Bois', // about 19 hours
+  f010513: 'active, China, Chongqing', // about 8 hours
+  f010528: 'active, China, Chongqing', // about 10 hours
+  f014394: 'active, China, Suzhou', // about 8 hours
+  f015233: 'active, China, Nanjing', // about 17 hours
+  f016563: 'active, China, Deyang', // about 11 hours
+  f018780: 'active, Singapore + Germany, Frankfurt + USA', // about 6 hours
+  f018781: 'active, Singapore + Germany, Frankfurt + USA', // about 7 hours
+  f018783: 'active, Singapore + Germany, Frankfurt + USA', // about 6 hours
+  f018784: 'active, Singapore + Germany, Frankfurt + USA', // about 6 hours
+  f019100: 'active, Romania, Cluj-Napoca', // about 23 hours
+  f019638: 'active, Germany, Frankfurt', // about 17 hours
+  f020541: 'active, China, Shanghai', // about 14 hours
+  f021265: 'active, China, Wuhan', // about 16 hours
+  f021583: 'active, China, Jiaxing', // about 16 hours
+  f021710: 'active, China, Shijiazhuang', // about 8 hours
+  f021870: 'active, USA, Portland', // about 9 hours
+  f022142: 'active, USA, Queens', // about 22 hours
+  f022853: 'active, China, Fuzhou', // about 16 hours
+  f023467: 'active, Norway, Oslo', // about 14 hours
+  f023843: 'active, NR', // about 23 hours
+  f023939: 'active, NR', // about 21 hours
+  f023971: 'active, USA, @Brian Y', // about 17 hours
+  f024015: 'active, USA, Portland', // about 6 hours
+  f024030: 'active, Korea, Gwangju', // about 14 hours
+  f024066: 'active, NR', // about 23 hours
+  f024184: 'active, Korea, Gangnam-gu', // about 14 hours
+  f024550: 'active, China, Wenzhou', // about 17 hours
+  f024800: 'active, China, Hong Kong', // about 17 hours
+  f024969: 'active, NR', // about 18 hours
+  f025017: 'active, China, Hefei', // about 18 hours
+
   // Active-sealing (active, with in-flight sealing)
 
   f01234: 'active-sealing, Belgium, De Klinge, Eliovp',
-  f01247: 'active-sealing, Canada, Montreal, BigChungus™',
   f01272: 'active-sealing, Singapore',
-  f01799: 'active-sealing, China, Jinan, TokenHome',
   f01800: 'active-sealing, China, Shenzhen + Chengdu',
   f02301: 'active-sealing, USA',
   f02387: 'active-sealing, Canada, Brampton, NBFS Canada',
   f02401: 'active-sealing, Canada, Chambly, NBFS Canada',
   f02421: 'active-sealing, China, Deyang + Singapore, 腾盛科技',
   f02490: 'active-sealing, China, Fujian',
-  f02606: 'active-sealing, China, Shanghai',
-  f02619: 'active-sealing, China, Beijing, Blockcasting',
-  f02622: 'active-sealing, USA, Portland, 6block',
-  f02654: 'active-sealing, China, Shanghai',
   f02668: 'active-sealing, China, Chengdu',
-  f03143: 'active-sealing, China, Shijiazhuang + Hong Kong',
-  f03176: 'active-sealing, USA, San Mateo, Five Star-Helmsman&Heiben',
-  f03302: 'active-sealing, China, Chengdu',
-  f03339: 'active-sealing, China, Luzhou, benxun',
   f03345: 'active-sealing, China, Fuzhou, chh',
   f03488: 'active-sealing, Korea, Geumcheon-gu',
   f03624: 'active-sealing, Germany, Chemnitz, ode',
-  f05664: 'active-sealing, China, Shenzhen, 艾比特网络科技',
   f07824: 'active-sealing, China, Shanghai',
-  f07998: 'active-sealing, China, Hangzhou',
-  f08019: 'active-sealing, China, Yantai, 三合',
-  f08157: 'active-sealing, China, Beijing + Germany, Frankfurt, 超星际',
-  f08285: 'active-sealing, Latvia, Riga, stander',
   f08474: 'active-sealing, China, Hong Kong',
   f09770: "active-sealing, China, Xi'an",
   f010088: 'active-sealing, DNS:purumine.com',
   f010247: 'active-sealing, China, Yantai',
   f010400: 'active-sealing, China, Shenyang',
-  f010479: 'active-sealing, France, Fontenay-sous-Bois',
   f010505: 'active-sealing, China, Wuhan',
   f010507: 'active-sealing, China, Hangzhou',
-  f010513: 'active-sealing, China, Chongqing',
   f014768: 'active-sealing, Singapore',
-  f015233: 'active-sealing, China, Nanjing',
   f019022: "active-sealing, China, Xi'an",
-  f019100: 'active-sealing, Romania, Cluj-Napoca',
   f019240: 'active-sealing, China, Beijing',
-  f019638: 'active-sealing, Germany, Frankfurt',
-  f019824: 'active-sealing, USA',
-  f021265: 'active-sealing, China, Wuhan',
   f022566: 'active-sealing, China, Nanchong',
   f023200: 'active-sealing, China, Shanghai',
   f023526: 'active-sealing, China, Chongqing',
   f023678: 'active-sealing, China, Jiaxing',
-  f023843: 'active-sealing, NR',
-  f024030: 'active-sealing, Korea, Gwangju',
-  f025017: 'active-sealing, China, Hefei',
 
   // Sealing
 
   f01152: 'sealing, China, Beijing',
   f01155: 'sealing, China, Shanghai, DianCun Tech',
-  f01241: 'sealing, USA, Portland, 6block',
   f01276: 'sealing, Canada, Brampton, NBFS Canada',
-  f01280: 'sealing, China, Wuxi, 了凡超算',
-  f02299: 'sealing, China, Dongguan, Yolo',
   f02399: 'sealing, China, Zhejiang',
   f02405: 'sealing, China, Shenzhen',
-  f02415: 'sealing, China, Hong Kong',
-  f02416: 'sealing, China, Guangdong, 星际无限',
+  f02419: 'sealing, China, Shanghai, yuantai',
   f02423: 'sealing, Ukraine, Kyiv, igowreck',
   f02492: 'sealing, China, Shenzhen',
   f02500: 'sealing, Korea, Seongnam-si',
-  f02501: 'sealing, USA, Portland, 6block',
-  f02514: 'sealing, USA, Portland, 6block',
-  f02620: 'sealing, Poland, Krakow, @magik6k',
-  f02623: 'sealing, USA, Portland, 6block',
   f02625: 'sealing, China, Shanghai, IPFS星际工厂',
-  f02633: 'sealing, China, Hong Kong',
-  f02645: 'sealing, China, Hong Kong',
   f02772: 'sealing, China, Chengdu',
   f03222: 'sealing, China, Yuncheong, 星云矿池',
-  f03224: 'sealing, Ukraine, Irpin, oboltusov',
-  f03273: 'sealing, USA, Portland, 6block',
-  f03274: 'sealing, USA, Portland, 6block',
-  f03275: 'sealing, USA, Portland, 6block',
+  f03223: 'sealing, USA',
   f03340: "sealing, China, Xi'an",
   f03347: 'sealing, China, Shenzhen',
   f03363: 'sealing, Singapore',
@@ -97,24 +130,15 @@ const annotations = {
   f03491: 'sealing, China, Hong Kong',
   f03544: 'sealing, China, Guiyang',
   f04443: 'sealing, China, Shanghai, 罗良科技',
-  f05317: 'sealing, USA, Portland',
   f07709: 'sealing, Korea, Dongjak-gu',
   f07806: 'sealing, China, Wuhan, HelloXP',
-  f07819: 'sealing, China, Wuxi, YC--wuxi',
   f07919: 'sealing, China, Beijing, Shanghai, Hunan',
-  f08025: 'sealing, China, Hong Kong',
-  f08073: 'sealing, China, Qiqihar, QY7TT',
   f08204: 'sealing, USA, St. Louis',
   f08371: 'sealing, China, Chengdu',
-  f08383: 'sealing, USA, Portland, 6block',
   f08482: 'sealing, USA, Athol, @why',
   f09002: 'sealing, Singapore',
-  f09693: 'sealing, USA, Portland + Singapore',
   f09731: 'sealing, China, Guiyang',
-  f010048: 'sealing, China, Shanghai',
   f010063: 'sealing, China, Mianyang',
-  f010084: 'sealing, China, Beijing',
-  f010253: 'sealing, China, Beijing + USA, Portland',
   f010257: 'sealing, China, Hong Kong, DNS:feiyuipfs.com',
   f010399: 'sealing, China, Guangzhou',
   f010438: 'sealing, USA',
@@ -124,18 +148,11 @@ const annotations = {
   f010501: 'sealing, China, Hangzhou',
   f010512: 'sealing, China, Zhengzhou',
   f010523: 'sealing, China, Beijing',
-  f010528: 'sealing, China, Chongqing',
   f014329: 'sealing, China, Hong Kong',
-  f014394: 'sealing, China, Suzhou',
   f015877: 'sealing, China, Jiaxing + USA',
   f015941: 'sealing, Ukraine, Kyiv',
-  f016563: 'sealing, China, Deyang',
   f017665: 'sealing, China, Shenyang',
   f017734: 'sealing, Australia, Sydney',
-  f018780: 'sealing, Singapore + Germany, Frankfurt + USA',
-  f018781: 'sealing, Singapore + Germany, Frankfurt + USA',
-  f018783: 'sealing, Singapore + Germany, Frankfurt + USA',
-  f018784: 'sealing, Singapore + Germany, Frankfurt + USA',
   f019024: 'sealing, China, Sichuan',
   f019041: 'sealing, Singapore',
   f019074: 'sealing, China, Guangdong',
@@ -143,10 +160,10 @@ const annotations = {
   f019354: 'sealing, Germany, Frankfurt',
   f019362: 'sealing, China, Hangzhou',
   f019437: 'sealing, Korea, Guro-gu',
+  f020385: 'sealing, Korea, Incheon',
   f020398: 'sealing, China, Zhangjiakou',
   f020436: 'sealing, China, Beijing',
   f020489: 'sealing, China, Lioaning',
-  f020541: 'sealing, China, Shanghai',
   f020608: 'sealing, Russia',
   f021262: 'sealing, China, Shanghai',
   f021274: 'sealing, China, Shanghai',
@@ -154,12 +171,8 @@ const annotations = {
   f021339: 'sealing, China, Jiaxing',
   f021483: 'sealing, China, Beijing',
   f021540: 'sealing, Germany, Frankfurt, @hsanjuan',
-  f021583: 'sealing, China, Jiaxing',
   f021616: 'sealing, China, Shanghai',
-  f021710: 'sealing, China, Shijiazhuang',
-  f021870: 'sealing, USA, Portland',
   f022125: 'sealing, China, Shenzhen',
-  f022142: 'sealing, USA, Queens',
   f022227: 'sealing, China, Jiangsu',
   f022753: 'sealing, China, Hong Kong',
   f022820: 'sealing, China, Guangdong',
@@ -167,20 +180,11 @@ const annotations = {
   f022841: 'sealing, China, Zhongshan',
   f022922: 'sealing, China, Shenzhen',
   f023179: 'sealing, China, Fuzhou',
-  f023467: 'sealing, Norway, Oslo',
   f023571: 'sealing, NR',
   f023647: 'sealing, Korea, Gangseo-gu',
-  f023939: 'sealing, NR',
-  f023971: 'sealing, USA, @Brian Y',
-  f024015: 'sealing, USA, Portland',
-  f024066: 'sealing, NR',
-  f024184: 'sealing, Korea, Gangnam-gu',
   f024468: 'sealing, China, Shenzhen',
   f024521: 'sealing, Korea, Gyeonggi-do',
-  f024550: 'sealing, China, Wenzhou',
-  f024800: 'sealing, China, Hong Kong',
   f024903: 'sealing, China, Mianyang',
-  f024969: 'sealing, NR',
   f025007: 'sealing, Korea, Gyeonggi-do',
   f025019: 'sealing, China, Taiwan, Hsinchu',
   f025025: 'sealing, China, Qingdao',
@@ -195,35 +199,20 @@ const annotations = {
 
   // Stuck
 
-  f01287: 'stuck, China, Jiaxing, MaiTian', // CheckForAcceptance: about 3 hours
-  f02305: 'stuck, China, Dongguan', // Transferring: about 3 hours
-  f02419: 'stuck, China, Shanghai, yuantai', // CheckForAcceptance: about 3 hours
-  f02665: 'stuck, Netherlands, Amsterdam, fm-ops', // CheckForAcceptance: about 3 hours
-  f03223: 'stuck, USA', // CheckForAcceptance: about 3 hours
-  f09833: 'stuck, USA, San Jose', // CheckForAcceptance: about 3 hours
-  f014569: 'stuck, NR', // FundsEnsured: about 3 hours
-  f015647: 'stuck, China, Shenzhen', // FundsEnsured: about 3 hours
-  f015753: 'stuck, China, Guyuan', // FundsEnsured: about 3 hours
-  f018772: 'stuck, Australia', // CheckForAcceptance: about 3 hours
-  f018782: 'stuck, Singapore + Germany, Frankfurt + USA', // Transferring: about 3 hours
-  f019114: 'stuck, USA, Howell', // CheckForAcceptance: about 3 hours
-  f019118: 'stuck, China, Jiaxing', // Transferring: about 3 hours
-  f019399: 'stuck, Korea, Busan', // CheckForAcceptance: about 3 hours
-  f019616: 'stuck, USA, Marlborough', // CheckForAcceptance: about 3 hours
-  f020385: 'stuck, Korea, Incheon', // CheckForAcceptance: about 3 hours
-  f020523: 'stuck, China, Suzhou', // CheckForAcceptance: about 3 hours
-  f020993: 'stuck, China, Hong Kong', // FundsEnsured: about 2 hours
-  f022089: 'stuck, China, Beijing', // CheckForAcceptance: about 3 hours
-  f022202: 'stuck, USA, Howell', // CheckForAcceptance: about 3 hours
-  f022261: 'stuck, China, Luzhou', // FundsEnsured: about 3 hours
-  f022755: 'stuck, China, Shenzhen', // CheckForAcceptance: about 3 hours
-  f022853: 'stuck, China, Fuzhou', // CheckForAcceptance: about 3 hours
-  f023501: 'stuck, China, Mianyang', // CheckForAcceptance: about 2 hours
-  f023943: 'stuck, USA, Ashburn', // CheckForAcceptance: about 3 hours
-  f024130: 'stuck, Korea', // CheckForAcceptance: about 2 hours
-  f024526: 'stuck, Korea', // CheckForAcceptance: about 2 hours
-  f024902: 'stuck, Korea, Incheon', // CheckForAcceptance: about 3 hours
-  f029556: 'stuck, China, Wuxi', // CheckForAcceptance: about 3 hours
+  f02665: 'stuck, Netherlands, Amsterdam, fm-ops', // CheckForAcceptance: about 23 hours
+  f09833: 'stuck, USA, San Jose', // CheckForAcceptance: about 23 hours
+  f018772: 'stuck, Australia', // CheckForAcceptance: about 23 hours
+  f019114: 'stuck, USA, Howell', // CheckForAcceptance: about 23 hours
+  f019616: 'stuck, USA, Marlborough', // CheckForAcceptance: about 23 hours
+  f020523: 'stuck, China, Suzhou', // CheckForAcceptance: about 23 hours
+  f022089: 'stuck, China, Beijing', // CheckForAcceptance: about 23 hours
+  f022202: 'stuck, USA, Howell', // CheckForAcceptance: about 23 hours
+  f022755: 'stuck, China, Shenzhen', // CheckForAcceptance: about 23 hours
+  f023501: 'stuck, China, Mianyang', // CheckForAcceptance: about 23 hours
+  f023943: 'stuck, USA, Ashburn', // CheckForAcceptance: about 23 hours
+  f024526: 'stuck, Korea', // CheckForAcceptance: about 22 hours
+  f024902: 'stuck, Korea, Incheon', // CheckForAcceptance: about 23 hours
+  f029556: 'stuck, China, Wuxi', // CheckForAcceptance: about 23 hours
 
   // Busy
 
@@ -268,11 +257,13 @@ const annotations = {
   f01277: 'error, Sweden, Stockholm, tvsthlm', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.037210440783613545 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f01278: 'error, USA, Grand Rapids, MiMiner', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038046316931626653 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f01279: 'error, China, Sichuan', // stream reset
+  f01287: 'error, China, Jiaxing, MaiTian', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f01288: 'error, China, Yibin, BlackStone', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.034258443882474681 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f01782: 'error, China, Hong Kong + Singapore + USA, Portland, hellofil.com', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036270760974003441 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f01801: 'error, Switzerland, Baar, Gogoșel, DNS:akasha.network', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033469414939299492 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f02303: 'error, China, Hong Kong + Jiangsu + Netherlands', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036270761209098678 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f02304: 'error, USA, Mountain View', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00805385202648421 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
+  f02305: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: response rejected
   f02307: 'error, China, Taiyuan, filecoin.monster', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032911258470561558 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f02381: 'error, China, Dongguan, 西野七濑迷叔', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038649880044067581 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f02382: 'error, China, Zhongshan-cfa', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008053851068217763 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
@@ -591,6 +582,7 @@ const annotations = {
   f014514: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005153730936432318 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
   f014533: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005153739888135573 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
   f014547: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.028464039429548436 FIL, balance: 0.014743434899500308 FIL): validation failure
+  f014569: 'error, NR', // stream reset
   f014572: 'error, USA', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.028458127581395043 FIL, balance: 0.014743434899500308 FIL): validation failure
   f014606: 'error, Australia, Sydney', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.028464034944654684 FIL, balance: 0.014743434899500308 FIL): validation failure
   f014609: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.014511450721661122 FIL, balance: 0.013588810471522077 FIL): not enough funds to execute transaction
@@ -608,6 +600,7 @@ const annotations = {
   f014799: 'error, China, Chongqing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005358721665678374 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
   f015061: 'error, Australia, Sydney', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005207016031436826 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
   f015231: 'error, China, Wuxi', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.01360563126605379 FIL, balance: 0.013588810471522077 FIL): not enough funds to execute transaction
+  f015647: 'error, China, Shenzhen', // EOF
   f015655: 'error, Korea, Geumcheon-gu', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.025692042539557575 FIL, balance: 0.013588810471522077 FIL): validation failure
   f015685: 'error, China, Shanghai', // adding market funds failed: AddFunds exit code: SysErrInsufficientFunds(6)
   f015709: 'error, China, Hefei', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041886345676328113 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
@@ -616,6 +609,7 @@ const annotations = {
   f015732: 'error, USA, Portland', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.024586005949803068 FIL, balance: 0.012608713744354636 FIL): validation failure
   f015734: 'error, China, Qingdao', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.012034020197460924 FIL, balance: 0.011466208964710327 FIL): not enough funds to execute transaction
   f015751: 'error, Canada, Huron East', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.039183847660319913 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
+  f015753: 'error, China, Guyuan', // EOF
   f015756: 'error, Finland, Helsinki', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.012034017207531756 FIL, balance: 0.011466208964710327 FIL): not enough funds to execute transaction
   f015760: 'error, Kenya, Nairobi', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.012034017123138594 FIL, balance: 0.011466208964710327 FIL): not enough funds to execute transaction
   f015763: 'error, South Africa, Cape Town', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.040554194504280201 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
@@ -736,6 +730,7 @@ const annotations = {
   f018542: 'error, China, Chongqing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004756184486244459 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
   f018562: 'error, New Zealand, Masterton', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008013673752545565 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
   f018754: 'error, China, Dali', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004756183347173022 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
+  f018782: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: deal data transfer failed: response rejected
   f018785: 'error, Singapore + Germany, Frankfurt + USA', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038754878970657925 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f018802: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.037530000892688913 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f018803: 'error, Korea, Seodaemun-gu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008013675976446942 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
@@ -763,6 +758,7 @@ const annotations = {
   f019091: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00794622606345711 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
   f019094: 'error, Brazil, Sao Paulo', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00776959849716243 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
   f019109: 'error, USA, Howell', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041182727489764709 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
+  f019118: 'error, China, Jiaxing', // failed to initiate data transfer: deal data transfer failed: response rejected
   f019123: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004968688888123388 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
   f019133: 'error, UK, Mansfield', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.039183837388466481 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f019150: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007661345322982086 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
@@ -782,6 +778,7 @@ const annotations = {
   f019352: 'error, China, Chongqing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007873703432641125 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
   f019376: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041199812694500787 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f019378: 'error, China, Changzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004969714250823174 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
+  f019399: 'error, Korea, Busan', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzaceaszdvqrjbnajurbnhe4pmfjn4fef3eg5cpfy2tugdgnbsoda65ss n 2933, TS: bafy2bzacebtnrh63plwukzzza43vrvmusfrfadu6yvrkpdmbe3pkghu5tykqc n2933)
   f019401: 'error, Brazil, Sao Paulo', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005174842734321514 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
   f019423: 'error, South Africa, Johannesburg', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005175917135213465 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
   f019434: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041191263016777056 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
@@ -797,6 +794,7 @@ const annotations = {
   f019806: 'error, China, Beijing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005176985158761102 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
   f019812: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041944184043566562 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f019820: 'error, Germany', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.043517694282904506 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
+  f019824: 'error, USA', // error in deal activation: handling applied event: deal wasn't active: deal=535554, parentState=bafy2bzacebia36nuaxktpjaznt25mioc7eqftnjprkdogb5fnss3oj6nvzaco, h=133366
   f019825: 'error, China, Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041843536370362819 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f020223: 'error, China, Guiyang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041851921713512868 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f020260: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005176992211618212 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
@@ -847,6 +845,7 @@ const annotations = {
   f020957: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.034859588892222439 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f020961: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004831244476380351 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
   f020967: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007703789736558465 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
+  f020993: 'error, China, Hong Kong', // EOF
   f021069: 'error, USA', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.034866823589962767 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f021075: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007702189906899845 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
   f021083: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035155165080915983 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
@@ -890,6 +889,7 @@ const annotations = {
   f022146: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008024751427182712 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
   f022166: 'error, Norway, Borgen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008026419224935773 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
   f022171: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004727799024919908 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
+  f022261: 'error, China, Luzhou', // EOF
   f022262: 'error, China, Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004727797909955803 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
   f022276: 'error, Korea, Seoul', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.043432662452455143 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f022284: 'error, China, Shaanxi', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004726816999909405 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
@@ -974,6 +974,7 @@ const annotations = {
   f024074: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.008663605959576591 FIL, balance: 0.004668963389900487 FIL): validation failure
   f024101: 'error, China, Guiyang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035555595783521994 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f024129: 'error, China, Zhejiang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035753948440245126 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
+  f024130: 'error, Korea', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: failed to load message: blockstore: block not found
   f024136: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033646208500326775 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f024137: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008161154192050452 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
   f024146: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033639226043437575 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
