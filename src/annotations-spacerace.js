@@ -218,6 +218,19 @@ const annotations = {
 
   // New
 
+  f023573: 'new, Japan, Kumamoto',
+  f029404: 'new, USA, Portland + New Castle',
+  f030144: 'new, Korea, Gyeonggi-do',
+  f030152: 'new, China, Changsha',
+  f030158: 'new, China, Hangzhou',
+  f030184: 'new, USA, Aliquippa',
+  f030188: 'new, China, Yangjiang',
+  f030203: 'new, NR',
+  f030219: 'new, China, Changsha',
+  f030226: 'new, China, Fuzhou',
+  f030230: 'new, China, Sichuan',
+  f030278: 'new, Korea, Gyeonggi-do',
+
   // Min Size
 
   f02388: 'min-size, Netherlands, Amersfoort, Kroketje', // 131072 < 8388608

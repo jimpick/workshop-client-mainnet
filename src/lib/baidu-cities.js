@@ -47,6 +47,7 @@ const baiduCities = {
   188: 'Bozhou', // 亳州市
   190: 'Xuancheng', // 宣城市
   194: 'Xiamen', // 厦门市
+  199: 'Yangjiang', // 阳江市
   214: 'Xinyang', // 信阳市
   218: 'Wuhan', // 武汉市
   224: 'Suzhou', // 苏州市
