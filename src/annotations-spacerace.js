@@ -4,6 +4,746 @@
 // selected miners
 
 const annotations = {
+
+  // Retest
+
+  f01000: 'retest, NR - bootstrap', //  retest
+  f01012: 'retest, China, Hong Kong + Guangzhou', //  retest
+  f01013: 'retest, NR', //  retest
+  f01100: 'retest, Serbia, Belgrade, filmine.io', //  retest
+  f01101: 'retest, China, Shanghai', //  retest
+  f01156: 'retest, China, Hangzhou', //  retest
+  f01229: 'retest, China, Hong Kong', //  retest
+  f01231: 'retest, Singapore', //  retest
+  f01238: 'retest, Vietnam, Hanoi, FILECOIN-VIETNAM', //  retest
+  f01240: 'retest, Netherlands, HidNand', //  retest
+  f01248: 'retest, Germany, Frankfurt + China, Guangdong', //  retest
+  f01274: 'retest, China, Guangdong', //  retest
+  f01277: 'retest, Sweden, Stockholm, tvsthlm', //  retest
+  f01278: 'retest, USA, Grand Rapids, MiMiner', //  retest
+  f01288: 'retest, China, Yibin, BlackStone', //  retest
+  f01782: 'retest, China, Hong Kong + Singapore + USA, Portland, hellofil.com', //  retest
+  f01801: 'retest, Switzerland, Baar, Gogoșel, DNS:akasha.network', //  retest
+  f02303: 'retest, China, Hong Kong + Jiangsu + Netherlands', //  retest
+  f02304: 'retest, USA, Mountain View', //  retest
+  f02307: 'retest, China, Taiyuan, filecoin.monster', //  retest
+  f02381: 'retest, China, Dongguan, 西野七濑迷叔', //  retest
+  f02382: 'retest, China, Zhongshan-cfa', //  retest
+  f02383: 'retest, China, Shenzhen', //  retest
+  f02398: 'retest, China, Hong Kong', //  retest
+  f02400: 'retest, China, Beijing', //  retest
+  f02417: 'retest, China, Liaoning', //  retest
+  f02418: 'retest, China, Fujian + Netherlands', //  retest
+  f02420: 'retest, China, Wuhan', //  retest
+  f02424: 'retest, Korea, Wanju', //  retest
+  f02436: 'retest, Netherlands', //  retest
+  f02505: 'retest, China, Wuhan', //  retest
+  f02506: 'retest, USA, Clarksville', //  retest
+  f02514: 'retest, USA, Portland, 6block', //  retest
+  f02518: 'retest, China, Shaanxi', //  retest
+  f02519: 'retest, Brazil, Sao Paulo', //  retest
+  f02529: 'retest, China, Chongqing', //  retest
+  f02532: 'retest, Singapore', //  retest
+  f02534: 'retest, China, Beijing', //  retest
+  f02574: 'retest, Japan, Minamata', //  retest
+  f02575: 'retest, USA, Davis', //  retest
+  f02606: 'retest, China, Shanghai', //  retest
+  f02607: 'retest, China, Beijing', //  retest
+  f02609: 'retest, USA', //  retest
+  f02614: 'retest, Singapore', //  retest
+  f02624: 'retest, China, Shanghai, filecoin.cn', //  retest
+  f02626: 'retest, China, Guangzhou + Hong Kong', //  retest
+  f02657: 'retest, China, Ordos-xfr', //  retest
+  f02658: 'retest, China, Ningbo, bluematrix', //  retest
+  f02664: 'retest, China, Hangzhou, ciger', //  retest
+  f02723: 'retest, China, Hong Kong', //  retest
+  f02725: 'retest, China, Hong Kong', //  retest
+  f02726: 'retest, USA, Brooklyn', //  retest
+  f02731: 'retest, Singapore', //  retest
+  f02768: 'retest, China, Hong Kong', //  retest
+  f02770: 'retest, China, Hong Kong', //  retest
+  f02773: 'retest, China, Chengdu', //  retest
+  f02774: 'retest, Australia, Sydney', //  retest
+  f03021: 'retest, China, Hong Kong', //  retest
+  f03120: 'retest, China, Guangzhou', //  retest
+  f03140: 'retest, China, QingDao', //  retest
+  f03220: 'retest, China, Ordos', //  retest
+  f03222: 'retest, China, Yuncheong, 星云矿池', //  retest
+  f03223: 'retest, USA', //  retest
+  f03225: 'retest, China, Guyuan', //  retest
+  f03245: 'retest, USA, Los Angeles', //  retest
+  f03264: 'retest, Korea, Bucheon-si', //  retest
+  f03266: 'retest, USA', //  retest
+  f03319: 'retest, NR', //  retest
+  f03320: 'retest, bcm', //  retest
+  f03327: 'retest, Kenya, Nairobi', //  retest
+  f03346: 'retest, China, Huzhou, wckj', //  retest
+  f03347: 'retest, China, Shenzhen', //  retest
+  f03350: 'retest, China, Wuhan', //  retest
+  f03351: 'retest, China, Chengdu', //  retest
+  f03360: 'retest, China, Shaanxi', //  retest
+  f03366: 'retest, China, Wuhan + Wuxi', //  retest
+  f03428: 'retest, China, Beijing + Jiaxing + Germany, Frankfurt', //  retest
+  f03484: 'retest, Netherlands', //  retest
+  f03490: 'retest, China, Dongguan', //  retest
+  f03517: 'retest, China, Wuhan + Wuxi', //  retest
+  f03548: 'retest, Singapore', //  retest
+  f03619: 'retest, China, Xiamen', //  retest
+  f03620: 'retest, Germany, Frankfurt', //  retest
+  f03622: 'retest, 黑犇科技', //  retest
+  f03638: 'retest, USA', //  retest
+  f03646: 'retest, China, Beijing, JingTang', //  retest
+  f03764: 'retest, China, Beijing, foobar', //  retest
+  f03765: 'retest, Colombia, Medellin', //  retest
+  f04921: 'retest, China, Shanghai', //  retest
+  f05315: 'retest, USA, Portland, 6block', //  retest
+  f05316: 'retest, USA, Portland, 6block', //  retest
+  f06262: 'retest, China, Guangzhou', //  retest
+  f06775: 'retest, China, Shenzhen, IPSB&CAAP', //  retest
+  f07451: 'retest, China, Hangzhou', //  retest
+  f07710: 'retest, Hong Kong', //  retest
+  f07731: 'retest, NR', //  retest
+  f07752: 'retest, China, Dongguan', //  retest
+  f07756: 'retest, DNS:purumine.com', //  retest
+  f07772: 'retest, China, Dongguan', //  retest
+  f07774: 'retest, China, Shenzhen', //  retest
+  f07775: 'retest, China, Shenzhen', //  retest
+  f07827: 'retest, China, Wuhan, 天际合', //  retest
+  f07830: 'retest, Singapore', //  retest
+  f07843: 'retest, NR', //  retest
+  f07848: 'retest, China, Wuhan', //  retest
+  f07850: 'retest, USA, Portland, 6block', //  retest
+  f07857: 'retest, China, Zhengzhou', //  retest
+  f07924: 'retest, USA', //  retest
+  f07944: 'retest, China, Hangzhou, SupremeTreasure', //  retest
+  f07945: 'retest, China, Dongguan', //  retest
+  f07947: 'retest, China, Zhengzhou', //  retest
+  f07964: 'retest, USA, Ashburn', //  retest
+  f07969: 'retest, China, Hangzhou, FME', //  retest
+  f07982: 'retest, China, Shenzhen', //  retest
+  f07990: 'retest, China, Hong Kong', //  retest
+  f08006: 'retest, China, Shaanxi', //  retest
+  f08022: 'retest, China, Yibin', //  retest
+  f08032: 'retest, China, Weifang', //  retest
+  f08042: 'retest, Brazil, Sao Paulo', //  retest
+  f08047: 'retest, China, Hangzhou', //  retest
+  f08061: 'retest, China, Foshan', //  retest
+  f08063: 'retest, China, Huizhou', //  retest
+  f08088: 'retest, China, Dongguan', //  retest
+  f08095: 'retest, Canada, Surrey', //  retest
+  f08101: 'retest, China, Wuxi', //  retest
+  f08135: 'retest, Singapore', //  retest
+  f08139: 'retest, China, Shanghai', //  retest
+  f08149: 'retest, China, Jiangmen', //  retest
+  f08161: 'retest, China, Weifang', //  retest
+  f08178: 'retest, China, Jiaxing, CAAP-金华', //  retest
+  f08197: 'retest, China, Foshan', //  retest
+  f08199: 'retest, USA, Sudbury', //  retest
+  f08205: 'retest, Brazil, Sao Paulo', //  retest
+  f08223: 'retest, NR', //  retest
+  f08235: 'retest, China, Beijing + Jiaxing + Germany, Frankfurt, 星河华讯&中科星际', //  retest
+  f08238: 'retest, NR', //  retest
+  f08242: 'retest, China, Weifang', //  retest
+  f08257: 'retest, China, Ningbo + USA, Boardman', //  retest
+  f08280: 'retest, NR', //  retest
+  f08284: 'retest, China, Liaoning', //  retest
+  f08293: 'retest, China, Xinxiang', //  retest
+  f08295: 'retest, China, Suzhou, IPFS Cloud', //  retest
+  f08311: 'retest, China, Shenzhen', //  retest
+  f08327: 'retest, NR', //  retest
+  f08330: 'retest, China, Chengdu, oursoft', //  retest
+  f08344: 'retest, UK, Hartlepool', //  retest
+  f08358: 'retest, China, Shenzhen', //  retest
+  f08384: 'retest, China, Shandong + Hong Kong + Japan, Heiwajima + Russia, Khabarovsk', //  retest
+  f08385: 'retest, NR', //  retest
+  f08388: 'retest, China, Taizhou', //  retest
+  f08399: 'retest, USA, Sammamish', //  retest
+  f08405: 'retest, China, Guangdong', //  retest
+  f08406: 'retest, China, Shenzhen', //  retest
+  f08424: 'retest, China, Chengdu', //  retest
+  f08432: 'retest, China, Taizhou', //  retest
+  f08440: 'retest, France, Fontenay-sous-Bois', //  retest
+  f08446: 'retest, Norway, Borgen', //  retest
+  f08448: 'retest, China, Guangdong', //  retest
+  f08460: 'retest, NR', //  retest
+  f08497: 'retest, Brazil, Sao Paulo', //  retest
+  f08503: 'retest, NR', //  retest
+  f08684: 'retest, China, Fuzhou', //  retest
+  f08788: 'retest, China, Fuzhou', //  retest
+  f08791: 'retest, NR', //  retest
+  f08793: 'retest, China, Fuzhou', //  retest
+  f08854: 'retest, China, Dongguan', //  retest
+  f08893: 'retest, NR', //  retest
+  f08895: 'retest, Japan, Ebisunishi', //  retest
+  f08904: 'retest, China, Deyang', //  retest
+  f08908: 'retest, USA', //  retest
+  f08911: 'retest, Korea, Wanju', //  retest
+  f08949: 'retest, Norway, Oslo', //  retest
+  f08958: 'retest, China, Fuzhou', //  retest
+  f08964: 'retest, NR', //  retest
+  f08986: 'retest, China, Ordos', //  retest
+  f08988: 'retest, Korea, Hwaseong-si', //  retest
+  f08991: 'retest, China, Ili', //  retest
+  f08994: 'retest, NR', //  retest
+  f09005: 'retest, China, Fuzhou', //  retest
+  f09007: 'retest, Korea, Hwaseong-si', //  retest
+  f09035: 'retest, NR', //  retest
+  f09036: 'retest, China, Chengdu, CD-oursoft', //  retest
+  f09053: 'retest, China, Shenzhen', //  retest
+  f09055: 'retest, China, Jieyang', //  retest
+  f09056: 'retest, China, Shenzhen, SZSQ1', //  retest
+  f09076: 'retest, NR', //  retest
+  f09077: 'retest, China, Xiamen', //  retest
+  f09084: 'retest, NR', //  retest
+  f09088: 'retest, China, Changsha', //  retest
+  f09091: 'retest, Netherlands', //  retest
+  f09523: 'retest, China, Beijing', //  retest
+  f09538: 'retest, NR', //  retest
+  f09555: 'retest, Australia, Sydney', //  retest
+  f09560: 'retest, Ukraine, Odessa, Wondertan (combined)', //  retest
+  f09565: 'retest, Ukraine, Odessa, Wondertan (combined)', //  retest
+  f09573: 'retest, China, Xiamen', //  retest
+  f09578: 'retest, NR', //  retest
+  f09592: 'retest, Japan, Minamata', //  retest
+  f09597: 'retest, China, Shanghai', //  retest
+  f09610: 'retest, China, Beijing', //  retest
+  f09629: 'retest, NR', //  retest
+  f09631: 'retest, China, Changzhou', //  retest
+  f09653: 'retest, China, Chengdu', //  retest
+  f09656: 'retest, Ukraine, Odessa', //  retest
+  f09662: 'retest, Canada, Surrey', //  retest
+  f09671: 'retest, China, Chongqing', //  retest
+  f09672: 'retest, China, Chengdu', //  retest
+  f09696: 'retest, USA, Portland + Singapore', //  retest
+  f09707: 'retest, China, Guangdong', //  retest
+  f09721: 'retest, ???, CD-oursoft-1', //  retest
+  f09723: 'retest, China, Xiamen', //  retest
+  f09729: 'retest, China, Dongguan', //  retest
+  f09733: 'retest, China, Chongqing', //  retest
+  f09734: 'retest, China, Dongguan', //  retest
+  f09736: 'retest, China, Guangdong', //  retest
+  f09753: 'retest, Korea, Pyeongtaek-si', //  retest
+  f09761: 'retest, China, Beijing', //  retest
+  f09763: 'retest, China, Mianyang,  <13h', //  retest
+  f09771: 'retest, China, Hangzhou', //  retest
+  f09792: 'retest, USA, Council Bluffs', //  retest
+  f09797: 'retest, China, Fuzhou', //  retest
+  f09801: 'retest, China, Fuzhou', //  retest
+  f09805: 'retest, China, Fuzhou', //  retest
+  f09808: 'retest, China, Fuzhou', //  retest
+  f09809: 'retest, China, Fuzhou', //  retest
+  f09810: 'retest, China, Fuzhou', //  retest
+  f09811: 'retest, China, Dongguan', //  retest
+  f09825: 'retest, China, Jinhua', //  retest
+  f09830: 'retest, Korea, Geumcheon-gu', //  retest
+  f09840: 'retest, China, Baoding', //  retest
+  f09848: 'retest, USA', //  retest
+  f09859: 'retest, USA', //  retest
+  f09969: 'retest, China, Guangzhou', //  retest
+  f09974: 'retest, Canada, Calgary', //  retest
+  f09983: 'retest, China, Guangzhou', //  retest
+  f09997: 'retest, USA', //  retest
+  f010009: 'retest, USA, East Islip', //  retest
+  f010015: 'retest, China, Taizhou', //  retest
+  f010032: 'retest, China, Fuzhou', //  retest
+  f010033: 'retest, NR', //  retest
+  f010035: 'retest, Netherlands', //  retest
+  f010040: 'retest, China, Shenzhen', //  retest
+  f010041: 'retest, USA, Jackson', //  retest
+  f010170: 'retest, China, Fuzhou', //  retest
+  f010173: 'retest, Korea, Pyeongtaek-si', //  retest
+  f010200: 'retest, NR', //  retest
+  f010202: 'retest, Singapore', //  retest
+  f010213: 'retest, NR', //  retest
+  f010224: 'retest, China, Fuzhou', //  retest
+  f010227: 'retest, China, Xiamen', //  retest
+  f010238: 'retest, China, Xiamen', //  retest
+  f010241: 'retest, China, Beijing + USA, Portland', //  retest
+  f010244: 'retest, USA, Newton', //  retest
+  f010248: 'retest, China, Yibin', //  retest
+  f010268: 'retest, China, Hangzhou', //  retest
+  f010270: 'retest, China, Shijiazhuang', //  retest
+  f010276: 'retest, USA', //  retest
+  f010283: 'retest, Brazil, Sao Paulo', //  retest
+  f010287: 'retest, China, Fuzhou', //  retest
+  f010289: 'retest, China, Fuzhou', //  retest
+  f010291: 'retest, China, Fuzhou', //  retest
+  f010292: 'retest, NR', //  retest
+  f010293: 'retest, China, Xiamen', //  retest
+  f010298: 'retest, China, Fuzhou', //  retest
+  f010299: 'retest, China, Yibin', //  retest
+  f010313: 'retest, NR', //  retest
+  f010315: 'retest, Canada, Surrey', //  retest
+  f010346: 'retest, China, Karamay', //  retest
+  f010372: 'retest, Brazil, Sao Paulo', //  retest
+  f010374: 'retest, Norway, Borgen', //  retest
+  f010402: 'retest, China, Shenyang', //  retest
+  f010405: 'retest, China, Foshan', //  retest
+  f010411: 'retest, USA', //  retest
+  f010424: 'retest, Australia, Sydney', //  retest
+  f010433: 'retest, Korea, Seoul', //  retest
+  f010449: 'retest, China, Jiangmen', //  retest
+  f010468: 'retest, China, Guangzhou', //  retest
+  f010490: 'retest, NR', //  retest
+  f010496: 'retest, China, Guangzhou', //  retest
+  f010516: 'retest, Brazil, Sao Paulo', //  retest
+  f010520: 'retest, China, Hangzhou', //  retest
+  f010523: 'retest, China, Beijing', //  retest
+  f010533: 'retest, China, Ordos', //  retest
+  f010541: 'retest, China, Chengdu', //  retest
+  f010549: 'retest, China, Ordos', //  retest
+  f010579: 'retest, South Africa, Johannesburg', //  retest
+  f010586: 'retest, China, Fuzhou', //  retest
+  f010598: 'retest, Canada, Waterloo', //  retest
+  f010600: 'retest, USA', //  retest
+  f010602: 'retest, China, Guangdong', //  retest
+  f010603: 'retest, China, Baoding', //  retest
+  f010606: 'retest, China, Fuzhou', //  retest
+  f010608: 'retest, China, Fuzhou', //  retest
+  f010609: 'retest, China, Fuzhou', //  retest
+  f010612: 'retest, USA, Mountain View', //  retest
+  f014207: 'retest, USA', //  retest
+  f014230: 'retest, China, Fuzhou', //  retest
+  f014241: 'retest, Norway, Borgen', //  retest
+  f014246: 'retest, China, Shenzhen', //  retest
+  f014248: 'retest, Turkey', //  retest
+  f014261: 'retest, China, Fuzhou', //  retest
+  f014271: 'retest, China, Fuzhou', //  retest
+  f014281: 'retest, Netherlands, Permerend', //  retest
+  f014302: 'retest, China, Ningbo', //  retest
+  f014307: 'retest, China, Dongguan', //  retest
+  f014324: 'retest, Canada, Vancouver', //  retest
+  f014329: 'retest, China, Hong Kong', //  retest
+  f014335: 'retest, NR', //  retest
+  f014348: 'retest, Brazil, Sao Paulo', //  retest
+  f014366: 'retest, USA, Mountain View', //  retest
+  f014377: 'retest, China, Liaoning', //  retest
+  f014380: 'retest, China, Hangzhou + Wuhan + Singapore', //  retest
+  f014386: 'retest, Singapore', //  retest
+  f014388: 'retest, China, Guangdong', //  retest
+  f014407: 'retest, China, Shanghai', //  retest
+  f014419: 'retest, USA, San Diego', //  retest
+  f014420: 'retest, Russia, Samara', //  retest
+  f014425: 'retest, Singapore', //  retest
+  f014431: 'retest, Singapore', //  retest
+  f014432: 'retest, China, Chengdu', //  retest
+  f014436: 'retest, China, Chengdu', //  retest
+  f014478: 'retest, Finland', //  retest
+  f014483: 'retest, USA, Clarksville', //  retest
+  f014495: 'retest, China, Hong Kong', //  retest
+  f014514: 'retest, China, Fuzhou', //  retest
+  f014533: 'retest, China, Fuzhou', //  retest
+  f014547: 'retest, China, Fuzhou', //  retest
+  f014572: 'retest, USA', //  retest
+  f014606: 'retest, Australia, Sydney', //  retest
+  f014609: 'retest, China, Fuzhou', //  retest
+  f014632: 'retest, Canada', //  retest
+  f014640: 'retest, Hungary', //  retest
+  f014660: 'retest, Korea, Busan', //  retest
+  f014686: 'retest, Singapore', //  retest
+  f014699: 'retest, USA', //  retest
+  f014701: 'retest, China, Changzhou', //  retest
+  f014706: 'retest, China, Ordos', //  retest
+  f014744: 'retest, China, Taiyuan', //  retest
+  f014745: 'retest, China, Shenyang', //  retest
+  f014764: 'retest, Korea, Wanju', //  retest
+  f014778: 'retest, China, Ordos', //  retest
+  f014799: 'retest, China, Chongqing', //  retest
+  f015061: 'retest, Australia, Sydney', //  retest
+  f015231: 'retest, China, Wuxi', //  retest
+  f015655: 'retest, Korea, Geumcheon-gu', //  retest
+  f015685: 'retest, China, Shanghai', //  retest
+  f015709: 'retest, China, Hefei', //  retest
+  f015714: 'retest, China, Ordos', //  retest
+  f015720: 'retest, China, Ningbo', //  retest
+  f015732: 'retest, USA, Portland', //  retest
+  f015734: 'retest, China, Qingdao', //  retest
+  f015751: 'retest, Canada, Huron East', //  retest
+  f015756: 'retest, Finland, Helsinki', //  retest
+  f015760: 'retest, Kenya, Nairobi', //  retest
+  f015763: 'retest, South Africa, Cape Town', //  retest
+  f015771: 'retest, Brazil, Sao Paulo', //  retest
+  f015795: 'retest, Brazil, Sao Paulo', //  retest
+  f015797: 'retest, Germany, Rostock', //  retest
+  f015798: 'retest, Germany', //  retest
+  f015800: 'retest, Germany, Sankt Andreasberg', //  retest
+  f015802: 'retest, Germany', //  retest
+  f015803: 'retest, Germany', //  retest
+  f015804: 'retest, Germany, Ismaning', //  retest
+  f015805: 'retest, Germany', //  retest
+  f015807: 'retest, Germany', //  retest
+  f015808: 'retest, Germany', //  retest
+  f015809: 'retest, Germany', //  retest
+  f015810: 'retest, Germany', //  retest
+  f015818: 'retest, Netherlands', //  retest
+  f015819: 'retest, China, Fuzhou', //  retest
+  f015827: 'retest, Russia', //  retest
+  f015839: 'retest, China, Fuzhou', //  retest
+  f015846: 'retest, South Africa, Johannesburg', //  retest
+  f015855: 'retest, China, Fuzhou', //  retest
+  f015860: 'retest, Ukraine, Odessa', //  retest
+  f015872: 'retest, China, Fuzhou', //  retest
+  f015875: 'retest, China, Fuzhou', //  retest
+  f015877: 'retest, China, Jiaxing + USA', //  retest
+  f015884: 'retest, China, Fuzhou', //  retest
+  f015887: 'retest, China, Fuzhou', //  retest
+  f015888: 'retest, China, Fuzhou', //  retest
+  f015891: 'retest, China, Shanghai', //  retest
+  f015894: 'retest, China, Fuzhou', //  retest
+  f015898: 'retest, Lithuania', //  retest
+  f015900: 'retest, Germany', //  retest
+  f015902: 'retest, Germany', //  retest
+  f015903: 'retest, Germany', //  retest
+  f015905: 'retest, Lithuania', //  retest
+  f015910: 'retest, Turkey', //  retest
+  f015918: 'retest, China, Fuzhou', //  retest
+  f015920: 'retest, China, Guangdong', //  retest
+  f015926: 'retest, China', //  retest
+  f015933: 'retest, Finland, Helskinki', //  retest
+  f015935: 'retest, China, Sichuan', //  retest
+  f015938: 'retest, Canada, Waterloo', //  retest
+  f015940: 'retest, Netherlands, Amsterdam', //  retest
+  f015941: 'retest, Ukraine, Kyiv', //  retest
+  f016056: 'retest, USA, Arlington', //  retest
+  f016172: 'retest, China, Guangdong', //  retest
+  f016202: 'retest, Korea, Songpa-gu', //  retest
+  f016228: 'retest, China, Chengdu', //  retest
+  f016234: 'retest, China, Chengdu', //  retest
+  f016238: 'retest, NR', //  retest
+  f016262: 'retest, China, Fuzhou', //  retest
+  f016271: 'retest, Korea, Seodaemun-gu', //  retest
+  f016279: 'retest, Finland, Helsinki', //  retest
+  f016299: 'retest, China, Shanghai', //  retest
+  f016302: 'retest, China, Fuzhou', //  retest
+  f016303: 'retest, USA, Boardman', //  retest
+  f016305: 'retest, USA, Boardman', //  retest
+  f016306: 'retest, USA, Boardman', //  retest
+  f016309: 'retest, USA, Boardman', //  retest
+  f016364: 'retest, China, Hefei', //  retest
+  f016419: 'retest, USA, Mountain View', //  retest
+  f016436: 'retest, Korea, Seoul', //  retest
+  f016462: 'retest, USA, Clarksville', //  retest
+  f016509: 'retest, China, Fuzhou', //  retest
+  f016511: 'retest, China, Beijing', //  retest
+  f016525: 'retest, China, Guangzhou', //  retest
+  f016603: 'retest, China, Dongguan', //  retest
+  f016628: 'retest, NR', //  retest
+  f016659: 'retest, USA, Alpharetta', //  retest
+  f016706: 'retest, China, Guangzhou', //  retest
+  f016866: 'retest, China, Fuzhou', //  retest
+  f016917: 'retest, China, Guangdong', //  retest
+  f017067: 'retest, China, Fuzhou', //  retest
+  f017082: 'retest, South Africa, Johannesburg', //  retest
+  f017117: 'retest, Russia, Samara', //  retest
+  f017181: 'retest, China, Nanchong', //  retest
+  f017186: 'retest, China, Jiaxing', //  retest
+  f017193: 'retest, Singapore', //  retest
+  f017200: 'retest, Lithuania', //  retest
+  f017236: 'retest, NR', //  retest
+  f017242: 'retest, China, Guangdong', //  retest
+  f017244: 'retest, Korea, Seoul', //  retest
+  f017266: 'retest, China, Fuzhou', //  retest
+  f017285: 'retest, China, Maoming', //  retest
+  f017294: 'retest, China, Shenzhen', //  retest
+  f017323: 'retest, Poland, Warsaw', //  retest
+  f017334: 'retest, China, Fuzhou', //  retest
+  f017488: 'retest, USA, Council Bluffs', //  retest
+  f017618: 'retest, Korea, Wanju', //  retest
+  f017672: 'retest, China, Cangzhou', //  retest
+  f017722: 'retest, NR', //  retest
+  f017738: 'retest, China', //  retest
+  f017747: 'retest, NR', //  retest
+  f017793: 'retest, NR', //  retest
+  f017794: 'retest, USA, Columbus', //  retest
+  f017795: 'retest, USA, Columbus', //  retest
+  f017796: 'retest, China, Fuzhou', //  retest
+  f018203: 'retest, Finland, Helsinki', //  retest
+  f018393: 'retest, Colombia, Medellin', //  retest
+  f018397: 'retest, USA, Howell', //  retest
+  f018440: 'retest, Russia, St. Petersburg', //  retest
+  f018445: 'retest, NR', //  retest
+  f018446: 'retest, China, Dongguan', //  retest
+  f018456: 'retest, Brazil, Sao Paulo', //  retest
+  f018464: 'retest, Sweden, Stockholm', //  retest
+  f018476: 'retest, China, Fuzhou', //  retest
+  f018490: 'retest, Korea, Hwaseong-si', //  retest
+  f018498: 'retest, Singapore', //  retest
+  f018501: 'retest, China, Beijing', //  retest
+  f018509: 'retest, China, Dongguan', //  retest
+  f018513: 'retest, NR', //  retest
+  f018525: 'retest, USA, Queens', //  retest
+  f018530: 'retest, China, Shaanxi', //  retest
+  f018531: 'retest, China, Shaanxi', //  retest
+  f018538: 'retest, China, Huzhou', //  retest
+  f018542: 'retest, China, Chongqing', //  retest
+  f018562: 'retest, New Zealand, Masterton', //  retest
+  f018754: 'retest, China, Dali', //  retest
+  f018785: 'retest, Singapore + Germany, Frankfurt + USA', //  retest
+  f018802: 'retest, China, Dongguan', //  retest
+  f018803: 'retest, Korea, Seodaemun-gu', //  retest
+  f018809: 'retest, USA, New York', //  retest
+  f018836: 'retest, NR', //  retest
+  f018844: 'retest, NR', //  retest
+  f018851: 'retest, China, Deyang + Singapore', //  retest
+  f018864: 'retest, Korea, Busan', //  retest
+  f018869: 'retest, NR', //  retest
+  f018884: 'retest, Russia', //  retest
+  f018899: 'retest, China, Shanghai', //  retest
+  f018911: 'retest, USA, Portland', //  retest
+  f019002: 'retest, USA', //  retest
+  f019007: 'retest, China, Shenzhen + Hong Kong', //  retest
+  f019015: 'retest, China, Hangzhou + Singapore', //  retest
+  f019017: 'retest, China, Wenzhou-cfa', //  retest
+  f019031: 'retest, NR', //  retest
+  f019041: 'retest, Singapore', //  retest
+  f019048: 'retest, Brazil, Sao Paulo', //  retest
+  f019053: 'retest, Singapore', //  retest
+  f019062: 'retest, Germany', //  retest
+  f019069: 'retest, NR', //  retest
+  f019073: 'retest, Germany, Frankfurt', //  retest
+  f019074: 'retest, China, Guangdong', //  retest
+  f019087: 'retest, South Africa, Johannesburg', //  retest
+  f019090: 'retest, South Africa, Johannesburg', //  retest
+  f019091: 'retest, China, Chengdu', //  retest
+  f019094: 'retest, Brazil, Sao Paulo', //  retest
+  f019104: 'retest, Canada, Chambly', //  retest
+  f019109: 'retest, USA, Howell', //  retest
+  f019123: 'retest, China, Dongguan', //  retest
+  f019133: 'retest, UK, Mansfield', //  retest
+  f019150: 'retest, China, Fuzhou', //  retest
+  f019155: 'retest, China, Chongqing', //  retest
+  f019173: 'retest, China, Nanchong', //  retest
+  f019182: 'retest, China, Chongqing', //  retest
+  f019185: 'retest, China, Beijing', //  retest
+  f019218: 'retest, China, Dali', //  retest
+  f019233: 'retest, Russia', //  retest
+  f019239: 'retest, China, Jiaxing', //  retest
+  f019248: 'retest, USA, Council Bluffs', //  retest
+  f019280: 'retest, China, Fuzhou', //  retest
+  f019317: 'retest, Brazil, Sao Paulo', //  retest
+  f019326: 'retest, China, Chongqing', //  retest
+  f019327: 'retest, China, Chongqing', //  retest
+  f019352: 'retest, China, Chongqing', //  retest
+  f019354: 'retest, Germany, Frankfurt', //  retest
+  f019362: 'retest, China, Hangzhou', //  retest
+  f019376: 'retest, NR', //  retest
+  f019378: 'retest, China, Changzhou', //  retest
+  f019401: 'retest, Brazil, Sao Paulo', //  retest
+  f019423: 'retest, South Africa, Johannesburg', //  retest
+  f019434: 'retest, NR', //  retest
+  f019437: 'retest, Korea, Guro-gu', //  retest
+  f019459: 'retest, USA, Alpharetta', //  retest
+  f019462: 'retest, Netherlands, Groningen', //  retest
+  f019515: 'retest, Netherlands, Groningen', //  retest
+  f019523: 'retest, USA, Los Angeles', //  retest
+  f019528: 'retest, Peru', //  retest
+  f019547: 'retest, Peru', //  retest
+  f019645: 'retest, Russia, St. Petersburg', //  retest
+  f019723: 'retest, China, Zhongshan', //  retest
+  f019804: 'retest, China, Chengdu', //  retest
+  f019806: 'retest, China, Beijing', //  retest
+  f019812: 'retest, NR', //  retest
+  f019820: 'retest, Germany', //  retest
+  f019825: 'retest, China, Hong Kong', //  retest
+  f020223: 'retest, China, Guiyang', //  retest
+  f020260: 'retest, NR', //  retest
+  f020276: 'retest, China, Xiamen', //  retest
+  f020281: 'retest, Korea, Uijeongbu-si', //  retest
+  f020358: 'retest, China, Xinxiang', //  retest
+  f020366: 'retest, China, Chengdu', //  retest
+  f020379: 'retest, NR', //  retest
+  f020385: 'retest, Korea, Incheon', //  retest
+  f020386: 'retest, Russia', //  retest
+  f020390: 'retest, NR', //  retest
+  f020393: 'retest, China, Beijing', //  retest
+  f020398: 'retest, China, Zhangjiakou', //  retest
+  f020408: 'retest, China, Hong Kong', //  retest
+  f020432: 'retest, Korea, Wanju', //  retest
+  f020433: 'retest, NR', //  retest
+  f020436: 'retest, China, Beijing', //  retest
+  f020450: 'retest, NR', //  retest
+  f020452: 'retest, China, Hangzhou + Singapore', //  retest
+  f020453: 'retest, China, Chengdu', //  retest
+  f020489: 'retest, China, Lioaning', //  retest
+  f020516: 'retest, China, Dalian', //  retest
+  f020522: 'retest, Singapore', //  retest
+  f020525: 'retest, China, Dongguan', //  retest
+  f020541: 'retest, China, Shanghai', //  retest
+  f020563: 'retest, China, Dongguan', //  retest
+  f020572: 'retest, China, Nanchang', //  retest
+  f020578: 'retest, Korea, Wanju', //  retest
+  f020605: 'retest, China, Yibin', //  retest
+  f020608: 'retest, Russia', //  retest
+  f020618: 'retest, Singapore', //  retest
+  f020626: 'retest, USA, Berkeley', //  retest
+  f020631: 'retest, China, Zhejiang', //  retest
+  f020641: 'retest, NR', //  retest
+  f020678: 'retest, China, Wenzhou', //  retest
+  f020683: 'retest, China, Changsha', //  retest
+  f020739: 'retest, China, Dongguan', //  retest
+  f020763: 'retest, China, Luzhou', //  retest
+  f020771: 'retest, Japan, Setagaya-ku', //  retest
+  f020775: 'retest, Japan, Osaka', //  retest
+  f020786: 'retest, China, Shenzhen', //  retest
+  f020788: 'retest, China, Chengdu', //  retest
+  f020789: 'retest, NR', //  retest
+  f020816: 'retest, China, Dongguan', //  retest
+  f020819: 'retest, China, Chengdu', //  retest
+  f020822: 'retest, China, Shanghai', //  retest
+  f020896: 'retest, NR', //  retest
+  f020899: 'retest, China, Chengdu', //  retest
+  f020914: 'retest, NR', //  retest
+  f020928: 'retest, China, Deyang + Singapore', //  retest
+  f020939: 'retest, NR', //  retest
+  f020957: 'retest, NR', //  retest
+  f020961: 'retest, China, Shanghai', //  retest
+  f020967: 'retest, China, Chengdu', //  retest
+  f021069: 'retest, USA', //  retest
+  f021075: 'retest, China, Chengdu', //  retest
+  f021083: 'retest, NR', //  retest
+  f021092: 'retest, NR', //  retest
+  f021095: 'retest, NR', //  retest
+  f021254: 'retest, NR', //  retest
+  f021255: 'retest, China, Suzhou + Netherlands', //  retest
+  f021262: 'retest, China, Shanghai', //  retest
+  f021274: 'retest, China, Shanghai', //  retest
+  f021292: 'retest, China, Hong Kong', //  retest
+  f021346: 'retest, China, Shanghai', //  retest
+  f021357: 'retest, China, Shanghai', //  retest
+  f021444: 'retest, China, Guangzhou', //  retest
+  f021461: 'retest, China, Yangzhou + Singapore', //  retest
+  f021475: 'retest, China, Dongguan', //  retest
+  f021479: 'retest, China, Qingdao', //  retest
+  f021494: 'retest, NR', //  retest
+  f021525: 'retest, China, Guangdong', //  retest
+  f021527: 'retest, NR', //  retest
+  f021532: 'retest, China, Shanghai', //  retest
+  f021535: 'retest, China, Chengdu', //  retest
+  f021547: 'retest, Singapore', //  retest
+  f021574: 'retest, NR', //  retest
+  f021580: 'retest, NR', //  retest
+  f021704: 'retest, NR', //  retest
+  f021716: 'retest, New Zealand, Wellington', //  retest
+  f021725: 'retest, NR', //  retest
+  f021870: 'retest, USA, Portland', //  retest
+  f021961: 'retest, NR', //  retest
+  f022015: 'retest, China, Hangzhou', //  retest
+  f022016: 'retest, NR', //  retest
+  f022030: 'retest, NR', //  retest
+  f022031: 'retest, China, Maoming', //  retest
+  f022069: 'retest, China, Hong Kong', //  retest
+  f022070: 'retest, China, Jieyang', //  retest
+  f022072: 'retest, China, Jieyang', //  retest
+  f022084: 'retest, China, Shaanxi', //  retest
+  f022091: 'retest, NR', //  retest
+  f022108: 'retest, China, Luzhou', //  retest
+  f022119: 'retest, USA, Lovettsville', //  retest
+  f022132: 'retest, China, Dongguan', //  retest
+  f022142: 'retest, USA, Queens', //  retest
+  f022144: 'retest, China, Fuzhou', //  retest
+  f022146: 'retest, China, Fuzhou', //  retest
+  f022166: 'retest, Norway, Borgen', //  retest
+  f022171: 'retest, China, Shanghai', //  retest
+  f022262: 'retest, China, Hong Kong', //  retest
+  f022276: 'retest, Korea, Seoul', //  retest
+  f022284: 'retest, China, Shaanxi', //  retest
+  f022289: 'retest, China, Mianyang', //  retest
+  f022303: 'retest, NR', //  retest
+  f022304: 'retest, China, Taiyuan', //  retest
+  f022308: 'retest, NR', //  retest
+  f022309: 'retest, Korea, Chuncheon', //  retest
+  f022313: 'retest, NR', //  retest
+  f022320: 'retest, Korea, Seoul', //  retest
+  f022326: 'retest, China, Zhongshan', //  retest
+  f022361: 'retest, NR', //  retest
+  f022364: 'retest, Korea, Jungang-gu', //  retest
+  f022373: 'retest, Singapore', //  retest
+  f022405: 'retest, Russia', //  retest
+  f022501: 'retest, Japan, Osaka', //  retest
+  f022505: 'retest, China, Shanghai', //  retest
+  f022518: 'retest, DNS:poseidon.technology', //  retest
+  f022737: 'retest, Korea, Gangnum-gu', //  retest
+  f022748: 'retest, China, Xinyang', //  retest
+  f022780: 'retest, Korea, Guri-si', //  retest
+  f022790: 'retest, China, Luzhou', //  retest
+  f022791: 'retest, NR', //  retest
+  f022832: 'retest, China', //  retest
+  f022834: 'retest, NR', //  retest
+  f022853: 'retest, China, Fuzhou', //  retest
+  f022911: 'retest, China, Hong Kong', //  retest
+  f022912: 'retest, NR', //  retest
+  f022913: 'retest, Korea, Uiwang', //  retest
+  f022926: 'retest, NR', //  retest
+  f022930: 'retest, NR', //  retest
+  f022967: 'retest, Korea, Seoul', //  retest
+  f022976: 'retest, Korea, Cheongju-si', //  retest
+  f022996: 'retest, NR', //  retest
+  f023013: 'retest, China, Hong Kong', //  retest
+  f023108: 'retest, China, Dongguan', //  retest
+  f023181: 'retest, DNS:poseidon.technology', //  retest
+  f023190: 'retest, China, Hefei', //  retest
+  f023205: 'retest, NR', //  retest
+  f023210: 'retest, China, Dongguan', //  retest
+  f023229: 'retest, China, Shandong', //  retest
+  f023463: 'retest, NR', //  retest
+  f023467: 'retest, Norway, Oslo', //  retest
+  f023482: 'retest, NR', //  retest
+  f023495: 'retest, China, Beijing + USA, Portland', //  retest
+  f023530: 'retest, China, Shanghai', //  retest
+  f023535: 'retest, China, Hong Kong', //  retest
+  f023549: 'retest, China, Zhejiang', //  retest
+  f023560: 'retest, NR', //  retest
+  f023581: 'retest, China, Hong Kong', //  retest
+  f023583: 'retest, Korea, Guri-si', //  retest
+  f023626: 'retest, NR', //  retest
+  f023627: 'retest, China, Zhongwei', //  retest
+  f023643: 'retest, NR', //  retest
+  f023649: 'retest, Korea, Seoul', //  retest
+  f023651: 'retest, NR', //  retest
+  f023655: 'retest, Australia, Brisbane', //  retest
+  f023660: 'retest, China, Fuzhou', //  retest
+  f023662: 'retest, China, Fuzhou', //  retest
+  f023798: 'retest, China, Shanghai', //  retest
+  f023825: 'retest, USA, Portland', //  retest
+  f023843: 'retest, NR', //  retest
+  f023854: 'retest, China, Fuzhou', //  retest
+  f023859: 'retest, China, Fuzhou', //  retest
+  f023861: 'retest, China, Fuzhou', //  retest
+  f023868: 'retest, China, Fuzhou', //  retest
+  f023869: 'retest, China, Fuzhou', //  retest
+  f023870: 'retest, China, Fuzhou', //  retest
+  f023871: 'retest, China, Fuzhou', //  retest
+  f023939: 'retest, NR', //  retest
+  f023965: 'retest, NR', //  retest
+  f023971: 'retest, USA, @Brian Y', //  retest
+  f023982: 'retest, China, Chongqing', //  retest
+  f023985: 'retest, China, Chongqing', //  retest
+  f024016: 'retest, USA, Portland', //  retest
+  f024031: 'retest, NR', //  retest
+  f024070: 'retest, Japan, Setagaya-ku', //  retest
+  f024074: 'retest, NR', //  retest
+  f024101: 'retest, China, Guiyang', //  retest
+  f024129: 'retest, China, Zhejiang', //  retest
+  f024136: 'retest, China, Fuzhou', //  retest
+  f024137: 'retest, NR', //  retest
+  f024146: 'retest, China, Fuzhou', //  retest
+  f024147: 'retest, China, Fuzhou', //  retest
+  f024150: 'retest, UK, Mansfield', //  retest
+  f024156: 'retest, USA', //  retest
+  f024190: 'retest, China, Wenzhou', //  retest
+  f024483: 'retest, NR', //  retest
+  f024556: 'retest, NR', //  retest
+  f024557: 'retest, NR', //  retest
+  f024558: 'retest, NR', //  retest
+  f024559: 'retest, NR', //  retest
+  f024563: 'retest, NR', //  retest
+  f024565: 'retest, Korea, Incheon', //  retest
+  f024893: 'retest, Korea, Gyeonggi-do', //  retest
+  f024985: 'retest, China, Shenzhen', //  retest
+  f025002: 'retest, NR', //  retest
+  f025008: 'retest, Korea, Gyeonggi-do', //  retest
+  f029368: 'retest, Korea, Gangseo-gu', //  retest
+
   // Active
 
   // Active-sealing (active, with in-flight sealing)
@@ -177,807 +917,69 @@ const annotations = {
 
   // Error
 
-  f01000: 'error, NR - bootstrap', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00870420106398585 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f01012: 'error, China, Hong Kong + Guangzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033632251056669462 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f01013: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008659887054331401 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f01100: 'error, Serbia, Belgrade, filmine.io', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.034265543636059995 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f01101: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008448050731813786 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f01156: 'error, China, Hangzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008160593218646472 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f01229: 'error, China, Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.034258441073388003 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f01231: 'error, Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.039773827331651961 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f01238: 'error, Vietnam, Hanoi, FILECOIN-VIETNAM', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.034258432694352633 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f01240: 'error, Netherlands, HidNand', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038030537260362869 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f01248: 'error, Germany, Frankfurt + China, Guangdong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.037218160702530415 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f01274: 'error, China, Guangdong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008055526649548644 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
   f01276: 'error, Canada, Brampton, NBFS Canada', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
-  f01277: 'error, Sweden, Stockholm, tvsthlm', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.037210440783613545 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f01278: 'error, USA, Grand Rapids, MiMiner', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038046316931626653 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f01279: 'error, China, Sichuan', // stream reset
   f01287: 'error, China, Jiaxing, MaiTian', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
-  f01288: 'error, China, Yibin, BlackStone', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.034258443882474681 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f01782: 'error, China, Hong Kong + Singapore + USA, Portland, hellofil.com', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036270760974003441 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f01801: 'error, Switzerland, Baar, Gogoșel, DNS:akasha.network', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033469414939299492 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02303: 'error, China, Hong Kong + Jiangsu + Netherlands', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036270761209098678 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02304: 'error, USA, Mountain View', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00805385202648421 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
   f02305: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: response rejected
-  f02307: 'error, China, Taiyuan, filecoin.monster', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032911258470561558 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02381: 'error, China, Dongguan, 西野七濑迷叔', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038649880044067581 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02382: 'error, China, Zhongshan-cfa', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008053851068217763 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f02383: 'error, China, Shenzhen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032918095394447375 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f02387: 'error, Canada, Brampton, NBFS Canada', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
-  f02398: 'error, China, Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008055523303962579 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f02400: 'error, China, Beijing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032904445460244752 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f02401: 'error, Canada, Chambly, NBFS Canada', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f02414: "error, China, Xi'an, zhejiangyunchu", // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032563514065447773 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02417: 'error, China, Liaoning', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.0345290657942511 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02418: 'error, China, Fujian + Netherlands', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032556745826660229 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02420: 'error, China, Wuhan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.03451474331361973 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f02422: "error, China, Xi'an", // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.034507589040546743 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f02423: 'error, Ukraine, Kyiv, igowreck', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
-  f02424: 'error, Korea, Wanju', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007455361106152047 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f02436: 'error, Netherlands', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007458453618416919 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f02505: 'error, China, Wuhan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.031719075983998362 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02506: 'error, USA, Clarksville', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007460006886446134 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f02514: 'error, USA, Portland, 6block', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.55578858815390983 FIL, balance: 0.504310119963851434 FIL): validation failure
-  f02518: 'error, China, Shaanxi', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007235952168027357 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f02519: 'error, Brazil, Sao Paulo', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.031407900401876607 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02529: 'error, China, Chongqing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.040720456972405512 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02532: 'error, Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.031407905845235556 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02534: 'error, China, Beijing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.031401392092715107 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02574: 'error, Japan, Minamata', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.031407903458114688 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02575: 'error, USA, Davis', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007234453285985686 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f02606: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.555788595001812118 FIL, balance: 0.504310119963851434 FIL): validation failure
-  f02607: 'error, China, Beijing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035332267250004417 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02609: 'error, USA', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032288577871582098 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02614: 'error, Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032281877974771844 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f02619: 'error, China, Beijing, Blockcasting', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: protocol not supported
   f02621: "error, China, Xi'an", // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032275184183722169 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02624: 'error, China, Shanghai, filecoin.cn', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035332251191191305 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02626: 'error, China, Guangzhou + Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.031629126548685189 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02657: 'error, China, Ordos-xfr', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033935739061144122 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02658: 'error, China, Ningbo, bluematrix', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033928703498666542 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02664: 'error, China, Hangzhou, ciger', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033928706861639356 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02723: 'error, China, Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035585889571037763 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02725: 'error, China, Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033935736969399321 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02726: 'error, USA, Brooklyn', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033928707024363847 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02731: 'error, Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.034683667234063184 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f02767: 'error, Germany, Frankfurt', // stream reset
-  f02768: 'error, China, Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00723595157124714 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f02770: 'error, China, Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035585882626686147 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f02772: 'error, China, Chengdu', // stream reset
-  f02773: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032298472523748456 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f02774: 'error, Australia, Sydney', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007234448283714296 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f03021: 'error, China, Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.028297304799765984 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f03120: 'error, China, Guangzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.028297301369786757 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f03136: "error, China, Xi'an, Zhejiang Yun Chu Technology Co., Ltd, sat", // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.028297308103155468 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f03140: 'error, China, QingDao', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.028297296209747709 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f03176: 'error, USA, San Mateo, Five Star-Helmsman&Heiben', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f03194: 'error, China, Shenzhen, 成都云存&Npool', // stream reset
-  f03220: 'error, China, Ordos', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.0282855604596018 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f03222: 'error, China, Yuncheong, 星云矿池', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.761231271774621089 FIL, balance: 0.742223252290368174 FIL): validation failure
-  f03223: 'error, USA', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.761231264503245491 FIL, balance: 0.742223252290368174 FIL): validation failure
-  f03225: 'error, China, Guyuan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.028297312672442382 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f03245: 'error, USA, Los Angeles', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.028297296215775792 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f03264: 'error, Korea, Bucheon-si', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007235944018059141 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f03266: 'error, USA', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.028297303443447309 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f03319: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007509161306262911 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f03320: 'error, bcm', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.030406895935792074 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f03327: 'error, Kenya, Nairobi', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.030413201278063725 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f03340: "error, China, Xi'an", // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.761231267041594684 FIL, balance: 0.742223252290368174 FIL): validation failure
-  f03346: 'error, China, Huzhou, wckj', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007510719581597115 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f03347: 'error, China, Shenzhen', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.761231274367234279 FIL, balance: 0.742223252290368174 FIL): validation failure
-  f03350: 'error, China, Wuhan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.030413196329007582 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f03351: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032460108789715282 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f03360: 'error, China, Shaanxi', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032473578448842336 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f03366: 'error, China, Wuhan + Wuxi', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032473581758259903 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f03428: 'error, China, Beijing + Jiaxing + Germany, Frankfurt', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007510717990183203 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f03484: 'error, Netherlands', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032473581746203737 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f03490: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032466854238347305 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f03517: 'error, China, Wuhan + Wuxi', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033213475549750689 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f03548: 'error, Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033213473464033971 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f03619: 'error, China, Xiamen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007510720027675257 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f03620: 'error, Germany, Frankfurt', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033206584683243473 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f03622: 'error, 黑犇科技', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007507598692853947 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f03638: 'error, USA', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033213460973845995 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f03646: 'error, China, Beijing, JingTang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032320045890080345 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f03764: 'error, China, Beijing, foobar', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032326749869276061 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f03765: 'error, Colombia, Medellin', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007474634273091706 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f04921: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032326746770841399 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f05315: 'error, USA, Portland, 6block', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036797850161755461 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f05316: 'error, USA, Portland, 6block', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038269968335297793 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f06262: 'error, China, Guangzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007476188148181674 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f06775: 'error, China, Shenzhen, IPSB&CAAP', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032320045763516852 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f07451: 'error, China, Hangzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032146856053096407 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f07710: 'error, Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032160184025817609 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f07731: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007476184266096222 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f07752: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.030537385713469314 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f07756: 'error, DNS:purumine.com', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.028800189222506534 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f07772: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007474633586032744 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f07774: 'error, China, Shenzhen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.028842078113131177 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f07775: 'error, China, Shenzhen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.028848061959379659 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f07824: 'error, China, Shanghai', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
-  f07827: 'error, China, Wuhan, 天际合', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007960458518122185 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f07830: 'error, Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.028842078643492481 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f07843: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007960462460488467 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f07848: 'error, China, Wuhan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.028848053092069566 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f07850: 'error, USA, Portland, 6block', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038262036594508487 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f07857: 'error, China, Zhengzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.028848054683483478 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f07924: 'error, USA', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007958813540869785 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f07944: 'error, China, Hangzhou, SupremeTreasure', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032434997580368573 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f07945: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007812381817942677 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f07947: 'error, China, Zhengzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032448457858862082 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f07964: 'error, USA, Ashburn', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007710973660414198 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f07969: 'error, China, Hangzhou, FME', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.031332475152646794 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f07982: 'error, China, Shenzhen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.031332480583949577 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f07987: 'error, China, Beijing', // stream reset
-  f07990: 'error, China, Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038425826322214404 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08006: 'error, China, Shaanxi', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.03094848210777158 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08022: 'error, China, Yibin', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007710971593210479 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f08032: 'error, China, Weifang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.030942057037474005 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08042: 'error, Brazil, Sao Paulo', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.03095489539572939 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08047: 'error, China, Hangzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.0317578613107296 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08061: 'error, China, Foshan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007350509845303191 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f08063: 'error, China, Huizhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038610496956274254 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08088: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.031764448297768671 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08095: 'error, Canada, Surrey', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007348994012558477 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f08101: 'error, China, Wuxi', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.031764440328642945 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08135: 'error, Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.030219393954860388 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f08136: "error, China, Xi'an", // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007194904021232019 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f08139: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.030213131537194669 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08149: 'error, China, Jiangmen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.030219398548259634 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08161: 'error, China, Weifang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.03021939789722667 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08178: 'error, China, Jiaxing, CAAP-金华', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033992697386608929 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08197: 'error, China, Foshan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036439933523309334 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08199: 'error, USA, Sudbury', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038602482120955055 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08205: 'error, Brazil, Sao Paulo', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033992699785785963 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08223: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007194900241623978 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
   f08229: 'error, China, Nanchang', // stream reset
-  f08235:
-    'error, China, Beijing + Jiaxing + Germany, Frankfurt, 星河华讯&中科星际', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033985644576891733 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08238: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007194905968302828 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f08242: 'error, China, Weifang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036424823139350963 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08257: 'error, China, Ningbo + USA, Boardman', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033992694197753022 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08280: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007194527591561001 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f08284: 'error, China, Liaoning', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007152707872524045 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f08293: 'error, China, Xinxiang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.034009400957450526 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08295: 'error, China, Suzhou, IPFS Cloud', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.034002340127748832 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08311: 'error, China, Shenzhen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007153888480337628 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f08327: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007153896485631852 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f08330: 'error, China, Chengdu, oursoft', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.03400939775051037 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08344: 'error, UK, Hartlepool', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.034009383596571486 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08358: 'error, China, Shenzhen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036755615911264794 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08384:
-    'error, China, Shandong + Hong Kong + Japan, Heiwajima + Russia, Khabarovsk', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036747999751741485 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08385: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00711833884945074 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f08388: 'error, China, Taizhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007118337963322539 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f08399: 'error, USA, Sammamish', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.03643237911805873 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08405: 'error, China, Guangdong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036755618207964417 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08406: 'error, China, Shenzhen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.006870459549400407 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f08424: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.006869040627489672 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f08432: 'error, China, Taizhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036432377641484645 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08440: 'error, France, Fontenay-sous-Bois', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.012954903274828926 FIL, balance: 0.006637083864391413 FIL): validation failure
-  f08446: 'error, Norway, Borgen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036742195216340748 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08448: 'error, China, Guangdong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036742191026823063 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08460: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.012954908856833784 FIL, balance: 0.006637083864391413 FIL): validation failure
-  f08497: 'error, Brazil, Sao Paulo', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036726954559861649 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08503: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.012954905487135387 FIL, balance: 0.006637083864391413 FIL): validation failure
   f08532: 'error, USA', // stream reset
-  f08684: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036742186216412829 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08788: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036742197669770529 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08791: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.006339893952225219 FIL, balance: 0.006125576770364556 FIL): not enough funds to execute transaction
-  f08793: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035447492047241569 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08854: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041940244956561714 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08893: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.006335960262129862 FIL, balance: 0.006125576770364556 FIL): not enough funds to execute transaction
-  f08895: 'error, Japan, Ebisunishi', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035454843097489539 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08904: 'error, China, Deyang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035454842187249006 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08908: 'error, USA', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035454848812112223 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08911: 'error, Korea, Wanju', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.006338586426754923 FIL, balance: 0.006125576770364556 FIL): not enough funds to execute transaction
-  f08949: 'error, Norway, Oslo', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.0337844767202078 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08958: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033205361255729883 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08964: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.006337270876724904 FIL, balance: 0.006125576770364556 FIL): not enough funds to execute transaction
-  f08986: 'error, China, Ordos', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033198487548732311 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08988: 'error, Korea, Hwaseong-si', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.006321274887574278 FIL, balance: 0.006125576770364556 FIL): not enough funds to execute transaction
-  f08991: 'error, China, Ili', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033198495371561545 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f08994: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.006319966248097992 FIL, balance: 0.006125576770364556 FIL): not enough funds to execute transaction
-  f09005: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033205369900000905 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09007: 'error, Korea, Hwaseong-si', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.006321271282780644 FIL, balance: 0.006125576770364556 FIL): not enough funds to execute transaction
-  f09035: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.006319959528179197 FIL, balance: 0.006125576770364556 FIL): not enough funds to execute transaction
-  f09036: 'error, China, Chengdu, CD-oursoft', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033173433520148466 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09053: 'error, China, Shenzhen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.006264153341314198 FIL, balance: 0.006125576770364556 FIL): not enough funds to execute transaction
-  f09055: 'error, China, Jieyang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041931554282591206 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09056: 'error, China, Shenzhen, SZSQ1', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033173442863677116 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09076: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.006265453374861668 FIL, balance: 0.006125576770364556 FIL): not enough funds to execute transaction
-  f09077: 'error, China, Xiamen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.031896257959963796 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09084: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.043261671459575304 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09088: 'error, China, Changsha', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.031902879233272725 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09091: 'error, Netherlands', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.030613118129603384 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09523: 'error, China, Beijing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.030625822923455358 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09538: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.006266749731503508 FIL, balance: 0.006125576770364556 FIL): not enough funds to execute transaction
-  f09555: 'error, Australia, Sydney', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.030052695813064335 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09560: 'error, Ukraine, Odessa, Wondertan (combined)', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.030052694685812814 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09565: 'error, Ukraine, Odessa, Wondertan (combined)', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.030052687030147404 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09573: 'error, China, Xiamen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.030046463195162463 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09578: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.006264161102265102 FIL, balance: 0.006125576770364556 FIL): not enough funds to execute transaction
-  f09592: 'error, Japan, Minamata', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.027275175414732906 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09597: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.027269521408993137 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09610: 'error, China, Beijing', // adding market funds failed: AddFunds exit code: SysErrInsufficientFunds(6)
-  f09629: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.012101410358351591 FIL, balance: 0.006125576770364556 FIL): validation failure
-  f09631: 'error, China, Changzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.027275175734221305 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f09639: 'error, China, Fuzhou', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.0999999999666495 FIL, balance: 0.000025259918397467 FIL): not enough funds to execute transaction
-  f09653: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.025929251692647849 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09656: 'error, Ukraine, Odessa', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.025923880469803626 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09662: 'error, Canada, Surrey', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.006056117694942316 FIL, balance: 0.005550360452840215 FIL): not enough funds to execute transaction
-  f09671: 'error, China, Chongqing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.025568899123945671 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09672: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.025568988966494703 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f09689: 'error, USA, Portland', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: context deadline exceeded
-  f09696: 'error, USA, Portland + Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.04158730770154416 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09707: 'error, China, Guangdong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.006057376475366583 FIL, balance: 0.005550360452840215 FIL): not enough funds to execute transaction
-  f09721: 'error, ???, CD-oursoft-1', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.023169480568772193 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09723: 'error, China, Xiamen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.02316948086414826 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09729: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.023169479230537767 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09733: 'error, China, Chongqing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005957893333754343 FIL, balance: 0.005550360452840215 FIL): not enough funds to execute transaction
-  f09734: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.023169477036315555 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09736: 'error, China, Guangdong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00582511013829193 FIL, balance: 0.005550360452840215 FIL): not enough funds to execute transaction
-  f09753: 'error, Korea, Pyeongtaek-si', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005823903910991573 FIL, balance: 0.005550360452840215 FIL): not enough funds to execute transaction
-  f09761: 'error, China, Beijing', // adding market funds failed: AddFunds exit code: SysErrInsufficientFunds(6)
-  f09763: 'error, China, Mianyang,  <13h', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.044406444595523899 FIL, balance: 0.022451386229255808 FIL): validation failure
   f09770: "error, China, Xi'an", // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
-  f09771: 'error, China, Hangzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.044401841975331759 FIL, balance: 0.022451386229255808 FIL): validation failure
-  f09792: 'error, USA, Council Bluffs', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.044406443275373722 FIL, balance: 0.022451386229255808 FIL): validation failure
-  f09797: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.044397242729041099 FIL, balance: 0.022451386229255808 FIL): validation failure
-  f09801: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.022931125784344505 FIL, balance: 0.020274286253369379 FIL): not enough funds to execute transaction
-  f09805: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005552865460434897 FIL, balance: 0.005550360452840215 FIL): not enough funds to execute transaction
-  f09808: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.022260993888436794 FIL, balance: 0.020274286253369379 FIL): not enough funds to execute transaction
-  f09809: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.022261001290922718 FIL, balance: 0.020274286253369379 FIL): not enough funds to execute transaction
-  f09810: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.022260993140954502 FIL, balance: 0.020274286253369379 FIL): not enough funds to execute transaction
-  f09811: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.022256387206979273 FIL, balance: 0.020274286253369379 FIL): not enough funds to execute transaction
-  f09825: 'error, China, Jinhua', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.042992562607517646 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09830: 'error, Korea, Geumcheon-gu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.023491428847602003 FIL, balance: 0.020274286253369379 FIL): not enough funds to execute transaction
-  f09840: 'error, China, Baoding', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005551709193448413 FIL, balance: 0.005550360452840215 FIL): not enough funds to execute transaction
-  f09848: 'error, USA', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.03804632096441418 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f09859: 'error, USA', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.023491432482536052 FIL, balance: 0.020274286253369379 FIL): not enough funds to execute transaction
-  f09969: 'error, China, Guangzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.022866320304931633 FIL, balance: 0.020274286253369379 FIL): not enough funds to execute transaction
-  f09974: 'error, Canada, Calgary', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.010541902038085026 FIL, balance: 0.005550360452840215 FIL): validation failure
-  f09983: 'error, China, Guangzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.022871060988974406 FIL, balance: 0.020274286253369379 FIL): not enough funds to execute transaction
-  f09997: 'error, USA', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.010540814710602379 FIL, balance: 0.005550360452840215 FIL): validation failure
-  f010009: 'error, USA, East Islip', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.010540809798733484 FIL, balance: 0.005550360452840215 FIL): validation failure
   f010010: 'error, China, Changzhou + Hong Kong', // stream reset
-  f010015: 'error, China, Taizhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.022871066595091596 FIL, balance: 0.020274286253369379 FIL): not enough funds to execute transaction
-  f010032: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.023220813390732072 FIL, balance: 0.020274286253369379 FIL): not enough funds to execute transaction
-  f010033: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.010541909253700377 FIL, balance: 0.005550360452840215 FIL): validation failure
-  f010035: 'error, Netherlands', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038610501043314528 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f010040: 'error, China, Shenzhen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005278343119035489 FIL, balance: 0.005122267800031428 FIL): not enough funds to execute transaction
-  f010041: 'error, USA, Jackson', // adding market funds failed: AddFunds exit code: SysErrInsufficientFunds(6)
-  f010170: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.022355072642656629 FIL, balance: 0.020274286253369379 FIL): not enough funds to execute transaction
-  f010173: 'error, Korea, Pyeongtaek-si', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.009633965404988906 FIL, balance: 0.005122267800031428 FIL): validation failure
-  f010200: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.00963296884714304 FIL, balance: 0.005122267800031428 FIL): validation failure
-  f010202: 'error, Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038602482398189373 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f010213: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.009632970179349383 FIL, balance: 0.005122267800031428 FIL): validation failure
-  f010224: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.022355086199815296 FIL, balance: 0.020274286253369379 FIL): not enough funds to execute transaction
-  f010227: 'error, China, Xiamen', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.009632973832367681 FIL, balance: 0.005122267800031428 FIL): validation failure
-  f010238: 'error, China, Xiamen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.022663295886735972 FIL, balance: 0.020274286253369379 FIL): not enough funds to execute transaction
-  f010241: 'error, China, Beijing + USA, Portland', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041587310402125344 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f010244: 'error, USA, Newton', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.009631968063617241 FIL, balance: 0.005122267800031428 FIL): validation failure
-  f010248: 'error, China, Yibin', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004768921964808666 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f010268: 'error, China, Hangzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.022658604083254045 FIL, balance: 0.020274286253369379 FIL): not enough funds to execute transaction
-  f010270: 'error, China, Shijiazhuang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.02265390482894903 FIL, balance: 0.020274286253369379 FIL): not enough funds to execute transaction
-  f010276: 'error, USA', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.022663298285913006 FIL, balance: 0.020274286253369379 FIL): not enough funds to execute transaction
-  f010283: 'error, Brazil, Sao Paulo', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004802925282207476 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f010287: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.02104593176761654 FIL, balance: 0.020274286253369379 FIL): not enough funds to execute transaction
-  f010289: 'error, China, Fuzhou', // adding market funds failed: AddFunds exit code: SysErrInsufficientFunds(6)
-  f010291: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.038976432593617728 FIL, balance: 0.020274286253369379 FIL): validation failure
-  f010292: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004917247132286206 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f010293: 'error, China, Xiamen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004918274412305796 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f010298: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.038972388398169504 FIL, balance: 0.020274286253369379 FIL): validation failure
-  f010299: 'error, China, Yibin', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036650476535285657 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f010313: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00478045138485996 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f010315: 'error, Canada, Surrey', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004779462116199015 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f010346: 'error, China, Karamay', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004779465328501004 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f010372: 'error, Brazil, Sao Paulo', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.037465924169608335 FIL, balance: 0.020274286253369379 FIL): validation failure
-  f010374: 'error, Norway, Borgen', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.037462196036012204 FIL, balance: 0.020274286253369379 FIL): validation failure
-  f010402: 'error, China, Shenyang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004780455502040649 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f010405: 'error, China, Foshan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036642875815547037 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f010411: 'error, USA', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.037465925501814678 FIL, balance: 0.020274286253369379 FIL): validation failure
-  f010424: 'error, Australia, Sydney', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.037462194487116123 FIL, balance: 0.020274286253369379 FIL): validation failure
-  f010433: 'error, Korea, Seoul', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004780452813515631 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
   f010446: 'error, Netherlands', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
-  f010449: 'error, China, Jiangmen', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.037465913270834271 FIL, balance: 0.020274286253369379 FIL): validation failure
-  f010468: 'error, China, Guangzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005370705689625405 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f010490: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005369594771523002 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f010496: 'error, China, Guangzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.033825597193329491 FIL, balance: 0.018668795655068035 FIL): validation failure
   f010512: 'error, China, Zhengzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 1.372770716970385006 FIL, balance: 1.346274281252783987 FIL): validation failure
-  f010516: 'error, Brazil, Sao Paulo', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.033822083386693176 FIL, balance: 0.018668795655068035 FIL): validation failure
-  f010520: 'error, China, Hangzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005370708468571668 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f010523: 'error, China, Beijing', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.718044574809190843 FIL, balance: 0.684830298012843428 FIL): validation failure
-  f010533: 'error, China, Ordos', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.033334053814659737 FIL, balance: 0.018668795655068035 FIL): validation failure
-  f010541: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.033337458551376447 FIL, balance: 0.018668795655068035 FIL): validation failure
-  f010549: 'error, China, Ordos', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005370708209364099 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
   f010558: 'error, China, Shenzhen + Hong Kong', // stream reset
-  f010579: 'error, South Africa, Johannesburg', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.033334054176344717 FIL, balance: 0.018668795655068035 FIL): validation failure
-  f010586: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.03333065758147939 FIL, balance: 0.018668795655068035 FIL): validation failure
-  f010598: 'error, Canada, Waterloo', // adding market funds failed: AddFunds exit code: SysErrInsufficientFunds(6)
-  f010600: 'error, USA', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.031823592456821792 FIL, balance: 0.017415512079187069 FIL): validation failure
-  f010602: 'error, China, Guangdong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005363499218876316 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f010603: 'error, China, Baoding', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.042308743378796053 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f010606: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.031816994082846377 FIL, balance: 0.017415512079187069 FIL): validation failure
-  f010608: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.0318236031626972 FIL, balance: 0.017415512079187069 FIL): validation failure
-  f010609: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.031618943865046202 FIL, balance: 0.017415512079187069 FIL): validation failure
-  f010612: 'error, USA, Mountain View', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.042308741823873139 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f014207: 'error, USA', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005362394387574409 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f014230: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.031625459905700876 FIL, balance: 0.017415512079187069 FIL): validation failure
-  f014241: 'error, Norway, Borgen', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.031622201270650323 FIL, balance: 0.017415512079187069 FIL): validation failure
-  f014246: 'error, China, Shenzhen', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.031618941388531589 FIL, balance: 0.017415512079187069 FIL): validation failure
-  f014248: 'error, Turkey', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.031622204808401294 FIL, balance: 0.017415512079187069 FIL): validation failure
-  f014261: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.042299973964917823 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f014271: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005361282183931993 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f014281: 'error, Netherlands, Permerend', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.03074795606852496 FIL, balance: 0.015956172597216387 FIL): validation failure
-  f014302: 'error, China, Ningbo', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036642878196639822 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f014307: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.030744775261522396 FIL, balance: 0.015956172597216387 FIL): validation failure
-  f014324: 'error, Canada, Vancouver', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.03074796239801211 FIL, balance: 0.015956172597216387 FIL): validation failure
-  f014329: 'error, China, Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.718044571179532377 FIL, balance: 0.684830298012843428 FIL): validation failure
-  f014335: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005363500002527106 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f014348: 'error, Brazil, Sao Paulo', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.030747955664643399 FIL, balance: 0.015956172597216387 FIL): validation failure
-  f014366: 'error, USA, Mountain View', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005372921113246028 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f014377: 'error, China, Liaoning', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.015249235583104483 FIL, balance: 0.014743434899500308 FIL): not enough funds to execute transaction
-  f014380: 'error, China, Hangzhou + Wuhan + Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.015246078635977983 FIL, balance: 0.014743434899500308 FIL): not enough funds to execute transaction
-  f014386: 'error, Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.015246073078085457 FIL, balance: 0.014743434899500308 FIL): not enough funds to execute transaction
-  f014388: 'error, China, Guangdong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005371803502612957 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f014407: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005374037857177647 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f014419: 'error, USA, San Diego', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041909426141100894 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f014420: 'error, Russia, Samara', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005372926465073732 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f014425: 'error, Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005467273725425658 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f014431: 'error, Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.015408993360488023 FIL, balance: 0.014743434899500308 FIL): not enough funds to execute transaction
-  f014432: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.015408991932128602 FIL, balance: 0.014743434899500308 FIL): not enough funds to execute transaction
-  f014436: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.015412186604336004 FIL, balance: 0.014743434899500308 FIL): not enough funds to execute transaction
   f014440: 'error, Hong Kong', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzacecjn6ynbmgn2mdbbx45ccdjpxy4ldeyr5zn62uhf4pdhwus66ekpe n 803, TS: bafy2bzaceddlwreuxuwupryudf5ofpdun2xlhqoyuua73yz3mfm6dl6gqr7go n803)
-  f014478: 'error, Finland', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00546954259059963 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f014483: 'error, USA, Clarksville', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.028464034221284724 FIL, balance: 0.014743434899500308 FIL): validation failure
-  f014495: 'error, China, Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005408607677425632 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f014514: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005153730936432318 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f014533: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005153739888135573 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f014547: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.028464039429548436 FIL, balance: 0.014743434899500308 FIL): validation failure
   f014569: 'error, NR', // stream reset
-  f014572: 'error, USA', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.028458127581395043 FIL, balance: 0.014743434899500308 FIL): validation failure
-  f014606: 'error, Australia, Sydney', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.028464034944654684 FIL, balance: 0.014743434899500308 FIL): validation failure
-  f014609: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.014511450721661122 FIL, balance: 0.013588810471522077 FIL): not enough funds to execute transaction
-  f014632: 'error, Canada', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.014505437364390586 FIL, balance: 0.013588810471522077 FIL): not enough funds to execute transaction
-  f014640: 'error, Hungary', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.014508445435893027 FIL, balance: 0.013588810471522077 FIL): not enough funds to execute transaction
-  f014660: 'error, Korea, Busan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005153740569308952 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f014686: 'error, Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035178253225642557 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f014699: 'error, USA', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032616371112306534 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f014701: 'error, China, Changzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032616371805536079 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f014706: 'error, China, Ordos', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032623137101924892 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f014744: 'error, China, Taiyuan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.014268787994976552 FIL, balance: 0.013588810471522077 FIL): not enough funds to execute transaction
-  f014745: 'error, China, Shenyang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005359831926077772 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f014764: 'error, Korea, Wanju', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005359839593799348 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f014778: 'error, China, Ordos', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.014268788001004635 FIL, balance: 0.013588810471522077 FIL): not enough funds to execute transaction
-  f014799: 'error, China, Chongqing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005358721665678374 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f015061: 'error, Australia, Sydney', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005207016031436826 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f015231: 'error, China, Wuxi', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.01360563126605379 FIL, balance: 0.013588810471522077 FIL): not enough funds to execute transaction
   f015647: 'error, China, Shenzhen', // EOF
-  f015655: 'error, Korea, Geumcheon-gu', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.025692042539557575 FIL, balance: 0.013588810471522077 FIL): validation failure
-  f015685: 'error, China, Shanghai', // adding market funds failed: AddFunds exit code: SysErrInsufficientFunds(6)
-  f015709: 'error, China, Hefei', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041886345676328113 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f015714: 'error, China, Ordos', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.024585993260688353 FIL, balance: 0.012608713744354636 FIL): validation failure
-  f015720: 'error, China, Ningbo', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.024583445885705605 FIL, balance: 0.012608713744354636 FIL): validation failure
-  f015732: 'error, USA, Portland', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.024586005949803068 FIL, balance: 0.012608713744354636 FIL): validation failure
-  f015734: 'error, China, Qingdao', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.012034020197460924 FIL, balance: 0.011466208964710327 FIL): not enough funds to execute transaction
-  f015751: 'error, Canada, Huron East', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.039183847660319913 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f015753: 'error, China, Guyuan', // EOF
-  f015756: 'error, Finland, Helsinki', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.012034017207531756 FIL, balance: 0.011466208964710327 FIL): not enough funds to execute transaction
-  f015760: 'error, Kenya, Nairobi', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.012034017123138594 FIL, balance: 0.011466208964710327 FIL): not enough funds to execute transaction
-  f015763: 'error, South Africa, Cape Town', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.040554194504280201 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f015767: 'error, Russia, Khabarovsk + Japan, Khabarovsk + USA', // stream reset
-  f015771: 'error, Brazil, Sao Paulo', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.040545783832568853 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f015795: 'error, Brazil, Sao Paulo', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.011931060443371596 FIL, balance: 0.011466208964710327 FIL): not enough funds to execute transaction
-  f015797: 'error, Germany, Rostock', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.01192859752319398 FIL, balance: 0.011466208964710327 FIL): not enough funds to execute transaction
-  f015798: 'error, Germany', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.011928593081418059 FIL, balance: 0.011466208964710327 FIL): not enough funds to execute transaction
-  f015800: 'error, Germany, Sankt Andreasberg', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.011931071794251885 FIL, balance: 0.011466208964710327 FIL): not enough funds to execute transaction
-  f015802: 'error, Germany', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.011931069503580345 FIL, balance: 0.011466208964710327 FIL): not enough funds to execute transaction
-  f015803: 'error, Germany', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.012867945186938344 FIL, balance: 0.011466208964710327 FIL): not enough funds to execute transaction
-  f015804: 'error, Germany, Ismaning', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.012284739026008407 FIL, balance: 0.011466208964710327 FIL): not enough funds to execute transaction
-  f015805: 'error, Germany', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.012284733468115881 FIL, balance: 0.011466208964710327 FIL): not enough funds to execute transaction
-  f015807: 'error, Germany', // adding market funds failed: AddFunds exit code: SysErrInsufficientFunds(6)
-  f015808: 'error, Germany', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.021858978103575952 FIL, balance: 0.011466208964710327 FIL): validation failure
-  f015809: 'error, Germany', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.02186115380426255 FIL, balance: 0.011466208964710327 FIL): validation failure
-  f015810: 'error, Germany', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.021858978543534761 FIL, balance: 0.011466208964710327 FIL): validation failure
-  f015818: 'error, Netherlands', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.021858966218661276 FIL, balance: 0.011466208964710327 FIL): validation failure
-  f015819: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.021856795502236819 FIL, balance: 0.011466208964710327 FIL): validation failure
-  f015827: 'error, Russia', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.040554197662995693 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f015839: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.020317394983529979 FIL, balance: 0.010501809638811409 FIL): validation failure
-  f015846: 'error, South Africa, Johannesburg', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.020317408389986571 FIL, balance: 0.010501809638811409 FIL): validation failure
-  f015855: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.010370981194861452 FIL, balance: 0.009684720216962191 FIL): not enough funds to execute transaction
-  f015860: 'error, Ukraine, Odessa', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.009874054977881922 FIL, balance: 0.009684720216962191 FIL): not enough funds to execute transaction
-  f015872: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.009899663118857244 FIL, balance: 0.009684720216962191 FIL): not enough funds to execute transaction
-  f015875: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005207012324165781 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f015877: 'error, China, Jiaxing + USA', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.718044573139065602 FIL, balance: 0.684830298012843428 FIL): validation failure
-  f015884: 'error, China, Fuzhou', // adding market funds failed: AddFunds exit code: SysErrInsufficientFunds(6)
-  f015887: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.019364348153497941 FIL, balance: 0.009684720216962191 FIL): validation failure
-  f015888: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.019362346247934286 FIL, balance: 0.009684720216962191 FIL): validation failure
-  f015891: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005205936513152147 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f015894: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.019362337719965591 FIL, balance: 0.009684720216962191 FIL): validation failure
-  f015898: 'error, Lithuania', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.009338337958149945 FIL, balance: 0.008798400256613878 FIL): not enough funds to execute transaction
-  f015900: 'error, Germany', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.009336394175743102 FIL, balance: 0.008798400256613878 FIL): not enough funds to execute transaction
-  f015902: 'error, Germany', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.009338332104881352 FIL, balance: 0.008798400256613878 FIL): not enough funds to execute transaction
-  f015903: 'error, Germany', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.009336395784907513 FIL, balance: 0.008798400256613878 FIL): not enough funds to execute transaction
-  f015905: 'error, Lithuania', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.009336391409426755 FIL, balance: 0.008798400256613878 FIL): not enough funds to execute transaction
-  f015910: 'error, Turkey', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.009893611534108965 FIL, balance: 0.008798400256613878 FIL): not enough funds to execute transaction
-  f015918: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.009891560772496944 FIL, balance: 0.008798400256613878 FIL): not enough funds to execute transaction
-  f015920: 'error, China, Guangdong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005205938526114369 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f015926: 'error, China', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.009891563997521349 FIL, balance: 0.008798400256613878 FIL): not enough funds to execute transaction
-  f015933: 'error, Finland, Helskinki', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.009804578120854551 FIL, balance: 0.008798400256613878 FIL): not enough funds to execute transaction
-  f015935: 'error, China, Sichuan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005315576380992126 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f015938: 'error, Canada, Waterloo', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.043454743386793056 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f015940: 'error, Netherlands, Amsterdam', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005315573541765033 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f015941: 'error, Ukraine, Kyiv', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.718044572982302944 FIL, balance: 0.684830298012843428 FIL): validation failure
-  f016056: 'error, USA, Arlington', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00946787920128882 FIL, balance: 0.008798400256613878 FIL): not enough funds to execute transaction
-  f016172: 'error, China, Guangdong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.043454732192642925 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f016202: 'error, Korea, Songpa-gu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.009465908345911572 FIL, balance: 0.008798400256613878 FIL): not enough funds to execute transaction
-  f016228: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005101056468151461 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f016234: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.043454740517425548 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f016238: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.009467876771971371 FIL, balance: 0.008798400256613878 FIL): not enough funds to execute transaction
-  f016262: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041609724534344366 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f016271: 'error, Korea, Seodaemun-gu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005099990550664495 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f016279: 'error, Finland, Helsinki', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.009267542439422373 FIL, balance: 0.008798400256613878 FIL): not enough funds to execute transaction
-  f016299: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005101048535194233 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f016302: 'error, China, Fuzhou', // adding market funds failed: AddFunds exit code: SysErrInsufficientFunds(6)
-  f016303: 'error, USA, Boardman', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005058010084907526 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f016305: 'error, USA, Boardman', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041626983493086101 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f016306: 'error, USA, Boardman', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00505905045293934 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f016309: 'error, USA, Boardman', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.016905214081318448 FIL, balance: 0.008798400256613878 FIL): validation failure
-  f016364: 'error, China, Hefei', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.016414203848698329 FIL, balance: 0.008798400256613878 FIL): validation failure
-  f016419: 'error, USA, Mountain View', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.016414201202918642 FIL, balance: 0.008798400256613878 FIL): validation failure
-  f016436: 'error, Korea, Seoul', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005059052008184754 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f016462: 'error, USA, Clarksville', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00505905376838499 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f016509: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.016415854381743527 FIL, balance: 0.008798400256613878 FIL): validation failure
-  f016511: 'error, China, Beijing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041609720942351898 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f016525: 'error, China, Guangzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.01641420720564431 FIL, balance: 0.008798400256613878 FIL): validation failure
-  f016603: 'error, China, Dongguan', // adding market funds failed: AddFunds exit code: SysErrInsufficientFunds(6)
-  f016628: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005050109467339995 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f016659: 'error, USA, Alpharetta', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.016066476023165766 FIL, balance: 0.00803572673662916 FIL): validation failure
-  f016706: 'error, China, Guangzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005051155689645228 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f016866: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.039175724540635544 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f016917: 'error, China, Guangdong', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.016066472406315966 FIL, balance: 0.00803572673662916 FIL): validation failure
-  f017067: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.01606647787981533 FIL, balance: 0.00803572673662916 FIL): validation failure
-  f017082: 'error, South Africa, Johannesburg', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008342721279149026 FIL, balance: 0.00803572673662916 FIL): not enough funds to execute transaction
-  f017117: 'error, Russia, Samara', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004783397724959787 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f017181: 'error, China, Nanchong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004735412188984314 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f017186: 'error, China, Jiaxing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004735419332262669 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f017193: 'error, Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008337524166540484 FIL, balance: 0.00803572673662916 FIL): not enough funds to execute transaction
-  f017200: 'error, Lithuania', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008340981245441019 FIL, balance: 0.00803572673662916 FIL): not enough funds to execute transaction
-  f017236: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004734432066917213 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f017242: 'error, China, Guangdong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008339256867740813 FIL, balance: 0.00803572673662916 FIL): not enough funds to execute transaction
-  f017244: 'error, Korea, Seoul', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008214653786049551 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f017266: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008218059072531381 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f017285: 'error, China, Maoming', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008218066794505704 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f017294: 'error, China, Shenzhen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041618356138742616 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f017323: 'error, Poland, Warsaw', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041609728608483474 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f017334: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004735423154067291 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f017488: 'error, USA, Council Bluffs', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008216361865800082 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f017618: 'error, Korea, Wanju', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004734429758640174 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f017672: 'error, China, Cangzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008650187760278907 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f017722: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004735416746215062 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
   f017734: 'error, Australia, Sydney', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
-  f017738: 'error, China', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008318848529870136 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f017747: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004734436689498124 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f017793: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.040397386577981418 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f017794: 'error, USA, Columbus', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.037973341380794463 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f017795: 'error, USA, Columbus', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.037973336926041126 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f017796: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008539733290595679 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f018203: 'error, Finland, Helsinki', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008537959237446941 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
   f018311: "error, China, Xi'an, <23h", // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004757168101143033 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f018393: 'error, Colombia, Medellin', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.037530002562467904 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f018397: 'error, USA, Howell', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004757176407841407 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f018440: 'error, Russia, St. Petersburg', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00815078521532699 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f018445: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004757167992637539 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f018446: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004756184932230101 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f018456: 'error, Brazil, Sao Paulo', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.037530002809619307 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f018464: 'error, Sweden, Stockholm', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008150783540214916 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f018476: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007965189586654304 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f018490: 'error, Korea, Hwaseong-si', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004757176462094154 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f018498: 'error, Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00796683421052838 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f018501: 'error, China, Beijing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041123457215614746 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f018509: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00801534044628531 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f018513: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.037529999916139467 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f018518: "error, China, Xi'an", // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004757170560600897 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f018525: 'error, USA, Queens', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008013673915270056 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f018530: 'error, China, Shaanxi', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.037530003165276204 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f018531: 'error, China, Shaanxi', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.037522223889368702 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f018538: 'error, China, Huzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004757171368364019 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f018542: 'error, China, Chongqing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004756184486244459 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f018562: 'error, New Zealand, Masterton', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008013673752545565 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f018754: 'error, China, Dali', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004756183347173022 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
   f018782: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: deal data transfer failed: response rejected
-  f018785: 'error, Singapore + Germany, Frankfurt + USA', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038754878970657925 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f018802: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.037530000892688913 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f018803: 'error, Korea, Seodaemun-gu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008013675976446942 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f018809: 'error, USA, New York', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007522127565916374 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f018836: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004969712478566772 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f018844: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038189431169206569 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f018851: 'error, China, Deyang + Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007520565791946316 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f018864: 'error, Korea, Busan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004969716836870781 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f018869: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004968686712436675 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f018884: 'error, Russia', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038189433206698623 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f018899: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038181516960530217 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f018911: 'error, USA, Portland', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007681958087564934 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f019002: 'error, USA', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007678778546335582 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f019007: 'error, China, Shenzhen + Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00768196322349165 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f019015: 'error, China, Hangzhou + Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007680374163638268 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f019017: 'error, China, Wenzhou-cfa', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.03817360012871026 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f019031: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004969712255527701 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f019041: 'error, Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.713465253346253223 FIL, balance: 0.669609513111616109 FIL): validation failure
-  f019048: 'error, Brazil, Sao Paulo', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038189437317851229 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f019053: 'error, Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038181510427443245 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f019062: 'error, Germany', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.03818151069865073 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f019069: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004968684247461978 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f019073: 'error, Germany, Frankfurt', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041199809740740117 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f019074: 'error, China, Guangdong', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.713465250976725354 FIL, balance: 0.669609513111616109 FIL): validation failure
-  f019087: 'error, South Africa, Johannesburg', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041182726953487822 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f019090: 'error, South Africa, Johannesburg', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041182728773213888 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f019091: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00794622606345711 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f019094: 'error, Brazil, Sao Paulo', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00776959849716243 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f019104: 'error, Canada, Chambly', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.71346525002409074 FIL, balance: 0.669609513111616109 FIL): validation failure
-  f019109: 'error, USA, Howell', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041182727489764709 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f019118: 'error, China, Jiaxing', // failed to initiate data transfer: deal data transfer failed: response rejected
-  f019123: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004968688888123388 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f019133: 'error, UK, Mansfield', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.039183837388466481 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f019150: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007661345322982086 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f019155: 'error, China, Chongqing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007659757995190178 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f019173: 'error, China, Nanchong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004969714883771889 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f019182: 'error, China, Chongqing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007661345949902718 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f019185: 'error, China, Beijing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007659755602537477 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f019218: 'error, China, Dali', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041199818867257779 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f019233: 'error, Russia', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007618043083748855 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f019239: 'error, China, Jiaxing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00496971504653013 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
   f019243: 'error, USA, Jackson', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
-  f019248: 'error, USA, Council Bluffs', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007618052467527836 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f019280: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007619626545924915 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f019317: 'error, Brazil, Sao Paulo', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007619630705302185 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f019326: 'error, China, Chongqing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007619623851371814 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f019327: 'error, China, Chongqing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00812642678786023 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f019352: 'error, China, Chongqing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007873703432641125 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f019354: 'error, Germany, Frankfurt', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.713465249035280128 FIL, balance: 0.669609513111616109 FIL): validation failure
-  f019362: 'error, China, Hangzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.713465246478842936 FIL, balance: 0.669609513111616109 FIL): validation failure
-  f019376: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041199812694500787 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f019378: 'error, China, Changzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004969714250823174 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
   f019399: 'error, Korea, Busan', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzaceaszdvqrjbnajurbnhe4pmfjn4fef3eg5cpfy2tugdgnbsoda65ss n 2933, TS: bafy2bzacebtnrh63plwukzzza43vrvmusfrfadu6yvrkpdmbe3pkghu5tykqc n2933)
-  f019401: 'error, Brazil, Sao Paulo', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005174842734321514 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f019423: 'error, South Africa, Johannesburg', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005175917135213465 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f019434: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041191263016777056 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f019437: 'error, Korea, Guro-gu', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.713465253171402566 FIL, balance: 0.669609513111616109 FIL): validation failure
-  f019459: 'error, USA, Alpharetta', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007873695137998917 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f019462: 'error, Netherlands, Groningen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00787370087070585 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f019515: 'error, Netherlands, Groningen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007873698224377413 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f019523: 'error, USA, Los Angeles', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007873698019422591 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f019528: 'error, Peru', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005176991831848983 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f019547: 'error, Peru', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00517484256560519 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f019645: 'error, Russia, St. Petersburg', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041944187684528694 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f019723: 'error, China, Zhongshan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041944187449433457 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f019804: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041935493378452175 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f019806: 'error, China, Beijing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005176985158761102 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f019812: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041944184043566562 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f019820: 'error, Germany', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.043517694282904506 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f019824: 'error, USA', // error in deal activation: handling applied event: deal wasn't active: deal=535554, parentState=bafy2bzacebia36nuaxktpjaznt25mioc7eqftnjprkdogb5fnss3oj6nvzaco, h=133366
-  f019825: 'error, China, Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041843536370362819 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020223: 'error, China, Guiyang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041851921713512868 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020260: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005176992211618212 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f020276: 'error, China, Xiamen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005175918949290198 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f020281: 'error, Korea, Uijeongbu-si', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041851925698075731 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020358: 'error, China, Xinxiang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007428986733186675 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f020366: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005175915200600072 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f020379: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005250656910983211 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f020385: 'error, Korea, Incheon', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.713465247509858879 FIL, balance: 0.669609513111616109 FIL): validation failure
-  f020386: 'error, Russia', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038084351394610937 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020390: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038092248319954797 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020393: 'error, China, Beijing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038084348441462767 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020398: 'error, China, Zhangjiakou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.713465253647719873 FIL, balance: 0.669609513111616109 FIL): validation failure
-  f020408: 'error, China, Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038076448021068267 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020432: 'error, Korea, Wanju', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.03859112512080162 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020433: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005249563690489706 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f020436: 'error, China, Beijing', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.713465255136965124 FIL, balance: 0.669609513111616109 FIL): validation failure
-  f020450: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005250651714775665 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f020452: 'error, China, Hangzhou + Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007428983622695847 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f020453: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038591130431542743 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020489: 'error, China, Lioaning', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.713465252574498599 FIL, balance: 0.669609513111616109 FIL): validation failure
-  f020516: 'error, China, Dalian', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038583122366382475 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020522: 'error, Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032803484243310288 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020525: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005250657357061353 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f020541: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.90641728004937802 FIL, balance: 0.850946407735853971 FIL): validation failure
-  f020563: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005248482040953061 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f020572: 'error, China, Nanchang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007427444405748193 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f020578: 'error, Korea, Wanju', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.037611821726998821 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020605: 'error, China, Yibin', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.037650517794172638 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020608: 'error, Russia', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.713465250681288037 FIL, balance: 0.669609513111616109 FIL): validation failure
-  f020618: 'error, Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.037642708266592427 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020626: 'error, USA, Berkeley', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007428987854410113 FIL, balance: 0.007255679004175256 FIL): not enough funds to execute transaction
-  f020631: 'error, China, Zhejiang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.039773824691351607 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020641: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005249564938044137 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f020678: 'error, China, Wenzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.037642711075096605 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020683: 'error, China, Changsha', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.005250653523200565 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f020739: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.037650514689709893 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020763: 'error, China, Luzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004830248472027946 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f020771: 'error, Japan, Setagaya-ku', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007705384116675053 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f020775: 'error, Japan, Osaka', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.037634902867454071 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020786: 'error, China, Shenzhen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004831246899669717 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f020788: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036656916200572305 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020789: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00483124425334128 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f020816: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007702189924980344 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f020819: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.034595906696510449 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020822: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00483124539867705 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f020896: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.034037092373310531 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020899: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.034044153106302298 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f020904: 'error, Korea, Uijeongbu-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 0.13930303019742592 FIL, balance: 0.12144284819453019 FIL): validation failure
-  f020914: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004831247424112938 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
   f020923: 'error, China, Cangzhou', // stream reset
-  f020928: 'error, China, Deyang + Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038762913442191786 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020939: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004831244838065331 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f020957: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.034859588892222439 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f020961: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004831244476380351 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f020967: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007703789736558465 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
   f020993: 'error, China, Hong Kong', // EOF
-  f021069: 'error, USA', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.034866823589962767 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f021075: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007702189906899845 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f021083: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035155165080915983 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f021092: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033925803562687356 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f021095: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00483124431362211 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f021254: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033925810211662905 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f021255: 'error, China, Suzhou + Netherlands', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038754878343867293 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f021262: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.713465249825122751 FIL, balance: 0.669609513111616109 FIL): validation failure
-  f021274: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.713465254105949181 FIL, balance: 0.669609513111616109 FIL): validation failure
-  f021292: 'error, China, Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007266307200866406 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
   f021328: 'error, China, Dongguan', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: protocol not supported
-  f021346: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035811041515269678 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f021357: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035803616030181323 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f021444: 'error, China, Guangzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035811042618408867 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f021461: 'error, China, Yangzhou + Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007266310347525732 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f021475: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007266302818450065 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f021479: 'error, China, Qingdao', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035803613697796952 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f021494: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035803611148446593 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f021525: 'error, China, Guangdong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035811042521959539 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f021527: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.040263259799405751 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f021532: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032803478944625331 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f021535: 'error, China, Chengdu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.040263266465083049 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f021547: 'error, Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007330351923695025 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f021574: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.04027161052973709 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f021580: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.040263261583348319 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f021704: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.040271610523709007 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f021716: 'error, New Zealand, Wellington', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032796672258420828 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f021725: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004727800537654991 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f021870: 'error, USA, Portland', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.882735802436292357 FIL, balance: 0.838490847585179483 FIL): validation failure
-  f021961: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007330356312139449 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f022015: 'error, China, Hangzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.045173301950945538 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f022016: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.045163942072708463 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f022030: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041938002330949576 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f022031: 'error, China, Maoming', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007328835594130403 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f022069: 'error, China, Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.007328832900136052 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f022070: 'error, China, Jieyang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.031916864307467646 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f022072: 'error, China, Jieyang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.031524055816523508 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f022084: 'error, China, Shaanxi', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.0047287797424389 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f022091: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004727807583022768 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f022108: 'error, China, Luzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004728778217333901 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f022119: 'error, USA, Lovettsville', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041946690996696519 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f022130: 'error, Korea, Seodaemun-gu', // stream reset
-  f022132: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.04343266099968714 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f022142: 'error, USA, Queens', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.882735801592185737 FIL, balance: 0.838490847585179483 FIL): validation failure
-  f022144: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008026416168697692 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f022146: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008024751427182712 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f022166: 'error, Norway, Borgen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008026419224935773 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f022171: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004727799024919908 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
   f022261: 'error, China, Luzhou', // EOF
-  f022262: 'error, China, Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004727797909955803 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f022276: 'error, Korea, Seoul', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.043432662452455143 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f022284: 'error, China, Shaanxi', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004726816999909405 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
   f022287: 'error, China, Dongguan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 0.060606060549986476 FIL, balance: 0.055761302709139222 FIL): validation failure
-  f022289: 'error, China, Mianyang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.032796686885544519 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f022303: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.04343265864873477 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f022304: 'error, China, Taiyuan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008026416741365577 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f022308: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.043414647202799621 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f022309: 'error, Korea, Chuncheon', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.03598013252488181 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f022313: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.043423651241390497 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f022320: 'error, Korea, Seoul', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008159093884892917 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f022326: 'error, China, Zhongshan', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041053819462967146 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f022361: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004728779875056726 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f022364: 'error, Korea, Jungang-gu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.00815740650873702 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f022373: 'error, Singapore', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035965206632820703 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f022376: 'error, China, Dongguan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.09999999997465853 FIL, balance: 0.003419950457033383 FIL): not enough funds to execute transaction
   f022395: 'error, USA, Los Angeles', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 9.263662313821484884 FIL, balance: 9.247324167408334375 FIL): validation failure
-  f022405: 'error, Russia', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008155719775724754 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f022501: 'error, Japan, Osaka', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004727793944299689 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f022505: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004896411513729993 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
   f022512: 'error, Canada, Embrun', // EOF
-  f022518: 'error, DNS:poseidon.technology', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008154025677455062 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f022737: 'error, Korea, Gangnum-gu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008344970528293008 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f022748: 'error, China, Xinyang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004896411278634756 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f022780: 'error, Korea, Guri-si', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008344969569827811 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f022790: 'error, China, Luzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004896415208944872 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f022791: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004894385552782816 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f022832: 'error, China', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.039575333023214049 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f022834: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004823944383474189 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
   f022841: 'error, China, Zhongshan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 11.419984826608791163 FIL, balance: 11.338357011046283292 FIL): validation failure
-  f022853: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.882735793494791518 FIL, balance: 0.838490847585179483 FIL): validation failure
   f022855: 'error, Finland, Helsinki', // AddPiece failed: getting available sector: getting sector number: ERROR: duplicate key value violates unique constraint "sector_actor_id_id_idx" (SQLSTATE 23505)
-  f022911: 'error, China, Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038493094071741373 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f022912: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036545087861295642 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f022913: 'error, Korea, Uiwang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008343247607533759 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f022926: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.004823944895861244 FIL, balance: 0.004668963389900487 FIL): not enough funds to execute transaction
-  f022930: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036545088711255345 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f022967: 'error, Korea, Seoul', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008343246408193992 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f022976: 'error, Korea, Cheongju-si', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.039773837814488298 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f022996: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036545080193574066 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f023013: 'error, China, Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038046317142609558 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f023108: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.008949608562466413 FIL, balance: 0.004668963389900487 FIL): validation failure
-  f023181: 'error, DNS:poseidon.technology', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008541052102538253 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f023190: 'error, China, Hefei', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008539282766134739 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f023205: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008541053067031533 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
   f023207: 'error, undefined', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.099999999968769945 FIL, balance: 0.096176172372952721 FIL): not enough funds to execute transaction
-  f023210: 'error, China, Dongguan', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.008949617484029253 FIL, balance: 0.004668963389900487 FIL): validation failure
-  f023229: 'error, China, Shandong', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008541052024173174 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f023463: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041841537978860388 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f023467: 'error, Norway, Oslo', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.882735800259703144 FIL, balance: 0.838490847585179483 FIL): validation failure
-  f023482: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.008947762431213294 FIL, balance: 0.004668963389900487 FIL): validation failure
   f023490: 'error, Ukraine, Kyiv', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.10030303025890176 FIL, balance: 0.080326434593729173 FIL): not enough funds to execute transaction
-  f023495: 'error, China, Beijing + USA, Portland', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038038430742136226 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f023530: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041841540335840841 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f023535: 'error, China, Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.008949614855785065 FIL, balance: 0.004668963389900487 FIL): validation failure
-  f023549: 'error, China, Zhejiang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008779140849387555 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f023560: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.043168877940875733 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f023565: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
-  f023581: 'error, China, Hong Kong', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.008948681619577193 FIL, balance: 0.004668963389900487 FIL): validation failure
-  f023583: 'error, Korea, Guri-si', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008775498535566548 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f023626: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.043168877187365358 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f023627: 'error, China, Zhongwei', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.03320462217123333 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f023643: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.00866273568925385 FIL, balance: 0.004668963389900487 FIL): validation failure
-  f023649: 'error, Korea, Seoul', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.043364802917580804 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f023651: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.043364806600739517 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f023655: 'error, Australia, Brisbane', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008777319538649685 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f023660: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.03195757597141374 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f023661: 'error, China, Zhejiang', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.035424497713604415 FIL, balance: 0.016454260054526771 FIL): not enough funds to execute transaction
-  f023662: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.031964199901562142 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f023798: 'error, China, Shanghai', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.043795366050671617 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f023825: 'error, USA, Portland', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038046316172088195 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f023843: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.882735796165786037 FIL, balance: 0.838490847585179483 FIL): validation failure
-  f023854: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.043795362151310666 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f023859: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.04378627951133279 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f023861: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.031964206598762355 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f023868: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008387268899502546 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f023869: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.031950933733779184 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f023870: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008385536954508811 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f023871: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.031964199250529178 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f023939: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.882735801164103094 FIL, balance: 0.838490847585179483 FIL): validation failure
-  f023965: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.042396997199944221 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f023971: 'error, USA, @Brian Y', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.882735800259703144 FIL, balance: 0.838490847585179483 FIL): validation failure
-  f023982: 'error, China, Chongqing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.040698824458026154 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f023985: 'error, China, Chongqing', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.041194201212316917 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f024016: 'error, USA, Portland', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038046314508337287 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f024025: 'error, China, Chengdu', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.09999999998184258 FIL, balance: 0.044037604834337088 FIL): not enough funds to execute transaction
-  f024031: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036461112879469518 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f024070: 'error, Japan, Setagaya-ku', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008387268809081301 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f024074: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.008663605959576591 FIL, balance: 0.004668963389900487 FIL): validation failure
-  f024101: 'error, China, Guiyang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035555595783521994 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f024129: 'error, China, Zhejiang', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035753948440245126 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f024130: 'error, Korea', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: failed to load message: blockstore: block not found
-  f024136: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033646208500326775 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f024137: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008161154192050452 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f024146: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033639226043437575 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f024147: 'error, China, Fuzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.033639230914128639 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f024150: 'error, UK, Mansfield', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008159464464033642 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f024156: 'error, USA', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.035746538218083 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f024190: 'error, China, Wenzhou', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008161156332019917 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f024483: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.008663598918775647 FIL, balance: 0.004668963389900487 FIL): validation failure
   f024526: 'error, Korea', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 0.627883260614740504 FIL, balance: 0.09533579735187667 FIL): validation failure
-  f024556: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036570238806606791 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f024557: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036570241494574309 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f024558: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.008662741866757675 FIL, balance: 0.004668963389900487 FIL): validation failure
-  f024559: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.036570251161614441 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f024563: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds including pending messages (required: 0.008662738835260676 FIL, balance: 0.004668963389900487 FIL): validation failure
-  f024565: 'error, Korea, Incheon', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008161147470737907 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
   f024617: 'error, Korea, Bucheon-si', // EOF
-  f024893: 'error, Korea, Gyeonggi-do', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038918656441319706 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f024944: 'error, Korea, Yeongdeungpo-dong', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: context deadline exceeded
-  f024985: 'error, China, Shenzhen', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008159463186345046 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f025002: 'error, NR', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038918661305982687 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
-  f025008: 'error, Korea, Gyeonggi-do', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.008159460896148506 FIL, balance: 0.006637083864391413 FIL): not enough funds to execute transaction
-  f029368: 'error, Korea, Gangseo-gu', // adding market funds failed: mpool push: failed to push message: not enough funds (required: 0.038918669383613907 FIL, balance: 0.022451386229255808 FIL): not enough funds to execute transaction
   f029529: 'error, China, Dongguan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.030303030285911442 FIL, balance: 0.010888855251567979 FIL): not enough funds to execute transaction
   f029649: 'error, China, Beijing', // AddPiece failed: adding piece to sector: writing piece: acquire unsealed sector: local acquire error: couldn't find a suitable path for a sector
 
