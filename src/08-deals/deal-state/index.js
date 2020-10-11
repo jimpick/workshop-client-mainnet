@@ -269,9 +269,12 @@ function BucketDealList ({
       dealData,
       dealHistory
     )
-    if (toTag === bucket) {
-      if (!toAnnotationsMap[miner] || toAnnotationsMap[miner].date < date) {
-        toAnnotationsMap[miner] = { shortAnnotation, comment, date }
+    if (!toAnnotationsMap[miner] || toAnnotationsMap[miner].date < date) {
+      toAnnotationsMap[miner] = {
+        toBucket: toTag,
+        shortAnnotation,
+        comment,
+        date
       }
     }
     dealMiners[miner] = true
@@ -347,8 +350,11 @@ function BucketDealList ({
     return Number(a.slice(1)) - Number(b.slice(1))
   })
   for (const miner in annotations) {
-    const annotation = annotations[miner]
     if (!dealMiners[miner]) {
+      if (miner === 'f02514') {
+        console.log('JimX', miner, dealMiners[miner])
+      }
+      const annotation = annotations[miner]
       const match = annotation && annotation.match(/^([^,]*), (.*)/)
       if (match) {
         if (bucket === match[1]) {
@@ -358,7 +364,10 @@ function BucketDealList ({
       }
     }
   }
-  const toAnnotations = Object.entries(toAnnotationsMap)
+  const toAnnotations = Object.entries(toAnnotationsMap).filter(
+    ([,{ toBucket }]) => toBucket === bucket
+  )
+
   toAnnotations.sort(([a, , dateA], [b, , dateB]) => {
     const compare = Number(a.slice(1)) - Number(b.slice(1))
     if (compare !== 0) return compare
