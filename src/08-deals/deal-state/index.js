@@ -141,6 +141,12 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
     return ['stuck', `FundsEnsured: ${elapsedNow}`]
   }
   if (lastDealState === 'Error') {
+    const matchRetest = dealMessage.match(
+      /adding market funds failed: mpool push: failed to push message: not enough funds including pending messages/
+    )
+    if (matchRetest) {
+      return ['retest', 'client node out of gas']
+    }
     const matchBusy = dealMessage.match(
       /deal rejected: (cannot seal a sector before .*)/
     )
@@ -254,6 +260,7 @@ function BucketDealList ({
 }) {
   const minerEntries = []
   const toAnnotationsMap = {}
+  const dealMiners = {}
   for (let i in deals) {
     const deal = deals[i]
     const { proposalCid, fromNode, miner, date, cid: cidDeal } = deal
@@ -267,6 +274,7 @@ function BucketDealList ({
         toAnnotationsMap[miner] = { shortAnnotation, comment, date }
       }
     }
+    dealMiners[miner] = true
     if (fromTag !== bucket) continue
 
     const data = dealData && dealData[proposalCid]
@@ -338,6 +346,18 @@ function BucketDealList ({
   minerEntries.sort(([a], [b]) => {
     return Number(a.slice(1)) - Number(b.slice(1))
   })
+  for (const miner in annotations) {
+    const annotation = annotations[miner]
+    if (!dealMiners[miner]) {
+      const match = annotation && annotation.match(/^([^,]*), (.*)/)
+      if (match) {
+        if (bucket === match[1]) {
+          const shortAnnotation = match[2]
+          toAnnotationsMap[miner] = { shortAnnotation, date: now }
+        }
+      }
+    }
+  }
   const toAnnotations = Object.entries(toAnnotationsMap)
   toAnnotations.sort(([a, , dateA], [b, , dateB]) => {
     const compare = Number(a.slice(1)) - Number(b.slice(1))
