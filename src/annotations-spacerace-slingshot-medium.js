@@ -5,32 +5,6 @@
 const annotations = {
   // Candidates
 
-  f03194: "candidate, China, Shenzhen, 成都云存&Npool",
-  f014365: "candidate, Australia, Marrickville + Japan, Heiwajima",
-  f023858: "candidate, China, Fuzhou",
-  f023859: "candidate, China, Fuzhou",
-  f023861: "candidate, China, Fuzhou",
-  f023868: "candidate, China, Fuzhou",
-  f023869: "candidate, China, Fuzhou",
-  f023870: "candidate, China, Fuzhou",
-  f023871: "candidate, China, Fuzhou",
-  f023876: "candidate, China, Fuzhou",
-  f023928: "candidate, China, Fuzhou",
-  f023977: "candidate, China, Fuzhou",
-  f023978: "candidate, China, Fuzhou",
-  f023980: "candidate, China, Fuzhou",
-  f023981: "candidate, China, Fuzhou",
-  f024006: "candidate, China, Fuzhou",
-  f024007: "candidate, China, Fuzhou",
-  f024008: "candidate, China, Fuzhou",
-  f024012: "candidate, China, Fuzhou",
-  f024013: "candidate, China, Fuzhou",
-  f024014: "candidate, China, Fuzhou",
-  f024081: "candidate, China, Fuzhou",
-  f024084: "candidate, China, Fuzhou",
-  f024085: "candidate, China, Fuzhou",
-  f024136: "candidate, China, Fuzhou",
-
   // Live
 
   // Testing
@@ -140,6 +114,7 @@ const annotations = {
   f010617: "testing, Canada, Surrey, @feiya200",
   f014281: "testing, Netherlands, Permerend",
   f014329: "testing, China, Hong Kong",
+  f014365: "testing, Australia, Marrickville + Japan, Heiwajima",
   f014394: "testing, China, Suzhou",
   f014569: "testing, NR",
   f014768: "testing, Singapore",
@@ -235,12 +210,35 @@ const annotations = {
   f023853: "testing, China, Fuzhou",
   f023854: "testing, China, Fuzhou",
   f023855: "testing, China, Fuzhou",
+  f023858: "testing, China, Fuzhou",
+  f023859: "testing, China, Fuzhou",
+  f023861: "testing, China, Fuzhou",
+  f023868: "testing, China, Fuzhou",
+  f023869: "testing, China, Fuzhou",
+  f023870: "testing, China, Fuzhou",
+  f023871: "testing, China, Fuzhou",
+  f023876: "testing, China, Fuzhou",
+  f023928: "testing, China, Fuzhou",
   f023939: "testing, NR",
   f023943: "testing, USA, Ashburn",
   f023971: "testing, USA, @Brian Y",
+  f023977: "testing, China, Fuzhou",
+  f023978: "testing, China, Fuzhou",
+  f023980: "testing, China, Fuzhou",
+  f023981: "testing, China, Fuzhou",
+  f024006: "testing, China, Fuzhou",
+  f024007: "testing, China, Fuzhou",
+  f024008: "testing, China, Fuzhou",
+  f024012: "testing, China, Fuzhou",
+  f024013: "testing, China, Fuzhou",
+  f024014: "testing, China, Fuzhou",
   f024015: "testing, USA, Portland",
   f024066: "testing, NR",
+  f024081: "testing, China, Fuzhou",
+  f024084: "testing, China, Fuzhou",
+  f024085: "testing, China, Fuzhou",
   f024127: "testing, China, Fuzhou",
+  f024136: "testing, China, Fuzhou",
   f024146: "testing, China, Fuzhou",
   f024147: "testing, China, Fuzhou",
   f024148: "testing, China, Fuzhou",
@@ -331,6 +329,10 @@ const annotations = {
   // Min-size
 
   f02576: 'min-size, Denmark, Gjerlev, BenjaminH', // 10.04: 268435456 < 943718400 (~1GiB)
+
+  // min-ask
+
+  f03194: "min-ask, China, Shenzhen, 成都云存&Npool",
 
   // Transfer failed - failed to initiate data transfer: deal data transfer failed: response rejected
 
