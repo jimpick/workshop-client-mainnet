@@ -2,7 +2,8 @@ import React, { useEffect, useState, useRef, useMemo } from 'react'
 import { format, formatDistance } from 'date-fns'
 import copy from 'clipboard-copy'
 import useLotusClient from '../../lib/use-lotus-client'
-import annotations from '../../annotations.js'
+import annotationsCamera from '../../annotations-spacerace.js'
+import annotationsSlingshot from '../../annotations-spacerace-slingshot-medium'
 
 const dealStateNames = [
   // go-fil-markets/storagemarket/dealstatus.go
@@ -71,25 +72,6 @@ function DealHistory ({ dealHistoryData, height }) {
     )
   }
 }
-
-const buckets = [
-  'retest',
-  'active',
-  'active-sealing',
-  'sealing',
-  'stuck',
-  'busy',
-  'new',
-  'min-size',
-  'min-ask',
-  'error',
-  'backoff',
-  'rejected',
-  'dial',
-  'xnr',
-  'unknown'
-]
-const bucketSet = new Set(buckets)
 
 function proposedNewBucket (deal, previous, dealData, dealHistory) {
   const { proposalCid, fromNode, miner, date, cid: cidDeal } = deal
@@ -213,7 +195,7 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
   }
 }
 
-function bucketizeDeal (deal, dealData, dealHistory) {
+function bucketizeDeal (deal, dealData, dealHistory, annotations, bucketSet) {
   const miner = deal.miner
   const annotation = annotations[miner]
   const match1 = annotation && annotation.match(/^([^,]*), (.*)/)
@@ -252,22 +234,27 @@ function bucketizeDeal (deal, dealData, dealHistory) {
 
 function BucketDealList ({
   bucket,
+  buckets,
+  bucketSet,
   deals,
   dealData,
   dealHistory,
   height,
-  now
+  now,
+  annotations
 }) {
   const minerEntries = []
   const toAnnotationsMap = {}
   const dealMiners = {}
   for (let i in deals) {
     const deal = deals[i]
-    const { proposalCid, fromNode, miner, date, cid: cidDeal } = deal
+    const { proposalCid, fromNode, miner, date, cid: cidDeal, type } = deal
     const [fromTag, toTag, shortAnnotation, comment] = bucketizeDeal(
       deal,
       dealData,
-      dealHistory
+      dealHistory,
+      annotations,
+      bucketSet
     )
     if (!toAnnotationsMap[miner] || toAnnotationsMap[miner].date < date) {
       toAnnotationsMap[miner] = {
@@ -297,12 +284,22 @@ function BucketDealList ({
         `${clientDealStatus && clientDealStatus.DealID}-$TIMESTAMP.log); ` +
         `sleep 5`
 
+    let prefix = '??'
+    let altAnnotation = '??'
+    if (type === 'camera') {
+      prefix = 'Camera'
+      altAnnotation = annotationsSlingshot[miner]
+    }
+    if (type === 'slingshot') {
+      prefix = 'SS'
+      altAnnotation = annotations[miner]
+    }
     const backgroundColor = fromTag !== toTag ? '#eee' : '#fff'
     const entry = (
       <div key={proposalCid} style={{ marginBottom: '1rem', backgroundColor }}>
         <div>
-          {Number(i) + 1}. Node #{fromNode} {'->'} Miner {miner} [{fromTag}{' '}
-          {'->'} {toTag}] {shortAnnotation}{' '}
+          {Number(i) + 1}. {prefix}: Node #{fromNode} {'->'} Miner {miner} [
+          {fromTag} {'->'} {toTag}] {shortAnnotation}{' '}
           {fromTag !== toTag && (
             <span className='tag' style={{ backgroundColor: '#ffeb3b' }}>
               tag:changed
@@ -311,6 +308,7 @@ function BucketDealList ({
         </div>
         <div style={{ fontSize: '50%' }}>
           <div>Date: {new Date(date).toString()}</div>
+          <div>Alternate: {altAnnotation}</div>
           {!cidDeal && (
             <div>
               CID: {cidDeal} <button onClick={copyCid}>Copy</button>
@@ -414,7 +412,7 @@ function BucketDealList ({
   }
 }
 
-export default function DealList ({ appState, cid, filterErrors }) {
+export default function DealList ({ appState, cid, dealType }) {
   const { selectedNode, deals: originalDeals } = appState
   const [now, setNow] = useState(Date.now())
   const [height, setHeight] = useState()
@@ -438,18 +436,67 @@ export default function DealList ({ appState, cid, filterErrors }) {
     }
   }, [client])
 
-  const cameraDeals = useMemo(() => {
-    return originalDeals && originalDeals.filter(deal => deal.type === 'camera')
-  }, [originalDeals])
+  const focusedDeals = useMemo(() => {
+    return originalDeals && originalDeals.filter(deal => deal.type === dealType)
+  }, [originalDeals, dealType])
 
-  if (!cameraDeals) return null
+  if (!focusedDeals) return null
 
   const { dealData, dealHistory } = appState
 
   let deals = cid
-    ? cameraDeals.filter(deal => deal.cid === cid)
-    : [...cameraDeals]
+    ? focusedDeals.filter(deal => deal.cid === cid)
+    : [...focusedDeals]
   deals.sort(({ date: a }, { date: b }) => b - a)
+
+  let annotations
+  let buckets
+  if (dealType === 'camera') {
+    annotations = annotationsCamera
+    buckets = [
+      'retest',
+      'active',
+      'active-sealing',
+      'sealing',
+      'stuck',
+      'busy',
+      'new',
+      'min-size',
+      'min-ask',
+      'error',
+      'backoff',
+      'rejected',
+      'dial',
+      'xnr',
+      'unknown'
+    ]
+  } else if (dealType === 'slingshot') {
+    annotations = annotationsSlingshot
+    buckets = [
+      'retest',
+      'candidate',
+      'testing',
+      'active-a',
+      'active-b',
+      'active-c',
+      'sealing-a',
+      'sealing-b',
+      'sealing-c',
+      'min-size',
+      'min-ask',
+      'xfr-failed',
+      'error',
+      'timeout-ask',
+      'error-ask',
+      'backoff',
+      'dial',
+      'xnr',
+      'unknown'
+    ]
+  } else {
+    return <p>Error</p>
+  }
+  const bucketSet = new Set(buckets)
 
   return (
     <React.Fragment>
@@ -472,7 +519,7 @@ export default function DealList ({ appState, cid, filterErrors }) {
       </div>
       <div style={{ overflowY: 'auto', flex: 1 }} ref={scrollEl}>
         <div>
-          <h1>Annotations / Deals</h1>
+          <h1>Annotations / Deals: {dealType}</h1>
           <div>
             {buckets.map(bucket => (
               <React.Fragment key={bucket}>
@@ -486,11 +533,14 @@ export default function DealList ({ appState, cid, filterErrors }) {
                 <h2 id={bucket}>Bucket: {bucket}</h2>
                 {BucketDealList({
                   bucket,
+                  buckets,
+                  bucketSet,
                   deals,
                   dealData,
                   dealHistory,
                   height,
-                  now
+                  now,
+                  annotations
                 })}
               </div>
             ))}

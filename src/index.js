@@ -117,6 +117,7 @@ function App () {
           <Link to='/retrieve'>Retrieve</Link>
           <Link to='/deals'>My Deals</Link>
           <Link to='/deal-state'>Deal State</Link>
+          <Link to='/deal-state-ss'>Deal State: SS</Link>
         </nav>
         <ErrorBoundary>
           <Switch>
@@ -142,7 +143,10 @@ function App () {
               <Deals {...baseProps} />
             </Route>
             <Route path='/deal-state'>
-              <DealState {...baseProps} />
+              <DealState dealType="camera" {...baseProps} />
+            </Route>
+            <Route path='/deal-state-ss'>
+              <DealState dealType="slingshot" {...baseProps} />
             </Route>
             <Route path='/camera'>
               <Camera {...baseProps} />
