@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import useMiners from '../lib/use-miners'
 import { format, formatDistance } from 'date-fns'
 import copy from 'clipboard-copy'
+import annotations from '../annotations-spacerace'
+import annotationsSlingshot from '../annotations-spacerace-slingshot-medium'
 
 const dealStateNames = [
   // go-fil-markets/storagemarket/dealstatus.go
@@ -74,7 +76,6 @@ function DealHistory ({ dealHistoryData, height }) {
 export default function DealList ({ client, appState, cid, filterErrors }) {
   const [now, setNow] = useState(Date.now())
   const [height, setHeight] = useState()
-  const [, annotations] = useMiners(client)
 
   useEffect(() => {
     const state = { canceled: false }
@@ -121,27 +122,46 @@ export default function DealList ({ client, appState, cid, filterErrors }) {
         const dealMessage = clientDealStatus && clientDealStatus.Message
         const dealHistoryData = dealHistory && dealHistory[proposalCid]
         // if (filterErrors && dealState === 22) return null
-        const retrieveScript = clientDealStatus &&
+        const retrieveScript =
+          clientDealStatus &&
           dealStateNames[clientDealStatus.State] === 'Active' &&
           `(TIMESTAMP=\`date +%s\`; /usr/bin/time timeout -k 11m 10m ` +
-          `lotus client retrieve --miner=${miner} ${cidDeal} ` +
-          `/home/lotus1/downloads/${miner}-` +
-          `${clientDealStatus && clientDealStatus.DealID}-$TIMESTAMP.jpg ` +
-          `2>&1 | tee /home/lotus1/downloads/${miner}-` +
-          `${clientDealStatus && clientDealStatus.DealID}-$TIMESTAMP.log); ` +
-          `sleep 5`
+            `lotus client retrieve --miner=${miner} ${cidDeal} ` +
+            `/home/lotus1/downloads/${miner}-` +
+            `${clientDealStatus && clientDealStatus.DealID}-$TIMESTAMP.jpg ` +
+            `2>&1 | tee /home/lotus1/downloads/${miner}-` +
+            `${clientDealStatus && clientDealStatus.DealID}-$TIMESTAMP.log); ` +
+            `sleep 5`
         if (retrieveScript) {
           allRetrieveScripts.push(retrieveScript)
         }
 
+        let prefix = '??'
+        let annotation = '??'
+        let altAnnotation = '??'
+        if (type === 'camera') {
+          prefix = 'Camera'
+          annotation = annotations[miner]
+          altAnnotation = annotationsSlingshot[miner]
+        }
+        if (type === 'slingshot') {
+          prefix = 'SS'
+          annotation = annotationsSlingshot[miner]
+          altAnnotation = annotations[miner]
+        }
         return (
           <div key={proposalCid} style={{ marginBottom: '1rem' }}>
             <div>
-              {i + 1}. Node #{fromNode} -> Miner {miner}
-              {annotations[miner] && <span> ({annotations[miner]})</span>}
+              {i + 1}. {prefix}: Node #{fromNode} {'->'} Miner {miner}
+              {annotation && <span> ({annotation})</span>}
             </div>
             <div style={{ fontSize: '50%' }}>
-              <div>Type: {type} Date: {new Date(date).toString()}</div>
+              <div>
+                Type: {type} Date: {new Date(date).toString()}
+              </div>
+              <div>
+                Alternate: {altAnnotation}
+              </div>
               {!cid && (
                 <div>
                   CID: {cidDeal} <button onClick={copyCid}>Copy</button>
@@ -157,7 +177,7 @@ export default function DealList ({ client, appState, cid, filterErrors }) {
               {dealMessage && <div>Message: {dealMessage}</div>}
             </div>
             <DealHistory dealHistoryData={dealHistoryData} height={height} />
-            {retrieveScript &&
+            {retrieveScript && (
               <div>
                 <details>
                   <summary>Retrieve Script</summary>
@@ -165,7 +185,7 @@ export default function DealList ({ client, appState, cid, filterErrors }) {
                   <button onClick={copyShellRetrieve}>Copy to Clipboard</button>
                 </details>
               </div>
-            }
+            )}
           </div>
         )
 
