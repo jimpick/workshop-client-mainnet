@@ -16,6 +16,12 @@ export default function Deals ({ appState, updateAppState }) {
           >
             Clear
           </button>
+          <button
+            style={{ height: '2rem', marginBottom: '1rem' }}
+            onClick={clearSlingshot}
+          >
+            Clear Slingshot
+          </button>
           <label>
             <input
               type='checkbox'
@@ -53,12 +59,32 @@ export default function Deals ({ appState, updateAppState }) {
     })
   }
 
+  function clearSlingshot () {
+    updateAppState(draft => {
+      const newDeals = []
+      for (const deal of draft.deals) {
+        const { type } = deal
+        if (type !== 'slingshot') {
+          newDeals.push(deal)
+        }
+      }
+      draft.deals = newDeals
+    })
+  }
+
   async function importSlingshot () {
     console.log('Jim import slingshot deals')
-    const url =
-      'https://raw.githubusercontent.com/jimpick/filecoin-wiki-test/master/wiki-small-blocks-combined/deals/f021682.json'
-    const resp = await fetch(url)
-    const slingshotDeals = await resp.json()
+    const baseUrl = 'https://raw.githubusercontent.com/jimpick/filecoin-wiki-test/master/'
+    const urls = [
+      'wiki-small-blocks-combined/deals/f021682.json',
+      'wiki-small-blocks-combined-128/deals/f021682.json'
+    ]
+    let slingshotDeals = []
+    for (const url of urls) {
+      const resp = await fetch(baseUrl + url)
+      const newDeals = await resp.json()
+      slingshotDeals = slingshotDeals.concat(newDeals)
+    }
     console.log('Jim slingshot deals', slingshotDeals)
     console.log('Jim dealData', dealData)
     const existingProposalCids = new Set(deals.map(deal => deal.proposalCid))

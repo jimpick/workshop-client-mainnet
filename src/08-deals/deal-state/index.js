@@ -304,7 +304,7 @@ function BucketDealList ({
           {Number(i) + 1}. Node #{fromNode} {'->'} Miner {miner} [{fromTag}{' '}
           {'->'} {toTag}] {shortAnnotation}{' '}
           {fromTag !== toTag && (
-            <span class='tag' style={{ backgroundColor: '#ffeb3b' }}>
+            <span className='tag' style={{ backgroundColor: '#ffeb3b' }}>
               tag:changed
             </span>
           )}

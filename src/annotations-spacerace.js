@@ -51,6 +51,7 @@ const annotations = {
   f03328: 'sealing, China, Xinxiang',
   f03347: 'sealing, China, Shenzhen',
   f03491: 'sealing, China, Hong Kong',
+  f03624: 'sealing, Germany, Chemnitz, ode',
   f05315: 'sealing, USA, Portland, 6block',
   f05316: 'sealing, USA, Portland, 6block',
   f07850: 'sealing, USA, Portland, 6block',
@@ -58,6 +59,7 @@ const annotations = {
   f08240: 'sealing, Russia, Novosibirsk, Rabinovitch',
   f08482: 'sealing, USA, Athol, @why',
   f09696: 'sealing, USA, Portland + Singapore',
+  f010088: 'sealing, DNS:purumine.com',
   f010241: 'sealing, China, Beijing + USA, Portland',
   f010257: 'sealing, China, Hong Kong, DNS:feiyuipfs.com',
   f014569: 'sealing, NR',
@@ -67,9 +69,11 @@ const annotations = {
   f019354: 'sealing, Germany, Frankfurt',
   f019399: 'sealing, Korea, Busan',
   f020385: 'sealing, Korea, Incheon',
+  f020608: 'sealing, Russia',
   f020928: 'sealing, China, Deyang + Singapore',
   f022125: 'sealing, China, Shenzhen',
   f022352: 'sealing, Norway, Borgen',
+  f023200: 'sealing, China, Shanghai',
   f023495: 'sealing, China, Beijing + USA, Portland',
   f023825: 'sealing, USA, Portland',
   f023854: 'sealing, China, Fuzhou',
@@ -100,249 +104,153 @@ const annotations = {
 
   // Stuck
 
-  f01238: 'stuck, Vietnam, Hanoi, FILECOIN-VIETNAM', // CheckForAcceptance: about 2 hours
-  f01247: 'stuck, Canada, Montreal, BigChungus™', // CheckForAcceptance: about 3 hours
-  f01272: 'stuck, Singapore', // CheckForAcceptance: about 3 hours
-  f01277: 'stuck, Sweden, Stockholm, tvsthlm', // CheckForAcceptance: about 2 hours
-  f01279: 'stuck, China, Sichuan', // CheckForAcceptance: about 2 hours
-  f01280: 'stuck, China, Wuxi, 了凡超算', // CheckForAcceptance: about 3 hours
-  f01799: 'stuck, China, Jinan, TokenHome', // CheckForAcceptance: about 3 hours
-  f01800: 'stuck, China, Shenzhen + Chengdu', // CheckForAcceptance: about 2 hours
-  f02299: 'stuck, China, Dongguan, Yolo', // CheckForAcceptance: about 3 hours
-  f02399: 'stuck, China, Zhejiang', // CheckForAcceptance: about 2 hours
-  f02416: 'stuck, China, Guangdong, 星际无限', // CheckForAcceptance: about 3 hours
-  f02419: 'stuck, China, Shanghai, yuantai', // CheckForAcceptance: about 2 hours
-  f02420: 'stuck, China, Wuhan', // FundsEnsured: about 2 hours
-  f02492: 'stuck, China, Shenzhen', // CheckForAcceptance: about 2 hours
-  f02606: 'stuck, China, Shanghai', // CheckForAcceptance: about 3 hours
-  f02619: 'stuck, China, Beijing, Blockcasting', // CheckForAcceptance: about 3 hours
-  f02625: 'stuck, China, Shanghai, IPFS星际工厂', // CheckForAcceptance: about 2 hours
-  f02665: 'stuck, Netherlands, Amsterdam, fm-ops', // CheckForAcceptance: about 2 hours
-  f03134: 'stuck, China, Cangzhou, 乔木信息', // CheckForAcceptance: about 1 hour
-  f03143: 'stuck, China, Shijiazhuang + Hong Kong', // CheckForAcceptance: about 3 hours
-  f03176: 'stuck, USA, San Mateo, Five Star-Helmsman&Heiben', // CheckForAcceptance: about 3 hours
-  f03222: 'stuck, China, Yuncheong, 星云矿池', // CheckForAcceptance: about 2 hours
-  f03223: 'stuck, USA', // CheckForAcceptance: about 2 hours
-  f03302: 'stuck, China, Chengdu', // CheckForAcceptance: about 2 hours
-  f03345: 'stuck, China, Fuzhou, chh', // CheckForAcceptance: about 2 hours
-  f03363: 'stuck, Singapore', // CheckForAcceptance: about 2 hours
-  f03364: 'stuck, China, Guangzhou', // FundsEnsured: about 2 hours
-  f03482: 'stuck, China, Wuxi', // CheckForAcceptance: about 2 hours
-  f03488: 'stuck, Korea, Geumcheon-gu', // CheckForAcceptance: about 2 hours
-  f03512: 'stuck, New Zealand, Auckland, NZFILECOIN01', // CheckForAcceptance: 44 minutes
-  f03544: 'stuck, China, Guiyang', // CheckForAcceptance: about 2 hours
-  f03624: 'stuck, Germany, Chemnitz, ode', // CheckForAcceptance: about 2 hours
-  f04443: 'stuck, China, Shanghai, 罗良科技', // CheckForAcceptance: about 2 hours
-  f07709: 'stuck, Korea, Dongjak-gu', // CheckForAcceptance: about 2 hours
-  f07806: 'stuck, China, Wuhan, HelloXP', // CheckForAcceptance: about 2 hours
-  f07824: 'stuck, China, Shanghai', // CheckForAcceptance: about 2 hours
-  f07987: 'stuck, China, Beijing', // FundsEnsured: about 2 hours
-  f08094: 'stuck, China, Guangzhou, dongshao', // CheckForAcceptance: 43 minutes
-  f08157: 'stuck, China, Beijing + Germany, Frankfurt, 超星际', // CheckForAcceptance: about 3 hours
-  f08204: 'stuck, USA, St. Louis', // CheckForAcceptance: about 2 hours
-  f08220: 'stuck, China, Shenzhen', // CheckForAcceptance: 42 minutes
-  f08371: 'stuck, China, Chengdu', // CheckForAcceptance: about 2 hours
-  f08474: 'stuck, China, Hong Kong', // CheckForAcceptance: about 2 hours
-  f09719: 'stuck, Korea, Geumcheon-gu', // FundsEnsured: 12 minutes
-  f010035: 'stuck, Netherlands', // CheckForAcceptance: about 2 hours
-  f010063: 'stuck, China, Mianyang', // CheckForAcceptance: about 2 hours
-  f010088: 'stuck, DNS:purumine.com', // CheckForAcceptance: about 2 hours
-  f010247: 'stuck, China, Yantai', // CheckForAcceptance: about 2 hours
-  f010399: 'stuck, China, Guangzhou', // CheckForAcceptance: about 2 hours
-  f010400: 'stuck, China, Shenyang', // CheckForAcceptance: about 2 hours
-  f010405: 'stuck, China, Foshan', // FundsEnsured: about 1 hour
-  f010491: 'stuck, China, Shenzhen', // CheckForAcceptance: about 1 hour
-  f010493: 'stuck, China, Shanghai', // CheckForAcceptance: about 2 hours
-  f010498: 'stuck, China, Shenzhen', // CheckForAcceptance: about 2 hours
-  f010501: 'stuck, China, Hangzhou', // CheckForAcceptance: about 2 hours
-  f010505: 'stuck, China, Wuhan', // CheckForAcceptance: about 2 hours
-  f010507: 'stuck, China, Hangzhou', // CheckForAcceptance: about 2 hours
-  f010512: 'stuck, China, Zhengzhou', // CheckForAcceptance: about 2 hours
-  f010513: 'stuck, China, Chongqing', // CheckForAcceptance: about 3 hours
-  f010523: 'stuck, China, Beijing', // CheckForAcceptance: about 2 hours
-  f010528: 'stuck, China, Chongqing', // CheckForAcceptance: about 3 hours
-  f010558: 'stuck, China, Shenzhen + Hong Kong', // CheckForAcceptance: about 1 hour
-  f014281: 'stuck, Netherlands, Permerend', // CheckForAcceptance: about 1 hour
-  f014327: 'stuck, China, Ningbo', // FundsEnsured: about 1 hour
-  f014394: 'stuck, China, Suzhou', // CheckForAcceptance: about 3 hours
-  f014768: 'stuck, Singapore', // CheckForAcceptance: about 2 hours
-  f015233: 'stuck, China, Nanjing', // CheckForAcceptance: about 3 hours
-  f015647: 'stuck, China, Shenzhen', // FundsEnsured: about 1 hour
-  f015734: 'stuck, China, Qingdao', // CheckForAcceptance: about 1 hour
-  f015753: 'stuck, China, Guyuan', // FundsEnsured: about 1 hour
-  f015771: 'stuck, Brazil, Sao Paulo', // FundsEnsured: about 1 hour
-  f015829: 'stuck, China, Beijing', // FundsEnsured: 9 minutes
-  f015941: 'stuck, Ukraine, Kyiv', // CheckForAcceptance: about 2 hours
-  f016162: 'stuck, France, Borgo', // FundsEnsured: 9 minutes
-  f016408: 'stuck, NR', // FundsEnsured: 9 minutes
-  f016456: 'stuck, China, Zhejiang', // FundsEnsured: 9 minutes
-  f016594: 'stuck, Germany', // CheckForAcceptance: about 2 hours
-  f016688: 'stuck, Germany, Frankfurt', // FundsEnsured: 8 minutes
-  f016859: 'stuck, NR', // FundsEnsured: 8 minutes
-  f017209: 'stuck, NR', // FundsEnsured: 8 minutes
-  f017215: 'stuck, Finland', // FundsEnsured: 8 minutes
-  f017251: 'stuck, USA', // FundsEnsured: 8 minutes
-  f017655: 'stuck, NR', // FundsEnsured: 8 minutes
-  f017665: 'stuck, China, Shenyang', // CheckForAcceptance: about 2 hours
-  f017734: 'stuck, Australia, Sydney', // CheckForAcceptance: about 2 hours
-  f017794: 'stuck, USA, Columbus', // FundsEnsured: about 1 hour
-  f017795: 'stuck, USA, Columbus', // FundsEnsured: about 1 hour
-  f018081: 'stuck, Germany', // FundsEnsured: 8 minutes
-  f018164: 'stuck, USA, Howell', // FundsEnsured: 8 minutes
-  f018474: 'stuck, China, Xiamen', // FundsEnsured: 7 minutes
-  f018484: 'stuck, China, Shanghai', // FundsEnsured: 7 minutes
-  f018517: 'stuck, USA, Columbus', // FundsEnsured: 7 minutes
-  f018520: 'stuck, China', // FundsEnsured: 7 minutes
-  f018537: 'stuck, China, Shaanxi', // FundsEnsured: 7 minutes
-  f018790: 'stuck, China, Chengdu', // FundsEnsured: 7 minutes
-  f018812: 'stuck, South Africa, Cape Town', // FundsEnsured: 7 minutes
-  f018879: 'stuck, Korea, Geumcheon-gu', // FundsEnsured: 7 minutes
-  f018884: 'stuck, Russia', // FundsEnsured: about 1 hour
-  f019022: "stuck, China, Xi'an", // CheckForAcceptance: about 2 hours
-  f019029: 'stuck, Serbia, Boljevac', // CheckForAcceptance: about 2 hours
-  f019041: 'stuck, Singapore', // CheckForAcceptance: about 2 hours
-  f019042: 'stuck, China, Shanghai', // FundsEnsured: 7 minutes
-  f019104: 'stuck, Canada, Chambly', // CheckForAcceptance: about 2 hours
-  f019114: 'stuck, USA, Howell', // CheckForAcceptance: about 2 hours
-  f019118: 'stuck, China, Jiaxing', // CheckForAcceptance: about 1 hour
-  f019160: 'stuck, USA, Fremont', // FundsEnsured: 7 minutes
-  f019184: 'stuck, China, Yibin', // FundsEnsured: 7 minutes
-  f019240: 'stuck, China, Beijing', // CheckForAcceptance: about 2 hours
-  f019243: 'stuck, USA, Jackson', // CheckForAcceptance: about 1 hour
-  f019264: 'stuck, NR', // FundsEnsured: 7 minutes
-  f019362: 'stuck, China, Hangzhou', // CheckForAcceptance: about 2 hours
-  f019437: 'stuck, Korea, Guro-gu', // CheckForAcceptance: about 2 hours
-  f019525: 'stuck, USA, Berkeley', // FundsEnsured: 7 minutes
-  f019551: 'stuck, UK', // CheckForAcceptance: 16 minutes
-  f019638: 'stuck, Germany, Frankfurt', // CheckForAcceptance: about 3 hours
-  f019734: 'stuck, NR', // FundsEnsured: 7 minutes
-  f019757: 'stuck, NR', // FundsEnsured: 7 minutes
-  f019809: 'stuck, NR', // FundsEnsured: 7 minutes
-  f019820: 'stuck, Germany', // FundsEnsured: about 1 hour
-  f020241: 'stuck, NR', // FundsEnsured: 7 minutes
-  f020352: 'stuck, NR', // FundsEnsured: 7 minutes
-  f020369: 'stuck, NR', // FundsEnsured: 6 minutes
-  f020436: 'stuck, China, Beijing', // CheckForAcceptance: about 2 hours
-  f020439: 'stuck, China, Chengdu', // FundsEnsured: 6 minutes
-  f020457: 'stuck, NR', // FundsEnsured: 6 minutes
-  f020489: 'stuck, China, Lioaning', // CheckForAcceptance: about 2 hours
-  f020523: 'stuck, China, Suzhou', // CheckForAcceptance: about 2 hours
-  f020541: 'stuck, China, Shanghai', // CheckForAcceptance: about 3 hours
-  f020608: 'stuck, Russia', // CheckForAcceptance: about 2 hours
-  f020691: 'stuck, NR', // FundsEnsured: 6 minutes
-  f020791: 'stuck, China, Hangzhou', // FundsEnsured: 6 minutes
-  f020904: 'stuck, Korea, Uijeongbu-si', // CheckForAcceptance: about 1 hour
-  f020934: 'stuck, NR', // FundsEnsured: 6 minutes
-  f020940: 'stuck, @fu', // FundsEnsured: 6 minutes
-  f020975: 'stuck, China, Shandong', // FundsEnsured: 6 minutes
-  f020993: 'stuck, China, Hong Kong', // FundsEnsured: about 1 hour
-  f021075: 'stuck, China, Chengdu', // CheckForAcceptance: about 1 hour
-  f021255: 'stuck, China, Suzhou + Netherlands', // CheckForAcceptance: about 1 hour
-  f021274: 'stuck, China, Shanghai', // CheckForAcceptance: about 2 hours
-  f021307: 'stuck, China, Chengdu', // FundsEnsured: 6 minutes
-  f021311: 'stuck, NR', // FundsEnsured: 6 minutes
-  f021337: 'stuck, China, Beijing', // FundsEnsured: 6 minutes
-  f021339: 'stuck, China, Jiaxing', // CheckForAcceptance: about 2 hours
-  f021346: 'stuck, China, Shanghai', // CheckForAcceptance: about 1 hour
-  f021357: 'stuck, China, Shanghai', // CheckForAcceptance: about 1 hour
-  f021418: 'stuck, NR', // FundsEnsured: 6 minutes
-  f021444: 'stuck, China, Guangzhou', // CheckForAcceptance: about 1 hour
-  f021500: 'stuck, NR', // FundsEnsured: 6 minutes
-  f021504: 'stuck, NR', // FundsEnsured: 6 minutes
-  f021505: 'stuck, NR', // FundsEnsured: 6 minutes
-  f021535: 'stuck, China, Chengdu', // FundsEnsured: about 1 hour
-  f021583: 'stuck, China, Jiaxing', // CheckForAcceptance: about 3 hours
-  f021616: 'stuck, China, Shanghai', // CheckForAcceptance: about 2 hours
-  f021684: 'stuck, NR', // FundsEnsured: 6 minutes
-  f021699: 'stuck, NR', // FundsEnsured: 6 minutes
-  f021710: 'stuck, China, Shijiazhuang', // CheckForAcceptance: about 3 hours
-  f021870: 'stuck, USA, Portland', // CheckForAcceptance: about 3 hours
-  f022033: 'stuck, NR', // FundsEnsured: 6 minutes
-  f022038: 'stuck, NR', // FundsEnsured: 6 minutes
-  f022072: 'stuck, China, Jieyang', // CheckForAcceptance: about 1 hour
-  f022089: 'stuck, China, Beijing', // CheckForAcceptance: about 2 hours
-  f022093: 'stuck, NR', // FundsEnsured: 5 minutes
-  f022202: 'stuck, USA, Howell', // CheckForAcceptance: about 2 hours
-  f022250: 'stuck, NR', // FundsEnsured: 5 minutes
-  f022261: 'stuck, China, Luzhou', // CheckForAcceptance: about 1 hour
-  f022287: 'stuck, China, Dongguan', // CheckForAcceptance: about 1 hour
-  f022321: 'stuck, China, Hong Kong', // FundsEnsured: 5 minutes
-  f022333: 'stuck, China, Dongguan', // FundsEnsured: 5 minutes
-  f022336: 'stuck, NR', // FundsEnsured: 5 minutes
-  f022338: 'stuck, NR', // FundsEnsured: 5 minutes
-  f022343: 'stuck, China, Dongguan', // FundsEnsured: 5 minutes
-  f022372: 'stuck, China, Chengdu', // FundsEnsured: 5 minutes
-  f022494: 'stuck, China, Dongguan', // FundsEnsured: 5 minutes
-  f022503: 'stuck, NR', // FundsEnsured: 5 minutes
-  f022522: 'stuck, China, Dongguan', // CheckForAcceptance: 15 minutes
-  f022562: 'stuck, NR', // FundsEnsured: 5 minutes
-  f022564: 'stuck, NR', // FundsEnsured: 5 minutes
-  f022683: 'stuck, NR', // FundsEnsured: 4 minutes
-  f022753: 'stuck, China, Hong Kong', // CheckForAcceptance: about 2 hours
-  f022776: 'stuck, Korea, Guri-si', // FundsEnsured: 4 minutes
-  f022786: 'stuck, NR', // FundsEnsured: 4 minutes
-  f022797: 'stuck, NR', // FundsEnsured: 4 minutes
-  f022838: 'stuck, China, Hong Kong', // FundsEnsured: 4 minutes
-  f022855: 'stuck, Finland, Helsinki', // CheckForAcceptance: about 1 hour
-  f022857: 'stuck, NR', // FundsEnsured: 4 minutes
-  f022906: 'stuck, NR', // FundsEnsured: 4 minutes
-  f022922: 'stuck, China, Shenzhen', // CheckForAcceptance: about 2 hours
-  f022954: 'stuck, NR', // FundsEnsured: 4 minutes
-  f023001: 'stuck, China, Changsha', // FundsEnsured: 4 minutes
-  f023013: 'stuck, China, Hong Kong', // CheckForAcceptance: about 1 hour
-  f023021: 'stuck, Korea, Yeongdeungpo-dong', // FundsEnsured: 4 minutes
-  f023159: 'stuck, NR', // FundsEnsured: 4 minutes
-  f023179: 'stuck, China, Fuzhou', // CheckForAcceptance: about 2 hours
-  f023198: 'stuck, NR', // FundsEnsured: 4 minutes
-  f023200: 'stuck, China, Shanghai', // CheckForAcceptance: about 2 hours
-  f023254: 'stuck, NR', // FundsEnsured: 4 minutes
-  f023499: 'stuck, NR', // FundsEnsured: 4 minutes
-  f023505: 'stuck, NR', // FundsEnsured: 4 minutes
-  f023568: 'stuck, NR', // FundsEnsured: 4 minutes
-  f023581: 'stuck, China, Hong Kong', // CheckForAcceptance: about 1 hour
-  f023647: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: about 2 hours
-  f023649: 'stuck, Korea, Seoul', // CheckForAcceptance: about 1 hour
-  f023801: 'stuck, China, Dongguan', // FundsEnsured: 4 minutes
-  f023881: 'stuck, China, Fuzhou', // FundsEnsured: 4 minutes
-  f023939: 'stuck, NR', // CheckForAcceptance: about 3 hours
-  f023971: 'stuck, USA, @Brian Y', // CheckForAcceptance: about 3 hours
-  f023986: 'stuck, Korea, Seoul', // FundsEnsured: 4 minutes
-  f024030: 'stuck, Korea, Gwangju', // CheckForAcceptance: about 3 hours
-  f024066: 'stuck, NR', // CheckForAcceptance: about 3 hours
-  f024070: 'stuck, Japan, Setagaya-ku', // CheckForAcceptance: about 1 hour
-  f024089: 'stuck, NR', // FundsEnsured: 4 minutes
-  f024127: 'stuck, China, Fuzhou', // CheckForAcceptance: about 2 hours
-  f024156: 'stuck, USA', // CheckForAcceptance: about 1 hour
-  f024165: 'stuck, NR', // FundsEnsured: 3 minutes
-  f024184: 'stuck, Korea, Gangnam-gu', // CheckForAcceptance: about 3 hours
-  f024468: 'stuck, China, Shenzhen', // CheckForAcceptance: about 2 hours
-  f024496: 'stuck, China, Dongguan', // FundsEnsured: 3 minutes
-  f024550: 'stuck, China, Wenzhou', // CheckForAcceptance: about 3 hours
-  f024800: 'stuck, China, Hong Kong', // CheckForAcceptance: about 3 hours
-  f024802: 'stuck, NR', // FundsEnsured: 3 minutes
-  f024894: 'stuck, NR', // FundsEnsured: 3 minutes
-  f024895: 'stuck, NR', // FundsEnsured: 3 minutes
-  f024902: 'stuck, Korea, Incheon', // CheckForAcceptance: about 2 hours
-  f024944: 'stuck, Korea, Yeongdeungpo-dong', // CheckForAcceptance: about 1 hour
-  f024969: 'stuck, NR', // CheckForAcceptance: about 3 hours
-  f024983: 'stuck, China, Hong Kong', // CheckForAcceptance: 3 minutes
-  f025007: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 2 hours
-  f025019: 'stuck, China, Taiwan, Hsinchu', // CheckForAcceptance: about 2 hours
-  f025028: 'stuck, NR', // FundsEnsured: 3 minutes
-  f025044: 'stuck, NR', // FundsEnsured: 3 minutes
-  f029368: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: about 1 hour
-  f029416: 'stuck, NR', // FundsEnsured: 3 minutes
-  f029421: 'stuck, China, Hong Kong', // CheckForAcceptance: about 2 hours
-  f029477: 'stuck, NR', // FundsEnsured: 3 minutes
-  f029490: 'stuck, NR', // CheckForAcceptance: about 2 hours
-  f029556: 'stuck, China, Wuxi', // CheckForAcceptance: about 2 hours
-  f029587: 'stuck, Hungary', // CheckForAcceptance: about 2 hours
-  f029619: 'stuck, China, Hefei', // CheckForAcceptance: about 2 hours
-  f030144: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 2 hours
-  f030158: 'stuck, China, Hangzhou', // CheckForAcceptance: about 2 hours
-  f030226: 'stuck, China, Fuzhou', // CheckForAcceptance: about 2 hours
-  f030230: 'stuck, China, Sichuan', // CheckForAcceptance: about 2 hours
-  f030278: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 2 hours
+  f01238: 'stuck, Vietnam, Hanoi, FILECOIN-VIETNAM', // CheckForAcceptance: about 4 hours
+  f01247: 'stuck, Canada, Montreal, BigChungus™', // CheckForAcceptance: about 5 hours
+  f01272: 'stuck, Singapore', // CheckForAcceptance: about 5 hours
+  f01277: 'stuck, Sweden, Stockholm, tvsthlm', // CheckForAcceptance: about 4 hours
+  f01279: 'stuck, China, Sichuan', // CheckForAcceptance: about 4 hours
+  f01280: 'stuck, China, Wuxi, 了凡超算', // CheckForAcceptance: about 5 hours
+  f01799: 'stuck, China, Jinan, TokenHome', // CheckForAcceptance: about 5 hours
+  f01800: 'stuck, China, Shenzhen + Chengdu', // CheckForAcceptance: about 4 hours
+  f02299: 'stuck, China, Dongguan, Yolo', // CheckForAcceptance: about 5 hours
+  f02399: 'stuck, China, Zhejiang', // CheckForAcceptance: about 4 hours
+  f02416: 'stuck, China, Guangdong, 星际无限', // CheckForAcceptance: about 5 hours
+  f02419: 'stuck, China, Shanghai, yuantai', // CheckForAcceptance: about 4 hours
+  f02420: 'stuck, China, Wuhan', // FundsEnsured: about 4 hours
+  f02492: 'stuck, China, Shenzhen', // CheckForAcceptance: about 4 hours
+  f02606: 'stuck, China, Shanghai', // CheckForAcceptance: about 5 hours
+  f02619: 'stuck, China, Beijing, Blockcasting', // CheckForAcceptance: about 5 hours
+  f02625: 'stuck, China, Shanghai, IPFS星际工厂', // CheckForAcceptance: about 4 hours
+  f02665: 'stuck, Netherlands, Amsterdam, fm-ops', // CheckForAcceptance: about 4 hours
+  f03134: 'stuck, China, Cangzhou, 乔木信息', // CheckForAcceptance: about 3 hours
+  f03143: 'stuck, China, Shijiazhuang + Hong Kong', // CheckForAcceptance: about 5 hours
+  f03176: 'stuck, USA, San Mateo, Five Star-Helmsman&Heiben', // CheckForAcceptance: about 5 hours
+  f03222: 'stuck, China, Yuncheong, 星云矿池', // CheckForAcceptance: about 4 hours
+  f03223: 'stuck, USA', // CheckForAcceptance: about 4 hours
+  f03302: 'stuck, China, Chengdu', // CheckForAcceptance: about 4 hours
+  f03345: 'stuck, China, Fuzhou, chh', // CheckForAcceptance: about 4 hours
+  f03363: 'stuck, Singapore', // CheckForAcceptance: about 4 hours
+  f03364: 'stuck, China, Guangzhou', // FundsEnsured: about 4 hours
+  f03482: 'stuck, China, Wuxi', // CheckForAcceptance: about 4 hours
+  f03488: 'stuck, Korea, Geumcheon-gu', // CheckForAcceptance: about 4 hours
+  f03512: 'stuck, New Zealand, Auckland, NZFILECOIN01', // CheckForAcceptance: about 3 hours
+  f03544: 'stuck, China, Guiyang', // CheckForAcceptance: about 4 hours
+  f04443: 'stuck, China, Shanghai, 罗良科技', // CheckForAcceptance: about 4 hours
+  f07709: 'stuck, Korea, Dongjak-gu', // CheckForAcceptance: about 4 hours
+  f07806: 'stuck, China, Wuhan, HelloXP', // CheckForAcceptance: about 4 hours
+  f07824: 'stuck, China, Shanghai', // CheckForAcceptance: about 4 hours
+  f07987: 'stuck, China, Beijing', // FundsEnsured: about 4 hours
+  f08094: 'stuck, China, Guangzhou, dongshao', // CheckForAcceptance: about 3 hours
+  f08157: 'stuck, China, Beijing + Germany, Frankfurt, 超星际', // CheckForAcceptance: about 5 hours
+  f08204: 'stuck, USA, St. Louis', // CheckForAcceptance: about 4 hours
+  f08220: 'stuck, China, Shenzhen', // CheckForAcceptance: about 3 hours
+  f08371: 'stuck, China, Chengdu', // CheckForAcceptance: about 4 hours
+  f08474: 'stuck, China, Hong Kong', // CheckForAcceptance: about 4 hours
+  f010035: 'stuck, Netherlands', // CheckForAcceptance: about 4 hours
+  f010063: 'stuck, China, Mianyang', // CheckForAcceptance: about 4 hours
+  f010247: 'stuck, China, Yantai', // CheckForAcceptance: about 4 hours
+  f010399: 'stuck, China, Guangzhou', // CheckForAcceptance: about 4 hours
+  f010400: 'stuck, China, Shenyang', // CheckForAcceptance: about 4 hours
+  f010405: 'stuck, China, Foshan', // FundsEnsured: about 4 hours
+  f010491: 'stuck, China, Shenzhen', // CheckForAcceptance: about 3 hours
+  f010493: 'stuck, China, Shanghai', // CheckForAcceptance: about 4 hours
+  f010498: 'stuck, China, Shenzhen', // CheckForAcceptance: about 4 hours
+  f010501: 'stuck, China, Hangzhou', // CheckForAcceptance: about 4 hours
+  f010505: 'stuck, China, Wuhan', // CheckForAcceptance: about 4 hours
+  f010507: 'stuck, China, Hangzhou', // CheckForAcceptance: about 4 hours
+  f010512: 'stuck, China, Zhengzhou', // CheckForAcceptance: about 4 hours
+  f010513: 'stuck, China, Chongqing', // CheckForAcceptance: about 5 hours
+  f010523: 'stuck, China, Beijing', // CheckForAcceptance: about 4 hours
+  f010528: 'stuck, China, Chongqing', // CheckForAcceptance: about 5 hours
+  f010558: 'stuck, China, Shenzhen + Hong Kong', // CheckForAcceptance: about 4 hours
+  f014281: 'stuck, Netherlands, Permerend', // CheckForAcceptance: about 4 hours
+  f014327: 'stuck, China, Ningbo', // FundsEnsured: about 3 hours
+  f014394: 'stuck, China, Suzhou', // CheckForAcceptance: about 5 hours
+  f014768: 'stuck, Singapore', // CheckForAcceptance: about 4 hours
+  f015233: 'stuck, China, Nanjing', // CheckForAcceptance: about 5 hours
+  f015647: 'stuck, China, Shenzhen', // FundsEnsured: about 3 hours
+  f015734: 'stuck, China, Qingdao', // CheckForAcceptance: about 3 hours
+  f015753: 'stuck, China, Guyuan', // FundsEnsured: about 3 hours
+  f015771: 'stuck, Brazil, Sao Paulo', // FundsEnsured: about 3 hours
+  f015941: 'stuck, Ukraine, Kyiv', // CheckForAcceptance: about 4 hours
+  f016594: 'stuck, Germany', // CheckForAcceptance: about 4 hours
+  f017665: 'stuck, China, Shenyang', // CheckForAcceptance: about 4 hours
+  f017734: 'stuck, Australia, Sydney', // CheckForAcceptance: about 4 hours
+  f017794: 'stuck, USA, Columbus', // FundsEnsured: about 3 hours
+  f017795: 'stuck, USA, Columbus', // FundsEnsured: about 3 hours
+  f018884: 'stuck, Russia', // FundsEnsured: about 3 hours
+  f019022: "stuck, China, Xi'an", // CheckForAcceptance: about 4 hours
+  f019029: 'stuck, Serbia, Boljevac', // CheckForAcceptance: about 4 hours
+  f019041: 'stuck, Singapore', // CheckForAcceptance: about 4 hours
+  f019104: 'stuck, Canada, Chambly', // CheckForAcceptance: about 4 hours
+  f019114: 'stuck, USA, Howell', // CheckForAcceptance: about 4 hours
+  f019118: 'stuck, China, Jiaxing', // CheckForAcceptance: about 3 hours
+  f019240: 'stuck, China, Beijing', // CheckForAcceptance: about 4 hours
+  f019243: 'stuck, USA, Jackson', // CheckForAcceptance: about 3 hours
+  f019362: 'stuck, China, Hangzhou', // CheckForAcceptance: about 4 hours
+  f019437: 'stuck, Korea, Guro-gu', // CheckForAcceptance: about 4 hours
+  f019638: 'stuck, Germany, Frankfurt', // CheckForAcceptance: about 5 hours
+  f019820: 'stuck, Germany', // FundsEnsured: about 3 hours
+  f020436: 'stuck, China, Beijing', // CheckForAcceptance: about 4 hours
+  f020489: 'stuck, China, Lioaning', // CheckForAcceptance: about 4 hours
+  f020523: 'stuck, China, Suzhou', // CheckForAcceptance: about 4 hours
+  f020541: 'stuck, China, Shanghai', // CheckForAcceptance: about 5 hours
+  f020904: 'stuck, Korea, Uijeongbu-si', // CheckForAcceptance: about 3 hours
+  f020993: 'stuck, China, Hong Kong', // FundsEnsured: about 3 hours
+  f021075: 'stuck, China, Chengdu', // CheckForAcceptance: about 3 hours
+  f021255: 'stuck, China, Suzhou + Netherlands', // CheckForAcceptance: about 3 hours
+  f021274: 'stuck, China, Shanghai', // CheckForAcceptance: about 4 hours
+  f021339: 'stuck, China, Jiaxing', // CheckForAcceptance: about 4 hours
+  f021346: 'stuck, China, Shanghai', // CheckForAcceptance: about 3 hours
+  f021357: 'stuck, China, Shanghai', // CheckForAcceptance: about 3 hours
+  f021444: 'stuck, China, Guangzhou', // CheckForAcceptance: about 3 hours
+  f021583: 'stuck, China, Jiaxing', // CheckForAcceptance: about 5 hours
+  f021616: 'stuck, China, Shanghai', // CheckForAcceptance: about 4 hours
+  f021710: 'stuck, China, Shijiazhuang', // CheckForAcceptance: about 5 hours
+  f021870: 'stuck, USA, Portland', // CheckForAcceptance: about 5 hours
+  f022072: 'stuck, China, Jieyang', // CheckForAcceptance: about 3 hours
+  f022089: 'stuck, China, Beijing', // CheckForAcceptance: about 4 hours
+  f022202: 'stuck, USA, Howell', // CheckForAcceptance: about 4 hours
+  f022261: 'stuck, China, Luzhou', // CheckForAcceptance: about 3 hours
+  f022287: 'stuck, China, Dongguan', // CheckForAcceptance: about 3 hours
+  f022522: 'stuck, China, Dongguan', // CheckForAcceptance: about 2 hours
+  f022753: 'stuck, China, Hong Kong', // CheckForAcceptance: about 4 hours
+  f022855: 'stuck, Finland, Helsinki', // CheckForAcceptance: about 3 hours
+  f022922: 'stuck, China, Shenzhen', // CheckForAcceptance: about 4 hours
+  f023013: 'stuck, China, Hong Kong', // CheckForAcceptance: about 3 hours
+  f023179: 'stuck, China, Fuzhou', // CheckForAcceptance: about 4 hours
+  f023581: 'stuck, China, Hong Kong', // CheckForAcceptance: about 3 hours
+  f023647: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: about 4 hours
+  f023649: 'stuck, Korea, Seoul', // CheckForAcceptance: about 3 hours
+  f023939: 'stuck, NR', // CheckForAcceptance: about 5 hours
+  f023971: 'stuck, USA, @Brian Y', // CheckForAcceptance: about 5 hours
+  f024030: 'stuck, Korea, Gwangju', // CheckForAcceptance: about 5 hours
+  f024066: 'stuck, NR', // CheckForAcceptance: about 5 hours
+  f024070: 'stuck, Japan, Setagaya-ku', // CheckForAcceptance: about 3 hours
+  f024127: 'stuck, China, Fuzhou', // CheckForAcceptance: about 4 hours
+  f024156: 'stuck, USA', // CheckForAcceptance: about 3 hours
+  f024184: 'stuck, Korea, Gangnam-gu', // CheckForAcceptance: about 5 hours
+  f024468: 'stuck, China, Shenzhen', // CheckForAcceptance: about 4 hours
+  f024550: 'stuck, China, Wenzhou', // CheckForAcceptance: about 5 hours
+  f024800: 'stuck, China, Hong Kong', // CheckForAcceptance: about 5 hours
+  f024902: 'stuck, Korea, Incheon', // CheckForAcceptance: about 4 hours
+  f024944: 'stuck, Korea, Yeongdeungpo-dong', // CheckForAcceptance: about 3 hours
+  f024969: 'stuck, NR', // CheckForAcceptance: about 5 hours
+  f024983: 'stuck, China, Hong Kong', // CheckForAcceptance: about 2 hours
+  f025007: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 4 hours
+  f025019: 'stuck, China, Taiwan, Hsinchu', // CheckForAcceptance: about 4 hours
+  f025044: 'stuck, NR', // CheckForAcceptance: about 2 hours
+  f029368: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: about 3 hours
+  f029421: 'stuck, China, Hong Kong', // CheckForAcceptance: about 4 hours
+  f029490: 'stuck, NR', // CheckForAcceptance: about 4 hours
+  f029556: 'stuck, China, Wuxi', // CheckForAcceptance: about 4 hours
+  f029587: 'stuck, Hungary', // CheckForAcceptance: about 4 hours
+  f029619: 'stuck, China, Hefei', // CheckForAcceptance: about 4 hours
+  f030144: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 4 hours
+  f030158: 'stuck, China, Hangzhou', // CheckForAcceptance: about 4 hours
+  f030226: 'stuck, China, Fuzhou', // CheckForAcceptance: about 4 hours
+  f030230: 'stuck, China, Sichuan', // CheckForAcceptance: about 4 hours
+  f030278: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 4 hours
 
   // Busy
 
@@ -417,7 +325,9 @@ const annotations = {
   f018772: 'error, Australia', // stream reset
   f018784: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: deal data transfer failed: response rejected
   f019100: 'error, Romania, Cluj-Napoca', // EOF
+  f019551: 'error, UK', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f021328: 'error, China, Dongguan', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: protocol not supported
+  f021535: 'error, China, Chengdu', // stream reset
   f021961: 'error, NR', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: context deadline exceeded
   f022119: 'error, USA, Lovettsville', // deal failed: (State=26) deal data verification failed: error generating CommP: failed to build treeCaused by:    0: failed to create data store    1: No such file or directory (os error 2)
   f022227: 'error, China, Jiangsu', // stream reset
@@ -1415,6 +1325,7 @@ const annotations = {
   f017171: 'xnr, NR',
   f017181: 'xnr, China, Nanchong',
   f017186: 'xnr, China, Jiaxing',
+  f017209: 'xnr, NR',
   f017215: 'xnr, Finland',
   f017216: 'xnr, NR',
   f017236: 'xnr, NR',
@@ -1425,6 +1336,7 @@ const annotations = {
   f017430: 'xnr, Australia, Alexandria-cfa',
   f017618: 'xnr, Korea, Wanju',
   f017628: 'xnr, Brazil, Sao Paulo',
+  f017655: 'xnr, NR',
   f017722: 'xnr, NR',
   f017747: 'xnr, NR',
   f017793: 'xnr, NR',
@@ -1448,6 +1360,7 @@ const annotations = {
   f018513: 'xnr, NR',
   f018517: 'xnr, USA, Columbus',
   f018518: "xnr, China, Xi'an",
+  f018520: 'xnr, China',
   f018530: 'xnr, China, Shaanxi',
   f018531: 'xnr, China, Shaanxi',
   f018537: 'xnr, China, Shaanxi',
@@ -1457,6 +1370,7 @@ const annotations = {
   f018761: 'xnr, Russia, St. Petersburg',
   f018790: 'xnr, China, Chengdu',
   f018802: 'xnr, China, Dongguan',
+  f018812: 'xnr, South Africa, Cape Town',
   f018836: 'xnr, NR',
   f018837: 'xnr, China, Shaanxi',
   f018844: 'xnr, NR',
@@ -1493,6 +1407,7 @@ const annotations = {
   f019547: 'xnr, Peru',
   f019645: 'xnr, Russia, St. Petersburg',
   f019723: 'xnr, China, Zhongshan',
+  f019734: 'xnr, NR',
   f019757: 'xnr, NR',
   f019804: 'xnr, China, Chengdu',
   f019806: 'xnr, China, Beijing',
@@ -1526,12 +1441,14 @@ const annotations = {
   f020678: 'xnr, China, Wenzhou',
   f020682: 'xnr, NR',
   f020683: 'xnr, China, Changsha',
+  f020691: 'xnr, NR',
   f020739: 'xnr, China, Dongguan',
   f020763: 'xnr, China, Luzhou',
   f020775: 'xnr, Japan, Osaka',
   f020786: 'xnr, China, Shenzhen',
   f020788: 'xnr, China, Chengdu',
   f020789: 'xnr, NR',
+  f020791: 'xnr, China, Hangzhou',
   f020819: 'xnr, China, Chengdu',
   f020822: 'xnr, China, Shanghai',
   f020896: 'xnr, NR',
@@ -1551,9 +1468,12 @@ const annotations = {
   f021286: 'xnr, China, Shaanxi',
   f021307: 'xnr, China, Chengdu',
   f021311: 'xnr, NR',
+  f021337: 'xnr, China, Beijing',
   f021418: 'xnr, NR',
   f021494: 'xnr, NR',
   f021500: 'xnr, NR',
+  f021504: 'xnr, NR',
+  f021505: 'xnr, NR',
   f021509: 'xnr, China, Fuzhou',
   f021527: 'xnr, NR',
   f021536: 'xnr, NR',
@@ -1561,6 +1481,7 @@ const annotations = {
   f021574: 'xnr, NR',
   f021580: 'xnr, NR',
   f021684: 'xnr, NR',
+  f021699: 'xnr, NR',
   f021704: 'xnr, NR',
   f021725: 'xnr, NR',
   f021976: 'xnr, NR',
@@ -1572,63 +1493,100 @@ const annotations = {
   f022070: 'xnr, China, Jieyang',
   f022084: 'xnr, China, Shaanxi',
   f022091: 'xnr, NR',
+  f022093: 'xnr, NR',
   f022108: 'xnr, China, Luzhou',
   f022132: 'xnr, China, Dongguan',
   f022171: 'xnr, China, Shanghai',
+  f022250: 'xnr, NR',
   f022262: 'xnr, China, Hong Kong',
   f022276: 'xnr, Korea, Seoul',
   f022284: 'xnr, China, Shaanxi',
   f022303: 'xnr, NR',
   f022308: 'xnr, NR',
   f022313: 'xnr, NR',
+  f022321: 'xnr, China, Hong Kong',
   f022326: 'xnr, China, Zhongshan',
+  f022333: 'xnr, China, Dongguan',
   f022336: 'xnr, NR',
   f022337: 'xnr, NR',
+  f022338: 'xnr, NR',
+  f022343: 'xnr, China, Dongguan',
   f022361: 'xnr, NR',
+  f022372: 'xnr, China, Chengdu',
+  f022494: 'xnr, China, Dongguan',
   f022501: 'xnr, Japan, Osaka',
+  f022503: 'xnr, NR',
   f022505: 'xnr, China, Shanghai',
   f022517: 'xnr, China, Taiwan, Taipei',
+  f022562: 'xnr, NR',
+  f022564: 'xnr, NR',
+  f022683: 'xnr, NR',
   f022755: 'xnr, China, Shenzhen',
+  f022776: 'xnr, Korea, Guri-si',
   f022786: 'xnr, NR',
   f022790: 'xnr, China, Luzhou',
   f022791: 'xnr, NR',
+  f022797: 'xnr, NR',
   f022834: 'xnr, NR',
   f022836: 'xnr, China, Chongqing',
+  f022838: 'xnr, China, Hong Kong',
   f022857: 'xnr, NR',
+  f022906: 'xnr, NR',
   f022911: 'xnr, China, Hong Kong',
   f022912: 'xnr, NR',
   f022926: 'xnr, NR',
   f022930: 'xnr, NR',
+  f022954: 'xnr, NR',
   f022970: 'xnr, NR',
   f022996: 'xnr, NR',
+  f023001: 'xnr, China, Changsha',
+  f023021: 'xnr, Korea, Yeongdeungpo-dong',
   f023108: 'xnr, China, Dongguan',
+  f023159: 'xnr, NR',
+  f023198: 'xnr, NR',
   f023207: 'xnr, undefined',
   f023210: 'xnr, China, Dongguan',
   f023219: 'xnr, NR',
+  f023254: 'xnr, NR',
   f023463: 'xnr, NR',
   f023482: 'xnr, NR',
+  f023499: 'xnr, NR',
   f023501: 'xnr, China, Mianyang',
+  f023505: 'xnr, NR',
   f023526: 'xnr, China, Chongqing',
   f023535: 'xnr, China, Hong Kong',
   f023560: 'xnr, NR',
+  f023568: 'xnr, NR',
   f023571: 'xnr, NR',
   f023626: 'xnr, NR',
   f023643: 'xnr, NR',
   f023651: 'xnr, NR',
   f023661: 'xnr, China, Zhejiang',
   f023798: 'xnr, China, Shanghai',
+  f023801: 'xnr, China, Dongguan',
+  f023881: 'xnr, China, Fuzhou',
   f023943: 'xnr, USA, Ashburn',
   f023965: 'xnr, NR',
+  f023986: 'xnr, Korea, Seoul',
   f024031: 'xnr, NR',
   f024074: 'xnr, NR',
+  f024089: 'xnr, NR',
   f024101: 'xnr, China, Guiyang',
   f024129: 'xnr, China, Zhejiang',
+  f024165: 'xnr, NR',
   f024483: 'xnr, NR',
+  f024496: 'xnr, China, Dongguan',
   f024556: 'xnr, NR',
   f024557: 'xnr, NR',
   f024558: 'xnr, NR',
   f024559: 'xnr, NR',
   f024563: 'xnr, NR',
+  f024802: 'xnr, NR',
+  f024894: 'xnr, NR',
+  f024895: 'xnr, NR',
+  f025028: 'xnr, NR',
+  f029416: 'xnr, NR',
+  f029477: 'xnr, NR',
   f029595: 'xnr, China, Guangdong',
   f030203: 'xnr, NR'
 }
