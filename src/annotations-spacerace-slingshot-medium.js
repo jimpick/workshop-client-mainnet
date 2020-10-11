@@ -5,6 +5,32 @@
 const annotations = {
   // Candidates
 
+  f03194: "candidate, China, Shenzhen, 成都云存&Npool",
+  f014365: "candidate, Australia, Marrickville + Japan, Heiwajima",
+  f023858: "candidate, China, Fuzhou",
+  f023859: "candidate, China, Fuzhou",
+  f023861: "candidate, China, Fuzhou",
+  f023868: "candidate, China, Fuzhou",
+  f023869: "candidate, China, Fuzhou",
+  f023870: "candidate, China, Fuzhou",
+  f023871: "candidate, China, Fuzhou",
+  f023876: "candidate, China, Fuzhou",
+  f023928: "candidate, China, Fuzhou",
+  f023977: "candidate, China, Fuzhou",
+  f023978: "candidate, China, Fuzhou",
+  f023980: "candidate, China, Fuzhou",
+  f023981: "candidate, China, Fuzhou",
+  f024006: "candidate, China, Fuzhou",
+  f024007: "candidate, China, Fuzhou",
+  f024008: "candidate, China, Fuzhou",
+  f024012: "candidate, China, Fuzhou",
+  f024013: "candidate, China, Fuzhou",
+  f024014: "candidate, China, Fuzhou",
+  f024081: "candidate, China, Fuzhou",
+  f024084: "candidate, China, Fuzhou",
+  f024085: "candidate, China, Fuzhou",
+  f024136: "candidate, China, Fuzhou",
+
   // Live
 
   // Testing
