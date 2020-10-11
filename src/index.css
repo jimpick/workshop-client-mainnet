@@ -17,5 +17,12 @@ nav a {
 
 .minerPower td {
   padding: 0.2rem 0.4rem;
+}
 
+.tag {
+  border-radius: 3px;
+  border: 1px solid black;
+  font-size: 40%;
+  border-color: black;
+  padding: 2px;
 }

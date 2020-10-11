@@ -297,11 +297,17 @@ function BucketDealList ({
         `${clientDealStatus && clientDealStatus.DealID}-$TIMESTAMP.log); ` +
         `sleep 5`
 
+    const backgroundColor = fromTag !== toTag ? '#eee' : '#fff'
     const entry = (
-      <div key={proposalCid} style={{ marginBottom: '1rem' }}>
+      <div key={proposalCid} style={{ marginBottom: '1rem', backgroundColor }}>
         <div>
           {Number(i) + 1}. Node #{fromNode} {'->'} Miner {miner} [{fromTag}{' '}
-          {'->'} {toTag}] {shortAnnotation}
+          {'->'} {toTag}] {shortAnnotation}{' '}
+          {fromTag !== toTag && (
+            <span class='tag' style={{ backgroundColor: '#ffeb3b' }}>
+              tag:changed
+            </span>
+          )}
         </div>
         <div style={{ fontSize: '50%' }}>
           <div>Date: {new Date(date).toString()}</div>
