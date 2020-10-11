@@ -351,21 +351,22 @@ function BucketDealList ({
   })
   for (const miner in annotations) {
     if (!dealMiners[miner]) {
-      if (miner === 'f02514') {
-        console.log('JimX', miner, dealMiners[miner])
-      }
       const annotation = annotations[miner]
       const match = annotation && annotation.match(/^([^,]*), (.*)/)
       if (match) {
         if (bucket === match[1]) {
           const shortAnnotation = match[2]
-          toAnnotationsMap[miner] = { shortAnnotation, date: now }
+          toAnnotationsMap[miner] = {
+            toBucket: bucket,
+            shortAnnotation,
+            date: now
+          }
         }
       }
     }
   }
   const toAnnotations = Object.entries(toAnnotationsMap).filter(
-    ([,{ toBucket }]) => toBucket === bucket
+    ([, { toBucket }]) => toBucket === bucket
   )
 
   toAnnotations.sort(([a, , dateA], [b, , dateB]) => {
