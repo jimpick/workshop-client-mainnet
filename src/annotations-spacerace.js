@@ -19,14 +19,21 @@ const annotations = {
   f03273: 'active, USA, Portland, 6block', // about 7 hours
   f03274: 'active, USA, Portland, 6block', // about 7 hours
   f03275: 'active, USA, Portland, 6block', // about 7 hours
+  f05316: 'active, USA, Portland, 6block', // about 6 hours
   f05317: 'active, USA, Portland', // about 7 hours
+  f07850: 'active, USA, Portland, 6block', // about 7 hours
   f08025: 'active, China, Hong Kong', // about 7 hours
   f08383: 'active, USA, Portland, 6block', // about 7 hours
   f09693: 'active, USA, Portland + Singapore', // about 7 hours
   f010253: 'active, China, Beijing + USA, Portland', // about 7 hours
+  f010491: 'active, China, Shenzhen', // about 9 hours
   f018780: 'active, Singapore + Germany, Frankfurt + USA', // about 7 hours
   f018781: 'active, Singapore + Germany, Frankfurt + USA', // about 7 hours
+  f018782: 'active, Singapore + Germany, Frankfurt + USA', // about 6 hours
   f018783: 'active, Singapore + Germany, Frankfurt + USA', // about 7 hours
+  f018785: 'active, Singapore + Germany, Frankfurt + USA', // about 6 hours
+  f023495: 'active, China, Beijing + USA, Portland', // about 6 hours
+  f023825: 'active, USA, Portland', // about 7 hours
   f024015: 'active, USA, Portland', // about 7 hours
 
   // Active-sealing (active, with in-flight sealing)
@@ -53,6 +60,7 @@ const annotations = {
   f01272: 'sealing, Singapore',
   f01277: 'sealing, Sweden, Stockholm, tvsthlm',
   f01278: 'sealing, USA, Grand Rapids, MiMiner',
+  f01279: 'sealing, China, Sichuan',
   f01287: 'sealing, China, Jiaxing, MaiTian',
   f01289: 'sealing, China, Hangzhou + USA',
   f01799: 'sealing, China, Jinan, TokenHome',
@@ -64,24 +72,26 @@ const annotations = {
   f02405: 'sealing, China, Shenzhen',
   f02419: 'sealing, China, Shanghai, yuantai',
   f02625: 'sealing, China, Shanghai, IPFS星际工厂',
+  f03134: 'sealing, China, Cangzhou, 乔木信息',
   f03222: 'sealing, China, Yuncheong, 星云矿池',
   f03224: 'sealing, Ukraine, Irpin, oboltusov',
   f03345: 'sealing, China, Fuzhou, chh',
+  f03347: 'sealing, China, Shenzhen',
   f03364: 'sealing, China, Guangzhou',
   f03482: 'sealing, China, Wuxi',
   f03491: 'sealing, China, Hong Kong',
+  f03512: 'sealing, New Zealand, Auckland, NZFILECOIN01',
   f03544: 'sealing, China, Guiyang',
   f04443: 'sealing, China, Shanghai, 罗良科技',
   f05315: 'sealing, USA, Portland, 6block',
-  f05316: 'sealing, USA, Portland, 6block',
   f07709: 'sealing, Korea, Dongjak-gu',
-  f07850: 'sealing, USA, Portland, 6block',
   f07919: 'sealing, China, Beijing, Shanghai, Hunan',
   f07990: 'sealing, China, Hong Kong',
   f08073: 'sealing, China, Qiqihar, QY7TT',
   f08094: 'sealing, China, Guangzhou, dongshao',
   f08157: 'sealing, China, Beijing + Germany, Frankfurt, 超星际',
   f08204: 'sealing, USA, St. Louis',
+  f08240: 'sealing, Russia, Novosibirsk, Rabinovitch',
   f08264: 'sealing, China, Xianning',
   f08482: 'sealing, USA, Athol, @why',
   f09569: 'sealing, China, Beijing',
@@ -99,37 +109,50 @@ const annotations = {
   f010505: 'sealing, China, Wuhan',
   f010507: 'sealing, China, Hangzhou',
   f010513: 'sealing, China, Chongqing',
+  f010523: 'sealing, China, Beijing',
   f010528: 'sealing, China, Chongqing',
   f014394: 'sealing, China, Suzhou',
   f014569: 'sealing, NR',
   f014768: 'sealing, Singapore',
   f015233: 'sealing, China, Nanjing',
+  f015877: 'sealing, China, Jiaxing + USA',
   f017665: 'sealing, China, Shenyang',
-  f018782: 'sealing, Singapore + Germany, Frankfurt + USA',
-  f018785: 'sealing, Singapore + Germany, Frankfurt + USA',
   f019041: 'sealing, Singapore',
+  f019118: 'sealing, China, Jiaxing',
   f019354: 'sealing, Germany, Frankfurt',
+  f020385: 'sealing, Korea, Incheon',
   f020398: 'sealing, China, Zhangjiakou',
+  f020436: 'sealing, China, Beijing',
   f020523: 'sealing, China, Suzhou',
+  f020541: 'sealing, China, Shanghai',
+  f020608: 'sealing, Russia',
   f020928: 'sealing, China, Deyang + Singapore',
+  f021075: 'sealing, China, Chengdu',
+  f021262: 'sealing, China, Shanghai',
   f021265: 'sealing, China, Wuhan',
   f021339: 'sealing, China, Jiaxing',
   f021444: 'sealing, China, Guangzhou',
   f021540: 'sealing, Germany, Frankfurt, @hsanjuan',
   f021583: 'sealing, China, Jiaxing',
   f021616: 'sealing, China, Shanghai',
+  f022031: 'sealing, China, Maoming',
   f022125: 'sealing, China, Shenzhen',
   f022227: 'sealing, China, Jiangsu',
+  f022261: 'sealing, China, Luzhou',
+  f022287: 'sealing, China, Dongguan',
   f022289: 'sealing, China, Mianyang',
   f022753: 'sealing, China, Hong Kong',
   f022853: 'sealing, China, Fuzhou',
   f022922: 'sealing, China, Shenzhen',
+  f023013: 'sealing, China, Hong Kong',
   f023179: 'sealing, China, Fuzhou',
-  f023495: 'sealing, China, Beijing + USA, Portland',
+  f023463: 'sealing, NR',
   f023573: 'sealing, Japan, Kumamoto',
   f023647: 'sealing, Korea, Gangseo-gu',
   f023678: 'sealing, China, Jiaxing',
-  f023825: 'sealing, USA, Portland',
+  f023798: 'sealing, China, Shanghai',
+  f023939: 'sealing, NR',
+  f023971: 'sealing, USA, @Brian Y',
   f024016: 'sealing, USA, Portland',
   f024066: 'sealing, NR',
   f024184: 'sealing, Korea, Gangnam-gu',
@@ -139,6 +162,7 @@ const annotations = {
   f024800: 'sealing, China, Hong Kong',
   f024903: 'sealing, China, Mianyang',
   f024969: 'sealing, NR',
+  f024983: 'sealing, China, Hong Kong',
   f025007: 'sealing, Korea, Gyeonggi-do',
   f025017: 'sealing, China, Hefei',
   f025019: 'sealing, China, Taiwan, Hsinchu',
@@ -157,100 +181,54 @@ const annotations = {
 
   // Stuck
 
-  f01240: 'stuck, Netherlands, HidNand', // CheckForAcceptance: about 5 hours
-  f01279: 'stuck, China, Sichuan', // CheckForAcceptance: about 2 hours
-  f02305: 'stuck, China, Dongguan', // FundsEnsured: about 2 hours
-  f02654: 'stuck, China, Shanghai', // CheckForAcceptance: about 11 hours
-  f03134: 'stuck, China, Cangzhou, 乔木信息', // CheckForAcceptance: about 1 hour
-  f03143: 'stuck, China, Shijiazhuang + Hong Kong', // CheckForAcceptance: about 11 hours
-  f03223: 'stuck, USA', // CheckForAcceptance: about 2 hours
-  f03328: 'stuck, China, Xinxiang', // CheckForAcceptance: about 2 hours
-  f03340: "stuck, China, Xi'an", // CheckForAcceptance: about 2 hours
-  f03347: 'stuck, China, Shenzhen', // CheckForAcceptance: about 2 hours
-  f03363: 'stuck, Singapore', // CheckForAcceptance: about 10 hours
-  f03512: 'stuck, New Zealand, Auckland, NZFILECOIN01', // CheckForAcceptance: about 1 hour
-  f07987: 'stuck, China, Beijing', // FundsEnsured: about 2 hours
-  f08240: 'stuck, Russia, Novosibirsk, Rabinovitch', // CheckForAcceptance: about 1 hour
-  f09731: 'stuck, China, Guiyang', // CheckForAcceptance: about 10 hours
-  f09833: 'stuck, USA, San Jose', // CheckForAcceptance: about 7 hours
-  f010035: 'stuck, Netherlands', // CheckForAcceptance: about 3 hours
-  f010491: 'stuck, China, Shenzhen', // CheckForAcceptance: about 2 hours
-  f010501: 'stuck, China, Hangzhou', // CheckForAcceptance: about 10 hours
-  f010523: 'stuck, China, Beijing', // CheckForAcceptance: about 2 hours
-  f010558: 'stuck, China, Shenzhen + Hong Kong', // CheckForAcceptance: about 2 hours
-  f014281: 'stuck, Netherlands, Permerend', // CheckForAcceptance: about 2 hours
-  f014302: 'stuck, China, Ningbo', // FundsEnsured: about 2 hours
-  f015647: 'stuck, China, Shenzhen', // FundsEnsured: about 2 hours
-  f015734: 'stuck, China, Qingdao', // CheckForAcceptance: 22 minutes
-  f015753: 'stuck, China, Guyuan', // FundsEnsured: about 2 hours
-  f015771: 'stuck, Brazil, Sao Paulo', // FundsEnsured: 22 minutes
-  f015875: 'stuck, China, Fuzhou', // FundsEnsured: about 3 hours
-  f015877: 'stuck, China, Jiaxing + USA', // CheckForAcceptance: 18 minutes
-  f015884: 'stuck, China, Fuzhou', // FundsEnsured: about 3 hours
-  f015941: 'stuck, Ukraine, Kyiv', // CheckForAcceptance: about 2 hours
-  f015942: 'stuck, China, Ningbo', // FundsEnsured: about 2 hours
-  f017794: 'stuck, USA, Columbus', // FundsEnsured: about 3 hours
-  f017795: 'stuck, USA, Columbus', // FundsEnsured: about 3 hours
-  f018772: 'stuck, Australia', // CheckForAcceptance: about 7 hours
-  f018884: 'stuck, Russia', // FundsEnsured: about 3 hours
-  f019074: 'stuck, China, Guangdong', // CheckForAcceptance: about 2 hours
-  f019104: 'stuck, Canada, Chambly', // CheckForAcceptance: 22 minutes
-  f019114: 'stuck, USA, Howell', // CheckForAcceptance: about 7 hours
-  f019118: 'stuck, China, Jiaxing', // CheckForAcceptance: about 2 hours
-  f019243: 'stuck, USA, Jackson', // CheckForAcceptance: about 2 hours
-  f019399: 'stuck, Korea, Busan', // CheckForAcceptance: about 2 hours
-  f019437: 'stuck, Korea, Guro-gu', // CheckForAcceptance: about 2 hours
-  f019551: 'stuck, UK', // CheckForAcceptance: about 1 hour
-  f019616: 'stuck, USA, Marlborough', // CheckForAcceptance: about 7 hours
-  f019638: 'stuck, Germany, Frankfurt', // CheckForAcceptance: about 10 hours
-  f019820: 'stuck, Germany', // FundsEnsured: about 3 hours
-  f020385: 'stuck, Korea, Incheon', // CheckForAcceptance: about 2 hours
-  f020436: 'stuck, China, Beijing', // CheckForAcceptance: about 2 hours
-  f020541: 'stuck, China, Shanghai', // CheckForAcceptance: about 2 hours
-  f020608: 'stuck, Russia', // CheckForAcceptance: about 2 hours
-  f020993: 'stuck, China, Hong Kong', // FundsEnsured: about 2 hours
-  f021075: 'stuck, China, Chengdu', // CheckForAcceptance: about 2 hours
-  f021255: 'stuck, China, Suzhou + Netherlands', // CheckForAcceptance: about 2 hours
-  f021262: 'stuck, China, Shanghai', // CheckForAcceptance: about 2 hours
-  f021274: 'stuck, China, Shanghai', // CheckForAcceptance: about 2 hours
-  f021346: 'stuck, China, Shanghai', // CheckForAcceptance: about 2 hours
-  f021357: 'stuck, China, Shanghai', // CheckForAcceptance: about 2 hours
-  f021535: 'stuck, China, Chengdu', // FundsEnsured: about 2 hours
-  f022031: 'stuck, China, Maoming', // CheckForAcceptance: about 2 hours
-  f022072: 'stuck, China, Jieyang', // CheckForAcceptance: about 2 hours
-  f022089: 'stuck, China, Beijing', // CheckForAcceptance: about 7 hours
-  f022202: 'stuck, USA, Howell', // CheckForAcceptance: about 7 hours
-  f022261: 'stuck, China, Luzhou', // CheckForAcceptance: about 2 hours
-  f022287: 'stuck, China, Dongguan', // CheckForAcceptance: about 2 hours
-  f022522: 'stuck, China, Dongguan', // CheckForAcceptance: about 1 hour
-  f022967: 'stuck, Korea, Seoul', // CheckForAcceptance: about 2 hours
-  f023013: 'stuck, China, Hong Kong', // CheckForAcceptance: about 2 hours
-  f023463: 'stuck, NR', // CheckForAcceptance: about 2 hours
-  f023571: 'stuck, NR', // CheckForAcceptance: about 10 hours
-  f023649: 'stuck, Korea, Seoul', // CheckForAcceptance: about 2 hours
-  f023798: 'stuck, China, Shanghai', // CheckForAcceptance: about 2 hours
-  f023868: 'stuck, China, Fuzhou', // CheckForAcceptance: about 2 hours
-  f023869: 'stuck, China, Fuzhou', // CheckForAcceptance: about 2 hours
-  f023870: 'stuck, China, Fuzhou', // CheckForAcceptance: about 2 hours
-  f023939: 'stuck, NR', // CheckForAcceptance: about 2 hours
-  f023971: 'stuck, USA, @Brian Y', // CheckForAcceptance: about 2 hours
-  f023977: 'stuck, China, Fuzhou', // CheckForAcceptance: about 2 hours
-  f023978: 'stuck, China, Fuzhou', // CheckForAcceptance: about 2 hours
-  f023981: 'stuck, China, Fuzhou', // CheckForAcceptance: about 2 hours
-  f024006: 'stuck, China, Fuzhou', // CheckForAcceptance: about 2 hours
-  f024007: 'stuck, China, Fuzhou', // CheckForAcceptance: about 2 hours
-  f024008: 'stuck, China, Fuzhou', // CheckForAcceptance: about 2 hours
-  f024070: 'stuck, Japan, Setagaya-ku', // CheckForAcceptance: about 2 hours
-  f024130: 'stuck, Korea', // CheckForAcceptance: about 2 hours
-  f024156: 'stuck, USA', // CheckForAcceptance: about 2 hours
-  f024893: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 2 hours
-  f024902: 'stuck, Korea, Incheon', // CheckForAcceptance: about 7 hours
-  f024983: 'stuck, China, Hong Kong', // CheckForAcceptance: about 1 hour
-  f029368: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: about 2 hours
-  f029556: 'stuck, China, Wuxi', // CheckForAcceptance: about 7 hours
-  f029628: 'stuck, Australia, Brisbane', // CheckForAcceptance: about 10 hours
-  f030188: 'stuck, China, Yangjiang', // CheckForAcceptance: about 10 hours
-  f030278: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 10 hours
+  f01240: 'stuck, Netherlands, HidNand', // CheckForAcceptance: about 18 hours
+  f02305: 'stuck, China, Dongguan', // CheckForAcceptance: about 4 hours
+  f02654: 'stuck, China, Shanghai', // CheckForAcceptance: about 23 hours
+  f03143: 'stuck, China, Shijiazhuang + Hong Kong', // CheckForAcceptance: about 23 hours
+  f03328: 'stuck, China, Xinxiang', // CheckForAcceptance: about 15 hours
+  f03363: 'stuck, Singapore', // CheckForAcceptance: about 23 hours
+  f09731: 'stuck, China, Guiyang', // CheckForAcceptance: about 23 hours
+  f09833: 'stuck, USA, San Jose', // CheckForAcceptance: about 20 hours
+  f010035: 'stuck, Netherlands', // CheckForAcceptance: about 16 hours
+  f010501: 'stuck, China, Hangzhou', // CheckForAcceptance: about 23 hours
+  f014281: 'stuck, Netherlands, Permerend', // CheckForAcceptance: about 15 hours
+  f015647: 'stuck, China, Shenzhen', // FundsEnsured: about 15 hours
+  f015734: 'stuck, China, Qingdao', // CheckForAcceptance: about 13 hours
+  f015771: 'stuck, Brazil, Sao Paulo', // FundsEnsured: about 13 hours
+  f015875: 'stuck, China, Fuzhou', // FundsEnsured: about 16 hours
+  f015884: 'stuck, China, Fuzhou', // FundsEnsured: about 16 hours
+  f015941: 'stuck, Ukraine, Kyiv', // CheckForAcceptance: about 15 hours
+  f017794: 'stuck, USA, Columbus', // FundsEnsured: about 16 hours
+  f017795: 'stuck, USA, Columbus', // FundsEnsured: about 16 hours
+  f018772: 'stuck, Australia', // CheckForAcceptance: about 20 hours
+  f018884: 'stuck, Russia', // FundsEnsured: about 16 hours
+  f019074: 'stuck, China, Guangdong', // CheckForAcceptance: about 15 hours
+  f019104: 'stuck, Canada, Chambly', // CheckForAcceptance: about 13 hours
+  f019114: 'stuck, USA, Howell', // CheckForAcceptance: about 20 hours
+  f019243: 'stuck, USA, Jackson', // CheckForAcceptance: about 15 hours
+  f019437: 'stuck, Korea, Guro-gu', // CheckForAcceptance: about 15 hours
+  f019551: 'stuck, UK', // CheckForAcceptance: about 14 hours
+  f019616: 'stuck, USA, Marlborough', // CheckForAcceptance: about 20 hours
+  f019638: 'stuck, Germany, Frankfurt', // CheckForAcceptance: about 23 hours
+  f019820: 'stuck, Germany', // FundsEnsured: about 15 hours
+  f020993: 'stuck, China, Hong Kong', // FundsEnsured: about 15 hours
+  f021274: 'stuck, China, Shanghai', // CheckForAcceptance: about 15 hours
+  f021346: 'stuck, China, Shanghai', // CheckForAcceptance: about 15 hours
+  f021357: 'stuck, China, Shanghai', // CheckForAcceptance: about 15 hours
+  f022089: 'stuck, China, Beijing', // CheckForAcceptance: about 20 hours
+  f022202: 'stuck, USA, Howell', // CheckForAcceptance: about 20 hours
+  f022967: 'stuck, Korea, Seoul', // CheckForAcceptance: about 15 hours
+  f023571: 'stuck, NR', // CheckForAcceptance: about 23 hours
+  f023649: 'stuck, Korea, Seoul', // CheckForAcceptance: about 15 hours
+  f024070: 'stuck, Japan, Setagaya-ku', // CheckForAcceptance: about 15 hours
+  f024130: 'stuck, Korea', // CheckForAcceptance: about 15 hours
+  f024893: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 15 hours
+  f024902: 'stuck, Korea, Incheon', // CheckForAcceptance: about 20 hours
+  f029368: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: about 15 hours
+  f029556: 'stuck, China, Wuxi', // CheckForAcceptance: about 20 hours
+  f029628: 'stuck, Australia, Brisbane', // CheckForAcceptance: about 23 hours
+  f030188: 'stuck, China, Yangjiang', // CheckForAcceptance: about 23 hours
+  f030278: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 23 hours
 
   // Busy
 
@@ -303,7 +281,10 @@ const annotations = {
   f02619: 'error, China, Beijing, Blockcasting', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: protocol not supported
   f02772: 'error, China, Chengdu', // stream reset
   f03176: 'error, USA, San Mateo, Five Star-Helmsman&Heiben', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f03223: 'error, USA', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f03340: "error, China, Xi'an", // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals exit code: SysErrOutOfGas(7)
   f07824: 'error, China, Shanghai', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f07987: 'error, China, Beijing', // stream reset
   f08220: 'error, China, Shenzhen', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 8.092128729531912957 FIL, balance: 8.078807194890910864 FIL): validation failure
   f08371: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: response rejected
   f08532: 'error, USA', // stream reset
@@ -314,22 +295,41 @@ const annotations = {
   f010405: 'error, China, Foshan', // EOF
   f010446: 'error, Netherlands', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f010512: 'error, China, Zhengzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 1.372770716970385006 FIL, balance: 1.346274281252783987 FIL): validation failure
+  f010558: 'error, China, Shenzhen + Hong Kong', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzacedng3gv2wihg7feaoefzzd4t4jluzcrvjjmolokwu5woummwwnjwk n 11723, TS: bafy2bzaceda3qwmwssz5kr7quifzy34vc65lcywxhssjc5q7xsnlioxntet5w n11723)
+  f014302: 'error, China, Ningbo', // stream reset
   f015655: 'error, Korea, Geumcheon-gu', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: context deadline exceeded
+  f015753: 'error, China, Guyuan', // stream reset
   f015763: 'error, South Africa, Cape Town', // EOF
+  f015942: 'error, China, Ningbo', // stream reset
   f017734: 'error, Australia, Sydney', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f018784: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: deal data transfer failed: response rejected
   f019362: 'error, China, Hangzhou', // sending proposal to storage provider failed: stream reset
+  f019399: 'error, Korea, Busan', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzaceduqv3lixcncnjflqbnzjxhudekwfaxmuysbj6p2l7yfr5qnxbiiu n 3189, TS: bafy2bzacebg4dh3pi52egvj3xrl23rf4v6nzvsivgc4pxf7ibyjlcvrtg4dtg n3189)
   f020489: 'error, China, Lioaning', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.030303030274742304 FIL, balance: 0.006469220052247439 FIL): not enough funds to execute transaction
   f020904: 'error, Korea, Uijeongbu-si', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f021255: 'error, China, Suzhou + Netherlands', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f021328: 'error, China, Dongguan', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: protocol not supported
+  f021535: 'error, China, Chengdu', // stream reset
+  f022072: 'error, China, Jieyang', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzaced62xm4lhsre6xqnpcwqqfpq6a6nafgslmqyjljixlcgsqewcsf4u n 5442, TS: bafy2bzacedcavpw3sfuj54gb3yvpeqylrrcddd53cougy4ayr7ed5peoxxdkm n5442)
   f022119: 'error, USA, Lovettsville', // deal failed: (State=26) deal data verification failed: error generating CommP: failed to build treeCaused by:    0: failed to create data store    1: No such file or directory (os error 2)
   f022376: 'error, China, Dongguan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.0999999999794628 FIL, balance: 0.003419950457033383 FIL): not enough funds to execute transaction
   f022395: 'error, USA, Los Angeles', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 9.263662313821440754 FIL, balance: 9.247324167408334375 FIL): validation failure
+  f022522: 'error, China, Dongguan', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f022841: 'error, China, Zhongshan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 11.419984826608791163 FIL, balance: 11.338357011046283292 FIL): validation failure
   f022855: 'error, Finland, Helsinki', // AddPiece failed: getting available sector: getting sector number: ERROR: duplicate key value violates unique constraint "sector_actor_id_id_idx" (SQLSTATE 23505)
   f023565: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f023826: 'error, USA, Germantown', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 0.386894123129411209 FIL, balance: 0.386244341214187107 FIL): validation failure
+  f023868: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f023869: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f023870: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f023977: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f023978: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f023980: 'error, China, Fuzhou', // stream reset
+  f023981: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f024006: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f024007: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f024008: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f024156: 'error, USA', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f024526: 'error, Korea', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 0.627883260614740504 FIL, balance: 0.09533579735187667 FIL): validation failure
   f024617: 'error, Korea, Bucheon-si', // EOF
   f024944: 'error, Korea, Yeongdeungpo-dong', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
@@ -338,175 +338,131 @@ const annotations = {
 
   // Dial backoff
 
-  f03317: 'backoff, China, Shenzhen + Hong Kong + Jieyang',
-  f09555: 'backoff, Australia, Sydney',
-  f09631: 'backoff, China, Changzhou',
-  f09808: 'backoff, China, Fuzhou',
-  f010613: 'backoff, Canada, Waterloo',
-  f014432: 'backoff, China, Chengdu',
-  f014644: 'backoff, USA, Berkeley',
-  f015808: 'backoff, Germany',
-  f020604: 'backoff, Singapore',
-  f022512: 'backoff, Canada, Embrun',
-  f024190: 'backoff, China, Wenzhou',
-  f024511: 'backoff, NR',
-  f024985: 'backoff, China, Shenzhen',
+  f01276: 'error, Canada, Brampton, NBFS Canada', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f02387: 'error, Canada, Brampton, NBFS Canada', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f02401: 'error, Canada, Chambly, NBFS Canada', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f02423: 'error, Ukraine, Kyiv, igowreck', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f02619: 'error, China, Beijing, Blockcasting', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: protocol not supported
+  f02772: 'error, China, Chengdu', // stream reset
+  f03176: 'error, USA, San Mateo, Five Star-Helmsman&Heiben', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f03223: 'error, USA', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f03340: "error, China, Xi'an", // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals exit code: SysErrOutOfGas(7)
+  f07824: 'error, China, Shanghai', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f07987: 'error, China, Beijing', // stream reset
+  f08220: 'error, China, Shenzhen', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 8.092128729531912957 FIL, balance: 8.078807194890910864 FIL): validation failure
+  f08371: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f08532: 'error, USA', // stream reset
+  f09639: 'error, China, Fuzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.030303030299245172 FIL, balance: 0.000025259918397467 FIL): not enough funds to execute transaction
+  f09689: 'error, USA, Portland', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: context deadline exceeded
+  f09770: "error, China, Xi'an", // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f010010: 'error, China, Changzhou + Hong Kong', // stream reset
+  f010405: 'error, China, Foshan', // EOF
+  f010446: 'error, Netherlands', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f010512: 'error, China, Zhengzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 1.372770716970385006 FIL, balance: 1.346274281252783987 FIL): validation failure
+  f010558: 'error, China, Shenzhen + Hong Kong', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzacedng3gv2wihg7feaoefzzd4t4jluzcrvjjmolokwu5woummwwnjwk n 11723, TS: bafy2bzaceda3qwmwssz5kr7quifzy34vc65lcywxhssjc5q7xsnlioxntet5w n11723)
+  f014302: 'error, China, Ningbo', // stream reset
+  f015655: 'error, Korea, Geumcheon-gu', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: context deadline exceeded
+  f015753: 'error, China, Guyuan', // stream reset
+  f015763: 'error, South Africa, Cape Town', // EOF
+  f015942: 'error, China, Ningbo', // stream reset
+  f017734: 'error, Australia, Sydney', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f018784: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f019362: 'error, China, Hangzhou', // sending proposal to storage provider failed: stream reset
+  f019399: 'error, Korea, Busan', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzaceduqv3lixcncnjflqbnzjxhudekwfaxmuysbj6p2l7yfr5qnxbiiu n 3189, TS: bafy2bzacebg4dh3pi52egvj3xrl23rf4v6nzvsivgc4pxf7ibyjlcvrtg4dtg n3189)
+  f020489: 'error, China, Lioaning', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.030303030274742304 FIL, balance: 0.006469220052247439 FIL): not enough funds to execute transaction
+  f020904: 'error, Korea, Uijeongbu-si', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f021255: 'error, China, Suzhou + Netherlands', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f021328: 'error, China, Dongguan', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: protocol not supported
+  f021535: 'error, China, Chengdu', // stream reset
+  f022072: 'error, China, Jieyang', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzaced62xm4lhsre6xqnpcwqqfpq6a6nafgslmqyjljixlcgsqewcsf4u n 5442, TS: bafy2bzacedcavpw3sfuj54gb3yvpeqylrrcddd53cougy4ayr7ed5peoxxdkm n5442)
+  f022119: 'error, USA, Lovettsville', // deal failed: (State=26) deal data verification failed: error generating CommP: failed to build treeCaused by:    0: failed to create data store    1: No such file or directory (os error 2)
+  f022376: 'error, China, Dongguan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.0999999999794628 FIL, balance: 0.003419950457033383 FIL): not enough funds to execute transaction
+  f022395: 'error, USA, Los Angeles', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 9.263662313821440754 FIL, balance: 9.247324167408334375 FIL): validation failure
+  f022522: 'error, China, Dongguan', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f022841: 'error, China, Zhongshan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 11.419984826608791163 FIL, balance: 11.338357011046283292 FIL): validation failure
+  f022855: 'error, Finland, Helsinki', // AddPiece failed: getting available sector: getting sector number: ERROR: duplicate key value violates unique constraint "sector_actor_id_id_idx" (SQLSTATE 23505)
+  f023565: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f023826: 'error, USA, Germantown', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 0.386894123129411209 FIL, balance: 0.386244341214187107 FIL): validation failure
+  f023868: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f023869: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f023870: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f023977: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f023978: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f023980: 'error, China, Fuzhou', // stream reset
+  f023981: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f024006: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f024007: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f024008: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f024156: 'error, USA', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f024526: 'error, Korea', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 0.627883260614740504 FIL, balance: 0.09533579735187667 FIL): validation failure
+  f024617: 'error, Korea, Bucheon-si', // EOF
+  f024944: 'error, Korea, Yeongdeungpo-dong', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f029529: 'error, China, Dongguan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.0303030303016686 FIL, balance: 0.010888855251567979 FIL): not enough funds to execute transaction
+  f029566: 'error, NR', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
 
   // Rejected
 
-  f01152: 'rejected, China, Beijing', // syntax error at /home/gc/dealfilter.pl line 13, near "my "Global symbol "$denylist" requires explicit package name (did you forget to declare "my $denylist"?) at /home/gc/dealfilter.pl line 13.BEGIN not safe after errors--compilation aborted at /home/gc/dealfilter.pl line 17.
-  f01154: 'rejected, Sweden, Alvsjo', // no online
-  f01235: 'rejected, Singapore, IPFSMain',
-  f01243: 'rejected, Ukraine, Odessa, Wondertan (combined)',
-  f01248: 'rejected, Germany, Frankfurt + China, Guangdong',
-  f01291: 'rejected, Sweden, Stockholm, tvsthlm', // sh: 1: dealfilter.pl: not found
-  f01475: 'rejected, China, Wuhan + Germany', // getting client market balance failed
-  f01782:
-    'rejected, China, Hong Kong + Singapore + USA, Portland, hellofil.com',
-  f02303: 'rejected, China, Hong Kong + Jiangsu + Netherlands',
-  f02417: 'rejected, China, Liaoning', // sh: 1: jq: not found
-  f02420: 'rejected, China, Wuhan',
-  f02421: 'rejected, China, Deyang + Singapore, 腾盛科技', // Deals from client wallet f3wr3qwkknvxrpjgrfw3be4cloeohisfddpbfghfulketsul2w4x5iqlh7n6wbs6ybyhkxtloduej2wkikdb4a are not welcome
-  f02422: "rejected, China, Xi'an",
-  f02438: 'rejected, Singapore',
-  f02490: 'rejected, China, Fujian', // syntax error at /root/.lotusstorage/dealfilter.pl line 13, near "my "Global symbol "$denylist" requires explicit package name (did you forget to declare "my $denylist"?) at /root/.lotusstorage/dealfilter.pl line 13.BEGIN not safe after errors--compilation aborted at /root/.lotusstorage/dealfilter.pl line 23.
-  f02503: 'rejected, China, Wuhan',
-  f02520: 'rejected, China, Hong Kong + Dongguan', // Deals from client wallet f3vp7m3244tjtxrvg4n2lfedtqnnnzhyno3ym6vnl4wzozztik4f2kvzfbfbgzcga7g3mckddw6x4ahp5n4iwa are not welcome
-  f02529: 'rejected, China, Chongqing',
-  f02609: 'rejected, USA',
-  f02613: 'rejected, China, Chongqing',
-  f02614: 'rejected, Singapore',
-  f02626: 'rejected, China, Guangzhou + Hong Kong',
-  f02627: 'rejected, China, Guilin',
-  f02723: 'rejected, China, Hong Kong',
-  f02770: 'rejected, China, Hong Kong', // deal.Proposal.Client(t3wr3qwkknvxrpjgrfw3be4cloeohisfddpbfghfulketsul2w4x5iqlh7n6wbs6ybyhkxtloduej2wkikdb4a) not in whitelist
-  f02838: 'rejected, China, Chengdu, IPFS Harbor-星际港湾',
-  f03002: 'rejected, China, Chongqing',
-  f03131: 'rejected, China, Changsha',
-  f03144: 'rejected, Germany, Frankfurt',
-  f03194: 'rejected, China, Shenzhen, 成都云存&Npool',
-  f03269: 'rejected, Australia', // getting client market balance failed
-  f03326: 'rejected, USA, Seattle', // getting client market balance failed
-  f03344: 'rejected, China, Guangzhou', // no online
-  f03358: 'rejected, Singapore',
-  f03362: 'rejected, Germany, Berlin',
-  f03367: 'rejected, Singapore',
-  f03485: 'rejected, Netherlands', // getting client market balance failed
-  f03488: 'rejected, Korea, Geumcheon-gu', // no online
-  f03519: 'rejected, USA', // getting client market balance failed
-  f07969: 'rejected, China, Hangzhou, FME',
-  f08091: 'rejected, USA', // syntax error at /home/gc/dealfilter.pl line 13, near "my "Global symbol "$denylist" requires explicit package name (did you forget to declare "my $denylist"?) at /home/gc/dealfilter.pl line 13.BEGIN not safe after errors--compilation aborted at /home/gc/dealfilter.pl line 17.
-  f08103: 'rejected, China, Foshan, 花生酱肠粉',
-  f08197: 'rejected, China, Foshan',
-  f08203: 'rejected, Germany, Frankfurt',
-  f08207: 'rejected, Australia, Brisbane',
-  f08229: 'rejected, China, Nanchang',
-  f08399: 'rejected, USA, Sammamish',
-  f08572: 'rejected, Brazil, Sao Paulo', // getting client market balance failed
-  f08985: 'rejected, USA',
-  f09037: 'rejected, Singapore',
-  f09087: 'rejected, USA',
-  f09565: 'rejected, Ukraine, Odessa, Wondertan (combined)',
-  f09605: 'rejected, Ukraine, Odessa, Wondertan (combined)',
-  f09620: 'rejected, China, Weifang',
-  f09642: 'rejected, Sweden, Alvsjo', // no online
-  f09652: 'rejected, Singapore',
-  f09675: 'rejected, China, Weifang',
-  f09710: 'rejected, China, Jieyang',
-  f09737: 'rejected, USA, Sudbury',
-  f09825: 'rejected, China, Jinhua',
-  f09964: 'rejected, China, Beijing + Jiaxing',
-  f010056: 'rejected, Singapore',
-  f010202: 'rejected, Singapore',
-  f010225: 'rejected, China, Ordos',
-  f010254: 'rejected, Japan, Minamata', // no online
-  f010299: 'rejected, China, Yibin',
-  f010419: 'rejected, China, Sichuan',
-  f010538: 'rejected, China, Ordos',
-  f010616: 'rejected, China, Ordos + Singapore',
-  f014233: 'rejected, China, Shanghai', // no online
-  f014251: 'rejected, Singapore',
-  f014327: 'rejected, China, Ningbo',
-  f014365: 'rejected, Australia, Marrickville + Japan, Heiwajima',
-  f014392: 'rejected, Russia, Khabarovsk + USA + Japan, Heiwajima',
-  f014395: 'rejected, China, Dongguan',
-  f014440: 'rejected, Hong Kong',
-  f014472: 'rejected, China, Ningbo',
-  f014487: 'rejected, China, Shanghai', // no online
-  f014683: 'rejected, China, Shenzhen',
-  f014686: 'rejected, Singapore',
-  f014699: 'rejected, USA',
-  f014701: 'rejected, China, Changzhou', // jq: error: syntax error, unexpected IDENT, expecting $end (Unix shell quoting issues?) at <top-level>, line 1:.Proposal.Client == "t1nslxql4pck5pq7hddlzym3orxlx35wkepzjkm3i" or .Proposal.Client == "t1stghxhdp2w53dym2nz2jtbpk6ccd4l2lxgmezlq    " or .Proposal.Client == "t1mcr5xkgv4jdl3rnz77outn6xbmygb55vdejgbfi" or .Proposal.Client == "t1qiqdbbmrdalbntnuapriirduvxu5ltsc5mhy7si" or .Propos    al.Client == "t3w4yfo7tiqlbsz5pz5sb6fvn2piq2566teiebsy42l2hvhftkefpbq5ouxisfxwdxv6vt7mhpjwlm6lhvizya"                                                                                                                                                                                                                                                                                            jq: 1 compile error
-  f014706: 'rejected, China, Ordos',
-  f014793: 'rejected, China, Hangzhou',
-  f014804: 'rejected, China, Ordos',
-  f014805: 'rejected, China, Ningbo',
-  f014813: 'rejected, China, Hangzhou + USA',
-  f015726: 'rejected, China, Qingdao',
-  f015737: 'rejected, Brazil, Sao Paulo', // getting client market balance failed
-  f015747: 'rejected, Japan, Setagaya-ku',
-  f015782: 'rejected, Australia', // getting client market balance failed
-  f015860: 'rejected, Ukraine, Odessa',
-  f015861: 'rejected, Ukraine, Odessa',
-  f015862: 'rejected, Ukraine, Odessa',
-  f015901: 'rejected, Germany', // How about no
-  f015919: 'rejected, China, Ordos',
-  f015925: 'rejected, China, Ordos',
-  f016398: 'rejected, Singapore',
-  f016412: 'rejected, China, Taiwan, Taipei', // sh: ../dealfilter.pl: No such file or directory
-  f016563: 'rejected, China, Deyang', // Deals from client wallet f3wr3qwkknvxrpjgrfw3be4cloeohisfddpbfghfulketsul2w4x5iqlh7n6wbs6ybyhkxtloduej2wkikdb4a are not welcome
-  f017229: 'rejected, USA, Portland',
-  f019099: 'rejected, China, Hong Kong', // no online
-  f019229: 'rejected, USA, Queens', // getting client market balance failed
-  f019279: 'rejected, Canada, Calgary',
-  f019422: 'rejected, South Africa, Johannesburg', // no online
-  f020315: 'rejected, China, Guangzhou', // sh: jq: command not found
-  f020522: 'rejected, Singapore',
-  f020648: 'rejected, China, Shenzhen',
-  f020742: 'rejected, China, Shanghai + Hangzhou + Shaoxing', // no online
-  f020747: 'rejected, China, Xiamen', // sh: 1: dealfilter.pl: not found
-  f021316: 'rejected, China, Yangzhou', // sh: 1: /lotus_data/.lotusstorage/dealfilter.pl: not found
-  f021461: 'rejected, China, Yangzhou + Singapore', // getting client market balance failed
-  f021479: 'rejected, China, Qingdao',
-  f021525: 'rejected, China, Guangdong',
-  f021532: 'rejected, China, Shanghai',
-  f021536: 'rejected, NR', // getting client market balance failed
-  f021695: 'rejected, USA',
-  f021714: 'rejected, China, Hong Kong',
-  f021716: 'rejected, New Zealand, Wellington', // no online
-  f022130: 'rejected, Korea, Seodaemun-gu', // no online
-  f022309: 'rejected, Korea, Chuncheon', // no online
-  f022373: 'rejected, Singapore',
-  f022374: 'rejected, NR',
-  f022399: 'rejected, China, Beijing', // no online
-  f022566: 'rejected, China, Nanchong',
-  f022913: 'rejected, Korea, Uiwang', // no online
-  f022969: 'rejected, China, Chengdu', // no online
-  f023462: 'rejected, China, Chengdu',
-  f023530: 'rejected, China, Shanghai',
-  f023534: 'rejected, China, Chongqing',
-  f023561: 'rejected, China, Shenzhen',
-  f023627: 'rejected, China, Zhongwei',
-  f023843: 'rejected, NR',
-  f023858: 'rejected, China, Fuzhou', // sh: 1: /opt/nebula/lotus_current/miner/dealfilter.pl: Permission denied
-  f023859: 'rejected, China, Fuzhou', // sh: 1: /opt/nebula/lotus_current/miner/dealfilter.pl: Permission denied
-  f023861: 'rejected, China, Fuzhou', // sh: 1: /opt/nebula/lotus_current/miner/dealfilter.pl: Permission denied
-  f023871: 'rejected, China, Fuzhou', // sh: 1: /opt/nebula/lotus_current/miner/dealfilter.pl: Permission denied
-  f023876: 'rejected, China, Fuzhou', // sh: 1: /opt/nebula/lotus_current/miner/dealfilter.pl: Permission denied
-  f023928: 'rejected, China, Fuzhou', // sh: 1: /opt/nebula/lotus_current/miner/dealfilter.pl: Permission denied
-  f023982: 'rejected, China, Chongqing',
-  f023983: 'rejected, China, Chongqing',
-  f023984: 'rejected, China, Chongqing',
-  f023985: 'rejected, China, Chongqing',
-  f024012: 'rejected, China, Fuzhou', // sh: 1: /opt/nebula/lotus_current/miner/dealfilter.pl: Permission denied
-  f024013: 'rejected, China, Fuzhou', // sh: 1: /opt/nebula/lotus_current/miner/dealfilter.pl: Permission denied
-  f024014: 'rejected, China, Fuzhou', // sh: 1: /opt/nebula/lotus_current/miner/dealfilter.pl: Permission denied
-  f024081: 'rejected, China, Fuzhou', // sh: 1: /opt/nebula/lotus_current/miner/dealfilter.pl: Permission denied
-  f024084: 'rejected, China, Fuzhou', // sh: 1: /opt/nebula/lotus_current/miner/dealfilter.pl: Permission denied
-  f024085: 'rejected, China, Fuzhou', // sh: 1: /opt/nebula/lotus_current/miner/dealfilter.pl: Permission denied
-  f024136: 'rejected, China, Fuzhou', // sh: 1: /opt/nebula/lotus_current/miner/dealfilter.pl: Permission denied
-  f024611: 'rejected, China, Dongguan', // no online
-  f029649: 'rejected, China, Beijing', // syntax error at /home/gc/dealfilter.pl line 13, near "my "Global symbol "$denylist" requires explicit package name (did you forget to declare "my $denylist"?) at /home/gc/dealfilter.pl line 13.BEGIN not safe after errors--compilation aborted at /home/gc/dealfilter.pl line 17.
+  f01276: 'error, Canada, Brampton, NBFS Canada', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f02387: 'error, Canada, Brampton, NBFS Canada', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f02401: 'error, Canada, Chambly, NBFS Canada', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f02423: 'error, Ukraine, Kyiv, igowreck', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f02619: 'error, China, Beijing, Blockcasting', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: protocol not supported
+  f02772: 'error, China, Chengdu', // stream reset
+  f03176: 'error, USA, San Mateo, Five Star-Helmsman&Heiben', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f03223: 'error, USA', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f03340: "error, China, Xi'an", // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals exit code: SysErrOutOfGas(7)
+  f07824: 'error, China, Shanghai', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f07987: 'error, China, Beijing', // stream reset
+  f08220: 'error, China, Shenzhen', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 8.092128729531912957 FIL, balance: 8.078807194890910864 FIL): validation failure
+  f08371: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f08532: 'error, USA', // stream reset
+  f09639: 'error, China, Fuzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.030303030299245172 FIL, balance: 0.000025259918397467 FIL): not enough funds to execute transaction
+  f09689: 'error, USA, Portland', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: context deadline exceeded
+  f09770: "error, China, Xi'an", // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f010010: 'error, China, Changzhou + Hong Kong', // stream reset
+  f010405: 'error, China, Foshan', // EOF
+  f010446: 'error, Netherlands', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f010512: 'error, China, Zhengzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 1.372770716970385006 FIL, balance: 1.346274281252783987 FIL): validation failure
+  f010558: 'error, China, Shenzhen + Hong Kong', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzacedng3gv2wihg7feaoefzzd4t4jluzcrvjjmolokwu5woummwwnjwk n 11723, TS: bafy2bzaceda3qwmwssz5kr7quifzy34vc65lcywxhssjc5q7xsnlioxntet5w n11723)
+  f014302: 'error, China, Ningbo', // stream reset
+  f015655: 'error, Korea, Geumcheon-gu', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: context deadline exceeded
+  f015753: 'error, China, Guyuan', // stream reset
+  f015763: 'error, South Africa, Cape Town', // EOF
+  f015942: 'error, China, Ningbo', // stream reset
+  f017734: 'error, Australia, Sydney', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f018784: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f019362: 'error, China, Hangzhou', // sending proposal to storage provider failed: stream reset
+  f019399: 'error, Korea, Busan', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzaceduqv3lixcncnjflqbnzjxhudekwfaxmuysbj6p2l7yfr5qnxbiiu n 3189, TS: bafy2bzacebg4dh3pi52egvj3xrl23rf4v6nzvsivgc4pxf7ibyjlcvrtg4dtg n3189)
+  f020489: 'error, China, Lioaning', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.030303030274742304 FIL, balance: 0.006469220052247439 FIL): not enough funds to execute transaction
+  f020904: 'error, Korea, Uijeongbu-si', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f021255: 'error, China, Suzhou + Netherlands', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f021328: 'error, China, Dongguan', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: protocol not supported
+  f021535: 'error, China, Chengdu', // stream reset
+  f022072: 'error, China, Jieyang', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzaced62xm4lhsre6xqnpcwqqfpq6a6nafgslmqyjljixlcgsqewcsf4u n 5442, TS: bafy2bzacedcavpw3sfuj54gb3yvpeqylrrcddd53cougy4ayr7ed5peoxxdkm n5442)
+  f022119: 'error, USA, Lovettsville', // deal failed: (State=26) deal data verification failed: error generating CommP: failed to build treeCaused by:    0: failed to create data store    1: No such file or directory (os error 2)
+  f022376: 'error, China, Dongguan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.0999999999794628 FIL, balance: 0.003419950457033383 FIL): not enough funds to execute transaction
+  f022395: 'error, USA, Los Angeles', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 9.263662313821440754 FIL, balance: 9.247324167408334375 FIL): validation failure
+  f022522: 'error, China, Dongguan', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f022841: 'error, China, Zhongshan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 11.419984826608791163 FIL, balance: 11.338357011046283292 FIL): validation failure
+  f022855: 'error, Finland, Helsinki', // AddPiece failed: getting available sector: getting sector number: ERROR: duplicate key value violates unique constraint "sector_actor_id_id_idx" (SQLSTATE 23505)
+  f023565: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f023826: 'error, USA, Germantown', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 0.386894123129411209 FIL, balance: 0.386244341214187107 FIL): validation failure
+  f023868: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f023869: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f023870: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f023977: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f023978: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f023980: 'error, China, Fuzhou', // stream reset
+  f023981: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f024006: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f024007: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f024008: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f024156: 'error, USA', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f024526: 'error, Korea', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 0.627883260614740504 FIL, balance: 0.09533579735187667 FIL): validation failure
+  f024617: 'error, Korea, Bucheon-si', // EOF
+  f024944: 'error, Korea, Yeongdeungpo-dong', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f029529: 'error, China, Dongguan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.0303030303016686 FIL, balance: 0.010888855251567979 FIL): not enough funds to execute transaction
+  f029566: 'error, NR', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
 
   // Dial errors
 
