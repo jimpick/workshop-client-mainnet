@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef, useMemo } from 'react'
-import { format, formatDistance } from 'date-fns'
+import { subDays, format, formatDistance } from 'date-fns'
 import copy from 'clipboard-copy'
 import useLotusClient from '../../lib/use-lotus-client'
 import annotationsCamera from '../../annotations-spacerace.js'
@@ -343,7 +343,7 @@ function BucketDealList ({
         )}
       </div>
     )
-    minerEntries.push([miner, entry])
+    minerEntries.push([miner, new Date(date).getTime(), entry])
 
     async function copyCid () {
       console.log('Copying to clipboard', cidDeal)
@@ -358,8 +358,10 @@ function BucketDealList ({
     }
   }
 
-  minerEntries.sort(([a], [b]) => {
-    return Number(a.slice(1)) - Number(b.slice(1))
+  minerEntries.sort(([a, timeA], [b, timeB]) => {
+    const compareId = Number(a.slice(1)) - Number(b.slice(1))
+    if (compareId !== 0) return compareId
+    return timeB - timeA
   })
   for (const miner in annotations) {
     if (!dealMiners[miner]) {
@@ -395,6 +397,13 @@ function BucketDealList ({
     })
     .join('\n')
 
+  const lastMinerEntries = []
+  let previousMiner = null
+  for (const [miner, , entry] of minerEntries) {
+    if (miner === previousMiner) continue
+    previousMiner = miner
+    lastMinerEntries.push(entry)
+  }
   const nextBucket = buckets[buckets.indexOf(bucket) + 1]
   return (
     <>
@@ -409,7 +418,7 @@ function BucketDealList ({
           <pre>{toAnnotationsOut}</pre>
         </details>
       </div>
-      <div>{minerEntries.map(([miner, entry]) => entry)}</div>
+      <div>{lastMinerEntries}</div>
     </>
   )
 
@@ -444,9 +453,17 @@ export default function DealList ({ appState, cid, dealType }) {
     }
   }, [client])
 
+  const newerDeals = useMemo(() => {
+    const cutoff = subDays(new Date(), 2)
+    return (
+      originalDeals &&
+      originalDeals.filter(({ date }) => new Date(date) > cutoff)
+    )
+  }, [originalDeals])
+
   const focusedDeals = useMemo(() => {
-    return originalDeals && originalDeals.filter(deal => deal.type === dealType)
-  }, [originalDeals, dealType])
+    return newerDeals && newerDeals.filter(deal => deal.type === dealType)
+  }, [newerDeals, dealType])
 
   if (!focusedDeals) return null
 
