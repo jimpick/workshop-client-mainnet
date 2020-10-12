@@ -5,379 +5,270 @@
 const annotations = {
   // Candidates
 
-  // Live
+  f014365: 'candidate, Australia, Marrickville + Japan, Heiwajima',
+  f019661: 'candidate, Russia, Pyatigorsk',
+  f030184: 'candidate, USA, Aliquippa',
 
   // Testing
 
-  f01155: "testing, China, Shanghai, DianCun Tech",
-  f01234: "testing, Belgium, De Klinge, Eliovp",
-  f01240: "testing, Netherlands, HidNand",
-  f01247: "testing, Canada, Montreal, BigChungus™",
-  f01276: "testing, Canada, Brampton, NBFS Canada",
-  f01277: "testing, Sweden, Stockholm, tvsthlm",
-  f01279: "testing, China, Sichuan",
-  f01280: "testing, China, Wuxi, 了凡超算",
-  f01287: "testing, China, Jiaxing, MaiTian",
-  f01289: "testing, China, Hangzhou + USA",
-  f01799: "testing, China, Jinan, TokenHome",
-  f01800: "testing, China, Shenzhen + Chengdu",
-  f02301: "testing, USA",
-  f02305: "testing, China, Dongguan",
-  f02399: "testing, China, Zhejiang",
-  f02401: "testing, Canada, Chambly, NBFS Canada",
-  f02405: "testing, China, Shenzhen",
-  f02415: "testing, China, Hong Kong",
-  f02416: "testing, China, Guangdong, 星际无限",
-  f02417: "testing, China, Liaoning",
-  f02419: "testing, China, Shanghai, yuantai",
-  f02421: "testing, China, Deyang + Singapore, 腾盛科技",
-  f02423: "testing, Ukraine, Kyiv, igowreck",
-  f02490: "testing, China, Fujian",
-  f02492: "testing, China, Shenzhen",
-  f02500: "testing, Korea, Seongnam-si",
-  f02501: "testing, USA, Portland, 6block",
-  f02606: "testing, China, Shanghai",
-  f02619: "testing, China, Beijing, Blockcasting",
-  f02620: "testing, Poland, Krakow, @magik6k",
-  f02622: "testing, USA, Portland, 6block",
-  f02623: "testing, USA, Portland, 6block",
-  f02625: "testing, China, Shanghai, IPFS星际工厂",
-  f02633: "testing, China, Hong Kong",
-  f02645: "testing, China, Hong Kong",
-  f02665: "testing, Netherlands, Amsterdam, fm-ops",
-  f02668: "testing, China, Chengdu",
-  f02772: "testing, China, Chengdu",
-  f03134: "testing, China, Cangzhou, 乔木信息",
-  f03143: "testing, China, Shijiazhuang + Hong Kong",
-  f03222: "testing, China, Yuncheong, 星云矿池",
-  f03223: "testing, USA",
-  f03224: "testing, Ukraine, Irpin, oboltusov",
-  f03274: "testing, USA, Portland, 6block",
-  f03339: "testing, China, Luzhou, benxun",
-  f03345: "testing, China, Fuzhou, chh",
-  f03347: "testing, China, Shenzhen",
-  f03363: "testing, Singapore",
-  f03364: "testing, China, Guangzhou",
-  f03544: "testing, China, Guiyang",
-  f03482: "testing, China, Wuxi",
-  f03488: "testing, Korea, Geumcheon-gu",
-  f03512: "testing, New Zealand, Auckland, NZFILECOIN01",
-  f03624: "testing, Germany, Chemnitz, ode",
-  f04443: "testing, China, Shanghai, 罗良科技",
-  f05317: "testing, USA, Portland",
-  f07806: "testing, China, Wuhan, HelloXP",
-  f07819: "testing, China, Wuxi, YC--wuxi",
-  f07824: "testing, China, Shanghai",
-  f07850: "testing, USA, Portland, 6block",
-  f07990: "testing, China, Hong Kong",
-  f07998: "testing, China, Hangzhou",
-  f08073: "testing, China, Qiqihar, QY7TT",
-  f08094: "testing, China, Guangzhou, dongshao",
-  f08157: "testing, China, Beijing + Germany, Frankfurt, 超星际",
-  f08204: "testing, USA, St. Louis",
-  f08220: "testing, China, Shenzhen",
-  f08240: "testing, Russia, Novosibirsk, Rabinovitch",
-  f08264: "testing, China, Xianning",
-  f08371: "testing, China, Chengdu",
-  f08403: "testing, UK, Lower Slaughter",
-  f08474: "testing, China, Hong Kong",
-  f09002: "testing, Singapore",
-  f09569: "testing, China, Beijing",
-  f09592: "testing, Japan, Minamata",
-  f09675: "testing, China, Weifang",
-  f09693: "testing, USA, Portland + Singapore",
-  f09696: "testing, USA, Portland + Singapore",
-  f09731: "testing, China, Guiyang",
-  f09770: "testing, China, Xi'an",
-  f09833: "testing, USA, San Jose",
-  f09848: "testing, USA",
-  f010048: "testing, China, Shanghai",
-  f010063: "testing, China, Mianyang",
-  f010084: "testing, China, Beijing",
-  f010253: "testing, China, Beijing + USA, Portland",
-  f010257: "testing, China, Hong Kong, DNS:feiyuipfs.com",
-  f010399: "testing, China, Guangzhou",
-  f010400: "testing, China, Shenyang",
-  f010438: "testing, USA",
-  f010446: "testing, Netherlands",
-  f010479: "testing, France, Fontenay-sous-Bois",
-  f010491: "testing, China, Shenzhen",
-  f010493: "testing, China, Shanghai",
-  f010498: "testing, China, Shenzhen",
-  f010501: "testing, China, Hangzhou",
-  f010505: "testing, China, Wuhan",
-  f010507: "testing, China, Hangzhou",
-  f010513: "testing, China, Chongqing",
-  f010523: "testing, China, Beijing",
-  f010528: "testing, China, Chongqing",
-  f010558: "testing, China, Shenzhen + Hong Kong",
-  f010617: "testing, Canada, Surrey, @feiya200",
-  f014281: "testing, Netherlands, Permerend",
-  f014329: "testing, China, Hong Kong",
-  f014365: "testing, Australia, Marrickville + Japan, Heiwajima",
-  f014394: "testing, China, Suzhou",
-  f014569: "testing, NR",
-  f014768: "testing, Singapore",
-  f015233: "testing, China, Nanjing",
-  f015747: "testing, Japan, Setagaya-ku",
-  f015927: "testing, USA, East Islip",
-  f016482: "testing, USA, Aliquippa",
-  f016563: "testing, China, Deyang",
-  f016594: "testing, Germany",
-  f017665: "testing, China, Shenyang",
-  f017734: "testing, Australia, Sydney",
-  f017970: "testing, China, Baoding",
-  f018501: "testing, China, Beijing",
-  f018780: "testing, Singapore + Germany, Frankfurt + USA",
-  f018781: "testing, Singapore + Germany, Frankfurt + USA",
-  f018782: "testing, Singapore + Germany, Frankfurt + USA",
-  f018783: "testing, Singapore + Germany, Frankfurt + USA",
-  f018784: "testing, Singapore + Germany, Frankfurt + USA",
-  f019024: "testing, China, Sichuan",
-  f019074: "testing, China, Guangdong",
-  f019100: "testing, Romania, Cluj-Napoca",
-  f019104: "testing, Canada, Chambly",
-  f019118: "testing, China, Jiaxing",
-  f019174: "testing, UK, Halifax",
-  f019240: "testing, China, Beijing",
-  f019243: "testing, USA, Jackson",
-  f019354: "testing, Germany, Frankfurt",
-  f019399: "testing, Korea, Busan",
-  f019422: "testing, South Africa, Johannesburg",
-  f019638: "testing, Germany, Frankfurt",
-  f019661: "testing, Russia, Pyatigorsk",
-  f019824: "testing, USA",
-  f020385: "testing, Korea, Incheon",
-  f020398: "testing, China, Zhangjiakou",
-  f020489: "testing, China, Lioaning",
-  f020523: "testing, China, Suzhou",
-  f020541: "testing, China, Shanghai",
-  f020608: "testing, Russia",
-  f020742: "testing, China, Shanghai + Hangzhou + Shaoxing",
-  f020904: "testing, Korea, Uijeongbu-si",
-  f020923: "testing, China, Cangzhou",
-  f020928: "testing, China, Deyang + Singapore",
-  f020975: "testing, China, Shandong",
-  f021075: "testing, China, Chengdu",
-  f021255: "testing, China, Suzhou + Netherlands",
-  f021265: "testing, China, Wuhan",
-  f021316: "testing, China, Yangzhou",
-  f021328: "testing, China, Dongguan",
-  f021444: "testing, China, Guangzhou",
-  f021479: "testing, China, Qingdao",
-  f021483: "testing, China, Beijing",
-  f021583: "testing, China, Jiaxing",
-  f021710: "testing, China, Shijiazhuang",
-  f021870: "testing, USA, Portland",
-  f022070: "testing, China, Jieyang",
-  f022072: "testing, China, Jieyang",
-  f022125: "testing, China, Shenzhen",
-  f022142: "testing, USA, Queens",
-  f022163: "testing, NR",
-  f022261: "testing, China, Luzhou",
-  f022289: "testing, China, Mianyang",
-  f022352: "testing, Norway, Borgen",
-  f022376: "testing, China, Dongguan",
-  f022522: "testing, China, Dongguan",
-  f022566: "testing, China, Nanchong",
-  f022753: "testing, China, Hong Kong",
-  f022820: "testing, China, Guangdong",
-  f022832: "testing, China",
-  f022841: "testing, China, Zhongshan",
-  f022853: "testing, China, Fuzhou",
-  f022855: "testing, Finland, Helsinki",
-  f022922: "testing, China, Shenzhen",
-  f023013: "testing, China, Hong Kong",
-  f023108: "testing, China, Dongguan",
-  f023179: "testing, China, Fuzhou",
-  f023200: "testing, China, Shanghai",
-  f023229: "testing, China, Shandong",
-  f023467: "testing, Norway, Oslo",
-  f023490: "testing, Ukraine, Kyiv",
-  f023495: "testing, China, Beijing + USA, Portland",
-  f023501: "testing, China, Mianyang",
-  f023526: "testing, China, Chongqing",
-  f023565: "testing, China, Fuzhou",
-  f023571: "testing, NR",
-  f023573: "testing, Japan, Kumamoto",
-  f023581: "testing, China, Hong Kong",
-  f023647: "testing, Korea, Gangseo-gu",
-  f023660: "testing, China, Fuzhou",
-  f023662: "testing, China, Fuzhou",
-  f023678: "testing, China, Jiaxing",
-  f023825: "testing, USA, Portland",
-  f023843: "testing, NR",
-  f023853: "testing, China, Fuzhou",
-  f023854: "testing, China, Fuzhou",
-  f023855: "testing, China, Fuzhou",
-  f023858: "testing, China, Fuzhou",
-  f023859: "testing, China, Fuzhou",
-  f023861: "testing, China, Fuzhou",
-  f023868: "testing, China, Fuzhou",
-  f023869: "testing, China, Fuzhou",
-  f023870: "testing, China, Fuzhou",
-  f023871: "testing, China, Fuzhou",
-  f023876: "testing, China, Fuzhou",
-  f023928: "testing, China, Fuzhou",
-  f023939: "testing, NR",
-  f023943: "testing, USA, Ashburn",
-  f023971: "testing, USA, @Brian Y",
-  f023977: "testing, China, Fuzhou",
-  f023978: "testing, China, Fuzhou",
-  f023980: "testing, China, Fuzhou",
-  f023981: "testing, China, Fuzhou",
-  f024006: "testing, China, Fuzhou",
-  f024007: "testing, China, Fuzhou",
-  f024008: "testing, China, Fuzhou",
-  f024012: "testing, China, Fuzhou",
-  f024013: "testing, China, Fuzhou",
-  f024014: "testing, China, Fuzhou",
-  f024015: "testing, USA, Portland",
-  f024066: "testing, NR",
-  f024081: "testing, China, Fuzhou",
-  f024084: "testing, China, Fuzhou",
-  f024085: "testing, China, Fuzhou",
-  f024127: "testing, China, Fuzhou",
-  f024136: "testing, China, Fuzhou",
-  f024146: "testing, China, Fuzhou",
-  f024147: "testing, China, Fuzhou",
-  f024148: "testing, China, Fuzhou",
-  f024184: "testing, Korea, Gangnam-gu",
-  f024468: "testing, China, Shenzhen",
-  f024496: "testing, China, Dongguan",
-  f024550: "testing, China, Wenzhou",
-  f024617: "testing, Korea, Bucheon-si",
-  f024800: "testing, China, Hong Kong",
-  f024902: "testing, Korea, Incheon",
-  f024903: "testing, China, Mianyang",
-  f024969: "testing, NR",
-  f024983: "testing, China, Hong Kong",
-  f024986: "testing, China, Zhongshan",
-  f025007: "testing, Korea, Gyeonggi-do",
-  f025017: "testing, China, Hefei",
-  f025019: "testing, China, Taiwan, Hsinchu",
-  f025025: "testing, China, Qingdao",
-  f029404: "testing, USA, Portland + New Castle",
-  f029421: "testing, China, Hong Kong",
-  f029425: "testing, NR",
-  f029490: "testing, NR",
-  f029552: "testing, China, Changsha",
-  f029595: "testing, China, Guangdong",
-  f029619: "testing, China, Hefei",
-  f029628: "testing, Australia, Brisbane",
-  f030144: "testing, Korea, Gyeonggi-do",
-  f030152: "testing, China, Changsha",
-  f030158: "testing, China, Hangzhou",
-  f030184: "testing, USA, Aliquippa",
-  f030219: "testing, China, Changsha",
-  f030226: "testing, China, Fuzhou",
-  f030230: "testing, China, Sichuan",
+  // Active
 
+  f01152: 'active, China, Beijing',
+  f01234: 'active, Belgium, De Klinge, Eliovp',
+  f01238: 'active, Vietnam, Hanoi, FILECOIN-VIETNAM',
+  f01241: 'active, USA, Portland, 6block',
+  f01247: 'active, Canada, Montreal, BigChungus™',
+  f01272: 'active, Singapore',
+  f01276: 'active, Canada, Brampton, NBFS Canada',
+  f01278: 'active, USA, Grand Rapids, MiMiner',
+  f01799: 'active, China, Jinan, TokenHome',
+  f01800: 'active, China, Shenzhen + Chengdu',
+  f02301: 'active, USA',
+  f02388: 'active, Netherlands, Amersfoort, Kroketje',
+  f02401: 'active, Canada, Chambly, NBFS Canada',
+  f02421: 'active, China, Deyang + Singapore, 腾盛科技',
 
-  // Transferring
+  // Sealing
+
+  f01155: 'sealing, China, Shanghai, DianCun Tech',
+  f02665: 'sealing, Netherlands, Amsterdam, fm-ops',
+  f03222: 'sealing, China, Yuncheong',
+  f010498: 'sealing, China, Shenzhen',
+  f020398: 'sealing, China, Zhangjiakou',
+  f020541: 'sealing, China, Shanghai',
+  f021483: 'sealing, China, Beijing',
+  f022070: 'sealing, China, Jieyang',
+  f022125: 'sealing, China, Shenzhen',
+  f023573: 'sealing, Japan, Kumamoto',
+  f023858: 'sealing, China, Fuzhou',
+  f023859: 'sealing, China, Fuzhou',
+  f023861: 'sealing, China, Fuzhou',
+  f023868: 'sealing, China, Fuzhou',
+  f023869: 'sealing, China, Fuzhou',
+  f023870: 'sealing, China, Fuzhou',
+  f023871: 'sealing, China, Fuzhou',
+  f023876: 'sealing, China, Fuzhou',
+  f023928: 'sealing, China, Fuzhou',
+  f023943: 'sealing, USA, Ashburn',
+  f023977: 'sealing, China, Fuzhou',
+  f023978: 'sealing, China, Fuzhou',
+  f023980: 'sealing, China, Fuzhou',
+  f023981: 'sealing, China, Fuzhou',
+  f024006: 'sealing, China, Fuzhou',
+  f024007: 'sealing, China, Fuzhou',
+  f024008: 'sealing, China, Fuzhou',
+  f024012: 'sealing, China, Fuzhou',
+  f024013: 'sealing, China, Fuzhou',
+  f024014: 'sealing, China, Fuzhou',
+  f024081: 'sealing, China, Fuzhou',
+  f024084: 'sealing, China, Fuzhou',
+  f024085: 'sealing, China, Fuzhou',
+  f024136: 'sealing, China, Fuzhou',
+  f024983: 'sealing, China, Hong Kong',
+  f029425: 'sealing, NR',
+  f029552: 'sealing, China, Changsha',
+  f029595: 'sealing, China, Guangdong',
+  f029619: 'sealing, China, Hefei',
+  f029628: 'sealing, Australia, Brisbane',
+  f030144: 'sealing, Korea, Gyeonggi-do',
+  f030152: 'sealing, China, Changsha',
+  f030219: 'sealing, China, Changsha',
 
   // Stuck - CheckForAcceptance
 
-
-  // Price tier A - 5+ leading zero
-
-  f021540: 'active-a, Germany, Frankfurt, @hsanjuan', // 10.04, 421264: 254 MiB, 0.00000006487625 FIL
-
-  f02387: 'sealing-a, Canada, Brampton, NBFS Canada', // 10.04, 422140: 254 MiB, 0.0000001299395 FIL
-  f024101: 'sealing-a, China, Guiyang', // 10.06, 452703: 254 MiB, 0.00000000001299985 FIL
-
-  // Price tier B - 3-4 leading zero
-	
-  f01152: 'active-b, China, Beijing', // 10.04, 421060: 254 MiB, 0.000013028375 FIL
-  f01241: 'active-b, USA, Portland, 6block', // 10.04, 421193: 254 MiB, 0.0000130052 FIL
-  f01272: 'active-b, Singapore', // 10.04: 254 MiB, 421238: 0.000065066125 FIL
-  f02514: 'active-b, USA, Portland, 6block', // top miner - 10.04, 421660: 254 MiB, 0.000013100375 FIL
-  f03273: 'active-b, USA, Portland, 6block', // 10.05, 435212: 254 MiB, 0.000013015 FIL
-  f07919: 'active-b, China, Beijing, Shanghai, Hunan', // top miner - 10.04, 421690: 254 MiB, 0.00001307075 FIL
-  f010241: 'active-b, China, Beijing + USA, Portland', // 10.05, 435316: 254 MiB, 0.0000130651 FIL
-  f023649: 'active-b, Korea, Seoul', // 10.05, 435377: 508 MiB, 0.00013032625 FIL
-  f024016: 'active-b, USA, Portland', // 10.05, 435225: 254 MiB, 0.00006534 FIL
-
-
-  f02381: 'sealing-b, China, Dongguan, 西野七濑迷叔', // 10.06, 452668: 254 MiB, 0.00006490125 FIL
-  f03176: 'sealing-b, USA, San Mateo, Five Star-Helmsman&Heiben', // 10.06, 452689: 254 MiB, 0.000013007 FIL
-  f03275: 'sealing-b, USA, Portland, 6block', // top miner - 10.04, 421645: 254 MiB, 0.0000130888 FIL
-  f03491: 'sealing-b, China, Hong Kong', // 10.06, 452684: // 254 MiB, 0.00001299995 FIL
-  f05315: 'sealing-b, USA, Portland, 6block', // 10.06, 452378: 254 MiB, 0.000013006275 FIL
-  f05316: 'sealing-b, USA, Portland, 6block', // 10.06, 452724: 254 MiB, 0.00001297695 FIL
-  f08025: 'sealing-b, China, Hong Kong', // 10.06, 452628: 254 MiB, 0.000013004475 FIL
-  f08311: 'sealing-b, China, Shenzhen', // 10.06, 452766: 508 MiB, 0.0001309705 FIL
-  f08383: 'sealing-b, USA, Portland, 6block', // 10.06, 452344: 254 MiB, 0.000013006925 FIL
-  f08482: 'sealing-b, USA, Athol, @why', // 10.04, 421320: 254 MiB, 0.000065117 FIL
-  f010088: 'sealing-b, DNS:purumine.com', // 10.06, 452624: 254 MiB, 0.00001300305 FIL
-  f018772: 'sealing-b, Australia', // 10.06, 452748: 254 MiB, 0.00006502625 FIL
-  f019041: 'sealing-b, Singapore', // 10.06, 452753: 254 MiB, 0.0000650085 FIL
-  f020605: 'sealing-b, China, Yibin', // 10.06, 451710: 254 MiB, 0.000012995775 FIL
-  f024025: 'sealing-b, China, Chengdu', // 10.06, 452452: 254 MiB, 0.000064868125 FIL
-  f024521: 'sealing-b, Korea, Gyeonggi-do', // 10.06, 452657: 254 MiB, 0.000065130375 FIL
-
-
-  // Price tier C - <= 2 leading zero
-
-  f01238: 'active-c, Vietnam, Hanoi, FILECOIN-VIETNAM', // 10.04, 431954: 254 MiB, 0.012995375 FIL
-  f01278: 'active-c, USA, Grand Rapids, MiMiner', // 10.04, 421214: 254 MiB, 0.013011475 FIL
-  f02388: 'active-c, Netherlands, Amersfoort, Kroketje', // 10.04, 421256: 254 MiB, 0.012982425 FIL
-
-  f014409: 'sealing-c, USA, Waxhaw', // 10.06, 451782: 254 MiB, 0.01297545 FIL
-  f015877: 'sealing-c, China, Jiaxing + USA', // 10.06, 451761: 254 MiB, 0.013009225 FIL
+  f023501: 'stuck, China, Mianyang', // CheckForAcceptance: about 7 hours
 
   // Min-size
 
-  f02576: 'min-size, Denmark, Gjerlev, BenjaminH', // 10.04: 268435456 < 943718400 (~1GiB)
+  f02576: 'min-size, Denmark, Gjerlev, BenjaminH',
 
   // min-ask
 
-  f03194: "min-ask, China, Shenzhen, 成都云存&Npool",
-
-  // Transfer failed - failed to initiate data transfer: deal data transfer failed: response rejected
-
-  f03302: 'xfr-failed, China, Chengdu', // 10.06: 254 MiB, 0.000065022375 FIL
-  f019437: 'xfr-failed, Korea, Guro-gu', // 10.06: 254 MiB, 0.00006497525 FIL
-  f022227: 'xfr-failed, China, Jiangsu', // 10.06: 254 MiB, 0.000064958625 FIL
-  f022836: 'xfr-failed, China, Chongqing', // 10.06: 254 MiB, 0 FIL
-  f022969: 'xfr-failed, China, Chengdu', // 10.06: 254 MiB, 0.0000648725 FIL 
+  f03194: 'min-ask, China, Shenzhen, 成都云存&Npool',
 
   // Error
 
-  f08019: 'error, China, Yantai, 三合', // 10.06: failed to initiate data transfer: deal data transfer failed: response rejected
-  f010247: 'error, China, Yantai', // 10.06: failed to initiate data transfer: deal data transfer failed: response rejected
-  f019022: "error, China, Xi'an", // 10.06: failed to initiate data transfer: deal data transfer failed: response rejected
-  f021339: 'error, China, Jiaxing', // 10.06: failed to initiate data transfer: deal data transfer failed: response rejected
+  f01240: 'error, Netherlands, HidNand', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f01277: 'error, Sweden, Stockholm, tvsthlm', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: failed to load message: blockstore: block not found
+  f01279: 'error, China, Sichuan', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f01280: 'error, China, Wuxi, 了凡超算', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f01287: 'error, China, Jiaxing, MaiTian', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f01289: 'error, China, Hangzhou + USA', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f02305: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f02381: 'error, China, Dongguan, 西野七濑迷叔', // error in deal activation: failed to set up called handler: called check error (h: 132265): client: failed to look up deal on chain: deal 452668 not found
+  f02387: 'error, Canada, Brampton, NBFS Canada', // error in deal activation: failed to set up called handler: called check error (h: 126007): client: failed to look up deal on chain: deal 422140 not found
+  f02399: 'error, China, Zhejiang', // error in deal activation: failed to set up called handler: called check error (h: 134658): client: failed to look up deal on chain: deal 460705 not found
+  f02405: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f02415: 'error, China, Hong Kong', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f02416: 'error, China, Guangdong, 星际无限', // AddPiece failed: adding piece to sector: writing piece: creating unsealed sector file: fallocate '/lotus_data/unsealed/s-t02416-183886': no space left on device
+  f02419: 'error, China, Shanghai, yuantai', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f02423: 'error, Ukraine, Kyiv, igowreck', // error in deal activation: failed to set up called handler: called check error (h: 132265): client: failed to look up deal on chain: deal 460526 not found
+  f02492: 'error, China, Shenzhen', // error in deal activation: failed to set up called handler: called check error (h: 132265): client: failed to look up deal on chain: deal 459904 not found
+  f02500: 'error, Korea, Seongnam-si', // error in deal activation: failed to set up called handler: called check error (h: 134658): client: failed to look up deal on chain: deal 458722 not found
+  f02606: 'error, China, Shanghai', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f02623: 'error, USA, Portland, 6block', // error in deal activation: failed to set up called handler: called check error (h: 132265): client: failed to look up deal on chain: deal 458435 not found
+  f02625: 'error, China, Shanghai, IPFS星际工厂', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f02633: 'error, China, Hong Kong', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f02645: 'error, China, Hong Kong', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f02668: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f02772: 'error, China, Chengdu', // stream reset
+  f03134: 'error, China, Cangzhou, 乔木信息', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f03224: 'error, Ukraine, Irpin, oboltusov', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f03275: 'error, USA, Portland, 6block', // error in deal activation: failed to set up called handler: called check error (h: 126007): client: failed to look up deal on chain: deal 421645 not found
+  f03302: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f03345: 'error, China, Fuzhou, chh', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f03364: 'error, China, Guangzhou', // error in deal activation: failed to set up called handler: called check error (h: 137565): client: failed to look up deal on chain: deal 513490 not found
+  f03482: 'error, China, Wuxi', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f03512: 'error, New Zealand, Auckland, NZFILECOIN01', // error in deal activation: failed to set up called handler: called check error (h: 134658): client: failed to look up deal on chain: deal 476002 not found
+  f03544: 'error, China, Guiyang', // error in deal activation: failed to set up called handler: called check error (h: 137772): client: failed to look up deal on chain: deal 512654 not found
+  f04443: 'error, China, Shanghai, 罗良科技', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f07806: 'error, China, Wuhan, HelloXP', // error in deal activation: failed to set up called handler: called check error (h: 137565): client: failed to look up deal on chain: deal 512683 not found
+  f07824: 'error, China, Shanghai', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f07990: 'error, China, Hong Kong', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f07998: 'error, China, Hangzhou', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f08019: 'error, China, Yantai, 三合',
+  f08094: 'error, China, Guangzhou, dongshao', // error in deal activation: failed to set up called handler: called check error (h: 137565): client: failed to look up deal on chain: deal 512816 not found
+  f08220: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f08311: 'error, China, Shenzhen', // error in deal activation: failed to set up called handler: called check error (h: 132265): client: failed to look up deal on chain: deal 452766 not found
+  f08371: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f08474: 'error, China, Hong Kong', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f08482: 'error, USA, Athol, @why', // error in deal activation: failed to set up called handler: called check error (h: 126007): client: failed to look up deal on chain: deal 421320 not found
+  f09002: 'error, Singapore', // error in deal activation: failed to set up called handler: called check error (h: 137565): client: failed to look up deal on chain: deal 513466 not found
+  f09592: 'error, Japan, Minamata', // error in deal activation: failed to set up called handler: called check error (h: 132265): client: failed to look up deal on chain: deal 458302 not found
+  f09675: 'error, China, Weifang', // error in deal activation: failed to set up called handler: called check error (h: 132265): client: failed to look up deal on chain: deal 458676 not found
+  f09770: "error, China, Xi'an", // failed to initiate data transfer: deal data transfer failed: response rejected
+  f09833: 'error, USA, San Jose', // error in deal activation: failed to set up called handler: called check error (h: 132265): client: failed to look up deal on chain: deal 459708 not found
+  f010063: 'error, China, Mianyang', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f010084: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f010247: 'error, China, Yantai',
+  f010257: 'error, China, Hong Kong, DNS:feiyuipfs.com', // error in deal activation: failed to set up called handler: called check error (h: 132265): client: failed to look up deal on chain: deal 475953 not found
+  f010399: 'error, China, Guangzhou', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f010438: 'error, USA', // error in deal activation: failed to set up called handler: called check error (h: 132265): client: failed to look up deal on chain: deal 458303 not found
+  f010479: 'error, France, Fontenay-sous-Bois', // error in deal activation: failed to set up called handler: called check error (h: 134658): client: failed to look up deal on chain: deal 458445 not found
+  f010491: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f010493: 'error, China, Shanghai', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f010501: 'error, China, Hangzhou', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f010505: 'error, China, Wuhan', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f010513: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f010523: 'error, China, Beijing', // error in deal activation: failed to set up called handler: called check error (h: 137565): client: failed to look up deal on chain: deal 512687 not found
+  f010528: 'error, China, Chongqing', // error in deal activation: failed to set up called handler: called check error (h: 137565): client: failed to look up deal on chain: deal 512690 not found
+  f014329: 'error, China, Hong Kong', // error in deal activation: failed to set up called handler: called check error (h: 137565): client: failed to look up deal on chain: deal 514078 not found
+  f014394: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f014569: 'error, NR', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f015233: 'error, China, Nanjing', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f015747: 'error, Japan, Setagaya-ku', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f015877: 'error, China, Jiaxing + USA', // error in deal activation: failed to set up called handler: called check error (h: 132265): client: failed to look up deal on chain: deal 451761 not found
+  f015941: 'error, Ukraine, Kyiv', // error in deal activation: failed to set up called handler: called check error (h: 126007): client: failed to look up deal on chain: deal 421311 not found
+  f016482: 'error, USA, Aliquippa', // error in deal activation: failed to set up called handler: called check error (h: 132265): client: failed to look up deal on chain: deal 458438 not found
+  f017665: 'error, China, Shenyang', // error in deal activation: failed to set up called handler: called check error (h: 137565): client: failed to look up deal on chain: deal 514063 not found
+  f017734: 'error, Australia, Sydney', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f017970: 'error, China, Baoding', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f018501: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f018772: 'error, Australia', // error in deal activation: failed to set up called handler: called check error (h: 134658): client: failed to look up deal on chain: deal 452748 not found
+  f018780: 'error, Singapore + Germany, Frankfurt + USA', // error in deal activation: failed to set up called handler: called check error (h: 132265): client: failed to look up deal on chain: deal 458436 not found
+  f018781: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f018783: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f018784: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f019022: "error, China, Xi'an",
+  f019024: 'error, China, Sichuan', // error in deal activation: failed to set up called handler: called check error (h: 137565): client: failed to look up deal on chain: deal 512672 not found
+  f019041: 'error, Singapore', // error in deal activation: failed to set up called handler: called check error (h: 132265): client: failed to look up deal on chain: deal 452753 not found
+  f019074: 'error, China, Guangdong', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f019104: 'error, Canada, Chambly', // error in deal activation: failed to set up called handler: called check error (h: 134658): client: failed to look up deal on chain: deal 458437 not found
+  f019118: 'error, China, Jiaxing', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f019174: 'error, UK, Halifax', // deal failed: (State=26) error calling node: publishing deal: not enough funds (required: 0.099999999984100815 FIL, balance: 0.070383193180510758 FIL): not enough funds to execute transaction
+  f019240: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f019243: 'error, USA, Jackson', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f019354: 'error, Germany, Frankfurt', // error in deal activation: failed to set up called handler: called check error (h: 134658): client: failed to look up deal on chain: deal 459859 not found
+  f019437: 'error, Korea, Guro-gu', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f020489: 'error, China, Lioaning', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f020523: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f020923: 'error, China, Cangzhou', // error in deal activation: failed to set up called handler: called check error (h: 137772): client: failed to look up deal on chain: deal 513531 not found
+  f020928: 'error, China, Deyang + Singapore', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f020975: 'error, China, Shandong', // error in deal activation: failed to set up called handler: called check error (h: 137565): client: failed to look up deal on chain: deal 512871 not found
+  f021328: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f021339: 'error, China, Jiaxing',
+  f021444: 'error, China, Guangzhou', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f021479: 'error, China, Qingdao', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f022163: 'error, NR', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.030303030282262568 FIL, balance: 0.015928826163733186 FIL): not enough funds to execute transaction
+  f022227: 'error, China, Jiangsu', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f022289: 'error, China, Mianyang', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f022376: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f022566: 'error, China, Nanchong', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f022753: 'error, China, Hong Kong', // error in deal activation: failed to set up called handler: called check error (h: 132265): client: failed to look up deal on chain: deal 460411 not found
+  f022832: 'error, China', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f022836: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f022841: 'error, China, Zhongshan', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f022853: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f022855: 'error, Finland, Helsinki', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 0.189439786320974232 FIL, balance: 0.077190799415898118 FIL): validation failure
+  f022922: 'error, China, Shenzhen', // stream reset
+  f022969: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f023108: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f023179: 'error, China, Fuzhou', // error in deal activation: failed to set up called handler: called check error (h: 134658): client: failed to look up deal on chain: deal 477977 not found
+  f023200: 'error, China, Shanghai', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f023229: 'error, China, Shandong', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f023526: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f023571: 'error, NR', // error in deal activation: failed to set up called handler: called check error (h: 137565): client: failed to look up deal on chain: deal 512577 not found
+  f023581: 'error, China, Hong Kong', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f023660: 'error, China, Fuzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f023662: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f023678: 'error, China, Jiaxing', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f023843: 'error, NR', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f023939: 'error, NR', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f024066: 'error, NR', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f024101: 'error, China, Guiyang', // error in deal activation: failed to set up called handler: called check error (h: 132265): client: failed to look up deal on chain: deal 452703 not found
+  f024146: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f024147: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f024148: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f024468: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f024496: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f024521: 'error, Korea, Gyeonggi-do', // error in deal activation: failed to set up called handler: called check error (h: 132265): client: failed to look up deal on chain: deal 452657 not found
+  f024550: 'error, China, Wenzhou', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f024617: 'error, Korea, Bucheon-si', // error in deal activation: failed to set up called handler: called check error (h: 137565): client: failed to look up deal on chain: deal 514123 not found
+  f024902: 'error, Korea, Incheon', // error in deal activation: failed to set up called handler: called check error (h: 137565): client: failed to look up deal on chain: deal 513576 not found
+  f025007: 'error, Korea, Gyeonggi-do', // error in deal activation: failed to set up called handler: called check error (h: 137565): client: failed to look up deal on chain: deal 512566 not found
+  f029421: 'error, China, Hong Kong', // error in deal activation: failed to set up called handler: called check error (h: 137565): client: failed to look up deal on chain: deal 513559 not found
+  f030158: 'error, China, Hangzhou', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f030226: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: response rejected
+  f030230: 'error, China, Sichuan', // failed to initiate data transfer: failed to open push data channel: Unable to send request: routing: not found
 
   // Timeout during ask
 
   f02299: 'timeout-ask, China, Dongguan, Yolo', // 10.06
-  f02654: "timeout-ask, China, Shanghai", // 10.07
-  f03328: "timeout-ask, China, Xinxiang", // 10.07
+  f02654: 'timeout-ask, China, Shanghai', // 10.07
+  f03328: 'timeout-ask, China, Xinxiang', // 10.07
   f03340: "timeout-ask, China, Xi'an", // 10.07
-  f05664: "timeout-ask, China, Shenzhen, 艾比特网络科技", // 10.07
-  f07709: "timeout-ask, Korea, Dongjak-gu", // 10.08
-  f08091: "timeout-ask, USA", // 10.09
-  f08285: "timeout-ask, Latvia, Riga, stander", // 10.07
-  f010512: "timeout-ask, China, Zhengzhou", // 10.08
+  f05664: 'timeout-ask, China, Shenzhen, 艾比特网络科技', // 10.07
+  f07709: 'timeout-ask, Korea, Dongjak-gu', // 10.08
+  f08091: 'timeout-ask, USA', // 10.09
+  f08285: 'timeout-ask, Latvia, Riga, stander', // 10.07
+  f010512: 'timeout-ask, China, Zhengzhou', // 10.08
   f015897: 'timeout-ask, China, Guangdong', // 10.06
-  f015941: "timeout-ask, Ukraine, Kyiv", // 10.07
-  f018785: "timeout-ask, Singapore + Germany, Frankfurt + USA", // 10.07
-  f019029: "timeout-ask, Serbia, Boljevac", // 10.07
-  f019099: "timeout-ask, China, Hong Kong", // 10.07
-  f019362: "timeout-ask, China, Hangzhou", // 10.07
-  f020436: "timeout-ask, China, Beijing", // 10.07
-  f021262: "timeout-ask, China, Shanghai", // 10.07
-  f021274: "timeout-ask, China, Shanghai", // 10.08
-  f021616: "timeout-ask, China, Shanghai", // 10.07
-  f024030: "timeout-ask, Korea, Gwangju", // 10.07
-  f024070: "timeout-ask, Japan, Setagaya-ku", // 10.07
-  f024944: "timeout-ask, Korea, Yeongdeungpo-dong", // 10.07
-  f029587: "timeout-ask, Hungary", // 10.08
+  f015941: 'timeout-ask, Ukraine, Kyiv', // 10.07
+  f018785: 'timeout-ask, Singapore + Germany, Frankfurt + USA', // 10.07
+  f019029: 'timeout-ask, Serbia, Boljevac', // 10.07
+  f019099: 'timeout-ask, China, Hong Kong', // 10.07
+  f019362: 'timeout-ask, China, Hangzhou', // 10.07
+  f020436: 'timeout-ask, China, Beijing', // 10.07
+  f021262: 'timeout-ask, China, Shanghai', // 10.07
+  f021274: 'timeout-ask, China, Shanghai', // 10.08
+  f021616: 'timeout-ask, China, Shanghai', // 10.07
+  f024030: 'timeout-ask, Korea, Gwangju', // 10.07
+  f024070: 'timeout-ask, Japan, Setagaya-ku', // 10.07
+  f024944: 'timeout-ask, Korea, Yeongdeungpo-dong', // 10.07
+  f029587: 'timeout-ask, Hungary', // 10.08
+
+  // Dial
+
+  f03347: 'dial, China, Shenzhen', // * [/ip4/103.44.253.59/tcp/33455] dial tcp4 0.0.0.0:35839->103.44.253.59:33455: i/o timeout
+  f021316: 'dial, China, Yangzhou', // * [/ip4/58.220.66.88/tcp/2347] dial tcp4 58.220.66.88:2347: connect: connection refused
+  f022261: 'dial, China, Luzhou', // * [/ip4/175.155.178.195/tcp/7777] dial tcp4 175.155.178.195:7777: connect: connection refused
+  f022820: 'dial, China, Guangdong', // * [/ip4/183.232.116.200/tcp/4001] dial tcp4 183.232.116.200:4001: connect: connection refused
+  f024986: 'dial, China, Zhongshan', // * [/ip4/192.168.2.64/tcp/3000] dial tcp4 0.0.0.0:42221->192.168.2.64:3000: i/o timeout
+
+  // XNR
 
   // Error during ask
-  f03131: "error-ask, China, Changsha", // failed to open stream to miner: exhausted 5 attempts but failed to open stream, err: context canceled
-
+  f03131: 'error-ask, China, Changsha' // failed to open stream to miner: exhausted 5 attempts but failed to open stream, err: context canceled
 }
 
 export default annotations
