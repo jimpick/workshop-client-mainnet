@@ -5,39 +5,21 @@
 const annotations = {
   // Retest
 
-  f08285: 'retest, Latvia, Riga, stander', // client node out of gas
 
   // Candidates
 
-  f01782: "candidate, China, Hong Kong + Singapore + USA, Portland, hellofil.com",
   f02654: "candidate, China, Shanghai",
-  f03340: "candidate, China, Xi'an",
   f07709: "candidate, Korea, Dongjak-gu",
-  f08019: "candidate, China, Yantai, 三合",
-  f09639: "candidate, China, Fuzhou",
-  f010035: "candidate, Netherlands",
-  f010247: "candidate, China, Yantai",
   f010512: "candidate, China, Zhengzhou",
   f014324: "candidate, Canada, Vancouver",
   f015734: "candidate, China, Qingdao",
-  f019362: "candidate, China, Hangzhou",
-  f019551: "candidate, UK",
-  f020436: "candidate, China, Beijing",
-  f021274: "candidate, China, Shanghai",
-  f021339: "candidate, China, Jiaxing",
+  f019661: 'candidate, Russia, Pyatigorsk',
   f021346: "candidate, China, Shanghai",
   f021357: "candidate, China, Shanghai",
-  f021532: "candidate, China, Shanghai",
-  f022287: "candidate, China, Dongguan",
-  f023152: "candidate, China, Quanzhou",
-  f023492: "candidate, China, Beijing",
+  f023971: 'candidate, USA, @Brian Y',
   f024030: "candidate, Korea, Gwangju",
   f024130: "candidate, Korea",
-  f024944: "candidate, Korea, Yeongdeungpo-dong",
-  f029529: "candidate, China, Dongguan",
-  f029556: "candidate, China, Wuxi",
-  f029566: "candidate, NR",
-  f029587: "candidate, Hungary",
+  f030184: 'candidate, USA, Aliquippa',
   f030296: "candidate, USA, Cary",
   f030327: "candidate, China, Beijing",
   f030335: "candidate, China, Fujian",
@@ -46,13 +28,33 @@ const annotations = {
   f030379: "candidate, Korea, Uiwang",
   f030391: "candidate, China, Chengdu",
   f030518: "candidate, China, Wuhan",
-  f030641: "candidate, China, Shaanxi",
 
 
   // Testing
 
-  f019661: 'testing, Russia, Pyatigorsk',
-  f030184: 'testing, USA, Aliquippa',
+  f01782: "testing, China, Hong Kong + Singapore + USA, Portland, hellofil.com",
+  f03340: "testing, China, Xi'an",
+  f08019: "testing, China, Yantai, 三合",
+  f08285: 'testing, Latvia, Riga, stander', // client node out of gas
+  f09639: "testing, China, Fuzhou",
+  f010035: "testing, Netherlands",
+  f010247: "testing, China, Yantai",
+  f019362: "testing, China, Hangzhou",
+  f019551: "testing, UK",
+  f020436: "testing, China, Beijing",
+  f021274: "testing, China, Shanghai",
+  f021339: "testing, China, Jiaxing",
+  f021532: "testing, China, Shanghai",
+  f022287: "testing, China, Dongguan",
+  f023152: "testing, China, Quanzhou",
+  f023492: "testing, China, Beijing",
+  f024944: "testing, Korea, Yeongdeungpo-dong",
+  f029529: "testing, China, Dongguan",
+  f029556: "testing, China, Wuxi",
+  f029566: "testing, NR",
+  f029587: "testing, Hungary",
+  f030641: "testing, China, Shaanxi",
+
 
   // Active
 
@@ -342,7 +344,6 @@ const annotations = {
   f023855: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: response rejected
   f023939: 'error, NR', // failed to initiate data transfer: deal data transfer failed: response rejected
   f023943: 'error, USA, Ashburn', // error in deal activation: failed to set up called handler: called check error (h: 138721): client: failed to look up deal on chain: deal 512782 not found
-  f023971: 'error, USA, @Brian Y', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals exit code: 16
   f024066: 'error, NR', // failed to initiate data transfer: deal data transfer failed: response rejected
   f024101: 'error, China, Guiyang', // error in deal activation: failed to set up called handler: called check error (h: 132265): client: failed to look up deal on chain: deal 452703 not found
   f024146: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: response rejected
