@@ -122,6 +122,8 @@ const annotations = {
 
   // Active/sealing
 
+  // Sealing
+
   f01155: 'sealing, China, Shanghai, DianCun Tech',
   f02501: 'sealing, USA, Portland, 6block',
   f02514: 'sealing, USA, Portland, 6block',
@@ -171,8 +173,6 @@ const annotations = {
   f030144: 'sealing, Korea, Gyeonggi-do',
   f030152: 'sealing, China, Changsha',
   f030219: 'sealing, China, Changsha',
-
-  // Sealing
 
   // Stuck
 
