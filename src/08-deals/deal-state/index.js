@@ -487,6 +487,7 @@ export default function DealList ({ appState, cid, dealType }) {
       'timeout-ask',
       'error-ask',
       'backoff',
+      'rejected',
       'dial',
       'xnr',
       'unknown'

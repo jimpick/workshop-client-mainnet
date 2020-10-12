@@ -54,7 +54,6 @@ const annotations = {
   f02619: 'sealing, China, Beijing, Blockcasting',
   f03222: 'sealing, China, Yuncheong, 星云矿池',
   f03328: 'sealing, China, Xinxiang',
-  f03347: 'sealing, China, Shenzhen',
   f03488: 'sealing, Korea, Geumcheon-gu',
   f03491: 'sealing, China, Hong Kong',
   f03624: 'sealing, Germany, Chemnitz, ode',
@@ -88,7 +87,6 @@ const annotations = {
   f023200: 'sealing, China, Shanghai',
   f023495: 'sealing, China, Beijing + USA, Portland',
   f023825: 'sealing, USA, Portland',
-  f023854: 'sealing, China, Fuzhou',
   f023858: 'sealing, China, Fuzhou',
   f023859: 'sealing, China, Fuzhou',
   f023861: 'sealing, China, Fuzhou',
@@ -194,7 +192,6 @@ const annotations = {
   f020541: 'stuck, China, Shanghai', // CheckForAcceptance: about 7 hours
   f020904: 'stuck, Korea, Uijeongbu-si', // CheckForAcceptance: about 5 hours
   f020993: 'stuck, China, Hong Kong', // FundsEnsured: about 5 hours
-  f021075: 'stuck, China, Chengdu', // CheckForAcceptance: about 5 hours
   f021255: 'stuck, China, Suzhou + Netherlands', // CheckForAcceptance: about 5 hours
   f021274: 'stuck, China, Shanghai', // CheckForAcceptance: about 6 hours
   f021339: 'stuck, China, Jiaxing', // CheckForAcceptance: about 6 hours
@@ -214,7 +211,6 @@ const annotations = {
   f022753: 'stuck, China, Hong Kong', // CheckForAcceptance: about 6 hours
   f022855: 'stuck, Finland, Helsinki', // CheckForAcceptance: about 5 hours
   f022922: 'stuck, China, Shenzhen', // CheckForAcceptance: about 6 hours
-  f023013: 'stuck, China, Hong Kong', // CheckForAcceptance: about 5 hours
   f023179: 'stuck, China, Fuzhou', // CheckForAcceptance: about 6 hours
   f023581: 'stuck, China, Hong Kong', // CheckForAcceptance: about 5 hours
   f023647: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: about 6 hours
@@ -224,7 +220,6 @@ const annotations = {
   f024066: 'stuck, NR', // CheckForAcceptance: about 7 hours
   f024070: 'stuck, Japan, Setagaya-ku', // CheckForAcceptance: about 5 hours
   f024127: 'stuck, China, Fuzhou', // CheckForAcceptance: about 6 hours
-  f024184: 'stuck, Korea, Gangnam-gu', // CheckForAcceptance: about 7 hours
   f024468: 'stuck, China, Shenzhen', // CheckForAcceptance: about 6 hours
   f024550: 'stuck, China, Wenzhou', // CheckForAcceptance: about 7 hours
   f024800: 'stuck, China, Hong Kong', // CheckForAcceptance: about 7 hours
@@ -261,7 +256,6 @@ const annotations = {
   f02620: 'min-size, Poland, Krakow, @magik6k', // 131072 < 536870912
   f08403: 'min-size, UK, Lower Slaughter', // 131072 < 134217728
   f010479: 'min-size, France, Fontenay-sous-Bois', // 131072 < 4294967296
-  f014365: 'min-size, Australia, Marrickville + Japan, Heiwajima', // 131072 < 134217728
   f014409: 'min-size, USA, Waxhaw', // 131072 < 262144000
   f015927: 'min-size, USA, East Islip', // 131072 < 134217728
   f018501: 'min-size, China, Beijing', // 131072 < 134217728
@@ -301,7 +295,7 @@ const annotations = {
 
   f01155: 'error, China, Shanghai, DianCun Tech', // stream reset
   f02299: 'error, China, Dongguan, Yolo', // AddPiece failed: getting available sector: getting sector number: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 192.168.200.50:1357: connect: connection refused"
-  f02305: 'error, China, Dongguan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 0.06060606054336054 FIL, balance: 0.042649589674782313 FIL): validation failure
+  f02305: 'xxerror, China, Dongguan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 0.06060606054336054 FIL, balance: 0.042649589674782313 FIL): validation failure
   f03223: 'error, USA', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f03224: 'error, Ukraine, Irpin, oboltusov', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.030303030277742156 FIL, balance: 0.00208063857785629 FIL): not enough funds to execute transaction
   f03273: 'error, USA, Portland, 6block', // deal failed: (State=26) error activating deal: failed to set up called handler: called check error (h: 136634): failed to look up deal on chain: deal 601360 not found
@@ -366,7 +360,6 @@ const annotations = {
   f01782:
     'rejected, China, Hong Kong + Singapore + USA, Portland, hellofil.com',
   f02303: 'rejected, China, Hong Kong + Jiangsu + Netherlands',
-  f02417: 'rejected, China, Liaoning', // sh: 1: jq: not found
   f02421: 'rejected, China, Deyang + Singapore, 腾盛科技', // Deals from client wallet f3vp7m3244tjtxrvg4n2lfedtqnnnzhyno3ym6vnl4wzozztik4f2kvzfbfbgzcga7g3mckddw6x4ahp5n4iwa are not welcome
   f02422: "rejected, China, Xi'an",
   f02438: 'rejected, Singapore',
@@ -458,7 +451,6 @@ const annotations = {
   f019099: 'rejected, China, Hong Kong', // no online
   f019229: 'rejected, USA, Queens', // getting client market balance failed
   f019279: 'rejected, Canada, Calgary',
-  f019422: 'rejected, South Africa, Johannesburg', // no online
   f020315: 'rejected, China, Guangzhou', // sh: jq: command not found
   f020398: 'rejected, China, Zhangjiakou',
   f020522: 'rejected, Singapore',
