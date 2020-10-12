@@ -12,6 +12,14 @@
 const annotations = {
   // Active
 
+  f02633: 'active, China, Hong Kong', // about 6 hours
+  f09693: 'active, USA, Portland + Singapore', // about 5 hours
+  f023869: 'active, China, Fuzhou', // about 6 hours
+  f023981: 'active, China, Fuzhou', // about 6 hours
+  f024008: 'active, China, Fuzhou', // about 5 hours
+  f024014: 'active, China, Fuzhou', // about 5 hours
+  f024136: 'active, China, Fuzhou', // about 5 hours
+
   // Active-sealing (active, with in-flight sealing)
 
   f01241: 'active-sealing, USA, Portland, 6block',
@@ -21,7 +29,6 @@ const annotations = {
   f02514: 'active-sealing, USA, Portland, 6block',
   f02622: 'active-sealing, USA, Portland, 6block',
   f02623: 'active-sealing, USA, Portland, 6block',
-  f02633: 'active-sealing, China, Hong Kong',
   f02645: 'active-sealing, China, Hong Kong',
   f02668: 'active-sealing, China, Chengdu',
   f05315: 'active-sealing, USA, Portland, 6block',
@@ -34,7 +41,6 @@ const annotations = {
   f08025: 'active-sealing, China, Hong Kong',
   f08285: 'active-sealing, Latvia, Riga, stander',
   f08383: 'active-sealing, USA, Portland, 6block',
-  f09693: 'active-sealing, USA, Portland + Singapore',
   f09696: 'active-sealing, USA, Portland + Singapore',
   f010241: 'active-sealing, China, Beijing + USA, Portland',
   f010253: 'active-sealing, China, Beijing + USA, Portland',
@@ -47,21 +53,17 @@ const annotations = {
   f023495: 'active-sealing, China, Beijing + USA, Portland',
   f023825: 'active-sealing, USA, Portland',
   f023868: 'active-sealing, China, Fuzhou',
-  f023869: 'active-sealing, China, Fuzhou',
   f023870: 'active-sealing, China, Fuzhou',
   f023871: 'active-sealing, China, Fuzhou',
   f023876: 'active-sealing, China, Fuzhou',
   f023977: 'active-sealing, China, Fuzhou',
   f023978: 'active-sealing, China, Fuzhou',
   f023980: 'active-sealing, China, Fuzhou',
-  f023981: 'active-sealing, China, Fuzhou',
   f024006: 'active-sealing, China, Fuzhou',
   f024012: 'active-sealing, China, Fuzhou',
   f024013: 'active-sealing, China, Fuzhou',
-  f024014: 'active-sealing, China, Fuzhou',
   f024015: 'active-sealing, USA, Portland',
   f024085: 'active-sealing, China, Fuzhou',
-  f024136: 'active-sealing, China, Fuzhou',
   f025017: 'active-sealing, China, Hefei',
 
   // Sealing
@@ -203,12 +205,12 @@ const annotations = {
   f023928: 'sealing, China, Fuzhou',
   f023939: 'sealing, NR',
   f024007: 'sealing, China, Fuzhou',
-  f024008: 'sealing, China, Fuzhou',
   f024016: 'sealing, USA, Portland',
   f024030: 'sealing, Korea, Gwangju',
   f024066: 'sealing, NR',
   f024081: 'sealing, China, Fuzhou',
   f024084: 'sealing, China, Fuzhou',
+  f024101: 'sealing, China, Guiyang',
   f024130: 'sealing, Korea',
   f024184: 'sealing, undefined',
   f024468: 'sealing, China, Shenzhen',
@@ -241,13 +243,12 @@ const annotations = {
 
   // Stuck
 
-  f02305: 'stuck, China, Dongguan', // CheckForAcceptance: about 2 hours
-  f019114: 'stuck, USA, Howell', // CheckForAcceptance: about 2 hours
-  f022089: 'stuck, China, Beijing', // CheckForAcceptance: about 2 hours
-  f022202: 'stuck, USA, Howell', // CheckForAcceptance: about 2 hours
-  f024101: 'stuck, China, Guiyang', // CheckForAcceptance: 43 minutes
-  f024526: 'stuck, Korea', // CheckForAcceptance: about 2 hours
-  f024902: 'stuck, Korea, Incheon', // CheckForAcceptance: about 2 hours
+  f02305: 'stuck, China, Dongguan', // CheckForAcceptance: about 6 hours
+  f019114: 'stuck, USA, Howell', // CheckForAcceptance: about 6 hours
+  f022089: 'stuck, China, Beijing', // CheckForAcceptance: about 6 hours
+  f022202: 'stuck, USA, Howell', // CheckForAcceptance: about 6 hours
+  f024526: 'stuck, Korea', // CheckForAcceptance: about 6 hours
+  f024902: 'stuck, Korea, Incheon', // CheckForAcceptance: about 6 hours
 
   // Busy
 
