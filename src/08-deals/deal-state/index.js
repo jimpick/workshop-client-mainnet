@@ -297,7 +297,7 @@ function BucketDealList ({
     }
     if (type === 'slingshot') {
       prefix = 'SS'
-      altAnnotation = annotations[miner]
+      altAnnotation = annotationsCamera[miner]
     }
     const backgroundColor = fromTag !== toTag ? '#eee' : '#fff'
     const entry = (
