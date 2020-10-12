@@ -144,6 +144,7 @@ const annotations = {
   f024084: 'sealing, China, Fuzhou',
   f024085: 'sealing, China, Fuzhou',
   f024136: 'sealing, China, Fuzhou',
+  f024156: 'sealing, USA',
   f029425: 'sealing, NR',
   f029552: 'sealing, China, Changsha',
   f029595: 'sealing, China, Guangdong',
@@ -155,23 +156,22 @@ const annotations = {
 
   // Stuck
 
-  f02405: 'stuck, China, Shenzhen', // Transferring: 20 minutes
-  f02415: 'stuck, China, Hong Kong', // Transferring: 20 minutes
-  f02619: 'stuck, China, Beijing, Blockcasting', // Transferring: 13 minutes
-  f03328: 'stuck, China, Xinxiang', // Transferring: 13 minutes
-  f07990: 'stuck, China, Hong Kong', // Transferring: 22 minutes
-  f07998: 'stuck, China, Hangzhou', // Transferring: 16 minutes
-  f08025: 'stuck, China, Hong Kong', // Transferring: 20 minutes
-  f010501: 'stuck, China, Hangzhou', // Transferring: 9 minutes
-  f010523: 'stuck, China, Beijing', // Transferring: 7 minutes
-  f014569: 'stuck, NR', // Transferring: 9 minutes
-  f018785: 'stuck, Singapore + Germany, Frankfurt + USA', // Transferring: 7 minutes
-  f019824: 'stuck, USA', // CheckForAcceptance: about 4 hours
-  f020605: 'stuck, China, Yibin', // Transferring: 7 minutes
-  f021265: 'stuck, China, Wuhan', // Transferring: 13 minutes
-  f022566: 'stuck, China, Nanchong', // Transferring: 20 minutes
-  f023501: 'stuck, China, Mianyang', // CheckForAcceptance: about 14 hours
-  f024156: 'stuck, USA', // CheckForAcceptance: 13 minutes
+  f02405: 'stuck, China, Shenzhen', // Transferring: about 10 hours
+  f02415: 'stuck, China, Hong Kong', // Transferring: about 10 hours
+  f02619: 'stuck, China, Beijing, Blockcasting', // Transferring: about 10 hours
+  f03328: 'stuck, China, Xinxiang', // Transferring: about 10 hours
+  f07990: 'stuck, China, Hong Kong', // Transferring: about 11 hours
+  f07998: 'stuck, China, Hangzhou', // Transferring: about 10 hours
+  f08025: 'stuck, China, Hong Kong', // Transferring: about 10 hours
+  f010501: 'stuck, China, Hangzhou', // Transferring: about 10 hours
+  f010523: 'stuck, China, Beijing', // Transferring: about 10 hours
+  f014569: 'stuck, NR', // Transferring: about 10 hours
+  f018785: 'stuck, Singapore + Germany, Frankfurt + USA', // Transferring: about 10 hours
+  f019824: 'stuck, USA', // CheckForAcceptance: about 15 hours
+  f020605: 'stuck, China, Yibin', // Transferring: about 10 hours
+  f021265: 'stuck, China, Wuhan', // Transferring: about 10 hours
+  f022566: 'stuck, China, Nanchong', // Transferring: about 10 hours
+  f023501: 'stuck, China, Mianyang', // CheckForAcceptance: about 24 hours
 
   // Min-size
 

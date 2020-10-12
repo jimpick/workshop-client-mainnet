@@ -93,6 +93,9 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
   if (lastHistory && dealHistoryData.length > 1) {
     elapsed = timeElapsed(dealHistoryData.length - 2)
   }
+  if (previous === 'timeout-ask' || previous === 'error-ask') {
+    return [previous, '']
+  }
   if (previous === 'active') {
     if (lastDealState === 'Sealing') {
       return ['active-sealing', '']
