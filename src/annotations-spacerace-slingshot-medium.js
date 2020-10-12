@@ -7,21 +7,6 @@ const annotations = {
 
   // Candidates
 
-  f02654: 'candidate, China, Shanghai',
-  f07709: 'candidate, Korea, Dongjak-gu',
-  f019661: 'candidate, Russia, Pyatigorsk',
-  f030184: 'candidate, USA, Aliquippa',
-  f030327: 'candidate, China, Beijing',
-  f030347: 'candidate, China, Zhejiang',
-
-  // Testing
-
-  f029566: 'testing, NR',
-
-  // Active
-
-  f029404: 'active, USA, Portland + New Castle',
-
   f01234: 'candidate, Belgium, De Klinge, Eliovp',
   f01238: 'candidate, Vietnam, Hanoi, FILECOIN-VIETNAM',
   f01241: 'candidate, USA, Portland, 6block',
@@ -34,6 +19,7 @@ const annotations = {
   f02388: 'candidate, Netherlands, Amersfoort, Kroketje',
   f02401: 'candidate, Canada, Chambly, NBFS Canada',
   f02620: 'candidate, Poland, Krakow, @magik6k',
+  f02654: 'candidate, China, Shanghai',
   f03176: 'candidate, USA, San Mateo, Five Star-Helmsman&Heiben',
   f03223: 'candidate, USA',
   f03273: 'candidate, USA, Portland, 6block',
@@ -42,6 +28,7 @@ const annotations = {
   f03363: 'candidate, Singapore',
   f05316: 'candidate, USA, Portland, 6block',
   f05317: 'candidate, USA, Portland',
+  f07709: 'candidate, Korea, Dongjak-gu',
   f07819: 'candidate, China, Wuxi, YC--wuxi',
   f07919: 'candidate, China, Beijing, Shanghai, Hunan',
   f08073: 'candidate, China, Qiqihar, QY7TT',
@@ -63,6 +50,7 @@ const annotations = {
   f016594: 'candidate, Germany',
   f019100: 'candidate, Romania, Cluj-Napoca',
   f019638: 'candidate, Germany, Frankfurt',
+  f019661: 'candidate, Russia, Pyatigorsk',
   f020608: 'candidate, Russia',
   f020904: 'candidate, Korea, Uijeongbu-si',
   f021255: 'candidate, China, Suzhou + Netherlands',
@@ -78,22 +66,32 @@ const annotations = {
   f023647: 'candidate, Korea, Gangseo-gu',
   f023649: 'candidate, Korea, Seoul',
   f024127: 'candidate, China, Fuzhou',
-  f024800: 'candidate, China, Hong Kong',
-  f024969: 'candidate, NR',
   f025017: 'candidate, China, Hefei',
   f025019: 'candidate, China, Taiwan, Hsinchu',
+  f030184: 'candidate, USA, Aliquippa',
+  f030327: 'candidate, China, Beijing',
+  f030347: 'candidate, China, Zhejiang',
+
+  // Testing
+
+  f029566: 'testing, NR',
+
+  // Active
+
+  f024800: 'active, China, Hong Kong',
+  f024969: 'active, NR',
+  f029404: 'active, USA, Portland + New Castle',
+  f029490: 'active, undefined',
 
   // Active/sealing
 
   // Sealing
 
-  f01155: 'sealing, China, Shanghai, DianCun Tech',
   f01782: 'sealing, China, Hong Kong + Singapore + USA, Portland, hellofil.com',
   f02501: 'sealing, USA, Portland, 6block',
   f02514: 'sealing, USA, Portland, 6block',
   f02622: 'sealing, USA, Portland, 6block',
   f02623: 'sealing, USA, Portland, 6block',
-  f03222: 'sealing, China, Yuncheong',
   f03340: "sealing, China, Xi'an",
   f03488: 'sealing, Korea, Geumcheon-gu',
   f05315: 'sealing, USA, Portland, 6block',
@@ -153,12 +151,9 @@ const annotations = {
   f024136: 'sealing, China, Fuzhou',
   f024156: 'sealing, USA',
   f024944: 'sealing, Korea, Yeongdeungpo-dong',
-  f029425: 'sealing, NR',
-  f029552: 'sealing, China, Changsha',
   f029556: 'sealing, China, Wuxi',
   f029587: 'sealing, Hungary',
   f029595: 'sealing, China, Guangdong',
-  f029619: 'sealing, China, Hefei',
   f029628: 'sealing, Australia, Brisbane',
   f030144: 'sealing, Korea, Gyeonggi-do',
   f030152: 'sealing, China, Changsha',
@@ -175,13 +170,13 @@ const annotations = {
   f09639: 'stuck, China, Fuzhou', // CheckForAcceptance: about 1 hour
   f010035: 'stuck, Netherlands', // Transferring: about 1 hour
   f010247: 'stuck, China, Yantai', // CheckForAcceptance: about 1 hour
-  f019824: 'stuck, USA', // CheckForAcceptance: about 4 hours
+  f019824: 'stuck, USA', // CheckForAcceptance: about 5 hours
   f020436: 'stuck, China, Beijing', // CheckForAcceptance: about 1 hour
   f021532: 'stuck, China, Shanghai', // Transferring: about 1 hour
   f022287: 'stuck, China, Dongguan', // CheckForAcceptance: about 1 hour
   f023501: 'stuck, China, Mianyang',
-  f029529: 'stuck, China, Dongguan', // CheckForAcceptance: about 1 hour
-  f030391: 'stuck, China, Chengdu', // CheckForAcceptance: 36 minutes
+  f029529: 'stuck, China, Dongguan', // ProposalAccepted: 14 minutes
+  f030391: 'stuck, China, Chengdu', // CheckForAcceptance: about 1 hour
 
   // Min-size
 
@@ -192,10 +187,11 @@ const annotations = {
 
   // Error
 
+  f01155: 'error, China, Shanghai, DianCun Tech', // error in deal activation: failed to set up called handler: called check error (h: 140448): client: failed to look up deal on chain: deal 539747 not found
   f01240: 'error, Netherlands, HidNand', // EOF
   f01277: 'error, Sweden, Stockholm, tvsthlm', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: failed to load message: blockstore: block not found
   f01279: 'error, China, Sichuan',
-  f01280: 'error, China, Wuxi, 了凡超算',
+  f01280: 'error, China, Wuxi, 了凡超算', // failed to initiate data transfer: deal data transfer failed: response rejected
   f01287: 'error, China, Jiaxing, MaiTian',
   f01289: 'error, China, Hangzhou + USA', // failed to initiate data transfer: deal data transfer failed: response rejected
   f02305: 'error, China, Dongguan',
@@ -219,6 +215,7 @@ const annotations = {
   f02668: 'error, China, Chengdu',
   f02772: 'error, China, Chengdu',
   f03134: 'error, China, Cangzhou, 乔木信息',
+  f03222: 'error, China, Yuncheong', // error in deal activation: failed to set up called handler: called check error (h: 140448): client: failed to look up deal on chain: deal 539792 not found
   f03224: 'error, Ukraine, Irpin, oboltusov',
   f03275: 'error, USA, Portland, 6block',
   f03302: 'error, China, Chengdu',
@@ -342,6 +339,9 @@ const annotations = {
   f025007: 'error, Korea, Gyeonggi-do',
   f025025: 'error, China, Qingdao', // adding market funds failed: AddFunds exit code: SysErrInsufficientFunds(6)
   f029421: 'error, China, Hong Kong',
+  f029425: 'error, NR', // error in deal activation: failed to set up called handler: called check error (h: 140448): client: failed to look up deal on chain: deal 539738 not found
+  f029552: 'error, China, Changsha', // error in deal activation: failed to set up called handler: called check error (h: 140448): client: failed to look up deal on chain: deal 539821 not found
+  f029619: 'error, China, Hefei', // error in deal activation: failed to set up called handler: called check error (h: 140448): client: failed to look up deal on chain: deal 540389 not found
   f030158: 'error, China, Hangzhou', // failed to initiate data transfer: deal data transfer failed: response rejected
   f030226: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: response rejected
   f030230: 'error, China, Sichuan', // failed to initiate data transfer: failed to open push data channel: Unable to send request: routing: not found
