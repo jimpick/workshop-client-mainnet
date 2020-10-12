@@ -10,25 +10,10 @@ const annotations = {
 
   f02654: "candidate, China, Shanghai",
   f07709: "candidate, Korea, Dongjak-gu",
-  f010512: "candidate, China, Zhengzhou",
-  f014324: "candidate, Canada, Vancouver",
-  f015734: "candidate, China, Qingdao",
   f019661: 'candidate, Russia, Pyatigorsk',
-  f021346: "candidate, China, Shanghai",
-  f021357: "candidate, China, Shanghai",
-  f023971: 'candidate, USA, @Brian Y',
-  f024030: "candidate, Korea, Gwangju",
-  f024130: "candidate, Korea",
   f030184: 'candidate, USA, Aliquippa',
-  f030296: "candidate, USA, Cary",
   f030327: "candidate, China, Beijing",
-  f030335: "candidate, China, Fujian",
-  f030338: "candidate, USA, Santa Fe Springs",
   f030347: "candidate, China, Zhejiang",
-  f030379: "candidate, Korea, Uiwang",
-  f030391: "candidate, China, Chengdu",
-  f030518: "candidate, China, Wuhan",
-
 
   // Testing
 
@@ -55,6 +40,20 @@ const annotations = {
   f029587: "testing, Hungary",
   f030641: "testing, China, Shaanxi",
 
+  f010512: "testing, China, Zhengzhou",
+  f014324: "testing, Canada, Vancouver",
+  f015734: "testing, China, Qingdao",
+  f021346: "testing, China, Shanghai",
+  f021357: "testing, China, Shanghai",
+  f023971: 'testing, USA, @Brian Y',
+  f024030: "testing, Korea, Gwangju",
+  f024130: "testing, Korea",
+  f030296: "testing, USA, Cary",
+  f030335: "testing, China, Fujian",
+  f030338: "testing, USA, Santa Fe Springs",
+  f030379: "testing, Korea, Uiwang",
+  f030391: "testing, China, Chengdu",
+  f030518: "testing, China, Wuhan",
 
   // Active
 
