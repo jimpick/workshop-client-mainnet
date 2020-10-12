@@ -256,6 +256,11 @@ function BucketDealList ({
       annotations,
       bucketSet
     )
+    /*
+    if (miner === 'f02405') {
+      console.log('JimX', miner, toAnnotationsMap[miner], proposalCid, date)
+    }
+    */
     if (!toAnnotationsMap[miner] || toAnnotationsMap[miner].date < date) {
       toAnnotationsMap[miner] = {
         toBucket: toTag,

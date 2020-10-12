@@ -5,41 +5,14 @@
 const annotations = {
   // Retest
 
-  f02405: 'testing, China, Shenzhen', // client node out of gas
-  f02415: 'testing, China, Hong Kong', // client node out of gas
-  f02619: 'testing, China, Beijing, Blockcasting', // client node out of gas
-  f02622: 'testing, USA, Portland, 6block', // client node out of gas
-  f02623: 'testing, USA, Portland, 6block', // client node out of gas
-  f07850: 'testing, USA, Portland, 6block', // client node out of gas
-  f07990: 'testing, China, Hong Kong', // client node out of gas
-  f07998: 'testing, China, Hangzhou', // client node out of gas
-  f08025: 'testing, China, Hong Kong', // client node out of gas
-  f08285: 'timeout-ask, Latvia, Riga, stander', // client node out of gas
-  f010501: 'testing, China, Hangzhou', // client node out of gas
-  f010523: 'testing, China, Beijing', // client node out of gas
-  f014409: 'testing, USA, Waxhaw', // client node out of gas
-  f014569: 'testing, NR', // client node out of gas
-  f015877: 'testing, China, Jiaxing + USA', // client node out of gas
-  f015927: 'testing, USA, East Islip', // client node out of gas
-  f018785: 'testing, Singapore + Germany, Frankfurt + USA', // client node out of gas
-  f020385: 'testing, Korea, Incheon', // client node out of gas
-  f020605: 'testing, China, Yibin', // client node out of gas
-  f021265: 'testing, China, Wuhan', // client node out of gas
-  f022289: 'testing, China, Mianyang', // client node out of gas
-  f022566: 'testing, China, Nanchong', // client node out of gas
-  f023678: 'testing, China, Jiaxing', // client node out of gas
+  f08285: 'retest, Latvia, Riga, stander', // client node out of gas
 
   // Candidates
-
-  f03194: 'timeout-ask, China, Shenzhen, 成都云存&Npool',
-  f03328: 'testing, China, Xinxiang',
-  f05664: 'timeout-ask, China, Shenzhen, 艾比特网络科技',
-  f024156: 'testing, USA',
-  f030184: 'testing, USA, Aliquippa',
 
   // Testing
 
   f019661: 'testing, Russia, Pyatigorsk',
+  f030184: 'testing, USA, Aliquippa',
 
   // Active
 
@@ -127,17 +100,23 @@ const annotations = {
   f01155: 'sealing, China, Shanghai, DianCun Tech',
   f02501: 'sealing, USA, Portland, 6block',
   f02514: 'sealing, USA, Portland, 6block',
+  f02622: 'sealing, USA, Portland, 6block',
+  f02623: 'sealing, USA, Portland, 6block',
   f03222: 'sealing, China, Yuncheong',
   f03488: 'sealing, Korea, Geumcheon-gu',
   f05315: 'sealing, USA, Portland, 6block',
+  f07850: 'sealing, USA, Portland, 6block',
   f08383: 'sealing, USA, Portland, 6block',
   f09693: 'sealing, USA, Portland + Singapore',
   f010241: 'sealing, China, Beijing + USA, Portland',
   f010253: 'sealing, China, Beijing + USA, Portland',
+  f015877: 'sealing, China, Jiaxing + USA',
+  f015927: 'sealing, USA, East Islip',
   f019354: 'sealing, Germany, Frankfurt',
   f020398: 'sealing, China, Zhangjiakou',
   f021483: 'sealing, China, Beijing',
   f022125: 'sealing, China, Shenzhen',
+  f022289: 'sealing, China, Mianyang',
   f023573: 'sealing, Japan, Kumamoto',
   f023825: 'sealing, USA, Portland',
   f023858: 'sealing, China, Fuzhou',
@@ -176,12 +155,28 @@ const annotations = {
 
   // Stuck
 
-  f019824: 'stuck, USA', // CheckForAcceptance: about 3 hours
-  f023501: 'stuck, China, Mianyang', // CheckForAcceptance: about 12 hours
+  f02405: 'stuck, China, Shenzhen', // Transferring: 20 minutes
+  f02415: 'stuck, China, Hong Kong', // Transferring: 20 minutes
+  f02619: 'stuck, China, Beijing, Blockcasting', // Transferring: 13 minutes
+  f03328: 'stuck, China, Xinxiang', // Transferring: 13 minutes
+  f07990: 'stuck, China, Hong Kong', // Transferring: 22 minutes
+  f07998: 'stuck, China, Hangzhou', // Transferring: 16 minutes
+  f08025: 'stuck, China, Hong Kong', // Transferring: 20 minutes
+  f010501: 'stuck, China, Hangzhou', // Transferring: 9 minutes
+  f010523: 'stuck, China, Beijing', // Transferring: 7 minutes
+  f014569: 'stuck, NR', // Transferring: 9 minutes
+  f018785: 'stuck, Singapore + Germany, Frankfurt + USA', // Transferring: 7 minutes
+  f019824: 'stuck, USA', // CheckForAcceptance: about 4 hours
+  f020605: 'stuck, China, Yibin', // Transferring: 7 minutes
+  f021265: 'stuck, China, Wuhan', // Transferring: 13 minutes
+  f022566: 'stuck, China, Nanchong', // Transferring: 20 minutes
+  f023501: 'stuck, China, Mianyang', // CheckForAcceptance: about 14 hours
+  f024156: 'stuck, USA', // CheckForAcceptance: 13 minutes
 
   // Min-size
 
   f010479: 'min-size, France, Fontenay-sous-Bois', // 134217728 < 4294967296
+  f014409: 'min-size, USA, Waxhaw', // 134217728 < 262144000
 
   // Min-ask
 
@@ -329,14 +324,19 @@ const annotations = {
 
   // Timeout during ask
 
+  f03194: 'timeout-ask, China, Shenzhen, 成都云存&Npool',
+  f05664: 'timeout-ask, China, Shenzhen, 艾比特网络科技',
+
   // Rejected
 
   f02417: 'rejected, China, Liaoning', // sh: 1: jq: not found
   f03347: 'rejected, China, Shenzhen', // proposed provider collateral below minimum: 0 < 4565067147293
   f014365: 'rejected, Australia, Marrickville + Japan, Heiwajima', // sh: 1: /home/miner/.lotusminer/dealfilter.pl: Permission denied
   f019422: 'rejected, South Africa, Johannesburg', // no online
+  f020385: 'rejected, Korea, Incheon', // no online
   f021075: 'rejected, China, Chengdu', // sh: 1: dealfilter.pl: not found
   f023013: 'rejected, China, Hong Kong', // no online
+  f023678: 'rejected, China, Jiaxing', // no online
   f023854: 'rejected, China, Fuzhou', // sh: 1: /opt/nebula/lotus_current/miner/dealfilter.pl: Permission denied
   f024184: 'rejected, Korea, Gangnam-gu',
 
