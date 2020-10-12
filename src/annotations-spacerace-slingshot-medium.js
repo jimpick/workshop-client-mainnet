@@ -5,37 +5,37 @@
 const annotations = {
   // Retest
 
-  f02405: 'retest, China, Shenzhen', // client node out of gas
-  f02415: 'retest, China, Hong Kong', // client node out of gas
-  f02619: 'retest, China, Beijing, Blockcasting', // client node out of gas
-  f02622: 'retest, USA, Portland, 6block', // client node out of gas
-  f02623: 'retest, USA, Portland, 6block', // client node out of gas
-  f07850: 'retest, USA, Portland, 6block', // client node out of gas
-  f07990: 'retest, China, Hong Kong', // client node out of gas
-  f07998: 'retest, China, Hangzhou', // client node out of gas
-  f08025: 'retest, China, Hong Kong', // client node out of gas
-  f08285: 'retest, Latvia, Riga, stander', // client node out of gas
-  f010501: 'retest, China, Hangzhou', // client node out of gas
-  f010523: 'retest, China, Beijing', // client node out of gas
-  f014409: 'retest, USA, Waxhaw', // client node out of gas
-  f014569: 'retest, NR', // client node out of gas
-  f015877: 'retest, China, Jiaxing + USA', // client node out of gas
-  f015927: 'retest, USA, East Islip', // client node out of gas
-  f018785: 'retest, Singapore + Germany, Frankfurt + USA', // client node out of gas
-  f020385: 'retest, Korea, Incheon', // client node out of gas
-  f020605: 'retest, China, Yibin', // client node out of gas
-  f021265: 'retest, China, Wuhan', // client node out of gas
-  f022289: 'retest, China, Mianyang', // client node out of gas
-  f022566: 'retest, China, Nanchong', // client node out of gas
-  f023678: 'retest, China, Jiaxing', // client node out of gas
+  f02405: 'testing, China, Shenzhen', // client node out of gas
+  f02415: 'testing, China, Hong Kong', // client node out of gas
+  f02619: 'testing, China, Beijing, Blockcasting', // client node out of gas
+  f02622: 'testing, USA, Portland, 6block', // client node out of gas
+  f02623: 'testing, USA, Portland, 6block', // client node out of gas
+  f07850: 'testing, USA, Portland, 6block', // client node out of gas
+  f07990: 'testing, China, Hong Kong', // client node out of gas
+  f07998: 'testing, China, Hangzhou', // client node out of gas
+  f08025: 'testing, China, Hong Kong', // client node out of gas
+  f08285: 'timeout-ask, Latvia, Riga, stander', // client node out of gas
+  f010501: 'testing, China, Hangzhou', // client node out of gas
+  f010523: 'testing, China, Beijing', // client node out of gas
+  f014409: 'testing, USA, Waxhaw', // client node out of gas
+  f014569: 'testing, NR', // client node out of gas
+  f015877: 'testing, China, Jiaxing + USA', // client node out of gas
+  f015927: 'testing, USA, East Islip', // client node out of gas
+  f018785: 'testing, Singapore + Germany, Frankfurt + USA', // client node out of gas
+  f020385: 'testing, Korea, Incheon', // client node out of gas
+  f020605: 'testing, China, Yibin', // client node out of gas
+  f021265: 'testing, China, Wuhan', // client node out of gas
+  f022289: 'testing, China, Mianyang', // client node out of gas
+  f022566: 'testing, China, Nanchong', // client node out of gas
+  f023678: 'testing, China, Jiaxing', // client node out of gas
 
   // Candidates
 
-  f03194: 'candidate, China, Shenzhen, 成都云存&Npool',
-  f03328: 'candidate, China, Xinxiang',
-  f05664: 'candidate, China, Shenzhen, 艾比特网络科技',
-  f024156: 'candidate, USA',
-  f030184: 'candidate, USA, Aliquippa',
+  f03194: 'timeout-ask, China, Shenzhen, 成都云存&Npool',
+  f03328: 'testing, China, Xinxiang',
+  f05664: 'timeout-ask, China, Shenzhen, 艾比特网络科技',
+  f024156: 'testing, USA',
+  f030184: 'testing, USA, Aliquippa',
 
   // Testing
 
