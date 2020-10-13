@@ -16,6 +16,7 @@ const annotations = {
   f01247: 'active, Canada, Montreal, BigChungus™', // about 13 hours
   f01272: 'active, Singapore', // about 15 hours
   f01278: 'active, USA, Grand Rapids, MiMiner', // about 14 hours
+  f01289: 'active, China, Hangzhou + USA', // 1 day
   f01782: 'active, China, Hong Kong + Singapore + USA, Portland, hellofil.com', // about 8 hours
   f02415: 'active, China, Hong Kong', // about 10 hours
   f02416: 'active, China, Guangdong, 星际无限', // about 12 hours
@@ -64,6 +65,7 @@ const annotations = {
   f010507: 'active, China, Hangzhou', // about 17 hours
   f010512: 'active, China, Zhengzhou', // about 8 hours
   f010523: 'active, China, Beijing', // about 18 hours
+  f014768: 'active, Singapore', // 1 day
   f015233: 'active, China, Nanjing', // about 14 hours
   f016594: 'active, Germany', // 1 day
   f018780: 'active, Singapore + Germany, Frankfurt + USA', // about 7 hours
@@ -72,6 +74,7 @@ const annotations = {
   f018783: 'active, Singapore + Germany, Frankfurt + USA', // about 9 hours
   f018784: 'active, Singapore + Germany, Frankfurt + USA', // about 6 hours
   f018785: 'active, Singapore + Germany, Frankfurt + USA', // about 6 hours
+  f019074: 'active, China, Guangdong', // 1 day
   f019551: 'active, UK', // about 13 hours
   f019638: 'active, Germany, Frankfurt', // about 14 hours
   f020436: 'active, China, Beijing', // about 16 hours
@@ -94,6 +97,7 @@ const annotations = {
   f023869: 'active, China, Fuzhou', // about 6 hours
   f023870: 'active, China, Fuzhou', // about 6 hours
   f023876: 'active, China, Fuzhou', // about 6 hours
+  f023939: 'active, NR', // 1 day
   f023977: 'active, China, Fuzhou', // about 6 hours
   f023978: 'active, China, Fuzhou', // about 6 hours
   f023980: 'active, China, Fuzhou', // about 13 hours
@@ -139,7 +143,6 @@ const annotations = {
   f01238: 'sealing, Vietnam, Hanoi, FILECOIN-VIETNAM',
   f01240: 'sealing, Netherlands, HidNand',
   f01280: 'sealing, China, Wuxi, 了凡超算',
-  f01289: 'sealing, China, Hangzhou + USA',
   f01799: 'sealing, China, Jinan, TokenHome',
   f01800: 'sealing, China, Shenzhen + Chengdu',
   f02401: 'sealing, Canada, Chambly, NBFS Canada',
@@ -180,13 +183,11 @@ const annotations = {
   f014281: 'sealing, Netherlands, Permerend',
   f014324: 'sealing, Canada, Vancouver',
   f014569: 'sealing, NR',
-  f014768: 'sealing, Singapore',
   f015734: 'sealing, China, Qingdao',
   f015877: 'sealing, China, Jiaxing + USA',
   f015941: 'sealing, Ukraine, Kyiv',
   f017665: 'sealing, China, Shenyang',
   f019041: 'sealing, Singapore',
-  f019074: 'sealing, China, Guangdong',
   f019100: 'sealing, Romania, Cluj-Napoca',
   f019104: 'sealing, Canada, Chambly',
   f019118: 'sealing, China, Jiaxing',
@@ -220,7 +221,6 @@ const annotations = {
   f023649: 'sealing, Korea, Seoul',
   f023858: 'sealing, China, Fuzhou',
   f023928: 'sealing, China, Fuzhou',
-  f023939: 'sealing, NR',
   f024101: 'sealing, China, Guiyang',
   f024130: 'sealing, Korea',
   f024550: 'sealing, China, Wenzhou',
@@ -253,6 +253,17 @@ const annotations = {
   // Busy
 
   // New
+
+  f02666: 'new, China, Chengdu',
+  f02822: 'new, China, Chengdu',
+  f029524: 'new, China, Hong Kong',
+  f029632: 'new, NR',
+  f030272: 'new, NR',
+  f030284: 'new, China, Shandong',
+  f030331: 'new, NR',
+  f030511: 'new, NR',
+  f030514: 'new, NR',
+  f032833: 'new, NR',
 
   // Min Size
 
