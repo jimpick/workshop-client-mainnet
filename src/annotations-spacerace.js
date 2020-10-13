@@ -12,145 +12,179 @@
 const annotations = {
   // Active
 
+  f01241: 'active, USA, Portland, 6block', // about 12 hours
+  f01247: 'active, Canada, Montreal, BigChungus™', // about 13 hours
+  f01272: 'active, Singapore', // about 15 hours
+  f01278: 'active, USA, Grand Rapids, MiMiner', // about 14 hours
+  f01782: 'active, China, Hong Kong + Singapore + USA, Portland, hellofil.com', // about 8 hours
+  f02415: 'active, China, Hong Kong', // about 10 hours
+  f02416: 'active, China, Guangdong, 星际无限', // about 12 hours
+  f02501: 'active, USA, Portland, 6block', // about 6 hours
+  f02514: 'active, USA, Portland, 6block', // about 10 hours
+  f02606: 'active, China, Shanghai', // about 10 hours
+  f02619: 'active, China, Beijing, Blockcasting', // about 10 hours
+  f02622: 'active, USA, Portland, 6block', // about 6 hours
+  f02623: 'active, USA, Portland, 6block', // about 7 hours
   f02633: 'active, China, Hong Kong', // about 6 hours
+  f02645: 'active, China, Hong Kong', // about 7 hours
+  f03176: 'active, USA, San Mateo, Five Star-Helmsman&Heiben', // about 8 hours
+  f03273: 'active, USA, Portland, 6block', // about 11 hours
+  f03274: 'active, USA, Portland, 6block', // about 8 hours
+  f03275: 'active, USA, Portland, 6block', // about 8 hours
+  f03302: 'active, China, Chengdu', // about 14 hours
+  f03339: 'active, China, Luzhou, benxun', // about 20 hours
+  f03363: 'active, Singapore', // 1 day
+  f05315: 'active, USA, Portland, 6block', // about 7 hours
+  f05316: 'active, USA, Portland, 6block', // about 6 hours
+  f05317: 'active, USA, Portland', // about 6 hours
+  f05664: 'active, China, Shenzhen, 艾比特网络科技', // about 8 hours
+  f07819: 'active, China, Wuxi, YC--wuxi', // 1 day
+  f07824: 'active, China, Shanghai', // 1 day
+  f07850: 'active, USA, Portland, 6block', // about 7 hours
+  f07990: 'active, China, Hong Kong', // about 7 hours
+  f07998: 'active, China, Hangzhou', // about 19 hours
+  f08019: 'active, China, Yantai, 三合', // about 17 hours
+  f08025: 'active, China, Hong Kong', // about 6 hours
+  f08073: 'active, China, Qiqihar, QY7TT', // about 16 hours
+  f08094: 'active, China, Guangzhou, dongshao', // about 16 hours
+  f08157: 'active, China, Beijing + Germany, Frankfurt, 超星际', // about 17 hours
+  f08240: 'active, Russia, Novosibirsk, Rabinovitch', // about 19 hours
+  f08383: 'active, USA, Portland, 6block', // about 7 hours
+  f08403: 'active, UK, Lower Slaughter', // about 15 hours
   f09693: 'active, USA, Portland + Singapore', // about 5 hours
+  f09696: 'active, USA, Portland + Singapore', // about 7 hours
+  f010084: 'active, China, Beijing', // about 19 hours
+  f010088: 'active, DNS:purumine.com', // about 13 hours
+  f010241: 'active, China, Beijing + USA, Portland', // about 12 hours
+  f010247: 'active, China, Yantai', // 1 day
+  f010253: 'active, China, Beijing + USA, Portland', // about 7 hours
+  f010491: 'active, China, Shenzhen', // about 10 hours
+  f010498: 'active, China, Shenzhen', // about 19 hours
+  f010505: 'active, China, Wuhan', // about 20 hours
+  f010507: 'active, China, Hangzhou', // about 17 hours
+  f010512: 'active, China, Zhengzhou', // about 8 hours
+  f010523: 'active, China, Beijing', // about 18 hours
+  f015233: 'active, China, Nanjing', // about 14 hours
+  f016594: 'active, Germany', // 1 day
+  f018780: 'active, Singapore + Germany, Frankfurt + USA', // about 7 hours
+  f018781: 'active, Singapore + Germany, Frankfurt + USA', // about 7 hours
+  f018782: 'active, Singapore + Germany, Frankfurt + USA', // about 10 hours
+  f018783: 'active, Singapore + Germany, Frankfurt + USA', // about 9 hours
+  f018784: 'active, Singapore + Germany, Frankfurt + USA', // about 6 hours
+  f018785: 'active, Singapore + Germany, Frankfurt + USA', // about 6 hours
+  f019551: 'active, UK', // about 13 hours
+  f019638: 'active, Germany, Frankfurt', // about 14 hours
+  f020436: 'active, China, Beijing', // about 16 hours
+  f020541: 'active, China, Shanghai', // about 21 hours
+  f020605: 'active, China, Yibin', // 1 day
+  f021255: 'active, China, Suzhou + Netherlands', // about 13 hours
+  f021444: 'active, China, Guangzhou', // 1 day
+  f021870: 'active, USA, Portland', // about 8 hours
+  f022227: 'active, China, Jiangsu', // about 14 hours
+  f022261: 'active, China, Luzhou', // 1 day
+  f022289: 'active, China, Mianyang', // about 16 hours
+  f022352: 'active, Norway, Borgen', // about 20 hours
+  f022566: 'active, China, Nanchong', // about 17 hours
+  f022922: 'active, China, Shenzhen', // 1 day
+  f023152: 'active, China, Quanzhou', // about 13 hours
+  f023495: 'active, China, Beijing + USA, Portland', // about 12 hours
+  f023859: 'active, China, Fuzhou', // about 6 hours
+  f023861: 'active, China, Fuzhou', // about 6 hours
+  f023868: 'active, China, Fuzhou', // about 17 hours
   f023869: 'active, China, Fuzhou', // about 6 hours
+  f023870: 'active, China, Fuzhou', // about 6 hours
+  f023876: 'active, China, Fuzhou', // about 6 hours
+  f023977: 'active, China, Fuzhou', // about 6 hours
+  f023978: 'active, China, Fuzhou', // about 6 hours
+  f023980: 'active, China, Fuzhou', // about 13 hours
   f023981: 'active, China, Fuzhou', // about 6 hours
+  f024006: 'active, China, Fuzhou', // about 6 hours
+  f024007: 'active, China, Fuzhou', // about 6 hours
   f024008: 'active, China, Fuzhou', // about 5 hours
   f024014: 'active, China, Fuzhou', // about 5 hours
+  f024015: 'active, USA, Portland', // about 6 hours
+  f024016: 'active, USA, Portland', // about 6 hours
+  f024030: 'active, Korea, Gwangju', // about 14 hours
+  f024066: 'active, NR', // about 7 hours
+  f024081: 'active, China, Fuzhou', // about 6 hours
+  f024084: 'active, China, Fuzhou', // about 6 hours
+  f024085: 'active, China, Fuzhou', // about 6 hours
   f024136: 'active, China, Fuzhou', // about 5 hours
+  f024184: 'active, undefined', // about 8 hours
+  f024468: 'active, China, Shenzhen', // about 17 hours
+  f024800: 'active, China, Hong Kong', // about 13 hours
+  f024969: 'active, NR', // 1 day
+  f025017: 'active, China, Hefei', // about 10 hours
+  f025019: 'active, China, Taiwan, Hsinchu', // about 15 hours
+  f029404: 'active, USA, Portland + New Castle', // about 6 hours
+  f029556: 'active, China, Wuxi', // about 19 hours
+  f030226: 'active, China, Fuzhou', // about 6 hours
+  f030296: 'active, USA, Cary', // about 18 hours
+  f030379: 'active, Korea, Uiwang', // about 19 hours
+  f030391: 'active, China, Chengdu', // about 17 hours
 
   // Active-sealing (active, with in-flight sealing)
 
-  f01241: 'active-sealing, USA, Portland, 6block',
   f02301: 'active-sealing, USA',
-  f02415: 'active-sealing, China, Hong Kong',
-  f02501: 'active-sealing, USA, Portland, 6block',
-  f02514: 'active-sealing, USA, Portland, 6block',
-  f02622: 'active-sealing, USA, Portland, 6block',
-  f02623: 'active-sealing, USA, Portland, 6block',
-  f02645: 'active-sealing, China, Hong Kong',
   f02668: 'active-sealing, China, Chengdu',
-  f05315: 'active-sealing, USA, Portland, 6block',
-  f05316: 'active-sealing, USA, Portland, 6block',
-  f05664: 'active-sealing, China, Shenzhen, 艾比特网络科技',
-  f07819: 'active-sealing, China, Wuxi, YC--wuxi',
-  f07850: 'active-sealing, USA, Portland, 6block',
-  f07990: 'active-sealing, China, Hong Kong',
-  f07998: 'active-sealing, China, Hangzhou',
-  f08025: 'active-sealing, China, Hong Kong',
   f08285: 'active-sealing, Latvia, Riga, stander',
-  f08383: 'active-sealing, USA, Portland, 6block',
-  f09696: 'active-sealing, USA, Portland + Singapore',
-  f010241: 'active-sealing, China, Beijing + USA, Portland',
-  f010253: 'active-sealing, China, Beijing + USA, Portland',
-  f018780: 'active-sealing, Singapore + Germany, Frankfurt + USA',
-  f018781: 'active-sealing, Singapore + Germany, Frankfurt + USA',
-  f018782: 'active-sealing, Singapore + Germany, Frankfurt + USA',
-  f018783: 'active-sealing, Singapore + Germany, Frankfurt + USA',
-  f018785: 'active-sealing, Singapore + Germany, Frankfurt + USA',
   f022853: 'active-sealing, China, Fuzhou',
-  f023495: 'active-sealing, China, Beijing + USA, Portland',
   f023825: 'active-sealing, USA, Portland',
-  f023868: 'active-sealing, China, Fuzhou',
-  f023870: 'active-sealing, China, Fuzhou',
   f023871: 'active-sealing, China, Fuzhou',
-  f023876: 'active-sealing, China, Fuzhou',
-  f023977: 'active-sealing, China, Fuzhou',
-  f023978: 'active-sealing, China, Fuzhou',
-  f023980: 'active-sealing, China, Fuzhou',
-  f024006: 'active-sealing, China, Fuzhou',
   f024012: 'active-sealing, China, Fuzhou',
   f024013: 'active-sealing, China, Fuzhou',
-  f024015: 'active-sealing, USA, Portland',
-  f024085: 'active-sealing, China, Fuzhou',
-  f025017: 'active-sealing, China, Hefei',
 
   // Sealing
 
   f01238: 'sealing, Vietnam, Hanoi, FILECOIN-VIETNAM',
   f01240: 'sealing, Netherlands, HidNand',
-  f01247: 'sealing, Canada, Montreal, BigChungus™',
-  f01272: 'sealing, Singapore',
-  f01278: 'sealing, USA, Grand Rapids, MiMiner',
   f01280: 'sealing, China, Wuxi, 了凡超算',
   f01289: 'sealing, China, Hangzhou + USA',
-  f01782: 'sealing, China, Hong Kong + Singapore + USA, Portland, hellofil.com',
   f01799: 'sealing, China, Jinan, TokenHome',
   f01800: 'sealing, China, Shenzhen + Chengdu',
   f02401: 'sealing, Canada, Chambly, NBFS Canada',
   f02405: 'sealing, China, Shenzhen',
-  f02416: 'sealing, China, Guangdong, 星际无限',
   f02492: 'sealing, China, Shenzhen',
   f02576: 'sealing, Denmark, Gjerlev, BenjaminH',
-  f02606: 'sealing, China, Shanghai',
-  f02619: 'sealing, China, Beijing, Blockcasting',
   f02620: 'sealing, Poland, Krakow, @magik6k',
   f02665: 'sealing, Netherlands, Amsterdam, fm-ops',
-  f03176: 'sealing, USA, San Mateo, Five Star-Helmsman&Heiben',
   f03222: 'sealing, China, Yuncheong, 星云矿池',
   f03223: 'sealing, USA',
   f03224: 'sealing, Ukraine, Irpin, oboltusov',
-  f03273: 'sealing, USA, Portland, 6block',
-  f03274: 'sealing, USA, Portland, 6block',
-  f03275: 'sealing, USA, Portland, 6block',
-  f03302: 'sealing, China, Chengdu',
   f03328: 'sealing, China, Xinxiang',
-  f03339: 'sealing, China, Luzhou, benxun',
   f03340: "sealing, China, Xi'an",
   f03345: 'sealing, China, Fuzhou, chh',
   f03347: 'sealing, undefined',
-  f03363: 'sealing, Singapore',
   f03482: 'sealing, China, Wuxi',
   f03491: 'sealing, China, Hong Kong',
   f03512: 'sealing, New Zealand, Auckland, NZFILECOIN01',
   f03544: 'sealing, China, Guiyang',
   f03624: 'sealing, Germany, Chemnitz, ode',
-  f05317: 'sealing, USA, Portland',
   f07806: 'sealing, China, Wuhan, HelloXP',
-  f07824: 'sealing, China, Shanghai',
-  f08019: 'sealing, China, Yantai, 三合',
-  f08073: 'sealing, China, Qiqihar, QY7TT',
-  f08094: 'sealing, China, Guangzhou, dongshao',
-  f08157: 'sealing, China, Beijing + Germany, Frankfurt, 超星际',
   f08204: 'sealing, USA, St. Louis',
   f08220: 'sealing, China, Shenzhen',
-  f08240: 'sealing, Russia, Novosibirsk, Rabinovitch',
   f08371: 'sealing, China, Chengdu',
-  f08403: 'sealing, UK, Lower Slaughter',
   f08482: 'sealing, USA, Athol, @why',
   f09639: 'sealing, China, Fuzhou',
   f09731: 'sealing, China, Guiyang',
   f09770: "sealing, China, Xi'an",
   f010048: 'sealing, China, Shanghai',
-  f010084: 'sealing, China, Beijing',
-  f010088: 'sealing, DNS:purumine.com',
-  f010247: 'sealing, China, Yantai',
   f010257: 'sealing, China, Hong Kong, DNS:feiyuipfs.com',
   f010399: 'sealing, China, Guangzhou',
   f010446: 'sealing, Netherlands',
-  f010491: 'sealing, China, Shenzhen',
   f010493: 'sealing, China, Shanghai',
-  f010498: 'sealing, China, Shenzhen',
   f010501: 'sealing, China, Hangzhou',
-  f010505: 'sealing, China, Wuhan',
-  f010507: 'sealing, China, Hangzhou',
-  f010512: 'sealing, China, Zhengzhou',
   f010513: 'sealing, China, Chongqing',
-  f010523: 'sealing, China, Beijing',
   f010528: 'sealing, China, Chongqing',
   f010558: 'sealing, China, Shenzhen + Hong Kong',
   f014281: 'sealing, Netherlands, Permerend',
   f014324: 'sealing, Canada, Vancouver',
   f014569: 'sealing, NR',
   f014768: 'sealing, Singapore',
-  f015233: 'sealing, China, Nanjing',
   f015734: 'sealing, China, Qingdao',
   f015877: 'sealing, China, Jiaxing + USA',
   f015941: 'sealing, Ukraine, Kyiv',
-  f016594: 'sealing, Germany',
   f017665: 'sealing, China, Shenyang',
-  f018784: 'sealing, Singapore + Germany, Frankfurt + USA',
   f019041: 'sealing, Singapore',
   f019074: 'sealing, China, Guangdong',
   f019100: 'sealing, Romania, Cluj-Napoca',
@@ -160,95 +194,61 @@ const annotations = {
   f019243: 'sealing, USA, Jackson',
   f019354: 'sealing, Germany, Frankfurt',
   f019362: 'sealing, China, Hangzhou',
-  f019551: 'sealing, UK',
-  f019638: 'sealing, Germany, Frankfurt',
-  f020436: 'sealing, China, Beijing',
   f020489: 'sealing, China, Lioaning',
   f020523: 'sealing, China, Suzhou',
-  f020541: 'sealing, China, Shanghai',
-  f020605: 'sealing, China, Yibin',
   f020904: 'sealing, Korea, Uijeongbu-si',
   f020928: 'sealing, China, Deyang + Singapore',
-  f021255: 'sealing, China, Suzhou + Netherlands',
   f021274: 'sealing, China, Shanghai',
   f021339: 'sealing, China, Jiaxing',
   f021346: 'sealing, China, Shanghai',
   f021357: 'sealing, China, Shanghai',
-  f021444: 'sealing, China, Guangzhou',
   f021532: 'sealing, China, Shanghai',
   f021583: 'sealing, China, Jiaxing',
   f021710: 'sealing, China, Shijiazhuang',
-  f021870: 'sealing, USA, Portland',
   f022072: 'sealing, China, Jieyang',
   f022125: 'sealing, China, Shenzhen',
   f022163: 'sealing, NR',
-  f022227: 'sealing, China, Jiangsu',
-  f022261: 'sealing, China, Luzhou',
   f022287: 'sealing, China, Dongguan',
-  f022289: 'sealing, China, Mianyang',
-  f022352: 'sealing, Norway, Borgen',
   f022376: 'sealing, China, Dongguan',
-  f022566: 'sealing, China, Nanchong',
   f022753: 'sealing, China, Hong Kong',
   f022841: 'sealing, China, Zhongshan',
-  f022922: 'sealing, China, Shenzhen',
   f023013: 'sealing, undefined',
-  f023152: 'sealing, China, Quanzhou',
   f023179: 'sealing, China, Fuzhou',
   f023200: 'sealing, China, Shanghai',
   f023492: 'sealing, China, Beijing',
   f023647: 'sealing, Korea, Gangseo-gu',
   f023649: 'sealing, Korea, Seoul',
   f023858: 'sealing, China, Fuzhou',
-  f023859: 'sealing, China, Fuzhou',
-  f023861: 'sealing, China, Fuzhou',
   f023928: 'sealing, China, Fuzhou',
   f023939: 'sealing, NR',
-  f024007: 'sealing, China, Fuzhou',
-  f024016: 'sealing, USA, Portland',
-  f024030: 'sealing, Korea, Gwangju',
-  f024066: 'sealing, NR',
-  f024081: 'sealing, China, Fuzhou',
-  f024084: 'sealing, China, Fuzhou',
   f024101: 'sealing, China, Guiyang',
   f024130: 'sealing, Korea',
-  f024184: 'sealing, undefined',
-  f024468: 'sealing, China, Shenzhen',
   f024550: 'sealing, China, Wenzhou',
-  f024800: 'sealing, China, Hong Kong',
   f024944: 'sealing, Korea, Yeongdeungpo-dong',
-  f024969: 'sealing, NR',
   f025007: 'sealing, Korea, Gyeonggi-do',
-  f025019: 'sealing, China, Taiwan, Hsinchu',
   f025025: 'sealing, China, Qingdao',
-  f029404: 'sealing, USA, Portland + New Castle',
   f029421: 'sealing, China, Hong Kong',
   f029529: 'sealing, China, Dongguan',
-  f029556: 'sealing, China, Wuxi',
   f029566: 'sealing, NR',
   f029587: 'sealing, Hungary',
   f030144: 'sealing, Korea, Gyeonggi-do',
   f030158: 'sealing, China, Hangzhou',
-  f030226: 'sealing, China, Fuzhou',
   f030230: 'sealing, China, Sichuan',
-  f030296: 'sealing, USA, Cary',
   f030327: 'sealing, China, Beijing',
   f030335: 'sealing, China, Fujian',
   f030338: 'sealing, USA, Santa Fe Springs',
   f030347: 'sealing, China, Zhejiang',
-  f030379: 'sealing, Korea, Uiwang',
-  f030391: 'sealing, China, Chengdu',
   f030518: 'sealing, China, Wuhan',
   f030641: 'sealing, China, Shaanxi',
 
   // Stuck
 
-  f02305: 'stuck, China, Dongguan', // CheckForAcceptance: about 6 hours
-  f019114: 'stuck, USA, Howell', // CheckForAcceptance: about 6 hours
-  f022089: 'stuck, China, Beijing', // CheckForAcceptance: about 6 hours
-  f022202: 'stuck, USA, Howell', // CheckForAcceptance: about 6 hours
-  f024526: 'stuck, Korea', // CheckForAcceptance: about 6 hours
-  f024902: 'stuck, Korea, Incheon', // CheckForAcceptance: about 6 hours
+  f02305: 'stuck, China, Dongguan', // CheckForAcceptance: 1 day
+  f019114: 'stuck, USA, Howell', // CheckForAcceptance: 1 day
+  f022089: 'stuck, China, Beijing', // CheckForAcceptance: 1 day
+  f022202: 'stuck, USA, Howell', // CheckForAcceptance: 1 day
+  f024526: 'stuck, Korea', // CheckForAcceptance: 1 day
+  f024902: 'stuck, Korea, Incheon', // CheckForAcceptance: 1 day
 
   // Busy
 
