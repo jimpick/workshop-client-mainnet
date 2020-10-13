@@ -35,6 +35,7 @@ const baiduCities = {
   150: 'Shijiazhuang', // 石家庄市
   152: 'Xinxiang', // 新乡市
   158: 'Changsha', // 长沙市
+  161: 'Nantong', // 南通市
   163: 'Nanchang', // 南昌市
   167: 'Dalian', // 大连市
   176: 'Taiyuan', // 太原市
