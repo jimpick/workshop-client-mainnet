@@ -96,22 +96,24 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
   if (previous === 'timeout-ask' || previous === 'error-ask') {
     return [previous, '']
   }
+  const dealId = clientDealStatus && `${clientDealStatus.DealID} `
   if (previous === 'active') {
     if (lastDealState === 'Sealing') {
-      return ['active-sealing', '']
+      return ['active-sealing', dealId.trim()]
     }
   }
   if (previous === 'active-sealing') {
     if (lastDealState === 'Sealing') {
       // return ['sealing', ''] // final
-      return ['active-sealing', ''] // in-flight
+      return ['active-sealing', dealId.trim()] // in-flight
     }
   }
   if (lastDealState === 'Sealing') {
-    return ['sealing', '']
+    return ['sealing', dealId.trim()]
   }
   if (lastDealState === 'Active') {
-    return ['active', elapsed]
+    const dealId = clientDealStatus && `${clientDealStatus.DealID} `
+    return ['active', `${dealId}${elapsed}`]
   }
   if (lastDealState === 'Transferring') {
     return ['stuck', `Transferring: ${elapsedNow}`]
