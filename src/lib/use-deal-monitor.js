@@ -2,7 +2,7 @@ import { useEffect, useState, useMemo } from 'react'
 import { useImmer } from 'use-immer'
 import useLotusClient from './use-lotus-client'
 
-const interval = 120 * 1000
+const interval = 30 * 1000
 const expireAfter = 7 * 24 * 60 * 60 * 1000 // 7 days
 
 const terminalStates = new Set([
@@ -15,6 +15,7 @@ export default function useDealMonitor ({ appState, updateAppState }) {
   const [currentNode, setCurrentNode] = useState(0)
   const [ticker, setTicker] = useState(0)
   const [terminated, updateTerminated] = useImmer({})
+  const [checkSet, updateCheckset] = useImmer({})
   const client = useLotusClient(currentNode, 'node')
 
   useEffect(() => {
@@ -30,21 +31,21 @@ export default function useDealMonitor ({ appState, updateAppState }) {
     })
   }, [dealData, updateTerminated])
 
+  /*
   const checkSet = useMemo(() => {
     // console.log('Jim terminated', terminated)
     const checkSet = new Set()
+    checkSet.add(0)
     checkSet.add(1) // Slingshot deals
     if (deals) {
       const now = Date.now()
       for (const deal of deals) {
         const { proposalCid, date, fromNode } = deal
-        /*
         console.log(
           'Checking deal',
           terminated[proposalCid] && 'Terminated',
           deal
         )
-        */
         if (date + expireAfter > now && !terminated[proposalCid]) {
           checkSet.add(fromNode)
         }
@@ -54,15 +55,23 @@ export default function useDealMonitor ({ appState, updateAppState }) {
 
     return checkSet
   }, [deals, terminated])
+  */
+
+  useEffect(() => {
+    updateCheckset(draft => {
+      draft[0] = true
+      draft[1] = true
+    })
+  }, [deals, terminated])
 
   useEffect(() => {
     let state = { canceled: false }
     async function run () {
-      const nodes = [...checkSet]
+      const nodes = Object.keys(checkSet)
       if (nodes.length > 0) {
         for (const node of nodes) {
           if (state.canceled) return
-          // console.log('Checking node', node)
+          console.log('Checking node', node)
           setCurrentNode(node)
           setTicker(Date.now())
           await new Promise(resolve => setTimeout(resolve, interval))
@@ -79,17 +88,21 @@ export default function useDealMonitor ({ appState, updateAppState }) {
   }, [checkSet])
 
   useEffect(() => {
-    // console.log('Run', ticker)
+    console.log('Run', ticker, client)
     let state = { canceled: false }
     if (!client) return
     async function run () {
-      // console.log('Worker', client)
+      console.log('Worker', client, state.canceled)
       if (state.canceled) return
       try {
         const now = Date.now()
         const { Height: height } = await client.chainHead()
+        console.log('Worker2', height, state.canceled)
         if (state.canceled) return
+        console.log('Jim clientListDeals', currentNode)
         const clientDeals = await client.clientListDeals()
+        console.log('Jim clientListDeals done', clientDeals.length, currentNode, Math.floor((Date.now() - now) / 1000) + 's')
+        // console.log('Jim clientListDeals', clientDeals)
         // console.log('Jim clientListDeals', clientDeals)
         updateAppState(draft => {
           if (!draft.dealData) {
