@@ -27,7 +27,7 @@ const annotations = {
   f02633: 'active, China, Hong Kong', // 702647 about 6 hours
   f02645: 'active, China, Hong Kong', // 702644 about 7 hours
   f02822: 'active, China, Chengdu', // 702586 about 13 hours
-  f02824: 'active, undefined', // 702953 about 12 hours
+  f02824: 'active, China, Chengdu', // 702953 about 12 hours
   f03176: 'active, USA, San Mateo, Five Star-Helmsman&Heiben', // 702580 about 8 hours
   f03273: 'active, USA, Portland, 6block', // 702575 about 6 hours
   f03274: 'active, USA, Portland, 6block', // 702646 about 7 hours
@@ -118,7 +118,7 @@ const annotations = {
   f030226: 'active, China, Fuzhou', // 703205 about 6 hours
   f030379: 'active, Korea, Uiwang', // 702625 about 7 hours
   f032835: 'active, Japan, Setagaya-ku', // 702770 about 14 hours
-  f033113: 'active, undefined', // 702973 about 11 hours
+  f033113: 'active, China, Wuxi', // 702973 about 11 hours
 
   // Active-sealing (active, with in-flight sealing)
 
@@ -156,7 +156,7 @@ const annotations = {
   f03264: 'sealing, Korea, Bucheon-si', // 703071
   f03340: "sealing, China, Xi'an", // 702909
   f03345: 'sealing, China, Fuzhou, chh', // 703059
-  f03347: 'sealing, undefined', // 703101
+  f03347: 'sealing, China, Shenzhen', // 703101
   f03482: 'sealing, China, Wuxi', // 703098
   f03544: 'sealing, China, Guiyang', // 703108
   f03624: 'sealing, Germany, Chemnitz, ode', // 703067
@@ -221,15 +221,15 @@ const annotations = {
   f032913: 'sealing, China, Shenzhen', // 702626
   f032951: 'sealing, Korea, Gyeonggi-do', // 703201
   f032976: 'sealing, China, Taiwan, Taipei', // 703292
-  f032977: 'sealing, undefined', // 702954
-  f033091: 'sealing, undefined', // 702974
-  f033111: 'sealing, undefined', // 702959
-  f033124: 'sealing, undefined', // 702972
-  f033206: 'sealing, undefined', // 702963
-  f033438: 'sealing, undefined', // 702962
-  f033517: 'sealing, undefined', // 702968
-  f033557: 'sealing, undefined', // 702978
-  f034039: 'sealing, undefined', // 703992
+  f032977: 'sealing, China, Deyang', // 702954
+  f033091: 'sealing, China, Wuxi', // 702974
+  f033111: 'sealing, China, Shanghai', // 702959
+  f033124: 'sealing, China, Shanghai', // 702972
+  f033206: 'sealing, Canada', // 702963
+  f033438: 'sealing, USA', // 702962
+  f033517: 'sealing, China, Changsha', // 702968
+  f033557: 'sealing, China, Hong Kong', // 702978
+  f034039: 'sealing, Russia', // 703992
 
   // Stuck
 
@@ -260,7 +260,7 @@ const annotations = {
   f022352: 'min-size, Norway, Borgen', // 131072 < 536870912
   f023467: 'min-size, Norway, Oslo', // 131072 < 134217728
   f023565: 'min-size, China, Fuzhou', // 131072 < 134217728
-  f023854: 'min-size, undefined', // 131072 < 134217728
+  f023854: 'min-size, China, Fuzhou', // 131072 < 134217728
   f023855: 'min-size, China, Fuzhou', // 131072 < 134217728
   f023971: 'min-size, USA, @Brian Y', // 131072 < 134217728
   f024146: 'min-size, China, Fuzhou', // 131072 < 134217728
@@ -417,7 +417,7 @@ const annotations = {
   f014251: 'rejected, Singapore',
   f014302: 'rejected, China, Ningbo',
   f014327: 'rejected, China, Ningbo',
-  f014365: 'rejected, undefined', // sh: 1: /home/miner/.lotusminer/dealfilter.pl: Permission denied
+  f014365: 'rejected, Australia, Marrickville + Japan, Heiwajima', // sh: 1: /home/miner/.lotusminer/dealfilter.pl: Permission denied
   f014392: 'rejected, Russia, Khabarovsk + USA + Japan, Heiwajima',
   f014395: 'rejected, China, Dongguan',
   f014472: 'rejected, China, Ningbo',
@@ -467,12 +467,12 @@ const annotations = {
   f023678: 'rejected, China, Jiaxing', // no online
   f023843: 'rejected, NR',
   f023983: 'rejected, China, Chongqing',
-  f024184: 'rejected, undefined', // no online
+  f024184: 'rejected, Korea, Gangnam-gu', // no online
   f029649: 'rejected, China, Beijing',
   f030231: 'rejected, China, Hunan', // sh: 1: /data/lotusstorage/dealfilter.pl: not found
   f032888: 'rejected, China, Weifang',
   f033028: 'rejected, China, Mianyang', // getting client market balance failed
-  f033364: 'rejected, undefined', // no online
+  f033364: 'rejected, Korea, Gyeonggi-do', // no online
 
   // Dial errors
 
@@ -495,7 +495,7 @@ const annotations = {
   f02403: 'dial, UK, London, AIM', // * [/ip4/2.58.45.33/tcp/18888] dial tcp4 0.0.0.0:41049->2.58.45.33:18888: i/o timeout  * [/ip4/2.58.47.71/tcp/18888] dial tcp4 0.0.0.0:41049->2.58.47.71:18888: i/o timeout
   f02414: "dial, China, Xi'an, zhejiangyunchu", // * [/ip4/113.142.1.86/tcp/56768] dial tcp4 113.142.1.86:56768: connect: connection refused
   f02416: 'dial, China, Guangdong, 星际无限', // * [/ip4/103.142.248.7/tcp/2347] dial tcp4 0.0.0.0:41049->103.142.248.7:2347: i/o timeout
-  f02417: 'dial, undefined', // * [/ip4/116.132.221.10/tcp/10240] dial tcp4 116.132.221.10:10240: connect: connection refused
+  f02417: 'dial, China, Liaoning', // * [/ip4/116.132.221.10/tcp/10240] dial tcp4 116.132.221.10:10240: connect: connection refused
   f02418: 'dial, China, Fujian + Netherlands', // * [/ip4/117.48.133.69/tcp/1348] dial tcp4 0.0.0.0:41049->117.48.133.69:1348: i/o timeout  * [/ip4/185.232.59.180/tcp/1348] dial tcp4 0.0.0.0:41049->185.232.59.180:1348: i/o timeout
   f02425: 'dial, USA', // * [/ip4/103.78.229.73/tcp/14567] dial tcp4 103.78.229.73:14567: connect: connection refused
   f02492: 'dial, China, Shenzhen', // * [/ip4/103.142.248.7/tcp/3347] dial tcp4 0.0.0.0:41049->103.142.248.7:3347: i/o timeout
@@ -1005,7 +1005,7 @@ const annotations = {
   f020891: 'dial, China, Wenzhou', // * [/ip4/122.228.196.208/tcp/24001] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWSitZhuvzGB9mxZvC1rN6ubezTJUrHV2nXxWaBvJQ1Bji, but remote key matches 12D3KooWDLC4HXzHjaMegLssFx9HwMmyNzhGc4XmcSSP9rZaSFyv
   f020923: 'dial, China, Cangzhou', // * [/ip4/221.195.3.147/tcp/10240] dial tcp4 0.0.0.0:41049->221.195.3.147:10240: i/o timeout
   f020967: 'dial, China, Chengdu', // * [/ip4/171.221.236.129/tcp/45001] dial tcp4 171.221.236.129:45001: i/o timeout
-  f021075: 'dial, undefined', // * [/ip4/182.148.14.72/tcp/36545] dial tcp4 0.0.0.0:41049->182.148.14.72:36545: i/o timeout
+  f021075: 'dial, China, Chengdu', // * [/ip4/182.148.14.72/tcp/36545] dial tcp4 0.0.0.0:41049->182.148.14.72:36545: i/o timeout
   f021142: 'dial, China, Fuzhou', // * [/ip4/220.176.125.110/tcp/23450] dial tcp4 0.0.0.0:41049->220.176.125.110:23450: i/o timeout
   f021292: 'dial, China, Hong Kong', // * [/ip4/43.228.183.102/tcp/40573] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWKztv937mFfnZpXpHnJP7DFTSMeeJrwjktcs5oSvNmfPN, but remote key matches 12D3KooWQzhuFoqWfap5FT3hD9jTSc1wiP3Sn735mstACYiPuw75
   f021428: 'dial, Norway, Borgen', // * [/ip4/79.160.78.193/tcp/1347] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWAgRs1gYFCWPQopKBh3nZPDfq3yJ7gjyvvmd9dpyw7mHH, but remote key matches 12D3KooWDaYp2U3XiDeYvXVruQ5BwGUxwobQA62fASdvZGZVb4n8
@@ -1092,8 +1092,8 @@ const annotations = {
   f030347: 'dial, China, Zhejiang', // * [/ip4/127.0.0.1/tcp/40197] dial tcp4 127.0.0.1:40197: connect: connection refused  * [/ip6/::1/tcp/42167] dial tcp6 [::1]:42167: connect: connection refused  * [/ip4/101.71.125.165/tcp/40197] dial tcp4 0.0.0.0:41049->101.71.125.165:40197: i/o timeout
   f030355: 'dial, Australia, Brisbane', // * [/ip4/144.137.18.224/tcp/7070] failed to negotiate security protocol: EOF
   f032934: 'dial, Korea, Incheon', // * [/ip4/122.34.253.18/tcp/3960] dial tcp4 0.0.0.0:41049->122.34.253.18:3960: i/o timeout
-  f033109: 'dial, undefined', // * [/ip4/36.248.42.100/tcp/24001] dial tcp4 0.0.0.0:41049->36.248.42.100:24001: i/o timeout
-  f033548: 'dial, undefined', // * [/ip4/36.248.42.100/tcp/24001] dial tcp4 0.0.0.0:41049->36.248.42.100:24001: i/o timeout
+  f033109: 'dial, China, Fuzhou', // * [/ip4/36.248.42.100/tcp/24001] dial tcp4 0.0.0.0:41049->36.248.42.100:24001: i/o timeout
+  f033548: 'dial, China, Fuzhou', // * [/ip4/36.248.42.100/tcp/24001] dial tcp4 0.0.0.0:41049->36.248.42.100:24001: i/o timeout
 
   // XNR (Not routable)
 
@@ -1431,7 +1431,7 @@ const annotations = {
   f019376: 'xnr, NR',
   f019378: 'xnr, China, Changzhou',
   f019401: 'xnr, Brazil, Sao Paulo',
-  f019422: 'xnr, undefined',
+  f019422: 'xnr, South Africa, Johannesburg',
   f019423: 'xnr, South Africa, Johannesburg',
   f019434: 'xnr, NR',
   f019437: 'xnr, Korea, Guro-gu',
@@ -1581,7 +1581,7 @@ const annotations = {
   f022954: 'xnr, NR',
   f022970: 'xnr, NR',
   f022996: 'xnr, NR',
-  f023013: 'xnr, undefined',
+  f023013: 'xnr, China, Hong Kong',
   f023021: 'xnr, Korea, Yeongdeungpo-dong',
   f023108: 'xnr, China, Dongguan',
   f023159: 'xnr, NR',
@@ -1615,7 +1615,7 @@ const annotations = {
   f024089: 'xnr, NR',
   f024101: 'xnr, China, Guiyang',
   f024129: 'xnr, China, Zhejiang',
-  f024153: 'xnr, undefined',
+  f024153: 'xnr, NR',
   f024165: 'xnr, NR',
   f024483: 'xnr, NR',
   f024496: 'xnr, China, Dongguan',
@@ -1642,18 +1642,18 @@ const annotations = {
   f030203: 'xnr, NR',
   f030272: 'xnr, NR',
   f030384: 'xnr, NR',
-  f030408: 'xnr, undefined',
-  f030509: 'xnr, undefined',
-  f030510: 'xnr, undefined',
+  f030408: 'xnr, NR',
+  f030509: 'xnr, NR',
+  f030510: 'xnr, NR',
   f030511: 'xnr, NR',
   f030514: 'xnr, NR',
   f030521: 'xnr, China, Hong Kong',
   f030608: 'xnr, China, Mianyang',
-  f032824: 'xnr, undefined',
+  f032824: 'xnr, NR',
   f032833: 'xnr, NR',
-  f032887: 'xnr, undefined',
+  f032887: 'xnr, NR',
   f032904: 'xnr, Korea',
-  f032922: 'xnr, undefined'
+  f032922: 'xnr, NR'
 }
 
 export default annotations
