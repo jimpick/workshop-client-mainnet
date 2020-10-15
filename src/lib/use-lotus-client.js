@@ -18,6 +18,8 @@ export default function useLotusClient (nodeNumber, nodeOrMiner) {
       `/${nodeNumber}/${nodeOrMiner}/rpc/v0`
     const provider = new BrowserProvider(wsUrl, {
       token: async () => {
+        const token = localStorage.getItem(`token-${nodeOrMiner}-${nodeNumber}`)
+        if (token) return token
         const tokenUrl =
           (secure ? 'https://' : 'http://') +
           api +
