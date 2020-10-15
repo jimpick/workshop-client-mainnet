@@ -4,37 +4,7 @@ import copy from 'clipboard-copy'
 import useLotusClient from '../../lib/use-lotus-client'
 import annotationsCamera from '../../annotations-spacerace.js'
 import annotationsSlingshot from '../../annotations-spacerace-slingshot-medium'
-
-const dealStateNames = [
-  // go-fil-markets/storagemarket/dealstatus.go
-  'Unknown', // 0
-  'ProposalNotFound', // 1
-  'ProposalRejected', // 2
-  'ProposalAccepted', // 3
-  'Staged', // 4
-  'Sealing', // 5
-  'RecordPiece', // 6
-  'Active', // 7
-  'Expired', // 8
-  'Slashed', // 9
-  'Rejecting', // 10
-  'Failing', // 11
-  'FundsEnsured', // 12
-  'StorageDealCheckForAcceptance', // 13
-  'Validating', // 14
-  'AcceptWait', // 15
-  'StartDataTransfer', // 16
-  'Transferring', // 17
-  'WaitingForData', // 18
-  'VerifyData', // 19
-  'EnsureProviderFunds', // 20
-  'EnsureClientFunds', // 21
-  'ProviderFunding', // 22
-  'ClientFunding', // 23
-  'Publish', // 24
-  'Publishing', // 25
-  'Error' // 26
-]
+import dealStateNames from '../deal-state-names'
 
 function DealHistory ({ dealHistoryData, height }) {
   if (!dealHistoryData || !height) return null
@@ -118,7 +88,7 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
   if (lastDealState === 'Transferring') {
     return ['stuck', `Transferring: ${elapsedNow}`]
   }
-  if (lastDealState === 'StorageDealCheckForAcceptance') {
+  if (lastDealState === 'CheckForAcceptance') {
     return ['stuck', `CheckForAcceptance: ${elapsedNow}`]
   }
   if (lastDealState === 'ProposalAccepted') {
@@ -126,6 +96,9 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
   }
   if (lastDealState === 'FundsEnsured') {
     return ['stuck', `FundsEnsured: ${elapsedNow}`]
+  }
+  if (lastDealState === 'ClientTransferRestart') {
+    return ['stuck', `ClientTransferRestart: ${elapsedNow}`]
   }
   if (lastDealState === 'Error') {
     const matchRetest = dealMessage.match(
