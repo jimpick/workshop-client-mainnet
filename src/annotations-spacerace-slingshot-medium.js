@@ -11,51 +11,175 @@ const annotations = {
   // Candidates
 
   f01234: 'candidate, Belgium, De Klinge, Eliovp',
+  f01238: 'candidate, Vietnam, Hanoi, FILECOIN-VIETNAM',
   f01240: 'candidate, Netherlands, HidNand',
+  f01247: 'candidate, Canada, Montreal, BigChungus™',
+  f01272: 'candidate, Singapore',
+  f01278: 'candidate, USA, Grand Rapids, MiMiner',
   f01279: 'candidate, China, Sichuan',
+  f01280: 'candidate, China, Wuxi, 了凡超算',
+  f01287: 'candidate, China, Jiaxing, MaiTian',
+  f01289: 'candidate, China, Hangzhou + USA',
+  f01782:
+    'candidate, China, Hong Kong + Singapore + USA, Portland, hellofil.com',
+  f01799: 'candidate, China, Jinan, TokenHome',
   f02299: 'candidate, China, Dongguan, Yolo',
+  f02301: 'candidate, USA',
   f02381: 'candidate, China, Dongguan, 西野七濑迷叔',
+  f02399: 'candidate, China, Zhejiang',
   f02405: 'candidate, China, Shenzhen',
+  f02415: 'candidate, China, Hong Kong',
   f02419: 'candidate, China, Shanghai, yuantai',
   f02423: 'candidate, Ukraine, Kyiv, igowreck',
   f02490: 'candidate, China, Fujian',
+  f02620: 'candidate, Poland, Krakow, @magik6k',
+  f02622: 'candidate, USA, Portland, 6block',
+  f02623: 'candidate, USA, Portland, 6block',
   f02625: 'candidate, China, Shanghai, IPFS星际工厂',
+  f02645: 'candidate, China, Hong Kong',
+  f02822: 'candidate, China, Chengdu',
+  f02824: 'candidate, China, Chengdu',
+  f03176: 'candidate, USA, San Mateo, Five Star-Helmsman&Heiben',
   f03194: 'candidate, China, Shenzhen, 成都云存&Npool',
+  f03222: 'candidate, China, Yuncheong, 星云矿池',
   f03224: 'candidate, Ukraine, Irpin, oboltusov',
+  f03273: 'candidate, USA, Portland, 6block',
+  f03274: 'candidate, USA, Portland, 6block',
+  f03275: 'candidate, USA, Portland, 6block',
+  f03302: 'candidate, China, Chengdu',
   f03339: 'candidate, China, Luzhou, benxun',
+  f03345: 'candidate, China, Fuzhou, chh',
+  f03363: 'candidate, Singapore',
+  f03488: 'candidate, Korea, Geumcheon-gu',
   f03491: 'candidate, China, Hong Kong',
+  f05316: 'candidate, USA, Portland, 6block',
   f05664: 'candidate, China, Shenzhen, 艾比特网络科技',
+  f07819: 'candidate, China, Wuxi, YC--wuxi',
+  f07824: 'candidate, China, Shanghai',
+  f07850: 'candidate, USA, Portland, 6block',
   f07919: 'candidate, China, Beijing, Shanghai, Hunan',
   f07990: 'candidate, China, Hong Kong',
+  f07998: 'candidate, China, Hangzhou',
+  f08019: 'candidate, China, Yantai, 三合',
+  f08025: 'candidate, China, Hong Kong',
+  f08091: 'candidate, USA',
+  f08157: 'candidate, China, Beijing + Germany, Frankfurt, 超星际',
+  f08220: 'candidate, China, Shenzhen',
+  f08240: 'candidate, Russia, Novosibirsk, Rabinovitch',
+  f08264: 'candidate, China, Xianning',
+  f08403: 'candidate, UK, Lower Slaughter',
+  f08474: 'candidate, China, Hong Kong',
+  f09573: 'candidate, China, Xiamen',
   f09589: 'candidate, China, Changsha',
+  f09696: 'candidate, USA, Portland + Singapore',
+  f09770: "candidate, China, Xi'an",
   f09848: 'candidate, USA',
+  f010035: 'candidate, Netherlands',
+  f010247: 'candidate, China, Yantai',
+  f010399: 'candidate, China, Guangzhou',
+  f010400: 'candidate, China, Shenyang',
+  f010446: 'candidate, Netherlands',
+  f010479: 'candidate, France, Fontenay-sous-Bois',
+  f010491: 'candidate, China, Shenzhen',
+  f010493: 'candidate, China, Shanghai',
+  f010498: 'candidate, China, Shenzhen',
+  f010501: 'candidate, China, Hangzhou',
+  f010505: 'candidate, China, Wuhan',
+  f010507: 'candidate, China, Hangzhou',
+  f010513: 'candidate, China, Chongqing',
+  f010528: 'candidate, China, Chongqing',
+  f014324: 'candidate, Canada, Vancouver',
+  f014394: 'candidate, China, Suzhou',
+  f014569: 'candidate, NR',
+  f014768: 'candidate, Singapore',
+  f015877: 'candidate, China, Jiaxing + USA',
+  f015927: 'candidate, USA, East Islip',
   f015941: 'candidate, Ukraine, Kyiv',
+  f018501: 'candidate, China, Beijing',
+  f018780: 'candidate, Singapore + Germany, Frankfurt + USA',
   f018781: 'candidate, Singapore + Germany, Frankfurt + USA',
   f018782: 'candidate, Singapore + Germany, Frankfurt + USA',
+  f018784: 'candidate, Singapore + Germany, Frankfurt + USA',
+  f019029: 'candidate, Serbia, Boljevac',
+  f019100: 'candidate, Romania, Cluj-Napoca',
+  f019240: 'candidate, China, Beijing',
+  f019551: 'candidate, UK',
+  f019638: 'candidate, Germany, Frankfurt',
   f019661: 'candidate, Russia, Pyatigorsk',
   f020489: 'candidate, China, Lioaning',
+  f020523: 'candidate, China, Suzhou',
+  f020541: 'candidate, China, Shanghai',
   f020608: 'candidate, Russia',
   f020904: 'candidate, Korea, Uijeongbu-si',
+  f021255: 'candidate, China, Suzhou + Netherlands',
   f021262: 'candidate, China, Shanghai',
+  f021265: 'candidate, China, Wuhan',
+  f021444: 'candidate, China, Guangzhou',
   f021532: 'candidate, China, Shanghai',
+  f021540: 'candidate, Germany, Frankfurt, @hsanjuan',
+  f021870: 'candidate, USA, Portland',
+  f022072: 'candidate, China, Jieyang',
+  f022142: 'candidate, USA, Queens',
+  f022163: 'candidate, NR',
+  f022227: 'candidate, China, Jiangsu',
+  f022352: 'candidate, Norway, Borgen',
+  f022522: 'candidate, China, Dongguan',
+  f022853: 'candidate, China, Fuzhou',
+  f023492: 'candidate, China, Beijing',
+  f023495: 'candidate, China, Beijing + USA, Portland',
+  f023565: 'candidate, China, Fuzhou',
+  f023647: 'candidate, Korea, Gangseo-gu',
   f023649: 'candidate, Korea, Seoul',
   f023660: 'candidate, China, Fuzhou',
   f023662: 'candidate, China, Fuzhou',
+  f023825: 'candidate, USA, Portland',
+  f023854: 'candidate, undefined',
+  f023855: 'candidate, China, Fuzhou',
   f023858: 'candidate, China, Fuzhou',
+  f023870: 'candidate, China, Fuzhou',
   f023871: 'candidate, China, Fuzhou',
+  f023928: 'candidate, China, Fuzhou',
   f023939: 'candidate, NR',
+  f023971: 'candidate, USA, @Brian Y',
+  f024006: 'candidate, China, Fuzhou',
+  f024012: 'candidate, China, Fuzhou',
+  f024013: 'candidate, China, Fuzhou',
   f024014: 'candidate, China, Fuzhou',
+  f024025: 'candidate, China, Chengdu',
+  f024030: 'candidate, Korea, Gwangju',
+  f024066: 'candidate, NR',
+  f024081: 'candidate, China, Fuzhou',
+  f024084: 'candidate, China, Fuzhou',
+  f024085: 'candidate, China, Fuzhou',
   f024127: 'candidate, China, Fuzhou',
   f024136: 'candidate, China, Fuzhou',
   f024146: 'candidate, China, Fuzhou',
+  f024147: 'candidate, China, Fuzhou',
+  f024148: 'candidate, China, Fuzhou',
+  f024156: 'candidate, USA',
+  f024468: 'candidate, China, Shenzhen',
+  f024800: 'candidate, China, Hong Kong',
+  f024969: 'candidate, NR',
+  f025017: 'candidate, China, Hefei',
+  f025019: 'candidate, China, Taiwan, Hsinchu',
+  f029368: 'candidate, Korea, Gangseo-gu',
   f029377: 'candidate, China, Suzhou',
   f029404: 'candidate, USA, Portland + New Castle',
+  f029490: 'candidate, NR',
+  f029524: 'candidate, China, Hong Kong',
   f029580: 'candidate, China, Maoming',
+  f030226: 'candidate, China, Fuzhou',
   f030230: 'candidate, China, Sichuan',
+  f030335: 'candidate, China, Fujian',
+  f030379: 'candidate, Korea, Uiwang',
   f030391: 'candidate, China, Chengdu',
+  f032835: 'candidate, Japan, Setagaya-ku',
+  f032913: 'candidate, China, Shenzhen',
   f032977: 'candidate, China, Deyang',
   f033048: 'candidate, USA, Ashburn',
   f033091: 'candidate, China, Wuxi',
+  f033113: 'candidate, China, Wuxi',
+  f033557: 'candidate, China, Hong Kong',
 
   // Testing
 
@@ -215,80 +339,6 @@ const annotations = {
   // Min-ask
 
   // Error
-
-  f01280: 'error, China, Wuxi, 了凡超算', // failed to initiate data transfer: deal data transfer failed: response rejected
-  f01287: 'error, China, Jiaxing, MaiTian', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f01289: 'error, China, Hangzhou + USA', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f01799: 'error, China, Jinan, TokenHome', // failed to restart data transfer: channelId on client deal is nil
-  f02399: 'error, China, Zhejiang', // failed to restart data transfer: channelId on client deal is nil
-  f02415: 'error, China, Hong Kong', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
-  f02619: 'error, undefined', // failed to initiate data transfer: deal data transfer failed: response rejected
-  f02622: 'error, USA, Portland, 6block', // error in deal activation: failed to set up called handler: called check error (h: 147290): client: failed to look up deal on chain: deal 610403 not found
-  f02623: 'error, USA, Portland, 6block', // error in deal activation: failed to set up called handler: called check error (h: 147290): client: failed to look up deal on chain: deal 610920 not found
-  f02666: 'error, undefined', // failed to initiate data transfer: deal data transfer failed: response rejected
-  f02822: 'error, China, Chengdu', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
-  f02824: 'error, China, Chengdu', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
-  f03222: 'error, China, Yuncheong, 星云矿池', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f03345: 'error, China, Fuzhou, chh', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f07824: 'error, China, Shanghai', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f07850: 'error, USA, Portland, 6block', // error in deal activation: failed to set up called handler: called check error (h: 146885): client: failed to look up deal on chain: deal 610523 not found
-  f07982: 'error, undefined', // failed to initiate data transfer: deal data transfer failed: response rejected
-  f07998: 'error, China, Hangzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f08025: 'error, China, Hong Kong', // failed to initiate data transfer: deal data transfer failed: response rejected
-  f08091: 'error, USA', // stream reset
-  f08220: 'error, China, Shenzhen', // failed to restart data transfer: channelId on client deal is nil
-  f08264: 'error, China, Xianning', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
-  f09573: 'error, China, Xiamen', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
-  f010035: 'error, Netherlands', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f010399: 'error, China, Guangzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f010493: 'error, China, Shanghai', // failed to initiate data transfer: deal data transfer failed: response rejected
-  f010501: 'error, China, Hangzhou', // failed to initiate data transfer: deal data transfer failed: response rejected
-  f010505: 'error, China, Wuhan', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
-  f010513: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f010523: 'error, undefined', // failed to initiate data transfer: deal data transfer failed: response rejected
-  f010528: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f014324: 'error, Canada, Vancouver', // error in deal activation: failed to set up called handler: called check error (h: 147290): client: failed to look up deal on chain: deal 636892 not found
-  f014394: 'error, China, Suzhou', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
-  f014569: 'error, NR', // failed to initiate data transfer: deal data transfer failed: response rejected
-  f015877: 'error, China, Jiaxing + USA', // error in deal activation: failed to set up called handler: called check error (h: 146885): client: failed to look up deal on chain: deal 610556 not found
-  f017665: 'error, undefined', // failed to initiate data transfer: deal data transfer failed: response rejected
-  f018501: 'error, China, Beijing', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
-  f018780: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f018784: 'error, Singapore + Germany, Frankfurt + USA', // failed to restart data transfer: channelId on client deal is nil
-  f019041: 'error, undefined', // failed to initiate data transfer: deal data transfer failed: response rejected
-  f019100: 'error, Romania, Cluj-Napoca', // error in deal activation: failed to set up called handler: called check error (h: 147290): client: failed to look up deal on chain: deal 638470 not found
-  f019240: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f019638: 'error, Germany, Frankfurt', // failed to restart data transfer: channelId on client deal is nil
-  f020523: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f020605: 'error, undefined', // failed to restart data transfer: channelId on client deal is nil
-  f021265: 'error, China, Wuhan', // failed to initiate data transfer: failed to open push data channel: Unable to send request: failed to find any peer in table
-  f021444: 'error, China, Guangzhou', // failed to initiate data transfer: deal data transfer failed: response rejected
-  f022287: 'error, undefined', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
-  f022289: 'error, undefined', // error in deal activation: failed to set up called handler: called check error (h: 146885): client: failed to look up deal on chain: deal 610397 not found
-  f022522: 'error, China, Dongguan', // failed to restart data transfer: channelId on client deal is nil
-  f022853: 'error, China, Fuzhou', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
-  f023179: 'error, undefined', // failed to initiate data transfer: deal data transfer failed: response rejected
-  f023565: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f023825: 'error, USA, Portland', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f023853: 'error, undefined', // failed to restart data transfer: channelId on client deal is nil
-  f023855: 'error, China, Fuzhou', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
-  f023870: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f023928: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f024006: 'error, China, Fuzhou', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
-  f024025: 'error, China, Chengdu', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
-  f024101: 'error, undefined', // failed to initiate data transfer: deal data transfer failed: response rejected
-  f024147: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f024148: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f024156: 'error, USA', // error in deal activation: failed to set up called handler: called check error (h: 146885): client: failed to look up deal on chain: deal 611099 not found
-  f024468: 'error, China, Shenzhen', // failed to restart data transfer: channelId on client deal is nil
-  f025025: 'error, undefined', // failed to restart data transfer: channelId on client deal is nil
-  f029421: 'error, undefined', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: protocol not supported
-  f030226: 'error, China, Fuzhou', // failed to restart data transfer: channelId on client deal is nil
-  f030335: 'error, China, Fujian', // error in deal activation: failed to set up called handler: called check error (h: 147290): client: failed to look up deal on chain: deal 636939 not found
-  f030338: 'error, USA, Santa Fe Springs', // error in deal activation: failed to set up called handler: called check error (h: 147290): client: failed to look up deal on chain: deal 637119 not found
-  f032913: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: response rejected
-  f033113: 'error, China, Wuxi', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f033557: 'error, China, Hong Kong', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
 
   // Rejected
 
