@@ -242,6 +242,31 @@ const annotations = {
 
   // New
 
+  f022791: 'new, NR',
+  f029546: 'new, NR',
+  f030386: 'new, NR',
+  f030531: 'new, NR',
+  f033014: 'new, NR',
+  f033025: 'new, Korea',
+  f033130: 'new, NR',
+  f033209: 'new, NR',
+  f033224: 'new, NR',
+  f033384: 'new, NR',
+  f033399: 'new, NR',
+  f033456: 'new, NR',
+  f033462: 'new, NR',
+  f034075: 'new, Japan',
+  f034084: 'new, China, Chongqing',
+  f034229: 'new, USA, Minneapolis',
+  f034258: 'new, China, Mianyang',
+  f034311: 'new, Korea, Gangnam-gu',
+  f034350: 'new, China, Zhengshou',
+  f034362: 'new, China, Sichuan',
+  f034380: 'new, Korea, Gyeonggi-do',
+  f034652: 'new, Korea, Yeongdeungpo-dong',
+  f034733: 'new, China, Hong Kong',
+  f034808: 'new, Korea, Incheon',
+
   // Min Size
 
   f02576: 'min-size, Denmark, Gjerlev, BenjaminH', // 131072 < 1073741824
