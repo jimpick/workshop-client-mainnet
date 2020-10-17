@@ -348,6 +348,7 @@ function BucketDealList ({
           toAnnotationsMap[miner] = {
             toBucket: bucket,
             shortAnnotation,
+            comment: 'carry-over',
             date: now
           }
         }
@@ -456,12 +457,12 @@ export default function DealList ({ appState, cid, dealType }) {
     annotations = annotationsCamera
     buckets = [
       'retest',
+      'new',
       'active',
       'active-sealing',
       'sealing',
       'stuck',
       'busy',
-      'new',
       'min-size',
       'min-ask',
       'error',
@@ -483,15 +484,13 @@ export default function DealList ({ appState, cid, dealType }) {
       'stuck',
       'min-size',
       'min-ask',
-      'xfr-failed',
       'error',
-      'timeout-ask',
-      'error-ask',
       'backoff',
       'rejected',
       'dial',
       'xnr',
-      'unknown'
+      'error-ask',
+      'unknown',
     ]
   } else {
     return <p>Error</p>
