@@ -74,10 +74,12 @@ export default function Deals ({ appState, updateAppState }) {
 
   async function importSlingshot () {
     console.log('Jim import slingshot deals')
-    const baseUrl = 'https://raw.githubusercontent.com/jimpick/filecoin-wiki-test/master/'
+    const baseUrl =
+      'https://raw.githubusercontent.com/jimpick/filecoin-wiki-test/master/'
     const urls = [
       'wiki-small-blocks-combined/deals/f021682.json',
       'wiki-small-blocks-combined-128/deals/f021682.json'
+      // 'wiki-small-blocks-combined-128/deals/f021682-fix.json'
     ]
     let slingshotDeals = []
     for (const url of urls) {
