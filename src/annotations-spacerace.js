@@ -262,6 +262,21 @@ const annotations = {
 
   // New
 
+  f033125: 'new, NR',
+  f035364: 'new, NR',
+  f039800: 'new, China, Chengdu',
+  f040218: 'new, China, Wuxi',
+  f041893: 'new, Korea, Uiwang',
+  f042489: 'new, UK, Chipping Norton',
+  f042896: 'new, NR',
+  f042901: 'new, Germany',
+  f043183: 'new, Germany',
+  f043306: 'new, Japan',
+  f043376: 'new, Korea, Incheon',
+  f044054: 'new, Korea, Busan',
+  f044143: 'new, China, Taiwan, Taipei',
+
+
   // Min Size
 
   f01234: 'min-size, Belgium, De Klinge, Eliovp', // 131072 < 268435456
