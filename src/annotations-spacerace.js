@@ -12,64 +12,114 @@
 const annotations = {
   // Active
 
+  f01247: 'active, Canada, Montreal, BigChungus™', // 834621 about 8 hours
+  f02415: 'active, China, Hong Kong', // 834622 about 5 hours
+  f02416: 'active, China, Guangdong, 星际无限', // 834762 about 9 hours
+  f02514: 'active, USA, Portland, 6block', // 834763 about 5 hours
+  f02622: 'active, USA, Portland, 6block', // 834624 about 5 hours
+  f02623: 'active, USA, Portland, 6block', // 834643 about 6 hours
+  f02633: 'active, China, Hong Kong', // 834640 about 5 hours
+  f02645: 'active, China, Hong Kong', // 834631 about 5 hours
+  f02824: 'active, China, Chengdu', // 834770 about 13 hours
+  f03176: 'active, USA, San Mateo, Five Star-Helmsman&Heiben', // 834637 about 13 hours
+  f03302: 'active, China, Chengdu', // 835224 about 14 hours
+  f03339: 'active, China, Luzhou, benxun', // 834642 about 12 hours
+  f03488: 'active, Korea, Geumcheon-gu', // 834626 about 9 hours
+  f03491: 'active, China, Hong Kong', // 834652 about 5 hours
+  f05315: 'active, USA, Portland, 6block', // 834649 about 5 hours
+  f05316: 'active, USA, Portland, 6block', // 834658 about 5 hours
+  f05317: 'active, USA, Portland', // 834648 about 6 hours
+  f07709: 'active, Korea, Dongjak-gu', // 834660 about 10 hours
+  f07850: 'active, USA, Portland, 6block', // 834653 about 6 hours
+  f08019: 'active, China, Yantai, 三合', // 834662 about 11 hours
+  f08025: 'active, China, Hong Kong', // 834650 about 5 hours
+  f08264: 'active, China, Xianning', // 834659 about 7 hours
+  f08403: 'active, UK, Lower Slaughter', // 834663 about 11 hours
+  f08474: 'active, China, Hong Kong', // 834661 about 12 hours
+  f09693: 'active, USA, Portland + Singapore', // 834666 about 5 hours
+  f010241: 'active, China, Beijing + USA, Portland', // 834667 about 5 hours
+  f010247: 'active, China, Yantai', // 835326 about 10 hours
+  f010491: 'active, China, Shenzhen', // 834673 about 12 hours
+  f010505: 'active, China, Wuhan', // 834691 about 8 hours
+  f010513: 'active, China, Chongqing', // 834690 about 8 hours
+  f010528: 'active, China, Chongqing', // 834689 about 11 hours
+  f010558: 'active, China, Shenzhen + Hong Kong', // 834685 about 9 hours
+  f018780: 'active, Singapore + Germany, Frankfurt + USA', // 835084 about 5 hours
+  f018781: 'active, Singapore + Germany, Frankfurt + USA', // 834717 about 5 hours
+  f018782: 'active, Singapore + Germany, Frankfurt + USA', // 835082 about 5 hours
+  f018783: 'active, Singapore + Germany, Frankfurt + USA', // 835065 about 5 hours
+  f018784: 'active, Singapore + Germany, Frankfurt + USA', // 834695 about 5 hours
+  f019362: 'active, China, Hangzhou', // 834866 about 15 hours
+  f020523: 'active, China, Suzhou', // 834703 about 12 hours
+  f021535: 'active, China, Chengdu', // 834870 about 14 hours
+  f021716: 'active, New Zealand, Wellington', // 836101 about 11 hours
+  f022522: 'active, China, Dongguan', // 835004 about 13 hours
+  f022566: 'active, China, Nanchong', // 834720 about 10 hours
+  f022853: 'active, China, Fuzhou', // 834793 about 7 hours
+  f023495: 'active, China, Beijing + USA, Portland', // 834723 about 5 hours
+  f023565: 'active, China, Fuzhou', // 834992 about 5 hours
+  f023647: 'active, Korea, Gangseo-gu', // 834909 about 10 hours
+  f023649: 'active, Korea, Seoul', // 834724 about 9 hours
+  f023660: 'active, China, Fuzhou', // 835118 about 5 hours
+  f023662: 'active, China, Fuzhou', // 835130 about 5 hours
+  f023825: 'active, USA, Portland', // 834732 about 5 hours
+  f023853: 'active, China, Fuzhou', // 834998 about 6 hours
+  f023854: 'active, China, Fuzhou', // 835131 about 5 hours
+  f023858: 'active, China, Fuzhou', // 834906 about 9 hours
+  f023859: 'active, China, Fuzhou', // 835127 about 5 hours
+  f023861: 'active, China, Fuzhou', // 834734 about 5 hours
+  f023928: 'active, China, Fuzhou', // 835001 about 6 hours
+  f024006: 'active, China, Fuzhou', // 835014 about 6 hours
+  f024007: 'active, China, Fuzhou', // 835142 about 5 hours
+  f024008: 'active, China, Fuzhou', // 834735 about 5 hours
+  f024012: 'active, China, Fuzhou', // 834722 about 6 hours
+  f024015: 'active, USA, Portland', // 834725 about 5 hours
+  f024016: 'active, USA, Portland', // 834730 about 5 hours
+  f024081: 'active, undefined', // 838654 about 5 hours
+  f024084: 'active, China, Fuzhou', // 834901 about 5 hours
+  f024184: 'active, Korea, Gangnam-gu', // 834739 about 12 hours
+  f024511: 'active, NR', // 834738 about 6 hours
+  f024800: 'active, China, Hong Kong', // 834744 about 7 hours
+  f025017: 'active, China, Hefei', // 834740 about 8 hours
+  f029368: 'active, Korea, Gangseo-gu', // 834923 about 13 hours
+  f029401: 'active, USA, Portland + New Castle', // 834748 about 7 hours
+  f029404: 'active, USA, Portland + New Castle', // 834752 about 5 hours
+  f029524: 'active, China, Hong Kong', // 834925 about 9 hours
+  f030226: 'active, China, Fuzhou', // 834754 about 8 hours
+  f030335: 'active, China, Fujian', // 835027 about 5 hours
+  f033111: 'active, China, Shanghai', // 835078 about 11 hours
+  f033189: 'active, China, Zhejiang', // 835049 about 14 hours
+  f033545: 'active, China, Shenzhen + USA', // 834928 about 13 hours
+  f034047: 'active, China, Hangzhou', // 835043 about 8 hours
+  f035436: 'active, China, Jiangsu', // 834935 about 12 hours
+  f039873: 'active, China, Fuzhou', // 834934 about 9 hours
+
   // Active-sealing (active, with in-flight sealing)
 
   f01241: 'active-sealing, USA, Portland, 6block', // 834758
-  f01247: 'active-sealing, Canada, Montreal, BigChungus™', // 834621
   f01272: 'active-sealing, Singapore', // 834764
   f01287: 'active-sealing, China, Jiaxing, MaiTian', // 834767
-  f02415: 'active-sealing, China, Hong Kong', // 834622
-  f02416: 'active-sealing, China, Guangdong, 星际无限', // 834762
   f02501: 'active-sealing, USA, Portland, 6block', // 834761
-  f02514: 'active-sealing, USA, Portland, 6block', // 834763
-  f02622: 'active-sealing, USA, Portland, 6block', // 834624
-  f02623: 'active-sealing, USA, Portland, 6block', // 834643
-  f02633: 'active-sealing, China, Hong Kong', // 834640
-  f02645: 'active-sealing, China, Hong Kong', // 834631
-  f02824: 'active-sealing, China, Chengdu', // 834770
-  f03176: 'active-sealing, USA, San Mateo, Five Star-Helmsman&Heiben', // 834637
   f03273: 'active-sealing, USA, Portland, 6block', // 834635
   f03274: 'active-sealing, USA, Portland, 6block', // 834768
   f03275: 'active-sealing, USA, Portland, 6block', // 834628
-  f03339: 'active-sealing, China, Luzhou, benxun', // 834642
-  f03488: 'active-sealing, Korea, Geumcheon-gu', // 834626
-  f03491: 'active-sealing, China, Hong Kong', // 834652
-  f05315: 'active-sealing, USA, Portland, 6block', // 834649
-  f05316: 'active-sealing, USA, Portland, 6block', // 834658
-  f05317: 'active-sealing, USA, Portland', // 834648
-  f07709: 'active-sealing, Korea, Dongjak-gu', // 834660
   f07819: 'active-sealing, China, Wuxi, YC--wuxi', // 834775
-  f07850: 'active-sealing, USA, Portland, 6block', // 834653
   f07990: 'active-sealing, China, Hong Kong', // 834773
   f07998: 'active-sealing, China, Hangzhou', // 834776
-  f08019: 'active-sealing, China, Yantai, 三合', // 834662
-  f08025: 'active-sealing, China, Hong Kong', // 834650
   f08157: 'active-sealing, China, Beijing + Germany, Frankfurt, 超星际', // 834774
   f08240: 'active-sealing, Russia, Novosibirsk, Rabinovitch', // 834771
-  f08264: 'active-sealing, China, Xianning', // 834659
   f08383: 'active-sealing, USA, Portland, 6block', // 834772
-  f08403: 'active-sealing, UK, Lower Slaughter', // 834663
-  f08474: 'active-sealing, China, Hong Kong', // 834661
-  f09693: 'active-sealing, USA, Portland + Singapore', // 834666
   f09696: 'active-sealing, USA, Portland + Singapore', // 834777
   f010088: 'active-sealing, DNS:purumine.com', // 834950
-  f010241: 'active-sealing, China, Beijing + USA, Portland', // 834667
   f010253: 'active-sealing, China, Beijing + USA, Portland', // 834669
   f010400: 'active-sealing, China, Shenyang', // 834672
   f010446: 'active-sealing, Netherlands', // 834698
   f010479: 'active-sealing, France, Fontenay-sous-Bois', // 834679
-  f010491: 'active-sealing, China, Shenzhen', // 834673
   f010498: 'active-sealing, China, Shenzhen', // 834949
-  f010505: 'active-sealing, China, Wuhan', // 834691
   f010507: 'active-sealing, China, Hangzhou', // 834780
-  f010513: 'active-sealing, China, Chongqing', // 834690
-  f010528: 'active-sealing, China, Chongqing', // 834689
-  f010558: 'active-sealing, China, Shenzhen + Hong Kong', // 834685
   f014768: 'active-sealing, Singapore', // 834790
   f016594: 'active-sealing, Germany', // 834789
   f017665: 'active-sealing, China, Shenyang', // 834688
-  f018781: 'active-sealing, Singapore + Germany, Frankfurt + USA', // 834717
-  f018784: 'active-sealing, Singapore + Germany, Frankfurt + USA', // 834695
   f018785: 'active-sealing, Singapore + Germany, Frankfurt + USA', // 834786
   f019240: 'active-sealing, China, Beijing', // 834795
   f019551: 'active-sealing, UK', // 834696
@@ -77,52 +127,25 @@ const annotations = {
   f020378: 'active-sealing, Bulgaria, Asenovgrad', // 834694
   f020398: 'active-sealing, China, Zhangjiakou', // 834705
   f020436: 'active-sealing, China, Beijing', // 834797
-  f020523: 'active-sealing, China, Suzhou', // 834703
   f020541: 'active-sealing, China, Shanghai', // 834876
   f020928: 'active-sealing, China, Deyang + Singapore', // 834707
   f021444: 'active-sealing, China, Guangzhou', // 834716
   f022142: 'active-sealing, USA, Queens', // 834745
   f022227: 'active-sealing, China, Jiangsu', // 834706
-  f022566: 'active-sealing, China, Nanchong', // 834720
-  f022853: 'active-sealing, China, Fuzhou', // 834793
   f023152: 'active-sealing, China, Quanzhou', // 834894
   f023179: 'active-sealing, China, Fuzhou', // 834713
   f023219: 'active-sealing, NR', // 834886
   f023492: 'active-sealing, China, Beijing', // 834802
-  f023495: 'active-sealing, China, Beijing + USA, Portland', // 834723
-  f023647: 'active-sealing, Korea, Gangseo-gu', // 834909
-  f023649: 'active-sealing, Korea, Seoul', // 834724
-  f023825: 'active-sealing, USA, Portland', // 834732
-  f023858: 'active-sealing, China, Fuzhou', // 834906
-  f023861: 'active-sealing, China, Fuzhou', // 834734
   f023939: 'active-sealing, NR', // 834804
-  f024008: 'active-sealing, China, Fuzhou', // 834735
-  f024012: 'active-sealing, China, Fuzhou', // 834722
-  f024015: 'active-sealing, USA, Portland', // 834725
-  f024016: 'active-sealing, USA, Portland', // 834730
-  f024084: 'active-sealing, China, Fuzhou', // 834901
   f024156: 'active-sealing, USA', // 834805
-  f024184: 'active-sealing, Korea, Gangnam-gu', // 834739
-  f024511: 'active-sealing, NR', // 834738
-  f024800: 'active-sealing, China, Hong Kong', // 834744
   f024969: 'active-sealing, NR', // 834751
-  f025017: 'active-sealing, China, Hefei', // 834740
   f025019: 'active-sealing, China, Taiwan, Hsinchu', // 834803
-  f029368: 'active-sealing, Korea, Gangseo-gu', // 834923
-  f029401: 'active-sealing, USA, Portland + New Castle', // 834748
-  f029404: 'active-sealing, USA, Portland + New Castle', // 834752
-  f029524: 'active-sealing, China, Hong Kong', // 834925
-  f030226: 'active-sealing, China, Fuzhou', // 834754
-  f033111: 'active-sealing, China, Shanghai', // 835078
   f033113: 'active-sealing, China, Wuxi', // 834810
   f033124: 'active-sealing, China, Shanghai', // 834939
   f033438: 'active-sealing, USA', // 834815
   f033511: 'active-sealing, China, Dongguan', // 834929
-  f033545: 'active-sealing, China, Shenzhen + USA', // 834928
   f034039: 'active-sealing, Russia', // 834759
-  f035436: 'active-sealing, China, Jiangsu', // 834935
   f039515: 'active-sealing, China, Chongqing', // 834927
-  f039873: 'active-sealing, China, Fuzhou', // 834934
 
   // Sealing
 
@@ -134,7 +157,6 @@ const annotations = {
   f02665: 'sealing, Netherlands, Amsterdam, fm-ops', // 834818
   f03222: 'sealing, China, Yuncheong, 星云矿池', // 834820
   f03264: 'sealing, Korea, Bucheon-si', // 834826
-  f03302: 'sealing, China, Chengdu', // 835224
   f03340: "sealing, China, Xi'an", // 834875
   f03345: 'sealing, China, Fuzhou, chh', // 834824
   f03364: 'sealing, China, Guangzhou', // 834825
@@ -150,7 +172,6 @@ const annotations = {
   f09002: 'sealing, Singapore', // 835278
   f09731: 'sealing, China, Guiyang', // 834985
   f09770: "sealing, China, Xi'an", // 834852
-  f010247: 'sealing, China, Yantai', // 835326
   f010399: 'sealing, China, Guangzhou', // 834844
   f010493: 'sealing, China, Shanghai', // 834847
   f010501: 'sealing, China, Hangzhou', // 834858
@@ -162,45 +183,31 @@ const annotations = {
   f015734: 'sealing, China, Qingdao', // 834849
   f015877: 'sealing, China, Jiaxing + USA', // 834855
   f016511: 'sealing, China, Beijing', // 835000
-  f018780: 'sealing, Singapore + Germany, Frankfurt + USA', // 835084
-  f018782: 'sealing, Singapore + Germany, Frankfurt + USA', // 835082
-  f018783: 'sealing, Singapore + Germany, Frankfurt + USA', // 835065
   f019029: 'sealing, Serbia, Boljevac', // 834865
   f019118: 'sealing, China, Jiaxing', // 835012
   f019243: 'sealing, USA, Jackson', // 835013
   f019354: 'sealing, Germany, Frankfurt', // 834878
-  f019362: 'sealing, China, Hangzhou', // 834866
   f019459: 'sealing, USA, Alpharetta', // 834871
   f020489: 'sealing, China, Lioaning', // 834879
   f020605: 'sealing, China, Yibin', // 834877
   f021339: 'sealing, China, Jiaxing', // 834867
   f021346: 'sealing, China, Shanghai', // 834880
   f021532: 'sealing, China, Shanghai', // 834872
-  f021535: 'sealing, China, Chengdu', // 834870
   f021583: 'sealing, China, Jiaxing', // 834869
   f021710: 'sealing, China, Shijiazhuang', // 834881
-  f021716: 'sealing, New Zealand, Wellington', // 836101
   f022089: 'sealing, China, Beijing', // 835011
   f022125: 'sealing, China, Shenzhen', // 835023
+  f022261: 'sealing, China, Luzhou', // 834708
   f022395: 'sealing, USA, Los Angeles', // 834884
-  f022522: 'sealing, China, Dongguan', // 835004
   f022753: 'sealing, China, Hong Kong', // 835017
   f022922: 'sealing, China, Shenzhen', // 834889
   f023009: 'sealing, USA, Berkeley', // 835669
   f023490: 'sealing, Ukraine, Kyiv', // 834885
-  f023565: 'sealing, China, Fuzhou', // 834992
-  f023660: 'sealing, China, Fuzhou', // 835118
-  f023662: 'sealing, China, Fuzhou', // 835130
   f023843: 'sealing, NR', // 835173
-  f023853: 'sealing, China, Fuzhou', // 834998
-  f023854: 'sealing, China, Fuzhou', // 835131
-  f023859: 'sealing, China, Fuzhou', // 835127
-  f023928: 'sealing, China, Fuzhou', // 835001
-  f024006: 'sealing, China, Fuzhou', // 835014
-  f024007: 'sealing, China, Fuzhou', // 835142
   f024025: 'sealing, China, Chengdu', // 834891
   f024101: 'sealing, China, Guiyang', // 835020
   f024168: 'sealing, USA, Ashburn', // 835024
+  f024468: 'sealing, China, Shenzhen', // 834800
   f024550: 'sealing, China, Wenzhou', // 834898
   f024944: 'sealing, Korea, Yeongdeungpo-dong', // 834897
   f025007: 'sealing, Korea, Gyeonggi-do', // 835035
@@ -211,17 +218,14 @@ const annotations = {
   f030144: 'sealing, Korea, Gyeonggi-do', // 835032
   f030184: 'sealing, USA, Aliquippa', // 835181
   f030284: 'sealing, China, Shandong', // 835029
-  f030335: 'sealing, China, Fujian', // 835027
   f030347: 'sealing, China, Zhejiang', // 835045
   f030641: 'sealing, China, Shaanxi', // 835034
   f032913: 'sealing, China, Shenzhen', // 835066
   f032934: 'sealing, Korea, Incheon', // 834912
   f032977: 'sealing, China, Deyang', // 835041
   f033036: 'sealing, China, Liaoning', // 835048
-  f033189: 'sealing, China, Zhejiang', // 835049
   f033517: 'sealing, China, Changsha', // 835050
   f033557: 'sealing, China, Hong Kong', // 835051
-  f034047: 'sealing, China, Hangzhou', // 835043
   f034084: 'sealing, China, Chongqing', // 835047
   f034229: 'sealing, USA, Minneapolis', // 835061
   f034362: 'sealing, China, Sichuan', // 834946
@@ -241,25 +245,11 @@ const annotations = {
 
   // Stuck
 
-  f02305: 'stuck, China, Dongguan', // FundsEnsured: about 1 hour
-  f02770: 'stuck, China, Hong Kong', // FundsEnsured: about 1 hour
-  f02822: 'stuck, China, Chengdu', // FundsEnsured: about 1 hour
-  f02823: 'stuck, China, Chengdu', // Transferring: about 2 hours
-  f03544: 'stuck, China, Guiyang', // CheckForAcceptance: about 1 hour
-  f09675: 'stuck, China, Weifang', // FundsEnsured: about 1 hour
-  f015771: 'stuck, Brazil, Sao Paulo', // FundsEnsured: about 1 hour
-  f017794: 'stuck, USA, Columbus', // FundsEnsured: about 1 hour
-  f018518: "stuck, China, Xi'an", // CheckForAcceptance: about 2 hours
-  f018772: 'stuck, Australia', // CheckForAcceptance: about 2 hours
-  f020993: 'stuck, China, Hong Kong', // FundsEnsured: about 1 hour
-  f022202: 'stuck, USA, Howell', // CheckForAcceptance: about 2 hours
-  f022261: 'stuck, China, Luzhou', // CheckForAcceptance: about 2 hours
-  f024066: 'stuck, NR', // Transferring: about 1 hour
-  f024468: 'stuck, China, Shenzhen', // CheckForAcceptance: about 2 hours
-  f024611: 'stuck, China, Dongguan', // FundsEnsured: about 1 hour
-  f032888: 'stuck, China, Weifang', // FundsEnsured: about 1 hour
-  f034075: 'stuck, Japan', // CheckForAcceptance: about 2 hours
-  f043306: 'stuck, Japan', // CheckForAcceptance: about 2 hours
+  f02305: 'stuck, China, Dongguan', // FundsEnsured: about 16 hours
+  f03544: 'stuck, China, Guiyang', // CheckForAcceptance: about 16 hours
+  f018518: "stuck, China, Xi'an", // CheckForAcceptance: about 16 hours
+  f018772: 'stuck, Australia', // CheckForAcceptance: about 16 hours
+  f022202: 'stuck, USA, Howell', // CheckForAcceptance: about 16 hours
 
   // Busy
 
@@ -343,21 +333,33 @@ const annotations = {
   // Error
 
   f01238: 'error, Vietnam, Hanoi, FILECOIN-VIETNAM', // stream reset
+  f02770: 'error, China, Hong Kong', // EOF
+  f02822: 'error, China, Chengdu', // stream reset
+  f02823: 'error, China, Chengdu', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
   f03328: 'error, China, Xinxiang', // AddPiece failed: adding piece to sector: writing piece: pieceCid error: generating piece commitment: failed to build treeCaused by:    0: failed to create data store    1: No such file or directory (os error 2)
   f08532: 'error, USA', // stream reset
+  f09675: 'error, China, Weifang', // stream reset
   f09689: 'error, USA, Portland', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: context deadline exceeded
   f010010: 'error, China, Changzhou + Hong Kong', // stream reset
   f010084: 'error, China, Beijing', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: stream reset
   f010398: 'error, Korea, Yeongdeungpo-dong', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: context deadline exceeded
   f010512: 'error, China, Zhengzhou', // EOF
   f015662: 'error, China, Beijing', // sending proposal to storage provider failed: stream reset
+  f015771: 'error, Brazil, Sao Paulo', // EOF
+  f017794: 'error, USA, Columbus', // EOF
   f017795: 'error, USA, Columbus', // stream reset
+  f020993: 'error, China, Hong Kong', // EOF
   f022119: 'error, USA, Lovettsville', // deal failed: (State=26) deal data verification failed: error generating CommP: failed to build treeCaused by:    0: failed to create data store    1: No such file or directory (os error 2)
   f022130: 'error, Korea, Seodaemun-gu', // stream reset
   f023200: 'error, China, Shanghai', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: context deadline exceeded
   f023981: 'error, China, Fuzhou', // stream reset
+  f024066: 'error, NR', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
   f024496: 'error, China, Dongguan', // stream reset
+  f024611: 'error, China, Dongguan', // stream reset
+  f032888: 'error, China, Weifang', // stream reset
+  f034075: 'error, Japan', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f042391: 'error, China, Fuzhou', // AddPiece failed: adding piece to sector: normal shutdown of state machine
+  f043306: 'error, Japan', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
 
   // Dial backoff
 
