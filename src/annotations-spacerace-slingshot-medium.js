@@ -42,6 +42,7 @@ const annotations = {
   // Active
 
   f01247: 'active, Canada, Montreal, BigChungus™', // 837177 about 10 hours
+  f01277: 'active, Sweden, Stockholm, tvsthlm', // 800696 about 19 hours
   f01278: 'active, USA, Grand Rapids, MiMiner', // 800894
   f01287: 'active, China, Jiaxing, MaiTian', // 799024
   f01291: 'active, Sweden, Stockholm, tvsthlm', // 799664
@@ -63,12 +64,16 @@ const annotations = {
   f05317: 'active, USA, Portland', // 799602
   f07850: 'active, USA, Portland, 6block', // 838088 about 6 hours
   f08025: 'active, China, Hong Kong', // carry-over
+  f08157: 'active, China, Beijing + Germany, Frankfurt, 超星际', // 837148 about 15 hours
+  f08240: 'active, Russia, Novosibirsk, Rabinovitch', // 837011 about 15 hours
+  f08403: 'active, UK, Lower Slaughter', // 836744 1 day
   f09693: 'active, USA, Portland + Singapore', // 800261
   f09696: 'active, USA, Portland + Singapore', // 837088 about 5 hours
   f010241: 'active, China, Beijing + USA, Portland', // 839145 about 5 hours
   f010253: 'active, China, Beijing + USA, Portland', // 836982 about 5 hours
   f010400: 'active, China, Shenyang', // 800036
   f010446: 'active, Netherlands', // 800789
+  f010479: 'active, France, Fontenay-sous-Bois', // 838373 about 14 hours
   f010491: 'active, China, Shenzhen', // 799021
   f010505: 'active, China, Wuhan', // 799396
   f010507: 'active, China, Hangzhou', // 799238
@@ -76,6 +81,7 @@ const annotations = {
   f010617: 'active, Canada, Surrey, @feiya200', // 800560
   f014394: 'active, China, Suzhou', // 800207
   f014409: 'active, USA, Waxhaw', // 799613
+  f014768: 'active, Singapore', // 838435 1 day
   f015734: 'active, China, Qingdao', // 800191 about 4 hours
   f015927: 'active, USA, East Islip', // 799033
   f018501: 'active, China, Beijing', // 800362
@@ -83,15 +89,19 @@ const annotations = {
   f018784: 'active, Singapore + Germany, Frankfurt + USA', // carry-over
   f019029: 'active, Serbia, Boljevac', // 800974 about 4 hours
   f019100: 'active, Romania, Cluj-Napoca', // carry-over
+  f019551: 'active, UK', // 838886 1 day
   f020523: 'active, China, Suzhou', // 801288
   f020541: 'active, China, Shanghai', // 799650
   f020904: 'active, Korea, Uijeongbu-si', // 837216 about 11 hours
+  f020928: 'active, China, Deyang + Singapore', // 838515 about 14 hours
   f021255: 'active, China, Suzhou + Netherlands', // 836802 about 12 hours
   f021262: 'active, China, Shanghai', // 800190
+  f022142: 'active, USA, Queens', // 838828 about 15 hours
   f022163: 'active, NR', // 839071 about 11 hours
   f022261: 'active, China, Luzhou', // 799313
   f022352: 'active, Norway, Borgen', // 799713
   f022853: 'active, China, Fuzhou', // 800242
+  f023009: 'active, USA, Berkeley', // 838597 about 14 hours
   f023152: 'active, China, Quanzhou', // 801395
   f023179: 'active, China, Fuzhou', // carry-over
   f023219: 'active, NR', // 799460
@@ -99,6 +109,7 @@ const annotations = {
   f023495: 'active, China, Beijing + USA, Portland', // 799062
   f023565: 'active, China, Fuzhou', // 799706
   f023647: 'active, Korea, Gangseo-gu', // 836818 about 9 hours
+  f023649: 'active, Korea, Seoul', // 838444 about 14 hours
   f023660: 'active, China, Fuzhou', // carry-over
   f023662: 'active, China, Fuzhou', // 801152
   f023825: 'active, USA, Portland', // carry-over
@@ -127,6 +138,7 @@ const annotations = {
   f024184: 'active, Korea, Gangnam-gu', // 799794
   f024511: 'active, NR', // 799653
   f025017: 'active, China, Hefei', // 799112
+  f025019: 'active, China, Taiwan, Hsinchu', // 837271 1 day
   f025025: 'active, China, Qingdao', // 799640
   f029368: 'active, Korea, Gangseo-gu', // 800459
   f029401: 'active, USA, Portland + New Castle', // 836684 about 8 hours
@@ -150,87 +162,46 @@ const annotations = {
   // Sealing
 
   f01241: 'sealing, USA, Portland, 6block', // 837032
-  f01277: 'sealing, Sweden, Stockholm, tvsthlm', // 800696
-  f01799: 'sealing, China, Jinan, TokenHome', // 799284
-  f02416: 'sealing, China, Guangdong, 星际无限', // 799897
   f02501: 'sealing, USA, Portland, 6block', // 838457
   f02625: 'sealing, China, Shanghai, IPFS星际工厂', // 800655
   f02665: 'sealing, Netherlands, Amsterdam, fm-ops', // 838440
-  f03134: 'sealing, China, Cangzhou, 乔木信息', // 799202
-  f03222: 'sealing, China, Yuncheong, 星云矿池', // 801207
   f03273: 'sealing, USA, Portland, 6block', // 836833
-  f03345: 'sealing, China, Fuzhou, chh', // 799802
-  f03482: 'sealing, China, Wuxi', // 800301
   f03624: 'sealing, Germany, Chemnitz, ode', // 836942
-  f07806: 'sealing, China, Wuhan, HelloXP', // 800014
   f07990: 'sealing, China, Hong Kong', // carry-over
-  f07998: 'sealing, China, Hangzhou', // 799281
-  f08157: 'sealing, China, Beijing + Germany, Frankfurt, 超星际', // 837148
-  f08240: 'sealing, Russia, Novosibirsk, Rabinovitch', // 837011
   f08257: 'sealing, China, Ningbo + USA, Boardman', // 800319
   f08383: 'sealing, USA, Portland, 6block', // 839132
-  f08403: 'sealing, UK, Lower Slaughter', // 836744
-  f08482: 'sealing, USA, Athol, @why', // 800586
   f09731: 'sealing, China, Guiyang', // 800082
   f09771: 'sealing, China, Hangzhou', // carry-over
   f010035: 'sealing, Netherlands', // 836934
   f010088: 'sealing, DNS:purumine.com', // 800813
-  f010254: 'sealing, Japan, Minamata', // 799347
   f010438: 'sealing, USA', // carry-over
-  f010479: 'sealing, France, Fontenay-sous-Bois', // 838373
   f010498: 'sealing, China, Shenzhen', // 799989
   f010501: 'sealing, China, Hangzhou', // 799791
-  f010523: 'sealing, China, Beijing', // 800659
   f010558: 'sealing, China, Shenzhen + Hong Kong', // 839113
   f014281: 'sealing, Netherlands, Permerend', // carry-over
-  f014768: 'sealing, Singapore', // 838435
   f015877: 'sealing, China, Jiaxing + USA', // 837109
-  f016594: 'sealing, Germany', // 800973
   f018785: 'sealing, Singapore + Germany, Frankfurt + USA', // 837204
   f019118: 'sealing, China, Jiaxing', // 799250
-  f019240: 'sealing, China, Beijing', // 799119
-  f019354: 'sealing, Germany, Frankfurt', // 800833
-  f019459: 'sealing, USA, Alpharetta', // 800569
-  f019551: 'sealing, UK', // 838886
   f020378: 'sealing, Bulgaria, Asenovgrad', // 837149
-  f020436: 'sealing, China, Beijing', // 798959
-  f020928: 'sealing, China, Deyang + Singapore', // 838515
-  f021339: 'sealing, China, Jiaxing', // 799266
-  f021346: 'sealing, China, Shanghai', // 801047
-  f021583: 'sealing, China, Jiaxing', // 800927
   f021710: 'sealing, China, Shijiazhuang', // 800100
   f022089: 'sealing, China, Beijing', // carry-over
   f022125: 'sealing, China, Shenzhen', // 801104
-  f022142: 'sealing, USA, Queens', // 838828
   f022376: 'sealing, China, Dongguan', // carry-over
-  f022395: 'sealing, USA, Los Angeles', // 800048
-  f022522: 'sealing, China, Dongguan', // 799503
-  f022797: 'sealing, NR', // 800710
-  f022922: 'sealing, China, Shenzhen', // 799163
-  f023009: 'sealing, USA, Berkeley', // 838597
   f023490: 'sealing, Ukraine, Kyiv', // 839062
   f023492: 'sealing, China, Beijing', // 838159
-  f023649: 'sealing, Korea, Seoul', // 838444
   f023858: 'sealing, China, Fuzhou', // carry-over
-  f024025: 'sealing, China, Chengdu', // 799799
-  f024101: 'sealing, China, Guiyang', // 801354
-  f024146: 'sealing, China, Fuzhou', // 799440
-  f025019: 'sealing, China, Taiwan, Hsinchu', // 837271
   f025032: 'sealing, China, Beijing', // 799612
-  f029619: 'sealing, undefined', // 800706
   f030284: 'sealing, China, Shandong', // carry-over
-  f032977: 'sealing, China, Deyang', // 800096
   f033124: 'sealing, China, Shanghai', // 840794
   f033438: 'sealing, USA', // 837030
   f034075: 'sealing, Japan', // 799215
-  f034084: 'sealing, China, Chongqing', // 799424
   f034733: 'sealing, China, Hong Kong', // carry-over
   f034808: 'sealing, Korea, Incheon', // carry-over
   f043376: 'sealing, Korea, Incheon', // 837120
 
   // Stuck
 
-  f023581: 'stuck, China, Hong Kong', // ClientTransferRestart: about 12 hours
+  f023581: 'stuck, China, Hong Kong', // ClientTransferRestart: 1 day
 
   // Min-size
 
@@ -252,26 +223,55 @@ const annotations = {
   // Error
 
   f01280: 'error, China, Wuxi, 了凡超算', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f01799: 'error, China, Jinan, TokenHome', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 799284 not found
+  f02416: 'error, China, Guangdong, 星际无限', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 799897 not found
   f02633: 'error, China, Hong Kong', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
   f02824: 'error, China, Chengdu', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
+  f03134: 'error, China, Cangzhou, 乔木信息', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 799202 not found
   f03176: 'error, USA, San Mateo, Five Star-Helmsman&Heiben', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
+  f03222: 'error, China, Yuncheong, 星云矿池', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 801207 not found
+  f03345: 'error, China, Fuzhou, chh', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 799802 not found
+  f03482: 'error, China, Wuxi', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 800301 not found
   f04443: 'error, China, Shanghai, 罗良科技', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f07806: 'error, China, Wuhan, HelloXP', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 800014 not found
+  f07998: 'error, China, Hangzhou', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 799281 not found
   f08264: 'error, China, Xianning', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f08482: 'error, USA, Athol, @why', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 800586 not found
   f09569: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f09770: "error, China, Xi'an", // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f010247: 'error, China, Yantai', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f010254: 'error, Japan, Minamata', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 799347 not found
   f010493: 'error, China, Shanghai', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
+  f010523: 'error, China, Beijing', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 800659 not found
+  f016594: 'error, Germany', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 800973 not found
   f018782: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f018783: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f019240: 'error, China, Beijing', // error in deal activation: failed to set up called handler: called check error (h: 161324): client: failed to look up deal on chain: deal 799119 not found
+  f019354: 'error, Germany, Frankfurt', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 800833 not found
+  f019459: 'error, USA, Alpharetta', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 800569 not found
+  f020436: 'error, China, Beijing', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 798959 not found
   f020489: 'error, China, Lioaning', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f021339: 'error, China, Jiaxing', // error in deal activation: failed to set up called handler: called check error (h: 161324): client: failed to look up deal on chain: deal 799266 not found
+  f021346: 'error, China, Shanghai', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 801047 not found
   f021444: 'error, China, Guangzhou', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
+  f021583: 'error, China, Jiaxing', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 800927 not found
   f021870: 'error, USA, Portland', // stream reset
   f022072: 'error, China, Jieyang', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f022130: 'error, undefined', // deal failed: (State=26) error calling node: AddFunds errored: handler: websocket connection closed
+  f022395: 'error, USA, Los Angeles', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 800048 not found
+  f022522: 'error, China, Dongguan', // error in deal activation: failed to set up called handler: called check error (h: 161324): client: failed to look up deal on chain: deal 799503 not found
+  f022797: 'error, NR', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 800710 not found
+  f022922: 'error, China, Shenzhen', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 799163 not found
   f023854: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f024025: 'error, China, Chengdu', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 799799 not found
+  f024101: 'error, China, Guiyang', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 801354 not found
+  f024146: 'error, China, Fuzhou', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 799440 not found
   f024148: 'error, China, Fuzhou', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
   f029580: 'error, China, Maoming', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f029619: 'error, undefined', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 800706 not found
   f032913: 'error, China, Shenzhen', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
+  f032977: 'error, China, Deyang', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 800096 not found
+  f034084: 'error, China, Chongqing', // error in deal activation: failed to set up called handler: called check error (h: 163440): client: failed to look up deal on chain: deal 799424 not found
   f040218: 'error, China, Wuxi', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
 
   // Rejected
