@@ -254,6 +254,17 @@ const annotations = {
 
   // New
 
+  f035160: 'new, NR',
+  f035161: 'new, NR',
+  f039224: 'new, NR',
+  f039792: 'new, China, Baoding',
+  f043313: 'new, China, Dongguan',
+  f044315: 'new, NR',
+  f044788: 'new, NR',
+  f044874: 'new, China, Dongguan',
+  f045743: 'new, NR',
+  f045756: 'new, NR',
+
   // Min Size
 
   f01234: 'min-size, Belgium, De Klinge, Eliovp', // 131072 < 268435456
