@@ -10,7 +10,7 @@ const annotations = {
 
   // Candidates
 
-  f01278: 'candidate, USA, Grand Rapids, MiMiner', // carry-over
+  f01278: 'testing, USA, Grand Rapids, MiMiner', // carry-over
   f01279: 'candidate, China, Sichuan', // carry-over
   f01289: 'candidate, China, Hangzhou + USA', // carry-over
   f02301: 'candidate, USA', // carry-over
@@ -19,14 +19,14 @@ const annotations = {
   f02405: 'candidate, China, Shenzhen', // carry-over
   f02419: 'candidate, China, Shanghai, yuantai', // carry-over
   f02490: 'candidate, China, Fujian', // carry-over
-  f02619: 'candidate, China, Beijing, Blockcasting', // carry-over
+  f02619: 'testing, China, Beijing, Blockcasting', // carry-over
   f02654: 'candidate, China, Shanghai', // carry-over
   f03194: 'candidate, China, Shenzhen, 成都云存&Npool', // carry-over
   f03224: 'candidate, Ukraine, Irpin, oboltusov', // carry-over
-  f03275: 'candidate, USA, Portland, 6block', // carry-over
-  f03302: 'candidate, China, Chengdu', // carry-over
-  f03488: 'candidate, Korea, Geumcheon-gu', // carry-over
-  f05316: 'candidate, USA, Portland, 6block', // carry-over
+  f03275: 'testing, USA, Portland, 6block', // carry-over
+  f03302: 'testing, China, Chengdu', // carry-over
+  f03488: 'testing, Korea, Geumcheon-gu', // carry-over
+  f05316: 'testing, USA, Portland, 6block', // carry-over
   f05664: 'candidate, China, Shenzhen, 艾比特网络科技', // carry-over
   f07919: 'candidate, China, Beijing, Shanghai, Hunan', // carry-over
   f08220: 'candidate, China, Shenzhen', // carry-over
@@ -34,14 +34,14 @@ const annotations = {
   f09002: 'candidate, Singapore', // carry-over
   f09848: 'candidate, USA', // carry-over
   f010254: 'candidate, Japan, Minamata', // carry-over
-  f010617: 'candidate, Canada, Surrey, @feiya200', // carry-over
-  f014324: 'candidate, Canada, Vancouver', // carry-over
+  f010617: 'testing, Canada, Surrey, @feiya200', // carry-over
+  f014324: 'testing, Canada, Vancouver', // carry-over
   f014365: 'candidate, Australia, Marrickville + Japan, Heiwajima', // carry-over
-  f014569: 'candidate, NR', // carry-over
-  f018501: 'candidate, China, Beijing', // carry-over
-  f018781: 'candidate, Singapore + Germany, Frankfurt + USA', // carry-over
-  f018782: 'candidate, Singapore + Germany, Frankfurt + USA', // carry-over
-  f018783: 'candidate, Singapore + Germany, Frankfurt + USA', // carry-over
+  f014569: 'testing, NR', // carry-over
+  f018501: 'testing, China, Beijing', // carry-over
+  f018781: 'testing, Singapore + Germany, Frankfurt + USA', // carry-over
+  f018782: 'testing, Singapore + Germany, Frankfurt + USA', // carry-over
+  f018783: 'testing, Singapore + Germany, Frankfurt + USA', // carry-over
   f019029: 'candidate, Serbia, Boljevac', // carry-over
   f019661: 'candidate, Russia, Pyatigorsk', // carry-over
   f020541: 'candidate, China, Shanghai', // carry-over
@@ -49,18 +49,18 @@ const annotations = {
   f021262: 'candidate, China, Shanghai', // carry-over
   f021265: 'candidate, China, Wuhan', // carry-over
   f021540: 'candidate, Germany, Frankfurt, @hsanjuan', // carry-over
-  f023662: 'candidate, China, Fuzhou', // carry-over
-  f023861: 'candidate, China, Fuzhou', // carry-over
-  f023981: 'candidate, China, Fuzhou', // carry-over
-  f024012: 'candidate, China, Fuzhou', // carry-over
+  f023662: 'testing, China, Fuzhou', // carry-over
+  f023861: 'testing, China, Fuzhou', // carry-over
+  f023981: 'testing, China, Fuzhou', // carry-over
+  f024012: 'testing, China, Fuzhou', // carry-over
   f024127: 'candidate, China, Fuzhou', // carry-over
-  f024147: 'candidate, China, Fuzhou', // carry-over
+  f024147: 'testing, China, Fuzhou', // carry-over
   f030296: 'candidate, USA, Cary', // carry-over
-  f030641: 'candidate, China, Shaanxi', // carry-over
+  f030641: 'testing, China, Shaanxi', // carry-over
   f033048: 'candidate, USA, Ashburn', // carry-over
   f034039: 'candidate, Russia', // carry-over
-  f035436: 'candidate, China, Jiangsu', // carry-over
-  f039873: 'candidate, China, Fuzhou', // carry-over
+  f035436: 'testing, China, Jiangsu', // carry-over
+  f039873: 'testing, China, Fuzhou', // carry-over
 
   // Testing
 
