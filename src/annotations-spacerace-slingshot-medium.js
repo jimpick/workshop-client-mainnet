@@ -11,56 +11,57 @@ const annotations = {
   // Candidates
 
   f01278: 'testing, USA, Grand Rapids, MiMiner', // carry-over
-  f01279: 'candidate, China, Sichuan', // carry-over
-  f01289: 'candidate, China, Hangzhou + USA', // carry-over
-  f02301: 'candidate, USA', // carry-over
-  f02381: 'candidate, China, Dongguan, 西野七濑迷叔', // carry-over
-  f02388: 'candidate, Netherlands, Amersfoort, Kroketje', // carry-over
-  f02405: 'candidate, China, Shenzhen', // carry-over
-  f02419: 'candidate, China, Shanghai, yuantai', // carry-over
-  f02490: 'candidate, China, Fujian', // carry-over
   f02619: 'testing, China, Beijing, Blockcasting', // carry-over
-  f02654: 'candidate, China, Shanghai', // carry-over
-  f03194: 'candidate, China, Shenzhen, 成都云存&Npool', // carry-over
-  f03224: 'candidate, Ukraine, Irpin, oboltusov', // carry-over
   f03275: 'testing, USA, Portland, 6block', // carry-over
   f03302: 'testing, China, Chengdu', // carry-over
   f03488: 'testing, Korea, Geumcheon-gu', // carry-over
   f05316: 'testing, USA, Portland, 6block', // carry-over
-  f05664: 'candidate, China, Shenzhen, 艾比特网络科技', // carry-over
-  f07919: 'candidate, China, Beijing, Shanghai, Hunan', // carry-over
-  f08220: 'candidate, China, Shenzhen', // carry-over
-  f08257: 'candidate, China, Ningbo + USA, Boardman', // carry-over
-  f09002: 'candidate, Singapore', // carry-over
-  f09848: 'candidate, USA', // carry-over
-  f010254: 'candidate, Japan, Minamata', // carry-over
   f010617: 'testing, Canada, Surrey, @feiya200', // carry-over
   f014324: 'testing, Canada, Vancouver', // carry-over
-  f014365: 'candidate, Australia, Marrickville + Japan, Heiwajima', // carry-over
   f014569: 'testing, NR', // carry-over
   f018501: 'testing, China, Beijing', // carry-over
   f018781: 'testing, Singapore + Germany, Frankfurt + USA', // carry-over
   f018782: 'testing, Singapore + Germany, Frankfurt + USA', // carry-over
   f018783: 'testing, Singapore + Germany, Frankfurt + USA', // carry-over
-  f019029: 'candidate, Serbia, Boljevac', // carry-over
-  f019661: 'candidate, Russia, Pyatigorsk', // carry-over
-  f020541: 'candidate, China, Shanghai', // carry-over
-  f020747: 'candidate, China, Xiamen', // carry-over
-  f021262: 'candidate, China, Shanghai', // carry-over
-  f021265: 'candidate, China, Wuhan', // carry-over
-  f021540: 'candidate, Germany, Frankfurt, @hsanjuan', // carry-over
   f023662: 'testing, China, Fuzhou', // carry-over
   f023861: 'testing, China, Fuzhou', // carry-over
   f023981: 'testing, China, Fuzhou', // carry-over
   f024012: 'testing, China, Fuzhou', // carry-over
-  f024127: 'candidate, China, Fuzhou', // carry-over
   f024147: 'testing, China, Fuzhou', // carry-over
-  f030296: 'candidate, USA, Cary', // carry-over
   f030641: 'testing, China, Shaanxi', // carry-over
-  f033048: 'candidate, USA, Ashburn', // carry-over
-  f034039: 'candidate, Russia', // carry-over
   f035436: 'testing, China, Jiangsu', // carry-over
   f039873: 'testing, China, Fuzhou', // carry-over
+
+  f01279: 'error-ask, China, Sichuan', // carry-over
+  f01289: 'min-ask, China, Hangzhou + USA', // carry-over
+  f02301: 'min-ask, USA', // carry-over
+  f02381: 'min-ask, China, Dongguan, 西野七濑迷叔', // carry-over
+  f02388: 'min-ask, Netherlands, Amersfoort, Kroketje', // carry-over
+  f02405: 'min-ask, China, Shenzhen', // carry-over
+  f02419: 'min-ask, China, Shanghai, yuantai', // carry-over
+  f02490: 'min-ask, China, Fujian', // carry-over
+  f02654: 'error-ask, China, Shanghai', // carry-over
+  f03194: 'min-ask, China, Shenzhen, 成都云存&Npool', // carry-over
+  f03224: 'min-ask, Ukraine, Irpin, oboltusov', // carry-over
+  f05664: 'candidate, China, Shenzhen, 艾比特网络科技', // carry-over
+  f07919: 'error-ask, China, Beijing, Shanghai, Hunan', // carry-over
+  f08220: 'error-ask, China, Shenzhen', // carry-over
+  f08257: 'min-ask, China, Ningbo + USA, Boardman', // carry-over
+  f09002: 'error-ask, Singapore', // carry-over
+  f09848: 'error-ask, USA', // carry-over
+  f010254: 'min-ask, Japan, Minamata', // carry-over
+  f014365: 'min-ask, Australia, Marrickville + Japan, Heiwajima', // carry-over
+  f019029: 'error-ask, Serbia, Boljevac', // carry-over
+  f019661: 'error-ask, Russia, Pyatigorsk', // carry-over
+  f020541: 'testing, China, Shanghai', // carry-over
+  f020747: 'min-ask, China, Xiamen', // carry-over
+  f021262: 'testing, China, Shanghai', // carry-over
+  f021265: 'min-ask, China, Wuhan', // carry-over
+  f021540: 'min-ask, Germany, Frankfurt, @hsanjuan', // carry-over
+  f024127: 'min-ask, China, Fuzhou', // carry-over
+  f030296: 'min-ask, USA, Cary', // carry-over
+  f033048: 'min-ask, USA, Ashburn', // carry-over
+  f034039: 'testing, Russia', // carry-over
 
   // Testing
 
