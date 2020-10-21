@@ -10,58 +10,7 @@ const annotations = {
 
   // Candidates
 
-  f01278: 'testing, USA, Grand Rapids, MiMiner', // carry-over
-  f02619: 'testing, China, Beijing, Blockcasting', // carry-over
-  f03275: 'testing, USA, Portland, 6block', // carry-over
-  f03302: 'testing, China, Chengdu', // carry-over
-  f03488: 'testing, Korea, Geumcheon-gu', // carry-over
-  f05316: 'testing, USA, Portland, 6block', // carry-over
-  f010617: 'testing, Canada, Surrey, @feiya200', // carry-over
-  f014324: 'testing, Canada, Vancouver', // carry-over
-  f014569: 'testing, NR', // carry-over
-  f018501: 'testing, China, Beijing', // carry-over
-  f018781: 'testing, Singapore + Germany, Frankfurt + USA', // carry-over
-  f018782: 'testing, Singapore + Germany, Frankfurt + USA', // carry-over
-  f018783: 'testing, Singapore + Germany, Frankfurt + USA', // carry-over
-  f023662: 'testing, China, Fuzhou', // carry-over
-  f023861: 'testing, China, Fuzhou', // carry-over
-  f023981: 'testing, China, Fuzhou', // carry-over
-  f024012: 'testing, China, Fuzhou', // carry-over
-  f024147: 'testing, China, Fuzhou', // carry-over
-  f030641: 'testing, China, Shaanxi', // carry-over
-  f035436: 'testing, China, Jiangsu', // carry-over
-  f039873: 'testing, China, Fuzhou', // carry-over
-
-  f01279: 'error-ask, China, Sichuan', // carry-over
-  f01289: 'min-ask, China, Hangzhou + USA', // carry-over
-  f02301: 'min-ask, USA', // carry-over
-  f02381: 'min-ask, China, Dongguan, 西野七濑迷叔', // carry-over
-  f02388: 'min-ask, Netherlands, Amersfoort, Kroketje', // carry-over
-  f02405: 'min-ask, China, Shenzhen', // carry-over
-  f02419: 'min-ask, China, Shanghai, yuantai', // carry-over
-  f02490: 'min-ask, China, Fujian', // carry-over
-  f02654: 'error-ask, China, Shanghai', // carry-over
-  f03194: 'min-ask, China, Shenzhen, 成都云存&Npool', // carry-over
-  f03224: 'min-ask, Ukraine, Irpin, oboltusov', // carry-over
   f05664: 'candidate, China, Shenzhen, 艾比特网络科技', // carry-over
-  f07919: 'error-ask, China, Beijing, Shanghai, Hunan', // carry-over
-  f08220: 'error-ask, China, Shenzhen', // carry-over
-  f08257: 'min-ask, China, Ningbo + USA, Boardman', // carry-over
-  f09002: 'error-ask, Singapore', // carry-over
-  f09848: 'error-ask, USA', // carry-over
-  f010254: 'min-ask, Japan, Minamata', // carry-over
-  f014365: 'min-ask, Australia, Marrickville + Japan, Heiwajima', // carry-over
-  f019029: 'error-ask, Serbia, Boljevac', // carry-over
-  f019661: 'error-ask, Russia, Pyatigorsk', // carry-over
-  f020541: 'testing, China, Shanghai', // carry-over
-  f020747: 'min-ask, China, Xiamen', // carry-over
-  f021262: 'testing, China, Shanghai', // carry-over
-  f021265: 'min-ask, China, Wuhan', // carry-over
-  f021540: 'min-ask, Germany, Frankfurt, @hsanjuan', // carry-over
-  f024127: 'min-ask, China, Fuzhou', // carry-over
-  f030296: 'min-ask, USA, Cary', // carry-over
-  f033048: 'min-ask, USA, Ashburn', // carry-over
-  f034039: 'testing, Russia', // carry-over
 
   // Testing
 
@@ -102,6 +51,8 @@ const annotations = {
   f01241: 'sealing, USA, Portland, 6block', // 837032
   f01276: 'sealing, Canada, Brampton, NBFS Canada', // 890135
   f01277: 'sealing, Sweden, Stockholm, tvsthlm', // 893914
+  f01278: 'sealing, USA, Grand Rapids, MiMiner', // 897623
+  f01291: 'sealing, Sweden, Stockholm, tvsthlm', // 895648
   f01799: 'sealing, China, Jinan, TokenHome', // 889873
   f02299: 'sealing, China, Dongguan, Yolo', // 890444
   f02387: 'sealing, Canada, Brampton, NBFS Canada', // 890107
@@ -117,12 +68,15 @@ const annotations = {
   f03176: 'sealing, USA, San Mateo, Five Star-Helmsman&Heiben', // 892349
   f03222: 'sealing, China, Yuncheong, 星云矿池', // 889076
   f03273: 'sealing, USA, Portland, 6block', // 836833
+  f03275: 'sealing, USA, Portland, 6block', // 897519
   f03328: 'sealing, China, Xinxiang', // 889892
   f03345: 'sealing, China, Fuzhou, chh', // 889623
   f03482: 'sealing, China, Wuxi', // 889289
+  f03488: 'sealing, Korea, Geumcheon-gu', // 897711
   f03491: 'sealing, China, Hong Kong', // 890152
   f03544: 'sealing, China, Guiyang', // 890915
   f03624: 'sealing, Germany, Chemnitz, ode', // 836942
+  f05316: 'sealing, USA, Portland, 6block', // 897675
   f05317: 'sealing, USA, Portland', // 893696
   f07806: 'sealing, China, Wuhan, HelloXP', // 889790
   f07982: 'sealing, China, Shenzhen', // 891107
@@ -131,18 +85,22 @@ const annotations = {
   f08285: 'sealing, Latvia, Riga, stander', // 889247
   f08383: 'sealing, USA, Portland, 6block', // 839132
   f08482: 'sealing, USA, Athol, @why', // 890221
+  f09693: 'sealing, USA, Portland + Singapore', // 895646
   f09731: 'sealing, China, Guiyang', // 893689
   f09770: "sealing, China, Xi'an", // 890614
   f010035: 'sealing, Netherlands', // 836934
   f010491: 'sealing, China, Shenzhen', // 893688
   f010493: 'sealing, China, Shanghai', // 889340
+  f010498: 'sealing, China, Shenzhen', // 895923
   f010507: 'sealing, China, Hangzhou', // 894662
   f010523: 'sealing, China, Beijing', // 894715
   f010528: 'sealing, China, Chongqing', // 890435
   f014281: 'sealing, Netherlands, Permerend', // 889048
+  f014409: 'sealing, USA, Waxhaw', // 895657
   f015877: 'sealing, China, Jiaxing + USA', // 837109
   f015927: 'sealing, USA, East Islip', // 894789
   f016594: 'sealing, Germany', // 890710
+  f018783: 'sealing, Singapore + Germany, Frankfurt + USA', // 897710
   f018784: 'sealing, Singapore + Germany, Frankfurt + USA', // 894476
   f018785: 'sealing, Singapore + Germany, Frankfurt + USA', // 837204
   f019100: 'sealing, Romania, Cluj-Napoca', // 891380
@@ -157,6 +115,7 @@ const annotations = {
   f021583: 'sealing, China, Jiaxing', // 890477
   f021870: 'sealing, USA, Portland', // 890193
   f022070: 'sealing, China, Jieyang', // 890419
+  f022352: 'sealing, Norway, Borgen', // 895666
   f022522: 'sealing, China, Dongguan', // 891150
   f022922: 'sealing, China, Shenzhen', // 889952
   f023152: 'sealing, China, Quanzhou', // 893910
@@ -174,6 +133,7 @@ const annotations = {
   f024066: 'sealing, NR', // 890178
   f024101: 'sealing, China, Guiyang', // 889456
   f024184: 'sealing, Korea, Gangnam-gu', // 894097
+  f025007: 'sealing, Korea, Gyeonggi-do', // 895889
   f029368: 'sealing, Korea, Gangseo-gu', // 894707
   f029490: 'sealing, NR', // 894478
   f029524: 'sealing, China, Hong Kong', // 894377
@@ -191,21 +151,17 @@ const annotations = {
 
   // Stuck
 
-  f01287: 'stuck, China, Jiaxing, MaiTian', // Transferring: about 1 hour
-  f01291: 'stuck, Sweden, Stockholm, tvsthlm', // ProposalAccepted: 14 minutes
-  f09693: 'stuck, USA, Portland + Singapore', // ProposalAccepted: 14 minutes
-  f010498: 'stuck, China, Shenzhen', // ProposalAccepted: 6 minutes
-  f010501: 'stuck, China, Hangzhou', // Transferring: 20 minutes
-  f010505: 'stuck, China, Wuhan', // Transferring: 20 minutes
-  f014409: 'stuck, USA, Waxhaw', // ProposalAccepted: 14 minutes
-  f020523: 'stuck, China, Suzhou', // Transferring: about 1 hour
-  f022352: 'stuck, Norway, Borgen', // ProposalAccepted: 13 minutes
-  f023581: 'stuck, undefined', // ClientTransferRestart: about 8 hours
-  f023978: 'stuck, China, Fuzhou', // Transferring: 20 minutes
-  f024511: 'stuck, NR', // Transferring: 20 minutes
-  f025007: 'stuck, Korea, Gyeonggi-do', // ProposalAccepted: 8 minutes
-  f025025: 'stuck, China, Qingdao', // Transferring: 20 minutes
-  f033545: 'stuck, China, Shenzhen + USA', // Transferring: 20 minutes
+  f02619: 'stuck, China, Beijing, Blockcasting', // Transferring: 37 minutes
+  f010501: 'stuck, China, Hangzhou', // Transferring: about 2 hours
+  f018501: 'stuck, China, Beijing', // Transferring: 39 minutes
+  f018781: 'stuck, Singapore + Germany, Frankfurt + USA', // Transferring: 42 minutes
+  f018782: 'stuck, Singapore + Germany, Frankfurt + USA', // Transferring: 38 minutes
+  f020541: 'stuck, China, Shanghai', // Transferring: 16 minutes
+  f021262: 'stuck, China, Shanghai', // CheckForAcceptance: 6 minutes
+  f023581: 'stuck, undefined', // ClientTransferRestart: about 10 hours
+  f023662: 'stuck, China, Fuzhou', // Transferring: 34 minutes
+  f035436: 'stuck, China, Jiangsu', // Transferring: 30 minutes
+  f039873: 'stuck, China, Fuzhou', // Transferring: 32 minutes
 
   // Min-size
 
@@ -216,14 +172,17 @@ const annotations = {
   f023660: 'min-size, China, Fuzhou', // 134217728 < 268435456
   f023853: 'min-size, China, Fuzhou', // 134217728 < 268435456
   f023855: 'min-size, China, Fuzhou', // 134217728 < 268435456
+  f023861: 'min-size, China, Fuzhou', // 134217728 < 268435456
   f023868: 'min-size, China, Fuzhou', // 134217728 < 268435456
   f023869: 'min-size, China, Fuzhou', // 134217728 < 268435456
   f023870: 'min-size, China, Fuzhou', // 134217728 < 268435456
   f023871: 'min-size, China, Fuzhou', // 134217728 < 268435456
   f023980: 'min-size, China, Fuzhou', // 134217728 < 268435456
+  f023981: 'min-size, China, Fuzhou', // 134217728 < 268435456
   f024006: 'min-size, China, Fuzhou', // 134217728 < 268435456
   f024007: 'min-size, China, Fuzhou', // 134217728 < 268435456
   f024008: 'min-size, China, Fuzhou', // 134217728 < 268435456
+  f024012: 'min-size, China, Fuzhou', // 134217728 < 268435456
   f024013: 'min-size, China, Fuzhou', // 134217728 < 268435456
   f024014: 'min-size, China, Fuzhou', // 134217728 < 268435456
   f024081: 'min-size, undefined', // 134217728 < 268435456
@@ -231,22 +190,45 @@ const annotations = {
   f024085: 'min-size, China, Fuzhou', // 134217728 < 268435456
   f024136: 'min-size, China, Fuzhou', // 134217728 < 268435456
   f024146: 'min-size, China, Fuzhou', // 134217728 < 268435456
+  f024147: 'min-size, China, Fuzhou', // 134217728 < 268435456
   f024148: 'min-size, China, Fuzhou', // 134217728 < 268435456
   f030226: 'min-size, China, Fuzhou', // 134217728 < 268435456
 
   // Min-ask
 
+  f01289: 'min-ask, China, Hangzhou + USA',
+  f02301: 'min-ask, USA',
+  f02381: 'min-ask, China, Dongguan, 西野七濑迷叔',
+  f02388: 'min-ask, Netherlands, Amersfoort, Kroketje',
+  f02405: 'min-ask, China, Shenzhen',
+  f02419: 'min-ask, China, Shanghai, yuantai',
+  f02490: 'min-ask, China, Fujian',
+  f03194: 'min-ask, China, Shenzhen, 成都云存&Npool',
+  f03224: 'min-ask, Ukraine, Irpin, oboltusov',
+  f08257: 'min-ask, China, Ningbo + USA, Boardman',
+  f010254: 'min-ask, Japan, Minamata',
+  f014365: 'min-ask, Australia, Marrickville + Japan, Heiwajima',
+  f020747: 'min-ask, China, Xiamen',
+  f021265: 'min-ask, China, Wuhan',
+  f021540: 'min-ask, Germany, Frankfurt, @hsanjuan',
+  f024127: 'min-ask, China, Fuzhou',
+  f030296: 'min-ask, USA, Cary',
+  f033048: 'min-ask, USA, Ashburn',
+
   // Error
 
   f01280: 'error, China, Wuxi, 了凡超算', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f01287: 'error, China, Jiaxing, MaiTian', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f02823: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f09569: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f010247: 'error, China, Yantai', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f010505: 'error, China, Wuhan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f014394: 'error, China, Suzhou', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
   f015734: 'error, China, Qingdao', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
   f018780: 'error, Singapore + Germany, Frankfurt + USA', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
   f019118: 'error, China, Jiaxing', // failed to initiate data transfer: deal data transfer failed: response rejected
   f020436: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f020523: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f022089: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f022125: 'error, China, Shenzhen', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
   f022853: 'error, China, Fuzhou', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
@@ -254,11 +236,15 @@ const annotations = {
   f023565: 'error, China, Fuzhou', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
   f023859: 'error, China, Fuzhou', // stream reset
   f023928: 'error, China, Fuzhou', // stream reset
+  f023978: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f024468: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f024511: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f025017: 'error, China, Hefei', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
+  f025025: 'error, China, Qingdao', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f030335: 'error, China, Fujian', // failed to restart data transfer: Unable to send restart request: failed to convert message for protocol: restart not supported on 1.0
   f030347: 'error, China, Zhejiang', // EOF
   f032934: 'error, Korea, Incheon', // AddPiece failed: adding piece to sector: writing piece: acquire unsealed sector: reserving storage space: can't reserve 34359738368 bytes in '/nvme/m2q' (id:c63689f5-67cb-44b2-9339-99e59517895a), only 0 available
+  f033545: 'error, China, Shenzhen + USA', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f042489: 'error, UK, Chipping Norton', // stream reset
 
   // Backoff
@@ -272,6 +258,7 @@ const annotations = {
   f02423: 'rejected, Ukraine, Kyiv, igowreck', // piece size more than maximum allowed size: 134217728 > 1048576
   f02492: 'rejected, China, Shenzhen', // piece size more than maximum allowed size: 134217728 > 1048576
   f03264: 'rejected, Korea, Bucheon-si', // piece size more than maximum allowed size: 134217728 > 1048576
+  f03302: 'rejected, China, Chengdu', // piece size more than maximum allowed size: 134217728 > 1048576
   f03339: 'rejected, China, Luzhou, benxun', // piece size more than maximum allowed size: 134217728 > 1048576
   f03340: "rejected, China, Xi'an", // piece size more than maximum allowed size: 134217728 > 1048576
   f03364: 'rejected, China, Guangzhou', // piece size more than maximum allowed size: 134217728 > 1048576
@@ -288,6 +275,9 @@ const annotations = {
   f010399: 'rejected, China, Guangzhou', // piece size more than maximum allowed size: 134217728 > 1048576
   f010405: 'rejected, China, Foshan', // piece size more than maximum allowed size: 134217728 > 1048576
   f010446: 'rejected, Netherlands', // piece size more than maximum allowed size: 134217728 > 1048576
+  f010617: 'rejected, Canada, Surrey, @feiya200', // syntax error at /root/dealfilter.pl line 9, near "exit"BEGIN not safe after errors--compilation aborted at /root/dealfilter.pl line 18.
+  f014324: 'rejected, Canada, Vancouver', // piece size more than maximum allowed size: 134217728 > 1048576
+  f014569: 'rejected, NR', // piece size more than maximum allowed size: 134217728 > 1048576
   f015941: 'rejected, Ukraine, Kyiv', // piece size more than maximum allowed size: 134217728 > 1048576
   f016511: 'rejected, China, Beijing', // piece size more than maximum allowed size: 134217728 > 1048576
   f017665: 'rejected, China, Shenyang', // piece size more than maximum allowed size: 134217728 > 1048576
@@ -315,10 +305,12 @@ const annotations = {
   f025032: 'rejected, China, Beijing', // piece size more than maximum allowed size: 134217728 > 1048576
   f030125: 'rejected, China, Nantong', // piece size more than maximum allowed size: 134217728 > 1048576
   f030184: 'rejected, USA, Aliquippa', // piece size more than maximum allowed size: 134217728 > 1048576
+  f030641: 'rejected, China, Shaanxi', // piece size more than maximum allowed size: 134217728 > 1048576
   f032913: 'rejected, China, Shenzhen', // piece size more than maximum allowed size: 134217728 > 1048576
   f033113: 'rejected, China, Wuxi', // piece size more than maximum allowed size: 134217728 > 1048576
   f033517: 'rejected, China, Changsha', // piece size more than maximum allowed size: 268435456 > 1048576
   f033557: 'rejected, China, Hong Kong', // piece size more than maximum allowed size: 134217728 > 1048576
+  f034039: 'rejected, Russia', // piece size more than maximum allowed size: 134217728 > 1048576
   f034229: 'rejected, USA, Minneapolis', // piece size more than maximum allowed size: 134217728 > 1048576
   f034362: 'rejected, China, Sichuan', // piece size more than maximum allowed size: 134217728 > 1048576
   f038299: 'rejected, Russia, St. Petersburg', // piece size more than maximum allowed size: 134217728 > 1048576
@@ -334,9 +326,18 @@ const annotations = {
 
   // XNR
 
-  f033189: 'xnr, China, Zhejiang'
+  f033189: 'xnr, China, Zhejiang',
 
   // Error during ask
+
+  f01279: 'error-ask, China, Sichuan',
+	f02654: 'error-ask, China, Shanghai',
+	f07919: 'error-ask, China, Beijing, Shanghai, Hunan',
+	f08220: 'error-ask, China, Shenzhen',
+	f09002: 'error-ask, Singapore',
+	f09848: 'error-ask, USA',
+	f019029: 'error-ask, Serbia, Boljevac',
+	f019661: 'error-ask, Russia, Pyatigorsk'
 }
 
 export default annotations
