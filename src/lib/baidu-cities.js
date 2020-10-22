@@ -73,6 +73,7 @@ const baiduCities = {
   301: 'Huizhou', // 惠州市
   302: 'Jiangmen', // 江门市
   307: 'Baoding', // 保定市
+  309: 'Nanyang', // 南阳市
   315: 'Nanjing', // 南京市
   317: 'Wuxi', // 无锡市
   326: 'Yantai', // 山东省 烟台市
