@@ -476,6 +476,7 @@ export default function DealList ({ appState, cid, dealType }) {
     annotations = annotationsSlingshot
     buckets = [
       'retest',
+      'active-candidate',
       'candidate',
       'testing',
       'active',

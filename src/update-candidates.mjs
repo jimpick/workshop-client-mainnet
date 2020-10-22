@@ -1,6 +1,7 @@
 
 import annotations from './annotations-spacerace.js'
 import annotations2 from './annotations-spacerace-slingshot-medium.js'
+import annotations3 from './annotations-spacerace-slingshot-medium-jim.js'
 
 const newAnnotations = {}
 
@@ -19,7 +20,11 @@ for (const miner in annotations) {
     if (annotation.match(/^active/) ||
         annotation.match(/^sealing/) ||
         annotation.match(/^min-/)) {
-      const newEntry = annotation.replace(/^[^,]*,/, 'candidate,')
+      let newTag = 'candidate,'
+      if (annotations3[miner] && annotations3[miner].match(/active,/)) {
+        newTag = 'active-candidate,'
+      }
+      const newEntry = annotation.replace(/^[^,]*,/, newTag)
       newEntries.push([miner, newEntry])
     }
   }
