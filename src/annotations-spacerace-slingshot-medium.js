@@ -17,81 +17,82 @@ const annotations = {
   // Active
 
   f01247: 'active, Canada, Montreal, BigChungus™', // carry-over
-  f01278: 'active, USA, Grand Rapids, MiMiner', // 897623 1 day
-  f01291: 'active, Sweden, Stockholm, tvsthlm', // 895648 1 day
-  f02387: 'active, Canada, Brampton, NBFS Canada', // 890107 about 13 hours
-  f02415: 'active, China, Hong Kong', // 894548 about 18 hours
+  f01278: 'active, USA, Grand Rapids, MiMiner', // 897623
+  f01291: 'active, Sweden, Stockholm, tvsthlm', // 895648
+  f02387: 'active, Canada, Brampton, NBFS Canada', // 890107
+  f02415: 'active, China, Hong Kong', // 894548
   f02514: 'active, USA, Portland, 6block', // carry-over
-  f02576: 'active, Denmark, Gjerlev, BenjaminH', // 894667 about 13 hours
-  f02622: 'active, USA, Portland, 6block', // 893691 about 18 hours
+  f02576: 'active, Denmark, Gjerlev, BenjaminH', // 894667
+  f02622: 'active, USA, Portland, 6block', // 893691
   f02623: 'active, USA, Portland, 6block', // carry-over
-  f02633: 'active, China, Hong Kong', // 891463 about 5 hours
-  f02645: 'active, China, Hong Kong', // 894502 about 18 hours
-  f03134: 'active, China, Cangzhou, 乔木信息', // 890033 1 day
-  f03176: 'active, USA, San Mateo, Five Star-Helmsman&Heiben', // 892349 about 12 hours
+  f02633: 'active, China, Hong Kong', // 891463
+  f02645: 'active, China, Hong Kong', // 894502
+  f03134: 'active, China, Cangzhou, 乔木信息', // 890033
+  f03176: 'active, USA, San Mateo, Five Star-Helmsman&Heiben', // 892349
   f03274: 'active, USA, Portland, 6block', // carry-over
-  f03275: 'active, USA, Portland, 6block', // 897519 about 5 hours
-  f03328: 'active, China, Xinxiang', // 889892 about 16 hours
-  f03488: 'active, Korea, Geumcheon-gu', // 897711 about 10 hours
-  f03491: 'active, China, Hong Kong', // 890152 about 5 hours
+  f03275: 'active, USA, Portland, 6block', // 897519
+  f03328: 'active, China, Xinxiang', // 889892
+  f03488: 'active, Korea, Geumcheon-gu', // 897711
+  f03491: 'active, China, Hong Kong', // 890152
   f05315: 'active, USA, Portland, 6block', // carry-over
-  f05316: 'active, USA, Portland, 6block', // 897675 about 5 hours
-  f05317: 'active, USA, Portland', // 893696 about 18 hours
+  f05316: 'active, USA, Portland, 6block', // 897675
+  f05317: 'active, USA, Portland', // 893696
   f07850: 'active, USA, Portland, 6block', // carry-over
-  f08025: 'active, China, Hong Kong', // 890425 about 5 hours
+  f08025: 'active, China, Hong Kong', // 890425
   f08157: 'active, China, Beijing + Germany, Frankfurt, 超星际', // carry-over
   f08240: 'active, Russia, Novosibirsk, Rabinovitch', // carry-over
-  f08264: 'active, China, Xianning', // 889910 about 21 hours
-  f08285: 'active, Latvia, Riga, stander', // 889247 about 16 hours
+  f08264: 'active, China, Xianning', // 889910
+  f08285: 'active, Latvia, Riga, stander', // 889247
   f08403: 'active, UK, Lower Slaughter', // carry-over
-  f09693: 'active, USA, Portland + Singapore', // 895646 about 5 hours
+  f09693: 'active, USA, Portland + Singapore', // 895646
   f09696: 'active, USA, Portland + Singapore', // carry-over
   f010241: 'active, China, Beijing + USA, Portland', // carry-over
   f010253: 'active, China, Beijing + USA, Portland', // carry-over
   f010479: 'active, France, Fontenay-sous-Bois', // carry-over
-  f010491: 'active, China, Shenzhen', // 893688 about 9 hours
-  f010507: 'active, China, Hangzhou', // 894662 1 day
-  f010528: 'active, China, Chongqing', // 890435 about 20 hours
+  f010491: 'active, China, Shenzhen', // 893688
+  f010507: 'active, China, Hangzhou', // 894662
+  f010528: 'active, China, Chongqing', // 890435
   f010558: 'active, China, Shenzhen + Hong Kong', // carry-over
-  f014409: 'active, USA, Waxhaw', // 895657 1 day
+  f014409: 'active, USA, Waxhaw', // 895657
   f014768: 'active, Singapore', // carry-over
-  f015927: 'active, USA, East Islip', // 894789 about 10 hours
-  f018783: 'active, Singapore + Germany, Frankfurt + USA', // 897710 about 5 hours
-  f018784: 'active, Singapore + Germany, Frankfurt + USA', // 894476 about 18 hours
-  f019100: 'active, Romania, Cluj-Napoca', // 891380 1 day
-  f019104: 'active, Canada, Chambly', // 889787 1 day
-  f019240: 'active, China, Beijing', // 889495 about 13 hours
+  f015927: 'active, USA, East Islip', // 894789
+  f018783: 'active, Singapore + Germany, Frankfurt + USA', // 897710
+  f018784: 'active, Singapore + Germany, Frankfurt + USA', // 894476
+  f019100: 'active, Romania, Cluj-Napoca', // 891380
+  f019104: 'active, Canada, Chambly', // 889787
+  f019240: 'active, China, Beijing', // 889495
   f019551: 'active, UK', // carry-over
   f020904: 'active, Korea, Uijeongbu-si', // carry-over
   f020928: 'active, China, Deyang + Singapore', // carry-over
   f021255: 'active, China, Suzhou + Netherlands', // carry-over
-  f021262: 'active, China, Shanghai', // 898451 1 day
-  f021870: 'active, USA, Portland', // 890193 about 14 hours
+  f021262: 'active, China, Shanghai', // 898451
+  f021870: 'active, USA, Portland', // 890193
   f022142: 'active, USA, Queens', // carry-over
   f022163: 'active, NR', // carry-over
-  f022352: 'active, Norway, Borgen', // 895666 1 day
-  f022522: 'active, China, Dongguan', // 891150 about 21 hours
+  f022352: 'active, Norway, Borgen', // 895666
+  f022522: 'active, China, Dongguan', // 891150
+  f022922: 'active, China, Shenzhen', // 889952
   f023009: 'active, USA, Berkeley', // carry-over
-  f023152: 'active, China, Quanzhou', // 893910 about 12 hours
-  f023467: 'active, Norway, Oslo', // 889891 about 20 hours
-  f023495: 'active, China, Beijing + USA, Portland', // 892395 about 5 hours
+  f023152: 'active, China, Quanzhou', // 893910
+  f023467: 'active, Norway, Oslo', // 889891
+  f023495: 'active, China, Beijing + USA, Portland', // 892395
   f023647: 'active, Korea, Gangseo-gu', // carry-over
   f023649: 'active, Korea, Seoul', // carry-over
-  f023825: 'active, USA, Portland', // 890694 about 5 hours
-  f023854: 'active, China, Fuzhou', // 890492 about 5 hours
-  f023858: 'active, China, Fuzhou', // 890906 about 5 hours
-  f023876: 'active, China, Fuzhou', // 890914 about 5 hours
-  f023977: 'active, China, Fuzhou', // 889372 about 6 hours
+  f023825: 'active, USA, Portland', // 890694
+  f023854: 'active, China, Fuzhou', // 890492
+  f023858: 'active, China, Fuzhou', // 890906
+  f023876: 'active, China, Fuzhou', // 890914
+  f023977: 'active, China, Fuzhou', // 889372
   f024015: 'active, USA, Portland', // carry-over
-  f024016: 'active, USA, Portland', // 893694 about 18 hours
-  f024184: 'active, Korea, Gangnam-gu', // 894097 about 8 hours
+  f024016: 'active, USA, Portland', // 893694
+  f024184: 'active, Korea, Gangnam-gu', // 894097
   f025019: 'active, China, Taiwan, Hsinchu', // carry-over
-  f029368: 'active, Korea, Gangseo-gu', // 894707 about 11 hours
+  f029368: 'active, Korea, Gangseo-gu', // 894707
   f029401: 'active, USA, Portland + New Castle', // carry-over
   f029404: 'active, USA, Portland + New Castle', // carry-over
-  f029490: 'active, NR', // 894478 about 13 hours
+  f029490: 'active, NR', // 894478
   f033111: 'active, China, Shanghai', // carry-over
-  f043313: 'active, China, Dongguan', // 889937 about 15 hours
+  f043313: 'active, China, Dongguan', // 889937
 
   // Sealing
 
@@ -126,7 +127,6 @@ const annotations = {
   f021444: 'sealing, China, Guangzhou', // 890414
   f021583: 'sealing, China, Jiaxing', // 890477
   f022070: 'sealing, China, Jieyang', // 890419
-  f022922: 'sealing, China, Shenzhen', // 889952
   f023490: 'sealing, Ukraine, Kyiv', // carry-over
   f023492: 'sealing, China, Beijing', // carry-over
   f024025: 'sealing, China, Chengdu', // 889943
@@ -144,7 +144,7 @@ const annotations = {
 
   // Stuck
 
-  f010501: 'stuck, China, Hangzhou', // ClientTransferRestart: 1 day
+  f010501: 'stuck, China, Hangzhou', // ClientTransferRestart: about 1 hour
   f023581: 'stuck, undefined', // carry-over
 
   // Min-size
