@@ -10,38 +10,6 @@ const annotations = {
 
   // Candidates
 
-  f010241: 'active-testing, China, Beijing + USA, Portland', // carry-over
-  f023647: 'error-ask, Korea, Gangseo-gu', // carry-over
-
-  f01279: 'error-ask, China, Sichuan', // carry-over
-  f02301: 'min-ask, USA', // carry-over
-  f02654: 'error-ask, China, Shanghai', // carry-over
-  f010010: 'min-ask, China, Changzhou + Hong Kong', // carry-over
-
-  f010558: 'active-testing, China, Shenzhen + Hong Kong', // carry-over
-
-  f01289: 'min-ask, China, Hangzhou + USA', // carry-over
-  f02381: 'min-ask, China, Dongguan, 西野七濑迷叔', // carry-over
-  f02388: 'min-ask, Netherlands, Amersfoort, Kroketje', // carry-over
-  f02405: 'min-ask, China, Shenzhen', // carry-over
-  f02419: 'min-ask, China, Shanghai, yuantai', // carry-over
-  f02490: 'min-ask, China, Fujian', // carry-over
-  f03194: 'min-ask, China, Shenzhen, 成都云存&Npool', // carry-over
-  f03224: 'min-ask, Ukraine, Irpin, oboltusov', // carry-over
-  f03347: 'testing, China, Shenzhen', // carry-over
-  f05664: 'testing, China, Shenzhen, 艾比特网络科技', // carry-over
-  f07919: 'min-ask, China, Beijing, Shanghai, Hunan', // carry-over
-  f08257: 'min-ask, China, Ningbo + USA, Boardman', // carry-over
-  f09848: 'min-ask, USA', // carry-over
-  f010254: 'min-ask, Japan, Minamata', // carry-over
-  f014365: 'min-ask, Australia, Marrickville + Japan, Heiwajima', // carry-over
-  f015655: 'testing, Korea, Geumcheon-gu', // carry-over
-  f020747: 'min-ask, China, Xiamen', // carry-over
-  f021265: 'min-ask, China, Wuhan', // carry-over
-  f021540: 'min-ask, Germany, Frankfurt, @hsanjuan', // carry-over
-  f024127: 'min-ask, China, Fuzhou', // carry-over
-  f030296: 'min-ask, USA, Cary', // carry-over
-
   // Testing
 
   f01247: 'active-testing, Canada, Montreal, BigChungus™', // carry-over
@@ -110,6 +78,7 @@ const annotations = {
   f09696: 'active-sealing, USA, Portland + Singapore', // 938288
   f010253: 'active-sealing, China, Beijing + USA, Portland', // 938270
   f010479: 'active-sealing, France, Fontenay-sous-Bois', // 938292
+  f010558: 'active-sealing, China, Shenzhen + Hong Kong', // 939433
   f014768: 'active-sealing, Singapore', // 938347
   f019551: 'active-sealing, UK', // 938315
   f020904: 'active-sealing, Korea, Uijeongbu-si', // 938348
@@ -139,10 +108,12 @@ const annotations = {
   f03273: 'sealing, USA, Portland, 6block', // 937918
   f03339: 'sealing, China, Luzhou, benxun', // 937940
   f03345: 'sealing, China, Fuzhou, chh', // 889623
+  f03347: 'sealing, China, Shenzhen', // 939466
   f03482: 'sealing, China, Wuxi', // 889289
   f03544: 'sealing, China, Guiyang', // 890915
   f03624: 'sealing, Germany, Chemnitz, ode', // 937895
   f04443: 'sealing, China, Shanghai, 罗良科技', // 938022
+  f05664: 'sealing, China, Shenzhen, 艾比特网络科技', // 939461
   f07806: 'sealing, China, Wuhan, HelloXP', // 889790
   f07982: 'sealing, China, Shenzhen', // 891107
   f07990: 'sealing, China, Hong Kong', // 937883
@@ -236,12 +207,13 @@ const annotations = {
 
   // Stuck
 
+  f010241: 'stuck, China, Beijing + USA, Portland', // CheckForAcceptance: 4 minutes
   f019243: 'stuck, USA, Jackson', // CheckForAcceptance: about 4 hours
-  f033048: 'stuck, USA, Ashburn', // CheckForAcceptance: about 4 hours
+  f033048: 'stuck, USA, Ashburn', // CheckForAcceptance: about 5 hours
   f033545: 'stuck, China, Shenzhen + USA', // CheckForAcceptance: about 4 hours
   f048135: 'stuck, China, Chongqing', // CheckForAcceptance: about 4 hours
-  f048174: 'stuck, China, Fuzhou', // CheckForAcceptance: about 4 hours
-  f048176: 'stuck, China, Fuzhou', // CheckForAcceptance: about 4 hours
+  f048174: 'stuck, China, Fuzhou', // CheckForAcceptance: about 5 hours
+  f048176: 'stuck, China, Fuzhou', // CheckForAcceptance: about 5 hours
   f048181: 'stuck, China, Fuzhou', // CheckForAcceptance: about 4 hours
   f049990: 'stuck, Korea, Incheon', // CheckForAcceptance: about 4 hours
 
@@ -267,6 +239,27 @@ const annotations = {
   f030226: 'min-size, China, Fuzhou', // 134217728 < 268435456
 
   // Min-ask
+
+  f01289: 'min-ask, China, Hangzhou + USA', // carry-over
+  f02301: 'min-ask, USA', // carry-over
+  f02381: 'min-ask, China, Dongguan, 西野七濑迷叔', // carry-over
+  f02388: 'min-ask, Netherlands, Amersfoort, Kroketje', // carry-over
+  f02405: 'min-ask, China, Shenzhen', // carry-over
+  f02419: 'min-ask, China, Shanghai, yuantai', // carry-over
+  f02490: 'min-ask, China, Fujian', // carry-over
+  f03194: 'min-ask, China, Shenzhen, 成都云存&Npool', // carry-over
+  f03224: 'min-ask, Ukraine, Irpin, oboltusov', // carry-over
+  f07919: 'min-ask, China, Beijing, Shanghai, Hunan', // carry-over
+  f08257: 'min-ask, China, Ningbo + USA, Boardman', // carry-over
+  f09848: 'min-ask, USA', // carry-over
+  f010010: 'min-ask, China, Changzhou + Hong Kong', // carry-over
+  f010254: 'min-ask, Japan, Minamata', // carry-over
+  f014365: 'min-ask, Australia, Marrickville + Japan, Heiwajima', // carry-over
+  f020747: 'min-ask, China, Xiamen', // carry-over
+  f021265: 'min-ask, China, Wuhan', // carry-over
+  f021540: 'min-ask, Germany, Frankfurt, @hsanjuan', // carry-over
+  f024127: 'min-ask, China, Fuzhou', // carry-over
+  f030296: 'min-ask, USA, Cary', // carry-over
 
   // Error
 
@@ -323,6 +316,7 @@ const annotations = {
   f010399: 'rejected, China, Guangzhou', // piece size more than maximum allowed size: 134217728 > 1048576
   f014324: 'rejected, Canada, Vancouver', // piece size more than maximum allowed size: 134217728 > 1048576
   f014569: 'rejected, NR', // piece size more than maximum allowed size: 134217728 > 1048576
+  f015655: 'rejected, Korea, Geumcheon-gu', // piece size more than maximum allowed size: 134217728 > 1048576
   f015941: 'rejected, Ukraine, Kyiv', // piece size more than maximum allowed size: 134217728 > 1048576
   f016511: 'rejected, China, Beijing', // piece size more than maximum allowed size: 134217728 > 1048576
   f017665: 'rejected, China, Shenyang', // piece size more than maximum allowed size: 134217728 > 1048576
@@ -359,13 +353,17 @@ const annotations = {
   f044797: 'rejected, China, Dongguan', // piece size more than maximum allowed size: 134217728 > 1048576
   f044874: 'rejected, China, Dongguan', // piece size more than maximum allowed size: 134217728 > 1048576
   f045714: 'rejected, Korea, Busan', // piece size more than maximum allowed size: 134217728 > 1048576
-  f046078: 'rejected, China, Shaanxi' // piece size more than maximum allowed size: 134217728 > 1048576
+  f046078: 'rejected, China, Shaanxi', // piece size more than maximum allowed size: 134217728 > 1048576
 
   // Dial
 
   // XNR
 
   // Error during ask
+
+  f01279: 'error-ask, China, Sichuan', // carry-over
+  f02654: 'error-ask, China, Shanghai', // carry-over
+  f023647: 'error-ask, Korea, Gangseo-gu' // carry-over
 }
 
 export default annotations
