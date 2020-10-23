@@ -67,19 +67,19 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
     return [previous, '']
   }
   const dealId = clientDealStatus && `${clientDealStatus.DealID} `
-  if (previous === 'active') {
+  if (previous.startsWith('active')) {
     if (lastDealState === 'Sealing') {
-      return ['active-sealing', dealId.trim()]
+      return ['active-sealing', dealId && dealId.trim()]
     }
   }
   if (previous === 'active-sealing') {
     if (lastDealState === 'Sealing') {
       // return ['sealing', ''] // final
-      return ['active-sealing', dealId.trim()] // in-flight
+      return ['active-sealing', dealId && dealId.trim()] // in-flight
     }
   }
   if (lastDealState === 'Sealing') {
-    return ['sealing', dealId.trim()]
+    return ['sealing', dealId && dealId.trim()]
   }
   if (lastDealState === 'Active') {
     const dealId = clientDealStatus && `${clientDealStatus.DealID} `
@@ -478,6 +478,7 @@ export default function DealList ({ appState, cid, dealType }) {
       'retest',
       'active-candidate',
       'candidate',
+      'active-testing',
       'testing',
       'active',
       'active-sealing',
