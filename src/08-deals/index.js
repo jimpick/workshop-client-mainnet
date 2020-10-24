@@ -8,41 +8,39 @@ export default function Deals ({ appState, updateAppState }) {
   return (
     <div>
       <h1>Deals</h1>
-      {deals && deals.length > 0 && (
-        <>
-          <button
-            style={{ height: '2rem', marginBottom: '1rem' }}
-            onClick={clearAll}
-          >
-            Clear
-          </button>
-          <button
-            style={{ height: '2rem', marginBottom: '1rem' }}
-            onClick={clearSlingshot}
-          >
-            Clear Slingshot
-          </button>
-          <label>
-            <input
-              type='checkbox'
-              checked={filterErrors}
-              onChange={() => {
-                updateAppState(draft => {
-                  draft.filterErrors = !filterErrors
-                })
-              }}
-              style={{ marginLeft: '1rem' }}
-            />
-            Filter errors
-          </label>{' '}
-          <button
-            style={{ height: '2rem', marginBottom: '1rem' }}
-            onClick={importSlingshot}
-          >
-            Import Slingshot Deals
-          </button>
-        </>
-      )}
+      <>
+        <button
+          style={{ height: '2rem', marginBottom: '1rem' }}
+          onClick={clearAll}
+        >
+          Clear
+        </button>
+        <button
+          style={{ height: '2rem', marginBottom: '1rem' }}
+          onClick={clearSlingshot}
+        >
+          Clear Slingshot
+        </button>
+        <label>
+          <input
+            type='checkbox'
+            checked={filterErrors}
+            onChange={() => {
+              updateAppState(draft => {
+                draft.filterErrors = !filterErrors
+              })
+            }}
+            style={{ marginLeft: '1rem' }}
+          />
+          Filter errors
+        </label>{' '}
+        <button
+          style={{ height: '2rem', marginBottom: '1rem' }}
+          onClick={importSlingshot}
+        >
+          Import Slingshot Deals
+        </button>
+      </>
       <DealList
         client={client}
         appState={appState}
@@ -89,7 +87,12 @@ export default function Deals ({ appState, updateAppState }) {
     }
     console.log('Jim slingshot deals', slingshotDeals)
     console.log('Jim dealData', dealData)
-    const existingProposalCids = new Set(deals.map(deal => deal.proposalCid))
+    let existingProposalCids
+    if (deals) {
+      existingProposalCids = new Set(deals.map(deal => deal.proposalCid))
+    } else {
+      existingProposalCids = new Set()
+    }
     console.log('Jim existingProposalCids', existingProposalCids)
     updateAppState(draft => {
       if (!draft.deals) {

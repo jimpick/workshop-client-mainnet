@@ -72,7 +72,7 @@ route @sockjs_options {
     respond "" 204
 }
 
-route ^/sockjs-node$ {
+route /sockjs-node {
   reverse_proxy localhost:3021 {
     header_down Access-Control-Allow-Origin "*"
   }
