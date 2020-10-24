@@ -59,6 +59,7 @@ const annotations = {
   f010507: 'active, China, Hangzhou', // carry-over
   f010528: 'active, China, Chongqing', // carry-over
   f010558: 'active, China, Shenzhen + Hong Kong', // 939433
+  f010617: 'active, Canada, Surrey, @feiya200', // 938033
   f014394: 'active, China, Suzhou', // 938057
   f014409: 'active, USA, Waxhaw', // carry-over
   f014768: 'active, Singapore', // 938347
@@ -66,10 +67,12 @@ const annotations = {
   f018781: 'active, Singapore + Germany, Frankfurt + USA', // 938127
   f018783: 'active, Singapore + Germany, Frankfurt + USA', // carry-over
   f018784: 'active, Singapore + Germany, Frankfurt + USA', // carry-over
+  f019029: 'active, Serbia, Boljevac', // 937988
   f019100: 'active, Romania, Cluj-Napoca', // carry-over
   f019104: 'active, Canada, Chambly', // carry-over
   f019240: 'active, China, Beijing', // carry-over
   f019362: 'active, China, Hangzhou', // 937936
+  f019824: 'active, USA', // 938012
   f020378: 'active, Bulgaria, Asenovgrad', // 937855
   f020904: 'active, Korea, Uijeongbu-si', // 938348
   f021262: 'active, China, Shanghai', // carry-over
@@ -160,15 +163,12 @@ const annotations = {
   f010493: 'sealing, China, Shanghai', // carry-over
   f010498: 'sealing, China, Shenzhen', // carry-over
   f010523: 'sealing, China, Beijing', // carry-over
-  f010617: 'sealing, Canada, Surrey, @feiya200', // 938033
   f015877: 'sealing, China, Jiaxing + USA', // 937884
   f018782: 'sealing, Singapore + Germany, Frankfurt + USA', // 937971
-  f019029: 'sealing, Serbia, Boljevac', // 937988
   f019118: 'sealing, China, Jiaxing', // 937923
   f019354: 'sealing, Germany, Frankfurt', // carry-over
   f019459: 'sealing, USA, Alpharetta', // carry-over
   f019534: 'sealing, USA, Beaverton', // 938299
-  f019824: 'sealing, USA', // 938012
   f020398: 'sealing, China, Zhangjiakou', // 937933
   f020489: 'sealing, China, Lioaning', // carry-over
   f020523: 'sealing, China, Suzhou', // 938318
@@ -198,10 +198,10 @@ const annotations = {
 
   // Stuck
 
-  f019243: 'stuck, USA, Jackson', // CheckForAcceptance: 7 minutes
-  f033048: 'stuck, USA, Ashburn', // CheckForAcceptance: 7 minutes
-  f033545: 'stuck, China, Shenzhen + USA', // CheckForAcceptance: 7 minutes
-  f049990: 'stuck, Korea, Incheon', // CheckForAcceptance: 7 minutes
+  f019243: 'stuck, USA, Jackson', // CheckForAcceptance: about 4 hours
+  f033048: 'stuck, USA, Ashburn', // CheckForAcceptance: about 4 hours
+  f033545: 'stuck, China, Shenzhen + USA', // CheckForAcceptance: about 4 hours
+  f049990: 'stuck, Korea, Incheon', // CheckForAcceptance: about 4 hours
 
   // Min-size
 
