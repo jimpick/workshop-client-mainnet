@@ -56,6 +56,7 @@ const baiduCities = {
   233: 'Xi\'an', // 西安市
   236: 'Qingdao', // 青岛市
   240: 'Mianyang', // 绵阳市
+  243: 'Quzhou', // 衢州市
   244: 'Taizhou', //  台州市
   246: 'Guyuan', // 固原市
   257: 'Guangzhou', // 广州市

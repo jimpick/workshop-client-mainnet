@@ -12,6 +12,39 @@
 const annotations = {
   // New
 
+  f033463: 'new, NR',
+  f033549: 'new, China, Quzhou',
+  f044374: 'new, Slovakia, Bratislava',
+  f044405: 'new, China, Suzhou',
+  f046248: 'new, China, Dongguan',
+  f047327: 'new, China, Hong Kong',
+  f047419: 'new, USA, Waukesha',
+  f047536: 'new, NR',
+  f047843: 'new, China, Xiamen',
+  f047857: 'new, China, Fuzhou',
+  f047868: 'new, China, Fuzhou',
+  f048858: 'new, Japan, Tokyo',
+  f049751: 'new, Australia, Sydney',
+  f049911: 'new, NR',
+  f049953: 'new, Korea, Bucheon-si',
+  f050500: 'new, Korea, Uiwang',
+  f052135: 'new, Korea, Goyang-si',
+  f052447: 'new, China, Beijing + USA, Portland + New Castle',
+  f052701: 'new, NR',
+  f052740: 'new, China, Shaanxi',
+  f052759: 'new, China, Fujian',
+  f052767: 'new, Korea, Seoul',
+  f053037: 'new, China, Hefei',
+  f053088: 'new, China, Shanghai',
+  f053255: 'new, Korea, Seoul',
+  f053229: 'new, NR',
+  f053916: 'new, USA, Concord',
+  f054083: 'new, Korea, Hwaseong-si',
+  f054163: 'new, China, Dongguan',
+  f054198: 'new, China, Changsha',
+  f054389: 'new, China, Chongqing',
+  f054619: 'new, Korea, Hwaseong-si',
+
   // Active
 
   // Active-sealing (active, with in-flight sealing)
