@@ -260,7 +260,7 @@ const annotations = {
   f018785: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f019118: 'error, China, Jiaxing', // carry-over
   f019240: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f019551: 'error, UK', // carry-over
+  f019551: 'error, UK, Birmingham, @Neofix AF',
   f020436: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f020489: 'error, China, Lioaning', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f020523: 'error, China, Suzhou', // carry-over

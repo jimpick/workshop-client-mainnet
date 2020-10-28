@@ -12,6 +12,35 @@
 const annotations = {
   // New
 
+  f054788: 'new, Korea, Hwaseong-si + Gwangju',
+  f055040: 'new, China, Fujian',
+  f055044: 'new, Japan',
+  f055123: 'new, Korea, Busan',
+  f055178: 'new, Singapore',
+  f055347: 'new, Korea, Busan',
+  f056211: 'new, USA, Santa Fe Springs',
+  f056443: 'new, Korea, Gyeonggi-do',
+  f056573: 'new, China, Sichuan',
+  f057009: 'new, China, Dongguan',
+  f057115: 'new, China, Nanyang',
+  f057127: 'new, China, Suzhou',
+  f057368: 'new, Korea, Gyeonggi-do',
+  f057418: 'new, Germany',
+  f057560: 'new, NR',
+  f057842: 'new, Korea, Gyeonggi-do',
+  f058000: 'new, China, Suzhou',
+  f058003: 'new, China, Shenzhen',
+  f058143: 'new, China, Dongguan',
+  f058168: 'new, Korea, Gyeonggi-do',
+  f058321: 'new, China, Dongguan',
+  f058374: 'new, USA',
+  f058880: 'new, Hong Kong',
+  f059280: 'new, China, Shenzhen',
+  f059629: 'new, China, Sichuan',
+  f059652: 'new, China, Beijing',
+
+
+
   // Active
 
   f01291: 'active, Sweden, Stockholm, tvsthlm', // 954385 about 9 hours
@@ -114,7 +143,7 @@ const annotations = {
   f018784: 'active-sealing, Singapore + Germany, Frankfurt + USA', // 954294
   f018785: 'active-sealing, Singapore + Germany, Frankfurt + USA', // 954312
   f019029: 'active-sealing, Serbia, Boljevac', // 954290
-  f019551: 'active-sealing, UK', // 954289
+  f019551: 'active-sealing, UK, Birmingham, @Neofix AF', // 954289
   f019824: 'active-sealing, USA', // 954297
   f020398: 'active-sealing, China, Zhangjiakou', // 954301
   f020523: 'active-sealing, China, Suzhou', // 954303
