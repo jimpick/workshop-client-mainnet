@@ -300,7 +300,7 @@ const annotations = {
   f058369: 'candidate, USA, Bow',
   f058374: 'candidate, USA',
   f058880: 'candidate, Hong Kong',
-  f059705: 'candidate, Korea, Naju'
+  f059705: 'candidate, Korea, Naju',
 
   // Testing
 
@@ -334,8 +334,7 @@ const annotations = {
   f024007: 'min-ask, China, Fuzhou',
   f024085: 'min-ask, China, Fuzhou',
   f024127: 'min-ask, China, Fuzhou',
-  f055538: 'min-ask, Italy, Genoa',
-
+  f055538: 'min-ask, Italy, Genoa'
 
   // Error
 
