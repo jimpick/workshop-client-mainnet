@@ -12,32 +12,69 @@
 const annotations = {
   // New
 
+  f033123: 'new, USA, Portland + New Castle',
+  f042855: 'new, NR',
+  f048968: 'new, NR',
+  f048986: 'new, NR',
+  f052503: 'new, NR',
+  f052562: 'new, NR',
+  f053140: 'new, NR',
+  f053141: 'new, NR',
+  f053159: 'new, NR',
+  f053173: 'new, NR',
+  f053446: 'new, NR',
+  f054120: 'new, NR',
+  f054267: 'new, NR',
+  f054370: 'new, China, Dongguan',
+  f054414: 'new, NR',
+  f054415: 'new, NR',
+  f054417: 'new, NR',
+  f054418: 'new, NR',
+  f054464: 'new, NR',
+  f054499: 'new, NR',
+  f054526: 'new, NR',
+  f054666: 'new, NR',
+  f054677: 'new, Finland, Helsinki',
   f054788: 'new, Korea, Hwaseong-si + Gwangju',
   f055040: 'new, China, Fujian',
   f055044: 'new, Japan',
+  f055102: 'new, NR',
   f055123: 'new, Korea, Busan',
+  f055132: 'new, NR',
+  f055171: 'new, China, Maoming',
   f055178: 'new, Singapore',
+  f055335: 'new, NR',
   f055347: 'new, Korea, Busan',
+  f055446: 'new, NR',
+  f055522: 'new, USA',
+  f055538: 'new, Italy, Genoa',
   f056211: 'new, USA, Santa Fe Springs',
+  f056227: 'new, NR',
+  f056406: 'new, NR',
   f056443: 'new, Korea, Gyeonggi-do',
   f056573: 'new, China, Sichuan',
+  f056611: 'new, USA, Portland + New Castle',
   f057009: 'new, China, Dongguan',
   f057115: 'new, China, Nanyang',
   f057127: 'new, China, Suzhou',
   f057368: 'new, Korea, Gyeonggi-do',
   f057418: 'new, Germany',
   f057560: 'new, NR',
+  f057614: 'new, USA, Portland + New Castle',
   f057842: 'new, Korea, Gyeonggi-do',
   f058000: 'new, China, Suzhou',
   f058003: 'new, China, Shenzhen',
   f058143: 'new, China, Dongguan',
   f058168: 'new, Korea, Gyeonggi-do',
   f058321: 'new, China, Dongguan',
+  f058349: 'new, NR',
+  f058369: 'new, USA, Bow',
   f058374: 'new, USA',
   f058880: 'new, Hong Kong',
   f059280: 'new, China, Shenzhen',
   f059629: 'new, China, Sichuan',
   f059652: 'new, China, Beijing',
+  f059705: 'new, Korea, Naju',
 
 
 
@@ -68,7 +105,7 @@ const annotations = {
   f010400: 'active, China, Shenyang', // 954405 about 10 hours
   f010446: 'active, Netherlands', // 954279 about 17 hours
   f010491: 'active, China, Shenzhen', // 954275 about 17 hours
-  f014768: 'active, Singapore', // 954296 about 14 hours
+  f014768: 'active, Singapore, @Funk', // 954296 about 14 hours
   f015734: 'active, China, Qingdao', // 954283 about 14 hours
   f019240: 'active, China, Beijing', // 954287 about 14 hours
   f019437: 'active, Korea, Guro-gu', // 954286 about 14 hours
