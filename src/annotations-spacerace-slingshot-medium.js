@@ -36,84 +36,88 @@ const annotations = {
 
   // Active
 
+  f01276: 'active, Canada, Brampton, NBFS Canada', // 1044484 about 21 hours
+  f02401: 'active, Canada, Chambly, NBFS Canada', // 1044780 about 21 hours
+  f02416: 'active, China, Guangdong, 星际无限', // 1044778 about 21 hours
+  f02490: 'active, China, Fujian', // 1044550 about 21 hours
+  f02501: 'active, USA, Portland, 6block', // 1044923 about 4 hours
+  f02514: 'active, USA, Portland, 6block', // 1044651 about 21 hours
+  f02576: 'active, Denmark, Gjerlev, BenjaminH', // 1044858 about 21 hours
+  f02645: 'active, China, Hong Kong', // 1045626 about 21 hours
+  f03273: 'active, USA, Portland, 6block', // 1044458 about 21 hours
+  f03274: 'active, USA, Portland, 6block', // 1044424 about 21 hours
+  f03275: 'active, USA, Portland, 6block', // 1044788 about 21 hours
+  f03488: 'active, Korea, Geumcheon-gu', // 1044774 about 21 hours
+  f05317: 'active, USA, Portland', // 1044400 about 3 hours
+  f08285: 'active, Latvia, Riga, stander', // 1045171 about 21 hours
+  f08403: 'active, UK, Lower Slaughter', // 1045348 about 21 hours
+  f09693: 'active, USA, Portland + Singapore', // 1044556 about 4 hours
+  f010241: 'active, China, Beijing + USA, Portland', // 1045396 about 5 hours
+  f010253: 'active, China, Beijing + USA, Portland', // 1044406 about 3 hours
+  f010617: 'active, Canada, Surrey, @feiya200', // 1044389 about 21 hours
+  f015927: 'active, USA, East Islip', // 1044413 about 21 hours
+  f018785: 'active, Singapore + Germany, Frankfurt + USA', // 1044848 about 4 hours
+  f019029: 'active, Serbia, Boljevac', // 1044886 about 21 hours
+  f019104: 'active, Canada, Chambly', // 1044834 about 21 hours
+  f020378: 'active, Bulgaria, Asenovgrad', // 1044540 about 21 hours
+  f022142: 'active, USA, Queens', // 1044551 about 21 hours
+  f022163: 'active, NR', // 1044794 about 21 hours
+  f022352: 'active, Norway, Borgen', // 1044469 about 21 hours
+  f023495: 'active, China, Beijing + USA, Portland', // 1044393 about 4 hours
+  f024015: 'active, USA, Portland', // 1044965 about 21 hours
+  f024016: 'active, USA, Portland', // 1045648 about 21 hours
+  f025007: 'active, Korea, Gyeonggi-do', // 1044955 about 21 hours
+  f029401: 'active, USA, Portland + New Castle', // 1044782 about 21 hours
+  f038299: 'active, Russia, St. Petersburg', // 1044662 about 21 hours
+  f042558: 'active, China, Beijing + USA, Portland + Newcastle', // 1044537 about 21 hours
+  f042635: 'active, China, Beijing + USA, Portland + Newcastle', // 1045933 about 21 hours
+  f052447: 'active, China, Beijing + USA, Portland + New Castle', // 1044454 about 4 hours
+  f057614: 'active, USA, Portland + New Castle', // 1044947 about 21 hours
+  f058369: 'active, USA, Bow', // 1044546 about 21 hours
+  f058374: 'active, USA', // 1044946 about 21 hours
+
   // Sealing
 
-  f01276: 'active-sealing, Canada, Brampton, NBFS Canada', // 1044484
   f01278: 'active-sealing, USA, Grand Rapids, MiMiner', // 1044444
   f01291: 'active-sealing, Sweden, Stockholm, tvsthlm', // 1044482
   f02388: 'active-sealing, Netherlands, Amersfoort, Kroketje', // 1044390
-  f02401: 'active-sealing, Canada, Chambly, NBFS Canada', // 1044780
-  f02416: 'active-sealing, China, Guangdong, 星际无限', // 1044778
-  f02501: 'active-sealing, USA, Portland, 6block', // 1044923
-  f02514: 'active-sealing, USA, Portland, 6block', // 1044651
-  f02576: 'active-sealing, Denmark, Gjerlev, BenjaminH', // 1044858
   f02620: 'active-sealing, Poland, Krakow, @magik6k', // 1044541
   f02623: 'active-sealing, USA, Portland, 6block', // 1044559
-  f02645: 'active-sealing, China, Hong Kong', // 1045626
-  f03274: 'active-sealing, USA, Portland, 6block', // 1044424
-  f03275: 'active-sealing, USA, Portland, 6block', // 1044788
-  f03488: 'active-sealing, Korea, Geumcheon-gu', // 1044774
   f05316: 'active-sealing, USA, Portland, 6block', // 1044530
-  f05317: 'active-sealing, USA, Portland', // 1044400
   f08240: 'active-sealing, Russia, Novosibirsk, Rabinovitch', // 1044854
-  f08285: 'active-sealing, Latvia, Riga, stander', // 1045171
-  f08403: 'active-sealing, UK, Lower Slaughter', // 1045348
-  f010241: 'active-sealing, China, Beijing + USA, Portland', // 1045396
-  f010253: 'active-sealing, China, Beijing + USA, Portland', // 1044406
   f010446: 'active-sealing, Netherlands', // 1044646
-  f010617: 'active-sealing, Canada, Surrey, @feiya200', // 1044389
-  f015927: 'active-sealing, USA, East Islip', // 1044413
-  f019029: 'active-sealing, Serbia, Boljevac', // 1044886
   f019100: 'active-sealing, Romania, Cluj-Napoca', // 1044950
-  f019104: 'active-sealing, Canada, Chambly', // 1044834
   f019824: 'active-sealing, USA', // 1045295
-  f020378: 'active-sealing, Bulgaria, Asenovgrad', // 1044540
-  f022142: 'active-sealing, USA, Queens', // 1044551
-  f022163: 'active-sealing, NR', // 1044794
-  f022352: 'active-sealing, Norway, Borgen', // 1044469
   f023009: 'active-sealing, USA, Berkeley', // 1044836
   f023467: 'active-sealing, Norway, Oslo', // 1044450
   f023492: 'active-sealing, China, Beijing', // 1044410
-  f023495: 'active-sealing, China, Beijing + USA, Portland', // 1044393
   f023971: 'active-sealing, USA, @Brian Y', // 1044416
-  f024015: 'active-sealing, USA, Portland', // 1044965
   f029368: 'active-sealing, Korea, Gangseo-gu', // 1045853
-  f029401: 'active-sealing, USA, Portland + New Castle', // 1044782
   f029524: 'active-sealing, China, Hong Kong', // 1044870
   f033189: 'active-sealing, China, Zhejiang', // 1044831
-  f042558: 'active-sealing, China, Beijing + USA, Portland + Newcastle', // 1044537
-  f042635: 'active-sealing, China, Beijing + USA, Portland + Newcastle', // 1045933
   f043929: 'active-sealing, China, Beijing', // 1045361
   f047419: 'active-sealing, USA, Waukesha', // 1044887
-  f052447: 'active-sealing, China, Beijing + USA, Portland + New Castle', // 1044454
   f052767: 'active-sealing, Korea, Seoul', // 1045152
   f053255: 'active-sealing, Korea, Seoul', // 1045160
 
   f01238: 'sealing, Vietnam, Hanoi, FILECOIN-VIETNAM', // 1044490
   f02387: 'sealing, Canada, Brampton, NBFS Canada', // 1044525
   f02423: 'sealing, Ukraine, Kyiv, igowreck', // 1044764
-  f02490: 'sealing, China, Fujian', // 1044550
   f02665: 'sealing, Netherlands, Amsterdam, fm-ops', // 1044962
-  f03273: 'sealing, USA, Portland, 6block', // 1044458
   f03328: 'sealing, China, Xinxiang', // 1044862
   f03624: 'sealing, Germany, Chemnitz, ode', // 1044925
   f08157: 'sealing, China, Beijing + Germany, Frankfurt, 超星际', // 1044840
   f08383: 'sealing, USA, Portland, 6block', // 1045313
   f08482: 'sealing, USA, Athol, @why', // 1045694
-  f09693: 'sealing, USA, Portland + Singapore', // 1044556
   f010507: 'sealing, China, Hangzhou', // 1045425
   f014409: 'sealing, USA, Waxhaw', // 1044426
   f015877: 'sealing, China, Jiaxing + USA', // 1044506
-  f018785: 'sealing, Singapore + Germany, Frankfurt + USA', // 1044848
   f019551: 'sealing, UK, Birmingham, @Neofix AF', // 1045104
   f020928: 'sealing, China, Deyang + Singapore', // 1045503
   f022130: 'sealing, Korea, Seodaemun-gu', // 1044880
   f022395: 'sealing, USA, Los Angeles', // 1045236
-  f024016: 'sealing, USA, Portland', // 1045648
-  f025007: 'sealing, Korea, Gyeonggi-do', // 1044955
   f025019: 'sealing, China, Taiwan, Hsinchu', // 1044783
   f030384: 'sealing, undefined', // 1044865
-  f038299: 'sealing, Russia, St. Petersburg', // 1044662
   f048176: 'sealing, China, Fuzhou', // 1044857
   f049772: 'sealing, Korea, Seoul', // 1044957
   f050500: 'sealing, Korea, Uiwang', // 1044502
@@ -121,29 +125,15 @@ const annotations = {
   f054619: 'sealing, Korea, Hwaseong-si', // 1045579
   f054677: 'sealing, Finland, Helsinki', // 1044577
   f054788: 'sealing, Korea, Hwaseong-si + Gwangju', // 1045714
+  f055522: 'sealing, USA', // 1051995
   f057009: 'sealing, China, Dongguan', // 1045565
-  f057614: 'sealing, USA, Portland + New Castle', // 1044947
   f058168: 'sealing, Korea, Gyeonggi-do', // 1044910
-  f058369: 'sealing, USA, Bow', // 1044546
-  f058374: 'sealing, USA', // 1044946
   f059705: 'sealing, Korea, Naju', // 1044414
 
   // Stuck
 
-  f010498: 'stuck, China, Shenzhen', // Transferring: 3 minutes
-  f010505: 'stuck, China, Wuhan', // Transferring: 3 minutes
-  f018783: 'stuck, Singapore + Germany, Frankfurt + USA', // ClientTransferRestart: 3 minutes
-  f019534: 'stuck, USA, Beaverton', // CheckForAcceptance: 3 minutes
-  f020904: 'stuck, Korea, Uijeongbu-si', // CheckForAcceptance: 3 minutes
-  f021339: 'stuck, China, Jiaxing', // Transferring: 3 minutes
-  f023016: 'stuck, NR', // Transferring: 3 minutes
-  f023939: 'stuck, NR', // Transferring: 3 minutes
-  f024066: 'stuck, NR', // Transferring: 3 minutes
-  f048545: 'stuck, China, Chengdu', // Transferring: 3 minutes
-  f049751: 'stuck, Australia, Sydney', // Transferring: 3 minutes
-  f054198: 'stuck, China, Changsha', // Transferring: 3 minutes
-  f055522: 'stuck, USA', // CheckForAcceptance: 3 minutes
-  f057127: 'stuck, China, Suzhou', // Transferring: 3 minutes
+  f018783: 'stuck, Singapore + Germany, Frankfurt + USA', // ClientTransferRestart: about 22 hours
+  f019534: 'stuck, USA, Beaverton', // CheckForAcceptance: about 22 hours
 
   // Min-size
 
@@ -198,6 +188,8 @@ const annotations = {
   f07990: 'error, China, Hong Kong', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f08103: 'error, China, Foshan, 花生酱肠粉', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f09848: 'error, USA', // error in deal activation: failed to set up called handler: called check error (h: 189544): client: failed to look up deal on chain: deal 1044702 not found
+  f010498: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f010505: 'error, China, Wuhan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f010513: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f014394: 'error, China, Suzhou', // stream reset
   f018501: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
@@ -207,12 +199,15 @@ const annotations = {
   f019240: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f020398: 'error, China, Zhangjiakou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f020523: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f020904: 'error, Korea, Uijeongbu-si', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f021262: 'error, China, Shanghai', // error in deal activation: failed to set up called handler: called check error (h: 189545): client: failed to look up deal on chain: deal 1044710 not found
   f021339: 'error, China, Jiaxing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f021583: 'error, China, Jiaxing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f022522: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f022853: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f023016: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f023647: 'error, Korea, Gangseo-gu', // error in deal activation: failed to set up called handler: called check error (h: 189498): client: failed to look up deal on chain: deal 1044597 not found
+  f023939: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f024066: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f024511: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f025017: 'error, China, Hefei', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
@@ -227,11 +222,15 @@ const annotations = {
   f048174: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f048181: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f048192: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f048545: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f049751: 'error, Australia, Sydney', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f054163: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f054198: 'error, China, Changsha', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f055123: 'error, Korea, Busan', // error in deal activation: failed to set up called handler: called check error (h: 189545): client: failed to look up deal on chain: deal 1044709 not found
   f055171: 'error, China, Maoming', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f056443: 'error, Korea, Gyeonggi-do', // stream reset
   f056611: 'error, USA, Portland + New Castle', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f057127: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
 
   // Backoff
 
