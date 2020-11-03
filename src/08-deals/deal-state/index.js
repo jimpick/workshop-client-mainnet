@@ -430,7 +430,7 @@ export default function DealList ({ appState, cid, dealType }) {
   }, [client])
 
   const newerDeals = useMemo(() => {
-    const cutoff = subDays(new Date(), 3)
+    const cutoff = subDays(new Date(), 6)
     // return originalDeals
     return (
       originalDeals &&

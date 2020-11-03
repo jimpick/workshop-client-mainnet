@@ -36,120 +36,87 @@ const annotations = {
 
   // Active
 
-  f01276: 'active, Canada, Brampton, NBFS Canada', // 1044484 about 21 hours
-  f02401: 'active, Canada, Chambly, NBFS Canada', // 1044780 about 21 hours
-  f02416: 'active, China, Guangdong, 星际无限', // 1044778 about 21 hours
-  f02490: 'active, China, Fujian', // 1044550 about 21 hours
-  f02501: 'active, USA, Portland, 6block', // 1044923 about 4 hours
-  f02514: 'active, USA, Portland, 6block', // 1044651 about 21 hours
-  f02576: 'active, Denmark, Gjerlev, BenjaminH', // 1044858 about 21 hours
-  f02645: 'active, China, Hong Kong', // 1045626 about 21 hours
-  f03273: 'active, USA, Portland, 6block', // 1044458 about 21 hours
-  f03274: 'active, USA, Portland, 6block', // 1044424 about 21 hours
-  f03275: 'active, USA, Portland, 6block', // 1044788 about 21 hours
-  f03488: 'active, Korea, Geumcheon-gu', // 1044774 about 21 hours
-  f05317: 'active, USA, Portland', // 1044400 about 3 hours
-  f08285: 'active, Latvia, Riga, stander', // 1045171 about 21 hours
-  f08403: 'active, UK, Lower Slaughter', // 1045348 about 21 hours
-  f09693: 'active, USA, Portland + Singapore', // 1044556 about 4 hours
-  f010241: 'active, China, Beijing + USA, Portland', // 1045396 about 5 hours
-  f010253: 'active, China, Beijing + USA, Portland', // 1044406 about 3 hours
-  f010617: 'active, Canada, Surrey, @feiya200', // 1044389 about 21 hours
-  f015927: 'active, USA, East Islip', // 1044413 about 21 hours
-  f018785: 'active, Singapore + Germany, Frankfurt + USA', // 1044848 about 4 hours
-  f019029: 'active, Serbia, Boljevac', // 1044886 about 21 hours
-  f019104: 'active, Canada, Chambly', // 1044834 about 21 hours
-  f020378: 'active, Bulgaria, Asenovgrad', // 1044540 about 21 hours
-  f022142: 'active, USA, Queens', // 1044551 about 21 hours
-  f022163: 'active, NR', // 1044794 about 21 hours
-  f022352: 'active, Norway, Borgen', // 1044469 about 21 hours
-  f023495: 'active, China, Beijing + USA, Portland', // 1044393 about 4 hours
-  f024015: 'active, USA, Portland', // 1044965 about 21 hours
-  f024016: 'active, USA, Portland', // 1045648 about 21 hours
-  f025007: 'active, Korea, Gyeonggi-do', // 1044955 about 21 hours
-  f029401: 'active, USA, Portland + New Castle', // 1044782 about 21 hours
-  f038299: 'active, Russia, St. Petersburg', // 1044662 about 21 hours
-  f042558: 'active, China, Beijing + USA, Portland + Newcastle', // 1044537 about 21 hours
-  f042635: 'active, China, Beijing + USA, Portland + Newcastle', // 1045933 about 21 hours
-  f052447: 'active, China, Beijing + USA, Portland + New Castle', // 1044454 about 4 hours
-  f057614: 'active, USA, Portland + New Castle', // 1044947 about 21 hours
-  f058369: 'active, USA, Bow', // 1044546 about 21 hours
-  f058374: 'active, USA', // 1044946 about 21 hours
+  f01276: 'active, Canada, Brampton, NBFS Canada', // 1044484
+  f01291: 'active, Sweden, Stockholm, tvsthlm', // 1044482
+  f02388: 'active, Netherlands, Amersfoort, Kroketje', // 1044390
+  f02401: 'active, Canada, Chambly, NBFS Canada', // 1044780
+  f02416: 'active, China, Guangdong, 星际无限', // 1044778
+  f02423: 'active, Ukraine, Kyiv, igowreck', // 1044764
+  f02490: 'active, China, Fujian', // 1044550
+  f02501: 'active, USA, Portland, 6block', // 1044923
+  f02514: 'active, USA, Portland, 6block', // 1044651
+  f02576: 'active, Denmark, Gjerlev, BenjaminH', // 1044858
+  f02620: 'active, Poland, Krakow, @magik6k', // 1044541
+  f02645: 'active, China, Hong Kong', // 1045626
+  f03273: 'active, USA, Portland, 6block', // 1044458
+  f03274: 'active, USA, Portland, 6block', // 1044424
+  f03275: 'active, USA, Portland, 6block', // 1044788
+  f03488: 'active, Korea, Geumcheon-gu', // 1044774
+  f05317: 'active, USA, Portland', // 1044400
+  f08240: 'active, Russia, Novosibirsk, Rabinovitch', // 1044854
+  f08285: 'active, Latvia, Riga, stander', // 1045171
+  f08403: 'active, UK, Lower Slaughter', // 1045348
+  f09693: 'active, USA, Portland + Singapore', // 1044556
+  f010241: 'active, China, Beijing + USA, Portland', // 1045396
+  f010253: 'active, China, Beijing + USA, Portland', // 1044406
+  f010507: 'active, China, Hangzhou', // 1045425
+  f010617: 'active, Canada, Surrey, @feiya200', // 1044389
+  f014409: 'active, USA, Waxhaw', // 1044426
+  f015927: 'active, USA, East Islip', // 1044413
+  f018785: 'active, Singapore + Germany, Frankfurt + USA', // 1044848
+  f019029: 'active, Serbia, Boljevac', // 1044886
+  f019104: 'active, Canada, Chambly', // 1044834
+  f019551: 'active, UK, Birmingham, @Neofix AF', // 1045104
+  f020378: 'active, Bulgaria, Asenovgrad', // 1044540
+  f022130: 'active, Korea, Seodaemun-gu', // 1044880
+  f022142: 'active, USA, Queens', // 1044551
+  f022163: 'active, NR', // 1044794
+  f022352: 'active, Norway, Borgen', // 1044469
+  f023467: 'active, Norway, Oslo', // 1044450
+  f023495: 'active, China, Beijing + USA, Portland', // 1044393
+  f023971: 'active, USA, @Brian Y', // 1044416
+  f024015: 'active, USA, Portland', // 1044965
+  f024016: 'active, USA, Portland', // 1045648
+  f025007: 'active, Korea, Gyeonggi-do', // 1044955
+  f029368: 'active, Korea, Gangseo-gu', // 1045853
+  f029401: 'active, USA, Portland + New Castle', // 1044782
+  f038299: 'active, Russia, St. Petersburg', // 1044662
+  f042558: 'active, China, Beijing + USA, Portland + Newcastle', // 1044537
+  f042635: 'active, China, Beijing + USA, Portland + Newcastle', // 1045933
+  f047419: 'active, USA, Waukesha', // 1044887
+  f052447: 'active, China, Beijing + USA, Portland + New Castle', // 1044454
+  f057614: 'active, USA, Portland + New Castle', // 1044947
+  f058369: 'active, USA, Bow', // 1044546
+  f058374: 'active, USA', // 1044946
 
   // Sealing
 
-  f01278: 'active-sealing, USA, Grand Rapids, MiMiner', // 1044444
-  f01291: 'active-sealing, Sweden, Stockholm, tvsthlm', // 1044482
-  f02388: 'active-sealing, Netherlands, Amersfoort, Kroketje', // 1044390
-  f02620: 'active-sealing, Poland, Krakow, @magik6k', // 1044541
-  f02623: 'active-sealing, USA, Portland, 6block', // 1044559
-  f05316: 'active-sealing, USA, Portland, 6block', // 1044530
-  f08240: 'active-sealing, Russia, Novosibirsk, Rabinovitch', // 1044854
-  f010446: 'active-sealing, Netherlands', // 1044646
-  f019100: 'active-sealing, Romania, Cluj-Napoca', // 1044950
-  f019824: 'active-sealing, USA', // 1045295
-  f023009: 'active-sealing, USA, Berkeley', // 1044836
-  f023467: 'active-sealing, Norway, Oslo', // 1044450
-  f023492: 'active-sealing, China, Beijing', // 1044410
-  f023971: 'active-sealing, USA, @Brian Y', // 1044416
-  f029368: 'active-sealing, Korea, Gangseo-gu', // 1045853
-  f029524: 'active-sealing, China, Hong Kong', // 1044870
-  f033189: 'active-sealing, China, Zhejiang', // 1044831
-  f043929: 'active-sealing, China, Beijing', // 1045361
-  f047419: 'active-sealing, USA, Waukesha', // 1044887
-  f052767: 'active-sealing, Korea, Seoul', // 1045152
-  f053255: 'active-sealing, Korea, Seoul', // 1045160
+  f01278: 'active-sealing, USA, Grand Rapids, MiMiner', // carry-over
+  f023492: 'active-sealing, China, Beijing', // carry-over
 
-  f01238: 'sealing, Vietnam, Hanoi, FILECOIN-VIETNAM', // 1044490
-  f02387: 'sealing, Canada, Brampton, NBFS Canada', // 1044525
-  f02423: 'sealing, Ukraine, Kyiv, igowreck', // 1044764
-  f02665: 'sealing, Netherlands, Amsterdam, fm-ops', // 1044962
-  f03328: 'sealing, China, Xinxiang', // 1044862
-  f03624: 'sealing, Germany, Chemnitz, ode', // 1044925
-  f08157: 'sealing, China, Beijing + Germany, Frankfurt, 超星际', // 1044840
-  f08383: 'sealing, USA, Portland, 6block', // 1045313
-  f08482: 'sealing, USA, Athol, @why', // 1045694
-  f010507: 'sealing, China, Hangzhou', // 1045425
-  f014409: 'sealing, USA, Waxhaw', // 1044426
-  f015877: 'sealing, China, Jiaxing + USA', // 1044506
-  f019551: 'sealing, UK, Birmingham, @Neofix AF', // 1045104
-  f020928: 'sealing, China, Deyang + Singapore', // 1045503
-  f022130: 'sealing, Korea, Seodaemun-gu', // 1044880
-  f022395: 'sealing, USA, Los Angeles', // 1045236
-  f025019: 'sealing, China, Taiwan, Hsinchu', // 1044783
-  f030384: 'sealing, undefined', // 1044865
-  f048176: 'sealing, China, Fuzhou', // 1044857
-  f049772: 'sealing, Korea, Seoul', // 1044957
-  f050500: 'sealing, Korea, Uiwang', // 1044502
-  f053037: 'sealing, China, Hefei', // 1044909
-  f054619: 'sealing, Korea, Hwaseong-si', // 1045579
-  f054677: 'sealing, Finland, Helsinki', // 1044577
-  f054788: 'sealing, Korea, Hwaseong-si + Gwangju', // 1045714
-  f055522: 'sealing, USA', // 1051995
-  f057009: 'sealing, China, Dongguan', // 1045565
-  f058168: 'sealing, Korea, Gyeonggi-do', // 1044910
-  f059705: 'sealing, Korea, Naju', // 1044414
+  f03624: 'sealing, Germany, Chemnitz, ode', // carry-over
+  f015877: 'sealing, China, Jiaxing + USA', // carry-over
+  f054619: 'sealing, Korea, Hwaseong-si', // carry-over
 
   // Stuck
 
-  f018783: 'stuck, Singapore + Germany, Frankfurt + USA', // ClientTransferRestart: about 22 hours
-  f019534: 'stuck, USA, Beaverton', // CheckForAcceptance: about 22 hours
+  f018783: 'stuck, Singapore + Germany, Frankfurt + USA', // ClientTransferRestart: about 16 hours
 
   // Min-size
 
-  f01234: 'min-size, Belgium, De Klinge, Eliovp', // 134217728 < 268435456
-  f01240: 'min-size, Netherlands, HidNand', // 134217728 < 268435456
-  f02299: 'min-size, China, Dongguan, Yolo', // 134217728 < 17179869184
-  f08474: 'min-size, China, Hong Kong', // 134217728 < 268435456
-  f023869: 'min-size, China, Fuzhou', // 134217728 < 268435456
-  f023870: 'min-size, China, Fuzhou', // 134217728 < 268435456
-  f023871: 'min-size, China, Fuzhou', // 134217728 < 268435456
-  f023977: 'min-size, China, Fuzhou', // 134217728 < 268435456
-  f023978: 'min-size, China, Fuzhou', // 134217728 < 268435456
-  f024012: 'min-size, China, Fuzhou', // 134217728 < 268435456
-  f024014: 'min-size, China, Fuzhou', // 134217728 < 268435456
-  f024136: 'min-size, China, Fuzhou', // 134217728 < 268435456
-  f049882: 'min-size, Netherlands, De Rijp', // 134217728 < 268435456
+  f01234: 'min-size, Belgium, De Klinge, Eliovp', // carry-over
+  f01240: 'min-size, Netherlands, HidNand', // carry-over
+  f02299: 'min-size, China, Dongguan, Yolo', // carry-over
+  f08474: 'min-size, China, Hong Kong', // carry-over
+  f023869: 'min-size, China, Fuzhou', // carry-over
+  f023870: 'min-size, China, Fuzhou', // carry-over
+  f023871: 'min-size, China, Fuzhou', // carry-over
+  f023977: 'min-size, China, Fuzhou', // carry-over
+  f023978: 'min-size, China, Fuzhou', // carry-over
+  f024012: 'min-size, China, Fuzhou', // carry-over
+  f024014: 'min-size, China, Fuzhou', // carry-over
+  f024136: 'min-size, China, Fuzhou', // carry-over
+  f049882: 'min-size, Netherlands, De Rijp', // carry-over
 
   // Min-ask
 
@@ -177,90 +144,123 @@ const annotations = {
 
   // Error
 
-  f01241: 'error, USA, Portland, 6block', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f01287: 'error, China, Jiaxing, MaiTian', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f01782: 'error, China, Hong Kong + Singapore + USA, Portland, hellofil.com', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f02415: 'error, China, Hong Kong', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f02633: 'error, China, Hong Kong', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f03222: 'error, China, Yuncheong, 星云矿池', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f03339: 'error, China, Luzhou, benxun', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f04443: 'error, China, Shanghai, 罗良科技', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f07990: 'error, China, Hong Kong', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f08103: 'error, China, Foshan, 花生酱肠粉', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f09848: 'error, USA', // error in deal activation: failed to set up called handler: called check error (h: 189544): client: failed to look up deal on chain: deal 1044702 not found
-  f010498: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f010505: 'error, China, Wuhan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f010513: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f014394: 'error, China, Suzhou', // stream reset
-  f018501: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f018780: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f018781: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f018782: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f019240: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f020398: 'error, China, Zhangjiakou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f020523: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f020904: 'error, Korea, Uijeongbu-si', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
-  f021262: 'error, China, Shanghai', // error in deal activation: failed to set up called handler: called check error (h: 189545): client: failed to look up deal on chain: deal 1044710 not found
-  f021339: 'error, China, Jiaxing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f021583: 'error, China, Jiaxing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f022522: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f022853: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f023016: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f023647: 'error, Korea, Gangseo-gu', // error in deal activation: failed to set up called handler: called check error (h: 189498): client: failed to look up deal on chain: deal 1044597 not found
-  f023939: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f024066: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f024511: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f025017: 'error, China, Hefei', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f030335: 'error, China, Fujian', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f030379: 'error, Korea, Uiwang', // error in deal activation: failed to set up called handler: called check error (h: 189495): client: failed to look up deal on chain: deal 1044588 not found
-  f032934: 'error, Korea, Incheon', // error in deal activation: failed to set up called handler: called check error (h: 189507): client: failed to look up deal on chain: deal 1044614 not found
-  f034047: 'error, China, Hangzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f034701: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f034777: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f044160: 'error, China, Guangzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f046426: 'error, China, Beijing', // error in deal activation: failed to set up called handler: called check error (h: 189541): client: failed to look up deal on chain: deal 1044695 not found
-  f048174: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f048181: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f048192: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f048545: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f049751: 'error, Australia, Sydney', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f054163: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f054198: 'error, China, Changsha', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f055123: 'error, Korea, Busan', // error in deal activation: failed to set up called handler: called check error (h: 189545): client: failed to look up deal on chain: deal 1044709 not found
-  f055171: 'error, China, Maoming', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f056443: 'error, Korea, Gyeonggi-do', // stream reset
-  f056611: 'error, USA, Portland + New Castle', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f057127: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f01238: 'error, Vietnam, Hanoi, FILECOIN-VIETNAM', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1044490 not found
+  f01241: 'error, USA, Portland, 6block', // carry-over
+  f01287: 'error, China, Jiaxing, MaiTian', // carry-over
+  f01782: 'error, China, Hong Kong + Singapore + USA, Portland, hellofil.com', // carry-over
+  f02387: 'error, Canada, Brampton, NBFS Canada', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1044525 not found
+  f02415: 'error, China, Hong Kong', // carry-over
+  f02623: 'error, USA, Portland, 6block', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1044559 not found
+  f02633: 'error, China, Hong Kong', // carry-over
+  f02665: 'error, Netherlands, Amsterdam, fm-ops', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1044962 not found
+  f03222: 'error, China, Yuncheong, 星云矿池', // carry-over
+  f03328: 'error, China, Xinxiang', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1044862 not found
+  f03339: 'error, China, Luzhou, benxun', // carry-over
+  f04443: 'error, China, Shanghai, 罗良科技', // carry-over
+  f05316: 'error, USA, Portland, 6block', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1044530 not found
+  f07990: 'error, China, Hong Kong', // carry-over
+  f08103: 'error, China, Foshan, 花生酱肠粉', // carry-over
+  f08157: 'error, China, Beijing + Germany, Frankfurt, 超星际', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1044840 not found
+  f08383: 'error, USA, Portland, 6block', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1045313 not found
+  f08482: 'error, USA, Athol, @why', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1045694 not found
+  f09848: 'error, USA', // carry-over
+  f010446: 'error, Netherlands', // error in deal activation: failed to set up called handler: called check error (h: 196496): client: failed to look up deal on chain: deal 1044646 not found
+  f010498: 'error, China, Shenzhen', // carry-over
+  f010505: 'error, China, Wuhan', // carry-over
+  f010513: 'error, China, Chongqing', // carry-over
+  f014394: 'error, China, Suzhou', // carry-over
+  f018501: 'error, China, Beijing', // carry-over
+  f018780: 'error, Singapore + Germany, Frankfurt + USA', // carry-over
+  f018781: 'error, Singapore + Germany, Frankfurt + USA', // carry-over
+  f018782: 'error, Singapore + Germany, Frankfurt + USA', // carry-over
+  f019100: 'error, Romania, Cluj-Napoca', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1044950 not found
+  f019240: 'error, China, Beijing', // carry-over
+  f019534: 'error, USA, Beaverton', // error in deal activation: failed to set up called handler: called check error (h: 196496): client: failed to look up deal on chain: deal 1099581 not found
+  f019824: 'error, USA', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1045295 not found
+  f020398: 'error, China, Zhangjiakou', // carry-over
+  f020523: 'error, China, Suzhou', // carry-over
+  f020904: 'error, Korea, Uijeongbu-si', // carry-over
+  f020928: 'error, China, Deyang + Singapore', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1045503 not found
+  f021262: 'error, China, Shanghai', // carry-over
+  f021339: 'error, China, Jiaxing', // carry-over
+  f021583: 'error, China, Jiaxing', // carry-over
+  f022395: 'error, USA, Los Angeles', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1045236 not found
+  f022522: 'error, China, Dongguan', // carry-over
+  f022853: 'error, China, Fuzhou', // carry-over
+  f023009: 'error, USA, Berkeley', // error in deal activation: failed to set up called handler: called check error (h: 196496): client: failed to look up deal on chain: deal 1044836 not found
+  f023016: 'error, NR', // carry-over
+  f023647: 'error, Korea, Gangseo-gu', // carry-over
+  f023939: 'error, NR', // carry-over
+  f024066: 'error, NR', // carry-over
+  f024511: 'error, NR', // carry-over
+  f025017: 'error, China, Hefei', // carry-over
+  f025019: 'error, China, Taiwan, Hsinchu', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1044783 not found
+  f029524: 'error, China, Hong Kong', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1044870 not found
+  f030335: 'error, China, Fujian', // carry-over
+  f030379: 'error, Korea, Uiwang', // carry-over
+  f030384: 'error, undefined', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1044865 not found
+  f032934: 'error, Korea, Incheon', // carry-over
+  f033189: 'error, China, Zhejiang', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1044831 not found
+  f034047: 'error, China, Hangzhou', // carry-over
+  f034701: 'error, China, Shenzhen', // carry-over
+  f034777: 'error, China, Chengdu', // carry-over
+  f043929: 'error, China, Beijing', // error in deal activation: failed to set up called handler: called check error (h: 196496): client: failed to look up deal on chain: deal 1045361 not found
+  f044160: 'error, China, Guangzhou', // carry-over
+  f046426: 'error, China, Beijing', // carry-over
+  f048174: 'error, China, Fuzhou', // carry-over
+  f048176: 'error, China, Fuzhou', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1044857 not found
+  f048181: 'error, China, Fuzhou', // carry-over
+  f048192: 'error, China, Suzhou', // carry-over
+  f048545: 'error, China, Chengdu', // carry-over
+  f049751: 'error, Australia, Sydney', // carry-over
+  f049772: 'error, Korea, Seoul', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1044957 not found
+  f050500: 'error, Korea, Uiwang', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1044502 not found
+  f052767: 'error, Korea, Seoul', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1045152 not found
+  f053037: 'error, China, Hefei', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1044909 not found
+  f053255: 'error, Korea, Seoul', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1045160 not found
+  f054163: 'error, China, Dongguan', // carry-over
+  f054198: 'error, China, Changsha', // carry-over
+  f054677: 'error, Finland, Helsinki', // error in deal activation: failed to set up called handler: called check error (h: 196496): client: failed to look up deal on chain: deal 1044577 not found
+  f054788: 'error, Korea, Hwaseong-si + Gwangju', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1045714 not found
+  f055123: 'error, Korea, Busan', // carry-over
+  f055171: 'error, China, Maoming', // carry-over
+  f055522: 'error, USA', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1051995 not found
+  f056443: 'error, Korea, Gyeonggi-do', // carry-over
+  f056611: 'error, USA, Portland + New Castle', // carry-over
+  f057009: 'error, China, Dongguan', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1045565 not found
+  f057127: 'error, China, Suzhou', // carry-over
+  f058168: 'error, Korea, Gyeonggi-do', // error in deal activation: failed to set up called handler: called check error (h: 198599): client: failed to look up deal on chain: deal 1044910 not found
+  f059705: 'error, Korea, Naju', // error in deal activation: failed to set up called handler: called check error (h: 196496): client: failed to look up deal on chain: deal 1044414 not found
 
   // Backoff
 
   // Rejected
 
-  f01247: 'rejected, Canada, Montreal, BigChungus™', // piece size more than maximum allowed size: 134217728 > 1048576
-  f01272: 'rejected, Singapore', // piece size more than maximum allowed size: 134217728 > 1048576
-  f03264: 'rejected, Korea, Bucheon-si', // piece size more than maximum allowed size: 134217728 > 1048576
-  f03364: 'rejected, China, Guangzhou', // piece size more than maximum allowed size: 134217728 > 1048576
-  f07709: 'rejected, Korea, Dongjak-gu', // piece size more than maximum allowed size: 134217728 > 1048576
-  f08204: 'rejected, USA, St. Louis', // piece size more than maximum allowed size: 134217728 > 1048576
-  f08399: 'rejected, USA, Sammamish', // piece size more than maximum allowed size: 134217728 > 1048576
-  f010399: 'rejected, China, Guangzhou', // piece size more than maximum allowed size: 134217728 > 1048576
-  f014324: 'rejected, Canada, Vancouver', // piece size more than maximum allowed size: 134217728 > 1048576
-  f014569: 'rejected, NR', // piece size more than maximum allowed size: 134217728 > 1048576
-  f015941: 'rejected, Ukraine, Kyiv', // piece size more than maximum allowed size: 134217728 > 1048576
-  f019041: 'rejected, Singapore', // piece size more than maximum allowed size: 134217728 > 1048576
-  f019437: 'rejected, Korea, Guro-gu', // piece size more than maximum allowed size: 134217728 > 1048576
-  f021075: 'rejected, China, Chengdu', // piece size more than maximum allowed size: 134217728 > 1048576
-  f021716: 'rejected, New Zealand, Wellington', // piece size more than maximum allowed size: 134217728 > 1048576
-  f022227: 'rejected, China, Jiangsu', // piece size more than maximum allowed size: 134217728 > 1048576
-  f024156: 'rejected, USA', // piece size more than maximum allowed size: 134217728 > 1048576
-  f024550: 'rejected, China, Wenzhou', // piece size more than maximum allowed size: 134217728 > 1048576
-  f032913: 'rejected, China, Shenzhen', // piece size more than maximum allowed size: 134217728 > 1048576
-  f033113: 'rejected, China, Wuxi', // piece size more than maximum allowed size: 134217728 > 1048576
-  f033356: 'rejected, Korea, Gangnum-gu', // piece size more than maximum allowed size: 134217728 > 1048576
-  f033517: 'rejected, China, Changsha', // piece size more than maximum allowed size: 134217728 > 1048576
-  f039235: 'rejected, NR', // piece size more than maximum allowed size: 134217728 > 1048576
-  f044374: 'rejected, Slovakia, Bratislava', // piece size more than maximum allowed size: 268435456 > 1048576
-  f045714: 'rejected, Korea, Busan', // piece size more than maximum allowed size: 134217728 > 1048576
+  f01247: 'rejected, Canada, Montreal, BigChungus™', // carry-over
+  f01272: 'rejected, Singapore', // carry-over
+  f03264: 'rejected, Korea, Bucheon-si', // carry-over
+  f03364: 'rejected, China, Guangzhou', // carry-over
+  f07709: 'rejected, Korea, Dongjak-gu', // carry-over
+  f08204: 'rejected, USA, St. Louis', // carry-over
+  f08399: 'rejected, USA, Sammamish', // carry-over
+  f010399: 'rejected, China, Guangzhou', // carry-over
+  f014324: 'rejected, Canada, Vancouver', // carry-over
+  f014569: 'rejected, NR', // carry-over
+  f015941: 'rejected, Ukraine, Kyiv', // carry-over
+  f019041: 'rejected, Singapore', // carry-over
+  f019437: 'rejected, Korea, Guro-gu', // carry-over
+  f021075: 'rejected, China, Chengdu', // carry-over
+  f021716: 'rejected, New Zealand, Wellington', // carry-over
+  f022227: 'rejected, China, Jiangsu', // carry-over
+  f024156: 'rejected, USA', // carry-over
+  f024550: 'rejected, China, Wenzhou', // carry-over
+  f032913: 'rejected, China, Shenzhen', // carry-over
+  f033113: 'rejected, China, Wuxi', // carry-over
+  f033356: 'rejected, Korea, Gangnum-gu', // carry-over
+  f033517: 'rejected, China, Changsha', // carry-over
+  f039235: 'rejected, NR', // carry-over
+  f044374: 'rejected, Slovakia, Bratislava', // carry-over
+  f045714: 'rejected, Korea, Busan', // carry-over
 
   // Dial
 
