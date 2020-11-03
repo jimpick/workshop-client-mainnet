@@ -1,6 +1,7 @@
 const baiduCities = {
   7: 'Guangdong', // 广东省
   8: 'Shandong', // 山东省
+  12: 'Xinjiang', // 新疆维吾尔自治区
   16: 'Fujian', // 福建省
   17: 'Guangxi', // 广西壮族自治区
   18: 'Jiangsu', // 江苏省

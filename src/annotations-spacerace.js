@@ -12,6 +12,40 @@
 const annotations = {
   // New
 
+  f019806: 'new, China, Beijing',
+  f048975: 'new, NR',
+  f054412: 'new, NR',
+  f054422: 'new, NR',
+  f056226: 'new, NR',
+  f056393: 'new, NR',
+  f057070: 'new, NR',
+  f057466: 'new, China, Guangzhou',
+  f057618: 'new, NR',
+  f057683: 'new, NR',
+  f059740: 'new, Germany, Korschenbroich',
+  f059813: 'new, NR',
+  f060072: 'new, China, Chongqing',
+  f060114: 'new, China, Shenzhen',
+  f060693: 'new, NR',
+  f060702: 'new, NR',
+  f060805: 'new, NR',
+  f060975: 'new, NR',
+  f061051: 'new, NR',
+  f061059: 'new, China, Beijing',
+  f061158: 'new, China, Guangdong',
+  f061503: 'new, NR',
+  f061959: 'new, NR',
+  f062204: 'new, China, Hong Kong',
+  f062245: 'new, NR',
+  f062260: 'new, China, Guangzhou',
+  f062318: 'new, Korea, Naju',
+  f062334: 'new, USA, Portland + New Castle',
+  f062353: 'new, Germany',
+  f062375: 'new, Korea, Gyeonggi-do',
+  f062449: 'new, NR',
+  f062518: 'new, Korea, Gwangju',
+  f062937: 'new, NR',
+
   // Active
 
   f01278: 'active, USA, Grand Rapids, MiMiner', // 1039657 about 12 hours
