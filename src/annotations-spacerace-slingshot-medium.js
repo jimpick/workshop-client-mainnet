@@ -10,20 +10,61 @@ const annotations = {
 
   // Candidates
 
-  f019029: 'active-candidate, Serbia, Boljevac', // carry-over
-  f057614: 'active-candidate, USA, Portland + New Castle', // carry-over
-
-  f02540: 'candidate, USA, Rochester', // carry-over
-  f09696: 'candidate, USA, Portland + Singapore', // carry-over
-  f010558: 'candidate, China, Shenzhen + Hong Kong', // carry-over
-  f014365: 'candidate, Australia, Marrickville + Japan, Heiwajima', // carry-over
-  f020223: 'candidate, China, Guiyang', // carry-over
-  f020605: 'candidate, China, Yibin', // carry-over
-  f023001: 'candidate, China, Changsha', // carry-over
-  f023854: 'candidate, China, Fuzhou', // carry-over
-  f024511: 'candidate, NR', // carry-over
-  f030203: 'candidate, undefined', // carry-over
-  f034039: 'candidate, Russia', // carry-over
+  f01240: 'candidate, Netherlands, HidNand',
+  f01278: 'candidate, USA, Grand Rapids, MiMiner',
+  f01280: 'candidate, China, Wuxi, 了凡超算',
+  f01782:
+    'candidate, China, Hong Kong + Singapore + USA, Portland, hellofil.com',
+  f02423: 'candidate, Ukraine, Kyiv, igowreck',
+  f02514: 'candidate, USA, Portland, 6block',
+  f02540: 'candidate, USA, Rochester',
+  f02619: 'candidate, China, Beijing, Blockcasting',
+  f02824: 'candidate, China, Chengdu',
+  f03491: 'candidate, China, Hong Kong',
+  f08403: 'candidate, UK, Lower Slaughter',
+  f09037: 'candidate, Singapore',
+  f09696: 'candidate, USA, Portland + Singapore',
+  f010400: 'candidate, China, Shenyang',
+  f010507: 'candidate, China, Hangzhou',
+  f010513: 'candidate, China, Chongqing',
+  f010558: 'candidate, China, Shenzhen + Hong Kong',
+  f014365: 'candidate, Australia, Marrickville + Japan, Heiwajima',
+  f015734: 'candidate, China, Qingdao',
+  f015747: 'candidate, Japan, Setagaya-ku',
+  f015927: 'candidate, USA, East Islip',
+  f018782: 'candidate, Singapore + Germany, Frankfurt + USA',
+  f019029: 'candidate, Serbia, Boljevac',
+  f020223: 'candidate, China, Guiyang',
+  f020378: 'candidate, Bulgaria, Asenovgrad',
+  f020436: 'candidate, China, Beijing',
+  f020605: 'candidate, China, Yibin',
+  f020904: 'candidate, Korea, Uijeongbu-si',
+  f022089: 'candidate, China, Beijing',
+  f022142: 'candidate, USA, Queens',
+  f022352: 'candidate, Norway, Borgen',
+  f023001: 'candidate, China, Changsha',
+  f023467: 'candidate, Norway, Oslo',
+  f023662: 'candidate, China, Fuzhou',
+  f023854: 'candidate, China, Fuzhou',
+  f023870: 'candidate, China, Fuzhou',
+  f024146: 'candidate, China, Fuzhou',
+  f024468: 'candidate, China, Shenzhen',
+  f024511: 'candidate, NR',
+  f025007: 'candidate, Korea, Gyeonggi-do',
+  f025025: 'candidate, China, Qingdao',
+  f025044: 'candidate, undefined',
+  f030203: 'candidate, undefined',
+  f030327: 'candidate, China, Beijing',
+  f033517: 'candidate, China, Changsha',
+  f034039: 'candidate, Russia',
+  f034777: 'candidate, China, Chengdu',
+  f039800: 'candidate, China, Chengdu',
+  f040218: 'candidate, China, Wuxi',
+  f043929: 'candidate, China, Beijing',
+  f046426: 'candidate, China, Beijing',
+  f053088: 'candidate, China, Shanghai',
+  f057614: 'candidate, USA, Portland + New Castle',
+  f057618: 'candidate, NR',
 
   // Testing
 
@@ -241,33 +282,6 @@ const annotations = {
 
   // Error
 
-  f01240: 'error, Netherlands, HidNand', // adding market funds failed: GasEstimateMessageGas error: estimating gas used: message execution failed: exit SysErrInsufficientFunds(6), reason: failed to transfer funds (RetCode=6): transfer failed when deducting funds (0.006878290657318306 FIL): not enough funds (RetCode=6)
-  f01280: 'error, China, Wuxi, 了凡超算', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f01782: 'error, China, Hong Kong + Singapore + USA, Portland, hellofil.com', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f02619: 'error, China, Beijing, Blockcasting', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f02824: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f03491: 'error, China, Hong Kong', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f08403: 'error, UK, Lower Slaughter', // adding market funds failed: GasEstimateMessageGas error: estimating gas used: message execution failed: exit SysErrInsufficientFunds(6), reason: failed to transfer funds (RetCode=6): transfer failed when deducting funds (0.006551471657318306 FIL): not enough funds (RetCode=6)
-  f010400: 'error, China, Shenyang', // stream reset
-  f010507: 'error, China, Hangzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
-  f010513: 'error, China, Chongqing', // adding market funds failed: GasEstimateMessageGas error: estimating gas used: message execution failed: exit SysErrInsufficientFunds(6), reason: failed to transfer funds (RetCode=6): transfer failed when deducting funds (0.006551456032318306 FIL): not enough funds (RetCode=6)
-  f015734: 'error, China, Qingdao', // stream reset
-  f015747: 'error, Japan, Setagaya-ku', // stream reset
-  f020378: 'error, Bulgaria, Asenovgrad', // deal failed: (State=26) error calling node: publishing deal: GasEstimateMessageGas error: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr f020378: escrow balance 101205006891050218 < locked 101197014661270584 + required 20746455770466 (RetCode=19)
-  f020436: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f020904: 'error, Korea, Uijeongbu-si', // deal failed: (State=26) error calling node: AddFunds errored: handler: websocket connection closed
-  f022089: 'error, China, Beijing', // adding market funds failed: GasEstimateMessageGas error: estimating gas used: message execution failed: exit SysErrInsufficientFunds(6), reason: failed to transfer funds (RetCode=6): transfer failed when deducting funds (0.006584013094818306 FIL): not enough funds (RetCode=6)
-  f023870: 'error, China, Fuzhou', // adding market funds failed: GasEstimateMessageGas error: estimating gas used: message execution failed: exit SysErrInsufficientFunds(6), reason: failed to transfer funds (RetCode=6): transfer failed when deducting funds (0.0065169375 FIL): not enough funds (RetCode=6)
-  f024468: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f025007: 'error, Korea, Gyeonggi-do', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f025025: 'error, China, Qingdao', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f030327: 'error, China, Beijing', // deal failed: (State=26) error calling node: publishing deal: GasEstimateMessageGas error: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr f030327: escrow balance 20759664614130 < locked 26694948124 + required 20737290710412 (RetCode=19)
-  f033517: 'error, China, Changsha', // adding market funds failed: GasEstimateMessageGas error: estimating gas used: message execution failed: exit SysErrInsufficientFunds(6), reason: failed to transfer funds (RetCode=6): transfer failed when deducting funds (0.007166648844818306 FIL): not enough funds (RetCode=6)
-  f034777: 'error, China, Chengdu', // adding market funds failed: GasEstimateMessageGas error: estimating gas used: message execution failed: exit SysErrInsufficientFunds(6), reason: failed to transfer funds (RetCode=6): transfer failed when deducting funds (0.0065495815625 FIL): not enough funds (RetCode=6)
-  f043929: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f046426: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f053088: 'error, China, Shanghai', // deal failed: (State=26) error calling node: AddFunds errored: handler: websocket connection closed
-
   // Backoff
 
   // Rejected
@@ -308,29 +322,13 @@ const annotations = {
   f034362: 'rejected, China, Sichuan', // piece size more than maximum allowed size: 134217728 > 1048576
   f039235: 'rejected, NR', // piece size more than maximum allowed size: 134217728 > 1048576
   f045714: 'rejected, Korea, Busan', // piece size more than maximum allowed size: 134217728 > 1048576
-  f048540: 'rejected, China, Xinxiang', // piece size more than maximum allowed size: 134217728 > 1048576
+  f048540: 'rejected, China, Xinxiang' // piece size more than maximum allowed size: 134217728 > 1048576
 
   // Dial
 
   // XNR
 
   // Error during ask
-
-  f01278: 'error-ask, USA, Grand Rapids, MiMiner', // carry-over
-  f02423: 'error-ask, Ukraine, Kyiv, igowreck', // carry-over
-  f02514: 'error-ask, USA, Portland, 6block', // carry-over
-  f09037: 'error-ask, Singapore', // carry-over
-  f015927: 'error-ask, USA, East Islip', // carry-over
-  f018782: 'error-ask, Singapore + Germany, Frankfurt + USA', // carry-over
-  f022142: 'error-ask, USA, Queens', // carry-over
-  f022352: 'error-ask, Norway, Borgen', // carry-over
-  f023467: 'error-ask, Norway, Oslo', // carry-over
-  f023662: 'error-ask, China, Fuzhou', // carry-over
-  f024146: 'error-ask, China, Fuzhou', // carry-over
-  f025044: 'error-ask, undefined', // carry-over
-  f039800: 'error-ask, China, Chengdu', // carry-over
-  f040218: 'error-ask, China, Wuxi', // carry-over
-  f057618: 'error-ask, NR' // carry-over
 }
 
 export default annotations
