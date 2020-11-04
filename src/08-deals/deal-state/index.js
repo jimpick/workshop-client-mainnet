@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef, useMemo } from 'react'
-import { subDays, format, formatDistance } from 'date-fns'
+import { subHours, format, formatDistance } from 'date-fns'
 import copy from 'clipboard-copy'
 import useLotusClient from '../../lib/use-lotus-client'
 import annotationsCamera from '../../annotations-spacerace.js'
@@ -430,7 +430,7 @@ export default function DealList ({ appState, cid, dealType }) {
   }, [client])
 
   const newerDeals = useMemo(() => {
-    const cutoff = subDays(new Date(), 6)
+    const cutoff = subHours(new Date(), 12)
     // return originalDeals
     return (
       originalDeals &&
