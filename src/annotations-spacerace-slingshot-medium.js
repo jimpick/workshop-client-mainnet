@@ -15,10 +15,12 @@ const annotations = {
   // Active
 
   f01277: 'active, Sweden, Stockholm, tvsthlm', // 1213416 about 12 hours
+  f01278: 'active, USA, Grand Rapids, MiMiner', // 1214116 1 day
   f01291: 'active, Sweden, Stockholm, tvsthlm', // 1213400 about 15 hours
   f01782: 'active, China, Hong Kong + Singapore + USA, Portland, hellofil.com', // 1216139 about 6 hours
   f02401: 'active, Canada, Chambly, NBFS Canada', // 1213239 about 16 hours
   f02415: 'active, China, Hong Kong', // 1213515 about 5 hours
+  f02423: 'active, Ukraine, Kyiv, igowreck', // 1214064 2 days
   f02490: 'active, China, Fujian', // 1213287 about 11 hours
   f02501: 'active, USA, Portland, 6block', // 1213192 about 5 hours
   f02514: 'active, USA, Portland, 6block', // 1214122 about 6 hours
@@ -35,22 +37,30 @@ const annotations = {
   f09693: 'active, USA, Portland + Singapore', // 1213194 about 6 hours
   f09848: 'active, USA', // 1213310 about 9 hours
   f010084: 'active, China, Beijing', // 1213460 about 14 hours
+  f010247: 'active, China, Yantai', // 1213322 2 days
   f010479: 'active, France, Fontenay-sous-Bois', // 1213437 about 19 hours
   f010491: 'active, China, Shenzhen', // 1213270 about 11 hours
   f010505: 'active, China, Wuhan', // 1213443 about 6 hours
   f010523: 'active, China, Beijing', // 1213197 about 18 hours
+  f010617: 'active, Canada, Surrey, @feiya200', // 1213420 2 days
   f014394: 'active, China, Suzhou', // 1213315 about 11 hours
+  f014409: 'active, USA, Waxhaw', // 1213435 2 days
   f015877: 'active, China, Jiaxing + USA', // 1213372 about 9 hours
+  f015941: 'active, Ukraine, Kyiv', // 1213256 2 days
   f018501: 'active, China, Beijing', // 1213220 about 15 hours
   f018781: 'active, Singapore + Germany, Frankfurt + USA', // 1213388 about 5 hours
+  f019100: 'active, Romania, Cluj-Napoca', // 1213402 2 days
   f019240: 'active, China, Beijing', // 1213492 about 14 hours
   f019551: 'active, UK, Birmingham, @Neofix AF', // 1213517 about 11 hours
   f020378: 'active, Bulgaria, Asenovgrad', // 1214059 about 15 hours
   f020489: 'active, China, Lioaning', // 1213230 about 15 hours
   f020523: 'active, China, Suzhou', // 1213269 about 11 hours
   f022125: 'active, China, Shenzhen', // 1213285 about 8 hours
+  f022142: 'active, USA, Queens', // 1214119 1 day
   f022308: 'active, NR', // 1213424 about 19 hours
+  f022522: 'active, China, Dongguan', // 1213339 2 days
   f022853: 'active, China, Fuzhou', // 1213176 about 6 hours
+  f023467: 'active, Norway, Oslo', // 1214091 about 16 hours
   f023495: 'active, China, Beijing + USA, Portland', // 1213311 about 5 hours
   f023825: 'active, USA, Portland', // 1213496 about 6 hours
   f023843: 'active, NR', // 1213363 about 17 hours
@@ -76,12 +86,19 @@ const annotations = {
   f048192: 'active, China, Suzhou', // 1213264 about 13 hours
   f052447: 'active, China, Beijing + USA, Portland + New Castle', // 1213445 about 6 hours
   f053916: 'active, USA, Concord', // 1213240 about 16 hours
+  f054163: 'active, China, Dongguan', // 1213506 1 day
+  f054370: 'active, China, Dongguan', // 1213516 2 days
   f054389: 'active, China, Chongqing', // 1213408 about 19 hours
   f056611: 'active, USA, Portland + New Castle', // 1213398 about 5 hours
+  f057368: 'active, Korea, Gyeonggi-do', // 1213371 2 days
+  f057560: 'active, NR', // 1213431 2 days
   f057614: 'active, USA, Portland + New Castle', // 1214097 about 7 hours
+  f057842: 'active, Korea, Gyeonggi-do', // 1213538 2 days
+  f058168: 'active, Korea, Gyeonggi-do', // 1213488 2 days
   f060072: 'active, China, Chongqing', // 1213198 about 13 hours
   f061158: 'active, China, Guangdong', // 1213479 about 14 hours
   f062260: 'active, China, Guangzhou', // 1213390 about 16 hours
+  f062318: 'active, Korea, Naju', // 1213438 2 days
 
   // Sealing
 
@@ -90,16 +107,12 @@ const annotations = {
   f03274: 'active-sealing, USA, Portland, 6block', // 1213401
   f010241: 'active-sealing, China, Beijing + USA, Portland', // 1213441
   f010253: 'active-sealing, China, Beijing + USA, Portland', // 1213279
-  f010617: 'active-sealing, Canada, Surrey, @feiya200', // 1213420
-  f014409: 'active-sealing, USA, Waxhaw', // 1213435
   f019104: 'active-sealing, Canada, Chambly', // 1213472
   f023971: 'active-sealing, USA, @Brian Y', // 1213212
 
   f01241: 'sealing, USA, Portland, 6block', // 1213478
-  f01278: 'sealing, USA, Grand Rapids, MiMiner', // 1214116
   f01287: 'sealing, China, Jiaxing, MaiTian', // 1213301
   f01799: 'sealing, China, Jinan, TokenHome', // 1213519
-  f02423: 'sealing, Ukraine, Kyiv, igowreck', // 1214064
   f03134: 'sealing, China, Cangzhou, 乔木信息', // 1213228
   f03222: 'sealing, China, Yuncheong, 星云矿池', // 1213268
   f03224: 'sealing, Ukraine, Irpin, oboltusov', // 1213377
@@ -113,15 +126,12 @@ const annotations = {
   f08383: 'sealing, USA, Portland, 6block', // 1213333
   f08482: 'sealing, USA, Athol, @why', // 1213278
   f09696: 'sealing, USA, Portland + Singapore', // 1214113
-  f010247: 'sealing, China, Yantai', // 1213322
   f010493: 'sealing, China, Shanghai', // 1213368
   f010498: 'sealing, China, Shenzhen', // 1213319
   f010501: 'sealing, China, Hangzhou', // 1213532
   f010528: 'sealing, China, Chongqing', // 1213447
   f015747: 'sealing, Japan, Setagaya-ku', // 1214084
-  f015941: 'sealing, Ukraine, Kyiv', // 1213256
   f016594: 'sealing, Germany', // 1213533
-  f019100: 'sealing, Romania, Cluj-Napoca', // 1213402
   f019824: 'sealing, USA', // 1213249
   f020398: 'sealing, China, Zhangjiakou', // 1213419
   f020904: 'sealing, Korea, Uijeongbu-si', // 1214039
@@ -129,55 +139,40 @@ const annotations = {
   f021339: 'sealing, China, Jiaxing', // 1213235
   f021583: 'sealing, China, Jiaxing', // 1213251
   f022089: 'sealing, China, Beijing', // 1214073
-  f022142: 'sealing, USA, Queens', // 1214119
   f022261: 'sealing, China, Luzhou', // 1213303
-  f022522: 'sealing, China, Dongguan', // 1213339
   f022922: 'sealing, China, Shenzhen', // 1213213
-  f023467: 'sealing, Norway, Oslo', // 1214091
   f025044: 'sealing, undefined', // 1214069
   f032934: 'sealing, Korea, Incheon', // 1213318
   f034084: 'sealing, China, Chongqing', // 1213386
   f035436: 'sealing, China, Jiangsu', // 1213193
   f039515: 'sealing, China, Chongqing', // 1213380
+  f043929: 'sealing, China, Beijing', // 1217870
   f045555: 'sealing, China, Chongqing', // 1213428
   f047978: 'sealing, Korea, Seoul', // 1213232
   f049772: 'sealing, Korea, Seoul', // 1213258
   f050500: 'sealing, Korea, Uiwang', // 1213305
   f053037: 'sealing, China, Hefei', // 1213294
   f053088: 'sealing, China, Shanghai', // 1214063
-  f054163: 'sealing, China, Dongguan', // 1213506
-  f054370: 'sealing, China, Dongguan', // 1213516
   f054677: 'sealing, Finland, Helsinki', // 1213418
   f055040: 'sealing, China, Fujian', // 1213484
   f055171: 'sealing, China, Maoming', // 1213374
   f056443: 'sealing, Korea, Gyeonggi-do', // 1213434
   f056573: 'sealing, China, Sichuan', // 1213376
-  f057368: 'sealing, Korea, Gyeonggi-do', // 1213371
-  f057560: 'sealing, NR', // 1213431
-  f057842: 'sealing, Korea, Gyeonggi-do', // 1213538
   f058000: 'sealing, China, Suzhou', // 1213209
-  f058168: 'sealing, Korea, Gyeonggi-do', // 1213488
   f062204: 'sealing, China, Hong Kong', // 1213393
-  f062318: 'sealing, Korea, Naju', // 1213438
   f062375: 'sealing, Korea, Gyeonggi-do', // 1213358
 
   // Stuck
 
-  f02665: 'stuck, Netherlands, Amsterdam, fm-ops', // CheckForAcceptance: about 20 hours
-  f010446: 'stuck, Netherlands', // FundsEnsured: about 19 hours
-  f014768: 'stuck, Singapore, @Funk', // CheckForAcceptance: about 20 hours
-  f019243: 'stuck, USA, Jackson', // CheckForAcceptance: about 19 hours
-  f019534: 'stuck, USA, Beaverton', // CheckForAcceptance: about 19 hours
-  f022163: 'stuck, NR', // CheckForAcceptance: about 20 hours
-  f022395: 'stuck, USA, Los Angeles', // FundsEnsured: about 20 hours
-  f040173: 'stuck, Ukraine, Ternopil', // CheckForAcceptance: about 19 hours
-  f043929: 'stuck, China, Beijing', // Transferring: about 16 hours
-  f047419: 'stuck, USA, Waukesha', // CheckForAcceptance: about 19 hours
-  f055123: 'stuck, Korea, Busan', // CheckForAcceptance: about 20 hours
-  f058369: 'stuck, USA, Bow', // CheckForAcceptance: about 20 hours
-  f058374: 'stuck, USA', // CheckForAcceptance: about 19 hours
-  f062334: 'stuck, USA, Portland + New Castle', // CheckForAcceptance: about 20 hours
-  f062353: 'stuck, Germany', // CheckForAcceptance: about 20 hours
+  f02665: 'stuck, Netherlands, Amsterdam, fm-ops', // CheckForAcceptance: 2 days
+  f014768: 'stuck, Singapore, @Funk', // CheckForAcceptance: 2 days
+  f019534: 'stuck, USA, Beaverton', // CheckForAcceptance: 2 days
+  f022163: 'stuck, NR', // CheckForAcceptance: 2 days
+  f040173: 'stuck, Ukraine, Ternopil', // CheckForAcceptance: 2 days
+  f055123: 'stuck, Korea, Busan', // CheckForAcceptance: 2 days
+  f058374: 'stuck, USA', // CheckForAcceptance: 2 days
+  f062334: 'stuck, USA, Portland + New Castle', // CheckForAcceptance: 2 days
+  f062353: 'stuck, Germany', // CheckForAcceptance: 2 days
 
   // Min-size
 
@@ -252,12 +247,15 @@ const annotations = {
   f02824: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f03491: 'error, China, Hong Kong', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f010400: 'error, China, Shenyang', // stream reset
+  f010446: 'error, Netherlands', // sending response to deal: failed to sign response message: couldn't get chain head: handler: websocket connection closed
   f010507: 'error, China, Hangzhou', // stream reset
   f010513: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f010558: 'error, China, Shenzhen + Hong Kong', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f015734: 'error, China, Qingdao', // stream reset
   f018782: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f019243: 'error, USA, Jackson', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f020436: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f022395: 'error, USA, Los Angeles', // sending response to deal: failed to sign response message: couldn't get chain head: handler: websocket connection closed
   f023013: 'error, China, Hong Kong', // deal failed: (State=26) error calling node: AddFunds errored: handler: websocket connection closed
   f024468: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f024511: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
@@ -267,7 +265,9 @@ const annotations = {
   f039800: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f042391: 'error, China, Fuzhou', // stream reset
   f046426: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f047419: 'error, USA, Waukesha', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f055538: 'error, Italy, Genoa', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
+  f058369: 'error, USA, Bow', // deal failed: (State=26) error calling node: AddFunds errored: handler: websocket connection closed
   f059740: 'error, Germany, Korschenbroich', // deal failed: (State=26) error calling node: AddFunds errored: handler: websocket connection closed
   f061059: 'error, China, Beijing', // stream reset
 
@@ -275,31 +275,48 @@ const annotations = {
 
   // Rejected
 
-  f01238: 'error, Vietnam, Hanoi, FILECOIN-VIETNAM', // stream reset
-  f01280: 'error, China, Wuxi, 了凡超算', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f02540: 'error, USA, Rochester', // stream reset
-  f02619: 'error, China, Beijing, Blockcasting', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f02824: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f03491: 'error, China, Hong Kong', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f010400: 'error, China, Shenyang', // stream reset
-  f010507: 'error, China, Hangzhou', // stream reset
-  f010513: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f010558: 'error, China, Shenzhen + Hong Kong', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f015734: 'error, China, Qingdao', // stream reset
-  f018782: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f020436: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f023013: 'error, China, Hong Kong', // deal failed: (State=26) error calling node: AddFunds errored: handler: websocket connection closed
-  f024468: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f024511: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f025025: 'error, China, Qingdao', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f030327: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f034777: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f039800: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f042391: 'error, China, Fuzhou', // stream reset
-  f046426: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f055538: 'error, Italy, Genoa', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
-  f059740: 'error, Germany, Korschenbroich', // deal failed: (State=26) error calling node: AddFunds errored: handler: websocket connection closed
-  f061059: 'error, China, Beijing', // stream reset
+  f01247: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f01272: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f02606: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f03264: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f03340: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f03364: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f07709: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f07819: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f08019: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f08204: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f08403: 'rejected, undefined', // Miner Upgrading - BACK AT 04:30 UTC
+  f010399: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f014324: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f015233: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f016511: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f017665: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f019041: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f019437: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f019806: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f020385: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f020605: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f021075: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f021532: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f021535: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f021716: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f022227: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f022566: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f023179: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f024146: 'rejected, undefined', // Deals from client wallet f3vp7m3244tjtxrvg4n2lfedtqnnnzhyno3ym6vnl4wzozztik4f2kvzfbfbgzcga7g3mckddw6x4ahp5n4iwa are not welcome
+  f024148: 'rejected, undefined', // Deals from client wallet f3vp7m3244tjtxrvg4n2lfedtqnnnzhyno3ym6vnl4wzozztik4f2kvzfbfbgzcga7g3mckddw6x4ahp5n4iwa are not welcome
+  f024156: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f024550: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f030347: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f032913: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f033189: 'rejected, undefined', // no online
+  f033356: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f033517: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f034039: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f034362: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f039235: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f045714: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
+  f048540: 'rejected, undefined', // piece size more than maximum allowed size: 134217728 > 1048576
 
   // Dial
 
