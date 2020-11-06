@@ -205,7 +205,7 @@ const annotations = {
   f055132: 'sealing, NR', // 1226090
   f055171: 'sealing, China, Maoming', // 1225544
   f055522: 'sealing, USA', // 1225542
-  f055538: 'sealing, Italy, Genoa', // 1225520
+  f055538: 'sealing, Italy, Genoa, @Lucien', // 1225520
   f056573: 'sealing, China, Sichuan', // 1225516
   f057115: 'sealing, China, Nanyang', // 1225589
   f057368: 'sealing, Korea, Gyeonggi-do', // 1225475
@@ -225,7 +225,7 @@ const annotations = {
   f062260: 'sealing, China, Guangzhou', // 1225530
   f062318: 'sealing, Korea, Naju', // 1225523
   f062334: 'sealing, USA, Portland + New Castle', // 1225531
-  f062353: 'sealing, Germany', // 1225487
+  f062353: 'sealing, Germany, Frankfurt, @Patrick - Factor8', // 1225487
   f062375: 'sealing, Korea, Gyeonggi-do', // 1225532
   f062518: 'sealing, Korea, Gwangju', // 1225588
   f062619: 'sealing, NR', // 1225488
@@ -308,7 +308,7 @@ const annotations = {
   f022130: 'min-size, Korea, Seodaemun-gu', // 131072 < 134217728
   f022142: 'min-size, USA, Queens', // 131072 < 524288
   f022163: 'min-size, NR', // 131072 < 12582912
-  f022352: 'min-size, Norway, Borgen', // 131072 < 8388608
+  f022352: 'min-size, Norway, Borgen, @Reiers', // 131072 < 8388608
   f023467: 'min-size, Norway, Oslo', // 131072 < 4194304
   f023868: 'min-size, China, Fuzhou', // 131072 < 268435456
   f023869: 'min-size, China, Fuzhou', // 131072 < 268435456
@@ -434,7 +434,7 @@ const annotations = {
   f02421: 'rejected, China, Deyang + Singapore, 腾盛科技', // Deals from client wallet f3vp7m3244tjtxrvg4n2lfedtqnnnzhyno3ym6vnl4wzozztik4f2kvzfbfbgzcga7g3mckddw6x4ahp5n4iwa are not welcome
   f02503: 'rejected, China, Wuhan', // Deals from client wallet f3vp7m3244tjtxrvg4n2lfedtqnnnzhyno3ym6vnl4wzozztik4f2kvzfbfbgzcga7g3mckddw6x4ahp5n4iwa are not welcome
   f02529: 'rejected, China, Chongqing',
-  f02540: 'rejected, USA, Rochester', // no online
+  f02540: 'rejected, USA, Rochester, @there', // no online
   f02609: 'rejected, USA',
   f02613: 'rejected, China, Chongqing',
   f02614: 'rejected, Singapore',

@@ -166,7 +166,7 @@ const annotations = {
   f022089: 'sealing, China, Beijing', // 1214073
   f022163: 'sealing, NR', // 1227290
   f022261: 'sealing, China, Luzhou', // 1213303
-  f022352: 'sealing, Norway, Borgen', // 1227396
+  f022352: 'sealing, Norway, Borgen, @Reiers', // 1227396
   f022922: 'sealing, China, Shenzhen', // 1213213
   f023492: 'sealing, China, Beijing', // 1227255
   f025044: 'sealing, undefined', // 1214069
@@ -192,7 +192,7 @@ const annotations = {
   f055132: 'sealing, NR', // 1227382
   f055171: 'sealing, China, Maoming', // 1213374
   f055522: 'sealing, USA', // 1227192
-  f055538: 'sealing, Italy, Genoa', // 1227265
+  f055538: 'sealing, Italy, Genoa, @Lucien', // 1227265
   f056443: 'sealing, Korea, Gyeonggi-do', // 1213434
   f056573: 'sealing, China, Sichuan', // 1213376
   f058000: 'sealing, China, Suzhou', // 1213209
@@ -202,7 +202,7 @@ const annotations = {
   f061740: 'sealing, USA, Portland + New Castle', // 1227225
   f062204: 'sealing, China, Hong Kong', // 1213393
   f062334: 'sealing, USA, Portland + New Castle', // 1227287
-  f062353: 'sealing, Germany', // 1227046
+  f062353: 'sealing, Germany, Frankfurt, @Patrick - Factor8', // 1227046
   f062375: 'sealing, Korea, Gyeonggi-do', // 1213358
   f062518: 'sealing, Korea, Gwangju', // 1227113
   f063780: 'sealing, China, Shenyang', // 1227240
