@@ -202,7 +202,7 @@ const annotations = {
   f061740: 'sealing, USA, Portland + New Castle', // 1227225
   f062204: 'sealing, China, Hong Kong', // 1213393
   f062334: 'sealing, USA, Portland + New Castle', // 1227287
-  f062353: 'sealing, Germany, Frankfurt, @Patrick - Factor8', // 1227046
+  f062353: 'sealing, Germany, Frankfurt', // 1227046
   f062375: 'sealing, Korea, Gyeonggi-do', // 1213358
   f062518: 'sealing, Korea, Gwangju', // 1227113
   f063780: 'sealing, China, Shenyang', // 1227240
