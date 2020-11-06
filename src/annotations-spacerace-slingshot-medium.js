@@ -21,6 +21,7 @@ const annotations = {
 
   // Active
 
+  f01276: 'active, Canada, Brampton, NBFS Canada', // 1227073 about 16 hours
   f01277: 'active, Sweden, Stockholm, tvsthlm', // 1213416
   f01278: 'active, USA, Grand Rapids, MiMiner', // 1214116
   f01291: 'active, Sweden, Stockholm, tvsthlm', // 1213400
@@ -33,10 +34,14 @@ const annotations = {
   f02514: 'active, USA, Portland, 6block', // 1214122
   f02620: 'active, Poland, Krakow, @magik6k', // 1213306
   f02622: 'active, USA, Portland, 6block', // 1213481
+  f02623: 'active, USA, Portland, 6block', // 1227103 about 5 hours
   f02633: 'active, China, Hong Kong', // 1213477
   f02645: 'active, China, Hong Kong', // 1213204
+  f02665: 'active, Netherlands, Amsterdam, fm-ops', // 1227457 about 15 hours
+  f03275: 'active, USA, Portland, 6block', // 1227319 about 15 hours
   f03339: 'active, China, Luzhou, benxun', // 1213379
   f05316: 'active, USA, Portland, 6block', // 1213470
+  f05317: 'active, USA, Portland', // 1227456 about 15 hours
   f05664: 'active, China, Shenzhen, 艾比特网络科技', // 1213427
   f07850: 'active, USA, Portland, 6block', // 1213500
   f08025: 'active, China, Hong Kong', // 1213392
@@ -52,19 +57,27 @@ const annotations = {
   f010617: 'active, Canada, Surrey, @feiya200', // 1213420
   f014394: 'active, China, Suzhou', // 1213315
   f014409: 'active, USA, Waxhaw', // 1213435
+  f014768: 'active, Singapore, @Funk', // 1227330 about 15 hours
   f015877: 'active, China, Jiaxing + USA', // 1213372
+  f015927: 'active, USA, East Islip', // 1227397 about 15 hours
   f015941: 'active, Ukraine, Kyiv', // 1213256
   f018501: 'active, China, Beijing', // 1213220
   f018781: 'active, Singapore + Germany, Frankfurt + USA', // 1213388
+  f018782: 'active, Singapore + Germany, Frankfurt + USA', // 1227177 about 15 hours
+  f018785: 'active, Singapore + Germany, Frankfurt + USA', // 1227118 about 15 hours
+  f019029: 'active, Serbia, Boljevac', // 1227403 about 15 hours
   f019100: 'active, Romania, Cluj-Napoca', // 1213402
   f019240: 'active, China, Beijing', // 1213492
+  f019243: 'active, USA, Jackson', // 1227242 about 15 hours
   f019551: 'active, UK, Birmingham, @Neofix AF', // 1213517
   f020378: 'active, Bulgaria, Asenovgrad', // 1214059
   f020489: 'active, China, Lioaning', // 1213230
   f020523: 'active, China, Suzhou', // 1213269
   f022125: 'active, China, Shenzhen', // 1213285
   f022142: 'active, USA, Queens', // 1214119
+  f022163: 'active, NR', // 1227290 about 15 hours
   f022308: 'active, NR', // 1213424
+  f022352: 'active, Norway, Borgen, @Reiers', // 1227396 about 15 hours
   f022522: 'active, China, Dongguan', // 1213339
   f022853: 'active, China, Fuzhou', // 1213176
   f023467: 'active, Norway, Oslo', // 1214091
@@ -87,6 +100,7 @@ const annotations = {
   f042635: 'active, China, Beijing + USA, Portland + Newcastle', // 1213426
   f044021: 'active, China, Dongguan', // 1213353
   f044160: 'active, China, Guangzhou', // 1213436
+  f047419: 'active, USA, Waukesha', // 1227215 about 15 hours
   f047858: 'active, China, Wuhan', // 1213253
   f048135: 'active, China, Chongqing', // 1213520
   f048172: 'active, China, Suzhou', // 1213467
@@ -96,6 +110,7 @@ const annotations = {
   f054163: 'active, China, Dongguan', // 1213506
   f054370: 'active, China, Dongguan', // 1213516
   f054389: 'active, China, Chongqing', // 1213408
+  f055102: 'active, NR', // 1227315 about 15 hours
   f056611: 'active, USA, Portland + New Castle', // 1213398
   f057368: 'active, Korea, Gyeonggi-do', // 1213371
   f057560: 'active, NR', // 1213431
@@ -104,8 +119,15 @@ const annotations = {
   f058168: 'active, Korea, Gyeonggi-do', // 1213488
   f060072: 'active, China, Chongqing', // 1213198
   f061158: 'active, China, Guangdong', // 1213479
+  f061740: 'active, USA, Portland + New Castle', // 1227225 about 15 hours
   f062260: 'active, China, Guangzhou', // 1213390
   f062318: 'active, Korea, Naju', // 1213438
+  f062334: 'active, USA, Portland + New Castle', // 1227287 about 15 hours
+  f062518: 'active, Korea, Gwangju', // 1227113 about 15 hours
+  f064218: 'active, USA, Kirkland', // 1227480 about 15 hours
+  f065141: 'active, China, Fuzhou', // 1227063 about 16 hours
+  f065200: 'active, China, Yibin', // 1227208 about 15 hours
+  f065280: 'active, Korea, Songpa-gu', // 1227364 about 15 hours
 
   // Sealing
 
@@ -119,23 +141,18 @@ const annotations = {
 
   f01238: 'sealing, Vietnam, Hanoi, FILECOIN-VIETNAM', // 1227061
   f01241: 'sealing, USA, Portland, 6block', // 1213478
-  f01276: 'sealing, Canada, Brampton, NBFS Canada', // 1227073
   f01287: 'sealing, China, Jiaxing, MaiTian', // 1213301
   f01799: 'sealing, China, Jinan, TokenHome', // 1213519
   f02387: 'sealing, Canada, Brampton, NBFS Canada', // 1227220
   f02388: 'sealing, Netherlands, Amersfoort, Kroketje', // 1227048
-  f02623: 'sealing, USA, Portland, 6block', // 1227103
-  f02665: 'sealing, Netherlands, Amsterdam, fm-ops', // 1227457
   f03134: 'sealing, China, Cangzhou, 乔木信息', // 1213228
   f03222: 'sealing, China, Yuncheong, 星云矿池', // 1213268
   f03224: 'sealing, Ukraine, Irpin, oboltusov', // 1213377
-  f03275: 'sealing, USA, Portland, 6block', // 1227319
   f03328: 'sealing, China, Xinxiang', // 1214432
   f03345: 'sealing, China, Fuzhou, chh', // 1213381
   f03482: 'sealing, China, Wuxi', // 1214337
   f03624: 'sealing, Germany, Chemnitz, ode', // 1213273
   f05315: 'sealing, USA, Portland, 6block', // 1213283
-  f05317: 'sealing, USA, Portland', // 1227456
   f07990: 'sealing, China, Hong Kong', // 1213201
   f08157: 'sealing, China, Beijing + Germany, Frankfurt, 超星际', // 1213414
   f08383: 'sealing, USA, Portland, 6block', // 1213333
@@ -149,14 +166,8 @@ const annotations = {
   f010501: 'sealing, China, Hangzhou', // 1213532
   f010507: 'sealing, China, Hangzhou', // 1227218
   f010528: 'sealing, China, Chongqing', // 1213447
-  f014768: 'sealing, Singapore, @Funk', // 1227330
   f015747: 'sealing, Japan, Setagaya-ku', // 1214084
-  f015927: 'sealing, USA, East Islip', // 1227397
   f016594: 'sealing, Germany', // 1213533
-  f018782: 'sealing, Singapore + Germany, Frankfurt + USA', // 1227177
-  f018785: 'sealing, Singapore + Germany, Frankfurt + USA', // 1227118
-  f019029: 'sealing, Serbia, Boljevac', // 1227403
-  f019243: 'sealing, USA, Jackson', // 1227242
   f019824: 'sealing, USA', // 1213249
   f020398: 'sealing, China, Zhangjiakou', // 1213419
   f020904: 'sealing, Korea, Uijeongbu-si', // 1214039
@@ -164,9 +175,7 @@ const annotations = {
   f021339: 'sealing, China, Jiaxing', // 1213235
   f021583: 'sealing, China, Jiaxing', // 1213251
   f022089: 'sealing, China, Beijing', // 1214073
-  f022163: 'sealing, NR', // 1227290
   f022261: 'sealing, China, Luzhou', // 1213303
-  f022352: 'sealing, Norway, Borgen, @Reiers', // 1227396
   f022922: 'sealing, China, Shenzhen', // 1213213
   f023492: 'sealing, China, Beijing', // 1227255
   f025044: 'sealing, undefined', // 1214069
@@ -178,7 +187,6 @@ const annotations = {
   f043929: 'sealing, China, Beijing', // 1217870
   f045555: 'sealing, China, Chongqing', // 1213428
   f046426: 'sealing, China, Beijing', // 1227157
-  f047419: 'sealing, USA, Waukesha', // 1227215
   f047978: 'sealing, Korea, Seoul', // 1213232
   f049772: 'sealing, Korea, Seoul', // 1213258
   f050500: 'sealing, Korea, Uiwang', // 1213305
@@ -187,7 +195,6 @@ const annotations = {
   f053255: 'sealing, Korea, Seoul', // 1227230
   f054677: 'sealing, Finland, Helsinki', // 1213418
   f055040: 'sealing, China, Fujian', // 1213484
-  f055102: 'sealing, NR', // 1227315
   f055123: 'sealing, Korea, Busan', // 1227462
   f055132: 'sealing, NR', // 1227382
   f055171: 'sealing, China, Maoming', // 1213374
@@ -199,20 +206,13 @@ const annotations = {
   f058369: 'sealing, USA, Bow', // 1227390
   f058374: 'sealing, USA', // 1227224
   f059740: 'sealing, Germany, Korschenbroich', // 1227432
-  f061740: 'sealing, USA, Portland + New Castle', // 1227225
   f062204: 'sealing, China, Hong Kong', // 1213393
-  f062334: 'sealing, USA, Portland + New Castle', // 1227287
   f062353: 'sealing, Germany, Frankfurt', // 1227046
   f062375: 'sealing, Korea, Gyeonggi-do', // 1213358
-  f062518: 'sealing, Korea, Gwangju', // 1227113
   f063780: 'sealing, China, Shenyang', // 1227240
   f063921: 'sealing, China, Ili', // 1227308
-  f064218: 'sealing, USA, Kirkland', // 1227480
   f064955: 'sealing, USA, New Castle', // 1227433
-  f065141: 'sealing, China, Fuzhou', // 1227063
   f065168: 'sealing, USA, Daytona Beach', // 1227072
-  f065200: 'sealing, China, Yibin', // 1227208
-  f065280: 'sealing, Korea, Songpa-gu', // 1227364
   f065426: 'sealing, Korea, Gimpo-si', // 1227268
   f065718: 'sealing, China, Taiwan, Hsinchu', // 1227206
   f065726: 'sealing, Korea, Gyeonggi-do', // 1227107
@@ -221,10 +221,9 @@ const annotations = {
 
   // Stuck
 
-  f019534: 'stuck, undefined', // CheckForAcceptance: about 11 hours
-  f022130: 'stuck, Korea, Seodaemun-gu', // CheckForAcceptance: about 5 hours
-  f023013: 'stuck, China, Hong Kong', // Transferring: about 5 hours
-  f064664: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 5 hours
+  f019534: 'stuck, undefined', // CheckForAcceptance: about 21 hours
+  f023013: 'stuck, China, Hong Kong', // Transferring: about 15 hours
+  f064664: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 15 hours
 
   // Min-size
 
@@ -307,6 +306,7 @@ const annotations = {
   f018783: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f018784: 'error, Singapore + Germany, Frankfurt + USA', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f020436: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f022130: 'error, Korea, Seodaemun-gu', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f022395: 'error, undefined', // sending response to deal: failed to sign response message: couldn't get chain head: handler: websocket connection closed
   f023581: 'error, China, Hong Kong', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f024468: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
