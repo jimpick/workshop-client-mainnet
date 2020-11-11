@@ -10,20 +10,137 @@ const annotations = {
 
   // Candidates
 
-  f02514: 'active-candidate, USA, Portland, 6block', // carry-over
-  f02623: 'active-candidate, USA, Portland, 6block', // carry-over
-  f029404: 'active-candidate, USA, Portland + New Castle', // carry-over
-  f047419: 'active-candidate, USA, Waukesha', // carry-over
-
-  f07990: 'candidate, China, Hong Kong', // carry-over
-  f010501: 'candidate, China, Hangzhou', // carry-over
-  f021075: 'candidate, China, Chengdu', // carry-over
-  f023660: 'candidate, China, Fuzhou', // carry-over
-  f023853: 'candidate, China, Fuzhou', // carry-over
-  f024081: 'candidate, undefined', // carry-over
-  f024084: 'candidate, China, Fuzhou', // carry-over
-  f025044: 'candidate, undefined', // carry-over
-  f048540: 'candidate, China, Xinxiang', // carry-over
+  f01234: 'candidate, Belgium, De Klinge, Eliovp',
+  f01240: 'candidate, Netherlands, HidNand',
+  f01280: 'candidate, China, Wuxi, 了凡超算',
+  f01287: 'candidate, China, Jiaxing, MaiTian',
+  f01782:
+    'candidate, China, Hong Kong + Singapore + USA, Portland, hellofil.com',
+  f01799: 'candidate, China, Jinan, TokenHome',
+  f02419: 'candidate, China, Shanghai, yuantai',
+  f02490: 'candidate, China, Fujian',
+  f02492: 'candidate, China, Shenzhen',
+  f02514: 'candidate, USA, Portland, 6block',
+  f02619: 'candidate, China, Beijing, Blockcasting',
+  f02620: 'candidate, Poland, Krakow, @magik6k',
+  f02623: 'candidate, USA, Portland, 6block',
+  f02665: 'candidate, Netherlands, Amsterdam, fm-ops',
+  f02824: 'candidate, China, Chengdu',
+  f03134: 'candidate, China, Cangzhou, 乔木信息',
+  f03222: 'candidate, China, Yuncheong, 星云矿池',
+  f03325: 'candidate, Germany, Frankfurt',
+  f03328: 'candidate, China, Xinxiang',
+  f03339: 'candidate, China, Luzhou, benxun',
+  f03345: 'candidate, China, Fuzhou, chh',
+  f03347: 'candidate, China, Shenzhen',
+  f03482: 'candidate, China, Wuxi',
+  f04443: 'candidate, China, Shanghai, 罗良科技',
+  f07990: 'candidate, China, Hong Kong',
+  f08103: 'candidate, China, Foshan, 花生酱肠粉',
+  f08220: 'candidate, China, Shenzhen',
+  f09569: 'candidate, China, Beijing',
+  f010010: 'candidate, China, Changzhou + Hong Kong',
+  f010247: 'candidate, China, Yantai',
+  f010400: 'candidate, China, Shenyang',
+  f010493: 'candidate, China, Shanghai',
+  f010498: 'candidate, China, Shenzhen',
+  f010501: 'candidate, China, Hangzhou',
+  f010505: 'candidate, China, Wuhan',
+  f010513: 'candidate, China, Chongqing',
+  f010523: 'candidate, China, Beijing',
+  f010528: 'candidate, China, Chongqing',
+  f010558: 'candidate, China, Shenzhen + Hong Kong',
+  f010617: 'candidate, Canada, Surrey, @feiya200',
+  f014394: 'candidate, China, Suzhou',
+  f015747: 'candidate, Japan, Setagaya-ku',
+  f015877: 'candidate, China, Jiaxing + USA',
+  f015885: 'candidate, China, Jiaxing',
+  f018501: 'candidate, China, Beijing',
+  f019240: 'candidate, China, Beijing',
+  f019806: 'candidate, China, Beijing',
+  f020436: 'candidate, China, Beijing',
+  f020489: 'candidate, China, Lioaning',
+  f020523: 'candidate, China, Suzhou',
+  f021075: 'candidate, China, Chengdu',
+  f021339: 'candidate, China, Jiaxing',
+  f021583: 'candidate, China, Jiaxing',
+  f022125: 'candidate, China, Shenzhen',
+  f022142: 'candidate, USA, Queens',
+  f022261: 'candidate, China, Luzhou',
+  f022308: 'candidate, NR',
+  f022522: 'candidate, China, Dongguan',
+  f022853: 'candidate, China, Fuzhou',
+  f022922: 'candidate, China, Shenzhen',
+  f023492: 'candidate, China, Beijing',
+  f023565: 'candidate, China, Fuzhou',
+  f023581: 'candidate, China, Hong Kong',
+  f023660: 'candidate, China, Fuzhou',
+  f023853: 'candidate, China, Fuzhou',
+  f023868: 'candidate, China, Fuzhou',
+  f023869: 'candidate, China, Fuzhou',
+  f023870: 'candidate, China, Fuzhou',
+  f023871: 'candidate, China, Fuzhou',
+  f023977: 'candidate, China, Fuzhou',
+  f023978: 'candidate, China, Fuzhou',
+  f023980: 'candidate, China, Fuzhou',
+  f024012: 'candidate, China, Fuzhou',
+  f024013: 'candidate, China, Fuzhou',
+  f024014: 'candidate, China, Fuzhou',
+  f024081: 'candidate, undefined',
+  f024084: 'candidate, China, Fuzhou',
+  f024136: 'candidate, China, Fuzhou',
+  f024184: 'candidate, Korea, Gangnam-gu',
+  f024468: 'candidate, China, Shenzhen',
+  f024511: 'candidate, NR',
+  f025017: 'candidate, China, Hefei',
+  f025019: 'candidate, China, Taiwan, Hsinchu',
+  f025044: 'candidate, undefined',
+  f029404: 'candidate, USA, Portland + New Castle',
+  f029580: 'candidate, China, Maoming',
+  f030296: 'candidate, USA, Cary',
+  f030327: 'candidate, China, Beijing',
+  f030335: 'candidate, China, Fujian',
+  f030384: 'candidate, undefined',
+  f032913: 'candidate, China, Shenzhen',
+  f033549: 'candidate, China, Quzhou',
+  f034777: 'candidate, China, Chengdu',
+  f035436: 'candidate, China, Jiangsu',
+  f039515: 'candidate, China, Chongqing',
+  f040218: 'candidate, China, Wuxi',
+  f042567: 'candidate, China, Jinhua',
+  f044160: 'candidate, China, Guangzhou',
+  f046426: 'candidate, China, Beijing',
+  f047419: 'candidate, USA, Waukesha',
+  f047858: 'candidate, China, Wuhan',
+  f048135: 'candidate, China, Chongqing',
+  f048172: 'candidate, China, Suzhou',
+  f048192: 'candidate, China, Suzhou',
+  f048540: 'candidate, China, Xinxiang',
+  f049882: 'candidate, Netherlands, De Rijp',
+  f049911: 'candidate, NR',
+  f053916: 'candidate, USA, Concord',
+  f054163: 'candidate, China, Dongguan',
+  f054370: 'candidate, China, Dongguan',
+  f055171: 'candidate, China, Maoming',
+  f055538: 'candidate, Italy, Genoa, @Lucien',
+  f056573: 'candidate, China, Sichuan',
+  f057466: 'candidate, China, Guangzhou',
+  f058000: 'candidate, China, Suzhou',
+  f059788: 'candidate, China, Beijing',
+  f060072: 'candidate, China, Chongqing',
+  f061407: 'candidate, China, Shenzhen',
+  f062260: 'candidate, China, Guangzhou',
+  f062981: 'candidate, China, Sichuan',
+  f063921: 'candidate, China, Ili',
+  f065141: 'candidate, China, Fuzhou',
+  f065200: 'candidate, China, Yibin',
+  f066563: 'candidate, China, Fuzhou',
+  f067083: 'candidate, Russia, Moscow',
+  f067170: 'candidate, China, Jiangmen',
+  f067195: 'candidate, China, Huizhou',
+  f068096: 'candidate, China, Sichuan',
+  f068528: 'candidate, China, Shanghai',
+  f070475: 'candidate, China, Guyuan',
 
   // Testing
 
@@ -118,31 +235,7 @@ const annotations = {
 
   // Stuck
 
-  f02665: 'stuck, Netherlands, Amsterdam, fm-ops', // FundsEnsured: about 14 hours
-  f015885: 'stuck, China, Jiaxing', // Transferring: about 15 hours
-  f022853: 'stuck, China, Fuzhou', // Transferring: about 15 hours
-  f057466: 'stuck, China, Guangzhou', // Transferring: about 14 hours
-  f061407: 'stuck, China, Shenzhen', // Transferring: about 15 hours
-
   // Min-size
-
-  f01234: 'min-size, Belgium, De Klinge, Eliovp', // 134217728 < 268435456
-  f01240: 'min-size, Netherlands, HidNand', // 134217728 < 268435456
-  f02419: 'min-size, China, Shanghai, yuantai', // 134217728 < 268435456
-  f02620: 'min-size, Poland, Krakow, @magik6k', // 134217728 < 536870912
-  f09569: 'min-size, China, Beijing', // 134217728 < 536870912
-  f023868: 'min-size, China, Fuzhou', // 134217728 < 268435456
-  f023869: 'min-size, China, Fuzhou', // 134217728 < 268435456
-  f023870: 'min-size, China, Fuzhou', // 134217728 < 268435456
-  f023871: 'min-size, China, Fuzhou', // 134217728 < 268435456
-  f023977: 'min-size, China, Fuzhou', // 134217728 < 268435456
-  f023978: 'min-size, China, Fuzhou', // 134217728 < 268435456
-  f023980: 'min-size, China, Fuzhou', // 134217728 < 268435456
-  f024012: 'min-size, China, Fuzhou', // 134217728 < 268435456
-  f024013: 'min-size, China, Fuzhou', // 134217728 < 268435456
-  f024136: 'min-size, China, Fuzhou', // 134217728 < 268435456
-  f030296: 'min-size, USA, Cary', // 134217728 < 268435456
-  f049882: 'min-size, Netherlands, De Rijp', // 134217728 < 268435456
 
   // Min-ask
 
@@ -221,86 +314,6 @@ const annotations = {
 
   // Error
 
-  f01280: 'error, China, Wuxi, 了凡超算', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f01799: 'error, China, Jinan, TokenHome', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f02490: 'error, China, Fujian', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f02619: 'error, China, Beijing, Blockcasting', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f02824: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f03134: 'error, China, Cangzhou, 乔木信息', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f03222: 'error, China, Yuncheong, 星云矿池', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f03328: 'error, China, Xinxiang', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f03339: 'error, China, Luzhou, benxun', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f03345: 'error, China, Fuzhou, chh', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f03347: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f03482: 'error, China, Wuxi', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f04443: 'error, China, Shanghai, 罗良科技', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f08103: 'error, China, Foshan, 花生酱肠粉', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f010247: 'error, China, Yantai', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f010400: 'error, China, Shenyang', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f010493: 'error, China, Shanghai', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f010498: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f010505: 'error, China, Wuhan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f010513: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f010523: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f010528: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f010617: 'error, Canada, Surrey, @feiya200', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.0499999999693698 FIL, balance: 0.031755781627917488 FIL): not enough funds to execute transaction
-  f014394: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f015747: 'error, Japan, Setagaya-ku', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f015877: 'error, China, Jiaxing + USA', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f018501: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f019240: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f020436: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f020489: 'error, China, Lioaning', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f021339: 'error, China, Jiaxing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f021583: 'error, China, Jiaxing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f022125: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f022142: 'error, USA, Queens', // stream reset
-  f022261: 'error, China, Luzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f022308: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f022522: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f022922: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f023581: 'error, China, Hong Kong', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f024468: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f024511: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f025017: 'error, China, Hefei', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f025019: 'error, China, Taiwan, Hsinchu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f029580: 'error, China, Maoming', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f030327: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f030335: 'error, China, Fujian', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f030384: 'error, undefined', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f032913: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f033549: 'error, China, Quzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f034777: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f035436: 'error, China, Jiangsu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f039515: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f040218: 'error, China, Wuxi', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f042567: 'error, China, Jinhua', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f044160: 'error, China, Guangzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f046426: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f047858: 'error, China, Wuhan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f048135: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f048172: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f048192: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f049911: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f054163: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f054370: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f055171: 'error, China, Maoming', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f056573: 'error, China, Sichuan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f058000: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f059788: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f060072: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f062260: 'error, China, Guangzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f062981: 'error, China, Sichuan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f063921: 'error, China, Ili', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f065141: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f065200: 'error, China, Yibin', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f067083: 'error, Russia, Moscow', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.0499999999512802 FIL, balance: 0.048693446871974028 FIL): not enough funds to execute transaction
-  f067170: 'error, China, Jiangmen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f067195: 'error, China, Huizhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f068096: 'error, China, Sichuan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f068528: 'error, China, Shanghai', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-  f070475: 'error, China, Guyuan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
-
   // Backoff
 
   // Rejected
@@ -341,28 +354,13 @@ const annotations = {
   f033517: 'rejected, China, Changsha', // piece size more than maximum allowed size: 134217728 > 1048576
   f039235: 'rejected, NR', // piece size more than maximum allowed size: 134217728 > 1048576
   f042391: 'rejected, China, Fuzhou', // piece size more than maximum allowed size: 134217728 > 1048576
-  f061059: 'rejected, China, Beijing',
+  f061059: 'rejected, China, Beijing'
 
   // Dial
 
   // XNR
 
   // Error during ask
-
-  f01287: 'error-ask, China, Jiaxing, MaiTian', // carry-over
-  f01782:
-    'error-ask, China, Hong Kong + Singapore + USA, Portland, hellofil.com', // carry-over
-  f02492: 'error-ask, China, Shenzhen', // carry-over
-  f03325: 'error-ask, Germany, Frankfurt', // carry-over
-  f08220: 'error-ask, China, Shenzhen', // carry-over
-  f010010: 'error-ask, China, Changzhou + Hong Kong', // carry-over
-  f010558: 'error-ask, China, Shenzhen + Hong Kong', // carry-over
-  f023492: 'error-ask, China, Beijing', // carry-over
-  f023565: 'error-ask, China, Fuzhou', // carry-over
-  f024014: 'error-ask, China, Fuzhou', // carry-over
-  f024184: 'error-ask, Korea, Gangnam-gu', // carry-over
-  f055538: 'error-ask, Italy, Genoa, @Lucien', // carry-over
-  f066563: 'error-ask, China, Fuzhou' // carry-over
 }
 
 export default annotations
