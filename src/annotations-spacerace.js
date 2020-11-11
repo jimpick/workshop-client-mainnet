@@ -14,6 +14,34 @@ const annotations = {
 
   // Active
 
+  f01278: 'active, USA, Grand Rapids, MiMiner', // 1272202 about 10 hours
+  f03339: 'active, China, Luzhou, benxun', // 1272142 about 11 hours
+  f07709: 'active, Korea, Dongjak-gu', // 1272315 about 9 hours
+  f08103: 'active, China, Foshan, 花生酱肠粉', // 1272192 about 11 hours
+  f08240: 'active, Russia, Novosibirsk, Rabinovitch', // 1272326 about 12 hours
+  f09693: 'active, USA, Portland + Singapore', // 1272132 about 6 hours
+  f010505: 'active, China, Wuhan', // 1272165 about 8 hours
+  f010528: 'active, China, Chongqing', // 1272189 about 13 hours
+  f010558: 'active, China, Shenzhen + Hong Kong', // 1272154 about 5 hours
+  f014324: 'active, Canada, Vancouver', // 1272353 about 7 hours
+  f015885: 'active, China, Jiaxing', // 1272193 about 6 hours
+  f020385: 'active, Korea, Incheon', // 1272181 about 8 hours
+  f020436: 'active, China, Beijing', // 1272236 about 12 hours
+  f020928: 'active, China, Deyang + Singapore', // 1272229 about 13 hours
+  f022522: 'active, China, Dongguan', // 1272168 about 13 hours
+  f022853: 'active, China, Fuzhou', // 1272159 about 7 hours
+  f024184: 'active, Korea, Gangnam-gu', // 1272305 about 10 hours
+  f024511: 'active, NR', // 1272171 about 6 hours
+  f030125: 'active, China, Nantong', // 1272257 about 8 hours
+  f030335: 'active, China, Fujian', // 1272249 about 6 hours
+  f033356: 'active, Korea, Gangnum-gu', // 1272306 about 9 hours
+  f038299: 'active, Russia, St. Petersburg', // 1272194 about 9 hours
+  f042567: 'active, China, Jinhua', // 1272759 about 10 hours
+  f065141: 'active, China, Fuzhou', // 1272289 about 9 hours
+  f066104: 'active, China, Xingjiang + USA, Portland', // 1272207 about 6 hours
+  f066563: 'active, China, Fuzhou', // 1272208 about 6 hours
+  f067190: 'active, Korea, Uiwang', // 1272222 about 12 hours
+
   // Active-sealing (active, with in-flight sealing)
 
   f01247: 'active-sealing, Canada, Montreal, BigChungus™', // 1272127
@@ -22,43 +50,33 @@ const annotations = {
   f02665: 'active-sealing, Netherlands, Amsterdam, fm-ops', // 1272135
   f03134: 'active-sealing, China, Cangzhou, 乔木信息', // 1272141
   f03328: 'active-sealing, China, Xinxiang', // 1272138
-  f03339: 'active-sealing, China, Luzhou, benxun', // 1272142
-  f07709: 'active-sealing, Korea, Dongjak-gu', // 1272315
   f07819: 'active-sealing, China, Wuxi, YC--wuxi', // 1272144
   f08157: 'active-sealing, China, Beijing + Germany, Frankfurt, 超星际', // 1272133
   f08403: 'active-sealing, UK, Lower Slaughter', // 1272145
-  f09693: 'active-sealing, USA, Portland + Singapore', // 1272132
   f010241: 'active-sealing, China, Beijing + USA, Portland', // 1272139
   f010247: 'active-sealing, China, Yantai', // 1272140
   f010399: 'active-sealing, China, Guangzhou', // 1272295
   f010446: 'active-sealing, Netherlands', // 1272136
   f010479: 'active-sealing, France, Fontenay-sous-Bois', // 1272633
   f010498: 'active-sealing, China, Shenzhen', // 1272146
-  f010505: 'active-sealing, China, Wuhan', // 1272165
   f010507: 'active-sealing, China, Hangzhou', // 1272152
-  f010558: 'active-sealing, China, Shenzhen + Hong Kong', // 1272154
   f014768: 'active-sealing, Singapore, @Funk', // 1272147
   f019029: 'active-sealing, Serbia, Boljevac', // 1272156
   f019240: 'active-sealing, China, Beijing', // 1272303
   f019437: 'active-sealing, Korea, Guro-gu', // 1272221
   f019824: 'active-sealing, USA', // 1272167
   f020378: 'active-sealing, Bulgaria, Asenovgrad', // 1272153
-  f020385: 'active-sealing, Korea, Incheon', // 1272181
   f022125: 'active-sealing, China, Shenzhen', // 1272166
   f022227: 'active-sealing, China, Jiangsu', // 1272161
-  f022522: 'active-sealing, China, Dongguan', // 1272168
-  f022853: 'active-sealing, China, Fuzhou', // 1272159
   f022922: 'active-sealing, China, Shenzhen', // 1272621
   f023179: 'active-sealing, China, Fuzhou', // 1272158
   f024156: 'active-sealing, USA', // 1272625
-  f024511: 'active-sealing, NR', // 1272171
   f024550: 'active-sealing, China, Wenzhou', // 1272170
   f025017: 'active-sealing, China, Hefei', // 1272169
   f032913: 'active-sealing, China, Shenzhen', // 1272190
   f032934: 'active-sealing, Korea, Incheon', // 1272184
   f033517: 'active-sealing, China, Changsha', // 1272205
   f035436: 'active-sealing, China, Jiangsu', // 1272175
-  f038299: 'active-sealing, Russia, St. Petersburg', // 1272194
   f039515: 'active-sealing, China, Chongqing', // 1272195
   f043929: 'active-sealing, China, Beijing', // 1272176
   f044160: 'active-sealing, China, Guangzhou', // 1272655
@@ -68,7 +86,6 @@ const annotations = {
 
   // Sealing
 
-  f01278: 'sealing, USA, Grand Rapids, MiMiner', // 1272202
   f01280: 'sealing, China, Wuxi, 了凡超算', // 1272616
   f01799: 'sealing, China, Jinan, TokenHome', // 1272200
   f01800: 'sealing, China, Shenzhen + Chengdu', // 1272183
@@ -83,9 +100,7 @@ const annotations = {
   f03364: 'sealing, China, Guangzhou', // 1272177
   f03482: 'sealing, China, Wuxi', // 1272182
   f04443: 'sealing, China, Shanghai, 罗良科技', // 1272185
-  f08103: 'sealing, China, Foshan, 花生酱肠粉', // 1272192
   f08204: 'sealing, USA, St. Louis', // 1272209
-  f08240: 'sealing, Russia, Novosibirsk, Rabinovitch', // 1272326
   f08399: 'sealing, USA, Sammamish', // 1272393
   f08482: 'sealing, USA, Athol, @why', // 1272178
   f010088: 'sealing, DNS:purumine.com', // 1272622
@@ -94,21 +109,18 @@ const annotations = {
   f010501: 'sealing, China, Hangzhou', // 1272220
   f010513: 'sealing, China, Chongqing', // 1272191
   f010523: 'sealing, China, Beijing', // 1272198
-  f010528: 'sealing, China, Chongqing', // 1272189
-  f014324: 'sealing, Canada, Vancouver', // 1272353
   f015233: 'sealing, China, Nanjing', // 1272211
   f015747: 'sealing, Japan, Setagaya-ku', // 1272661
   f015877: 'sealing, China, Jiaxing + USA', // 1272724
-  f015885: 'sealing, China, Jiaxing', // 1272193
   f016511: 'sealing, China, Beijing', // 1272350
   f017242: 'sealing, China, Guangdong', // 1272214
   f017665: 'sealing, China, Shenyang', // 1272338
   f019041: 'sealing, Singapore', // 1272230
   f019243: 'sealing, USA, Jackson', // 1272223
-  f020436: 'sealing, China, Beijing', // 1272236
+  f019806: 'sealing, China, Beijing', // 1275160
   f020489: 'sealing, China, Lioaning', // 1272237
+  f020523: 'sealing, China, Suzhou', // 1275158
   f020605: 'sealing, China, Yibin', // 1272238
-  f020928: 'sealing, China, Deyang + Singapore', // 1272229
   f021075: 'sealing, China, Chengdu', // 1272685
   f021339: 'sealing, China, Jiaxing', // 1272228
   f021532: 'sealing, China, Shanghai', // 1272256
@@ -123,29 +135,25 @@ const annotations = {
   f023649: 'sealing, Korea, Seoul', // 1272897
   f023843: 'sealing, NR', // 1272255
   f023971: 'sealing, USA, @Brian Y', // 1272330
-  f024184: 'sealing, Korea, Gangnam-gu', // 1272305
   f024468: 'sealing, China, Shenzhen', // 1272241
   f025019: 'sealing, China, Taiwan, Hsinchu', // 1272247
   f025044: 'sealing, undefined', // 1272278
   f029368: 'sealing, Korea, Gangseo-gu', // 1272259
   f029580: 'sealing, China, Maoming', // 1272318
-  f030125: 'sealing, China, Nantong', // 1272257
   f030327: 'sealing, China, Beijing', // 1272302
-  f030335: 'sealing, China, Fujian', // 1272249
   f030347: 'sealing, China, Zhejiang', // 1272437
   f030384: 'sealing, undefined', // 1272945
   f033113: 'sealing, China, Wuxi', // 1272253
-  f033356: 'sealing, Korea, Gangnum-gu', // 1272306
   f033549: 'sealing, China, Quzhou', // 1272725
   f034777: 'sealing, China, Chengdu', // 1272248
   f040218: 'sealing, China, Wuxi', // 1272328
   f042391: 'sealing, China, Fuzhou', // 1272243
-  f042567: 'sealing, China, Jinhua', // 1272759
   f046426: 'sealing, China, Beijing', // 1272263
   f047978: 'sealing, Korea, Seoul', // 1272352
   f049911: 'sealing, NR', // 1272260
   f053088: 'sealing, China, Shanghai', // 1272245
   f053255: 'sealing, Korea, Seoul', // 1272265
+  f053916: 'sealing, USA, Concord', // 1275499
   f054163: 'sealing, China, Dongguan', // 1272290
   f054370: 'sealing, China, Dongguan', // 1272261
   f055102: 'sealing, NR', // 1272264
@@ -175,19 +183,15 @@ const annotations = {
   f064218: 'sealing, USA, Kirkland', // 1272300
   f064664: 'sealing, Korea, Gyeonggi-do', // 1272331
   f064668: 'sealing, China, Hong Kong', // 1272327
-  f065141: 'sealing, China, Fuzhou', // 1272289
   f065200: 'sealing, China, Yibin', // 1272293
   f065280: 'sealing, Korea, Songpa-gu', // 1272281
   f065426: 'sealing, Korea, Gimpo-si', // 1272319
   f065732: 'sealing, Korea, Gyeonggi-do', // 1272339
-  f066104: 'sealing, China, Xingjiang + USA, Portland', // 1272207
   f066453: 'sealing, Korea, Bucheon-si', // 1272179
-  f066563: 'sealing, China, Fuzhou', // 1272208
   f066596: 'sealing, USA, San Diego', // 1272173
   f066898: 'sealing, Japan, Bunkyo-ku', // 1272174
   f067083: 'sealing, Russia, Moscow', // 1272206
   f067170: 'sealing, China, Jiangmen', // 1272203
-  f067190: 'sealing, Korea, Uiwang', // 1272222
   f067195: 'sealing, China, Huizhou', // 1272219
   f067283: 'sealing, Korea, Seongnam-si', // 1272239
   f067545: 'sealing, Canada, Kitchener', // 1272215
@@ -201,31 +205,21 @@ const annotations = {
 
   // Stuck
 
-  f02305: 'stuck, China, Dongguan', // FundsEnsured: about 3 hours
-  f02668: 'stuck, China, Chengdu', // FundsEnsured: about 3 hours
-  f02823: 'stuck, China, Chengdu', // FundsEnsured: about 3 hours
-  f08019: 'stuck, China, Yantai, 三合', // Transferring: about 3 hours
-  f015771: 'stuck, Brazil, Sao Paulo', // FundsEnsured: about 3 hours
-  f016276: 'stuck, China, Beijing', // CheckForAcceptance: about 3 hours
-  f019534: 'stuck, USA, Beaverton', // CheckForAcceptance: about 3 hours
-  f019806: 'stuck, China, Beijing', // CheckForAcceptance: about 3 hours
-  f020523: 'stuck, China, Suzhou', // CheckForAcceptance: about 3 hours
-  f021535: 'stuck, China, Chengdu', // FundsEnsured: about 3 hours
-  f025025: 'stuck, China, Qingdao', // Transferring: about 3 hours
-  f040173: 'stuck, Ukraine, Ternopil', // FundsEnsured: about 3 hours
-  f046073: 'stuck, China, Shanghai', // FundsEnsured: about 3 hours
-  f046074: 'stuck, China, Shanghai', // FundsEnsured: about 3 hours
-  f049751: 'stuck, Australia, Sydney', // FundsEnsured: about 3 hours
-  f053916: 'stuck, USA, Concord', // CheckForAcceptance: about 3 hours
-  f057368: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 3 hours
-  f057842: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 3 hours
-  f059190: 'stuck, Poland, Krakow', // FundsEnsured: about 3 hours
-  f059280: 'stuck, China, Shenzhen', // FundsEnsured: about 3 hours
-  f062375: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 3 hours
-  f065011: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 3 hours
-  f067185: 'stuck, Korea, Gwangju', // FundsEnsured: about 3 hours
-  f069661: 'stuck, China, Wuxi', // CheckForAcceptance: about 3 hours
-  f070223: 'stuck, China, Dongguan', // CheckForAcceptance: about 3 hours
+  f02305: 'stuck, China, Dongguan', // FundsEnsured: about 13 hours
+  f02668: 'stuck, China, Chengdu', // FundsEnsured: about 13 hours
+  f08019: 'stuck, China, Yantai, 三合', // Transferring: about 13 hours
+  f015771: 'stuck, Brazil, Sao Paulo', // FundsEnsured: about 13 hours
+  f019534: 'stuck, USA, Beaverton', // CheckForAcceptance: about 13 hours
+  f025025: 'stuck, China, Qingdao', // Transferring: about 13 hours
+  f040173: 'stuck, Ukraine, Ternopil', // FundsEnsured: about 13 hours
+  f049751: 'stuck, Australia, Sydney', // FundsEnsured: about 13 hours
+  f057368: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 13 hours
+  f059190: 'stuck, Poland, Krakow', // FundsEnsured: about 13 hours
+  f059280: 'stuck, China, Shenzhen', // FundsEnsured: about 13 hours
+  f065011: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 13 hours
+  f067185: 'stuck, Korea, Gwangju', // FundsEnsured: about 13 hours
+  f069661: 'stuck, China, Wuxi', // CheckForAcceptance: about 13 hours
+  f070223: 'stuck, China, Dongguan', // CheckForAcceptance: about 13 hours
 
   // Busy
 
@@ -381,13 +375,16 @@ const annotations = {
 
   // Error
 
+  f02823: 'error, China, Chengdu', // stream reset
   f02838: 'error, China, Chengdu, IPFS Harbor-星际港湾', // stream reset
   f03002: 'error, China, Chongqing', // stream reset
   f08371: 'error, China, Chengdu', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: context deadline exceeded
   f08532: 'error, USA', // stream reset
+  f016276: 'error, China, Beijing', // AddPiece failed: adding piece to sector: writing piece: creating unsealed sector file: openning partial file '/filecoin-file/sealing/unsealed/s-t016276-149': open /filecoin-file/sealing/unsealed/s-t016276-149: no such file or directory
   f016594: 'error, Germany', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999957153245 FIL, balance: 0.008652403485720368 FIL): not enough funds to execute transaction
   f019279: 'error, Canada, Calgary', // stream reset
   f020223: 'error, China, Guiyang', // stream reset
+  f021535: 'error, China, Chengdu', // stream reset
   f022070: 'error, China, Jieyang', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: protocol not supported
   f022518: 'error, DNS:poseidon.technology', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: failed to dial 12D3KooWGCV8M5QGWAAt24p9EJcfL4NaSh7T8HHRivzFnyC6Aeve: no good addresses
   f022820: 'error, China, Guangdong', // stream reset
@@ -399,9 +396,13 @@ const annotations = {
   f034701: 'error, China, Shenzhen', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.04999999995366668 FIL, balance: 0.047715169823097893 FIL): not enough funds to execute transaction
   f045714: 'error, Korea, Busan', // EOF
   f046043: 'error, China, Shanghai', // stream reset
+  f046073: 'error, China, Shanghai', // stream reset
+  f046074: 'error, China, Shanghai', // stream reset
   f054422: 'error, NR', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: protocol not supported
   f055040: 'error, China, Fujian', // deal failed: (State=26) error calling node: publishing deal: GasEstimateMessageGas error: estimating gas used: message execution failed: exit SysErrSenderStateInvalid(2), reason: actor balance less than needed: 0.000000510676931493 FIL < 0.00000101 FIL (RetCode=2)
   f057560: 'error, NR', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.04999999998057518 FIL, balance: 0.000002267261822971 FIL): not enough funds to execute transaction
+  f057842: 'error, Korea, Gyeonggi-do', // stream reset
+  f062375: 'error, Korea, Gyeonggi-do', // stream reset
   f063173: 'error, Korea, Gyeonggi-do', // deal failed: (State=26) error calling node: publishing deal: GasEstimateMessageGas error: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr f063173: escrow balance 21475960012 < locked 0 + required 24751064690 (RetCode=19)
   f064442: 'error, Japan', // stream reset
   f065225: 'error, China, Dongguan', // deal failed: (State=26) error calling node: ensuring funds: mpool push: failed to push message: not enough funds (required: 0.050343417290188176 FIL, balance: 0.000981383346468474 FIL): not enough funds to execute transaction
