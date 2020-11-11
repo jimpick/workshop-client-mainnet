@@ -29,52 +29,56 @@ const annotations = {
 
   // Active
 
+  f01277: 'active, Sweden, Stockholm, tvsthlm', // 1273510 about 12 hours
+  f02401: 'active, Canada, Chambly, NBFS Canada', // 1273625 about 12 hours
+  f02576: 'active, Denmark, Gjerlev, BenjaminH', // 1273620 about 12 hours
   f05664: 'active, China, Shenzhen, 艾比特网络科技', // 1273450 about 7 hours
+  f08403: 'active, UK, Lower Slaughter', // 1273594 about 11 hours
+  f010088: 'active, DNS:purumine.com', // 1273418 about 12 hours
+  f010446: 'active, Netherlands', // 1273649 about 12 hours
+  f010507: 'active, China, Hangzhou', // 1273414 about 11 hours
+  f019100: 'active, Romania, Cluj-Napoca', // 1273817 about 12 hours
+  f019243: 'active, USA, Jackson', // 1273636 about 10 hours
   f020928: 'active, China, Deyang + Singapore', // 1273525 about 8 hours
+  f022352: 'active, Norway, Borgen, @Reiers', // 1273538 about 12 hours
+  f023467: 'active, Norway, Oslo', // 1273782 about 12 hours
+  f023843: 'active, NR', // 1273456 about 10 hours
   f024015: 'active, USA, Portland', // 1273520 about 6 hours
+  f025007: 'active, Korea, Gyeonggi-do', // 1273760 about 8 hours
   f033356: 'active, Korea, Gangnum-gu', // 1273410 about 8 hours
+  f062318: 'active, Korea, Naju', // 1273383 about 12 hours
+  f063996: 'active, China, Sichuan', // 1273495 about 12 hours
+  f065280: 'active, Korea, Songpa-gu', // 1273515 about 10 hours
   f066104: 'active, China, Xingjiang + USA, Portland', // 1273565 about 6 hours
+  f066596: 'active, USA, San Diego', // 1273564 about 10 hours
+  f066898: 'active, Japan, Bunkyo-ku', // 1273668 about 8 hours
   f067190: 'active, Korea, Uiwang', // 1273604 about 7 hours
+  f067283: 'active, Korea, Seongnam-si', // 1273610 about 11 hours
 
   // Sealing
 
   f01238: 'active-sealing, Vietnam, Hanoi, FILECOIN-VIETNAM', // 1273700
   f01276: 'active-sealing, Canada, Brampton, NBFS Canada', // 1273506
-  f01277: 'active-sealing, Sweden, Stockholm, tvsthlm', // 1273510
   f01278: 'active-sealing, USA, Grand Rapids, MiMiner', // 1273487
   f01291: 'active-sealing, Sweden, Stockholm, tvsthlm', // 1273455
-  f02401: 'active-sealing, Canada, Chambly, NBFS Canada', // 1273625
   f02423: 'active-sealing, Ukraine, Kyiv, igowreck', // 1273747
-  f08403: 'active-sealing, UK, Lower Slaughter', // 1273594
   f09693: 'active-sealing, USA, Portland + Singapore', // 1273446
   f09848: 'active-sealing, USA', // 1273714
-  f010088: 'active-sealing, DNS:purumine.com', // 1273418
-  f010446: 'active-sealing, Netherlands', // 1273649
   f010479: 'active-sealing, France, Fontenay-sous-Bois', // 1273619
-  f010507: 'active-sealing, China, Hangzhou', // 1273414
   f014768: 'active-sealing, Singapore, @Funk', // 1273523
   f015941: 'active-sealing, Ukraine, Kyiv', // 1273587
   f019029: 'active-sealing, Serbia, Boljevac', // 1273493
-  f019100: 'active-sealing, Romania, Cluj-Napoca', // 1273817
-  f019243: 'active-sealing, USA, Jackson', // 1273636
   f019551: 'active-sealing, UK, Birmingham, @Neofix AF', // 1273631
   f020378: 'active-sealing, Bulgaria, Asenovgrad', // 1273497
   f022163: 'active-sealing, NR', // 1274970
-  f022352: 'active-sealing, Norway, Borgen, @Reiers', // 1273538
-  f023467: 'active-sealing, Norway, Oslo', // 1273782
-  f023843: 'active-sealing, NR', // 1273456
-  f025007: 'active-sealing, Korea, Gyeonggi-do', // 1273760
   f038299: 'active-sealing, Russia, St. Petersburg', // 1273492
   f055102: 'active-sealing, NR', // 1273522
   f055132: 'active-sealing, NR', // 1273452
   f058168: 'active-sealing, Korea, Gyeonggi-do', // 1273537
   f061158: 'active-sealing, China, Guangdong', // 1273683
-  f062318: 'active-sealing, Korea, Naju', // 1273383
   f064218: 'active-sealing, USA, Kirkland', // 1273667
-  f065280: 'active-sealing, Korea, Songpa-gu', // 1273515
 
   f02387: 'sealing, Canada, Brampton, NBFS Canada', // 1273685
-  f02576: 'sealing, Denmark, Gjerlev, BenjaminH', // 1273620
   f03224: 'sealing, Ukraine, Irpin, oboltusov', // 1273526
   f08157: 'sealing, China, Beijing + Germany, Frankfurt, 超星际', // 1273438
   f08240: 'sealing, Russia, Novosibirsk, Rabinovitch', // 1273702
@@ -102,15 +106,11 @@ const annotations = {
   f058374: 'sealing, USA', // 1273401
   f062204: 'sealing, China, Hong Kong', // 1273707
   f062353: 'sealing, Germany, Frankfurt', // 1273758
-  f063996: 'sealing, China, Sichuan', // 1273495
   f064664: 'sealing, Korea, Gyeonggi-do', // 1273436
   f064668: 'sealing, China, Hong Kong', // 1273534
   f065426: 'sealing, Korea, Gimpo-si', // 1273609
   f065732: 'sealing, Korea, Gyeonggi-do', // 1273442
   f066453: 'sealing, Korea, Bucheon-si', // 1273662
-  f066596: 'sealing, USA, San Diego', // 1273564
-  f066898: 'sealing, Japan, Bunkyo-ku', // 1273668
-  f067283: 'sealing, Korea, Seongnam-si', // 1273610
   f067545: 'sealing, Canada, Kitchener', // 1273552
   f067642: 'sealing, Japan, Ota-ku', // 1273453
   f067721: 'sealing, China, Beijing', // 1273558
@@ -118,11 +118,11 @@ const annotations = {
 
   // Stuck
 
-  f02665: 'stuck, Netherlands, Amsterdam, fm-ops', // FundsEnsured: about 8 hours
-  f015885: 'stuck, China, Jiaxing', // Transferring: about 9 hours
-  f022853: 'stuck, China, Fuzhou', // Transferring: about 9 hours
-  f057466: 'stuck, China, Guangzhou', // Transferring: about 8 hours
-  f061407: 'stuck, China, Shenzhen', // Transferring: about 9 hours
+  f02665: 'stuck, Netherlands, Amsterdam, fm-ops', // FundsEnsured: about 14 hours
+  f015885: 'stuck, China, Jiaxing', // Transferring: about 15 hours
+  f022853: 'stuck, China, Fuzhou', // Transferring: about 15 hours
+  f057466: 'stuck, China, Guangzhou', // Transferring: about 14 hours
+  f061407: 'stuck, China, Shenzhen', // Transferring: about 15 hours
 
   // Min-size
 
