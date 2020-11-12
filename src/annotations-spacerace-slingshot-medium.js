@@ -52,7 +52,7 @@ const annotations = {
   f022522: 'active, China, Dongguan', // 1279667 about 18 hours
   f023467: 'active, Norway, Oslo, PhiMining.io', // 1273782 about 12 hours
   f023581: 'active, China, Hong Kong', // 1279602 about 18 hours
-  f023843: 'active, NR', // 1273456 about 10 hours
+  f023843: 'active, China, Zhangjiakou', // 1273456 about 10 hours
   f024015: 'active, USA, Portland, FILmiPool-JP01', // 1273520 about 6 hours
   f025007: 'active, Korea, Gyeonggi-do', // 1273760 about 8 hours
   f033356: 'active, Korea, Gangnum-gu', // 1273410 about 8 hours
