@@ -126,7 +126,7 @@ const annotations = {
   f021532: 'sealing, China, Shanghai', // 1272256
   f021583: 'sealing, China, Jiaxing', // 1272258
   f021716: 'sealing, New Zealand, Wellington', // 1272638
-  f022142: 'sealing, USA, Queens, we4u-GREEN', // 1272620
+  f022142: 'sealing, USA, Queens, Nelson SR2', // 1272620
   f022261: 'sealing, China, Luzhou', // 1272244
   f022308: 'sealing, China, Shenzhen', // 1272240
   f023009: 'sealing, USA, Berkeley, M32 Grenade Launcher', // 1272606
