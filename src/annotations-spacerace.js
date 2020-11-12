@@ -19,9 +19,9 @@ const annotations = {
   f07709: 'active, Korea, Dongjak-gu', // 1272315 about 9 hours
   f08103: 'active, China, Foshan, 花生酱肠粉', // 1272192 about 11 hours
   f08240: 'active, Russia, Novosibirsk, Rabinovitch', // 1272326 about 12 hours
-  f09693: 'active, USA, Portland + Singapore', // 1272132 about 6 hours
+  f09693: 'active, USA, Portland + Singapore, 6block-CapsuleMining', // 1272132 about 6 hours
   f010505: 'active, China, Wuhan', // 1272165 about 8 hours
-  f010528: 'active, China, Chongqing', // 1272189 about 13 hours
+  f010528: 'active, China, Chongqing, Interstellar Roewe', // 1272189 about 13 hours
   f010558: 'active, China, Shenzhen + Hong Kong', // 1272154 about 5 hours
   f014324: 'active, Canada, Vancouver', // 1272353 about 7 hours
   f015885: 'active, China, Jiaxing', // 1272193 about 6 hours
@@ -30,7 +30,7 @@ const annotations = {
   f020928: 'active, China, Deyang + Singapore', // 1272229 about 13 hours
   f022522: 'active, China, Dongguan', // 1272168 about 13 hours
   f022853: 'active, China, Fuzhou', // 1272159 about 7 hours
-  f024184: 'active, Korea, Gangnam-gu', // 1272305 about 10 hours
+  f024184: 'active, Korea, Gangnam-gu, we4u-GREEN', // 1272305 about 10 hours
   f024511: 'active, NR', // 1272171 about 6 hours
   f030125: 'active, China, Nantong', // 1272257 about 8 hours
   f030335: 'active, China, Fujian', // 1272249 about 6 hours
@@ -49,18 +49,18 @@ const annotations = {
   f01287: 'active-sealing, China, Jiaxing, MaiTian', // 1272129
   f02665: 'active-sealing, Netherlands, Amsterdam, fm-ops', // 1272135
   f03134: 'active-sealing, China, Cangzhou, 乔木信息', // 1272141
-  f03328: 'active-sealing, China, Xinxiang', // 1272138
+  f03328: 'active-sealing, China, Xinxiang, Golden Miner', // 1272138
   f07819: 'active-sealing, China, Wuxi, YC--wuxi', // 1272144
   f08157: 'active-sealing, China, Beijing + Germany, Frankfurt, 超星际', // 1272133
-  f08403: 'active-sealing, UK, Lower Slaughter', // 1272145
+  f08403: 'active-sealing, UK, Lower Slaughter, TippyFlits', // 1272145
   f010241: 'active-sealing, China, Beijing + USA, Portland', // 1272139
   f010247: 'active-sealing, China, Yantai', // 1272140
   f010399: 'active-sealing, China, Guangzhou', // 1272295
-  f010446: 'active-sealing, Netherlands', // 1272136
-  f010479: 'active-sealing, France, Fontenay-sous-Bois', // 1272633
+  f010446: 'active-sealing, Netherlands, Angelo', // 1272136
+  f010479: 'active-sealing, France, Fontenay-sous-Bois, s0nik42', // 1272633
   f010498: 'active-sealing, China, Shenzhen', // 1272146
-  f010507: 'active-sealing, China, Hangzhou', // 1272152
-  f014768: 'active-sealing, Singapore, @Funk', // 1272147
+  f010507: 'active-sealing, China, Hangzhou, ciger', // 1272152
+  f014768: 'active-sealing, Singapore, Funktafide, @Funk', // 1272147
   f019029: 'active-sealing, Serbia, Boljevac', // 1272156
   f019240: 'active-sealing, China, Beijing', // 1272303
   f019437: 'active-sealing, Korea, Guro-gu', // 1272221
@@ -68,18 +68,18 @@ const annotations = {
   f020378: 'active-sealing, Bulgaria, Asenovgrad', // 1272153
   f022125: 'active-sealing, China, Shenzhen', // 1272166
   f022227: 'active-sealing, China, Jiangsu', // 1272161
-  f022922: 'active-sealing, China, Shenzhen', // 1272621
+  f022922: 'active-sealing, China, Shenzhen, CAAP-MEG', // 1272621
   f023179: 'active-sealing, China, Fuzhou', // 1272158
   f024156: 'active-sealing, USA', // 1272625
   f024550: 'active-sealing, China, Wenzhou', // 1272170
-  f025017: 'active-sealing, China, Hefei', // 1272169
+  f025017: 'active-sealing, China, Hefei, 一三科技-913', // 1272169
   f032913: 'active-sealing, China, Shenzhen', // 1272190
   f032934: 'active-sealing, Korea, Incheon', // 1272184
   f033517: 'active-sealing, China, Changsha', // 1272205
   f035436: 'active-sealing, China, Jiangsu', // 1272175
   f039515: 'active-sealing, China, Chongqing', // 1272195
-  f043929: 'active-sealing, China, Beijing', // 1272176
-  f044160: 'active-sealing, China, Guangzhou', // 1272655
+  f043929: 'active-sealing, China, Beijing, Kr', // 1272176
+  f044160: 'active-sealing, China, Guangzhou, muxing', // 1272655
   f047419: 'active-sealing, USA, Waukesha', // 1272733
   f048135: 'active-sealing, China, Chongqing', // 1272196
   f048540: 'active-sealing, China, Xinxiang', // 1272197
@@ -106,9 +106,9 @@ const annotations = {
   f010088: 'sealing, DNS:purumine.com', // 1272622
   f010400: 'sealing, China, Shenyang', // 1272304
   f010493: 'sealing, China, Shanghai', // 1272210
-  f010501: 'sealing, China, Hangzhou', // 1272220
+  f010501: 'sealing, China, Hangzhou, Interstellar Roewe', // 1272220
   f010513: 'sealing, China, Chongqing', // 1272191
-  f010523: 'sealing, China, Beijing', // 1272198
+  f010523: 'sealing, China, Beijing, Interstellar Roewe', // 1272198
   f015233: 'sealing, China, Nanjing', // 1272211
   f015747: 'sealing, Japan, Setagaya-ku', // 1272661
   f015877: 'sealing, China, Jiaxing + USA', // 1272724
@@ -126,14 +126,14 @@ const annotations = {
   f021532: 'sealing, China, Shanghai', // 1272256
   f021583: 'sealing, China, Jiaxing', // 1272258
   f021716: 'sealing, New Zealand, Wellington', // 1272638
-  f022142: 'sealing, USA, Queens', // 1272620
+  f022142: 'sealing, USA, Queens, we4u-GREEN', // 1272620
   f022261: 'sealing, China, Luzhou', // 1272244
-  f022308: 'sealing, NR', // 1272240
-  f023009: 'sealing, USA, Berkeley', // 1272606
+  f022308: 'sealing, China, Shenzhen', // 1272240
+  f023009: 'sealing, USA, Berkeley, M32 Grenade Launcher', // 1272606
   f023492: 'sealing, China, Beijing', // 1272691
   f023581: 'sealing, China, Hong Kong', // 1272242
-  f023649: 'sealing, Korea, Seoul', // 1272897
-  f023843: 'sealing, NR', // 1272255
+  f023649: 'sealing, Korea, Seoul, LS&NIHON', // 1272897
+  f023843: 'sealing, China, Zhangjiakou', // 1272255
   f023971: 'sealing, USA, @Brian Y', // 1272330
   f024468: 'sealing, China, Shenzhen', // 1272241
   f025019: 'sealing, China, Taiwan, Hsinchu', // 1272247
@@ -249,20 +249,20 @@ const annotations = {
   f03624: 'min-size, Germany, Chemnitz, ode', // 131072 < 134217728
   f05664: 'min-size, China, Shenzhen, 艾比特网络科技', // 131072 < 1048576
   f09569: 'min-size, China, Beijing', // 131072 < 536870912
-  f09848: 'min-size, USA', // 131072 < 134217728
-  f010617: 'min-size, Canada, Surrey, @feiya200', // 131072 < 67108864
+  f09848: 'min-size, USA, Irvine, BigBearLake', // 131072 < 134217728
+  f010617: 'min-size, Canada, Surrey, kernelogic2, @feiya200', // 131072 < 67108864
   f014394: 'min-size, China, Suzhou', // 131072 < 134217728
   f014409: 'min-size, USA, Waxhaw', // 131072 < 134217728
   f015941: 'min-size, Ukraine, Kyiv', // 131072 < 134217728
   f018501: 'min-size, China, Beijing', // 131072 < 1048576
-  f019100: 'min-size, Romania, Cluj-Napoca', // 131072 < 16777216
-  f019104: 'min-size, Canada, Chambly', // 131072 < 2097152
+  f019100: 'min-size, Romania, Cluj-Napoca, noisyfan', // 131072 < 16777216
+  f019104: 'min-size, Canada, Chambly, NBFS DEV', // 131072 < 2097152
   f019551: 'min-size, UK, Birmingham, @Neofix AF', // 131072 < 33554432
-  f020904: 'min-size, Korea, Uijeongbu-si', // 131072 < 33554432
+  f020904: 'min-size, Korea, Uijeongbu-si, FILTop', // 131072 < 33554432
   f022130: 'min-size, Korea, Seodaemun-gu', // 131072 < 134217728
-  f022163: 'min-size, NR', // 131072 < 12582912
-  f022352: 'min-size, Norway, Borgen, @Reiers', // 131072 < 8388608
-  f023467: 'min-size, Norway, Oslo', // 131072 < 4194304
+  f022163: 'min-size, dns:fil.akasha.network', // 131072 < 12582912
+  f022352: 'min-size, Norway, Borgen, TechHedge, @Reiers', // 131072 < 8388608
+  f023467: 'min-size, Norway, Oslo, PhiMining.io', // 131072 < 4194304
   f023868: 'min-size, China, Fuzhou', // 131072 < 268435456
   f023869: 'min-size, China, Fuzhou', // 131072 < 268435456
   f023870: 'min-size, China, Fuzhou', // 131072 < 268435456
@@ -273,7 +273,7 @@ const annotations = {
   f024012: 'min-size, China, Fuzhou', // 131072 < 268435456
   f024013: 'min-size, China, Fuzhou', // 131072 < 268435456
   f024014: 'min-size, China, Fuzhou', // 131072 < 268435456
-  f024015: 'min-size, USA, Portland', // 131072 < 134217728
+  f024015: 'min-size, USA, Portland, FILmiPool-JP01', // 131072 < 134217728
   f024136: 'min-size, China, Fuzhou', // 131072 < 268435456
   f024147: 'min-size, China, Fuzhou', // 131072 < 134217728
   f024148: 'min-size, China, Fuzhou', // 131072 < 134217728
