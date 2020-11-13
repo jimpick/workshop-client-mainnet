@@ -21,177 +21,178 @@ const annotations = {
 
   // Active
 
-  f01238: 'active, Vietnam, Hanoi, FILECOIN-VIETNAM', // 1273700
-  f01276: 'active, Canada, Brampton, NBFS Canada', // 1273506
-  f01277: 'active, Sweden, Stockholm, tvsthlm', // 1273510
-  f01278: 'active, USA, Grand Rapids, MiMiner', // 1273487
-  f01291: 'active, Sweden, Stockholm, tvsthlm', // 1273455
-  f02387: 'active, Canada, Brampton, NBFS Canada', // 1273685
-  f02401: 'active, Canada, Chambly, NBFS Canada', // 1273625
-  f02423: 'active, Ukraine, Kyiv, igowreck', // 1273747
-  f02576: 'active, Denmark, Gjerlev, BenjaminH', // 1273620
+  f01238: 'active, Vietnam, Hanoi, FILECOIN-VIETNAM', // carry-over
+  f01276: 'active, Canada, Brampton, NBFS Canada', // carry-over
+  f01277: 'active, Sweden, Stockholm, tvsthlm', // carry-over
+  f01278: 'active, USA, Grand Rapids, MiMiner', // carry-over
+  f01291: 'active, Sweden, Stockholm, tvsthlm', // carry-over
+  f02387: 'active, Canada, Brampton, NBFS Canada', // carry-over
+  f02401: 'active, Canada, Chambly, NBFS Canada', // carry-over
+  f02423: 'active, Ukraine, Kyiv, igowreck', // carry-over
+  f02576: 'active, Denmark, Gjerlev, BenjaminH', // carry-over
+  f02856: 'active, China, Chengdu', // 1287397 about 7 hours
   f03134: 'active, China, Cangzhou, 乔木信息', // 1279655
   f03339: 'active, China, Luzhou, benxun', // 1279375
-  f05664: 'active, China, Shenzhen, 艾比特网络科技', // 1273450
+  f03488: 'active, Korea, Geumcheon-gu', // 1287351 about 10 hours
+  f05664: 'active, China, Shenzhen, 艾比特网络科技', // carry-over
   f08103: 'active, China, Foshan, 花生酱肠粉', // 1279641
-  f08240: 'active, Russia, Novosibirsk, Rabinovitch', // 1273702
-  f08403: 'active, UK, Lower Slaughter, TippyFlits', // 1273594
-  f09693: 'active, USA, Portland + Singapore, 6block-CapsuleMining', // 1273446
-  f010088: 'active, DNS:purumine.com', // 1273418
+  f08240: 'active, Russia, Novosibirsk, Rabinovitch', // carry-over
+  f08403: 'active, UK, Lower Slaughter, TippyFlits', // carry-over
+  f09693: 'active, USA, Portland + Singapore, 6block-CapsuleMining', // carry-over
+  f010088: 'active, DNS:purumine.com', // carry-over
   f010247: 'active, China, Yantai', // 1279656
-  f010446: 'active, Netherlands, Angelo', // 1273649
-  f010507: 'active, China, Hangzhou, ciger', // 1273414
+  f010446: 'active, Netherlands, Angelo', // carry-over
+  f010498: 'active, China, Shenzhen', // 1279594 about 4 hours
+  f010507: 'active, China, Hangzhou, ciger', // carry-over
   f010528: 'active, China, Chongqing, Interstellar Roewe', // 1279518
   f010617: 'active, Canada, Surrey, kernelogic2, @feiya200', // 1279629
-  f014768: 'active, Singapore, Funktafide, @Funk', // 1273523
+  f014768: 'active, Singapore, Funktafide, @Funk', // carry-over
   f015877: 'active, China, Jiaxing + USA', // 1279593
   f015885: 'active, China, Jiaxing', // 1279668
+  f015927: 'active, USA, East Islip', // 1287337 about 15 hours
   f018501: 'active, China, Beijing', // 1279465
-  f019100: 'active, Romania, Cluj-Napoca, noisyfan', // 1273817
-  f019243: 'active, USA, Jackson', // 1273636
-  f019551: 'active, UK, Birmingham, @Neofix AF', // 1273631
+  f019100: 'active, Romania, Cluj-Napoca, noisyfan', // carry-over
+  f019243: 'active, USA, Jackson', // carry-over
+  f019551: 'active, UK, Birmingham, @Neofix AF', // carry-over
   f020489: 'active, China, Lioaning', // 1279385
-  f020928: 'active, China, Deyang + Singapore', // 1273525
+  f020928: 'active, China, Deyang + Singapore', // carry-over
   f022125: 'active, China, Shenzhen', // 1279402
-  f022163: 'active, dns:fil.akasha.network', // 1274970
+  f022163: 'active, dns:fil.akasha.network', // carry-over
   f022261: 'active, China, Luzhou', // 1279659
   f022308: 'active, China, Shenzhen', // 1279502
-  f022352: 'active, Norway, Borgen, TechHedge, @Reiers', // 1273538
+  f022352: 'active, Norway, Borgen, TechHedge, @Reiers', // carry-over
   f022522: 'active, China, Dongguan', // 1279667
-  f023467: 'active, Norway, Oslo, PhiMining.io', // 1273782
+  f023467: 'active, Norway, Oslo, PhiMining.io', // carry-over
   f023581: 'active, China, Hong Kong', // 1279602
-  f023843: 'active, China, Zhangjiakou', // 1273456
-  f024015: 'active, USA, Portland, FILmiPool-JP01', // 1273520
+  f023843: 'active, China, Zhangjiakou', // carry-over
+  f024015: 'active, USA, Portland, FILmiPool-JP01', // carry-over
   f024184: 'active, Korea, Gangnam-gu, we4u-GREEN', // 1279596
-  f025007: 'active, Korea, Gyeonggi-do', // 1273760
+  f025007: 'active, Korea, Gyeonggi-do', // carry-over
   f025017: 'active, China, Hefei, 一三科技-913', // 1279549
-  f032934: 'active, Korea, Incheon', // 1273504 about 3 hours
-  f033356: 'active, Korea, Gangnum-gu', // 1273410
-  f038299: 'active, Russia, St. Petersburg', // 1273492
+  f030335: 'active, China, Fujian', // 1287309 about 6 hours
+  f032913: 'active, China, Shenzhen', // 1279400 about 16 hours
+  f032934: 'active, Korea, Incheon', // carry-over
+  f033356: 'active, Korea, Gangnum-gu', // carry-over
+  f034701: 'active, China, Shenzhen', // 1287320 about 8 hours
+  f038299: 'active, Russia, St. Petersburg', // carry-over
   f042567: 'active, China, Jinhua', // 1279421
   f047858: 'active, China, Wuhan', // 1279529
   f049911: 'active, NR', // 1279595
+  f050022: 'active, China, Changsha', // 1287302 about 21 hours
   f054370: 'active, China, Dongguan', // 1279671
-  f055102: 'active, NR', // 1273522
-  f055522: 'active, USA', // 1273403
+  f055102: 'active, NR', // carry-over
+  f055522: 'active, USA', // carry-over
+  f057115: 'active, China, Nanyang', // 1287243 about 21 hours
   f058000: 'active, China, Suzhou', // 1279442
-  f058369: 'active, USA, Bow', // 1273556
+  f058369: 'active, USA, Bow', // carry-over
   f059788: 'active, China, Beijing', // 1279510
   f060072: 'active, China, Chongqing', // 1279689
-  f061158: 'active, China, Guangdong', // 1273683
-  f062204: 'active, China, Hong Kong', // 1273707
+  f061158: 'active, China, Guangdong', // carry-over
+  f062204: 'active, China, Hong Kong', // carry-over
   f062260: 'active, China, Guangzhou', // 1279513
-  f062318: 'active, Korea, Naju', // 1273383
-  f063996: 'active, China, Sichuan', // 1273495
-  f064668: 'active, China, Hong Kong', // 1273534
-  f065280: 'active, Korea, Songpa-gu', // 1273515
-  f066104: 'active, China, Xingjiang + USA, Portland', // 1273565
-  f066596: 'active, USA, San Diego', // 1273564
-  f066898: 'active, Japan, Bunkyo-ku', // 1273668
-  f067190: 'active, Korea, Uiwang', // 1273604
-  f067283: 'active, Korea, Seongnam-si', // 1273610
-  f067642: 'active, Japan, Ota-ku', // 1273453
+  f062318: 'active, Korea, Naju', // carry-over
+  f062518: 'active, Korea, Gwangju', // 1287225 about 12 hours
+  f063996: 'active, China, Sichuan', // carry-over
+  f064668: 'active, China, Hong Kong', // carry-over
+  f065103: 'active, USA, Portland + China, Shenzhen', // 1287279 about 11 hours
+  f065280: 'active, Korea, Songpa-gu', // carry-over
+  f066104: 'active, China, Xingjiang + USA, Portland', // carry-over
+  f066596: 'active, USA, San Diego', // carry-over
+  f066898: 'active, Japan, Bunkyo-ku', // carry-over
+  f067190: 'active, Korea, Uiwang', // carry-over
+  f067283: 'active, Korea, Seongnam-si', // carry-over
+  f067642: 'active, Japan, Ota-ku', // carry-over
 
   // Sealing
 
-  f09848: 'active-sealing, USA, Irvine, BigBearLake', // 1273714
-  f010479: 'active-sealing, France, Fontenay-sous-Bois, @s0nik42', // 1273619
-  f015941: 'active-sealing, Ukraine, Kyiv', // 1273587
-  f019029: 'active-sealing, Serbia, Boljevac', // 1273493
-  f020378: 'active-sealing, Bulgaria, Asenovgrad', // 1273497
-  f055132: 'active-sealing, NR', // 1273452
-  f058168: 'active-sealing, Korea, Gyeonggi-do', // 1273537
-  f064218: 'active-sealing, USA, Kirkland', // 1273667
+  f09848: 'active-sealing, USA, Irvine, BigBearLake', // carry-over
+  f010479: 'active-sealing, France, Fontenay-sous-Bois, @s0nik42', // carry-over
+  f015941: 'active-sealing, Ukraine, Kyiv', // carry-over
+  f019029: 'active-sealing, Serbia, Boljevac', // carry-over
+  f020378: 'active-sealing, Bulgaria, Asenovgrad', // carry-over
+  f055132: 'active-sealing, NR', // carry-over
+  f058168: 'active-sealing, Korea, Gyeonggi-do', // carry-over
+  f064218: 'active-sealing, USA, Kirkland', // carry-over
 
   f01287: 'sealing, China, Jiaxing, MaiTian', // 1287251
   f02490: 'sealing, China, Fujian', // 1279515
   f02824: 'sealing, China, Chengdu', // 1287261
-  f02856: 'sealing, China, Chengdu', // 1287397
   f03222: 'sealing, China, Yuncheong, 星云矿池', // 1279618
-  f03224: 'sealing, Ukraine, Irpin, oboltusov', // 1273526
+  f03224: 'sealing, Ukraine, Irpin, oboltusov', // carry-over
   f03328: 'sealing, China, Xinxiang, Golden Miner', // 1279616
   f03347: 'sealing, China, Shenzhen', // 1279505
-  f03488: 'sealing, Korea, Geumcheon-gu', // 1287351
   f04443: 'sealing, China, Shanghai, 罗良科技', // 1279387
-  f08157: 'sealing, China, Beijing + Germany, Frankfurt, 超星际', // 1273438
-  f08399: 'sealing, USA, Sammamish', // 1273703
-  f08482: 'sealing, USA, Athol, @why', // 1273642
-  f010241: 'sealing, China, Beijing + USA, Portland', // 1273562
+  f08157: 'sealing, China, Beijing + Germany, Frankfurt, 超星际', // carry-over
+  f08399: 'sealing, USA, Sammamish', // carry-over
+  f08482: 'sealing, USA, Athol, @why', // carry-over
+  f010241: 'sealing, China, Beijing + USA, Portland', // carry-over
   f010493: 'sealing, China, Shanghai', // 1279634
-  f010498: 'sealing, China, Shenzhen', // 1279594
   f010501: 'sealing, China, Hangzhou, Interstellar Roewe', // 1279974
   f010513: 'sealing, China, Chongqing', // 1279448
   f010523: 'sealing, China, Beijing, Interstellar Roewe', // 1279619
   f015747: 'sealing, Japan, Setagaya-ku', // 1279464
-  f015927: 'sealing, USA, East Islip', // 1287337
   f016594: 'sealing, Germany', // 1287263
-  f019104: 'sealing, Canada, Chambly, NBFS DEV', // 1273682
+  f019104: 'sealing, Canada, Chambly, NBFS DEV', // carry-over
   f019240: 'sealing, China, Beijing', // 1279681
-  f019824: 'sealing, USA', // 1273412
-  f020904: 'sealing, Korea, Uijeongbu-si, FILTop', // 1273367
+  f019824: 'sealing, USA', // carry-over
+  f020904: 'sealing, Korea, Uijeongbu-si, FILTop', // carry-over
   f021265: 'sealing, China, Wuhan', // 1287293
   f021339: 'sealing, China, Jiaxing', // 1279410
   f021583: 'sealing, China, Jiaxing', // 1279449
-  f022130: 'sealing, Korea, Seodaemun-gu', // 1273457
+  f022130: 'sealing, Korea, Seodaemun-gu', // carry-over
   f022142: 'sealing, USA, Queens, Nelson SR2', // 1279412
   f022922: 'sealing, China, Shenzhen, CAAP-MEG', // 1279386
-  f023009: 'sealing, USA, Berkeley, M32 Grenade Launcher', // 1273550
+  f023009: 'sealing, USA, Berkeley, M32 Grenade Launcher', // carry-over
   f023492: 'sealing, China, Beijing', // 1279660
-  f023649: 'sealing, Korea, Seoul, LS&NIHON', // 1273721
-  f023971: 'sealing, USA, @Brian Y', // 1273524
+  f023649: 'sealing, Korea, Seoul, LS&NIHON', // carry-over
+  f023971: 'sealing, USA, @Brian Y', // carry-over
   f024468: 'sealing, China, Shenzhen', // 1279639
   f024511: 'sealing, NR', // 1287326
   f025019: 'sealing, China, Taiwan, Hsinchu', // 1279666
   f025044: 'sealing, undefined', // 1287230
-  f029368: 'sealing, Korea, Gangseo-gu', // 1273507
+  f029368: 'sealing, Korea, Gangseo-gu', // carry-over
   f029580: 'sealing, China, Maoming', // 1279718
-  f030335: 'sealing, China, Fujian', // 1287309
   f030384: 'sealing, undefined', // 1279552
-  f032913: 'sealing, China, Shenzhen', // 1279400
   f033549: 'sealing, China, Quzhou', // 1279586
-  f034701: 'sealing, China, Shenzhen', // 1287320
   f034777: 'sealing, China, Chengdu', // 1287355
   f039515: 'sealing, China, Chongqing', // 1279474
   f040173: 'sealing, Ukraine, Ternopil', // 1287350
-  f043929: 'sealing, China, Beijing, Kr', // 1273445
+  f043929: 'sealing, China, Beijing, Kr', // carry-over
   f044160: 'sealing, China, Guangzhou, muxing', // 1279642
   f046426: 'sealing, China, Beijing', // 1279440
   f047419: 'sealing, USA, Waukesha', // 1279589
-  f047978: 'sealing, Korea, Seoul', // 1273635
+  f047978: 'sealing, Korea, Seoul', // carry-over
   f048135: 'sealing, China, Chongqing', // 1279548
-  f050022: 'sealing, China, Changsha', // 1287302
-  f053088: 'sealing, China, Shanghai', // 1273690
-  f053255: 'sealing, Korea, Seoul', // 1273722
+  f053088: 'sealing, China, Shanghai', // carry-over
+  f053255: 'sealing, Korea, Seoul', // carry-over
   f053916: 'sealing, USA, Concord', // 1279587
   f054163: 'sealing, China, Dongguan', // 1279623
-  f054677: 'sealing, Finland, Helsinki', // 1273547
-  f055123: 'sealing, Korea, Busan', // 1273647
+  f054677: 'sealing, Finland, Helsinki', // carry-over
+  f055123: 'sealing, Korea, Busan', // carry-over
   f055171: 'sealing, China, Maoming', // 1279588
-  f055347: 'sealing, Korea, Busan', // 1273451
+  f055347: 'sealing, Korea, Busan', // carry-over
   f055538: 'sealing, Italy, Genoa, @Lucien', // 1287245
   f056573: 'sealing, China, Sichuan', // 1287213
-  f057115: 'sealing, China, Nanyang', // 1287243
   f057368: 'sealing, Korea, Gyeonggi-do', // 1287362
   f057466: 'sealing, China, Guangzhou', // 1279694
   f057842: 'sealing, Korea, Gyeonggi-do', // 1287222
-  f058374: 'sealing, USA', // 1273401
+  f058374: 'sealing, USA', // carry-over
   f061407: 'sealing, China, Shenzhen', // 1279452
-  f062353: 'sealing, Germany, Frankfurt', // 1273758
-  f062518: 'sealing, Korea, Gwangju', // 1287225
+  f062353: 'sealing, Germany, Frankfurt', // carry-over
   f062981: 'sealing, China, Sichuan', // 1287270
   f063921: 'sealing, China, Ili', // 1279463
-  f064664: 'sealing, Korea, Gyeonggi-do', // 1273436
-  f065103: 'sealing, USA, Portland + China, Shenzhen', // 1287279
+  f064664: 'sealing, Korea, Gyeonggi-do', // carry-over
+  f064688: 'sealing, NR', // 1287600
   f065200: 'sealing, China, Yibin', // 1279472
-  f065426: 'sealing, Korea, Gimpo-si', // 1273609
-  f065732: 'sealing, Korea, Gyeonggi-do', // 1273442
-  f066453: 'sealing, Korea, Bucheon-si', // 1273662
+  f065426: 'sealing, Korea, Gimpo-si', // carry-over
+  f065732: 'sealing, Korea, Gyeonggi-do', // carry-over
+  f066453: 'sealing, Korea, Bucheon-si', // carry-over
   f067170: 'sealing, China, Jiangmen', // 1279712
-  f067545: 'sealing, Canada, Kitchener', // 1273552
-  f067721: 'sealing, China, Beijing', // 1273558
+  f067545: 'sealing, Canada, Kitchener', // carry-over
+  f067721: 'sealing, China, Beijing', // carry-over
   f068096: 'sealing, China, Sichuan', // 1279651
   f068528: 'sealing, China, Shanghai', // 1287271
-  f069362: 'sealing, USA, Daytona Beach', // 1273546
+  f069362: 'sealing, USA, Daytona Beach', // carry-over
   f069921: 'sealing, Korea, Bucheon-si', // 1287238
   f070475: 'sealing, China, Guyuan', // 1279475
   f070747: 'sealing, China, Shenzhen', // 1287319
@@ -204,24 +205,7 @@ const annotations = {
 
   // Stuck
 
-  f01280: 'stuck, China, Wuxi, 了凡超算', // Transferring: about 1 hour
-  f01782: 'stuck, China, Hong Kong + Singapore + USA, Portland, hellofil.com', // Transferring: about 1 hour
-  f03345: 'stuck, China, Fuzhou, chh', // Transferring: about 1 hour
-  f03482: 'stuck, China, Wuxi', // Transferring: about 1 hour
-  f010400: 'stuck, China, Shenyang', // Transferring: 30 minutes
-  f014394: 'stuck, China, Suzhou', // Transferring: 25 minutes
-  f014395: 'stuck, China, Dongguan', // Transferring: 43 minutes
-  f022853: 'stuck, China, Fuzhou', // Transferring: 26 minutes
-  f025025: 'stuck, China, Qingdao', // Transferring: 25 minutes
-  f030327: 'stuck, China, Beijing', // Transferring: 24 minutes
-  f035436: 'stuck, China, Jiangsu', // Transferring: 30 minutes
-  f039800: 'stuck, China, Chengdu', // Transferring: 30 minutes
-  f048192: 'stuck, China, Suzhou', // Transferring: about 1 hour
-  f062661: 'stuck, China, Suzhou', // Transferring: 26 minutes
-  f064688: 'stuck, NR', // CheckForAcceptance: about 1 hour
-  f066566: 'stuck, Korea, Gwangju', // FundsEnsured: about 1 hour
-  f069661: 'stuck, China, Wuxi', // Transferring: 26 minutes
-  f070756: 'stuck, China, Beijing', // Transferring: 25 minutes
+  f062661: 'stuck, China, Suzhou', // Transferring: about 21 hours
 
   // Min-size
 
@@ -329,13 +313,29 @@ const annotations = {
 
   // Error
 
+  f01280: 'error, China, Wuxi, 了凡超算', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f01782: 'error, China, Hong Kong + Singapore + USA, Portland, hellofil.com', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f01799: 'error, China, Jinan, TokenHome', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f02665: 'error, undefined', // EOF
+  f03345: 'error, China, Fuzhou, chh', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f03482: 'error, China, Wuxi', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f010400: 'error, China, Shenyang', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f010491: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f010505: 'error, China, Wuhan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f014394: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f014395: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f020436: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f022853: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f025025: 'error, China, Qingdao', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f030327: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f035436: 'error, China, Jiangsu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f039800: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f040218: 'error, China, Wuxi', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f048192: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f066566: 'error, Korea, Gwangju', // stream reset
   f067195: 'error, China, Huizhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f069661: 'error, China, Wuxi', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f070756: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f072149: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
 
   // Backoff
