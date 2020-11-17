@@ -12,7 +12,41 @@
 const annotations = {
   // New
 
+  f060780: 'new, Korea, Goyang-si',
+  f061196: 'new, Korea, Yeongdeungpo-dong',
+  f061430: 'new, Korea, Naju',
   f065259: 'new, NR', // carry-over
+  f065578: 'new, NR',
+  f065670: 'new, NR',
+  f067314: 'new, China, Ningbo',
+  f067375: 'new, NR',
+  f069448: 'new, NR',
+  f069915: 'new, NR',
+  f070730: 'new, NR',
+  f070802: 'new, NR',
+  f070803: 'new, NR',
+  f072965: 'new, Korea, Busan',
+  f073048: 'new, Korea, Gyeonggi-do',
+  f073096: 'new, USA',
+  f073196: 'new, NR',
+  f073499: 'new, Korea, Gyeonggi-do',
+  f073525: 'new, NR',
+  f073535: 'new, Korea, Gyeonggi-do',
+  f073543: 'new, Korea, Gyeonggi-do',
+  f073552: 'new, NR',
+  f073628: 'new, USA, New Castle',
+  f073783: 'new, NR',
+  f073844: 'new, NR',
+  f073878: 'new, NR',
+  f073931: 'new, NR',
+  f074738: 'new, Korea, Seongbuk-gu',
+  f077761: 'new, NR',
+  f078425: 'new, Korea, Bucheon-si',
+  f078516: 'new, NR',
+  f078922: 'new, Korea, Bucheon-si',
+  f079007: 'new, China, Jinan',
+  f079334: 'new, Korea, Gyeonggi-do',
+  f079787: 'new, USA, Daytona Beach',
 
   // Active
 
