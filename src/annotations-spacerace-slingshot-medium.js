@@ -33,7 +33,7 @@ const annotations = {
   f010528: 'active-sealing, China, Chongqing, Interstellar Roewe', // 1327934
   f010617: 'active-sealing, Canada, Surrey, kernelogic2, @feiya200', // 1327874
   f014768: 'active-sealing, Singapore, Funktafide, @Funk', // 1327976
-  f015927: 'active-sealing, USA, East Islip', // 1327931
+  f015927: 'active-sealing, USA, East Islip, CDImine', // 1327931
   f018501: 'active-sealing, China, Beijing', // 1327949
   f019100: 'active-sealing, Romania, Cluj-Napoca, noisyfan', // 1327946
   f022352: 'active-sealing, Norway, Borgen, TechHedge, @Reiers', // 1327926
@@ -42,7 +42,7 @@ const annotations = {
   f024511: 'active-sealing, NR', // 1327983
   f025017: 'active-sealing, China, Hefei, 一三科技-913', // 1327964
   f032913: 'active-sealing, China, Shenzhen', // 1327872
-  f033356: 'active-sealing, Korea, Gangnum-gu', // 1327984
+  f033356: 'active-sealing, Korea, Gangnum-gu, we4u-YELLOW', // 1327984
   f034701: 'active-sealing, China, Shenzhen', // 1327966
   f042567: 'active-sealing, China, Jinhua', // 1327868
   f047858: 'active-sealing, China, Wuhan', // 1327971
@@ -69,11 +69,11 @@ const annotations = {
   f09848: 'sealing, USA, Irvine, BigBearLake', // 1327889
   f010241: 'sealing, China, Beijing + USA, Portland', // 1327871
   f010493: 'sealing, China, Shanghai', // 1327957
-  f010505: 'sealing, China, Wuhan', // 1327970
+  f010505: 'sealing, China, Wuhan, Interstellar Roewe', // 1327970
   f010513: 'sealing, China, Chongqing', // 1327977
   f010523: 'sealing, China, Beijing, Interstellar Roewe', // 1327869
-  f014394: 'sealing, China, Suzhou', // 1327965
-  f014409: 'sealing, USA, Waxhaw', // 1327757
+  f014394: 'sealing, China, Suzhou, IPFSCloud', // 1327965
+  f014409: 'sealing, USA, Waxhaw, Meatball Part III', // 1327757
   f014569: 'sealing, NR', // 1327968
   f016276: 'sealing, China, Beijing', // 1327941
   f019029: 'sealing, Serbia, Boljevac', // 1327806

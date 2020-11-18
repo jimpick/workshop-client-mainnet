@@ -28,7 +28,7 @@ const annotations = {
   f010247: 'active-sealing, China, Yantai', // 1324958
   f010399: 'active-sealing, China, Guangzhou', // 1325435
   f010498: 'active-sealing, China, Shenzhen', // 1325331
-  f010505: 'active-sealing, China, Wuhan', // 1325328
+  f010505: 'active-sealing, China, Wuhan, Interstellar Roewe', // 1325328
   f010507: 'active-sealing, China, Hangzhou, ciger', // 1325668
   f010528: 'active-sealing, China, Chongqing, Interstellar Roewe', // 1325327
   f014768: 'active-sealing, Singapore, Funktafide, @Funk', // 1326299
@@ -224,9 +224,9 @@ const annotations = {
   f09569: 'min-size, China, Beijing', // 131072 < 536870912
   f09848: 'min-size, USA, Irvine, BigBearLake', // 131072 < 134217728
   f010617: 'min-size, Canada, Surrey, kernelogic2, @feiya200', // 131072 < 67108864
-  f014394: 'min-size, China, Suzhou', // 131072 < 134217728
-  f014409: 'min-size, USA, Waxhaw', // 131072 < 134217728
-  f015927: 'min-size, USA, East Islip', // 131072 < 8388608
+  f014394: 'min-size, China, Suzhou, IPFSCloud', // 131072 < 134217728
+  f014409: 'min-size, USA, Waxhaw, Meatball Part III', // 131072 < 134217728
+  f015927: 'min-size, USA, East Islip, CDImine', // 131072 < 8388608
   f015941: 'min-size, Ukraine, Kyiv', // 131072 < 134217728
   f018501: 'min-size, China, Beijing', // 131072 < 134217728
   f019100: 'min-size, Romania, Cluj-Napoca, noisyfan', // 131072 < 16777216
@@ -242,7 +242,7 @@ const annotations = {
   f024015: 'min-size, USA, Portland, FILmiPool-JP01', // 131072 < 134217728
   f025007: 'min-size, Korea, Gyeonggi-do', // 131072 < 134217728
   f030296: 'min-size, USA, Cary', // 131072 < 33554432
-  f033356: 'min-size, Korea, Gangnum-gu', // 131072 < 1048576
+  f033356: 'min-size, Korea, Gangnum-gu, we4u-YELLOW', // 131072 < 1048576
   f039235: 'min-size, NR', // 131072 < 1048576
   f040173: 'min-size, Ukraine, Ternopil', // 131072 < 134217728
   f047858: 'min-size, China, Wuhan', // 131072 < 134217728
