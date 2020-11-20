@@ -12,7 +12,48 @@
 const annotations = {
   // New
 
+  f01247: 'new, Canada, Montreal',
+  f02779: 'new, NR',
   f065259: 'new, NR', // carry-over
+  f072598: 'new, China, Shenyang',
+  f073448: 'new, NR',
+  f073888: 'new, NR',
+  f078390: 'new, China, Shaoxing',
+  f078609: 'new, Switzerland, Tenero',
+  f078772: 'new, NR',
+  f078899: 'new, NR',
+  f078954: 'new, Netherlands',
+  f079092: 'new, NR',
+  f079197: 'new, NR',
+  f079247: 'new, USA, New Castle',
+  f079285: 'new, NR',
+  f079301: 'new, USA, New Castle',
+  f079425: 'new, NR',
+  f079618: 'new, China, Beijing',
+  f079719: 'new, NR',
+  f079815: 'new, NR',
+  f079817: "new, Russia, Ul'yanovka",
+  f079847: 'new, China, Hong Kong',
+  f079426: 'new, China, Shandong',
+  f080103: 'new, Korea, Seongnam-si',
+  f080131: 'new, NR',
+  f080444: 'new, China, Chengdu',
+  f080471: 'new, China, Chongqing',
+  f081066: 'new, USA',
+  f081078: 'new, Korea, Busan',
+  f081323: 'new, UK, Basildon',
+  f082018: 'new, USA, Daytona Beach',
+  f082054: 'new, China, Hefei',
+  f082175: 'new, China, Shenyang',
+  f082250: 'new, China, Guilin',
+  f082356: 'new, China, Jiaxing',
+  f082452: 'new, China, Dongguan',
+  f082483: 'new, Korea, Gyeonggi-do',
+  f082590: 'new, China, Taizhou',
+  f082601: 'new, China, Guangdong',
+  f082613: 'new, Switzerland, Tenero',
+  f082617: 'new, China, Fujian',
+
 
   // Active
 
