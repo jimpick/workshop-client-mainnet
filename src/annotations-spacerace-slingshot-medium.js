@@ -22,105 +22,70 @@ const annotations = {
 
   f01238: 'active, Vietnam, Hanoi, FILECOIN-VIETNAM', // 1327943
   f01240: 'active, Netherlands, HidNand', // 1327937
+  f01278: 'active, USA, Grand Rapids, MiMiner', // 1327978 about 20 hours
+  f01289: 'active, China, Hangzhou + USA', // 1327952 2 days
   f03224: 'active, Ukraine, Irpin, oboltusov', // 1327878
   f03339: 'active, China, Luzhou, benxun', // 1327935
   f05664: 'active, China, Shenzhen, 艾比特网络科技', // 1327950
   f08103: 'active, China, Foshan, 花生酱肠粉', // 1327972
   f08240: 'active, Russia, Novosibirsk, Rabinovitch', // 1327917
+  f08399: 'active, USA, Sammamish', // 1327948 about 20 hours
   f09848: 'active, USA, Irvine, BigBearLake', // 1327889
+  f010505: 'active, China, Wuhan, Interstellar Roewe', // 1327970 2 days
   f010507: 'active, China, Hangzhou, ciger', // 1327963
   f010617: 'active, Canada, Surrey, kernelogic2, @feiya200', // 1327874
+  f014394: 'active, China, Suzhou, IPFSCloud', // 1327965 2 days
   f014409: 'active, USA, Waxhaw, Meatball Part III', // 1327757
   f014569: 'active, NR', // 1327968
   f014768: 'active, Singapore, Funktafide, @Funk', // 1327976
   f015927: 'active, USA, East Islip, CDImine', // 1327931
+  f016276: 'active, China, Beijing', // 1327941 about 20 hours
   f018501: 'active, China, Beijing', // 1327949
   f019100: 'active, Romania, Cluj-Napoca, noisyfan', // 1327946
   f020904: 'active, Korea, Uijeongbu-si, FILTop', // 1327887
   f022352: 'active, Norway, Borgen, TechHedge, @Reiers', // 1327926
   f022853: 'active, China, Fuzhou', // 1327919
+  f022922: 'active, China, Shenzhen, CAAP-MEG', // 1327928 2 days
   f023467: 'active, Norway, Oslo, PhiMining.io', // 1327958
+  f024015: 'active, USA, Portland, FILmiPool-JP01', // 1327804 2 days
+  f024468: 'active, China, Shenzhen', // 1327805 about 20 hours
   f024511: 'active, NR', // 1327983
   f033356: 'active, Korea, Gangnum-gu, we4u-YELLOW', // 1327984
   f034701: 'active, China, Shenzhen', // 1327966
   f042567: 'active, China, Jinhua', // 1327868
   f047858: 'active, China, Wuhan', // 1327971
   f048172: 'active, China, Suzhou', // 1327870
+  f049882: 'active, Netherlands, De Rijp', // 1329781 about 20 hours
+  f050022: 'active, China, Changsha', // 1327981 2 days
   f055102: 'active, NR', // 1327876
+  f058000: 'active, China, Suzhou', // 1327802 2 days
   f058374: 'active, USA', // 1327916
+  f062318: 'active, Korea, Naju', // 1327803 2 days
   f065141: 'active, China, Fuzhou', // 1327956
+  f066104: 'active, China, Xingjiang + USA, Portland', // 1327929 2 days
+  f066563: 'active, China, Fuzhou', // 1327961 2 days
+  f067170: 'active, China, Jiangmen', // 1328041 2 days
+  f067642: 'active, Japan, Ota-ku', // 1327954 about 1 hour
   f071914: 'active, China, Beijing', // 1327980
   f073878: 'active, NR', // 1327962
   f079787: 'active, USA, Daytona Beach', // 1327807
 
   // Sealing
 
-  f01278: 'active-sealing, USA, Grand Rapids, MiMiner', // 1327978
-  f09693: 'active-sealing, USA, Portland + Singapore, 6block-CapsuleMining', // 1327883
-  f010528: 'active-sealing, China, Chongqing, Interstellar Roewe', // 1327934
-  f024015: 'active-sealing, USA, Portland, FILmiPool-JP01', // 1327804
   f025017: 'active-sealing, China, Hefei, 一三科技-913', // 1327964
-  f032913: 'active-sealing, China, Shenzhen', // 1327872
-  f050022: 'active-sealing, China, Changsha', // 1327981
-  f058000: 'active-sealing, China, Suzhou', // 1327802
   f061158: 'active-sealing, China, Guangdong', // 1327951
-  f062318: 'active-sealing, Korea, Naju', // 1327803
-  f065103: 'active-sealing, USA, Portland + China, Shenzhen', // 1327912
-  f066104: 'active-sealing, China, Xingjiang + USA, Portland', // 1327929
-  f067642: 'active-sealing, Japan, Ota-ku', // 1327954
-  f068528: 'active-sealing, China, Shanghai', // 1327877
 
-  f01289: 'sealing, China, Hangzhou + USA', // 1327952
-  f02576: 'sealing, Denmark, Gjerlev, BenjaminH', // 1329431
-  f02823: 'sealing, China, Chengdu', // 1328113
-  f02824: 'sealing, China, Chengdu', // 1328114
-  f03222: 'sealing, China, Yuncheong, 星云矿池', // 1327755
-  f03345: 'sealing, China, Fuzhou, chh', // 1327979
-  f03482: 'sealing, China, Wuxi', // 1327967
-  f08157: 'sealing, China, Beijing + Germany, Frankfurt, 超星际', // 1327754
-  f08399: 'sealing, USA, Sammamish', // 1327948
-  f010241: 'sealing, China, Beijing + USA, Portland', // 1327871
   f010493: 'sealing, China, Shanghai', // 1327957
-  f010505: 'sealing, China, Wuhan, Interstellar Roewe', // 1327970
   f010513: 'sealing, China, Chongqing', // 1327977
   f010523: 'sealing, China, Beijing, Interstellar Roewe', // 1327869
-  f014394: 'sealing, China, Suzhou, IPFSCloud', // 1327965
-  f016276: 'sealing, China, Beijing', // 1327941
-  f019029: 'sealing, Serbia, Boljevac', // 1327806
-  f020378: 'sealing, Bulgaria, Asenovgrad', // 1327914
-  f020489: 'sealing, China, Lioaning', // 1328536
-  f021339: 'sealing, China, Jiaxing', // 1327944
   f022130: 'sealing, Korea, Seodaemun-gu', // 1330316
-  f022163: 'sealing, dns:fil.akasha.network', // 1330326
-  f022922: 'sealing, China, Shenzhen, CAAP-MEG', // 1327928
-  f024468: 'sealing, China, Shenzhen', // 1327805
-  f030296: 'sealing, USA, Cary', // 1327866
-  f034777: 'sealing, China, Chengdu', // 1327885
-  f039515: 'sealing, China, Chongqing', // 1327940
-  f040173: 'sealing, Ukraine, Ternopil', // 1327884
-  f049882: 'sealing, Netherlands, De Rijp', // 1329781
-  f053088: 'sealing, China, Shanghai', // 1327982
-  f054677: 'sealing, Finland, Helsinki', // 1327969
-  f055123: 'sealing, Korea, Busan', // 1327942
-  f057368: 'sealing, Korea, Gyeonggi-do', // 1327939
-  f058168: 'sealing, Korea, Gyeonggi-do', // 1327945
-  f065426: 'sealing, Korea, Gimpo-si', // 1327925
-  f066563: 'sealing, China, Fuzhou', // 1327961
-  f067170: 'sealing, China, Jiangmen', // 1328041
-  f067314: 'sealing, China, Ningbo', // 1327985
-  f070747: 'sealing, China, Shenzhen', // 1328045
   f070756: 'sealing, China, Beijing', // 1327947
-  f071190: 'sealing, Korea, Gyeonggi-do', // 1327986
   f072965: 'sealing, Korea, Busan', // 1327875
-  f073499: 'sealing, Korea, Gyeonggi-do', // 1327975
-  f078425: 'sealing, Korea, Bucheon-si', // 1328691
-  f079334: 'sealing, Korea, Gyeonggi-do', // 1327886
 
   // Stuck
 
-  f020436: 'stuck, China, Beijing', // Transferring: 2 minutes
-  f022308: 'stuck, China, Shenzhen', // CheckForAcceptance: 2 minutes
-  f025007: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: 2 minutes
+  f020436: 'stuck, China, Beijing', // ClientTransferRestart: 2 minutes
+  f025007: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: 2 days
 
   // Min-size
 
@@ -254,17 +219,52 @@ const annotations = {
   f01280: 'error, China, Wuxi, 了凡超算', // carry-over
   f01287: 'error, China, Jiaxing, MaiTian', // stream reset
   f02423: 'error, Ukraine, Kyiv, igowreck', // carry-over
+  f02576: 'error, Denmark, Gjerlev, BenjaminH', // error in deal activation: handling applied event: deal 1329431 not found
   f02822: 'error, China, Chengdu', // carry-over
+  f02823: 'error, China, Chengdu', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1328113 not found
+  f02824: 'error, China, Chengdu', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1328114 not found
+  f03222: 'error, China, Yuncheong, 星云矿池', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1327755 not found
+  f03345: 'error, China, Fuzhou, chh', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1327979 not found
+  f03482: 'error, China, Wuxi', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1327967 not found
+  f08157: 'error, China, Beijing + Germany, Frankfurt, 超星际', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1327754 not found
+  f09693: 'error, USA, Portland + Singapore, 6block-CapsuleMining', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1327883 not found
+  f010241: 'error, China, Beijing + USA, Portland', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1327871 not found
   f010247: 'error, China, Yantai', // carry-over
   f010498: 'error, China, Shenzhen', // carry-over
   f010501: 'error, China, Hangzhou, Interstellar Roewe', // carry-over
+  f010528: 'error, China, Chongqing, Interstellar Roewe', // error in deal activation: handling applied event: deal 1327934 not found
   f015941: 'error, Ukraine, Kyiv', // carry-over
+  f019029: 'error, Serbia, Boljevac', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1327806 not found
   f019104: 'error, Canada, Chambly, NBFS DEV', // carry-over
+  f020378: 'error, Bulgaria, Asenovgrad', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1327914 not found
+  f020489: 'error, China, Lioaning', // error in deal activation: handling applied event: deal 1328536 not found
+  f021339: 'error, China, Jiaxing', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1327944 not found
+  f022163: 'error, dns:fil.akasha.network', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1330326 not found
+  f022308: 'error, China, Shenzhen', // deal failed: (State=26) error activating deal: failed to set up called handler: called check error (h: 245404): failed to look up deal on chain: deal 1329259 not found
   f022399: 'error, China, Beijing', // carry-over
+  f030296: 'error, USA, Cary', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1327866 not found
   f030335: 'error, China, Fujian', // carry-over
+  f032913: 'error, China, Shenzhen', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1327872 not found
+  f034777: 'error, China, Chengdu', // error in deal activation: handling applied event: deal 1327885 not found
+  f039515: 'error, China, Chongqing', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1327940 not found
+  f040173: 'error, Ukraine, Ternopil', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1327884 not found
+  f053088: 'error, China, Shanghai', // error in deal activation: handling applied event: deal 1327982 not found
+  f054677: 'error, Finland, Helsinki', // error in deal activation: handling applied event: deal wasn't active: deal=1327969, parentState=bafy2bzacecp73ay7z7snicz2xscu6ednv6q4s65hrew3llzoszy3h5xt5f4g2, h=250812
+  f055123: 'error, Korea, Busan', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1327942 not found
+  f057368: 'error, Korea, Gyeonggi-do', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1327939 not found
+  f058168: 'error, Korea, Gyeonggi-do', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1327945 not found
   f064664: 'error, Korea, Gyeonggi-do', // carry-over
+  f065103: 'error, USA, Portland + China, Shenzhen', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1327912 not found
+  f065426: 'error, Korea, Gimpo-si', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1327925 not found
+  f067314: 'error, China, Ningbo', // error in deal activation: handling applied event: deal wasn't active: deal=1327985, parentState=bafy2bzaceb7v4lhmqga2bijm2qocm2coium255ugagmramxmtiahzb662spyk, h=250822
+  f068528: 'error, China, Shanghai', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1327877 not found
+  f070747: 'error, China, Shenzhen', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1328045 not found
+  f071190: 'error, Korea, Gyeonggi-do', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1327986 not found
+  f073499: 'error, Korea, Gyeonggi-do', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1327975 not found
   f073535: 'error, Korea, Gyeonggi-do', // carry-over
   f073543: 'error, Korea, Gyeonggi-do', // carry-over
+  f078425: 'error, Korea, Bucheon-si', // error in deal activation: failed to set up called handler: called check error (h: 252681): failed to look up deal on chain: deal 1328691 not found
+  f079334: 'error, Korea, Gyeonggi-do', // error in deal activation: handling applied event: deal 1327886 not found
 
   // Backoff
 
