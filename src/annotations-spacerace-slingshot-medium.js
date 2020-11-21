@@ -30,6 +30,7 @@ const annotations = {
   f01289: 'active, China, Hangzhou + USA', // carry-over
   f03224: 'active, Ukraine, Irpin, oboltusov', // carry-over
   f03339: 'active, China, Luzhou, benxun', // carry-over
+  f03488: 'active, Korea, Geumcheon-gu', // 1366519 about 7 hours
   f05664: 'active, China, Shenzhen, 艾比特网络科技', // carry-over
   f08103: 'active, China, Foshan, 花生酱肠粉', // carry-over
   f08240: 'active, Russia, Novosibirsk, Rabinovitch', // carry-over
@@ -46,14 +47,17 @@ const annotations = {
   f016276: 'active, China, Beijing', // carry-over
   f018501: 'active, China, Beijing', // carry-over
   f019100: 'active, Romania, Cluj-Napoca, noisyfan', // carry-over
+  f019243: 'active, USA, Jackson', // 1366513 about 14 hours
   f020904: 'active, Korea, Uijeongbu-si, FILTop', // carry-over
   f022352: 'active, Norway, Borgen, TechHedge, @Reiers', // carry-over
   f022853: 'active, China, Fuzhou', // carry-over
   f022922: 'active, China, Shenzhen, CAAP-MEG', // carry-over
+  f023009: 'active, USA, Berkeley, M32 Grenade Launcher', // 1366479 about 8 hours
   f023467: 'active, Norway, Oslo, PhiMining.io', // carry-over
   f024015: 'active, USA, Portland, FILmiPool-JP01', // carry-over
   f024468: 'active, China, Shenzhen', // carry-over
   f024511: 'active, NR', // carry-over
+  f025007: 'active, Korea, Gyeonggi-do', // 1366866 about 13 hours
   f033356: 'active, Korea, Gangnum-gu, we4u-YELLOW', // carry-over
   f034701: 'active, China, Shenzhen', // carry-over
   f042567: 'active, China, Jinhua', // carry-over
@@ -65,6 +69,7 @@ const annotations = {
   f058000: 'active, China, Suzhou', // carry-over
   f058374: 'active, USA', // carry-over
   f062318: 'active, Korea, Naju', // carry-over
+  f062518: 'active, Korea, Gwangju', // 1366515 about 14 hours
   f065141: 'active, China, Fuzhou', // carry-over
   f066104: 'active, China, Xingjiang + USA, Portland', // carry-over
   f066563: 'active, China, Fuzhou', // carry-over
@@ -73,14 +78,17 @@ const annotations = {
   f071914: 'active, China, Beijing', // carry-over
   f073878: 'active, NR', // carry-over
   f079787: 'active, USA, Daytona Beach', // carry-over
+  f080103: 'active, Korea, Seongnam-si', // 1366563 about 14 hours
 
-  // Sealing
+  // Sealing (active-sealing = previously active, retesting with new deal)
 
   f025017: 'active-sealing, China, Hefei, 一三科技-913', // carry-over
   f061158: 'active-sealing, China, Guangdong', // carry-over
 
+  // Sealing
+
+  f02576: 'sealing, Denmark, Gjerlev, BenjaminH', // 1366860
   f02665: 'sealing, Netherlands, Amsterdam, fm-ops', // 1366536
-  f03488: 'sealing, Korea, Geumcheon-gu', // 1366519
   f08157: 'sealing, China, Beijing + Germany, Frankfurt, 超星际', // 1366584
   f09693: 'sealing, USA, Portland + Singapore, 6block-CapsuleMining', // 1366585
   f010241: 'sealing, China, Beijing + USA, Portland', // 1366314
@@ -91,11 +99,10 @@ const annotations = {
   f015897: 'sealing, China, Guangdong', // 1366510
   f016594: 'sealing, Germany', // 1366486
   f019029: 'sealing, Serbia, Boljevac', // 1366575
-  f019243: 'sealing, USA, Jackson', // 1366513
   f020378: 'sealing, Bulgaria, Asenovgrad', // 1366376
   f022130: 'sealing, Korea, Seodaemun-gu', // carry-over
   f022142: 'sealing, USA, Queens, Nelson SR2', // 1366493
-  f023009: 'sealing, USA, Berkeley, M32 Grenade Launcher', // 1366479
+  f022163: 'sealing, dns:fil.akasha.network', // 1366876
   f023581: 'sealing, China, Hong Kong', // 1366517
   f025019: 'sealing, China, Taiwan, Hsinchu', // 1366558
   f029368: 'sealing, Korea, Gangseo-gu', // 1366512
@@ -108,7 +115,7 @@ const annotations = {
   f057368: 'sealing, Korea, Gyeonggi-do', // 1366581
   f057842: 'sealing, Korea, Gyeonggi-do', // 1366522
   f058168: 'sealing, Korea, Gyeonggi-do', // 1366586
-  f062518: 'sealing, Korea, Gwangju', // 1366515
+  f062204: 'sealing, China, Hong Kong', // 1366626
   f064218: 'sealing, USA, Kirkland', // 1366442
   f065103: 'sealing, USA, Portland + China, Shenzhen', // 1366588
   f065280: 'sealing, Korea, Songpa-gu', // 1366514
@@ -120,24 +127,13 @@ const annotations = {
   f078425: 'sealing, Korea, Bucheon-si', // 1366370
   f078954: 'sealing, Netherlands', // 1366578
   f079334: 'sealing, Korea, Gyeonggi-do', // 1366595
-  f080103: 'sealing, Korea, Seongnam-si', // 1366563
+  f079817: "sealing, Russia, Ul'yanovka", // 1366637
   f081323: 'sealing, UK, Basildon', // 1366537
   f082613: 'sealing, Switzerland, Tenero', // 1366462
 
   // Stuck
 
-  f02576: 'stuck, Denmark, Gjerlev, BenjaminH', // CheckForAcceptance: about 2 hours
-  f02856: 'stuck, China, Chengdu', // Transferring: 11 minutes
-  f04443: 'stuck, China, Shanghai, 罗良科技', // Transferring: 11 minutes
-  f022163: 'stuck, dns:fil.akasha.network', // CheckForAcceptance: 11 minutes
-  f025007: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 2 hours
-  f032913: 'stuck, China, Shenzhen', // Transferring: 11 minutes
-  f044160: 'stuck, China, Guangzhou, muxing', // Transferring: 11 minutes
-  f053916: 'stuck, USA, Concord', // FundsEnsured: about 2 hours
-  f062204: 'stuck, China, Hong Kong', // CheckForAcceptance: 11 minutes
-  f063996: 'stuck, China, Sichuan', // Transferring: 11 minutes
-  f079092: 'stuck, NR', // Transferring: 11 minutes
-  f079817: "stuck, Russia, Ul'yanovka", // CheckForAcceptance: 11 minutes
+  f063996: 'stuck, China, Sichuan', // ClientTransferRestart: about 1 hour
 
   // Min-size
 
@@ -272,10 +268,12 @@ const annotations = {
   f02490: 'error, China, Fujian', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f02822: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f02823: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f02856: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f03134: 'error, China, Cangzhou, 乔木信息', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f03222: 'error, China, Yuncheong, 星云矿池', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f03345: 'error, China, Fuzhou, chh', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f03482: 'error, China, Wuxi', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f04443: 'error, China, Shanghai, 罗良科技', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f010400: 'error, China, Shenyang', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f010498: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f010501: 'error, China, Hangzhou, Interstellar Roewe', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
@@ -291,12 +289,15 @@ const annotations = {
   f022522: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f025025: 'error, China, Qingdao', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f030335: 'error, China, Fujian', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f032913: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f034777: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f035436: 'error, China, Jiangsu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f039515: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f040173: 'error, Ukraine, Ternopil', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.04999999999275876 FIL, balance: 0.010095805320803771 FIL): not enough funds to execute transaction
+  f044160: 'error, China, Guangzhou, muxing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f048135: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f048192: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f053916: 'error, USA, Concord', // stream reset
   f054163: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f056226: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f056573: 'error, China, Sichuan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
@@ -307,6 +308,7 @@ const annotations = {
   f067314: 'error, China, Ningbo', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f067721: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f073499: 'error, Korea, Gyeonggi-do', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f079092: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f079425: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f079847: 'error, China, Hong Kong', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.099999999993562428 FIL, balance: 0.032854514765557874 FIL): not enough funds to execute transaction
   f080471: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
