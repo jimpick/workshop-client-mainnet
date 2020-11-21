@@ -10,350 +10,354 @@ const annotations = {
 
   // Candidates
 
-  f01234: 'candidate, Belgium, De Klinge, Eliovp',
-  f01241: 'min-ask, USA, Portland, 6block',
-  f01276: 'min-ask, Canada, Brampton, NBFS Canada',
-  f01277: 'min-ask, Sweden, Stockholm, tvsthlm',
-  f01287: 'candidate, China, Jiaxing, MaiTian',
-  f01291: 'min-ask, Sweden, Stockholm, tvsthlm',
-  f01799: 'candidate, China, Jinan, TokenHome',
-  f02301: 'min-ask, USA',
-  f02387: 'min-ask, Canada, Brampton, NBFS Canada',
-  f02388: 'min-ask, Netherlands, Amersfoort, Kroketje',
-  f02401: 'min-ask, Canada, Chambly, NBFS Canada',
-  f02405: 'min-ask, China, Shenzhen',
-  f02415: 'min-ask, China, Hong Kong',
-  f02419: 'candidate, China, Shanghai, yuantai',
-  f02423: 'candidate, Ukraine, Kyiv, igowreck',
-  f02490: 'candidate, China, Fujian',
-  f02500: 'min-ask, Korea, Seongnam-si',
-  f02501: 'min-ask, USA, Portland, 6block',
-  f02514: 'min-ask, USA, Portland, 6block',
-  f02520: 'error-ask, China, Hong Kong + Dongguan',
-  f02576: 'candidate, Denmark, Gjerlev, BenjaminH',
-  f02606: 'min-ask, China, Shanghai',
-  f02619: 'error-ask, China, Beijing, Blockcasting',
-  f02620: 'candidate, Poland, Krakow, @magik6k',
-  f02622: 'min-ask, USA, Portland, 6block',
-  f02623: 'candidate, USA, Portland, 6block',
-  f02633: 'min-ask, China, Hong Kong',
-  f02645: 'min-ask, China, Hong Kong',
-  f02665: 'candidate, Netherlands, Amsterdam, fm-ops',
-  f02822: 'candidate, China, Chengdu',
-  f02823: 'candidate, China, Chengdu',
-  f02824: 'candidate, China, Chengdu',
-  f02856: 'candidate, China, Chengdu',
-  f03134: 'candidate, China, Cangzhou, 乔木信息',
-  f03222: 'candidate, China, Yuncheong, 星云矿池',
-  f03273: 'min-ask, USA, Portland, 6block',
-  f03274: 'min-ask, USA, Portland, 6block',
-  f03275: 'min-ask, USA, Portland, 6block',
-  f03328: 'min-ask, China, Xinxiang, Golden Miner',
-  f03340: "error-ask, China, Xi'an",
-  f03345: 'candidate, China, Fuzhou, chh',
-  f03364: 'candidate, China, Guangzhou',
-  f03482: 'candidate, China, Wuxi',
-  f03488: 'candidate, Korea, Geumcheon-gu',
-  f03491: 'min-ask, China, Hong Kong',
-  f03624: 'candidate, Germany, Chemnitz, ode',
-  f04443: 'candidate, China, Shanghai, 罗良科技',
-  f05315: 'min-ask, USA, Portland, 6block',
-  f05316: 'min-ask, USA, Portland, 6block',
-  f05317: 'min-ask, USA, Portland',
-  f07709: 'candidate, Korea, Dongjak-gu',
-  f07819: 'error-ask, China, Wuxi, YC--wuxi',
-  f07850: 'min-ask, USA, Portland, 6block',
-  f07919: 'min-ask, China, Beijing, Shanghai, Hunan',
-  f07990: 'min-ask, China, Hong Kong',
-  f07998: 'min-ask, China, Hangzhou',
-  f08019: 'candidate, China, Yantai, 三合',
-  f08025: 'min-ask, China, Hong Kong',
-  f08157: 'candidate, China, Beijing + Germany, Frankfurt, 超星际',
-  f08204: 'candidate, USA, St. Louis',
-  f08257: 'candidate, China, Ningbo + USA, Boardman',
-  f08383: 'min-ask, USA, Portland, 6block',
-  f08403: 'candidate, UK, Lower Slaughter, TippyFlits',
-  f09569: 'candidate, China, Beijing',
-  f09693: 'candidate, USA, Portland + Singapore, 6block-CapsuleMining',
-  f09696: 'min-ask, USA, Portland + Singapore',
-  f010241: 'candidate, China, Beijing + USA, Portland',
-  f010253: 'min-ask, China, Beijing + USA, Portland',
-  f010254: 'min-ask, Japan, Minamata',
-  f010399: 'candidate, China, Guangzhou',
-  f010400: 'candidate, China, Shenyang',
-  f010405: 'candidate, China, Foshan',
-  f010446: 'candidate, Netherlands, Angelo',
-  f010479: 'candidate, France, Fontenay-sous-Bois, s0nik42',
-  f010498: 'candidate, China, Shenzhen',
-  f010501: 'candidate, China, Hangzhou, Interstellar Roewe',
-  f010528: 'candidate, China, Chongqing, Interstellar Roewe',
-  f014324: 'candidate, Canada, Vancouver',
-  f014365: 'min-ask, Australia, Marrickville + Japan, Heiwajima',
-  f014395: 'candidate, China, Dongguan',
-  f015233: 'candidate, China, Nanjing',
-  f015877: 'candidate, China, Jiaxing + USA',
-  f015897: 'candidate, China, Guangdong',
-  f015941: 'candidate, Ukraine, Kyiv',
-  f016511: 'candidate, China, Beijing',
-  f016594: 'candidate, Germany',
-  f017242: 'candidate, China, Guangdong',
-  f017665: 'candidate, China, Shenyang',
-  f018780: 'min-ask, Singapore + Germany, Frankfurt + USA',
-  f018781: 'min-ask, Singapore + Germany, Frankfurt + USA',
-  f018782: 'min-ask, Singapore + Germany, Frankfurt + USA',
-  f018783: 'min-ask, Singapore + Germany, Frankfurt + USA',
-  f018784: 'min-ask, Singapore + Germany, Frankfurt + USA',
-  f018785: 'min-ask, Singapore + Germany, Frankfurt + USA',
-  f019029: 'candidate, Serbia, Boljevac',
-  f019104: 'min-ask, Canada, Chambly, NBFS DEV',
-  f019240: 'candidate, China, Beijing',
-  f019243: 'candidate, USA, Jackson',
-  f019437: 'candidate, Korea, Guro-gu',
-  f019551: 'error-ask, UK, Birmingham, @Neofix AF',
-  f019806: 'error-ask, China, Beijing',
-  f020378: 'candidate, Bulgaria, Asenovgrad',
-  f020385: 'candidate, Korea, Incheon',
-  f020398: 'min-ask, China, Zhangjiakou',
-  f020436: 'candidate, China, Beijing',
-  f020489: 'candidate, China, Lioaning',
-  f020541: 'min-ask, China, Shanghai',
-  f020747: 'min-ask, China, Xiamen',
-  f021265: 'min-ask, China, Wuhan',
-  f022142: 'candidate, USA, Queens, Nelson SR2',
-  f022163: 'candidate, dns:fil.akasha.network',
-  f022261: 'candidate, China, Luzhou',
-  f022308: 'candidate, China, Shenzhen',
-  f022522: 'candidate, China, Dongguan',
-  f023001: 'min-ask, China, Changsha',
-  f023009: 'candidate, USA, Berkeley, M32 Grenade Launcher',
-  f023495: 'min-ask, China, Beijing + USA, Portland',
-  f023565: 'min-ask, China, Fuzhou',
-  f023581: 'candidate, China, Hong Kong',
-  f023660: 'min-ask, China, Fuzhou',
-  f023662: 'candidate, China, Fuzhou',
-  f023825: 'min-ask, USA, Portland',
-  f023843: 'min-ask, China, Zhangjiakou',
-  f023853: 'min-ask, China, Fuzhou',
-  f023854: 'min-ask, China, Fuzhou',
-  f023855: 'min-ask, China, Fuzhou',
-  f023858: 'candidate, China, Fuzhou',
-  f023859: 'min-ask, China, Fuzhou',
-  f023861: 'min-ask, China, Fuzhou',
-  f023868: 'min-ask, China, Fuzhou',
-  f023869: 'min-ask, China, Fuzhou',
-  f023870: 'min-ask, China, Fuzhou',
-  f023871: 'candidate, China, Fuzhou',
-  f023876: 'min-ask, China, Fuzhou',
-  f023928: 'min-ask, China, Fuzhou',
-  f023977: 'min-ask, China, Fuzhou',
-  f023978: 'candidate, China, Fuzhou',
-  f023980: 'min-ask, China, Fuzhou',
-  f023981: 'min-ask, China, Fuzhou',
-  f024006: 'min-ask, China, Fuzhou',
-  f024007: 'min-ask, China, Fuzhou',
-  f024008: 'error-ask, China, Fuzhou',
-  f024012: 'min-ask, China, Fuzhou',
-  f024013: 'min-ask, China, Fuzhou',
-  f024014: 'min-ask, China, Fuzhou',
-  f024016: 'min-ask, USA, Portland',
-  f024081: 'min-ask, undefined',
-  f024084: 'min-ask, China, Fuzhou',
-  f024085: 'min-ask, China, Fuzhou',
-  f024136: 'min-ask, China, Fuzhou',
-  f024146: 'min-ask, China, Fuzhou',
-  f024147: 'min-ask, China, Fuzhou',
-  f024148: 'candidate, China, Fuzhou',
-  f024182: 'candidate, NR',
-  f024550: 'candidate, China, Wenzhou',
-  f024972: 'min-ask, undefined',
-  f025007: 'candidate, Korea, Gyeonggi-do',
-  f025019: 'candidate, China, Taiwan, Hsinchu',
-  f025025: 'candidate, China, Qingdao',
-  f029344: 'min-ask, Korea, Seongnam-si',
-  f029368: 'candidate, Korea, Gangseo-gu',
-  f029401: 'min-ask, USA, Portland + New Castle',
-  f029404: 'min-ask, USA, Portland + New Castle',
-  f030203: 'min-ask, undefined',
-  f030335: 'candidate, China, Fujian',
-  f030384: 'error-ask, undefined',
-  f032913: 'candidate, China, Shenzhen',
-  f032934: 'candidate, Korea, Incheon',
-  f033123: 'min-ask, USA, Portland + New Castle',
-  f033511: 'min-ask, China, Dongguan',
-  f033517: 'candidate, China, Changsha',
-  f034047: 'min-ask, China, Hangzhou',
-  f034581: 'min-ask, NR',
-  f034592: 'min-ask, NR',
-  f034777: 'candidate, China, Chengdu',
-  f035436: 'candidate, China, Jiangsu',
-  f039235: 'candidate, NR',
-  f039515: 'candidate, China, Chongqing',
-  f039800: 'min-ask, China, Chengdu',
-  f039873: 'min-ask, China, Fuzhou',
-  f040173: 'candidate, Ukraine, Ternopil',
-  f042391: 'candidate, China, Fuzhou',
-  f042540: 'min-ask, China, Beijing + USA, Portland + Newcastle',
-  f042558: 'min-ask, China, Beijing + USA, Portland + Newcastle',
-  f042635: 'min-ask, China, Beijing + USA, Portland + Newcastle',
-  f044160: 'candidate, China, Guangzhou, muxing',
-  f047419: 'candidate, USA, Waukesha',
-  f047978: 'candidate, Korea, Seoul',
-  f048135: 'candidate, China, Chongqing',
-  f048192: 'candidate, China, Suzhou',
-  f050260: 'min-ask, China, Suzhou',
-  f052447: 'min-ask, China, Beijing + USA, Portland + New Castle',
-  f053088: 'candidate, China, Shanghai',
-  f053916: 'candidate, USA, Concord',
-  f054163: 'candidate, China, Dongguan',
-  f054370: 'min-ask, China, Dongguan',
-  f054677: 'candidate, Finland, Helsinki',
-  f055132: 'candidate, NR',
-  f056226: 'candidate, NR',
-  f056573: 'candidate, China, Sichuan',
-  f056611: 'min-ask, USA, Portland + New Castle',
-  f057070: 'min-ask, NR',
-  f057368: 'candidate, Korea, Gyeonggi-do',
-  f057466: 'candidate, China, Guangzhou',
-  f057614: 'min-ask, USA, Portland + New Castle',
-  f057698: 'min-ask, NR',
-  f057842: 'candidate, Korea, Gyeonggi-do',
-  f058168: 'candidate, Korea, Gyeonggi-do',
-  f060072: 'candidate, China, Chongqing',
-  f061407: 'min-ask, China, Shenzhen',
-  f061740: 'min-ask, USA, Portland + New Castle',
-  f062204: 'candidate, China, Hong Kong',
-  f062260: 'min-ask, China, Guangzhou',
-  f062334: 'min-ask, USA, Portland + New Castle',
-  f062445: 'error-ask, China, Shenzhen',
-  f062518: 'candidate, Korea, Gwangju',
-  f062770: 'min-ask, China, Fuzhou',
-  f062811: 'min-ask, China, Fuzhou',
-  f062982: 'min-ask, China, Fuzhou',
-  f063996: 'candidate, China, Sichuan',
-  f064218: 'candidate, USA, Kirkland',
-  f064222: 'candidate, China, Fuzhou',
-  f065103: 'candidate, USA, Portland + China, Shenzhen',
-  f065200: 'candidate, China, Yibin',
-  f065280: 'candidate, Korea, Songpa-gu',
-  f066845: 'min-ask, China, Dongguan',
-  f066898: 'min-ask, Japan, Bunkyo-ku',
-  f067195: 'candidate, China, Huizhou',
-  f067314: 'candidate, China, Ningbo',
-  f067721: 'candidate, China, Beijing',
-  f068096: 'error-ask, China, Sichuan',
-  f068890: 'candidate, China, Fuzhou',
-  f068898: 'candidate, China, Fuzhou',
-  f069915: 'min-ask, NR',
-  f069919: 'min-ask, NR',
-  f070999: 'min-ask, China, Xinjiang',
-  f071190: 'candidate, Korea, Gyeonggi-do',
-  f071279: 'candidate, Korea, Gyeonggi-do',
-  f071980: 'min-ask, China, Xinjiang',
-  f073499: 'candidate, Korea, Gyeonggi-do',
-  f073552: 'min-ask, NR',
-  f074738: 'min-ask, Korea, Seongbuk-gu',
-  f078425: 'candidate, Korea, Bucheon-si',
-  f078772: 'min-ask, NR',
-  f078954: 'candidate, Netherlands',
-  f079007: 'error-ask, China, Jinan',
-  f079092: 'candidate, NR',
-  f079197: 'min-ask, NR',
-  f079334: 'candidate, Korea, Gyeonggi-do',
-  f079425: 'candidate, NR',
-  f079817: "candidate, Russia, Ul'yanovka",
-  f079847: 'candidate, China, Hong Kong',
-  f080103: 'candidate, Korea, Seongnam-si',
-  f080471: 'candidate, China, Chongqing',
-  f081323: 'candidate, UK, Basildon',
-  f082054: 'candidate, China, Hefei',
-  f082175: 'candidate, China, Shenyang',
-  f082356: 'candidate, China, Jiaxing',
-  f082601: 'candidate, China, Guangdong',
-  f082613: 'candidate, Switzerland, Tenero',
-
-  // Testing
+  f02623: 'candidate, USA, Portland, 6block', // carry-over
+  f02824: 'candidate, China, Chengdu', // carry-over
+  f08257: 'candidate, China, Ningbo + USA, Boardman', // carry-over
+  f010479: 'candidate, France, Fontenay-sous-Bois, s0nik42', // carry-over
+  f023662: 'candidate, China, Fuzhou', // carry-over
+  f023858: 'candidate, China, Fuzhou', // carry-over
+  f023871: 'candidate, China, Fuzhou', // carry-over
+  f023978: 'candidate, China, Fuzhou', // carry-over
+  f024148: 'candidate, China, Fuzhou', // carry-over
+  f024182: 'candidate, NR', // carry-over
+  f068898: 'candidate, China, Fuzhou', // carry-over
 
   // Active
 
-  f01238: 'active, Vietnam, Hanoi, FILECOIN-VIETNAM', // 1327943
-  f01240: 'active, Netherlands, HidNand', // 1327937
-  f01278: 'active, USA, Grand Rapids, MiMiner', // 1327978 about 20 hours
-  f01289: 'active, China, Hangzhou + USA', // 1327952 2 days
-  f03224: 'active, Ukraine, Irpin, oboltusov', // 1327878
-  f03339: 'active, China, Luzhou, benxun', // 1327935
-  f05664: 'active, China, Shenzhen, 艾比特网络科技', // 1327950
-  f08103: 'active, China, Foshan, 花生酱肠粉', // 1327972
-  f08240: 'active, Russia, Novosibirsk, Rabinovitch', // 1327917
-  f08399: 'active, USA, Sammamish', // 1327948 about 20 hours
-  f09848: 'active, USA, Irvine, BigBearLake', // 1327889
-  f010505: 'active, China, Wuhan, Interstellar Roewe', // 1327970 2 days
-  f010507: 'active, China, Hangzhou, ciger', // 1327963
-  f010617: 'active, Canada, Surrey, kernelogic2, @feiya200', // 1327874
-  f014394: 'active, China, Suzhou, IPFSCloud', // 1327965 2 days
-  f014409: 'active, USA, Waxhaw, Meatball Part III', // 1327757
-  f014569: 'active, NR', // 1327968
-  f014768: 'active, Singapore, Funktafide, @Funk', // 1327976
-  f015927: 'active, USA, East Islip, CDImine', // 1327931
-  f016276: 'active, China, Beijing', // 1327941 about 20 hours
-  f018501: 'active, China, Beijing', // 1327949
-  f019100: 'active, Romania, Cluj-Napoca, noisyfan', // 1327946
-  f020904: 'active, Korea, Uijeongbu-si, FILTop', // 1327887
-  f022352: 'active, Norway, Borgen, TechHedge, @Reiers', // 1327926
-  f022853: 'active, China, Fuzhou', // 1327919
-  f022922: 'active, China, Shenzhen, CAAP-MEG', // 1327928 2 days
-  f023467: 'active, Norway, Oslo, PhiMining.io', // 1327958
-  f024015: 'active, USA, Portland, FILmiPool-JP01', // 1327804 2 days
-  f024468: 'active, China, Shenzhen', // 1327805 about 20 hours
-  f024511: 'active, NR', // 1327983
-  f033356: 'active, Korea, Gangnum-gu, we4u-YELLOW', // 1327984
-  f034701: 'active, China, Shenzhen', // 1327966
-  f042567: 'active, China, Jinhua', // 1327868
-  f047858: 'active, China, Wuhan', // 1327971
-  f048172: 'active, China, Suzhou', // 1327870
-  f049882: 'active, Netherlands, De Rijp', // 1329781 about 20 hours
-  f050022: 'active, China, Changsha', // 1327981 2 days
-  f055102: 'active, NR', // 1327876
-  f058000: 'active, China, Suzhou', // 1327802 2 days
-  f058374: 'active, USA', // 1327916
-  f062318: 'active, Korea, Naju', // 1327803 2 days
-  f065141: 'active, China, Fuzhou', // 1327956
-  f066104: 'active, China, Xingjiang + USA, Portland', // 1327929 2 days
-  f066563: 'active, China, Fuzhou', // 1327961 2 days
-  f067170: 'active, China, Jiangmen', // 1328041 2 days
-  f067642: 'active, Japan, Ota-ku', // 1327954 about 1 hour
-  f071914: 'active, China, Beijing', // 1327980
-  f073878: 'active, NR', // 1327962
-  f079787: 'active, USA, Daytona Beach', // 1327807
+  f01238: 'active, Vietnam, Hanoi, FILECOIN-VIETNAM', // carry-over
+  f01240: 'active, Netherlands, HidNand', // carry-over
+  f01278: 'active, USA, Grand Rapids, MiMiner', // carry-over
+  f01289: 'active, China, Hangzhou + USA', // carry-over
+  f03224: 'active, Ukraine, Irpin, oboltusov', // carry-over
+  f03339: 'active, China, Luzhou, benxun', // carry-over
+  f05664: 'active, China, Shenzhen, 艾比特网络科技', // carry-over
+  f08103: 'active, China, Foshan, 花生酱肠粉', // carry-over
+  f08240: 'active, Russia, Novosibirsk, Rabinovitch', // carry-over
+  f08399: 'active, USA, Sammamish', // carry-over
+  f09848: 'active, USA, Irvine, BigBearLake', // carry-over
+  f010505: 'active, China, Wuhan, Interstellar Roewe', // carry-over
+  f010507: 'active, China, Hangzhou, ciger', // carry-over
+  f010617: 'active, Canada, Surrey, kernelogic2, @feiya200', // carry-over
+  f014394: 'active, China, Suzhou, IPFSCloud', // carry-over
+  f014409: 'active, USA, Waxhaw, Meatball Part III', // carry-over
+  f014569: 'active, NR', // carry-over
+  f014768: 'active, Singapore, Funktafide, @Funk', // carry-over
+  f015927: 'active, USA, East Islip, CDImine', // carry-over
+  f016276: 'active, China, Beijing', // carry-over
+  f018501: 'active, China, Beijing', // carry-over
+  f019100: 'active, Romania, Cluj-Napoca, noisyfan', // carry-over
+  f020904: 'active, Korea, Uijeongbu-si, FILTop', // carry-over
+  f022352: 'active, Norway, Borgen, TechHedge, @Reiers', // carry-over
+  f022853: 'active, China, Fuzhou', // carry-over
+  f022922: 'active, China, Shenzhen, CAAP-MEG', // carry-over
+  f023467: 'active, Norway, Oslo, PhiMining.io', // carry-over
+  f024015: 'active, USA, Portland, FILmiPool-JP01', // carry-over
+  f024468: 'active, China, Shenzhen', // carry-over
+  f024511: 'active, NR', // carry-over
+  f033356: 'active, Korea, Gangnum-gu, we4u-YELLOW', // carry-over
+  f034701: 'active, China, Shenzhen', // carry-over
+  f042567: 'active, China, Jinhua', // carry-over
+  f047858: 'active, China, Wuhan', // carry-over
+  f048172: 'active, China, Suzhou', // carry-over
+  f049882: 'active, Netherlands, De Rijp', // carry-over
+  f050022: 'active, China, Changsha', // carry-over
+  f055102: 'active, NR', // carry-over
+  f058000: 'active, China, Suzhou', // carry-over
+  f058374: 'active, USA', // carry-over
+  f062318: 'active, Korea, Naju', // carry-over
+  f065141: 'active, China, Fuzhou', // carry-over
+  f066104: 'active, China, Xingjiang + USA, Portland', // carry-over
+  f066563: 'active, China, Fuzhou', // carry-over
+  f067170: 'active, China, Jiangmen', // carry-over
+  f067642: 'active, Japan, Ota-ku', // carry-over
+  f071914: 'active, China, Beijing', // carry-over
+  f073878: 'active, NR', // carry-over
+  f079787: 'active, USA, Daytona Beach', // carry-over
 
   // Sealing
 
-  f025017: 'active-sealing, China, Hefei, 一三科技-913', // 1327964
-  f061158: 'active-sealing, China, Guangdong', // 1327951
+  f025017: 'active-sealing, China, Hefei, 一三科技-913', // carry-over
+  f061158: 'active-sealing, China, Guangdong', // carry-over
 
-  f010493: 'sealing, China, Shanghai', // 1327957
-  f010513: 'sealing, China, Chongqing', // 1327977
-  f010523: 'sealing, China, Beijing, Interstellar Roewe', // 1327869
-  f022130: 'sealing, Korea, Seodaemun-gu', // 1330316
-  f070756: 'sealing, China, Beijing', // 1327947
-  f072965: 'sealing, Korea, Busan' // 1327875
+  f02665: 'sealing, Netherlands, Amsterdam, fm-ops', // 1366536
+  f03488: 'sealing, Korea, Geumcheon-gu', // 1366519
+  f08157: 'sealing, China, Beijing + Germany, Frankfurt, 超星际', // 1366584
+  f09693: 'sealing, USA, Portland + Singapore, 6block-CapsuleMining', // 1366585
+  f010241: 'sealing, China, Beijing + USA, Portland', // 1366314
+  f010446: 'sealing, Netherlands, Angelo', // 1366568
+  f010493: 'sealing, China, Shanghai', // carry-over
+  f010513: 'sealing, China, Chongqing', // carry-over
+  f010523: 'sealing, China, Beijing, Interstellar Roewe', // carry-over
+  f015897: 'sealing, China, Guangdong', // 1366510
+  f016594: 'sealing, Germany', // 1366486
+  f019029: 'sealing, Serbia, Boljevac', // 1366575
+  f019243: 'sealing, USA, Jackson', // 1366513
+  f020378: 'sealing, Bulgaria, Asenovgrad', // 1366376
+  f022130: 'sealing, Korea, Seodaemun-gu', // carry-over
+  f022142: 'sealing, USA, Queens, Nelson SR2', // 1366493
+  f023009: 'sealing, USA, Berkeley, M32 Grenade Launcher', // 1366479
+  f023581: 'sealing, China, Hong Kong', // 1366517
+  f025019: 'sealing, China, Taiwan, Hsinchu', // 1366558
+  f029368: 'sealing, Korea, Gangseo-gu', // 1366512
+  f032934: 'sealing, Korea, Incheon', // 1366388
+  f047419: 'sealing, USA, Waukesha', // 1366525
+  f047978: 'sealing, Korea, Seoul', // 1366516
+  f053088: 'sealing, China, Shanghai', // 1366502
+  f054677: 'sealing, Finland, Helsinki', // 1366587
+  f055132: 'sealing, NR', // 1366561
+  f057368: 'sealing, Korea, Gyeonggi-do', // 1366581
+  f057842: 'sealing, Korea, Gyeonggi-do', // 1366522
+  f058168: 'sealing, Korea, Gyeonggi-do', // 1366586
+  f062518: 'sealing, Korea, Gwangju', // 1366515
+  f064218: 'sealing, USA, Kirkland', // 1366442
+  f065103: 'sealing, USA, Portland + China, Shenzhen', // 1366588
+  f065280: 'sealing, Korea, Songpa-gu', // 1366514
+  f066898: 'sealing, Japan, Bunkyo-ku', // 1366475
+  f070756: 'sealing, China, Beijing', // carry-over
+  f071190: 'sealing, Korea, Gyeonggi-do', // 1366518
+  f071279: 'sealing, Korea, Gyeonggi-do', // 1366562
+  f072965: 'sealing, Korea, Busan', // carry-over
+  f078425: 'sealing, Korea, Bucheon-si', // 1366370
+  f078954: 'sealing, Netherlands', // 1366578
+  f079334: 'sealing, Korea, Gyeonggi-do', // 1366595
+  f080103: 'sealing, Korea, Seongnam-si', // 1366563
+  f081323: 'sealing, UK, Basildon', // 1366537
+  f082613: 'sealing, Switzerland, Tenero', // 1366462
 
   // Stuck
 
+  f02576: 'stuck, Denmark, Gjerlev, BenjaminH', // CheckForAcceptance: about 2 hours
+  f02856: 'stuck, China, Chengdu', // Transferring: 11 minutes
+  f04443: 'stuck, China, Shanghai, 罗良科技', // Transferring: 11 minutes
+  f022163: 'stuck, dns:fil.akasha.network', // CheckForAcceptance: 11 minutes
+  f025007: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 2 hours
+  f032913: 'stuck, China, Shenzhen', // Transferring: 11 minutes
+  f044160: 'stuck, China, Guangzhou, muxing', // Transferring: 11 minutes
+  f053916: 'stuck, USA, Concord', // FundsEnsured: about 2 hours
+  f062204: 'stuck, China, Hong Kong', // CheckForAcceptance: 11 minutes
+  f063996: 'stuck, China, Sichuan', // Transferring: 11 minutes
+  f079092: 'stuck, NR', // Transferring: 11 minutes
+  f079817: "stuck, Russia, Ul'yanovka", // CheckForAcceptance: 11 minutes
+
   // Min-size
+
+  f01234: 'min-size, Belgium, De Klinge, Eliovp', // 134217728 < 268435456
+  f02620: 'min-size, Poland, Krakow, @magik6k', // 134217728 < 536870912
+  f09569: 'min-size, China, Beijing', // 134217728 < 536870912
 
   // Min-ask
 
+  f01241: 'min-ask, USA, Portland, 6block', // carry-over
+  f01276: 'min-ask, Canada, Brampton, NBFS Canada', // carry-over
+  f01277: 'min-ask, Sweden, Stockholm, tvsthlm', // carry-over
+  f01291: 'min-ask, Sweden, Stockholm, tvsthlm', // carry-over
+  f02301: 'min-ask, USA', // carry-over
+  f02387: 'min-ask, Canada, Brampton, NBFS Canada', // carry-over
+  f02388: 'min-ask, Netherlands, Amersfoort, Kroketje', // carry-over
+  f02401: 'min-ask, Canada, Chambly, NBFS Canada', // carry-over
+  f02405: 'min-ask, China, Shenzhen', // carry-over
+  f02415: 'min-ask, China, Hong Kong', // carry-over
+  f02500: 'min-ask, Korea, Seongnam-si', // carry-over
+  f02501: 'min-ask, USA, Portland, 6block', // carry-over
+  f02514: 'min-ask, USA, Portland, 6block', // carry-over
+  f02606: 'min-ask, China, Shanghai', // carry-over
+  f02622: 'min-ask, USA, Portland, 6block', // carry-over
+  f02633: 'min-ask, China, Hong Kong', // carry-over
+  f02645: 'min-ask, China, Hong Kong', // carry-over
+  f03273: 'min-ask, USA, Portland, 6block', // carry-over
+  f03274: 'min-ask, USA, Portland, 6block', // carry-over
+  f03275: 'min-ask, USA, Portland, 6block', // carry-over
+  f03328: 'min-ask, China, Xinxiang, Golden Miner', // carry-over
+  f03491: 'min-ask, China, Hong Kong', // carry-over
+  f05315: 'min-ask, USA, Portland, 6block', // carry-over
+  f05316: 'min-ask, USA, Portland, 6block', // carry-over
+  f05317: 'min-ask, USA, Portland', // carry-over
+  f07850: 'min-ask, USA, Portland, 6block', // carry-over
+  f07919: 'min-ask, China, Beijing, Shanghai, Hunan', // carry-over
+  f07990: 'min-ask, China, Hong Kong', // carry-over
+  f07998: 'min-ask, China, Hangzhou', // carry-over
+  f08025: 'min-ask, China, Hong Kong', // carry-over
+  f08383: 'min-ask, USA, Portland, 6block', // carry-over
+  f09696: 'min-ask, USA, Portland + Singapore', // carry-over
+  f010253: 'min-ask, China, Beijing + USA, Portland', // carry-over
+  f010254: 'min-ask, Japan, Minamata', // carry-over
+  f014365: 'min-ask, Australia, Marrickville + Japan, Heiwajima', // carry-over
+  f018780: 'min-ask, Singapore + Germany, Frankfurt + USA', // carry-over
+  f018781: 'min-ask, Singapore + Germany, Frankfurt + USA', // carry-over
+  f018782: 'min-ask, Singapore + Germany, Frankfurt + USA', // carry-over
+  f018783: 'min-ask, Singapore + Germany, Frankfurt + USA', // carry-over
+  f018784: 'min-ask, Singapore + Germany, Frankfurt + USA', // carry-over
+  f018785: 'min-ask, Singapore + Germany, Frankfurt + USA', // carry-over
+  f019104: 'min-ask, Canada, Chambly, NBFS DEV', // carry-over
+  f020398: 'min-ask, China, Zhangjiakou', // carry-over
+  f020541: 'min-ask, China, Shanghai', // carry-over
+  f020747: 'min-ask, China, Xiamen', // carry-over
+  f021265: 'min-ask, China, Wuhan', // carry-over
+  f023001: 'min-ask, China, Changsha', // carry-over
+  f023495: 'min-ask, China, Beijing + USA, Portland', // carry-over
+  f023565: 'min-ask, China, Fuzhou', // carry-over
+  f023660: 'min-ask, China, Fuzhou', // carry-over
+  f023825: 'min-ask, USA, Portland', // carry-over
+  f023843: 'min-ask, China, Zhangjiakou', // carry-over
+  f023853: 'min-ask, China, Fuzhou', // carry-over
+  f023854: 'min-ask, China, Fuzhou', // carry-over
+  f023855: 'min-ask, China, Fuzhou', // carry-over
+  f023859: 'min-ask, China, Fuzhou', // carry-over
+  f023861: 'min-ask, China, Fuzhou', // carry-over
+  f023868: 'min-ask, China, Fuzhou', // carry-over
+  f023869: 'min-ask, China, Fuzhou', // carry-over
+  f023870: 'min-ask, China, Fuzhou', // carry-over
+  f023876: 'min-ask, China, Fuzhou', // carry-over
+  f023928: 'min-ask, China, Fuzhou', // carry-over
+  f023977: 'min-ask, China, Fuzhou', // carry-over
+  f023980: 'min-ask, China, Fuzhou', // carry-over
+  f023981: 'min-ask, China, Fuzhou', // carry-over
+  f024006: 'min-ask, China, Fuzhou', // carry-over
+  f024007: 'min-ask, China, Fuzhou', // carry-over
+  f024012: 'min-ask, China, Fuzhou', // carry-over
+  f024013: 'min-ask, China, Fuzhou', // carry-over
+  f024014: 'min-ask, China, Fuzhou', // carry-over
+  f024016: 'min-ask, USA, Portland', // carry-over
+  f024081: 'min-ask, undefined', // carry-over
+  f024084: 'min-ask, China, Fuzhou', // carry-over
+  f024085: 'min-ask, China, Fuzhou', // carry-over
+  f024136: 'min-ask, China, Fuzhou', // carry-over
+  f024146: 'min-ask, China, Fuzhou', // carry-over
+  f024147: 'min-ask, China, Fuzhou', // carry-over
+  f024972: 'min-ask, undefined', // carry-over
+  f029344: 'min-ask, Korea, Seongnam-si', // carry-over
+  f029401: 'min-ask, USA, Portland + New Castle', // carry-over
+  f029404: 'min-ask, USA, Portland + New Castle', // carry-over
+  f030203: 'min-ask, undefined', // carry-over
+  f033123: 'min-ask, USA, Portland + New Castle', // carry-over
+  f033511: 'min-ask, China, Dongguan', // carry-over
+  f034047: 'min-ask, China, Hangzhou', // carry-over
+  f034581: 'min-ask, NR', // carry-over
+  f034592: 'min-ask, NR', // carry-over
+  f039800: 'min-ask, China, Chengdu', // carry-over
+  f039873: 'min-ask, China, Fuzhou', // carry-over
+  f042540: 'min-ask, China, Beijing + USA, Portland + Newcastle', // carry-over
+  f042558: 'min-ask, China, Beijing + USA, Portland + Newcastle', // carry-over
+  f042635: 'min-ask, China, Beijing + USA, Portland + Newcastle', // carry-over
+  f050260: 'min-ask, China, Suzhou', // carry-over
+  f052447: 'min-ask, China, Beijing + USA, Portland + New Castle', // carry-over
+  f054370: 'min-ask, China, Dongguan', // carry-over
+  f056611: 'min-ask, USA, Portland + New Castle', // carry-over
+  f057070: 'min-ask, NR', // carry-over
+  f057614: 'min-ask, USA, Portland + New Castle', // carry-over
+  f057698: 'min-ask, NR', // carry-over
+  f061407: 'min-ask, China, Shenzhen', // carry-over
+  f061740: 'min-ask, USA, Portland + New Castle', // carry-over
+  f062260: 'min-ask, China, Guangzhou', // carry-over
+  f062334: 'min-ask, USA, Portland + New Castle', // carry-over
+  f062770: 'min-ask, China, Fuzhou', // carry-over
+  f062811: 'min-ask, China, Fuzhou', // carry-over
+  f062982: 'min-ask, China, Fuzhou', // carry-over
+  f066845: 'min-ask, China, Dongguan', // carry-over
+  f069915: 'min-ask, NR', // carry-over
+  f069919: 'min-ask, NR', // carry-over
+  f070999: 'min-ask, China, Xinjiang', // carry-over
+  f071980: 'min-ask, China, Xinjiang', // carry-over
+  f073552: 'min-ask, NR', // carry-over
+  f074738: 'min-ask, Korea, Seongbuk-gu', // carry-over
+  f078772: 'min-ask, NR', // carry-over
+  f079197: 'min-ask, NR', // carry-over
+
   // Error
+
+  f01287: 'error, China, Jiaxing, MaiTian', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f01799: 'error, China, Jinan, TokenHome', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f02419: 'error, China, Shanghai, yuantai', // stream reset
+  f02423: 'error, Ukraine, Kyiv, igowreck', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.04999999995012245 FIL, balance: 0.034276509808859806 FIL): not enough funds to execute transaction
+  f02490: 'error, China, Fujian', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f02822: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f02823: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f03134: 'error, China, Cangzhou, 乔木信息', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f03222: 'error, China, Yuncheong, 星云矿池', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f03345: 'error, China, Fuzhou, chh', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f03482: 'error, China, Wuxi', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f010400: 'error, China, Shenyang', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f010498: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f010501: 'error, China, Hangzhou, Interstellar Roewe', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f010528: 'error, China, Chongqing, Interstellar Roewe', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f014395: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f015877: 'error, China, Jiaxing + USA', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f015941: 'error, Ukraine, Kyiv', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999969778316 FIL, balance: 0.025810006223454359 FIL): not enough funds to execute transaction
+  f019240: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f020436: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f020489: 'error, China, Lioaning', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f022261: 'error, China, Luzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f022308: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f022522: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f025025: 'error, China, Qingdao', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f030335: 'error, China, Fujian', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f034777: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f035436: 'error, China, Jiangsu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f039515: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f040173: 'error, Ukraine, Ternopil', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.04999999999275876 FIL, balance: 0.010095805320803771 FIL): not enough funds to execute transaction
+  f048135: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f048192: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f054163: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f056226: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f056573: 'error, China, Sichuan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f057466: 'error, China, Guangzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f060072: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f065200: 'error, China, Yibin', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f067195: 'error, China, Huizhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f067314: 'error, China, Ningbo', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f067721: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f073499: 'error, Korea, Gyeonggi-do', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f079425: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f079847: 'error, China, Hong Kong', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.099999999993562428 FIL, balance: 0.032854514765557874 FIL): not enough funds to execute transaction
+  f080471: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f082054: 'error, China, Hefei', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f082175: 'error, China, Shenyang', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f082356: 'error, China, Jiaxing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f082601: 'error, China, Guangdong', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
 
   // Backoff
 
   // Rejected
+
+  f03364: 'rejected, China, Guangzhou', // piece size more than maximum allowed size: 134217728 > 1048576
+  f03624: 'rejected, Germany, Chemnitz, ode', // no online
+  f07709: 'rejected, Korea, Dongjak-gu', // piece size more than maximum allowed size: 134217728 > 1048576
+  f08019: 'rejected, China, Yantai, 三合', // piece size more than maximum allowed size: 134217728 > 1048576
+  f08204: 'rejected, USA, St. Louis', // piece size more than maximum allowed size: 134217728 > 1048576
+  f08403: 'rejected, UK, Lower Slaughter, TippyFlits', // Miner temporarily offline - BACK SOON
+  f010399: 'rejected, China, Guangzhou', // piece size more than maximum allowed size: 134217728 > 1048576
+  f010405: 'rejected, China, Foshan',
+  f014324: 'rejected, Canada, Vancouver', // piece size more than maximum allowed size: 134217728 > 1048576
+  f015233: 'rejected, China, Nanjing', // piece size more than maximum allowed size: 134217728 > 1048576
+  f016511: 'rejected, China, Beijing', // piece size more than maximum allowed size: 134217728 > 1048576
+  f017242: 'rejected, China, Guangdong', // piece size more than maximum allowed size: 134217728 > 1048576
+  f017665: 'rejected, China, Shenyang', // piece size more than maximum allowed size: 134217728 > 1048576
+  f019437: 'rejected, Korea, Guro-gu', // piece size more than maximum allowed size: 134217728 > 1048576
+  f020385: 'rejected, Korea, Incheon', // piece size more than maximum allowed size: 134217728 > 1048576
+  f024550: 'rejected, China, Wenzhou', // piece size more than maximum allowed size: 134217728 > 1048576
+  f033517: 'rejected, China, Changsha', // piece size more than maximum allowed size: 134217728 > 1048576
+  f039235: 'rejected, NR', // piece size more than maximum allowed size: 134217728 > 1048576
+  f042391: 'rejected, China, Fuzhou', // piece size more than maximum allowed size: 134217728 > 1048576
+  f064222: 'rejected, China, Fuzhou', // Deals from client wallet f3vp7m3244tjtxrvg4n2lfedtqnnnzhyno3ym6vnl4wzozztik4f2kvzfbfbgzcga7g3mckddw6x4ahp5n4iwa are not welcome
+  f068890: 'rejected, China, Fuzhou', // Deals from client wallet f3vp7m3244tjtxrvg4n2lfedtqnnnzhyno3ym6vnl4wzozztik4f2kvzfbfbgzcga7g3mckddw6x4ahp5n4iwa are not welcome
 
   // Dial
 
   // XNR
 
   // Error during ask
+
+  f02520: 'error-ask, China, Hong Kong + Dongguan', // carry-over
+  f02619: 'error-ask, China, Beijing, Blockcasting', // carry-over
+  f03340: "error-ask, China, Xi'an", // carry-over
+  f07819: 'error-ask, China, Wuxi, YC--wuxi', // carry-over
+  f019551: 'error-ask, UK, Birmingham, @Neofix AF', // carry-over
+  f019806: 'error-ask, China, Beijing', // carry-over
+  f024008: 'error-ask, China, Fuzhou', // carry-over
+  f030384: 'error-ask, undefined', // carry-over
+  f062445: 'error-ask, China, Shenzhen', // carry-over
+  f068096: 'error-ask, China, Sichuan', // carry-over
+  f079007: 'error-ask, China, Jinan' // carry-over
 }
 
 export default annotations
