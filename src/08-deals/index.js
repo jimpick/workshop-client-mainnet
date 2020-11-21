@@ -41,6 +41,7 @@ export default function Deals ({ appState, updateAppState }) {
           Import Slingshot Deals
         </button>
       </>
+      {deals && <p>{deals.length} deals</p>}
       <DealList
         client={client}
         appState={appState}
