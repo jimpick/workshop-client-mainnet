@@ -12,6 +12,8 @@
 const annotations = {
   // New
 
+  f02769: 'new, NR',
+  f02777: 'new, NR',
   f019814: 'new, Netherlands, Elst',
   f024511: 'new, China, Shenzhen',
   f061043: 'new, China, Changsha',
