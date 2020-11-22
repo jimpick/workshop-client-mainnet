@@ -12,7 +12,21 @@
 const annotations = {
   // New
 
+  f024511: 'new, China, Shenzhen',
   f065259: 'new, NR', // carry-over
+  f078522: 'new, NR',
+  f078621: 'new, Korea',
+  f080480: 'new, Ukraine, Lviv',
+  f081324: 'new, NR',
+  f082635: 'new, NR',
+  f082958: 'new, NR',
+  f082669: 'new, USA, Daytona Beach',
+  f082698: "new, USA, Xi'an",
+  f083065: 'new, China, Taizhou',
+  f083235: 'new, Serbia, Belgrade',
+  f083550: 'new, Korea, Hwaseong-si',
+  f083625: 'new, China, Xinjiang',
+  f083638: 'new, China, Chongqing',
 
   // Active
 
