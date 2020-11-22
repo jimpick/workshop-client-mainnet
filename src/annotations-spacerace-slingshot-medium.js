@@ -28,6 +28,7 @@ const annotations = {
   f01240: 'active, Netherlands, HidNand', // carry-over
   f01278: 'active, USA, Grand Rapids, MiMiner', // carry-over
   f01289: 'active, China, Hangzhou + USA', // carry-over
+  f02665: 'active, Netherlands, Amsterdam, fm-ops', // 1366536 about 15 hours
   f03224: 'active, Ukraine, Irpin, oboltusov', // carry-over
   f03339: 'active, China, Luzhou, benxun', // carry-over
   f03488: 'active, Korea, Geumcheon-gu', // 1366519 about 7 hours
@@ -48,7 +49,10 @@ const annotations = {
   f018501: 'active, China, Beijing', // carry-over
   f019100: 'active, Romania, Cluj-Napoca, noisyfan', // carry-over
   f019243: 'active, USA, Jackson', // 1366513 about 14 hours
+  f020378: 'active, Bulgaria, Asenovgrad', // 1366376 about 22 hours
   f020904: 'active, Korea, Uijeongbu-si, FILTop', // carry-over
+  f022142: 'active, USA, Queens, Nelson SR2', // 1366493 about 17 hours
+  f022163: 'active, dns:fil.akasha.network', // 1366876 about 19 hours
   f022352: 'active, Norway, Borgen, TechHedge, @Reiers', // carry-over
   f022853: 'active, China, Fuzhou', // carry-over
   f022922: 'active, China, Shenzhen, CAAP-MEG', // carry-over
@@ -61,23 +65,28 @@ const annotations = {
   f033356: 'active, Korea, Gangnum-gu, we4u-YELLOW', // carry-over
   f034701: 'active, China, Shenzhen', // carry-over
   f042567: 'active, China, Jinhua', // carry-over
+  f047419: 'active, USA, Waukesha', // 1366525 about 20 hours
   f047858: 'active, China, Wuhan', // carry-over
   f048172: 'active, China, Suzhou', // carry-over
   f049882: 'active, Netherlands, De Rijp', // carry-over
   f050022: 'active, China, Changsha', // carry-over
+  f054677: 'active, Finland, Helsinki', // 1366587 about 17 hours
   f055102: 'active, NR', // carry-over
   f058000: 'active, China, Suzhou', // carry-over
   f058374: 'active, USA', // carry-over
   f062318: 'active, Korea, Naju', // carry-over
   f062518: 'active, Korea, Gwangju', // 1366515 about 14 hours
   f065141: 'active, China, Fuzhou', // carry-over
+  f065280: 'active, Korea, Songpa-gu', // 1366514 about 20 hours
   f066104: 'active, China, Xingjiang + USA, Portland', // carry-over
   f066563: 'active, China, Fuzhou', // carry-over
   f067170: 'active, China, Jiangmen', // carry-over
   f067642: 'active, Japan, Ota-ku', // carry-over
   f071914: 'active, China, Beijing', // carry-over
   f073878: 'active, NR', // carry-over
+  f078954: 'active, Netherlands', // 1366578 1 day
   f079787: 'active, USA, Daytona Beach', // carry-over
+  f079817: "active, Russia, Ul'yanovka", // 1366637 about 17 hours
   f080103: 'active, Korea, Seongnam-si', // 1366563 about 14 hours
 
   // Sealing (active-sealing = previously active, retesting with new deal)
@@ -88,7 +97,6 @@ const annotations = {
   // Sealing
 
   f02576: 'sealing, Denmark, Gjerlev, BenjaminH', // 1366860
-  f02665: 'sealing, Netherlands, Amsterdam, fm-ops', // 1366536
   f08157: 'sealing, China, Beijing + Germany, Frankfurt, 超星际', // 1366584
   f09693: 'sealing, USA, Portland + Singapore, 6block-CapsuleMining', // 1366585
   f010241: 'sealing, China, Beijing + USA, Portland', // 1366314
@@ -99,18 +107,13 @@ const annotations = {
   f015897: 'sealing, China, Guangdong', // 1366510
   f016594: 'sealing, Germany', // 1366486
   f019029: 'sealing, Serbia, Boljevac', // 1366575
-  f020378: 'sealing, Bulgaria, Asenovgrad', // 1366376
   f022130: 'sealing, Korea, Seodaemun-gu', // carry-over
-  f022142: 'sealing, USA, Queens, Nelson SR2', // 1366493
-  f022163: 'sealing, dns:fil.akasha.network', // 1366876
   f023581: 'sealing, China, Hong Kong', // 1366517
   f025019: 'sealing, China, Taiwan, Hsinchu', // 1366558
   f029368: 'sealing, Korea, Gangseo-gu', // 1366512
   f032934: 'sealing, Korea, Incheon', // 1366388
-  f047419: 'sealing, USA, Waukesha', // 1366525
   f047978: 'sealing, Korea, Seoul', // 1366516
   f053088: 'sealing, China, Shanghai', // 1366502
-  f054677: 'sealing, Finland, Helsinki', // 1366587
   f055132: 'sealing, NR', // 1366561
   f057368: 'sealing, Korea, Gyeonggi-do', // 1366581
   f057842: 'sealing, Korea, Gyeonggi-do', // 1366522
@@ -118,22 +121,19 @@ const annotations = {
   f062204: 'sealing, China, Hong Kong', // 1366626
   f064218: 'sealing, USA, Kirkland', // 1366442
   f065103: 'sealing, USA, Portland + China, Shenzhen', // 1366588
-  f065280: 'sealing, Korea, Songpa-gu', // 1366514
   f066898: 'sealing, Japan, Bunkyo-ku', // 1366475
   f070756: 'sealing, China, Beijing', // carry-over
   f071190: 'sealing, Korea, Gyeonggi-do', // 1366518
   f071279: 'sealing, Korea, Gyeonggi-do', // 1366562
   f072965: 'sealing, Korea, Busan', // carry-over
   f078425: 'sealing, Korea, Bucheon-si', // 1366370
-  f078954: 'sealing, Netherlands', // 1366578
   f079334: 'sealing, Korea, Gyeonggi-do', // 1366595
-  f079817: "sealing, Russia, Ul'yanovka", // 1366637
   f081323: 'sealing, UK, Basildon', // 1366537
   f082613: 'sealing, Switzerland, Tenero', // 1366462
 
   // Stuck
 
-  f063996: 'stuck, China, Sichuan', // ClientTransferRestart: about 1 hour
+  f063996: 'stuck, China, Sichuan', // ClientTransferRestart: 1 day
 
   // Min-size
 
