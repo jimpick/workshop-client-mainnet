@@ -478,8 +478,6 @@ export default function DealList ({ appState, cid, dealType }) {
       'retest',
       'active-candidate',
       'candidate',
-      'active-testing',
-      'testing',
       'active',
       'active-sealing',
       'sealing',
