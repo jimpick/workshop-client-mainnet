@@ -68,14 +68,19 @@ const annotations = {
   f02856: 'sealing, China, Chengdu', // 1369520
   f03134: 'sealing, China, Cangzhou, 乔木信息', // 1369629
   f03222: 'sealing, China, Yuncheong, 星云矿池', // 1369537
+  f03224: 'sealing, Ukraine, Irpin, oboltusov', // 1369694
+  f03345: 'sealing, China, Fuzhou, chh', // 1369661
   f07819: 'sealing, China, Wuxi, YC--wuxi', // 1369542
   f08157: 'sealing, China, Beijing + Germany, Frankfurt, 超星际', // 1366584
+  f08240: 'sealing, Russia, Novosibirsk, Rabinovitch', // 1369707
   f09693: 'sealing, USA, Portland + Singapore, 6block-CapsuleMining', // 1366585
+  f09848: 'sealing, USA, Irvine, BigBearLake', // 1369674
   f010241: 'sealing, China, Beijing + USA, Portland', // 1366314
   f010493: 'sealing, China, Shanghai', // 1369485
   f010501: 'sealing, China, Hangzhou, Interstellar Roewe', // 1369574
   f010528: 'sealing, China, Chongqing, Interstellar Roewe', // 1369515
   f014395: 'sealing, China, Dongguan', // 1369530
+  f014768: 'sealing, Singapore, Funktafide, @Funk', // 1369677
   f015897: 'sealing, China, Guangdong', // 1366510
   f016594: 'sealing, Germany', // 1366486
   f019029: 'sealing, Serbia, Boljevac', // 1366575
@@ -96,6 +101,7 @@ const annotations = {
   f039515: 'sealing, China, Chongqing', // 1369514
   f047978: 'sealing, Korea, Seoul', // 1366516
   f053088: 'sealing, China, Shanghai', // 1366502
+  f053916: 'sealing, USA, Concord', // 1369743
   f055132: 'sealing, NR', // 1366561
   f056573: 'sealing, China, Sichuan', // 1369597
   f057115: 'sealing, China, Nanyang', // 1369508
@@ -104,17 +110,21 @@ const annotations = {
   f057842: 'sealing, Korea, Gyeonggi-do', // 1366522
   f058168: 'sealing, Korea, Gyeonggi-do', // 1366586
   f062204: 'sealing, China, Hong Kong', // 1366626
+  f062318: 'sealing, Korea, Naju', // 1369673
   f063996: 'sealing, China, Sichuan', // 1369578
   f064218: 'sealing, USA, Kirkland', // 1366442
+  f064668: 'sealing, China, Hong Kong', // 1369691
   f065103: 'sealing, USA, Portland + China, Shenzhen', // 1366588
   f065200: 'sealing, China, Yibin', // 1369589
   f066596: 'sealing, USA, San Diego', // 1369644
   f066898: 'sealing, Japan, Bunkyo-ku', // 1366475
   f067314: 'sealing, China, Ningbo', // 1369488
+  f067642: 'sealing, Japan, Ota-ku', // 1369725
   f067721: 'sealing, China, Beijing', // 1369551
   f068096: 'sealing, China, Sichuan', // 1369483
   f071190: 'sealing, Korea, Gyeonggi-do', // 1366518
   f071279: 'sealing, Korea, Gyeonggi-do', // 1366562
+  f073499: 'sealing, Korea, Gyeonggi-do', // 1369690
   f078425: 'sealing, Korea, Bucheon-si', // 1366370
   f078522: 'sealing, NR', // 1369611
   f079334: 'sealing, Korea, Gyeonggi-do', // 1366595
@@ -124,50 +134,31 @@ const annotations = {
   f082356: 'sealing, China, Jiaxing', // 1369562
   f082613: 'sealing, Switzerland, Tenero', // 1366462
   f082669: 'sealing, USA, Daytona Beach', // 1369585
+  f083235: 'sealing, Serbia, Belgrade', // 1369658
   f083550: 'sealing, Korea, Hwaseong-si', // 1369576
 
   // Stuck
 
-  f01287: 'stuck, China, Jiaxing, MaiTian', // Transferring: 3 minutes
-  f02822: 'stuck, China, Chengdu', // Transferring: 3 minutes
-  f03224: 'stuck, Ukraine, Irpin, oboltusov', // CheckForAcceptance: 3 minutes
-  f03345: 'stuck, China, Fuzhou, chh', // CheckForAcceptance: 3 minutes
-  f08240: 'stuck, Russia, Novosibirsk, Rabinovitch', // CheckForAcceptance: 3 minutes
-  f09848: 'stuck, USA, Irvine, BigBearLake', // CheckForAcceptance: 3 minutes
-  f010247: 'stuck, China, Yantai', // CheckForAcceptance: 3 minutes
-  f010400: 'stuck, China, Shenyang', // Transferring: 3 minutes
-  f010479: 'stuck, France, Fontenay-sous-Bois, s0nik42', // CheckForAcceptance: 3 minutes
-  f010491: 'stuck, China, Shenzhen', // CheckForAcceptance: 3 minutes
-  f010498: 'stuck, China, Shenzhen', // CheckForAcceptance: 3 minutes
-  f010513: 'stuck, China, Chongqing', // Transferring: 3 minutes
-  f010523: 'stuck, China, Beijing, Interstellar Roewe', // Transferring: 3 minutes
-  f014394: 'stuck, China, Suzhou, IPFSCloud', // Transferring: 3 minutes
-  f014569: 'stuck, NR', // Transferring: 3 minutes
-  f014768: 'stuck, Singapore, Funktafide, @Funk', // CheckForAcceptance: 3 minutes
-  f016276: 'stuck, China, Beijing', // Transferring: 3 minutes
-  f019240: 'stuck, China, Beijing', // CheckForAcceptance: 3 minutes
-  f019362: 'stuck, China, Hangzhou', // CheckForAcceptance: 3 minutes
-  f022130: 'stuck, Korea, Seodaemun-gu', // CheckForAcceptance: 3 minutes
-  f023467: 'stuck, Norway, Oslo, PhiMining.io', // CheckForAcceptance: 3 minutes
-  f044160: 'stuck, China, Guangzhou, muxing', // CheckForAcceptance: 3 minutes
-  f048135: 'stuck, China, Chongqing', // CheckForAcceptance: 3 minutes
-  f048172: 'stuck, China, Suzhou', // Transferring: 3 minutes
-  f048192: 'stuck, China, Suzhou', // Transferring: 3 minutes
-  f053916: 'stuck, USA, Concord', // CheckForAcceptance: 3 minutes
-  f054163: 'stuck, China, Dongguan', // CheckForAcceptance: 3 minutes
-  f056226: 'stuck, NR', // CheckForAcceptance: 3 minutes
-  f060072: 'stuck, China, Chongqing', // CheckForAcceptance: 3 minutes
-  f061158: 'stuck, China, Guangdong', // CheckForAcceptance: 3 minutes
-  f062318: 'stuck, Korea, Naju', // CheckForAcceptance: 3 minutes
-  f064668: 'stuck, China, Hong Kong', // CheckForAcceptance: 3 minutes
-  f066566: 'stuck, Korea, Gwangju', // CheckForAcceptance: 3 minutes
-  f067642: 'stuck, Japan, Ota-ku', // CheckForAcceptance: 3 minutes
-  f073499: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: 3 minutes
-  f078741: 'stuck, China, Dongguan', // CheckForAcceptance: 3 minutes
-  f079092: 'stuck, NR', // CheckForAcceptance: 3 minutes
-  f082601: 'stuck, China, Guangdong', // CheckForAcceptance: 3 minutes
-  f083065: 'stuck, China, Taizhou', // CheckForAcceptance: 3 minutes
-  f083235: 'stuck, Serbia, Belgrade', // CheckForAcceptance: 3 minutes
+  f010247: 'stuck, China, Yantai', // CheckForAcceptance: about 1 hour
+  f010479: 'stuck, France, Fontenay-sous-Bois, s0nik42', // CheckForAcceptance: about 1 hour
+  f010491: 'stuck, China, Shenzhen', // CheckForAcceptance: about 1 hour
+  f010498: 'stuck, China, Shenzhen', // CheckForAcceptance: about 1 hour
+  f014569: 'stuck, NR', // Transferring: about 1 hour
+  f019240: 'stuck, China, Beijing', // CheckForAcceptance: about 1 hour
+  f019362: 'stuck, China, Hangzhou', // CheckForAcceptance: about 1 hour
+  f022130: 'stuck, Korea, Seodaemun-gu', // CheckForAcceptance: about 1 hour
+  f023467: 'stuck, Norway, Oslo, PhiMining.io', // CheckForAcceptance: about 1 hour
+  f044160: 'stuck, China, Guangzhou, muxing', // CheckForAcceptance: about 1 hour
+  f048135: 'stuck, China, Chongqing', // CheckForAcceptance: about 1 hour
+  f054163: 'stuck, China, Dongguan', // CheckForAcceptance: about 1 hour
+  f056226: 'stuck, NR', // CheckForAcceptance: about 1 hour
+  f060072: 'stuck, China, Chongqing', // CheckForAcceptance: about 1 hour
+  f061158: 'stuck, China, Guangdong', // CheckForAcceptance: about 1 hour
+  f066566: 'stuck, Korea, Gwangju', // CheckForAcceptance: about 1 hour
+  f078741: 'stuck, China, Dongguan', // CheckForAcceptance: about 1 hour
+  f079092: 'stuck, NR', // CheckForAcceptance: about 1 hour
+  f082601: 'stuck, China, Guangdong', // CheckForAcceptance: about 1 hour
+  f083065: 'stuck, China, Taizhou', // CheckForAcceptance: about 1 hour
 
   // Min-size
 
@@ -306,17 +297,26 @@ const annotations = {
 
   // Error
 
+  f01287: 'error, China, Jiaxing, MaiTian', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f02423: 'error, Ukraine, Kyiv, igowreck', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.04999999995012245 FIL, balance: 0.034276509808859806 FIL): not enough funds to execute transaction
+  f02822: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f02823: 'error, undefined', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f03482: 'error, China, Wuxi', // deal failed: (State=26) error calling node: publishing deal: GasEstimateMessageGas error: estimating gas used: message execution failed: exit 19, reason: failed to lock balance: failed to lock provider funds: not enough balance to lock for addr f03482: escrow balance 27125296441382 < locked 31270221138 + required 32104003659322 (RetCode=19)
+  f010400: 'error, China, Shenyang', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f010513: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f010523: 'error, China, Beijing, Interstellar Roewe', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f014394: 'error, China, Suzhou, IPFSCloud', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f015747: 'error, Japan, Setagaya-ku', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f015877: 'error, China, Jiaxing + USA', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f015941: 'error, Ukraine, Kyiv', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999969778316 FIL, balance: 0.025810006223454359 FIL): not enough funds to execute transaction
+  f016276: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f020436: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f020489: 'error, China, Lioaning', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999959447336 FIL, balance: 0.045075440928374521 FIL): not enough funds to execute transaction
   f024511: 'error, China, Shenzhen', // stream reset
   f025025: 'error, China, Qingdao', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f040173: 'error, undefined', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.04999999999275876 FIL, balance: 0.010095805320803771 FIL): not enough funds to execute transaction
+  f048172: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f048192: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f050022: 'error, China, Changsha', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f067195: 'error, undefined', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f073535: 'error, Korea, Gyeonggi-do', // deal failed: (State=26) error calling node: ensuring funds: mpool push: failed to push message: not enough funds (required: 0.080474634658089462 FIL, balance: 0.021311207309585118 FIL): not enough funds to execute transaction
