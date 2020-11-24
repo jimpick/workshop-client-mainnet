@@ -19,6 +19,7 @@ for (const miner in annotations) {
   if (!newAnnotations[miner]) {
     if (annotation.match(/^active/) ||
         annotation.match(/^sealing/) ||
+        annotation.match(/^busy/) ||
         annotation.match(/^min-/)) {
       let newTag = 'candidate,'
       if (annotations3[miner] && annotations3[miner].match(/active,/)) {
