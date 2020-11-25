@@ -15,7 +15,10 @@ export default function useDealMonitor ({ appState, updateAppState }) {
   const [currentNode, setCurrentNode] = useState(0)
   const [ticker, setTicker] = useState(0)
   const [terminated, updateTerminated] = useImmer({})
-  const [checkSet, updateCheckset] = useImmer({})
+  const [checkSet, updateCheckset] = useImmer({
+    0: true,
+    1: true
+  })
   const client = useLotusClient(currentNode, 'node')
 
   useEffect(() => {
