@@ -113,7 +113,7 @@ const annotations = {
   f050022: 'stuck, China, Changsha', // CheckForAcceptance: about 6 hours
   f054163: 'stuck, China, Dongguan', // CheckForAcceptance: about 6 hours
   f055102: 'stuck, Vietman, Ho Chi Minh City + China', // CheckForAcceptance: about 5 hours
-  f055132: 'stuck, NR', // CheckForAcceptance: about 5 hours
+  f055132: 'stuck, Vietman, Ho Chi Minh City + China', // CheckForAcceptance: about 5 hours
   f056226: 'stuck, NR', // CheckForAcceptance: about 5 hours
   f057466: 'stuck, China, Guangzhou', // CheckForAcceptance: about 6 hours
   f057842: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 6 hours
