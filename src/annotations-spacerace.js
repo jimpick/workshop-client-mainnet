@@ -13,6 +13,11 @@ const annotations = {
   // New
 
   f065259: 'new, NR', // carry-over
+  f085947: 'new, NR',
+  f088290: 'new, NR',
+  f089767: 'new, China, Changsha',
+  f089840: 'new, Korea, Yeongdeungpo-gu',
+  f089942: 'new, Korea, Gyeonggi-do',
 
   // Active
 
