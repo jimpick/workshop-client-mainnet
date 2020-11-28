@@ -142,7 +142,7 @@ const annotations = {
   f061158: 'stuck, China, Guangdong', // FundsEnsured: about 3 hours
   f062518: 'stuck, Korea, Gwangju', // CheckForAcceptance: about 2 hours
   f063173: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 3 hours
-  f065280: 'stuck, Korea, Songpa-gu', // CheckForAcceptance: about 3 hours
+  f065280: 'stuck, Korea, Songpa-gu, Data Store Ltd', // CheckForAcceptance: about 3 hours
   f065732: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 3 hours
   f066566: 'stuck, Korea, Gwangju', // CheckForAcceptance: about 3 hours
   f066568: 'stuck, Korea, Gwangju', // CheckForAcceptance: about 3 hours

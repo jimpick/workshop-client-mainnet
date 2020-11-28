@@ -359,7 +359,7 @@ const annotations = {
   f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 1388228
   f058374: 'sealing, USA', // 1389247
   f062318: 'sealing, Korea, Naju', // 1388234
-  f065280: 'sealing, Korea, Songpa-gu', // 1389712
+  f065280: 'sealing, Korea, Songpa-gu, Data Store Ltd', // 1389712
   f066596: 'sealing, USA, San Diego', // 1388356
   f067545: 'sealing, Canada, Kitchener', // 1388629
   f079817: "sealing, Russia, Ul'yanovka", // 1388211
