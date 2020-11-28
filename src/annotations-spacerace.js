@@ -19,7 +19,7 @@ const annotations = {
   // Active-sealing (active, with in-flight sealing)
 
   f09693: 'active-sealing, USA, Portland + Singapore, 6block-CapsuleMining', // 1389345
-  f010241: 'active-sealing, China, Beijing + USA, Portland', // 1389344
+  f010241: 'active-sealing, China, Beijing + USA, Portland, 6Block-P', // 1389344
   f015877: 'active-sealing, China, Jiaxing + USA', // 1389342
   f019240: 'active-sealing, China, Beijing', // 1389341
   f020523: 'active-sealing, China, Suzhou, changjiang', // 1389343

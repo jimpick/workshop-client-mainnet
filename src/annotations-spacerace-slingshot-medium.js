@@ -348,7 +348,7 @@ const annotations = {
   f01799: 'sealing, China, Jinan, TokenHome', // 1388210
   f02576: 'sealing, Denmark, Gjerlev, BenjaminH', // 1388474
   f09693: 'sealing, USA, Portland + Singapore, 6block-CapsuleMining', // 1388014
-  f010241: 'sealing, China, Beijing + USA, Portland', // 1388164
+  f010241: 'sealing, China, Beijing + USA, Portland, 6Block-P', // 1388164
   f015897: 'sealing, China, Guangdong', // 1389536
   f019100: 'sealing, Romania, Cluj-Napoca, noisyfan', // 1388425
   f019824: 'sealing, USA', // 1388742
