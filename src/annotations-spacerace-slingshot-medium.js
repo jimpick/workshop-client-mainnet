@@ -34,102 +34,66 @@ const annotations = {
 
   // Sealing
 
+  f01799: 'sealing, China, Jinan, TokenHome', // 1388210
+  f02576: 'sealing, Denmark, Gjerlev, BenjaminH', // 1388474
   f09693: 'sealing, USA, Portland + Singapore, 6block-CapsuleMining', // 1388014
   f010241: 'sealing, China, Beijing + USA, Portland', // 1388164
+  f019100: 'sealing, Romania, Cluj-Napoca, noisyfan', // 1388425
+  f019824: 'sealing, USA', // 1388742
+  f020385: 'sealing, Korea, Incheon', // 1388428
+  f024156: 'sealing, USA', // 1389073
+  f049882: 'sealing, Netherlands, De Rijp', // 1388473
+  f055132: 'sealing, NR', // 1388228
+  f062318: 'sealing, Korea, Naju', // 1388234
+  f066596: 'sealing, USA, San Diego', // 1388356
+  f067545: 'sealing, Canada, Kitchener', // 1388629
+  f079817: "sealing, Russia, Ul'yanovka", // 1388211
+  f080480: 'sealing, Ukraine, Lviv', // 1389139
 
   // Stuck
 
-  f01240: 'stuck, Netherlands, HidNand', // CheckForAcceptance: 19 minutes
-  f01280: 'stuck, China, Wuxi, 了凡超算', // Transferring: 18 minutes
-  f01799: 'stuck, China, Jinan, TokenHome', // CheckForAcceptance: 39 minutes
-  f02423: 'stuck, Ukraine, Kyiv, igowreck', // CheckForAcceptance: about 2 hours
-  f02490: 'stuck, China, Fujian', // Transferring: 18 minutes
-  f02576: 'stuck, Denmark, Gjerlev, BenjaminH', // CheckForAcceptance: 43 minutes
-  f02665: 'stuck, Netherlands, Amsterdam, fm-ops', // CheckForAcceptance: 9 minutes
-  f02856: 'stuck, China, Chengdu', // Transferring: 43 minutes
-  f03134: 'stuck, China, Cangzhou, 乔木信息', // Transferring: 31 minutes
-  f03222: 'stuck, China, Yuncheong, 星云矿池', // Transferring: 32 minutes
-  f03224: 'stuck, Ukraine, Irpin, oboltusov', // CheckForAcceptance: 29 minutes
-  f03339: 'stuck, China, Luzhou, benxun', // Transferring: 32 minutes
-  f08103: 'stuck, China, Foshan, 花生酱肠粉', // Transferring: 26 minutes
-  f08285: 'stuck, Latvia, Riga, stander', // CheckForAcceptance: about 1 hour
-  f08482: 'stuck, USA, Athol, @why', // CheckForAcceptance: 29 minutes
-  f010513: 'stuck, China, Chongqing', // Transferring: about 1 hour
-  f014394: 'stuck, China, Suzhou, IPFSCloud', // Transferring: about 1 hour
-  f014395: 'stuck, China, Dongguan', // Transferring: 40 minutes
-  f015747: 'stuck, Japan, Setagaya-ku', // Transferring: about 1 hour
-  f015877: 'stuck, China, Jiaxing + USA', // Transferring: 35 minutes
-  f015897: 'stuck, China, Guangdong', // CheckForAcceptance: 42 minutes
-  f016276: 'stuck, China, Beijing', // Transferring: 32 minutes
-  f016594: 'stuck, Germany', // CheckForAcceptance: about 1 hour
-  f019100: 'stuck, Romania, Cluj-Napoca, noisyfan', // CheckForAcceptance: 8 minutes
-  f019824: 'stuck, USA', // CheckForAcceptance: 20 minutes
-  f020385: 'stuck, Korea, Incheon', // CheckForAcceptance: 8 minutes
-  f020489: 'stuck, China, Lioaning', // Transferring: 39 minutes
-  f022130: 'stuck, Korea, Seodaemun-gu', // CheckForAcceptance: about 1 hour
-  f022142: 'stuck, USA, Queens, Nelson SR2', // CheckForAcceptance: about 1 hour
-  f022163: 'stuck, dns:fil.akasha.network', // CheckForAcceptance: 8 minutes
-  f022261: 'stuck, China, Luzhou', // Transferring: 43 minutes
-  f022853: 'stuck, China, Fuzhou', // Transferring: 43 minutes
-  f023467: 'stuck, Norway, Oslo, PhiMining.io', // CheckForAcceptance: 43 minutes
-  f024156: 'stuck, USA', // CheckForAcceptance: 17 minutes
-  f024511: 'stuck, China, Shenzhen', // Transferring: 19 minutes
-  f025007: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 2 hours
-  f025017: 'stuck, China, Hefei, 一三科技-913', // Transferring: 43 minutes
-  f030327: 'stuck, China, Beijing', // FundsEnsured: about 2 hours
-  f048172: 'stuck, China, Suzhou', // Transferring: 43 minutes
-  f048192: 'stuck, China, Suzhou', // Transferring: about 1 hour
-  f049882: 'stuck, Netherlands, De Rijp', // CheckForAcceptance: 31 minutes
-  f054677: 'stuck, Finland, Helsinki', // CheckForAcceptance: 15 minutes
-  f055132: 'stuck, NR', // CheckForAcceptance: about 1 hour
-  f056226: 'stuck, NR', // Transferring: 22 minutes
-  f057466: 'stuck, China, Guangzhou', // Transferring: 40 minutes
-  f057842: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 2 hours
-  f058374: 'stuck, USA', // CheckForAcceptance: about 1 hour
-  f060693: 'stuck, NR', // Transferring: about 1 hour
-  f062204: 'stuck, China, Hong Kong', // CheckForAcceptance: 32 minutes
-  f062318: 'stuck, Korea, Naju', // CheckForAcceptance: 8 minutes
-  f063173: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 1 hour
-  f063996: 'stuck, China, Sichuan', // Transferring: 42 minutes
-  f064668: 'stuck, China, Hong Kong', // CheckForAcceptance: about 1 hour
-  f065103: 'stuck, USA, Portland + China, Shenzhen', // Transferring: 43 minutes
-  f065141: 'stuck, China, Fuzhou', // Transferring: about 1 hour
-  f065280: 'stuck, Korea, Songpa-gu', // CheckForAcceptance: 32 minutes
-  f065732: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 2 hours
-  f066566: 'stuck, Korea, Gwangju', // CheckForAcceptance: 17 minutes
-  f066568: 'stuck, Korea, Gwangju', // CheckForAcceptance: about 1 hour
-  f066596: 'stuck, USA, San Diego', // CheckForAcceptance: about 1 hour
-  f066898: 'stuck, Japan, Bunkyo-ku', // CheckForAcceptance: 13 minutes
-  f067170: 'stuck, China, Jiangmen', // Transferring: about 1 hour
-  f067314: 'stuck, China, Ningbo', // Transferring: about 1 hour
-  f067545: 'stuck, Canada, Kitchener', // CheckForAcceptance: about 1 hour
-  f067721: 'stuck, China, Beijing', // Transferring: 15 minutes
-  f070475: 'stuck, China, Guyuan', // FundsEnsured: about 1 hour
-  f071190: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: 26 minutes
-  f073048: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: 32 minutes
-  f073535: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 2 hours
-  f073543: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: 32 minutes
-  f079425: 'stuck, NR', // Transferring: 43 minutes
-  f079817: "stuck, Russia, Ul'yanovka", // CheckForAcceptance: about 1 hour
-  f079847: 'stuck, China, Hong Kong', // CheckForAcceptance: 19 minutes
-  f080444: 'stuck, China, Chengdu', // Transferring: 35 minutes
-  f080480: 'stuck, Ukraine, Lviv', // CheckForAcceptance: about 2 hours
-  f081323: 'stuck, UK, Basildon', // CheckForAcceptance: about 1 hour
-  f082356: 'stuck, China, Jiaxing', // Transferring: about 1 hour
-  f083235: 'stuck, Serbia, Belgrade', // CheckForAcceptance: 15 minutes
-  f083550: 'stuck, Korea, Hwaseong-si', // CheckForAcceptance: about 2 hours
-  f085226: 'stuck, Korea, Busan', // CheckForAcceptance: 31 minutes
-  f085899: 'stuck, China, Wuxi', // Transferring: about 1 hour
-  f085904: 'stuck, China, Chongqing', // Transferring: 27 minutes
-  f086610: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 1 hour
-  f087442: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 1 hour
-  f087807: 'stuck, Korea', // CheckForAcceptance: about 2 hours
-  f088305: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: 43 minutes
-  f088404: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: 31 minutes
-  f089201: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: 43 minutes
-  f089210: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 2 hours
-  f089232: 'stuck, China, Ningxia', // CheckForAcceptance: about 2 hours
-  f089311: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 1 hour
+  f02423: 'stuck, Ukraine, Kyiv, igowreck', // CheckForAcceptance: about 10 hours
+  f02665: 'stuck, Netherlands, Amsterdam, fm-ops', // CheckForAcceptance: about 8 hours
+  f03224: 'stuck, Ukraine, Irpin, oboltusov', // CheckForAcceptance: about 9 hours
+  f08285: 'stuck, Latvia, Riga, stander', // CheckForAcceptance: about 10 hours
+  f08482: 'stuck, USA, Athol, @why', // CheckForAcceptance: about 9 hours
+  f010513: 'stuck, China, Chongqing', // Transferring: about 10 hours
+  f015747: 'stuck, Japan, Setagaya-ku', // Transferring: about 9 hours
+  f015897: 'stuck, China, Guangdong', // CheckForAcceptance: about 9 hours
+  f016594: 'stuck, Germany', // CheckForAcceptance: about 9 hours
+  f022130: 'stuck, Korea, Seodaemun-gu', // CheckForAcceptance: about 9 hours
+  f022163: 'stuck, dns:fil.akasha.network', // CheckForAcceptance: about 8 hours
+  f023467: 'stuck, Norway, Oslo, PhiMining.io', // CheckForAcceptance: about 9 hours
+  f025007: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 10 hours
+  f054677: 'stuck, Finland, Helsinki', // CheckForAcceptance: about 9 hours
+  f057842: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 10 hours
+  f058374: 'stuck, USA', // CheckForAcceptance: about 10 hours
+  f062204: 'stuck, China, Hong Kong', // CheckForAcceptance: about 9 hours
+  f063173: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 9 hours
+  f064668: 'stuck, China, Hong Kong', // CheckForAcceptance: about 9 hours
+  f065141: 'stuck, China, Fuzhou', // Transferring: about 9 hours
+  f065280: 'stuck, Korea, Songpa-gu', // CheckForAcceptance: about 9 hours
+  f065732: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 10 hours
+  f066566: 'stuck, Korea, Gwangju', // CheckForAcceptance: about 9 hours
+  f066568: 'stuck, Korea, Gwangju', // CheckForAcceptance: about 10 hours
+  f066898: 'stuck, Japan, Bunkyo-ku', // CheckForAcceptance: about 9 hours
+  f067314: 'stuck, China, Ningbo', // Transferring: about 10 hours
+  f071190: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 9 hours
+  f073048: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 9 hours
+  f073535: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 10 hours
+  f073543: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 9 hours
+  f079847: 'stuck, China, Hong Kong', // CheckForAcceptance: about 9 hours
+  f081323: 'stuck, UK, Basildon', // CheckForAcceptance: about 10 hours
+  f083235: 'stuck, Serbia, Belgrade', // CheckForAcceptance: about 9 hours
+  f083550: 'stuck, Korea, Hwaseong-si', // CheckForAcceptance: about 10 hours
+  f085226: 'stuck, Korea, Busan', // CheckForAcceptance: about 9 hours
+  f085899: 'stuck, China, Wuxi', // Transferring: about 9 hours
+  f086610: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 9 hours
+  f087442: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 9 hours
+  f088305: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 9 hours
+  f088404: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 9 hours
+  f089201: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 9 hours
+  f089232: 'stuck, China, Ningxia', // CheckForAcceptance: about 10 hours
 
   // Min-size
 
@@ -272,14 +236,22 @@ const annotations = {
 
   // Error
 
+  f01240: 'error, Netherlands, HidNand', // deal failed: (State=26) error calling node: reserving funds: GasEstimateMessageGas error: estimating gas used: CallWithGas failed: failed to set up vm: failed to load hamt node: badger blockstore closed
   f01247: 'error, Canada, Montreal', // stream reset
+  f01280: 'error, China, Wuxi, 了凡超算', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f01287: 'error, China, Jiaxing, MaiTian', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f02490: 'error, China, Fujian', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f02824: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f02856: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f03134: 'error, China, Cangzhou, 乔木信息', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f03222: 'error, China, Yuncheong, 星云矿池', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f03328: 'error, China, Xinxiang, Golden Miner', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f03339: 'error, China, Luzhou, benxun', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f03345: 'error, China, Fuzhou, chh', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f03482: 'error, China, Wuxi', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f04443: 'error, China, Shanghai, 罗良科技', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f07819: 'error, China, Wuxi, YC--wuxi', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f08103: 'error, China, Foshan, 花生酱肠粉', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f010400: 'error, China, Shenyang', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f010446: 'error, Netherlands, Angelo', // EOF
   f010491: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
@@ -288,14 +260,25 @@ const annotations = {
   f010505: 'error, China, Wuhan, Interstellar Roewe', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f010523: 'error, China, Beijing, Interstellar Roewe', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f010528: 'error, China, Chongqing, Interstellar Roewe', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f014394: 'error, China, Suzhou, IPFSCloud', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f014395: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f015877: 'error, China, Jiaxing + USA', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f015941: 'error, Ukraine, Kyiv', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 3.049999998024879575 FIL, balance: 3.020438288981019014 FIL): validation failure
+  f016276: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f018501: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f019029: 'error, Serbia, Boljevac', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds including pending messages (required: 0.50506035068145108 FIL, balance: 0.484255063151084728 FIL): validation failure
   f019240: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f020436: 'error, China, Beijing', // stream reset
+  f020489: 'error, China, Lioaning', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f022142: 'error, USA, Queens, Nelson SR2', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzacedotatyc4xzbcx6me77sayyc5ybsfz4hjjbid677qycwhqll52jlo n 2017, TS: bafy2bzaceb6gput2f7dvlj2gnw7otrq6xmxcbodtaiwybhk7vaozzto2gs5lw n2017)
+  f022261: 'error, China, Luzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f022522: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f022853: 'error, China, Fuzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f024101: 'error, China, Guiyang', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f024511: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f025017: 'error, China, Hefei, 一三科技-913', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f030125: 'error, China, Nantong', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f030327: 'error, China, Beijing', // stream reset
   f030335: 'error, China, Fujian', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f033549: 'error, China, Quzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f034701: 'error, China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
@@ -303,16 +286,33 @@ const annotations = {
   f042567: 'error, China, Jinhua', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f047858: 'error, China, Wuhan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f048135: 'error, China, Chongqing, password interstellar', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f048172: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f048192: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f054163: 'error, China, Dongguan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f055102: 'error, Vietman, Ho Chi Minh City + China', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f056226: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f057115: 'error, China, Nanyang', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f057466: 'error, China, Guangzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f058000: 'error, China, Suzhou', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f060693: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f061158: 'error, China, Guangdong', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f062981: 'error, China, Sichuan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f063996: 'error, China, Sichuan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f065103: 'error, USA, Portland + China, Shenzhen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f067170: 'error, China, Jiangmen', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f067721: 'error, China, Beijing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f068096: 'error, China, Sichuan', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f070475: 'error, China, Guyuan', // stream reset
+  f079425: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f080444: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f080468: 'error, NR', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f082356: 'error, China, Jiaxing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f083638: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f085904: 'error, China, Chongqing', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
   f086423: 'error, China, Chengdu', // failed to initiate data transfer: deal data transfer failed: channel removed due to inactivity
+  f087807: 'error, Korea', // deal failed: (State=26) error calling node: AddFunds errored: handler: websocket connection closed
+  f089210: 'error, Korea, Gyeonggi-do', // deal failed: (State=26) error calling node: AddFunds errored: failed to load message: blockstore: block not found
+  f089311: 'error, Korea, Gyeonggi-do', // deal failed: (State=26) error calling node: AddFunds errored: failed to load message: blockstore: block not found
 
   // Backoff
 
