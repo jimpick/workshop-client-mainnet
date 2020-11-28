@@ -34,7 +34,7 @@ const annotations = {
   f014409: 'active, USA, Waxhaw, Meatball Part III', // 1369650
   f014768: 'active, Singapore, Funktafide, @Funk', // 1369677
   f018501: 'active, China, Beijing', // 1369612
-  f020523: 'active, China, Suzhou', // 1369474
+  f020523: 'active, China, Suzhou, changjiang', // 1369474
   f022308: 'active, China, Shenzhen', // 1369555
   f022352: 'active, Norway, Borgen, TechHedge, @Reiers', // 1369486
   f022522: 'active, China, Dongguan', // 1369628
@@ -69,7 +69,7 @@ const annotations = {
 
   // Sealing (active-sealing = previously active, retesting with new deal)
 
-  f03488: 'active-sealing, Korea, Geumcheon-gu', // 1376828
+  f03488: 'active-sealing, Korea, Geumcheon-gu, we4u', // 1376828
   f010446: 'active-sealing, Netherlands, Angelo', // 1376947
   f019243: 'active-sealing, USA, Jackson', // 1376841
   f020378: 'active-sealing, Bulgaria, Asenovgrad', // 1376937
@@ -118,7 +118,7 @@ const annotations = {
   f019029: 'sealing, Serbia, Boljevac', // 1376967
   f019104: 'sealing, Canada, Chambly, NBFS DEV', // 1376845
   f019240: 'sealing, China, Beijing', // 1376857
-  f019362: 'sealing, China, Hangzhou', // 1376864
+  f019362: 'sealing, China, Hangzhou, 青青子衿', // 1376864
   f020385: 'sealing, Korea, Incheon', // 1376952
   f020489: 'sealing, China, Lioaning', // 1376945
   f022130: 'sealing, Korea, Seodaemun-gu', // 1370048
@@ -129,7 +129,7 @@ const annotations = {
   f034777: 'sealing, China, Chengdu', // 1369503
   f035436: 'sealing, China, Jiangsu', // 1369532
   f047978: 'sealing, Korea, Seoul', // 1376934
-  f048135: 'sealing, China, Chongqing', // 1369739
+  f048135: 'sealing, China, Chongqing, password interstellar', // 1369739
   f048172: 'sealing, China, Suzhou', // 1376865
   f048192: 'sealing, China, Suzhou', // 1376899
   f050022: 'sealing, China, Changsha', // 1376878

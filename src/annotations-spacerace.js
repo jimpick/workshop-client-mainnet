@@ -12,7 +12,55 @@
 const annotations = {
   // New
 
+  f034666: 'new, NR',
   f065259: 'new, NR', // carry-over
+  f073904: 'new, NR',
+  f080468: 'new, NR',
+  f080868: 'new, NR',
+  f081969: 'new, NR',
+  f082095: 'new, NR',
+  f082730: 'new, NR',
+  f083419: 'new, NR',
+  f083474: 'new, NR',
+  f083542: 'new, NR',
+  f083920: 'new, NR',
+  f084155: 'new, NR',
+  f084419: 'new, NR',
+  f084879: 'new, Korea, Seongnam-si',
+  f084907: 'new, NR',
+  f085226: 'new, Korea, Busan',
+  f085415: 'new, NR',
+  f085435: 'new, NR',
+  f085437: 'new, NR',
+  f085710: 'new, China, Chengdu',
+  f085735: "new, China, Ya'an",
+  f085899: 'new, China, Wuxi',
+  f085904: 'new, China, Chongqing',
+  f086028: 'new, NR',
+  f086151: 'new, China, Dongguan',
+  f086204: 'new, NR',
+  f086240: 'new, NR',
+  f086366: 'new, NR',
+  f086381: 'new, NR',
+  f086423: 'new, China, Chengdu',
+  f086439: 'new, NR',
+  f086442: 'new, NR',
+  f086450: 'new, NR',
+  f086572: 'new, NR',
+  f086610: 'new, Korea, Gyeonggi-do',
+  f086631: 'new, Korea, Gwangju',
+  f086988: 'new, NR',
+  f087256: 'new, NR',
+  f087442: 'new, Korea, Gyeonggi-do',
+  f087530: 'new, China, Shenzhen',
+  f087807: 'new, Korea',
+  f087931: 'new, China, Beijing',
+  f088305: 'new, Korea, Gyeonggi-do',
+  f088404: 'new, Korea, Gyeonggi-do',
+  f089201: 'new, Korea, Gyeonggi-do',
+  f089210: 'new, Korea, Gyeonggi-do',
+  f089232: 'new, China, Ningxia',
+  f089311: 'new, Korea, Gyeonggi-do',
 
   // Active
 
@@ -33,7 +81,7 @@ const annotations = {
   f019240: 'active, China, Beijing', // 1372362 about 12 hours
   f019243: 'active, USA, Jackson', // 1372353 about 11 hours
   f019806: 'active, China, Beijing', // 1372500 about 8 hours
-  f020523: 'active, China, Suzhou', // 1372357 about 6 hours
+  f020523: 'active, China, Suzhou, changjiang', // 1372357 about 6 hours
   f021716: 'active, New Zealand, Wellington', // 1372355 about 11 hours
   f022142: 'active, USA, Queens, Nelson SR2', // 1372397 about 21 hours
   f022308: 'active, China, Shenzhen', // 1372349 about 21 hours
@@ -43,7 +91,7 @@ const annotations = {
   f042567: 'active, China, Jinhua', // 1372309 about 21 hours
   f044160: 'active, China, Guangzhou, muxing', // 1372370 about 21 hours
   f047419: 'active, USA, Waukesha', // 1372365 about 11 hours
-  f048135: 'active, China, Chongqing', // 1372374 about 21 hours
+  f048135: 'active, China, Chongqing, password interstellar', // 1372374 about 21 hours
   f050022: 'active, China, Changsha', // 1372381 about 21 hours
   f057115: 'active, China, Nanyang', // 1372377 about 9 hours
   f057466: 'active, China, Guangzhou', // 1372378 about 21 hours
@@ -91,7 +139,7 @@ const annotations = {
   f016511: 'sealing, China, Beijing', // 1372401
   f016594: 'sealing, Germany', // 1372344
   f019029: 'sealing, Serbia, Boljevac', // 1372348
-  f019362: 'sealing, China, Hangzhou', // 1372352
+  f019362: 'sealing, China, Hangzhou, 青青子衿', // 1372352
   f019437: 'sealing, Korea, Guro-gu', // 1372639
   f022261: 'sealing, China, Luzhou', // 1372359
   f023009: 'sealing, USA, Berkeley, M32 Grenade Launcher', // 1372354
@@ -226,7 +274,7 @@ const annotations = {
   f03274: 'min-ask, USA, Portland, 6block', // 20000000 < 122070312500000
   f03275: 'min-ask, USA, Portland, 6block', // 20000000 < 122070312500000
   f03328: 'min-ask, China, Xinxiang, Golden Miner', // 20000000 < 122070312500000000000000000
-  f03488: 'min-ask, Korea, Geumcheon-gu', // 20000000 < 36621093
+  f03488: 'min-ask, Korea, Geumcheon-gu, we4u', // 20000000 < 36621093
   f03491: 'min-ask, China, Hong Kong', // 20000000 < 122070312500000
   f05315: 'min-ask, USA, Portland, 6block', // 20000000 < 122070312500000
   f05316: 'min-ask, USA, Portland, 6block', // 20000000 < 122070312500000
