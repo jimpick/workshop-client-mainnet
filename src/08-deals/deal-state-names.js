@@ -29,6 +29,7 @@ const dealStateNames = [
   'Error', // 26
   'ProviderTransferRestart', // 27
   'ClientTransferRestart', // 28
+  'AwaitingPreCommit', // 29
 ]
 
 export default dealStateNames

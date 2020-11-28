@@ -78,7 +78,7 @@ const annotations = {
   f022163: 'active-sealing, dns:fil.akasha.network', // 1376960
   f025007: 'active-sealing, Korea, Gyeonggi-do', // 1376860
   f054677: 'active-sealing, Finland, Helsinki', // 1376863
-  f055102: 'active-sealing, NR', // 1369600
+  f055102: 'active-sealing, Vietman, Ho Chi Minh City + China', // 1369600
   f058000: 'active-sealing, China, Suzhou', // 1369588
   f067170: 'active-sealing, China, Jiangmen', // 1369579
   f079817: "active-sealing, Russia, Ul'yanovka", // 1376873
@@ -109,7 +109,7 @@ const annotations = {
   f010523: 'sealing, China, Beijing, Interstellar Roewe', // 1376840
   f010528: 'sealing, China, Chongqing, Interstellar Roewe', // 1369515
   f014394: 'sealing, China, Suzhou, IPFSCloud', // 1376965
-  f014569: 'sealing, NR', // 1376942
+  f014569: 'sealing, China, Yangzhou', // 1376942
   f015877: 'sealing, China, Jiaxing + USA', // 1376852
   f015897: 'sealing, China, Guangdong', // 1376890
   f015927: 'sealing, USA, East Islip, CDImine', // 1376918
