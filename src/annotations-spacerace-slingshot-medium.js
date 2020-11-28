@@ -38,62 +38,62 @@ const annotations = {
   f02576: 'sealing, Denmark, Gjerlev, BenjaminH', // 1388474
   f09693: 'sealing, USA, Portland + Singapore, 6block-CapsuleMining', // 1388014
   f010241: 'sealing, China, Beijing + USA, Portland', // 1388164
+  f015897: 'sealing, China, Guangdong', // 1389536
   f019100: 'sealing, Romania, Cluj-Napoca, noisyfan', // 1388425
   f019824: 'sealing, USA', // 1388742
   f020385: 'sealing, Korea, Incheon', // 1388428
+  f022130: 'sealing, Korea, Seodaemun-gu', // 1389113
   f024156: 'sealing, USA', // 1389073
   f049882: 'sealing, Netherlands, De Rijp', // 1388473
   f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 1388228
+  f058374: 'sealing, USA', // 1389247
   f062318: 'sealing, Korea, Naju', // 1388234
+  f065280: 'sealing, Korea, Songpa-gu', // 1389712
   f066596: 'sealing, USA, San Diego', // 1388356
   f067545: 'sealing, Canada, Kitchener', // 1388629
   f079817: "sealing, Russia, Ul'yanovka", // 1388211
   f080480: 'sealing, Ukraine, Lviv', // 1389139
+  f083550: 'sealing, Korea, Hwaseong-si', // 1389308
 
   // Stuck
 
-  f02423: 'stuck, Ukraine, Kyiv, igowreck', // CheckForAcceptance: about 10 hours
-  f02665: 'stuck, Netherlands, Amsterdam, fm-ops', // CheckForAcceptance: about 8 hours
-  f03224: 'stuck, Ukraine, Irpin, oboltusov', // CheckForAcceptance: about 9 hours
-  f08285: 'stuck, Latvia, Riga, stander', // CheckForAcceptance: about 10 hours
-  f08482: 'stuck, USA, Athol, @why', // CheckForAcceptance: about 9 hours
-  f010513: 'stuck, China, Chongqing', // Transferring: about 10 hours
-  f015747: 'stuck, Japan, Setagaya-ku', // Transferring: about 9 hours
-  f015897: 'stuck, China, Guangdong', // CheckForAcceptance: about 9 hours
-  f016594: 'stuck, Germany', // CheckForAcceptance: about 9 hours
-  f022130: 'stuck, Korea, Seodaemun-gu', // CheckForAcceptance: about 9 hours
-  f022163: 'stuck, dns:fil.akasha.network', // CheckForAcceptance: about 8 hours
-  f023467: 'stuck, Norway, Oslo, PhiMining.io', // CheckForAcceptance: about 9 hours
-  f025007: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 10 hours
-  f054677: 'stuck, Finland, Helsinki', // CheckForAcceptance: about 9 hours
-  f057842: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 10 hours
-  f058374: 'stuck, USA', // CheckForAcceptance: about 10 hours
-  f062204: 'stuck, China, Hong Kong', // CheckForAcceptance: about 9 hours
-  f063173: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 9 hours
-  f064668: 'stuck, China, Hong Kong', // CheckForAcceptance: about 9 hours
-  f065141: 'stuck, China, Fuzhou', // Transferring: about 9 hours
-  f065280: 'stuck, Korea, Songpa-gu', // CheckForAcceptance: about 9 hours
-  f065732: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 10 hours
-  f066566: 'stuck, Korea, Gwangju', // CheckForAcceptance: about 9 hours
-  f066568: 'stuck, Korea, Gwangju', // CheckForAcceptance: about 10 hours
-  f066898: 'stuck, Japan, Bunkyo-ku', // CheckForAcceptance: about 9 hours
-  f067314: 'stuck, China, Ningbo', // Transferring: about 10 hours
-  f071190: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 9 hours
-  f073048: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 9 hours
-  f073535: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 10 hours
-  f073543: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 9 hours
-  f079847: 'stuck, China, Hong Kong', // CheckForAcceptance: about 9 hours
-  f081323: 'stuck, UK, Basildon', // CheckForAcceptance: about 10 hours
-  f083235: 'stuck, Serbia, Belgrade', // CheckForAcceptance: about 9 hours
-  f083550: 'stuck, Korea, Hwaseong-si', // CheckForAcceptance: about 10 hours
-  f085226: 'stuck, Korea, Busan', // CheckForAcceptance: about 9 hours
-  f085899: 'stuck, China, Wuxi', // Transferring: about 9 hours
-  f086610: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 9 hours
-  f087442: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 9 hours
-  f088305: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 9 hours
-  f088404: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 9 hours
-  f089201: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 9 hours
-  f089232: 'stuck, China, Ningxia', // CheckForAcceptance: about 10 hours
+  f02423: 'stuck, Ukraine, Kyiv, igowreck', // CheckForAcceptance: about 3 hours
+  f02665: 'stuck, Netherlands, Amsterdam, fm-ops', // CheckForAcceptance: about 3 hours
+  f03224: 'stuck, Ukraine, Irpin, oboltusov', // CheckForAcceptance: about 3 hours
+  f08285: 'stuck, Latvia, Riga, stander', // CheckForAcceptance: about 3 hours
+  f08482: 'stuck, USA, Athol, @why', // CheckForAcceptance: about 3 hours
+  f010513: 'stuck, China, Chongqing', // Transferring: about 3 hours
+  f015747: 'stuck, Japan, Setagaya-ku', // Transferring: about 3 hours
+  f016594: 'stuck, Germany', // CheckForAcceptance: about 3 hours
+  f022163: 'stuck, dns:fil.akasha.network', // CheckForAcceptance: about 3 hours
+  f023467: 'stuck, Norway, Oslo, PhiMining.io', // CheckForAcceptance: about 3 hours
+  f025007: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 3 hours
+  f054677: 'stuck, Finland, Helsinki', // CheckForAcceptance: about 3 hours
+  f057842: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 3 hours
+  f062204: 'stuck, China, Hong Kong', // CheckForAcceptance: about 3 hours
+  f063173: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 3 hours
+  f064668: 'stuck, China, Hong Kong', // CheckForAcceptance: about 3 hours
+  f065141: 'stuck, China, Fuzhou', // Transferring: about 3 hours
+  f065732: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 3 hours
+  f066566: 'stuck, Korea, Gwangju', // CheckForAcceptance: about 3 hours
+  f066568: 'stuck, Korea, Gwangju', // CheckForAcceptance: about 3 hours
+  f066898: 'stuck, Japan, Bunkyo-ku', // CheckForAcceptance: about 3 hours
+  f067314: 'stuck, China, Ningbo', // Transferring: about 3 hours
+  f071190: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 3 hours
+  f073048: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 3 hours
+  f073535: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 3 hours
+  f073543: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 3 hours
+  f079847: 'stuck, China, Hong Kong', // CheckForAcceptance: about 3 hours
+  f081323: 'stuck, UK, Basildon', // CheckForAcceptance: about 3 hours
+  f083235: 'stuck, Serbia, Belgrade', // CheckForAcceptance: about 3 hours
+  f085226: 'stuck, Korea, Busan', // CheckForAcceptance: about 3 hours
+  f085899: 'stuck, China, Wuxi', // Transferring: about 3 hours
+  f086610: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 3 hours
+  f087442: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 3 hours
+  f088305: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 3 hours
+  f088404: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 3 hours
+  f089201: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 3 hours
+  f089232: 'stuck, China, Ningxia', // CheckForAcceptance: about 3 hours
 
   // Min-size
 
