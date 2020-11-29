@@ -51,7 +51,7 @@ const annotations = {
   f024156: 'sealing, USA', // 1389073
   f030335: 'sealing, China, Fujian', // 1390250
   f033549: 'sealing, China, Quzhou', // 1390254
-  f049882: 'sealing, Netherlands, De Rijp', // 1388473
+  f049882: 'sealing, Netherlands, De Rijp, Chipz', // 1388473
   f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 1388228
   f058374: 'sealing, USA', // 1389247
   f062318: 'sealing, Korea, Naju', // 1388234

@@ -231,7 +231,7 @@ const annotations = {
   f047858: 'min-size, China, Wuhan', // 131072 < 134217728
   f048172: 'min-size, China, Suzhou', // 131072 < 134217728
   f048192: 'min-size, China, Suzhou', // 131072 < 134217728
-  f049882: 'min-size, Netherlands, De Rijp', // 131072 < 8388608
+  f049882: 'min-size, Netherlands, De Rijp, Chipz', // 131072 < 8388608
   f054677: 'min-size, Finland, Helsinki', // 131072 < 33554432
   f058000: 'min-size, China, Suzhou', // 131072 < 1048576
   f062353: 'min-size, Germany, Frankfurt', // 131072 < 536870912
