@@ -21,22 +21,39 @@ const annotations = {
 
   // Active
 
+  f01238: 'active, Vietnam, Hanoi, FILECOIN-VIETNAM', // 1388095 about 2 hours
   f08240: 'active, Russia, Novosibirsk, Rabinovitch', // 1388115 about 4 hours
+  f020385: 'active, Korea, Incheon', // 1388428 about 6 hours
   f022352: 'active, Norway, Borgen, TechHedge, @Reiers', // 1388017 about 3 hours
 
   // Sealing (active-sealing = previously active, retesting with new deal)
 
-  f01238: 'active-sealing, Vietnam, Hanoi, FILECOIN-VIETNAM', // 1388095
   f01278: 'active-sealing, USA, Grand Rapids, MiMiner', // 1388126
   f010479: 'active-sealing, France, Fontenay-sous-Bois, s0nik42', // 1388180
 
   // Sealing
 
   f01799: 'sealing, China, Jinan, TokenHome', // 1388210
+  f02423: 'sealing, Ukraine, Kyiv, igowreck', // 1391420
+  f02490: 'sealing, China, Fujian', // 1390547
   f02576: 'sealing, Denmark, Gjerlev, BenjaminH', // 1388474
+  f02665: 'sealing, Netherlands, Amsterdam, fm-ops', // 1391165
+  f02824: 'sealing, China, Chengdu', // 1390296
+  f02856: 'sealing, China, Chengdu', // 1390295
+  f03328: 'sealing, China, Xinxiang, Golden Miner', // 1390388
+  f03345: 'sealing, China, Fuzhou, chh', // 1390974
+  f04443: 'sealing, China, Shanghai, 罗良科技', // 1390886
+  f08103: 'sealing, China, Foshan, 花生酱肠粉', // 1390978
+  f08285: 'sealing, Latvia, Riga, stander', // 1390329
+  f08482: 'sealing, USA, Athol, @why', // 1390413
   f09693: 'sealing, USA, Portland + Singapore, 6block-CapsuleMining', // 1388014
+  f09848: 'sealing, USA, Irvine, BigBearLake', // 1390279
   f010241: 'sealing, China, Beijing + USA, Portland, 6Block-P', // 1388164
+  f010247: 'sealing, China, Yantai', // 1390932
   f010446: 'sealing, Netherlands, Angelo', // 1390249
+  f010513: 'sealing, China, Chongqing', // 1390298
+  f010523: 'sealing, China, Beijing, Interstellar Roewe', // 1390297
+  f010528: 'sealing, China, Chongqing, Interstellar Roewe', // 1390299
   f014768: 'sealing, Singapore, Funktafide, @Funk', // 1389967
   f015877: 'sealing, China, Jiaxing + USA', // 1390272
   f015897: 'sealing, China, Guangdong', // 1389536
@@ -44,85 +61,68 @@ const annotations = {
   f019104: 'sealing, Canada, Chambly, NBFS DEV', // 1390251
   f019824: 'sealing, USA', // 1388742
   f020378: 'sealing, Bulgaria, Asenovgrad', // 1390256
-  f020385: 'sealing, Korea, Incheon', // 1388428
+  f020436: 'sealing, China, Beijing', // 1390303
   f022130: 'sealing, Korea, Seodaemun-gu', // 1389113
+  f022142: 'sealing, USA, Queens, Nelson SR2', // 1391312
   f022261: 'sealing, China, Luzhou', // 1389968
   f022308: 'sealing, China, Shenzhen', // 1390248
+  f022853: 'sealing, China, Fuzhou', // 1390370
+  f023581: 'sealing, China, Hong Kong', // 1390498
   f024156: 'sealing, USA', // 1389073
+  f025017: 'sealing, China, Hefei, 一三科技-913', // 1390371
+  f025025: 'sealing, China, Qingdao', // 1390418
+  f030125: 'sealing, China, Nantong', // 1391158
   f030335: 'sealing, China, Fujian', // 1390250
   f033549: 'sealing, China, Quzhou', // 1390254
+  f048135: 'sealing, China, Chongqing, password interstellar', // 1390369
+  f048192: 'sealing, China, Suzhou', // 1390343
   f049882: 'sealing, Netherlands, De Rijp, Chipz', // 1388473
+  f050022: 'sealing, China, Changsha', // 1390979
+  f054677: 'sealing, Finland, Helsinki', // 1390485
   f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 1388228
+  f056226: 'sealing, NR', // 1391324
+  f058000: 'sealing, China, Suzhou', // 1390466
   f058374: 'sealing, USA', // 1389247
+  f060072: 'sealing, China, Chongqing', // 1390821
   f062318: 'sealing, Korea, Naju', // 1388234
+  f062981: 'sealing, China, Sichuan', // 1390377
+  f065103: 'sealing, USA, Portland + China, Shenzhen', // 1390276
   f065280: 'sealing, Korea, Songpa-gu, Data Store Ltd', // 1389712
   f066596: 'sealing, USA, San Diego', // 1388356
   f067545: 'sealing, Canada, Kitchener', // 1388629
+  f068096: 'sealing, China, Sichuan', // 1390300
+  f071914: 'sealing, China, Beijing', // 1390983
+  f076954: 'sealing, China, Shenzhen', // 1390476
+  f078425: 'sealing, Korea, Bucheon-si', // 1391210
   f079007: 'sealing, China, Jinan', // 1390252
+  f079425: 'sealing, NR', // 1390306
   f079817: "sealing, Russia, Ul'yanovka", // 1388211
+  f080103: 'sealing, Korea, Seongnam-si', // 1390292
   f080480: 'sealing, Ukraine, Lviv', // 1389139
+  f082698: "sealing, USA, Xi'an", // 1390439
   f083550: 'sealing, Korea, Hwaseong-si', // 1389308
+  f086631: 'sealing, Korea, Gwangju', // 1390420
+  f087931: 'sealing, China, Beijing', // 1390307
+  f088305: 'sealing, Korea, Gyeonggi-do', // 1390385
+  f088404: 'sealing, Korea, Gyeonggi-do', // 1390374
+  f089201: 'sealing, Korea, Gyeonggi-do', // 1391021
+  f089767: 'sealing, China, Changsha', // 1391171
+  f089942: 'sealing, Korea, Gyeonggi-do', // 1390529
 
   // Stuck
 
-  f02423: 'stuck, Ukraine, Kyiv, igowreck', // CheckForAcceptance: about 3 hours
-  f02490: 'stuck, China, Fujian', // ProposalAccepted: about 1 hour
-  f02665: 'stuck, Netherlands, Amsterdam, fm-ops', // ProposalAccepted: about 1 hour
-  f02824: 'stuck, China, Chengdu', // ProposalAccepted: about 2 hours
-  f02856: 'stuck, China, Chengdu', // ProposalAccepted: about 2 hours
-  f03328: 'stuck, China, Xinxiang, Golden Miner', // ProposalAccepted: about 1 hour
-  f03345: 'stuck, China, Fuzhou, chh', // ProposalAccepted: about 1 hour
-  f04443: 'stuck, China, Shanghai, 罗良科技', // ProposalAccepted: about 1 hour
-  f08103: 'stuck, China, Foshan, 花生酱肠粉', // ProposalAccepted: about 1 hour
-  f08285: 'stuck, Latvia, Riga, stander', // ProposalAccepted: about 2 hours
-  f08482: 'stuck, USA, Athol, @why', // ProposalAccepted: about 1 hour
-  f08532: 'stuck, USA', // FundsEnsured: about 3 hours
-  f09848: 'stuck, USA, Irvine, BigBearLake', // ProposalAccepted: about 2 hours
-  f010247: 'stuck, China, Yantai', // ProposalAccepted: about 1 hour
-  f010513: 'stuck, China, Chongqing', // ProposalAccepted: about 2 hours
-  f010523: 'stuck, China, Beijing, Interstellar Roewe', // ProposalAccepted: about 2 hours
-  f010528: 'stuck, China, Chongqing, Interstellar Roewe', // ProposalAccepted: about 2 hours
-  f020436: 'stuck, China, Beijing', // ProposalAccepted: about 2 hours
-  f020940: 'stuck, @fu', // Transferring: about 3 hours
-  f022142: 'stuck, USA, Queens, Nelson SR2', // CheckForAcceptance: about 3 hours
-  f022853: 'stuck, China, Fuzhou', // ProposalAccepted: about 2 hours
-  f023205: 'stuck, NR', // FundsEnsured: about 3 hours
-  f023581: 'stuck, China, Hong Kong', // ProposalAccepted: about 1 hour
-  f024101: 'stuck, China, Guiyang', // CheckForAcceptance: about 3 hours
-  f025017: 'stuck, China, Hefei, 一三科技-913', // ProposalAccepted: about 2 hours
-  f025025: 'stuck, China, Qingdao', // ProposalAccepted: about 1 hour
-  f030125: 'stuck, China, Nantong', // ProposalAccepted: about 1 hour
-  f046074: 'stuck, China, Shanghai', // FundsEnsured: about 3 hours
-  f048135: 'stuck, China, Chongqing, password interstellar', // ProposalAccepted: about 2 hours
-  f048192: 'stuck, China, Suzhou', // ProposalAccepted: about 2 hours
-  f050022: 'stuck, China, Changsha', // ProposalAccepted: about 1 hour
-  f054677: 'stuck, Finland, Helsinki', // ProposalAccepted: about 1 hour
-  f056226: 'stuck, NR', // CheckForAcceptance: about 3 hours
-  f056573: 'stuck, China, Sichuan', // CheckForAcceptance: about 3 hours
-  f057842: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 3 hours
-  f058000: 'stuck, China, Suzhou', // ProposalAccepted: about 1 hour
-  f060072: 'stuck, China, Chongqing', // ProposalAccepted: about 1 hour
-  f061158: 'stuck, China, Guangdong', // FundsEnsured: about 3 hours
-  f062981: 'stuck, China, Sichuan', // ProposalAccepted: about 1 hour
-  f063173: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 3 hours
-  f065103: 'stuck, USA, Portland + China, Shenzhen', // ProposalAccepted: about 2 hours
-  f066566: 'stuck, Korea, Gwangju', // CheckForAcceptance: about 3 hours
-  f068096: 'stuck, China, Sichuan', // ProposalAccepted: about 2 hours
-  f070475: 'stuck, China, Guyuan', // FundsEnsured: about 3 hours
-  f071914: 'stuck, China, Beijing', // ProposalAccepted: about 1 hour
-  f073535: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 3 hours
-  f076954: 'stuck, China, Shenzhen', // ProposalAccepted: about 1 hour
-  f078425: 'stuck, Korea, Bucheon-si', // ProposalAccepted: about 1 hour
-  f079425: 'stuck, NR', // ProposalAccepted: about 2 hours
-  f080103: 'stuck, Korea, Seongnam-si', // ProposalAccepted: about 2 hours
-  f082698: "stuck, USA, Xi'an", // ProposalAccepted: about 1 hour
-  f086631: 'stuck, Korea, Gwangju', // ProposalAccepted: about 1 hour
-  f087931: 'stuck, China, Beijing', // ProposalAccepted: about 2 hours
-  f088305: 'stuck, Korea, Gyeonggi-do', // ProposalAccepted: about 1 hour
-  f088404: 'stuck, Korea, Gyeonggi-do', // ProposalAccepted: about 2 hours
-  f089201: 'stuck, Korea, Gyeonggi-do', // ProposalAccepted: about 1 hour
-  f089767: 'stuck, China, Changsha', // ProposalAccepted: about 1 hour
-  f089942: 'stuck, Korea, Gyeonggi-do', // ProposalAccepted: about 1 hour
+  f08532: 'stuck, USA', // FundsEnsured: about 5 hours
+  f020940: 'stuck, @fu', // Transferring: about 5 hours
+  f023205: 'stuck, NR', // FundsEnsured: about 5 hours
+  f024101: 'stuck, China, Guiyang', // CheckForAcceptance: about 5 hours
+  f046074: 'stuck, China, Shanghai', // FundsEnsured: about 5 hours
+  f056573: 'stuck, China, Sichuan', // CheckForAcceptance: about 5 hours
+  f057842: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 5 hours
+  f061158: 'stuck, China, Guangdong', // FundsEnsured: about 5 hours
+  f063173: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 5 hours
+  f066566: 'stuck, Korea, Gwangju', // CheckForAcceptance: about 5 hours
+  f070475: 'stuck, China, Guyuan', // FundsEnsured: about 5 hours
+  f073535: 'stuck, Korea, Gyeonggi-do', // FundsEnsured: about 5 hours
 
   // Min-size
 
