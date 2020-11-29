@@ -50,7 +50,7 @@ const annotations = {
   f060072: 'active, China, Chongqing', // 1390821 about 2 hours
   f065103: 'active, USA, Portland + China, Shenzhen', // 1390276 about 5 hours
   f066596: 'active, USA, San Diego', // 1388356 about 3 hours
-  f066898: 'active, Japan, Bunkyo-ku', // 1391372 about 2 hours
+  f066898: 'active, Japan, Bunkyo-ku, @visvirial', // 1391372 about 2 hours
   f067545: 'active, Canada, Kitchener', // 1388629 about 2 hours
   f079425: 'active, NR', // 1390306 about 2 hours
   f079817: "active, Russia, Ul'yanovka", // 1388211 about 4 hours
@@ -109,7 +109,7 @@ const annotations = {
   f062981: 'sealing, China, Sichuan', // 1390377
   f065280: 'sealing, Korea, Songpa-gu, Data Store Ltd', // 1389712
   f066566: 'sealing, Korea, Gwangju', // 1392328
-  f066568: 'sealing, Korea, Gwangju', // 1392251
+  f066568: 'sealing, Korea, Gwangju, aoc-0002', // 1392251
   f067170: 'sealing, China, Jiangmen', // 1391319
   f071914: 'sealing, China, Beijing', // 1390983
   f076954: 'sealing, China, Shenzhen', // 1390476
