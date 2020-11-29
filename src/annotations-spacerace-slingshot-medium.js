@@ -67,7 +67,7 @@ const annotations = {
   f022261: 'sealing, China, Luzhou', // 1389968
   f022308: 'sealing, China, Shenzhen', // 1390248
   f022853: 'sealing, China, Fuzhou', // 1390370
-  f023581: 'sealing, China, Hong Kong', // 1390498
+  f023581: 'sealing, China, Hong Kong, mine-much', // 1390498
   f024156: 'sealing, USA', // 1389073
   f025017: 'sealing, China, Hefei, 一三科技-913', // 1390371
   f025025: 'sealing, China, Qingdao', // 1390418
