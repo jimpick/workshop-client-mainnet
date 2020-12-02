@@ -2,7 +2,7 @@ import { useEffect, useState, useMemo } from 'react'
 import { useImmer } from 'use-immer'
 import useLotusClient from './use-lotus-client'
 
-const interval = 30 * 1000
+const interval = 5 * 60 * 1000
 const expireAfter = 7 * 24 * 60 * 60 * 1000 // 7 days
 
 const terminalStates = new Set([
@@ -12,7 +12,7 @@ const terminalStates = new Set([
 
 export default function useDealMonitor ({ appState, updateAppState }) {
   const { deals, dealData } = appState
-  const [currentNode, setCurrentNode] = useState(0)
+  const [currentNode, setCurrentNode] = useState(1)
   const [ticker, setTicker] = useState(0)
   const [terminated, updateTerminated] = useImmer({})
   const [checkSet, updateCheckset] = useImmer({})
@@ -67,7 +67,8 @@ export default function useDealMonitor ({ appState, updateAppState }) {
   useEffect(() => {
     let state = { canceled: false }
     async function run () {
-      const nodes = Object.keys(checkSet)
+      // const nodes = Object.keys(checkSet)
+      const nodes = [ 1 ]
       if (nodes.length > 0) {
         for (const node of nodes) {
           if (state.canceled) return
@@ -101,7 +102,7 @@ export default function useDealMonitor ({ appState, updateAppState }) {
         if (state.canceled) return
         console.log('Jim clientListDeals', currentNode)
         const clientDeals = await client.clientListDeals()
-        console.log('Jim clientListDeals done', clientDeals.length, currentNode, Math.floor((Date.now() - now) / 1000) + 's')
+        console.log('Jim clientListDeals done', currentNode, clientDeals.length, Math.floor((Date.now() - now) / 1000) + 's')
         // console.log('Jim clientListDeals', clientDeals)
         // console.log('Jim clientListDeals', clientDeals)
         updateAppState(draft => {

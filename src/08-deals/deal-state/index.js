@@ -88,6 +88,15 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
   if (lastDealState === 'Transferring') {
     return ['stuck', `Transferring: ${elapsedNow}`]
   }
+  if (lastDealState === 'EnsureClientFunds') {
+    return ['stuck', `EnsureClientFunds: ${elapsedNow}`]
+  }
+  if (lastDealState === 'ClientFunding') {
+    return ['stuck', `ClientFunding: ${elapsedNow}`]
+  }
+  if (lastDealState === 'StartDataTransfer') {
+    return ['stuck', `StartDataTransfer: ${elapsedNow}`]
+  }
   if (lastDealState === 'CheckForAcceptance') {
     return ['stuck', `CheckForAcceptance: ${elapsedNow}`]
   }
@@ -100,7 +109,11 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
   if (lastDealState === 'ClientTransferRestart') {
     return ['stuck', `ClientTransferRestart: ${elapsedNow}`]
   }
-  if (lastDealState === 'Error') {
+  if (lastDealState === 'Error' || lastDealState === 'Failing') {
+    const matchFailingDataTransferProvider = dealMessage.match(/channel removed due to inactivity/)
+    if (matchFailingDataTransferProvider) {
+      return ['xfr-failed', '']
+    }
     const matchRetest = dealMessage.match(
       /adding market funds failed: mpool push: failed to push message: not enough funds including pending messages/
     )
@@ -134,6 +147,12 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
     )
     if (matchMinSize) {
       return ['min-size', matchMinSize[1].trim()]
+    }
+    const matchMaxSize = dealMessage.match(
+      /piece size more than maximum allowed size: (.*)/
+    )
+    if (matchMaxSize) {
+      return ['max-size', matchMaxSize[1].trim()]
     }
     const matchMinAsk = dealMessage.match(
       /storage price per epoch less than asking price: (.*)/
@@ -430,7 +449,7 @@ export default function DealList ({ appState, cid, dealType }) {
   }, [client])
 
   const newerDeals = useMemo(() => {
-    const cutoff = subHours(new Date(), 4 * 24)
+    const cutoff = subHours(new Date(), 3 * 24)
     // return originalDeals
     return (
       originalDeals &&
@@ -464,7 +483,9 @@ export default function DealList ({ appState, cid, dealType }) {
       'stuck',
       'busy',
       'min-size',
+      'max-size',
       'min-ask',
+      'xfr-failed',
       'error',
       'backoff',
       'rejected',
@@ -483,7 +504,9 @@ export default function DealList ({ appState, cid, dealType }) {
       'sealing',
       'stuck',
       'min-size',
+      'max-size',
       'min-ask',
+      'xfr-failed',
       'error',
       'backoff',
       'rejected',
