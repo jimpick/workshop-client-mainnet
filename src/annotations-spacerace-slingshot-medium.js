@@ -42,7 +42,7 @@ const annotations = {
   f010241: 'sealing, China, Beijing + USA, Portland, 6Block-P', // 1409867
   f010479: 'sealing, France, Fontenay-sous-Bois, s0nik42', // 1410388
   f019824: 'sealing, USA', // 1410113
-  f025007: 'sealing, Korea, Gyeonggi-do', // 1409877
+  f025007: 'sealing, Korea, Gyeonggi-do, PINBYTES-eCUBE', // 1409877
   f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1409866
   f065280: 'sealing, Korea, Songpa-gu, Data Store Ltd', // 1409881
   f089840: 'sealing, Korea, Yeongdeungpo-gu', // 1409883

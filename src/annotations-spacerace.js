@@ -303,7 +303,7 @@ const annotations = {
   f024148: 'min-ask, China, Fuzhou', // 20000000 < 12206909179687500000
   f024156: 'min-ask, USA', // 20000000 < 12207031250000
   f024972: 'min-ask, undefined', // 20000000 < 122070312500000
-  f025007: 'min-ask, Korea, Gyeonggi-do', // 20000000 < 122070312500000
+  f025007: 'min-ask, Korea, Gyeonggi-do, PINBYTES-eCUBE', // 20000000 < 122070312500000
   f029344: 'min-ask, Korea, Seongnam-si', // 20000000 < 1220703125000
   f029401: 'min-ask, USA, Portland + New Castle', // 20000000 < 122070312500000
   f029404: 'min-ask, USA, Portland + New Castle', // 20000000 < 122070312500000
