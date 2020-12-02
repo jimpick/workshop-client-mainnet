@@ -28,7 +28,7 @@ const annotations = {
   // Sealing
 
   f01799: 'sealing, China, Jinan, TokenHome', // 1409872
-  f02540: 'sealing, USA, Rochester, @there', // 1409783
+  f02540: 'sealing, USA, Rochester, @there, Foundry', // 1409783
   f03328: 'sealing, China, Xinxiang, Golden Miner', // 1409795
   f03339: 'sealing, China, Luzhou, benxun', // 1409756
   f08019: 'sealing, China, Yantai, 三合', // 1409781

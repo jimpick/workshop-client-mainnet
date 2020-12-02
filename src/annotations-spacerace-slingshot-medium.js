@@ -20,57 +20,57 @@ const annotations = {
 
   // Active
 
+  f08240: 'active, Russia, Novosibirsk, Rabinovitch', // 1409876 about 5 hours
+  f09693: 'active, USA, Portland + Singapore, 6block-CapsuleMining', // 1409868 about 15 hours
   f023467: 'active, Norway, Oslo, PhiMining.io', // 1409879 about 2 hours
+  f025007: 'active, Korea, Gyeonggi-do, PINBYTES-eCUBE', // 1409877 about 3 hours
   f065103: 'active, USA, Portland + China, Shenzhen', // 1409823 about 4 hours
+  f065280: 'active, Korea, Songpa-gu, Data Store Ltd', // 1409881 about 8 hours
+  f079817: "active, Russia, Ul'yanovka", // 1409896 about 5 hours
   f080480: 'active, Ukraine, Lviv', // 1409869 about 2 hours
 
   // Sealing (active-sealing = previously active, retesting with new deal)
 
-  f08240: 'active-sealing, Russia, Novosibirsk, Rabinovitch', // 1409876
-  f09693: 'active-sealing, USA, Portland + Singapore, 6block-CapsuleMining', // 1409868
   f09848: 'active-sealing, USA, Irvine, BigBearLake', // 1409826
   f014768: 'active-sealing, Singapore, Funktafide, @Funk', // 1409809
   f019100: 'active-sealing, Romania, Cluj-Napoca, noisyfan', // 1409852
   f049882: 'active-sealing, Netherlands, De Rijp, Chipz', // 1409875
   f066596: 'active-sealing, USA, San Diego', // 1409878
   f067545: 'active-sealing, Canada, Kitchener', // 1409851
-  f079817: "active-sealing, Russia, Ul'yanovka", // 1409896
 
   // Sealing
 
-  f02540: 'sealing, USA, Rochester, @there', // 1409870
+  f02540: 'sealing, USA, Rochester, @there, Foundry', // 1409870
   f010241: 'sealing, China, Beijing + USA, Portland, 6Block-P', // 1409867
   f010479: 'sealing, France, Fontenay-sous-Bois, s0nik42', // 1410388
+  f015927: 'sealing, USA, East Islip, CDImine', // 1410282
   f019824: 'sealing, USA', // 1410113
-  f025007: 'sealing, Korea, Gyeonggi-do, PINBYTES-eCUBE', // 1409877
   f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1409866
-  f065280: 'sealing, Korea, Songpa-gu, Data Store Ltd', // 1409881
   f089840: 'sealing, Korea, Yeongdeungpo-gu', // 1409883
 
   // Stuck
 
-  f02665: 'stuck, Netherlands, Amsterdam, fm-ops', // CheckForAcceptance: about 10 hours
-  f08285: 'stuck, Latvia, Riga, stander', // CheckForAcceptance: about 10 hours
-  f08403: 'stuck, UK, Lower Slaughter, TippyFlits', // StartDataTransfer: about 10 hours
-  f08482: 'stuck, USA, Athol, @why', // CheckForAcceptance: about 10 hours
-  f010523: 'stuck, China, Beijing, Interstellar Roewe', // ClientTransferRestart: about 9 hours
-  f015927: 'stuck, USA, East Islip, CDImine', // CheckForAcceptance: about 10 hours
-  f016594: 'stuck, Germany', // CheckForAcceptance: about 10 hours
-  f019240: 'stuck, China, Beijing', // Transferring: about 9 hours
-  f019243: 'stuck, USA, Jackson', // CheckForAcceptance: about 10 hours
-  f022163: 'stuck, dns:fil.akasha.network', // CheckForAcceptance: about 10 hours
-  f022522: 'stuck, China, Dongguan', // Transferring: about 10 hours
-  f023971: 'stuck, USA, @Brian Y', // CheckForAcceptance: about 10 hours
-  f042567: 'stuck, China, Jinhua', // Transferring: about 10 hours
-  f054677: 'stuck, Finland, Helsinki', // CheckForAcceptance: about 10 hours
-  f058000: 'stuck, China, Suzhou', // Transferring: about 10 hours
-  f066568: 'stuck, Korea, Gwangju, aoc-0002', // CheckForAcceptance: about 10 hours
-  f066898: 'stuck, Japan, Bunkyo-ku, @visvirial', // CheckForAcceptance: about 10 hours
-  f078425: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 10 hours
-  f083235: 'stuck, Serbia, Belgrade', // CheckForAcceptance: about 10 hours
-  f088305: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 10 hours
-  f089767: 'stuck, China, Changsha', // Transferring: about 9 hours
-  f091139: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 10 hours
+  f02665: 'stuck, Netherlands, Amsterdam, fm-ops', // CheckForAcceptance: about 15 hours
+  f08285: 'stuck, Latvia, Riga, stander', // CheckForAcceptance: about 16 hours
+  f08403: 'stuck, UK, Lower Slaughter, TippyFlits', // CheckForAcceptance: about 2 hours
+  f08482: 'stuck, USA, Athol, @why', // CheckForAcceptance: about 15 hours
+  f010523: 'stuck, China, Beijing, Interstellar Roewe', // ClientTransferRestart: about 14 hours
+  f016594: 'stuck, Germany', // CheckForAcceptance: about 15 hours
+  f019240: 'stuck, China, Beijing', // CheckForAcceptance: 3 minutes
+  f019243: 'stuck, USA, Jackson', // CheckForAcceptance: about 16 hours
+  f022163: 'stuck, dns:fil.akasha.network', // CheckForAcceptance: about 16 hours
+  f022522: 'stuck, China, Dongguan', // CheckForAcceptance: 3 minutes
+  f023971: 'stuck, USA, @Brian Y', // CheckForAcceptance: about 16 hours
+  f042567: 'stuck, China, Jinhua', // ClientTransferRestart: 8 minutes
+  f054677: 'stuck, Finland, Helsinki', // CheckForAcceptance: about 15 hours
+  f058000: 'stuck, China, Suzhou', // ClientTransferRestart: 8 minutes
+  f066568: 'stuck, Korea, Gwangju, aoc-0002', // CheckForAcceptance: about 16 hours
+  f066898: 'stuck, Japan, Bunkyo-ku, @visvirial', // CheckForAcceptance: about 16 hours
+  f078425: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 15 hours
+  f083235: 'stuck, Serbia, Belgrade', // CheckForAcceptance: about 15 hours
+  f088305: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 15 hours
+  f089767: 'stuck, China, Changsha', // Transferring: about 14 hours
+  f091139: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 16 hours
 
   // Min-size
 
