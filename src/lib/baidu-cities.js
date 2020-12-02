@@ -21,6 +21,7 @@ const baiduCities = {
   76: "Ya'an", // 雅安市
   77: 'Meishan', // 眉山市
   90: 'Ili', // 伊犁哈萨克自治州
+  95: 'Karamay', // 克拉玛依市
   111: 'Dali', // 大理白族自治州
   119: 'Dongguan', // 东莞市
   127: 'Hefei', // 合肥市
@@ -65,6 +66,7 @@ const baiduCities = {
   264: 'Zhangjiakou', // 张家口市
   259: 'Jieyang', // 揭阳市
   268: 'Zhengzhou', // 郑州市
+  277: 'Suqian', // 宿迁市
   283: 'Ordos', // 鄂尔多斯市
   287: 'Weifang', // 潍坊市
   288: 'Jinan', // 济南市
