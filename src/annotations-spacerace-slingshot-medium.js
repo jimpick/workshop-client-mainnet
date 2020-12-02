@@ -20,6 +20,10 @@ const annotations = {
 
   // Active
 
+  f023467: 'active, Norway, Oslo, PhiMining.io', // 1409879 about 2 hours
+  f065103: 'active, USA, Portland + China, Shenzhen', // 1409823 about 4 hours
+  f080480: 'active, Ukraine, Lviv', // 1409869 about 2 hours
+
   // Sealing (active-sealing = previously active, retesting with new deal)
 
   f08240: 'active-sealing, Russia, Novosibirsk, Rabinovitch', // 1409876
@@ -28,7 +32,6 @@ const annotations = {
   f014768: 'active-sealing, Singapore, Funktafide, @Funk', // 1409809
   f019100: 'active-sealing, Romania, Cluj-Napoca, noisyfan', // 1409852
   f049882: 'active-sealing, Netherlands, De Rijp, Chipz', // 1409875
-  f065103: 'active-sealing, USA, Portland + China, Shenzhen', // 1409823
   f066596: 'active-sealing, USA, San Diego', // 1409878
   f067545: 'active-sealing, Canada, Kitchener', // 1409851
   f079817: "active-sealing, Russia, Ul'yanovka", // 1409896
@@ -37,61 +40,37 @@ const annotations = {
 
   f02540: 'sealing, USA, Rochester, @there', // 1409870
   f010241: 'sealing, China, Beijing + USA, Portland, 6Block-P', // 1409867
-  f023467: 'sealing, Norway, Oslo, PhiMining.io', // 1409879
+  f010479: 'sealing, France, Fontenay-sous-Bois, s0nik42', // 1410388
+  f019824: 'sealing, USA', // 1410113
   f025007: 'sealing, Korea, Gyeonggi-do', // 1409877
   f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1409866
   f065280: 'sealing, Korea, Songpa-gu, Data Store Ltd', // 1409881
-  f080480: 'sealing, Ukraine, Lviv', // 1409869
   f089840: 'sealing, Korea, Yeongdeungpo-gu', // 1409883
 
   // Stuck
 
-  f01240: 'stuck, Netherlands, HidNand', // CheckForAcceptance: about 1 hour
-  f01287: 'stuck, China, Jiaxing, MaiTian', // Transferring: about 2 hours
-  f01799: 'stuck, China, Jinan, TokenHome', // Transferring: about 2 hours
-  f02665: 'stuck, Netherlands, Amsterdam, fm-ops', // CheckForAcceptance: about 2 hours
-  f03339: 'stuck, China, Luzhou, benxun', // Transferring: about 2 hours
-  f07819: 'stuck, China, Wuxi, YC--wuxi', // Transferring: about 2 hours
-  f08285: 'stuck, Latvia, Riga, stander', // CheckForAcceptance: about 2 hours
-  f08403: 'stuck, UK, Lower Slaughter, TippyFlits', // StartDataTransfer: about 2 hours
-  f08482: 'stuck, USA, Athol, @why', // CheckForAcceptance: about 2 hours
-  f010479: 'stuck, France, Fontenay-sous-Bois, s0nik42', // CheckForAcceptance: about 2 hours
-  f010491: 'stuck, China, Shenzhen', // Transferring: about 2 hours
-  f010523: 'stuck, China, Beijing, Interstellar Roewe', // ClientTransferRestart: 34 minutes
-  f014395: 'stuck, China, Dongguan', // Transferring: about 2 hours
-  f015927: 'stuck, USA, East Islip, CDImine', // CheckForAcceptance: about 2 hours
-  f016594: 'stuck, Germany', // CheckForAcceptance: about 2 hours
-  f019240: 'stuck, China, Beijing', // Transferring: 29 minutes
-  f019243: 'stuck, USA, Jackson', // CheckForAcceptance: about 2 hours
-  f019824: 'stuck, USA', // CheckForAcceptance: about 2 hours
-  f022163: 'stuck, dns:fil.akasha.network', // CheckForAcceptance: about 2 hours
-  f022261: 'stuck, China, Luzhou', // Transferring: about 2 hours
-  f022522: 'stuck, China, Dongguan', // Transferring: about 2 hours
-  f023971: 'stuck, USA, @Brian Y', // CheckForAcceptance: about 2 hours
-  f024511: 'stuck, China, Shenzhen', // Transferring: about 2 hours
-  f025017: 'stuck, China, Hefei, 一三科技-913', // Transferring: about 2 hours
-  f025019: 'stuck, China, Taiwan, Hsinchu', // CheckForAcceptance: about 2 hours
-  f030125: 'stuck, China, Nantong', // Transferring: about 2 hours
-  f030335: 'stuck, China, Fujian', // Transferring: about 2 hours
-  f033549: 'stuck, China, Quzhou', // Transferring: about 2 hours
-  f034701: 'stuck, China, Shenzhen', // Transferring: about 2 hours
-  f040218: 'stuck, China, Wuxi', // Transferring: about 2 hours
-  f042567: 'stuck, China, Jinhua', // Transferring: about 2 hours
-  f054677: 'stuck, Finland, Helsinki', // CheckForAcceptance: about 2 hours
-  f057127: 'stuck, China, Suzhou', // Transferring: 29 minutes
-  f058000: 'stuck, China, Suzhou', // Transferring: about 2 hours
-  f066568: 'stuck, Korea, Gwangju, aoc-0002', // CheckForAcceptance: about 2 hours
-  f066898: 'stuck, Japan, Bunkyo-ku, @visvirial', // CheckForAcceptance: about 2 hours
-  f078425: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 2 hours
-  f079425: 'stuck, NR', // Transferring: about 2 hours
-  f083235: 'stuck, Serbia, Belgrade', // CheckForAcceptance: about 2 hours
-  f083638: 'stuck, China, Chongqing', // Transferring: 29 minutes
-  f085899: 'stuck, China, Wuxi', // Transferring: about 2 hours
-  f086423: 'stuck, China, Chengdu', // Transferring: about 2 hours
-  f087931: 'stuck, China, Beijing', // Transferring: 29 minutes
-  f088305: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 2 hours
-  f089767: 'stuck, China, Changsha', // Transferring: 29 minutes
-  f091139: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 2 hours
+  f02665: 'stuck, Netherlands, Amsterdam, fm-ops', // CheckForAcceptance: about 10 hours
+  f08285: 'stuck, Latvia, Riga, stander', // CheckForAcceptance: about 10 hours
+  f08403: 'stuck, UK, Lower Slaughter, TippyFlits', // StartDataTransfer: about 10 hours
+  f08482: 'stuck, USA, Athol, @why', // CheckForAcceptance: about 10 hours
+  f010523: 'stuck, China, Beijing, Interstellar Roewe', // ClientTransferRestart: about 9 hours
+  f015927: 'stuck, USA, East Islip, CDImine', // CheckForAcceptance: about 10 hours
+  f016594: 'stuck, Germany', // CheckForAcceptance: about 10 hours
+  f019240: 'stuck, China, Beijing', // Transferring: about 9 hours
+  f019243: 'stuck, USA, Jackson', // CheckForAcceptance: about 10 hours
+  f022163: 'stuck, dns:fil.akasha.network', // CheckForAcceptance: about 10 hours
+  f022522: 'stuck, China, Dongguan', // Transferring: about 10 hours
+  f023971: 'stuck, USA, @Brian Y', // CheckForAcceptance: about 10 hours
+  f042567: 'stuck, China, Jinhua', // Transferring: about 10 hours
+  f054677: 'stuck, Finland, Helsinki', // CheckForAcceptance: about 10 hours
+  f058000: 'stuck, China, Suzhou', // Transferring: about 10 hours
+  f066568: 'stuck, Korea, Gwangju, aoc-0002', // CheckForAcceptance: about 10 hours
+  f066898: 'stuck, Japan, Bunkyo-ku, @visvirial', // CheckForAcceptance: about 10 hours
+  f078425: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 10 hours
+  f083235: 'stuck, Serbia, Belgrade', // CheckForAcceptance: about 10 hours
+  f088305: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 10 hours
+  f089767: 'stuck, China, Changsha', // Transferring: about 9 hours
+  f091139: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 10 hours
 
   // Min-size
 
@@ -268,21 +247,35 @@ const annotations = {
 
   // Xfr-failed
 
+  f01287: 'xfr-failed, China, Jiaxing, MaiTian',
+  f01799: 'xfr-failed, China, Jinan, TokenHome',
   f03328: 'xfr-failed, China, Xinxiang, Golden Miner',
+  f03339: 'xfr-failed, China, Luzhou, benxun',
   f03345: 'xfr-failed, China, Fuzhou, chh',
+  f07819: 'xfr-failed, China, Wuxi, YC--wuxi',
   f08103: 'xfr-failed, China, Foshan, 花生酱肠粉',
   f010400: 'xfr-failed, China, Shenyang',
+  f010491: 'xfr-failed, China, Shenzhen',
   f010501: 'xfr-failed, China, Hangzhou, Interstellar Roewe',
   f010513: 'xfr-failed, China, Chongqing',
   f010528: 'xfr-failed, China, Chongqing, Interstellar Roewe',
+  f014395: 'xfr-failed, China, Dongguan',
   f015747: 'xfr-failed, Japan, Setagaya-ku',
   f015877: 'xfr-failed, China, Jiaxing + USA',
   f017242: 'xfr-failed, China, Guangdong',
   f018501: 'xfr-failed, China, Beijing',
   f020523: 'xfr-failed, China, Suzhou, changjiang',
+  f022261: 'xfr-failed, China, Luzhou',
   f022853: 'xfr-failed, China, Fuzhou',
   f023581: 'xfr-failed, China, Hong Kong, mine-much',
+  f024511: 'xfr-failed, China, Shenzhen',
+  f025017: 'xfr-failed, China, Hefei, 一三科技-913',
+  f030125: 'xfr-failed, China, Nantong',
+  f030335: 'xfr-failed, China, Fujian',
+  f033549: 'xfr-failed, China, Quzhou',
+  f034701: 'xfr-failed, China, Shenzhen',
   f039515: 'xfr-failed, China, Chongqing',
+  f040218: 'xfr-failed, China, Wuxi',
   f047858: 'xfr-failed, China, Wuhan',
   f048172: 'xfr-failed, China, Suzhou',
   f048192: 'xfr-failed, China, Suzhou',
@@ -290,6 +283,7 @@ const annotations = {
   f053088: 'xfr-failed, China, Shanghai',
   f054163: 'xfr-failed, China, Dongguan',
   f056226: 'xfr-failed, NR',
+  f057127: 'xfr-failed, China, Suzhou',
   f061158: 'xfr-failed, China, Guangdong',
   f063996: 'xfr-failed, China, Sichuan',
   f067170: 'xfr-failed, China, Jiangmen',
@@ -297,13 +291,19 @@ const annotations = {
   f068096: 'xfr-failed, China, Sichuan',
   f071914: 'xfr-failed, China, Beijing',
   f076954: 'xfr-failed, China, Shenzhen',
+  f079425: 'xfr-failed, NR',
   f080444: 'xfr-failed, China, Chengdu',
   f082356: 'xfr-failed, China, Jiaxing',
   f083065: 'xfr-failed, China, Taizhou',
+  f083638: 'xfr-failed, China, Chongqing',
   f085710: 'xfr-failed, China, Chengdu',
+  f085899: 'xfr-failed, China, Wuxi',
+  f086423: 'xfr-failed, China, Chengdu',
+  f087931: 'xfr-failed, China, Beijing',
 
   // Error
 
+  f01240: 'error, Netherlands, HidNand', // deal failed: (State=11) error calling node: AddFunds exit code: SysErrOutOfGas(7)
   f02666: 'error, China, Chengdu', // EOF
   f02668: 'error, China, Chengdu', // EOF
   f02824: 'error, China, Chengdu', // EOF
@@ -312,6 +312,7 @@ const annotations = {
   f014394: 'error, China, Suzhou, IPFSCloud', // EOF
   f019029: 'error, Serbia, Boljevac', // stream reset
   f023205: 'error, NR', // stream reset
+  f025019: 'error, China, Taiwan, Hsinchu', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f030327: 'error, China, Beijing', // stream reset
   f034777: 'error, China, Chengdu', // stream reset
   f046073: 'error, China, Shanghai', // EOF
