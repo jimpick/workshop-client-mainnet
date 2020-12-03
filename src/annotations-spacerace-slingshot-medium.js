@@ -22,6 +22,10 @@ const annotations = {
 
   f08240: 'active, Russia, Novosibirsk, Rabinovitch', // 1409876 about 5 hours
   f09693: 'active, USA, Portland + Singapore, 6block-CapsuleMining', // 1409868 about 15 hours
+  f010479: 'active, France, Fontenay-sous-Bois, s0nik42', // 1410388 about 14 hours
+  f015927: 'active, USA, East Islip, CDImine', // 1410282 about 5 hours
+  f019240: 'active, China, Beijing', // 1410563 about 8 hours
+  f022522: 'active, China, Dongguan', // 1410896 about 11 hours
   f023467: 'active, Norway, Oslo, PhiMining.io', // 1409879 about 2 hours
   f025007: 'active, Korea, Gyeonggi-do, PINBYTES-eCUBE', // 1409877 about 3 hours
   f065103: 'active, USA, Portland + China, Shenzhen', // 1409823 about 4 hours
@@ -32,45 +36,36 @@ const annotations = {
   // Sealing (active-sealing = previously active, retesting with new deal)
 
   f09848: 'active-sealing, USA, Irvine, BigBearLake', // 1409826
-  f014768: 'active-sealing, Singapore, Funktafide, @Funk', // 1409809
   f019100: 'active-sealing, Romania, Cluj-Napoca, noisyfan', // 1409852
-  f049882: 'active-sealing, Netherlands, De Rijp, Chipz', // 1409875
   f066596: 'active-sealing, USA, San Diego', // 1409878
   f067545: 'active-sealing, Canada, Kitchener', // 1409851
 
   // Sealing
 
   f02540: 'sealing, USA, Rochester, @there, Foundry', // 1409870
+  f08403: 'sealing, UK, Lower Slaughter, TippyFlits', // 1411422
   f010241: 'sealing, China, Beijing + USA, Portland, 6Block-P', // 1409867
-  f010479: 'sealing, France, Fontenay-sous-Bois, s0nik42', // 1410388
-  f015927: 'sealing, USA, East Islip, CDImine', // 1410282
   f019824: 'sealing, USA', // 1410113
+  f022163: 'sealing, dns:fil.akasha.network', // 1411539
+  f023971: 'sealing, USA, @Brian Y', // 1410828
   f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1409866
   f089840: 'sealing, Korea, Yeongdeungpo-gu', // 1409883
 
   // Stuck
 
-  f02665: 'stuck, Netherlands, Amsterdam, fm-ops', // CheckForAcceptance: about 15 hours
-  f08285: 'stuck, Latvia, Riga, stander', // CheckForAcceptance: about 16 hours
-  f08403: 'stuck, UK, Lower Slaughter, TippyFlits', // CheckForAcceptance: about 2 hours
-  f08482: 'stuck, USA, Athol, @why', // CheckForAcceptance: about 15 hours
-  f010523: 'stuck, China, Beijing, Interstellar Roewe', // ClientTransferRestart: about 14 hours
-  f016594: 'stuck, Germany', // CheckForAcceptance: about 15 hours
-  f019240: 'stuck, China, Beijing', // CheckForAcceptance: 3 minutes
-  f019243: 'stuck, USA, Jackson', // CheckForAcceptance: about 16 hours
-  f022163: 'stuck, dns:fil.akasha.network', // CheckForAcceptance: about 16 hours
-  f022522: 'stuck, China, Dongguan', // CheckForAcceptance: 3 minutes
-  f023971: 'stuck, USA, @Brian Y', // CheckForAcceptance: about 16 hours
-  f042567: 'stuck, China, Jinhua', // ClientTransferRestart: 8 minutes
-  f054677: 'stuck, Finland, Helsinki', // CheckForAcceptance: about 15 hours
-  f058000: 'stuck, China, Suzhou', // ClientTransferRestart: 8 minutes
-  f066568: 'stuck, Korea, Gwangju, aoc-0002', // CheckForAcceptance: about 16 hours
-  f066898: 'stuck, Japan, Bunkyo-ku, @visvirial', // CheckForAcceptance: about 16 hours
-  f078425: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 15 hours
-  f083235: 'stuck, Serbia, Belgrade', // CheckForAcceptance: about 15 hours
-  f088305: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 15 hours
-  f089767: 'stuck, China, Changsha', // Transferring: about 14 hours
-  f091139: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 16 hours
+  f08285: 'stuck, Latvia, Riga, stander', // CheckForAcceptance: 1 day
+  f08482: 'stuck, USA, Athol, @why', // CheckForAcceptance: 1 day
+  f010523: 'stuck, China, Beijing, Interstellar Roewe', // ClientTransferRestart: 1 day
+  f016594: 'stuck, Germany', // CheckForAcceptance: 1 day
+  f019243: 'stuck, USA, Jackson', // CheckForAcceptance: 1 day
+  f042567: 'stuck, China, Jinhua', // ClientTransferRestart: about 19 hours
+  f054677: 'stuck, Finland, Helsinki', // CheckForAcceptance: 1 day
+  f066568: 'stuck, Korea, Gwangju, aoc-0002', // CheckForAcceptance: 1 day
+  f066898: 'stuck, Japan, Bunkyo-ku, @visvirial', // CheckForAcceptance: 1 day
+  f078425: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: 1 day
+  f083235: 'stuck, Serbia, Belgrade', // CheckForAcceptance: 1 day
+  f088305: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: 1 day
+  f091139: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: 1 day
 
   // Min-size
 
@@ -284,6 +279,7 @@ const annotations = {
   f054163: 'xfr-failed, China, Dongguan',
   f056226: 'xfr-failed, NR',
   f057127: 'xfr-failed, China, Suzhou',
+  f058000: 'xfr-failed, China, Suzhou',
   f061158: 'xfr-failed, China, Guangdong',
   f063996: 'xfr-failed, China, Sichuan',
   f067170: 'xfr-failed, China, Jiangmen',
@@ -300,16 +296,19 @@ const annotations = {
   f085899: 'xfr-failed, China, Wuxi',
   f086423: 'xfr-failed, China, Chengdu',
   f087931: 'xfr-failed, China, Beijing',
+  f089767: 'xfr-failed, China, Changsha',
 
   // Error
 
   f01240: 'error, Netherlands, HidNand', // deal failed: (State=11) error calling node: AddFunds exit code: SysErrOutOfGas(7)
+  f02665: 'error, Netherlands, Amsterdam, fm-ops', // deal failed: (State=26) error calling node: reserving funds: handler: websocket connection closed
   f02666: 'error, China, Chengdu', // EOF
   f02668: 'error, China, Chengdu', // EOF
   f02824: 'error, China, Chengdu', // EOF
   f04443: 'error, China, Shanghai, 罗良科技', // failed to restart data transfer: Unable to send restart request: exhausted %!d(float64=5) attempts but failed to open stream, err: context deadline exceeded
   f010493: 'error, China, Shanghai', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: protocol not supported
   f014394: 'error, China, Suzhou, IPFSCloud', // EOF
+  f014768: 'error, Singapore, Funktafide, @Funk', // error in deal activation: handling applied event: deal wasn't active: deal=1409809, parentState=bafy2bzacec6ndgk5qog24ezdf7c2njyhrtq3womff6a77lhp3tnuamws7ffpa, h=289424
   f019029: 'error, Serbia, Boljevac', // stream reset
   f023205: 'error, NR', // stream reset
   f025019: 'error, China, Taiwan, Hsinchu', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
@@ -317,6 +316,7 @@ const annotations = {
   f034777: 'error, China, Chengdu', // stream reset
   f046073: 'error, China, Shanghai', // EOF
   f046074: 'error, China, Shanghai', // EOF
+  f049882: 'error, Netherlands, De Rijp, Chipz', // error in deal activation: handling applied event: deal wasn't active: deal=1409875, parentState=bafy2bzacebrahq2z6wr4kr6ifee6rvjug26vcgfgcbsjky7xytw7nnh3sd3ka, h=290123
   f055132: 'error, Vietman, Ho Chi Minh City + China', // stream reset
   f059280: 'error, China, Shenzhen', // EOF
   f063173: 'error, Korea, Gyeonggi-do', // EOF
