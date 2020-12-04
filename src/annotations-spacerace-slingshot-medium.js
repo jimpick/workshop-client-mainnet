@@ -21,10 +21,14 @@ const annotations = {
   // Active
 
   f08240: 'active, Russia, Novosibirsk, Rabinovitch', // 1409876 about 5 hours
+  f08403: 'active, UK, Lower Slaughter, TippyFlits', // 1411422 1 day
   f09693: 'active, USA, Portland + Singapore, 6block-CapsuleMining', // 1409868 about 15 hours
+  f09848: 'active, USA, Irvine, BigBearLake', // 1409826 3 days
   f010479: 'active, France, Fontenay-sous-Bois, s0nik42', // 1410388 about 14 hours
   f015927: 'active, USA, East Islip, CDImine', // 1410282 about 5 hours
+  f019100: 'active, Romania, Cluj-Napoca, noisyfan', // 1409852 3 days
   f019240: 'active, China, Beijing', // 1410563 about 8 hours
+  f022163: 'active, dns:fil.akasha.network', // 1411539 1 day
   f022522: 'active, China, Dongguan', // 1410896 about 11 hours
   f023467: 'active, Norway, Oslo, PhiMining.io', // 1409879 about 2 hours
   f025007: 'active, Korea, Gyeonggi-do, PINBYTES-eCUBE', // 1409877 about 3 hours
@@ -32,40 +36,24 @@ const annotations = {
   f065280: 'active, Korea, Songpa-gu, Data Store Ltd', // 1409881 about 8 hours
   f079817: "active, Russia, Ul'yanovka", // 1409896 about 5 hours
   f080480: 'active, Ukraine, Lviv', // 1409869 about 2 hours
+  f089840: 'active, Korea, Yeongdeungpo-gu', // 1409883 3 days
 
   // Sealing (active-sealing = previously active, retesting with new deal)
 
-  f09848: 'active-sealing, USA, Irvine, BigBearLake', // 1409826
-  f019100: 'active-sealing, Romania, Cluj-Napoca, noisyfan', // 1409852
-  f066596: 'active-sealing, USA, San Diego', // 1409878
-  f067545: 'active-sealing, Canada, Kitchener', // 1409851
-
   // Sealing
 
-  f02540: 'sealing, USA, Rochester, @there, Foundry', // 1409870
-  f08403: 'sealing, UK, Lower Slaughter, TippyFlits', // 1411422
-  f010241: 'sealing, China, Beijing + USA, Portland, 6Block-P', // 1409867
-  f019824: 'sealing, USA', // 1410113
-  f022163: 'sealing, dns:fil.akasha.network', // 1411539
-  f023971: 'sealing, USA, @Brian Y', // 1410828
+  f08482: 'sealing, USA, Athol, @why', // 1411815
   f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1409866
-  f089840: 'sealing, Korea, Yeongdeungpo-gu', // 1409883
+  f078425: 'sealing, Korea, Bucheon-si', // 1411895
+  f083235: 'sealing, Serbia, Belgrade', // 1411552
+  f091139: 'sealing, Korea, Gyeonggi-do', // 1411809
 
   // Stuck
 
-  f08285: 'stuck, Latvia, Riga, stander', // CheckForAcceptance: 1 day
-  f08482: 'stuck, USA, Athol, @why', // CheckForAcceptance: 1 day
-  f010523: 'stuck, China, Beijing, Interstellar Roewe', // ClientTransferRestart: 1 day
-  f016594: 'stuck, Germany', // CheckForAcceptance: 1 day
-  f019243: 'stuck, USA, Jackson', // CheckForAcceptance: 1 day
-  f042567: 'stuck, China, Jinhua', // ClientTransferRestart: about 19 hours
-  f054677: 'stuck, Finland, Helsinki', // CheckForAcceptance: 1 day
-  f066568: 'stuck, Korea, Gwangju, aoc-0002', // CheckForAcceptance: 1 day
-  f066898: 'stuck, Japan, Bunkyo-ku, @visvirial', // CheckForAcceptance: 1 day
-  f078425: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: 1 day
-  f083235: 'stuck, Serbia, Belgrade', // CheckForAcceptance: 1 day
-  f088305: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: 1 day
-  f091139: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: 1 day
+  f010523: 'stuck, China, Beijing, Interstellar Roewe', // ClientTransferRestart: 3 days
+  f019243: 'stuck, USA, Jackson', // CheckForAcceptance: 3 days
+  f042567: 'stuck, China, Jinhua', // ClientTransferRestart: 2 days
+  f066898: 'stuck, Japan, Bunkyo-ku, @visvirial', // CheckForAcceptance: 3 days
 
   // Min-size
 
@@ -301,29 +289,40 @@ const annotations = {
   // Error
 
   f01240: 'error, Netherlands, HidNand', // deal failed: (State=11) error calling node: AddFunds exit code: SysErrOutOfGas(7)
+  f02540: 'error, USA, Rochester, @there, Foundry', // error in deal activation: failed to set up called handler: called check error (h: 293799): failed to look up deal on chain: deal 1409870 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f02665: 'error, Netherlands, Amsterdam, fm-ops', // deal failed: (State=26) error calling node: reserving funds: handler: websocket connection closed
   f02666: 'error, China, Chengdu', // EOF
   f02668: 'error, China, Chengdu', // EOF
   f02824: 'error, China, Chengdu', // EOF
   f04443: 'error, China, Shanghai, 罗良科技', // failed to restart data transfer: Unable to send restart request: exhausted %!d(float64=5) attempts but failed to open stream, err: context deadline exceeded
+  f08285: 'error, Latvia, Riga, stander', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 293798): failed to look up deal on chain: deal 1411810 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f010241: 'error, China, Beijing + USA, Portland, 6Block-P', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 293799): failed to look up deal on chain: deal 1409867 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f010493: 'error, China, Shanghai', // sending proposal to storage provider failed: exhausted 5 attempts but failed to open stream, err: protocol not supported
   f014394: 'error, China, Suzhou, IPFSCloud', // EOF
   f014768: 'error, Singapore, Funktafide, @Funk', // error in deal activation: handling applied event: deal wasn't active: deal=1409809, parentState=bafy2bzacec6ndgk5qog24ezdf7c2njyhrtq3womff6a77lhp3tnuamws7ffpa, h=289424
+  f016594: 'error, Germany', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 293798): failed to look up deal on chain: deal 1411805 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f019029: 'error, Serbia, Boljevac', // stream reset
+  f019824: 'error, USA', // error awaiting deal pre-commit: handling applied event: deal 1410113 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f023205: 'error, NR', // stream reset
+  f023971: 'error, USA, @Brian Y', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 293799): failed to look up deal on chain: deal 1410828 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f025019: 'error, China, Taiwan, Hsinchu', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: handler: websocket connection closed
   f030327: 'error, China, Beijing', // stream reset
   f034777: 'error, China, Chengdu', // stream reset
   f046073: 'error, China, Shanghai', // EOF
   f046074: 'error, China, Shanghai', // EOF
   f049882: 'error, Netherlands, De Rijp, Chipz', // error in deal activation: handling applied event: deal wasn't active: deal=1409875, parentState=bafy2bzacebrahq2z6wr4kr6ifee6rvjug26vcgfgcbsjky7xytw7nnh3sd3ka, h=290123
+  f054677: 'error, Finland, Helsinki', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 293798): failed to look up deal on chain: deal 1411999 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f055132: 'error, Vietman, Ho Chi Minh City + China', // stream reset
   f059280: 'error, China, Shenzhen', // EOF
   f063173: 'error, Korea, Gyeonggi-do', // EOF
   f065732: 'error, Korea, Gyeonggi-do', // EOF
+  f066568: 'error, Korea, Gwangju, aoc-0002', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 293799): failed to look up deal on chain: deal 1412025 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f066596: 'error, USA, San Diego', // error awaiting deal pre-commit: handling applied event: deal 1409878 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f067545: 'error, Canada, Kitchener', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 293799): failed to look up deal on chain: deal 1409851 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f071190: 'error, Korea, Gyeonggi-do', // EOF
   f073048: 'error, Korea, Gyeonggi-do', // EOF
   f073535: 'error, Korea, Gyeonggi-do', // EOF
+  f088305: 'error, Korea, Gyeonggi-do', // deal failed: (State=26) error calling node: publishing deal: GasEstimateMessageGas error: estimating gas used: message execution failed: exit 16, reason: Deal start epoch has already elapsed. (RetCode=16)
 
   // Backoff
 

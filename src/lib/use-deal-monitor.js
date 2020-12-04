@@ -61,6 +61,7 @@ export default function useDealMonitor ({ appState, updateAppState }) {
     updateCheckset(draft => {
       draft[0] = true
       draft[1] = true
+      draft[2] = true
     })
   }, [deals, terminated])
 
@@ -68,7 +69,7 @@ export default function useDealMonitor ({ appState, updateAppState }) {
     let state = { canceled: false }
     async function run () {
       // const nodes = Object.keys(checkSet)
-      const nodes = [ 1 ]
+      const nodes = [ 2, 1, 0 ]
       if (nodes.length > 0) {
         for (const node of nodes) {
           if (state.canceled) return
