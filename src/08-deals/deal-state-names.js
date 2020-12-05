@@ -12,7 +12,7 @@ const dealStateNames = [
   'Slashed', // 9
   'Rejecting', // 10
   'Failing', // 11
-  'FundsEnsured', // 12
+  'FundsReserved', // 12
   'CheckForAcceptance', // 13
   'Validating', // 14
   'AcceptWait', // 15

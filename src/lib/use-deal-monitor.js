@@ -2,7 +2,8 @@ import { useEffect, useState, useMemo } from 'react'
 import { useImmer } from 'use-immer'
 import useLotusClient from './use-lotus-client'
 
-const interval = 5 * 60 * 1000
+// const interval = 5 * 60 * 1000
+const interval = 1 * 60 * 1000
 const expireAfter = 7 * 24 * 60 * 60 * 1000 // 7 days
 
 const terminalStates = new Set([
@@ -69,7 +70,8 @@ export default function useDealMonitor ({ appState, updateAppState }) {
     let state = { canceled: false }
     async function run () {
       // const nodes = Object.keys(checkSet)
-      const nodes = [ 2, 1, 0 ]
+      // const nodes = [ 2, 1, 0 ]
+      const nodes = [ 2 ]
       if (nodes.length > 0) {
         for (const node of nodes) {
           if (state.canceled) return
