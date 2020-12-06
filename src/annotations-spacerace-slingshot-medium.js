@@ -22,39 +22,39 @@ const annotations = {
   // Sealing
 
   f02401: 'sealing, Canada, Chambly, NBFS Canada', // 1424336
+  f09848: 'sealing, USA, Irvine, BigBearLake', // 1424837
   f032934: 'sealing, Korea, Incheon', // 1424408
   f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1424385
+  f079817: "sealing, Russia, Ul'yanovka", // 1424859
 
   // Stuck
 
   f01276: 'stuck, Canada, Brampton, NBFS Canada', // StartDataTransfer: about 3 hours
-  f08285: 'stuck, Latvia, Riga, stander', // CheckForAcceptance: about 2 hours
-  f08482: 'stuck, USA, Athol, @why', // CheckForAcceptance: about 2 hours
-  f09848: 'stuck, USA, Irvine, BigBearLake', // CheckForAcceptance: about 2 hours
-  f010446: 'stuck, Netherlands, Angelo', // CheckForAcceptance: about 1 hour
-  f014768: 'stuck, Singapore, Funktafide, @Funk', // CheckForAcceptance: about 2 hours
-  f016594: 'stuck, Germany', // CheckForAcceptance: about 1 hour
+  f08285: 'stuck, Latvia, Riga, stander', // CheckForAcceptance: about 3 hours
+  f08482: 'stuck, USA, Athol, @why', // CheckForAcceptance: about 3 hours
+  f010446: 'stuck, Netherlands, Angelo', // CheckForAcceptance: about 2 hours
+  f014768: 'stuck, Singapore, Funktafide, @Funk', // CheckForAcceptance: about 3 hours
+  f016594: 'stuck, Germany', // CheckForAcceptance: about 2 hours
   f019029: 'stuck, Serbia, Boljevac', // CheckForAcceptance: about 3 hours
   f019100: 'stuck, Romania, Cluj-Napoca, noisyfan', // CheckForAcceptance: about 2 hours
-  f022163: 'stuck, dns:fil.akasha.network', // CheckForAcceptance: about 2 hours
-  f023467: 'stuck, Norway, Oslo, PhiMining.io', // CheckForAcceptance: about 1 hour
-  f054677: 'stuck, Finland, Helsinki', // CheckForAcceptance: about 1 hour
-  f055123: 'stuck, Korea, Busan', // CheckForAcceptance: about 1 hour
+  f022163: 'stuck, dns:fil.akasha.network', // CheckForAcceptance: about 3 hours
+  f023467: 'stuck, Norway, Oslo, PhiMining.io', // CheckForAcceptance: about 2 hours
+  f054677: 'stuck, Finland, Helsinki', // CheckForAcceptance: about 2 hours
+  f055123: 'stuck, Korea, Busan', // CheckForAcceptance: about 2 hours
   f066568: 'stuck, Korea, Gwangju, aoc-0002', // CheckForAcceptance: about 3 hours
-  f078425: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 3 hours
-  f079817: "stuck, Russia, Ul'yanovka", // CheckForAcceptance: about 1 hour
+  f078425: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 4 hours
   f088305: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 3 hours
-  f088404: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 2 hours
-  f089201: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 2 hours
-  f089840: 'stuck, Korea, Yeongdeungpo-gu', // StartDataTransfer: about 2 hours
-  f090086: 'stuck, Korea', // CheckForAcceptance: about 2 hours
+  f088404: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 3 hours
+  f089201: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 3 hours
+  f089840: 'stuck, Korea, Yeongdeungpo-gu', // StartDataTransfer: about 3 hours
+  f090086: 'stuck, Korea', // CheckForAcceptance: about 3 hours
   f090747: 'stuck, Korea, Anyang-si', // CheckForAcceptance: about 3 hours
-  f090851: 'stuck, China, Ningxia', // CheckForAcceptance: about 2 hours
+  f090851: 'stuck, China, Ningxia', // CheckForAcceptance: about 3 hours
   f092630: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 2 hours
-  f094085: 'stuck, Japan, Ota-ku', // CheckForAcceptance: about 2 hours
+  f094085: 'stuck, Japan, Ota-ku', // CheckForAcceptance: about 3 hours
   f094899: 'stuck, Korea', // CheckForAcceptance: about 3 hours
   f094901: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 3 hours
-  f095049: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 1 hour
+  f095049: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 2 hours
   f095833: 'stuck, Korea, Yongin-si', // CheckForAcceptance: about 2 hours
 
   // Min-size
