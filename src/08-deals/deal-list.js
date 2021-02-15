@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import useMiners from '../lib/use-miners'
 import { format, formatDistance } from 'date-fns'
 import copy from 'clipboard-copy'
-import annotations from '../annotations-spacerace'
+import annotations from '../annotations-mainnet'
 import annotationsSlingshot from '../annotations-spacerace-slingshot-medium'
 import dealStateNames from './deal-state-names'
 

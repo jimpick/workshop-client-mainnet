@@ -11,32 +11,32 @@ export const secure = true
 export const downloadDir = '/home/lotus1/downloads'
 */
 
-const spaceraceLocalConfig = {
-  api: 'lotus.jimpick.com/spacerace_api',
+const mainnetLocalConfig = {
+  api: 'lotus.jimpick.com/mainnet_api',
   // api: 'spacerace.localhost:9000/api',
   secure: true,
   downloadDir: '/home/ubuntu/downloads',
-  geoApi: 'spacerace.localhost:9021/api',
+  geoApi: 'mainnet.localhost:9021/api',
   geoSecure: true,
-  networkName: 'spacerace',
+  networkName: 'mainnet',
   useGeoIp2: true,
   useBaidu: true
 }
 
-const spaceracePublicConfig = {
-  api: 'lotus.jimpick.com/spacerace_api',
+const mainnetPublicConfig = {
+  api: 'lotus.jimpick.com/mainnet_api',
   secure: true,
   downloadDir: '/home/ubuntu/downloads',
   geoApi: 'lotus.jimpick.com/api',
   geoSecure: true,
-  networkName: 'spacerace'
+  networkName: 'mainnet'
 }
 
 function getConfig () {
-  if (document.location.hostname === 'spacerace.localhost') {
-    return spaceraceLocalConfig
+  if (document.location.hostname === 'mainnet.localhost') {
+    return mainnetLocalConfig
   }
-  return spaceracePublicConfig
+  return mainnetPublicConfig
 }
 
 export const api = getConfig().api

@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef, useMemo } from 'react'
 import { subHours, format, formatDistance } from 'date-fns'
 import copy from 'clipboard-copy'
 import useLotusClient from '../../lib/use-lotus-client'
-import annotationsCamera from '../../annotations-spacerace.js'
+import annotationsCamera from '../../annotations-mainnet.js'
 import annotationsSlingshot from '../../annotations-spacerace-slingshot-medium'
 import dealStateNames from '../deal-state-names'
 
