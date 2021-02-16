@@ -12,7 +12,14 @@
 const annotations = {
   // New
 
+  f01235: 'new, Singapore',
+  f01248: 'new, Germany, Frankfurt',
+  f01782: 'new, China, Shanghai',
+  f02438: 'new, China, Guangdong',
+  f09037: 'new, Singapore',
+  f09652: 'new, Singapore',
   f065259: 'new, NR', // carry-over
+  f0213894: 'new, China, Hangzhou',
 
   // Active
 

@@ -259,6 +259,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     throttle(
       () => {
         updateMinerAddrs(draft => {
+          // console.log('Jim processMinerAddrsUpdates', minerAddrsUpdates.length)
           for (const update of minerAddrsUpdates) {
             update(draft)
           }
@@ -466,6 +467,31 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
               `Error PeerId was falsey for ${miner}`,
               wirePeerId
             )
+            minerAddrsUpdates.push(draft => {
+              // console.log('Jim9', miner, !!nonRoutableSet[miner])
+              draft[miner] = {}
+              draft[miner].state = 'scanned'
+              draft[miner].end = Date.now()
+              draft[miner].error = 'Falsey PeerId'
+              if (!queryAllMinersWithAnnotations || !annotations[miner]) {
+                if (!draft.newNonRoutableSet) {
+                  draft.newNonRoutableSet = {}
+                  draft.newNonRoutableSetCount = 0
+                }
+                if (!nonRoutableSet[miner]) {
+                  draft.newNonRoutableSet[miner] = true
+                  draft.newNonRoutableSetCount++
+                  // console.log('Jim newNonRoutableSetCount', draft.newNonRoutableSetCount)
+                }
+              }
+            })
+            const cacheRecord = {
+              time: Date.now(),
+              error: 'Falsey PeerId'
+            }
+            idbSet(`minerAddrs:${genesisCid}:${miner}`, cacheRecord)
+            processMinerAddrsUpdates()
+            // console.log('Jim processed', miner)
             return
           } else if (isIPFS.multihash(wirePeerId)) {
             peerId = wirePeerId
@@ -1023,9 +1049,44 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           {miners.length} total
         </div>
       )}
+      {miners && minerAddrs && (
+        <div>
+          New non-routable set: {minerAddrs.newNonRoutableSetCount}
+          <button
+            style={{ marginLeft: '1rem', marginRight: '1rem' }}
+            onClick={() => {
+              const fixedNonRoutableSet = {}
+              for (const miner in nonRoutableSet) {
+                // if (Number(miner.slice(1)) > 210000) continue
+                fixedNonRoutableSet[miner] = nonRoutableSet[miner]
+              }
+              const newNonRoutableSet = {
+                ...fixedNonRoutableSet,
+                ...minerAddrs.newNonRoutableSet
+              }
+              if (queryAllMinersWithAnnotations) {
+                for (const annotatedMiner in annotations) {
+                  delete newNonRoutableSet[annotatedMiner]
+                }
+              }
+              /*
+              localStorage.setItem(
+                nonRoutableSetKey,
+                JSON.stringify(newNonRoutableSet)
+              )
+              */
+              idbSet(nonRoutableSetKey, JSON.stringify(newNonRoutableSet))
+              setNonRoutableSetUpdated(true)
+            }}
+          >
+            Update
+          </button>
+          {nonRoutableSetUpdated && 'Updated! Will be used on next reload.'}
+        </div>
+      )}
       {miners && dhtMinerAddrs && (
         <div>
-          New non-routable set: {dhtMinerAddrs.newNonRoutableSetCount}
+          New non-routable set (DHT): {dhtMinerAddrs.newNonRoutableSetCount}
           <button
             style={{ marginLeft: '1rem', marginRight: '1rem' }}
             onClick={() => {
