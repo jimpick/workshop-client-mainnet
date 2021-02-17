@@ -32,6 +32,7 @@ const baiduCities = {
   138: 'Foshan', // 佛山市
   139: 'Maoming', // 茂名市
   142: 'Guilin', // 桂林市
+  145: 'Qinzhou', // 钦州市
   146: 'Guiyang', // 贵阳市
   148: 'Qinhuangdao', // 秦皇岛市
   149: 'Cangzhou', // 沧州市
