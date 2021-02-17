@@ -17,30 +17,45 @@ const annotations = {
 	f02528: "new, Singapore", // carry-over
 	f02609: "new, China, Shanghai", // carry-over
 	f02626: "new, Singapore", // carry-over
+  f03143: "new, Vietman, Ho Chi Minh City + China, Beijing + Shijiazhuang",
 	f03223: "new, USA", // carry-over
 	f03362: "new, Germany, Berlin", // carry-over
 	f09620: "new, China, Weifang", // carry-over
+  f022289: "new, China, Mianyang",
 	f022748: "new, China, Xinyang", // carry-over
+  f022832: "new, China, Beijing",
 	f040332: "new, China, Shenzhen", // carry-over
+  f046248: "new, China, Dongguan",
 	f047868: "new, China, Fuzhou", // carry-over
 	f052701: "new, China, Beijing", // carry-over
+  f053141: "new, China, Shenzhen",
 	f065259: "new, NR", // carry-over
 	f066790: "new, China, Beijing", // carry-over
+  f073697: "new, China, Karamay",
 	f079370: "new, China, Zhangzhou", // carry-over
 	f085777: "new, China, Zhangzhou", // carry-over
 	f086423: "new, China, Chengdu", // carry-over
 	f098664: "new, China, Jiangsu", // carry-over
 	f099884: "new, China, Chengdu", // carry-over
 	f0100082: "new, Korea, Seongnam-si", // carry-over
+  f0101387: "new, China, Shenzhen",
+  f0102374: "new, China, Karamay",
 	f0102376: "new, China, Karamay", // carry-over
 	f0102641: "new, China, Guangzhou", // carry-over
 	f0103851: "new, China, Karamay", // carry-over
 	f0109040: "new, China, Zhangzhou", // carry-over
+  f0110442: "new, China, Fujian",
+  f0110936: "new, China, Fujian",
 	f0114687: "new, China, Dongguan", // carry-over
+  f0118360: "new, China, Hangzhou",
 	f0118769: "new, China, Fujian", // carry-over
 	f0120909: "new, China, Changsha", // carry-over
+  f0120983: "new, China, Fujian",
 	f0121260: "new, China, Quinzhou", // carry-over
 	f0121450: "new, China, Fujian", // carry-over
+  f0121602: "new, China, Hong Kong",
+  f0123536: "new, China, Fuzhou",
+  f0132706: 'new, China, Beijing",
 	f0134682: "new, China, Beijing", // carry-over
 	f0134778: "new, China, Beijing", // carry-over
 	f0135738: "new, China, Karamay", // carry-over
