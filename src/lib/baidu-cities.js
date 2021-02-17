@@ -8,6 +8,7 @@ const baiduCities = {
   19: 'Liaoning', // 辽宁省
   20: 'Ningxia', // 宁夏回族自治区
   22: 'Inner Mongolia', // 内蒙古自治区
+  24: 'Guizhou', // 贵州省
   25: 'Hebei', // 河北省
   26: 'Hunan', // 湖南省
   27: 'Shaanxi', // 陕西省
@@ -63,8 +64,9 @@ const baiduCities = {
   246: 'Guyuan', // 固原市
   255: 'Zhangzhou', // 漳州市
   257: 'Guangzhou', // 广州市
-  264: 'Zhangjiakou', // 张家口市
+  258: 'Yunfu', // 云浮市
   259: 'Jieyang', // 揭阳市
+  264: 'Zhangjiakou', // 张家口市
   268: 'Zhengzhou', // 郑州市
   277: 'Suqian', // 宿迁市
   283: 'Ordos', // 鄂尔多斯市
