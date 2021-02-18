@@ -12,10 +12,73 @@
 const annotations = {
   // New
 
+  f01234: 'new, Belgium, Bonheiden',
+  f01277: 'new, Sweden, Stockholm',
+  f02423: 'new, Ukraine, Kyiv',
+  f02625: 'new, China, Shanghai',
+  f03224: 'new, Ukraine, Kyiv',
+  f03364: 'new, China, Inner Mongolia',
+  f08094: 'new, China, Guangzhou',
+  f09642: 'new, Sweden, Alvsjo',
+  f010010: 'new, China, Changzhou',
+  f015897: 'new, China, Hong Kong',
+  f019100: 'new, Romania, Cluj-Napoca',
+  f019279: 'new, Canada, Calgary',
+  f022522: 'new, China, Dongguan',
+  f022308: 'new, China, Bozhou',
+  f030203: 'new, China, Shenzhen',
+  f032888: 'new, China, Weifang',
+  f033501: 'new, China, Shenzhen',
+  f034567: 'new, China, Shenzhen',
+  f057614: 'new, China, Karamay',
+  f060114: 'new, China, Shenzhen',
+  f065103: 'new, USA + China, Suzhou + Guangzhou + Karamay',
+  f065200: 'new, China, Yibin',
+  f062811: 'new, China, Fuzhou',
+  f069915: 'new, China, Karamay',
+  f070999: 'new, China, Karamay',
+  f071624: 'new, USA, Boyne City',
+  f071664: 'new, China, Shangdong',
+  f080480: 'new, Ukraine, Lviv',
+  f081323: 'new, UK, Cambridge',
+  f092514: 'new, China, Karamay',
+  f092516: 'new, USA, Boardman',
+  f096976: 'new, Russia',
+  f098770: 'new, USA, Pontiac',
+  f099608: 'new, Latvia, Riga',
+  f097777: 'new, Ukraine, Ivano-Frankivsk',
+  f099884: 'new, China, Chengdu',
+  f0102513: 'new, China, Karamay',
+  f0103851: 'new, China, Karamay',
+  f0104671: 'new, Japan, Ota-ku',
+  f0104967: 'new, Ukraine, Ternopil',
+  f0113664: 'new, France',
+  f0116707: 'new, Germany, Dusseldorf',
+  f0116766: 'new, USA, Westford',
+  f0124335: 'new, Finland, Helsinki',
+  f0126868: 'new, Ukraine, Vinnytsia',
+  f0127896: 'new, Bulgaria, Sofia',
+  f0135078: 'new, USA, Denver',
+  f0137489: 'new, UK, Deeside',
+  f0145162: 'new, Japan, Kumamoto',
+  f0145385: 'new, Malaysia, Petaling Jaya',
+  f0145874: 'new, Canada, Brampton',
+  f0146301: 'new, China, Shenzhen',
+  f0146751: 'new, China, Jiangsu',
+  f0146875: 'new, China, Karamay',
+  f0148143: 'new, China, Tianjin',
+  f0154988: 'new, China, Dongguan',
+  f0157535: 'new, Canada, Brampton',
+  f0165400: 'new, Canada, Brampton',
+  f0165539: 'new, Japan, Yokohama',
+  f0187709: 'new, Russia, Moscow',
+
+
   // Active
 
   f03339: 'active, China, Luzhou, benxun', // carry-over
-  f066804: 'active, NR', // carry-over
+  f053088: 'active, China, Shanghai', // carry-over
+  f066804: 'active, China, Zhejiang', // carry-over
   f081644: 'active, China, Wenzhou', // carry-over
   f094374: 'active, China, Nanyang', // carry-over
 
@@ -35,19 +98,18 @@ const annotations = {
   f020489: 'sealing, China, Lioaning', // carry-over
   f020928: 'sealing, China, Deyang + Singapore', // carry-over
   f022261: 'sealing, China, Luzhou', // carry-over
-  f023219: 'sealing, NR', // carry-over
+  f023219: 'sealing, China, Beijing + Zhangjiakou', // carry-over
   f024944: 'sealing, Korea, Yeongdeungpo-dong', // carry-over
-  f029665: 'sealing, NR', // carry-over
+  f029665: 'sealing, China, Shenyang', // carry-over
   f033036: 'sealing, China, Liaoning', // carry-over
   f039515: 'sealing, China, Chongqing', // carry-over
   f042567: 'sealing, China, Jinhua', // carry-over
   f044160: 'sealing, China, Guangzhou, muxing', // carry-over
-  f053088: 'sealing, China, Shanghai', // carry-over
   f055102: 'sealing, Vietman, Ho Chi Minh City + China', // carry-over
   f055132: 'sealing, Vietman, Ho Chi Minh City + China', // carry-over
   f086151: 'sealing, China, Dongguan', // carry-over
   f089840: 'sealing, Korea, Yeongdeungpo-gu', // carry-over
-  f091355: 'sealing, NR', // carry-over
+  f091355: 'sealing, China, Chengdu', // carry-over
   f098664: 'sealing, China, Jiangsu', // carry-over
 
   // Stuck
