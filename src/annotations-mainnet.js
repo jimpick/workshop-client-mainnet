@@ -13,21 +13,58 @@ const annotations = {
   // New
 
   f03143: 'new, Vietman, Ho Chi Minh City + China, Beijing + Shijiazhuang', // carry-over
+  f018780: 'new, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan',
+  f018781: 'new, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan',
+  f018783: 'new, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan',
+  f018784: 'new, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan',
+  f018785: 'new, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan',
+  f018782: 'new, Singapore + USA + Germany, Frankfurt + UK, London',
+  f019354: 'new, Germany, Frankfurt',
   f022289: 'new, China, Mianyang', // carry-over
   f022832: 'new, China, Beijing', // carry-over
+  f023152: 'new, China, Shandong',
+  f023495: 'new, China, Karamay',
+  f023825: 'new, China, Karamay',
+  f023843: 'new, China, Zhangjiakou',
+  f024015: 'new, China, Karamay',
+  f024016: 'new, China, Karamay',
+  f029401: 'new, China, Karamay',
+  f030384: 'new, China, Shenzhen',
+  f042635: 'new, China, Karamay',
+  f042558: 'new, China, Karamay',
   f046248: 'new, China, Dongguan', // carry-over
   f053141: 'new, China, Shenzhen', // carry-over
+  f061740: 'new, China, Karamay',
+  f062334: 'new, China, Karamay',
   f065259: 'new, NR', // carry-over
+  f066104: 'new, China, Karamay',
+  f069919: 'new, China, Karamay',
+  f070501: 'new, USA + China, Hong Kong + Guangzhou',
   f073697: 'new, China, Karamay', // carry-over
+  f078772: 'new, China, Karamay',
+  f079197: 'new, China, Karamay',
+  f079301: 'new, China, Guangzhou + Dongguan + Shenzhen, USA',
+  f080444: 'new, China, Chengdu',
+  f082452: 'new, China, Dongguan',
+  f083625: 'new, China, Karamay',
+  f084879: 'new, Korea, Seongnam-si',
+  f097386: 'new, China, Beijing',
+  f099239: 'new, China, Hong Kong',
+  f0100082: 'new, Korea, Seongnam-si',
   f0101387: 'new, China, Shenzhen', // carry-over
   f0102374: 'new, China, Karamay', // carry-over
+  f0102641: 'new, China, Guangzhou',
   f0110442: 'new, China, Fujian', // carry-over
   f0110936: 'new, China, Fujian', // carry-over
+  f0114924: 'new, China, Fujian',
   f0118360: 'new, China, Hangzhou', // carry-over
   f0120983: 'new, China, Fujian', // carry-over
   f0121602: 'new, China, Hong Kong', // carry-over
   f0123536: 'new, China, Fuzhou', // carry-over
   f0132706: 'new, China, Beijing', // carry-over
+  f0134991: 'new, China, Foshan',
+  f0135738: 'new, China, Karamay',
+  f0141614: 'new, China, Fujian',
 
   // Active
 
