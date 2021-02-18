@@ -12,82 +12,60 @@
 const annotations = {
   // New
 
-  f02421: 'new, China, Deyang + Singapore',
-  f02529: 'new, China, Chongqing + Singapore',
-  f03000: 'new, China, Chengdu',
-  f08257: 'new, China, Zhejiang + Singapore',
-  f023971: 'new, USA',
-  f040218: 'new, China, Wuxi',
-  f050022: 'new, China, Changsha',
-  f057698: 'new, China, Karamay',
-  f082356: 'new, China, Jiaxing',
-  f0109043: 'new, China, Karamay',
-  f0116436: 'new, Singapore',
-  f0116445: 'new, Singapore',
-  f0118317: 'new, Singapore',
-  f0123931: 'new, China, Fujian',
-  f0131331: 'new, China, Beijing',
-  f0136014: 'new, China, Suzhou',
-  f0143928: 'new, China, Beijing',
-  f0146393: 'new, China, Foshan',
-  f0148399: 'new, China, Karamay',
-  f0157769: 'new, China, Changsha',
-  f0158142: 'new, China, Karamay',
-  f0162183: "new, China, Xi'an",
-  f0151366: 'new, China, Fuzhou + Xiamen',
-
+	f023219: "new, China, Beijing + Zhangjiakou",
+	f0136014: "new, China, Suzhou",
+	f0151366: "new, China, Fuzhou + Xiamen",
+	f0162183: "new, China, Xi'an",
 
   // Active
 
-	f03339: "active, China, Luzhou, benxun", // carry-over
-	f053088: "active, China, Shanghai", // carry-over
-	f066804: "active, China, Zhejiang", // carry-over
-	f081644: "active, China, Wenzhou", // carry-over
-	f094374: "active, China, Nanyang", // carry-over
 
   // Active-sealing (active, with in-flight sealing)
 
-	f019806: "active-sealing, China, Beijing", // carry-over
+	f066804: "active-sealing, China, Zhejiang", // 1593805
+	f094374: "active-sealing, China, Nanyang", // 1593797
 
   // Sealing
 
-	f02822: "sealing, China, Chengdu", // carry-over
-	f03345: "sealing, China, Fuzhou, chh", // carry-over
-	f08019: "sealing, China, Yantai, 三合", // carry-over
-	f010513: "sealing, China, Chongqing", // carry-over
-	f015233: "sealing, China, Nanjing", // carry-over
-	f016203: "sealing, China, Chengdu", // carry-over
-	f016276: "sealing, China, Beijing", // carry-over
-	f020489: "sealing, China, Lioaning", // carry-over
-	f020928: "sealing, China, Deyang + Singapore", // carry-over
-	f022261: "sealing, China, Luzhou", // carry-over
-	f023219: "sealing, China, Beijing + Zhangjiakou", // carry-over
-	f024944: "sealing, Korea, Yeongdeungpo-dong", // carry-over
-	f029665: "sealing, China, Shenyang", // carry-over
-	f033036: "sealing, China, Liaoning", // carry-over
-	f039515: "sealing, China, Chongqing", // carry-over
-	f042567: "sealing, China, Jinhua", // carry-over
-	f044160: "sealing, China, Guangzhou, muxing", // carry-over
-	f055102: "sealing, Vietman, Ho Chi Minh City + China", // carry-over
-	f055132: "sealing, Vietman, Ho Chi Minh City + China", // carry-over
-	f086151: "sealing, China, Dongguan", // carry-over
-	f089840: "sealing, Korea, Yeongdeungpo-gu", // carry-over
-	f091355: "sealing, China, Chengdu", // carry-over
+	f015233: "sealing, China, Nanjing", // 1593798
+	f020489: "sealing, China, Lioaning", // 1593802
+	f024944: "sealing, Korea, Yeongdeungpo-dong", // 1593799
+	f033036: "sealing, China, Liaoning", // 1593803
+	f044160: "sealing, China, Guangzhou, muxing", // 1593801
 	f096976: "sealing, Russia", // 1593610
-	f098664: "sealing, China, Jiangsu", // carry-over
+	f098664: "sealing, China, Jiangsu", // 1593800
 	f0116766: "sealing, USA, Westford", // 1593607
 	f0129805: "sealing, China, Zhejiang + Australia, Adelaide", // 1593684
 	f0146751: "sealing, China, Jiangsu", // 1593579
 
   // Stuck
 
-	f092516: "stuck, USA, Boardman", // CheckForAcceptance: about 12 hours
+	f02822: "stuck, China, Chengdu", // Transferring: 15 minutes
+	f03339: "stuck, China, Luzhou, benxun", // StartDataTransfer: 16 minutes
+	f03345: "stuck, China, Fuzhou, chh", // CheckForAcceptance: 15 minutes
+	f08019: "stuck, China, Yantai, 三合", // Transferring: 14 minutes
+	f010513: "stuck, China, Chongqing", // CheckForAcceptance: 15 minutes
+	f016203: "stuck, China, Chengdu", // CheckForAcceptance: 15 minutes
+	f016276: "stuck, China, Beijing", // CheckForAcceptance: 15 minutes
+	f019806: "stuck, China, Beijing", // CheckForAcceptance: 16 minutes
+	f020928: "stuck, China, Deyang + Singapore", // CheckForAcceptance: 15 minutes
+	f022261: "stuck, China, Luzhou", // CheckForAcceptance: 14 minutes
+	f029665: "stuck, China, Shenyang", // CheckForAcceptance: 15 minutes
+	f039515: "stuck, China, Chongqing", // CheckForAcceptance: 10 minutes
+	f053088: "stuck, China, Shanghai", // CheckForAcceptance: 16 minutes
+	f055102: "stuck, Vietman, Ho Chi Minh City + China", // CheckForAcceptance: 15 minutes
+	f055132: "stuck, Vietman, Ho Chi Minh City + China", // CheckForAcceptance: 15 minutes
+	f081644: "stuck, China, Wenzhou", // CheckForAcceptance: 16 minutes
+	f086151: "stuck, China, Dongguan", // CheckForAcceptance: 15 minutes
+	f089840: "stuck, Korea, Yeongdeungpo-gu", // CheckForAcceptance: 14 minutes
+	f091355: "stuck, China, Chengdu", // CheckForAcceptance: 15 minutes
+	f092516: "stuck, USA, Boardman", // CheckForAcceptance: about 13 hours
 	f0101387: "stuck, China, Shenzhen", // CheckForAcceptance: about 16 hours
 	f0114687: "stuck, China, Dongguan", // carry-over
 	f0118769: "stuck, China, Fujian", // carry-over
-	f0137489: "stuck, UK, Deeside", // CheckForAcceptance: about 12 hours
-	f0145385: "stuck, Malaysia, Petaling Jaya", // CheckForAcceptance: about 12 hours
-	f0165539: "stuck, Japan, Yokohama", // CheckForAcceptance: about 12 hours
+	f0137489: "stuck, UK, Deeside", // CheckForAcceptance: about 13 hours
+	f0145385: "stuck, Malaysia, Petaling Jaya", // CheckForAcceptance: about 13 hours
+	f0165539: "stuck, Japan, Yokohama", // CheckForAcceptance: about 13 hours
 
   // Busy
 
@@ -155,6 +133,7 @@ const annotations = {
 	f023870: "min-size, China, Fuzhou", // carry-over
 	f023871: "min-size, China, Fuzhou", // carry-over
 	f023928: "min-size, China, Fuzhou", // carry-over
+	f023971: "min-size, USA", // 131072 < 2147483648
 	f023977: "min-size, China, Fuzhou", // carry-over
 	f023978: "min-size, China, Fuzhou", // carry-over
 	f023980: "min-size, China, Fuzhou", // carry-over
@@ -235,6 +214,7 @@ const annotations = {
 	f07850: "min-ask, China, Karamay", // 20000000 < 61035156250000
 	f07990: "min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan", // 20000000 < 61035156250000
 	f08025: "min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan", // 20000000 < 61035156250000
+	f08257: "min-ask, China, Zhejiang + Singapore", // 20000000 < 12207031250
 	f08383: "min-ask, China, Karamay", // 20000000 < 61035156250000
 	f09693: "min-ask, China, Karamay", // 20000000 < 61035156250000
 	f09696: "min-ask, China, Karamay", // 20000000 < 61035156250000
@@ -267,13 +247,16 @@ const annotations = {
 	f033123: "min-ask, China, Karamay", // 20000000 < 61035156250000
 	f033356: "min-ask, Korea, Yeongdeungpo-dong", // 20000000 < 24414062500
 	f039800: "min-ask, China, Chengdu", // 20000000 < 122070312500000
+	f040218: "min-ask, China, Wuxi", // 20000000 < 12207031250000000
 	f042540: "min-ask, China, Karamay", // 20000000 < 61035156250000
 	f042558: "min-ask, China, Karamay", // 20000000 < 122070312500000
 	f042635: "min-ask, China, Karamay", // 20000000 < 122070312500000
+	f050022: "min-ask, China, Changsha", // 20000000 < 6103515625000
 	f052447: "min-ask, China, Karamay", // 20000000 < 61035156250000
 	f054370: "min-ask, China, Dongguan", // 20000000 < 12207031250
 	f056611: "min-ask, China, Karamay", // 20000000 < 61035156250000
 	f057614: "min-ask, China, Karamay", // 20000000 < 61035156250000
+	f057698: "min-ask, China, Karamay", // 20000000 < 122070312500000
 	f060072: "min-ask, China, Chongqing", // 20000000 < 305175781250000
 	f061740: "min-ask, China, Karamay", // 20000000 < 122070312500000
 	f062334: "min-ask, China, Karamay", // 20000000 < 122070312500000
@@ -296,6 +279,7 @@ const annotations = {
 	f079301: "min-ask, China, Guangzhou + Dongguan + Shenzhen, USA", // 20000000 < 122070312500000
 	f080444: "min-ask, China, Chengdu", // 20000000 < 122070312500000
 	f080480: "min-ask, Ukraine, Lviv", // 20000000 < 61035156
+	f082356: "min-ask, China, Jiaxing", // 20000000 < 610351562500
 	f082452: "min-ask, China, Dongguan", // 20000000 < 1220581054687500000
 	f083625: "min-ask, China, Karamay", // 20000000 < 122070312500000
 	f083903: "min-ask, China, Xi'an", // 20000000 < 122192382812500
@@ -321,6 +305,7 @@ const annotations = {
 	f0120983: "min-ask, China, Fujian", // 20000000 < 1220581054687500000
 	f0121450: "min-ask, China, Fujian", // 20000000 < 610290527343750000
 	f0121958: "min-ask, Korea, Seoul", // 20000000 < 1220703125000
+	f0123931: "min-ask, China, Fujian", // 20000000 < 12206909179687500000
 	f0129072: "min-ask, China, Karamay", // 20000000 < 122070312500000
 	f0132706: "min-ask, China, Beijing", // 20000000 < 12207031250000000
 	f0134682: "min-ask, China, Beijing", // 20000000 < 6103454589843750000
@@ -332,6 +317,7 @@ const annotations = {
 	f0145313: "min-ask, China, Karamay", // 20000000 < 122070312500000
 	f0146165: "min-ask, China, Huizhou", // 20000000 < 122070190429687500000
 	f0146875: "min-ask, China, Karamay", // 20000000 < 61035156250000
+	f0148399: "min-ask, China, Karamay", // 20000000 < 122070312500000
 	f0149765: "min-ask, China, Beijing", // 20000000 < 6103454589843750000
 	f0149768: "min-ask, China, Dongguan", // 20000000 < 122070312500000
 	f0151281: "min-ask, China, Karamay", // 20000000 < 122070312500000
@@ -340,6 +326,8 @@ const annotations = {
 	f0152854: "min-ask, China, Huizhou", // 20000000 < 1220581054687500000
 	f0153176: "min-ask, China, Fujian", // 20000000 < 12206909179687500000
 	f0154988: "min-ask, China, Dongguan", // 20000000 < 61035095214843750000
+	f0157769: "min-ask, China, Changsha", // 20000000 < 122070312500000
+	f0158142: "min-ask, China, Karamay", // 20000000 < 122070312500000
 
   // Error
 
@@ -358,6 +346,7 @@ const annotations = {
 	f025025: "error, China, Qingdao", // carry-over
 	f030125: "error, China, Nantong", // carry-over
 	f030347: "error, China, Zhejiang", // carry-over
+	f042567: "error, China, Jinhua", // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 4.0664434553250786 FIL, balance: 0.311183058722651253 FIL): not enough funds to execute transaction
 	f054415: "error, NR", // carry-over
 	f078522: "error, NR", // carry-over
 	f079370: "error, China, Zhangzhou", // carry-over
@@ -368,6 +357,9 @@ const annotations = {
 	f095296: "error, China, Suqian", // carry-over
 	f0102358: "error, China, Guizhou", // carry-over
 	f0109040: "error, China, Zhangzhou", // carry-over
+	f0109043: "error, China, Karamay", // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 3.57070054909691776 FIL, balance: 0.415811107476371135 FIL): not enough funds to execute transaction
+	f0116436: "error, Singapore", // EOF
+	f0116445: "error, Singapore", // EOF
 	f0123536: "error, China, Fuzhou", // stream reset
 	f0148143: "error, China, Tianjin", // AddPiece failed: adding piece to sector: writing piece: storage call error 0: creating unsealed sector file: writing trailer: writing trailer length: write /fcfs/f0148143/unsealed/s-t0148143-24949.tmp: operation not supported
 	f0150782: "error, China, Xiamen", // carry-over
@@ -383,12 +375,15 @@ const annotations = {
 	f01289: "rejected, China, Ningbo", // carry-over
 	f02301: "rejected, USA", // carry-over
 	f02303: "rejected, Singapore", // carry-over
+	f02421: "rejected, China, Deyang + Singapore", // Deals from client wallet f3vp7m3244tjtxrvg4n2lfedtqnnnzhyno3ym6vnl4wzozztik4f2kvzfbfbgzcga7g3mckddw6x4ahp5n4iwa are not welcome
+	f02529: "rejected, China, Chongqing + Singapore",
 	f02609: "rejected, China, Shanghai", // carry-over
 	f02613: "rejected, China, Chongqing + Singapore",
 	f02625: "rejected, China, Shanghai", // no online
 	f02626: "rejected, Singapore", // carry-over
 	f02665: "rejected, Netherlands, Amsterdam, fm-ops", // carry-over
 	f02856: "rejected, China, Chengdu", // carry-over
+	f03000: "rejected, China, Chengdu", // no online
 	f03249: "rejected, China, Yunfu",
 	f03362: "rejected, Germany, Berlin", // carry-over
 	f08094: "rejected, China, Guangzhou", // no online
@@ -465,15 +460,19 @@ const annotations = {
 	f0111658: "rejected, China, Fuzhou", // carry-over
 	f0112087: "rejected, China, Xiamen", // carry-over
 	f0116628: "rejected, China, Shanghai", // carry-over
+	f0118317: "rejected, Singapore",
 	f0118330: "rejected, Singapore",
 	f0120909: "rejected, China, Changsha", // carry-over
 	f0121260: "rejected, China, Quinzhou", // carry-over
 	f0121602: "rejected, China, Hong Kong", // sh: 1: /root/.lotusminer/dealfilter.pl: not found
 	f0124036: "rejected, China, Nanchang", // no online
 	f0126824: "rejected, Korea, Seongnam-si", // no online
+	f0131331: "rejected, China, Beijing",
 	f0135078: "rejected, USA, Denver", // no online
 	f0143160: "rejected, China, Ningbo",
+	f0143928: "rejected, China, Beijing",
 	f0146301: "rejected, China, Shenzhen", // no online
+	f0146393: "rejected, China, Foshan", // no online
 	f0147284: "rejected, Korea, Seongnam-si", // no online
 	f0149026: "rejected, China, Shenzhen",
 	f0151993: "rejected, Korea, Icheon-si", // no online
