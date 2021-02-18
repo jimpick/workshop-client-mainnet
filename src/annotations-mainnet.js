@@ -12,52 +12,6 @@
 const annotations = {
   // New
 
-  f01241: 'new, China, Karamay',
-  f01280: 'new, China, Wuxi',
-  f02415: 'new, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan',
-  f02422: "new, China, Xi'an",
-  f02500: 'new, Korea, Seongnam-si',
-  f02501: 'new, China, Karamay',
-  f02514: 'new, China, Karamay',
-  f02622: "new, China, Karamay",
-  f02623: "new, China, Karamay",
-  f02633: 'new, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan',
-  f02645: 'new, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan',
-  f03223: 'new, USA',
-  f03273: 'new, China, Karamay',
-  f03274: 'new, China, Karamay',
-  f03275: 'new, China, Karamay',
-  f03482: 'new, China, Karamay',
-  f03491: 'new, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan',
-  f05315: 'new, China, Karamay',
-  f05316: 'new, China, Karamay',
-  f05317: 'new, China, Karamay',
-  f07850: 'new, China, Karamay',
-  f07990: 'new, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan',
-  f08025: 'new, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan',
-  f08383: 'new, China, Karamay',
-  f09693: 'new, China, Karamay',
-  f09696: 'new, China, Karamay',
-  f010253: 'new, China, Karamay',
-  f029404: 'new, China, Karamay',
-  f033123: 'new, China, Karamay',
-  f042540: 'new, China, Karamay',
-  f052447: 'new, China, Karamay',
-  f056611: 'new, China, Karamay',
-  f060072: 'new, China, Chongqing',
-  f062982: 'new, China, Fuzhou',
-  f065259: 'new, NR', // carry-over
-  f071980: 'new, China, Karamay',
-  f073552: 'new, China, Karamay',
-  f074738: 'new, Korea, Icheon-si',
-  f079247: 'new, USA + China, Guangzhou + Beijing + Dongguan + Shenzhen',
-  f0102376: 'new, China, Karamay',
-  f0121450: 'new, China, Fujian',
-  f0134682: 'new, China, Beijing',
-  f0134778: 'new, China, Beijing',
-  f0149765: 'new, China, Beijing',
-
-
   // Active
 
   f03339: 'active, China, Luzhou, benxun', // carry-over
@@ -98,7 +52,7 @@ const annotations = {
 
   // Stuck
 
-  f0101387: 'stuck, China, Shenzhen', // CheckForAcceptance: about 2 hours
+  f0101387: 'stuck, China, Shenzhen', // CheckForAcceptance: about 3 hours
   f0114687: 'stuck, China, Dongguan', // carry-over
   f0118769: 'stuck, China, Fujian', // carry-over
 
@@ -202,7 +156,39 @@ const annotations = {
 
   // Min Ask
 
+  f01241: 'min-ask, China, Karamay', // 20000000 < 61035156250000
+  f01280: 'min-ask, China, Wuxi', // 20000000 < 6103515625000000
+  f02415:
+    'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // 20000000 < 61035156250000
+  f02500: 'min-ask, Korea, Seongnam-si', // 20000000 < 610351562500
+  f02501: 'min-ask, China, Karamay', // 20000000 < 61035156250000
+  f02514: 'min-ask, China, Karamay', // 20000000 < 61035156250000
+  f02622: 'min-ask, China, Karamay', // 20000000 < 61035156250000
+  f02623: 'min-ask, China, Karamay', // 20000000 < 61035156250000
+  f02633:
+    'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // 20000000 < 61035156250000
+  f02645:
+    'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // 20000000 < 61035156250000
   f03143: 'min-ask, Vietman, Ho Chi Minh City + China, Beijing + Shijiazhuang', // 20000000 < 122070312500000
+  f03223: 'min-ask, USA', // 20000000 < 305175781250000
+  f03273: 'min-ask, China, Karamay', // 20000000 < 61035156250000
+  f03274: 'min-ask, China, Karamay', // 20000000 < 61035156250000
+  f03275: 'min-ask, China, Karamay', // 20000000 < 61035156250000
+  f03482: 'min-ask, China, Karamay', // 20000000 < 6103515625000000
+  f03491:
+    'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // 20000000 < 61035156250000
+  f05315: 'min-ask, China, Karamay', // 20000000 < 61035156250000
+  f05316: 'min-ask, China, Karamay', // 20000000 < 61035156250000
+  f05317: 'min-ask, China, Karamay', // 20000000 < 61035156250000
+  f07850: 'min-ask, China, Karamay', // 20000000 < 61035156250000
+  f07990:
+    'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // 20000000 < 61035156250000
+  f08025:
+    'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // 20000000 < 61035156250000
+  f08383: 'min-ask, China, Karamay', // 20000000 < 61035156250000
+  f09693: 'min-ask, China, Karamay', // 20000000 < 61035156250000
+  f09696: 'min-ask, China, Karamay', // 20000000 < 61035156250000
+  f010253: 'min-ask, China, Karamay', // 20000000 < 61035156250000
   f018780:
     'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // 20000000 < 122070312500000
   f018781:
@@ -221,16 +207,27 @@ const annotations = {
   f024015: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f024016: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f029401: 'min-ask, China, Karamay', // 20000000 < 122070312500000
+  f029404: 'min-ask, China, Karamay', // 20000000 < 61035156250000
   f030384: 'min-ask, China, Shenzhen', // 20000000 < 12207031250000
+  f033123: 'min-ask, China, Karamay', // 20000000 < 61035156250000
+  f042540: 'min-ask, China, Karamay', // 20000000 < 61035156250000
   f042558: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f042635: 'min-ask, China, Karamay', // 20000000 < 122070312500000
+  f052447: 'min-ask, China, Karamay', // 20000000 < 61035156250000
+  f056611: 'min-ask, China, Karamay', // 20000000 < 61035156250000
+  f060072: 'min-ask, China, Chongqing', // 20000000 < 305175781250000
   f061740: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f062334: 'min-ask, China, Karamay', // 20000000 < 122070312500000
+  f062982: 'min-ask, China, Fuzhou', // 20000000 < 6103454589843750000
   f066104: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f069919: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f070501: 'min-ask, USA + China, Hong Kong + Guangzhou', // 20000000 < 122070312500000
+  f071980: 'min-ask, China, Karamay', // 20000000 < 61035156250000
+  f073552: 'min-ask, China, Karamay', // 20000000 < 61035156250000
+  f074738: 'min-ask, Korea, Icheon-si', // 20000000 < 610351562500
   f078772: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f079197: 'min-ask, China, Karamay', // 20000000 < 122070312500000
+  f079247: 'min-ask, USA + China, Guangzhou + Beijing + Dongguan + Shenzhen', // 20000000 < 61035156250000
   f079301: 'min-ask, China, Guangzhou + Dongguan + Shenzhen, USA', // 20000000 < 122070312500000
   f080444: 'min-ask, China, Chengdu', // 20000000 < 122070312500000
   f082452: 'min-ask, China, Dongguan', // 20000000 < 1220581054687500000
@@ -240,15 +237,20 @@ const annotations = {
   f099239: 'min-ask, China, Hong Kong', // 20000000 < 12207031250000000
   f0100082: 'min-ask, Korea, Seongnam-si', // 20000000 < 1220703125000
   f0102374: 'min-ask, China, Karamay', // 20000000 < 122070312500000
+  f0102376: 'min-ask, China, Karamay', // 20000000 < 61035156250000
   f0102641: 'min-ask, China, Guangzhou', // 20000000 < 1220581054687500000
   f0110442: 'min-ask, China, Fujian', // 20000000 < 12206909179687500000
   f0110936: 'min-ask, China, Fujian', // 20000000 < 12206909179687500000
   f0114924: 'min-ask, China, Fujian', // 20000000 < 12206909179687500000
   f0120983: 'min-ask, China, Fujian', // 20000000 < 1220581054687500000
+  f0121450: 'min-ask, China, Fujian', // 20000000 < 610290527343750000
   f0132706: 'min-ask, China, Beijing', // 20000000 < 12207031250000000
+  f0134682: 'min-ask, China, Beijing', // 20000000 < 6103454589843750000
+  f0134778: 'min-ask, China, Beijing', // 20000000 < 6103454589843750000
   f0134991: 'min-ask, China, Foshan', // 20000000 < 12206909179687500000
   f0135738: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0141614: 'min-ask, China, Fujian', // 20000000 < 1220703124877929687500000
+  f0149765: 'min-ask, China, Beijing', // 20000000 < 6103454589843750000
 
   // Error
 
@@ -481,150 +483,14 @@ const annotations = {
 
   // XNR (Not routable)
 
-  f01000: 'xnr, NR - bootstrap', // carry-over
-  f01001: 'xnr, NR - bootstrap', // carry-over
-  f01002: 'xnr, NR - bootstrap', // carry-over
-  f01013: 'xnr, NR', // carry-over
-  f01101: 'xnr, China, Shanghai', // carry-over
-  f01102: 'xnr, China, Shandong', // carry-over
-  f01156: 'xnr, China, Hangzhou', // carry-over
   f01231: 'xnr, Singapore', // carry-over
-  f01232: 'xnr, China, Hangzhou', // carry-over
-  f02304: 'xnr, USA, Mountain View', // carry-over
-  f02382: 'xnr, China, Zhongshan-cfa', // carry-over
-  f02385: 'xnr, USA, East Islip', // carry-over
   f02388: 'xnr, Netherlands, Amersfoort, Kroketje', // carry-over
-  f02398: 'xnr, China, Hong Kong', // carry-over
-  f02404: 'xnr, Korea, Seoul', // carry-over
-  f02424: 'xnr, Korea, Wanju', // carry-over
-  f02436: 'xnr, Netherlands', // carry-over
-  f02506: 'xnr, USA, Clarksville', // carry-over
-  f02515: 'xnr, China, Hangzhou', // carry-over
-  f02518: 'xnr, China, Shaanxi', // carry-over
-  f02575: 'xnr, USA, Davis', // carry-over
-  f02608: 'xnr, USA, San Jose', // carry-over
-  f02666: 'xnr, China, Chengdu', // carry-over
-  f02768: 'xnr, China, Hong Kong', // carry-over
   f02769: 'xnr, NR', // carry-over
   f02770: 'xnr, China, Hong Kong', // carry-over
-  f02774: 'xnr, Australia, Sydney', // carry-over
   f02775: 'xnr, China, Hong Kong', // carry-over
   f02777: 'xnr, NR', // carry-over
   f02778: 'xnr, NR', // carry-over
   f02779: 'xnr, NR', // carry-over
-  f02824: 'xnr, China, Chengdu', // carry-over
-  f03264: 'xnr, Korea, Bucheon-si', // carry-over
-  f03319: 'xnr, NR', // carry-over
-  f03341: 'xnr, NR', // carry-over
-  f03346: 'xnr, China, Huzhou, wckj', // carry-over
-  f03361: 'xnr, China, Guangzhou', // carry-over
-  f03428: 'xnr, China, Beijing + Jiaxing + Germany, Frankfurt', // carry-over
-  f03487: 'xnr, China, Yibin', // carry-over
-  f03544: 'xnr, China, Guiyang', // carry-over
-  f03619: 'xnr, China, Xiamen', // carry-over
-  f03622: 'xnr, 黑犇科技', // carry-over
-  f03765: 'xnr, Colombia, Medellin', // carry-over
-  f04444: 'xnr, NR', // carry-over
-  f06262: 'xnr, China, Guangzhou', // carry-over
-  f07717: 'xnr, China, Shenyang', // carry-over
-  f07731: 'xnr, NR', // carry-over
-  f07772: 'xnr, China, Dongguan', // carry-over
-  f07796: 'xnr, China, Hunan', // carry-over
-  f07827: 'xnr, China, Wuhan, 天际合', // carry-over
-  f07843: 'xnr, NR', // carry-over
-  f07866: 'xnr, China, Foshan', // carry-over
-  f07924: 'xnr, USA', // carry-over
-  f07931: 'xnr, NR', // carry-over
-  f07959: 'xnr, NR', // carry-over
-  f07964: 'xnr, USA, Ashburn', // carry-over
-  f07987: 'xnr, China, Beijing', // carry-over
-  f08022: 'xnr, China, Yibin', // carry-over
-  f08053: 'xnr, NR', // carry-over
-  f08061: 'xnr, China, Foshan', // carry-over
-  f08095: 'xnr, Canada, Surrey', // carry-over
-  f08097: 'xnr, Korea, Pyeongtaek-si', // carry-over
-  f08136: "xnr, China, Xi'an", // carry-over
-  f08171: 'xnr, NR', // carry-over
-  f08183: 'xnr, USA, Irvine', // carry-over
-  f08207: 'xnr, Australia, Brisbane', // carry-over
-  f08223: 'xnr, NR', // carry-over
-  f08225: 'xnr, Australia, Sydney', // carry-over
-  f08238: 'xnr, NR', // carry-over
-  f08246: 'xnr, USA', // carry-over
-  f08280: 'xnr, NR', // carry-over
-  f08284: 'xnr, China, Liaoning', // carry-over
-  f08290: 'xnr, NR', // carry-over
-  f08311: 'xnr, China, Shenzhen', // carry-over
-  f08315: 'xnr, China, Chongqing', // carry-over
-  f08319: 'xnr, NR', // carry-over
-  f08322: 'xnr, China, Chongqing', // carry-over
-  f08327: 'xnr, NR', // carry-over
-  f08349: 'xnr, China, Guangzhou, hkicloud', // carry-over
-  f08361: 'xnr, Malaysia, Kulai', // carry-over
-  f08385: 'xnr, NR', // carry-over
-  f08388: 'xnr, China, Taizhou', // carry-over
-  f08390: 'xnr, China, Shenzhen', // carry-over
-  f08393: 'xnr, NR', // carry-over
-  f08402: 'xnr, China, Sichuan', // carry-over
-  f08406: 'xnr, China, Shenzhen', // carry-over
-  f08424: 'xnr, China, Chengdu', // carry-over
-  f08425: 'xnr, NR', // carry-over
-  f08429: 'xnr, yfeing', // carry-over
-  f08432: 'xnr, China, Taizhou', // carry-over
-  f08440: 'xnr, France, Fontenay-sous-Bois', // carry-over
-  f08460: 'xnr, NR', // carry-over
-  f08482: 'xnr, USA, Athol, @why', // carry-over
-  f08503: 'xnr, NR', // carry-over
-  f08574: 'xnr, USA', // carry-over
-  f08787: 'xnr, China, Yibin', // carry-over
-  f08789: 'xnr, China, Fuzhou', // carry-over
-  f08791: 'xnr, NR', // carry-over
-  f08893: 'xnr, NR', // carry-over
-  f08902: 'xnr, NR', // carry-over
-  f08911: 'xnr, Korea, Wanju', // carry-over
-  f08964: 'xnr, NR', // carry-over
-  f08980: 'xnr, USA, San Jose', // carry-over
-  f08988: 'xnr, Korea, Hwaseong-si', // carry-over
-  f08994: 'xnr, NR', // carry-over
-  f09006: 'xnr, NR', // carry-over
-  f09007: 'xnr, Korea, Hwaseong-si', // carry-over
-  f09035: 'xnr, NR', // carry-over
-  f09053: 'xnr, China, Shenzhen', // carry-over
-  f09055: 'xnr, China, Jieyang', // carry-over
-  f09076: 'xnr, NR', // carry-over
-  f09084: 'xnr, NR', // carry-over
-  f09529: 'xnr, NR', // carry-over
-  f09538: 'xnr, NR', // carry-over
-  f09569: 'xnr, China, Beijing', // carry-over
-  f09578: 'xnr, NR', // carry-over
-  f09594: 'xnr, NR', // carry-over
-  f09610: 'xnr, China, Beijing', // carry-over
-  f09629: 'xnr, NR', // carry-over
-  f09662: 'xnr, Canada, Surrey', // carry-over
-  f09707: 'xnr, China, Guangdong', // carry-over
-  f09712: 'xnr, China, Chengdu', // carry-over
-  f09719: 'xnr, Korea, Geumcheon-gu', // carry-over
-  f09731: 'xnr, China, Guiyang', // carry-over
-  f09733: 'xnr, China, Chongqing', // carry-over
-  f09736: 'xnr, China, Guangdong', // carry-over
-  f09753: 'xnr, Korea, Pyeongtaek-si', // carry-over
-  f09762: 'xnr, China, Guangdong', // carry-over
-  f09805: 'xnr, China, Fuzhou', // carry-over
-  f09833: 'xnr, USA, San Jose', // carry-over
-  f09840: 'xnr, China, Baoding', // carry-over
-  f09912: 'xnr, USA, Concord', // carry-over
-  f09966: 'xnr, NR', // carry-over
-  f09974: 'xnr, Canada, Calgary', // carry-over
-  f09997: 'xnr, USA', // carry-over
-  f010005: 'xnr, China, Zhongshan', // carry-over
-  f010009: 'xnr, USA, East Islip', // carry-over
-  f010028: 'xnr, USA, Berkeley', // carry-over
-  f010033: 'xnr, NR', // carry-over
-  f010040: 'xnr, China, Shenzhen', // carry-over
-  f010041: 'xnr, USA, Jackson', // carry-over
-  f010078: 'xnr, China, Zhangjiakou + Hong Kong', // carry-over
-  f010173: 'xnr, Korea, Pyeongtaek-si', // carry-over
-  f010200: 'xnr, NR', // carry-over
   f010202: 'xnr, Singapore', // carry-over
   f010213: 'xnr, NR', // carry-over
   f010222: 'xnr, NR', // carry-over
@@ -1317,7 +1183,151 @@ const annotations = {
   f094894: 'xnr, Korea, Gwangju', // carry-over
   f095398: 'xnr, Korea, Sejong', // carry-over
   f095528: 'xnr, China, Hangzhou', // carry-over
-  f095833: 'xnr, Korea, Yongin-si' // carry-over
+  f095833: 'xnr, Korea, Yongin-si', // carry-over
+
+  // Unknown
+
+  f02422: "unknown, China, Xi'an",
+
+  // Delisted
+
+  f01000: 'delist, NR - bootstrap', // carry-over
+  f01001: 'delist, NR - bootstrap', // carry-over
+  f01002: 'delist, NR - bootstrap', // carry-over
+  f01013: 'delist, NR', // carry-over
+  f01101: 'delist, China, Shanghai', // carry-over
+  f01102: 'delist, China, Shandong', // carry-over
+  f01156: 'delist, China, Hangzhou', // carry-over
+  f01232: 'delist, China, Hangzhou', // carry-over
+  f02304: 'delist, USA, Mountain View', // carry-over
+  f02382: 'delist, China, Zhongshan-cfa', // carry-over
+  f02385: 'delist, USA, East Islip', // carry-over
+  f02398: 'delist, China, Hong Kong', // carry-over
+  f02404: 'delist, Korea, Seoul', // carry-over
+  f02424: 'delist, Korea, Wanju', // carry-over
+  f02436: 'delist, Netherlands', // carry-over
+  f02506: 'delist, USA, Clarksville', // carry-over
+  f02515: 'delist, China, Hangzhou', // carry-over
+  f02518: 'delist, China, Shaanxi', // carry-over
+  f02575: 'delist, USA, Davis', // carry-over
+  f02608: 'delist, USA, San Jose', // carry-over
+  f02666: 'delist, China, Chengdu', // carry-over
+  f02768: 'delist, China, Hong Kong', // carry-over
+  f02774: 'delist, Australia, Sydney', // carry-over
+  f02824: 'delist, China, Chengdu', // carry-over
+  f03264: 'delist, Korea, Bucheon-si', // carry-over
+  f03319: 'delist, NR', // carry-over
+  f03341: 'delist, NR', // carry-over
+  f03346: 'delist, China, Huzhou, wckj', // carry-over
+  f03361: 'delist, China, Guangzhou', // carry-over
+  f03428: 'delist, China, Beijing + Jiaxing + Germany, Frankfurt', // carry-over
+  f03487: 'delist, China, Yibin', // carry-over
+  f03544: 'delist, China, Guiyang', // carry-over
+  f03619: 'delist, China, Xiamen', // carry-over
+  f03622: 'delist, 黑犇科技', // carry-over
+  f03765: 'delist, Colombia, Medellin', // carry-over
+  f04444: 'delist, NR', // carry-over
+  f06262: 'delist, China, Guangzhou', // carry-over
+  f07717: 'delist, China, Shenyang', // carry-over
+  f07731: 'delist, NR', // carry-over
+  f07772: 'delist, China, Dongguan', // carry-over
+  f07796: 'delist, China, Hunan', // carry-over
+  f07827: 'delist, China, Wuhan, 天际合', // carry-over
+  f07843: 'delist, NR', // carry-over
+  f07866: 'delist, China, Foshan', // carry-over
+  f07924: 'delist, USA', // carry-over
+  f07931: 'delist, NR', // carry-over
+  f07959: 'delist, NR', // carry-over
+  f07964: 'delist, USA, Ashburn', // carry-over
+  f07987: 'delist, China, Beijing', // carry-over
+  f08022: 'delist, China, Yibin', // carry-over
+  f08053: 'delist, NR', // carry-over
+  f08061: 'delist, China, Foshan', // carry-over
+  f08095: 'delist, Canada, Surrey', // carry-over
+  f08097: 'delist, Korea, Pyeongtaek-si', // carry-over
+  f08136: "delist, China, Xi'an", // carry-over
+  f08171: 'delist, NR', // carry-over
+  f08183: 'delist, USA, Irvine', // carry-over
+  f08207: 'delist, Australia, Brisbane', // carry-over
+  f08223: 'delist, NR', // carry-over
+  f08225: 'delist, Australia, Sydney', // carry-over
+  f08238: 'delist, NR', // carry-over
+  f08246: 'delist, USA', // carry-over
+  f08280: 'delist, NR', // carry-over
+  f08284: 'delist, China, Liaoning', // carry-over
+  f08290: 'delist, NR', // carry-over
+  f08311: 'delist, China, Shenzhen', // carry-over
+  f08315: 'delist, China, Chongqing', // carry-over
+  f08319: 'delist, NR', // carry-over
+  f08322: 'delist, China, Chongqing', // carry-over
+  f08327: 'delist, NR', // carry-over
+  f08349: 'delist, China, Guangzhou, hkicloud', // carry-over
+  f08361: 'delist, Malaysia, Kulai', // carry-over
+  f08385: 'delist, NR', // carry-over
+  f08388: 'delist, China, Taizhou', // carry-over
+  f08390: 'delist, China, Shenzhen', // carry-over
+  f08393: 'delist, NR', // carry-over
+  f08402: 'delist, China, Sichuan', // carry-over
+  f08406: 'delist, China, Shenzhen', // carry-over
+  f08424: 'delist, China, Chengdu', // carry-over
+  f08425: 'delist, NR', // carry-over
+  f08429: 'delist, yfeing', // carry-over
+  f08432: 'delist, China, Taizhou', // carry-over
+  f08440: 'delist, France, Fontenay-sous-Bois', // carry-over
+  f08460: 'delist, NR', // carry-over
+  f08482: 'delist, USA, Athol, @why', // carry-over
+  f08503: 'delist, NR', // carry-over
+  f08574: 'delist, USA', // carry-over
+  f08787: 'delist, China, Yibin', // carry-over
+  f08789: 'delist, China, Fuzhou', // carry-over
+  f08791: 'delist, NR', // carry-over
+  f08893: 'delist, NR', // carry-over
+  f08902: 'delist, NR', // carry-over
+  f08911: 'delist, Korea, Wanju', // carry-over
+  f08964: 'delist, NR', // carry-over
+  f08980: 'delist, USA, San Jose', // carry-over
+  f08988: 'delist, Korea, Hwaseong-si', // carry-over
+  f08994: 'delist, NR', // carry-over
+  f09006: 'delist, NR', // carry-over
+  f09007: 'delist, Korea, Hwaseong-si', // carry-over
+  f09035: 'delist, NR', // carry-over
+  f09053: 'delist, China, Shenzhen', // carry-over
+  f09055: 'delist, China, Jieyang', // carry-over
+  f09076: 'delist, NR', // carry-over
+  f09084: 'delist, NR', // carry-over
+  f09529: 'delist, NR', // carry-over
+  f09538: 'delist, NR', // carry-over
+  f09569: 'delist, China, Beijing', // carry-over
+  f09578: 'delist, NR', // carry-over
+  f09594: 'delist, NR', // carry-over
+  f09610: 'delist, China, Beijing', // carry-over
+  f09629: 'delist, NR', // carry-over
+  f09662: 'delist, Canada, Surrey', // carry-over
+  f09707: 'delist, China, Guangdong', // carry-over
+  f09712: 'delist, China, Chengdu', // carry-over
+  f09719: 'delist, Korea, Geumcheon-gu', // carry-over
+  f09731: 'delist, China, Guiyang', // carry-over
+  f09733: 'delist, China, Chongqing', // carry-over
+  f09736: 'delist, China, Guangdong', // carry-over
+  f09753: 'delist, Korea, Pyeongtaek-si', // carry-over
+  f09762: 'delist, China, Guangdong', // carry-over
+  f09805: 'delist, China, Fuzhou', // carry-over
+  f09833: 'delist, USA, San Jose', // carry-over
+  f09840: 'delist, China, Baoding', // carry-over
+  f09912: 'delist, USA, Concord', // carry-over
+  f09966: 'delist, NR', // carry-over
+  f09974: 'delist, Canada, Calgary', // carry-over
+  f09997: 'delist, USA', // carry-over
+  f010005: 'delist, China, Zhongshan', // carry-over
+  f010009: 'delist, USA, East Islip', // carry-over
+  f010028: 'delist, USA, Berkeley', // carry-over
+  f010033: 'delist, NR', // carry-over
+  f010040: 'delist, China, Shenzhen', // carry-over
+  f010041: 'delist, USA, Jackson', // carry-over
+  f010078: 'delist, China, Zhangjiakou + Hong Kong', // carry-over
+  f010173: 'delist, Korea, Pyeongtaek-si', // carry-over
+  f010200: 'delist, NR', // carry-over
+  f065259: 'delist, NR' // carry-over
 }
 
 export default annotations

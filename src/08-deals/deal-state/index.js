@@ -491,7 +491,8 @@ export default function DealList ({ appState, cid, dealType }) {
       'rejected',
       'dial',
       'xnr',
-      'unknown'
+      'unknown',
+      'delist',
     ]
   } else if (dealType === 'slingshot') {
     annotations = annotationsSlingshot
@@ -514,6 +515,7 @@ export default function DealList ({ appState, cid, dealType }) {
       'xnr',
       'error-ask',
       'unknown',
+      'delist',
     ]
   } else {
     return <p>Error</p>
