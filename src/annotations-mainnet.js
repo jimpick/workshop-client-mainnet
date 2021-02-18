@@ -12,6 +12,30 @@
 const annotations = {
   // New
 
+  f02606: 'new, China, Zhejiang',
+  f03249: 'new, China, Yunfu',
+  f03488: 'new, Korea, Yeongdeungpo-dong',
+  f021714: 'new, China, Hong Kong',
+  f024156: 'new, USA',
+  f032913: 'new, China, Shenzhen',
+  f033356: 'new, Korea, Yeongdeungpo-dong',
+  f039800: 'new, China, Chengdu',
+  f053140: 'new, China, Shenzhen',
+  f054370: 'new, China, Dongguan',
+  f062770: 'new, China, Fuzhou',
+  f066781: 'new, China, Beijing',
+  f0102375: 'new, China, Karamay',
+  f0109713: 'new, China, Beijing',
+  f0126824: 'new, Korea, Seongnam-si',
+  f0146165: 'new, China, Huizhou',
+  f0147284: 'new, Korea, Seongnam-si',
+  f0149026: 'new, China, Shenzhen',
+  f0151281: 'new, China, Karamay',
+  f0151692: 'new, China, Karamay',
+  f0152747: 'new, China, Karamay',
+  f0153986: 'new, China, Changsha',
+  f0155384: 'new, Korea, Seongnam-si',
+
   // Active
 
   f03339: 'active, China, Luzhou, benxun', // carry-over
