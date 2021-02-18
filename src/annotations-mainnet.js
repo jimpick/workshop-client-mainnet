@@ -12,39 +12,6 @@
 const annotations = {
   // New
 
-  f01234: 'new, Belgium, Bonheiden', // carry-over
-  f01277: 'new, Sweden, Stockholm', // carry-over
-  f02423: 'new, Ukraine, Kyiv', // carry-over
-  f03224: 'new, Ukraine, Kyiv', // carry-over
-  f09642: 'new, Sweden, Alvsjo', // carry-over
-  f019100: 'new, Romania, Cluj-Napoca', // carry-over
-  f019279: 'new, Canada, Calgary', // carry-over
-  f071624: 'new, USA, Boyne City', // carry-over
-  f080480: 'new, Ukraine, Lviv', // carry-over
-  f081323: 'new, UK, Cambridge', // carry-over
-  f092516: 'new, USA, Boardman', // carry-over
-  f096976: 'new, Russia', // carry-over
-  f097777: 'new, Ukraine, Ivano-Frankivsk', // carry-over
-  f098770: 'new, USA, Pontiac', // carry-over
-  f099608: 'new, Latvia, Riga', // carry-over
-  f0104671: 'new, Japan, Ota-ku', // carry-over
-  f0104967: 'new, Ukraine, Ternopil', // carry-over
-  f0113664: 'new, France', // carry-over
-  f0116707: 'new, Germany, Dusseldorf', // carry-over
-  f0116766: 'new, USA, Westford', // carry-over
-  f0124335: 'new, Finland, Helsinki', // carry-over
-  f0126868: 'new, Ukraine, Vinnytsia', // carry-over
-  f0127896: 'new, Bulgaria, Sofia', // carry-over
-  f0135078: 'new, USA, Denver', // carry-over
-  f0137489: 'new, UK, Deeside', // carry-over
-  f0145162: 'new, Japan, Kumamoto', // carry-over
-  f0145385: 'new, Malaysia, Petaling Jaya', // carry-over
-  f0145874: 'new, Canada, Brampton', // carry-over
-  f0157535: 'new, Canada, Brampton', // carry-over
-  f0165400: 'new, Canada, Brampton', // carry-over
-  f0165539: 'new, Japan, Yokohama', // carry-over
-  f0187709: 'new, Russia, Moscow', // carry-over
-
   // Active
 
   f03339: 'active, China, Luzhou, benxun', // carry-over
@@ -81,14 +48,20 @@ const annotations = {
   f086151: 'sealing, China, Dongguan', // carry-over
   f089840: 'sealing, Korea, Yeongdeungpo-gu', // carry-over
   f091355: 'sealing, China, Chengdu', // carry-over
+  f096976: 'sealing, Russia', // 1593610
   f098664: 'sealing, China, Jiangsu', // carry-over
+  f0116766: 'sealing, USA, Westford', // 1593607
   f0146751: 'sealing, China, Jiangsu', // 1593579
 
   // Stuck
 
-  f0101387: 'stuck, China, Shenzhen', // CheckForAcceptance: about 4 hours
+  f092516: 'stuck, USA, Boardman', // CheckForAcceptance: about 2 hours
+  f0101387: 'stuck, China, Shenzhen', // CheckForAcceptance: about 6 hours
   f0114687: 'stuck, China, Dongguan', // carry-over
   f0118769: 'stuck, China, Fujian', // carry-over
+  f0137489: 'stuck, UK, Deeside', // CheckForAcceptance: about 2 hours
+  f0145385: 'stuck, Malaysia, Petaling Jaya', // CheckForAcceptance: about 2 hours
+  f0165539: 'stuck, Japan, Yokohama', // CheckForAcceptance: about 2 hours
 
   // Busy
 
@@ -97,6 +70,7 @@ const annotations = {
 
   // Min Size
 
+  f01234: 'min-size, Belgium, Bonheiden', // 65536 < 3221225472
   f01238: 'min-size, Vietnam, Hanoi, FILECOIN-VIETNAM', // carry-over
   f01240: 'min-size, Netherlands, HidNand', // carry-over
   f01272: 'min-size, Singapore', // carry-over
@@ -106,9 +80,11 @@ const annotations = {
   f02401: 'min-size, Canada, Chambly, NBFS Canada', // carry-over
   f02416: 'min-size, China, Guangdong, 星际无限', // carry-over
   f02419: 'min-size, China, Shanghai, yuantai', // carry-over
+  f02423: 'min-size, Ukraine, Kyiv', // 65536 < 134217728
   f02576: 'min-size, Denmark, Gjerlev, BenjaminH', // carry-over
   f02619: 'min-size, China, Beijing, Blockcasting', // carry-over
   f02620: 'min-size, Poland, Krakow, @magik6k', // carry-over
+  f03224: 'min-size, Ukraine, Kyiv', // 65536 < 134217728
   f03624: 'min-size, Germany, Chemnitz, ode', // carry-over
   f07998: 'min-size, China, Hangzhou', // carry-over
   f08240: 'min-size, Russia, Novosibirsk, Rabinovitch', // carry-over
@@ -125,6 +101,7 @@ const annotations = {
   f018501: 'min-size, China, Beijing', // carry-over
   f019002: 'min-size, China, Xiamen', // carry-over
   f019104: 'min-size, Canada, Chambly, NBFS DEV', // carry-over
+  f019279: 'min-size, Canada, Calgary', // 65536 < 8589934592
   f019362: 'min-size, China, Hangzhou, 青青子衿', // carry-over
   f019399: 'min-size, Korea, Busan', // carry-over
   f019551: 'min-size, UK, Birmingham, @Neofix AF', // carry-over
@@ -185,13 +162,28 @@ const annotations = {
   f082617: 'min-size, China, Fujian', // carry-over
   f083920: 'min-size, NR', // carry-over
   f085899: 'min-size, China, Wuxi', // carry-over
+  f097777: 'min-size, Ukraine, Ivano-Frankivsk', // 65536 < 104857600
+  f099608: 'min-size, Latvia, Riga', // 65536 < 268435456
+  f0104671: 'min-size, Japan, Ota-ku', // 65536 < 4294967296
+  f0104967: 'min-size, Ukraine, Ternopil', // 65536 < 2147483648
+  f0113664: 'min-size, France', // 65536 < 4294967296
+  f0116707: 'min-size, Germany, Dusseldorf', // 65536 < 4294967296
   f0118360: 'min-size, China, Hangzhou', // 131072 < 4294967296
+  f0124335: 'min-size, Finland, Helsinki', // 65536 < 1073741824
+  f0126868: 'min-size, Ukraine, Vinnytsia', // 65536 < 10485760
+  f0127896: 'min-size, Bulgaria, Sofia', // 65536 < 17179869184
+  f0145162: 'min-size, Japan, Kumamoto', // 65536 < 1073741824
+  f0145874: 'min-size, Canada, Brampton', // 65536 < 17179869184
+  f0157535: 'min-size, Canada, Brampton', // 65536 < 17179869184
+  f0165400: 'min-size, Canada, Brampton', // 65536 < 17179869184
+  f0187709: 'min-size, Russia, Moscow', // 65536 < 1073741824
 
   // Max Size
 
   // Min Ask
 
   f01241: 'min-ask, China, Karamay', // 20000000 < 61035156250000
+  f01277: 'min-ask, Sweden, Stockholm', // 20000000 < 61035156250000
   f01280: 'min-ask, China, Wuxi', // 20000000 < 6103515625000000
   f02415:
     'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // 20000000 < 61035156250000
@@ -277,6 +269,7 @@ const annotations = {
   f079247: 'min-ask, USA + China, Guangzhou + Beijing + Dongguan + Shenzhen', // 20000000 < 61035156250000
   f079301: 'min-ask, China, Guangzhou + Dongguan + Shenzhen, USA', // 20000000 < 122070312500000
   f080444: 'min-ask, China, Chengdu', // 20000000 < 122070312500000
+  f080480: 'min-ask, Ukraine, Lviv', // 20000000 < 61035156
   f082452: 'min-ask, China, Dongguan', // 20000000 < 1220581054687500000
   f083625: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f084879: 'min-ask, Korea, Seongnam-si', // 20000000 < 1220703125000
@@ -315,6 +308,7 @@ const annotations = {
   f016398: 'error, China, Shanghai', // carry-over
   f017193: "error, China, Xi'an + Singapore", // carry-over
   f017242: 'error, China, Guangdong', // carry-over
+  f019100: 'error, Romania, Cluj-Napoca', // stream reset
   f019824: 'error, USA', // carry-over
   f023179: 'error, China, Fuzhou', // carry-over
   f023198: 'error, NR', // carry-over
@@ -355,6 +349,7 @@ const annotations = {
   f08094: 'rejected, China, Guangzhou', // no online
   f08157: 'rejected, China, Beijing + Germany, Frankfurt, 超星际', // carry-over
   f09620: 'rejected, China, Weifang', // carry-over
+  f09642: 'rejected, Sweden, Alvsjo',
   f010493: 'rejected, China, Shanghai', // carry-over
   f010498: 'rejected, China, Shenzhen', // carry-over
   f010505: 'rejected, China, Wuhan, Interstellar Roewe', // carry-over
@@ -398,11 +393,13 @@ const annotations = {
   f066270: 'rejected, China, Dongguan', // carry-over
   f066790: 'rejected, China, Beijing', // carry-over
   f068560: 'rejected, China, Changsha', // carry-over
+  f071624: 'rejected, USA, Boyne City', // no online
   f073697: 'rejected, China, Karamay',
   f078899: 'rejected, NR', // carry-over
   f079618: 'rejected, China, Beijing', // carry-over
   f079815: 'rejected, China, Hangzhou', // carry-over
   f080468: 'rejected, NR', // carry-over
+  f081323: 'rejected, UK, Cambridge', // no online
   f083065: 'rejected, China, Taizhou', // carry-over
   f083638: 'rejected, China, Chongqing', // carry-over
   f085710: 'rejected, China, Chengdu', // carry-over
@@ -413,6 +410,7 @@ const annotations = {
   f089551: 'rejected, NR', // carry-over
   f090387: 'rejected, China, Fuzhou', // carry-over
   f090864: 'rejected, NR', // carry-over
+  f098770: 'rejected, USA, Pontiac', // no online
   f0109272: 'rejected, China, Dongguan', // carry-over
   f0111658: 'rejected, China, Fuzhou', // carry-over
   f0112087: 'rejected, China, Xiamen', // carry-over
@@ -420,6 +418,7 @@ const annotations = {
   f0120909: 'rejected, China, Changsha', // carry-over
   f0121260: 'rejected, China, Quinzhou', // carry-over
   f0121602: 'rejected, China, Hong Kong', // sh: 1: /root/.lotusminer/dealfilter.pl: not found
+  f0135078: 'rejected, USA, Denver', // no online
   f0146301: 'rejected, China, Shenzhen', // no online
 
   // Dial
