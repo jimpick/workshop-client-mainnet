@@ -12,60 +12,55 @@
 const annotations = {
   // New
 
-	f023219: "new, China, Beijing + Zhangjiakou",
-	f0136014: "new, China, Suzhou",
-	f0151366: "new, China, Fuzhou + Xiamen",
-	f0162183: "new, China, Xi'an",
 
   // Active
 
+	f066804: "active, China, Zhejiang", // 1593805 about 2 hours
+	f094374: "active, China, Nanyang", // 1593797 about 2 hours
+	f0146751: "active, China, Jiangsu", // 1593579 about 2 hours
 
   // Active-sealing (active, with in-flight sealing)
 
-	f066804: "active-sealing, China, Zhejiang", // 1593805
-	f094374: "active-sealing, China, Nanyang", // 1593797
 
   // Sealing
 
 	f015233: "sealing, China, Nanjing", // 1593798
+	f016276: "sealing, China, Beijing", // 1593917
+	f019806: "sealing, China, Beijing", // 1593916
 	f020489: "sealing, China, Lioaning", // 1593802
+	f020928: "sealing, China, Deyang + Singapore", // 1593918
 	f024944: "sealing, Korea, Yeongdeungpo-dong", // 1593799
+	f029665: "sealing, China, Shenyang", // 1593830
 	f033036: "sealing, China, Liaoning", // 1593803
 	f044160: "sealing, China, Guangzhou, muxing", // 1593801
+	f055102: "sealing, Vietman, Ho Chi Minh City + China", // 1593925
+	f055132: "sealing, Vietman, Ho Chi Minh City + China", // 1593924
+	f081644: "sealing, China, Wenzhou", // 1593806
+	f086151: "sealing, China, Dongguan", // 1593829
 	f096976: "sealing, Russia", // 1593610
 	f098664: "sealing, China, Jiangsu", // 1593800
 	f0116766: "sealing, USA, Westford", // 1593607
 	f0129805: "sealing, China, Zhejiang + Australia, Adelaide", // 1593684
-	f0146751: "sealing, China, Jiangsu", // 1593579
 
   // Stuck
 
-	f02822: "stuck, China, Chengdu", // Transferring: 15 minutes
-	f03339: "stuck, China, Luzhou, benxun", // StartDataTransfer: 16 minutes
-	f03345: "stuck, China, Fuzhou, chh", // CheckForAcceptance: 15 minutes
-	f08019: "stuck, China, Yantai, 三合", // Transferring: 14 minutes
-	f010513: "stuck, China, Chongqing", // CheckForAcceptance: 15 minutes
-	f016203: "stuck, China, Chengdu", // CheckForAcceptance: 15 minutes
-	f016276: "stuck, China, Beijing", // CheckForAcceptance: 15 minutes
-	f019806: "stuck, China, Beijing", // CheckForAcceptance: 16 minutes
-	f020928: "stuck, China, Deyang + Singapore", // CheckForAcceptance: 15 minutes
-	f022261: "stuck, China, Luzhou", // CheckForAcceptance: 14 minutes
-	f029665: "stuck, China, Shenyang", // CheckForAcceptance: 15 minutes
-	f039515: "stuck, China, Chongqing", // CheckForAcceptance: 10 minutes
-	f053088: "stuck, China, Shanghai", // CheckForAcceptance: 16 minutes
-	f055102: "stuck, Vietman, Ho Chi Minh City + China", // CheckForAcceptance: 15 minutes
-	f055132: "stuck, Vietman, Ho Chi Minh City + China", // CheckForAcceptance: 15 minutes
-	f081644: "stuck, China, Wenzhou", // CheckForAcceptance: 16 minutes
-	f086151: "stuck, China, Dongguan", // CheckForAcceptance: 15 minutes
-	f089840: "stuck, Korea, Yeongdeungpo-gu", // CheckForAcceptance: 14 minutes
-	f091355: "stuck, China, Chengdu", // CheckForAcceptance: 15 minutes
-	f092516: "stuck, USA, Boardman", // CheckForAcceptance: about 13 hours
-	f0101387: "stuck, China, Shenzhen", // CheckForAcceptance: about 16 hours
+	f02822: "stuck, China, Chengdu", // Transferring: about 9 hours
+	f03339: "stuck, China, Luzhou, benxun", // StartDataTransfer: about 9 hours
+	f03345: "stuck, China, Fuzhou, chh", // CheckForAcceptance: about 9 hours
+	f08019: "stuck, China, Yantai, 三合", // Transferring: about 9 hours
+	f010513: "stuck, China, Chongqing", // CheckForAcceptance: about 9 hours
+	f016203: "stuck, China, Chengdu", // CheckForAcceptance: about 9 hours
+	f022261: "stuck, China, Luzhou", // CheckForAcceptance: about 9 hours
+	f039515: "stuck, China, Chongqing", // CheckForAcceptance: about 9 hours
+	f053088: "stuck, China, Shanghai", // CheckForAcceptance: about 9 hours
+	f089840: "stuck, Korea, Yeongdeungpo-gu", // CheckForAcceptance: about 9 hours
+	f091355: "stuck, China, Chengdu", // CheckForAcceptance: about 9 hours
+	f092516: "stuck, USA, Boardman", // CheckForAcceptance: about 22 hours
+	f0101387: "stuck, China, Shenzhen", // CheckForAcceptance: 1 day
 	f0114687: "stuck, China, Dongguan", // carry-over
 	f0118769: "stuck, China, Fujian", // carry-over
-	f0137489: "stuck, UK, Deeside", // CheckForAcceptance: about 13 hours
-	f0145385: "stuck, Malaysia, Petaling Jaya", // CheckForAcceptance: about 13 hours
-	f0165539: "stuck, Japan, Yokohama", // CheckForAcceptance: about 13 hours
+	f0145385: "stuck, Malaysia, Petaling Jaya", // CheckForAcceptance: about 22 hours
+	f0165539: "stuck, Japan, Yokohama", // CheckForAcceptance: about 22 hours
 
   // Busy
 
@@ -361,8 +356,11 @@ const annotations = {
 	f0116436: "error, Singapore", // EOF
 	f0116445: "error, Singapore", // EOF
 	f0123536: "error, China, Fuzhou", // stream reset
+	f0137489: "error, UK, Deeside", // deal failed: (State=26) error calling node: AddFunds exit code: SysErrOutOfGas(7)
 	f0148143: "error, China, Tianjin", // AddPiece failed: adding piece to sector: writing piece: storage call error 0: creating unsealed sector file: writing trailer: writing trailer length: write /fcfs/f0148143/unsealed/s-t0148143-24949.tmp: operation not supported
 	f0150782: "error, China, Xiamen", // carry-over
+	f0151366: "error, China, Fuzhou + Xiamen", // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
+	f0162183: "error, China, Xi'an", // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
 
   // Dial backoff
 
@@ -521,6 +519,7 @@ const annotations = {
 	f020223: "dial, China, Guiyang", // carry-over
 	f021075: "dial, China, Chengdu", // carry-over
 	f023001: "dial, China, Changsha", // carry-over
+	f023219: "dial, China, Beijing + Zhangjiakou", // * [/ip4/116.132.221.24/tcp/42990] dial tcp4 0.0.0.0:40873->116.132.221.24:42990: i/o timeout
 	f023581: "dial, China, Hong Kong, mine-much", // carry-over
 	f023853: "dial, China, Fuzhou", // carry-over
 	f023876: "dial, China, Fuzhou", // carry-over
@@ -1304,6 +1303,7 @@ const annotations = {
 	f095398: "xnr, Korea, Sejong", // carry-over
 	f095528: "xnr, China, Hangzhou", // carry-over
 	f095833: "xnr, Korea, Yongin-si", // carry-over
+	f0136014: "xnr, China, Suzhou",
 
   // Delisted
 
