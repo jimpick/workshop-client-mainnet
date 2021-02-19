@@ -69,6 +69,7 @@ const baiduCities = {
   259: 'Jieyang', // 揭阳市
   264: 'Zhangjiakou', // 张家口市
   268: 'Zhengzhou', // 郑州市
+  276: 'Taizhou', // 泰州市
   277: 'Suqian', // 宿迁市
   283: 'Ordos', // 鄂尔多斯市
   287: 'Weifang', // 潍坊市
