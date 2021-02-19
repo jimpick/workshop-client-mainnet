@@ -19,6 +19,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     filterBackoffMiners,
     filterMinMiners,
     filterStuckMiners,
+    filterBusyMiners,
     filterRejectedMiners,
     filterNonRoutable
   } = appState
@@ -80,6 +81,9 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     if (filterStuckMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/^stuck/i))
     }
+    if (filterBusyMiners && miners) {
+      return miners.filter(miner => annotations[miner].match(/^busy/i))
+    }
     if (filterRejectedMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/^rejected/i))
     }
@@ -98,6 +102,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     filterBackoffMiners,
     filterMinMiners,
     filterStuckMiners,
+    filterBusyMiners,
     filterNonRoutable
   ])
 
@@ -241,6 +246,19 @@ export default function ProposeDeal ({ appState, updateAppState }) {
             style={{ marginLeft: '1rem' }}
           />
           'stuck'
+        </label>
+        <label>
+          <input
+            type='checkbox'
+            checked={filterBusyMiners}
+            onChange={() => {
+              updateAppState(draft => {
+                draft.filterBusyMiners = !filterBusyMiners
+              })
+            }}
+            style={{ marginLeft: '1rem' }}
+          />
+          'busy'
         </label>
         <label>
           <input
