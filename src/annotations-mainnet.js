@@ -12,6 +12,32 @@
 const annotations = {
   // New
 
+  f02381: 'new, China, Dongguan',
+  f03344: 'new, China, Guangzhou',
+  f05664: 'new, China, Hong Kong',
+  f07945: 'new, China, Guangzhou',
+  f010507: 'new, China, Hangzhou',
+  f014683: 'new, China, Dongguan',
+  f017229: 'new, China, Sichuan',
+  f062260: 'new, China, Guangzhou',
+  f062318: 'new, Korea, Naju',
+  f0121768: 'new, China, Guangdong',
+  f0124102: 'new, China, Beijing',
+  f0131611: 'new, Korea, Jeju City',
+  f0132178: 'new, China, Ningbo',
+  f0134285: "new, China, Ya'an + USA",
+  f0134516: 'new, Singapore',
+  f0134518: 'new, China, Guangdong',
+  f0134565: 'new, China, Karamay',
+  f0142135: "new, China, Ya'an + USA",
+  f0143500: 'new, China, Zhejiang',
+  f0148391: 'new, China, Changsha + Japan, Tokyo',
+  f0151341: 'new, China, Zhangzhou',
+  f0157941: 'new, China, Changsha',
+  f0158265: 'new, China, Hefei',
+  f0158468: 'new, China, Guangzhou',
+  f0158993: 'new, China, Zhangzhou',
+
 
   // Active
 
