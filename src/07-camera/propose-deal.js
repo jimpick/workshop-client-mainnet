@@ -53,7 +53,15 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     return dealMiners
   }, [deals])
 
+  const nonDelistedMiners = useMemo(() => {
+    if (miners) {
+      return miners.filter(miner => !annotations[miner].match(/^delist/))
+    }
+    return miners
+  }, [miners])
+
   const filteredMiners = useMemo(() => {
+    const miners = nonDelistedMiners
     if (filterNewMiners && miners) {
       return miners.filter(miner => annotations[miner].match(/^new/))
     }
@@ -92,7 +100,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
     }
     return miners
   }, [
-    miners,
+    nonDelistedMiners,
     filterNewMiners,
     filterRetestMiners,
     filterSealingMiners,

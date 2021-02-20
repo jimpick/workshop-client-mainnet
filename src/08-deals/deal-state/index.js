@@ -109,6 +109,9 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
   if (lastDealState === 'ClientTransferRestart') {
     return ['stuck', `ClientTransferRestart: ${elapsedNow}`]
   }
+  if (lastDealState === 'FundsReserved') {
+    return ['inflight', `FundsReserved: ${elapsedNow}`]
+  }
   if (lastDealState === 'Error' || lastDealState === 'Failing') {
     const matchFailingDataTransferProvider = dealMessage.match(/channel removed due to inactivity/)
     if (matchFailingDataTransferProvider) {
@@ -477,6 +480,7 @@ export default function DealList ({ appState, cid, dealType }) {
     buckets = [
       'retest',
       'new',
+      'inflight',
       'unknown',
       'active',
       'active-sealing',
@@ -498,6 +502,7 @@ export default function DealList ({ appState, cid, dealType }) {
     annotations = annotationsSlingshot
     buckets = [
       'retest',
+      'inflight',
       'unknown',
       'active-candidate',
       'candidate',
