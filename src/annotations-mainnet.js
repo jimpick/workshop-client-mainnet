@@ -13,20 +13,43 @@ const annotations = {
   // New
 
   f08103: 'new, China, Foshan', // carry-over
+  f010405: 'new, China, Foshan',
+  f019041: 'new, China, Zhejiang + Singapore',
   f022125: 'new, China, Shenzhen', // carry-over
   f022399: 'new, China, Beijing', // carry-over
   f022566: 'new, China, Nanchong', // carry-over
+  f030379: 'new, Korea, Uiwang',
   f034258: 'new, China, Mianyang', // carry-over
+  f039940: 'new, China, Mianyang',
   f078621: 'new, Korea, Uiwang', // carry-over
+  f0100116: 'new, Korea, Uljin County',
   f0101087: 'new, Korea', // carry-over
   f0106949: 'new, Korea, Seoul', // carry-over
+  f0107118: 'new, China, Hangzhou + Zhejiang',
+  f0107753: 'new, China, Shanghai',
   f0110133: 'new, China, Ningbo', // carry-over
   f0110283: 'new, China, Zhongshan', // carry-over
   f0111544: 'new, Korea, Seoul', // carry-over
+  f0112075: 'new, Korea, Seoul',
+  f0112691: 'new, Korea, Seoul',
+  f0118837: 'new, Korea, Seoul',
+  f0120546: 'new, Korea, Seoul',
+  f0120793: 'new, Korea, Seoul',
+  f0126037: 'new, Korea, Seoul',
+  f0126038: 'new, Korea, Seoul',
+  f0127352: 'new, Korea, Seoul',
+  f0127353: 'new, Korea, Seoul',
+  f0127354: 'new, Korea, Seoul',
+  f0128580: 'new, Korea, Seoul',
+  f0128581: 'new, Korea, Seoul',
+  f0128582: 'new, Korea, Seoul',
+  f0130961: 'new, Korea, Seongnam-si',
   f0131654: 'new, Korea, Seoul', // carry-over
   f0149444: 'new, Korea, Gangseo-gu', // carry-over
   f0156452: 'new, Korea, Ulsan', // carry-over
+  f0165111: 'new, China, Guangzhou',
   f0165643: 'new, China, Guangzhou', // carry-over
+  f0215704: 'new, Korea, Icheon-si',
 
   // Active
 
