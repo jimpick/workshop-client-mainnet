@@ -12,53 +12,22 @@
 const annotations = {
   // New
 
-  f08103: 'new, China, Foshan', // carry-over
-  f010405: 'new, China, Foshan',
-  f019041: 'new, China, Zhejiang + Singapore',
-  f022125: 'new, China, Shenzhen', // carry-over
-  f022399: 'new, China, Beijing', // carry-over
-  f022566: 'new, China, Nanchong', // carry-over
-  f030379: 'new, Korea, Uiwang',
-  f034258: 'new, China, Mianyang', // carry-over
-  f039940: 'new, China, Mianyang',
-  f078621: 'new, Korea, Uiwang', // carry-over
-  f0100116: 'new, Korea, Uljin County',
-  f0101087: 'new, Korea', // carry-over
-  f0106949: 'new, Korea, Seoul', // carry-over
-  f0107118: 'new, China, Hangzhou + Zhejiang',
-  f0107753: 'new, China, Shanghai',
-  f0110133: 'new, China, Ningbo', // carry-over
-  f0110283: 'new, China, Zhongshan', // carry-over
-  f0111544: 'new, Korea, Seoul', // carry-over
-  f0112075: 'new, Korea, Seoul',
-  f0112691: 'new, Korea, Seoul',
-  f0118837: 'new, Korea, Seoul',
-  f0120546: 'new, Korea, Seoul',
-  f0120793: 'new, Korea, Seoul',
-  f0126037: 'new, Korea, Seoul',
-  f0126038: 'new, Korea, Seoul',
-  f0127352: 'new, Korea, Seoul',
-  f0127353: 'new, Korea, Seoul',
-  f0127354: 'new, Korea, Seoul',
-  f0128580: 'new, Korea, Seoul',
-  f0128581: 'new, Korea, Seoul',
-  f0128582: 'new, Korea, Seoul',
-  f0130961: 'new, Korea, Seongnam-si',
-  f0131654: 'new, Korea, Seoul', // carry-over
-  f0149444: 'new, Korea, Gangseo-gu', // carry-over
-  f0156452: 'new, Korea, Ulsan', // carry-over
-  f0165111: 'new, China, Guangzhou',
-  f0165643: 'new, China, Guangzhou', // carry-over
-  f0215704: 'new, Korea, Icheon-si',
-
   // Active
 
+  f03339: 'active, China, Luzhou, benxun', // 1594223 about 2 hours
+  f016203: 'active, China, Chengdu', // 1594291 about 2 hours
+  f030347: 'active, China, Zhejiang', // 1594150 about 4 hours
+  f039515: 'active, China, Chongqing', // 1594187 about 2 hours
+  f053088: 'active, China, Shanghai', // 1594192 about 2 hours
   f066804: 'active, China, Zhejiang', // 1593805 about 2 hours
   f081644: 'active, China, Wenzhou', // 1593806 about 4 hours
   f094374: 'active, China, Nanyang', // 1593797 about 2 hours
+  f096974: 'active, China, Chongqing', // 1594191 about 3 hours
   f096976: 'active, Russia', // 1593610 about 9 hours
+  f0106949: 'active, Korea, Seoul', // 1594568 about 3 hours
   f0110768: 'active, Korea, Gwangju', // 1594146 about 3 hours
   f0146751: 'active, China, Jiangsu', // 1593579 about 2 hours
+  f0156207: 'active, Korea, Ulsan', // 1594157 about 2 hours
 
   // Active-sealing (active, with in-flight sealing)
 
@@ -66,12 +35,10 @@ const annotations = {
 
   f02540: 'sealing, USA, Mobile', // 1594145
   f02822: 'sealing, China, Chengdu', // 1594194
-  f03339: 'sealing, China, Luzhou, benxun', // 1594223
   f03345: 'sealing, China, Fuzhou, chh', // 1594196
   f08019: 'sealing, China, Yantai, 三合', // 1594193
   f010513: 'sealing, China, Chongqing', // 1594337
   f015233: 'sealing, China, Nanjing', // 1593798
-  f016203: 'sealing, China, Chengdu', // 1594291
   f016276: 'sealing, China, Beijing', // 1593917
   f019806: 'sealing, China, Beijing', // 1593916
   f020489: 'sealing, China, Lioaning', // 1593802
@@ -80,32 +47,32 @@ const annotations = {
   f024468: 'sealing, China, Shenzhen', // 1594147
   f024944: 'sealing, Korea, Yeongdeungpo-dong', // 1593799
   f029665: 'sealing, China, Shenyang', // 1593830
-  f030347: 'sealing, China, Zhejiang', // 1594150
   f033036: 'sealing, China, Liaoning', // 1593803
-  f039515: 'sealing, China, Chongqing', // 1594187
   f044160: 'sealing, China, Guangzhou, muxing', // 1593801
-  f053088: 'sealing, China, Shanghai', // 1594192
   f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1593925
   f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 1593924
+  f078621: 'sealing, Korea, Uiwang', // 1594602
   f086151: 'sealing, China, Dongguan', // 1593829
   f089840: 'sealing, Korea, Yeongdeungpo-gu', // 1594188
   f092516: 'sealing, USA, Boardman', // 1594230
-  f096974: 'sealing, China, Chongqing', // 1594191
   f098664: 'sealing, China, Jiangsu', // 1593800
   f0102313: 'sealing, Korea, Gangseo-gu', // 1594226
   f0105074: 'sealing, China, Shanghai', // 1594269
+  f0107753: 'sealing, China, Shanghai', // 1594569
   f0113331: 'sealing, Korea, Jinju + USA', // 1594367
   f0116766: 'sealing, USA, Westford', // 1593607
   f0129805: 'sealing, China, Zhejiang + Australia, Adelaide', // 1593684
-  f0156207: 'sealing, Korea, Ulsan', // 1594157
+  f0149444: 'sealing, Korea, Gangseo-gu', // 1594576
+  f0156452: 'sealing, Korea, Ulsan', // 1594595
   f0165539: 'sealing, Japan, Yokohama', // 1594254
 
   // Stuck
 
-  f091355: 'stuck, China, Chengdu', // CheckForAcceptance: 1 day
+  f091355: 'stuck, China, Chengdu', // CheckForAcceptance: 2 days
   f0114687: 'stuck, China, Dongguan', // carry-over
   f0118769: 'stuck, China, Fujian', // carry-over
-  f0145385: 'stuck, Malaysia, Petaling Jaya', // CheckForAcceptance: 2 days
+  f0145385: 'stuck, Malaysia, Petaling Jaya', // CheckForAcceptance: 3 days
+  f0165643: 'stuck, China, Guangzhou', // Transferring: about 12 hours
 
   // Busy
 
@@ -159,6 +126,7 @@ const annotations = {
   f022163: 'min-size, dns:fil.akasha.network', // carry-over
   f022289: 'min-size, China, Mianyang', // 131072 < 4294967296
   f022352: 'min-size, Norway, Borgen, TechHedge, @Reiers', // carry-over
+  f022399: 'min-size, China, Beijing', // 131072 < 1573031772
   f023467: 'min-size, Norway, Oslo, PhiMining.io', // carry-over
   f023565: 'min-size, China, Fuzhou', // carry-over
   f023660: 'min-size, China, Fuzhou', // carry-over
@@ -195,6 +163,7 @@ const annotations = {
   f030335: 'min-size, China, Fujian', // carry-over
   f032934: 'min-size, Korea, Incheon', // carry-over
   f034047: 'min-size, China, Hangzhou', // carry-over
+  f039940: 'min-size, China, Mianyang', // 131072 < 134217728
   f047419: 'min-size, USA, Waukesha', // carry-over
   f048669: 'min-size, NR', // carry-over
   f049882: 'min-size, Netherlands, De Rijp, Chipz', // carry-over
@@ -212,6 +181,7 @@ const annotations = {
   f097618: 'min-size, China, Suzhou', // 131072 < 524288000
   f097777: 'min-size, Ukraine, Ivano-Frankivsk', // 65536 < 104857600
   f099608: 'min-size, Latvia, Riga', // 65536 < 268435456
+  f0100116: 'min-size, Korea, Uljin County', // 131072 < 1073741824
   f0104671: 'min-size, Japan, Ota-ku', // 65536 < 4294967296
   f0104967: 'min-size, Ukraine, Ternopil', // 65536 < 2147483648
   f0113664: 'min-size, France', // 65536 < 4294967296
@@ -268,12 +238,14 @@ const annotations = {
     'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // 20000000 < 61035156250000
   f08025:
     'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // 20000000 < 61035156250000
+  f08103: 'min-ask, China, Foshan', // 20000000 < 61035156
   f08257: 'min-ask, China, Zhejiang + Singapore', // 20000000 < 12207031250
   f08383: 'min-ask, China, Karamay', // 20000000 < 61035156250000
   f09693: 'min-ask, China, Karamay', // 20000000 < 61035156250000
   f09696: 'min-ask, China, Karamay', // 20000000 < 61035156250000
   f010010: 'min-ask, China, Changzhou', // 20000000 < 6103515625000000000000000
   f010253: 'min-ask, China, Karamay', // 20000000 < 61035156250000
+  f010405: 'min-ask, China, Foshan', // 20000000 < 122070312500000
   f015897: 'min-ask, China, Hong Kong', // 20000000 < 6103515625000000
   f017665: 'min-ask, China, Shenyang', // 20000000 < 122070312500000
   f018780:
@@ -302,6 +274,7 @@ const annotations = {
   f029401: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f029404: 'min-ask, China, Karamay', // 20000000 < 61035156250000
   f030203: 'min-ask, China, Shenzhen', // 20000000 < 6103515625000000
+  f030379: 'min-ask, Korea, Uiwang', // 20000000 < 1220703125
   f030384: 'min-ask, China, Shenzhen', // 20000000 < 12207031250000
   f032913: 'min-ask, China, Shenzhen', // 20000000 < 122070312500
   f033123: 'min-ask, China, Karamay', // 20000000 < 61035156250000
@@ -354,6 +327,7 @@ const annotations = {
   f099239: 'min-ask, China, Hong Kong', // 20000000 < 12207031250000000
   f099884: 'min-ask, China, Chengdu', // 20000000 < 610351562500000
   f0100082: 'min-ask, Korea, Seongnam-si', // 20000000 < 1220703125000
+  f0101087: 'min-ask, Korea', // 20000000 < 122070312500000
   f0102374: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0102375: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0102376: 'min-ask, China, Karamay', // 20000000 < 61035156250000
@@ -363,6 +337,7 @@ const annotations = {
   f0103851: 'min-ask, China, Karamay', // 20000000 < 61035156250000
   f0107308: 'min-ask, China, Shenyang', // 20000000 < 121948242187500000
   f0109713: 'min-ask, China, Beijing', // 20000000 < 12206909179687500000
+  f0110283: 'min-ask, China, Zhongshan', // 20000000 < 12207031250000000000000000
   f0110442: 'min-ask, China, Fujian', // 20000000 < 12206909179687500000
   f0110936: 'min-ask, China, Fujian', // 20000000 < 12206909179687500000
   f0114808: 'min-ask, China, Shanghai', // 20000000 < 12207031250000000
@@ -376,6 +351,7 @@ const annotations = {
   f0128974: 'min-ask, Korea, Seoul', // 20000000 < 1220703125000
   f0129072: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0131464: 'min-ask, USA, Ashburn', // 20000000 < 122070312500000000
+  f0131654: 'min-ask, Korea, Seoul', // 20000000 < 1220703125000
   f0132706: 'min-ask, China, Beijing', // 20000000 < 12207031250000000
   f0133999: 'min-ask, China, Changsha', // 20000000 < 610351562
   f0134565: 'min-ask, China, Karamay', // 20000000 < 122070312500000
@@ -401,6 +377,8 @@ const annotations = {
   f0157941: 'min-ask, China, Changsha', // 20000000 < 122070312500000
   f0158142: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0158468: 'min-ask, China, Guangzhou', // 20000000 < 12206909179687500000
+  f0165111: 'min-ask, China, Guangzhou', // 20000000 < 1220703125000000000
+  f0215704: 'min-ask, Korea, Icheon-si', // 20000000 < 1220703125000
 
   // Error
 
@@ -429,6 +407,7 @@ const annotations = {
   f0101387: 'error, China, Shenzhen', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.5415333073434099 FIL, balance: 0.489326159491395194 FIL): not enough funds to execute transaction
   f0109040: 'error, China, Zhangzhou', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0109043: 'error, China, Karamay', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 3.57070054909691776 FIL, balance: 0.415811107476371135 FIL): not enough funds to execute transaction
+  f0110133: 'error, China, Ningbo', // stream reset
   f0116436: 'error, Singapore', // EOF
   f0116445: 'error, Singapore', // EOF
   f0123536: 'error, China, Fuzhou', // stream reset
@@ -485,6 +464,7 @@ const annotations = {
   f014683: 'rejected, China, Dongguan',
   f015747: 'rejected, Japan, Setagaya-ku', // carry-over
   f017229: 'rejected, China, Sichuan',
+  f019041: 'rejected, China, Zhejiang + Singapore', // no online
   f019099: 'rejected, China, Hong Kong + Guangzhou', // no online
   f019422: 'rejected, China, Guangzhou', // no online
   f020523: 'rejected, China, Suzhou, changjiang', // carry-over
@@ -495,6 +475,8 @@ const annotations = {
   f021870: 'rejected, China, Jieyang',
   f021961: 'rejected, China, Fuzhou', // carry-over
   f022072: 'rejected, China, Jieyang', // carry-over
+  f022125: 'rejected, China, Shenzhen', // no online
+  f022566: 'rejected, China, Nanchong',
   f022748: 'rejected, China, Xinyang', // carry-over
   f022832: 'rejected, China, Beijing',
   f022853: 'rejected, China, Fuzhou', // carry-over
@@ -504,6 +486,7 @@ const annotations = {
   f029490: 'rejected, NR', // carry-over
   f032888: 'rejected, China, Weifang',
   f033501: 'rejected, China, Shenzhen',
+  f034258: 'rejected, China, Mianyang',
   f034567: 'rejected, China, Shenzhen',
   f034777: 'rejected, China, Chengdu', // carry-over
   f035436: 'rejected, China, Jiangsu', // carry-over
@@ -553,17 +536,32 @@ const annotations = {
   f090864: 'rejected, NR', // carry-over
   f098770: 'rejected, USA, Pontiac', // no online
   f0102358: 'rejected, China, Guizhou', // Deals from client wallet f3vp7m3244tjtxrvg4n2lfedtqnnnzhyno3ym6vnl4wzozztik4f2kvzfbfbgzcga7g3mckddw6x4ahp5n4iwa are not welcome
+  f0107118: 'rejected, China, Hangzhou + Zhejiang', // no online
   f0109272: 'rejected, China, Dongguan', // carry-over
+  f0111544: 'rejected, Korea, Seoul', // no online
   f0111658: 'rejected, China, Fuzhou', // carry-over
+  f0112075: 'rejected, Korea, Seoul', // no online
   f0112087: 'rejected, China, Xiamen', // carry-over
+  f0112691: 'rejected, Korea, Seoul', // no online
   f0116628: 'rejected, China, Shanghai', // carry-over
   f0118317: 'rejected, Singapore',
   f0118330: 'rejected, Singapore',
+  f0118837: 'rejected, Korea, Seoul', // no online
+  f0120546: 'rejected, Korea, Seoul', // no online
+  f0120793: 'rejected, Korea, Seoul', // no online
   f0120909: 'rejected, China, Changsha', // carry-over
   f0121260: 'rejected, China, Quinzhou', // carry-over
   f0121602: 'rejected, China, Hong Kong', // sh: 1: /root/.lotusminer/dealfilter.pl: not found
   f0124036: 'rejected, China, Nanchang', // no online
+  f0126037: 'rejected, Korea, Seoul', // no online
+  f0126038: 'rejected, Korea, Seoul', // no online
   f0126824: 'rejected, Korea, Seongnam-si', // no online
+  f0127352: 'rejected, Korea, Seoul', // no online
+  f0127353: 'rejected, Korea, Seoul', // no online
+  f0127354: 'rejected, Korea, Seoul', // no online
+  f0128580: 'rejected, Korea, Seoul', // no online
+  f0128581: 'rejected, Korea, Seoul', // no online
+  f0128582: 'rejected, Korea, Seoul', // no online
   f0129976: 'rejected, Korea, Gwangju', // no online
   f0131331: 'rejected, China, Beijing',
   f0131611: 'rejected, Korea, Jeju City', // no online
@@ -709,6 +707,7 @@ const annotations = {
   f095296: 'dial, China, Suqian', // * [/ip4/222.187.238.207/tcp/24001] failed to negotiate security protocol: read tcp4 66.70.191.245:33373->222.187.238.207:24001: read: connection reset by peer
   f095506: 'dial, China, Ningxia', // carry-over
   f096224: 'dial, China, Chongqing', // carry-over
+  f0130961: 'dial, Korea, Seongnam-si', // * [/ip4/121.165.242.197/tcp/24001] dial tcp4 121.165.242.197:24001: i/o timeout
   f0213894: 'dial, China, Hangzhou', // carry-over
 
   // XNR (Not routable)
