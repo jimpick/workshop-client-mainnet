@@ -16,6 +16,7 @@ const baiduCities = {
   29: 'Zhejiang', // 浙江省
   32: 'Sichuan', // 四川省
   41: 'Qiqihar', // 齐齐哈尔市
+  48: 'Harbin', // 哈尔滨市
   58: 'Shenyang', // 沈阳市
   74: 'Deyang', // 德阳市
   75: 'Chengdu', // 成都市
@@ -96,6 +97,7 @@ const baiduCities = {
   346: 'Yangzhou', // 扬州市
   348: 'Changzhou', // 常州市
   352: 'Hanzhong', // 汉中市
+  354: 'Zibo', // 淄博市
   362: 'Xianning', // 咸宁市
   363: 'Huaihua', // 怀化市
   364: 'Shangrao', // 上饶市
