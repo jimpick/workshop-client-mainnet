@@ -477,6 +477,7 @@ export default function DealList ({ appState, cid, dealType }) {
     buckets = [
       'retest',
       'new',
+      'unknown',
       'active',
       'active-sealing',
       'sealing',
@@ -491,13 +492,13 @@ export default function DealList ({ appState, cid, dealType }) {
       'rejected',
       'dial',
       'xnr',
-      'unknown',
       'delist',
     ]
   } else if (dealType === 'slingshot') {
     annotations = annotationsSlingshot
     buckets = [
       'retest',
+      'unknown',
       'active-candidate',
       'candidate',
       'active',
@@ -514,7 +515,6 @@ export default function DealList ({ appState, cid, dealType }) {
       'dial',
       'xnr',
       'error-ask',
-      'unknown',
       'delist',
     ]
   } else {
