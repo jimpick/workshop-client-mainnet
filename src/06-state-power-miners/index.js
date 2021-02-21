@@ -239,7 +239,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       try {
         const nonRoutableSet = JSON.parse(data)
         setNonRoutableSet(nonRoutableSet)
-        console.log("Loaded non-routable set from idb", nonRoutableSetKey)
+        console.log('Loaded non-routable set from idb', nonRoutableSetKey)
       } catch (e) {
         console.log(
           'Failed parsing non-routable set from idb',
@@ -292,7 +292,9 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       miners &&
       [...miners].filter(
         miner =>
-          !nonRoutableSet[miner] ||
+          (!nonRoutableSet[miner] &&
+            (!annotations[miner] ||
+              !annotations[miner].startsWith('delist'))) ||
           (queryAllMinersWithAnnotations && annotations[miner])
       )
     )
@@ -463,10 +465,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             Multiaddrs: maddrs
           } = minerInfo
           if (!wirePeerId) {
-            console.warn(
-              `Error PeerId was falsey for ${miner}`,
-              wirePeerId
-            )
+            console.warn(`Error PeerId was falsey for ${miner}`, wirePeerId)
             minerAddrsUpdates.push(draft => {
               // console.log('Jim9', miner, !!nonRoutableSet[miner])
               draft[miner] = {}
