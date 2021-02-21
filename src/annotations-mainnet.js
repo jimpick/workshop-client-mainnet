@@ -789,7 +789,7 @@ const annotations = {
   f09589: 'dial, China, Changsha', // * [/ip4/175.10.162.119/tcp/5472] dial tcp4 0.0.0.0:37207->175.10.162.119:5472: i/o timeout
   f09652: 'dial, Singapore', // * [/ip4/170.33.9.50/tcp/32632] dial tcp4 0.0.0.0:33373->170.33.9.50:32632: i/o timeout
   f09675: 'dial, USA', // * [/ip4/47.242.94.248/tcp/9999] dial tcp4 0.0.0.0:37207->47.242.94.248:9999: i/o timeout
-  f09964: 'dial, Germany, Frankfurt', // * [/ip4/47.91.79.110/tcp/50905] dial tcp4 47.91.79.110:50905: connect: connection refused
+  f09964: 'delist, Germany, Frankfurt', // * [/ip4/47.91.79.110/tcp/50905] dial tcp4 47.91.79.110:50905: connect: connection refused
   f010048: 'dial, China, Shanghai', // * [/ip4/124.78.146.207/tcp/65500] dial tcp4 0.0.0.0:37207->124.78.146.207:65500: i/o timeout
   f010056: 'dial, Singapore', // * [/ip4/8.209.82.79/tcp/14567] dial tcp4 0.0.0.0:37207->8.209.82.79:14567: i/o timeout
   f010088: 'dial, NR', // * [/ip6/2001:470:b:281::ac15:6402/tcp/1347] dial tcp6 [2001:470:b:281::ac15:6402]:1347: connect: network is unreachable  * [/ip4/50.35.187.157/tcp/1347] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWNoi8KHMeS8SEp3mDUCHDU8yRFW6SZ1SPmz2NLCSur2ei, but remote key matches 12D3KooWLwLsy4ZurxATu44K3y3ujTzLU7Dj4gXFcy6PiANqysMX
@@ -989,7 +989,7 @@ const annotations = {
   f025044: 'xnr, undefined',
   f029585: 'xnr, NR',
   f029649: 'xnr, China, Beijing',
-  f030249: 'xnr, NR',
+  f030249: 'delist, NR',
   f030272: 'xnr, undefined',
   f030331: 'xnr, NR',
   f030408: 'xnr, NR',
@@ -1069,8 +1069,8 @@ const annotations = {
   f065610: 'xnr, NR',
   f065670: 'xnr, NR',
   f065686: 'xnr, NR',
-  f065689: 'xnr, NR',
-  f065718: 'xnr, China, Taiwan, Hsinchu',
+  f065689: 'delist, NR',
+  f065718: 'delist, China, Taiwan, Hsinchu',
   f065881: 'xnr, NR',
   f065941: 'xnr, NR',
   f066210: 'xnr, NR',
@@ -1155,7 +1155,7 @@ const annotations = {
   f092157: 'xnr, NR',
   f092228: 'xnr, NR',
   f092887: 'xnr, NR',
-  f092971: 'xnr, China, Chongqing',
+  f092971: 'delist, China, Chongqing',
   f093701: 'xnr, NR',
   f093907: 'xnr, NR',
   f094003: 'xnr, NR',
