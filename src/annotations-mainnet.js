@@ -12,406 +12,6 @@
 const annotations = {
   // New
 
-  f02731: 'new, NR',
-  f087999: 'new, NR',
-  f023882: 'new, NR',
-  f0130884: 'new, NR',
-  f0152337: 'new, NR',
-  f0123245: 'new, NR',
-  f0130906: 'new, NR',
-  f0112887: 'new, NR',
-  f0145060: 'new, NR',
-  f0133501: 'new, NR',
-  f0135469: 'new, NR',
-  f098743: 'new, NR',
-  f029585: 'new, NR',
-  f0135473: 'new, NR',
-  f0135475: 'new, NR',
-  f0104654: 'new, NR',
-  f014699: 'new, NR',
-  f0154294: 'new, NR',
-  f0136810: 'new, NR',
-  f0142720: 'new, NR',
-  f0135859: 'new, NR',
-  f0146220: 'new, NR',
-  f089358: 'new, NR',
-  f0133763: 'new, NR',
-  f0135414: 'new, NR',
-  f0132638: 'new, NR',
-  f088125: 'new, NR',
-  f0133957: 'new, NR',
-  f0155049: 'new, NR',
-  f097126: 'new, NR',
-  f0130868: 'new, NR',
-  f0115117: 'new, NR',
-  f0137594: 'new, NR',
-  f085486: 'new, NR',
-  f01314: 'new, NR',
-  f066563: 'new, NR',
-  f07749: 'new, NR',
-  f0155050: 'new, NR',
-  f0101611: 'new, NR',
-  f065141: 'new, NR',
-  f0112680: 'new, NR',
-  f0111469: 'new, NR',
-  f0107903: 'new, NR',
-  f087899: 'new, NR',
-  f0146224: 'new, NR',
-  f0124904: 'new, NR',
-  f0103710: 'new, NR',
-  f042855: 'new, NR',
-  f0117541: 'new, NR',
-  f0135150: 'new, NR',
-  f0119828: 'new, NR',
-  f0142337: 'new, NR',
-  f0135934: 'new, NR',
-  f094764: 'new, NR',
-  f0121584: 'new, NR',
-  f097981: 'new, NR',
-  f0127378: 'new, NR',
-  f097432: 'new, NR',
-  f067170: 'new, NR',
-  f0101133: 'new, NR',
-  f0143907: 'new, NR',
-  f022804: 'new, NR',
-  f0136642: 'new, NR',
-  f030408: 'new, NR',
-  f0157316: 'new, NR',
-  f0161542: 'new, NR',
-  f095998: 'new, NR',
-  f0121718: 'new, NR',
-  f0134006: 'new, NR',
-  f0111384: 'new, NR',
-  f0150816: 'new, NR',
-  f0142238: 'new, NR',
-  f0117542: 'new, NR',
-  f0145986: 'new, NR',
-  f0144618: 'new, NR',
-  f0118641: 'new, NR',
-  f0128761: 'new, NR',
-  f0114868: 'new, NR',
-  f0124923: 'new, NR',
-  f0127735: 'new, NR',
-  f0145249: 'new, NR',
-  f0117434: 'new, NR',
-  f0142721: 'new, NR',
-  f0124158: 'new, NR',
-  f0129403: 'new, NR',
-  f08101: 'new, NR',
-  f0117543: 'new, NR',
-  f0101570: 'new, NR',
-  f088400: 'new, NR',
-  f0117416: 'new, NR',
-  f0104001: 'new, NR',
-  f0144952: 'new, NR',
-  f0144313: 'new, NR',
-  f096087: 'new, NR',
-  f0103704: 'new, NR',
-  f0108199: 'new, NR',
-  f0148452: 'new, NR',
-  f0132618: 'new, NR',
-  f0137868: 'new, NR',
-  f0117211: 'new, NR',
-  f0120057: 'new, NR',
-  f0103485: 'new, NR',
-  f0130791: 'new, NR',
-  f0101019: 'new, NR',
-  f0101016: 'new, NR',
-  f089380: 'new, NR',
-  f010558: 'new, NR',
-  f0154152: 'new, NR',
-  f0104398: 'new, NR',
-  f0151849: 'new, NR',
-  f0153775: 'new, NR',
-  f0109606: 'new, NR',
-  f090808: 'new, NR',
-  f0127640: 'new, NR',
-  f0158000: 'new, NR',
-  f0117565: 'new, NR',
-  f089173: 'new, NR',
-  f0102187: 'new, NR',
-  f0122496: 'new, NR',
-  f0107656: 'new, NR',
-  f089167: 'new, NR',
-  f071287: 'new, NR',
-  f0122215: 'new, NR',
-  f0150666: 'new, NR',
-  f097370: 'new, NR',
-  f0160135: 'new, NR',
-  f0119545: 'new, NR',
-  f0103162: 'new, NR',
-  f070803: 'new, NR',
-  f099132: 'new, NR',
-  f0144528: 'new, NR',
-  f0111584: 'new, NR',
-  f0137019: 'new, NR',
-  f099082: 'new, NR',
-  f0113735: 'new, NR',
-  f0160735: 'new, NR',
-  f099247: 'new, NR',
-  f054499: 'new, NR',
-  f0144069: 'new, NR',
-  f0150748: 'new, NR',
-  f0109903: 'new, NR',
-  f0151371: 'new, NR',
-  f087890: 'new, NR',
-  f0135066: 'new, NR',
-  f0142059: 'new, NR',
-  f0119997: 'new, NR',
-  f0154238: 'new, NR',
-  f087879: 'new, NR',
-  f0129750: 'new, NR',
-  f0143110: 'new, NR',
-  f097914: 'new, NR',
-  f0149753: 'new, NR',
-  f0107053: 'new, NR',
-  f0144194: 'new, NR',
-  f0132313: 'new, NR',
-  f092066: 'new, NR',
-  f0107995: 'new, NR',
-  f0146278: 'new, NR',
-  f099369: 'new, NR',
-  f0130686: 'new, NR',
-  f0104103: 'new, NR',
-  f0157991: 'new, NR',
-  f0101017: 'new, NR',
-  f0143162: 'new, NR',
-  f069391: 'new, NR',
-  f0145687: 'new, NR',
-  f096920: 'new, NR',
-  f0135551: 'new, NR',
-  f0109309: 'new, NR',
-  f0107091: 'new, NR',
-  f0114118: 'new, NR',
-  f0103282: 'new, NR',
-  f0100034: 'new, NR',
-  f0159883: 'new, NR',
-  f0106901: 'new, NR',
-  f0117405: 'new, NR',
-  f0124696: 'new, NR',
-  f0110808: 'new, NR',
-  f0134609: 'new, NR',
-  f0110289: 'new, NR',
-  f0159632: 'new, NR',
-  f0154865: 'new, NR',
-  f0122533: 'new, NR',
-  f073196: 'new, NR',
-  f0133379: 'new, NR',
-  f0105354: 'new, NR',
-  f0130094: 'new, NR',
-  f0143999: 'new, NR',
-  f0136868: 'new, NR',
-  f0136808: 'new, NR',
-  f0142723: 'new, NR',
-  f0153078: 'new, NR',
-  f089168: 'new, NR',
-  f0142281: 'new, NR',
-  f08091: 'new, NR',
-  f0128499: 'new, NR',
-  f0153024: 'new, NR',
-  f0104888: 'new, NR',
-  f0159660: 'new, NR',
-  f0153932: 'new, NR',
-  f0119976: 'new, NR',
-  f0130556: 'new, NR',
-  f0122940: 'new, NR',
-  f0127612: 'new, NR',
-  f0126702: 'new, NR',
-  f0121810: 'new, NR',
-  f0123346: 'new, NR',
-  f0157979: 'new, NR',
-  f0118028: 'new, NR',
-  f0107002: 'new, NR',
-  f023013: 'new, NR',
-  f0110695: 'new, NR',
-  f0153565: 'new, NR',
-  f0142245: 'new, NR',
-  f0148627: 'new, NR',
-  f0114867: 'new, NR',
-  f0110248: 'new, NR',
-  f0143511: 'new, NR',
-  f0144756: 'new, NR',
-  f0134286: 'new, NR',
-  f097658: 'new, NR',
-  f0127382: 'new, NR',
-  f0161819: 'new, NR',
-  f0158335: 'new, NR',
-  f043929: 'new, NR',
-  f0147119: 'new, NR',
-  f0158133: 'new, NR',
-  f0136399: 'new, NR',
-  f0106438: 'new, NR',
-  f0133833: 'new, NR',
-  f0113659: 'new, NR',
-  f0146956: 'new, NR',
-  f0160870: 'new, NR',
-  f0145503: 'new, NR',
-  f0128931: 'new, NR',
-  f053173: 'new, NR',
-  f0112593: 'new, NR',
-  f0152134: 'new, NR',
-  f091798: 'new, NR',
-  f0154335: 'new, NR',
-  f0110944: 'new, NR',
-  f0119146: 'new, NR',
-  f0125488: 'new, NR',
-  f0128788: 'new, NR',
-  f0111467: 'new, NR',
-  f0143666: 'new, NR',
-  f0153040: 'new, NR',
-  f0159689: 'new, NR',
-  f034350: 'new, NR',
-  f097840: 'new, NR',
-  f0156214: 'new, NR',
-  f0100786: 'new, NR',
-  f058374: 'new, NR',
-  f0131767: 'new, NR',
-  f0151706: 'new, NR',
-  f0136033: 'new, NR',
-  f0117450: 'new, NR',
-  f095334: 'new, NR',
-  f0110110: 'new, NR',
-  f0144530: 'new, NR',
-  f082000: 'new, NR',
-  f0135779: 'new, NR',
-  f0153188: 'new, NR',
-  f033462: 'new, NR',
-  f0155829: 'new, NR',
-  f0135758: 'new, NR',
-  f091959: 'new, NR',
-  f0118799: 'new, NR',
-  f0159333: 'new, NR',
-  f0128815: 'new, NR',
-  f0145985: 'new, NR',
-  f0147657: 'new, NR',
-  f0152866: 'new, NR',
-  f0159380: 'new, NR',
-  f0163275: 'new, NR',
-  f091999: 'new, NR',
-  f097219: 'new, NR',
-  f0147214: 'new, NR',
-  f0119633: 'new, NR',
-  f0159649: 'new, NR',
-  f034658: 'new, NR',
-  f0159654: 'new, NR',
-  f0112762: 'new, NR',
-  f0148269: 'new, NR',
-  f0129226: 'new, NR',
-  f0124944: 'new, NR',
-  f096077: 'new, NR',
-  f0159517: 'new, NR',
-  f0161468: 'new, NR',
-  f0101069: 'new, NR',
-  f010088: 'new, NR',
-  f0141762: 'new, NR',
-  f0114333: 'new, NR',
-  f0147586: 'new, NR',
-  f0149937: 'new, NR',
-  f0152943: 'new, NR',
-  f0153804: 'new, NR',
-  f0141761: 'new, NR',
-  f0110696: 'new, NR',
-  f0117318: 'new, NR',
-  f0122382: 'new, NR',
-  f0164260: 'new, NR',
-  f0123535: 'new, NR',
-  f065670: 'new, NR',
-  f0129422: 'new, NR',
-  f0166843: 'new, NR',
-  f060975: 'new, NR',
-  f0120702: 'new, NR',
-  f0130639: 'new, NR',
-  f0157502: 'new, NR',
-  f0161916: 'new, NR',
-  f0157265: 'new, NR',
-  f0112781: 'new, NR',
-  f0114350: 'new, NR',
-  f0166896: 'new, NR',
-  f0110261: 'new, NR',
-  f0159067: 'new, NR',
-  f097569: 'new, NR',
-  f096824: 'new, NR',
-  f097403: 'new, NR',
-  f0158276: 'new, NR',
-  f0154597: 'new, NR',
-  f0126097: 'new, NR',
-  f0156417: 'new, NR',
-  f0156342: 'new, NR',
-  f0133235: 'new, NR',
-  f0128011: 'new, NR',
-  f0158613: 'new, NR',
-  f0107133: 'new, NR',
-  f0115001: 'new, NR',
-  f023984: 'new, NR',
-  f0157025: 'new, NR',
-  f0123522: 'new, NR',
-  f0149455: 'new, NR',
-  f07824: 'new, NR',
-  f0128381: 'new, NR',
-  f080628: 'new, NR',
-  f0143032: 'new, NR',
-  f0149132: 'new, NR',
-  f0118976: 'new, NR',
-  f0142515: 'new, NR',
-  f0109349: 'new, NR',
-  f0113777: 'new, NR',
-  f0108672: 'new, NR',
-  f0107543: 'new, NR',
-  f0107322: 'new, NR',
-  f0144316: 'new, NR',
-  f088171: 'new, NR',
-  f0117118: 'new, NR',
-  f0166327: 'new, NR',
-  f030331: 'new, NR',
-  f024089: 'new, NR',
-  f033189: 'new, NR',
-  f0112679: 'new, NR',
-  f0126698: 'new, NR',
-  f0126039: 'new, NR',
-  f0152712: 'new, NR',
-  f029416: 'new, NR',
-  f0151629: 'new, NR',
-  f0153583: 'new, NR',
-  f0121771: 'new, NR',
-  f0130912: 'new, NR',
-  f0147801: 'new, NR',
-  f0100066: 'new, NR',
-  f0117556: 'new, NR',
-  f078465: 'new, NR',
-  f0131509: 'new, NR',
-  f0106090: 'new, NR',
-  f0168058: 'new, NR',
-  f0157917: 'new, NR',
-  f0165533: 'new, NR',
-  f0120747: 'new, NR',
-  f0166425: 'new, NR',
-  f0153960: 'new, NR',
-  f0158156: 'new, NR',
-  f0117358: 'new, NR',
-  f0132765: 'new, NR',
-  f0126661: 'new, NR',
-  f0127569: 'new, NR',
-  f0164126: 'new, NR',
-  f0150918: 'new, NR',
-  f0126376: 'new, NR',
-  f0158068: 'new, NR',
-  f0160137: 'new, NR',
-  f01154: 'new, NR',
-  f0136239: 'new, NR',
-  f0169053: 'new, NR',
-  f0149670: 'new, NR',
-  f0217771: 'new, NR',
-  f0130134: 'new, NR',
-  f0124126: 'new, NR',
-  f0149783: 'new, NR',
-  f0167458: 'new, NR',
-  f0162394: 'new, NR',
-  f0155515: 'new, NR',
-  f0220827: 'new, NR',
-  f081987: 'new, NR',
-  f0144304: 'new, NR',
-  f0144615: 'new, NR',
-
   // Inflight
 
   f0110804: 'inflight, USA, Santa Clara', // FundsReserved: 1 day
@@ -474,6 +74,7 @@ const annotations = {
   f092516: 'sealing, USA, Boardman', // carry-over
   f094430: 'sealing, China, Ordos', // 1594925
   f097720: 'sealing, Korea, Bucheon-si', // 1595089
+  f097840: 'sealing, NR', // 1595104
   f098664: 'sealing, China, Jiangsu', // carry-over
   f099705: 'sealing, China, Zibo', // 1594864
   f0102313: 'sealing, Korea, Gangseo-gu', // 1594226
@@ -486,8 +87,10 @@ const annotations = {
   f0119336: 'sealing, Canada, Ottawa', // 1594889
   f0133486: 'sealing, China, Shenzhen', // 1594862
   f0134671: 'sealing, Korea, Gimpo-si', // 1594888
+  f0147214: 'sealing, NR', // 1595103
   f0149444: 'sealing, Korea, Gangseo-gu', // 1594576
   f0150744: 'sealing, Korea, Ulsan', // 1594871
+  f0156342: 'sealing, NR', // 1595105
   f0165539: 'sealing, Japan, Yokohama', // carry-over
   f0165643: 'sealing, China, Guangzhou', // 1595092
   f0215370: 'sealing, China, Hangzhou', // 1595073
@@ -504,6 +107,7 @@ const annotations = {
   f0128191: 'stuck, Korea, Gangnam-gu', // CheckForAcceptance: 1 day
   f0137168: 'stuck, China, Beijing', // CheckForAcceptance: 1 day
   f0145385: 'stuck, Malaysia, Petaling Jaya', // carry-over
+  f0158156: 'stuck, NR', // CheckForAcceptance: about 1 hour
   f0160291: 'stuck, USA', // CheckForAcceptance: 1 day
   f0164326: 'stuck, China, Beijing', // CheckForAcceptance: 1 day
   f0165135: 'stuck, China, Guangzhou', // CheckForAcceptance: 1 day
@@ -599,6 +203,7 @@ const annotations = {
   f025017: 'min-size, China, Hefei, 一三科技-913', // 131072 < 134217728
   f030335: 'min-size, China, Fujian', // 131072 < 134217728
   f032934: 'min-size, Korea, Incheon', // 131072 < 1073741824
+  f033189: 'min-size, NR', // 131072 < 2147483648
   f034047: 'min-size, China, Hangzhou', // 131072 < 1073741824
   f039940: 'min-size, China, Mianyang', // 131072 < 134217728
   f047419: 'min-size, USA, Waukesha', // 131072 < 17179869184
@@ -810,6 +415,7 @@ const annotations = {
   f0131464: 'min-ask, USA, Ashburn', // 20000000 < 122070312500000000
   f0131654: 'min-ask, Korea, Seoul', // 20000000 < 1220703125000
   f0132706: 'min-ask, China, Beijing', // carry-over
+  f0132765: 'min-ask, NR', // 20000000 < 1220703125000
   f0133999: 'min-ask, China, Changsha', // 20000000 < 610351562
   f0134565: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0134682: 'min-ask, China, Beijing', // carry-over
@@ -834,6 +440,7 @@ const annotations = {
   f0157941: 'min-ask, China, Changsha', // 20000000 < 122070312500000
   f0158142: 'min-ask, China, Karamay', // carry-over
   f0158468: 'min-ask, China, Guangzhou', // 20000000 < 12206909179687500000
+  f0164260: 'min-ask, NR', // 20000000 < 122070312499877929687500000
   f0165111: 'min-ask, China, Guangzhou', // 20000000 < 1220703125000000000
   f0215704: 'min-ask, Korea, Icheon-si', // 20000000 < 1220703125000
   f0216849: 'min-ask, China, Fujian', // 20000000 < 12207031249999999877929687500000
@@ -894,6 +501,7 @@ const annotations = {
   f0137489: 'error, UK, Deeside', // carry-over
   f0145018: 'error, Korea', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.249999999955096349 FIL, balance: 0.139644554642297562 FIL): not enough funds to execute transaction
   f0148143: 'error, China, Tianjin', // carry-over
+  f0149455: 'error, NR', // deal failed: (State=26) error calling node: AddFunds exit code: SysErrOutOfGas(7)
   f0150782: 'error, China, Xiamen', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0151341: 'error, China, Zhangzhou', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0151366: 'error, China, Fuzhou + Xiamen', // carry-over
@@ -907,8 +515,15 @@ const annotations = {
 
   f07919: 'backoff, China, Beijing, Shanghai, Hunan',
   f015767: 'backoff, Russia, Khabarovsk + Japan, Khabarovsk + USA',
+  f058374: 'backoff, NR',
   f094128: 'backoff, China, Shenzhen',
+  f0101069: 'backoff, NR',
   f0122410: 'backoff, China, Shanghai',
+  f0143110: 'backoff, NR',
+  f0144194: 'backoff, NR',
+  f0148627: 'backoff, NR',
+  f0149783: 'backoff, NR',
+  f0159649: 'backoff, NR',
 
   // Rejected
 
@@ -1033,8 +648,10 @@ const annotations = {
   f090387: 'rejected, China, Fuzhou', // Deals from client wallet f3vp7m3244tjtxrvg4n2lfedtqnnnzhyno3ym6vnl4wzozztik4f2kvzfbfbgzcga7g3mckddw6x4ahp5n4iwa are not welcome
   f090864: 'rejected, NR',
   f098770: 'rejected, USA, Pontiac', // carry-over
+  f0100066: 'rejected, NR', // no online
   f0102358: 'rejected, China, Guizhou', // Deals from client wallet f3vp7m3244tjtxrvg4n2lfedtqnnnzhyno3ym6vnl4wzozztik4f2kvzfbfbgzcga7g3mckddw6x4ahp5n4iwa are not welcome
   f0107118: 'rejected, China, Hangzhou + Zhejiang', // no online
+  f0107133: 'rejected, NR', // no online
   f0109163: 'rejected, Korea, Songpa-gu', // no online
   f0109272: 'rejected, China, Dongguan', // no online
   f0110101: 'rejected, Korea, Goyang-si', // no online
@@ -1046,6 +663,7 @@ const annotations = {
   f0114043: 'rejected, Korea, Seoul', // no online
   f0114687: 'rejected, China, Dongguan', // no online
   f0116628: 'rejected, China, Shanghai', // no online
+  f0117118: 'rejected, NR', // no online
   f0117146: 'rejected, China, Beijing', // no online
   f0118317: 'rejected, Singapore', // carry-over
   f0118330: 'rejected, Singapore', // carry-over
@@ -1064,6 +682,7 @@ const annotations = {
   f0125863: 'rejected, Korea, Seoul', // no online
   f0126037: 'rejected, Korea, Seoul', // no online
   f0126038: 'rejected, Korea, Seoul', // no online
+  f0126039: 'rejected, NR', // no online
   f0126478: 'rejected, China, Ningbo',
   f0126824: 'rejected, Korea, Seongnam-si', // carry-over
   f0127352: 'rejected, Korea, Seoul', // no online
@@ -1093,7 +712,11 @@ const annotations = {
   f0147676: 'rejected, Korea, Seoul', // no online
   f0148391: 'rejected, China, Changsha + Japan, Tokyo', // no online
   f0149026: 'rejected, China, Shenzhen', // carry-over
+  f0149670: 'rejected, NR', // no online
+  f0151629: 'rejected, NR', // no online
   f0151993: 'rejected, Korea, Icheon-si', // carry-over
+  f0152712: 'rejected, NR', // no online
+  f0153188: 'rejected, NR', // no online
   f0153986: 'rejected, China, Changsha', // carry-over
   f0154039: 'rejected, NR', // Deals from client wallet f3vp7m3244tjtxrvg4n2lfedtqnnnzhyno3ym6vnl4wzozztik4f2kvzfbfbgzcga7g3mckddw6x4ahp5n4iwa are not welcome
   f0155004: 'rejected, Korea, Seoul', // no online
@@ -1106,6 +729,10 @@ const annotations = {
   f0158950: 'rejected, China, Beijing',
   f0159961: 'rejected, China, Chongqing', // deal start epoch is too far in the future: 524045 > 523478
   f0162385: 'rejected, China, Beijing',
+  f0162394: 'rejected, NR', // no online
+  f0164126: 'rejected, NR', // no online
+  f0165533: 'rejected, NR', // no online
+  f0166327: 'rejected, NR',
   f0214631: 'rejected, Korea, Seoul', // no online
   f0216139: 'rejected, Korea, Goyang-si', // no online
 
@@ -1113,6 +740,7 @@ const annotations = {
 
   f01012: 'dial, China, Guangzhou + Hong Kong', // * [/ip4/127.0.0.1/tcp/8888] dial tcp4 127.0.0.1:8888: connect: connection refused  * [/ip4/43.230.90.191/tcp/8888] dial tcp4 43.230.90.191:8888: connect: connection refused  * [/ip4/183.60.252.190/tcp/8888] dial tcp4 183.60.252.190:8888: connect: connection refused
   f01152: 'dial, China, Beijing', // * [/ip4/101.36.64.211/tcp/42545] dial tcp4 0.0.0.0:37207->101.36.64.211:42545: i/o timeout
+  f01154: 'dial, NR', // * [/ip4/192.168.2.50/tcp/1024] dial tcp4 0.0.0.0:37207->192.168.2.50:1024: i/o timeout
   f01155: 'dial, China, Shanghai', // * [/ip4/203.107.44.156/tcp/39770] dial tcp4 0.0.0.0:37207->203.107.44.156:39770: i/o timeout
   f01235: 'dial, Singapore', // * [/ip4/170.33.12.95/tcp/16668] dial tcp4 0.0.0.0:33373->170.33.12.95:16668: i/o timeout
   f01279: 'dial, China, Sichuan', // * [/ip4/118.116.2.66/tcp/40000] dial tcp4 0.0.0.0:37207->118.116.2.66:40000: i/o timeout
@@ -1136,6 +764,7 @@ const annotations = {
   f02723: 'dial, China, Tongling', // * [/ip4/60.173.23.17/tcp/23456] dial tcp4 0.0.0.0:37207->60.173.23.17:23456: i/o timeout
   f02725: 'dial, China, Hong Kong', // * [/ip4/101.32.38.57/tcp/18899] dial tcp4 0.0.0.0:37207->101.32.38.57:18899: i/o timeout
   f02726: 'dial, USA, Brooklyn', // * [/ip4/169.62.51.212/tcp/14567] dial tcp4 0.0.0.0:37207->169.62.51.212:14567: i/o timeout
+  f02731: 'dial, NR', // * [/ip4/10.30.8.4/tcp/14567] dial tcp4 0.0.0.0:37207->10.30.8.4:14567: i/o timeout
   f02767: 'dial, Germany, Frankfurt', // * [/ip4/18.192.27.227/tcp/37722] dial tcp4 0.0.0.0:37207->18.192.27.227:37722: i/o timeout
   f02838: 'dial, China, Chengdu', // * [/ip4/118.123.228.9/tcp/48633] dial tcp4 0.0.0.0:37207->118.123.228.9:48633: i/o timeout
   f03002: 'dial, China, Chongqing + Singapore', // * [/ip4/101.206.156.202/tcp/18880] dial tcp4 101.206.156.202:18880: connect: connection refused  * [/ip4/8.209.64.163/tcp/18880] dial tcp4 0.0.0.0:37207->8.209.64.163:18880: i/o timeout
@@ -1148,7 +777,10 @@ const annotations = {
   f03358: 'dial, China, Ordos', // * [/ip4/1.183.72.211/tcp/30001] dial tcp4 0.0.0.0:37207->1.183.72.211:30001: i/o timeout
   f03363: 'dial, China, Ordos', // * [/ip4/1.183.72.210/tcp/30003] dial tcp4 1.183.72.210:30003: connect: connection refused
   f03367: 'dial, Singapore', // * [/ip4/8.209.99.1/tcp/14567] dial tcp4 0.0.0.0:37207->8.209.99.1:14567: i/o timeout
+  f07824: 'dial, NR', // * [/ip4/10.133.13.113/tcp/32759] dial tcp4 0.0.0.0:37207->10.133.13.113:32759: i/o timeout
   f07969: 'dial, China, Hangzhou', // * [/ip4/121.52.246.48/tcp/5002] dial tcp4 121.52.246.48:5002: connect: connection refused
+  f08091: 'dial, NR', // * [/ip4/0.0.0.0/tcp/5472] dial tcp4 0.0.0.0:5472: connect: connection refused
+  f08101: 'dial, NR', // * [/ip4/192.168.3.13/tcp/32759] dial tcp4 0.0.0.0:37207->192.168.3.13:32759: i/o timeout
   f08148: 'dial, Hong Kong', // * [/ip4/103.108.182.27/tcp/30031] dial tcp4 0.0.0.0:37207->103.108.182.27:30031: i/o timeout
   f08242: 'dial, USA', // * [/ip4/47.242.56.117/tcp/6789] dial tcp4 47.242.56.117:6789: connect: connection refused
   f08264: 'dial, China, Xianning', // * [/ip4/103.222.191.115/tcp/1161] dial tcp4 0.0.0.0:33373->103.222.191.115:1161: i/o timeout
@@ -1160,6 +792,7 @@ const annotations = {
   f09964: 'dial, Germany, Frankfurt', // * [/ip4/47.91.79.110/tcp/50905] dial tcp4 47.91.79.110:50905: connect: connection refused
   f010048: 'dial, China, Shanghai', // * [/ip4/124.78.146.207/tcp/65500] dial tcp4 0.0.0.0:37207->124.78.146.207:65500: i/o timeout
   f010056: 'dial, Singapore', // * [/ip4/8.209.82.79/tcp/14567] dial tcp4 0.0.0.0:37207->8.209.82.79:14567: i/o timeout
+  f010088: 'dial, NR', // * [/ip6/2001:470:b:281::ac15:6402/tcp/1347] dial tcp6 [2001:470:b:281::ac15:6402]:1347: connect: network is unreachable  * [/ip4/50.35.187.157/tcp/1347] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWNoi8KHMeS8SEp3mDUCHDU8yRFW6SZ1SPmz2NLCSur2ei, but remote key matches 12D3KooWLwLsy4ZurxATu44K3y3ujTzLU7Dj4gXFcy6PiANqysMX
   f010225: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12312] dial tcp4 0.0.0.0:37207->8.209.107.150:12312: i/o timeout
   f010247: 'dial, China, Yantai', // * [/ip4/122.14.201.169/tcp/10240] dial tcp4 122.14.201.169:10240: connect: connection refused
   f010399: 'dial, China, Guangzhou', // * [/ip4/183.2.154.156/tcp/36699] dial tcp4 0.0.0.0:33373->183.2.154.156:36699: i/o timeout
@@ -1209,6 +842,7 @@ const annotations = {
   f022687: 'dial, China, Chengdu', // * [/ip4/182.131.4.194/tcp/10080] dial tcp4 182.131.4.194:10080: connect: connection refused
   f022853: 'dial, China, Fuzhou', // * [/ip4/150.242.97.226/tcp/11105] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWRrw3MpPrr5gaVyv9hHAyLosb76osgrGAKuByXycihWEY, but remote key matches 12D3KooWMarcqTkhZsmPHAZmZvaGNh6WC16hEfVhA6fvyJVe5HVB
   f023001: 'dial, China, Changsha', // * [/ip4/120.24.145.114/tcp/7001] dial tcp4 120.24.145.114:7001: connect: connection refused
+  f023013: 'dial, NR', // * [/ip4/127.0.0.1/tcp/42325] dial tcp4 127.0.0.1:42325: connect: connection refused  * [/ip6/::1/tcp/45369] dial tcp6 [::1]:45369: connect: connection refused  * [/ip4/183.61.251.226/tcp/1031] dial tcp4 183.61.251.226:1031: connect: connection refused  * [/ip4/183.61.251.232/tcp/42325] failed to negotiate security protocol: read tcp4 66.70.191.245:37207->183.61.251.232:42325: read: connection reset by peer
   f023200: 'dial, China, Shanghai', // * [/ip4/175.24.25.61/tcp/13457] dial tcp4 0.0.0.0:37207->175.24.25.61:13457: i/o timeout
   f023205: 'dial, Singapore', // * [/ip4/8.130.25.103/tcp/14567] dial tcp4 0.0.0.0:33373->8.130.25.103:14567: i/o timeout
   f023219: 'dial, China, Beijing + Zhangjiakou', // carry-over
@@ -1218,11 +852,13 @@ const annotations = {
   f023876: 'dial, China, Fuzhou', // * [/ip4/220.176.125.51/tcp/23450] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWAfpdzwcpqchJrRhJMY9g8i8Dr1VMiiSNB7YTfMy2rrE4, but remote key matches 12D3KooWRKoJ2VrPziXJ9KiC3MA63qG1Hccke786PQdbtbeESDTv
   f023985: 'dial, China, Chongqing', // * [/ip4/101.206.156.202/tcp/23152] dial tcp4 101.206.156.202:23152: connect: connection refused
   f024066: 'dial, China, Chengdu', // * [/ip4/182.131.4.197/tcp/10080] dial tcp4 182.131.4.197:10080: i/o timeout
+  f024089: 'dial, NR', // * [/ip4/10.11.4.210/tcp/1234] dial tcp4 0.0.0.0:37207->10.11.4.210:1234: i/o timeout
   f024137: 'dial, Singapore', // * [/ip4/8.130.25.208/tcp/14567] dial tcp4 0.0.0.0:37207->8.130.25.208:14567: i/o timeout
   f024182: 'dial, China, Hong Kong', // * [/ip4/14.136.246.135/tcp/46717] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWQFqPz3vvYGGxB259qZfg3qzoKEnafG8DbfMKUHEUQ26z, but remote key matches 12D3KooWHuQtiCKJykJscPMrNiXaguBWKuhBfKDfGP6ieR6SgwdF
   f025002: 'dial, NR', // * [/ip4/10.30.8.211/tcp/14567] dial tcp4 0.0.0.0:33373->10.30.8.211:14567: i/o timeout
   f025007: 'dial, Korea, Gyeonggi-do, PINBYTES-eCUBE', // * [/ip4/222.112.183.197/tcp/24001] dial tcp4 0.0.0.0:33373->222.112.183.197:24001: i/o timeout
   f025019: 'dial, China, Taiwan, Hsinchu', // * [/ip4/140.113.194.250/tcp/24002] dial tcp4 0.0.0.0:33373->140.113.194.250:24002: i/o timeout
+  f029416: 'dial, NR', // * [/ip4/0.0.0.0/tcp/1024] dial tcp4 0.0.0.0:1024: connect: connection refused
   f032824: 'dial, USA, Cedar Park', // * [/ip4/104.54.236.61/tcp/24001] dial tcp4 0.0.0.0:37207->104.54.236.61:24001: i/o timeout
   f033025: 'dial, Korea, Daegu', // * [/ip4/59.23.202.120/tcp/23236] dial tcp4 59.23.202.120:23236: connect: connection refused
   f034544: 'dial, NR', // * [/ip4/183.131.58.134/tcp/14567] dial tcp4 0.0.0.0:33373->183.131.58.134:14567: i/o timeout
@@ -1230,10 +866,12 @@ const annotations = {
   f034548: 'dial, NR', // * [/ip4/183.131.58.70/tcp/14567] dial tcp4 0.0.0.0:33373->183.131.58.70:14567: i/o timeout
   f034592: 'dial, NR', // * [/ip4/119.147.213.217/tcp/45137] dial tcp4 0.0.0.0:33373->119.147.213.217:45137: i/o timeout
   f034701: 'dial, China, Shenzhen', // * [/ip4/103.44.247.136/tcp/51105] dial tcp4 0.0.0.0:33373->103.44.247.136:51105: i/o timeout
+  f043929: 'dial, NR', // * [/ip4/120.232.96.38/tcp/24001] dial tcp4 120.232.96.38:24001: connect: connection refused
   f045505: 'dial, China, Ordos', // * [/ip4/1.183.72.226/tcp/12700] dial tcp4 0.0.0.0:37207->1.183.72.226:12700: i/o timeout
   f048172: 'dial, China, Suzhou', // * [/ip4/222.92.5.147/tcp/42899] dial tcp4 222.92.5.147:42899: connect: connection refused
   f048192: 'dial, China, Suzhou', // * [/ip4/222.92.5.147/tcp/42999] dial tcp4 222.92.5.147:42999: connect: connection refused
   f053229: 'dial, NR', // * [/ip4/172.18.112.203/tcp/10241] dial tcp4 0.0.0.0:33373->172.18.112.203:10241: i/o timeout
+  f054499: 'dial, NR', // * [/ip4/0.0.0.0/tcp/5472] dial tcp4 0.0.0.0:5472: connect: connection refused
   f055123: 'dial, Korea, Busan', // * [/ip4/119.199.251.92/tcp/24001] dial tcp4 119.199.251.92:24001: i/o timeout
   f055522: 'dial, USA', // * [/ip4/207.2.201.158/tcp/24002] dial tcp4 0.0.0.0:33373->207.2.201.158:24002: i/o timeout
   f059740: 'dial, Germany, Bottrop', // * [/ip4/156.67.191.194/tcp/24001] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWR2iY2SFgjHM45NkQEJMmAathsCrgHWADbbCnPzsuS2bY, but remote key matches 12D3KooWR3EjX6z4ZkNRAbnF442tu5aCeLPQj62Xn7qCQ2KzPKwS
@@ -1244,13 +882,19 @@ const annotations = {
   f066102: 'dial, NR', // * [/ip4/172.18.112.93/tcp/10241] dial tcp4 0.0.0.0:33373->172.18.112.93:10241: i/o timeout
   f066259: 'dial, NR', // * [/ip4/172.19.101.33/tcp/10241] dial tcp4 0.0.0.0:33373->172.19.101.33:10241: i/o timeout
   f068096: 'dial, China, Sichuan', // * [/ip4/222.213.23.200/tcp/38999] dial tcp4 222.213.23.200:38999: connect: connection refused
+  f069391: 'dial, NR', // * [/ip4/192.168.1.10/tcp/32759] dial tcp4 0.0.0.0:37207->192.168.1.10:32759: i/o timeout
   f070044: 'dial, China', // * [/ip4/47.57.185.52/tcp/12600] dial tcp4 0.0.0.0:37207->47.57.185.52:12600: i/o timeout
   f079285: 'dial, NR', // * [/ip4/172.22.20.109/tcp/10241] dial tcp4 0.0.0.0:33373->172.22.20.109:10241: i/o timeout
   f079426: 'dial, China, Shandong', // * [/ip4/106.74.7.6/tcp/32759] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWQBg2oErr3Mx2fky471oxpmQmVggaDsGGVNqFagL27HeY, but remote key matches 12D3KooWQtkXUECWx5MBUugczDBoDq6DJcse1m56FHLmhRkGLyHK
   f081078: 'dial, Korea, Busan', // * [/ip4/220.84.94.10/tcp/23450] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWMW8ZvKgprKTTmt8cuoC5YYZeJtCn6iBuHWLg6J8rGUts, but remote key matches 12D3KooWLe7nwrhYUwgTjy7B92xgeuVZFVzgXHuM4wGzmcYg6asG
   f082958: 'dial, NR', // * [/ip4/0.0.0.0/tcp/42547] dial tcp4 0.0.0.0:42547: connect: connection refused
   f087965: 'dial, China, Suzhou', // * [/ip4/58.211.213.210/tcp/2251] dial tcp4 58.211.213.210:2251: connect: connection refused
+  f088125: 'dial, NR', // * [/ip4/172.22.22.101/tcp/10241] dial tcp4 0.0.0.0:37207->172.22.22.101:10241: i/o timeout
+  f088400: 'dial, NR', // * [/ip4/172.22.22.102/tcp/10241] dial tcp4 0.0.0.0:37207->172.22.22.102:10241: i/o timeout
+  f089173: 'dial, NR', // * [/ip4/172.19.108.155/tcp/10241] dial tcp4 0.0.0.0:37207->172.19.108.155:10241: i/o timeout
   f089228: 'dial, NR', // * [/ip4/172.18.114.50/tcp/10241] dial tcp4 0.0.0.0:33373->172.18.114.50:10241: i/o timeout
+  f089358: 'dial, NR', // * [/ip4/172.22.7.106/tcp/10241] dial tcp4 0.0.0.0:37207->172.22.7.106:10241: i/o timeout
+  f089380: 'dial, NR', // * [/ip4/172.19.101.174/tcp/10241] dial tcp4 0.0.0.0:37207->172.19.101.174:10241: i/o timeout
   f089767: 'dial, USA, Bowie', // * [/ip4/129.168.0.1/tcp/912] dial tcp4 0.0.0.0:37207->129.168.0.1:912: i/o timeout
   f090893: 'dial, USA', // * [/ip4/6.143.143.121/tcp/912] dial tcp4 0.0.0.0:37207->6.143.143.121:912: i/o timeout
   f094765: 'dial, NR', // * [/ip4/218.68.85.213/tcp/12350] dial tcp4 218.68.85.213:12350: connect: connection refused
@@ -1266,14 +910,20 @@ const annotations = {
   f0107127: 'dial, USA, Daytona Beach', // * [/ip4/172.3.161.97/tcp/24001] dial tcp4 172.3.161.97:24001: connect: connection refused
   f0109743: 'dial, China, Yangzhou', // * [/ip4/58.220.66.137/tcp/10000] dial tcp4 58.220.66.137:10000: connect: connection refused
   f0111499: 'dial, China, Chengdu', // * [/ip4/182.131.4.195/tcp/32762] dial tcp4 182.131.4.195:32762: connect: connection refused
+  f0111584: 'dial, NR', // * [/ip4/192.168.3.14/tcp/32759] dial tcp4 0.0.0.0:37207->192.168.3.14:32759: i/o timeout
   f0112027: 'dial, France', // * [/ip4/109.238.12.125/tcp/24001] dial tcp4 0.0.0.0:37207->109.238.12.125:24001: i/o timeout
   f0113008: 'dial, China, Hong Kong', // * [/ip4/18.166.250.203/tcp/24001] dial tcp4 0.0.0.0:33373->18.166.250.203:24001: i/o timeout
   f0114153: 'dial, China, Changsha + Dazhou', // * [/ip4/175.6.68.154/tcp/24913] dial tcp4 0.0.0.0:37207->175.6.68.154:24913: i/o timeout  * [/ip4/175.6.66.78/tcp/24913] dial tcp4 0.0.0.0:37207->175.6.66.78:24913: i/o timeout
   f0114338: 'dial, China, Maoming', // * [/ip4/61.143.232.26/tcp/12888] dial tcp4 61.143.232.26:12888: connect: connection refused
+  f0114867: 'dial, NR', // * [/ip4/175.6.66.78/tcp/64913] dial tcp4 0.0.0.0:37207->175.6.66.78:64913: i/o timeout
+  f0114868: 'dial, NR', // * [/ip4/175.6.66.78/tcp/34913] dial tcp4 0.0.0.0:37207->175.6.66.78:34913: i/o timeout
   f0115990: 'dial, Korea, Gangnam-gu', // * [/ip4/61.74.222.134/tcp/36849] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWCH9QfkYAUcen5u2UsQrsBgRr6SXF1DzoxmejKC3MpMur, but remote key matches 12D3KooWFbbCe63pSrR7zwsx431Y51pjAc4oKTNdjCmAwwHKGjBY
   f0116211: 'dial, China, Weifang', // * [/ip4/219.83.163.148/tcp/50666] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWF79gTgqr7VyLQu74NgBvCTuvDfp2CxGK8hxn2EYKzH6L, but remote key matches 12D3KooWRpggHrYWrczv3N2h5AAtdVFiX5zsW1duYpnfc1C8hjLa
   f0130961: 'dial, Korea, Seongnam-si', // * [/ip4/121.165.242.197/tcp/24001] dial tcp4 121.165.242.197:24001: i/o timeout
+  f0133957: 'dial, NR', // * [/ip4/172.19.108.156/tcp/10241] dial tcp4 0.0.0.0:37207->172.19.108.156:10241: i/o timeout
+  f0134006: 'dial, NR', // * [/ip4/10.140.8.12/tcp/32759] dial tcp4 0.0.0.0:37207->10.140.8.12:32759: i/o timeout
   f0141446: 'dial, China, Suzhou', // * [/ip4/61.155.145.103/tcp/2347] dial tcp4 61.155.145.103:2347: connect: connection refused  * [/ip4/172.18.6.127/tcp/2347] dial tcp4 0.0.0.0:37207->172.18.6.127:2347: i/o timeout
+  f0143162: 'dial, NR', // * [/ip4/175.6.68.154/tcp/39913] dial tcp4 0.0.0.0:37207->175.6.68.154:39913: i/o timeout
   f0143858: 'dial, USA, Calistoga', // * [/ip4/72.52.116.228/tcp/12350] dial tcp4 72.52.116.228:12350: i/o timeout
   f0144724: 'dial, USA, Los Angeles', // * [/ip4/67.201.8.203/tcp/24001] dial tcp4 67.201.8.203:24001: connect: connection refused
   f0152563: 'dial, China, Chongqing', // * [/ip4/58.43.1.82/tcp/24001] dial tcp4 0.0.0.0:37207->58.43.1.82:24001: i/o timeout
@@ -1281,10 +931,14 @@ const annotations = {
   f0155983: 'dial, Japan', // * [/ip4/202.149.23.10/tcp/5472] dial tcp4 0.0.0.0:37207->202.149.23.10:5472: i/o timeout
   f0157429: 'dial, Korea, Bucheon-si', // * [/ip4/119.197.20.18/tcp/24001] dial tcp4 119.197.20.18:24001: connect: connection refused
   f0157513: 'dial, Korea, Bucheon-si', // * [/ip4/119.197.20.51/tcp/24001] dial tcp4 119.197.20.51:24001: connect: connection refused
+  f0159517: 'dial, NR', // * [/ip4/127.0.0.1/tcp/36417] dial tcp4 127.0.0.1:36417: connect: connection refused  * [/ip6/::1/tcp/42119] dial tcp6 [::1]:42119: connect: connection refused  * [/ip4/183.221.217.82/tcp/2118] dial tcp4 183.221.217.82:2118: connect: connection refused  * [/ip4/183.221.217.82/tcp/2116] dial tcp4 183.221.217.82:2116: connect: connection refused  * [/ip4/172.34.0.13/tcp/36417] dial tcp4 0.0.0.0:37207->172.34.0.13:36417: i/o timeout
+  f0159632: 'dial, NR', // * [/ip4/10.140.8.32/tcp/32759] dial tcp4 0.0.0.0:37207->10.140.8.32:32759: i/o timeout
+  f0159883: 'dial, NR', // * [/ip4/10.133.14.57/tcp/32759] dial tcp4 0.0.0.0:37207->10.133.14.57:32759: i/o timeout
 
   // XNR (Not routable)
 
   f01231: 'xnr, Singapore',
+  f01314: 'xnr, NR',
   f02388: 'xnr, Netherlands, Amersfoort, Kroketje',
   f02416: 'xnr, China, Guangdong, 星际无限',
   f02769: 'xnr, NR',
@@ -1293,9 +947,12 @@ const annotations = {
   f02777: 'xnr, NR',
   f02778: 'xnr, NR',
   f02779: 'xnr, NR',
+  f07749: 'xnr, NR',
   f010202: 'xnr, Singapore',
+  f010558: 'xnr, NR',
   f014335: 'xnr, NR',
   f014686: 'xnr, Singapore',
+  f014699: 'xnr, NR',
   f015877: 'xnr, China, Jiaxing + USA',
   f015885: 'xnr, China, Jiaxing',
   f015932: 'xnr, NR',
@@ -1313,12 +970,15 @@ const annotations = {
   f022361: 'xnr, NR',
   f022373: 'xnr, Singapore',
   f022374: 'xnr, NR',
+  f022804: 'xnr, NR',
   f022922: 'xnr, China, Shenzhen, CAAP-MEG',
   f023499: 'xnr, NR',
   f023626: 'xnr, NR',
   f023627: 'xnr, China, Zhongwei',
   f023651: 'xnr, NR',
   f023678: 'xnr, China, Jiaxing',
+  f023882: 'xnr, NR',
+  f023984: 'xnr, NR',
   f024483: 'xnr, NR',
   f024563: 'xnr, NR',
   f024802: 'xnr, NR',
@@ -1327,9 +987,12 @@ const annotations = {
   f024972: 'xnr, undefined',
   f025005: 'xnr, NR',
   f025044: 'xnr, undefined',
+  f029585: 'xnr, NR',
   f029649: 'xnr, China, Beijing',
   f030249: 'xnr, NR',
   f030272: 'xnr, undefined',
+  f030331: 'xnr, NR',
+  f030408: 'xnr, NR',
   f030509: 'xnr, undefined',
   f030510: 'xnr, undefined',
   f030511: 'xnr, undefined',
@@ -1341,11 +1004,14 @@ const annotations = {
   f033384: 'xnr, NR',
   f033399: 'xnr, NR',
   f033456: 'xnr, NR',
+  f033462: 'xnr, NR',
   f033463: 'xnr, NR',
   f033475: 'xnr, NR',
   f033517: 'xnr, China, Changsha',
+  f034350: 'xnr, NR',
   f034566: 'xnr, NR',
   f034581: 'xnr, NR',
+  f034658: 'xnr, NR',
   f034707: 'xnr, NR',
   f034710: 'xnr, NR',
   f035160: 'xnr, NR',
@@ -1353,12 +1019,14 @@ const annotations = {
   f035364: 'xnr, NR',
   f039992: 'xnr, NR',
   f040665: 'xnr, NR',
+  f042855: 'xnr, NR',
   f043376: 'xnr, Korea, Incheon',
   f044315: 'xnr, NR',
   f045743: 'xnr, NR',
   f048975: 'xnr, NR',
   f048986: 'xnr, NR',
   f049911: 'xnr, China, Yunfu',
+  f053173: 'xnr, NR',
   f053446: 'xnr, NR',
   f054120: 'xnr, NR',
   f054267: 'xnr, NR',
@@ -1380,6 +1048,7 @@ const annotations = {
   f060693: 'xnr, NR',
   f060754: 'xnr, NR',
   f060805: 'xnr, NR',
+  f060975: 'xnr, NR',
   f061051: 'xnr, NR',
   f061170: 'xnr, NR',
   f061174: 'xnr, NR',
@@ -1391,12 +1060,14 @@ const annotations = {
   f064855: 'xnr, NR',
   f064908: 'xnr, NR',
   f065113: 'xnr, NR',
+  f065141: 'xnr, NR',
   f065174: 'xnr, NR',
   f065250: 'xnr, NR',
   f065266: 'xnr, China, Hefei',
   f065391: 'xnr, NR',
   f065578: 'xnr, NR',
   f065610: 'xnr, NR',
+  f065670: 'xnr, NR',
   f065686: 'xnr, NR',
   f065689: 'xnr, NR',
   f065718: 'xnr, China, Taiwan, Hsinchu',
@@ -1405,6 +1076,8 @@ const annotations = {
   f066210: 'xnr, NR',
   f066302: 'xnr, NR',
   f066476: 'xnr, NR',
+  f066563: 'xnr, NR',
+  f067170: 'xnr, NR',
   f067375: 'xnr, NR',
   f067598: 'xnr, NR',
   f068556: 'xnr, NR',
@@ -1412,19 +1085,26 @@ const annotations = {
   f069448: 'xnr, NR',
   f070045: 'xnr, NR',
   f070730: 'xnr, NR',
+  f070803: 'xnr, NR',
   f070932: 'xnr, NR',
+  f071287: 'xnr, NR',
+  f073196: 'xnr, NR',
   f073448: 'xnr, NR',
   f073525: 'xnr, NR',
   f073844: 'xnr, NR',
   f073888: 'xnr, NR',
   f073904: 'xnr, NR',
   f077761: 'xnr, NR',
+  f078465: 'xnr, NR',
   f079092: 'xnr, NR',
   f079425: 'xnr, NR',
   f079719: 'xnr, NR',
+  f080628: 'xnr, NR',
   f080868: 'xnr, NR',
   f081222: 'xnr, China, Changzhou',
   f081969: 'xnr, NR',
+  f081987: 'xnr, NR',
+  f082000: 'xnr, NR',
   f082095: 'xnr, NR',
   f082635: 'xnr, NR',
   f082730: 'xnr, NR',
@@ -1438,6 +1118,7 @@ const annotations = {
   f084907: 'xnr, NR',
   f085435: 'xnr, NR',
   f085437: 'xnr, NR',
+  f085486: 'xnr, NR',
   f086028: 'xnr, NR',
   f086204: 'xnr, NR',
   f086222: 'xnr, NR',
@@ -1449,16 +1130,28 @@ const annotations = {
   f086988: 'xnr, NR',
   f087096: 'xnr, NR',
   f087868: 'xnr, NR',
+  f087879: 'xnr, NR',
+  f087890: 'xnr, NR',
+  f087899: 'xnr, NR',
+  f087999: 'xnr, NR',
   f088002: 'xnr, NR',
+  f088171: 'xnr, NR',
   f088290: 'xnr, NR',
+  f089167: 'xnr, NR',
+  f089168: 'xnr, NR',
   f089819: 'xnr, NR',
   f089920: 'xnr, NR',
   f090481: 'xnr, NR',
   f090484: 'xnr, NR',
   f090492: 'xnr, NR',
+  f090808: 'xnr, NR',
   f091143: 'xnr, NR',
   f091243: 'xnr, NR',
   f091395: 'xnr, NR',
+  f091798: 'xnr, NR',
+  f091959: 'xnr, NR',
+  f091999: 'xnr, NR',
+  f092066: 'xnr, NR',
   f092157: 'xnr, NR',
   f092228: 'xnr, NR',
   f092887: 'xnr, NR',
@@ -1467,49 +1160,355 @@ const annotations = {
   f093907: 'xnr, NR',
   f094003: 'xnr, NR',
   f094625: 'xnr, NR',
+  f094764: 'xnr, NR',
   f094847: 'xnr, NR',
+  f095334: 'xnr, NR',
   f095970: 'xnr, NR',
+  f095998: 'xnr, NR',
   f096064: 'xnr, NR',
   f096072: 'xnr, NR',
+  f096077: 'xnr, NR',
+  f096087: 'xnr, NR',
   f096172: 'xnr, NR',
+  f096824: 'xnr, NR',
+  f096920: 'xnr, NR',
+  f097126: 'xnr, NR',
+  f097219: 'xnr, NR',
+  f097370: 'xnr, NR',
+  f097403: 'xnr, NR',
+  f097432: 'xnr, NR',
+  f097569: 'xnr, NR',
+  f097658: 'xnr, NR',
+  f097914: 'xnr, NR',
+  f097981: 'xnr, NR',
+  f098743: 'xnr, NR',
+  f099082: 'xnr, NR',
+  f099132: 'xnr, NR',
+  f099247: 'xnr, NR',
+  f099369: 'xnr, NR',
   f0100033: 'xnr, NR',
+  f0100034: 'xnr, NR',
+  f0100786: 'xnr, NR',
+  f0101016: 'xnr, NR',
+  f0101017: 'xnr, NR',
+  f0101019: 'xnr, NR',
+  f0101133: 'xnr, NR',
+  f0101570: 'xnr, NR',
+  f0101611: 'xnr, NR',
+  f0102187: 'xnr, NR',
+  f0103162: 'xnr, NR',
+  f0103282: 'xnr, NR',
+  f0103485: 'xnr, NR',
   f0103665: 'xnr, NR',
+  f0103704: 'xnr, NR',
+  f0103710: 'xnr, NR',
+  f0104001: 'xnr, NR',
+  f0104103: 'xnr, NR',
+  f0104398: 'xnr, NR',
+  f0104654: 'xnr, NR',
+  f0104888: 'xnr, NR',
+  f0105354: 'xnr, NR',
+  f0106090: 'xnr, NR',
+  f0106438: 'xnr, NR',
+  f0106901: 'xnr, NR',
+  f0107002: 'xnr, NR',
+  f0107053: 'xnr, NR',
+  f0107091: 'xnr, NR',
+  f0107322: 'xnr, NR',
+  f0107543: 'xnr, NR',
+  f0107656: 'xnr, NR',
   f0107797: 'xnr, NR',
+  f0107903: 'xnr, NR',
+  f0107995: 'xnr, NR',
+  f0108199: 'xnr, NR',
+  f0108672: 'xnr, NR',
+  f0109309: 'xnr, NR',
+  f0109349: 'xnr, NR',
+  f0109606: 'xnr, NR',
+  f0109903: 'xnr, NR',
+  f0110110: 'xnr, NR',
+  f0110248: 'xnr, NR',
+  f0110261: 'xnr, NR',
+  f0110289: 'xnr, NR',
+  f0110695: 'xnr, NR',
+  f0110696: 'xnr, NR',
+  f0110808: 'xnr, NR',
+  f0110944: 'xnr, NR',
   f0110996: 'xnr, NR',
   f0111007: 'xnr, NR',
+  f0111384: 'xnr, NR',
+  f0111467: 'xnr, NR',
+  f0111469: 'xnr, NR',
+  f0112593: 'xnr, NR',
   f0112667: 'xnr, NR',
+  f0112679: 'xnr, NR',
+  f0112680: 'xnr, NR',
+  f0112762: 'xnr, NR',
+  f0112781: 'xnr, NR',
+  f0112887: 'xnr, NR',
+  f0113659: 'xnr, NR',
+  f0113735: 'xnr, NR',
   f0113754: 'xnr, NR',
+  f0113777: 'xnr, NR',
+  f0114118: 'xnr, NR',
+  f0114333: 'xnr, NR',
+  f0114350: 'xnr, NR',
+  f0115001: 'xnr, NR',
+  f0115117: 'xnr, NR',
+  f0117211: 'xnr, NR',
+  f0117318: 'xnr, NR',
+  f0117358: 'xnr, NR',
+  f0117405: 'xnr, NR',
+  f0117416: 'xnr, NR',
+  f0117434: 'xnr, NR',
+  f0117450: 'xnr, NR',
+  f0117541: 'xnr, NR',
+  f0117542: 'xnr, NR',
+  f0117543: 'xnr, NR',
+  f0117556: 'xnr, NR',
+  f0117565: 'xnr, NR',
+  f0118028: 'xnr, NR',
   f0118167: 'xnr, NR',
+  f0118641: 'xnr, NR',
+  f0118799: 'xnr, NR',
+  f0118976: 'xnr, NR',
+  f0119146: 'xnr, NR',
+  f0119545: 'xnr, NR',
+  f0119633: 'xnr, NR',
+  f0119828: 'xnr, NR',
+  f0119976: 'xnr, NR',
+  f0119997: 'xnr, NR',
+  f0120057: 'xnr, NR',
+  f0120702: 'xnr, NR',
+  f0120747: 'xnr, NR',
+  f0121584: 'xnr, NR',
+  f0121718: 'xnr, NR',
+  f0121771: 'xnr, NR',
+  f0121810: 'xnr, NR',
+  f0122215: 'xnr, NR',
+  f0122382: 'xnr, NR',
+  f0122496: 'xnr, NR',
+  f0122533: 'xnr, NR',
+  f0122940: 'xnr, NR',
+  f0123245: 'xnr, NR',
   f0123261: 'xnr, NR',
+  f0123346: 'xnr, NR',
+  f0123522: 'xnr, NR',
+  f0123535: 'xnr, NR',
+  f0124126: 'xnr, NR',
+  f0124158: 'xnr, NR',
+  f0124696: 'xnr, NR',
+  f0124904: 'xnr, NR',
+  f0124923: 'xnr, NR',
+  f0124944: 'xnr, NR',
+  f0125488: 'xnr, NR',
+  f0126097: 'xnr, NR',
+  f0126376: 'xnr, NR',
+  f0126661: 'xnr, NR',
+  f0126698: 'xnr, NR',
+  f0126702: 'xnr, NR',
+  f0127378: 'xnr, NR',
+  f0127382: 'xnr, NR',
+  f0127569: 'xnr, NR',
   f0127595: 'xnr, NR',
+  f0127612: 'xnr, NR',
+  f0127640: 'xnr, NR',
   f0127721: 'xnr, NR',
+  f0127735: 'xnr, NR',
+  f0128011: 'xnr, NR',
+  f0128381: 'xnr, NR',
+  f0128499: 'xnr, NR',
   f0128559: 'xnr, NR',
+  f0128761: 'xnr, NR',
+  f0128788: 'xnr, NR',
+  f0128815: 'xnr, NR',
+  f0128931: 'xnr, NR',
+  f0129226: 'xnr, NR',
+  f0129403: 'xnr, NR',
+  f0129422: 'xnr, NR',
+  f0129750: 'xnr, NR',
+  f0130094: 'xnr, NR',
+  f0130134: 'xnr, NR',
+  f0130556: 'xnr, NR',
+  f0130639: 'xnr, NR',
+  f0130686: 'xnr, NR',
   f0130727: 'xnr, NR',
+  f0130791: 'xnr, NR',
+  f0130868: 'xnr, NR',
+  f0130884: 'xnr, NR',
+  f0130906: 'xnr, NR',
+  f0130912: 'xnr, NR',
+  f0131509: 'xnr, NR',
+  f0131767: 'xnr, NR',
   f0131822: 'xnr, NR',
+  f0132313: 'xnr, NR',
+  f0132618: 'xnr, NR',
+  f0132638: 'xnr, NR',
+  f0133235: 'xnr, NR',
   f0133376: 'xnr, NR',
+  f0133379: 'xnr, NR',
+  f0133501: 'xnr, NR',
   f0133505: 'xnr, NR',
   f0133509: 'xnr, NR',
+  f0133763: 'xnr, NR',
+  f0133833: 'xnr, NR',
+  f0134286: 'xnr, NR',
   f0134552: 'xnr, NR',
+  f0134609: 'xnr, NR',
   f0134867: 'xnr, NR',
   f0135008: 'xnr, NR',
+  f0135066: 'xnr, NR',
+  f0135150: 'xnr, NR',
+  f0135414: 'xnr, NR',
   f0135467: 'xnr, NR',
+  f0135469: 'xnr, NR',
+  f0135473: 'xnr, NR',
   f0135474: 'xnr, NR',
+  f0135475: 'xnr, NR',
+  f0135551: 'xnr, NR',
+  f0135758: 'xnr, NR',
+  f0135779: 'xnr, NR',
+  f0135859: 'xnr, NR',
+  f0135934: 'xnr, NR',
   f0136014: 'xnr, China, Suzhou', // carry-over
+  f0136033: 'xnr, NR',
+  f0136239: 'xnr, NR',
+  f0136399: 'xnr, NR',
+  f0136642: 'xnr, NR',
+  f0136808: 'xnr, NR',
+  f0136810: 'xnr, NR',
+  f0136868: 'xnr, NR',
+  f0137019: 'xnr, NR',
+  f0137594: 'xnr, NR',
+  f0137868: 'xnr, NR',
+  f0141761: 'xnr, NR',
+  f0141762: 'xnr, NR',
+  f0142059: 'xnr, NR',
   f0142135: "xnr, China, Ya'an + USA",
+  f0142238: 'xnr, NR',
+  f0142245: 'xnr, NR',
+  f0142281: 'xnr, NR',
+  f0142337: 'xnr, NR',
+  f0142515: 'xnr, NR',
+  f0142720: 'xnr, NR',
+  f0142721: 'xnr, NR',
+  f0142723: 'xnr, NR',
+  f0143032: 'xnr, NR',
   f0143361: 'xnr, NR',
+  f0143511: 'xnr, NR',
+  f0143666: 'xnr, NR',
+  f0143907: 'xnr, NR',
+  f0143999: 'xnr, NR',
+  f0144069: 'xnr, NR',
+  f0144304: 'xnr, NR',
+  f0144313: 'xnr, NR',
+  f0144316: 'xnr, NR',
+  f0144528: 'xnr, NR',
+  f0144530: 'xnr, NR',
+  f0144615: 'xnr, NR',
+  f0144618: 'xnr, NR',
+  f0144756: 'xnr, NR',
+  f0144952: 'xnr, NR',
+  f0145060: 'xnr, NR',
+  f0145249: 'xnr, NR',
+  f0145503: 'xnr, NR',
+  f0145687: 'xnr, NR',
+  f0145985: 'xnr, NR',
+  f0145986: 'xnr, NR',
+  f0146220: 'xnr, NR',
+  f0146224: 'xnr, NR',
+  f0146278: 'xnr, NR',
+  f0146956: 'xnr, NR',
+  f0147119: 'xnr, NR',
+  f0147586: 'xnr, NR',
+  f0147657: 'xnr, NR',
+  f0147801: 'xnr, NR',
+  f0148269: 'xnr, NR',
+  f0148452: 'xnr, NR',
+  f0149132: 'xnr, NR',
+  f0149753: 'xnr, NR',
+  f0149937: 'xnr, NR',
+  f0150666: 'xnr, NR',
+  f0150748: 'xnr, NR',
+  f0150816: 'xnr, NR',
   f0150860: 'xnr, NR',
+  f0150918: 'xnr, NR',
+  f0151371: 'xnr, NR',
+  f0151706: 'xnr, NR',
+  f0151849: 'xnr, NR',
+  f0152134: 'xnr, NR',
+  f0152337: 'xnr, NR',
   f0152351: 'xnr, NR',
   f0152799: 'xnr, NR',
+  f0152866: 'xnr, NR',
+  f0152943: 'xnr, NR',
+  f0153024: 'xnr, NR',
+  f0153040: 'xnr, NR',
+  f0153078: 'xnr, NR',
+  f0153565: 'xnr, NR',
+  f0153583: 'xnr, NR',
+  f0153775: 'xnr, NR',
+  f0153804: 'xnr, NR',
+  f0153932: 'xnr, NR',
+  f0153960: 'xnr, NR',
+  f0154152: 'xnr, NR',
+  f0154238: 'xnr, NR',
+  f0154294: 'xnr, NR',
+  f0154335: 'xnr, NR',
+  f0154597: 'xnr, NR',
+  f0154865: 'xnr, NR',
+  f0155049: 'xnr, NR',
+  f0155050: 'xnr, NR',
+  f0155515: 'xnr, NR',
   f0155687: 'xnr, China, Guangzhou',
+  f0155829: 'xnr, NR',
+  f0156214: 'xnr, NR',
+  f0156417: 'xnr, NR',
+  f0157025: 'xnr, NR',
+  f0157265: 'xnr, NR',
+  f0157316: 'xnr, NR',
+  f0157502: 'xnr, NR',
+  f0157917: 'xnr, NR',
+  f0157979: 'xnr, NR',
+  f0157991: 'xnr, NR',
+  f0158000: 'xnr, NR',
+  f0158068: 'xnr, NR',
+  f0158133: 'xnr, NR',
   f0158265: 'xnr, China, Hefei',
+  f0158276: 'xnr, NR',
+  f0158335: 'xnr, NR',
+  f0158613: 'xnr, NR',
+  f0159067: 'xnr, NR',
+  f0159333: 'xnr, NR',
+  f0159380: 'xnr, NR',
+  f0159654: 'xnr, NR',
+  f0159660: 'xnr, NR',
+  f0159689: 'xnr, NR',
+  f0160135: 'xnr, NR',
+  f0160137: 'xnr, NR',
+  f0160735: 'xnr, NR',
+  f0160870: 'xnr, NR',
+  f0161468: 'xnr, NR',
+  f0161542: 'xnr, NR',
+  f0161819: 'xnr, NR',
+  f0161916: 'xnr, NR',
+  f0163275: 'xnr, NR',
+  f0166425: 'xnr, NR',
+  f0166843: 'xnr, NR',
+  f0166896: 'xnr, NR',
+  f0167458: 'xnr, NR',
+  f0168058: 'xnr, NR',
+  f0169053: 'xnr, NR',
   f0199223: 'xnr, NR',
   f0207949: 'xnr, NR',
   f0214334: 'xnr, NR',
   f0215461: 'xnr, NR',
+  f0217771: 'xnr, NR',
   f0217789: 'xnr, NR',
   f0218072: 'xnr, NR',
   f0218092: 'xnr, NR',
   f0219106: 'xnr, NR',
+  f0220827: 'xnr, NR',
 
   // Delisted
 
