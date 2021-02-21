@@ -67,6 +67,10 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
     return [previous, '']
   }
   const dealId = clientDealStatus && `${clientDealStatus.DealID} `
+  if (previous.startsWith('delist')) {
+      return ['delist', '']
+  }
+
   if (previous.startsWith('active')) {
     if (lastDealState === 'Sealing' || lastDealState === 'AwaitingPreCommit') {
       return ['active-sealing', dealId && dealId.trim()]
