@@ -12,6 +12,9 @@
 const annotations = {
   // New
 
+  f0222674: 'new, China, Quinzhou',
+  f0222962: 'new, China, Karamay',
+
   // Inflight
 
   f0110804: 'inflight, USA, Santa Clara', // FundsReserved: 1 day
