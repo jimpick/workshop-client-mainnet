@@ -1,6 +1,6 @@
-import annotations from './annotations-spacerace.js'
-import annotations2 from './annotations-spacerace-slingshot-medium.js'
-import annotations3 from './annotations-spacerace-slingshot-medium-jim.js'
+import annotations from './annotations-mainnet.js'
+import annotations2 from './annotations-mainnet-128mib-unverified.js'
+import annotations3 from './annotations-mainnet-128mib-unverified-jim.js'
 
 const newAnnotations = {}
 
@@ -21,7 +21,8 @@ for (const miner in annotations) {
       annotation.match(/^sealing/) ||
       annotation.match(/^stuck/) ||
       annotation.match(/^busy/) ||
-      annotation.match(/^min-/)
+      annotation.match(/^min-/) ||
+      annotation.match(/^max-/)
     ) {
       let newTag = 'candidate,'
       if (

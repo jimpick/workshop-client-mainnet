@@ -3,7 +3,7 @@ import { subHours, format, formatDistance } from 'date-fns'
 import copy from 'clipboard-copy'
 import useLotusClient from '../../lib/use-lotus-client'
 import annotationsCamera from '../../annotations-mainnet.js'
-import annotationsSlingshot from '../../annotations-spacerace-slingshot-medium'
+import annotations128mibUnverified from '../../annotations-mainnet-128mib-unverified'
 import dealStateNames from '../deal-state-names'
 
 function DealHistory ({ dealHistoryData, height }) {
@@ -297,7 +297,7 @@ function BucketDealList ({
     let altAnnotation = '??'
     if (type === 'camera') {
       prefix = 'Camera'
-      altAnnotation = annotationsSlingshot[miner]
+      altAnnotation = annotations128mibUnverified[miner]
     }
     if (type === 'slingshot') {
       prefix = 'SS'
@@ -502,8 +502,8 @@ export default function DealList ({ appState, cid, dealType }) {
       'xnr',
       'delist',
     ]
-  } else if (dealType === 'slingshot') {
-    annotations = annotationsSlingshot
+  } else if (dealType === '128mib-unverified') {
+    annotations = annotations128mibUnverified
     buckets = [
       'retest',
       'inflight',

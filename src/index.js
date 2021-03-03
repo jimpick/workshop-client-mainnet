@@ -117,7 +117,7 @@ function App () {
           <Link to='/retrieve'>Retrieve</Link>
           <Link to='/deals'>My Deals</Link>
           <Link to='/deal-state'>Deal State</Link>
-          <Link to='/deal-state-ss'>Deal State: SS</Link>
+          <Link to='/deal-state-128mib-unverified'>Deal State: 128M-U</Link>
         </nav>
         <ErrorBoundary>
           <Switch>
@@ -145,8 +145,8 @@ function App () {
             <Route path='/deal-state'>
               <DealState dealType="camera" {...baseProps} />
             </Route>
-            <Route path='/deal-state-ss'>
-              <DealState dealType="slingshot" {...baseProps} />
+            <Route path='/deal-state-128mib-unverified'>
+              <DealState dealType="128mib-unverified" {...baseProps} />
             </Route>
             <Route path='/camera'>
               <Camera {...baseProps} />

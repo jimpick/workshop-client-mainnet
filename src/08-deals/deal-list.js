@@ -3,7 +3,7 @@ import useMiners from '../lib/use-miners'
 import { format, formatDistance } from 'date-fns'
 import copy from 'clipboard-copy'
 import annotations from '../annotations-mainnet'
-import annotationsSlingshot from '../annotations-spacerace-slingshot-medium'
+import annotations128mibUnverified from '../annotations-mainnet-128mib-unverified'
 import dealStateNames from './deal-state-names'
 
 function DealHistory ({ dealHistoryData, height }) {
@@ -112,11 +112,11 @@ export default function DealList ({ client, appState, cid, filterErrors }) {
         if (type === 'camera') {
           prefix = 'Camera'
           annotation = annotations[miner]
-          altAnnotation = annotationsSlingshot[miner]
+          altAnnotation = annotations128mibUnverified[miner]
         }
-        if (type === 'slingshot') {
-          prefix = 'SS'
-          annotation = annotationsSlingshot[miner]
+        if (type === '128mibUnverified') {
+          prefix = '128M-U'
+          annotation = annotations128mibUnverified[miner]
           altAnnotation = annotations[miner]
         }
         return (

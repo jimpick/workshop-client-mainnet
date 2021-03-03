@@ -2,7 +2,7 @@
   "name": "workshop-client-interopnet",
   "version": "0.0.1",
   "private": true,
-  "typeX": "module",
+  "type": "module",
   "dependencies": {
     "@filecoin-shipyard/lotus-client-provider-browser": "^0.0.14",
     "@filecoin-shipyard/lotus-client-rpc": "^0.0.11",
