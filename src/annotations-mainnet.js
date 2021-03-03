@@ -17,6 +17,10 @@ const annotations = {
 
   // New
 
+  f0240893: 'new, USA, Queens',
+  f0241272: 'new, France, Deuil-la-Barre',
+  f0241284: 'new, China, Jiangmen',
+
   // Inflight
 
   f0116766: 'inflight, USA, Westford', // FundsReserved: about 3 hours
