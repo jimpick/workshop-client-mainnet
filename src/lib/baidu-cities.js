@@ -67,6 +67,7 @@ const baiduCities = {
   243: 'Quzhou', // 衢州市
   244: 'Taizhou', //  台州市
   246: 'Guyuan', // 固原市
+  249: 'Qujing', // 曲靖市
   255: 'Zhangzhou', // 漳州市
   257: 'Guangzhou', // 广州市
   258: 'Yunfu', // 云浮市
