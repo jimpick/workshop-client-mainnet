@@ -14,88 +14,7 @@ const annotations = {
 
   // Inflight
 
-  f057618: 'inflight, NR', // FundsReserved: about 1 hour
-  f092066: 'inflight, NR', // FundsReserved: about 1 hour
-  f099369: 'inflight, NR', // FundsReserved: about 1 hour
-  f0110695: 'inflight, NR', // FundsReserved: about 1 hour
-  f0111467: 'inflight, NR', // FundsReserved: about 1 hour
-  f0116766: 'inflight, USA, Westford', // FundsReserved: about 1 hour
-  f0134552: 'inflight, NR', // FundsReserved: about 1 hour
-  f0135150: 'inflight, NR', // FundsReserved: about 1 hour
-  f0135473: 'inflight, NR', // FundsReserved: about 1 hour
-  f0136808: 'inflight, NR', // FundsReserved: about 1 hour
-  f0136810: 'inflight, NR', // FundsReserved: about 1 hour
-  f0143032: 'inflight, NR', // FundsReserved: about 1 hour
-  f0143666: 'inflight, NR', // FundsReserved: about 1 hour
-  f0143999: 'inflight, NR', // FundsReserved: about 1 hour
-  f0144316: 'inflight, NR', // FundsReserved: about 1 hour
-  f0144618: 'inflight, NR', // FundsReserved: about 1 hour
-  f0144756: 'inflight, NR', // FundsReserved: about 1 hour
-  f0145060: 'inflight, NR', // FundsReserved: about 1 hour
-  f0145985: 'inflight, NR', // FundsReserved: about 1 hour
-  f0146224: 'inflight, NR', // FundsReserved: about 1 hour
-  f0146956: 'inflight, NR', // FundsReserved: about 1 hour
-  f0147586: 'inflight, NR', // FundsReserved: about 1 hour
-  f0148269: 'inflight, NR', // FundsReserved: about 1 hour
-  f0148452: 'inflight, NR', // FundsReserved: about 1 hour
-  f0149753: 'inflight, NR', // FundsReserved: about 1 hour
-  f0150666: 'inflight, NR', // FundsReserved: about 1 hour
-  f0150748: 'inflight, NR', // FundsReserved: about 1 hour
-  f0150816: 'inflight, NR', // FundsReserved: about 1 hour
-  f0150860: 'inflight, NR', // FundsReserved: about 1 hour
-  f0150918: 'inflight, NR', // FundsReserved: about 1 hour
-  f0151371: 'inflight, NR', // FundsReserved: about 1 hour
-  f0151849: 'inflight, NR', // FundsReserved: about 1 hour
-  f0152134: 'inflight, NR', // FundsReserved: about 1 hour
-  f0152337: 'inflight, NR', // FundsReserved: about 1 hour
-  f0153024: 'inflight, NR', // FundsReserved: about 1 hour
-  f0153040: 'inflight, NR', // FundsReserved: about 1 hour
-  f0153583: 'inflight, NR', // FundsReserved: about 1 hour
-  f0154152: 'inflight, NR', // FundsReserved: about 1 hour
-  f0154294: 'inflight, NR', // FundsReserved: about 1 hour
-  f0154335: 'inflight, NR', // FundsReserved: about 1 hour
-  f0154597: 'inflight, NR', // FundsReserved: about 1 hour
-  f0154865: 'inflight, NR', // FundsReserved: about 1 hour
-  f0155049: 'inflight, NR', // FundsReserved: about 1 hour
-  f0155687: 'inflight, China, Guangzhou', // FundsReserved: about 1 hour
-  f0156214: 'inflight, NR', // FundsReserved: about 1 hour
-  f0156417: 'inflight, NR', // FundsReserved: about 1 hour
-  f0157316: 'inflight, NR', // FundsReserved: about 1 hour
-  f0157502: 'inflight, NR', // FundsReserved: about 1 hour
-  f0157917: 'inflight, NR', // FundsReserved: about 1 hour
-  f0157979: 'inflight, NR', // FundsReserved: about 1 hour
-  f0157991: 'inflight, NR', // FundsReserved: about 1 hour
-  f0158068: 'inflight, NR', // FundsReserved: about 1 hour
-  f0158133: 'inflight, NR', // FundsReserved: about 1 hour
-  f0158276: 'inflight, NR', // FundsReserved: about 1 hour
-  f0158335: 'inflight, NR', // FundsReserved: about 1 hour
-  f0158613: 'inflight, NR', // FundsReserved: about 1 hour
-  f0159067: 'inflight, NR', // FundsReserved: about 1 hour
-  f0159333: 'inflight, NR', // FundsReserved: about 1 hour
-  f0159380: 'inflight, NR', // FundsReserved: about 1 hour
-  f0159654: 'inflight, NR', // FundsReserved: about 1 hour
-  f0159660: 'inflight, NR', // FundsReserved: about 1 hour
-  f0159689: 'inflight, NR', // FundsReserved: about 1 hour
-  f0160135: 'inflight, NR', // FundsReserved: about 1 hour
-  f0160137: 'inflight, NR', // FundsReserved: about 1 hour
-  f0161468: 'inflight, NR', // FundsReserved: about 1 hour
-  f0161542: 'inflight, NR', // FundsReserved: about 1 hour
-  f0161819: 'inflight, NR', // FundsReserved: about 1 hour
-  f0161916: 'inflight, NR', // FundsReserved: about 1 hour
-  f0163275: 'inflight, NR', // FundsReserved: about 1 hour
-  f0166843: 'inflight, NR', // FundsReserved: about 1 hour
-  f0166896: 'inflight, NR', // FundsReserved: about 1 hour
-  f0168058: 'inflight, NR', // FundsReserved: about 1 hour
-  f0169053: 'inflight, NR', // FundsReserved: about 1 hour
-  f0199223: 'inflight, NR', // FundsReserved: about 1 hour
-  f0207949: 'inflight, NR', // FundsReserved: about 1 hour
-  f0214334: 'inflight, NR', // FundsReserved: about 1 hour
-  f0215461: 'inflight, NR', // FundsReserved: about 1 hour
-  f0217771: 'inflight, NR', // FundsReserved: about 1 hour
-  f0217789: 'inflight, NR', // FundsReserved: about 1 hour
-  f0218072: 'inflight, NR', // FundsReserved: about 1 hour
-  f0218092: 'inflight, NR', // FundsReserved: about 1 hour
-  f0219106: 'inflight, NR', // FundsReserved: about 1 hour
+  f0116766: 'inflight, USA, Westford', // FundsReserved: about 2 hours
 
   // Unknown
 
@@ -169,6 +88,8 @@ const annotations = {
   f0137168: 'sealing, China, Beijing', // 1596620
   f0149455: 'sealing, NR', // 1596622
   f0150744: 'sealing, Korea, Ulsan', // 1596625
+  f0157265: 'sealing, NR', // 1596640
+  f0158265: 'sealing, China, Hefei', // 1596639
   f0159961: 'sealing, China, Chongqing', // 1596630
   f0160291: 'sealing, USA', // 1596624
   f0164326: 'sealing, China, Beijing', // 1596621
@@ -188,11 +109,9 @@ const annotations = {
 
   // Stuck
 
-  f0129805: 'stuck, China, Zhejiang + Australia, Adelaide', // CheckForAcceptance: about 1 hour
-  f0135758: 'stuck, NR', // CheckForAcceptance: 11 minutes
-  f0155258: 'stuck, NR', // CheckForAcceptance: 43 minutes
-  f0157265: 'stuck, NR', // CheckForAcceptance: about 1 hour
-  f0158265: 'stuck, China, Hefei', // CheckForAcceptance: about 1 hour
+  f0129805: 'stuck, China, Zhejiang + Australia, Adelaide', // CheckForAcceptance: about 2 hours
+  f0135758: 'stuck, NR', // CheckForAcceptance: 32 minutes
+  f0155258: 'stuck, NR', // CheckForAcceptance: about 1 hour
   f0231135: 'stuck, USA, Huntersville', // CheckForAcceptance: about 2 hours
 
   // Busy
@@ -1147,6 +1066,7 @@ const annotations = {
   f054526: 'xnr, NR',
   f055446: 'xnr, NR',
   f056227: 'xnr, NR',
+  f057618: 'xnr, NR',
   f057683: 'xnr, NR',
   f058349: 'xnr, NR',
   f059813: 'xnr, NR',
@@ -1253,6 +1173,7 @@ const annotations = {
   f091798: 'xnr, NR',
   f091959: 'xnr, NR',
   f091999: 'xnr, NR',
+  f092066: 'xnr, NR',
   f092157: 'xnr, NR',
   f092228: 'xnr, NR',
   f092887: 'xnr, NR',
@@ -1285,6 +1206,7 @@ const annotations = {
   f099082: 'xnr, NR',
   f099132: 'xnr, NR',
   f099247: 'xnr, NR',
+  f099369: 'xnr, NR',
   f099884: 'xnr, China, Chengdu',
   f0100033: 'xnr, NR',
   f0100034: 'xnr, NR',
@@ -1331,12 +1253,14 @@ const annotations = {
   f0110261: 'xnr, NR',
   f0110283: 'xnr, China, Zhongshan',
   f0110289: 'xnr, NR',
+  f0110695: 'xnr, NR',
   f0110696: 'xnr, NR',
   f0110808: 'xnr, NR',
   f0110944: 'xnr, NR',
   f0110996: 'xnr, NR',
   f0111007: 'xnr, NR',
   f0111384: 'xnr, NR',
+  f0111467: 'xnr, NR',
   f0111469: 'xnr, NR',
   f0112593: 'xnr, NR',
   f0112667: 'xnr, NR',
@@ -1458,6 +1382,7 @@ const annotations = {
   f0135414: 'xnr, NR',
   f0135467: 'xnr, NR',
   f0135469: 'xnr, NR',
+  f0135473: 'xnr, NR',
   f0135474: 'xnr, NR',
   f0135475: 'xnr, NR',
   f0135551: 'xnr, NR',
@@ -1469,6 +1394,8 @@ const annotations = {
   f0136239: 'xnr, NR',
   f0136399: 'xnr, NR',
   f0136642: 'xnr, NR',
+  f0136808: 'xnr, NR',
+  f0136810: 'xnr, NR',
   f0136868: 'xnr, NR',
   f0137019: 'xnr, NR',
   f0137594: 'xnr, NR',
@@ -1483,19 +1410,23 @@ const annotations = {
   f0142720: 'xnr, NR',
   f0142721: 'xnr, NR',
   f0142723: 'xnr, NR',
+  f0143032: 'xnr, NR',
   f0143361: 'xnr, NR',
   f0143511: 'xnr, NR',
   f0143666: 'xnr, NR',
   f0143907: 'xnr, NR',
+  f0143999: 'xnr, NR',
   f0144069: 'xnr, NR',
   f0144304: 'xnr, NR',
   f0144313: 'xnr, NR',
+  f0144316: 'xnr, NR',
   f0144528: 'xnr, NR',
   f0144530: 'xnr, NR',
   f0144615: 'xnr, NR',
   f0144618: 'xnr, NR',
   f0144756: 'xnr, NR',
   f0144952: 'xnr, NR',
+  f0145060: 'xnr, NR',
   f0145249: 'xnr, NR',
   f0145503: 'xnr, NR',
   f0145687: 'xnr, NR',
@@ -1516,15 +1447,20 @@ const annotations = {
   f0149753: 'xnr, NR',
   f0149937: 'xnr, NR',
   f0150666: 'xnr, NR',
+  f0150748: 'xnr, NR',
+  f0150816: 'xnr, NR',
   f0150860: 'xnr, NR',
+  f0150918: 'xnr, NR',
   f0151371: 'xnr, NR',
   f0151706: 'xnr, NR',
   f0151849: 'xnr, NR',
   f0152134: 'xnr, NR',
+  f0152337: 'xnr, NR',
   f0152351: 'xnr, NR',
   f0152799: 'xnr, NR',
   f0152866: 'xnr, NR',
   f0152943: 'xnr, NR',
+  f0153024: 'xnr, NR',
   f0153040: 'xnr, NR',
   f0153078: 'xnr, NR',
   f0153565: 'xnr, NR',
@@ -1538,24 +1474,60 @@ const annotations = {
   f0154294: 'xnr, NR',
   f0154335: 'xnr, NR',
   f0154597: 'xnr, NR',
+  f0154865: 'xnr, NR',
+  f0155049: 'xnr, NR',
   f0155050: 'xnr, NR',
   f0155515: 'xnr, NR',
+  f0155687: 'xnr, China, Guangzhou',
   f0155829: 'xnr, NR',
+  f0156214: 'xnr, NR',
+  f0156417: 'xnr, NR',
   f0157025: 'xnr, NR',
+  f0157316: 'xnr, NR',
   f0157502: 'xnr, NR',
+  f0157917: 'xnr, NR',
+  f0157979: 'xnr, NR',
+  f0157991: 'xnr, NR',
   f0158000: 'xnr, NR',
   f0158068: 'xnr, NR',
+  f0158133: 'xnr, NR',
   f0158156: 'xnr, NR',
+  f0158276: 'xnr, NR',
+  f0158335: 'xnr, NR',
+  f0158613: 'xnr, NR',
   f0159067: 'xnr, NR',
+  f0159333: 'xnr, NR',
+  f0159380: 'xnr, NR',
   f0159517: 'xnr, NR',
   f0159654: 'xnr, NR',
+  f0159660: 'xnr, NR',
+  f0159689: 'xnr, NR',
+  f0160135: 'xnr, NR',
+  f0160137: 'xnr, NR',
   f0160870: 'xnr, NR',
+  f0161468: 'xnr, NR',
+  f0161542: 'xnr, NR',
+  f0161819: 'xnr, NR',
+  f0161916: 'xnr, NR',
+  f0163275: 'xnr, NR',
   f0164260: 'xnr, NR',
   f0165533: 'xnr, NR',
   f0166425: 'xnr, NR',
   f0166843: 'xnr, NR',
+  f0166896: 'xnr, NR',
   f0167137: 'xnr, China, Shaoxing',
   f0167458: 'xnr, NR',
+  f0168058: 'xnr, NR',
+  f0169053: 'xnr, NR',
+  f0199223: 'xnr, NR',
+  f0207949: 'xnr, NR',
+  f0214334: 'xnr, NR',
+  f0215461: 'xnr, NR',
+  f0217771: 'xnr, NR',
+  f0217789: 'xnr, NR',
+  f0218072: 'xnr, NR',
+  f0218092: 'xnr, NR',
+  f0219106: 'xnr, NR',
   f0220004: 'xnr, China, Karamay',
   f0224984: 'xnr, China, Wuhan',
   f0225285: 'xnr, NR',
