@@ -10,11 +10,16 @@
 // See annotations-spacerace-slingshot-medium.js for larger file results
 
 const annotations = {
+  // Retest
+
+  f020904: 'retest, Korea, Uijeongbu-si, FILTop', // carry-over
+  f030249: 'retest, NR', // carry-over
+
   // New
 
   // Inflight
 
-  f0116766: 'inflight, USA, Westford', // FundsReserved: about 2 hours
+  f0116766: 'inflight, USA, Westford', // FundsReserved: about 3 hours
 
   // Unknown
 
@@ -83,11 +88,14 @@ const annotations = {
   f0110133: 'sealing, China, Ningbo', // 1596608
   f0111885: 'sealing, Korea, Bucheon-si', // 1596618
   f0113331: 'sealing, Korea, Jinju + USA', // 1596615
+  f0129805: 'sealing, China, Zhejiang + Australia, Adelaide', // 1596642
   f0131901: 'sealing, Korea, Daejeon', // 1596613
   f0134671: 'sealing, Korea, Gimpo-si', // 1596616
+  f0135758: 'sealing, NR', // 1596643
   f0137168: 'sealing, China, Beijing', // 1596620
   f0149455: 'sealing, NR', // 1596622
   f0150744: 'sealing, Korea, Ulsan', // 1596625
+  f0155258: 'sealing, NR', // 1596641
   f0157265: 'sealing, NR', // 1596640
   f0158265: 'sealing, China, Hefei', // 1596639
   f0159961: 'sealing, China, Chongqing', // 1596630
@@ -109,10 +117,7 @@ const annotations = {
 
   // Stuck
 
-  f0129805: 'stuck, China, Zhejiang + Australia, Adelaide', // CheckForAcceptance: about 2 hours
-  f0135758: 'stuck, NR', // CheckForAcceptance: 32 minutes
-  f0155258: 'stuck, NR', // CheckForAcceptance: about 1 hour
-  f0231135: 'stuck, USA, Huntersville', // CheckForAcceptance: about 2 hours
+  f0231135: 'stuck, USA, Huntersville', // CheckForAcceptance: about 4 hours
 
   // Busy
 
@@ -430,7 +435,6 @@ const annotations = {
   f07830: 'error, China, Zhongshan', // EOF
   f07850: 'error, China, Karamay', // EOF
   f08157: 'error, China, Beijing + Germany, Frankfurt, 超星际', // stream reset
-  f09689: 'delist, USA, Portland', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: context deadline exceeded
   f010038: 'error, China, Hangzhou + Singapore', // stream reset
   f010400: 'error, China, Shenyang', // stream reset
   f014327:
@@ -461,7 +465,6 @@ const annotations = {
   f030347: 'error, China, Zhejiang', // EOF
   f030384: 'error, China, Shenzhen', // EOF
   f030408: 'error, NR', // EOF
-  f033511: 'delist, China, Dongguan', // EOF
   f040332: 'error, China, Shenzhen', // EOF
   f042896: 'error, China, Deyang', // EOF
   f044160: 'error, China, Guangzhou, muxing', // EOF
@@ -481,7 +484,6 @@ const annotations = {
   f063869: 'error, NR', // EOF
   f066104: 'error, China, Karamay', // EOF
   f066270: 'error, China, Dongguan', // EOF
-  f066804: 'delist, China, Zhejiang', // AddPiece failed: adding piece to sector: writing piece: acquire unsealed sector: local acquire error: finding best storage for allocating : no good path found
   f069915: 'error, China, Karamay', // EOF
   f069919: 'error, China, Karamay', // EOF
   f070999: 'error, China, Karamay', // EOF
@@ -497,7 +499,6 @@ const annotations = {
   f087256: 'error, China, Hangzhou', // EOF
   f090387: 'error, China, Fuzhou', // EOF
   f092514: 'error, China, Karamay', // EOF
-  f092516: 'delist, USA, Boardman', // EOF
   f093658: 'error, China, Fujian', // EOF
   f096976: 'error, Russia', // EOF
   f097914: 'error, NR', // stream reset
@@ -513,17 +514,13 @@ const annotations = {
   f0108979: 'error, Korea, Bupyeong-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.273855108266051236 FIL, balance: 0.079901270875079642 FIL): not enough funds to execute transaction
   f0109040: 'error, China, Zhangzhou', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0109043: 'error, China, Karamay', // EOF
-  f0109163: 'delist, Korea, Songpa-gu', // EOF
   f0109272: 'error, China, Dongguan', // EOF
-  f0110198: 'delist, Korea, Hwaseong-si', // EOF
   f0110804: 'error, USA, Santa Clara', // EOF
   f0111658: 'error, China, Fuzhou', // EOF
   f0112087: 'error, China, Xiamen', // EOF
   f0112691: 'error, Korea, Seoul', // EOF
-  f0112713: 'delist, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.274006932041458675 FIL, balance: 0.151318629914944304 FIL): not enough funds to execute transaction
   f0113008: 'error, China, Hong Kong', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.249999999938862656 FIL, balance: 0.004096256952122273 FIL): not enough funds to execute transaction
   f0114687: 'error, China, Dongguan', // EOF
-  f0116287: 'delist, China, Shanghai', // EOF
   f0116436: 'error, Singapore', // EOF
   f0116445: 'error, Singapore', // EOF
   f0116628: 'error, China, Shanghai', // EOF
@@ -535,17 +532,12 @@ const annotations = {
   f0121602: 'error, China, Hong Kong', // EOF
   f0124036: 'error, China, Nanchang', // EOF
   f0126478: 'error, China, Ningbo', // EOF
-  f0126535: 'delist, China, Hong Kong', // EOF
-  f0131359: 'delist, China, Fuzhou', // EOF
   f0131464: 'error, USA, Ashburn', // EOF
   f0132178: 'error, China, Ningbo', // EOF
   f0132765: 'error, NR', // EOF
   f0133486: 'error, China, Shenzhen', // EOF
   f0134516: 'error, Singapore', // EOF
   f0134518: 'error, China, Guangdong', // EOF
-  f0136425: 'delist, Korea, Busan', // unable to verify signature on deal response
-  f0137475: 'delist, China, Beijing', // EOF
-  f0137489: 'delist, UK, Deeside', // EOF
   f0142637: 'error, China, Mianyang', // EOF
   f0143160: 'error, China, Ningbo', // EOF
   f0143928: 'error, China, Beijing', // EOF
@@ -565,8 +557,6 @@ const annotations = {
   f0165539: 'error, Japan, Yokohama', // EOF
   f0214181: 'error, Australia, Mosman', // EOF
   f0222674: 'error, China, Quinzhou', // EOF
-  f0224599: 'delist, China, Fuzhou', // EOF
-  f0228350: 'delist, China, Hangzhou', // EOF
 
   // Dial backoff
 
@@ -606,7 +596,6 @@ const annotations = {
   f02856: 'rejected, China, Chengdu', // no online
   f03000: 'rejected, China, Chengdu', // no online
   f03249: 'rejected, China, Yunfu',
-  f03269: 'delist, Australia', // getting client market balance failed
   f03325: 'rejected, China, Guangdong',
   f08094: 'rejected, China, Guangzhou', // no online
   f08197: 'rejected, China, Foshan',
@@ -685,7 +674,6 @@ const annotations = {
   f0118837: 'rejected, Korea, Seoul', // no online
   f0120546: 'rejected, Korea, Seoul', // no online
   f0120793: 'rejected, Korea, Seoul', // no online
-  f0123275: 'delist, Korea, Seoul', // no online
   f0123281: 'rejected, Korea, Seoul', // no online
   f0123536: 'rejected, China, Fuzhou',
   f0126037: 'rejected, Korea, Seoul', // no online
@@ -694,7 +682,6 @@ const annotations = {
   f0127352: 'rejected, Korea, Seoul', // no online
   f0127353: 'rejected, Korea, Seoul', // no online
   f0127354: 'rejected, Korea, Seoul', // no online
-  f0127980: 'delist, Korea, Seoul', // no online
   f0128580: 'rejected, Korea, Seoul', // no online
   f0128581: 'rejected, Korea, Seoul', // no online
   f0128582: 'rejected, Korea, Seoul', // no online
@@ -720,11 +707,9 @@ const annotations = {
   f0158666: 'rejected, China, Beijing',
   f0162385: 'rejected, China, Beijing',
   f0162394: 'rejected, NR', // no online
-  f0164126: 'delist, NR', // no online
   f0164291: 'rejected, China, Fujian', // no online
   f0166327: 'rejected, NR',
   f0214631: 'rejected, Korea, Seoul', // no online
-  f0228388: 'delist, USA, Cleveland', // sh: 1: /absolute/path/to/storage_filter_program: not found
   f0230827: 'rejected, Korea, Paju', // no online
   f0239688: 'rejected, China, Beijing',
 
@@ -752,7 +737,6 @@ const annotations = {
   f02610: 'dial, Netherlands', // * [/ip4/213.227.129.197/tcp/14567] dial tcp4 0.0.0.0:37133->213.227.129.197:14567: i/o timeout
   f02614: 'dial, Singapore', // * [/ip4/170.33.9.50/tcp/32633] dial tcp4 0.0.0.0:37133->170.33.9.50:32633: i/o timeout
   f02654: 'dial, China, Shanghai', // * [/ip4/114.88.222.181/tcp/43355] dial tcp4 114.88.222.181:43355: connect: connection refused
-  f02665: 'delist, Netherlands, Amsterdam, fm-ops', // * [/ip4/139.178.82.157/tcp/15432] dial tcp4 139.178.82.157:15432: connect: connection refused
   f02721: 'dial, USA', // * [/ip4/135.90.74.200/tcp/14567] dial tcp4 0.0.0.0:37133->135.90.74.200:14567: i/o timeout
   f02723: 'dial, China, Tongling', // * [/ip4/60.173.23.17/tcp/23456] dial tcp4 0.0.0.0:37133->60.173.23.17:23456: i/o timeout
   f02725: 'dial, China, Hong Kong', // * [/ip4/101.32.38.57/tcp/18899] dial tcp4 0.0.0.0:37133->101.32.38.57:18899: i/o timeout
@@ -771,7 +755,6 @@ const annotations = {
   f03358: 'dial, China, Ordos', // * [/ip4/1.183.72.211/tcp/30001] dial tcp4 0.0.0.0:37133->1.183.72.211:30001: i/o timeout
   f03363: 'dial, China, Ordos', // * [/ip4/1.183.72.210/tcp/30003] dial tcp4 0.0.0.0:37133->1.183.72.210:30003: i/o timeout
   f03367: 'dial, Singapore', // * [/ip4/8.209.99.1/tcp/14567] dial tcp4 0.0.0.0:37133->8.209.99.1:14567: i/o timeout
-  f03519: 'delist, USA, Seattle', // * [/ip4/66.115.149.245/tcp/7000] dial tcp4 66.115.149.245:7000: connect: connection refused
   f07824: 'dial, NR', // * [/ip4/10.133.13.113/tcp/32759] dial tcp4 0.0.0.0:37133->10.133.13.113:32759: i/o timeout
   f07969: 'dial, China, Hangzhou', // * [/ip4/121.52.246.48/tcp/5002] dial tcp4 121.52.246.48:5002: connect: connection refused
   f08091: 'dial, NR', // * [/ip4/0.0.0.0/tcp/5472] dial tcp4 0.0.0.0:5472: connect: connection refused
@@ -799,7 +782,6 @@ const annotations = {
   f010616: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12313] dial tcp4 0.0.0.0:37133->8.209.107.150:12313: i/o timeout
   f014311: 'dial, Germany, Frankfurt', // * [/ip4/162.62.55.44/tcp/12309] dial tcp4 162.62.55.44:12309: connect: connection refused
   f014386: 'dial, China, Panzhihua', // * [/ip4/180.149.130.16/tcp/9845] dial tcp4 0.0.0.0:37133->180.149.130.16:9845: i/o timeout
-  f014392: 'delist, USA + Russia, Khabarovsk + Japan, Heiwajima', // * [/ip4/66.42.38.110/tcp/9990] dial tcp4 66.42.38.110:9990: connect: connection refused  * [/ip4/172.247.228.122/tcp/9999] dial tcp4 172.247.228.122:9999: connect: no route to host  * [/ip4/92.223.72.130/tcp/9999] dial tcp4 92.223.72.130:9999: connect: no route to host
   f014394: 'dial, China, Suzhou, IPFSCloud', // * [/ip4/222.92.5.147/tcp/42799] dial tcp4 222.92.5.147:42799: connect: connection refused
   f014395: 'dial, China, Dongguan', // * [/ip4/125.93.73.102/tcp/51105] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWJyNmap2Z6WWb6xBqDwUpKeFkGHaBHDkMKhrkd6jj6FEY, but remote key matches 12D3KooWB6MM5Fda1RdDyTdJCPMpvHFq6HSJfPV9DeoqGSbfwe1d
   f014415: 'dial, USA', // * [/ip4/13.248.165.152/tcp/33612] failed to negotiate security protocol: EOF
@@ -810,13 +792,11 @@ const annotations = {
   f014804: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12314] dial tcp4 0.0.0.0:37133->8.209.107.150:12314: i/o timeout
   f015685: 'dial, China, Shanghai', // * [/ip4/222.64.141.185/tcp/40321] dial tcp4 222.64.141.185:40321: connect: connection refused
   f015731: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12329] dial tcp4 0.0.0.0:37133->8.209.107.150:12329: i/o timeout
-  f015782: 'delist, Australia', // * [/ip4/103.29.66.55/tcp/7006] dial tcp4 103.29.66.55:7006: connect: connection refused
   f015848: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12321] dial tcp4 0.0.0.0:37133->8.209.107.150:12321: i/o timeout
   f015919: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12316] dial tcp4 0.0.0.0:37133->8.209.107.150:12316: i/o timeout
   f015922: 'dial, Germany, Frankfurt', // * [/ip4/162.62.55.44/tcp/12317] dial tcp4 162.62.55.44:12317: connect: connection refused
   f015925: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12318] dial tcp4 0.0.0.0:37133->8.209.107.150:12318: i/o timeout
   f015926: 'dial, Germany, Frankfurt', // * [/ip4/162.62.55.44/tcp/12319] dial tcp4 162.62.55.44:12319: connect: connection refused
-  f016203: 'delist, China, Chengdu', // * [/ip6/::1/tcp/39057] dial tcp6 [::1]:39057: connect: connection refused  * [/ip4/127.0.0.1/tcp/38321] dial tcp4 127.0.0.1:38321: connect: connection refused  * [/ip4/182.148.176.52/tcp/12769] dial tcp4 182.148.176.52:12769: connect: connection refused  * [/ip4/182.148.176.52/tcp/14750] dial tcp4 182.148.176.52:14750: connect: connection refused  * [/ip4/192.168.12.103/tcp/38321] dial tcp4 0.0.0.0:37133->192.168.12.103:38321: i/o timeout
   f016563: 'dial, China, Deyang + Singapore', // * [/ip4/161.117.186.53/tcp/8001] failed to negotiate security protocol: read tcp4 66.70.191.245:37133->161.117.186.53:8001: read: connection reset by peer  * [/ip4/125.64.78.27/tcp/8001] dial tcp4 125.64.78.27:8001: connect: connection refused  * [/ip4/192.168.109.1/tcp/8001] dial tcp4 0.0.0.0:37133->192.168.109.1:8001: i/o timeout
   f019074: 'dial, NR', // * [/ip4/192.168.2.55/tcp/3000] dial tcp4 0.0.0.0:37133->192.168.2.55:3000: i/o timeout
   f019354: 'dial, Germany, Frankfurt', // * [/ip4/128.1.78.98/tcp/31437] dial tcp4 0.0.0.0:37133->128.1.78.98:31437: i/o timeout
@@ -849,14 +829,12 @@ const annotations = {
   f024066: 'dial, China, Chengdu', // * [/ip4/182.131.4.197/tcp/10080] dial tcp4 182.131.4.197:10080: i/o timeout
   f024089: 'dial, NR', // * [/ip4/10.11.4.210/tcp/1234] dial tcp4 0.0.0.0:37133->10.11.4.210:1234: i/o timeout
   f024137: 'dial, Singapore', // * [/ip4/8.130.25.208/tcp/14567] dial tcp4 0.0.0.0:37133->8.130.25.208:14567: i/o timeout
-  f024182: 'delist, China, Hong Kong', // * [/ip4/14.136.246.135/tcp/46717] dial tcp4 14.136.246.135:46717: connect: connection refused
   f025002: 'dial, NR', // * [/ip4/10.30.8.211/tcp/14567] dial tcp4 0.0.0.0:37133->10.30.8.211:14567: i/o timeout
   f025019: 'dial, China, Taiwan, Hsinchu', // * [/ip4/140.113.194.250/tcp/24002] dial tcp4 0.0.0.0:37133->140.113.194.250:24002: i/o timeout
   f029416: 'dial, NR', // * [/ip4/0.0.0.0/tcp/1024] dial tcp4 0.0.0.0:1024: connect: connection refused
   f029665: 'dial, China, Shenyang', // * [/ip4/124.95.135.132/tcp/7000] dial tcp4 124.95.135.132:7000: connect: connection refused
   f030203: 'dial, China, Shenzhen', // * [/ip6/::1/tcp/4123] dial tcp6 [::1]:4123: connect: connection refused  * [/ip4/127.0.0.1/tcp/4123] dial tcp4 127.0.0.1:4123: connect: connection refused  * [/ip4/119.147.213.56/tcp/4123] dial tcp4 0.0.0.0:37133->119.147.213.56:4123: i/o timeout  * [/ip4/192.168.231.100/tcp/4123] dial tcp4 0.0.0.0:37133->192.168.231.100:4123: i/o timeout
   f032824: 'dial, USA, Cedar Park', // * [/ip4/104.54.236.61/tcp/24001] dial tcp4 0.0.0.0:37133->104.54.236.61:24001: i/o timeout
-  f033025: 'delist, Korea, Daegu', // * [/ip4/59.23.202.120/tcp/23236] dial tcp4 59.23.202.120:23236: connect: connection refused
   f034544: 'dial, NR', // * [/ip4/183.131.58.134/tcp/14567] dial tcp4 0.0.0.0:37133->183.131.58.134:14567: i/o timeout
   f034545: 'dial, NR', // * [/ip4/183.131.58.102/tcp/14567] dial tcp4 0.0.0.0:37133->183.131.58.102:14567: i/o timeout
   f034548: 'dial, NR', // * [/ip4/183.131.58.70/tcp/14567] dial tcp4 0.0.0.0:37133->183.131.58.70:14567: i/o timeout
@@ -888,7 +866,6 @@ const annotations = {
   f070044: 'dial, China', // * [/ip4/47.57.185.52/tcp/12600] dial tcp4 0.0.0.0:37133->47.57.185.52:12600: i/o timeout
   f070803: 'dial, NR', // * [/ip4/127.0.0.1/tcp/40573] dial tcp4 127.0.0.1:40573: connect: connection refused
   f071664: 'dial, China, Shangdong', // * [/ip4/10.133.8.210/tcp/32759] dial tcp4 0.0.0.0:37133->10.133.8.210:32759: i/o timeout
-  f072737: 'delist, China, Shanghai', // * [/ip4/210.22.102.222/tcp/24001] dial tcp4 210.22.102.222:24001: i/o timeout
   f073448: 'dial, NR', // * [/ip4/127.0.0.1/tcp/45429] dial tcp4 127.0.0.1:45429: connect: connection refused  * [/ip6/::1/tcp/33739] dial tcp6 [::1]:33739: connect: connection refused  * [/ip4/119.147.213.56/tcp/45429] dial tcp4 0.0.0.0:37133->119.147.213.56:45429: i/o timeout  * [/ip4/192.168.231.156/tcp/45429] dial tcp4 0.0.0.0:37133->192.168.231.156:45429: i/o timeout
   f079285: 'dial, NR', // * [/ip4/172.22.20.109/tcp/10241] dial tcp4 0.0.0.0:37133->172.22.20.109:10241: i/o timeout
   f079426: 'dial, China, Shandong', // * [/ip4/106.74.7.6/tcp/32759] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWQBg2oErr3Mx2fky471oxpmQmVggaDsGGVNqFagL27HeY, but remote key matches 12D3KooWQtkXUECWx5MBUugczDBoDq6DJcse1m56FHLmhRkGLyHK
@@ -902,9 +879,7 @@ const annotations = {
   f089228: 'dial, NR', // * [/ip4/172.18.114.50/tcp/10241] dial tcp4 0.0.0.0:37133->172.18.114.50:10241: i/o timeout
   f089358: 'dial, NR', // * [/ip4/172.22.7.106/tcp/10241] dial tcp4 0.0.0.0:37133->172.22.7.106:10241: i/o timeout
   f089380: 'dial, NR', // * [/ip4/172.19.101.174/tcp/10241] dial tcp4 0.0.0.0:37133->172.19.101.174:10241: i/o timeout
-  f090052: 'delist, China, Suqian', // * [/ip4/153.36.240.27/tcp/24001] dial tcp4 153.36.240.27:24001: connect: connection refused
   f090893: 'dial, USA', // * [/ip4/76.223.53.59/tcp/33912] dial tcp4 0.0.0.0:37133->76.223.53.59:33912: i/o timeout  * [/ip4/6.143.143.121/tcp/912] dial tcp4 0.0.0.0:37133->6.143.143.121:912: i/o timeout
-  f094430: 'delist, China, Ordos', // * [/ip4/222.74.142.42/tcp/12345] dial tcp4 0.0.0.0:37133->222.74.142.42:12345: i/o timeout
   f094765: 'dial, NR', // * [/ip4/218.68.85.213/tcp/12350] dial tcp4 218.68.85.213:12350: connect: connection refused
   f095382: 'dial, China, Dongguan', // * [/ip4/125.93.73.102/tcp/2345] dial tcp4 125.93.73.102:2345: connect: connection refused
   f096173: 'dial, Korea, Gangnam-gu', // * [/ip4/61.78.81.239/tcp/33333] dial tcp4 61.78.81.239:33333: connect: connection refused  * [/ip4/61.78.81.239/tcp/11111] dial tcp4 61.78.81.239:11111: connect: connection refused  * [/ip4/61.78.81.239/tcp/44444] dial tcp4 61.78.81.239:44444: connect: connection refused  * [/ip4/61.78.81.239/tcp/23456] dial tcp4 61.78.81.239:23456: connect: connection refused  * [/ip4/61.78.81.239/tcp/22222] dial tcp4 61.78.81.239:22222: connect: connection refused  * [/ip4/61.78.81.239/tcp/8800] dial tcp4 61.78.81.239:8800: connect: connection refused  * [/ip4/61.78.81.239/tcp/12345] dial tcp4 61.78.81.239:12345: connect: connection refused  * [/ip4/61.78.81.239/tcp/55555] dial tcp4 61.78.81.239:55555: connect: connection refused
@@ -914,9 +889,7 @@ const annotations = {
   f0101403: 'dial, China, Chengdu', // * [/ip4/182.131.4.195/tcp/32761] dial tcp4 182.131.4.195:32761: connect: connection refused
   f0103396: 'dial, China, Hangzhou', // * [/ip4/60.190.243.138/tcp/10240] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWLCnguS1TqxnrbCmDoAbJckjLEvo9xko2xvqmojc1ezxE, but remote key matches 12D3KooWJ9KC3jmmLpSk4pdrMA5Bn3VgCpvJs7QGQfXWGTVmTM2M
   f0106363: 'dial, NR', // * [/ip4/127.0.0.1/tcp/24001] dial tcp4 127.0.0.1:24001: connect: connection refused
-  f0107127: 'delist, USA, Daytona Beach', // * [/ip4/172.3.161.97/tcp/24001] dial tcp4 0.0.0.0:37133->172.3.161.97:24001: i/o timeout
   f0109743: 'dial, China, Yangzhou', // * [/ip4/58.220.66.137/tcp/10000] dial tcp4 58.220.66.137:10000: connect: connection refused
-  f0110101: 'delist, Korea, Goyang-si', // * [/ip4/121.161.110.194/tcp/40001] dial tcp4 0.0.0.0:37133->121.161.110.194:40001: i/o timeout
   f0110768: 'dial, Korea, Gwangju', // * [/ip4/211.223.2.211/tcp/24001] dial tcp4 211.223.2.211:24001: connect: connection refused
   f0111499: 'dial, China, Chengdu', // * [/ip4/182.131.4.195/tcp/32762] dial tcp4 182.131.4.195:32762: connect: connection refused
   f0111584: 'dial, NR', // * [/ip4/192.168.3.14/tcp/32759] dial tcp4 0.0.0.0:37133->192.168.3.14:32759: i/o timeout
@@ -928,11 +901,8 @@ const annotations = {
   f0116211: 'dial, China, Weifang', // * [/ip4/219.83.163.148/tcp/50666] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWF79gTgqr7VyLQu74NgBvCTuvDfp2CxGK8hxn2EYKzH6L, but remote key matches 12D3KooWRpggHrYWrczv3N2h5AAtdVFiX5zsW1duYpnfc1C8hjLa
   f0116707: 'dial, Germany, Dusseldorf', // * [/ip4/89.163.144.60/tcp/24001] dial tcp4 0.0.0.0:37133->89.163.144.60:24001: i/o timeout
   f0118641: 'dial, NR', // * [/ip4/10.10.8.245/tcp/7000] dial tcp4 0.0.0.0:37133->10.10.8.245:7000: i/o timeout
-  f0119336: 'delist, Canada, Ottawa', // * [/ip4/192.168.160.162/tcp/34567] dial tcp4 0.0.0.0:37133->192.168.160.162:34567: i/o timeout
-  f0120141: 'delist, Korea, Gangnam-gu', // * [/ip4/210.222.67.249/tcp/14002] dial tcp4 210.222.67.249:14002: i/o timeout
   f0120909: 'dial, China, Changsha', // * [/ip4/127.0.0.1/tcp/7502] dial tcp4 127.0.0.1:7502: connect: connection refused
   f0127569: 'dial, NR', // * [/ip4/43.240.207.204/tcp/38080] dial tcp4 0.0.0.0:37133->43.240.207.204:38080: i/o timeout
-  f0128191: 'delist, Korea, Gangnam-gu', // * [/ip4/183.98.70.108/tcp/24002] dial tcp4 0.0.0.0:37133->183.98.70.108:24002: i/o timeout
   f0130639: 'dial, NR', // * [/ip4/10.64.1.8/tcp/39872] dial tcp4 0.0.0.0:37133->10.64.1.8:39872: i/o timeout
   f0130961: 'dial, Korea, Seongnam-si', // * [/ip4/121.165.242.197/tcp/24001] dial tcp4 121.165.242.197:24001: i/o timeout
   f0133957: 'dial, NR', // * [/ip4/172.19.108.156/tcp/10241] dial tcp4 0.0.0.0:37133->172.19.108.156:10241: i/o timeout
@@ -945,14 +915,9 @@ const annotations = {
   f0145018: 'dial, Korea', // * [/ip4/203.248.27.91/tcp/45018] dial tcp4 203.248.27.91:45018: connect: connection refused
   f0153986: 'dial, China, Changsha', // * [/ip4/127.0.0.1/tcp/7503] dial tcp4 127.0.0.1:7503: connect: connection refused
   f0155983: 'dial, Japan', // * [/ip4/202.149.23.10/tcp/5472] dial tcp4 0.0.0.0:37133->202.149.23.10:5472: i/o timeout
-  f0156232: 'delist, China, Fuzhou', // * [/ip4/220.176.125.163/tcp/23450] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWPPJ74geqfgSMMsg9azXWMXEweAoUF3mvw3A5hSVsQJqb, but remote key matches 12D3KooWGdfGMwwBXmdkWUuCe69DH7VGo7siaSUNgja1gtLRF46k
   f0159632: 'dial, NR', // * [/ip4/10.140.8.32/tcp/32759] dial tcp4 0.0.0.0:37133->10.140.8.32:32759: i/o timeout
   f0159883: 'dial, NR', // * [/ip4/10.133.9.111/tcp/32759] dial tcp4 0.0.0.0:37133->10.133.9.111:32759: i/o timeout
-  f0168371: 'delist, Korea, Namyangju', // * [/ip4/220.72.101.246/tcp/24001] dial tcp4 220.72.101.246:24001: connect: connection refused
-  f0215360: 'delist, France', // * [/ip4/163.172.14.28/tcp/24001] dial tcp4 163.172.14.28:24001: connect: connection refused
-  f0215404: 'delist, China, Suzhou', // * [/ip4/47.242.1.120/tcp/24001] dial tcp4 47.242.1.120:24001: connect: connection refused
   f0216139: 'dial, Korea, Goyang-si', // * [/ip4/121.161.110.194/tcp/40002] dial tcp4 0.0.0.0:37133->121.161.110.194:40002: i/o timeout
-  f0219631: 'delist, USA, Council Bluffs', // * [/ip4/34.121.3.2/tcp/24001] dial tcp4 0.0.0.0:37133->34.121.3.2:24001: i/o timeout
   f0228855: 'dial, Korea, Guro-gu', // * [/ip4/211.44.28.119/tcp/33185] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWJADcB41mFxfVRKYtdJTasi7UEsGgPJMfTVVb4ctTstrF, but remote key matches 12D3KooWQtjEFnCdoXrrKQ6DdSBw4JN8QcyasqjtiojQmynvy7x4
   f0230449: 'dial, NR', // * [/ip6/::1/tcp/39473] dial tcp6 [::1]:39473: connect: connection refused  * [/ip6/::1/tcp/33515] dial tcp6 [::1]:33515: connect: connection refused  * [/ip4/127.0.0.1/tcp/37601] dial tcp4 127.0.0.1:37601: connect: connection refused  * [/ip4/127.0.0.1/tcp/45379] dial tcp4 127.0.0.1:45379: connect: connection refused  * [/ip4/101.71.125.163/tcp/45379] dial tcp4 101.71.125.163:45379: connect: connection refused  * [/ip4/101.71.125.163/tcp/37601] dial tcp4 101.71.125.163:37601: connect: connection refused  * [/ip4/192.168.1.244/tcp/45379] dial tcp4 0.0.0.0:37133->192.168.1.244:45379: i/o timeout  * [/ip4/192.168.1.242/tcp/37601] dial tcp4 0.0.0.0:37133->192.168.1.242:37601: i/o timeout
   f0232136: 'dial, NR', // * [/ip6/::1/tcp/37839] dial tcp6 [::1]:37839: connect: connection refused  * [/ip4/127.0.0.1/tcp/34907] dial tcp4 127.0.0.1:34907: connect: connection refused  * [/ip4/60.208.32.250/tcp/34907] dial tcp4 60.208.32.250:34907: connect: connection refused  * [/ip4/10.10.10.211/tcp/34907] dial tcp4 0.0.0.0:37133->10.10.10.211:34907: i/o timeout
@@ -972,10 +937,8 @@ const annotations = {
   f02822: 'xnr, China, Chengdu',
   f07749: 'xnr, NR',
   f010202: 'xnr, Singapore',
-  f014335: 'delist, NR',
   f014686: 'xnr, Singapore',
   f014699: 'xnr, NR',
-  f014803: 'delist, China, Beijing',
   f015877: 'xnr, China, Jiaxing + USA',
   f015885: 'xnr, China, Jiaxing',
   f015932: 'xnr, NR',
@@ -1023,7 +986,6 @@ const annotations = {
   f030511: 'xnr, undefined',
   f030649: 'xnr, NR',
   f032833: 'xnr, NR',
-  f032850: 'delist, NR',
   f032913: 'xnr, China, Shenzhen',
   f033130: 'xnr, NR',
   f033209: 'xnr, NR',
@@ -1088,7 +1050,6 @@ const annotations = {
   f065113: 'xnr, NR',
   f065141: 'xnr, NR',
   f065174: 'xnr, NR',
-  f065250: 'delist, NR',
   f065266: 'xnr, China, Hefei',
   f065578: 'xnr, NR',
   f065610: 'xnr, NR',
@@ -1126,7 +1087,6 @@ const annotations = {
   f080868: 'xnr, NR',
   f081222: 'xnr, China, Changzhou',
   f081969: 'xnr, NR',
-  f081987: 'delist, NR',
   f082000: 'xnr, NR',
   f082635: 'xnr, NR',
   f082730: 'xnr, NR',
@@ -1168,7 +1128,6 @@ const annotations = {
   f090808: 'xnr, NR',
   f091143: 'xnr, NR',
   f091243: 'xnr, NR',
-  f091355: 'delist, China, Chengdu',
   f091395: 'xnr, NR',
   f091798: 'xnr, NR',
   f091959: 'xnr, NR',
@@ -1244,9 +1203,7 @@ const annotations = {
   f0108199: 'xnr, NR',
   f0108672: 'xnr, NR',
   f0109309: 'xnr, NR',
-  f0109349: 'delist, NR',
   f0109606: 'xnr, NR',
-  f0109901: 'delist, China, Huludao',
   f0109903: 'xnr, NR',
   f0110110: 'xnr, NR',
   f0110248: 'xnr, NR',
@@ -1301,7 +1258,6 @@ const annotations = {
   f0119997: 'xnr, NR',
   f0120057: 'xnr, NR',
   f0120702: 'xnr, NR',
-  f0120747: 'delist, NR',
   f0121584: 'xnr, NR',
   f0121718: 'xnr, NR',
   f0121771: 'xnr, NR',
@@ -1326,7 +1282,6 @@ const annotations = {
   f0125488: 'xnr, NR',
   f0125863: 'xnr, Korea, Seoul',
   f0126097: 'xnr, NR',
-  f0126376: 'delist, NR',
   f0126661: 'xnr, NR',
   f0126698: 'xnr, NR',
   f0126702: 'xnr, NR',
@@ -1443,7 +1398,6 @@ const annotations = {
   f0148269: 'xnr, NR',
   f0148452: 'xnr, NR',
   f0149132: 'xnr, NR',
-  f0149444: 'delist, Korea, Gangseo-gu',
   f0149753: 'xnr, NR',
   f0149937: 'xnr, NR',
   f0150666: 'xnr, NR',
@@ -1491,7 +1445,6 @@ const annotations = {
   f0158000: 'xnr, NR',
   f0158068: 'xnr, NR',
   f0158133: 'xnr, NR',
-  f0158156: 'delist, NR',
   f0158276: 'xnr, NR',
   f0158335: 'xnr, NR',
   f0158613: 'xnr, NR',
@@ -1515,7 +1468,6 @@ const annotations = {
   f0166425: 'xnr, NR',
   f0166843: 'xnr, NR',
   f0166896: 'xnr, NR',
-  f0167137: 'delist, China, Shaoxing',
   f0167458: 'xnr, NR',
   f0168058: 'xnr, NR',
   f0169053: 'xnr, NR',
@@ -1552,8 +1504,8 @@ const annotations = {
   f01102: 'delist, China, Shandong', // carry-over
   f01156: 'delist, China, Hangzhou', // carry-over
   f01232: 'delist, China, Hangzhou', // carry-over
-  f01274: 'delist, China, Guangdong',
-  f01291: 'delist, Sweden, Stockholm, tvsthlm',
+  f01274: 'delist, China, Guangdong', // carry-over
+  f01291: 'delist, Sweden, Stockholm, tvsthlm', // carry-over
   f02304: 'delist, USA, Mountain View', // carry-over
   f02382: 'delist, China, Zhongshan-cfa', // carry-over
   f02385: 'delist, USA, East Islip', // carry-over
@@ -1566,19 +1518,22 @@ const annotations = {
   f02518: 'delist, China, Shaanxi', // carry-over
   f02575: 'delist, USA, Davis', // carry-over
   f02608: 'delist, USA, San Jose', // carry-over
+  f02665: 'delist, Netherlands, Amsterdam, fm-ops',
   f02666: 'delist, China, Chengdu', // carry-over
-  f02668: 'delist, China, Chengdu',
+  f02668: 'delist, China, Chengdu', // carry-over
   f02768: 'delist, China, Hong Kong', // carry-over
   f02774: 'delist, Australia, Sydney', // carry-over
   f02824: 'delist, China, Chengdu', // carry-over
-  f03225: 'delist, China, Guyuan',
+  f03225: 'delist, China, Guyuan', // carry-over
   f03264: 'delist, Korea, Bucheon-si', // carry-over
+  f03269: 'delist, Australia',
   f03319: 'delist, NR', // carry-over
   f03341: 'delist, NR', // carry-over
   f03346: 'delist, China, Huzhou, wckj', // carry-over
   f03361: 'delist, China, Guangzhou', // carry-over
   f03428: 'delist, China, Beijing + Jiaxing + Germany, Frankfurt', // carry-over
   f03487: 'delist, China, Yibin', // carry-over
+  f03519: 'delist, USA, Seattle',
   f03544: 'delist, China, Guiyang', // carry-over
   f03619: 'delist, China, Xiamen', // carry-over
   f03622: 'delist, 黑犇科技', // carry-over
@@ -1589,7 +1544,7 @@ const annotations = {
   f07731: 'delist, NR', // carry-over
   f07772: 'delist, China, Dongguan', // carry-over
   f07796: 'delist, China, Hunan', // carry-over
-  f07819: 'delist, China, Wuxi, YC--wuxi',
+  f07819: 'delist, China, Wuxi, YC--wuxi', // carry-over
   f07827: 'delist, China, Wuhan, 天际合', // carry-over
   f07843: 'delist, NR', // carry-over
   f07866: 'delist, China, Foshan', // carry-over
@@ -1613,7 +1568,7 @@ const annotations = {
   f08246: 'delist, USA', // carry-over
   f08280: 'delist, NR', // carry-over
   f08284: 'delist, China, Liaoning', // carry-over
-  f08285: 'delist, Latvia, Riga, stander',
+  f08285: 'delist, Latvia, Riga, stander', // carry-over
   f08290: 'delist, NR', // carry-over
   f08311: 'delist, China, Shenzhen', // carry-over
   f08315: 'delist, China, Chongqing', // carry-over
@@ -1636,7 +1591,7 @@ const annotations = {
   f08460: 'delist, NR', // carry-over
   f08482: 'delist, USA, Athol, @why', // carry-over
   f08503: 'delist, NR', // carry-over
-  f08532: 'delist, USA',
+  f08532: 'delist, USA', // carry-over
   f08574: 'delist, USA', // carry-over
   f08787: 'delist, China, Yibin', // carry-over
   f08789: 'delist, China, Fuzhou', // carry-over
@@ -1663,6 +1618,7 @@ const annotations = {
   f09610: 'delist, China, Beijing', // carry-over
   f09629: 'delist, NR', // carry-over
   f09662: 'delist, Canada, Surrey', // carry-over
+  f09689: 'delist, USA, Portland',
   f09707: 'delist, China, Guangdong', // carry-over
   f09712: 'delist, China, Chengdu', // carry-over
   f09719: 'delist, Korea, Geumcheon-gu', // carry-over
@@ -1675,7 +1631,7 @@ const annotations = {
   f09833: 'delist, USA, San Jose', // carry-over
   f09840: 'delist, China, Baoding', // carry-over
   f09912: 'delist, USA, Concord', // carry-over
-  f09964: 'delist, Germany, Frankfurt',
+  f09964: 'delist, Germany, Frankfurt', // carry-over
   f09966: 'delist, NR', // carry-over
   f09974: 'delist, Canada, Calgary', // carry-over
   f09997: 'delist, USA', // carry-over
@@ -1688,595 +1644,642 @@ const annotations = {
   f010078: 'delist, China, Zhangjiakou + Hong Kong', // carry-over
   f010173: 'delist, Korea, Pyeongtaek-si', // carry-over
   f010200: 'delist, NR', // carry-over
-  f010213: 'delist, NR',
-  f010222: 'delist, NR',
-  f010227: 'delist, China, Xiamen',
-  f010244: 'delist, USA, Newton',
-  f010248: 'delist, China, Yibin',
-  f010265: 'delist, China, Zhengzhou',
-  f010275: 'delist, Korea, Cheongju-si + USA',
-  f010277: 'delist, France, Fontenay-sous-Bois',
-  f010281: 'delist, China, Shanghai',
-  f010282: 'delist, USA, San Francisco',
-  f010283: 'delist, Brazil, Sao Paulo',
-  f010292: 'delist, NR',
-  f010293: 'delist, China, Xiamen',
-  f010297: 'delist, USA, Howell',
-  f010303: 'delist, China, Guangdong',
-  f010305: 'delist, NR',
-  f010310: 'delist, Canada, Surrey',
-  f010313: 'delist, NR',
-  f010315: 'delist, Canada, Surrey',
-  f010346: 'delist, China, Karamay',
-  f010382: 'delist, NR',
-  f010402: 'delist, China, Shenyang',
-  f010425: 'delist, NR',
-  f010433: 'delist, Korea, Seoul',
-  f010438: 'delist, USA',
-  f010453: 'delist, China, Shaanxi',
-  f010468: 'delist, China, Guangzhou',
-  f010490: 'delist, NR',
-  f010517: 'delist, China, Chongqing',
-  f010520: 'delist, China, Hangzhou',
-  f010542: 'delist, China, Ordos',
-  f010549: 'delist, China, Ordos',
-  f010551: 'delist, China, Shenyang',
-  f010559: 'delist, China, Shenyang',
-  f010566: 'delist, NR',
-  f010591: 'delist, China, Wuhan',
-  f010601: 'delist, NR',
-  f010602: 'delist, China, Guangdong',
-  f010603: 'delist, China, Baoding',
-  f010612: 'delist, USA, Mountain View',
-  f014207: 'delist, USA',
-  f014261: 'delist, China, Fuzhou',
-  f014271: 'delist, China, Fuzhou',
-  f014314: 'delist, Korea, Bucheon-si',
-  f014331: 'delist, China, Chongqing',
-  f014354: 'delist, USA, Concord',
-  f014366: 'delist, USA, Mountain View',
-  f014388: 'delist, China, Guangdong',
-  f014389: 'delist, China, Chongqing',
-  f014407: 'delist, China, Shanghai',
-  f014419: 'delist, USA, San Diego',
-  f014420: 'delist, Russia, Samara',
-  f014425: 'delist, Singapore',
-  f014477: 'delist, China, Hangzhou',
-  f014478: 'delist, Finland',
-  f014486: 'delist, NR',
-  f014495: 'delist, China, Hong Kong',
-  f014514: 'delist, China, Fuzhou',
-  f014533: 'delist, China, Fuzhou',
-  f014540: 'delist, USA, Newton',
-  f014556: 'delist, Korea, Bucheon-si',
-  f014629: 'delist, NR',
-  f014660: 'delist, Korea, Busan',
-  f014685: 'delist, Hong Kong',
-  f014708: 'delist, China, Beijing',
-  f014741: 'delist, China, Wuhan',
-  f014745: 'delist, China, Shenyang',
-  f014749: 'delist, China, Chongqing',
-  f014764: 'delist, Korea, Wanju',
-  f014793: 'delist, China, Hangzhou',
-  f014799: 'delist, China, Chongqing',
-  f015061: 'delist, Australia, Sydney',
-  f015232: 'delist, Poland, Warsaw',
-  f015647: 'delist, China, Shenzhen',
-  f015709: 'delist, China, Hefei',
-  f015724: 'delist, China, Guangdong',
-  f015753: 'delist, China, Guyuan',
-  f015797: 'delist, Germany, Rostock',
-  f015798: 'delist, Germany',
-  f015799: 'delist, Germany, Rostock',
-  f015800: 'delist, Germany, Sankt Andreasberg',
-  f015802: 'delist, Germany',
-  f015805: 'delist, Germany',
-  f015808: 'delist, Germany',
-  f015809: 'delist, Germany',
-  f015810: 'delist, Germany',
-  f015811: 'delist, Germany, Lanshut',
-  f015812: 'delist, Germany',
-  f015827: 'delist, Russia',
-  f015829: 'delist, China, Beijing',
-  f015833: 'delist, China, Baoding',
-  f015867: 'delist, Netherlands, Amsterdam',
-  f015870: 'delist, China, Hangzhou',
-  f015875: 'delist, China, Fuzhou',
-  f015891: 'delist, China, Shanghai',
-  f015901: 'delist, Germany',
-  f015902: 'delist, Germany',
-  f015920: 'delist, China, Guangdong',
-  f015935: 'delist, China, Sichuan',
-  f015938: 'delist, Canada, Waterloo',
-  f015940: 'delist, Netherlands, Amsterdam',
-  f015942: 'delist, China, Ningbo',
-  f016140: 'delist, China, Beijing',
-  f016162: 'delist, France, Borgo',
-  f016172: 'delist, China, Guangdong',
-  f016217: 'delist, China, Nanchong',
-  f016228: 'delist, China, Chengdu',
-  f016234: 'delist, China, Chengdu',
-  f016262: 'delist, China, Fuzhou',
-  f016271: 'delist, Korea, Seodaemun-gu',
-  f016299: 'delist, China, Shanghai',
-  f016303: 'delist, USA, Boardman',
-  f016304: 'delist, USA, Boardman',
-  f016305: 'delist, USA, Boardman',
-  f016306: 'delist, USA, Boardman',
-  f016408: 'delist, NR',
-  f016426: 'delist, NR',
-  f016436: 'delist, Korea, Seoul',
-  f016456: 'delist, China, Zhejiang',
-  f016462: 'delist, USA, Clarksville',
-  f016482: 'delist, USA, Aliquippa',
-  f016594: 'delist, Germany',
-  f016628: 'delist, NR',
-  f016688: 'delist, Germany, Frankfurt',
-  f016706: 'delist, China, Guangzhou',
-  f017117: 'delist, Russia, Samara',
-  f017171: 'delist, NR',
-  f017181: 'delist, China, Nanchong',
-  f017186: 'delist, China, Jiaxing',
-  f017209: 'delist, NR',
-  f017215: 'delist, Finland',
-  f017216: 'delist, NR',
-  f017236: 'delist, NR',
-  f017251: 'delist, USA',
-  f017294: 'delist, China, Shenzhen',
-  f017323: 'delist, Poland, Warsaw',
-  f017334: 'delist, China, Fuzhou',
-  f017430: 'delist, Australia, Alexandria-cfa',
-  f017618: 'delist, Korea, Wanju',
-  f017628: 'delist, Brazil, Sao Paulo',
-  f017655: 'delist, NR',
-  f017722: 'delist, NR',
-  f017747: 'delist, NR',
-  f017793: 'delist, NR',
-  f018081: 'delist, Germany',
-  f018095: 'delist, Colombia, Medellin',
-  f018128: 'delist, China, Dongguan',
-  f018164: 'delist, USA, Howell',
-  f018311: "delist, China, Xi'an, <23h",
-  f018369: 'delist, NR',
-  f018393: 'delist, Colombia, Medellin',
-  f018397: 'delist, USA, Howell',
-  f018425: 'delist, USA, Howell',
-  f018437: 'delist, NR',
-  f018441: 'delist, USA',
-  f018445: 'delist, NR',
-  f018446: 'delist, China, Dongguan',
-  f018456: 'delist, Brazil, Sao Paulo',
-  f018474: 'delist, China, Xiamen',
-  f018484: 'delist, China, Shanghai',
-  f018490: 'delist, Korea, Hwaseong-si',
-  f018513: 'delist, NR',
-  f018517: 'delist, USA, Columbus',
-  f018518: "delist, China, Xi'an",
-  f018520: 'delist, China',
-  f018530: 'delist, China, Shaanxi',
-  f018531: 'delist, China, Shaanxi',
-  f018537: 'delist, China, Shaanxi',
-  f018542: 'delist, China, Chongqing',
-  f018754: 'delist, China, Dali',
-  f018761: 'delist, Russia, St. Petersburg',
-  f018790: 'delist, China, Chengdu',
-  f018802: 'delist, China, Dongguan',
-  f018812: 'delist, South Africa, Cape Town',
-  f018836: 'delist, NR',
-  f018837: 'delist, China, Shaanxi',
-  f018844: 'delist, NR',
-  f018864: 'delist, Korea, Busan',
-  f018865: 'delist, China, Chengdu',
-  f018869: 'delist, NR',
-  f018879: 'delist, Korea, Geumcheon-gu',
-  f018899: 'delist, China, Shanghai',
-  f019017: 'delist, China, Wenzhou-cfa',
-  f019024: 'delist, China, Sichuan',
-  f019029: 'delist, Serbia, Boljevac',
-  f019031: 'delist, NR',
-  f019042: 'delist, China, Shanghai',
-  f019048: 'delist, Brazil, Sao Paulo',
-  f019062: 'delist, Germany',
-  f019069: 'delist, NR',
-  f019109: 'delist, USA, Howell',
-  f019114: 'delist, USA, Howell',
-  f019118: 'delist, China, Jiaxing',
-  f019123: 'delist, China, Dongguan',
-  f019160: 'delist, USA, Fremont',
-  f019173: 'delist, China, Nanchong',
-  f019184: 'delist, China, Yibin',
-  f019218: 'delist, China, Dali',
-  f019239: 'delist, China, Jiaxing',
-  f019264: 'delist, NR',
-  f019284: 'delist, China, Foshan',
-  f019376: 'delist, NR',
-  f019378: 'delist, China, Changzhou',
-  f019401: 'delist, Brazil, Sao Paulo',
-  f019423: 'delist, South Africa, Johannesburg',
-  f019434: 'delist, NR',
-  f019437: 'delist, Korea, Guro-gu',
-  f019525: 'delist, USA, Berkeley',
-  f019528: 'delist, Peru',
-  f019547: 'delist, Peru',
-  f019645: 'delist, Russia, St. Petersburg',
-  f019723: 'delist, China, Zhongshan',
-  f019734: 'delist, NR',
-  f019757: 'delist, NR',
-  f019804: 'delist, China, Chengdu',
-  f019809: 'delist, NR',
-  f019812: 'delist, NR',
-  f019825: 'delist, China, Hong Kong',
-  f020223: 'delist, China, Guiyang',
-  f020241: 'delist, NR',
-  f020260: 'delist, NR',
-  f020276: 'delist, China, Xiamen',
-  f020281: 'delist, Korea, Uijeongbu-si',
-  f020352: 'delist, NR',
-  f020361: 'delist, Colombia, Medellin',
-  f020366: 'delist, China, Chengdu',
-  f020369: 'delist, NR',
-  f020379: 'delist, NR',
-  f020386: 'delist, Russia',
-  f020390: 'delist, NR',
-  f020408: 'delist, China, Hong Kong',
-  f020432: 'delist, Korea, Wanju',
-  f020433: 'delist, NR',
-  f020439: 'delist, China, Chengdu',
-  f020450: 'delist, NR',
-  f020451: 'delist, NR',
-  f020453: 'delist, China, Chengdu',
-  f020457: 'delist, NR',
-  f020525: 'delist, China, Dongguan',
-  f020559: 'delist, China, Liaoning',
-  f020563: 'delist, China, Dongguan',
-  f020578: 'delist, Korea, Wanju',
-  f020641: 'delist, NR',
-  f020678: 'delist, China, Wenzhou',
-  f020682: 'delist, NR',
-  f020683: 'delist, China, Changsha',
-  f020691: 'delist, NR',
-  f020739: 'delist, China, Dongguan',
-  f020763: 'delist, China, Luzhou',
-  f020775: 'delist, Japan, Osaka',
-  f020786: 'delist, China, Shenzhen',
-  f020788: 'delist, China, Chengdu',
-  f020789: 'delist, NR',
-  f020791: 'delist, China, Hangzhou',
-  f020819: 'delist, China, Chengdu',
-  f020822: 'delist, China, Shanghai',
-  f020896: 'delist, NR',
-  f020899: 'delist, China, Chengdu',
-  f020904: 'retest, Korea, Uijeongbu-si, FILTop',
-  f020914: 'delist, NR',
-  f020934: 'delist, NR',
-  f020939: 'delist, NR',
-  f020961: 'delist, China, Shanghai',
-  f020975: 'delist, China, Shandong',
-  f020993: 'delist, China, Hong Kong',
-  f021069: 'delist, USA',
-  f021083: 'delist, NR',
-  f021092: 'delist, NR',
-  f021095: 'delist, NR',
-  f021265: 'delist, China, Wuhan',
-  f021274: 'delist, China, Shanghai',
-  f021286: 'delist, China, Shaanxi',
-  f021307: 'delist, China, Chengdu',
-  f021311: 'delist, NR',
-  f021337: 'delist, China, Beijing',
-  f021339: 'delist, China, Jiaxing',
-  f021346: 'delist, China, Shanghai',
-  f021357: 'delist, China, Shanghai',
-  f021418: 'delist, NR',
-  f021494: 'delist, NR',
-  f021500: 'delist, NR',
-  f021505: 'delist, NR',
-  f021509: 'delist, China, Fuzhou',
-  f021527: 'delist, NR',
-  f021535: 'delist, China, Chengdu',
-  f021555: 'delist, NR',
-  f021574: 'delist, NR',
-  f021580: 'delist, NR',
-  f021583: 'delist, China, Jiaxing',
-  f021684: 'delist, NR',
-  f021699: 'delist, NR',
-  f021725: 'delist, NR',
-  f021976: 'delist, NR',
-  f022015: 'delist, China, Hangzhou',
-  f022016: 'delist, NR',
-  f022033: 'delist, NR',
-  f022070: 'delist, China, Jieyang',
-  f022084: 'delist, China, Shaanxi',
-  f022089: 'delist, China, Beijing',
-  f022091: 'delist, NR',
-  f022108: 'delist, China, Luzhou',
-  f022119: 'delist, USA, Lovettsville',
-  f022122: 'delist, NR',
-  f022132: 'delist, China, Dongguan',
-  f022171: 'delist, China, Shanghai',
-  f022202: 'delist, USA, Howell',
-  f022250: 'delist, NR',
-  f022262: 'delist, China, Hong Kong',
-  f022276: 'delist, Korea, Seoul',
-  f022284: 'delist, China, Shaanxi',
-  f022287: 'delist, China, Dongguan',
-  f022303: 'delist, NR',
-  f022313: 'delist, NR',
-  f022321: 'delist, China, Hong Kong',
-  f022326: 'delist, China, Zhongshan',
-  f022333: 'delist, China, Dongguan',
-  f022337: 'delist, NR',
-  f022343: 'delist, China, Dongguan',
-  f022372: 'delist, China, Chengdu',
-  f022376: 'delist, China, Dongguan',
-  f022494: 'delist, China, Dongguan',
-  f022501: 'delist, Japan, Osaka',
-  f022503: 'delist, NR',
-  f022505: 'delist, China, Shanghai',
-  f022517: 'delist, China, Taiwan, Taipei',
-  f022562: 'delist, NR',
-  f022564: 'delist, NR',
-  f022683: 'delist, NR',
-  f022755: 'delist, China, Shenzhen',
-  f022776: 'delist, Korea, Guri-si',
-  f022786: 'delist, NR',
-  f022790: 'delist, China, Luzhou',
-  f022791: 'delist, NR',
-  f022797: 'delist, NR',
-  f022834: 'delist, NR',
-  f022836: 'delist, China, Chongqing',
-  f022838: 'delist, China, Hong Kong',
-  f022841: 'delist, China, Zhongshan',
-  f022857: 'delist, NR',
-  f022880: 'delist, NR',
-  f022906: 'delist, NR',
-  f022911: 'delist, China, Hong Kong',
-  f022912: 'delist, NR',
-  f022926: 'delist, NR',
-  f022930: 'delist, NR',
-  f022954: 'delist, NR',
-  f022967: 'delist, Korea, Seoul',
-  f022969: 'delist, China, Chengdu',
-  f022970: 'delist, NR',
-  f022996: 'delist, NR',
-  f023021: 'delist, Korea, Yeongdeungpo-dong',
-  f023108: 'delist, China, Dongguan',
-  f023159: 'delist, NR',
-  f023207: 'delist, NR',
-  f023210: 'delist, China, Dongguan',
-  f023254: 'delist, NR',
-  f023463: 'delist, NR',
-  f023482: 'delist, NR',
-  f023501: 'delist, China, Mianyang',
-  f023505: 'delist, NR',
-  f023526: 'delist, China, Chongqing',
-  f023535: 'delist, China, Hong Kong',
-  f023560: 'delist, NR',
-  f023568: 'delist, NR',
-  f023571: 'delist, NR',
-  f023581: 'delist, China, Hong Kong, mine-much',
-  f023643: 'delist, NR',
-  f023647: 'delist, Korea, Gangseo-gu',
-  f023649: 'delist, Korea, Seoul, LS&NIHON',
-  f023661: 'delist, China, Zhejiang',
-  f023798: 'delist, China, Shanghai',
-  f023801: 'delist, China, Dongguan',
-  f023826: 'delist, USA, Germantown',
-  f023881: 'delist, China, Fuzhou',
-  f023939: 'delist, NR',
-  f023943: 'delist, USA, Ashburn',
-  f023965: 'delist, NR',
-  f023986: 'delist, Korea, Seoul',
-  f024031: 'delist, NR',
-  f024074: 'delist, NR',
-  f024129: 'delist, China, Zhejiang',
-  f024153: 'delist, NR',
-  f024165: 'delist, NR',
-  f024168: 'delist, USA, Ashburn',
-  f024496: 'delist, China, Dongguan',
-  f024526: 'delist, Korea',
-  f024556: 'delist, NR',
-  f024557: 'delist, NR',
-  f024558: 'delist, NR',
-  f024559: 'delist, NR',
-  f024611: 'delist, China, Dongguan',
-  f024902: 'delist, Korea, Incheon',
-  f024903: 'delist, undefined',
-  f024969: 'delist, NR',
-  f025028: 'delist, NR',
-  f025032: 'delist, China, Beijing',
-  f029368: 'delist, Korea, Gangseo-gu',
-  f029421: 'delist, undefined',
-  f029477: 'delist, undefined',
-  f029529: 'delist, China, Dongguan',
-  f029546: 'delist, NR',
-  f029566: 'delist, NR',
-  f029595: 'delist, undefined',
-  f029619: 'delist, undefined',
-  f029632: 'delist, undefined',
-  f030230: 'delist, China, Sichuan',
-  f030231: 'delist, China, Hunan',
-  f030249: 'retest, NR',
-  f030327: 'delist, China, Beijing',
-  f030386: 'delist, NR',
-  f030514: 'delist, NR',
-  f030518: 'delist, China, Wuhan',
-  f030521: 'delist, China, Hong Kong',
-  f030531: 'delist, NR',
-  f030608: 'delist, China, Mianyang',
-  f030641: 'delist, China, Shaanxi',
-  f032865: 'delist, USA, Redmond',
-  f032887: 'delist, undefined',
-  f032904: 'delist, undefined',
-  f032922: 'delist, undefined',
-  f033014: 'delist, NR',
-  f033028: 'delist, China, Mianyang',
-  f033111: 'delist, China, Shanghai',
-  f033124: 'delist, China, Shanghai',
-  f033125: 'delist, NR',
-  f033224: 'delist, NR',
-  f033545: 'delist, China, Shenzhen + USA',
-  f033549: 'delist, China, Quzhou',
-  f034084: 'delist, China, Chongqing',
-  f034229: 'delist, USA, Minneapolis',
-  f034311: 'delist, Korea, Gangnam-gu',
-  f034362: 'delist, China, Sichuan',
-  f034652: 'delist, Korea, Yeongdeungpo-dong',
-  f034666: 'delist, NR',
-  f040137: 'delist, NR',
-  f040432: 'delist, NR',
-  f040468: 'delist, NR',
-  f040971: 'delist, NR',
-  f042344: 'delist, Korea',
-  f042584: 'delist, Australia, Basin View',
-  f042839: 'delist, Korea, Pocheon-si',
-  f042901: 'delist, Finland, Helsinki',
-  f044143: 'delist, China, Taiwan, Taipei',
-  f044788: 'delist, NR',
-  f046043: 'delist, China, Shanghai',
-  f046073: 'delist, China, Shanghai',
-  f046074: 'delist, China, Shanghai',
-  f046078: 'delist, China, Shaanxi',
-  f046315: 'delist, NR',
-  f046317: 'delist, China, Nanyang',
-  f047327: 'delist, China, Hong Kong',
-  f047536: 'delist, NR',
-  f047858: 'delist, China, Wuhan',
-  f048545: 'delist, China, Chengdu',
-  f049990: 'delist, Korea, Incheon',
-  f052503: 'delist, NR',
-  f052562: 'delist, NR',
-  f052740: 'delist, China, Shaanxi',
-  f054163: 'delist, China, Dongguan',
-  f054389: 'delist, China, Chongqing',
-  f054677: 'delist, Finland, Helsinki',
-  f055040: 'delist, China, Fujian',
-  f056393: 'delist, NR',
-  f057115: 'delist, China, Nanyang',
-  f057560: 'delist, NR',
-  f057842: 'delist, Korea, Gyeonggi-do',
-  f058003: 'delist, China, Shenzhen',
-  f058321: 'delist, China, Dongguan',
-  f059280: 'delist, China, Shenzhen',
-  f059652: 'delist, China, Beijing',
-  f059705: 'delist, Korea, Naju',
-  f060780: 'delist, Korea, Goyang-si',
-  f061043: 'delist, China, Changsha',
-  f061059: 'delist, China, Beijing',
-  f061196: 'delist, Korea, Yeongdeungpo-dong',
-  f061430: 'delist, Korea, Naju',
-  f062245: 'delist, NR',
-  f062375: 'delist, Korea, Gyeonggi-do',
-  f062445: 'delist, China, Shenzhen',
-  f062449: 'delist, NR',
-  f062492: 'delist, China, Hong Kong',
-  f062552: 'delist, NR',
-  f062587: 'delist, NR',
-  f062735: 'delist, China, Hong Kong',
-  f063173: 'delist, Korea, Gyeonggi-do',
-  f063780: 'delist, China, Shenyang',
-  f063921: 'delist, China, Ili',
-  f064442: 'delist, Japan',
-  f064688: 'delist, NR',
-  f065132: 'delist, Denmark, Vipperod',
-  f065225: 'delist, China, Dongguan',
+  f010213: 'delist, NR', // carry-over
+  f010222: 'delist, NR', // carry-over
+  f010227: 'delist, China, Xiamen', // carry-over
+  f010244: 'delist, USA, Newton', // carry-over
+  f010248: 'delist, China, Yibin', // carry-over
+  f010265: 'delist, China, Zhengzhou', // carry-over
+  f010275: 'delist, Korea, Cheongju-si + USA', // carry-over
+  f010277: 'delist, France, Fontenay-sous-Bois', // carry-over
+  f010281: 'delist, China, Shanghai', // carry-over
+  f010282: 'delist, USA, San Francisco', // carry-over
+  f010283: 'delist, Brazil, Sao Paulo', // carry-over
+  f010292: 'delist, NR', // carry-over
+  f010293: 'delist, China, Xiamen', // carry-over
+  f010297: 'delist, USA, Howell', // carry-over
+  f010303: 'delist, China, Guangdong', // carry-over
+  f010305: 'delist, NR', // carry-over
+  f010310: 'delist, Canada, Surrey', // carry-over
+  f010313: 'delist, NR', // carry-over
+  f010315: 'delist, Canada, Surrey', // carry-over
+  f010346: 'delist, China, Karamay', // carry-over
+  f010382: 'delist, NR', // carry-over
+  f010402: 'delist, China, Shenyang', // carry-over
+  f010425: 'delist, NR', // carry-over
+  f010433: 'delist, Korea, Seoul', // carry-over
+  f010438: 'delist, USA', // carry-over
+  f010453: 'delist, China, Shaanxi', // carry-over
+  f010468: 'delist, China, Guangzhou', // carry-over
+  f010490: 'delist, NR', // carry-over
+  f010517: 'delist, China, Chongqing', // carry-over
+  f010520: 'delist, China, Hangzhou', // carry-over
+  f010542: 'delist, China, Ordos', // carry-over
+  f010549: 'delist, China, Ordos', // carry-over
+  f010551: 'delist, China, Shenyang', // carry-over
+  f010559: 'delist, China, Shenyang', // carry-over
+  f010566: 'delist, NR', // carry-over
+  f010591: 'delist, China, Wuhan', // carry-over
+  f010601: 'delist, NR', // carry-over
+  f010602: 'delist, China, Guangdong', // carry-over
+  f010603: 'delist, China, Baoding', // carry-over
+  f010612: 'delist, USA, Mountain View', // carry-over
+  f014207: 'delist, USA', // carry-over
+  f014261: 'delist, China, Fuzhou', // carry-over
+  f014271: 'delist, China, Fuzhou', // carry-over
+  f014314: 'delist, Korea, Bucheon-si', // carry-over
+  f014331: 'delist, China, Chongqing', // carry-over
+  f014335: 'delist, NR',
+  f014354: 'delist, USA, Concord', // carry-over
+  f014366: 'delist, USA, Mountain View', // carry-over
+  f014388: 'delist, China, Guangdong', // carry-over
+  f014389: 'delist, China, Chongqing', // carry-over
+  f014392: 'delist, USA + Russia, Khabarovsk + Japan, Heiwajima',
+  f014407: 'delist, China, Shanghai', // carry-over
+  f014419: 'delist, USA, San Diego', // carry-over
+  f014420: 'delist, Russia, Samara', // carry-over
+  f014425: 'delist, Singapore', // carry-over
+  f014477: 'delist, China, Hangzhou', // carry-over
+  f014478: 'delist, Finland', // carry-over
+  f014486: 'delist, NR', // carry-over
+  f014495: 'delist, China, Hong Kong', // carry-over
+  f014514: 'delist, China, Fuzhou', // carry-over
+  f014533: 'delist, China, Fuzhou', // carry-over
+  f014540: 'delist, USA, Newton', // carry-over
+  f014556: 'delist, Korea, Bucheon-si', // carry-over
+  f014629: 'delist, NR', // carry-over
+  f014660: 'delist, Korea, Busan', // carry-over
+  f014685: 'delist, Hong Kong', // carry-over
+  f014708: 'delist, China, Beijing', // carry-over
+  f014741: 'delist, China, Wuhan', // carry-over
+  f014745: 'delist, China, Shenyang', // carry-over
+  f014749: 'delist, China, Chongqing', // carry-over
+  f014764: 'delist, Korea, Wanju', // carry-over
+  f014793: 'delist, China, Hangzhou', // carry-over
+  f014799: 'delist, China, Chongqing', // carry-over
+  f014803: 'delist, China, Beijing',
+  f015061: 'delist, Australia, Sydney', // carry-over
+  f015232: 'delist, Poland, Warsaw', // carry-over
+  f015647: 'delist, China, Shenzhen', // carry-over
+  f015709: 'delist, China, Hefei', // carry-over
+  f015724: 'delist, China, Guangdong', // carry-over
+  f015753: 'delist, China, Guyuan', // carry-over
+  f015782: 'delist, Australia',
+  f015797: 'delist, Germany, Rostock', // carry-over
+  f015798: 'delist, Germany', // carry-over
+  f015799: 'delist, Germany, Rostock', // carry-over
+  f015800: 'delist, Germany, Sankt Andreasberg', // carry-over
+  f015802: 'delist, Germany', // carry-over
+  f015805: 'delist, Germany', // carry-over
+  f015808: 'delist, Germany', // carry-over
+  f015809: 'delist, Germany', // carry-over
+  f015810: 'delist, Germany', // carry-over
+  f015811: 'delist, Germany, Lanshut', // carry-over
+  f015812: 'delist, Germany', // carry-over
+  f015827: 'delist, Russia', // carry-over
+  f015829: 'delist, China, Beijing', // carry-over
+  f015833: 'delist, China, Baoding', // carry-over
+  f015867: 'delist, Netherlands, Amsterdam', // carry-over
+  f015870: 'delist, China, Hangzhou', // carry-over
+  f015875: 'delist, China, Fuzhou', // carry-over
+  f015891: 'delist, China, Shanghai', // carry-over
+  f015901: 'delist, Germany', // carry-over
+  f015902: 'delist, Germany', // carry-over
+  f015920: 'delist, China, Guangdong', // carry-over
+  f015935: 'delist, China, Sichuan', // carry-over
+  f015938: 'delist, Canada, Waterloo', // carry-over
+  f015940: 'delist, Netherlands, Amsterdam', // carry-over
+  f015942: 'delist, China, Ningbo', // carry-over
+  f016140: 'delist, China, Beijing', // carry-over
+  f016162: 'delist, France, Borgo', // carry-over
+  f016172: 'delist, China, Guangdong', // carry-over
+  f016203: 'delist, China, Chengdu',
+  f016217: 'delist, China, Nanchong', // carry-over
+  f016228: 'delist, China, Chengdu', // carry-over
+  f016234: 'delist, China, Chengdu', // carry-over
+  f016262: 'delist, China, Fuzhou', // carry-over
+  f016271: 'delist, Korea, Seodaemun-gu', // carry-over
+  f016299: 'delist, China, Shanghai', // carry-over
+  f016303: 'delist, USA, Boardman', // carry-over
+  f016304: 'delist, USA, Boardman', // carry-over
+  f016305: 'delist, USA, Boardman', // carry-over
+  f016306: 'delist, USA, Boardman', // carry-over
+  f016408: 'delist, NR', // carry-over
+  f016426: 'delist, NR', // carry-over
+  f016436: 'delist, Korea, Seoul', // carry-over
+  f016456: 'delist, China, Zhejiang', // carry-over
+  f016462: 'delist, USA, Clarksville', // carry-over
+  f016482: 'delist, USA, Aliquippa', // carry-over
+  f016594: 'delist, Germany', // carry-over
+  f016628: 'delist, NR', // carry-over
+  f016688: 'delist, Germany, Frankfurt', // carry-over
+  f016706: 'delist, China, Guangzhou', // carry-over
+  f017117: 'delist, Russia, Samara', // carry-over
+  f017171: 'delist, NR', // carry-over
+  f017181: 'delist, China, Nanchong', // carry-over
+  f017186: 'delist, China, Jiaxing', // carry-over
+  f017209: 'delist, NR', // carry-over
+  f017215: 'delist, Finland', // carry-over
+  f017216: 'delist, NR', // carry-over
+  f017236: 'delist, NR', // carry-over
+  f017251: 'delist, USA', // carry-over
+  f017294: 'delist, China, Shenzhen', // carry-over
+  f017323: 'delist, Poland, Warsaw', // carry-over
+  f017334: 'delist, China, Fuzhou', // carry-over
+  f017430: 'delist, Australia, Alexandria-cfa', // carry-over
+  f017618: 'delist, Korea, Wanju', // carry-over
+  f017628: 'delist, Brazil, Sao Paulo', // carry-over
+  f017655: 'delist, NR', // carry-over
+  f017722: 'delist, NR', // carry-over
+  f017747: 'delist, NR', // carry-over
+  f017793: 'delist, NR', // carry-over
+  f018081: 'delist, Germany', // carry-over
+  f018095: 'delist, Colombia, Medellin', // carry-over
+  f018128: 'delist, China, Dongguan', // carry-over
+  f018164: 'delist, USA, Howell', // carry-over
+  f018311: "delist, China, Xi'an, <23h", // carry-over
+  f018369: 'delist, NR', // carry-over
+  f018393: 'delist, Colombia, Medellin', // carry-over
+  f018397: 'delist, USA, Howell', // carry-over
+  f018425: 'delist, USA, Howell', // carry-over
+  f018437: 'delist, NR', // carry-over
+  f018441: 'delist, USA', // carry-over
+  f018445: 'delist, NR', // carry-over
+  f018446: 'delist, China, Dongguan', // carry-over
+  f018456: 'delist, Brazil, Sao Paulo', // carry-over
+  f018474: 'delist, China, Xiamen', // carry-over
+  f018484: 'delist, China, Shanghai', // carry-over
+  f018490: 'delist, Korea, Hwaseong-si', // carry-over
+  f018513: 'delist, NR', // carry-over
+  f018517: 'delist, USA, Columbus', // carry-over
+  f018518: "delist, China, Xi'an", // carry-over
+  f018520: 'delist, China', // carry-over
+  f018530: 'delist, China, Shaanxi', // carry-over
+  f018531: 'delist, China, Shaanxi', // carry-over
+  f018537: 'delist, China, Shaanxi', // carry-over
+  f018542: 'delist, China, Chongqing', // carry-over
+  f018754: 'delist, China, Dali', // carry-over
+  f018761: 'delist, Russia, St. Petersburg', // carry-over
+  f018790: 'delist, China, Chengdu', // carry-over
+  f018802: 'delist, China, Dongguan', // carry-over
+  f018812: 'delist, South Africa, Cape Town', // carry-over
+  f018836: 'delist, NR', // carry-over
+  f018837: 'delist, China, Shaanxi', // carry-over
+  f018844: 'delist, NR', // carry-over
+  f018864: 'delist, Korea, Busan', // carry-over
+  f018865: 'delist, China, Chengdu', // carry-over
+  f018869: 'delist, NR', // carry-over
+  f018879: 'delist, Korea, Geumcheon-gu', // carry-over
+  f018899: 'delist, China, Shanghai', // carry-over
+  f019017: 'delist, China, Wenzhou-cfa', // carry-over
+  f019024: 'delist, China, Sichuan', // carry-over
+  f019029: 'delist, Serbia, Boljevac', // carry-over
+  f019031: 'delist, NR', // carry-over
+  f019042: 'delist, China, Shanghai', // carry-over
+  f019048: 'delist, Brazil, Sao Paulo', // carry-over
+  f019062: 'delist, Germany', // carry-over
+  f019069: 'delist, NR', // carry-over
+  f019109: 'delist, USA, Howell', // carry-over
+  f019114: 'delist, USA, Howell', // carry-over
+  f019118: 'delist, China, Jiaxing', // carry-over
+  f019123: 'delist, China, Dongguan', // carry-over
+  f019160: 'delist, USA, Fremont', // carry-over
+  f019173: 'delist, China, Nanchong', // carry-over
+  f019184: 'delist, China, Yibin', // carry-over
+  f019218: 'delist, China, Dali', // carry-over
+  f019239: 'delist, China, Jiaxing', // carry-over
+  f019264: 'delist, NR', // carry-over
+  f019284: 'delist, China, Foshan', // carry-over
+  f019376: 'delist, NR', // carry-over
+  f019378: 'delist, China, Changzhou', // carry-over
+  f019401: 'delist, Brazil, Sao Paulo', // carry-over
+  f019423: 'delist, South Africa, Johannesburg', // carry-over
+  f019434: 'delist, NR', // carry-over
+  f019437: 'delist, Korea, Guro-gu', // carry-over
+  f019525: 'delist, USA, Berkeley', // carry-over
+  f019528: 'delist, Peru', // carry-over
+  f019547: 'delist, Peru', // carry-over
+  f019645: 'delist, Russia, St. Petersburg', // carry-over
+  f019723: 'delist, China, Zhongshan', // carry-over
+  f019734: 'delist, NR', // carry-over
+  f019757: 'delist, NR', // carry-over
+  f019804: 'delist, China, Chengdu', // carry-over
+  f019809: 'delist, NR', // carry-over
+  f019812: 'delist, NR', // carry-over
+  f019825: 'delist, China, Hong Kong', // carry-over
+  f020223: 'delist, China, Guiyang', // carry-over
+  f020241: 'delist, NR', // carry-over
+  f020260: 'delist, NR', // carry-over
+  f020276: 'delist, China, Xiamen', // carry-over
+  f020281: 'delist, Korea, Uijeongbu-si', // carry-over
+  f020352: 'delist, NR', // carry-over
+  f020361: 'delist, Colombia, Medellin', // carry-over
+  f020366: 'delist, China, Chengdu', // carry-over
+  f020369: 'delist, NR', // carry-over
+  f020379: 'delist, NR', // carry-over
+  f020386: 'delist, Russia', // carry-over
+  f020390: 'delist, NR', // carry-over
+  f020408: 'delist, China, Hong Kong', // carry-over
+  f020432: 'delist, Korea, Wanju', // carry-over
+  f020433: 'delist, NR', // carry-over
+  f020439: 'delist, China, Chengdu', // carry-over
+  f020450: 'delist, NR', // carry-over
+  f020451: 'delist, NR', // carry-over
+  f020453: 'delist, China, Chengdu', // carry-over
+  f020457: 'delist, NR', // carry-over
+  f020525: 'delist, China, Dongguan', // carry-over
+  f020559: 'delist, China, Liaoning', // carry-over
+  f020563: 'delist, China, Dongguan', // carry-over
+  f020578: 'delist, Korea, Wanju', // carry-over
+  f020641: 'delist, NR', // carry-over
+  f020678: 'delist, China, Wenzhou', // carry-over
+  f020682: 'delist, NR', // carry-over
+  f020683: 'delist, China, Changsha', // carry-over
+  f020691: 'delist, NR', // carry-over
+  f020739: 'delist, China, Dongguan', // carry-over
+  f020763: 'delist, China, Luzhou', // carry-over
+  f020775: 'delist, Japan, Osaka', // carry-over
+  f020786: 'delist, China, Shenzhen', // carry-over
+  f020788: 'delist, China, Chengdu', // carry-over
+  f020789: 'delist, NR', // carry-over
+  f020791: 'delist, China, Hangzhou', // carry-over
+  f020819: 'delist, China, Chengdu', // carry-over
+  f020822: 'delist, China, Shanghai', // carry-over
+  f020896: 'delist, NR', // carry-over
+  f020899: 'delist, China, Chengdu', // carry-over
+  f020914: 'delist, NR', // carry-over
+  f020934: 'delist, NR', // carry-over
+  f020939: 'delist, NR', // carry-over
+  f020961: 'delist, China, Shanghai', // carry-over
+  f020975: 'delist, China, Shandong', // carry-over
+  f020993: 'delist, China, Hong Kong', // carry-over
+  f021069: 'delist, USA', // carry-over
+  f021083: 'delist, NR', // carry-over
+  f021092: 'delist, NR', // carry-over
+  f021095: 'delist, NR', // carry-over
+  f021265: 'delist, China, Wuhan', // carry-over
+  f021274: 'delist, China, Shanghai', // carry-over
+  f021286: 'delist, China, Shaanxi', // carry-over
+  f021307: 'delist, China, Chengdu', // carry-over
+  f021311: 'delist, NR', // carry-over
+  f021337: 'delist, China, Beijing', // carry-over
+  f021339: 'delist, China, Jiaxing', // carry-over
+  f021346: 'delist, China, Shanghai', // carry-over
+  f021357: 'delist, China, Shanghai', // carry-over
+  f021418: 'delist, NR', // carry-over
+  f021494: 'delist, NR', // carry-over
+  f021500: 'delist, NR', // carry-over
+  f021505: 'delist, NR', // carry-over
+  f021509: 'delist, China, Fuzhou', // carry-over
+  f021527: 'delist, NR', // carry-over
+  f021535: 'delist, China, Chengdu', // carry-over
+  f021555: 'delist, NR', // carry-over
+  f021574: 'delist, NR', // carry-over
+  f021580: 'delist, NR', // carry-over
+  f021583: 'delist, China, Jiaxing', // carry-over
+  f021684: 'delist, NR', // carry-over
+  f021699: 'delist, NR', // carry-over
+  f021725: 'delist, NR', // carry-over
+  f021976: 'delist, NR', // carry-over
+  f022015: 'delist, China, Hangzhou', // carry-over
+  f022016: 'delist, NR', // carry-over
+  f022033: 'delist, NR', // carry-over
+  f022070: 'delist, China, Jieyang', // carry-over
+  f022084: 'delist, China, Shaanxi', // carry-over
+  f022089: 'delist, China, Beijing', // carry-over
+  f022091: 'delist, NR', // carry-over
+  f022108: 'delist, China, Luzhou', // carry-over
+  f022119: 'delist, USA, Lovettsville', // carry-over
+  f022122: 'delist, NR', // carry-over
+  f022132: 'delist, China, Dongguan', // carry-over
+  f022171: 'delist, China, Shanghai', // carry-over
+  f022202: 'delist, USA, Howell', // carry-over
+  f022250: 'delist, NR', // carry-over
+  f022262: 'delist, China, Hong Kong', // carry-over
+  f022276: 'delist, Korea, Seoul', // carry-over
+  f022284: 'delist, China, Shaanxi', // carry-over
+  f022287: 'delist, China, Dongguan', // carry-over
+  f022303: 'delist, NR', // carry-over
+  f022313: 'delist, NR', // carry-over
+  f022321: 'delist, China, Hong Kong', // carry-over
+  f022326: 'delist, China, Zhongshan', // carry-over
+  f022333: 'delist, China, Dongguan', // carry-over
+  f022337: 'delist, NR', // carry-over
+  f022343: 'delist, China, Dongguan', // carry-over
+  f022372: 'delist, China, Chengdu', // carry-over
+  f022376: 'delist, China, Dongguan', // carry-over
+  f022494: 'delist, China, Dongguan', // carry-over
+  f022501: 'delist, Japan, Osaka', // carry-over
+  f022503: 'delist, NR', // carry-over
+  f022505: 'delist, China, Shanghai', // carry-over
+  f022517: 'delist, China, Taiwan, Taipei', // carry-over
+  f022562: 'delist, NR', // carry-over
+  f022564: 'delist, NR', // carry-over
+  f022683: 'delist, NR', // carry-over
+  f022755: 'delist, China, Shenzhen', // carry-over
+  f022776: 'delist, Korea, Guri-si', // carry-over
+  f022786: 'delist, NR', // carry-over
+  f022790: 'delist, China, Luzhou', // carry-over
+  f022791: 'delist, NR', // carry-over
+  f022797: 'delist, NR', // carry-over
+  f022834: 'delist, NR', // carry-over
+  f022836: 'delist, China, Chongqing', // carry-over
+  f022838: 'delist, China, Hong Kong', // carry-over
+  f022841: 'delist, China, Zhongshan', // carry-over
+  f022857: 'delist, NR', // carry-over
+  f022880: 'delist, NR', // carry-over
+  f022906: 'delist, NR', // carry-over
+  f022911: 'delist, China, Hong Kong', // carry-over
+  f022912: 'delist, NR', // carry-over
+  f022926: 'delist, NR', // carry-over
+  f022930: 'delist, NR', // carry-over
+  f022954: 'delist, NR', // carry-over
+  f022967: 'delist, Korea, Seoul', // carry-over
+  f022969: 'delist, China, Chengdu', // carry-over
+  f022970: 'delist, NR', // carry-over
+  f022996: 'delist, NR', // carry-over
+  f023021: 'delist, Korea, Yeongdeungpo-dong', // carry-over
+  f023108: 'delist, China, Dongguan', // carry-over
+  f023159: 'delist, NR', // carry-over
+  f023207: 'delist, NR', // carry-over
+  f023210: 'delist, China, Dongguan', // carry-over
+  f023254: 'delist, NR', // carry-over
+  f023463: 'delist, NR', // carry-over
+  f023482: 'delist, NR', // carry-over
+  f023501: 'delist, China, Mianyang', // carry-over
+  f023505: 'delist, NR', // carry-over
+  f023526: 'delist, China, Chongqing', // carry-over
+  f023535: 'delist, China, Hong Kong', // carry-over
+  f023560: 'delist, NR', // carry-over
+  f023568: 'delist, NR', // carry-over
+  f023571: 'delist, NR', // carry-over
+  f023581: 'delist, China, Hong Kong, mine-much', // carry-over
+  f023643: 'delist, NR', // carry-over
+  f023647: 'delist, Korea, Gangseo-gu', // carry-over
+  f023649: 'delist, Korea, Seoul, LS&NIHON', // carry-over
+  f023661: 'delist, China, Zhejiang', // carry-over
+  f023798: 'delist, China, Shanghai', // carry-over
+  f023801: 'delist, China, Dongguan', // carry-over
+  f023826: 'delist, USA, Germantown', // carry-over
+  f023881: 'delist, China, Fuzhou', // carry-over
+  f023939: 'delist, NR', // carry-over
+  f023943: 'delist, USA, Ashburn', // carry-over
+  f023965: 'delist, NR', // carry-over
+  f023986: 'delist, Korea, Seoul', // carry-over
+  f024031: 'delist, NR', // carry-over
+  f024074: 'delist, NR', // carry-over
+  f024129: 'delist, China, Zhejiang', // carry-over
+  f024153: 'delist, NR', // carry-over
+  f024165: 'delist, NR', // carry-over
+  f024168: 'delist, USA, Ashburn', // carry-over
+  f024182: 'delist, China, Hong Kong',
+  f024496: 'delist, China, Dongguan', // carry-over
+  f024526: 'delist, Korea', // carry-over
+  f024556: 'delist, NR', // carry-over
+  f024557: 'delist, NR', // carry-over
+  f024558: 'delist, NR', // carry-over
+  f024559: 'delist, NR', // carry-over
+  f024611: 'delist, China, Dongguan', // carry-over
+  f024902: 'delist, Korea, Incheon', // carry-over
+  f024903: 'delist, undefined', // carry-over
+  f024969: 'delist, NR', // carry-over
+  f025028: 'delist, NR', // carry-over
+  f025032: 'delist, China, Beijing', // carry-over
+  f029368: 'delist, Korea, Gangseo-gu', // carry-over
+  f029421: 'delist, undefined', // carry-over
+  f029477: 'delist, undefined', // carry-over
+  f029529: 'delist, China, Dongguan', // carry-over
+  f029546: 'delist, NR', // carry-over
+  f029566: 'delist, NR', // carry-over
+  f029595: 'delist, undefined', // carry-over
+  f029619: 'delist, undefined', // carry-over
+  f029632: 'delist, undefined', // carry-over
+  f030230: 'delist, China, Sichuan', // carry-over
+  f030231: 'delist, China, Hunan', // carry-over
+  f030327: 'delist, China, Beijing', // carry-over
+  f030386: 'delist, NR', // carry-over
+  f030514: 'delist, NR', // carry-over
+  f030518: 'delist, China, Wuhan', // carry-over
+  f030521: 'delist, China, Hong Kong', // carry-over
+  f030531: 'delist, NR', // carry-over
+  f030608: 'delist, China, Mianyang', // carry-over
+  f030641: 'delist, China, Shaanxi', // carry-over
+  f032850: 'delist, NR',
+  f032865: 'delist, USA, Redmond', // carry-over
+  f032887: 'delist, undefined', // carry-over
+  f032904: 'delist, undefined', // carry-over
+  f032922: 'delist, undefined', // carry-over
+  f033014: 'delist, NR', // carry-over
+  f033025: 'delist, Korea, Daegu',
+  f033028: 'delist, China, Mianyang', // carry-over
+  f033111: 'delist, China, Shanghai', // carry-over
+  f033124: 'delist, China, Shanghai', // carry-over
+  f033125: 'delist, NR', // carry-over
+  f033224: 'delist, NR', // carry-over
+  f033511: 'delist, China, Dongguan',
+  f033545: 'delist, China, Shenzhen + USA', // carry-over
+  f033549: 'delist, China, Quzhou', // carry-over
+  f034084: 'delist, China, Chongqing', // carry-over
+  f034229: 'delist, USA, Minneapolis', // carry-over
+  f034311: 'delist, Korea, Gangnam-gu', // carry-over
+  f034362: 'delist, China, Sichuan', // carry-over
+  f034652: 'delist, Korea, Yeongdeungpo-dong', // carry-over
+  f034666: 'delist, NR', // carry-over
+  f040137: 'delist, NR', // carry-over
+  f040432: 'delist, NR', // carry-over
+  f040468: 'delist, NR', // carry-over
+  f040971: 'delist, NR', // carry-over
+  f042344: 'delist, Korea', // carry-over
+  f042584: 'delist, Australia, Basin View', // carry-over
+  f042839: 'delist, Korea, Pocheon-si', // carry-over
+  f042901: 'delist, Finland, Helsinki', // carry-over
+  f044143: 'delist, China, Taiwan, Taipei', // carry-over
+  f044788: 'delist, NR', // carry-over
+  f046043: 'delist, China, Shanghai', // carry-over
+  f046073: 'delist, China, Shanghai', // carry-over
+  f046074: 'delist, China, Shanghai', // carry-over
+  f046078: 'delist, China, Shaanxi', // carry-over
+  f046315: 'delist, NR', // carry-over
+  f046317: 'delist, China, Nanyang', // carry-over
+  f047327: 'delist, China, Hong Kong', // carry-over
+  f047536: 'delist, NR', // carry-over
+  f047858: 'delist, China, Wuhan', // carry-over
+  f048545: 'delist, China, Chengdu', // carry-over
+  f049990: 'delist, Korea, Incheon', // carry-over
+  f052503: 'delist, NR', // carry-over
+  f052562: 'delist, NR', // carry-over
+  f052740: 'delist, China, Shaanxi', // carry-over
+  f054163: 'delist, China, Dongguan', // carry-over
+  f054389: 'delist, China, Chongqing', // carry-over
+  f054677: 'delist, Finland, Helsinki', // carry-over
+  f055040: 'delist, China, Fujian', // carry-over
+  f056393: 'delist, NR', // carry-over
+  f057115: 'delist, China, Nanyang', // carry-over
+  f057560: 'delist, NR', // carry-over
+  f057842: 'delist, Korea, Gyeonggi-do', // carry-over
+  f058003: 'delist, China, Shenzhen', // carry-over
+  f058321: 'delist, China, Dongguan', // carry-over
+  f059280: 'delist, China, Shenzhen', // carry-over
+  f059652: 'delist, China, Beijing', // carry-over
+  f059705: 'delist, Korea, Naju', // carry-over
+  f060780: 'delist, Korea, Goyang-si', // carry-over
+  f061043: 'delist, China, Changsha', // carry-over
+  f061059: 'delist, China, Beijing', // carry-over
+  f061196: 'delist, Korea, Yeongdeungpo-dong', // carry-over
+  f061430: 'delist, Korea, Naju', // carry-over
+  f062245: 'delist, NR', // carry-over
+  f062375: 'delist, Korea, Gyeonggi-do', // carry-over
+  f062445: 'delist, China, Shenzhen', // carry-over
+  f062449: 'delist, NR', // carry-over
+  f062492: 'delist, China, Hong Kong', // carry-over
+  f062552: 'delist, NR', // carry-over
+  f062587: 'delist, NR', // carry-over
+  f062735: 'delist, China, Hong Kong', // carry-over
+  f063173: 'delist, Korea, Gyeonggi-do', // carry-over
+  f063780: 'delist, China, Shenyang', // carry-over
+  f063921: 'delist, China, Ili', // carry-over
+  f064442: 'delist, Japan', // carry-over
+  f064688: 'delist, NR', // carry-over
+  f065132: 'delist, Denmark, Vipperod', // carry-over
+  f065225: 'delist, China, Dongguan', // carry-over
+  f065250: 'delist, NR',
   f065259: 'delist, NR', // carry-over
-  f065426: 'delist, Korea, Gimpo-si',
-  f065477: 'delist, NR',
-  f065689: 'delist, NR',
-  f065718: 'delist, China, Taiwan, Hsinchu',
-  f065732: 'delist, Korea, Gyeonggi-do',
-  f065853: 'delist, Korea, Seongnam-si',
-  f066075: 'delist, NR',
-  f066289: 'delist, NR',
-  f066465: 'delist, NR',
-  f066566: 'delist, Korea, Gwangju',
-  f066568: 'delist, Korea, Gwangju, aoc-0002',
-  f066734: 'delist, NR',
-  f066845: 'delist, China, Dongguan',
-  f067083: 'delist, Russia, Moscow',
-  f067185: 'delist, Korea, Gwangju',
-  f067195: 'delist, China, Huizhou',
-  f067283: 'delist, Korea, Seongnam-si',
-  f067314: 'delist, China, Ningbo',
-  f067545: 'delist, Canada, Kitchener',
-  f068253: 'delist, NR',
-  f068898: 'delist, China, Fuzhou',
-  f069450: 'delist, NR',
-  f069661: 'delist, China, Wuxi',
-  f070288: 'delist, China, Zhangzhou',
-  f070337: 'delist, China, Zhangzhou',
-  f070747: 'delist, China, Shenzhen',
-  f070756: 'delist, China, Beijing',
-  f070824: 'delist, Taiwan, Hsinchu',
-  f071114: 'delist, China, Shenyang',
-  f071190: 'delist, Korea, Gyeonggi-do',
-  f071692: "delist, China, Xi'an",
-  f071914: 'delist, China, Beijing',
-  f073048: 'delist, Korea, Gyeonggi-do',
-  f073535: 'delist, Korea, Gyeonggi-do',
-  f073783: 'delist, NR',
-  f073878: 'delist, NR',
-  f073931: 'delist, NR',
-  f078425: 'delist, Korea, Bucheon-si',
-  f078516: 'delist, NR',
-  f080131: 'delist, NR',
-  f080945: 'delist, China, Shenzhen',
-  f082054: 'delist, China, Hefei',
-  f082175: 'delist, China, Shenyang',
-  f082250: 'delist, China, Guilin',
-  f082543: 'delist, Korea, Osan',
-  f082590: 'delist, China, Taizhou',
-  f082669: 'delist, USA, Daytona Beach',
-  f082698: "delist, USA, Xi'an",
-  f083235: 'delist, Serbia, Belgrade',
-  f085226: 'delist, Korea, Busan',
-  f085415: 'delist, NR',
-  f085682: 'delist, NR',
-  f085904: 'delist, China, Chongqing',
-  f085947: 'delist, NR',
-  f086450: 'delist, NR',
-  f086610: 'delist, Korea, Gyeonggi-do',
-  f087931: 'delist, China, Beijing',
-  f088305: 'delist, Korea, Gyeonggi-do',
-  f088404: 'delist, Korea, Gyeonggi-do',
-  f089201: 'delist, Korea, Gyeonggi-do',
-  f090086: 'delist, Korea',
-  f090104: 'delist, China, Dongguan',
-  f090363: 'delist, China, Beijing',
-  f090747: 'delist, Korea, Anyang-si',
-  f090851: 'delist, China, Ningxia',
-  f091095: 'delist, Korea, Gwangju + Buk-gu',
-  f091139: 'delist, Korea, Gyeonggi-do',
-  f092630: 'delist, Korea, Gyeonggi-do',
-  f092724: 'delist, China, Beijing',
-  f092776: 'delist, Korea, Gimhae',
-  f092971: 'delist, China, Chongqing',
-  f093212: 'delist, Netherlands',
-  f093554: 'delist, China, Zhangzhou',
-  f094085: 'delist, Japan, Ota-ku',
-  f094675: 'delist, NR',
-  f094785: 'delist, China, Shanghai',
-  f094825: 'delist, Korea, Gwangju',
-  f094869: 'delist, China, Shanghai',
-  f094894: 'delist, Korea, Gwangju',
-  f094899: 'delist, Korea',
-  f095049: 'delist, Korea, Bucheon-si',
-  f095296: 'delist, China, Suqian',
-  f095398: 'delist, Korea, Sejong',
-  f095506: 'delist, China, Ningxia',
-  f095528: 'delist, China, Hangzhou',
-  f095833: 'delist, Korea, Yongin-si',
-  f096224: 'delist, China, Chongqing',
-  f0125962: 'delist, Korea, Yongin-si',
-  f0127151: 'delist, Korea, Yongin-si',
-  f0127157: 'delist, Korea, Yongin-si',
-  f0127256: 'delist, Korea, Yongin-si',
-  f0128238: 'delist, Korea, Yongin-si',
-  f0128239: 'delist, Korea, Yongin-si',
-  f0128242: 'delist, Korea, Yongin-si',
-  f0213894: 'delist, China, Hangzhou',
-  f0216068: 'delist, Romania, Iasi',
-  f0219415: 'delist, USA, Boardman'
+  f065426: 'delist, Korea, Gimpo-si', // carry-over
+  f065477: 'delist, NR', // carry-over
+  f065689: 'delist, NR', // carry-over
+  f065718: 'delist, China, Taiwan, Hsinchu', // carry-over
+  f065732: 'delist, Korea, Gyeonggi-do', // carry-over
+  f065853: 'delist, Korea, Seongnam-si', // carry-over
+  f066075: 'delist, NR', // carry-over
+  f066289: 'delist, NR', // carry-over
+  f066465: 'delist, NR', // carry-over
+  f066566: 'delist, Korea, Gwangju', // carry-over
+  f066568: 'delist, Korea, Gwangju, aoc-0002', // carry-over
+  f066734: 'delist, NR', // carry-over
+  f066804: 'delist, China, Zhejiang',
+  f066845: 'delist, China, Dongguan', // carry-over
+  f067083: 'delist, Russia, Moscow', // carry-over
+  f067185: 'delist, Korea, Gwangju', // carry-over
+  f067195: 'delist, China, Huizhou', // carry-over
+  f067283: 'delist, Korea, Seongnam-si', // carry-over
+  f067314: 'delist, China, Ningbo', // carry-over
+  f067545: 'delist, Canada, Kitchener', // carry-over
+  f068253: 'delist, NR', // carry-over
+  f068898: 'delist, China, Fuzhou', // carry-over
+  f069450: 'delist, NR', // carry-over
+  f069661: 'delist, China, Wuxi', // carry-over
+  f070288: 'delist, China, Zhangzhou', // carry-over
+  f070337: 'delist, China, Zhangzhou', // carry-over
+  f070747: 'delist, China, Shenzhen', // carry-over
+  f070756: 'delist, China, Beijing', // carry-over
+  f070824: 'delist, Taiwan, Hsinchu', // carry-over
+  f071114: 'delist, China, Shenyang', // carry-over
+  f071190: 'delist, Korea, Gyeonggi-do', // carry-over
+  f071692: "delist, China, Xi'an", // carry-over
+  f071914: 'delist, China, Beijing', // carry-over
+  f072737: 'delist, China, Shanghai',
+  f073048: 'delist, Korea, Gyeonggi-do', // carry-over
+  f073535: 'delist, Korea, Gyeonggi-do', // carry-over
+  f073783: 'delist, NR', // carry-over
+  f073878: 'delist, NR', // carry-over
+  f073931: 'delist, NR', // carry-over
+  f078425: 'delist, Korea, Bucheon-si', // carry-over
+  f078516: 'delist, NR', // carry-over
+  f080131: 'delist, NR', // carry-over
+  f080945: 'delist, China, Shenzhen', // carry-over
+  f081987: 'delist, NR',
+  f082054: 'delist, China, Hefei', // carry-over
+  f082175: 'delist, China, Shenyang', // carry-over
+  f082250: 'delist, China, Guilin', // carry-over
+  f082543: 'delist, Korea, Osan', // carry-over
+  f082590: 'delist, China, Taizhou', // carry-over
+  f082669: 'delist, USA, Daytona Beach', // carry-over
+  f082698: "delist, USA, Xi'an", // carry-over
+  f083235: 'delist, Serbia, Belgrade', // carry-over
+  f085226: 'delist, Korea, Busan', // carry-over
+  f085415: 'delist, NR', // carry-over
+  f085682: 'delist, NR', // carry-over
+  f085904: 'delist, China, Chongqing', // carry-over
+  f085947: 'delist, NR', // carry-over
+  f086450: 'delist, NR', // carry-over
+  f086610: 'delist, Korea, Gyeonggi-do', // carry-over
+  f087931: 'delist, China, Beijing', // carry-over
+  f088305: 'delist, Korea, Gyeonggi-do', // carry-over
+  f088404: 'delist, Korea, Gyeonggi-do', // carry-over
+  f089201: 'delist, Korea, Gyeonggi-do', // carry-over
+  f090052: 'delist, China, Suqian',
+  f090086: 'delist, Korea', // carry-over
+  f090104: 'delist, China, Dongguan', // carry-over
+  f090363: 'delist, China, Beijing', // carry-over
+  f090747: 'delist, Korea, Anyang-si', // carry-over
+  f090851: 'delist, China, Ningxia', // carry-over
+  f091095: 'delist, Korea, Gwangju + Buk-gu', // carry-over
+  f091139: 'delist, Korea, Gyeonggi-do', // carry-over
+  f091355: 'delist, China, Chengdu',
+  f092516: 'delist, USA, Boardman',
+  f092630: 'delist, Korea, Gyeonggi-do', // carry-over
+  f092724: 'delist, China, Beijing', // carry-over
+  f092776: 'delist, Korea, Gimhae', // carry-over
+  f092971: 'delist, China, Chongqing', // carry-over
+  f093212: 'delist, Netherlands', // carry-over
+  f093554: 'delist, China, Zhangzhou', // carry-over
+  f094085: 'delist, Japan, Ota-ku', // carry-over
+  f094430: 'delist, China, Ordos',
+  f094675: 'delist, NR', // carry-over
+  f094785: 'delist, China, Shanghai', // carry-over
+  f094825: 'delist, Korea, Gwangju', // carry-over
+  f094869: 'delist, China, Shanghai', // carry-over
+  f094894: 'delist, Korea, Gwangju', // carry-over
+  f094899: 'delist, Korea', // carry-over
+  f095049: 'delist, Korea, Bucheon-si', // carry-over
+  f095296: 'delist, China, Suqian', // carry-over
+  f095398: 'delist, Korea, Sejong', // carry-over
+  f095506: 'delist, China, Ningxia', // carry-over
+  f095528: 'delist, China, Hangzhou', // carry-over
+  f095833: 'delist, Korea, Yongin-si', // carry-over
+  f096224: 'delist, China, Chongqing', // carry-over
+  f0107127: 'delist, USA, Daytona Beach',
+  f0109163: 'delist, Korea, Songpa-gu',
+  f0109349: 'delist, NR',
+  f0109901: 'delist, China, Huludao',
+  f0110101: 'delist, Korea, Goyang-si',
+  f0110198: 'delist, Korea, Hwaseong-si',
+  f0112713: 'delist, Korea, Bucheon-si',
+  f0116287: 'delist, China, Shanghai',
+  f0119336: 'delist, Canada, Ottawa',
+  f0120141: 'delist, Korea, Gangnam-gu',
+  f0120747: 'delist, NR',
+  f0123275: 'delist, Korea, Seoul',
+  f0125962: 'delist, Korea, Yongin-si', // carry-over
+  f0126376: 'delist, NR',
+  f0126535: 'delist, China, Hong Kong',
+  f0127151: 'delist, Korea, Yongin-si', // carry-over
+  f0127157: 'delist, Korea, Yongin-si', // carry-over
+  f0127256: 'delist, Korea, Yongin-si', // carry-over
+  f0127980: 'delist, Korea, Seoul',
+  f0128191: 'delist, Korea, Gangnam-gu',
+  f0128238: 'delist, Korea, Yongin-si', // carry-over
+  f0128239: 'delist, Korea, Yongin-si', // carry-over
+  f0128242: 'delist, Korea, Yongin-si', // carry-over
+  f0131359: 'delist, China, Fuzhou',
+  f0136425: 'delist, Korea, Busan',
+  f0137475: 'delist, China, Beijing',
+  f0137489: 'delist, UK, Deeside',
+  f0149444: 'delist, Korea, Gangseo-gu',
+  f0156232: 'delist, China, Fuzhou',
+  f0158156: 'delist, NR',
+  f0164126: 'delist, NR',
+  f0167137: 'delist, China, Shaoxing',
+  f0168371: 'delist, Korea, Namyangju',
+  f0213894: 'delist, China, Hangzhou', // carry-over
+  f0215360: 'delist, France',
+  f0215404: 'delist, China, Suzhou',
+  f0216068: 'delist, Romania, Iasi', // carry-over
+  f0219415: 'delist, USA, Boardman', // carry-over
+  f0219631: 'delist, USA, Council Bluffs',
+  f0224599: 'delist, China, Fuzhou',
+  f0228350: 'delist, China, Hangzhou',
+  f0228388: 'delist, USA, Cleveland'
 }
 
 export default annotations
