@@ -45,7 +45,16 @@ const annotations = {
 
   f02423: 'active, Ukraine, Kyiv', // 1596764 about 2 hours
   f09848: 'active, USA, Irvine, BigBearLake', // 1596788 about 3 hours
+  f014768: 'active, Singapore, Funktafide, @Funk', // 1596785 about 3 hours
+  f015941: 'active, Ukraine, Kyiv', // 1596761 about 3 hours
+  f078621: 'active, Korea, Uiwang', // 1596791 about 3 hours
+  f089840: 'active, Korea, Yeongdeungpo-gu', // 1596755 about 2 hours
+  f097720: 'active, Korea, Bucheon-si', // 1596779 about 3 hours
   f0106949: 'active, Korea, Seoul', // 1596756 about 3 hours
+  f0110488: 'active, China, Chongqing', // 1596778 about 2 hours
+  f0215497: 'active, Korea, Gangseo-gu', // 1596781 about 2 hours
+  f0228575: 'active, Canada, Calgary', // 1596782 about 2 hours
+  f0230200: 'active, Korea, Gwanak-gu', // 1596763 about 2 hours
 
   // Sealing (active-sealing = previously active, retesting with new deal)
 
@@ -54,23 +63,17 @@ const annotations = {
   f02540: 'sealing, USA, Mobile', // 1596767
   f08403: 'sealing, UK, Lower Slaughter, TippyFlits', // 1596798
   f010241: 'sealing, China, Beijing + USA, Portland, 6Block-P', // 1596771
-  f014768: 'sealing, Singapore, Funktafide, @Funk', // 1596785
-  f015941: 'sealing, Ukraine, Kyiv', // 1596761
   f022142: 'sealing, USA, Queens, Nelson SR2', // 1596784
   f022352: 'sealing, Norway, Borgen, TechHedge, @Reiers', // 1596753
   f039515: 'sealing, China, Chongqing', // 1596780
   f053088: 'sealing, China, Shanghai', // 1596760
   f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1596777
   f058369: 'sealing, undefined', // 1596786
-  f078621: 'sealing, Korea, Uiwang', // 1596791
   f080103: 'sealing, Korea, Seongnam-si', // 1596773
   f086151: 'sealing, China, Dongguan', // 1596783
-  f089840: 'sealing, Korea, Yeongdeungpo-gu', // 1596755
   f094901: 'sealing, Korea, Bucheon-si', // 1596787
-  f097720: 'sealing, Korea, Bucheon-si', // 1596779
   f097777: 'sealing, Ukraine, Ivano-Frankivsk', // 1596758
   f0102313: 'sealing, Korea, Gangseo-gu', // 1596774
-  f0110488: 'sealing, China, Chongqing', // 1596778
   f0111885: 'sealing, Korea, Bucheon-si', // 1596765
   f0115108: 'sealing, Korea, Yangcheon-gu', // 1596766
   f0122815: 'sealing, Korea, Bucheon-si', // 1596752
@@ -84,11 +87,8 @@ const annotations = {
   f0157564: 'sealing, Korea, Daejeon', // 1596768
   f0160291: 'sealing, USA', // 1596789
   f0165375: 'sealing, Korea, Seongnam-si', // 1596757
-  f0215497: 'sealing, Korea, Gangseo-gu', // 1596781
   f0225676: 'sealing, Korea, Guro-gu', // 1596790
-  f0228575: 'sealing, Canada, Calgary', // 1596782
   f0229547: 'sealing, Japan, Yokohama', // 1596775
-  f0230200: 'sealing, Korea, Gwanak-gu', // 1596763
 
   // Stuck
 
