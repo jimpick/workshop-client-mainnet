@@ -20,6 +20,14 @@ const annotations = {
   f0240893: 'new, USA, Queens', // carry-over
   f0241272: 'new, France, Deuil-la-Barre', // carry-over
   f0241284: 'new, China, Jiangmen', // carry-over
+  f0242152: 'new, Korea, Guro-gu',
+  f0242260: 'new, USA, St. Louis',
+  f0349810: 'new, China, Qinzhou',
+  f0364982: 'new, Korea, Seoul',
+  f0364983: 'new, Korea, Seoul',
+  f0364987: 'new, Korea, Seoul',
+  f0391370: 'new, USA, Queens',
+  f0391520: 'new, China, Guangzhou',
 
   // Inflight
 
