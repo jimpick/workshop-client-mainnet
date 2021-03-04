@@ -1,6 +1,6 @@
 import fs from 'fs'
 
-const lines = fs.readFileSync('annotations-spacerace-slingshot-medium.js', 'utf8').split('\n')
+const lines = fs.readFileSync('annotations-mainnet-128mib-unverified.js', 'utf8').split('\n')
 
 const newLines = []
 for (const line of lines) {
@@ -26,4 +26,4 @@ for (const line of lines) {
   }
 }
 
-fs.writeFileSync('annotations-spacerace-slingshot-medium.js', newLines.join('\n'))
+fs.writeFileSync('annotations-mainnet-128mib-unverified.js', newLines.join('\n'))
