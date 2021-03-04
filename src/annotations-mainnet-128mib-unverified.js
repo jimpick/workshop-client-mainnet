@@ -43,12 +43,16 @@ const annotations = {
 
   // Active
 
+  f02423: 'active, Ukraine, Kyiv', // 1596764 about 2 hours
+  f09848: 'active, USA, Irvine, BigBearLake', // 1596788 about 3 hours
+  f0106949: 'active, Korea, Seoul', // 1596756 about 3 hours
+
   // Sealing (active-sealing = previously active, retesting with new deal)
 
   // Sealing
 
-  f02423: 'sealing, Ukraine, Kyiv', // 1596764
   f02540: 'sealing, USA, Mobile', // 1596767
+  f08403: 'sealing, UK, Lower Slaughter, TippyFlits', // 1596798
   f010241: 'sealing, China, Beijing + USA, Portland, 6Block-P', // 1596771
   f014768: 'sealing, Singapore, Funktafide, @Funk', // 1596785
   f015941: 'sealing, Ukraine, Kyiv', // 1596761
@@ -57,13 +61,15 @@ const annotations = {
   f039515: 'sealing, China, Chongqing', // 1596780
   f053088: 'sealing, China, Shanghai', // 1596760
   f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1596777
+  f058369: 'sealing, undefined', // 1596786
+  f078621: 'sealing, Korea, Uiwang', // 1596791
   f080103: 'sealing, Korea, Seongnam-si', // 1596773
   f086151: 'sealing, China, Dongguan', // 1596783
   f089840: 'sealing, Korea, Yeongdeungpo-gu', // 1596755
+  f094901: 'sealing, Korea, Bucheon-si', // 1596787
   f097720: 'sealing, Korea, Bucheon-si', // 1596779
   f097777: 'sealing, Ukraine, Ivano-Frankivsk', // 1596758
   f0102313: 'sealing, Korea, Gangseo-gu', // 1596774
-  f0106949: 'sealing, Korea, Seoul', // 1596756
   f0110488: 'sealing, China, Chongqing', // 1596778
   f0111885: 'sealing, Korea, Bucheon-si', // 1596765
   f0115108: 'sealing, Korea, Yangcheon-gu', // 1596766
@@ -72,38 +78,19 @@ const annotations = {
   f0134671: 'sealing, Korea, Gimpo-si', // 1596772
   f0142606: 'sealing, Korea, Gangseo-gu', // 1596776
   f0146751: 'sealing, China, Jiangsu', // 1596762
+  f0150744: 'sealing, Korea, Ulsan', // 1596793
   f0156207: 'sealing, Korea, Ulsan', // 1596754
   f0156452: 'sealing, Korea, Ulsan', // 1596769
   f0157564: 'sealing, Korea, Daejeon', // 1596768
+  f0160291: 'sealing, USA', // 1596789
   f0165375: 'sealing, Korea, Seongnam-si', // 1596757
   f0215497: 'sealing, Korea, Gangseo-gu', // 1596781
+  f0225676: 'sealing, Korea, Guro-gu', // 1596790
   f0228575: 'sealing, Canada, Calgary', // 1596782
   f0229547: 'sealing, Japan, Yokohama', // 1596775
   f0230200: 'sealing, Korea, Gwanak-gu', // 1596763
 
   // Stuck
-
-  f03339: 'stuck, China, Luzhou, benxun', // Transferring: 40 minutes
-  f03345: 'stuck, China, Fuzhou, chh', // Transferring: 40 minutes
-  f08403: 'stuck, UK, Lower Slaughter, TippyFlits', // CheckForAcceptance: 40 minutes
-  f09848: 'stuck, USA, Irvine, BigBearLake', // CheckForAcceptance: 40 minutes
-  f010513: 'stuck, China, Chongqing', // Transferring: 40 minutes
-  f022261: 'stuck, China, Luzhou', // Transferring: 40 minutes
-  f024468: 'stuck, China, Shenzhen', // Transferring: 40 minutes
-  f078621: 'stuck, Korea, Uiwang', // CheckForAcceptance: 40 minutes
-  f081644: 'stuck, China, Wenzhou', // Transferring: 40 minutes
-  f082617: 'stuck, China, Fujian', // Transferring: 40 minutes
-  f085899: 'stuck, China, Wuxi', // Transferring: 40 minutes
-  f094901: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: 40 minutes
-  f0105074: 'stuck, China, Shanghai', // Transferring: 40 minutes
-  f0112772: 'stuck, China, Nantong', // Transferring: 40 minutes
-  f0137168: 'stuck, China, Beijing', // Transferring: 40 minutes
-  f0150744: 'stuck, Korea, Ulsan', // CheckForAcceptance: 40 minutes
-  f0158265: 'stuck, China, Hefei', // Transferring: 40 minutes
-  f0160291: 'stuck, USA', // CheckForAcceptance: 40 minutes
-  f0165643: 'stuck, China, Guangzhou', // Transferring: 40 minutes
-  f0224894: 'stuck, China, Qingdao', // Transferring: 40 minutes
-  f0225676: 'stuck, Korea, Guro-gu', // CheckForAcceptance: 40 minutes
 
   // Min-size
 
@@ -321,18 +308,31 @@ const annotations = {
 
   // Xfr-failed
 
+  f03339: 'xfr-failed, China, Luzhou, benxun',
+  f03345: 'xfr-failed, China, Fuzhou, chh',
+  f010513: 'xfr-failed, China, Chongqing',
   f016276: 'xfr-failed, China, Beijing',
   f021710: 'xfr-failed, China, Shijiazhuang',
+  f022261: 'xfr-failed, China, Luzhou',
+  f024468: 'xfr-failed, China, Shenzhen',
   f024511: 'xfr-failed, China, Shenzhen',
   f025025: 'xfr-failed, China, Qingdao',
   f030335: 'xfr-failed, China, Fujian',
   f064668: 'xfr-failed, China, Hong Kong',
   f065200: 'xfr-failed, China, Yibin',
+  f081644: 'xfr-failed, China, Wenzhou',
+  f082617: 'xfr-failed, China, Fujian',
+  f085899: 'xfr-failed, China, Wuxi',
   f096974: 'xfr-failed, China, Chongqing',
+  f0105074: 'xfr-failed, China, Shanghai',
+  f0112772: 'xfr-failed, China, Nantong',
+  f0137168: 'xfr-failed, China, Beijing',
   f0149455: 'xfr-failed, NR',
   f0157265: 'xfr-failed, NR',
+  f0158265: 'xfr-failed, China, Hefei',
   f0215370: 'xfr-failed, China, Hangzhou',
   f0216138: 'xfr-failed, China, Shenzhen',
+  f0224894: 'xfr-failed, China, Qingdao',
   f0231161: 'xfr-failed, China, Qujing',
 
   // Error
@@ -343,6 +343,7 @@ const annotations = {
   f094374: 'error, China, Nanyang', // data transfer cancelled
   f0129805: 'error, China, Zhejiang + Australia, Adelaide', // data transfer cancelled
   f0148143: 'error, China, Tianjin', // AddPiece failed: adding piece to sector: writing piece: storage call error 0: creating unsealed sector file: writing trailer: writing trailer length: write /fcfs/f0148143/unsealed/s-t0148143-45068.tmp: operation not supported
+  f0165643: 'error, China, Guangzhou', // data transfer cancelled
   f0226073: 'error, China, Shenzhen', // data transfer cancelled
 
   // Backoff
@@ -378,6 +379,7 @@ const annotations = {
   // XNR
 
   // Error during ask
+
   f02490: 'error-ask, China, Fujian', // carry-over
   f02576: 'error-ask, Denmark, Gjerlev, BenjaminH', // carry-over
   f05664: 'error-ask, China, Hong Kong', // carry-over
