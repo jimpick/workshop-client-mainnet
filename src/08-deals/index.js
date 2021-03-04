@@ -17,9 +17,9 @@ export default function Deals ({ appState, updateAppState }) {
         </button>
         <button
           style={{ height: '2rem', marginBottom: '1rem' }}
-          onClick={clearSlingshot}
+          onClick={clear128mibUnverified}
         >
-          Clear Slingshot
+          Clear 128M-U
         </button>
         <label>
           <input
@@ -36,9 +36,9 @@ export default function Deals ({ appState, updateAppState }) {
         </label>{' '}
         <button
           style={{ height: '2rem', marginBottom: '1rem' }}
-          onClick={importSlingshot}
+          onClick={import128mibUnverified}
         >
-          Import Slingshot Deals
+          Import 128M-U Deals
         </button>
       </>
       {deals && <p>{deals.length} deals</p>}
@@ -58,12 +58,12 @@ export default function Deals ({ appState, updateAppState }) {
     })
   }
 
-  function clearSlingshot () {
+  function clear128mibUnverified () {
     updateAppState(draft => {
       const newDeals = []
       for (const deal of draft.deals) {
         const { type } = deal
-        if (type !== 'slingshot') {
+        if (type !== '128mib-unverified') {
           newDeals.push(deal)
         }
       }
@@ -71,23 +71,20 @@ export default function Deals ({ appState, updateAppState }) {
     })
   }
 
-  async function importSlingshot () {
-    console.log('Jim import slingshot deals')
+  async function import128mibUnverified () {
+    console.log('Jim import 128M-U deals')
     const baseUrl =
       'https://raw.githubusercontent.com/jimpick/filecoin-wiki-test/master/'
     const urls = [
-      'wiki-small-blocks-combined/deals/f021682.json',
-      'wiki-small-blocks-combined-128/deals/f020718.json',
-      'wiki-small-blocks-combined-128/deals/f021682.json',
-      'wiki-small-blocks-combined-128/deals/f096535.json',
+      'wiki-small-blocks-combined-128/deals/f0252068.json',
     ]
-    let slingshotDeals = []
+    let deals128mibUnverified = []
     for (const url of urls) {
       const resp = await fetch(baseUrl + url)
       const newDeals = await resp.json()
-      slingshotDeals = slingshotDeals.concat(newDeals)
+      deals128mibUnverified = deals128mibUnverified.concat(newDeals)
     }
-    console.log('Jim slingshot deals', slingshotDeals)
+    console.log('Jim 128mib unverified deals', deals128mibUnverified)
     console.log('Jim dealData', dealData)
     let existingProposalCids
     if (deals) {
@@ -100,12 +97,12 @@ export default function Deals ({ appState, updateAppState }) {
       if (!draft.deals) {
         draft.deals = []
       }
-      for (const { miner, wikiFile, dealCid, cid } of slingshotDeals) {
+      for (const { miner, wikiFile, dealCid, cid } of deals128mibUnverified) {
         if (!existingProposalCids.has(dealCid)) {
           console.log('Add:', miner, wikiFile, dealCid, dealData[dealCid])
           if (dealData[dealCid]) {
             draft.deals.push({
-              type: 'slingshot',
+              type: '128mib-unverified',
               proposalCid: dealCid,
               date: new Date(dealData[dealCid].clientDealStatus.CreationTime),
               fromNode: 1,

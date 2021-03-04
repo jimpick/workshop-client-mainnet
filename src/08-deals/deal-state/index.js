@@ -299,8 +299,8 @@ function BucketDealList ({
       prefix = 'Camera'
       altAnnotation = annotations128mibUnverified[miner]
     }
-    if (type === 'slingshot') {
-      prefix = 'SS'
+    if (type === '128mib-unverified') {
+      prefix = '128M-U'
       altAnnotation = annotationsCamera[miner]
     }
     const backgroundColor = fromTag !== toTag ? '#eee' : '#fff'
