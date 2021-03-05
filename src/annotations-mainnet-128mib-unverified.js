@@ -47,11 +47,21 @@ const annotations = {
   f09848: 'active, USA, Irvine, BigBearLake', // 1596788 about 3 hours
   f014768: 'active, Singapore, Funktafide, @Funk', // 1596785 about 3 hours
   f015941: 'active, Ukraine, Kyiv', // 1596761 about 3 hours
+  f022352: 'active, Norway, Borgen, TechHedge, @Reiers', // 1596753 about 2 hours
+  f053088: 'active, China, Shanghai', // 1596760 about 2 hours
   f078621: 'active, Korea, Uiwang', // 1596791 about 3 hours
   f089840: 'active, Korea, Yeongdeungpo-gu', // 1596755 about 2 hours
+  f094901: 'active, Korea, Bucheon-si', // 1596787 about 4 hours
   f097720: 'active, Korea, Bucheon-si', // 1596779 about 3 hours
   f0106949: 'active, Korea, Seoul', // 1596756 about 3 hours
   f0110488: 'active, China, Chongqing', // 1596778 about 2 hours
+  f0111885: 'active, Korea, Bucheon-si', // 1596765 about 3 hours
+  f0115108: 'active, Korea, Yangcheon-gu', // 1596766 about 3 hours
+  f0122815: 'active, Korea, Bucheon-si', // 1596752 about 4 hours
+  f0146751: 'active, China, Jiangsu', // 1596762 about 2 hours
+  f0156207: 'active, Korea, Ulsan', // 1596754 about 3 hours
+  f0156452: 'active, Korea, Ulsan', // 1596769 about 2 hours
+  f0165375: 'active, Korea, Seongnam-si', // 1596757 about 2 hours
   f0215497: 'active, Korea, Gangseo-gu', // 1596781 about 2 hours
   f0228575: 'active, Canada, Calgary', // 1596782 about 2 hours
   f0230200: 'active, Korea, Gwanak-gu', // 1596763 about 2 hours
@@ -64,29 +74,19 @@ const annotations = {
   f08403: 'sealing, UK, Lower Slaughter, TippyFlits', // 1596798
   f010241: 'sealing, China, Beijing + USA, Portland, 6Block-P', // 1596771
   f022142: 'sealing, USA, Queens, Nelson SR2', // 1596784
-  f022352: 'sealing, Norway, Borgen, TechHedge, @Reiers', // 1596753
   f039515: 'sealing, China, Chongqing', // 1596780
-  f053088: 'sealing, China, Shanghai', // 1596760
   f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1596777
-  f058369: 'sealing, undefined', // 1596786
+  f058369: 'sealing, USA, Boston', // 1596786
   f080103: 'sealing, Korea, Seongnam-si', // 1596773
   f086151: 'sealing, China, Dongguan', // 1596783
-  f094901: 'sealing, Korea, Bucheon-si', // 1596787
   f097777: 'sealing, Ukraine, Ivano-Frankivsk', // 1596758
   f0102313: 'sealing, Korea, Gangseo-gu', // 1596774
-  f0111885: 'sealing, Korea, Bucheon-si', // 1596765
-  f0115108: 'sealing, Korea, Yangcheon-gu', // 1596766
-  f0122815: 'sealing, Korea, Bucheon-si', // 1596752
   f0131901: 'sealing, Korea, Daejeon', // 1596759
   f0134671: 'sealing, Korea, Gimpo-si', // 1596772
   f0142606: 'sealing, Korea, Gangseo-gu', // 1596776
-  f0146751: 'sealing, China, Jiangsu', // 1596762
   f0150744: 'sealing, Korea, Ulsan', // 1596793
-  f0156207: 'sealing, Korea, Ulsan', // 1596754
-  f0156452: 'sealing, Korea, Ulsan', // 1596769
   f0157564: 'sealing, Korea, Daejeon', // 1596768
   f0160291: 'sealing, USA', // 1596789
-  f0165375: 'sealing, Korea, Seongnam-si', // 1596757
   f0225676: 'sealing, Korea, Guro-gu', // 1596790
   f0229547: 'sealing, Japan, Yokohama', // 1596775
 
