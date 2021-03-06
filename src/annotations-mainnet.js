@@ -20,10 +20,22 @@ const annotations = {
 
   // Active
 
+  f078621: 'active, Korea, Uiwang', // 1597261 about 2 hours
   f081644: 'active, China, Wenzhou', // 1597264 about 5 hours
   f094374: 'active, China, Nanyang', // 1597262 about 2 hours
+  f097720: 'active, Korea, Bucheon-si', // 1597273 about 2 hours
+  f0105074: 'active, China, Shanghai', // 1597305 about 2 hours
   f0106949: 'active, Korea, Seoul', // 1597280 about 2 hours
+  f0111885: 'active, Korea, Bucheon-si', // 1597272 about 3 hours
+  f0135758: 'active, NR', // 1597336 about 2 hours
+  f0137168: 'active, China, Beijing', // 1597313 about 7 hours
+  f0149455: 'active, NR', // 1597275 about 2 hours
   f0156452: 'active, Korea, Ulsan', // 1597268 about 3 hours
+  f0157564: 'active, Korea, Daejeon', // 1597274 about 2 hours
+  f0159961: 'active, China, Chongqing', // 1597277 about 2 hours
+  f0216138: 'active, China, Shenzhen', // 1597263 about 2 hours
+  f0228575: 'active, Canada, Calgary', // 1597267 about 2 hours
+  f0230200: 'active, Korea, Gwanak-gu', // 1597270 11 minutes
 
   // Active-sealing (active, with in-flight sealing)
 
@@ -31,29 +43,17 @@ const annotations = {
   f042567: 'active-sealing, China, Jinhua', // 1597271
   f053088: 'active-sealing, China, Shanghai', // 1597333
   f063628: 'active-sealing, NR', // 1597278
-  f078621: 'active-sealing, Korea, Uiwang', // 1597261
   f089840: 'active-sealing, Korea, Yeongdeungpo-gu', // 1597328
-  f097720: 'active-sealing, Korea, Bucheon-si', // 1597273
   f0102313: 'active-sealing, Korea, Gangseo-gu', // 1597327
-  f0105074: 'active-sealing, China, Shanghai', // 1597305
   f0110488: 'active-sealing, China, Chongqing', // 1597331
-  f0111885: 'active-sealing, Korea, Bucheon-si', // 1597272
   f0115108: 'active-sealing, Korea, Yangcheon-gu', // 1597265
   f0122815: 'active-sealing, Korea, Bucheon-si', // 1597330
-  f0135758: 'active-sealing, NR', // 1597336
-  f0137168: 'active-sealing, China, Beijing', // 1597313
-  f0149455: 'active-sealing, NR', // 1597275
   f0156207: 'active-sealing, Korea, Ulsan', // 1597266
   f0157265: 'active-sealing, NR', // 1597279
-  f0157564: 'active-sealing, Korea, Daejeon', // 1597274
-  f0159961: 'active-sealing, China, Chongqing', // 1597277
   f0165375: 'active-sealing, Korea, Seongnam-si', // 1597269
   f0215370: 'active-sealing, China, Hangzhou', // 1597316
-  f0216138: 'active-sealing, China, Shenzhen', // 1597263
   f0224894: 'active-sealing, China, Qingdao', // 1597281
   f0226073: 'active-sealing, China, Shenzhen', // 1597335
-  f0228575: 'active-sealing, Canada, Calgary', // 1597267
-  f0230200: 'active-sealing, Korea, Gwanak-gu', // 1597270
 
   // Sealing
 
@@ -100,20 +100,19 @@ const annotations = {
 
   // Stuck
 
-  f085486: 'stuck, NR', // Transferring: about 11 hours
-  f0110804: 'stuck, USA, Santa Clara', // CheckForAcceptance: about 11 hours
-  f0147214: 'stuck, NR', // Transferring: about 10 hours
-  f0160291: 'stuck, USA', // CheckForAcceptance: about 11 hours
-  f0165539: 'stuck, Japan, Yokohama', // CheckForAcceptance: about 11 hours
-  f0215497: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: about 12 hours
-  f0229547: 'stuck, Japan, Yokohama', // CheckForAcceptance: about 11 hours
-  f0231161: 'stuck, China, Qujing', // CheckForAcceptance: about 11 hours
-  f0242152: 'stuck, Korea, Guro-gu', // CheckForAcceptance: about 12 hours
-  f0242260: 'stuck, USA, St. Louis', // CheckForAcceptance: about 12 hours
-  f0391520: 'stuck, China, Guangzhou', // CheckForAcceptance: about 12 hours
-  f0392712: 'stuck, Korea, Ulju-gun', // CheckForAcceptance: about 12 hours
-  f0392733: 'stuck, USA, Huntersville', // CheckForAcceptance: about 12 hours
-  f0393359: 'stuck, China, Suzhou', // CheckForAcceptance: about 12 hours
+  f085486: 'stuck, NR', // Transferring: about 15 hours
+  f0110804: 'stuck, USA, Santa Clara', // CheckForAcceptance: about 16 hours
+  f0147214: 'stuck, NR', // Transferring: about 15 hours
+  f0160291: 'stuck, USA', // CheckForAcceptance: about 16 hours
+  f0165539: 'stuck, Japan, Yokohama', // CheckForAcceptance: about 16 hours
+  f0215497: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: about 16 hours
+  f0229547: 'stuck, Japan, Yokohama', // CheckForAcceptance: about 16 hours
+  f0231161: 'stuck, China, Qujing', // CheckForAcceptance: about 16 hours
+  f0242152: 'stuck, Korea, Guro-gu', // CheckForAcceptance: about 16 hours
+  f0242260: 'stuck, USA, St. Louis', // CheckForAcceptance: about 16 hours
+  f0391520: 'stuck, China, Guangzhou', // CheckForAcceptance: about 16 hours
+  f0392712: 'stuck, Korea, Ulju-gun', // CheckForAcceptance: about 16 hours
+  f0393359: 'stuck, China, Suzhou', // CheckForAcceptance: about 16 hours
 
   // Busy
 
@@ -505,6 +504,7 @@ const annotations = {
   f0165643: 'error, China, Guangzhou', // stream reset
   f0228401: 'error, Japan', // stream reset
   f0392707: 'error, Korea, Chuncheon', // deal failed: (State=11) deal data verification failed: error generating CommP: failed to build treeCaused by:    0: failed to create data store    1: No such file or directory (os error 2)
+  f0392733: 'error, USA, Huntersville', // deal failed: (State=26) error calling node: AddFunds errored: handler: websocket connection closed
 
   // Dial backoff
 
