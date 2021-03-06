@@ -28,6 +28,16 @@ const annotations = {
   f0364987: 'new, Korea, Seoul',
   f0391370: 'new, USA, Queens',
   f0391520: 'new, China, Guangzhou',
+  f0392458: 'new, China, Fuzhou',
+  f0392707: 'new, Korea, Chuncheon',
+  f0392712: 'new, Korea, Ulju-gun',
+  f0392733: 'new, USA, Huntersville',
+  f0392734: 'new, Korea, Icheon-si',
+  f0392785: 'new, China, Karamay',
+  f0392924: 'new, NR',
+  f0392999: 'new, NR',
+  f0393016: 'new, NR',
+  f0393359: 'new, China, Suzhou',
 
   // Inflight
 
