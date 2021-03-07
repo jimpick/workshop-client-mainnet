@@ -153,7 +153,7 @@ export default function Deals ({ appState, updateAppState }) {
     const baseUrl =
       'https://raw.githubusercontent.com/jimpick/filecoin-wiki-test/master/'
     const urls = [
-      'wiki-small-blocks-combined-128-verified/deals/f0252068.json',
+      'wiki-small-blocks-combined-128-verified/deals/f0394702.json',
     ]
     let deals128mibVerified = []
     for (const url of urls) {
