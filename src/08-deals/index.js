@@ -21,6 +21,12 @@ export default function Deals ({ appState, updateAppState }) {
         >
           Clear 128M-U
         </button>
+        <button
+          style={{ height: '2rem', marginBottom: '1rem' }}
+          onClick={clear128mibVerified}
+        >
+          Clear 128M-V
+        </button>
         <label>
           <input
             type='checkbox'
@@ -39,6 +45,12 @@ export default function Deals ({ appState, updateAppState }) {
           onClick={import128mibUnverified}
         >
           Import 128M-U Deals
+        </button>
+        <button
+          style={{ height: '2rem', marginBottom: '1rem' }}
+          onClick={import128mibVerified}
+        >
+          Import 128M-V Deals
         </button>
       </>
       {deals && <p>{deals.length} deals</p>}
@@ -64,6 +76,19 @@ export default function Deals ({ appState, updateAppState }) {
       for (const deal of draft.deals) {
         const { type } = deal
         if (type !== '128mib-unverified') {
+          newDeals.push(deal)
+        }
+      }
+      draft.deals = newDeals
+    })
+  }
+
+  function clear128mibVerified () {
+    updateAppState(draft => {
+      const newDeals = []
+      for (const deal of draft.deals) {
+        const { type } = deal
+        if (type !== '128mib-verified') {
           newDeals.push(deal)
         }
       }
@@ -103,6 +128,58 @@ export default function Deals ({ appState, updateAppState }) {
           if (dealData[dealCid]) {
             draft.deals.push({
               type: '128mib-unverified',
+              proposalCid: dealCid,
+              date: new Date(dealData[dealCid].clientDealStatus.CreationTime),
+              fromNode: 1,
+              miner: miner,
+              cid,
+              wikiFile
+            })
+          } else {
+            console.log(
+              'Deal data not found, skipping',
+              miner,
+              wikiFile,
+              dealCid
+            )
+          }
+        }
+      }
+    })
+  }
+
+  async function import128mibVerified () {
+    console.log('Jim import 128M-V deals')
+    const baseUrl =
+      'https://raw.githubusercontent.com/jimpick/filecoin-wiki-test/master/'
+    const urls = [
+      'wiki-small-blocks-combined-128-verified/deals/f0252068.json',
+    ]
+    let deals128mibVerified = []
+    for (const url of urls) {
+      const resp = await fetch(baseUrl + url)
+      const newDeals = await resp.json()
+      deals128mibVerified = deals128mibVerified.concat(newDeals)
+    }
+    console.log('Jim 128mib verified deals', deals128mibVerified)
+    console.log('Jim dealData', dealData)
+    let existingProposalCids
+    if (deals) {
+      existingProposalCids = new Set(deals.map(deal => deal.proposalCid))
+    } else {
+      existingProposalCids = new Set()
+    }
+    console.log('Jim existingProposalCids', existingProposalCids)
+    updateAppState(draft => {
+      if (!draft.deals) {
+        draft.deals = []
+      }
+      for (const { miner, wikiFile, dealCid, cid } of deals128mibVerified) {
+        if (!existingProposalCids.has(dealCid)) {
+          console.log('Add:', miner, wikiFile, dealCid, dealData[dealCid])
+          if (dealData[dealCid]) {
+            draft.deals.push({
+              type: '128mib-verified',
               proposalCid: dealCid,
               date: new Date(dealData[dealCid].clientDealStatus.CreationTime),
               fromNode: 1,

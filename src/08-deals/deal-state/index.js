@@ -4,6 +4,7 @@ import copy from 'clipboard-copy'
 import useLotusClient from '../../lib/use-lotus-client'
 import annotationsCamera from '../../annotations-mainnet.js'
 import annotations128mibUnverified from '../../annotations-mainnet-128mib-unverified'
+import annotations128mibVerified from '../../annotations-mainnet-128mib-verified'
 import dealStateNames from '../deal-state-names'
 
 function DealHistory ({ dealHistoryData, height }) {
@@ -303,6 +304,10 @@ function BucketDealList ({
       prefix = '128M-U'
       altAnnotation = annotationsCamera[miner]
     }
+    if (type === '128mib-verified') {
+      prefix = '128M-V'
+      altAnnotation = annotationsCamera[miner]
+    }
     const backgroundColor = fromTag !== toTag ? '#eee' : '#fff'
     const entry = (
       <div key={proposalCid} style={{ marginBottom: '1rem', backgroundColor }}>
@@ -504,6 +509,30 @@ export default function DealList ({ appState, cid, dealType }) {
     ]
   } else if (dealType === '128mib-unverified') {
     annotations = annotations128mibUnverified
+    buckets = [
+      'retest',
+      'inflight',
+      'unknown',
+      'active-candidate',
+      'candidate',
+      'active',
+      'active-sealing',
+      'sealing',
+      'stuck',
+      'min-size',
+      'max-size',
+      'min-ask',
+      'xfr-failed',
+      'error',
+      'backoff',
+      'rejected',
+      'dial',
+      'xnr',
+      'error-ask',
+      'delist',
+    ]
+  } else if (dealType === '128mib-verified') {
+    annotations = annotations128mibVerified
     buckets = [
       'retest',
       'inflight',
