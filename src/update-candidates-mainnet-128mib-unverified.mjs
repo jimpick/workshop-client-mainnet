@@ -1,6 +1,6 @@
 import annotations from './annotations-mainnet.js'
 import annotations2 from './annotations-mainnet-128mib-unverified.js'
-import annotations3 from './annotations-mainnet-128mib-unverified-jim.js'
+import annotations3 from './annotations-mainnet-128mib-unverified-previous.js'
 
 const newAnnotations = {}
 
