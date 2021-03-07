@@ -10,245 +10,105 @@ const annotations = {
 
   // Candidates
 
-  f01241: 'min-ask, China, Karamay', // carry-over
-  f01277: 'min-ask, Sweden, Stockholm', // carry-over
-  f01280: 'min-ask, China, Wuxi', // carry-over
-  f01799: 'min-ask, China, Jinan + Singapore', // carry-over
-  f02381: 'min-ask, China, Dongguan', // carry-over
   f02415:
     'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
   f02490: 'candidate, China, Fujian', // carry-over
-  f02501: 'min-ask, China, Karamay', // carry-over
-  f02514: 'min-ask, China, Karamay', // carry-over
-  f02520: 'error-ask, China, Hong Kong + Dongguan', // carry-over
-  f02622: 'min-ask, China, Karamay', // carry-over
-  f02623: 'min-ask, China, Karamay', // carry-over
   f02633:
     'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
   f02645:
     'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
   f03143:
     'candidate, Vietman, Ho Chi Minh City + China, Beijing + Shijiazhuang', // carry-over
-  f03223: 'min-ask, USA', // carry-over
-  f03273: 'min-ask, China, Karamay', // carry-over
-  f03274: 'min-ask, China, Karamay', // carry-over
-  f03275: 'min-ask, China, Karamay', // carry-over
-  f03364: 'min-ask, China, Inner Mongolia', // carry-over
-  f03482: 'min-ask, China, Karamay', // carry-over
   f03491:
     'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
-  f05315: 'min-ask, China, Karamay', // carry-over
-  f05316: 'min-ask, China, Karamay', // carry-over
-  f05317: 'min-ask, China, Karamay', // carry-over
-  f05664: 'min-ask, China, Hong Kong', // carry-over
-  f07850: 'min-ask, China, Karamay', // carry-over
   f07990:
     'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
   f08025:
     'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
-  f08257: 'error-ask, China, Zhejiang + Singapore', // carry-over
-  f08383: 'min-ask, China, Karamay', // carry-over
-  f09693: 'min-ask, China, Karamay', // carry-over
-  f09696: 'min-ask, China, Karamay', // carry-over
-  f010035: 'min-ask, Netherlands + China, Suzhou', // carry-over
-  f010253: 'min-ask, China, Karamay', // carry-over
   f010513: 'candidate, China, Chongqing', // carry-over
   f010558: 'candidate, NR', // carry-over
-  f014365: 'min-ask, Australia, Turramurra + Sydney', // carry-over
-  f015897: 'min-ask, China, Hong Kong', // carry-over
-  f017665: 'error-ask, China, Shenyang', // carry-over
   f018780:
     'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
   f018781:
     'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
-  f018782: 'min-ask, Singapore + USA + Germany, Frankfurt + UK, London', // carry-over
   f018783:
     'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
   f018784:
     'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
   f018785:
     'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
-  f019240: 'min-ask, China, Beijing', // carry-over
-  f020436: 'error-ask, China, Beijing', // carry-over
-  f020489: 'error-ask, China, Lioaning', // carry-over
-  f021255: 'min-ask, Netherlands + China, Suzhou', // carry-over
-  f023152: 'min-ask, China, Shandong', // carry-over
-  f023219: 'error-ask, China, Beijing + Zhangjiakou', // carry-over
-  f023495: 'min-ask, China, Karamay', // carry-over
-  f023825: 'min-ask, China, Karamay', // carry-over
   f023868: 'candidate, China, Fuzhou', // carry-over
-  f023882: 'error-ask, NR', // carry-over
-  f024015: 'min-ask, China, Karamay', // carry-over
-  f024016: 'min-ask, China, Karamay', // carry-over
-  f024156: 'min-ask, USA', // carry-over
-  f029344: 'min-ask, Korea, Seongnam-si', // carry-over
-  f029401: 'min-ask, China, Karamay', // carry-over
-  f029404: 'min-ask, China, Karamay', // carry-over
-  f030384: 'min-ask, China, Shenzhen', // carry-over
-  f033123: 'min-ask, China, Karamay', // carry-over
-  f039800: 'min-ask, China, Chengdu', // carry-over
-  f040218: 'min-ask, China, Wuxi', // carry-over
-  f042540: 'min-ask, China, Karamay', // carry-over
-  f042558: 'min-ask, China, Karamay', // carry-over
-  f042567: 'error-ask, China, Jinhua', // carry-over
-  f042635: 'min-ask, China, Karamay', // carry-over
-  f052447: 'min-ask, China, Karamay', // carry-over
-  f053088: 'error-ask, China, Shanghai', // carry-over
-  f054370: 'min-ask, China, Dongguan', // carry-over
-  f055123: 'min-ask, Korea, Busan', // carry-over
-  f055522: 'error-ask, USA', // carry-over
-  f056611: 'min-ask, China, Karamay', // carry-over
-  f057614: 'min-ask, China, Karamay', // carry-over
-  f057698: 'min-ask, China, Karamay', // carry-over
-  f060072: 'min-ask, China, Chongqing', // carry-over
-  f061740: 'min-ask, China, Karamay', // carry-over
-  f062260: 'min-ask, China, Guangzhou', // carry-over
-  f062318: 'min-ask, Korea, Naju', // carry-over
-  f062334: 'min-ask, China, Karamay', // carry-over
-  f063628: 'error-ask, NR', // carry-over
-  f065103: 'min-ask, USA + China, Suzhou + Guangzhou + Karamay', // carry-over
-  f066104: 'min-ask, China, Karamay', // carry-over
-  f069915: 'min-ask, China, Karamay', // carry-over
-  f069919: 'min-ask, China, Karamay', // carry-over
-  f070501: 'error-ask, USA + China, Hong Kong + Guangzhou', // carry-over
-  f070999: 'min-ask, China, Karamay', // carry-over
-  f071980: 'min-ask, China, Karamay', // carry-over
-  f073448: 'error-ask, NR', // carry-over
-  f073552: 'min-ask, China, Karamay', // carry-over
-  f073628: 'min-ask, USA, New Castle', // carry-over
   f078770: 'candidate, China, Karamay', // carry-over
-  f078772: 'min-ask, China, Karamay', // carry-over
-  f079197: 'min-ask, China, Karamay', // carry-over
-  f079247: 'error-ask, USA + China, Guangzhou + Beijing + Dongguan + Shenzhen', // carry-over
-  f079301: 'min-ask, China, Guangzhou + Dongguan + Shenzhen, USA', // carry-over
-  f080444: 'min-ask, China, Chengdu', // carry-over
-  f082356: 'min-ask, China, Jiaxing', // carry-over
-  f083625: 'min-ask, China, Karamay', // carry-over
-  f083903: "min-ask, China, Xi'an", // carry-over
-  f091798: 'error-ask, NR', // carry-over
-  f092514: 'min-ask, China, Karamay', // carry-over
-  f094614: 'min-ask, China, Karamay', // carry-over
-  f097840: 'error-ask, NR', // carry-over
-  f099239: 'min-ask, China, Hong Kong', // carry-over
-  f0101087: 'min-ask, Korea', // carry-over
-  f0102374: 'min-ask, China, Karamay', // carry-over
-  f0102375: 'min-ask, China, Karamay', // carry-over
-  f0102376: 'min-ask, China, Karamay', // carry-over
-  f0102513: 'min-ask, China, Karamay', // carry-over
-  f0103851: 'error-ask, China, Karamay', // carry-over
-  f0107171: 'min-ask, China, Karamay', // carry-over
-  f0114808: 'min-ask, China, Shanghai', // carry-over
-  f0115744: 'min-ask, China, Karamay', // carry-over
-  f0116766: 'min-ask, USA, Westford', // carry-over
   f0118360: 'candidate, China, Hangzhou', // carry-over
-  f0122496: 'error-ask, NR', // carry-over
-  f0122815: 'error-ask, Korea, Bucheon-si', // carry-over
-  f0126898: 'min-ask, China, Harbin', // carry-over
-  f0128974: 'min-ask, Korea, Seoul', // carry-over
-  f0129072: 'min-ask, China, Karamay', // carry-over
-  f0131464: 'min-ask, USA, Ashburn', // carry-over
-  f0131654: 'error-ask, Korea, Seoul', // carry-over
-  f0132461: 'error-ask, Korea, Daegu', // carry-over
-  f0132706: 'min-ask, China, Beijing', // carry-over
-  f0134565: 'min-ask, China, Karamay', // carry-over
-  f0135738: 'min-ask, China, Karamay', // carry-over
-  f0135758: 'error-ask, NR', // carry-over
   f0141614: 'candidate, China, Fujian', // carry-over
-  f0141634: 'min-ask, China, Changsha', // carry-over
-  f0145313: 'min-ask, China, Karamay', // carry-over
-  f0145385: 'min-ask, Malaysia, Petaling Jaya', // carry-over
-  f0145687: 'error-ask, NR', // carry-over
-  f0145784: 'min-ask, Korea, Seoul', // carry-over
-  f0146875: 'min-ask, China, Karamay', // carry-over
   f0148143: 'candidate, China, Tianjin', // carry-over
-  f0148399: 'min-ask, China, Karamay', // carry-over
-  f0149455: 'error-ask, NR', // carry-over
-  f0151281: 'min-ask, China, Karamay', // carry-over
-  f0151692: 'min-ask, China, Karamay', // carry-over
-  f0152747: 'min-ask, China, Karamay', // carry-over
-  f0157513: 'error-ask, Korea, Bucheon-si', // carry-over
-  f0157769: 'min-ask, China, Changsha', // carry-over
-  f0157941: 'error-ask, China, Changsha', // carry-over
-  f0158142: 'min-ask, China, Karamay', // carry-over
-  f0160735: 'min-ask, NR', // carry-over
-  f0165111: 'min-ask, China, Guangzhou', // carry-over
-  f0165135: 'min-ask, China, Guangzhou', // carry-over
-  f0222962: 'min-ask, China, Karamay', // carry-over
-  f0224144: 'min-ask, China, Karamay', // carry-over
-  f0231161: 'error-ask, China, Qujing', // carry-over
   f0242152: 'candidate, Korea, Guro-gu', // carry-over
-  f0391520: 'error-ask, China, Guangzhou', // carry-over
-  f0392785: 'min-ask, China, Karamay', // carry-over
-  f0393359: 'error-ask, China, Suzhou', // carry-over
 
   // Active
+
+  f02500: 'active, Korea, Seongnam-si', // 1597383 about 12 hours
+  f025007: 'active, Korea, Gyeonggi-do, PINBYTES-eCUBE', // 1597381 about 12 hours
+  f065280: 'active, Korea, Songpa-gu, Data Store Ltd', // 1597376 about 12 hours
+  f0100082: 'active, Korea, Seongnam-si', // 1597379 about 12 hours
+  f0106949: 'active, Korea, Seoul', // 1597392 about 11 hours
+  f0152854: 'active, China, Huizhou', // 1597396 about 11 hours
+  f0158468: 'active, China, Guangzhou', // 1597371 about 12 hours
+  f0224841: 'active, China, Guangzhou', // 1597391 about 11 hours
 
   // Sealing (active-sealing = previously active, retesting with new deal)
 
   // Sealing
 
-  f02500: 'sealing, Korea, Seongnam-si', // 1597383
   f02540: 'sealing, USA, Mobile', // 1597361
   f014768: 'sealing, Singapore, Funktafide, @Funk', // 1597384
   f022142: 'sealing, USA, Queens, Nelson SR2', // 1597377
-  f025007: 'sealing, Korea, Gyeonggi-do, PINBYTES-eCUBE', // 1597381
   f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1597390
   f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 1597382
-  f065280: 'sealing, Korea, Songpa-gu, Data Store Ltd', // 1597376
+  f058369: 'sealing, USA, Boston', // 1597446
   f078621: 'sealing, Korea, Uiwang', // 1597385
+  f089840: 'sealing, Korea, Yeongdeungpo-gu', // 1597437
   f096976: 'sealing, Russia', // 1597395
   f097720: 'sealing, Korea, Bucheon-si', // 1597397
-  f0100082: 'sealing, Korea, Seongnam-si', // 1597379
-  f0106949: 'sealing, Korea, Seoul', // 1597392
+  f097777: 'sealing, Ukraine, Ivano-Frankivsk', // 1597401
+  f0102313: 'sealing, Korea, Gangseo-gu', // 1597427
   f0107995: 'sealing, NR', // 1597373
   f0110133: 'sealing, China, Ningbo', // 1597370
   f0111885: 'sealing, Korea, Bucheon-si', // 1597394
   f0113331: 'sealing, Korea, Jinju + USA', // 1597387
   f0115108: 'sealing, Korea, Yangcheon-gu', // 1597374
+  f0133999: 'sealing, China, Changsha', // 1597436
   f0134671: 'sealing, Korea, Gimpo-si', // 1597363
+  f0142606: 'sealing, Korea, Gangseo-gu', // 1597435
   f0149768: 'sealing, China, Dongguan', // 1597362
-  f0152854: 'sealing, China, Huizhou', // 1597396
   f0156207: 'sealing, Korea, Ulsan', // 1597388
   f0156452: 'sealing, Korea, Ulsan', // 1597378
   f0157265: 'sealing, NR', // 1597399
   f0157564: 'sealing, Korea, Daejeon', // 1597360
-  f0158468: 'sealing, China, Guangzhou', // 1597371
   f0165375: 'sealing, Korea, Seongnam-si', // 1597380
+  f0215497: 'sealing, Korea, Gangseo-gu', // 1597445
   f0215704: 'sealing, Korea, Icheon-si', // 1597364
   f0216138: 'sealing, China, Shenzhen', // 1597372
-  f0224841: 'sealing, China, Guangzhou', // 1597391
+  f0228575: 'sealing, Canada, Calgary', // 1597444
   f0230200: 'sealing, Korea, Gwanak-gu', // 1597375
 
   // Stuck
 
-  f02423: 'stuck, Ukraine, Kyiv', // CheckForAcceptance: about 13 hours
   f03134: 'stuck, China, Cangzhou, 乔木信息', // Transferring: about 13 hours
   f08403: 'stuck, UK, Lower Slaughter, TippyFlits', // CheckForAcceptance: about 13 hours
-  f015941: 'stuck, Ukraine, Kyiv', // CheckForAcceptance: about 14 hours
   f022261: 'stuck, China, Luzhou', // CheckForAcceptance: about 12 hours
-  f024468: 'stuck, China, Shenzhen', // Transferring: about 13 hours
-  f039515: 'stuck, China, Chongqing', // CheckForAcceptance: about 12 hours
-  f058369: 'stuck, USA, Boston', // CheckForAcceptance: about 13 hours
+  f024468: 'stuck, China, Shenzhen', // Transferring: about 14 hours
   f065200: 'stuck, China, Yibin', // CheckForAcceptance: about 13 hours
   f085899: 'stuck, China, Wuxi', // Transferring: about 13 hours
-  f086151: 'stuck, China, Dongguan', // CheckForAcceptance: about 12 hours
-  f089840: 'stuck, Korea, Yeongdeungpo-gu', // CheckForAcceptance: about 12 hours
-  f097777: 'stuck, Ukraine, Ivano-Frankivsk', // CheckForAcceptance: about 13 hours
-  f098706: 'stuck, Korea, Icheon-si', // CheckForAcceptance: about 13 hours
-  f0102313: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: about 12 hours
+  f086151: 'stuck, China, Dongguan', // CheckForAcceptance: about 13 hours
+  f098706: 'stuck, Korea, Icheon-si', // CheckForAcceptance: about 14 hours
   f0110488: 'stuck, China, Chongqing', // CheckForAcceptance: about 13 hours
   f0110804: 'stuck, USA, Santa Clara', // CheckForAcceptance: about 13 hours
-  f0121958: 'stuck, Korea, Seoul', // CheckForAcceptance: about 12 hours
+  f0121958: 'stuck, Korea, Seoul', // CheckForAcceptance: about 13 hours
   f0129805: 'stuck, China, Zhejiang + Australia, Adelaide', // Transferring: about 12 hours
   f0131611: 'stuck, Korea, Jeju City', // CheckForAcceptance: about 13 hours
-  f0133999: 'stuck, China, Changsha', // CheckForAcceptance: about 13 hours
-  f0142606: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: about 13 hours
-  f0147214: 'stuck, NR', // Transferring: about 12 hours
-  f0160291: 'stuck, USA', // CheckForAcceptance: about 12 hours
+  f0160291: 'stuck, USA', // CheckForAcceptance: about 13 hours
   f0165539: 'stuck, Japan, Yokohama', // CheckForAcceptance: about 12 hours
-  f0215497: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: about 12 hours
-  f0228575: 'stuck, Canada, Calgary', // CheckForAcceptance: about 12 hours
-  f0229547: 'stuck, Japan, Yokohama', // CheckForAcceptance: about 13 hours
+  f0229547: 'stuck, Japan, Yokohama', // CheckForAcceptance: about 14 hours
   f0242260: 'stuck, USA, St. Louis', // CheckForAcceptance: about 12 hours
   f0392712: 'stuck, Korea, Ulju-gun', // CheckForAcceptance: about 12 hours
 
@@ -391,6 +251,115 @@ const annotations = {
 
   // Min-ask
 
+  f01241: 'min-ask, China, Karamay', // carry-over
+  f01277: 'min-ask, Sweden, Stockholm', // carry-over
+  f01280: 'min-ask, China, Wuxi', // carry-over
+  f01799: 'min-ask, China, Jinan + Singapore', // carry-over
+  f02381: 'min-ask, China, Dongguan', // carry-over
+  f02501: 'min-ask, China, Karamay', // carry-over
+  f02514: 'min-ask, China, Karamay', // carry-over
+  f02622: 'min-ask, China, Karamay', // carry-over
+  f02623: 'min-ask, China, Karamay', // carry-over
+  f03223: 'min-ask, USA', // carry-over
+  f03273: 'min-ask, China, Karamay', // carry-over
+  f03274: 'min-ask, China, Karamay', // carry-over
+  f03275: 'min-ask, China, Karamay', // carry-over
+  f03364: 'min-ask, China, Inner Mongolia', // carry-over
+  f03482: 'min-ask, China, Karamay', // carry-over
+  f05315: 'min-ask, China, Karamay', // carry-over
+  f05316: 'min-ask, China, Karamay', // carry-over
+  f05317: 'min-ask, China, Karamay', // carry-over
+  f05664: 'min-ask, China, Hong Kong', // carry-over
+  f07850: 'min-ask, China, Karamay', // carry-over
+  f08383: 'min-ask, China, Karamay', // carry-over
+  f09693: 'min-ask, China, Karamay', // carry-over
+  f09696: 'min-ask, China, Karamay', // carry-over
+  f010035: 'min-ask, Netherlands + China, Suzhou', // carry-over
+  f010253: 'min-ask, China, Karamay', // carry-over
+  f014365: 'min-ask, Australia, Turramurra + Sydney', // carry-over
+  f015897: 'min-ask, China, Hong Kong', // carry-over
+  f018782: 'min-ask, Singapore + USA + Germany, Frankfurt + UK, London', // carry-over
+  f019240: 'min-ask, China, Beijing', // carry-over
+  f021255: 'min-ask, Netherlands + China, Suzhou', // carry-over
+  f023152: 'min-ask, China, Shandong', // carry-over
+  f023495: 'min-ask, China, Karamay', // carry-over
+  f023825: 'min-ask, China, Karamay', // carry-over
+  f024015: 'min-ask, China, Karamay', // carry-over
+  f024016: 'min-ask, China, Karamay', // carry-over
+  f024156: 'min-ask, USA', // carry-over
+  f029344: 'min-ask, Korea, Seongnam-si', // carry-over
+  f029401: 'min-ask, China, Karamay', // carry-over
+  f029404: 'min-ask, China, Karamay', // carry-over
+  f030384: 'min-ask, China, Shenzhen', // carry-over
+  f033123: 'min-ask, China, Karamay', // carry-over
+  f039800: 'min-ask, China, Chengdu', // carry-over
+  f040218: 'min-ask, China, Wuxi', // carry-over
+  f042540: 'min-ask, China, Karamay', // carry-over
+  f042558: 'min-ask, China, Karamay', // carry-over
+  f042635: 'min-ask, China, Karamay', // carry-over
+  f052447: 'min-ask, China, Karamay', // carry-over
+  f054370: 'min-ask, China, Dongguan', // carry-over
+  f055123: 'min-ask, Korea, Busan', // carry-over
+  f056611: 'min-ask, China, Karamay', // carry-over
+  f057614: 'min-ask, China, Karamay', // carry-over
+  f057698: 'min-ask, China, Karamay', // carry-over
+  f060072: 'min-ask, China, Chongqing', // carry-over
+  f061740: 'min-ask, China, Karamay', // carry-over
+  f062260: 'min-ask, China, Guangzhou', // carry-over
+  f062318: 'min-ask, Korea, Naju', // carry-over
+  f062334: 'min-ask, China, Karamay', // carry-over
+  f065103: 'min-ask, USA + China, Suzhou + Guangzhou + Karamay', // carry-over
+  f066104: 'min-ask, China, Karamay', // carry-over
+  f069915: 'min-ask, China, Karamay', // carry-over
+  f069919: 'min-ask, China, Karamay', // carry-over
+  f070999: 'min-ask, China, Karamay', // carry-over
+  f071980: 'min-ask, China, Karamay', // carry-over
+  f073552: 'min-ask, China, Karamay', // carry-over
+  f073628: 'min-ask, USA, New Castle', // carry-over
+  f078772: 'min-ask, China, Karamay', // carry-over
+  f079197: 'min-ask, China, Karamay', // carry-over
+  f079301: 'min-ask, China, Guangzhou + Dongguan + Shenzhen, USA', // carry-over
+  f080444: 'min-ask, China, Chengdu', // carry-over
+  f082356: 'min-ask, China, Jiaxing', // carry-over
+  f083625: 'min-ask, China, Karamay', // carry-over
+  f083903: "min-ask, China, Xi'an", // carry-over
+  f092514: 'min-ask, China, Karamay', // carry-over
+  f094614: 'min-ask, China, Karamay', // carry-over
+  f099239: 'min-ask, China, Hong Kong', // carry-over
+  f0101087: 'min-ask, Korea', // carry-over
+  f0102374: 'min-ask, China, Karamay', // carry-over
+  f0102375: 'min-ask, China, Karamay', // carry-over
+  f0102376: 'min-ask, China, Karamay', // carry-over
+  f0102513: 'min-ask, China, Karamay', // carry-over
+  f0107171: 'min-ask, China, Karamay', // carry-over
+  f0114808: 'min-ask, China, Shanghai', // carry-over
+  f0115744: 'min-ask, China, Karamay', // carry-over
+  f0116766: 'min-ask, USA, Westford', // carry-over
+  f0126898: 'min-ask, China, Harbin', // carry-over
+  f0128974: 'min-ask, Korea, Seoul', // carry-over
+  f0129072: 'min-ask, China, Karamay', // carry-over
+  f0131464: 'min-ask, USA, Ashburn', // carry-over
+  f0132706: 'min-ask, China, Beijing', // carry-over
+  f0134565: 'min-ask, China, Karamay', // carry-over
+  f0135738: 'min-ask, China, Karamay', // carry-over
+  f0141634: 'min-ask, China, Changsha', // carry-over
+  f0145313: 'min-ask, China, Karamay', // carry-over
+  f0145385: 'min-ask, Malaysia, Petaling Jaya', // carry-over
+  f0145784: 'min-ask, Korea, Seoul', // carry-over
+  f0146875: 'min-ask, China, Karamay', // carry-over
+  f0148399: 'min-ask, China, Karamay', // carry-over
+  f0151281: 'min-ask, China, Karamay', // carry-over
+  f0151692: 'min-ask, China, Karamay', // carry-over
+  f0152747: 'min-ask, China, Karamay', // carry-over
+  f0157769: 'min-ask, China, Changsha', // carry-over
+  f0158142: 'min-ask, China, Karamay', // carry-over
+  f0160735: 'min-ask, NR', // carry-over
+  f0165111: 'min-ask, China, Guangzhou', // carry-over
+  f0165135: 'min-ask, China, Guangzhou', // carry-over
+  f0222962: 'min-ask, China, Karamay', // carry-over
+  f0224144: 'min-ask, China, Karamay', // carry-over
+  f0392785: 'min-ask, China, Karamay', // carry-over
+
   // Xfr-failed
 
   f02606: 'xfr-failed, China, Zhejiang',
@@ -411,6 +380,7 @@ const annotations = {
   f0105074: 'xfr-failed, China, Shanghai',
   f0137168: 'xfr-failed, China, Beijing',
   f0145018: 'xfr-failed, Korea',
+  f0147214: 'xfr-failed, NR',
   f0153176: 'xfr-failed, China, Fujian',
   f0154988: 'xfr-failed, China, Dongguan',
   f0216849: 'xfr-failed, China, Fujian',
@@ -420,9 +390,12 @@ const annotations = {
 
   // Error
 
+  f02423: 'error, Ukraine, Kyiv', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzacebpugwc3j726fsgqi42zrt3yzwh7dh3jur6t7l65rpsmr33tiajsy n 2388, TS: bafy2bzaceaaiekdw4mp7by4vajpzxdcv7kkjz42vax44dy72nef72rs4n2ype n2388)
   f08157: 'error, China, Beijing + Germany, Frankfurt, 超星际', // data transfer cancelled
+  f015941: 'error, Ukraine, Kyiv', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals errored: found message with equal nonce as the one we are looking for (F:bafy2bzacebdop2axt4mgdzdyv2yxyp65ecz5xyoa2tjuu6emcnuj5xgnibdp6 n 1848, TS: bafy2bzacec2m4escai72pth5ongj4uhmt3m56ldjr5nh32mm6zm6ll63k5oqg n1848)
   f016276: 'error, China, Beijing', // data transfer cancelled
   f030335: 'error, China, Fujian', // data transfer cancelled
+  f039515: 'error, China, Chongqing', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals errored: failed to load message: blockstore: block not found
   f044160: 'error, China, Guangzhou, muxing', // data transfer cancelled
   f080103: 'error, Korea, Seongnam-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 2.673483135825503894 FIL, balance: 0.008459306700769381 FIL): not enough funds to execute transaction
   f084879: 'error, Korea, Seongnam-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999980753528 FIL, balance: 0.02598058835620718 FIL): not enough funds to execute transaction
@@ -450,13 +423,43 @@ const annotations = {
   f0147284: 'rejected, Korea, Seongnam-si', // no online
   f0155384: 'rejected, Korea, Seongnam-si', // no online
   f0155467: 'rejected, Korea, Seongnam-si', // no online
-  f0392734: 'rejected, Korea, Icheon-si' // no online
+  f0392734: 'rejected, Korea, Icheon-si', // no online
 
   // Dial
 
   // XNR
 
   // Error during ask
+
+  f02520: 'error-ask, China, Hong Kong + Dongguan', // carry-over
+  f08257: 'error-ask, China, Zhejiang + Singapore', // carry-over
+  f017665: 'error-ask, China, Shenyang', // carry-over
+  f020436: 'error-ask, China, Beijing', // carry-over
+  f020489: 'error-ask, China, Lioaning', // carry-over
+  f023219: 'error-ask, China, Beijing + Zhangjiakou', // carry-over
+  f023882: 'error-ask, NR', // carry-over
+  f042567: 'error-ask, China, Jinhua', // carry-over
+  f053088: 'error-ask, China, Shanghai', // carry-over
+  f055522: 'error-ask, USA', // carry-over
+  f063628: 'error-ask, NR', // carry-over
+  f070501: 'error-ask, USA + China, Hong Kong + Guangzhou', // carry-over
+  f073448: 'error-ask, NR', // carry-over
+  f079247: 'error-ask, USA + China, Guangzhou + Beijing + Dongguan + Shenzhen', // carry-over
+  f091798: 'error-ask, NR', // carry-over
+  f097840: 'error-ask, NR', // carry-over
+  f0103851: 'error-ask, China, Karamay', // carry-over
+  f0122496: 'error-ask, NR', // carry-over
+  f0122815: 'error-ask, Korea, Bucheon-si', // carry-over
+  f0131654: 'error-ask, Korea, Seoul', // carry-over
+  f0132461: 'error-ask, Korea, Daegu', // carry-over
+  f0135758: 'error-ask, NR', // carry-over
+  f0145687: 'error-ask, NR', // carry-over
+  f0149455: 'error-ask, NR', // carry-over
+  f0157513: 'error-ask, Korea, Bucheon-si', // carry-over
+  f0157941: 'error-ask, China, Changsha', // carry-over
+  f0231161: 'error-ask, China, Qujing', // carry-over
+  f0391520: 'error-ask, China, Guangzhou', // carry-over
+  f0393359: 'error-ask, China, Suzhou' // carry-over
 }
 
 export default annotations
