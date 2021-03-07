@@ -43,149 +43,131 @@ const annotations = {
 
   // Active
 
-  f02423: 'active, Ukraine, Kyiv', // 1596764 about 2 hours
-  f08403: 'active, UK, Lower Slaughter, TippyFlits', // 1596798 1 day
-  f09848: 'active, USA, Irvine, BigBearLake', // 1596788 about 3 hours
-  f014768: 'active, Singapore, Funktafide, @Funk', // 1596785 about 3 hours
-  f015941: 'active, Ukraine, Kyiv', // 1596761 about 3 hours
-  f022352: 'active, Norway, Borgen, TechHedge, @Reiers', // 1596753 about 2 hours
-  f053088: 'active, China, Shanghai', // 1596760 about 2 hours
-  f058369: 'active, USA, Boston', // 1596786 about 3 hours
-  f078621: 'active, Korea, Uiwang', // 1596791 about 3 hours
-  f089840: 'active, Korea, Yeongdeungpo-gu', // 1596755 about 2 hours
-  f094901: 'active, Korea, Bucheon-si', // 1596787 about 4 hours
-  f097720: 'active, Korea, Bucheon-si', // 1596779 about 3 hours
-  f097777: 'active, Ukraine, Ivano-Frankivsk', // 1596758 about 3 hours
-  f0106949: 'active, Korea, Seoul', // 1596756 about 3 hours
-  f0110488: 'active, China, Chongqing', // 1596778 about 2 hours
-  f0111885: 'active, Korea, Bucheon-si', // 1596765 about 3 hours
-  f0115108: 'active, Korea, Yangcheon-gu', // 1596766 about 3 hours
-  f0122815: 'active, Korea, Bucheon-si', // 1596752 about 4 hours
-  f0146751: 'active, China, Jiangsu', // 1596762 about 2 hours
-  f0156207: 'active, Korea, Ulsan', // 1596754 about 3 hours
-  f0156452: 'active, Korea, Ulsan', // 1596769 about 2 hours
-  f0165375: 'active, Korea, Seongnam-si', // 1596757 about 2 hours
-  f0215497: 'active, Korea, Gangseo-gu', // 1596781 about 2 hours
-  f0228575: 'active, Canada, Calgary', // 1596782 about 2 hours
-  f0230200: 'active, Korea, Gwanak-gu', // 1596763 about 2 hours
+  f02423: 'active, Ukraine, Kyiv', // 1596764
+  f08403: 'active, UK, Lower Slaughter, TippyFlits', // 1596798
+  f09848: 'active, USA, Irvine, BigBearLake', // 1596788
+  f014768: 'active, Singapore, Funktafide, @Funk', // 1596785
+  f015941: 'active, Ukraine, Kyiv', // 1596761
+  f022352: 'active, Norway, Borgen, TechHedge, @Reiers', // 1596753
+  f058369: 'active, USA, Boston', // 1596786
+  f078621: 'active, Korea, Uiwang', // 1596791
+  f089840: 'active, Korea, Yeongdeungpo-gu', // 1596755
+  f094901: 'active, Korea, Bucheon-si', // 1596787
+  f097720: 'active, Korea, Bucheon-si', // 1596779
+  f097777: 'active, Ukraine, Ivano-Frankivsk', // 1596758
+  f0106949: 'active, Korea, Seoul', // 1596756
+  f0110488: 'active, China, Chongqing', // 1596778
+  f0111885: 'active, Korea, Bucheon-si', // 1596765
+  f0115108: 'active, Korea, Yangcheon-gu', // 1596766
+  f0122815: 'active, Korea, Bucheon-si', // 1596752
+  f0146751: 'active, China, Jiangsu', // 1596762
+  f0156207: 'active, Korea, Ulsan', // 1596754
+  f0156452: 'active, Korea, Ulsan', // 1596769
+  f0165375: 'active, Korea, Seongnam-si', // 1596757
+  f0215497: 'active, Korea, Gangseo-gu', // 1596781
+  f0228575: 'active, Canada, Calgary', // 1596782
+  f0230200: 'active, Korea, Gwanak-gu', // 1596763
 
   // Sealing (active-sealing = previously active, retesting with new deal)
 
   // Sealing
 
-  f02540: 'sealing, USA, Mobile', // 1596767
-  f010241: 'sealing, China, Beijing + USA, Portland, 6Block-P', // 1596771
-  f022142: 'sealing, USA, Queens, Nelson SR2', // 1596784
-  f039515: 'sealing, China, Chongqing', // 1596780
-  f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1596777
-  f080103: 'sealing, Korea, Seongnam-si', // 1596773
-  f086151: 'sealing, China, Dongguan', // 1596783
-  f0102313: 'sealing, Korea, Gangseo-gu', // 1596774
-  f0131901: 'sealing, Korea, Daejeon', // 1596759
-  f0134671: 'sealing, Korea, Gimpo-si', // 1596772
-  f0142606: 'sealing, Korea, Gangseo-gu', // 1596776
-  f0150744: 'sealing, Korea, Ulsan', // 1596793
-  f0157564: 'sealing, Korea, Daejeon', // 1596768
-  f0160291: 'sealing, USA', // 1596789
-  f0225676: 'sealing, Korea, Guro-gu', // 1596790
-  f0229547: 'sealing, Japan, Yokohama', // 1596775
-
   // Stuck
 
   // Min-size
 
-  f01234: 'min-size, Belgium, Bonheiden', // 134217728 < 3221225472
-  f01238: 'min-size, Vietnam, Hanoi, FILECOIN-VIETNAM', // 134217728 < 8589934592
-  f01240: 'min-size, Netherlands, HidNand', // 134217728 < 268435456
-  f01276: 'min-size, Canada, Brampton, NBFS Canada', // 134217728 < 17179869184
-  f01278: 'min-size, USA, Grand Rapids, MiMiner', // 134217728 < 1073741824
-  f02387: 'min-size, Canada, Brampton, NBFS Canada', // 134217728 < 17179869184
-  f02401: 'min-size, Canada, Chambly, NBFS Canada', // 134217728 < 17179869184
-  f02419: 'min-size, China, Shanghai, yuantai', // 134217728 < 268435456
-  f02620: 'min-size, Poland, Krakow, @magik6k', // 134217728 < 536870912
-  f03624: 'min-size, Germany, Chemnitz, ode', // 134217728 < 8589934592
-  f07998: 'min-size, China, Hangzhou', // 134217728 < 8000000000
-  f08240: 'min-size, Russia, Novosibirsk, Rabinovitch', // 134217728 < 1073741824
-  f08399: 'min-size, USA, Sammamish', // 134217728 < 4294967296
-  f010446: 'min-size, Netherlands, Angelo', // 134217728 < 1073741824
-  f010479: 'min-size, France, Fontenay-sous-Bois, s0nik42', // 134217728 < 8589934592
-  f010507: 'min-size, China, Hangzhou', // 134217728 < 1073741824
-  f010617: 'min-size, Canada, Surrey, kernelogic2, @feiya200', // 134217728 < 1073741824
-  f014409: 'min-size, USA, Monroe', // 134217728 < 4294967296
-  f015927: 'min-size, USA, East Islip, CDImine', // 134217728 < 17179869184
-  f018501: 'min-size, China, Beijing', // 134217728 < 1073741824
-  f019100: 'min-size, Romania, Cluj-Napoca', // 134217728 < 1073741824
-  f019279: 'min-size, Canada, Calgary', // 134217728 < 8589934592
-  f019362: 'min-size, China, Hangzhou, 青青子衿', // 134217728 < 17179869184
-  f019399: 'min-size, Korea, Busan', // 134217728 < 268435456
-  f020385: 'min-size, Korea, Incheon', // 134217728 < 536870912
-  f020436: 'min-size, China, Beijing', // 134217728 < 536870912
-  f021716: 'min-size, New Zealand, Wellington', // 268435456 < 8589934592
-  f022130: 'min-size, Korea, Seodaemun-gu', // 134217728 < 536870912
-  f022289: 'min-size, China, Mianyang', // 134217728 < 4294967296
-  f022399: 'min-size, China, Beijing', // 134217728 < 1573031772
-  f023467: 'min-size, Norway, Oslo, PhiMining.io', // 134217728 < 268435456
-  f023660: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023662: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023853: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023854: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023855: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023858: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023859: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023868: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023869: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023870: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023871: 'min-size, China, Fuzhou', // 134217728 < 4294967296
-  f023928: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023977: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023978: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023980: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023981: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024006: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024007: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024008: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024012: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024013: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024014: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024081: 'min-size, undefined', // 268435456 < 1572864000
-  f024084: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024085: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024136: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024146: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024147: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024148: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f032934: 'min-size, Korea, Incheon', // 134217728 < 1073741824
-  f033189: 'min-size, NR', // 134217728 < 2147483648
-  f034047: 'min-size, China, Hangzhou', // 134217728 < 1073741824
-  f047419: 'min-size, USA, Waukesha', // 134217728 < 17179869184
-  f049882: 'min-size, Netherlands, De Rijp, Chipz', // 134217728 < 17179869184
-  f058000: 'min-size, China, Suzhou', // 134217728 < 1073741824
-  f062353: 'min-size, Germany, Frankfurt', // 134217728 < 17179869184
-  f064218: 'min-size, USA, Kirkland', // 134217728 < 17179869184
-  f078522: 'min-size, NR', // 134217728 < 4294967296
-  f079817: "min-size, Russia, Ul'yanovka", // 134217728 < 1073741824
-  f080480: 'min-size, Ukraine, Lviv', // 134217728 < 2147483648
-  f083920: 'min-size, NR', // 268435456 < 1573031772
-  f097618: 'min-size, China, Suzhou', // 134217728 < 524288000
-  f099608: 'min-size, Latvia, Riga', // 134217728 < 268435456
-  f0104671: 'min-size, Japan, Ota-ku', // 134217728 < 4294967296
-  f0118360: 'min-size, China, Hangzhou', // 134217728 < 4294967296
-  f0121768: 'min-size, China, Guangdong', // 134217728 < 1073741824
-  f0124335: 'min-size, Finland, Helsinki', // 134217728 < 1073741824
-  f0145162: 'min-size, Japan, Kumamoto', // 134217728 < 1073741824
-  f0145874: 'min-size, Canada, Brampton', // 134217728 < 17179869184
-  f0157535: 'min-size, Canada, Brampton', // 134217728 < 17179869184
-  f0165400: 'min-size, Canada, Brampton', // 134217728 < 17179869184
-  f0187709: 'min-size, Russia, Moscow', // 134217728 < 1073741824
-  f0220827: 'min-size, NR', // 134217728 < 8589934592
+  f01234: 'min-size, Belgium, Bonheiden', // carry-over
+  f01238: 'min-size, Vietnam, Hanoi, FILECOIN-VIETNAM', // carry-over
+  f01240: 'min-size, Netherlands, HidNand', // carry-over
+  f01276: 'min-size, Canada, Brampton, NBFS Canada', // carry-over
+  f01278: 'min-size, USA, Grand Rapids, MiMiner', // carry-over
+  f02387: 'min-size, Canada, Brampton, NBFS Canada', // carry-over
+  f02401: 'min-size, Canada, Chambly, NBFS Canada', // carry-over
+  f02419: 'min-size, China, Shanghai, yuantai', // carry-over
+  f02620: 'min-size, Poland, Krakow, @magik6k', // carry-over
+  f03624: 'min-size, Germany, Chemnitz, ode', // carry-over
+  f07998: 'min-size, China, Hangzhou', // carry-over
+  f08240: 'min-size, Russia, Novosibirsk, Rabinovitch', // carry-over
+  f08399: 'min-size, USA, Sammamish', // carry-over
+  f010446: 'min-size, Netherlands, Angelo', // carry-over
+  f010479: 'min-size, France, Fontenay-sous-Bois, s0nik42', // carry-over
+  f010507: 'min-size, China, Hangzhou', // carry-over
+  f010617: 'min-size, Canada, Surrey, kernelogic2, @feiya200', // carry-over
+  f014409: 'min-size, USA, Monroe', // carry-over
+  f015927: 'min-size, USA, East Islip, CDImine', // carry-over
+  f018501: 'min-size, China, Beijing', // carry-over
+  f019100: 'min-size, Romania, Cluj-Napoca', // carry-over
+  f019279: 'min-size, Canada, Calgary', // carry-over
+  f019362: 'min-size, China, Hangzhou, 青青子衿', // carry-over
+  f019399: 'min-size, Korea, Busan', // carry-over
+  f020385: 'min-size, Korea, Incheon', // carry-over
+  f020436: 'min-size, China, Beijing', // carry-over
+  f021716: 'min-size, New Zealand, Wellington', // carry-over
+  f022130: 'min-size, Korea, Seodaemun-gu', // carry-over
+  f022289: 'min-size, China, Mianyang', // carry-over
+  f022399: 'min-size, China, Beijing', // carry-over
+  f023467: 'min-size, Norway, Oslo, PhiMining.io', // carry-over
+  f023660: 'min-size, China, Fuzhou', // carry-over
+  f023662: 'min-size, China, Fuzhou', // carry-over
+  f023853: 'min-size, China, Fuzhou', // carry-over
+  f023854: 'min-size, China, Fuzhou', // carry-over
+  f023855: 'min-size, China, Fuzhou', // carry-over
+  f023858: 'min-size, China, Fuzhou', // carry-over
+  f023859: 'min-size, China, Fuzhou', // carry-over
+  f023868: 'min-size, China, Fuzhou', // carry-over
+  f023869: 'min-size, China, Fuzhou', // carry-over
+  f023870: 'min-size, China, Fuzhou', // carry-over
+  f023871: 'min-size, China, Fuzhou', // carry-over
+  f023928: 'min-size, China, Fuzhou', // carry-over
+  f023977: 'min-size, China, Fuzhou', // carry-over
+  f023978: 'min-size, China, Fuzhou', // carry-over
+  f023980: 'min-size, China, Fuzhou', // carry-over
+  f023981: 'min-size, China, Fuzhou', // carry-over
+  f024006: 'min-size, China, Fuzhou', // carry-over
+  f024007: 'min-size, China, Fuzhou', // carry-over
+  f024008: 'min-size, China, Fuzhou', // carry-over
+  f024012: 'min-size, China, Fuzhou', // carry-over
+  f024013: 'min-size, China, Fuzhou', // carry-over
+  f024014: 'min-size, China, Fuzhou', // carry-over
+  f024081: 'min-size, undefined', // carry-over
+  f024084: 'min-size, China, Fuzhou', // carry-over
+  f024085: 'min-size, China, Fuzhou', // carry-over
+  f024136: 'min-size, China, Fuzhou', // carry-over
+  f024146: 'min-size, China, Fuzhou', // carry-over
+  f024147: 'min-size, China, Fuzhou', // carry-over
+  f024148: 'min-size, China, Fuzhou', // carry-over
+  f032934: 'min-size, Korea, Incheon', // carry-over
+  f033189: 'min-size, NR', // carry-over
+  f034047: 'min-size, China, Hangzhou', // carry-over
+  f047419: 'min-size, USA, Waukesha', // carry-over
+  f049882: 'min-size, Netherlands, De Rijp, Chipz', // carry-over
+  f058000: 'min-size, China, Suzhou', // carry-over
+  f062353: 'min-size, Germany, Frankfurt', // carry-over
+  f064218: 'min-size, USA, Kirkland', // carry-over
+  f078522: 'min-size, NR', // carry-over
+  f079817: "min-size, Russia, Ul'yanovka", // carry-over
+  f080480: 'min-size, Ukraine, Lviv', // carry-over
+  f083920: 'min-size, NR', // carry-over
+  f097618: 'min-size, China, Suzhou', // carry-over
+  f099608: 'min-size, Latvia, Riga', // carry-over
+  f0104671: 'min-size, Japan, Ota-ku', // carry-over
+  f0118360: 'min-size, China, Hangzhou', // carry-over
+  f0121768: 'min-size, China, Guangdong', // carry-over
+  f0124335: 'min-size, Finland, Helsinki', // carry-over
+  f0145162: 'min-size, Japan, Kumamoto', // carry-over
+  f0145874: 'min-size, Canada, Brampton', // carry-over
+  f0157535: 'min-size, Canada, Brampton', // carry-over
+  f0165400: 'min-size, Canada, Brampton', // carry-over
+  f0187709: 'min-size, Russia, Moscow', // carry-over
+  f0220827: 'min-size, NR', // carry-over
 
   // Max-size
 
-  f02619: 'max-size, China, Beijing, Blockcasting', // 134217728 > 1048576
-  f015233: 'max-size, China, Nanjing', // 134217728 > 1048576
-  f019806: 'max-size, China, Beijing', // 134217728 > 1048576
-  f024550: 'max-size, China, Wenzhou', // 134217728 > 1048576
-  f024944: 'max-size, Korea, Yeongdeungpo-dong', // 134217728 > 1048576
+  f02619: 'max-size, China, Beijing, Blockcasting', // carry-over
+  f015233: 'max-size, China, Nanjing', // carry-over
+  f019806: 'max-size, China, Beijing', // carry-over
+  f024550: 'max-size, China, Wenzhou', // carry-over
+  f024944: 'max-size, Korea, Yeongdeungpo-dong', // carry-over
 
   // Min-ask
 
@@ -308,71 +290,88 @@ const annotations = {
 
   // Xfr-failed
 
-  f03339: 'xfr-failed, China, Luzhou, benxun',
-  f03345: 'xfr-failed, China, Fuzhou, chh',
-  f010513: 'xfr-failed, China, Chongqing',
-  f016276: 'xfr-failed, China, Beijing',
-  f021710: 'xfr-failed, China, Shijiazhuang',
-  f022261: 'xfr-failed, China, Luzhou',
-  f024468: 'xfr-failed, China, Shenzhen',
-  f024511: 'xfr-failed, China, Shenzhen',
-  f025025: 'xfr-failed, China, Qingdao',
-  f030335: 'xfr-failed, China, Fujian',
-  f064668: 'xfr-failed, China, Hong Kong',
-  f065200: 'xfr-failed, China, Yibin',
-  f081644: 'xfr-failed, China, Wenzhou',
-  f082617: 'xfr-failed, China, Fujian',
-  f085899: 'xfr-failed, China, Wuxi',
-  f096974: 'xfr-failed, China, Chongqing',
-  f0105074: 'xfr-failed, China, Shanghai',
-  f0112772: 'xfr-failed, China, Nantong',
-  f0137168: 'xfr-failed, China, Beijing',
-  f0149455: 'xfr-failed, NR',
-  f0157265: 'xfr-failed, NR',
-  f0158265: 'xfr-failed, China, Hefei',
-  f0215370: 'xfr-failed, China, Hangzhou',
-  f0216138: 'xfr-failed, China, Shenzhen',
-  f0224894: 'xfr-failed, China, Qingdao',
-  f0231161: 'xfr-failed, China, Qujing',
+  f03339: 'xfr-failed, China, Luzhou, benxun', // carry-over
+  f03345: 'xfr-failed, China, Fuzhou, chh', // carry-over
+  f010513: 'xfr-failed, China, Chongqing', // carry-over
+  f016276: 'xfr-failed, China, Beijing', // carry-over
+  f021710: 'xfr-failed, China, Shijiazhuang', // carry-over
+  f022261: 'xfr-failed, China, Luzhou', // carry-over
+  f024468: 'xfr-failed, China, Shenzhen', // carry-over
+  f024511: 'xfr-failed, China, Shenzhen', // carry-over
+  f025025: 'xfr-failed, China, Qingdao', // carry-over
+  f030335: 'xfr-failed, China, Fujian', // carry-over
+  f064668: 'xfr-failed, China, Hong Kong', // carry-over
+  f065200: 'xfr-failed, China, Yibin', // carry-over
+  f081644: 'xfr-failed, China, Wenzhou', // carry-over
+  f082617: 'xfr-failed, China, Fujian', // carry-over
+  f085899: 'xfr-failed, China, Wuxi', // carry-over
+  f096974: 'xfr-failed, China, Chongqing', // carry-over
+  f0105074: 'xfr-failed, China, Shanghai', // carry-over
+  f0112772: 'xfr-failed, China, Nantong', // carry-over
+  f0137168: 'xfr-failed, China, Beijing', // carry-over
+  f0149455: 'xfr-failed, NR', // carry-over
+  f0157265: 'xfr-failed, NR', // carry-over
+  f0158265: 'xfr-failed, China, Hefei', // carry-over
+  f0215370: 'xfr-failed, China, Hangzhou', // carry-over
+  f0216138: 'xfr-failed, China, Shenzhen', // carry-over
+  f0224894: 'xfr-failed, China, Qingdao', // carry-over
+  f0231161: 'xfr-failed, China, Qujing', // carry-over
 
   // Error
 
-  f03134: 'error, China, Cangzhou, 乔木信息', // data transfer cancelled
-  f08103: 'error, China, Foshan', // data transfer cancelled
-  f042567: 'error, China, Jinhua', // data transfer cancelled
-  f094374: 'error, China, Nanyang', // data transfer cancelled
-  f0129805: 'error, China, Zhejiang + Australia, Adelaide', // data transfer cancelled
-  f0148143: 'error, China, Tianjin', // AddPiece failed: adding piece to sector: writing piece: storage call error 0: creating unsealed sector file: writing trailer: writing trailer length: write /fcfs/f0148143/unsealed/s-t0148143-45068.tmp: operation not supported
-  f0165643: 'error, China, Guangzhou', // data transfer cancelled
-  f0226073: 'error, China, Shenzhen', // data transfer cancelled
+  f02540: 'error, USA, Mobile', // error awaiting deal pre-commit: handling applied event: deal 1596767 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f03134: 'error, China, Cangzhou, 乔木信息', // carry-over
+  f08103: 'error, China, Foshan', // carry-over
+  f010241: 'error, China, Beijing + USA, Portland, 6Block-P', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 558096): failed to look up deal on chain: deal 1596771 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f022142: 'error, USA, Queens, Nelson SR2', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 558097): failed to look up deal on chain: deal 1596784 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f039515: 'error, China, Chongqing', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 558097): failed to look up deal on chain: deal 1596780 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f042567: 'error, China, Jinhua', // carry-over
+  f053088: 'error, China, Shanghai', // error waiting for deal completion: client: failed to look up deal 1596760 on chain: deal 1596760 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f055102: 'error, Vietman, Ho Chi Minh City + China', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 558097): failed to look up deal on chain: deal 1596777 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f080103: 'error, Korea, Seongnam-si', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 560969): failed to look up deal on chain: deal 1596773 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f086151: 'error, China, Dongguan', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 560968): failed to look up deal on chain: deal 1596783 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f094374: 'error, China, Nanyang', // carry-over
+  f0102313: 'error, Korea, Gangseo-gu', // error awaiting deal pre-commit: handling applied event: deal 1596774 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0129805: 'error, China, Zhejiang + Australia, Adelaide', // carry-over
+  f0131901: 'error, Korea, Daejeon', // error awaiting deal pre-commit: handling applied event: deal 1596759 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0134671: 'error, Korea, Gimpo-si', // error awaiting deal pre-commit: handling applied event: deal 1596772 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0142606: 'error, Korea, Gangseo-gu', // error awaiting deal pre-commit: handling applied event: deal 1596776 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0148143: 'error, China, Tianjin', // carry-over
+  f0150744: 'error, Korea, Ulsan', // error awaiting deal pre-commit: handling applied event: deal 1596793 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0157564: 'error, Korea, Daejeon', // error awaiting deal pre-commit: handling applied event: deal 1596768 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0160291: 'error, USA', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 560969): failed to look up deal on chain: deal 1596789 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0165643: 'error, China, Guangzhou', // carry-over
+  f0225676: 'error, Korea, Guro-gu', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 560969): failed to look up deal on chain: deal 1596790 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0226073: 'error, China, Shenzhen', // carry-over
+  f0229547: 'error, Japan, Yokohama', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 560969): failed to look up deal on chain: deal 1596775 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
 
   // Backoff
 
   // Rejected
 
-  f02500: 'rejected, Korea, Seongnam-si', // miner is not accepting unverified storage deals
-  f04443: 'rejected, China, Shanghai', // no online
-  f010088: 'rejected, NR', // no online
-  f010254: 'rejected, Japan, Minamata',
-  f019104: 'rejected, Canada, Chambly, NBFS DEV',
-  f023565: 'rejected, China, Fuzhou', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
-  f039940: 'rejected, China, Mianyang',
-  f048669: 'rejected, NR',
-  f074738: 'rejected, Korea, Icheon-si', // no online
-  f084879: 'rejected, Korea, Seongnam-si', // miner is not accepting unverified storage deals
-  f098706: 'rejected, Korea, Icheon-si', // miner is not accepting unverified storage deals
-  f0100082: 'rejected, Korea, Seongnam-si', // miner is not accepting unverified storage deals
-  f0121958: 'rejected, Korea, Seoul', // miner is not accepting unverified storage deals
-  f0126824: 'rejected, Korea, Seongnam-si', // no online
-  f0126868: 'rejected, Ukraine, Vinnytsia', // no online
-  f0147284: 'rejected, Korea, Seongnam-si', // no online
-  f0155384: 'rejected, Korea, Seongnam-si', // no online
-  f0155467: 'rejected, Korea, Seongnam-si', // no online
-  f0159961: 'rejected, China, Chongqing', // node error getting client market balance failed: resolve address f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q: actor not found
-  f0164326: 'rejected, China, Beijing', // node error getting client market balance failed: resolve address f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q: actor not found
-  f0215704: 'rejected, Korea, Icheon-si', // miner is not accepting unverified storage deals
-  f0228335: 'rejected, China, Beijing', // node error getting client market balance failed: resolve address f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q: actor not found
-  f0228401: 'rejected, Japan', // node error getting client market balance failed: resolve address f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q: actor not found
+  f02500: 'rejected, Korea, Seongnam-si', // carry-over
+  f04443: 'rejected, China, Shanghai', // carry-over
+  f010088: 'rejected, NR', // carry-over
+  f010254: 'rejected, Japan, Minamata', // carry-over
+  f019104: 'rejected, Canada, Chambly, NBFS DEV', // carry-over
+  f023565: 'rejected, China, Fuzhou', // carry-over
+  f039940: 'rejected, China, Mianyang', // carry-over
+  f048669: 'rejected, NR', // carry-over
+  f074738: 'rejected, Korea, Icheon-si', // carry-over
+  f084879: 'rejected, Korea, Seongnam-si', // carry-over
+  f098706: 'rejected, Korea, Icheon-si', // carry-over
+  f0100082: 'rejected, Korea, Seongnam-si', // carry-over
+  f0121958: 'rejected, Korea, Seoul', // carry-over
+  f0126824: 'rejected, Korea, Seongnam-si', // carry-over
+  f0126868: 'rejected, Ukraine, Vinnytsia', // carry-over
+  f0147284: 'rejected, Korea, Seongnam-si', // carry-over
+  f0155384: 'rejected, Korea, Seongnam-si', // carry-over
+  f0155467: 'rejected, Korea, Seongnam-si', // carry-over
+  f0159961: 'rejected, China, Chongqing', // carry-over
+  f0164326: 'rejected, China, Beijing', // carry-over
+  f0215704: 'rejected, Korea, Icheon-si', // carry-over
+  f0228335: 'rejected, China, Beijing', // carry-over
+  f0228401: 'rejected, Japan', // carry-over
 
   // Dial
 
