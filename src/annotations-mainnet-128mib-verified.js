@@ -49,10 +49,13 @@ const annotations = {
   f02500: 'active, Korea, Seongnam-si', // 1597383 about 12 hours
   f025007: 'active, Korea, Gyeonggi-do, PINBYTES-eCUBE', // 1597381 about 12 hours
   f065280: 'active, Korea, Songpa-gu, Data Store Ltd', // 1597376 about 12 hours
+  f097777: 'active, Ukraine, Ivano-Frankivsk', // 1597401 about 1 hour
   f0100082: 'active, Korea, Seongnam-si', // 1597379 about 12 hours
   f0106949: 'active, Korea, Seoul', // 1597392 about 11 hours
+  f0111885: 'active, Korea, Bucheon-si', // 1597394 about 2 hours
   f0152854: 'active, China, Huizhou', // 1597396 about 11 hours
   f0158468: 'active, China, Guangzhou', // 1597371 about 12 hours
+  f0216138: 'active, China, Shenzhen', // 1597372 about 1 hour
   f0224841: 'active, China, Guangzhou', // 1597391 about 11 hours
 
   // Sealing (active-sealing = previously active, retesting with new deal)
@@ -62,20 +65,25 @@ const annotations = {
   f02540: 'sealing, USA, Mobile', // 1597361
   f014768: 'sealing, Singapore, Funktafide, @Funk', // 1597384
   f022142: 'sealing, USA, Queens, Nelson SR2', // 1597377
+  f022261: 'sealing, China, Luzhou', // 1597449
   f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1597390
   f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 1597382
   f058369: 'sealing, USA, Boston', // 1597446
+  f065200: 'sealing, China, Yibin', // 1597450
   f078621: 'sealing, Korea, Uiwang', // 1597385
+  f086151: 'sealing, China, Dongguan', // 1597447
   f089840: 'sealing, Korea, Yeongdeungpo-gu', // 1597437
   f096976: 'sealing, Russia', // 1597395
   f097720: 'sealing, Korea, Bucheon-si', // 1597397
-  f097777: 'sealing, Ukraine, Ivano-Frankivsk', // 1597401
+  f098706: 'sealing, Korea, Icheon-si', // 1597485
   f0102313: 'sealing, Korea, Gangseo-gu', // 1597427
   f0107995: 'sealing, NR', // 1597373
   f0110133: 'sealing, China, Ningbo', // 1597370
-  f0111885: 'sealing, Korea, Bucheon-si', // 1597394
+  f0110488: 'sealing, China, Chongqing', // 1597483
   f0113331: 'sealing, Korea, Jinju + USA', // 1597387
   f0115108: 'sealing, Korea, Yangcheon-gu', // 1597374
+  f0121958: 'sealing, Korea, Seoul', // 1597484
+  f0131611: 'sealing, Korea, Jeju City', // 1597487
   f0133999: 'sealing, China, Changsha', // 1597436
   f0134671: 'sealing, Korea, Gimpo-si', // 1597363
   f0142606: 'sealing, Korea, Gangseo-gu', // 1597435
@@ -87,30 +95,19 @@ const annotations = {
   f0165375: 'sealing, Korea, Seongnam-si', // 1597380
   f0215497: 'sealing, Korea, Gangseo-gu', // 1597445
   f0215704: 'sealing, Korea, Icheon-si', // 1597364
-  f0216138: 'sealing, China, Shenzhen', // 1597372
   f0228575: 'sealing, Canada, Calgary', // 1597444
   f0230200: 'sealing, Korea, Gwanak-gu', // 1597375
 
   // Stuck
 
-  f03134: 'stuck, China, Cangzhou, 乔木信息', // Transferring: about 13 hours
-  f08403: 'stuck, UK, Lower Slaughter, TippyFlits', // CheckForAcceptance: about 13 hours
-  f022261: 'stuck, China, Luzhou', // CheckForAcceptance: about 12 hours
-  f024468: 'stuck, China, Shenzhen', // Transferring: about 14 hours
-  f065200: 'stuck, China, Yibin', // CheckForAcceptance: about 13 hours
-  f085899: 'stuck, China, Wuxi', // Transferring: about 13 hours
-  f086151: 'stuck, China, Dongguan', // CheckForAcceptance: about 13 hours
-  f098706: 'stuck, Korea, Icheon-si', // CheckForAcceptance: about 14 hours
-  f0110488: 'stuck, China, Chongqing', // CheckForAcceptance: about 13 hours
-  f0110804: 'stuck, USA, Santa Clara', // CheckForAcceptance: about 13 hours
-  f0121958: 'stuck, Korea, Seoul', // CheckForAcceptance: about 13 hours
-  f0129805: 'stuck, China, Zhejiang + Australia, Adelaide', // Transferring: about 12 hours
-  f0131611: 'stuck, Korea, Jeju City', // CheckForAcceptance: about 13 hours
-  f0160291: 'stuck, USA', // CheckForAcceptance: about 13 hours
-  f0165539: 'stuck, Japan, Yokohama', // CheckForAcceptance: about 12 hours
-  f0229547: 'stuck, Japan, Yokohama', // CheckForAcceptance: about 14 hours
-  f0242260: 'stuck, USA, St. Louis', // CheckForAcceptance: about 12 hours
-  f0392712: 'stuck, Korea, Ulju-gun', // CheckForAcceptance: about 12 hours
+  f08403: 'stuck, UK, Lower Slaughter, TippyFlits', // CheckForAcceptance: about 21 hours
+  f024468: 'stuck, China, Shenzhen', // Transferring: about 21 hours
+  f0110804: 'stuck, USA, Santa Clara', // CheckForAcceptance: about 20 hours
+  f0160291: 'stuck, USA', // CheckForAcceptance: about 20 hours
+  f0165539: 'stuck, Japan, Yokohama', // CheckForAcceptance: about 20 hours
+  f0229547: 'stuck, Japan, Yokohama', // CheckForAcceptance: about 21 hours
+  f0242260: 'stuck, USA, St. Louis', // CheckForAcceptance: about 20 hours
+  f0392712: 'stuck, Korea, Ulju-gun', // CheckForAcceptance: about 20 hours
 
   // Busy
 
@@ -363,6 +360,7 @@ const annotations = {
   // Xfr-failed
 
   f02606: 'xfr-failed, China, Zhejiang',
+  f03134: 'xfr-failed, China, Cangzhou, 乔木信息',
   f03345: 'xfr-failed, China, Fuzhou, chh',
   f08103: 'xfr-failed, China, Foshan',
   f010010: 'xfr-failed, China, Changzhou',
@@ -375,9 +373,11 @@ const annotations = {
   f064668: 'xfr-failed, China, Hong Kong',
   f081644: 'xfr-failed, China, Wenzhou',
   f085486: 'xfr-failed, NR',
+  f085899: 'xfr-failed, China, Wuxi',
   f094374: 'xfr-failed, China, Nanyang',
   f0101387: 'xfr-failed, China, Shenzhen',
   f0105074: 'xfr-failed, China, Shanghai',
+  f0129805: 'xfr-failed, China, Zhejiang + Australia, Adelaide',
   f0137168: 'xfr-failed, China, Beijing',
   f0145018: 'xfr-failed, Korea',
   f0147214: 'xfr-failed, NR',
