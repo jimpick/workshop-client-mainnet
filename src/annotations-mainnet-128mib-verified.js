@@ -47,14 +47,26 @@ const annotations = {
   // Active
 
   f02500: 'active, Korea, Seongnam-si', // 1597383 about 12 hours
+  f014768: 'active, Singapore, Funktafide, @Funk', // 1597384 about 11 hours
   f025007: 'active, Korea, Gyeonggi-do, PINBYTES-eCUBE', // 1597381 about 12 hours
   f065280: 'active, Korea, Songpa-gu, Data Store Ltd', // 1597376 about 12 hours
+  f089840: 'active, Korea, Yeongdeungpo-gu', // 1597437 about 13 hours
   f097777: 'active, Ukraine, Ivano-Frankivsk', // 1597401 about 1 hour
   f0100082: 'active, Korea, Seongnam-si', // 1597379 about 12 hours
+  f0102313: 'active, Korea, Gangseo-gu', // 1597427 about 13 hours
   f0106949: 'active, Korea, Seoul', // 1597392 about 11 hours
+  f0107995: 'active, NR', // 1597373 about 13 hours
+  f0110133: 'active, China, Ningbo', // 1597370 about 13 hours
   f0111885: 'active, Korea, Bucheon-si', // 1597394 about 2 hours
+  f0115108: 'active, Korea, Yangcheon-gu', // 1597374 about 13 hours
+  f0121958: 'active, Korea, Seoul', // 1597484 about 11 hours
   f0152854: 'active, China, Huizhou', // 1597396 about 11 hours
+  f0156207: 'active, Korea, Ulsan', // 1597388 about 11 hours
+  f0156452: 'active, Korea, Ulsan', // 1597378 about 11 hours
+  f0157564: 'active, Korea, Daejeon', // 1597360 about 12 hours
   f0158468: 'active, China, Guangzhou', // 1597371 about 12 hours
+  f0165375: 'active, Korea, Seongnam-si', // 1597380 about 12 hours
+  f0215497: 'active, Korea, Gangseo-gu', // 1597445 about 13 hours
   f0216138: 'active, China, Shenzhen', // 1597372 about 1 hour
   f0224841: 'active, China, Guangzhou', // 1597391 about 11 hours
 
@@ -63,7 +75,7 @@ const annotations = {
   // Sealing
 
   f02540: 'sealing, USA, Mobile', // 1597361
-  f014768: 'sealing, Singapore, Funktafide, @Funk', // 1597384
+  f08403: 'sealing, UK, Lower Slaughter, TippyFlits', // 1597499
   f022142: 'sealing, USA, Queens, Nelson SR2', // 1597377
   f022261: 'sealing, China, Luzhou', // 1597449
   f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1597390
@@ -72,42 +84,30 @@ const annotations = {
   f065200: 'sealing, China, Yibin', // 1597450
   f078621: 'sealing, Korea, Uiwang', // 1597385
   f086151: 'sealing, China, Dongguan', // 1597447
-  f089840: 'sealing, Korea, Yeongdeungpo-gu', // 1597437
   f096976: 'sealing, Russia', // 1597395
   f097720: 'sealing, Korea, Bucheon-si', // 1597397
   f098706: 'sealing, Korea, Icheon-si', // 1597485
-  f0102313: 'sealing, Korea, Gangseo-gu', // 1597427
-  f0107995: 'sealing, NR', // 1597373
-  f0110133: 'sealing, China, Ningbo', // 1597370
   f0110488: 'sealing, China, Chongqing', // 1597483
   f0113331: 'sealing, Korea, Jinju + USA', // 1597387
-  f0115108: 'sealing, Korea, Yangcheon-gu', // 1597374
-  f0121958: 'sealing, Korea, Seoul', // 1597484
   f0131611: 'sealing, Korea, Jeju City', // 1597487
   f0133999: 'sealing, China, Changsha', // 1597436
   f0134671: 'sealing, Korea, Gimpo-si', // 1597363
   f0142606: 'sealing, Korea, Gangseo-gu', // 1597435
   f0149768: 'sealing, China, Dongguan', // 1597362
-  f0156207: 'sealing, Korea, Ulsan', // 1597388
-  f0156452: 'sealing, Korea, Ulsan', // 1597378
   f0157265: 'sealing, NR', // 1597399
-  f0157564: 'sealing, Korea, Daejeon', // 1597360
-  f0165375: 'sealing, Korea, Seongnam-si', // 1597380
-  f0215497: 'sealing, Korea, Gangseo-gu', // 1597445
   f0215704: 'sealing, Korea, Icheon-si', // 1597364
   f0228575: 'sealing, Canada, Calgary', // 1597444
   f0230200: 'sealing, Korea, Gwanak-gu', // 1597375
 
   // Stuck
 
-  f08403: 'stuck, UK, Lower Slaughter, TippyFlits', // CheckForAcceptance: about 21 hours
-  f024468: 'stuck, China, Shenzhen', // Transferring: about 21 hours
-  f0110804: 'stuck, USA, Santa Clara', // CheckForAcceptance: about 20 hours
-  f0160291: 'stuck, USA', // CheckForAcceptance: about 20 hours
-  f0165539: 'stuck, Japan, Yokohama', // CheckForAcceptance: about 20 hours
-  f0229547: 'stuck, Japan, Yokohama', // CheckForAcceptance: about 21 hours
-  f0242260: 'stuck, USA, St. Louis', // CheckForAcceptance: about 20 hours
-  f0392712: 'stuck, Korea, Ulju-gun', // CheckForAcceptance: about 20 hours
+  f024468: 'stuck, China, Shenzhen', // Transferring: 1 day
+  f0110804: 'stuck, USA, Santa Clara', // CheckForAcceptance: 1 day
+  f0160291: 'stuck, USA', // CheckForAcceptance: 1 day
+  f0165539: 'stuck, Japan, Yokohama', // CheckForAcceptance: 1 day
+  f0229547: 'stuck, Japan, Yokohama', // CheckForAcceptance: 1 day
+  f0242260: 'stuck, USA, St. Louis', // CheckForAcceptance: 1 day
+  f0392712: 'stuck, Korea, Ulju-gun', // CheckForAcceptance: 1 day
 
   // Busy
 
