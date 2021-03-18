@@ -26,3 +26,7 @@ testplan
 geolite2
 ngrok.private.yml
 .env
+
+*-previous.js
+.vscode
+*.swp
