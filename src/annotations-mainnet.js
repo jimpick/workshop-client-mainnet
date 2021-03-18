@@ -848,7 +848,7 @@ const annotations = {
   f03002: 'dial, China, Chongqing + Singapore', // * [/ip4/101.206.156.202/tcp/18880] dial tcp4 0.0.0.0:43419->101.206.156.202:18880: i/o timeout  * [/ip4/8.209.64.163/tcp/18880] dial tcp4 0.0.0.0:43419->8.209.64.163:18880: i/o timeout
   f03144: 'dial, China, Hong Kong', // * [/ip4/103.214.41.38/tcp/23456] dial tcp4 0.0.0.0:43419->103.214.41.38:23456: i/o timeout
   f03176: 'dial, USA, San Mateo', // * [/ip4/47.88.57.241/tcp/15470] dial tcp4 0.0.0.0:43419->47.88.57.241:15470: i/o timeout  * [/ip4/47.88.55.220/tcp/15470] dial tcp4 0.0.0.0:43419->47.88.55.220:15470: i/o timeout
-  f03224: 'dial, Ukraine, Kyiv', // * [/ip4/176.104.58.70/tcp/1348] dial tcp4 176.104.58.70:1348: i/o timeout
+  f03224: 'delist, Ukraine, Kyiv', // * [/ip4/176.104.58.70/tcp/1348] dial tcp4 176.104.58.70:1348: i/o timeout
   f03266: 'dial, USA', // * [/ip4/169.63.27.151/tcp/14567] dial tcp4 0.0.0.0:43419->169.63.27.151:14567: i/o timeout
   f03287: 'dial, USA', // * [/ip4/149.81.122.165/tcp/14567] dial tcp4 0.0.0.0:43419->149.81.122.165:14567: i/o timeout
   f03328: 'dial, China, Xinxiang, Golden Miner', // * [/ip4/27.50.142.61/tcp/2347] dial tcp4 0.0.0.0:43419->27.50.142.61:2347: i/o timeout
@@ -908,7 +908,7 @@ const annotations = {
   f020436: 'dial, China, Beijing', // * [/ip4/123.115.221.255/tcp/24002] dial tcp4 0.0.0.0:43419->123.115.221.255:24002: i/o timeout
   f020452: 'dial, Singapore', // * [/ip4/170.33.12.186/tcp/17012] dial tcp4 0.0.0.0:43419->170.33.12.186:17012: i/o timeout
   f020522: 'dial, Singapore', // * [/ip4/8.211.49.16/tcp/14567] dial tcp4 0.0.0.0:43419->8.211.49.16:14567: i/o timeout
-  f020541: 'dial, China, Shanghai', // * [/ip4/121.46.233.243/tcp/2340] dial tcp4 121.46.233.243:2340: connect: connection refused
+  f020541: 'delist, China, Shanghai', // * [/ip4/121.46.233.243/tcp/2340] dial tcp4 121.46.233.243:2340: connect: connection refused
   f020604: 'dial, Singapore', // * [/ip4/8.209.106.203/tcp/14567] dial tcp4 0.0.0.0:43419->8.209.106.203:14567: i/o timeout
   f020618: 'dial, Singapore', // * [/ip4/170.33.12.186/tcp/17011] dial tcp4 0.0.0.0:43419->170.33.12.186:17011: i/o timeout
   f020742: 'dial, China, Shanghai', // * [/ip4/175.24.25.61/tcp/53456] dial tcp4 0.0.0.0:43419->175.24.25.61:53456: i/o timeout
@@ -950,8 +950,8 @@ const annotations = {
   f043929: 'dial, NR', // * [/ip4/120.232.96.38/tcp/24001] dial tcp4 120.232.96.38:24001: connect: connection refused
   f044315: 'dial, NR', // * [/ip4/127.0.0.1/tcp/23456] dial tcp4 127.0.0.1:23456: connect: connection refused  * [/ip4/183.136.238.136/tcp/2062] dial tcp4 183.136.238.136:2062: connect: connection refused  * [/ip4/183.136.238.136/tcp/2058] dial tcp4 183.136.238.136:2058: connect: connection refused  * [/ip4/172.16.0.10/tcp/23456] dial tcp4 0.0.0.0:43419->172.16.0.10:23456: i/o timeout
   f045505: 'dial, China, Ordos', // * [/ip4/1.183.72.226/tcp/12700] dial tcp4 0.0.0.0:43419->1.183.72.226:12700: i/o timeout
-  f048172: 'dial, China, Suzhou', // * [/ip4/222.92.5.147/tcp/42899] dial tcp4 222.92.5.147:42899: connect: connection refused
-  f048192: 'dial, China, Suzhou', // * [/ip4/222.92.5.147/tcp/42999] dial tcp4 222.92.5.147:42999: connect: connection refused
+  f048172: 'delist, China, Suzhou', // * [/ip4/222.92.5.147/tcp/42899] dial tcp4 222.92.5.147:42899: connect: connection refused
+  f048192: 'delist, China, Suzhou', // * [/ip4/222.92.5.147/tcp/42999] dial tcp4 222.92.5.147:42999: connect: connection refused
   f053229: 'dial, NR', // * [/ip4/172.18.112.203/tcp/10241] dial tcp4 0.0.0.0:43419->172.18.112.203:10241: i/o timeout
   f054499: 'dial, NR', // * [/ip4/0.0.0.0/tcp/5472] dial tcp4 0.0.0.0:5472: connect: connection refused
   f054666: 'dial, China, Changsha', // * [/ip4/36.158.255.7/tcp/1024] dial tcp4 36.158.255.7:1024: connect: connection refused
@@ -975,7 +975,7 @@ const annotations = {
   f079285: 'dial, NR', // * [/ip4/172.22.20.109/tcp/10241] dial tcp4 0.0.0.0:43419->172.22.20.109:10241: i/o timeout
   f079426: 'dial, China, Shandong', // * [/ip4/106.74.7.6/tcp/32759] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWQBg2oErr3Mx2fky471oxpmQmVggaDsGGVNqFagL27HeY, but remote key matches 12D3KooWQtkXUECWx5MBUugczDBoDq6DJcse1m56FHLmhRkGLyHK
   f081078: 'dial, Korea, Busan', // * [/ip4/220.84.94.10/tcp/23450] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWMW8ZvKgprKTTmt8cuoC5YYZeJtCn6iBuHWLg6J8rGUts, but remote key matches 12D3KooWLe7nwrhYUwgTjy7B92xgeuVZFVzgXHuM4wGzmcYg6asG
-  f081222: 'dial, China, Changzhou', // * [/ip4/218.93.31.109/tcp/9876] dial tcp4 0.0.0.0:43419->218.93.31.109:9876: i/o timeout
+  f081222: 'delist, China, Changzhou', // * [/ip4/218.93.31.109/tcp/9876] dial tcp4 0.0.0.0:43419->218.93.31.109:9876: i/o timeout
   f082958: 'dial, NR', // * [/ip4/0.0.0.0/tcp/42547] dial tcp4 0.0.0.0:42547: connect: connection refused
   f085486: 'dial, NR', // * [/ip6/::1/tcp/45059] dial tcp6 [::1]:45059: connect: connection refused  * [/ip4/127.0.0.1/tcp/43175] dial tcp4 127.0.0.1:43175: connect: connection refused  * [/ip4/172.18.0.30/tcp/43175] dial tcp4 0.0.0.0:43419->172.18.0.30:43175: i/o timeout
   f086439: 'dial, NR', // * [/ip6/::1/tcp/37897] dial tcp6 [::1]:37897: connect: connection refused  * [/ip4/127.0.0.1/tcp/37679] dial tcp4 127.0.0.1:37679: connect: connection refused  * [/ip4/172.16.0.30/tcp/37679] dial tcp4 0.0.0.0:43419->172.16.0.30:37679: i/o timeout
@@ -990,7 +990,7 @@ const annotations = {
   f089551: 'dial, NR', // * [/ip4/121.40.135.72/tcp/26892] failed to negotiate security protocol: read tcp4 66.70.191.245:43419->121.40.135.72:26892: read: connection reset by peer
   f090893: 'dial, USA', // * [/ip4/6.143.143.121/tcp/912] dial tcp4 0.0.0.0:43419->6.143.143.121:912: i/o timeout  * [/ip4/76.223.53.59/tcp/33912] dial tcp4 0.0.0.0:43419->76.223.53.59:33912: i/o timeout
   f094765: 'dial, NR', // * [/ip4/218.68.85.213/tcp/12350] dial tcp4 218.68.85.213:12350: connect: connection refused
-  f094901: 'dial, Korea, Bucheon-si', // * [/ip4/119.197.20.28/tcp/24001] dial tcp4 0.0.0.0:43419->119.197.20.28:24001: i/o timeout
+  f094901: 'delist, Korea, Bucheon-si', // * [/ip4/119.197.20.28/tcp/24001] dial tcp4 0.0.0.0:43419->119.197.20.28:24001: i/o timeout
   f095382: 'dial, China, Dongguan', // * [/ip4/125.93.73.102/tcp/2345] dial tcp4 125.93.73.102:2345: connect: connection refused
   f096173: 'dial, Korea, Gangnam-gu', // * [/ip4/61.78.81.239/tcp/11111] dial tcp4 61.78.81.239:11111: connect: connection refused  * [/ip4/61.78.81.239/tcp/33333] dial tcp4 61.78.81.239:33333: connect: connection refused  * [/ip4/61.78.81.239/tcp/55555] dial tcp4 61.78.81.239:55555: connect: connection refused  * [/ip4/61.78.81.239/tcp/23456] dial tcp4 61.78.81.239:23456: connect: connection refused  * [/ip4/61.78.81.239/tcp/12345] dial tcp4 61.78.81.239:12345: connect: connection refused  * [/ip4/61.78.81.239/tcp/44444] dial tcp4 61.78.81.239:44444: connect: connection refused  * [/ip4/61.78.81.239/tcp/22222] dial tcp4 61.78.81.239:22222: connect: connection refused  * [/ip4/61.78.81.239/tcp/8800] dial tcp4 61.78.81.239:8800: connect: connection refused
   f097182: 'dial, China, Chengdu', // * [/ip4/182.131.4.195/tcp/32759] dial tcp4 182.131.4.195:32759: connect: connection refused
@@ -1007,14 +1007,14 @@ const annotations = {
   f0112027: 'dial, France', // * [/ip4/109.238.12.125/tcp/24001] dial tcp4 0.0.0.0:43419->109.238.12.125:24001: i/o timeout
   f0113664: 'dial, France', // * [/ip4/178.170.47.28/tcp/24001] dial tcp4 178.170.47.28:24001: connect: connection refused
   f0114338: 'dial, China, Maoming', // * [/ip4/61.143.232.26/tcp/12888] dial tcp4 61.143.232.26:12888: connect: connection refused
-  f0115108: 'dial, Korea, Yangcheon-gu', // * [/ip4/58.226.35.77/tcp/24001] dial tcp4 0.0.0.0:43419->58.226.35.77:24001: i/o timeout
+  f0115108: 'delist, Korea, Yangcheon-gu', // * [/ip4/58.226.35.77/tcp/24001] dial tcp4 0.0.0.0:43419->58.226.35.77:24001: i/o timeout
   f0115990: 'dial, Korea, Gangnam-gu', // * [/ip4/61.74.222.134/tcp/36849] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWCH9QfkYAUcen5u2UsQrsBgRr6SXF1DzoxmejKC3MpMur, but remote key matches 12D3KooWFbbCe63pSrR7zwsx431Y51pjAc4oKTNdjCmAwwHKGjBY
   f0116211: 'dial, China, Weifang', // * [/ip4/219.83.163.148/tcp/50666] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWF79gTgqr7VyLQu74NgBvCTuvDfp2CxGK8hxn2EYKzH6L, but remote key matches 12D3KooWRpggHrYWrczv3N2h5AAtdVFiX5zsW1duYpnfc1C8hjLa
   f0116766: 'dial, USA, Westford', // * [/ip4/173.76.173.245/tcp/23456] dial tcp4 0.0.0.0:43419->173.76.173.245:23456: i/o timeout
   f0120909: 'dial, China, Changsha', // * [/ip4/127.0.0.1/tcp/7502] dial tcp4 127.0.0.1:7502: connect: connection refused
   f0122410: 'dial, China, Shanghai', // * [/ip4/121.46.232.35/tcp/1025] dial tcp4 0.0.0.0:43419->121.46.232.35:1025: i/o timeout  * [/ip4/172.18.8.9/tcp/1025] dial tcp4 0.0.0.0:43419->172.18.8.9:1025: i/o timeout
   f0126868: 'dial, Ukraine, Vinnytsia', // * [/ip4/93.75.163.158/tcp/24001] dial tcp4 0.0.0.0:43419->93.75.163.158:24001: i/o timeout
-  f0127569: 'dial, NR', // * [/ip4/43.240.207.204/tcp/38080] dial tcp4 0.0.0.0:43419->43.240.207.204:38080: i/o timeout
+  f0127569: 'delist, NR', // * [/ip4/43.240.207.204/tcp/38080] dial tcp4 0.0.0.0:43419->43.240.207.204:38080: i/o timeout
   f0130961: 'dial, Korea, Seongnam-si', // * [/ip4/121.165.242.197/tcp/24001] dial tcp4 0.0.0.0:43419->121.165.242.197:24001: i/o timeout
   f0132461: 'dial, Korea, Daegu', // * [/ip4/221.164.197.96/tcp/40001] dial tcp4 0.0.0.0:43419->221.164.197.96:40001: i/o timeout
   f0132618: 'dial, NR', // * [/ip4/10.2.1.55/tcp/21665] dial tcp4 0.0.0.0:43419->10.2.1.55:21665: i/o timeout
@@ -1024,30 +1024,30 @@ const annotations = {
   f0143032: 'dial, NR', // * [/ip6/::1/tcp/46785] dial tcp6 [::1]:46785: connect: connection refused  * [/ip4/127.0.0.1/tcp/42839] dial tcp4 127.0.0.1:42839: connect: connection refused  * [/ip4/144.123.6.202/tcp/42839] dial tcp4 0.0.0.0:43419->144.123.6.202:42839: i/o timeout  * [/ip4/192.168.88.9/tcp/42839] dial tcp4 0.0.0.0:43419->192.168.88.9:42839: i/o timeout
   f0143162: 'dial, NR', // * [/ip4/175.6.68.154/tcp/39913] dial tcp4 0.0.0.0:43419->175.6.68.154:39913: i/o timeout
   f0143858: 'dial, USA, Calistoga', // * [/ip4/72.52.116.228/tcp/12350] dial tcp4 72.52.116.228:12350: i/o timeout
-  f0144724: 'dial, USA, Los Angeles', // * [/ip4/67.201.8.203/tcp/24001] dial tcp4 67.201.8.203:24001: connect: connection refused
+  f0144724: 'delist, USA, Los Angeles', // * [/ip4/67.201.8.203/tcp/24001] dial tcp4 67.201.8.203:24001: connect: connection refused
   f0147214: 'dial, NR', // * [/ip6/::1/tcp/37253] dial tcp6 [::1]:37253: connect: connection refused  * [/ip4/127.0.0.1/tcp/43391] dial tcp4 127.0.0.1:43391: connect: connection refused  * [/ip4/172.22.0.100/tcp/43391] dial tcp4 0.0.0.0:43419->172.22.0.100:43391: i/o timeout
   f0152563: 'dial, China, Chongqing', // * [/ip4/192.168.1.100/tcp/24001] dial tcp4 0.0.0.0:43419->192.168.1.100:24001: i/o timeout  * [/ip4/58.43.1.82/tcp/24001] dial tcp4 0.0.0.0:43419->58.43.1.82:24001: i/o timeout
   f0153986: 'dial, China, Changsha', // * [/ip4/127.0.0.1/tcp/7503] dial tcp4 127.0.0.1:7503: connect: connection refused
   f0155983: 'dial, Japan', // * [/ip4/202.149.23.10/tcp/5472] dial tcp4 202.149.23.10:5472: connect: connection refused
-  f0157429: 'dial, Korea, Bucheon-si', // * [/ip4/119.197.20.18/tcp/24001] dial tcp4 119.197.20.18:24001: connect: connection refused
+  f0157429: 'delist, Korea, Bucheon-si', // * [/ip4/119.197.20.18/tcp/24001] dial tcp4 119.197.20.18:24001: connect: connection refused
   f0159632: 'dial, NR', // * [/ip4/10.140.8.32/tcp/32759] dial tcp4 0.0.0.0:43419->10.140.8.32:32759: i/o timeout
   f0159883: 'dial, NR', // * [/ip4/10.133.9.111/tcp/32759] dial tcp4 0.0.0.0:43419->10.133.9.111:32759: i/o timeout
-  f0160291: 'dial, USA', // * [/ip4/38.147.30.232/tcp/24001] dial tcp4 38.147.30.232:24001: connect: connection refused
+  f0160291: 'delist, USA', // * [/ip4/38.147.30.232/tcp/24001] dial tcp4 38.147.30.232:24001: connect: connection refused
   f0164260: 'dial, NR', // * [/ip6/::1/tcp/23450] dial tcp6 [::1]:23450: connect: connection refused  * [/ip4/127.0.0.1/tcp/23450] dial tcp4 127.0.0.1:23450: connect: connection refused  * [/ip4/182.1.4.5/tcp/23450] dial tcp4 0.0.0.0:43419->182.1.4.5:23450: i/o timeout
   f0164326: 'dial, China, Beijing', // * [/ip4/106.12.253.161/tcp/18627] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWLeYKCy9eP14YioRHKBUGLDZU3aZsHbguqq5FAyfrwtY5, but remote key matches 12D3KooWENkvtMRTS5dpRUPJGR7L4tNso39o2XuJvXyz79nT6k4k
   f0199223: 'dial, NR', // * [/ip4/110.188.25.20/tcp/24001] dial tcp4 110.188.25.20:24001: connect: connection refused
-  f0216139: 'dial, Korea, Goyang-si', // * [/ip4/121.161.110.194/tcp/40002] dial tcp4 0.0.0.0:43419->121.161.110.194:40002: i/o timeout
-  f0224782: 'dial, USA', // * [/ip4/23.224.105.234/tcp/7659] dial tcp4 23.224.105.234:7659: connect: connection refused
+  f0216139: 'delist, Korea, Goyang-si', // * [/ip4/121.161.110.194/tcp/40002] dial tcp4 0.0.0.0:43419->121.161.110.194:40002: i/o timeout
+  f0224782: 'delist, USA', // * [/ip4/23.224.105.234/tcp/7659] dial tcp4 23.224.105.234:7659: connect: connection refused
   f0224984: 'dial, China, Wuhan', // * [/ip6/::1/tcp/14955] dial tcp6 [::1]:14955: connect: connection refused  * [/ip4/127.0.0.1/tcp/1593] dial tcp4 127.0.0.1:1593: connect: connection refused  * [/ip4/113.57.212.44/tcp/1593] dial tcp4 0.0.0.0:43419->113.57.212.44:1593: i/o timeout
-  f0226073: 'dial, China, Shenzhen', // * [/ip4/113.108.105.32/tcp/24001] dial tcp4 0.0.0.0:43419->113.108.105.32:24001: i/o timeout
-  f0230827: 'dial, Korea, Paju', // * [/ip4/220.121.157.187/tcp/40001] dial tcp4 220.121.157.187:40001: connect: connection refused
-  f0231135: 'dial, USA, Huntersville', // * [/ip4/75.190.204.189/tcp/2347] dial tcp4 75.190.204.189:2347: connect: no route to host
+  f0226073: 'delist, China, Shenzhen', // * [/ip4/113.108.105.32/tcp/24001] dial tcp4 0.0.0.0:43419->113.108.105.32:24001: i/o timeout
+  f0230827: 'delist, Korea, Paju', // * [/ip4/220.121.157.187/tcp/40001] dial tcp4 220.121.157.187:40001: connect: connection refused
+  f0231135: 'delist, USA, Huntersville', // * [/ip4/75.190.204.189/tcp/2347] dial tcp4 75.190.204.189:2347: connect: no route to host
   f0238968: 'dial, NR', // * [/ip4/10.133.14.57/tcp/32759] dial tcp4 0.0.0.0:43419->10.133.14.57:32759: i/o timeout
-  f0240893: 'dial, USA, Queens', // * [/ip4/96.250.177.8/tcp/24001] dial tcp4 0.0.0.0:43419->96.250.177.8:24001: i/o timeout
-  f0242260: 'dial, USA, St. Louis', // * [/ip4/209.126.1.243/tcp/24001] dial tcp4 209.126.1.243:24001: connect: connection refused
-  f0391370: 'dial, USA, Queens', // * [/ip4/96.250.177.8/tcp/24002] dial tcp4 0.0.0.0:43419->96.250.177.8:24002: i/o timeout
-  f0392712: 'dial, Korea, Ulju-gun', // * [/ip4/61.76.2.98/tcp/24001] dial tcp4 0.0.0.0:43419->61.76.2.98:24001: i/o timeout
-  f0392733: 'dial, USA, Huntersville', // * [/ip4/75.190.204.189/tcp/54889] dial tcp4 75.190.204.189:54889: connect: connection refused
+  f0240893: 'delist, USA, Queens', // * [/ip4/96.250.177.8/tcp/24001] dial tcp4 0.0.0.0:43419->96.250.177.8:24001: i/o timeout
+  f0242260: 'delist, USA, St. Louis', // * [/ip4/209.126.1.243/tcp/24001] dial tcp4 209.126.1.243:24001: connect: connection refused
+  f0391370: 'delist, USA, Queens', // * [/ip4/96.250.177.8/tcp/24002] dial tcp4 0.0.0.0:43419->96.250.177.8:24002: i/o timeout
+  f0392712: 'delist, Korea, Ulju-gun', // * [/ip4/61.76.2.98/tcp/24001] dial tcp4 0.0.0.0:43419->61.76.2.98:24001: i/o timeout
+  f0392733: 'delist, USA, Huntersville', // * [/ip4/75.190.204.189/tcp/54889] dial tcp4 75.190.204.189:54889: connect: connection refused
 
   // XNR (Not routable)
 
@@ -1119,7 +1119,7 @@ const annotations = {
   f032833: 'xnr, NR',
   f032913: 'xnr, China, Shenzhen',
   f033130: 'xnr, NR',
-  f033209: 'xnr, NR',
+  f033209: 'delist, NR',
   f033384: 'xnr, NR',
   f033399: 'xnr, NR',
   f033456: 'xnr, NR',
@@ -1202,7 +1202,7 @@ const annotations = {
   f067598: 'xnr, NR',
   f069448: 'xnr, NR',
   f070045: 'xnr, NR',
-  f070475: 'xnr, China, Guyuan',
+  f070475: 'delist, China, Guyuan',
   f070730: 'xnr, NR',
   f070803: 'xnr, NR',
   f070932: 'xnr, NR',
@@ -1214,7 +1214,7 @@ const annotations = {
   f073888: 'xnr, NR',
   f077761: 'xnr, NR',
   f078465: 'xnr, NR',
-  f078770: 'xnr, China, Karamay',
+  f078770: 'delist, China, Karamay',
   f079092: 'xnr, NR',
   f079425: 'xnr, NR',
   f079719: 'xnr, NR',
@@ -1328,7 +1328,7 @@ const annotations = {
   f0107002: 'xnr, NR',
   f0107053: 'xnr, NR',
   f0107091: 'xnr, NR',
-  f0107171: 'xnr, China, Karamay',
+  f0107171: 'delist, China, Karamay',
   f0107543: 'xnr, NR',
   f0107656: 'xnr, NR',
   f0107797: 'xnr, NR',
@@ -1341,7 +1341,7 @@ const annotations = {
   f0110248: 'xnr, NR',
   f0110261: 'xnr, NR',
   f0110289: 'xnr, NR',
-  f0110488: 'xnr, China, Chongqing',
+  f0110488: 'delist, China, Chongqing',
   f0110695: 'xnr, NR',
   f0110696: 'xnr, NR',
   f0110808: 'xnr, NR',
@@ -1415,7 +1415,7 @@ const annotations = {
   f0125488: 'xnr, NR',
   f0126097: 'xnr, NR',
   f0126478: 'xnr, China, Ningbo',
-  f0126661: 'xnr, NR',
+  f0126661: 'delist, NR',
   f0126698: 'xnr, NR',
   f0126702: 'xnr, NR',
   f0127378: 'xnr, NR',
@@ -1453,11 +1453,11 @@ const annotations = {
   f0132313: 'xnr, NR',
   f0132638: 'xnr, NR',
   f0132706: 'xnr, China, Beijing',
-  f0132765: 'xnr, NR',
+  f0132765: 'delist, NR',
   f0133235: 'xnr, NR',
   f0133376: 'xnr, NR',
   f0133379: 'xnr, NR',
-  f0133486: 'xnr, China, Shenzhen',
+  f0133486: 'delist, China, Shenzhen',
   f0133501: 'xnr, NR',
   f0133505: 'xnr, NR',
   f0133509: 'xnr, NR',
@@ -1527,13 +1527,13 @@ const annotations = {
   f0146956: 'xnr, NR',
   f0147586: 'xnr, NR',
   f0147657: 'xnr, NR',
-  f0147676: 'xnr, Korea, Seoul',
+  f0147676: 'delist, Korea, Seoul',
   f0147801: 'xnr, NR',
   f0148269: 'xnr, NR',
   f0148452: 'xnr, NR',
   f0148627: 'xnr, NR',
   f0149132: 'xnr, NR',
-  f0149670: 'xnr, NR',
+  f0149670: 'delist, NR',
   f0149753: 'xnr, NR',
   f0149783: 'xnr, NR',
   f0149937: 'xnr, NR',
@@ -1564,7 +1564,7 @@ const annotations = {
   f0154335: 'xnr, NR',
   f0154597: 'xnr, NR',
   f0154865: 'xnr, NR',
-  f0155004: 'xnr, Korea, Seoul',
+  f0155004: 'delist, Korea, Seoul',
   f0155049: 'xnr, NR',
   f0155050: 'xnr, NR',
   f0155515: 'xnr, NR',
@@ -1572,7 +1572,7 @@ const annotations = {
   f0155829: 'xnr, NR',
   f0156214: 'xnr, NR',
   f0156333: 'xnr, China, Ningbo',
-  f0156342: 'xnr, NR',
+  f0156342: 'delist, NR',
   f0156417: 'xnr, NR',
   f0157025: 'xnr, NR',
   f0157316: 'xnr, NR',
@@ -1623,11 +1623,11 @@ const annotations = {
   f0230861: 'xnr, NR',
   f0231481: 'xnr, NR',
   f0231782: 'xnr, NR',
-  f0232136: 'xnr, NR',
+  f0232136: 'delist, NR',
   f0232650: 'xnr, NR',
-  f0241272: 'xnr, France, Deuil-la-Barre',
-  f0241284: 'xnr, China, Jiangmen',
-  f0391520: 'xnr, China, Guangzhou',
+  f0241272: 'delist, France, Deuil-la-Barre',
+  f0241284: 'delist, China, Jiangmen',
+  f0391520: 'delist, China, Guangzhou',
   f0392924: 'xnr, NR',
   f0392999: 'xnr, NR',
   f0393016: 'xnr, NR',
