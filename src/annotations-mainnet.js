@@ -1761,12 +1761,12 @@ const annotations = {
   f014271: 'delist, China, Fuzhou', // carry-over
   f014314: 'delist, Korea, Bucheon-si', // carry-over
   f014331: 'delist, China, Chongqing', // carry-over
-  f014335: 'delist, NR',
+  f014335: 'retest, NR',
   f014354: 'delist, USA, Concord', // carry-over
   f014366: 'delist, USA, Mountain View', // carry-over
   f014388: 'delist, China, Guangdong', // carry-over
   f014389: 'delist, China, Chongqing', // carry-over
-  f014392: 'delist, USA + Russia, Khabarovsk + Japan, Heiwajima',
+  f014392: 'retest, USA + Russia, Khabarovsk + Japan, Heiwajima',
   f014407: 'delist, China, Shanghai', // carry-over
   f014419: 'delist, USA, San Diego', // carry-over
   f014420: 'delist, Russia, Samara', // carry-over
@@ -2104,7 +2104,7 @@ const annotations = {
   f024153: 'delist, NR', // carry-over
   f024165: 'delist, NR', // carry-over
   f024168: 'delist, USA, Ashburn', // carry-over
-  f024182: 'delist, China, Hong Kong',
+  f024182: 'retest, China, Hong Kong',
   f024496: 'delist, China, Dongguan', // carry-over
   f024526: 'delist, Korea', // carry-over
   f024556: 'delist, NR', // carry-over
@@ -2136,7 +2136,7 @@ const annotations = {
   f030531: 'delist, NR', // carry-over
   f030608: 'delist, China, Mianyang', // carry-over
   f030641: 'delist, China, Shaanxi', // carry-over
-  f032850: 'delist, NR',
+  f032850: 'retest, NR',
   f032865: 'delist, USA, Redmond', // carry-over
   f032887: 'delist, undefined', // carry-over
   f032904: 'delist, undefined', // carry-over
@@ -2199,7 +2199,7 @@ const annotations = {
   f061059: 'delist, China, Beijing', // carry-over
   f061196: 'delist, Korea, Yeongdeungpo-dong', // carry-over
   f061430: 'delist, Korea, Naju', // carry-over
-  f062245: 'delist, NR', // carry-over
+  f062245: 'retest, NR', // carry-over
   f062375: 'delist, Korea, Gyeonggi-do', // carry-over
   f062445: 'delist, China, Shenzhen', // carry-over
   f062449: 'delist, NR', // carry-over
@@ -2310,38 +2310,38 @@ const annotations = {
   f095528: 'delist, China, Hangzhou', // carry-over
   f095833: 'delist, Korea, Yongin-si', // carry-over
   f096224: 'delist, China, Chongqing', // carry-over
-  f0107127: 'delist, USA, Daytona Beach',
+  f0107127: 'retest, USA, Daytona Beach',
   f0109163: 'delist, Korea, Songpa-gu',
-  f0109349: 'delist, NR',
+  f0109349: 'retest, NR',
   f0109901: 'delist, China, Huludao',
   f0110101: 'delist, Korea, Goyang-si',
   f0110198: 'delist, Korea, Hwaseong-si',
-  f0112713: 'delist, Korea, Bucheon-si',
-  f0116287: 'delist, China, Shanghai',
+  f0112713: 'retest, Korea, Bucheon-si',
+  f0116287: 'retest, China, Shanghai',
   f0119336: 'delist, Canada, Ottawa',
   f0120141: 'delist, Korea, Gangnam-gu',
-  f0120747: 'delist, NR',
-  f0123275: 'delist, Korea, Seoul',
+  f0120747: 'retest, NR',
+  f0123275: 'retest, Korea, Seoul',
   f0125962: 'delist, Korea, Yongin-si', // carry-over
   f0126376: 'delist, NR',
   f0126535: 'delist, China, Hong Kong',
   f0127151: 'delist, Korea, Yongin-si', // carry-over
   f0127157: 'delist, Korea, Yongin-si', // carry-over
   f0127256: 'delist, Korea, Yongin-si', // carry-over
-  f0127980: 'delist, Korea, Seoul',
-  f0128191: 'delist, Korea, Gangnam-gu',
+  f0127980: 'retest, Korea, Seoul',
+  f0128191: 'retest, Korea, Gangnam-gu',
   f0128238: 'delist, Korea, Yongin-si', // carry-over
   f0128239: 'delist, Korea, Yongin-si', // carry-over
   f0128242: 'delist, Korea, Yongin-si', // carry-over
   f0131359: 'delist, China, Fuzhou',
   f0136425: 'delist, Korea, Busan',
   f0137475: 'delist, China, Beijing',
-  f0137489: 'delist, UK, Deeside',
-  f0149444: 'delist, Korea, Gangseo-gu',
+  f0137489: 'retest, UK, Deeside',
+  f0149444: 'retest, Korea, Gangseo-gu',
   f0156232: 'delist, China, Fuzhou',
-  f0158156: 'delist, NR',
-  f0164126: 'delist, NR',
-  f0167137: 'delist, China, Shaoxing',
+  f0158156: 'retest, NR',
+  f0164126: 'retest, NR',
+  f0167137: 'retest, China, Shaoxing',
   f0168371: 'delist, Korea, Namyangju',
   f0213894: 'delist, China, Hangzhou', // carry-over
   f0215360: 'delist, France',
@@ -2349,7 +2349,7 @@ const annotations = {
   f0216068: 'delist, Romania, Iasi', // carry-over
   f0219415: 'delist, USA, Boardman', // carry-over
   f0219631: 'delist, USA, Council Bluffs',
-  f0224599: 'delist, China, Fuzhou',
+  f0224599: 'retest, China, Fuzhou',
   f0228350: 'delist, China, Hangzhou',
   f0228388: 'delist, USA, Cleveland'
 }
