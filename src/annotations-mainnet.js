@@ -14,9 +14,85 @@ const annotations = {
 
   // New
 
+  f080605: 'new, NR',
+  f090889: 'new, NR',
+  f091996: 'new, NR',
+  f093115: 'new, NR',
+  f093144: 'new, NR',
+  f093686: 'new, NR',
+  f099387: 'new, China, Shijiazhuang',
+  f0101018: 'new, NR',
+  f0107536: 'new, China, Bozhou',
+  f0110803: 'new, Korea',
+  f0111174: 'new, NR',
+  f0111434: 'new, NR',
+  f0114885: 'new, NR',
+  f0116513: 'new, NR',
+  f0122398: 'new, NR',
+  f0131857: 'new, China, Chongqing',
+  f0133886: 'new, China, Guangdong',
+  f0135906: 'new, NR',
+  f0144314: 'new, NR',
+  f0145843: 'new, NR',
+  f0146428: 'new, NR',
+  f0148151: 'new, NR',
+  f0151034: 'new, USA, Syracuse',
+  f0151468: 'new, NR',
+  f0151487: 'new, NR',
+  f0151499: 'new, NR',
+  f0153930: 'new, NR',
+  f0158728: 'new, NR',
+  f0159449: 'new, NR',
+  f0160819: 'new, NR',
+  f0166512: 'new, NR',
+  f0167505: 'new, China, Beijing',
+  f0168537: 'new, NR',
+  f0169097: 'new, NR',
+  f0216822: 'new, NR',
+  f0217419: 'new, NR',
+  f0217805: 'new, China, Taiwan, Taipei',
+  f0218407: 'new, NR',
+  f0218559: 'new, NR',
+  f0220156: 'new, NR',
+  f0220911: 'new, NR',
+  f0221135: 'new, USA, Atlanta',
+  f0222611: 'new, NR',
+  f0222811: 'new, NR',
+  f0222947: 'new, NR',
+  f0223033: 'new, NR',
+  f0223102: 'new, NR',
+  f0223103: 'new, NR',
+  f0223104: 'new, NR',
+  f0231112: 'new, NR',
+  f0223316: 'new, NR',
+  f0223663: 'new, China, Beijing',
+  f0223933: 'new, NR',
+  f0225880: 'new, NR',
+  f0226324: 'new, China, Guangxi',
+  f0228232: 'new, NR',
+  f0228712: 'new, USA',
+  f0232358: 'new, NR',
+  f0232437: 'new, NR',
+  f0232459: 'new, NR',
+  f0239266: 'new, NR',
+  f0240035: 'new, NR',
+  f0240185: 'new, NR',
+  f0240456: 'new, NR',
+  f0241022: 'new, Korea, Geumcheon-gu',
+  f0241666: 'new, NR',
+  f0241764: 'new, China, Chengdu',
+  f0241858: 'new, China, Fuzhou',
+  f0242156: 'new, NR',
+  f0242345: 'new, NR',
+  f0242373: 'new, NR',
+  f0242416: 'new, USA, Morganville',
+  f0242420: 'new, NR',
   f0347476: 'new, China, Zhengzhou',
   f0364957: 'new, China, Sichuan',
   f0377277: 'new, NR',
+  f0400264: 'new, NR',
+  f0408582: 'new, NR',
+
 
   // Inflight
 
@@ -965,7 +1041,7 @@ const annotations = {
   f0224984: 'dial, China, Wuhan', // * [/ip6/::1/tcp/14955] dial tcp6 [::1]:14955: connect: connection refused  * [/ip4/127.0.0.1/tcp/1593] dial tcp4 127.0.0.1:1593: connect: connection refused  * [/ip4/113.57.212.44/tcp/1593] dial tcp4 0.0.0.0:43419->113.57.212.44:1593: i/o timeout
   f0238968: 'dial, NR', // * [/ip4/10.133.14.57/tcp/32759] dial tcp4 0.0.0.0:43419->10.133.14.57:32759: i/o timeout
   f0403177: 'dial, China, Huizhou', // * [/ip4/125.93.53.202/tcp/24001] dial tcp4 125.93.53.202:24001: connect: connection refused
-  f0408696: 'dial, Taiwan, Taipei', // * [/ip4/60.251.41.175/tcp/27791] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWPDhs9bwFnbGXCRNs3aJcKLw6dLjc4RuYLULTPmpVFL5A, but remote key matches 12D3KooWSPxAn9H9HVog2NvJJy6gn51UgRU4cJCn25tyBcdH2pqR
+  f0408696: 'dial, China, Taiwan, Taipei', // * [/ip4/60.251.41.175/tcp/27791] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWPDhs9bwFnbGXCRNs3aJcKLw6dLjc4RuYLULTPmpVFL5A, but remote key matches 12D3KooWSPxAn9H9HVog2NvJJy6gn51UgRU4cJCn25tyBcdH2pqR
   f0408717: 'dial, Korea, Ansan-si', // * [/ip4/1.224.35.165/tcp/24001] dial tcp4 1.224.35.165:24001: connect: connection refused
   f0409356: 'dial, NR', // * [/ip4/221.163.91.162/tcp/14233] dial tcp4 0.0.0.0:43419->221.163.91.162:14233: i/o timeout
 
@@ -2282,7 +2358,7 @@ const annotations = {
   f070475: 'delist, China, Guyuan',
   f070747: 'delist, China, Shenzhen', // carry-over
   f070756: 'delist, China, Beijing', // carry-over
-  f070824: 'delist, Taiwan, Hsinchu', // carry-over
+  f070824: 'delist, China, Taiwan, Hsinchu', // carry-over
   f071114: 'delist, China, Shenyang', // carry-over
   f071190: 'delist, Korea, Gyeonggi-do', // carry-over
   f071692: "delist, China, Xi'an", // carry-over
