@@ -3,6 +3,7 @@ import useMiners from '../lib/use-miners'
 import { format, formatDistance } from 'date-fns'
 import copy from 'clipboard-copy'
 import annotations from '../annotations-mainnet'
+import annotations128mibVerified from '../annotations-mainnet-128mib-verified'
 import annotations128mibUnverified from '../annotations-mainnet-128mib-unverified'
 import dealStateNames from './deal-state-names'
 
@@ -114,9 +115,14 @@ export default function DealList ({ client, appState, cid, filterErrors }) {
           annotation = annotations[miner]
           altAnnotation = annotations128mibUnverified[miner]
         }
-        if (type === '128mibUnverified') {
+        if (type === '128mib-unverified') {
           prefix = '128M-U'
           annotation = annotations128mibUnverified[miner]
+          altAnnotation = annotations[miner]
+        }
+        if (type === '128mib-verified') {
+          prefix = '128M-V'
+          annotation = annotations128mibVerified[miner]
           altAnnotation = annotations[miner]
         }
         return (

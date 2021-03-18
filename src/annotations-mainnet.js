@@ -92,6 +92,7 @@ const annotations = {
   f0377277: 'new, NR',
   f0400264: 'new, NR',
   f0408582: 'new, NR',
+  f0418632: 'new, Singapore',
 
 
   // Inflight
