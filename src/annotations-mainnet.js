@@ -14,6 +14,10 @@ const annotations = {
 
   // New
 
+  f0347476: 'new, China, Zhengzhou',
+  f0364957: 'new, China, Sichuan',
+  f0377277: 'new, NR',
+
   // Inflight
 
   f0391212: 'inflight, NR', // FundsReserved: 36 minutes
