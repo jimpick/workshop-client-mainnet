@@ -57,63 +57,37 @@ const annotations = {
   f0102313: 'active, Korea, Gangseo-gu', // 1612370 about 5 hours
   f0122815: 'active, Korea, Bucheon-si', // 1612368 about 5 hours
   f0124554: 'active, Korea, Gimhae', // 1612299 9 minutes
+  f0134671: 'active, Korea, Gimpo-si', // 1612275 about 4 hours
   f0137489: 'active, UK, Deeside', // 1612254 about 3 hours
   f0142606: 'active, Korea, Gangseo-gu', // 1612371 about 5 hours
+  f0146751: 'active, China, Jiangsu', // 1612269 6 days
   f0156207: 'active, Korea, Ulsan', // 1612169 about 3 hours
   f0156452: 'active, Korea, Ulsan', // 1612159 about 3 hours
   f0157265: 'active, NR', // 1612300 6 minutes
+  f0157564: 'active, Korea, Daejeon', // 1612283 about 2 hours
+  f0165539: 'active, Japan, Yokohama', // 1612375 about 3 hours
   f0215497: 'active, Korea, Gangseo-gu', // 1612166 about 2 hours
   f0228575: 'active, Canada, Calgary', // 1612302 8 minutes
   f0230200: 'active, Korea, Gwanak-gu', // 1612301 about 2 hours
   f0242152: 'active, Korea, Guro-gu', // 1612155 about 2 hours
   f0397675: 'active, Korea, Guro-gu', // 1612303 about 2 hours
+  f0400103: 'active, China, Hong Kong', // 1612367 about 4 hours
   f0400920: 'active, NR', // 1612304 about 2 hours
   f0401254: 'active, Korea, Uijeongbu-si', // 1612266 about 2 hours
+  f0401300: 'active, France, Deuil-la-Barre', // 1612158 about 10 hours
+  f0403896: 'active, USA, Huntersville', // 1612369 about 21 hours
   f0411786: 'active, Korea, Busan', // 1612165 about 2 hours
+  f0414184: 'active, Spain, Madrid', // 1612265 about 5 hours
 
   // Sealing (active-sealing = previously active, retesting with new deal)
 
-  f089840: 'active-sealing, Korea, Yeongdeungpo-gu', // 1612162
-  f0146751: 'active-sealing, China, Jiangsu', // 1612269
-
   // Sealing
-
-  f02540: 'sealing, USA, Mobile', // 1612151
-  f03134: 'sealing, China, Cangzhou, 乔木信息', // 1612150
-  f03339: 'sealing, China, Luzhou, benxun', // 1612156
-  f022142: 'sealing, USA, Queens, Nelson SR2', // 1612273
-  f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1612271
-  f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 1612272
-  f065200: 'sealing, China, Yibin', // 1612274
-  f096976: 'sealing, Russia', // 1612168
-  f0110133: 'sealing, China, Ningbo', // 1612317
-  f0128191: 'sealing, Korea, Gangnam-gu', // 1612253
-  f0130912: 'sealing, NR', // 1612373
-  f0134671: 'sealing, Korea, Gimpo-si', // 1612275
-  f0145018: 'sealing, Korea', // 1612284
-  f0149444: 'sealing, Korea, Gangseo-gu', // 1612153
-  f0150744: 'sealing, Korea, Ulsan', // 1612164
-  f0157564: 'sealing, Korea, Daejeon', // 1612283
-  f0165539: 'sealing, Japan, Yokohama', // 1612375
-  f0216138: 'sealing, China, Shenzhen', // 1612286
-  f0225676: 'sealing, Korea, Guro-gu', // 1612282
-  f0393359: 'sealing, China, Suzhou', // 1612374
-  f0400103: 'sealing, China, Hong Kong', // 1612367
-  f0400681: 'sealing, USA, Queens', // 1612127
-  f0401300: 'sealing, France, Deuil-la-Barre', // 1612158
-  f0401303: 'sealing, Korea, Ulju-gun', // 1612264
-  f0402975: 'sealing, Korea', // 1612160
-  f0403896: 'sealing, USA, Huntersville', // 1612369
-  f0413563: 'sealing, Korea, Gangnam-gu', // 1612285
-  f0414184: 'sealing, Spain, Madrid', // 1612265
 
   // Stuck
 
-  f08399: 'stuck, USA, Sammamish', // CheckForAcceptance: about 19 hours
-  f058369: 'stuck, USA, Boston', // CheckForAcceptance: about 20 hours
-  f085899: 'stuck, China, Wuxi', // CheckForAcceptance: about 2 hours
-  f097777: 'stuck, Ukraine, Ivano-Frankivsk', // CheckForAcceptance: about 20 hours
-  f0399610: 'stuck, Ukraine', // CheckForAcceptance: about 19 hours
+  f08399: 'stuck, USA, Sammamish', // CheckForAcceptance: 6 days
+  f097777: 'stuck, Ukraine, Ivano-Frankivsk', // CheckForAcceptance: 7 days
+  f0399610: 'stuck, Ukraine', // CheckForAcceptance: 6 days
 
   // Busy
 
@@ -408,7 +382,31 @@ const annotations = {
 
   // Error
 
+  f02540: 'error, USA, Mobile', // error awaiting deal pre-commit: handling applied event: deal 1612151 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f03134: 'error, China, Cangzhou, 乔木信息', // error awaiting deal pre-commit: handling applied event: deal 1612150 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f03339: 'error, China, Luzhou, benxun', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 599251): failed to look up deal on chain: deal 1612156 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f010617: 'error, Canada, Surrey, kernelogic2, @feiya200', // stream reset
+  f022142: 'error, USA, Queens, Nelson SR2', // error awaiting deal pre-commit: handling applied event: deal 1612273 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f055102: 'error, Vietman, Ho Chi Minh City + China', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 599251): failed to look up deal on chain: deal 1612271 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f055132: 'error, Vietman, Ho Chi Minh City + China', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 608890): failed to look up deal on chain: deal 1612272 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f058369: 'error, USA, Boston', // deal failed: (State=26) error calling node: publishing deal: cannot publish deal with piece CID baga6ea4seaqmaaihr7ag6gv24ctq54sjm57ms2zv4baqu3axdvqgu32hauk56by: current epoch 603436 has passed deal proposal start epoch 597237
+  f065200: 'error, China, Yibin', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 599251): failed to look up deal on chain: deal 1612274 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f085899: 'error, China, Wuxi', // deal failed: (State=11) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals exit code: SysErrOutOfGas(7)
+  f089840: 'error, Korea, Yeongdeungpo-gu', // error awaiting deal pre-commit: handling applied event: deal 1612162 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f096976: 'error, Russia', // error awaiting deal pre-commit: handling applied event: deal 1612168 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0110133: 'error, China, Ningbo', // error awaiting deal pre-commit: handling applied event: deal 1612317 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0128191: 'error, Korea, Gangnam-gu', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 599251): failed to look up deal on chain: deal 1612253 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0130912: 'error, NR', // error awaiting deal pre-commit: handling applied event: deal 1612373 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0145018: 'error, Korea', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 608890): failed to look up deal on chain: deal 1612284 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0149444: 'error, Korea, Gangseo-gu', // error awaiting deal pre-commit: handling applied event: deal 1612153 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0150744: 'error, Korea, Ulsan', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 599251): failed to look up deal on chain: deal 1612164 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0216138: 'error, China, Shenzhen', // error awaiting deal pre-commit: handling applied event: deal 1612286 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0225676: 'error, Korea, Guro-gu', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 599251): failed to look up deal on chain: deal 1612282 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0393359: 'error, China, Suzhou', // error in deal activation: failed to set up called handler: called check error (h: 599251): failed to look up deal on chain: deal 1612374 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0400681: 'error, USA, Queens', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 599251): failed to look up deal on chain: deal 1612127 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0401303: 'error, Korea, Ulju-gun', // error in deal activation: failed to set up called handler: called check error (h: 608890): failed to look up deal on chain: deal 1612264 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0402975: 'error, Korea', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 599251): failed to look up deal on chain: deal 1612160 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0413563: 'error, Korea, Gangnam-gu', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 599251): failed to look up deal on chain: deal 1612285 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
 
   // Backoff
 
