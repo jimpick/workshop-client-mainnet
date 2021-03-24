@@ -10,74 +10,459 @@ const annotations = {
 
   // Candidates
 
-  f02415:
-    'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
-  f02620: 'candidate, Poland, Krakow, @magik6k', // carry-over
-  f02623: 'candidate, China, Karamay', // carry-over
-  f02633:
-    'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
-  f02645:
-    'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
-  f03143:
-    'candidate, Vietman, Ho Chi Minh City + China, Beijing + Shijiazhuang', // carry-over
-  f03491:
-    'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
-  f07990:
-    'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
-  f08025:
-    'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
-  f018780:
-    'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
-  f018781:
-    'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
-  f018783:
-    'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
-  f018784:
-    'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
-  f018785:
-    'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
-  f062318: 'candidate, Korea, Naju', // carry-over
-  f074738: 'candidate, Korea, Icheon-si', // carry-over
-  f080444: 'candidate, China, Chengdu', // carry-over
-  f0128974: 'candidate, Korea, Seoul', // carry-over
-  f0392734: 'candidate, Korea, Icheon-si', // carry-over
+  f01234: "candidate, Belgium, Bonheiden",
+  f01238: "candidate, Vietnam, Hanoi, FILECOIN-VIETNAM",
+  f01240: "candidate, Netherlands, HidNand",
+  f01241: "candidate, China, Karamay",
+  f01247: "candidate, Canada, Montreal",
+  f01276: "candidate, Canada, Brampton, NBFS Canada",
+  f01277: "candidate, Sweden, Stockholm",
+  f01278: "candidate, USA, Grand Rapids, MiMiner",
+  f01280: "candidate, China, Wuxi",
+  f01799: "candidate, China, Jinan + Singapore",
+  f02381: "candidate, China, Dongguan",
+  f02387: "candidate, Canada, Brampton, NBFS Canada",
+  f02401: "candidate, Canada, Chambly, NBFS Canada",
+  f02415: "candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan",
+  f02419: "candidate, China, Shanghai, yuantai",
+  f02490: "candidate, China, Fujian",
+  f02500: "candidate, Korea, Seongnam-si",
+  f02501: "candidate, China, Karamay",
+  f02514: "candidate, China, Karamay",
+  f02520: "candidate, China, Hong Kong + Dongguan",
+  f02540: "candidate, USA, Mobile",
+  f02576: "candidate, Denmark, Gjerlev, BenjaminH",
+  f02606: "candidate, China, Zhejiang",
+  f02619: "candidate, China, Beijing, Blockcasting",
+  f02620: "candidate, Poland, Krakow, @magik6k",
+  f02622: "candidate, China, Karamay",
+  f02623: "candidate, China, Karamay",
+  f02633: "candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan",
+  f02645: "candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan",
+  f03134: "candidate, China, Cangzhou, 乔木信息",
+  f03143: "candidate, Vietman, Ho Chi Minh City + China, Beijing + Shijiazhuang",
+  f03223: "candidate, USA",
+  f03273: "candidate, China, Karamay",
+  f03274: "candidate, China, Karamay",
+  f03275: "candidate, China, Karamay",
+  f03339: "candidate, China, Luzhou, benxun",
+  f03345: "candidate, China, Fuzhou, chh",
+  f03364: "candidate, China, Inner Mongolia",
+  f03482: "candidate, China, Karamay",
+  f03488: "candidate, Korea, Yeongdeungpo-dong",
+  f03491: "candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan",
+  f03624: "candidate, Germany, Chemnitz, ode",
+  f05315: "candidate, China, Karamay",
+  f05316: "candidate, China, Karamay",
+  f05317: "candidate, China, Karamay",
+  f05664: "candidate, China, Hong Kong",
+  f07709: "candidate, Korea, Dongjak-gu",
+  f07850: "candidate, China, Karamay",
+  f07945: "candidate, China, Guangzhou",
+  f07990: "candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan",
+  f07998: "candidate, China, Hangzhou",
+  f08019: "candidate, China, Yantai, 三合",
+  f08025: "candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan",
+  f08103: "candidate, China, Foshan",
+  f08157: "candidate, China, Beijing + Germany, Frankfurt, 超星际",
+  f08240: "candidate, Russia, Novosibirsk, Rabinovitch",
+  f08257: "candidate, China, Zhejiang + Singapore",
+  f08383: "candidate, China, Karamay",
+  f08399: "candidate, USA, Sammamish",
+  f08403: "candidate, UK, Lower Slaughter, TippyFlits",
+  f09693: "candidate, China, Karamay",
+  f09696: "candidate, China, Karamay",
+  f09848: "candidate, USA, Irvine, BigBearLake",
+  f010088: "candidate, NR",
+  f010241: "candidate, China, Beijing + USA, Portland, 6Block-P",
+  f010253: "candidate, China, Karamay",
+  f010254: "candidate, Japan, Minamata",
+  f010405: "candidate, China, Foshan",
+  f010446: "candidate, Netherlands, Angelo",
+  f010479: "candidate, France, Fontenay-sous-Bois, s0nik42",
+  f010507: "candidate, China, Hangzhou",
+  f010513: "candidate, China, Chongqing",
+  f010558: "candidate, NR",
+  f010617: "candidate, Canada, Surrey, kernelogic2, @feiya200",
+  f014409: "candidate, USA, Monroe",
+  f014569: "candidate, China, Yangzhou",
+  f014768: "candidate, Singapore, Funktafide, @Funk",
+  f015233: "candidate, China, Nanjing",
+  f015734: "candidate, China, Qingdao",
+  f015897: "candidate, China, Hong Kong",
+  f015927: "candidate, USA, East Islip, CDImine",
+  f015941: "active-candidate, Ukraine, Kyiv",
+  f016276: "candidate, China, Beijing",
+  f017242: "candidate, China, Guangdong",
+  f017665: "candidate, China, Shenyang",
+  f018501: "candidate, China, Beijing",
+  f018780: "candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan",
+  f018781: "candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan",
+  f018782: "candidate, Singapore + USA + Germany, Frankfurt + UK, London",
+  f018783: "candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan",
+  f018784: "candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan",
+  f018785: "candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan",
+  f019002: "candidate, China, Xiamen",
+  f019100: "candidate, Romania, Cluj-Napoca",
+  f019104: "candidate, Canada, Chambly, NBFS DEV",
+  f019240: "candidate, China, Beijing",
+  f019279: "candidate, Canada, Calgary",
+  f019362: "candidate, China, Hangzhou, 青青子衿",
+  f019399: "candidate, Korea, Busan",
+  f019551: "candidate, UK, Birmingham, @Neofix AF",
+  f019806: "candidate, China, Beijing",
+  f020378: "candidate, Bulgaria, Asenovgrad",
+  f020385: "candidate, Korea, Incheon",
+  f020489: "candidate, China, Lioaning",
+  f020747: "candidate, China, Xiamen",
+  f020904: "candidate, Korea, Uijeongbu-si, FILTop",
+  f021716: "candidate, New Zealand, Wellington",
+  f021961: "candidate, China, Fuzhou",
+  f022130: "candidate, Korea, Seodaemun-gu",
+  f022142: "candidate, USA, Queens, Nelson SR2",
+  f022163: "candidate, dns:fil.akasha.network",
+  f022261: "active-candidate, China, Luzhou",
+  f022289: "candidate, China, Mianyang",
+  f022308: "candidate, China, Bozhou",
+  f022352: "candidate, Norway, Borgen, TechHedge, @Reiers",
+  f022399: "candidate, China, Beijing",
+  f022820: "candidate, China, Guangdong",
+  f023152: "candidate, China, Shandong",
+  f023219: "candidate, China, Beijing + Zhangjiakou",
+  f023467: "candidate, Norway, Oslo, PhiMining.io",
+  f023565: "candidate, China, Fuzhou",
+  f023660: "candidate, China, Fuzhou",
+  f023662: "candidate, China, Fuzhou",
+  f023825: "candidate, China, Karamay",
+  f023853: "candidate, China, Fuzhou",
+  f023854: "candidate, China, Fuzhou",
+  f023855: "candidate, China, Fuzhou",
+  f023858: "candidate, China, Fuzhou",
+  f023859: "candidate, China, Fuzhou",
+  f023861: "candidate, China, Fuzhou",
+  f023868: "candidate, China, Fuzhou",
+  f023869: "candidate, China, Fuzhou",
+  f023870: "candidate, China, Fuzhou",
+  f023871: "candidate, China, Fuzhou",
+  f023876: "candidate, China, Fuzhou",
+  f023928: "candidate, China, Fuzhou",
+  f023971: "candidate, USA",
+  f023977: "candidate, China, Fuzhou",
+  f023978: "candidate, China, Fuzhou",
+  f023980: "candidate, China, Fuzhou",
+  f023981: "candidate, China, Fuzhou",
+  f024006: "candidate, China, Fuzhou",
+  f024007: "candidate, China, Fuzhou",
+  f024008: "candidate, China, Fuzhou",
+  f024012: "candidate, China, Fuzhou",
+  f024013: "candidate, China, Fuzhou",
+  f024014: "candidate, China, Fuzhou",
+  f024015: "candidate, China, Karamay",
+  f024016: "candidate, China, Karamay",
+  f024081: "candidate, undefined",
+  f024084: "candidate, China, Fuzhou",
+  f024085: "candidate, China, Fuzhou",
+  f024136: "candidate, China, Fuzhou",
+  f024146: "candidate, China, Fuzhou",
+  f024147: "candidate, China, Fuzhou",
+  f024148: "candidate, China, Fuzhou",
+  f024184: "candidate, Korea, Yeongdeungpo-dong",
+  f024468: "candidate, China, Shenzhen",
+  f024511: "candidate, China, Shenzhen",
+  f024550: "candidate, China, Wenzhou",
+  f024944: "candidate, Korea, Yeongdeungpo-dong",
+  f025007: "active-candidate, Korea, Gyeonggi-do, PINBYTES-eCUBE",
+  f025025: "candidate, China, Qingdao",
+  f025044: "candidate, undefined",
+  f029344: "candidate, Korea, Seongnam-si",
+  f029401: "candidate, China, Karamay",
+  f029404: "candidate, China, Karamay",
+  f030335: "candidate, China, Fujian",
+  f030384: "candidate, China, Shenzhen",
+  f032833: "candidate, NR",
+  f032934: "candidate, Korea, Incheon",
+  f033036: "candidate, China, Liaoning",
+  f033123: "candidate, China, Karamay",
+  f033189: "candidate, NR",
+  f033356: "candidate, Korea, Yeongdeungpo-dong",
+  f034047: "candidate, China, Hangzhou",
+  f039515: "candidate, China, Chongqing",
+  f039800: "candidate, China, Chengdu",
+  f039940: "candidate, China, Mianyang",
+  f040218: "candidate, China, Wuxi",
+  f042540: "candidate, China, Karamay",
+  f042558: "candidate, China, Karamay",
+  f042567: "candidate, China, Jinhua",
+  f042635: "candidate, China, Karamay",
+  f044160: "candidate, China, Guangzhou, muxing",
+  f047419: "candidate, USA, Waukesha",
+  f048669: "candidate, NR",
+  f049882: "candidate, Netherlands, De Rijp, Chipz",
+  f050022: "candidate, China, Changsha",
+  f052447: "candidate, China, Karamay",
+  f053088: "active-candidate, China, Shanghai",
+  f054370: "candidate, China, Dongguan",
+  f055102: "candidate, Vietman, Ho Chi Minh City + China",
+  f055132: "candidate, Vietman, Ho Chi Minh City + China",
+  f056611: "candidate, China, Karamay",
+  f057614: "candidate, China, Karamay",
+  f057698: "candidate, China, Karamay",
+  f058000: "candidate, China, Suzhou",
+  f058369: "candidate, USA, Boston",
+  f060072: "candidate, China, Chongqing",
+  f061158: "active-candidate, China, Guangdong",
+  f061740: "candidate, China, Karamay",
+  f062260: "candidate, China, Guangzhou",
+  f062318: "candidate, Korea, Naju",
+  f062334: "candidate, China, Karamay",
+  f062353: "candidate, Germany, Frankfurt",
+  f062475: "candidate, NR",
+  f062770: "candidate, China, Fuzhou",
+  f062811: "candidate, China, Fuzhou",
+  f062982: "candidate, China, Fuzhou",
+  f064218: "candidate, USA, Kirkland",
+  f064668: "active-candidate, China, Hong Kong",
+  f065103: "candidate, USA + China, Suzhou + Guangzhou + Karamay",
+  f065200: "candidate, China, Yibin",
+  f065280: "candidate, Korea, Songpa-gu, Data Store Ltd",
+  f065610: "candidate, NR",
+  f066104: "candidate, China, Karamay",
+  f066596: "active-candidate, USA, San Diego",
+  f069915: "candidate, China, Karamay",
+  f069919: "candidate, China, Karamay",
+  f070501: "candidate, USA + China, Hong Kong + Guangzhou",
+  f070999: "candidate, China, Karamay",
+  f071624: "candidate, USA, Boyne City",
+  f071980: "candidate, China, Karamay",
+  f073552: "candidate, China, Karamay",
+  f073628: "candidate, USA, New Castle",
+  f074738: "candidate, Korea, Icheon-si",
+  f078621: "active-candidate, Korea, Uiwang",
+  f078772: "candidate, China, Karamay",
+  f079007: "candidate, China, Jinan",
+  f079247: "candidate, USA + China, Guangzhou + Beijing + Dongguan + Shenzhen",
+  f079301: "candidate, China, Guangzhou + Dongguan + Shenzhen, USA",
+  f079817: "candidate, Russia, Ul'yanovka",
+  f080103: "candidate, Korea, Seongnam-si",
+  f080444: "candidate, China, Chengdu",
+  f080480: "candidate, Ukraine, Lviv",
+  f081644: "candidate, China, Wenzhou",
+  f082356: "candidate, China, Jiaxing",
+  f082452: "candidate, China, Dongguan",
+  f082635: "candidate, NR",
+  f083625: "candidate, China, Karamay",
+  f083903: "candidate, China, Xi'an",
+  f083920: "candidate, NR",
+  f084879: "candidate, Korea, Seongnam-si",
+  f085899: "candidate, China, Wuxi",
+  f086151: "candidate, China, Dongguan",
+  f086366: "candidate, NR",
+  f089840: "candidate, Korea, Yeongdeungpo-gu",
+  f090492: "candidate, NR",
+  f092514: "candidate, China, Karamay",
+  f094614: "candidate, China, Karamay",
+  f096974: "candidate, China, Chongqing",
+  f096976: "candidate, Russia",
+  f097214: "candidate, Korea, Bucheon-si",
+  f097370: "candidate, NR",
+  f097386: "candidate, China, Beijing",
+  f097618: "candidate, China, Suzhou",
+  f097720: "active-candidate, Korea, Bucheon-si",
+  f097777: "candidate, Ukraine, Ivano-Frankivsk",
+  f097914: "candidate, NR",
+  f098664: "candidate, China, Jiangsu",
+  f098706: "candidate, Korea, Icheon-si",
+  f099239: "candidate, China, Hong Kong",
+  f099608: "candidate, Latvia, Riga",
+  f099705: "candidate, China, Zibo",
+  f0100082: "candidate, Korea, Seongnam-si",
+  f0100116: "candidate, Korea, Uljin County",
+  f0101087: "candidate, Korea",
+  f0102313: "active-candidate, Korea, Gangseo-gu",
+  f0102374: "candidate, China, Karamay",
+  f0102375: "candidate, China, Karamay",
+  f0102376: "candidate, China, Karamay",
+  f0102513: "candidate, China, Karamay",
+  f0102641: "candidate, China, Guangzhou",
+  f0103851: "candidate, China, Karamay",
+  f0104671: "candidate, Japan, Ota-ku",
+  f0104967: "candidate, Ukraine, Ternopil",
+  f0105074: "candidate, China, Shanghai",
+  f0106949: "candidate, Korea, Seoul",
+  f0107308: "candidate, China, Shenyang",
+  f0107322: "candidate, China, Chengdu",
+  f0107995: "candidate, NR",
+  f0109043: "candidate, China, Karamay",
+  f0109713: "candidate, China, Beijing",
+  f0110133: "candidate, China, Ningbo",
+  f0110442: "candidate, China, Fujian",
+  f0110804: "candidate, USA, Santa Clara",
+  f0110936: "candidate, China, Fujian",
+  f0111174: "candidate, China, Guangzhou",
+  f0111885: "candidate, Korea, Bucheon-si",
+  f0113331: "candidate, Korea, Jinju + USA",
+  f0114808: "candidate, China, Shanghai",
+  f0114924: "candidate, China, Fujian",
+  f0115238: "candidate, China, Shenyang",
+  f0115744: "candidate, China, Karamay",
+  f0116707: "candidate, Germany, Dusseldorf",
+  f0118360: "candidate, China, Hangzhou",
+  f0120983: "candidate, China, Fujian",
+  f0121450: "candidate, China, Fujian",
+  f0121533: "candidate, China, Zhejiang",
+  f0121768: "candidate, China, Guangdong",
+  f0121958: "candidate, Korea, Seoul",
+  f0123931: "candidate, China, Fujian",
+  f0124102: "candidate, China, Beijing",
+  f0124335: "candidate, Finland, Helsinki",
+  f0124554: "active-candidate, Korea, Gimhae",
+  f0126824: "candidate, Korea, Seongnam-si",
+  f0126868: "candidate, Ukraine, Vinnytsia",
+  f0127896: "candidate, Bulgaria, Sofia",
+  f0128191: "candidate, Korea, Gangnam-gu",
+  f0128974: "candidate, Korea, Seoul",
+  f0129072: "candidate, China, Karamay",
+  f0129805: "candidate, China, Zhejiang + Australia, Adelaide",
+  f0129976: "candidate, Korea, Gwangju",
+  f0130912: "candidate, China, Hong Kong",
+  f0131464: "candidate, USA, Ashburn",
+  f0131611: "candidate, Korea, Jeju City",
+  f0131654: "candidate, Korea, Seoul",
+  f0131857: "candidate, China, Chongqing",
+  f0131901: "candidate, Korea, Daejeon",
+  f0133886: "candidate, China, Guangdong",
+  f0133999: "candidate, China, Changsha",
+  f0134565: "candidate, China, Karamay",
+  f0134671: "active-candidate, Korea, Gimpo-si",
+  f0134682: "candidate, China, Beijing",
+  f0134778: "candidate, China, Beijing",
+  f0134991: "candidate, China, Foshan",
+  f0135078: "candidate, USA, Denver",
+  f0135738: "candidate, China, Karamay",
+  f0136014: "candidate, China, Suzhou",
+  f0136868: "candidate, NR",
+  f0141614: "candidate, China, Fujian",
+  f0141634: "candidate, China, Changsha",
+  f0142606: "active-candidate, Korea, Gangseo-gu",
+  f0142637: "candidate, China, Mianyang",
+  f0145018: "candidate, Korea",
+  f0145162: "candidate, Japan, Kumamoto",
+  f0145313: "candidate, China, Karamay",
+  f0145687: "candidate, NR",
+  f0145784: "candidate, Korea, Seoul",
+  f0145874: "candidate, Canada, Brampton",
+  f0146165: "candidate, China, Huizhou",
+  f0146751: "active-candidate, China, Jiangsu",
+  f0146875: "candidate, China, Karamay",
+  f0147284: "candidate, Korea, Seongnam-si",
+  f0148143: "candidate, China, Tianjin",
+  f0148399: "candidate, China, Karamay",
+  f0149444: "candidate, Korea, Gangseo-gu",
+  f0149765: "candidate, China, Beijing",
+  f0149768: "candidate, China, Dongguan",
+  f0150744: "candidate, Korea, Ulsan",
+  f0151034: "candidate, USA, Syracuse",
+  f0151281: "candidate, China, Karamay",
+  f0151692: "candidate, China, Karamay",
+  f0152747: "candidate, China, Karamay",
+  f0152854: "candidate, China, Huizhou",
+  f0153176: "candidate, China, Fujian",
+  f0154988: "candidate, China, Dongguan",
+  f0155384: "candidate, Korea, Seongnam-si",
+  f0155467: "candidate, Korea, Seongnam-si",
+  f0156207: "active-candidate, Korea, Ulsan",
+  f0156452: "active-candidate, Korea, Ulsan",
+  f0157265: "active-candidate, China, Zhangjiakou",
+  f0157535: "candidate, Canada, Brampton",
+  f0157769: "candidate, China, Changsha",
+  f0157941: "candidate, China, Changsha",
+  f0158142: "candidate, China, Karamay",
+  f0158468: "candidate, China, Guangzhou",
+  f0159961: "candidate, China, Chongqing",
+  f0162394: "candidate, China, Guangzhou",
+  f0165111: "candidate, China, Guangzhou",
+  f0165135: "candidate, China, Guangzhou",
+  f0165375: "candidate, Korea, Seongnam-si",
+  f0165400: "candidate, Canada, Brampton",
+  f0165539: "active-candidate, Japan, Yokohama",
+  f0165643: "candidate, China, Guangzhou",
+  f0168058: "candidate, China, Suzhou",
+  f0187709: "candidate, Russia, Moscow",
+  f0214181: "candidate, Australia, Mosman",
+  f0215497: "active-candidate, Korea, Gangseo-gu",
+  f0215704: "candidate, Korea, Icheon-si",
+  f0216138: "candidate, China, Shenzhen",
+  f0216849: "candidate, China, Fujian",
+  f0218293: "candidate, China, Fujian",
+  f0220004: "candidate, China, Karamay",
+  f0220632: "candidate, China, Fuzhou",
+  f0220827: "candidate, NR",
+  f0221135: "candidate, USA, Atlanta",
+  f0222962: "candidate, China, Karamay",
+  f0224144: "candidate, China, Karamay",
+  f0224841: "candidate, China, Guangzhou",
+  f0224894: "candidate, China, Qingdao",
+  f0225058: "candidate, China, Fuzhou",
+  f0228575: "active-candidate, Canada, Calgary",
+  f0230200: "active-candidate, Korea, Gwanak-gu",
+  f0231161: "candidate, China, Qujing",
+  f0241858: "candidate, China, Fuzhou",
+  f0242152: "active-candidate, Korea, Guro-gu",
+  f0349810: "candidate, China, Qinzhou",
+  f0392734: "candidate, Korea, Icheon-si",
+  f0392785: "candidate, China, Karamay",
+  f0393359: "candidate, China, Suzhou",
+  f0395463: "candidate, Korea, Daegu",
+  f0395472: "candidate, Korea, Daegu",
+  f0395473: "candidate, Korea, Daegu",
+  f0395911: "candidate, NR",
+  f0396188: "candidate, China, Karamay",
+  f0396607: "candidate, Korea, Icheon-si",
+  f0396844: "candidate, Korea, Icheon-si",
+  f0397675: "active-candidate, Korea, Guro-gu",
+  f0397728: "candidate, China, Dongguan",
+  f0397855: "candidate, China, Karamay",
+  f0398286: "candidate, China, Beijing",
+  f0399814: "candidate, China, Ya'an",
+  f0400103: "active-candidate, China, Hong Kong",
+  f0400681: "candidate, USA, Queens",
+  f0401254: "active-candidate, Korea, Uijeongbu-si",
+  f0401287: "candidate, China, Yibin",
+  f0401300: "active-candidate, France, Deuil-la-Barre",
+  f0401303: "candidate, Korea, Ulju-gun",
+  f0401416: "candidate, Japan, Fukuoka",
+  f0402431: "candidate, China, Hangzhou",
+  f0403177: "candidate, China, Huizhou",
+  f0405129: "candidate, China, Fujian",
+  f0406322: "candidate, USA, Long Beach",
+  f0406475: "candidate, China, Dongguan",
+  f0406703: "candidate, USA, Scottsdale",
+  f0408717: "candidate, Korea, Ansan-si",
+  f0409356: "candidate, NR",
+  f0409765: "candidate, China, Karamay",
+  f0410506: "candidate, Korea, Seoul",
+  f0410701: "candidate, China, Changsha",
+  f0413563: "candidate, Korea, Gangnam-gu",
+  f0413684: "candidate, China, Fujian",
+  f0413801: "candidate, China, Fujian",
+  f0421061: "candidate, Korea, Seoul",
+  f0423713: "candidate, China, Qingdao",
+  f0426531: "candidate, Korea, Seongnam-si",
+  f0426933: "candidate, China, Karamay",
+  f0427393: "candidate, China, Karamay",
+  f0427967: "candidate, China, Changsha",
+  f0427994: "candidate, China, Jinhua",
+  f0427996: "candidate, Canada, Bois-des-Filion",
+  f0428150: "candidate, China, Xiamen",
+  f0428177: "candidate, China, Huizhou",
+  f0429006: "candidate, China, Zhangzhou",
+  f0430101: "candidate, NR",
+  f0430997: "candidate, Korea",
+  f0431665: "candidate, China, Karamay",
+  f0434480: "candidate, USA, Hummelstown",
 
   // Active
 
-  f02423: 'active, Ukraine, Kyiv', // 1612372 24 minutes
-  f015941: 'active, Ukraine, Kyiv', // 1612161 about 3 hours
-  f022261: 'active, China, Luzhou', // 1612263 about 3 hours
-  f025007: 'active, Korea, Gyeonggi-do, PINBYTES-eCUBE', // 1612167 about 2 hours
-  f053088: 'active, China, Shanghai', // 1612163 about 2 hours
-  f061158: 'active, China, Guangdong', // 1612268 about 1 hour
-  f064668: 'active, China, Hong Kong', // 1612366 15 minutes
-  f066596: 'active, USA, San Diego', // 1612157 about 7 hours
-  f078621: 'active, Korea, Uiwang', // 1612170 about 6 hours
-  f097720: 'active, Korea, Bucheon-si', // 1612270 about 6 hours
-  f0102313: 'active, Korea, Gangseo-gu', // 1612370 about 5 hours
-  f0122815: 'active, Korea, Bucheon-si', // 1612368 about 5 hours
-  f0124554: 'active, Korea, Gimhae', // 1612299 9 minutes
-  f0134671: 'active, Korea, Gimpo-si', // 1612275 about 4 hours
-  f0137489: 'active, UK, Deeside', // 1612254 about 3 hours
-  f0142606: 'active, Korea, Gangseo-gu', // 1612371 about 5 hours
-  f0146751: 'active, China, Jiangsu', // 1612269 6 days
-  f0156207: 'active, Korea, Ulsan', // 1612169 about 3 hours
-  f0156452: 'active, Korea, Ulsan', // 1612159 about 3 hours
-  f0157265: 'active, NR', // 1612300 6 minutes
-  f0157564: 'active, Korea, Daejeon', // 1612283 about 2 hours
-  f0165539: 'active, Japan, Yokohama', // 1612375 about 3 hours
-  f0215497: 'active, Korea, Gangseo-gu', // 1612166 about 2 hours
-  f0228575: 'active, Canada, Calgary', // 1612302 8 minutes
-  f0230200: 'active, Korea, Gwanak-gu', // 1612301 about 2 hours
-  f0242152: 'active, Korea, Guro-gu', // 1612155 about 2 hours
-  f0397675: 'active, Korea, Guro-gu', // 1612303 about 2 hours
-  f0400103: 'active, China, Hong Kong', // 1612367 about 4 hours
-  f0400920: 'active, NR', // 1612304 about 2 hours
-  f0401254: 'active, Korea, Uijeongbu-si', // 1612266 about 2 hours
-  f0401300: 'active, France, Deuil-la-Barre', // 1612158 about 10 hours
-  f0403896: 'active, USA, Huntersville', // 1612369 about 21 hours
-  f0411786: 'active, Korea, Busan', // 1612165 about 2 hours
-  f0414184: 'active, Spain, Madrid', // 1612265 about 5 hours
 
   // Sealing (active-sealing = previously active, retesting with new deal)
 
@@ -85,356 +470,29 @@ const annotations = {
 
   // Stuck
 
-  f08399: 'stuck, USA, Sammamish', // CheckForAcceptance: 6 days
-  f097777: 'stuck, Ukraine, Ivano-Frankivsk', // CheckForAcceptance: 7 days
-  f0399610: 'stuck, Ukraine', // CheckForAcceptance: 6 days
 
   // Busy
 
-  f015734: 'busy, China, Qingdao', // cannot seal a sector before 597303
 
   // Min-size
 
-  f01234: 'min-size, Belgium, Bonheiden', // 134217728 < 3221225472
-  f01238: 'min-size, Vietnam, Hanoi, FILECOIN-VIETNAM', // 134217728 < 8589934592
-  f01240: 'min-size, Netherlands, HidNand', // 134217728 < 268435456
-  f01276: 'min-size, Canada, Brampton, NBFS Canada', // 268435456 < 4294967296
-  f01278: 'min-size, USA, Grand Rapids, MiMiner', // 134217728 < 1073741824
-  f02387: 'min-size, Canada, Brampton, NBFS Canada', // 134217728 < 17179869184
-  f02401: 'min-size, Canada, Chambly, NBFS Canada', // 134217728 < 17179869184
-  f02576: 'min-size, Denmark, Gjerlev, BenjaminH', // 134217728 < 17179869184
-  f03624: 'min-size, Germany, Chemnitz, ode', // 134217728 < 8589934592
-  f07998: 'min-size, China, Hangzhou', // 134217728 < 17179869184
-  f08240: 'min-size, Russia, Novosibirsk, Rabinovitch', // 134217728 < 1073741824
-  f09848: 'min-size, USA, Irvine, BigBearLake', // 134217728 < 536870912
-  f010088: 'min-size, NR', // 134217728 < 4294967296
-  f010446: 'min-size, Netherlands, Angelo', // 134217728 < 1073741824
-  f010479: 'min-size, France, Fontenay-sous-Bois, s0nik42', // 134217728 < 8589934592
-  f010507: 'min-size, China, Hangzhou', // 134217728 < 1073741824
-  f015927: 'min-size, USA, East Islip, CDImine', // 134217728 < 1073741824
-  f017242: 'min-size, China, Guangdong', // 134217728 < 268435456
-  f018501: 'min-size, China, Beijing', // 134217728 < 1073741824
-  f019104: 'min-size, Canada, Chambly, NBFS DEV', // 134217728 < 4294967296
-  f019279: 'min-size, Canada, Calgary', // 134217728 < 8589934592
-  f019362: 'min-size, China, Hangzhou, 青青子衿', // 134217728 < 17179869184
-  f019399: 'min-size, Korea, Busan', // 134217728 < 268435456
-  f020378: 'min-size, Bulgaria, Asenovgrad', // 134217728 < 2147483648
-  f020385: 'min-size, Korea, Incheon', // 134217728 < 536870912
-  f020904: 'min-size, Korea, Uijeongbu-si, FILTop', // 134217728 < 8589934592
-  f022130: 'min-size, Korea, Seodaemun-gu', // 134217728 < 536870912
-  f022163: 'min-size, dns:fil.akasha.network', // 134217728 < 8589934592
-  f022289: 'min-size, China, Mianyang', // 134217728 < 4294967296
-  f022352: 'min-size, Norway, Borgen, TechHedge, @Reiers', // 134217728 < 536870912
-  f022399: 'min-size, China, Beijing', // 134217728 < 1573031772
-  f023467: 'min-size, Norway, Oslo, PhiMining.io', // 134217728 < 268435456
-  f023660: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023662: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023853: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023854: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023855: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023858: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023859: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023861: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023868: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023869: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023870: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023871: 'min-size, China, Fuzhou', // 134217728 < 4294967296
-  f023928: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023977: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023978: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023980: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f023981: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024006: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024007: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024008: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024012: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024013: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024014: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024081: 'min-size, undefined', // 134217728 < 1572864000
-  f024084: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024085: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024136: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024146: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024147: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f024148: 'min-size, China, Fuzhou', // 134217728 < 1572864000
-  f032934: 'min-size, Korea, Incheon', // 134217728 < 1073741824
-  f033189: 'min-size, NR', // 134217728 < 2147483648
-  f047419: 'min-size, USA, Waukesha', // 134217728 < 8589934592
-  f049882: 'min-size, Netherlands, De Rijp, Chipz', // 134217728 < 268435456
-  f058000: 'min-size, China, Suzhou', // 134217728 < 1073741824
-  f062353: 'min-size, Germany, Frankfurt', // 134217728 < 17179869184
-  f064218: 'min-size, USA, Kirkland', // 134217728 < 2147483648
-  f078522: 'min-size, NR', // 134217728 < 4294967296
-  f079817: "min-size, Russia, Ul'yanovka", // 134217728 < 1073741824
-  f083920: 'min-size, NR', // 134217728 < 1573031772
-  f097618: 'min-size, China, Suzhou', // 134217728 < 524288000
-  f099608: 'min-size, Latvia, Riga', // 134217728 < 268435456
-  f0100116: 'min-size, Korea, Uljin County', // 134217728 < 1073741824
-  f0104967: 'min-size, Ukraine, Ternopil', // 134217728 < 2147483648
-  f0116707: 'min-size, Germany, Dusseldorf', // 134217728 < 4294967296
-  f0118360: 'min-size, China, Hangzhou', // 134217728 < 4294967296
-  f0121768: 'min-size, China, Guangdong', // 134217728 < 1073741824
-  f0124335: 'min-size, Finland, Helsinki', // 134217728 < 1073741824
-  f0127896: 'min-size, Bulgaria, Sofia', // 134217728 < 17179869184
-  f0142637: 'min-size, China, Mianyang', // 134217728 < 4294967296
-  f0145162: 'min-size, Japan, Kumamoto', // 134217728 < 1073741824
-  f0145874: 'min-size, Canada, Brampton', // 134217728 < 4294967296
-  f0157535: 'min-size, Canada, Brampton', // 134217728 < 4294967296
-  f0165400: 'min-size, Canada, Brampton', // 134217728 < 4294967296
-  f0187709: 'min-size, Russia, Moscow', // 134217728 < 1073741824
 
   // Max-size
 
-  f02619: 'max-size, China, Beijing, Blockcasting', // 134217728 > 1048576
-  f08019: 'max-size, China, Yantai, 三合', // 268435456 > 1048576
-  f015233: 'max-size, China, Nanjing', // 134217728 > 1048576
-  f019806: 'max-size, China, Beijing', // 134217728 > 1048576
-  f024944: 'max-size, Korea, Yeongdeungpo-dong', // 134217728 > 1048576
 
   // Min-ask
 
-  f01241: 'min-ask, China, Karamay', // carry-over
-  f01277: 'min-ask, Sweden, Stockholm', // carry-over
-  f01280: 'min-ask, China, Wuxi', // carry-over
-  f01799: 'min-ask, China, Jinan + Singapore', // carry-over
-  f02381: 'min-ask, China, Dongguan', // carry-over
-  f02501: 'min-ask, China, Karamay', // carry-over
-  f02514: 'min-ask, China, Karamay', // carry-over
-  f02606: 'min-ask, China, Zhejiang', // carry-over
-  f02622: 'min-ask, China, Karamay', // carry-over
-  f03223: 'min-ask, USA', // carry-over
-  f03273: 'min-ask, China, Karamay', // carry-over
-  f03274: 'min-ask, China, Karamay', // carry-over
-  f03275: 'min-ask, China, Karamay', // carry-over
-  f03364: 'min-ask, China, Inner Mongolia', // carry-over
-  f03482: 'min-ask, China, Karamay', // carry-over
-  f03488: 'min-ask, Korea, Yeongdeungpo-dong', // carry-over
-  f05315: 'min-ask, China, Karamay', // carry-over
-  f05316: 'min-ask, China, Karamay', // carry-over
-  f05317: 'min-ask, China, Karamay', // carry-over
-  f07850: 'min-ask, China, Karamay', // carry-over
-  f07945: 'min-ask, China, Guangzhou', // carry-over
-  f08157: 'min-ask, China, Beijing + Germany, Frankfurt, 超星际', // carry-over
-  f08383: 'min-ask, China, Karamay', // carry-over
-  f09693: 'min-ask, China, Karamay', // carry-over
-  f09696: 'min-ask, China, Karamay', // carry-over
-  f010253: 'min-ask, China, Karamay', // carry-over
-  f014365: 'min-ask, Australia, Turramurra + Sydney', // carry-over
-  f014409: 'min-ask, USA, Monroe', // carry-over
-  f015897: 'min-ask, China, Hong Kong', // carry-over
-  f018782: 'min-ask, Singapore + USA + Germany, Frankfurt + UK, London', // carry-over
-  f019100: 'min-ask, Romania, Cluj-Napoca', // carry-over
-  f019240: 'min-ask, China, Beijing', // carry-over
-  f020747: 'min-ask, China, Xiamen', // carry-over
-  f022308: 'min-ask, China, Bozhou', // carry-over
-  f023152: 'min-ask, China, Shandong', // carry-over
-  f023495: 'min-ask, China, Karamay', // carry-over
-  f023825: 'min-ask, China, Karamay', // carry-over
-  f024015: 'min-ask, China, Karamay', // carry-over
-  f024016: 'min-ask, China, Karamay', // carry-over
-  f024184: 'min-ask, Korea, Yeongdeungpo-dong', // carry-over
-  f029344: 'min-ask, Korea, Seongnam-si', // carry-over
-  f029401: 'min-ask, China, Karamay', // carry-over
-  f029404: 'min-ask, China, Karamay', // carry-over
-  f030384: 'min-ask, China, Shenzhen', // carry-over
-  f033123: 'min-ask, China, Karamay', // carry-over
-  f033356: 'min-ask, Korea, Yeongdeungpo-dong', // carry-over
-  f039800: 'min-ask, China, Chengdu', // carry-over
-  f040218: 'min-ask, China, Wuxi', // carry-over
-  f042540: 'min-ask, China, Karamay', // carry-over
-  f042558: 'min-ask, China, Karamay', // carry-over
-  f042635: 'min-ask, China, Karamay', // carry-over
-  f050022: 'min-ask, China, Changsha', // carry-over
-  f052447: 'min-ask, China, Karamay', // carry-over
-  f054370: 'min-ask, China, Dongguan', // carry-over
-  f056611: 'min-ask, China, Karamay', // carry-over
-  f057614: 'min-ask, China, Karamay', // carry-over
-  f057698: 'min-ask, China, Karamay', // carry-over
-  f060072: 'min-ask, China, Chongqing', // carry-over
-  f061740: 'min-ask, China, Karamay', // carry-over
-  f062260: 'min-ask, China, Guangzhou', // carry-over
-  f062334: 'min-ask, China, Karamay', // carry-over
-  f062770: 'min-ask, China, Fuzhou', // carry-over
-  f062811: 'min-ask, China, Fuzhou', // carry-over
-  f062982: 'min-ask, China, Fuzhou', // carry-over
-  f065280: 'min-ask, Korea, Songpa-gu, Data Store Ltd', // carry-over
-  f066104: 'min-ask, China, Karamay', // carry-over
-  f069915: 'min-ask, China, Karamay', // carry-over
-  f069919: 'min-ask, China, Karamay', // carry-over
-  f070999: 'min-ask, China, Karamay', // carry-over
-  f071980: 'min-ask, China, Karamay', // carry-over
-  f073552: 'min-ask, China, Karamay', // carry-over
-  f073628: 'min-ask, USA, New Castle', // carry-over
-  f078772: 'min-ask, China, Karamay', // carry-over
-  f079197: 'min-ask, China, Karamay', // carry-over
-  f080480: 'min-ask, Ukraine, Lviv', // carry-over
-  f082356: 'min-ask, China, Jiaxing', // carry-over
-  f082452: 'min-ask, China, Dongguan', // carry-over
-  f083625: 'min-ask, China, Karamay', // carry-over
-  f083903: "min-ask, China, Xi'an", // carry-over
-  f092514: 'min-ask, China, Karamay', // carry-over
-  f094614: 'min-ask, China, Karamay', // carry-over
-  f097386: 'min-ask, China, Beijing', // carry-over
-  f099239: 'min-ask, China, Hong Kong', // carry-over
-  f0101087: 'min-ask, Korea', // carry-over
-  f0102374: 'min-ask, China, Karamay', // carry-over
-  f0102375: 'min-ask, China, Karamay', // carry-over
-  f0102376: 'min-ask, China, Karamay', // carry-over
-  f0102513: 'min-ask, China, Karamay', // carry-over
-  f0102641: 'min-ask, China, Guangzhou', // carry-over
-  f0102670: 'min-ask, China, Xiamen', // carry-over
-  f0103851: 'min-ask, China, Karamay', // carry-over
-  f0104671: 'min-ask, Japan, Ota-ku', // carry-over
-  f0105074: 'min-ask, China, Shanghai', // carry-over
-  f0107308: 'min-ask, China, Shenyang', // carry-over
-  f0109713: 'min-ask, China, Beijing', // carry-over
-  f0110442: 'min-ask, China, Fujian', // carry-over
-  f0110936: 'min-ask, China, Fujian', // carry-over
-  f0114808: 'min-ask, China, Shanghai', // carry-over
-  f0114924: 'min-ask, China, Fujian', // carry-over
-  f0115744: 'min-ask, China, Karamay', // carry-over
-  f0120983: 'min-ask, China, Fujian', // carry-over
-  f0121450: 'min-ask, China, Fujian', // carry-over
-  f0123931: 'min-ask, China, Fujian', // carry-over
-  f0124102: 'min-ask, China, Beijing', // carry-over
-  f0126898: 'min-ask, China, Harbin', // carry-over
-  f0129072: 'min-ask, China, Karamay', // carry-over
-  f0129976: 'min-ask, Korea, Gwangju', // carry-over
-  f0131654: 'min-ask, Korea, Seoul', // carry-over
-  f0133999: 'min-ask, China, Changsha', // carry-over
-  f0134565: 'min-ask, China, Karamay', // carry-over
-  f0134682: 'min-ask, China, Beijing', // carry-over
-  f0134778: 'min-ask, China, Beijing', // carry-over
-  f0134991: 'min-ask, China, Foshan', // carry-over
-  f0135738: 'min-ask, China, Karamay', // carry-over
-  f0136014: 'min-ask, China, Suzhou', // carry-over
-  f0141614: 'min-ask, China, Fujian', // carry-over
-  f0141634: 'min-ask, China, Changsha', // carry-over
-  f0145313: 'min-ask, China, Karamay', // carry-over
-  f0145784: 'min-ask, Korea, Seoul', // carry-over
-  f0146165: 'min-ask, China, Huizhou', // carry-over
-  f0146875: 'min-ask, China, Karamay', // carry-over
-  f0148399: 'min-ask, China, Karamay', // carry-over
-  f0149765: 'min-ask, China, Beijing', // carry-over
-  f0149768: 'min-ask, China, Dongguan', // carry-over
-  f0151281: 'min-ask, China, Karamay', // carry-over
-  f0151692: 'min-ask, China, Karamay', // carry-over
-  f0152747: 'min-ask, China, Karamay', // carry-over
-  f0152854: 'min-ask, China, Huizhou', // carry-over
-  f0153176: 'min-ask, China, Fujian', // carry-over
-  f0154988: 'min-ask, China, Dongguan', // carry-over
-  f0157769: 'min-ask, China, Changsha', // carry-over
-  f0158142: 'min-ask, China, Karamay', // carry-over
-  f0158468: 'min-ask, China, Guangzhou', // carry-over
-  f0165111: 'min-ask, China, Guangzhou', // carry-over
-  f0165135: 'min-ask, China, Guangzhou', // carry-over
-  f0216849: 'min-ask, China, Fujian', // carry-over
-  f0218293: 'min-ask, China, Fujian', // carry-over
-  f0220004: 'min-ask, China, Karamay', // carry-over
-  f0220632: 'min-ask, China, Fuzhou', // carry-over
-  f0220827: 'min-ask, NR', // carry-over
-  f0222962: 'min-ask, China, Karamay', // carry-over
-  f0224144: 'min-ask, China, Karamay', // carry-over
-  f0224841: 'min-ask, China, Guangzhou', // carry-over
-  f0225058: 'min-ask, China, Fuzhou', // carry-over
-  f0392785: 'min-ask, China, Karamay', // carry-over
-  f0396188: 'min-ask, China, Karamay', // carry-over
-  f0397855: 'min-ask, China, Karamay', // carry-over
-  f0406475: 'min-ask, China, Dongguan', // carry-over
-  f0409765: 'min-ask, China, Karamay', // carry-over
-  f0410506: 'min-ask, Korea, Seoul', // carry-over
-  f0413684: 'min-ask, China, Fujian', // carry-over
-  f0413801: 'min-ask, China, Fujian', // carry-over
 
   // Xfr-failed
 
-  f03345: 'xfr-failed, China, Fuzhou, chh',
-  f08103: 'xfr-failed, China, Foshan',
-  f010405: 'xfr-failed, China, Foshan',
-  f010513: 'xfr-failed, China, Chongqing',
-  f016276: 'xfr-failed, China, Beijing',
-  f024468: 'xfr-failed, China, Shenzhen',
-  f024511: 'xfr-failed, China, Shenzhen',
-  f030125: 'xfr-failed, China, Nantong',
-  f030335: 'xfr-failed, China, Fujian',
-  f039515: 'xfr-failed, China, Chongqing',
-  f042567: 'xfr-failed, China, Jinhua',
-  f044160: 'xfr-failed, China, Guangzhou, muxing',
-  f081644: 'xfr-failed, China, Wenzhou',
-  f094374: 'xfr-failed, China, Nanyang',
-  f0101387: 'xfr-failed, China, Shenzhen',
-  f0107322: 'xfr-failed, NR',
-  f0129805: 'xfr-failed, China, Zhejiang + Australia, Adelaide',
-  f0137168: 'xfr-failed, China, Beijing',
-  f0148143: 'xfr-failed, China, Tianjin',
-  f0159961: 'xfr-failed, China, Chongqing',
-  f0165643: 'xfr-failed, China, Guangzhou',
-  f0168058: 'xfr-failed, NR',
-  f0224894: 'xfr-failed, China, Qingdao',
-  f0231161: 'xfr-failed, China, Qujing',
-  f0349810: 'xfr-failed, China, Qinzhou',
-  f0401287: 'xfr-failed, China, Yibin',
-  f0401416: 'xfr-failed, Japan, Fukuoka',
-  f0405129: 'xfr-failed, China, Fujian',
-  f0406478: 'xfr-failed, NR',
-  f0410701: 'xfr-failed, China, Changsha',
-  f0413178: 'xfr-failed, China, Suqian',
 
   // Error
 
-  f02540: 'error, USA, Mobile', // error awaiting deal pre-commit: handling applied event: deal 1612151 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f03134: 'error, China, Cangzhou, 乔木信息', // error awaiting deal pre-commit: handling applied event: deal 1612150 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f03339: 'error, China, Luzhou, benxun', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 599251): failed to look up deal on chain: deal 1612156 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f010617: 'error, Canada, Surrey, kernelogic2, @feiya200', // stream reset
-  f022142: 'error, USA, Queens, Nelson SR2', // error awaiting deal pre-commit: handling applied event: deal 1612273 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f055102: 'error, Vietman, Ho Chi Minh City + China', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 599251): failed to look up deal on chain: deal 1612271 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f055132: 'error, Vietman, Ho Chi Minh City + China', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 608890): failed to look up deal on chain: deal 1612272 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f058369: 'error, USA, Boston', // deal failed: (State=26) error calling node: publishing deal: cannot publish deal with piece CID baga6ea4seaqmaaihr7ag6gv24ctq54sjm57ms2zv4baqu3axdvqgu32hauk56by: current epoch 603436 has passed deal proposal start epoch 597237
-  f065200: 'error, China, Yibin', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 599251): failed to look up deal on chain: deal 1612274 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f085899: 'error, China, Wuxi', // deal failed: (State=11) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals exit code: SysErrOutOfGas(7)
-  f089840: 'error, Korea, Yeongdeungpo-gu', // error awaiting deal pre-commit: handling applied event: deal 1612162 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f096976: 'error, Russia', // error awaiting deal pre-commit: handling applied event: deal 1612168 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f0110133: 'error, China, Ningbo', // error awaiting deal pre-commit: handling applied event: deal 1612317 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f0128191: 'error, Korea, Gangnam-gu', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 599251): failed to look up deal on chain: deal 1612253 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f0130912: 'error, NR', // error awaiting deal pre-commit: handling applied event: deal 1612373 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f0145018: 'error, Korea', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 608890): failed to look up deal on chain: deal 1612284 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f0149444: 'error, Korea, Gangseo-gu', // error awaiting deal pre-commit: handling applied event: deal 1612153 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f0150744: 'error, Korea, Ulsan', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 599251): failed to look up deal on chain: deal 1612164 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f0216138: 'error, China, Shenzhen', // error awaiting deal pre-commit: handling applied event: deal 1612286 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f0225676: 'error, Korea, Guro-gu', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 599251): failed to look up deal on chain: deal 1612282 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f0393359: 'error, China, Suzhou', // error in deal activation: failed to set up called handler: called check error (h: 599251): failed to look up deal on chain: deal 1612374 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f0400681: 'error, USA, Queens', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 599251): failed to look up deal on chain: deal 1612127 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f0401303: 'error, Korea, Ulju-gun', // error in deal activation: failed to set up called handler: called check error (h: 608890): failed to look up deal on chain: deal 1612264 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f0402975: 'error, Korea', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 599251): failed to look up deal on chain: deal 1612160 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f0413563: 'error, Korea, Gangnam-gu', // error awaiting deal pre-commit: failed to set up called handler: called check error (h: 599251): failed to look up deal on chain: deal 1612285 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
 
   // Backoff
 
   // Rejected
 
-  f02419: 'rejected, China, Shanghai, yuantai', // sh: 1: VerifiedDeal:true: Permission denied
-  f02500: 'rejected, Korea, Seongnam-si', // miner is not accepting unverified storage deals
-  f08403: 'rejected, UK, Lower Slaughter, TippyFlits', // Miner temporarily offline - BACK SOON
-  f010254: 'rejected, Japan, Minamata',
-  f014569: 'rejected, China, Yangzhou',
-  f014768: 'rejected, Singapore, Funktafide, @Funk', // proposed provider collateral above maximum: 70470903848562 > 70460896583216
-  f023565: 'rejected, China, Fuzhou', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
-  f039940: 'rejected, China, Mianyang',
-  f048669: 'rejected, NR',
-  f084879: 'rejected, Korea, Seongnam-si', // miner is not accepting unverified storage deals
-  f098706: 'rejected, Korea, Icheon-si', // miner is not accepting unverified storage deals
-  f0100082: 'rejected, Korea, Seongnam-si', // miner is not accepting unverified storage deals
-  f0107995: 'rejected, NR', // miner is not accepting unverified storage deals
-  f0121958: 'rejected, Korea, Seoul', // miner is not accepting unverified storage deals
-  f0126824: 'rejected, Korea, Seongnam-si', // no online
-  f0131611: 'rejected, Korea, Jeju City', // miner is not accepting unverified storage deals
-  f0147284: 'rejected, Korea, Seongnam-si', // no online
-  f0155384: 'rejected, Korea, Seongnam-si', // no online
-  f0155467: 'rejected, Korea, Seongnam-si', // no online
-  f0215704: 'rejected, Korea, Icheon-si', // miner is not accepting unverified storage deals
-  f0395911: 'rejected, NR', // miner is not accepting unverified storage deals
-  f0396607: 'rejected, Korea, Icheon-si', // miner is not accepting unverified storage deals
-  f0396844: 'rejected, Korea, Icheon-si', // miner is not accepting unverified storage deals
 
   // Dial
 
@@ -442,39 +500,6 @@ const annotations = {
 
   // Error during ask
 
-  f02490: 'error-ask, China, Fujian', // carry-over
-  f05664: 'error-ask, China, Hong Kong', // carry-over
-  f08257: 'error-ask, China, Zhejiang + Singapore', // carry-over
-  f010558: 'error-ask, NR', // carry-over
-  f017665: 'error-ask, China, Shenyang', // carry-over
-  f020489: 'error-ask, China, Lioaning', // carry-over
-  f022820: 'error-ask, China, Guangdong', // carry-over
-  f023971: 'error-ask, USA', // carry-over
-  f033036: 'error-ask, China, Liaoning', // carry-over
-  f034047: 'error-ask, China, Hangzhou', // carry-over
-  f034658: 'error-ask, NR', // carry-over
-  f063628: 'error-ask, NR', // carry-over
-  f065103: 'error-ask, USA + China, Suzhou + Guangzhou + Karamay', // carry-over
-  f070501: 'error-ask, USA + China, Hong Kong + Guangzhou', // carry-over
-  f079247: 'error-ask, USA + China, Guangzhou + Beijing + Dongguan + Shenzhen', // carry-over
-  f079301: 'error-ask, China, Guangzhou + Dongguan + Shenzhen, USA', // carry-over
-  f080103: 'error-ask, Korea, Seongnam-si', // carry-over
-  f0106949: 'error-ask, Korea, Seoul', // carry-over
-  f0110804: 'error-ask, USA, Santa Clara', // carry-over
-  f0113331: 'error-ask, Korea, Jinju + USA', // carry-over
-  f0115238: 'error-ask, China, Shenyang', // carry-over
-  f0131464: 'error-ask, USA, Ashburn', // carry-over
-  f0135758: 'error-ask, NR', // carry-over
-  f0144615: 'error-ask, NR', // carry-over
-  f0145385: 'error-ask, Malaysia, Petaling Jaya', // carry-over
-  f0155258: 'error-ask, NR', // carry-over
-  f0157513: 'error-ask, Korea, Bucheon-si', // carry-over
-  f0157941: 'error-ask, China, Changsha', // carry-over
-  f0160135: 'error-ask, NR', // carry-over
-  f0162394: 'error-ask, NR', // carry-over
-  f0165375: 'error-ask, Korea, Seongnam-si', // carry-over
-  f0229547: 'error-ask, Japan, Yokohama', // carry-over
-  f0391381: 'error-ask, NR' // carry-over
 }
 
 export default annotations
