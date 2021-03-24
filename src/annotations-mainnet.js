@@ -16,82 +16,7 @@ const annotations = {
 
   // Inflight
 
-  f082095: 'inflight, NR', // FundsReserved: about 3 hours
-  f0161819: 'inflight, NR', // FundsReserved: about 1 hour
-  f0166843: 'inflight, NR', // FundsReserved: about 1 hour
-  f0166896: 'inflight, NR', // FundsReserved: about 1 hour
-  f0167458: 'inflight, NR', // FundsReserved: about 1 hour
-  f0169053: 'inflight, NR', // FundsReserved: about 1 hour
-  f0207949: 'inflight, NR', // FundsReserved: about 1 hour
-  f0214334: 'inflight, NR', // FundsReserved: about 1 hour
-  f0215461: 'inflight, NR', // FundsReserved: about 1 hour
-  f0216463: 'inflight, NR', // FundsReserved: about 1 hour
-  f0217771: 'inflight, NR', // FundsReserved: about 1 hour
-  f0217789: 'inflight, NR', // FundsReserved: about 1 hour
-  f0218072: 'inflight, NR', // FundsReserved: about 1 hour
-  f0218092: 'inflight, NR', // FundsReserved: about 1 hour
-  f0219106: 'inflight, NR', // FundsReserved: about 1 hour
-  f0225285: 'inflight, NR', // FundsReserved: about 1 hour
-  f0226303: 'inflight, NR', // FundsReserved: about 1 hour
-  f0226418: 'inflight, NR', // FundsReserved: about 1 hour
-  f0226520: 'inflight, NR', // FundsReserved: about 1 hour
-  f0229199: 'inflight, NR', // FundsReserved: about 1 hour
-  f0229437: 'inflight, NR', // FundsReserved: about 1 hour
-  f0230449: 'inflight, NR', // FundsReserved: about 1 hour
-  f0230799: 'inflight, NR', // FundsReserved: about 1 hour
-  f0230861: 'inflight, NR', // FundsReserved: about 1 hour
-  f0231481: 'inflight, NR', // FundsReserved: about 1 hour
-  f0231782: 'inflight, NR', // FundsReserved: about 1 hour
-  f0232650: 'inflight, NR', // FundsReserved: about 1 hour
-  f0391212: 'inflight, NR', // FundsReserved: about 1 hour
-  f0391214: 'inflight, NR', // FundsReserved: about 1 hour
-  f0391235: 'inflight, NR', // FundsReserved: about 1 hour
-  f0391439: 'inflight, NR', // FundsReserved: about 1 hour
-  f0392430: 'inflight, NR', // FundsReserved: 43 minutes
-  f0392488: 'inflight, NR', // FundsReserved: 43 minutes
-  f0392924: 'inflight, NR', // FundsReserved: 43 minutes
-  f0392999: 'inflight, NR', // FundsReserved: 43 minutes
-  f0393016: 'inflight, NR', // FundsReserved: 41 minutes
-  f0393417: 'inflight, NR', // FundsReserved: 41 minutes
-  f0394102: 'inflight, NR', // FundsReserved: 41 minutes
-  f0395680: 'inflight, NR', // FundsReserved: 39 minutes
-  f0395994: 'inflight, NR', // FundsReserved: 39 minutes
-  f0396149: 'inflight, NR', // FundsReserved: 39 minutes
-  f0396217: 'inflight, NR', // FundsReserved: 36 minutes
-  f0396422: 'inflight, NR', // FundsReserved: 36 minutes
-  f0396452: 'inflight, NR', // FundsReserved: 36 minutes
-  f0396473: 'inflight, NR', // FundsReserved: 36 minutes
-  f0396705: 'inflight, NR', // FundsReserved: 36 minutes
-  f0396846: 'inflight, NR', // FundsReserved: 35 minutes
-  f0397052: 'inflight, NR', // FundsReserved: 35 minutes
-  f0397083: 'inflight, NR', // FundsReserved: 35 minutes
-  f0397332: 'inflight, NR', // FundsReserved: 33 minutes
-  f0397561: 'inflight, NR', // FundsReserved: 33 minutes
-  f0397794: 'inflight, NR', // FundsReserved: 33 minutes
-  f0397802: 'inflight, NR', // FundsReserved: 31 minutes
-  f0398999: 'inflight, NR', // FundsReserved: 31 minutes
-  f0399111: 'inflight, NR', // FundsReserved: 31 minutes
-  f0399743: 'inflight, NR', // FundsReserved: 28 minutes
-  f0399996: 'inflight, NR', // FundsReserved: 28 minutes
-  f0400307: 'inflight, NR', // FundsReserved: 28 minutes
-  f0401677: 'inflight, NR', // FundsReserved: 28 minutes
-  f0402233: 'inflight, NR', // FundsReserved: 28 minutes
-  f0402314: 'inflight, NR', // FundsReserved: 26 minutes
-  f0402492: 'inflight, NR', // FundsReserved: 26 minutes
-  f0402661: 'inflight, NR', // FundsReserved: 26 minutes
-  f0402822: 'inflight, NR', // FundsReserved: 26 minutes
-  f0403529: 'inflight, NR', // FundsReserved: 24 minutes
-  f0404193: 'inflight, NR', // FundsReserved: 24 minutes
-  f0404643: 'inflight, NR', // FundsReserved: 24 minutes
-  f0406533: 'inflight, NR', // FundsReserved: 22 minutes
-  f0407244: 'inflight, NR', // FundsReserved: 22 minutes
-  f0407733: 'inflight, NR', // FundsReserved: 22 minutes
-  f0408629: 'inflight, NR', // FundsReserved: 22 minutes
-  f0409172: 'inflight, NR', // FundsReserved: 22 minutes
-  f0409399: 'inflight, NR', // FundsReserved: 20 minutes
-  f0409499: 'inflight, NR', // FundsReserved: 20 minutes
-  f0410001: 'inflight, NR', // FundsReserved: 20 minutes
-  f0410023: 'inflight, NR', // FundsReserved: 19 minutes
+  f082095: 'inflight, NR', // FundsReserved: about 4 hours
 
   // Unknown
 
@@ -170,6 +95,7 @@ const annotations = {
   f0131857: 'sealing, China, Chongqing', // 1627796
   f0131901: 'sealing, Korea, Daejeon', // 1627852
   f0134671: 'sealing, Korea, Gimpo-si', // 1627839
+  f0136868: 'sealing, NR', // 1631508
   f0142606: 'sealing, Korea, Gangseo-gu', // 1627781
   f0145018: 'sealing, Korea', // 1627809
   f0146751: 'sealing, China, Jiangsu', // 1627778
@@ -179,17 +105,24 @@ const annotations = {
   f0165539: 'sealing, Japan, Yokohama', // 1627859
   f0165643: 'sealing, China, Guangzhou', // 1627777
   f0168058: 'sealing, NR', // 1627787
+  f0214181: 'sealing, Australia, Mosman', // 1631506
   f0231161: 'sealing, China, Qujing', // 1627795
   f0242152: 'sealing, Korea, Guro-gu', // 1627786
   f0349810: 'sealing, China, Qinzhou', // 1627810
   f0393359: 'sealing, China, Suzhou', // 1627813
+  f0395463: 'sealing, NR', // 1631511
+  f0395472: 'sealing, NR', // 1631521
+  f0395473: 'sealing, NR', // 1631520
   f0397675: 'sealing, Korea, Guro-gu', // 1627792
+  f0397728: 'sealing, NR', // 1631523
+  f0398286: 'sealing, NR', // 1631525
   f0399814: "sealing, China, Ya'an", // 1627855
   f0400681: 'sealing, USA, Queens', // 1627811
   f0401254: 'sealing, Korea, Uijeongbu-si', // 1627789
   f0401287: 'sealing, China, Yibin', // 1627791
   f0401300: 'sealing, France, Deuil-la-Barre', // 1627793
   f0401303: 'sealing, Korea, Ulju-gun', // 1627812
+  f0402431: 'sealing, NR', // 1631527
   f0403177: 'sealing, China, Huizhou', // 1627861
   f0405129: 'sealing, China, Fujian', // 1627814
   f0408717: 'sealing, Korea, Ansan-si', // 1627862
@@ -204,17 +137,9 @@ const annotations = {
 
   // Stuck
 
-  f097720: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 3 hours
-  f0136868: 'stuck, NR', // CheckForAcceptance: about 1 hour
-  f0214181: 'stuck, Australia, Mosman', // CheckForAcceptance: about 1 hour
-  f0215497: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: about 3 hours
-  f0395463: 'stuck, NR', // CheckForAcceptance: 41 minutes
-  f0395472: 'stuck, NR', // CheckForAcceptance: 39 minutes
-  f0395473: 'stuck, NR', // CheckForAcceptance: 39 minutes
-  f0397728: 'stuck, NR', // CheckForAcceptance: 33 minutes
-  f0398286: 'stuck, NR', // CheckForAcceptance: 31 minutes
-  f0402431: 'stuck, NR', // CheckForAcceptance: 27 minutes
-  f0430101: 'stuck, NR', // CheckForAcceptance: about 3 hours
+  f097720: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 5 hours
+  f0215497: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: about 5 hours
+  f0430101: 'stuck, NR', // CheckForAcceptance: about 5 hours
 
   // Busy
 
@@ -1659,13 +1584,23 @@ const annotations = {
   f0164260: 'xnr, NR',
   f0166425: 'xnr, NR',
   f0166843: 'xnr, NR',
+  f0166896: 'xnr, NR',
   f0167458: 'xnr, NR',
   f0168537: 'xnr, NR',
   f0169053: 'xnr, NR',
   f0169097: 'xnr, NR',
+  f0207949: 'xnr, NR',
+  f0214334: 'xnr, NR',
+  f0215461: 'xnr, NR',
+  f0216463: 'xnr, NR',
   f0216822: 'xnr, NR',
   f0217419: 'xnr, NR',
+  f0217771: 'xnr, NR',
+  f0217789: 'xnr, NR',
+  f0218072: 'xnr, NR',
+  f0218092: 'xnr, NR',
   f0218407: 'xnr, NR',
+  f0219106: 'xnr, NR',
   f0220156: 'xnr, NR',
   f0220911: 'xnr, NR',
   f0222611: 'xnr, NR',
@@ -1680,12 +1615,23 @@ const annotations = {
   f0224984: 'xnr, China, Wuhan',
   f0225285: 'xnr, NR',
   f0225880: 'xnr, NR',
+  f0226303: 'xnr, NR',
+  f0226418: 'xnr, NR',
+  f0226520: 'xnr, NR',
   f0228232: 'xnr, NR',
+  f0229199: 'xnr, NR',
+  f0229437: 'xnr, NR',
   f0229547: 'xnr, Japan, Yokohama',
+  f0230449: 'xnr, NR',
+  f0230799: 'xnr, NR',
+  f0230861: 'xnr, NR',
   f0231112: 'xnr, NR',
+  f0231481: 'xnr, NR',
+  f0231782: 'xnr, NR',
   f0232358: 'xnr, NR',
   f0232437: 'xnr, NR',
   f0232459: 'xnr, NR',
+  f0232650: 'xnr, NR',
   f0239266: 'xnr, NR',
   f0240035: 'xnr, NR',
   f0240185: 'xnr, NR',
@@ -1696,13 +1642,62 @@ const annotations = {
   f0242373: 'xnr, NR',
   f0242420: 'xnr, NR',
   f0377277: 'xnr, NR',
+  f0391212: 'xnr, NR',
+  f0391214: 'xnr, NR',
+  f0391235: 'xnr, NR',
   f0391381: 'xnr, NR',
+  f0391439: 'xnr, NR',
+  f0392430: 'xnr, NR',
+  f0392488: 'xnr, NR',
   f0392707: 'xnr, Korea, Chuncheon',
+  f0392924: 'xnr, NR',
+  f0392999: 'xnr, NR',
+  f0393016: 'xnr, NR',
+  f0393417: 'xnr, NR',
+  f0394102: 'xnr, NR',
   f0394461: 'xnr, Korea, Seoul',
+  f0395680: 'xnr, NR',
+  f0395994: 'xnr, NR',
+  f0396149: 'xnr, NR',
+  f0396217: 'xnr, NR',
+  f0396422: 'xnr, NR',
+  f0396452: 'xnr, NR',
+  f0396473: 'xnr, NR',
+  f0396705: 'xnr, NR',
+  f0396846: 'xnr, NR',
+  f0397052: 'xnr, NR',
+  f0397083: 'xnr, NR',
+  f0397332: 'xnr, NR',
+  f0397561: 'xnr, NR',
+  f0397794: 'xnr, NR',
+  f0397802: 'xnr, NR',
   f0398338: 'xnr, USA, Cleveland',
+  f0398999: 'xnr, NR',
+  f0399111: 'xnr, NR',
+  f0399743: 'xnr, NR',
+  f0399996: 'xnr, NR',
   f0400264: 'xnr, NR',
+  f0400307: 'xnr, NR',
+  f0401677: 'xnr, NR',
+  f0402233: 'xnr, NR',
+  f0402314: 'xnr, NR',
+  f0402492: 'xnr, NR',
+  f0402661: 'xnr, NR',
+  f0402822: 'xnr, NR',
+  f0403529: 'xnr, NR',
+  f0404193: 'xnr, NR',
+  f0404643: 'xnr, NR',
   f0406478: 'xnr, NR',
+  f0406533: 'xnr, NR',
+  f0407244: 'xnr, NR',
+  f0407733: 'xnr, NR',
   f0408582: 'xnr, NR',
+  f0408629: 'xnr, NR',
+  f0409172: 'xnr, NR',
+  f0409399: 'xnr, NR',
+  f0409499: 'xnr, NR',
+  f0410001: 'xnr, NR',
+  f0410023: 'xnr, NR',
   f0413178: 'xnr, China, Suqian',
   f0419311: 'xnr, NR',
   f0419331: 'xnr, NR',
