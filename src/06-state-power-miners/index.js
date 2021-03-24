@@ -1276,6 +1276,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                                 }
                                 draft.minerCacheInvalidate[miner] = Date.now()
                               })
+                              console.log(`Invalidated ${miner}`)
                             }}
                           >
                             Invalidate
@@ -1302,6 +1303,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                               }
                               draft.minerCacheInvalidate[miner] = Date.now()
                             })
+                            console.log(`Invalidated ${miner}`)
                           }}
                         >
                           Invalidate

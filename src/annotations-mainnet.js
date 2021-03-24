@@ -14,6 +14,8 @@ const annotations = {
 
   // New
 
+  f0437246: 'new, China, Hangzhou',
+
   // Inflight
 
   f082095: 'inflight, NR', // FundsReserved: about 4 hours
@@ -29,7 +31,7 @@ const annotations = {
   f0106949: 'active-sealing, Korea, Seoul', // 1627751
   f0156207: 'active-sealing, Korea, Ulsan', // 1627749
   f0156452: 'active-sealing, Korea, Ulsan', // 1627744
-  f0157265: 'active-sealing, NR', // 1627748
+  f0157265: 'active-sealing, China, Zhangjiakou', // 1627748
   f0159961: 'active-sealing, China, Chongqing', // 1627746
   f0165375: 'active-sealing, Korea, Seongnam-si', // 1627747
   f0224894: 'active-sealing, China, Qingdao', // 1627741
@@ -81,17 +83,17 @@ const annotations = {
   f098664: 'sealing, China, Jiangsu', // 1627845
   f099705: 'sealing, China, Zibo', // 1627844
   f0102313: 'sealing, Korea, Gangseo-gu', // 1627770
-  f0107322: 'sealing, NR', // 1627773
+  f0107322: 'sealing, China, Chengdu', // 1627773
   f0109043: 'sealing, China, Karamay', // 1627850
   f0110133: 'sealing, China, Ningbo', // 1627775
   f0110804: 'sealing, USA, Santa Clara', // 1627774
-  f0111174: 'sealing, NR', // 1627797
+  f0111174: 'sealing, China, Guangzhou', // 1627797
   f0111885: 'sealing, Korea, Bucheon-si', // 1627849
   f0113331: 'sealing, Korea, Jinju + USA', // 1627771
   f0121533: 'sealing, China, Zhejiang', // 1627851
   f0128191: 'sealing, Korea, Gangnam-gu', // 1627808
   f0129805: 'sealing, China, Zhejiang + Australia, Adelaide', // 1627769
-  f0130912: 'sealing, NR', // 1627807
+  f0130912: 'sealing, China, Hong Kong', // 1627807
   f0131857: 'sealing, China, Chongqing', // 1627796
   f0131901: 'sealing, Korea, Daejeon', // 1627852
   f0134671: 'sealing, Korea, Gimpo-si', // 1627839
@@ -101,28 +103,28 @@ const annotations = {
   f0146751: 'sealing, China, Jiangsu', // 1627778
   f0149444: 'sealing, Korea, Gangseo-gu', // 1627776
   f0150744: 'sealing, Korea, Ulsan', // 1627837
-  f0162394: 'sealing, NR', // 1627785
+  f0162394: 'sealing, China, Guangzhou', // 1627785
   f0165539: 'sealing, Japan, Yokohama', // 1627859
   f0165643: 'sealing, China, Guangzhou', // 1627777
-  f0168058: 'sealing, NR', // 1627787
+  f0168058: 'sealing, China, Suzhou', // 1627787
   f0214181: 'sealing, Australia, Mosman', // 1631506
   f0231161: 'sealing, China, Qujing', // 1627795
   f0242152: 'sealing, Korea, Guro-gu', // 1627786
   f0349810: 'sealing, China, Qinzhou', // 1627810
   f0393359: 'sealing, China, Suzhou', // 1627813
-  f0395463: 'sealing, NR', // 1631511
-  f0395472: 'sealing, NR', // 1631521
-  f0395473: 'sealing, NR', // 1631520
+  f0395463: 'sealing, Korea, Daegu', // 1631511
+  f0395472: 'sealing, Korea, Daegu', // 1631521
+  f0395473: 'sealing, Korea, Daegu', // 1631520
   f0397675: 'sealing, Korea, Guro-gu', // 1627792
-  f0397728: 'sealing, NR', // 1631523
-  f0398286: 'sealing, NR', // 1631525
+  f0397728: 'sealing, China, Dongguan', // 1631523
+  f0398286: 'sealing, China, Beijing', // 1631525
   f0399814: "sealing, China, Ya'an", // 1627855
   f0400681: 'sealing, USA, Queens', // 1627811
   f0401254: 'sealing, Korea, Uijeongbu-si', // 1627789
   f0401287: 'sealing, China, Yibin', // 1627791
   f0401300: 'sealing, France, Deuil-la-Barre', // 1627793
   f0401303: 'sealing, Korea, Ulju-gun', // 1627812
-  f0402431: 'sealing, NR', // 1631527
+  f0402431: 'sealing, China, Hangzhou', // 1631527
   f0403177: 'sealing, China, Huizhou', // 1627861
   f0405129: 'sealing, China, Fujian', // 1627814
   f0408717: 'sealing, Korea, Ansan-si', // 1627862
