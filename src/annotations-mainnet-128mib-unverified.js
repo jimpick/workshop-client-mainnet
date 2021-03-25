@@ -34,6 +34,7 @@ const annotations = {
   f025007: 'sealing, Korea, Gyeonggi-do, PINBYTES-eCUBE', // 1632300
   f039515: 'sealing, China, Chongqing, valarhash', // 1632340
   f044160: 'sealing, China, Guangzhou, muxing', // 1632081
+  f049882: 'sealing, Netherlands, De Rijp, Chipz', // 1632393
   f061158: 'sealing, China, Guangdong, phoenix', // 1632317
   f086151: 'sealing, China, Dongguan', // 1631617
   f096974: 'sealing, China, Chongqing', // 1632266
@@ -42,12 +43,16 @@ const annotations = {
   f097777: 'sealing, Ukraine, Ivano-Frankivsk', // 1631728
   f098664: 'sealing, China, Jiangsu', // 1632295
   f099705: 'sealing, China, Zibo', // 1632324
+  f0102313: 'sealing, Korea, Gangseo-gu', // 1632386
   f0107322: 'sealing, China, Chengdu', // 1632285
   f0109043: 'sealing, China, Karamay', // 1632080
+  f0110133: 'sealing, China, Ningbo', // 1632371
+  f0110804: 'sealing, USA, Santa Clara', // 1632382
   f0111885: 'sealing, Korea, Bucheon-si, WINNERS', // 1632310
   f0113331: 'sealing, Korea, Jinju + USA', // 1632264
   f0128191: 'sealing, Korea, Gangnam-gu', // 1632309
   f0131901: 'sealing, Korea, Daejeon', // 1632078
+  f0134671: 'sealing, Korea, Gimpo-si', // 1632383
   f0145018: 'sealing, Korea', // 1632287
   f0148143: 'sealing, China, Tianjin', // 1632283
   f0150744: 'sealing, Korea, Ulsan', // 1632290
@@ -58,11 +63,13 @@ const annotations = {
   f0165643: 'sealing, China, Guangzhou', // 1632294
   f0214181: 'sealing, Australia, Mosman', // 1631627
   f0221135: 'sealing, USA, Atlanta', // 1631608
+  f0228575: 'sealing, Canada, Calgary', // 1632372
   f0230200: 'sealing, Korea, Gwanak-gu, G-mining', // 1632299
   f0242152: 'sealing, Korea, Guro-gu', // 1632307
   f0397675: 'sealing, Korea, Guro-gu', // 1632319
   f0398286: 'sealing, China, Beijing', // 1632303
   f0400681: 'sealing, USA, Queens', // 1632291
+  f0401254: 'sealing, Korea, Uijeongbu-si', // 1632370
   f0401287: 'sealing, China, Yibin', // 1632281
   f0401300: 'sealing, France, Deuil-la-Barre', // 1632347
   f0401303: 'sealing, Korea, Ulju-gun', // 1632293
@@ -78,18 +85,6 @@ const annotations = {
   // Stuck
 
   f024511: 'stuck, China, Shenzhen', // Transferring: about 2 hours
-  f025025: 'stuck, China, Qingdao', // Transferring: about 1 hour
-  f049882: 'stuck, Netherlands, De Rijp, Chipz', // CheckForAcceptance: about 1 hour
-  f0102313: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: about 1 hour
-  f0110133: 'stuck, China, Ningbo', // CheckForAcceptance: about 1 hour
-  f0110804: 'stuck, USA, Santa Clara', // CheckForAcceptance: about 1 hour
-  f0129805: 'stuck, China, Zhejiang + Australia, Adelaide', // Transferring: about 1 hour
-  f0134671: 'stuck, Korea, Gimpo-si', // CheckForAcceptance: about 1 hour
-  f0224894: 'stuck, China, Qingdao', // Transferring: about 1 hour
-  f0228575: 'stuck, Canada, Calgary', // CheckForAcceptance: about 1 hour
-  f0231161: 'stuck, China, Qujing', // Transferring: about 1 hour
-  f0397728: 'stuck, China, Dongguan', // Transferring: about 1 hour
-  f0401254: 'stuck, Korea, Uijeongbu-si', // CheckForAcceptance: about 1 hour
 
   // Busy
 
@@ -427,13 +422,18 @@ const annotations = {
   f010513: 'xfr-failed, China, Chongqing',
   f016276: 'xfr-failed, China, Beijing',
   f024468: 'xfr-failed, China, Shenzhen',
+  f025025: 'xfr-failed, China, Qingdao',
   f042567: 'xfr-failed, China, Jinhua',
   f079007: 'xfr-failed, China, Jinan',
   f081644: 'xfr-failed, China, Wenzhou',
+  f0129805: 'xfr-failed, China, Zhejiang + Australia, Adelaide',
   f0131857: 'xfr-failed, China, Chongqing',
   f0168058: 'xfr-failed, China, Suzhou',
+  f0224894: 'xfr-failed, China, Qingdao',
+  f0231161: 'xfr-failed, China, Qujing',
   f0349810: 'xfr-failed, China, Qinzhou',
   f0393359: 'xfr-failed, China, Suzhou',
+  f0397728: 'xfr-failed, China, Dongguan',
   f0399814: "xfr-failed, China, Ya'an",
   f0423713: 'xfr-failed, China, Qingdao',
   f0427994: 'xfr-failed, China, Jinhua',
