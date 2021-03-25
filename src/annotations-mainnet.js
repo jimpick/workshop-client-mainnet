@@ -14,50 +14,73 @@ const annotations = {
 
   // New
 
-  f0437246: 'new, China, Hangzhou',
+  f0437246: 'new, China, Hangzhou', // carry-over
 
   // Inflight
-
-  f082095: 'inflight, NR', // FundsReserved: about 4 hours
 
   // Unknown
 
   // Active
 
+  f03339: 'active, China, Luzhou, benxun', // 1627763 about 2 hours
+  f07709: 'active, Korea, Dongjak-gu', // 1627823 about 2 hours
+  f019806: 'active, China, Beijing', // 1627760 about 2 hours
+  f020489: 'active, China, Lioaning', // 1627756 about 3 hours
+  f022261: 'active, China, Luzhou', // 1627759 about 2 hours
+  f023219: 'active, China, Beijing + Zhangjiakou', // 1627857 about 2 hours
+  f024550: 'active, China, Wenzhou', // 1627826 about 3 hours
+  f025007: 'active, Korea, Gyeonggi-do, PINBYTES-eCUBE', // 1627767 about 2 hours
+  f042567: 'active, China, Jinhua', // 1627742 about 3 hours
+  f061158: 'active, China, Guangdong, phoenix', // 1627782 about 1 hour
+  f062475: 'active, NR', // 1627867 about 2 hours
+  f078621: 'active, Korea, Uiwang', // 1627794 about 2 hours
+  f081644: 'active, China, Wenzhou', // 1627753 about 3 hours
+  f082635: 'active, NR', // 1627866 about 2 hours
+  f090492: 'active, NR', // 1628728 about 2 hours
+  f096974: 'active, China, Chongqing', // 1627848 about 3 hours
+  f099705: 'active, China, Zibo', // 1627844 about 2 hours
+  f0106949: 'active, Korea, Seoul', // 1627751 about 3 hours
+  f0111174: 'active, China, Guangzhou', // 1627797 about 2 hours
+  f0121533: 'active, China, Zhejiang', // 1627851 about 2 hours
+  f0131857: 'active, China, Chongqing', // 1627796 about 3 hours
+  f0146751: 'active, China, Jiangsu', // 1627778 about 2 hours
+  f0156207: 'active, Korea, Ulsan', // 1627749 about 3 hours
+  f0165539: 'active, Japan, Yokohama', // 1627859 about 7 hours
+  f0228575: 'active, Canada, Calgary', // 1627745 about 2 hours
+  f0230200: 'active, Korea, Gwanak-gu, G-mining', // 1627752 about 2 hours
+  f0242152: 'active, Korea, Guro-gu', // 1627786 about 2 hours
+  f0395463: 'active, Korea, Daegu', // 1631511 about 3 hours
+  f0395472: 'active, Korea, Daegu', // 1631521 about 3 hours
+  f0395473: 'active, Korea, Daegu', // 1631520 about 3 hours
+  f0399814: "active, China, Ya'an", // 1627855 about 2 hours
+  f0400681: 'active, USA, Queens', // 1627811 about 3 hours
+  f0401254: 'active, Korea, Uijeongbu-si', // 1627789 about 2 hours
+  f0401303: 'active, Korea, Ulju-gun', // 1627812 about 2 hours
+  f0403177: 'active, China, Huizhou', // 1627861 about 3 hours
+  f0405129: 'active, China, Fujian', // 1627814 about 5 hours
+  f0408717: 'active, Korea, Ansan-si', // 1627862 about 2 hours
+  f0413563: 'active, Korea, Gangnam-gu', // 1627815 about 2 hours
+
   // Active-sealing (active, with in-flight sealing)
 
-  f042567: 'active-sealing, China, Jinhua', // 1627742
-  f081644: 'active-sealing, China, Wenzhou', // 1627753
-  f0106949: 'active-sealing, Korea, Seoul', // 1627751
-  f0156207: 'active-sealing, Korea, Ulsan', // 1627749
   f0156452: 'active-sealing, Korea, Ulsan', // 1627744
   f0157265: 'active-sealing, China, Zhangjiakou', // 1627748
   f0159961: 'active-sealing, China, Chongqing', // 1627746
   f0165375: 'active-sealing, Korea, Seongnam-si', // 1627747
   f0224894: 'active-sealing, China, Qingdao', // 1627741
-  f0228575: 'active-sealing, Canada, Calgary', // 1627745
-  f0230200: 'active-sealing, Korea, Gwanak-gu, G-mining', // 1627752
 
   // Sealing
 
   f02490: 'sealing, China, Fujian', // 1627750
   f02540: 'sealing, USA, Mobile, Foundry', // 1627757
-  f03339: 'sealing, China, Luzhou, benxun', // 1627763
   f03345: 'sealing, China, Fuzhou, chh', // 1627762
-  f07709: 'sealing, Korea, Dongjak-gu', // 1627823
   f08019: 'sealing, China, Yantai, 三合', // 1627758
   f010241: 'sealing, China, Beijing + USA, Portland, 6Block-P', // 1627824
   f010513: 'sealing, China, Chongqing', // 1627755
   f015233: 'sealing, China, Nanjing', // 1627754
   f016276: 'sealing, China, Beijing', // 1627761
-  f019806: 'sealing, China, Beijing', // 1627760
-  f020489: 'sealing, China, Lioaning', // 1627756
-  f022261: 'sealing, China, Luzhou', // 1627759
-  f023219: 'sealing, China, Beijing + Zhangjiakou', // 1627857
   f024468: 'sealing, China, Shenzhen', // 1627768
-  f024550: 'sealing, China, Wenzhou', // 1627826
   f024944: 'sealing, Korea, Yeongdeungpo-dong', // 1627783
-  f025007: 'sealing, Korea, Gyeonggi-do, PINBYTES-eCUBE', // 1627767
   f025025: 'sealing, China, Qingdao', // 1627827
   f025044: 'sealing, undefined', // 1630328
   f032833: 'sealing, NR', // 1628958
@@ -68,67 +91,45 @@ const annotations = {
   f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1627772
   f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 1627784
   f058369: 'sealing, USA, Boston', // 1627817
-  f061158: 'sealing, China, Guangdong, phoenix', // 1627782
-  f062475: 'sealing, NR', // 1627867
   f065610: 'sealing, NR', // 1627864
-  f078621: 'sealing, Korea, Uiwang', // 1627794
   f079007: 'sealing, China, Jinan', // 1627846
   f080103: 'sealing, Korea, Seongnam-si', // 1627788
-  f082635: 'sealing, NR', // 1627866
   f086151: 'sealing, China, Dongguan', // 1627843
   f089840: 'sealing, Korea, Yeongdeungpo-gu', // 1627780
-  f090492: 'sealing, NR', // 1628728
-  f096974: 'sealing, China, Chongqing', // 1627848
   f097214: 'sealing, Korea, Bucheon-si', // 1627847
+  f097720: 'sealing, Korea, Bucheon-si', // 1627743
   f098664: 'sealing, China, Jiangsu', // 1627845
-  f099705: 'sealing, China, Zibo', // 1627844
   f0102313: 'sealing, Korea, Gangseo-gu', // 1627770
   f0107322: 'sealing, China, Chengdu', // 1627773
   f0109043: 'sealing, China, Karamay', // 1627850
   f0110133: 'sealing, China, Ningbo', // 1627775
   f0110804: 'sealing, USA, Santa Clara', // 1627774
-  f0111174: 'sealing, China, Guangzhou', // 1627797
   f0111885: 'sealing, Korea, Bucheon-si, WINNERS', // 1627849
   f0113331: 'sealing, Korea, Jinju + USA', // 1627771
-  f0121533: 'sealing, China, Zhejiang', // 1627851
   f0128191: 'sealing, Korea, Gangnam-gu', // 1627808
   f0129805: 'sealing, China, Zhejiang + Australia, Adelaide', // 1627769
   f0130912: 'sealing, China, Hong Kong', // 1627807
-  f0131857: 'sealing, China, Chongqing', // 1627796
   f0131901: 'sealing, Korea, Daejeon', // 1627852
   f0134671: 'sealing, Korea, Gimpo-si', // 1627839
   f0136868: 'sealing, NR', // 1631508
   f0142606: 'sealing, Korea, Gangseo-gu', // 1627781
   f0145018: 'sealing, Korea', // 1627809
-  f0146751: 'sealing, China, Jiangsu', // 1627778
   f0149444: 'sealing, Korea, Gangseo-gu', // 1627776
   f0150744: 'sealing, Korea, Ulsan', // 1627837
   f0162394: 'sealing, China, Guangzhou', // 1627785
-  f0165539: 'sealing, Japan, Yokohama', // 1627859
   f0165643: 'sealing, China, Guangzhou', // 1627777
   f0168058: 'sealing, China, Suzhou', // 1627787
   f0214181: 'sealing, Australia, Mosman', // 1631506
+  f0215497: 'sealing, Korea, Gangseo-gu', // 1631602
   f0231161: 'sealing, China, Qujing', // 1627795
-  f0242152: 'sealing, Korea, Guro-gu', // 1627786
   f0349810: 'sealing, China, Qinzhou', // 1627810
   f0393359: 'sealing, China, Suzhou', // 1627813
-  f0395463: 'sealing, Korea, Daegu', // 1631511
-  f0395472: 'sealing, Korea, Daegu', // 1631521
-  f0395473: 'sealing, Korea, Daegu', // 1631520
   f0397675: 'sealing, Korea, Guro-gu', // 1627792
   f0397728: 'sealing, China, Dongguan', // 1631523
   f0398286: 'sealing, China, Beijing', // 1631525
-  f0399814: "sealing, China, Ya'an", // 1627855
-  f0400681: 'sealing, USA, Queens', // 1627811
-  f0401254: 'sealing, Korea, Uijeongbu-si', // 1627789
   f0401287: 'sealing, China, Yibin', // 1627791
   f0401300: 'sealing, France, Deuil-la-Barre', // 1627793
-  f0401303: 'sealing, Korea, Ulju-gun', // 1627812
   f0402431: 'sealing, China, Hangzhou', // 1631527
-  f0403177: 'sealing, China, Huizhou', // 1627861
-  f0405129: 'sealing, China, Fujian', // 1627814
-  f0408717: 'sealing, Korea, Ansan-si', // 1627862
-  f0413563: 'sealing, Korea, Gangnam-gu', // 1627815
   f0423713: 'sealing, China, Qingdao', // 1627799
   f0427967: 'sealing, China, Changsha', // 1627801
   f0427994: 'sealing, China, Jinhua', // 1627802
@@ -138,10 +139,6 @@ const annotations = {
   f0434480: 'sealing, USA, Hummelstown', // 1627804
 
   // Stuck
-
-  f097720: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 5 hours
-  f0215497: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: about 5 hours
-  f0430101: 'stuck, NR', // CheckForAcceptance: about 5 hours
 
   // Busy
 
@@ -520,6 +517,7 @@ const annotations = {
   f063869: 'error, NR', // EOF
   f078522: 'error, NR', // EOF
   f079370: 'error, China, Zhangzhou', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f082095: 'error, NR', // stream reset
   f082617: 'error, China, Fujian', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.122684944470361452 FIL, balance: 0.045318221613159791 FIL): not enough funds to execute transaction
   f085777: 'error, China, Zhangzhou', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f093658: 'error, China, Fujian', // AddPiece failed: adding piece to sector: writing piece: storage call error 0: sector file:/mnt/md0/lotusworker/s-32  link /mnt/md0/lotusworker/s-32 /mnt/172.18.5.6/disk6/lotusminer/unsealed/s-t093658-38736: no such file or directory: link /mnt/md0/lotusworker/s-32 /mnt/172.18.5.6/disk6/lotusminer/unsealed/s-t093658-38736: no such file or directory
@@ -551,6 +549,7 @@ const annotations = {
   f0401135: 'error, Singapore', // EOF
   f0402371: 'error, China, Shanghai', // EOF
   f0419768: 'error, Korea, Seongnam-si', // error validating deal published: getting deal publish message: blockstore: block not found
+  f0430101: 'error, NR', // AddPiece failed: adding piece to sector: writing piece: storage call error 0: creating unsealed sector file: writing trailer: writing trailer length: write /fcfs/f0430101/unsealed/s-t0430101-514.tmp: operation not supported
   f0432594: 'error, China, Zhengzhou', // deal failed: (State=26) error calling node: reserving funds: GasEstimateMessageGas error: estimating gas used: message execution failed: exit SysErrSenderStateInvalid(2), reason: actor balance less than needed: 0 FIL < 0.00000101 FIL (RetCode=2)
 
   // Dial backoff
