@@ -10,25 +10,25 @@ const annotations = {
 
   // Candidates
 
-  f01241: 'candidate, China, Karamay', // carry-over
+  f01241: 'min-ask, China, Karamay', // carry-over
   f02645:
     'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
-  f03273: 'candidate, China, Karamay', // carry-over
-  f05316: 'candidate, China, Karamay', // carry-over
+  f03273: 'min-ask, China, Karamay', // carry-over
+  f05316: 'min-ask, China, Karamay', // carry-over
   f015233: 'candidate, China, Nanjing', // carry-over
   f019104: 'candidate, Canada, Chambly, NBFS DEV', // carry-over
   f023978: 'candidate, China, Fuzhou', // carry-over
-  f033189: 'candidate, NR', // carry-over
+  f033189: 'min-ask, NR', // carry-over
   f034047: 'candidate, China, Hangzhou', // carry-over
-  f054370: 'candidate, China, Dongguan', // carry-over
-  f097618: 'candidate, China, Suzhou', // carry-over
-  f099239: 'candidate, China, Hong Kong', // carry-over
-  f0131464: 'candidate, USA, Ashburn', // carry-over
-  f0133999: 'candidate, China, Changsha', // carry-over
-  f0151281: 'candidate, China, Karamay', // carry-over
-  f0158142: 'candidate, China, Karamay', // carry-over
-  f0241858: 'candidate, China, Fuzhou', // carry-over
-  f0430101: 'candidate, NR', // carry-over
+  f054370: 'min-ask, China, Dongguan', // carry-over
+  f097618: 'error-ask, China, Suzhou', // carry-over
+  f099239: 'min-ask, China, Hong Kong', // carry-over
+  f0131464: 'min-ask, USA, Ashburn', // carry-over
+  f0133999: 'min-ask, China, Changsha', // carry-over
+  f0151281: 'min-ask, China, Karamay', // carry-over
+  f0158142: 'min-ask, China, Karamay', // carry-over
+  f0241858: 'min-ask, China, Fuzhou', // carry-over
+  f0430101: 'error-ask, NR', // carry-over
 
   // Active
 
