@@ -10,8 +10,6 @@ const annotations = {
 
   // Candidates
 
-  f02645: 'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
-
   // Active
 
   // Sealing (active-sealing = previously active, retesting with new deal)
@@ -29,9 +27,11 @@ const annotations = {
   f03134: 'sealing, China, Cangzhou, 乔木信息', // 1632292
   f03339: 'sealing, China, Luzhou, benxun', // 1632282
   f023467: 'sealing, Norway, Oslo, PhiMining.io', // 1632077
+  f025007: 'sealing, Korea, Gyeonggi-do, PINBYTES-eCUBE', // 1632300
   f044160: 'sealing, China, Guangzhou, muxing', // 1632081
   f086151: 'sealing, China, Dongguan', // 1631617
   f096974: 'sealing, China, Chongqing', // 1632266
+  f097214: 'sealing, Korea, Bucheon-si', // 1632306
   f097777: 'sealing, Ukraine, Ivano-Frankivsk', // 1631728
   f098664: 'sealing, China, Jiangsu', // 1632295
   f0107322: 'sealing, China, Chengdu', // 1632285
@@ -48,6 +48,8 @@ const annotations = {
   f0214181: 'sealing, Australia, Mosman', // 1631627
   f0221135: 'sealing, USA, Atlanta', // 1631608
   f0230200: 'sealing, Korea, Gwanak-gu', // 1632299
+  f0242152: 'sealing, Korea, Guro-gu', // 1632307
+  f0398286: 'sealing, China, Beijing', // 1632303
   f0400681: 'sealing, USA, Queens', // 1632291
   f0401287: 'sealing, China, Yibin', // 1632281
   f0401303: 'sealing, Korea, Ulju-gun', // 1632293
@@ -60,49 +62,43 @@ const annotations = {
 
   // Stuck
 
-  f01238: 'stuck, Vietnam, Hanoi, FILECOIN-VIETNAM', // CheckForAcceptance: 37 minutes
-  f02490: 'stuck, China, Fujian', // CheckForAcceptance: 39 minutes
-  f02540: 'stuck, USA, Mobile', // CheckForAcceptance: 33 minutes
-  f010513: 'stuck, China, Chongqing', // Transferring: about 1 hour
+  f01238: 'stuck, Vietnam, Hanoi, FILECOIN-VIETNAM', // CheckForAcceptance: about 1 hour
+  f02490: 'stuck, China, Fujian', // CheckForAcceptance: about 1 hour
+  f02540: 'stuck, USA, Mobile', // CheckForAcceptance: 41 minutes
   f016276: 'stuck, China, Beijing', // Transferring: about 1 hour
-  f020489: 'stuck, China, Lioaning', // CheckForAcceptance: 30 minutes
+  f020489: 'stuck, China, Lioaning', // CheckForAcceptance: 38 minutes
   f022261: 'stuck, China, Luzhou', // CheckForAcceptance: about 1 hour
   f024511: 'stuck, China, Shenzhen', // Transferring: about 1 hour
-  f025007: 'stuck, Korea, Gyeonggi-do, PINBYTES-eCUBE', // CheckForAcceptance: about 1 hour
-  f025025: 'stuck, China, Qingdao', // Transferring: 25 minutes
-  f030335: 'stuck, China, Fujian', // CheckForAcceptance: about 1 hour
-  f039515: 'stuck, China, Chongqing', // CheckForAcceptance: 36 minutes
+  f025025: 'stuck, China, Qingdao', // Transferring: 33 minutes
+  f039515: 'stuck, China, Chongqing', // CheckForAcceptance: 44 minutes
   f042567: 'stuck, China, Jinhua', // Transferring: about 1 hour
-  f049882: 'stuck, Netherlands, De Rijp, Chipz', // CheckForAcceptance: 30 minutes
+  f049882: 'stuck, Netherlands, De Rijp, Chipz', // CheckForAcceptance: 38 minutes
   f061158: 'stuck, China, Guangdong', // CheckForAcceptance: about 1 hour
-  f081644: 'stuck, China, Wenzhou', // Transferring: 44 minutes
-  f096976: 'stuck, Russia', // CheckForAcceptance: about 1 hour
-  f097214: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 1 hour
-  f099705: 'stuck, China, Zibo', // CheckForAcceptance: 40 minutes
-  f0102313: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: 25 minutes
-  f0110133: 'stuck, China, Ningbo', // CheckForAcceptance: 27 minutes
-  f0110804: 'stuck, USA, Santa Clara', // CheckForAcceptance: 25 minutes
+  f081644: 'stuck, China, Wenzhou', // Transferring: about 1 hour
+  f096976: 'stuck, Russia', // CheckForAcceptance: about 2 hours
+  f099705: 'stuck, China, Zibo', // CheckForAcceptance: about 1 hour
+  f0102313: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: 33 minutes
+  f0110133: 'stuck, China, Ningbo', // CheckForAcceptance: 35 minutes
+  f0110804: 'stuck, USA, Santa Clara', // CheckForAcceptance: 33 minutes
   f0111885: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 1 hour
   f0128191: 'stuck, Korea, Gangnam-gu', // CheckForAcceptance: about 1 hour
-  f0129805: 'stuck, China, Zhejiang + Australia, Adelaide', // Transferring: 25 minutes
+  f0129805: 'stuck, China, Zhejiang + Australia, Adelaide', // Transferring: 33 minutes
   f0131857: 'stuck, China, Chongqing', // Transferring: about 1 hour
-  f0134671: 'stuck, Korea, Gimpo-si', // CheckForAcceptance: 24 minutes
+  f0134671: 'stuck, Korea, Gimpo-si', // CheckForAcceptance: 32 minutes
   f0157265: 'stuck, China, Zhangjiakou', // CheckForAcceptance: about 1 hour
-  f0224894: 'stuck, China, Qingdao', // Transferring: 32 minutes
-  f0228575: 'stuck, Canada, Calgary', // CheckForAcceptance: 32 minutes
-  f0231161: 'stuck, China, Qujing', // Transferring: 26 minutes
-  f0242152: 'stuck, Korea, Guro-gu', // CheckForAcceptance: about 1 hour
-  f0349810: 'stuck, China, Qinzhou', // Transferring: 42 minutes
+  f0224894: 'stuck, China, Qingdao', // Transferring: 40 minutes
+  f0228575: 'stuck, Canada, Calgary', // CheckForAcceptance: 40 minutes
+  f0231161: 'stuck, China, Qujing', // Transferring: 34 minutes
+  f0349810: 'stuck, China, Qinzhou', // Transferring: about 1 hour
   f0397675: 'stuck, Korea, Guro-gu', // CheckForAcceptance: about 1 hour
-  f0397728: 'stuck, China, Dongguan', // Transferring: 38 minutes
-  f0398286: 'stuck, China, Beijing', // CheckForAcceptance: about 1 hour
-  f0399814: "stuck, China, Ya'an", // Transferring: 36 minutes
-  f0401254: 'stuck, Korea, Uijeongbu-si', // CheckForAcceptance: 33 minutes
-  f0401300: 'stuck, France, Deuil-la-Barre', // CheckForAcceptance: 38 minutes
+  f0397728: 'stuck, China, Dongguan', // Transferring: about 1 hour
+  f0399814: "stuck, China, Ya'an", // Transferring: 44 minutes
+  f0401254: 'stuck, Korea, Uijeongbu-si', // CheckForAcceptance: 41 minutes
+  f0401300: 'stuck, France, Deuil-la-Barre', // CheckForAcceptance: about 1 hour
   f0423713: 'stuck, China, Qingdao', // Transferring: about 1 hour
   f0427994: 'stuck, China, Jinhua', // Transferring: about 1 hour
   f0427996: 'stuck, Canada, Bois-des-Filion', // CheckForAcceptance: about 1 hour
-  f0434480: 'stuck, USA, Hummelstown', // CheckForAcceptance: 43 minutes
+  f0434480: 'stuck, USA, Hummelstown', // CheckForAcceptance: about 1 hour
 
   // Busy
 
@@ -223,6 +219,8 @@ const annotations = {
   f02622: 'min-ask, China, Karamay', // carry-over
   f02623: 'min-ask, China, Karamay', // carry-over
   f02633:
+    'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
+  f02645:
     'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
   f03143: 'min-ask, Vietman, Ho Chi Minh City + China, Beijing + Shijiazhuang', // carry-over
   f03223: 'min-ask, USA', // carry-over
@@ -435,12 +433,15 @@ const annotations = {
 
   // Xfr-failed
 
+  f010513: 'xfr-failed, China, Chongqing',
   f024468: 'xfr-failed, China, Shenzhen',
   f079007: 'xfr-failed, China, Jinan',
   f0168058: 'xfr-failed, China, Suzhou',
   f0393359: 'xfr-failed, China, Suzhou',
 
   // Error
+
+  f030335: 'error, China, Fujian', // AddPiece failed: adding piece to sector: writing piece: storage call error 0: sector file:/mnt/md0/lotusworker/s-32  link /mnt/md0/lotusworker/s-32 /mnt/172.16.4.5/disk24/lotusminer_105/unsealed/s-t030335-14100: no such file or directory: link /mnt/md0/lotusworker/s-32 /mnt/172.16.4.5/disk24/lotusminer_105/unsealed/s-t030335-14100: no such file or directory
 
   // Backoff
 
