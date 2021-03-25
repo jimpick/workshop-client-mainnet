@@ -12,14 +12,25 @@ const annotations = {
 
   // Active
 
+  f025007: 'active, Korea, Gyeonggi-do, PINBYTES-eCUBE', // 1632300 about 3 hours
+  f061158: 'active, China, Guangdong, phoenix', // 1632317 about 1 hour
+  f096974: 'active, China, Chongqing', // 1632266 about 3 hours
+  f097777: 'active, Ukraine, Ivano-Frankivsk', // 1631728 about 3 hours
+  f099705: 'active, China, Zibo', // 1632324 about 3 hours
+  f0146751: 'active, China, Jiangsu', // 1632268 about 2 hours
+  f0156207: 'active, Korea, Ulsan', // 1632004 about 3 hours
+  f0165539: 'active, Japan, Yokohama', // 1632006 about 7 hours
+  f0242152: 'active, Korea, Guro-gu', // 1632307 about 3 hours
+  f0400681: 'active, USA, Queens', // 1632291 about 3 hours
+  f0401254: 'active, Korea, Uijeongbu-si', // 1632370 about 2 hours
+  f0401303: 'active, Korea, Ulju-gun', // 1632293 about 2 hours
+  f0413563: 'active, Korea, Gangnam-gu', // 1632288 about 2 hours
+
   // Sealing (active-sealing = previously active, retesting with new deal)
 
   f053088: 'active-sealing, China, Shanghai', // 1631729
   f064668: 'active-sealing, China, Hong Kong', // 1631838
   f0142606: 'active-sealing, Korea, Gangseo-gu', // 1632284
-  f0146751: 'active-sealing, China, Jiangsu', // 1632268
-  f0156207: 'active-sealing, Korea, Ulsan', // 1632004
-  f0165539: 'active-sealing, Japan, Yokohama', // 1632006
   f0215497: 'active-sealing, Korea, Gangseo-gu', // 1631603
 
   // Sealing
@@ -31,18 +42,13 @@ const annotations = {
   f020489: 'sealing, China, Lioaning', // 1632350
   f022261: 'sealing, China, Luzhou', // 1632313
   f023467: 'sealing, Norway, Oslo, PhiMining.io', // 1632077
-  f025007: 'sealing, Korea, Gyeonggi-do, PINBYTES-eCUBE', // 1632300
   f039515: 'sealing, China, Chongqing, valarhash', // 1632340
   f044160: 'sealing, China, Guangzhou, muxing', // 1632081
   f049882: 'sealing, Netherlands, De Rijp, Chipz', // 1632393
-  f061158: 'sealing, China, Guangdong, phoenix', // 1632317
   f086151: 'sealing, China, Dongguan', // 1631617
-  f096974: 'sealing, China, Chongqing', // 1632266
   f096976: 'sealing, Russia', // 1632302
   f097214: 'sealing, Korea, Bucheon-si', // 1632306
-  f097777: 'sealing, Ukraine, Ivano-Frankivsk', // 1631728
   f098664: 'sealing, China, Jiangsu', // 1632295
-  f099705: 'sealing, China, Zibo', // 1632324
   f0102313: 'sealing, Korea, Gangseo-gu', // 1632386
   f0107322: 'sealing, China, Chengdu', // 1632285
   f0109043: 'sealing, China, Karamay', // 1632080
@@ -65,17 +71,12 @@ const annotations = {
   f0221135: 'sealing, USA, Atlanta', // 1631608
   f0228575: 'sealing, Canada, Calgary', // 1632372
   f0230200: 'sealing, Korea, Gwanak-gu, G-mining', // 1632299
-  f0242152: 'sealing, Korea, Guro-gu', // 1632307
   f0397675: 'sealing, Korea, Guro-gu', // 1632319
   f0398286: 'sealing, China, Beijing', // 1632303
-  f0400681: 'sealing, USA, Queens', // 1632291
-  f0401254: 'sealing, Korea, Uijeongbu-si', // 1632370
   f0401287: 'sealing, China, Yibin', // 1632281
   f0401300: 'sealing, France, Deuil-la-Barre', // 1632347
-  f0401303: 'sealing, Korea, Ulju-gun', // 1632293
   f0403177: 'sealing, China, Huizhou', // 1632265
   f0405129: 'sealing, China, Fujian', // 1631939
-  f0413563: 'sealing, Korea, Gangnam-gu', // 1632288
   f0427967: 'sealing, China, Changsha', // 1632005
   f0427996: 'sealing, Canada, Bois-des-Filion', // 1632316
   f0428150: 'sealing, China, Xiamen', // 1632297
@@ -84,7 +85,7 @@ const annotations = {
 
   // Stuck
 
-  f024511: 'stuck, China, Shenzhen', // Transferring: about 2 hours
+  f024511: 'stuck, China, Shenzhen', // Transferring: about 15 hours
 
   // Busy
 
