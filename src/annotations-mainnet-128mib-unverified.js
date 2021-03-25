@@ -24,16 +24,20 @@ const annotations = {
 
   // Sealing
 
+  f01238: 'sealing, Vietnam, Hanoi, FILECOIN-VIETNAM', // 1632339
   f02540: 'sealing, USA, Mobile', // 1632315
   f03134: 'sealing, China, Cangzhou, 乔木信息', // 1632292
   f03339: 'sealing, China, Luzhou, benxun', // 1632282
+  f020489: 'sealing, China, Lioaning', // 1632350
   f022261: 'sealing, China, Luzhou', // 1632313
   f023467: 'sealing, Norway, Oslo, PhiMining.io', // 1632077
   f025007: 'sealing, Korea, Gyeonggi-do, PINBYTES-eCUBE', // 1632300
+  f039515: 'sealing, China, Chongqing', // 1632340
   f044160: 'sealing, China, Guangzhou, muxing', // 1632081
   f061158: 'sealing, China, Guangdong', // 1632317
   f086151: 'sealing, China, Dongguan', // 1631617
   f096974: 'sealing, China, Chongqing', // 1632266
+  f096976: 'sealing, Russia', // 1632302
   f097214: 'sealing, Korea, Bucheon-si', // 1632306
   f097777: 'sealing, Ukraine, Ivano-Frankivsk', // 1631728
   f098664: 'sealing, China, Jiangsu', // 1632295
@@ -60,6 +64,7 @@ const annotations = {
   f0398286: 'sealing, China, Beijing', // 1632303
   f0400681: 'sealing, USA, Queens', // 1632291
   f0401287: 'sealing, China, Yibin', // 1632281
+  f0401300: 'sealing, France, Deuil-la-Barre', // 1632347
   f0401303: 'sealing, Korea, Ulju-gun', // 1632293
   f0403177: 'sealing, China, Huizhou', // 1632265
   f0405129: 'sealing, China, Fujian', // 1631939
@@ -68,15 +73,13 @@ const annotations = {
   f0427996: 'sealing, Canada, Bois-des-Filion', // 1632316
   f0428150: 'sealing, China, Xiamen', // 1632297
   f0430997: 'sealing, Korea', // 1632298
+  f0434480: 'sealing, USA, Hummelstown', // 1632338
 
   // Stuck
 
-  f020489: 'stuck, China, Lioaning', // CheckForAcceptance: about 1 hour
-  f024511: 'stuck, China, Shenzhen', // Transferring: about 1 hour
+  f024511: 'stuck, China, Shenzhen', // Transferring: about 2 hours
   f025025: 'stuck, China, Qingdao', // Transferring: about 1 hour
-  f039515: 'stuck, China, Chongqing', // CheckForAcceptance: about 1 hour
   f049882: 'stuck, Netherlands, De Rijp, Chipz', // CheckForAcceptance: about 1 hour
-  f096976: 'stuck, Russia', // CheckForAcceptance: about 2 hours
   f0102313: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: about 1 hour
   f0110133: 'stuck, China, Ningbo', // CheckForAcceptance: about 1 hour
   f0110804: 'stuck, USA, Santa Clara', // CheckForAcceptance: about 1 hour
@@ -87,7 +90,6 @@ const annotations = {
   f0231161: 'stuck, China, Qujing', // Transferring: about 1 hour
   f0397728: 'stuck, China, Dongguan', // Transferring: about 1 hour
   f0401254: 'stuck, Korea, Uijeongbu-si', // CheckForAcceptance: about 1 hour
-  f0401300: 'stuck, France, Deuil-la-Barre', // CheckForAcceptance: about 1 hour
 
   // Busy
 
