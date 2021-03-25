@@ -36,12 +36,12 @@ const annotations = {
   f0165375: 'active-sealing, Korea, Seongnam-si', // 1627747
   f0224894: 'active-sealing, China, Qingdao', // 1627741
   f0228575: 'active-sealing, Canada, Calgary', // 1627745
-  f0230200: 'active-sealing, Korea, Gwanak-gu', // 1627752
+  f0230200: 'active-sealing, Korea, Gwanak-gu, G-mining', // 1627752
 
   // Sealing
 
   f02490: 'sealing, China, Fujian', // 1627750
-  f02540: 'sealing, USA, Mobile', // 1627757
+  f02540: 'sealing, USA, Mobile, Foundry', // 1627757
   f03339: 'sealing, China, Luzhou, benxun', // 1627763
   f03345: 'sealing, China, Fuzhou, chh', // 1627762
   f07709: 'sealing, Korea, Dongjak-gu', // 1627823
@@ -62,13 +62,13 @@ const annotations = {
   f025044: 'sealing, undefined', // 1630328
   f032833: 'sealing, NR', // 1628958
   f033036: 'sealing, China, Liaoning', // 1627779
-  f039515: 'sealing, China, Chongqing', // 1627765
+  f039515: 'sealing, China, Chongqing, valarhash', // 1627765
   f044160: 'sealing, China, Guangzhou, muxing', // 1627764
   f053088: 'sealing, China, Shanghai', // 1627766
   f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1627772
   f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 1627784
   f058369: 'sealing, USA, Boston', // 1627817
-  f061158: 'sealing, China, Guangdong', // 1627782
+  f061158: 'sealing, China, Guangdong, phoenix', // 1627782
   f062475: 'sealing, NR', // 1627867
   f065610: 'sealing, NR', // 1627864
   f078621: 'sealing, Korea, Uiwang', // 1627794
@@ -88,7 +88,7 @@ const annotations = {
   f0110133: 'sealing, China, Ningbo', // 1627775
   f0110804: 'sealing, USA, Santa Clara', // 1627774
   f0111174: 'sealing, China, Guangzhou', // 1627797
-  f0111885: 'sealing, Korea, Bucheon-si', // 1627849
+  f0111885: 'sealing, Korea, Bucheon-si, WINNERS', // 1627849
   f0113331: 'sealing, Korea, Jinju + USA', // 1627771
   f0121533: 'sealing, China, Zhejiang', // 1627851
   f0128191: 'sealing, Korea, Gangnam-gu', // 1627808
@@ -164,7 +164,7 @@ const annotations = {
   f02576: 'min-size, Denmark, Gjerlev, BenjaminH', // 131072 < 17179869184
   f02619: 'min-size, China, Beijing, Blockcasting', // 131072 < 1048576
   f02620: 'min-size, Poland, Krakow, @magik6k', // 131072 < 536870912
-  f03134: 'min-size, China, Cangzhou, 乔木信息', // 131072 < 1048576
+  f03134: 'min-size, China, Cangzhou, QiaoMu', // 131072 < 1048576
   f03624: 'min-size, Germany, Chemnitz, ode', // 131072 < 8589934592
   f07998: 'min-size, China, Hangzhou', // 131072 < 17179869184
   f08240: 'min-size, Russia, Novosibirsk, Rabinovitch', // 131072 < 1073741824

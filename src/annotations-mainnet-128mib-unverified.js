@@ -25,16 +25,16 @@ const annotations = {
   // Sealing
 
   f01238: 'sealing, Vietnam, Hanoi, FILECOIN-VIETNAM', // 1632339
-  f02540: 'sealing, USA, Mobile', // 1632315
-  f03134: 'sealing, China, Cangzhou, 乔木信息', // 1632292
+  f02540: 'sealing, USA, Mobile, Foundry', // 1632315
+  f03134: 'sealing, China, Cangzhou, QiaoMu', // 1632292
   f03339: 'sealing, China, Luzhou, benxun', // 1632282
   f020489: 'sealing, China, Lioaning', // 1632350
   f022261: 'sealing, China, Luzhou', // 1632313
   f023467: 'sealing, Norway, Oslo, PhiMining.io', // 1632077
   f025007: 'sealing, Korea, Gyeonggi-do, PINBYTES-eCUBE', // 1632300
-  f039515: 'sealing, China, Chongqing', // 1632340
+  f039515: 'sealing, China, Chongqing, valarhash', // 1632340
   f044160: 'sealing, China, Guangzhou, muxing', // 1632081
-  f061158: 'sealing, China, Guangdong', // 1632317
+  f061158: 'sealing, China, Guangdong, phoenix', // 1632317
   f086151: 'sealing, China, Dongguan', // 1631617
   f096974: 'sealing, China, Chongqing', // 1632266
   f096976: 'sealing, Russia', // 1632302
@@ -44,7 +44,7 @@ const annotations = {
   f099705: 'sealing, China, Zibo', // 1632324
   f0107322: 'sealing, China, Chengdu', // 1632285
   f0109043: 'sealing, China, Karamay', // 1632080
-  f0111885: 'sealing, Korea, Bucheon-si', // 1632310
+  f0111885: 'sealing, Korea, Bucheon-si, WINNERS', // 1632310
   f0113331: 'sealing, Korea, Jinju + USA', // 1632264
   f0128191: 'sealing, Korea, Gangnam-gu', // 1632309
   f0131901: 'sealing, Korea, Daejeon', // 1632078
@@ -58,7 +58,7 @@ const annotations = {
   f0165643: 'sealing, China, Guangzhou', // 1632294
   f0214181: 'sealing, Australia, Mosman', // 1631627
   f0221135: 'sealing, USA, Atlanta', // 1631608
-  f0230200: 'sealing, Korea, Gwanak-gu', // 1632299
+  f0230200: 'sealing, Korea, Gwanak-gu, G-mining', // 1632299
   f0242152: 'sealing, Korea, Guro-gu', // 1632307
   f0397675: 'sealing, Korea, Guro-gu', // 1632319
   f0398286: 'sealing, China, Beijing', // 1632303
