@@ -10,8 +10,7 @@ const annotations = {
 
   // Candidates
 
-  f02645:
-    'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
+  f02645: 'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
 
   // Active
 
