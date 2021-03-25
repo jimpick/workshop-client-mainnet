@@ -24,24 +24,31 @@ const annotations = {
 
   // Sealing
 
+  f02540: 'sealing, USA, Mobile', // 1632315
   f03134: 'sealing, China, Cangzhou, 乔木信息', // 1632292
   f03339: 'sealing, China, Luzhou, benxun', // 1632282
+  f022261: 'sealing, China, Luzhou', // 1632313
   f023467: 'sealing, Norway, Oslo, PhiMining.io', // 1632077
   f025007: 'sealing, Korea, Gyeonggi-do, PINBYTES-eCUBE', // 1632300
   f044160: 'sealing, China, Guangzhou, muxing', // 1632081
+  f061158: 'sealing, China, Guangdong', // 1632317
   f086151: 'sealing, China, Dongguan', // 1631617
   f096974: 'sealing, China, Chongqing', // 1632266
   f097214: 'sealing, Korea, Bucheon-si', // 1632306
   f097777: 'sealing, Ukraine, Ivano-Frankivsk', // 1631728
   f098664: 'sealing, China, Jiangsu', // 1632295
+  f099705: 'sealing, China, Zibo', // 1632324
   f0107322: 'sealing, China, Chengdu', // 1632285
   f0109043: 'sealing, China, Karamay', // 1632080
+  f0111885: 'sealing, Korea, Bucheon-si', // 1632310
   f0113331: 'sealing, Korea, Jinju + USA', // 1632264
+  f0128191: 'sealing, Korea, Gangnam-gu', // 1632309
   f0131901: 'sealing, Korea, Daejeon', // 1632078
   f0145018: 'sealing, Korea', // 1632287
   f0148143: 'sealing, China, Tianjin', // 1632283
   f0150744: 'sealing, Korea, Ulsan', // 1632290
   f0156452: 'sealing, Korea, Ulsan', // 1632286
+  f0157265: 'sealing, China, Zhangjiakou', // 1632320
   f0159961: 'sealing, China, Chongqing', // 1632269
   f0165375: 'sealing, Korea, Seongnam-si', // 1632082
   f0165643: 'sealing, China, Guangzhou', // 1632294
@@ -49,6 +56,7 @@ const annotations = {
   f0221135: 'sealing, USA, Atlanta', // 1631608
   f0230200: 'sealing, Korea, Gwanak-gu', // 1632299
   f0242152: 'sealing, Korea, Guro-gu', // 1632307
+  f0397675: 'sealing, Korea, Guro-gu', // 1632319
   f0398286: 'sealing, China, Beijing', // 1632303
   f0400681: 'sealing, USA, Queens', // 1632291
   f0401287: 'sealing, China, Yibin', // 1632281
@@ -57,48 +65,29 @@ const annotations = {
   f0405129: 'sealing, China, Fujian', // 1631939
   f0413563: 'sealing, Korea, Gangnam-gu', // 1632288
   f0427967: 'sealing, China, Changsha', // 1632005
+  f0427996: 'sealing, Canada, Bois-des-Filion', // 1632316
   f0428150: 'sealing, China, Xiamen', // 1632297
   f0430997: 'sealing, Korea', // 1632298
 
   // Stuck
 
-  f01238: 'stuck, Vietnam, Hanoi, FILECOIN-VIETNAM', // CheckForAcceptance: about 1 hour
-  f02490: 'stuck, China, Fujian', // CheckForAcceptance: about 1 hour
-  f02540: 'stuck, USA, Mobile', // CheckForAcceptance: 41 minutes
-  f016276: 'stuck, China, Beijing', // Transferring: about 1 hour
-  f020489: 'stuck, China, Lioaning', // CheckForAcceptance: 38 minutes
-  f022261: 'stuck, China, Luzhou', // CheckForAcceptance: about 1 hour
+  f020489: 'stuck, China, Lioaning', // CheckForAcceptance: about 1 hour
   f024511: 'stuck, China, Shenzhen', // Transferring: about 1 hour
-  f025025: 'stuck, China, Qingdao', // Transferring: 33 minutes
-  f039515: 'stuck, China, Chongqing', // CheckForAcceptance: 44 minutes
-  f042567: 'stuck, China, Jinhua', // Transferring: about 1 hour
-  f049882: 'stuck, Netherlands, De Rijp, Chipz', // CheckForAcceptance: 38 minutes
-  f061158: 'stuck, China, Guangdong', // CheckForAcceptance: about 1 hour
-  f081644: 'stuck, China, Wenzhou', // Transferring: about 1 hour
+  f025025: 'stuck, China, Qingdao', // Transferring: about 1 hour
+  f039515: 'stuck, China, Chongqing', // CheckForAcceptance: about 1 hour
+  f049882: 'stuck, Netherlands, De Rijp, Chipz', // CheckForAcceptance: about 1 hour
   f096976: 'stuck, Russia', // CheckForAcceptance: about 2 hours
-  f099705: 'stuck, China, Zibo', // CheckForAcceptance: about 1 hour
-  f0102313: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: 33 minutes
-  f0110133: 'stuck, China, Ningbo', // CheckForAcceptance: 35 minutes
-  f0110804: 'stuck, USA, Santa Clara', // CheckForAcceptance: 33 minutes
-  f0111885: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 1 hour
-  f0128191: 'stuck, Korea, Gangnam-gu', // CheckForAcceptance: about 1 hour
-  f0129805: 'stuck, China, Zhejiang + Australia, Adelaide', // Transferring: 33 minutes
-  f0131857: 'stuck, China, Chongqing', // Transferring: about 1 hour
-  f0134671: 'stuck, Korea, Gimpo-si', // CheckForAcceptance: 32 minutes
-  f0157265: 'stuck, China, Zhangjiakou', // CheckForAcceptance: about 1 hour
-  f0224894: 'stuck, China, Qingdao', // Transferring: 40 minutes
-  f0228575: 'stuck, Canada, Calgary', // CheckForAcceptance: 40 minutes
-  f0231161: 'stuck, China, Qujing', // Transferring: 34 minutes
-  f0349810: 'stuck, China, Qinzhou', // Transferring: about 1 hour
-  f0397675: 'stuck, Korea, Guro-gu', // CheckForAcceptance: about 1 hour
+  f0102313: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: about 1 hour
+  f0110133: 'stuck, China, Ningbo', // CheckForAcceptance: about 1 hour
+  f0110804: 'stuck, USA, Santa Clara', // CheckForAcceptance: about 1 hour
+  f0129805: 'stuck, China, Zhejiang + Australia, Adelaide', // Transferring: about 1 hour
+  f0134671: 'stuck, Korea, Gimpo-si', // CheckForAcceptance: about 1 hour
+  f0224894: 'stuck, China, Qingdao', // Transferring: about 1 hour
+  f0228575: 'stuck, Canada, Calgary', // CheckForAcceptance: about 1 hour
+  f0231161: 'stuck, China, Qujing', // Transferring: about 1 hour
   f0397728: 'stuck, China, Dongguan', // Transferring: about 1 hour
-  f0399814: "stuck, China, Ya'an", // Transferring: 44 minutes
-  f0401254: 'stuck, Korea, Uijeongbu-si', // CheckForAcceptance: 41 minutes
+  f0401254: 'stuck, Korea, Uijeongbu-si', // CheckForAcceptance: about 1 hour
   f0401300: 'stuck, France, Deuil-la-Barre', // CheckForAcceptance: about 1 hour
-  f0423713: 'stuck, China, Qingdao', // Transferring: about 1 hour
-  f0427994: 'stuck, China, Jinhua', // Transferring: about 1 hour
-  f0427996: 'stuck, Canada, Bois-des-Filion', // CheckForAcceptance: about 1 hour
-  f0434480: 'stuck, USA, Hummelstown', // CheckForAcceptance: about 1 hour
 
   // Busy
 
@@ -434,13 +423,22 @@ const annotations = {
   // Xfr-failed
 
   f010513: 'xfr-failed, China, Chongqing',
+  f016276: 'xfr-failed, China, Beijing',
   f024468: 'xfr-failed, China, Shenzhen',
+  f042567: 'xfr-failed, China, Jinhua',
   f079007: 'xfr-failed, China, Jinan',
+  f081644: 'xfr-failed, China, Wenzhou',
+  f0131857: 'xfr-failed, China, Chongqing',
   f0168058: 'xfr-failed, China, Suzhou',
+  f0349810: 'xfr-failed, China, Qinzhou',
   f0393359: 'xfr-failed, China, Suzhou',
+  f0399814: "xfr-failed, China, Ya'an",
+  f0423713: 'xfr-failed, China, Qingdao',
+  f0427994: 'xfr-failed, China, Jinhua',
 
   // Error
 
+  f02490: 'error, China, Fujian', // deal failed: (State=26) handing off deal to node: writing piece baga6ea4seaqk4k53kdcxa3wd2jikmlbatoypuwztlfe63ayd6j6fhnohczax2hi: write |1: broken pipe
   f030335: 'error, China, Fujian', // AddPiece failed: adding piece to sector: writing piece: storage call error 0: sector file:/mnt/md0/lotusworker/s-32  link /mnt/md0/lotusworker/s-32 /mnt/172.16.4.5/disk24/lotusminer_105/unsealed/s-t030335-14100: no such file or directory: link /mnt/md0/lotusworker/s-32 /mnt/172.16.4.5/disk24/lotusminer_105/unsealed/s-t030335-14100: no such file or directory
 
   // Backoff
