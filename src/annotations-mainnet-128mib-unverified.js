@@ -10,25 +10,8 @@ const annotations = {
 
   // Candidates
 
-  f01241: 'min-ask, China, Karamay', // carry-over
   f02645:
     'candidate, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
-  f03273: 'min-ask, China, Karamay', // carry-over
-  f05316: 'min-ask, China, Karamay', // carry-over
-  f015233: 'candidate, China, Nanjing', // carry-over
-  f019104: 'candidate, Canada, Chambly, NBFS DEV', // carry-over
-  f023978: 'candidate, China, Fuzhou', // carry-over
-  f033189: 'min-ask, NR', // carry-over
-  f034047: 'candidate, China, Hangzhou', // carry-over
-  f054370: 'min-ask, China, Dongguan', // carry-over
-  f097618: 'error-ask, China, Suzhou', // carry-over
-  f099239: 'min-ask, China, Hong Kong', // carry-over
-  f0131464: 'min-ask, USA, Ashburn', // carry-over
-  f0133999: 'min-ask, China, Changsha', // carry-over
-  f0151281: 'min-ask, China, Karamay', // carry-over
-  f0158142: 'min-ask, China, Karamay', // carry-over
-  f0241858: 'min-ask, China, Fuzhou', // carry-over
-  f0430101: 'error-ask, NR', // carry-over
 
   // Active
 
@@ -44,85 +27,83 @@ const annotations = {
 
   // Sealing
 
+  f03134: 'sealing, China, Cangzhou, 乔木信息', // 1632292
   f03339: 'sealing, China, Luzhou, benxun', // 1632282
   f023467: 'sealing, Norway, Oslo, PhiMining.io', // 1632077
   f044160: 'sealing, China, Guangzhou, muxing', // 1632081
   f086151: 'sealing, China, Dongguan', // 1631617
   f096974: 'sealing, China, Chongqing', // 1632266
   f097777: 'sealing, Ukraine, Ivano-Frankivsk', // 1631728
+  f098664: 'sealing, China, Jiangsu', // 1632295
   f0107322: 'sealing, China, Chengdu', // 1632285
   f0109043: 'sealing, China, Karamay', // 1632080
   f0113331: 'sealing, Korea, Jinju + USA', // 1632264
   f0131901: 'sealing, Korea, Daejeon', // 1632078
+  f0145018: 'sealing, Korea', // 1632287
   f0148143: 'sealing, China, Tianjin', // 1632283
+  f0150744: 'sealing, Korea, Ulsan', // 1632290
+  f0156452: 'sealing, Korea, Ulsan', // 1632286
   f0159961: 'sealing, China, Chongqing', // 1632269
   f0165375: 'sealing, Korea, Seongnam-si', // 1632082
+  f0165643: 'sealing, China, Guangzhou', // 1632294
   f0214181: 'sealing, Australia, Mosman', // 1631627
   f0221135: 'sealing, USA, Atlanta', // 1631608
+  f0230200: 'sealing, Korea, Gwanak-gu', // 1632299
+  f0400681: 'sealing, USA, Queens', // 1632291
   f0401287: 'sealing, China, Yibin', // 1632281
+  f0401303: 'sealing, Korea, Ulju-gun', // 1632293
   f0403177: 'sealing, China, Huizhou', // 1632265
   f0405129: 'sealing, China, Fujian', // 1631939
+  f0413563: 'sealing, Korea, Gangnam-gu', // 1632288
   f0427967: 'sealing, China, Changsha', // 1632005
+  f0428150: 'sealing, China, Xiamen', // 1632297
+  f0430997: 'sealing, Korea', // 1632298
 
   // Stuck
 
-  f01238: 'stuck, Vietnam, Hanoi, FILECOIN-VIETNAM', // CheckForAcceptance: 27 minutes
-  f02490: 'stuck, China, Fujian', // CheckForAcceptance: 29 minutes
-  f02540: 'stuck, USA, Mobile', // CheckForAcceptance: 23 minutes
-  f03134: 'stuck, China, Cangzhou, 乔木信息', // CheckForAcceptance: about 1 hour
+  f01238: 'stuck, Vietnam, Hanoi, FILECOIN-VIETNAM', // CheckForAcceptance: 37 minutes
+  f02490: 'stuck, China, Fujian', // CheckForAcceptance: 39 minutes
+  f02540: 'stuck, USA, Mobile', // CheckForAcceptance: 33 minutes
   f010513: 'stuck, China, Chongqing', // Transferring: about 1 hour
-  f016276: 'stuck, China, Beijing', // Transferring: 40 minutes
-  f020489: 'stuck, China, Lioaning', // CheckForAcceptance: 20 minutes
-  f022261: 'stuck, China, Luzhou', // CheckForAcceptance: 40 minutes
-  f024511: 'stuck, China, Shenzhen', // Transferring: 44 minutes
+  f016276: 'stuck, China, Beijing', // Transferring: about 1 hour
+  f020489: 'stuck, China, Lioaning', // CheckForAcceptance: 30 minutes
+  f022261: 'stuck, China, Luzhou', // CheckForAcceptance: about 1 hour
+  f024511: 'stuck, China, Shenzhen', // Transferring: about 1 hour
   f025007: 'stuck, Korea, Gyeonggi-do, PINBYTES-eCUBE', // CheckForAcceptance: about 1 hour
-  f025025: 'stuck, China, Qingdao', // Transferring: 15 minutes
+  f025025: 'stuck, China, Qingdao', // Transferring: 25 minutes
   f030335: 'stuck, China, Fujian', // CheckForAcceptance: about 1 hour
-  f039515: 'stuck, China, Chongqing', // CheckForAcceptance: 26 minutes
-  f042567: 'stuck, China, Jinhua', // Transferring: 38 minutes
-  f049882: 'stuck, Netherlands, De Rijp, Chipz', // CheckForAcceptance: 20 minutes
-  f061158: 'stuck, China, Guangdong', // CheckForAcceptance: 40 minutes
-  f079007: 'stuck, China, Jinan', // Transferring: about 1 hour
-  f081644: 'stuck, China, Wenzhou', // Transferring: 34 minutes
+  f039515: 'stuck, China, Chongqing', // CheckForAcceptance: 36 minutes
+  f042567: 'stuck, China, Jinhua', // Transferring: about 1 hour
+  f049882: 'stuck, Netherlands, De Rijp, Chipz', // CheckForAcceptance: 30 minutes
+  f061158: 'stuck, China, Guangdong', // CheckForAcceptance: about 1 hour
+  f081644: 'stuck, China, Wenzhou', // Transferring: 44 minutes
   f096976: 'stuck, Russia', // CheckForAcceptance: about 1 hour
   f097214: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 1 hour
-  f098664: 'stuck, China, Jiangsu', // CheckForAcceptance: about 1 hour
-  f099705: 'stuck, China, Zibo', // CheckForAcceptance: 30 minutes
-  f0102313: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: 15 minutes
-  f0110133: 'stuck, China, Ningbo', // CheckForAcceptance: 17 minutes
-  f0110804: 'stuck, USA, Santa Clara', // CheckForAcceptance: 15 minutes
+  f099705: 'stuck, China, Zibo', // CheckForAcceptance: 40 minutes
+  f0102313: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: 25 minutes
+  f0110133: 'stuck, China, Ningbo', // CheckForAcceptance: 27 minutes
+  f0110804: 'stuck, USA, Santa Clara', // CheckForAcceptance: 25 minutes
   f0111885: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 1 hour
   f0128191: 'stuck, Korea, Gangnam-gu', // CheckForAcceptance: about 1 hour
-  f0129805: 'stuck, China, Zhejiang + Australia, Adelaide', // Transferring: 15 minutes
+  f0129805: 'stuck, China, Zhejiang + Australia, Adelaide', // Transferring: 25 minutes
   f0131857: 'stuck, China, Chongqing', // Transferring: about 1 hour
-  f0134671: 'stuck, Korea, Gimpo-si', // CheckForAcceptance: 14 minutes
-  f0145018: 'stuck, Korea', // CheckForAcceptance: about 1 hour
-  f0150744: 'stuck, Korea, Ulsan', // CheckForAcceptance: about 1 hour
-  f0156452: 'stuck, Korea, Ulsan', // CheckForAcceptance: about 1 hour
-  f0157265: 'stuck, China, Zhangjiakou', // CheckForAcceptance: 42 minutes
-  f0165643: 'stuck, China, Guangzhou', // CheckForAcceptance: about 1 hour
-  f0224894: 'stuck, China, Qingdao', // Transferring: 22 minutes
-  f0228575: 'stuck, Canada, Calgary', // CheckForAcceptance: 22 minutes
-  f0230200: 'stuck, Korea, Gwanak-gu', // CheckForAcceptance: about 1 hour
-  f0231161: 'stuck, China, Qujing', // Transferring: 16 minutes
+  f0134671: 'stuck, Korea, Gimpo-si', // CheckForAcceptance: 24 minutes
+  f0157265: 'stuck, China, Zhangjiakou', // CheckForAcceptance: about 1 hour
+  f0224894: 'stuck, China, Qingdao', // Transferring: 32 minutes
+  f0228575: 'stuck, Canada, Calgary', // CheckForAcceptance: 32 minutes
+  f0231161: 'stuck, China, Qujing', // Transferring: 26 minutes
   f0242152: 'stuck, Korea, Guro-gu', // CheckForAcceptance: about 1 hour
-  f0349810: 'stuck, China, Qinzhou', // Transferring: 32 minutes
-  f0393359: 'stuck, China, Suzhou', // Transferring: about 1 hour
-  f0397675: 'stuck, Korea, Guro-gu', // CheckForAcceptance: 38 minutes
-  f0397728: 'stuck, China, Dongguan', // Transferring: 28 minutes
+  f0349810: 'stuck, China, Qinzhou', // Transferring: 42 minutes
+  f0397675: 'stuck, Korea, Guro-gu', // CheckForAcceptance: about 1 hour
+  f0397728: 'stuck, China, Dongguan', // Transferring: 38 minutes
   f0398286: 'stuck, China, Beijing', // CheckForAcceptance: about 1 hour
-  f0399814: "stuck, China, Ya'an", // Transferring: 26 minutes
-  f0400681: 'stuck, USA, Queens', // CheckForAcceptance: about 1 hour
-  f0401254: 'stuck, Korea, Uijeongbu-si', // CheckForAcceptance: 23 minutes
-  f0401300: 'stuck, France, Deuil-la-Barre', // CheckForAcceptance: 28 minutes
-  f0401303: 'stuck, Korea, Ulju-gun', // CheckForAcceptance: about 1 hour
-  f0413563: 'stuck, Korea, Gangnam-gu', // CheckForAcceptance: about 1 hour
+  f0399814: "stuck, China, Ya'an", // Transferring: 36 minutes
+  f0401254: 'stuck, Korea, Uijeongbu-si', // CheckForAcceptance: 33 minutes
+  f0401300: 'stuck, France, Deuil-la-Barre', // CheckForAcceptance: 38 minutes
   f0423713: 'stuck, China, Qingdao', // Transferring: about 1 hour
-  f0427994: 'stuck, China, Jinhua', // Transferring: 44 minutes
+  f0427994: 'stuck, China, Jinhua', // Transferring: about 1 hour
   f0427996: 'stuck, Canada, Bois-des-Filion', // CheckForAcceptance: about 1 hour
-  f0428150: 'stuck, China, Xiamen', // CheckForAcceptance: about 1 hour
-  f0430997: 'stuck, Korea', // CheckForAcceptance: about 1 hour
-  f0434480: 'stuck, USA, Hummelstown', // CheckForAcceptance: 33 minutes
+  f0434480: 'stuck, USA, Hummelstown', // CheckForAcceptance: 43 minutes
 
   // Busy
 
@@ -152,6 +133,7 @@ const annotations = {
   f015927: 'min-size, USA, East Islip, CDImine', // 134217728 < 1073741824
   f017242: 'min-size, China, Guangdong', // 134217728 < 268435456
   f019002: 'min-size, China, Xiamen', // 134217728 < 1073741824
+  f019104: 'min-size, Canada, Chambly, NBFS DEV', // 134217728 < 4294967296
   f019362: 'min-size, China, Hangzhou, 青青子衿', // 134217728 < 17179869184
   f019399: 'min-size, Korea, Busan', // 134217728 < 268435456
   f019551: 'min-size, UK, Birmingham, @Neofix AF', // 134217728 < 268435456
@@ -178,6 +160,7 @@ const annotations = {
   f023928: 'min-size, China, Fuzhou', // 134217728 < 1572864000
   f023971: 'min-size, USA', // 134217728 < 536870912
   f023977: 'min-size, China, Fuzhou', // 134217728 < 1572864000
+  f023978: 'min-size, China, Fuzhou', // 134217728 < 1572864000
   f023980: 'min-size, China, Fuzhou', // 134217728 < 1572864000
   f023981: 'min-size, China, Fuzhou', // 134217728 < 1572864000
   f024006: 'min-size, China, Fuzhou', // 134217728 < 1572864000
@@ -194,6 +177,7 @@ const annotations = {
   f024147: 'min-size, China, Fuzhou', // 134217728 < 1572864000
   f024148: 'min-size, China, Fuzhou', // 134217728 < 1572864000
   f032934: 'min-size, Korea, Incheon', // 134217728 < 1073741824
+  f034047: 'min-size, China, Hangzhou', // 134217728 < 1073741824
   f047419: 'min-size, USA, Waukesha', // 134217728 < 8589934592
   f058000: 'min-size, China, Suzhou', // 268435456 < 1073741824
   f062353: 'min-size, Germany, Frankfurt', // 134217728 < 17179869184
@@ -221,11 +205,13 @@ const annotations = {
   // Max-size
 
   f02619: 'max-size, China, Beijing, Blockcasting', // 134217728 > 1048576
+  f015233: 'max-size, China, Nanjing', // 134217728 > 1048576
   f024550: 'max-size, China, Wenzhou', // 134217728 > 1048576
   f024944: 'max-size, Korea, Yeongdeungpo-dong', // 134217728 > 1048576
 
   // Min-ask
 
+  f01241: 'min-ask, China, Karamay', // carry-over
   f01277: 'min-ask, Sweden, Stockholm', // carry-over
   f01280: 'min-ask, China, Wuxi', // carry-over
   f02381: 'min-ask, China, Dongguan', // carry-over
@@ -241,6 +227,7 @@ const annotations = {
     'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
   f03143: 'min-ask, Vietman, Ho Chi Minh City + China, Beijing + Shijiazhuang', // carry-over
   f03223: 'min-ask, USA', // carry-over
+  f03273: 'min-ask, China, Karamay', // carry-over
   f03274: 'min-ask, China, Karamay', // carry-over
   f03275: 'min-ask, China, Karamay', // carry-over
   f03345: 'min-ask, China, Fuzhou, chh', // carry-over
@@ -250,6 +237,7 @@ const annotations = {
   f03491:
     'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // carry-over
   f05315: 'min-ask, China, Karamay', // carry-over
+  f05316: 'min-ask, China, Karamay', // carry-over
   f05317: 'min-ask, China, Karamay', // carry-over
   f05664: 'min-ask, China, Hong Kong', // carry-over
   f07709: 'min-ask, Korea, Dongjak-gu', // carry-over
@@ -304,6 +292,7 @@ const annotations = {
   f029404: 'min-ask, China, Karamay', // carry-over
   f030384: 'min-ask, China, Shenzhen', // carry-over
   f033123: 'min-ask, China, Karamay', // carry-over
+  f033189: 'min-ask, NR', // carry-over
   f033356: 'min-ask, Korea, Yeongdeungpo-dong', // carry-over
   f039800: 'min-ask, China, Chengdu', // carry-over
   f040218: 'min-ask, China, Wuxi', // carry-over
@@ -312,6 +301,7 @@ const annotations = {
   f042635: 'min-ask, China, Karamay', // carry-over
   f050022: 'min-ask, China, Changsha', // carry-over
   f052447: 'min-ask, China, Karamay', // carry-over
+  f054370: 'min-ask, China, Dongguan', // carry-over
   f055102: 'min-ask, Vietman, Ho Chi Minh City + China', // carry-over
   f055132: 'min-ask, Vietman, Ho Chi Minh City + China', // carry-over
   f056611: 'min-ask, China, Karamay', // carry-over
@@ -354,6 +344,7 @@ const annotations = {
   f097370: 'min-ask, NR', // carry-over
   f097386: 'min-ask, China, Beijing', // carry-over
   f097914: 'min-ask, NR', // carry-over
+  f099239: 'min-ask, China, Hong Kong', // carry-over
   f0101087: 'min-ask, Korea', // carry-over
   f0102374: 'min-ask, China, Karamay', // carry-over
   f0102375: 'min-ask, China, Karamay', // carry-over
@@ -383,8 +374,10 @@ const annotations = {
   f0129072: 'min-ask, China, Karamay', // carry-over
   f0129976: 'min-ask, Korea, Gwangju', // carry-over
   f0130912: 'min-ask, China, Hong Kong', // carry-over
+  f0131464: 'min-ask, USA, Ashburn', // carry-over
   f0131654: 'min-ask, Korea, Seoul', // carry-over
   f0133886: 'min-ask, China, Guangdong', // carry-over
+  f0133999: 'min-ask, China, Changsha', // carry-over
   f0134565: 'min-ask, China, Karamay', // carry-over
   f0134682: 'min-ask, China, Beijing', // carry-over
   f0134778: 'min-ask, China, Beijing', // carry-over
@@ -401,12 +394,14 @@ const annotations = {
   f0149765: 'min-ask, China, Beijing', // carry-over
   f0149768: 'min-ask, China, Dongguan', // carry-over
   f0151034: 'min-ask, USA, Syracuse', // carry-over
+  f0151281: 'min-ask, China, Karamay', // carry-over
   f0151692: 'min-ask, China, Karamay', // carry-over
   f0152747: 'min-ask, China, Karamay', // carry-over
   f0152854: 'min-ask, China, Huizhou', // carry-over
   f0153176: 'min-ask, China, Fujian', // carry-over
   f0154988: 'min-ask, China, Dongguan', // carry-over
   f0157769: 'min-ask, China, Changsha', // carry-over
+  f0158142: 'min-ask, China, Karamay', // carry-over
   f0158468: 'min-ask, China, Guangzhou', // carry-over
   f0165111: 'min-ask, China, Guangzhou', // carry-over
   f0165135: 'min-ask, China, Guangzhou', // carry-over
@@ -420,6 +415,7 @@ const annotations = {
   f0224144: 'min-ask, China, Karamay', // carry-over
   f0224841: 'min-ask, China, Guangzhou', // carry-over
   f0225058: 'min-ask, China, Fuzhou', // carry-over
+  f0241858: 'min-ask, China, Fuzhou', // carry-over
   f0392785: 'min-ask, China, Karamay', // carry-over
   f0396188: 'min-ask, China, Karamay', // carry-over
   f0397855: 'min-ask, China, Karamay', // carry-over
@@ -441,7 +437,9 @@ const annotations = {
   // Xfr-failed
 
   f024468: 'xfr-failed, China, Shenzhen',
+  f079007: 'xfr-failed, China, Jinan',
   f0168058: 'xfr-failed, China, Suzhou',
+  f0393359: 'xfr-failed, China, Suzhou',
 
   // Error
 
@@ -498,6 +496,7 @@ const annotations = {
   f080103: 'error-ask, Korea, Seongnam-si', // carry-over
   f082635: 'error-ask, NR', // carry-over
   f090492: 'error-ask, NR', // carry-over
+  f097618: 'error-ask, China, Suzhou', // carry-over
   f097720: 'error-ask, Korea, Bucheon-si', // carry-over
   f099608: 'error-ask, Latvia, Riga', // carry-over
   f0111174: 'error-ask, China, Guangzhou', // carry-over
@@ -510,7 +509,8 @@ const annotations = {
   f0395463: 'error-ask, Korea, Daegu', // carry-over
   f0395472: 'error-ask, Korea, Daegu', // carry-over
   f0395473: 'error-ask, Korea, Daegu', // carry-over
-  f0402431: 'error-ask, China, Hangzhou' // carry-over
+  f0402431: 'error-ask, China, Hangzhou', // carry-over
+  f0430101: 'error-ask, NR' // carry-over
 }
 
 export default annotations
