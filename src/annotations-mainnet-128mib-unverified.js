@@ -11,11 +11,11 @@ const annotations = {
   // Candidates
 
   f023858: 'candidate, China, Fuzhou', // carry-over
-  f024184: 'candidate, Korea, Yeongdeungpo-dong', // carry-over
-  f062318: 'candidate, Korea, Naju', // carry-over
-  f062982: 'candidate, China, Fuzhou', // carry-over
+  f024184: 'error-ask, Korea, Yeongdeungpo-dong', // carry-over
+  f062318: 'min-ask, Korea, Naju', // carry-over
+  f062982: 'min-ask, China, Fuzhou', // carry-over
   f083920: 'candidate, NR', // carry-over
-  f0410506: 'candidate, Korea, Seoul', // carry-over
+  f0410506: 'min-ask, Korea, Seoul', // carry-over
 
   // Active
 
