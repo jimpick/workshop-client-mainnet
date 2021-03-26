@@ -10,13 +10,6 @@ const annotations = {
 
   // Candidates
 
-  f023858: 'candidate, China, Fuzhou', // carry-over
-  f024184: 'error-ask, Korea, Yeongdeungpo-dong', // carry-over
-  f062318: 'min-ask, Korea, Naju', // carry-over
-  f062982: 'min-ask, China, Fuzhou', // carry-over
-  f083920: 'candidate, NR', // carry-over
-  f0410506: 'min-ask, Korea, Seoul', // carry-over
-
   // Active
 
   f020489: 'active, China, Lioaning', // 1632350
@@ -56,7 +49,6 @@ const annotations = {
   f03339: 'sealing, China, Luzhou, benxun', // 1632282
   f022261: 'sealing, China, Luzhou', // 1632313
   f023467: 'sealing, Norway, Oslo, PhiMining.io', // 1632077
-  f024511: 'sealing, China, Shenzhen', // 1634773
   f039515: 'sealing, China, Chongqing, valarhash', // 1632340
   f042567: 'sealing, China, Jinhua', // 1634800
   f044160: 'sealing, China, Guangzhou, muxing', // 1632081
@@ -107,13 +99,13 @@ const annotations = {
 
   f016276: 'stuck, China, Beijing', // Transferring: about 1 hour
   f024468: 'stuck, China, Shenzhen', // Transferring: about 1 hour
+  f024511: 'stuck, China, Shenzhen', // CheckForAcceptance: about 1 hour
   f033036: 'stuck, China, Liaoning', // CheckForAcceptance: about 1 hour
   f081644: 'stuck, China, Wenzhou', // Transferring: about 1 hour
   f0137168: 'stuck, China, Beijing', // Transferring: about 2 hours
   f0149455: 'stuck, NR', // Transferring: about 1 hour
-  f0224894: 'stuck, China, Qingdao', // Transferring: about 1 hour
   f0393359: 'stuck, China, Suzhou', // CheckForAcceptance: about 1 hour
-  f0397728: 'stuck, China, Dongguan', // Transferring: 37 minutes
+  f0397728: 'stuck, China, Dongguan', // Transferring: about 1 hour
   f0411786: 'stuck, Korea, Busan', // CheckForAcceptance: about 1 hour
   f0437246: 'stuck, China, Hangzhou', // Transferring: about 1 hour
 
@@ -160,6 +152,7 @@ const annotations = {
   f023853: 'min-size, China, Fuzhou', // 134217728 < 1572864000
   f023854: 'min-size, China, Fuzhou', // 134217728 < 1572864000
   f023855: 'min-size, China, Fuzhou', // 134217728 < 1572864000
+  f023858: 'min-size, China, Fuzhou', // 134217728 < 1572864000
   f023859: 'min-size, China, Fuzhou', // 134217728 < 1572864000
   f023861: 'min-size, China, Fuzhou', // 134217728 < 1572864000
   f023868: 'min-size, China, Fuzhou', // 134217728 < 1572864000
@@ -196,6 +189,7 @@ const annotations = {
   f071624: 'min-size, USA, Boyne City', // 134217728 < 4294967296
   f078522: 'min-size, NR', // 134217728 < 4294967296
   f079817: "min-size, Russia, Ul'yanovka", // 134217728 < 1073741824
+  f083920: 'min-size, NR', // 134217728 < 1573031772
   f097618: 'min-size, China, Suzhou', // 134217728 < 524288000
   f099608: 'min-size, Latvia, Riga', // 134217728 < 268435456
   f0100116: 'min-size, Korea, Uljin County', // 134217728 < 1073741824
@@ -323,9 +317,11 @@ const annotations = {
   f060072: 'min-ask, China, Chongqing', // carry-over
   f061740: 'min-ask, China, Karamay', // carry-over
   f062260: 'min-ask, China, Guangzhou', // carry-over
+  f062318: 'min-ask, Korea, Naju', // carry-over
   f062334: 'min-ask, China, Karamay', // carry-over
   f062770: 'min-ask, China, Fuzhou', // carry-over
   f062811: 'min-ask, China, Fuzhou', // carry-over
+  f062982: 'min-ask, China, Fuzhou', // carry-over
   f065200: 'min-ask, China, Yibin', // carry-over
   f065280: 'min-ask, Korea, Songpa-gu, Data Store Ltd', // carry-over
   f066104: 'min-ask, China, Karamay', // carry-over
@@ -431,6 +427,7 @@ const annotations = {
   f0406475: 'min-ask, China, Dongguan', // carry-over
   f0408717: 'min-ask, Korea, Ansan-si', // carry-over
   f0409765: 'min-ask, China, Karamay', // carry-over
+  f0410506: 'min-ask, Korea, Seoul', // carry-over
   f0410701: 'min-ask, China, Changsha', // carry-over
   f0413684: 'min-ask, China, Fujian', // carry-over
   f0413801: 'min-ask, China, Fujian', // carry-over
@@ -445,6 +442,7 @@ const annotations = {
   f025025: 'xfr-failed, China, Qingdao',
   f079007: 'xfr-failed, China, Jinan',
   f0131857: 'xfr-failed, China, Chongqing',
+  f0224894: 'xfr-failed, China, Qingdao',
   f0231161: 'xfr-failed, China, Qujing',
   f0427994: 'xfr-failed, China, Jinhua',
 
@@ -494,6 +492,7 @@ const annotations = {
   f022820: 'error-ask, China, Guangdong', // carry-over
   f022922: 'error-ask, China, Shenzhen, CAAP-MEG', // carry-over
   f023219: 'error-ask, China, Beijing + Zhangjiakou', // carry-over
+  f024184: 'error-ask, Korea, Yeongdeungpo-dong', // carry-over
   f063628: 'error-ask, NR', // carry-over
   f065103: 'error-ask, USA + China, Suzhou + Guangzhou + Karamay', // carry-over
   f081222: 'error-ask, China, Changzhou', // carry-over
