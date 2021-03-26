@@ -14,6 +14,9 @@ const annotations = {
 
   // New
 
+  f0449662: 'new, China, Karamay',
+  f0447183: 'new, Canada, Montreal',
+
   // Inflight
 
   // Unknown
