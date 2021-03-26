@@ -90,7 +90,7 @@ const annotations = {
   f0107322: 'sealing, China, Chengdu', // 1634469
   f0110133: 'sealing, China, Ningbo', // 1634433
   f0113331: 'sealing, Korea, Jinju + USA', // 1634425
-  f0122815: 'sealing, Korea, Bucheon-si', // 1634486
+  f0122815: 'sealing, Korea, Bucheon-si, Healthcarenavi_80', // 1634486
   f0128191: 'sealing, Korea, Gangnam-gu', // 1634460
   f0129805: 'sealing, China, Zhejiang + Australia, Adelaide', // 1634423
   f0131901: 'sealing, Korea, Daejeon', // 1634422
@@ -108,7 +108,7 @@ const annotations = {
   f0349810: 'sealing, China, Qinzhou', // 1634451
   f0393359: 'sealing, China, Suzhou', // 1634462
   f0397728: 'sealing, China, Dongguan', // 1634458
-  f0400920: 'sealing, NR', // 1634489
+  f0400920: 'sealing, China, Luzhou', // 1634489
   f0401287: 'sealing, China, Yibin', // 1634454
   f0401300: 'sealing, France, Deuil-la-Barre', // 1634494
   f0401416: 'sealing, Japan, Fukuoka', // 1634448
@@ -511,7 +511,7 @@ const annotations = {
   f082617: 'error, China, Fujian', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.37379624298005276 FIL, balance: 0.045318221613159791 FIL): not enough funds to execute transaction
   f085777: 'error, China, Zhangzhou', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f093658: 'error, China, Fujian', // AddPiece failed: adding piece to sector: writing piece: storage call error 0: sector file:/mnt/md0/lotusworker/s-32  link /mnt/md0/lotusworker/s-32 /mnt/172.18.5.5/disk21/lotusminer/unsealed/s-t093658-38935: no such file or directory: link /mnt/md0/lotusworker/s-32 /mnt/172.18.5.5/disk21/lotusminer/unsealed/s-t093658-38935: no such file or directory
-  f097214: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.449592967172116775 FIL, balance: 0.253711023274080389 FIL): not enough funds to execute transaction
+  f097214: 'error, Korea, Bucheon-si, CryptoHash', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.449592967172116775 FIL, balance: 0.253711023274080389 FIL): not enough funds to execute transaction
   f0101387: 'error, China, Shenzhen', // AddPiece failed: adding piece to sector: writing piece: storage call error 0: sector file:/mnt/md0/lotusworker/s-32  link /mnt/md0/lotusworker/s-32 /mnt/172.18.60.216/disk3/lotusminer/unsealed/s-t0101387-39082: no such file or directory: link /mnt/md0/lotusworker/s-32 /mnt/172.18.60.216/disk3/lotusminer/unsealed/s-t0101387-39082: no such file or directory
   f0108979: 'error, Korea, Bupyeong-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.454978667645440981 FIL, balance: 0.24231724689963158 FIL): not enough funds to execute transaction
   f0109040: 'error, China, Zhangzhou', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported

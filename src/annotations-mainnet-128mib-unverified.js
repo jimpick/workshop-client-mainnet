@@ -56,7 +56,7 @@ const annotations = {
   f086151: 'sealing, China, Dongguan', // 1631617
   f094374: 'sealing, China, Nanyang', // 1634818
   f096976: 'sealing, Russia', // 1632302
-  f097214: 'sealing, Korea, Bucheon-si', // 1632306
+  f097214: 'sealing, Korea, Bucheon-si, CryptoHash', // 1632306
   f098664: 'sealing, China, Jiangsu', // 1632295
   f0102313: 'sealing, Korea, Gangseo-gu', // 1632386
   f0107322: 'sealing, China, Chengdu', // 1632285
@@ -65,7 +65,7 @@ const annotations = {
   f0110804: 'sealing, USA, Santa Clara', // 1632382
   f0111885: 'sealing, Korea, Bucheon-si, WINNERS', // 1632310
   f0113331: 'sealing, Korea, Jinju + USA', // 1632264
-  f0122815: 'sealing, Korea, Bucheon-si', // 1634784
+  f0122815: 'sealing, Korea, Bucheon-si, Healthcarnavi_80', // 1634784
   f0128191: 'sealing, Korea, Gangnam-gu', // 1632309
   f0129805: 'sealing, China, Zhejiang + Australia, Adelaide', // 1634799
   f0131901: 'sealing, Korea, Daejeon', // 1632078
@@ -83,7 +83,7 @@ const annotations = {
   f0349810: 'sealing, China, Qinzhou', // 1634808
   f0397675: 'sealing, Korea, Guro-gu', // 1632319
   f0398286: 'sealing, China, Beijing', // 1632303
-  f0400920: 'sealing, NR', // 1634785
+  f0400920: 'sealing, China, Luzhou', // 1634785
   f0401287: 'sealing, China, Yibin', // 1632281
   f0405129: 'sealing, China, Fujian', // 1631939
   f0419768: 'sealing, Korea, Seongnam-si', // 1634787
