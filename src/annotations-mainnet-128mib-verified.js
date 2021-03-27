@@ -10,43 +10,9 @@ const annotations = {
 
   // Candidates
 
-  f058369: 'candidate, USA, Boston', // 1634414
-  f01234: 'candidate, Belgium, Bonheiden', // 131072 < 3221225472
-  f01240: 'candidate, Netherlands, HidNand', // 131072 < 268435456
-  f01247: 'candidate, Canada, Montreal', // 131072 < 536870912
-  f01278: 'candidate, USA, Grand Rapids, MiMiner', // 131072 < 536870912
-  f02576: 'candidate, Denmark, Gjerlev, BenjaminH', // 131072 < 17179869184
-  f07998: 'candidate, China, Hangzhou', // 131072 < 17179869184
-  f08399: 'candidate, USA, Sammamish', // 131072 < 4294967296
-  f08403: 'candidate, UK, Lower Slaughter, TippyFlits', // 131072 < 536870912
-  f09848: 'candidate, USA, Irvine, BigBearLake', // 131072 < 536870912
-  f010479: 'candidate, France, Fontenay-sous-Bois, s0nik42', // 131072 < 8589934592
-  f010617: 'candidate, Canada, Surrey, kernelogic2, @feiya200', // 131072 < 1073741824
-  f014768: 'candidate, Singapore, Funktafide, @Funk', // 131072 < 536870912
-  f015927: 'candidate, USA, East Islip, CDImine', // 131072 < 1073741824
-  f019104: 'candidate, Canada, Chambly, NBFS DEV', // 131072 < 4294967296
-  f019551: 'candidate, UK, Birmingham, @Neofix AF', // 131072 < 268435456
-  f021716: 'candidate, New Zealand, Wellington', // 131072 < 536870912
-  f022142: 'candidate, USA, Queens, Nelson SR2', // 131072 < 2147483648
-  f022163: 'candidate, dns:fil.akasha.network', // 131072 < 536870912
-  f023467: 'candidate, Norway, Oslo, PhiMining.io', // 131072 < 134217728
-  f023971: 'candidate, USA', // 131072 < 536870912
-  f062353: 'candidate, Germany, Frankfurt', // 131072 < 17179869184
-  f066596: 'candidate, USA, San Diego', // 131072 < 536870912
-  f071624: 'candidate, USA, Boyne City', // 131072 < 4294967296
-  f099608: 'candidate, Latvia, Riga', // 131072 < 268435456
-  f0127896: 'candidate, Bulgaria, Sofia', // 131072 < 536870912
-  f0145874: 'candidate, Canada, Brampton', // 131072 < 4294967296
-  f0157535: 'candidate, Canada, Brampton', // 131072 < 4294967296
-  f0165400: 'candidate, Canada, Brampton', // 131072 < 4294967296
-  f01277: 'candidate, Sweden, Stockholm', // 20000000 < 122070312500000
-  f02606: 'candidate, China, Zhejiang', // 20000000 < 122070312
-  f014409: 'candidate, USA, Monroe', // 20000000 < 122070312
-  f022352: 'candidate, Norway, Borgen, TechHedge, @Reiers', // 20000000 < 21972656
-  f019362: 'candidate, China, Hangzhou, 青青子衿', // stream reset
-  f019041: 'candidate, China, Zhejiang + Singapore', // no online
-  f019100: 'candidate, Romania, Cluj-Napoca', // * [/ip4/79.119.122.118/tcp/55555] dial tcp4 0.0.0.0:37203->79.119.122.118:55555: i/o timeout
-
+	f01277: "candidate, Sweden, Stockholm", // carry-over
+	f019100: "candidate, Romania, Cluj-Napoca", // carry-over
+	f0127896: "candidate, Bulgaria, Sofia", // carry-over
 
   // Active
 
@@ -58,15 +24,47 @@ const annotations = {
 
   // Stuck
 
+	f02606: "stuck, China, Zhejiang", // CheckForAcceptance: 8 minutes
+	f023467: "stuck, Norway, Oslo, PhiMining.io", // CheckForAcceptance: 5 minutes
+	f058369: "stuck, USA, Boston", // CheckForAcceptance: 10 minutes
 
   // Busy
 
 
   // Min-size
 
+	f01234: "min-size, Belgium, Bonheiden", // 134217728 < 3221225472
+	f01240: "min-size, Netherlands, HidNand", // 134217728 < 268435456
+	f01278: "min-size, USA, Grand Rapids, MiMiner", // 134217728 < 536870912
+	f02576: "min-size, Denmark, Gjerlev, BenjaminH", // 134217728 < 17179869184
+	f07998: "min-size, China, Hangzhou", // 134217728 < 17179869184
+	f08399: "min-size, USA, Sammamish", // 134217728 < 4294967296
+	f08403: "min-size, UK, Lower Slaughter, TippyFlits", // 134217728 < 536870912
+	f09848: "min-size, USA, Irvine, BigBearLake", // 134217728 < 536870912
+	f010479: "min-size, France, Fontenay-sous-Bois, s0nik42", // 134217728 < 8589934592
+	f010617: "min-size, Canada, Surrey, kernelogic2, @feiya200", // 134217728 < 1073741824
+	f014409: "min-size, USA, Monroe", // 134217728 < 4294967296
+	f014768: "min-size, Singapore, Funktafide, @Funk", // 134217728 < 536870912
+	f015927: "min-size, USA, East Islip, CDImine", // 134217728 < 1073741824
+	f019104: "min-size, Canada, Chambly, NBFS DEV", // 268435456 < 4294967296
+	f019362: "min-size, China, Hangzhou, 青青子衿", // 134217728 < 17179869184
+	f019551: "min-size, UK, Birmingham, @Neofix AF", // 134217728 < 268435456
+	f021716: "min-size, New Zealand, Wellington", // 134217728 < 536870912
+	f022142: "min-size, USA, Queens, Nelson SR2", // 134217728 < 2147483648
+	f022163: "min-size, dns:fil.akasha.network", // 134217728 < 536870912
+	f022352: "min-size, Norway, Borgen, TechHedge, @Reiers", // 134217728 < 536870912
+	f023971: "min-size, USA", // 134217728 < 536870912
+	f062353: "min-size, Germany, Frankfurt", // 134217728 < 17179869184
+	f066596: "min-size, USA, San Diego", // 134217728 < 536870912
+	f071624: "min-size, USA, Boyne City", // 134217728 < 4294967296
+	f099608: "min-size, Latvia, Riga", // 134217728 < 268435456
+	f0145874: "min-size, Canada, Brampton", // 134217728 < 4294967296
+	f0157535: "min-size, Canada, Brampton", // 134217728 < 4294967296
+	f0165400: "min-size, Canada, Brampton", // 134217728 < 4294967296
 
   // Max-size
 
+	f019041: "max-size, China, Zhejiang + Singapore", // 134217728 > 1048576
 
   // Min-ask
 
@@ -81,6 +79,7 @@ const annotations = {
 
   // Rejected
 
+	f01247: "rejected, Canada, Montreal", // Sorry, we are currently not accepting deals! To store data with us, contact eric(at)chainsafe(dot)io
 
   // Dial
 

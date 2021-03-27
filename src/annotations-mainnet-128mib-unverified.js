@@ -12,33 +12,6 @@ const annotations = {
 
   // Active
 
-  f020489: 'active, China, Lioaning', // 1632350
-  f023467: 'active, Norway, Oslo, PhiMining.io', // 1632077 about 2 hours
-  f025007: 'active, Korea, Gyeonggi-do, PINBYTES-eCUBE', // 1632300
-  f042567: 'active, China, Jinhua', // 1634800 about 3 hours
-  f061158: 'active, China, Guangdong, phoenix', // 1632317
-  f064668: 'active, China, Hong Kong', // 1631838 about 3 hours
-  f094374: 'active, China, Nanyang', // 1634818 about 2 hours
-  f096974: 'active, China, Chongqing', // 1632266
-  f097777: 'active, Ukraine, Ivano-Frankivsk', // 1631728
-  f099705: 'active, China, Zibo', // 1632324
-  f0122815: 'active, Korea, Bucheon-si, Healthcarnavi_80', // 1634784 about 2 hours
-  f0134671: 'active, Korea, Gimpo-si', // 1632383 about 4 hours
-  f0146751: 'active, China, Jiangsu', // 1632268
-  f0156207: 'active, Korea, Ulsan', // 1632004
-  f0156452: 'active, Korea, Ulsan', // 1632286 about 2 hours
-  f0157265: 'active, China, Zhangjiakou', // 1632320 about 2 hours
-  f0157564: 'active, Korea, Daejeon', // 1634780 about 2 hours
-  f0165539: 'active, Japan, Yokohama', // 1632006
-  f0228575: 'active, Canada, Calgary', // 1632372 about 1 hour
-  f0230200: 'active, Korea, Gwanak-gu, G-mining', // 1632299 about 2 hours
-  f0242152: 'active, Korea, Guro-gu', // 1632307
-  f0400681: 'active, USA, Queens', // 1632291
-  f0401254: 'active, Korea, Uijeongbu-si', // 1632370
-  f0401300: 'active, France, Deuil-la-Barre', // 1632347 about 7 hours
-  f0401303: 'active, Korea, Ulju-gun', // 1632293
-  f0403177: 'active, China, Huizhou', // 1632265
-  f0413563: 'active, Korea, Gangnam-gu', // 1632288
 
   // Sealing (active-sealing = previously active, retesting with new deal)
 
