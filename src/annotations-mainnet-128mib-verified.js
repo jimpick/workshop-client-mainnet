@@ -33,8 +33,8 @@ const annotations = {
 
   // Min-size
 
-	f01234: "min-size, Belgium, Bonheiden", // 134217728 < 3221225472
-	f01240: "min-size, Netherlands, HidNand", // 134217728 < 268435456
+	f01234: "min-size, Belgium, Bonheiden, Eliovp", // 134217728 < 3221225472
+	f01240: "min-size, Netherlands, Dcent", // 134217728 < 268435456
 	f01278: "min-size, USA, Grand Rapids, MiMiner", // 134217728 < 536870912
 	f02576: "min-size, Denmark, Gjerlev, BenjaminH", // 134217728 < 17179869184
 	f07998: "min-size, China, Hangzhou", // 134217728 < 17179869184

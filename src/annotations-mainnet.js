@@ -144,10 +144,10 @@ const annotations = {
 
   // Min Size
 
-  f01234: 'min-size, Belgium, Bonheiden', // 131072 < 3221225472
+  f01234: 'min-size, Belgium, Bonheiden, Eliovp', // 131072 < 3221225472
   f01238: 'min-size, Vietnam, Hanoi, FILECOIN-VIETNAM', // 131072 < 134217728
-  f01240: 'min-size, Netherlands, HidNand', // 131072 < 268435456
-  f01247: 'min-size, Canada, Montreal', // 131072 < 536870912
+  f01240: 'min-size, Netherlands, Dcent', // 131072 < 268435456
+  f01247: 'min-size, Canada, Montreal, BigChungus', // 131072 < 536870912
   f01276: 'min-size, Canada, Brampton, NBFS Canada', // 131072 < 4294967296
   f01278: 'min-size, USA, Grand Rapids, MiMiner', // 131072 < 536870912
   f02387: 'min-size, Canada, Brampton, NBFS Canada', // 131072 < 17179869184
@@ -159,9 +159,9 @@ const annotations = {
   f02620: 'min-size, Poland, Krakow, @magik6k', // 131072 < 536870912
   f03134: 'min-size, China, Cangzhou, QiaoMu', // 131072 < 1048576
   f03624: 'min-size, Germany, Chemnitz, ode', // 131072 < 8589934592
-  f07998: 'min-size, China, Hangzhou', // 131072 < 17179869184
+  f07998: 'min-size, China, Hangzhou, 安问', // 131072 < 17179869184
   f08240: 'min-size, Russia, Novosibirsk, Rabinovitch', // 131072 < 1073741824
-  f08399: 'min-size, USA, Sammamish', // 131072 < 4294967296
+  f08399: 'min-size, USA, Sammamish, MiningMusing', // 131072 < 4294967296
   f08403: 'min-size, UK, Lower Slaughter, TippyFlits', // 131072 < 536870912
   f09848: 'min-size, USA, Irvine, BigBearLake', // 131072 < 536870912
   f010088: 'min-size, NR', // 131072 < 4294967296
@@ -177,17 +177,17 @@ const annotations = {
   f017242: 'min-size, China, Guangdong', // 131072 < 268435456
   f018501: 'min-size, China, Beijing', // 131072 < 1073741824
   f019002: 'min-size, China, Xiamen', // 131072 < 1073741824
-  f019104: 'min-size, Canada, Chambly, NBFS DEV', // 131072 < 4294967296
+  f019104: 'min-size, Canada, Chambly, Northstar', // 131072 < 4294967296
   f019399: 'min-size, Korea, Busan', // 131072 < 268435456
-  f019551: 'min-size, UK, Birmingham, @Neofix AF', // 131072 < 268435456
+  f019551: 'min-size, UK, Birmingham, Neonix', // 131072 < 268435456
   f020378: 'min-size, Bulgaria, Asenovgrad', // 131072 < 2147483648
   f020385: 'min-size, Korea, Incheon', // 131072 < 536870912
   f020436: 'min-size, China, Beijing', // 131072 < 536870912
   f020904: 'min-size, Korea, Uijeongbu-si, FILTop', // 131072 < 8589934592
-  f021716: 'min-size, New Zealand, Wellington', // 131072 < 536870912
+  f021716: 'min-size, New Zealand, Wellington, Info.farm', // 131072 < 536870912
   f021961: 'min-size, China, Fuzhou', // 131072 < 17179869184
   f022142: 'min-size, USA, Queens, Nelson SR2', // 131072 < 2147483648
-  f022163: 'min-size, dns:fil.akasha.network', // 131072 < 536870912
+  f022163: 'min-size, Switzerland, dns:fil.akasha.network', // 131072 < 536870912
   f022289: 'min-size, China, Mianyang', // 131072 < 4294967296
   f022399: 'min-size, China, Beijing', // 131072 < 1573031772
   f023467: 'min-size, Norway, Oslo, PhiMining.io', // 131072 < 134217728
@@ -205,7 +205,7 @@ const annotations = {
   f023871: 'min-size, China, Fuzhou', // 131072 < 4294967296
   f023876: 'min-size, China, Fuzhou', // 131072 < 268435456
   f023928: 'min-size, China, Fuzhou', // 131072 < 1572864000
-  f023971: 'min-size, USA', // 131072 < 536870912
+  f023971: 'min-size, USA, FLMiner', // 131072 < 536870912
   f023977: 'min-size, China, Fuzhou', // 131072 < 1572864000
   f023978: 'min-size, China, Fuzhou', // 131072 < 1572864000
   f023980: 'min-size, China, Fuzhou', // 131072 < 1572864000
@@ -236,8 +236,8 @@ const annotations = {
   f062353: 'min-size, Germany, Frankfurt', // 131072 < 17179869184
   f064218: 'min-size, USA, Kirkland', // 131072 < 268435456
   f064668: 'min-size, China, Hong Kong', // 131072 < 1048576
-  f066596: 'min-size, USA, San Diego', // 131072 < 536870912
-  f071624: 'min-size, USA, Boyne City', // 131072 < 4294967296
+  f066596: 'min-size, USA, San Diego, PiKNiK & Company', // 131072 < 536870912
+  f071624: 'min-size, USA, Boyne City, Adept', // 131072 < 4294967296
   f074738: 'min-size, Korea, Icheon-si', // 131072 < 67108864
   f078522: 'min-size, NR', // 131072 < 4294967296
   f079817: "min-size, Russia, Ul'yanovka", // 131072 < 1073741824
@@ -249,7 +249,7 @@ const annotations = {
   f097618: 'min-size, China, Suzhou', // 131072 < 524288000
   f097777: 'min-size, Ukraine, Ivano-Frankivsk', // 131072 < 104857600
   f098706: 'min-size, Korea, Icheon-si', // 131072 < 67108864
-  f099608: 'min-size, Latvia, Riga', // 131072 < 268435456
+  f099608: 'min-size, Latvia, Riga, stander', // 131072 < 268435456
   f0100082: 'min-size, Korea, Seongnam-si', // 131072 < 67108864
   f0100116: 'min-size, Korea, Uljin County', // 131072 < 1073741824
   f0104967: 'min-size, Ukraine, Ternopil', // 131072 < 2147483648
@@ -260,7 +260,7 @@ const annotations = {
   f0121958: 'min-size, Korea, Seoul', // 131072 < 67108864
   f0126824: 'min-size, Korea, Seongnam-si', // 131072 < 67108864
   f0126868: 'min-size, Ukraine, Vinnytsia', // 131072 < 10485760
-  f0127896: 'min-size, Bulgaria, Sofia', // 131072 < 536870912
+  f0127896: 'min-size, Bulgaria, Sofia, sofiaminer', // 131072 < 536870912
   f0131611: 'min-size, Korea, Jeju City', // 131072 < 67108864
   f0135078: 'min-size, USA, Denver', // 131072 < 4294967296
   f0142637: 'min-size, China, Mianyang', // 131072 < 4294967296
@@ -287,7 +287,7 @@ const annotations = {
   // Min Ask
 
   f01241: 'min-ask, China, Karamay', // 20000000 < 122070312500000
-  f01277: 'min-ask, Sweden, Stockholm', // 20000000 < 122070312500000
+  f01277: 'min-ask, Sweden, Stockholm, tvsthlm', // 20000000 < 122070312500000
   f01280: 'min-ask, China, Wuxi', // 20000000 < 12207031250000000
   f01799: 'min-ask, China, Jinan + Singapore', // 20000000 < 12207031250000000
   f02381: 'min-ask, China, Dongguan', // 20000000 < 6103515625000
@@ -295,7 +295,7 @@ const annotations = {
     'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // 20000000 < 122070312500000
   f02501: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f02514: 'min-ask, China, Karamay', // 20000000 < 122070312500000
-  f02606: 'min-ask, China, Zhejiang', // 20000000 < 122070312
+  f02606: 'min-ask, China, Zhejiang, DataX', // 20000000 < 122070312
   f02622: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f02623: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f02633:
@@ -329,7 +329,7 @@ const annotations = {
   f09696: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f010253: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f010405: 'min-ask, China, Foshan', // 20000000 < 61035156
-  f014409: 'min-ask, USA, Monroe', // 20000000 < 122070312
+  f014409: 'min-ask, USA, Monroe, Meatball Part III', // 20000000 < 122070312
   f015897: 'min-ask, China, Hong Kong', // 20000000 < 12207031250000000
   f015941: 'min-ask, Ukraine, Kyiv', // 20000000 < 24414062
   f017665: 'min-ask, China, Shenyang', // 20000000 < 122070312500000
@@ -610,7 +610,7 @@ const annotations = {
   f014683: 'rejected, China, Dongguan',
   f015747: 'rejected, Japan, Setagaya-ku',
   f017229: 'rejected, China, Sichuan',
-  f019041: 'rejected, China, Zhejiang + Singapore', // no online
+  f019041: 'rejected, China, Zhejiang + Singapore, Zheng2', // no online
   f019099: 'rejected, China, Hong Kong + Guangzhou', // no online
   f019354: 'rejected, Germany, Frankfurt', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
   f019422: 'rejected, China, Guangzhou', // no online
@@ -876,7 +876,7 @@ const annotations = {
   f016398: 'dial, China, Shanghai', // * [/ip4/172.17.49.3/tcp/10241] dial tcp4 0.0.0.0:37203->172.17.49.3:10241: i/o timeout
   f016563: 'dial, China, Deyang + Singapore', // * [/ip4/161.117.186.53/tcp/8001] failed to negotiate security protocol: read tcp4 66.70.191.245:37203->161.117.186.53:8001: read: connection reset by peer  * [/ip4/125.64.78.27/tcp/8001] dial tcp4 125.64.78.27:8001: connect: connection refused  * [/ip4/192.168.109.1/tcp/8001] dial tcp4 0.0.0.0:37203->192.168.109.1:8001: i/o timeout
   f019074: 'dial, NR', // * [/ip4/192.168.2.55/tcp/3000] dial tcp4 0.0.0.0:37203->192.168.2.55:3000: i/o timeout
-  f019100: 'dial, Romania, Cluj-Napoca', // * [/ip4/79.119.122.118/tcp/55555] dial tcp4 0.0.0.0:37203->79.119.122.118:55555: i/o timeout
+  f019100: 'dial, Romania, Cluj-Napoca, noisyfan', // * [/ip4/79.119.122.118/tcp/55555] dial tcp4 0.0.0.0:37203->79.119.122.118:55555: i/o timeout
   f019638: 'dial, China, Ordos', // * [/ip4/1.183.72.210/tcp/30005] dial tcp4 0.0.0.0:37203->1.183.72.210:30005: i/o timeout
   f020315: 'dial, China, Guangzhou', // * [/ip4/103.104.170.72/tcp/56432] dial tcp4 0.0.0.0:37203->103.104.170.72:56432: i/o timeout
   f020330: 'dial, Singapore', // * [/ip4/8.130.24.60/tcp/14567] dial tcp4 8.130.24.60:14567: connect: connection refused
