@@ -1769,7 +1769,7 @@ const annotations = {
   f02385: 'delist, USA, East Islip', // carry-over
   f02398: 'delist, China, Hong Kong', // carry-over
   f02404: 'delist, Korea, Seoul', // carry-over
-  f02423: 'delist, Ukraine, Kyiv', // carry-over
+  f02423: 'retest, Ukraine, Kyiv', // carry-over
   f02424: 'delist, Korea, Wanju', // carry-over
   f02436: 'delist, Netherlands', // carry-over
   f02506: 'delist, USA, Clarksville', // carry-over
@@ -1784,7 +1784,7 @@ const annotations = {
   f02774: 'delist, Australia, Sydney', // carry-over
   f02822: 'delist, China, Chengdu', // carry-over
   f02824: 'delist, China, Chengdu', // carry-over
-  f03224: 'delist, Ukraine, Kyiv', // carry-over
+  f03224: 'retest, Ukraine, Kyiv', // carry-over
   f03225: 'delist, China, Guyuan', // carry-over
   f03264: 'delist, Korea, Bucheon-si', // carry-over
   f03269: 'delist, Australia', // carry-over
@@ -2005,7 +2005,7 @@ const annotations = {
   f015901: 'delist, Germany', // carry-over
   f015902: 'delist, Germany', // carry-over
   f015920: 'delist, China, Guangdong', // carry-over
-  f015925: 'delist, Singapore', // carry-over
+  f015925: 'retest, Singapore', // carry-over
   f015935: 'delist, China, Sichuan', // carry-over
   f015938: 'delist, Canada, Waterloo', // carry-over
   f015940: 'delist, Netherlands, Amsterdam', // carry-over
@@ -2374,7 +2374,7 @@ const annotations = {
   f054389: 'delist, China, Chongqing', // carry-over
   f054677: 'delist, Finland, Helsinki', // carry-over
   f055040: 'delist, China, Fujian', // carry-over
-  f055522: 'delist, USA', // carry-over
+  f055522: 'retest, USA', // carry-over
   f056393: 'delist, NR', // carry-over
   f057115: 'delist, China, Nanyang', // carry-over
   f057560: 'delist, NR', // carry-over
@@ -2501,11 +2501,11 @@ const annotations = {
   f095528: 'delist, China, Hangzhou', // carry-over
   f095833: 'delist, Korea, Yongin-si', // carry-over
   f096224: 'delist, China, Chongqing', // carry-over
-  f097658: 'delist, NR', // carry-over
+  f097658: 'retest, NR', // carry-over
   f0107171: 'delist, China, Karamay', // carry-over
   f0109163: 'delist, Korea, Songpa-gu', // carry-over
   f0109349: 'delist, NR', // carry-over
-  f0109901: 'delist, China, Huludao', // carry-over
+  f0109901: 'retest, China, Huludao', // carry-over
   f0110101: 'delist, Korea, Goyang-si', // carry-over
   f0110198: 'delist, Korea, Hwaseong-si', // carry-over
   f0110488: 'delist, China, Chongqing', // carry-over
@@ -2527,14 +2527,14 @@ const annotations = {
   f0137475: 'delist, China, Beijing', // carry-over
   f0147676: 'delist, Korea, Seoul', // carry-over
   f0149670: 'delist, NR', // carry-over
-  f0151993: 'delist, Korea, Icheon-si', // carry-over
+  f0151993: 'retest, Korea, Icheon-si', // carry-over
   f0156232: 'delist, China, Fuzhou', // carry-over
-  f0156342: 'delist, NR', // carry-over
-  f0157513: 'delist, Korea, Bucheon-si', // carry-over
+  f0156342: 'retest, NR', // carry-over
+  f0157513: 'retest, Korea, Geumcheon-gu', // carry-over
   f0160291: 'delist, USA', // carry-over
-  f0167137: 'delist, China, Shaoxing', // carry-over
+  f0167137: 'retest, China, Shaoxing', // carry-over
   f0168371: 'delist, Korea, Namyangju', // carry-over
-  f0169053: 'delist, NR', // carry-over
+  f0169053: 'retest, NR', // carry-over
   f0213894: 'delist, China, Hangzhou', // carry-over
   f0215360: 'delist, France', // carry-over
   f0215404: 'delist, China, Suzhou', // carry-over
@@ -2563,10 +2563,10 @@ const annotations = {
   f0392712: 'delist, Korea, Ulju-gun', // carry-over
   f0392733: 'delist, USA, Huntersville', // carry-over
   f0394461: 'delist, Korea, Seoul', // carry-over
-  f0396846: 'delist, NR', // carry-over
+  f0396846: 'retest, China, Zhongshan', // carry-over
   f0398338: 'delist, USA, Cleveland', // carry-over
   f0399610: 'delist, Ukraine', // carry-over
-  f0402314: 'delist, NR', // carry-over
+  f0402314: 'retest, NR', // carry-over
   f0402975: 'delist, Korea', // carry-over
   f0408184: 'delist, Switzerland', // carry-over
   f0408696: 'delist, China, Taiwan, Taipei', // carry-over
