@@ -18,6 +18,7 @@ const baiduCities = {
   41: 'Qiqihar', // 齐齐哈尔市
   44: 'Suihua', // 绥化市
   48: 'Harbin', // 哈尔滨市
+  53: 'Changchun', // 长春市
   58: 'Shenyang', // 沈阳市
   74: 'Deyang', // 德阳市
   75: 'Chengdu', // 成都市
