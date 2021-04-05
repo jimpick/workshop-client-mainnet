@@ -14,6 +14,22 @@ const annotations = {
 
   // New
 
+  f0399348: 'new, NR',
+  f0408206: 'new, NR',
+  f0410120: 'new, NR',
+  f0413050: 'new, NR',
+  f0417720: 'new, NR',
+  f0417750: 'new, NR',
+  f0417918: 'new, NR',
+  f0441116: 'new, NR',
+  f0441525: 'new, NR',
+  f0441703: 'new, NR',
+  f0470182: 'new, NR',
+  f0473113: 'new, NR',
+  f0478563: 'new, NR',
+  f0480313: 'new, NR',
+
+
   // Inflight
 
   f02388: 'inflight, Netherlands, Amersfoort, Kroketje', // FundsReserved: about 1 hour
