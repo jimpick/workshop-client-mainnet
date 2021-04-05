@@ -14,818 +14,22 @@ const annotations = {
 
   // New
 
-  f0399348: 'new, NR',
-  f0408206: 'new, NR',
-  f0410120: 'new, NR',
-  f0413050: 'new, NR',
-  f0417720: 'new, NR',
-  f0417750: 'new, NR',
-  f0417918: 'new, NR',
-  f0441116: 'new, NR',
-  f0441525: 'new, NR',
-  f0441703: 'new, NR',
-  f0470182: 'new, NR',
-  f0473113: 'new, NR',
-  f0478563: 'new, NR',
-  f0480313: 'new, NR',
-
+  f0399348: 'new, NR', // carry-over
+  f0408206: 'new, NR', // carry-over
+  f0410120: 'new, NR', // carry-over
+  f0413050: 'new, NR', // carry-over
+  f0417720: 'new, NR', // carry-over
+  f0417750: 'new, NR', // carry-over
+  f0417918: 'new, NR', // carry-over
+  f0441116: 'new, NR', // carry-over
+  f0441525: 'new, NR', // carry-over
+  f0441703: 'new, NR', // carry-over
+  f0470182: 'new, NR', // carry-over
+  f0473113: 'new, NR', // carry-over
+  f0478563: 'new, NR', // carry-over
+  f0480313: 'new, NR', // carry-over
 
   // Inflight
-
-  f02388: 'inflight, Netherlands, Amersfoort, Kroketje', // FundsReserved: about 1 hour
-  f02416: 'inflight, China, Guangdong, 星际无限', // FundsReserved: about 1 hour
-  f02769: 'inflight, NR', // FundsReserved: about 1 hour
-  f02770: 'inflight, China, Hong Kong', // FundsReserved: about 1 hour
-  f02775: 'inflight, China, Hong Kong', // FundsReserved: about 1 hour
-  f02777: 'inflight, NR', // FundsReserved: about 1 hour
-  f02778: 'inflight, NR', // FundsReserved: about 1 hour
-  f02779: 'inflight, NR', // FundsReserved: about 1 hour
-  f03224: 'inflight, Ukraine, Kyiv', // FundsReserved: 22 minutes
-  f07749: 'inflight, NR', // FundsReserved: about 1 hour
-  f010202: 'inflight, Singapore', // FundsReserved: about 1 hour
-  f014335: 'inflight, NR', // FundsReserved: about 1 hour
-  f014686: 'inflight, Singapore', // FundsReserved: about 1 hour
-  f015877: 'inflight, China, Jiaxing + USA', // FundsReserved: about 1 hour
-  f015885: 'inflight, China, Jiaxing', // FundsReserved: about 1 hour
-  f015925: 'inflight, Singapore', // FundsReserved: 22 minutes
-  f015932: 'inflight, NR', // FundsReserved: about 1 hour
-  f018538: 'inflight, China, Huzhou', // FundsReserved: about 1 hour
-  f020398: 'inflight, China, Zhangjiakou', // FundsReserved: about 1 hour
-  f020957: 'inflight, NR', // FundsReserved: about 1 hour
-  f021504: 'inflight, NR', // FundsReserved: about 1 hour
-  f021695: 'inflight, USA', // FundsReserved: about 1 hour
-  f021704: 'inflight, NR', // FundsReserved: about 1 hour
-  f021710: 'inflight, China, Shijiazhuang', // FundsReserved: about 1 hour
-  f022030: 'inflight, NR', // FundsReserved: about 1 hour
-  f022038: 'inflight, NR', // FundsReserved: about 1 hour
-  f022093: 'inflight, NR', // FundsReserved: about 1 hour
-  f022336: 'inflight, NR', // FundsReserved: about 1 hour
-  f022338: 'inflight, NR', // FundsReserved: about 1 hour
-  f022361: 'inflight, NR', // FundsReserved: about 1 hour
-  f022373: 'inflight, Singapore', // FundsReserved: about 1 hour
-  f022374: 'inflight, NR', // FundsReserved: about 1 hour
-  f022804: 'inflight, NR', // FundsReserved: about 1 hour
-  f023001: 'inflight, China, Changsha', // FundsReserved: about 2 hours
-  f023013: 'inflight, NR', // FundsReserved: about 1 hour
-  f023205: 'inflight, Singapore', // FundsReserved: about 2 hours
-  f023495: 'inflight, China, Karamay', // FundsReserved: about 1 hour
-  f023499: 'inflight, NR', // FundsReserved: about 1 hour
-  f023530: 'inflight, China, Shanghai', // FundsReserved: about 2 hours
-  f023561: 'inflight, China, Shenzhen', // FundsReserved: about 2 hours
-  f023626: 'inflight, NR', // FundsReserved: about 1 hour
-  f023627: 'inflight, China, Zhongwei', // FundsReserved: about 1 hour
-  f023651: 'inflight, NR', // FundsReserved: about 1 hour
-  f023678: 'inflight, China, Jiaxing', // FundsReserved: about 1 hour
-  f023843: 'inflight, China, Zhangjiakou', // FundsReserved: about 1 hour
-  f023882: 'inflight, NR', // FundsReserved: about 1 hour
-  f023984: 'inflight, NR', // FundsReserved: about 1 hour
-  f024066: 'inflight, China, Chengdu', // FundsReserved: about 2 hours
-  f024089: 'inflight, NR', // FundsReserved: about 2 hours
-  f024137: 'inflight, Singapore', // FundsReserved: about 2 hours
-  f024182: 'inflight, China, Hong Kong', // FundsReserved: about 2 hours
-  f024483: 'inflight, NR', // FundsReserved: about 1 hour
-  f024563: 'inflight, NR', // FundsReserved: about 1 hour
-  f024802: 'inflight, NR', // FundsReserved: about 1 hour
-  f024894: 'inflight, NR', // FundsReserved: about 1 hour
-  f024895: 'inflight, undefined', // FundsReserved: about 1 hour
-  f024972: 'inflight, undefined', // FundsReserved: about 1 hour
-  f025002: 'inflight, NR', // FundsReserved: about 2 hours
-  f025005: 'inflight, NR', // FundsReserved: about 1 hour
-  f025017: 'inflight, China, Hefei, 一三科技-913', // FundsReserved: about 2 hours
-  f025019: 'inflight, China, Taiwan, Hsinchu', // FundsReserved: about 2 hours
-  f025044: 'inflight, undefined', // FundsReserved: about 1 hour
-  f029416: 'inflight, NR', // FundsReserved: about 2 hours
-  f029665: 'inflight, China, Shenyang', // FundsReserved: about 2 hours
-  f030203: 'inflight, China, Shenzhen', // FundsReserved: about 1 hour
-  f030249: 'inflight, NR', // FundsReserved: 39 minutes
-  f030272: 'inflight, undefined', // FundsReserved: 39 minutes
-  f030331: 'inflight, NR', // FundsReserved: 39 minutes
-  f030347: 'inflight, China, Zhejiang', // FundsReserved: 39 minutes
-  f030509: 'inflight, undefined', // FundsReserved: 39 minutes
-  f030510: 'inflight, undefined', // FundsReserved: 39 minutes
-  f030511: 'inflight, undefined', // FundsReserved: 39 minutes
-  f030649: 'inflight, NR', // FundsReserved: 39 minutes
-  f032824: 'inflight, USA, Cedar Park', // FundsReserved: about 2 hours
-  f032833: 'inflight, NR', // FundsReserved: 39 minutes
-  f032850: 'inflight, NR', // FundsReserved: 39 minutes
-  f032913: 'inflight, China, Shenzhen', // FundsReserved: 39 minutes
-  f033130: 'inflight, NR', // FundsReserved: 39 minutes
-  f033384: 'inflight, NR', // FundsReserved: 39 minutes
-  f033399: 'inflight, NR', // FundsReserved: 39 minutes
-  f033456: 'inflight, NR', // FundsReserved: 39 minutes
-  f033462: 'inflight, NR', // FundsReserved: 39 minutes
-  f033463: 'inflight, NR', // FundsReserved: 39 minutes
-  f033475: 'inflight, NR', // FundsReserved: 39 minutes
-  f033501: 'inflight, China, Shenzhen', // FundsReserved: 39 minutes
-  f033517: 'inflight, China, Changsha', // FundsReserved: 39 minutes
-  f034544: 'inflight, NR', // FundsReserved: about 2 hours
-  f034545: 'inflight, NR', // FundsReserved: about 2 hours
-  f034548: 'inflight, NR', // FundsReserved: about 2 hours
-  f034566: 'inflight, NR', // FundsReserved: 39 minutes
-  f034567: 'inflight, China, Shenzhen', // FundsReserved: 39 minutes
-  f034581: 'inflight, NR', // FundsReserved: 39 minutes
-  f034592: 'inflight, NR', // FundsReserved: about 2 hours
-  f034658: 'inflight, NR', // FundsReserved: 39 minutes
-  f034701: 'inflight, China, Shenzhen', // FundsReserved: about 2 hours
-  f034707: 'inflight, NR', // FundsReserved: 39 minutes
-  f034710: 'inflight, NR', // FundsReserved: 39 minutes
-  f035160: 'inflight, NR', // FundsReserved: 39 minutes
-  f035161: 'inflight, NR', // FundsReserved: 39 minutes
-  f035364: 'inflight, NR', // FundsReserved: 39 minutes
-  f039992: 'inflight, NR', // FundsReserved: 39 minutes
-  f040665: 'inflight, NR', // FundsReserved: 39 minutes
-  f042855: 'inflight, NR', // FundsReserved: 39 minutes
-  f043376: 'inflight, Korea, Incheon', // FundsReserved: 39 minutes
-  f043929: 'inflight, NR', // FundsReserved: about 2 hours
-  f044315: 'inflight, NR', // FundsReserved: 39 minutes
-  f045505: 'inflight, China, Ordos', // FundsReserved: about 2 hours
-  f045743: 'inflight, NR', // FundsReserved: 39 minutes
-  f045756: 'inflight, China, Hangzhou', // FundsReserved: 39 minutes
-  f046248: 'inflight, China, Dongguan', // FundsReserved: 38 minutes
-  f048975: 'inflight, NR', // FundsReserved: 38 minutes
-  f048986: 'inflight, NR', // FundsReserved: 38 minutes
-  f049911: 'inflight, China, Yunfu', // FundsReserved: 38 minutes
-  f053140: 'inflight, China, Shenzhen', // FundsReserved: 38 minutes
-  f053141: 'inflight, China, Shenzhen', // FundsReserved: 38 minutes
-  f053173: 'inflight, NR', // FundsReserved: 38 minutes
-  f053229: 'inflight, NR', // FundsReserved: about 2 hours
-  f053446: 'inflight, NR', // FundsReserved: 38 minutes
-  f054120: 'inflight, NR', // FundsReserved: 38 minutes
-  f054267: 'inflight, NR', // FundsReserved: 38 minutes
-  f054412: 'inflight, NR', // FundsReserved: 38 minutes
-  f054414: 'inflight, NR', // FundsReserved: 38 minutes
-  f054417: 'inflight, NR', // FundsReserved: 38 minutes
-  f054418: 'inflight, NR', // FundsReserved: 38 minutes
-  f054420: 'inflight, NR', // FundsReserved: 38 minutes
-  f054422: 'inflight, NR', // FundsReserved: 38 minutes
-  f054464: 'inflight, NR', // FundsReserved: 38 minutes
-  f054499: 'inflight, NR', // FundsReserved: about 2 hours
-  f054526: 'inflight, NR', // FundsReserved: 38 minutes
-  f054666: 'inflight, China, Changsha', // FundsReserved: about 2 hours
-  f055123: 'inflight, Korea, Busan', // FundsReserved: 38 minutes
-  f055446: 'inflight, NR', // FundsReserved: 38 minutes
-  f055522: 'inflight, USA', // FundsReserved: 22 minutes
-  f056227: 'inflight, NR', // FundsReserved: 38 minutes
-  f057070: 'inflight, NR', // FundsReserved: about 1 hour
-  f057618: 'inflight, NR', // FundsReserved: 38 minutes
-  f057683: 'inflight, NR', // FundsReserved: 38 minutes
-  f058349: 'inflight, NR', // FundsReserved: 38 minutes
-  f058374: 'inflight, NR', // FundsReserved: about 1 hour
-  f059740: 'inflight, Germany, Bottrop', // FundsReserved: about 1 hour
-  f059788: 'inflight, China, Zhanjiang', // FundsReserved: 38 minutes
-  f059813: 'inflight, NR', // FundsReserved: 38 minutes
-  f060114: 'inflight, China, Shenzhen', // FundsReserved: 38 minutes
-  f060693: 'inflight, NR', // FundsReserved: 38 minutes
-  f060754: 'inflight, NR', // FundsReserved: 38 minutes
-  f060805: 'inflight, NR', // FundsReserved: 38 minutes
-  f060975: 'inflight, NR', // FundsReserved: 38 minutes
-  f061051: 'inflight, NR', // FundsReserved: 38 minutes
-  f061170: 'inflight, NR', // FundsReserved: 38 minutes
-  f061174: 'inflight, NR', // FundsReserved: 38 minutes
-  f061407: 'inflight, China, Shenzhen', // FundsReserved: 38 minutes
-  f061503: 'inflight, NR', // FundsReserved: 38 minutes
-  f061959: 'inflight, NR', // FundsReserved: about 1 hour
-  f062245: 'inflight, NR', // FundsReserved: 38 minutes
-  f062475: 'inflight, NR', // FundsReserved: 38 minutes
-  f062619: 'inflight, NR', // FundsReserved: 38 minutes
-  f062931: 'inflight, NR', // FundsReserved: about 1 hour
-  f063996: 'inflight, China, Sichuan', // FundsReserved: 38 minutes
-  f064855: 'inflight, NR', // FundsReserved: 38 minutes
-  f064908: 'inflight, NR', // FundsReserved: 38 minutes
-  f065113: 'inflight, NR', // FundsReserved: 37 minutes
-  f065141: 'inflight, NR', // FundsReserved: 37 minutes
-  f065174: 'inflight, NR', // FundsReserved: 37 minutes
-  f065266: 'inflight, China, Hefei', // FundsReserved: 37 minutes
-  f065391: 'inflight, NR', // FundsReserved: 37 minutes
-  f065578: 'inflight, NR', // FundsReserved: 37 minutes
-  f065610: 'inflight, NR', // FundsReserved: 37 minutes
-  f065670: 'inflight, NR', // FundsReserved: 37 minutes
-  f065686: 'inflight, NR', // FundsReserved: 37 minutes
-  f065881: 'inflight, NR', // FundsReserved: 37 minutes
-  f065941: 'inflight, NR', // FundsReserved: 37 minutes
-  f066102: 'inflight, NR', // FundsReserved: about 1 hour
-  f066210: 'inflight, NR', // FundsReserved: 37 minutes
-  f066259: 'inflight, NR', // FundsReserved: about 1 hour
-  f066302: 'inflight, NR', // FundsReserved: 37 minutes
-  f066476: 'inflight, NR', // FundsReserved: 37 minutes
-  f066563: 'inflight, NR', // FundsReserved: 37 minutes
-  f067170: 'inflight, NR', // FundsReserved: 37 minutes
-  f067375: 'inflight, NR', // FundsReserved: 37 minutes
-  f067598: 'inflight, NR', // FundsReserved: 37 minutes
-  f068096: 'inflight, China, Sichuan', // FundsReserved: about 1 hour
-  f068556: 'inflight, NR', // FundsReserved: 37 minutes
-  f068560: 'inflight, China, Changsha', // FundsReserved: 37 minutes
-  f068809: 'inflight, NR', // FundsReserved: 37 minutes
-  f069391: 'inflight, NR', // FundsReserved: about 1 hour
-  f069448: 'inflight, NR', // FundsReserved: 37 minutes
-  f070044: 'inflight, China', // FundsReserved: about 1 hour
-  f070045: 'inflight, NR', // FundsReserved: 37 minutes
-  f070730: 'inflight, NR', // FundsReserved: 37 minutes
-  f070802: 'inflight, NR', // FundsReserved: 37 minutes
-  f070803: 'inflight, NR', // FundsReserved: 37 minutes
-  f070932: 'inflight, NR', // FundsReserved: 37 minutes
-  f071287: 'inflight, NR', // FundsReserved: 37 minutes
-  f071664: 'inflight, China, Shangdong', // FundsReserved: about 1 hour
-  f073196: 'inflight, NR', // FundsReserved: 37 minutes
-  f073525: 'inflight, NR', // FundsReserved: 37 minutes
-  f073844: 'inflight, NR', // FundsReserved: 37 minutes
-  f073888: 'inflight, NR', // FundsReserved: 37 minutes
-  f073904: 'inflight, NR', // FundsReserved: 37 minutes
-  f077761: 'inflight, NR', // FundsReserved: 37 minutes
-  f078465: 'inflight, NR', // FundsReserved: 37 minutes
-  f079092: 'inflight, NR', // FundsReserved: 37 minutes
-  f079197: 'inflight, China, Karamay', // FundsReserved: 37 minutes
-  f079285: 'inflight, NR', // FundsReserved: about 1 hour
-  f079425: 'inflight, NR', // FundsReserved: 37 minutes
-  f079426: 'inflight, China, Shandong', // FundsReserved: about 1 hour
-  f079719: 'inflight, NR', // FundsReserved: 37 minutes
-  f080605: 'inflight, NR', // FundsReserved: about 1 hour
-  f080868: 'inflight, NR', // FundsReserved: 37 minutes
-  f081078: 'inflight, Korea, Busan', // FundsReserved: about 1 hour
-  f081969: 'inflight, NR', // FundsReserved: 37 minutes
-  f082000: 'inflight, NR', // FundsReserved: 37 minutes
-  f082635: 'inflight, NR', // FundsReserved: 37 minutes
-  f082730: 'inflight, NR', // FundsReserved: 36 minutes
-  f082958: 'inflight, NR', // FundsReserved: about 1 hour
-  f083419: 'inflight, NR', // FundsReserved: 36 minutes
-  f083474: 'inflight, NR', // FundsReserved: 36 minutes
-  f083542: 'inflight, NR', // FundsReserved: 36 minutes
-  f083983: 'inflight, NR', // FundsReserved: 36 minutes
-  f084135: 'inflight, NR', // FundsReserved: 36 minutes
-  f084155: 'inflight, NR', // FundsReserved: 36 minutes
-  f084419: 'inflight, NR', // FundsReserved: 36 minutes
-  f084907: 'inflight, NR', // FundsReserved: 36 minutes
-  f085435: 'inflight, NR', // FundsReserved: 36 minutes
-  f085437: 'inflight, NR', // FundsReserved: 36 minutes
-  f085486: 'inflight, NR', // FundsReserved: 36 minutes
-  f085735: "inflight, China, Ya'an", // FundsReserved: 36 minutes
-  f086204: 'inflight, NR', // FundsReserved: 36 minutes
-  f086222: 'inflight, NR', // FundsReserved: 36 minutes
-  f086240: 'inflight, NR', // FundsReserved: 36 minutes
-  f086381: 'inflight, NR', // FundsReserved: 36 minutes
-  f086439: 'inflight, NR', // FundsReserved: 36 minutes
-  f086442: 'inflight, NR', // FundsReserved: 36 minutes
-  f086572: 'inflight, NR', // FundsReserved: 36 minutes
-  f086988: 'inflight, NR', // FundsReserved: 36 minutes
-  f087096: 'inflight, NR', // FundsReserved: 36 minutes
-  f087256: 'inflight, China, Hangzhou', // FundsReserved: 36 minutes
-  f087868: 'inflight, NR', // FundsReserved: 36 minutes
-  f087879: 'inflight, NR', // FundsReserved: 36 minutes
-  f087899: 'inflight, NR', // FundsReserved: 36 minutes
-  f087965: 'inflight, China, Suzhou', // FundsReserved: about 1 hour
-  f087999: 'inflight, NR', // FundsReserved: 36 minutes
-  f088002: 'inflight, NR', // FundsReserved: 36 minutes
-  f088125: 'inflight, NR', // FundsReserved: about 1 hour
-  f088171: 'inflight, NR', // FundsReserved: 36 minutes
-  f088290: 'inflight, NR', // FundsReserved: 36 minutes
-  f088400: 'inflight, NR', // FundsReserved: about 1 hour
-  f089167: 'inflight, NR', // FundsReserved: 36 minutes
-  f089168: 'inflight, NR', // FundsReserved: 36 minutes
-  f089173: 'inflight, NR', // FundsReserved: about 1 hour
-  f089228: 'inflight, NR', // FundsReserved: about 1 hour
-  f089358: 'inflight, NR', // FundsReserved: about 1 hour
-  f089380: 'inflight, NR', // FundsReserved: about 1 hour
-  f089551: 'inflight, NR', // FundsReserved: about 1 hour
-  f089819: 'inflight, NR', // FundsReserved: 36 minutes
-  f089920: 'inflight, NR', // FundsReserved: 36 minutes
-  f090481: 'inflight, NR', // FundsReserved: 36 minutes
-  f090484: 'inflight, NR', // FundsReserved: 36 minutes
-  f090492: 'inflight, NR', // FundsReserved: 36 minutes
-  f090808: 'inflight, NR', // FundsReserved: 36 minutes
-  f090889: 'inflight, NR', // FundsReserved: 36 minutes
-  f091143: 'inflight, NR', // FundsReserved: 36 minutes
-  f091243: 'inflight, NR', // FundsReserved: 36 minutes
-  f091395: 'inflight, NR', // FundsReserved: 36 minutes
-  f091798: 'inflight, NR', // FundsReserved: 35 minutes
-  f091959: 'inflight, NR', // FundsReserved: 35 minutes
-  f091996: 'inflight, NR', // FundsReserved: 35 minutes
-  f091999: 'inflight, NR', // FundsReserved: 35 minutes
-  f092066: 'inflight, NR', // FundsReserved: 35 minutes
-  f092157: 'inflight, NR', // FundsReserved: 35 minutes
-  f092228: 'inflight, NR', // FundsReserved: 35 minutes
-  f092887: 'inflight, NR', // FundsReserved: 35 minutes
-  f093115: 'inflight, NR', // FundsReserved: 35 minutes
-  f093144: 'inflight, NR', // FundsReserved: 35 minutes
-  f093686: 'inflight, NR', // FundsReserved: 35 minutes
-  f093701: 'inflight, NR', // FundsReserved: 35 minutes
-  f093907: 'inflight, NR', // FundsReserved: 35 minutes
-  f094003: 'inflight, NR', // FundsReserved: 35 minutes
-  f094625: 'inflight, NR', // FundsReserved: 35 minutes
-  f094765: 'inflight, NR', // FundsReserved: about 1 hour
-  f094847: 'inflight, NR', // FundsReserved: 35 minutes
-  f094901: 'inflight, Korea, Bucheon-si', // FundsReserved: about 1 hour
-  f095334: 'inflight, NR', // FundsReserved: 35 minutes
-  f095382: 'inflight, China, Dongguan', // FundsReserved: about 1 hour
-  f095970: 'inflight, NR', // FundsReserved: 35 minutes
-  f095998: 'inflight, NR', // FundsReserved: 35 minutes
-  f096064: 'inflight, NR', // FundsReserved: 35 minutes
-  f096072: 'inflight, NR', // FundsReserved: 35 minutes
-  f096077: 'inflight, NR', // FundsReserved: 35 minutes
-  f096087: 'inflight, NR', // FundsReserved: 35 minutes
-  f096172: 'inflight, NR', // FundsReserved: 35 minutes
-  f096173: 'inflight, Korea, Gangnam-gu', // FundsReserved: about 1 hour
-  f096824: 'inflight, NR', // FundsReserved: 35 minutes
-  f096920: 'inflight, NR', // FundsReserved: 35 minutes
-  f097182: 'inflight, China, Chengdu', // FundsReserved: about 1 hour
-  f097219: 'inflight, NR', // FundsReserved: 35 minutes
-  f097403: 'inflight, NR', // FundsReserved: 35 minutes
-  f097432: 'inflight, NR', // FundsReserved: 35 minutes
-  f097658: 'inflight, NR', // FundsReserved: 21 minutes
-  f097687: 'inflight, China, Yangzhou', // FundsReserved: about 1 hour
-  f097840: 'inflight, NR', // FundsReserved: 35 minutes
-  f097981: 'inflight, NR', // FundsReserved: 35 minutes
-  f098743: 'inflight, NR', // FundsReserved: 35 minutes
-  f099082: 'inflight, NR', // FundsReserved: 35 minutes
-  f099132: 'inflight, NR', // FundsReserved: 34 minutes
-  f099239: 'inflight, China, Hong Kong', // FundsReserved: 34 minutes
-  f099247: 'inflight, NR', // FundsReserved: 34 minutes
-  f099369: 'inflight, NR', // FundsReserved: 34 minutes
-  f099884: 'inflight, China, Chengdu', // FundsReserved: 34 minutes
-  f099949: 'inflight, China, Chengdu', // FundsReserved: about 1 hour
-  f0100033: 'inflight, NR', // FundsReserved: 34 minutes
-  f0100034: 'inflight, NR', // FundsReserved: 34 minutes
-  f0100786: 'inflight, NR', // FundsReserved: 34 minutes
-  f0101016: 'inflight, NR', // FundsReserved: 34 minutes
-  f0101017: 'inflight, NR', // FundsReserved: 34 minutes
-  f0101018: 'inflight, NR', // FundsReserved: 34 minutes
-  f0101019: 'inflight, NR', // FundsReserved: 34 minutes
-  f0101133: 'inflight, NR', // FundsReserved: 34 minutes
-  f0101403: 'inflight, China, Chengdu', // FundsReserved: about 1 hour
-  f0101570: 'inflight, NR', // FundsReserved: 34 minutes
-  f0101611: 'inflight, NR', // FundsReserved: 34 minutes
-  f0102187: 'inflight, NR', // FundsReserved: 34 minutes
-  f0103162: 'inflight, NR', // FundsReserved: 34 minutes
-  f0103282: 'inflight, NR', // FundsReserved: 34 minutes
-  f0103396: 'inflight, China, Hangzhou', // FundsReserved: about 1 hour
-  f0103485: 'inflight, NR', // FundsReserved: 34 minutes
-  f0103665: 'inflight, NR', // FundsReserved: 33 minutes
-  f0103704: 'inflight, NR', // FundsReserved: 33 minutes
-  f0104001: 'inflight, NR', // FundsReserved: 33 minutes
-  f0104103: 'inflight, NR', // FundsReserved: 33 minutes
-  f0104398: 'inflight, NR', // FundsReserved: 33 minutes
-  f0104654: 'inflight, NR', // FundsReserved: 33 minutes
-  f0104888: 'inflight, NR', // FundsReserved: 33 minutes
-  f0105354: 'inflight, NR', // FundsReserved: 33 minutes
-  f0106090: 'inflight, NR', // FundsReserved: 33 minutes
-  f0106438: 'inflight, NR', // FundsReserved: 33 minutes
-  f0106901: 'inflight, NR', // FundsReserved: 33 minutes
-  f0107002: 'inflight, NR', // FundsReserved: 33 minutes
-  f0107053: 'inflight, NR', // FundsReserved: 33 minutes
-  f0107091: 'inflight, NR', // FundsReserved: 33 minutes
-  f0107536: 'inflight, China, Bozhou', // FundsReserved: about 1 hour
-  f0107543: 'inflight, NR', // FundsReserved: 33 minutes
-  f0107656: 'inflight, NR', // FundsReserved: 33 minutes
-  f0107797: 'inflight, NR', // FundsReserved: 33 minutes
-  f0107903: 'inflight, NR', // FundsReserved: 33 minutes
-  f0108199: 'inflight, NR', // FundsReserved: 33 minutes
-  f0108672: 'inflight, NR', // FundsReserved: 33 minutes
-  f0109309: 'inflight, NR', // FundsReserved: 33 minutes
-  f0109606: 'inflight, NR', // FundsReserved: 33 minutes
-  f0109743: 'inflight, China, Yangzhou', // FundsReserved: about 1 hour
-  f0109903: 'inflight, NR', // FundsReserved: 33 minutes
-  f0110110: 'inflight, NR', // FundsReserved: 33 minutes
-  f0110248: 'inflight, NR', // FundsReserved: 33 minutes
-  f0110261: 'inflight, NR', // FundsReserved: 33 minutes
-  f0110289: 'inflight, NR', // FundsReserved: 33 minutes
-  f0110695: 'inflight, NR', // FundsReserved: 33 minutes
-  f0110696: 'inflight, NR', // FundsReserved: 32 minutes
-  f0110768: 'inflight, Korea, Gwangju', // FundsReserved: about 1 hour
-  f0110803: 'inflight, Korea', // FundsReserved: about 1 hour
-  f0110808: 'inflight, NR', // FundsReserved: 32 minutes
-  f0110944: 'inflight, NR', // FundsReserved: 32 minutes
-  f0110996: 'inflight, NR', // FundsReserved: 32 minutes
-  f0111007: 'inflight, NR', // FundsReserved: 32 minutes
-  f0111384: 'inflight, NR', // FundsReserved: 32 minutes
-  f0111434: 'inflight, NR', // FundsReserved: 32 minutes
-  f0111467: 'inflight, NR', // FundsReserved: 32 minutes
-  f0111469: 'inflight, NR', // FundsReserved: 32 minutes
-  f0111499: 'inflight, China, Chengdu', // FundsReserved: about 1 hour
-  f0111584: 'inflight, NR', // FundsReserved: about 1 hour
-  f0112027: 'inflight, France', // FundsReserved: about 1 hour
-  f0112593: 'inflight, NR', // FundsReserved: 32 minutes
-  f0112667: 'inflight, NR', // FundsReserved: 32 minutes
-  f0112680: 'inflight, NR', // FundsReserved: 32 minutes
-  f0112762: 'inflight, NR', // FundsReserved: 32 minutes
-  f0112781: 'inflight, NR', // FundsReserved: 32 minutes
-  f0112887: 'inflight, NR', // FundsReserved: 32 minutes
-  f0113659: 'inflight, NR', // FundsReserved: 32 minutes
-  f0113664: 'inflight, France', // FundsReserved: about 1 hour
-  f0113735: 'inflight, NR', // FundsReserved: 32 minutes
-  f0113754: 'inflight, NR', // FundsReserved: 32 minutes
-  f0113777: 'inflight, NR', // FundsReserved: 32 minutes
-  f0114118: 'inflight, NR', // FundsReserved: 32 minutes
-  f0114153: 'inflight, China, Changsha + Dazhou', // FundsReserved: about 1 hour
-  f0114333: 'inflight, NR', // FundsReserved: 32 minutes
-  f0114338: 'inflight, China, Maoming', // FundsReserved: about 1 hour
-  f0114350: 'inflight, NR', // FundsReserved: 32 minutes
-  f0114868: 'inflight, NR', // FundsReserved: 32 minutes
-  f0114885: 'inflight, NR', // FundsReserved: 32 minutes
-  f0115001: 'inflight, NR', // FundsReserved: 32 minutes
-  f0115117: 'inflight, NR', // FundsReserved: 32 minutes
-  f0115990: 'inflight, Korea, Gangnam-gu', // FundsReserved: about 1 hour
-  f0116211: 'inflight, China, Weifang', // FundsReserved: about 1 hour
-  f0116287: 'inflight, China, Shanghai', // FundsReserved: about 1 hour
-  f0116766: 'inflight, USA, Westford', // FundsReserved: about 1 hour
-  f0117318: 'inflight, NR', // FundsReserved: 32 minutes
-  f0117358: 'inflight, NR', // FundsReserved: 32 minutes
-  f0117405: 'inflight, NR', // FundsReserved: 32 minutes
-  f0117416: 'inflight, NR', // FundsReserved: 32 minutes
-  f0117434: 'inflight, NR', // FundsReserved: 32 minutes
-  f0117450: 'inflight, NR', // FundsReserved: 32 minutes
-  f0117541: 'inflight, NR', // FundsReserved: 32 minutes
-  f0117542: 'inflight, NR', // FundsReserved: 32 minutes
-  f0117543: 'inflight, NR', // FundsReserved: 32 minutes
-  f0117565: 'inflight, NR', // FundsReserved: 32 minutes
-  f0118028: 'inflight, NR', // FundsReserved: 32 minutes
-  f0118167: 'inflight, NR', // FundsReserved: 32 minutes
-  f0118641: 'inflight, NR', // FundsReserved: 32 minutes
-  f0118769: 'inflight, China, Fujian', // FundsReserved: 32 minutes
-  f0118799: 'inflight, NR', // FundsReserved: 31 minutes
-  f0118976: 'inflight, NR', // FundsReserved: 31 minutes
-  f0119146: 'inflight, NR', // FundsReserved: 31 minutes
-  f0119545: 'inflight, NR', // FundsReserved: 31 minutes
-  f0119633: 'inflight, NR', // FundsReserved: about 1 hour
-  f0119828: 'inflight, NR', // FundsReserved: 31 minutes
-  f0119976: 'inflight, NR', // FundsReserved: 31 minutes
-  f0119997: 'inflight, NR', // FundsReserved: 31 minutes
-  f0120057: 'inflight, NR', // FundsReserved: 31 minutes
-  f0120702: 'inflight, NR', // FundsReserved: 31 minutes
-  f0120747: 'inflight, NR', // FundsReserved: 31 minutes
-  f0121584: 'inflight, NR', // FundsReserved: 31 minutes
-  f0121718: 'inflight, NR', // FundsReserved: 31 minutes
-  f0121771: 'inflight, NR', // FundsReserved: 31 minutes
-  f0121810: 'inflight, NR', // FundsReserved: 31 minutes
-  f0122215: 'inflight, NR', // FundsReserved: 31 minutes
-  f0122382: 'inflight, NR', // FundsReserved: 31 minutes
-  f0122410: 'inflight, China, Shanghai', // FundsReserved: about 1 hour
-  f0122496: 'inflight, NR', // FundsReserved: 31 minutes
-  f0122533: 'inflight, NR', // FundsReserved: 31 minutes
-  f0122940: 'inflight, NR', // FundsReserved: 31 minutes
-  f0123245: 'inflight, NR', // FundsReserved: 31 minutes
-  f0123261: 'inflight, NR', // FundsReserved: 31 minutes
-  f0123346: 'inflight, NR', // FundsReserved: 31 minutes
-  f0123522: 'inflight, NR', // FundsReserved: 31 minutes
-  f0123535: 'inflight, NR', // FundsReserved: 30 minutes
-  f0124126: 'inflight, NR', // FundsReserved: 30 minutes
-  f0124158: 'inflight, NR', // FundsReserved: 30 minutes
-  f0124696: 'inflight, NR', // FundsReserved: about 1 hour
-  f0124923: 'inflight, NR', // FundsReserved: 30 minutes
-  f0124944: 'inflight, NR', // FundsReserved: 30 minutes
-  f0125488: 'inflight, NR', // FundsReserved: 30 minutes
-  f0126097: 'inflight, NR', // FundsReserved: 30 minutes
-  f0126376: 'inflight, NR', // FundsReserved: 30 minutes
-  f0126478: 'inflight, China, Ningbo', // FundsReserved: 30 minutes
-  f0126661: 'inflight, NR', // FundsReserved: 30 minutes
-  f0126698: 'inflight, NR', // FundsReserved: 30 minutes
-  f0126702: 'inflight, NR', // FundsReserved: 30 minutes
-  f0126898: 'inflight, China, Harbin', // FundsReserved: 30 minutes
-  f0127378: 'inflight, NR', // FundsReserved: 30 minutes
-  f0127382: 'inflight, NR', // FundsReserved: 30 minutes
-  f0127569: 'inflight, NR', // FundsReserved: 30 minutes
-  f0127595: 'inflight, NR', // FundsReserved: 30 minutes
-  f0127612: 'inflight, NR', // FundsReserved: 30 minutes
-  f0127640: 'inflight, NR', // FundsReserved: 30 minutes
-  f0127721: 'inflight, NR', // FundsReserved: 30 minutes
-  f0127735: 'inflight, NR', // FundsReserved: 30 minutes
-  f0128011: 'inflight, NR', // FundsReserved: 30 minutes
-  f0128381: 'inflight, NR', // FundsReserved: 30 minutes
-  f0128499: 'inflight, NR', // FundsReserved: 30 minutes
-  f0128559: 'inflight, NR', // FundsReserved: 30 minutes
-  f0128761: 'inflight, NR', // FundsReserved: 30 minutes
-  f0128788: 'inflight, NR', // FundsReserved: 30 minutes
-  f0128815: 'inflight, NR', // FundsReserved: 30 minutes
-  f0128931: 'inflight, NR', // FundsReserved: 30 minutes
-  f0129226: 'inflight, NR', // FundsReserved: 30 minutes
-  f0129403: 'inflight, NR', // FundsReserved: 30 minutes
-  f0129422: 'inflight, NR', // FundsReserved: 30 minutes
-  f0129750: 'inflight, NR', // FundsReserved: 30 minutes
-  f0130094: 'inflight, NR', // FundsReserved: 30 minutes
-  f0130134: 'inflight, NR', // FundsReserved: 30 minutes
-  f0130556: 'inflight, NR', // FundsReserved: 30 minutes
-  f0130639: 'inflight, NR', // FundsReserved: 30 minutes
-  f0130686: 'inflight, NR', // FundsReserved: 30 minutes
-  f0130727: 'inflight, NR', // FundsReserved: 30 minutes
-  f0130791: 'inflight, NR', // FundsReserved: 30 minutes
-  f0130884: 'inflight, NR', // FundsReserved: 29 minutes
-  f0130906: 'inflight, NR', // FundsReserved: 29 minutes
-  f0131509: 'inflight, NR', // FundsReserved: 29 minutes
-  f0131767: 'inflight, NR', // FundsReserved: 29 minutes
-  f0131822: 'inflight, NR', // FundsReserved: 29 minutes
-  f0132178: 'inflight, China, Ningbo', // FundsReserved: 29 minutes
-  f0132313: 'inflight, NR', // FundsReserved: 29 minutes
-  f0132461: 'inflight, Korea, Daegu', // FundsReserved: about 1 hour
-  f0132618: 'inflight, NR', // FundsReserved: 29 minutes
-  f0132638: 'inflight, NR', // FundsReserved: 29 minutes
-  f0132706: 'inflight, China, Beijing', // FundsReserved: 29 minutes
-  f0133235: 'inflight, NR', // FundsReserved: 29 minutes
-  f0133376: 'inflight, NR', // FundsReserved: 29 minutes
-  f0133501: 'inflight, NR', // FundsReserved: 29 minutes
-  f0133505: 'inflight, NR', // FundsReserved: 29 minutes
-  f0133509: 'inflight, NR', // FundsReserved: 29 minutes
-  f0133763: 'inflight, NR', // FundsReserved: 29 minutes
-  f0133833: 'inflight, NR', // FundsReserved: 29 minutes
-  f0133957: 'inflight, NR', // FundsReserved: about 1 hour
-  f0134006: 'inflight, NR', // FundsReserved: about 1 hour
-  f0134286: 'inflight, NR', // FundsReserved: 29 minutes
-  f0134552: 'inflight, NR', // FundsReserved: 29 minutes
-  f0134609: 'inflight, NR', // FundsReserved: 29 minutes
-  f0134867: 'inflight, NR', // FundsReserved: 29 minutes
-  f0135008: 'inflight, NR', // FundsReserved: 29 minutes
-  f0135066: 'inflight, NR', // FundsReserved: 29 minutes
-  f0135150: 'inflight, NR', // FundsReserved: 29 minutes
-  f0135414: 'inflight, NR', // FundsReserved: 29 minutes
-  f0135467: 'inflight, NR', // FundsReserved: 29 minutes
-  f0135469: 'inflight, NR', // FundsReserved: 29 minutes
-  f0135473: 'inflight, NR', // FundsReserved: 29 minutes
-  f0135474: 'inflight, NR', // FundsReserved: 29 minutes
-  f0135475: 'inflight, NR', // FundsReserved: 29 minutes
-  f0135551: 'inflight, NR', // FundsReserved: 29 minutes
-  f0135758: 'inflight, NR', // FundsReserved: about 1 hour
-  f0135779: 'inflight, NR', // FundsReserved: 29 minutes
-  f0135859: 'inflight, NR', // FundsReserved: 29 minutes
-  f0135906: 'inflight, NR', // FundsReserved: 29 minutes
-  f0135934: 'inflight, NR', // FundsReserved: 29 minutes
-  f0136033: 'inflight, NR', // FundsReserved: 29 minutes
-  f0136239: 'inflight, NR', // FundsReserved: 29 minutes
-  f0136399: 'inflight, NR', // FundsReserved: 29 minutes
-  f0136642: 'inflight, NR', // FundsReserved: 29 minutes
-  f0136808: 'inflight, NR', // FundsReserved: 29 minutes
-  f0136810: 'inflight, NR', // FundsReserved: 28 minutes
-  f0136868: 'inflight, NR', // FundsReserved: 28 minutes
-  f0137019: 'inflight, NR', // FundsReserved: 28 minutes
-  f0137594: 'inflight, NR', // FundsReserved: 28 minutes
-  f0137868: 'inflight, NR', // FundsReserved: 28 minutes
-  f0141761: 'inflight, NR', // FundsReserved: 28 minutes
-  f0141762: 'inflight, NR', // FundsReserved: 28 minutes
-  f0142059: 'inflight, NR', // FundsReserved: 28 minutes
-  f0142238: 'inflight, NR', // FundsReserved: 28 minutes
-  f0142245: 'inflight, NR', // FundsReserved: 28 minutes
-  f0142281: 'inflight, NR', // FundsReserved: 28 minutes
-  f0142337: 'inflight, NR', // FundsReserved: 28 minutes
-  f0142720: 'inflight, NR', // FundsReserved: 28 minutes
-  f0142721: 'inflight, NR', // FundsReserved: 28 minutes
-  f0142723: 'inflight, NR', // FundsReserved: 28 minutes
-  f0143032: 'inflight, NR', // FundsReserved: 28 minutes
-  f0143160: 'inflight, China, Ningbo', // FundsReserved: 28 minutes
-  f0143162: 'inflight, NR', // FundsReserved: 28 minutes
-  f0143361: 'inflight, NR', // FundsReserved: 28 minutes
-  f0143511: 'inflight, NR', // FundsReserved: 28 minutes
-  f0143666: 'inflight, NR', // FundsReserved: 28 minutes
-  f0143858: 'inflight, USA, Calistoga', // FundsReserved: about 1 hour
-  f0143907: 'inflight, NR', // FundsReserved: 28 minutes
-  f0143999: 'inflight, NR', // FundsReserved: 28 minutes
-  f0144069: 'inflight, NR', // FundsReserved: 28 minutes
-  f0144304: 'inflight, NR', // FundsReserved: 28 minutes
-  f0144314: 'inflight, NR', // FundsReserved: 28 minutes
-  f0144316: 'inflight, NR', // FundsReserved: 28 minutes
-  f0144528: 'inflight, NR', // FundsReserved: 28 minutes
-  f0144530: 'inflight, NR', // FundsReserved: 28 minutes
-  f0144615: 'inflight, NR', // FundsReserved: 28 minutes
-  f0144618: 'inflight, NR', // FundsReserved: 28 minutes
-  f0144724: 'inflight, USA, Los Angeles', // FundsReserved: about 1 hour
-  f0144756: 'inflight, NR', // FundsReserved: 28 minutes
-  f0144952: 'inflight, NR', // FundsReserved: 28 minutes
-  f0145060: 'inflight, NR', // FundsReserved: 28 minutes
-  f0145249: 'inflight, NR', // FundsReserved: 28 minutes
-  f0145503: 'inflight, NR', // FundsReserved: 28 minutes
-  f0145687: 'inflight, NR', // FundsReserved: 28 minutes
-  f0145985: 'inflight, NR', // FundsReserved: 28 minutes
-  f0145986: 'inflight, NR', // FundsReserved: 27 minutes
-  f0146220: 'inflight, NR', // FundsReserved: 27 minutes
-  f0146224: 'inflight, NR', // FundsReserved: 27 minutes
-  f0146278: 'inflight, NR', // FundsReserved: 27 minutes
-  f0146956: 'inflight, NR', // FundsReserved: 27 minutes
-  f0147119: 'inflight, NR', // FundsReserved: 27 minutes
-  f0147214: 'inflight, NR', // FundsReserved: 27 minutes
-  f0147586: 'inflight, NR', // FundsReserved: 27 minutes
-  f0147657: 'inflight, NR', // FundsReserved: 27 minutes
-  f0147801: 'inflight, NR', // FundsReserved: 27 minutes
-  f0148151: 'inflight, NR', // FundsReserved: 27 minutes
-  f0148269: 'inflight, NR', // FundsReserved: 27 minutes
-  f0148452: 'inflight, NR', // FundsReserved: 27 minutes
-  f0148627: 'inflight, NR', // FundsReserved: 27 minutes
-  f0149132: 'inflight, NR', // FundsReserved: 27 minutes
-  f0149753: 'inflight, NR', // FundsReserved: 27 minutes
-  f0149783: 'inflight, NR', // FundsReserved: 27 minutes
-  f0149937: 'inflight, NR', // FundsReserved: 27 minutes
-  f0150666: 'inflight, NR', // FundsReserved: 27 minutes
-  f0150748: 'inflight, NR', // FundsReserved: 27 minutes
-  f0150816: 'inflight, NR', // FundsReserved: 27 minutes
-  f0150860: 'inflight, NR', // FundsReserved: 27 minutes
-  f0150918: 'inflight, NR', // FundsReserved: 27 minutes
-  f0151371: 'inflight, NR', // FundsReserved: about 1 hour
-  f0151499: 'inflight, NR', // FundsReserved: 27 minutes
-  f0151706: 'inflight, NR', // FundsReserved: 27 minutes
-  f0151849: 'inflight, NR', // FundsReserved: 27 minutes
-  f0152134: 'inflight, NR', // FundsReserved: 27 minutes
-  f0152337: 'inflight, NR', // FundsReserved: about 1 hour
-  f0152351: 'inflight, NR', // FundsReserved: 27 minutes
-  f0152799: 'inflight, NR', // FundsReserved: 27 minutes
-  f0152866: 'inflight, NR', // FundsReserved: 27 minutes
-  f0153024: 'inflight, NR', // FundsReserved: 27 minutes
-  f0153040: 'inflight, NR', // FundsReserved: 27 minutes
-  f0153078: 'inflight, NR', // FundsReserved: 27 minutes
-  f0153188: 'inflight, NR', // FundsReserved: 27 minutes
-  f0153565: 'inflight, NR', // FundsReserved: 27 minutes
-  f0153583: 'inflight, NR', // FundsReserved: 27 minutes
-  f0153775: 'inflight, NR', // FundsReserved: 27 minutes
-  f0153930: 'inflight, NR', // FundsReserved: 27 minutes
-  f0153932: 'inflight, NR', // FundsReserved: 27 minutes
-  f0153960: 'inflight, NR', // FundsReserved: 26 minutes
-  f0153986: 'inflight, China, Changsha', // FundsReserved: about 1 hour
-  f0154152: 'inflight, NR', // FundsReserved: 26 minutes
-  f0154238: 'inflight, NR', // FundsReserved: 26 minutes
-  f0154294: 'inflight, NR', // FundsReserved: 26 minutes
-  f0154335: 'inflight, NR', // FundsReserved: 26 minutes
-  f0154597: 'inflight, NR', // FundsReserved: 26 minutes
-  f0154865: 'inflight, NR', // FundsReserved: 26 minutes
-  f0155049: 'inflight, NR', // FundsReserved: 26 minutes
-  f0155050: 'inflight, NR', // FundsReserved: 26 minutes
-  f0155258: 'inflight, NR', // FundsReserved: 26 minutes
-  f0155515: 'inflight, NR', // FundsReserved: 26 minutes
-  f0155829: 'inflight, NR', // FundsReserved: 26 minutes
-  f0155983: 'inflight, Japan', // FundsReserved: about 1 hour
-  f0156214: 'inflight, NR', // FundsReserved: 26 minutes
-  f0156333: 'inflight, China, Ningbo', // FundsReserved: 26 minutes
-  f0156342: 'inflight, NR', // FundsReserved: 21 minutes
-  f0156417: 'inflight, NR', // FundsReserved: 26 minutes
-  f0157025: 'inflight, NR', // FundsReserved: 26 minutes
-  f0157316: 'inflight, NR', // FundsReserved: 26 minutes
-  f0157429: 'inflight, Korea, Bucheon-si', // FundsReserved: about 1 hour
-  f0157502: 'inflight, NR', // FundsReserved: 26 minutes
-  f0157513: 'inflight, Korea, Geumcheon-gu', // FundsReserved: 21 minutes
-  f0157769: 'inflight, China, Changsha', // FundsReserved: 26 minutes
-  f0157917: 'inflight, NR', // FundsReserved: 26 minutes
-  f0157979: 'inflight, NR', // FundsReserved: 26 minutes
-  f0157991: 'inflight, NR', // FundsReserved: 26 minutes
-  f0158000: 'inflight, NR', // FundsReserved: 26 minutes
-  f0158068: 'inflight, NR', // FundsReserved: 26 minutes
-  f0158133: 'inflight, NR', // FundsReserved: 26 minutes
-  f0158156: 'inflight, NR', // FundsReserved: 26 minutes
-  f0158265: 'inflight, China, Hefei', // FundsReserved: 26 minutes
-  f0158276: 'inflight, NR', // FundsReserved: 26 minutes
-  f0158335: 'inflight, NR', // FundsReserved: 26 minutes
-  f0158728: 'inflight, NR', // FundsReserved: 26 minutes
-  f0159067: 'inflight, NR', // FundsReserved: 26 minutes
-  f0159333: 'inflight, NR', // FundsReserved: 26 minutes
-  f0159380: 'inflight, NR', // FundsReserved: 26 minutes
-  f0159449: 'inflight, NR', // FundsReserved: 26 minutes
-  f0159517: 'inflight, NR', // FundsReserved: 26 minutes
-  f0159632: 'inflight, NR', // FundsReserved: about 1 hour
-  f0159649: 'inflight, NR', // FundsReserved: about 1 hour
-  f0159654: 'inflight, NR', // FundsReserved: 26 minutes
-  f0159660: 'inflight, NR', // FundsReserved: 26 minutes
-  f0159689: 'inflight, NR', // FundsReserved: 26 minutes
-  f0159883: 'inflight, NR', // FundsReserved: about 1 hour
-  f0160135: 'inflight, NR', // FundsReserved: 25 minutes
-  f0160137: 'inflight, NR', // FundsReserved: 25 minutes
-  f0160735: 'inflight, NR', // FundsReserved: 25 minutes
-  f0160819: 'inflight, NR', // FundsReserved: 25 minutes
-  f0160870: 'inflight, NR', // FundsReserved: 25 minutes
-  f0161468: 'inflight, NR', // FundsReserved: 25 minutes
-  f0161542: 'inflight, NR', // FundsReserved: 25 minutes
-  f0161819: 'inflight, NR', // FundsReserved: 25 minutes
-  f0163275: 'inflight, NR', // FundsReserved: 25 minutes
-  f0164260: 'inflight, NR', // FundsReserved: 25 minutes
-  f0164326: 'inflight, China, Beijing', // FundsReserved: about 1 hour
-  f0166425: 'inflight, NR', // FundsReserved: 25 minutes
-  f0166843: 'inflight, NR', // FundsReserved: 25 minutes
-  f0166896: 'inflight, NR', // FundsReserved: 25 minutes
-  f0167137: 'inflight, China, Shaoxing', // FundsReserved: 21 minutes
-  f0167458: 'inflight, NR', // FundsReserved: 25 minutes
-  f0167505: 'inflight, China, Beijing', // FundsReserved: about 1 hour
-  f0168537: 'inflight, NR', // FundsReserved: 25 minutes
-  f0169053: 'inflight, NR', // FundsReserved: 21 minutes
-  f0169097: 'inflight, NR', // FundsReserved: 25 minutes
-  f0199223: 'inflight, NR', // FundsReserved: about 1 hour
-  f0207949: 'inflight, NR', // FundsReserved: 25 minutes
-  f0214334: 'inflight, NR', // FundsReserved: 25 minutes
-  f0215461: 'inflight, NR', // FundsReserved: 25 minutes
-  f0216463: 'inflight, NR', // FundsReserved: 25 minutes
-  f0216822: 'inflight, NR', // FundsReserved: 25 minutes
-  f0217419: 'inflight, NR', // FundsReserved: 25 minutes
-  f0217789: 'inflight, NR', // FundsReserved: 25 minutes
-  f0217805: 'inflight, China, Taiwan, Taipei', // FundsReserved: about 1 hour
-  f0218072: 'inflight, NR', // FundsReserved: 25 minutes
-  f0218092: 'inflight, NR', // FundsReserved: 25 minutes
-  f0218407: 'inflight, NR', // FundsReserved: 25 minutes
-  f0219106: 'inflight, NR', // FundsReserved: 25 minutes
-  f0220911: 'inflight, NR', // FundsReserved: 25 minutes
-  f0222611: 'inflight, NR', // FundsReserved: 25 minutes
-  f0222811: 'inflight, NR', // FundsReserved: 24 minutes
-  f0222947: 'inflight, NR', // FundsReserved: 24 minutes
-  f0223033: 'inflight, NR', // FundsReserved: 24 minutes
-  f0223102: 'inflight, NR', // FundsReserved: 24 minutes
-  f0223103: 'inflight, NR', // FundsReserved: 24 minutes
-  f0223104: 'inflight, NR', // FundsReserved: 24 minutes
-  f0223316: 'inflight, NR', // FundsReserved: 24 minutes
-  f0223933: 'inflight, NR', // FundsReserved: 24 minutes
-  f0225285: 'inflight, NR', // FundsReserved: 24 minutes
-  f0225880: 'inflight, NR', // FundsReserved: 24 minutes
-  f0226303: 'inflight, NR', // FundsReserved: 24 minutes
-  f0226418: 'inflight, NR', // FundsReserved: 24 minutes
-  f0226520: 'inflight, NR', // FundsReserved: 24 minutes
-  f0228232: 'inflight, NR', // FundsReserved: 24 minutes
-  f0228855: 'inflight, Korea, Guro-gu', // FundsReserved: about 1 hour
-  f0229199: 'inflight, NR', // FundsReserved: 24 minutes
-  f0229437: 'inflight, NR', // FundsReserved: 24 minutes
-  f0229547: 'inflight, Japan, Yokohama', // FundsReserved: 24 minutes
-  f0230449: 'inflight, NR', // FundsReserved: 24 minutes
-  f0230799: 'inflight, NR', // FundsReserved: 24 minutes
-  f0230861: 'inflight, NR', // FundsReserved: 24 minutes
-  f0231112: 'inflight, NR', // FundsReserved: 24 minutes
-  f0231481: 'inflight, NR', // FundsReserved: 24 minutes
-  f0231782: 'inflight, NR', // FundsReserved: 24 minutes
-  f0232358: 'inflight, NR', // FundsReserved: 24 minutes
-  f0232459: 'inflight, NR', // FundsReserved: 24 minutes
-  f0232650: 'inflight, NR', // FundsReserved: 24 minutes
-  f0238968: 'inflight, NR', // FundsReserved: about 1 hour
-  f0240035: 'inflight, NR', // FundsReserved: 24 minutes
-  f0240185: 'inflight, NR', // FundsReserved: 24 minutes
-  f0240456: 'inflight, NR', // FundsReserved: 24 minutes
-  f0241666: 'inflight, NR', // FundsReserved: 24 minutes
-  f0241764: 'inflight, China, Chengdu', // FundsReserved: about 1 hour
-  f0242152: 'inflight, Korea, Guro-gu', // FundsReserved: about 1 hour
-  f0242156: 'inflight, NR', // FundsReserved: 24 minutes
-  f0242345: 'inflight, NR', // FundsReserved: 24 minutes
-  f0242373: 'inflight, NR', // FundsReserved: 24 minutes
-  f0364987: 'inflight, Korea, Seoul', // FundsReserved: about 2 hours
-  f0377277: 'inflight, NR', // FundsReserved: 24 minutes
-  f0391212: 'inflight, NR', // FundsReserved: 24 minutes
-  f0391214: 'inflight, NR', // FundsReserved: 24 minutes
-  f0391235: 'inflight, NR', // FundsReserved: 24 minutes
-  f0391381: 'inflight, NR', // FundsReserved: 24 minutes
-  f0391439: 'inflight, NR', // FundsReserved: 24 minutes
-  f0392430: 'inflight, NR', // FundsReserved: 23 minutes
-  f0392488: 'inflight, NR', // FundsReserved: 23 minutes
-  f0392924: 'inflight, NR', // FundsReserved: 23 minutes
-  f0392999: 'inflight, NR', // FundsReserved: about 1 hour
-  f0393016: 'inflight, NR', // FundsReserved: 23 minutes
-  f0393417: 'inflight, NR', // FundsReserved: 23 minutes
-  f0394102: 'inflight, NR', // FundsReserved: 23 minutes
-  f0395680: 'inflight, NR', // FundsReserved: 23 minutes
-  f0395994: 'inflight, NR', // FundsReserved: 23 minutes
-  f0396149: 'inflight, NR', // FundsReserved: 23 minutes
-  f0396217: 'inflight, NR', // FundsReserved: 23 minutes
-  f0396422: 'inflight, NR', // FundsReserved: 23 minutes
-  f0396452: 'inflight, NR', // FundsReserved: 23 minutes
-  f0396473: 'inflight, NR', // FundsReserved: 23 minutes
-  f0396705: 'inflight, NR', // FundsReserved: 23 minutes
-  f0397052: 'inflight, NR', // FundsReserved: 23 minutes
-  f0397083: 'inflight, NR', // FundsReserved: 23 minutes
-  f0397561: 'inflight, NR', // FundsReserved: 23 minutes
-  f0397794: 'inflight, NR', // FundsReserved: 23 minutes
-  f0397802: 'inflight, NR', // FundsReserved: 23 minutes
-  f0398999: 'inflight, NR', // FundsReserved: 23 minutes
-  f0399111: 'inflight, NR', // FundsReserved: 23 minutes
-  f0399743: 'inflight, NR', // FundsReserved: 23 minutes
-  f0399996: 'inflight, NR', // FundsReserved: 23 minutes
-  f0400307: 'inflight, NR', // FundsReserved: 23 minutes
-  f0402233: 'inflight, NR', // FundsReserved: 23 minutes
-  f0402314: 'inflight, NR', // FundsReserved: 21 minutes
-  f0402492: 'inflight, NR', // FundsReserved: 23 minutes
-  f0402661: 'inflight, NR', // FundsReserved: 23 minutes
-  f0402822: 'inflight, NR', // FundsReserved: 23 minutes
-  f0403529: 'inflight, NR', // FundsReserved: 23 minutes
-  f0404193: 'inflight, NR', // FundsReserved: 23 minutes
-  f0404643: 'inflight, NR', // FundsReserved: 23 minutes
-  f0406478: 'inflight, NR', // FundsReserved: 23 minutes
-  f0406533: 'inflight, NR', // FundsReserved: 23 minutes
-  f0407244: 'inflight, NR', // FundsReserved: 23 minutes
-  f0407733: 'inflight, NR', // FundsReserved: 23 minutes
-  f0408582: 'inflight, NR', // FundsReserved: 22 minutes
-  f0408629: 'inflight, NR', // FundsReserved: 22 minutes
-  f0409172: 'inflight, NR', // FundsReserved: 22 minutes
-  f0409399: 'inflight, NR', // FundsReserved: 22 minutes
-  f0409499: 'inflight, NR', // FundsReserved: 22 minutes
-  f0410001: 'inflight, NR', // FundsReserved: 22 minutes
-  f0410941: 'inflight, NR', // FundsReserved: 22 minutes
-  f0419311: 'inflight, NR', // FundsReserved: 22 minutes
-  f0419331: 'inflight, NR', // FundsReserved: 22 minutes
-  f0419510: 'inflight, NR', // FundsReserved: 22 minutes
-  f0419662: 'inflight, NR', // FundsReserved: 22 minutes
-  f0419804: 'inflight, NR', // FundsReserved: 22 minutes
-  f0419944: 'inflight, NR', // FundsReserved: 22 minutes
-  f0419945: 'inflight, NR', // FundsReserved: 22 minutes
-  f0420508: 'inflight, NR', // FundsReserved: 22 minutes
-  f0421387: 'inflight, NR', // FundsReserved: 22 minutes
-  f0421858: 'inflight, NR', // FundsReserved: 22 minutes
-  f0422229: 'inflight, NR', // FundsReserved: 22 minutes
-  f0422266: 'inflight, NR', // FundsReserved: about 1 hour
-  f0422737: 'inflight, NR', // FundsReserved: 22 minutes
-  f0423057: 'inflight, NR', // FundsReserved: 22 minutes
-  f0423329: 'inflight, NR', // FundsReserved: 22 minutes
-  f0424761: 'inflight, NR', // FundsReserved: 22 minutes
-  f0427688: 'inflight, NR', // FundsReserved: 22 minutes
-  f0427839: 'inflight, NR', // FundsReserved: 22 minutes
-  f0427975: 'inflight, NR', // FundsReserved: 22 minutes
-  f0427989: 'inflight, NR', // FundsReserved: 22 minutes
-  f0428184: 'inflight, NR', // FundsReserved: 22 minutes
-  f0429063: 'inflight, NR', // FundsReserved: 22 minutes
-  f0429122: 'inflight, NR', // FundsReserved: 22 minutes
-  f0430101: 'inflight, NR', // FundsReserved: 22 minutes
-  f0432235: 'inflight, NR', // FundsReserved: 22 minutes
-  f0433892: 'inflight, NR', // FundsReserved: 22 minutes
 
   // Unknown
 
@@ -863,8 +67,10 @@ const annotations = {
   f016398: 'sealing, China, Shanghai', // 1667943
   f024468: 'sealing, China, Shenzhen', // 1667909
   f030125: 'sealing, China, Nantong', // 1667966
+  f030408: 'sealing, NR', // 1667978
   f033036: 'sealing, China, Liaoning', // 1667927
   f044160: 'sealing, China, Guangzhou, muxing', // 1667922
+  f053088: 'sealing, China, Shanghai', // 1668076
   f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1667903
   f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 1667902
   f058369: 'sealing, USA, Boston', // 1668005
@@ -874,74 +80,69 @@ const annotations = {
   f097720: 'sealing, Korea, Bucheon-si', // 1667946
   f0110133: 'sealing, China, Ningbo', // 1667908
   f0111885: 'sealing, Korea, Bucheon-si, WINNERS', // 1668004
+  f0112772: 'sealing, China, Nantong', // 1668046
   f0113331: 'sealing, Korea, Jinju + USA', // 1667907
   f0129805: 'sealing, China, Zhejiang + Australia, Adelaide', // 1667916
   f0131901: 'sealing, Korea, Daejeon', // 1667905
   f0134671: 'sealing, Korea, Gimpo-si', // 1667904
+  f0155687: 'sealing, China, Guangzhou', // 1668054
   f0165643: 'sealing, China, Guangzhou', // 1667918
   f0168058: 'sealing, China, Suzhou', // 1667910
+  f0215370: 'sealing, China, Hangzhou', // 1668077
+  f0220156: 'sealing, NR', // 1668059
   f0239251: 'sealing, Korea, Uiwang', // 1667924
+  f0396846: 'sealing, China, Zhongshan', // 1668062
   f0399814: "sealing, China, Ya'an", // 1667939
   f0401287: 'sealing, China, Yibin', // 1667923
   f0402431: 'sealing, China, Hangzhou', // 1667913
   f0419768: 'sealing, Korea, Seongnam-si', // 1667915
   f0434480: 'sealing, USA, Hummelstown', // 1667919
+  f0463143: 'sealing, NR', // 1668127
+  f0471691: 'sealing, China, Fujian', // 1668042
   f0478837: 'sealing, China, Zhangzhou', // 1667861
 
   // Stuck
 
-  f02490: 'stuck, China, Fujian', // CheckForAcceptance: about 2 hours
-  f03339: 'stuck, China, Luzhou, benxun', // CheckForAcceptance: about 2 hours
-  f03345: 'stuck, China, Fuzhou, chh', // CheckForAcceptance: about 2 hours
-  f08019: 'stuck, China, Yantai, 三合', // CheckForAcceptance: about 2 hours
-  f010513: 'stuck, China, Chongqing', // CheckForAcceptance: about 2 hours
-  f020489: 'stuck, China, Lioaning', // CheckForAcceptance: about 2 hours
-  f022261: 'stuck, China, Luzhou', // CheckForAcceptance: about 2 hours
-  f023219: 'stuck, China, Beijing + Zhangjiakou', // CheckForAcceptance: about 2 hours
-  f025025: 'stuck, China, Qingdao', // CheckForAcceptance: about 2 hours
-  f030408: 'stuck, NR', // CheckForAcceptance: about 2 hours
-  f033025: 'stuck, Korea, Daegu', // CheckForAcceptance: about 2 hours
-  f039515: 'stuck, China, Chongqing, valarhash', // CheckForAcceptance: about 2 hours
-  f053088: 'stuck, China, Shanghai', // CheckForAcceptance: about 2 hours
-  f063628: 'stuck, NR', // CheckForAcceptance: about 1 hour
-  f0112772: 'stuck, China, Nantong', // CheckForAcceptance: 33 minutes
-  f0122815: 'stuck, Korea, Bucheon-si, Healthcarenavi_80', // CheckForAcceptance: about 2 hours
-  f0130912: 'stuck, China, Hong Kong', // CheckForAcceptance: about 2 hours
-  f0131857: 'stuck, China, Chongqing', // CheckForAcceptance: about 2 hours
-  f0137168: 'stuck, China, Beijing', // CheckForAcceptance: about 2 hours
-  f0145843: 'stuck, NR', // CheckForAcceptance: 29 minutes
-  f0150744: 'stuck, Korea, Ulsan', // CheckForAcceptance: about 2 hours
-  f0155687: 'stuck, China, Guangzhou', // CheckForAcceptance: 27 minutes
-  f0157564: 'stuck, Korea, Daejeon', // CheckForAcceptance: about 2 hours
-  f0165539: 'stuck, Japan, Yokohama', // CheckForAcceptance: about 2 hours
-  f0215370: 'stuck, China, Hangzhou', // CheckForAcceptance: about 2 hours
-  f0220156: 'stuck, NR', // CheckForAcceptance: 21 minutes
-  f0231161: 'stuck, China, Qujing', // CheckForAcceptance: about 2 hours
-  f0242420: 'stuck, NR', // CheckForAcceptance: about 2 hours
-  f0395459: 'stuck, Korea, Daegu', // CheckForAcceptance: about 2 hours
-  f0395462: 'stuck, Korea, Daegu', // CheckForAcceptance: about 2 hours
-  f0396846: 'stuck, China, Zhongshan', // CheckForAcceptance: 22 minutes
-  f0397675: 'stuck, Korea, Guro-gu', // CheckForAcceptance: about 1 hour
-  f0398326: 'stuck, China, Jiangmen', // CheckForAcceptance: about 2 hours
-  f0401300: 'stuck, France, Deuil-la-Barre', // CheckForAcceptance: about 2 hours
-  f0403177: 'stuck, China, Huizhou', // CheckForAcceptance: about 2 hours
-  f0405129: 'stuck, China, Fujian', // CheckForAcceptance: about 2 hours
-  f0408717: 'stuck, Korea, Ansan-si', // CheckForAcceptance: about 2 hours
-  f0411786: 'stuck, Korea, Busan', // CheckForAcceptance: about 2 hours
-  f0430997: 'stuck, Korea', // CheckForAcceptance: about 2 hours
-  f0437246: 'stuck, China, Hangzhou', // CheckForAcceptance: about 2 hours
-  f0458627: 'stuck, Korea, Seongnam-si', // CheckForAcceptance: about 2 hours
-  f0460440: 'stuck, Korea, Seongnam-si', // CheckForAcceptance: about 2 hours
-  f0463143: 'stuck, NR', // CheckForAcceptance: about 2 hours
-  f0467217: 'stuck, China, Beijing', // CheckForAcceptance: about 2 hours
-  f0471266: 'stuck, Japan, Ageo', // CheckForAcceptance: about 2 hours
-  f0471691: 'stuck, China, Fujian', // CheckForAcceptance: about 2 hours
-  f0482619: 'stuck, Korea, Seongnam-si', // CheckForAcceptance: about 2 hours
-  f0490090: 'stuck, Korea, Seoul', // CheckForAcceptance: about 2 hours
-  f0492283: 'stuck, USA, Quail Valley', // CheckForAcceptance: about 2 hours
-  f0492295: 'stuck, China, Shenzhen', // CheckForAcceptance: about 2 hours
-  f0494174: 'stuck, Norway', // CheckForAcceptance: about 2 hours
-  f0494332: 'stuck, Ukraine, Sumy', // CheckForAcceptance: about 2 hours
+  f02490: 'stuck, China, Fujian', // CheckForAcceptance: about 6 hours
+  f03339: 'stuck, China, Luzhou, benxun', // CheckForAcceptance: about 7 hours
+  f03345: 'stuck, China, Fuzhou, chh', // CheckForAcceptance: about 6 hours
+  f08019: 'stuck, China, Yantai, 三合', // CheckForAcceptance: about 6 hours
+  f010513: 'stuck, China, Chongqing', // CheckForAcceptance: about 6 hours
+  f020489: 'stuck, China, Lioaning', // CheckForAcceptance: about 7 hours
+  f022261: 'stuck, China, Luzhou', // CheckForAcceptance: about 7 hours
+  f023219: 'stuck, China, Beijing + Zhangjiakou', // CheckForAcceptance: about 7 hours
+  f025025: 'stuck, China, Qingdao', // CheckForAcceptance: about 6 hours
+  f033025: 'stuck, Korea, Daegu', // CheckForAcceptance: about 6 hours
+  f039515: 'stuck, China, Chongqing, valarhash', // CheckForAcceptance: about 6 hours
+  f063628: 'stuck, NR', // CheckForAcceptance: about 6 hours
+  f0122815: 'stuck, Korea, Bucheon-si, Healthcarenavi_80', // CheckForAcceptance: about 6 hours
+  f0122940: 'stuck, NR', // CheckForAcceptance: about 4 hours
+  f0130912: 'stuck, China, Hong Kong', // CheckForAcceptance: about 6 hours
+  f0131857: 'stuck, China, Chongqing', // CheckForAcceptance: about 7 hours
+  f0137168: 'stuck, China, Beijing', // CheckForAcceptance: about 6 hours
+  f0145843: 'stuck, NR', // CheckForAcceptance: about 5 hours
+  f0150744: 'stuck, Korea, Ulsan', // CheckForAcceptance: about 6 hours
+  f0157564: 'stuck, Korea, Daejeon', // CheckForAcceptance: about 6 hours
+  f0165539: 'stuck, Japan, Yokohama', // CheckForAcceptance: about 7 hours
+  f0231161: 'stuck, China, Qujing', // CheckForAcceptance: about 6 hours
+  f0242420: 'stuck, NR', // CheckForAcceptance: about 6 hours
+  f0398326: 'stuck, China, Jiangmen', // CheckForAcceptance: about 6 hours
+  f0401300: 'stuck, France, Deuil-la-Barre', // CheckForAcceptance: about 6 hours
+  f0402492: 'stuck, NR', // CheckForAcceptance: about 4 hours
+  f0403177: 'stuck, China, Huizhou', // CheckForAcceptance: about 6 hours
+  f0408717: 'stuck, Korea, Ansan-si', // CheckForAcceptance: about 6 hours
+  f0411786: 'stuck, Korea, Busan', // CheckForAcceptance: about 6 hours
+  f0430997: 'stuck, Korea', // CheckForAcceptance: about 6 hours
+  f0458627: 'stuck, Korea, Seongnam-si', // CheckForAcceptance: about 7 hours
+  f0460440: 'stuck, Korea, Seongnam-si', // CheckForAcceptance: about 7 hours
+  f0467217: 'stuck, China, Beijing', // CheckForAcceptance: about 7 hours
+  f0471266: 'stuck, Japan, Ageo', // CheckForAcceptance: about 7 hours
+  f0482619: 'stuck, Korea, Seongnam-si', // CheckForAcceptance: about 7 hours
+  f0490090: 'stuck, Korea, Seoul', // CheckForAcceptance: about 7 hours
+  f0492283: 'stuck, USA, Quail Valley', // CheckForAcceptance: about 7 hours
+  f0492295: 'stuck, China, Shenzhen', // CheckForAcceptance: about 7 hours
+  f0494174: 'stuck, Norway', // CheckForAcceptance: about 7 hours
+  f0494332: 'stuck, Ukraine, Sumy', // CheckForAcceptance: about 7 hours
 
   // Busy
 
@@ -1330,6 +531,7 @@ const annotations = {
   f025007: 'error, Korea, Gyeonggi-do, PINBYTES-eCUBE', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999997019232 FIL, balance: 0.029146741475696545 FIL): not enough funds to execute transaction
   f034350: 'error, NR', // sending proposal to storage provider failed: stream reset
   f054415: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f054418: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f062937: 'error, NR', // error reading Response message from provider: EOF
   f063869: 'error, NR', // error reading Response message from provider: EOF
   f079370: 'error, China, Zhangzhou', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
@@ -1360,6 +562,7 @@ const annotations = {
   f0151366: 'error, China, Fuzhou + Xiamen', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0151468: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0151487: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f0152337: 'error, NR', // failed to complete data transfer: deal data transfer failed: data transfer channel 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWLWmfzgTnvSRefqqpyTCeHekCHZr4f4U1oKA1XoMkSkLV-1617589584474572496 failed to transfer data: graphsync response to peer 12D3KooWLWmfzgTnvSRefqqpyTCeHekCHZr4f4U1oKA1XoMkSkLV did not complete: response status code RequestFailedUnknown
   f0152712: 'error, NR', // error reading Response message from provider: stream reset
   f0158993: 'error, China, Zhangzhou', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0162183: "error, China, Xi'an", // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
@@ -1368,21 +571,31 @@ const annotations = {
   f0228401: 'error, Japan', // error reading Response message from provider: EOF
   f0349810: 'error, China, Qinzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.999999999954523891 FIL, balance: 0.967287249945350203 FIL): not enough funds to execute transaction
   f0391143: 'error, China, Shanghai', // error reading Response message from provider: stream reset
+  f0395459: 'error, Korea, Daegu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.284702250507127796 FIL, balance: 1.073017095255018362 FIL): not enough funds to execute transaction
+  f0395462: 'error, Korea, Daegu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.265705875668179624 FIL, balance: 1.118543283950341767 FIL): not enough funds to execute transaction
   f0396352: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0396751: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0397332: 'error, NR', // deal failed: (State=26) error calling node: AddFunds errored: handler: websocket connection closed
+  f0397675: 'error, Korea, Guro-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.099999999961081446 FIL, balance: 0.045810061707734687 FIL): not enough funds to execute transaction
   f0397728: 'error, China, Dongguan', // deal failed: (State=26) error calling node: AddFunds errored: handler: websocket connection closed
   f0400920: 'error, China, Luzhou', // deal failed: (State=26) error calling node: reserving funds: handler: websocket connection closed
   f0401135: 'error, Singapore', // error reading Response message from provider: EOF
   f0402371: 'error, China, Shanghai', // error reading Response message from provider: EOF
+  f0405129: 'error, China, Fujian', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.79999999994140704 FIL, balance: 0.540468854093788917 FIL): not enough funds to execute transaction
   f0414383: 'error, China, Dongguan', // deal failed: (State=26) error calling node: AddFunds errored: handler: websocket connection closed
   f0432345: 'error, China, Guangdong', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.370255978171123785 FIL, balance: 0.097510270225540741 FIL): not enough funds to execute transaction
+  f0437246: 'error, China, Hangzhou', // AddPiece failed: normal shutdown of state machine
   f0494586: 'error, China, Nanchang', // error reading Response message from provider: EOF
 
   // Dial backoff
 
   f02520: 'backoff, China, Hong Kong + Dongguan',
+  f058374: 'backoff, NR',
+  f0110768: 'backoff, Korea, Gwangju',
   f0152563: 'backoff, China, Chongqing',
+  f0159649: 'backoff, NR',
+  f0228855: 'backoff, Korea, Guro-gu',
+  f0229547: 'backoff, Japan, Yokohama',
 
   // Rejected
 
@@ -1511,6 +724,7 @@ const annotations = {
   f0123536: 'rejected, China, Fuzhou',
   f0124036: 'rejected, China, Nanchang', // no online
   f0124554: 'rejected, Korea, Gimhae', // proposed provider collateral above maximum: 70958065178 > 70926415948
+  f0124696: 'rejected, NR',
   f0125863: 'rejected, Korea, Seoul', // no online
   f0126037: 'rejected, Korea, Seoul', // no online
   f0126038: 'rejected, Korea, Seoul', // no online
@@ -1551,6 +765,7 @@ const annotations = {
   f0215497: 'rejected, Korea, Gangseo-gu', // no online
   f0217771: 'rejected, NR', // miner is not accepting unverified storage deals
   f0222674: 'rejected, China, Quinzhou', // sh: 1: /root/.lotusminer/dealfilter.pl: not found
+  f0223316: 'rejected, NR', // no online
   f0223663: 'rejected, China, Beijing',
   f0226324: 'rejected, China, Guangxi', // getting client market balance failed
   f0228335: 'rejected, China, Beijing', // node error getting client market balance failed: resolve address f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q: actor not found
@@ -1571,6 +786,7 @@ const annotations = {
   f0409069: 'rejected, NR', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
   f0418632: 'rejected, Singapore', // miner is not accepting unverified storage deals
   f0424969: 'rejected, China, Fuzhou', // incorrect provider for deal
+  f0427989: 'rejected, NR',
   f0432594: 'rejected, China, Zhengzhou', // no online
   f0451936: 'rejected, NR', // no online
   f0461791: 'rejected, Korea, Gwangju', // proposed provider collateral above maximum: 70968178948 > 70900800020
@@ -1621,6 +837,7 @@ const annotations = {
   f03002: 'dial, China, Chongqing + Singapore', // * [/ip4/8.209.64.163/tcp/18880] dial tcp4 0.0.0.0:46775->8.209.64.163:18880: i/o timeout  * [/ip4/101.206.156.202/tcp/18880] dial tcp4 0.0.0.0:46775->101.206.156.202:18880: i/o timeout
   f03144: 'dial, China, Hong Kong', // * [/ip4/103.214.41.38/tcp/23456] dial tcp4 0.0.0.0:46775->103.214.41.38:23456: i/o timeout
   f03176: 'dial, USA, San Mateo', // * [/ip4/47.88.55.220/tcp/15470] dial tcp4 0.0.0.0:46775->47.88.55.220:15470: i/o timeout  * [/ip4/47.88.57.241/tcp/15470] dial tcp4 0.0.0.0:46775->47.88.57.241:15470: i/o timeout
+  f03224: 'dial, Ukraine, Kyiv', // * [/ip4/176.104.58.70/tcp/1348] dial tcp4 176.104.58.70:1348: i/o timeout
   f03266: 'dial, USA', // * [/ip4/169.63.27.151/tcp/14567] dial tcp4 0.0.0.0:46775->169.63.27.151:14567: i/o timeout
   f03287: 'dial, USA', // * [/ip4/149.81.122.165/tcp/14567] dial tcp4 0.0.0.0:46775->149.81.122.165:14567: i/o timeout
   f03325: 'dial, China, Guangdong', // * [/ip4/113.107.201.186/tcp/42243] dial tcp4 113.107.201.186:42243: connect: connection refused
@@ -1673,6 +890,7 @@ const annotations = {
   f015848: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12321] dial tcp4 0.0.0.0:46775->8.209.107.150:12321: i/o timeout
   f015919: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12316] dial tcp4 0.0.0.0:46775->8.209.107.150:12316: i/o timeout
   f015922: 'dial, Germany, Frankfurt', // * [/ip4/162.62.55.44/tcp/12317] dial tcp4 0.0.0.0:46775->162.62.55.44:12317: i/o timeout
+  f015925: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12318] dial tcp4 0.0.0.0:33929->8.209.107.150:12318: i/o timeout
   f015926: 'dial, Germany, Frankfurt', // * [/ip4/162.62.55.44/tcp/12319] dial tcp4 0.0.0.0:46775->162.62.55.44:12319: i/o timeout
   f016563: 'dial, China, Deyang + Singapore', // * [/ip4/125.64.78.27/tcp/8001] dial tcp4 125.64.78.27:8001: connect: connection refused  * [/ip4/161.117.186.53/tcp/8001] failed to negotiate security protocol: read tcp4 144.217.11.204:46775->161.117.186.53:8001: read: connection reset by peer  * [/ip4/192.168.109.1/tcp/8001] dial tcp4 0.0.0.0:46775->192.168.109.1:8001: i/o timeout
   f019074: 'dial, NR', // * [/ip4/192.168.2.55/tcp/3000] dial tcp4 0.0.0.0:46775->192.168.2.55:3000: i/o timeout
@@ -1697,39 +915,141 @@ const annotations = {
   f022522: 'dial, China, Dongguan', // * [/ip4/113.105.174.12/tcp/10000] dial tcp4 0.0.0.0:46775->113.105.174.12:10000: i/o timeout
   f022687: 'dial, China, Chengdu', // * [/ip4/182.131.4.194/tcp/10080] dial tcp4 0.0.0.0:46775->182.131.4.194:10080: i/o timeout
   f022853: 'dial, China, Fuzhou', // * [/ip4/150.242.97.226/tcp/11105] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWRrw3MpPrr5gaVyv9hHAyLosb76osgrGAKuByXycihWEY, but remote key matches 12D3KooWMarcqTkhZsmPHAZmZvaGNh6WC16hEfVhA6fvyJVe5HVB
+  f023001: 'dial, China, Changsha', // * [/ip4/192.168.1.236/tcp/34617] dial tcp4 0.0.0.0:33929->192.168.1.236:34617: i/o timeout
   f023200: 'dial, China, Shanghai', // * [/ip4/175.24.25.61/tcp/13457] dial tcp4 0.0.0.0:46775->175.24.25.61:13457: i/o timeout
+  f023205: 'dial, Singapore', // * [/ip4/8.130.25.103/tcp/14567] dial tcp4 0.0.0.0:33929->8.130.25.103:14567: i/o timeout
   f023462: 'dial, China, Chongqing', // * [/ip4/101.206.156.202/tcp/23018] dial tcp4 101.206.156.202:23018: connect: connection refused
+  f023530: 'dial, China, Shanghai', // * [/ip4/172.17.32.53/tcp/10241] dial tcp4 0.0.0.0:33929->172.17.32.53:10241: i/o timeout
+  f023561: 'dial, China, Shenzhen', // * [/ip4/103.44.247.32/tcp/40573] dial tcp4 0.0.0.0:33929->103.44.247.32:40573: i/o timeout
   f023985: 'dial, China, Chongqing', // * [/ip4/101.206.156.202/tcp/23152] dial tcp4 101.206.156.202:23152: connect: connection refused
+  f024066: 'dial, China, Chengdu', // * [/ip4/182.131.4.197/tcp/10080] dial tcp4 0.0.0.0:33929->182.131.4.197:10080: i/o timeout
+  f024089: 'dial, NR', // * [/ip4/10.11.4.210/tcp/1234] dial tcp4 0.0.0.0:33929->10.11.4.210:1234: i/o timeout
+  f024137: 'dial, Singapore', // * [/ip4/8.130.25.208/tcp/14567] dial tcp4 0.0.0.0:33929->8.130.25.208:14567: i/o timeout
+  f024182: 'dial, China, Hong Kong', // * [/ip4/14.136.246.136/tcp/46717] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWQFqPz3vvYGGxB259qZfg3qzoKEnafG8DbfMKUHEUQ26z, but remote key matches 12D3KooWHuQtiCKJykJscPMrNiXaguBWKuhBfKDfGP6ieR6SgwdF
+  f025002: 'dial, NR', // * [/ip4/10.30.8.211/tcp/14567] dial tcp4 0.0.0.0:33929->10.30.8.211:14567: i/o timeout
+  f025017: 'dial, China, Hefei, 一三科技-913', // * [/ip4/175.6.250.70/tcp/51105] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWBZeFG1c5zNwCCVnCa6g5TyrUQu5f9oLTYsZyvSigBEXu, but remote key matches 12D3KooWHNxRAA9LvkwDt5a1oQUAqoHzVYXqwueDHo1kGDxAHMQN
+  f025019: 'dial, China, Taiwan, Hsinchu', // * [/ip4/140.113.194.250/tcp/24002] dial tcp4 0.0.0.0:33929->140.113.194.250:24002: i/o timeout
+  f029416: 'dial, NR', // * [/ip4/0.0.0.0/tcp/1024] dial tcp4 0.0.0.0:1024: connect: connection refused
+  f029665: 'dial, China, Shenyang', // * [/ip4/124.95.135.132/tcp/7000] dial tcp4 124.95.135.132:7000: connect: connection refused
+  f032824: 'dial, USA, Cedar Park', // * [/ip4/104.54.236.61/tcp/24001] dial tcp4 0.0.0.0:33929->104.54.236.61:24001: i/o timeout
+  f034544: 'dial, NR', // * [/ip4/183.131.58.134/tcp/14567] dial tcp4 0.0.0.0:33929->183.131.58.134:14567: i/o timeout
+  f034545: 'dial, NR', // * [/ip4/183.131.58.102/tcp/14567] dial tcp4 0.0.0.0:33929->183.131.58.102:14567: i/o timeout
+  f034548: 'dial, NR', // * [/ip4/183.131.58.70/tcp/14567] dial tcp4 0.0.0.0:33929->183.131.58.70:14567: i/o timeout
+  f034592: 'dial, NR', // * [/ip4/127.0.0.1/tcp/33679] dial tcp4 127.0.0.1:33679: connect: connection refused  * [/ip6/::1/tcp/45027] dial tcp6 [::1]:45027: connect: connection refused  * [/ip4/119.147.213.217/tcp/45137] dial tcp4 0.0.0.0:33929->119.147.213.217:45137: i/o timeout  * [/ip4/192.168.5.135/tcp/33679] dial tcp4 0.0.0.0:33929->192.168.5.135:33679: i/o timeout  * [/ip4/119.147.213.56/tcp/33679] dial tcp4 0.0.0.0:33929->119.147.213.56:33679: i/o timeout
+  f034701: 'dial, China, Shenzhen', // * [/ip4/103.44.247.136/tcp/51105] dial tcp4 0.0.0.0:33929->103.44.247.136:51105: i/o timeout
   f040218: 'dial, China, Wuxi', // * [/ip4/58.215.14.146/tcp/30000] dial tcp4 0.0.0.0:46775->58.215.14.146:30000: i/o timeout
+  f043929: 'dial, NR', // * [/ip4/120.232.96.38/tcp/24001] dial tcp4 0.0.0.0:33929->120.232.96.38:24001: i/o timeout
+  f044315: 'dial, NR', // * [/ip4/127.0.0.1/tcp/23456] dial tcp4 127.0.0.1:23456: connect: connection refused  * [/ip4/183.136.238.136/tcp/2051] dial tcp4 183.136.238.136:2051: connect: connection refused  * [/ip4/183.136.238.136/tcp/2055] dial tcp4 183.136.238.136:2055: connect: connection refused  * [/ip4/172.16.0.10/tcp/23456] dial tcp4 0.0.0.0:33929->172.16.0.10:23456: i/o timeout
+  f045505: 'dial, China, Ordos', // * [/ip4/1.183.72.226/tcp/12700] dial tcp4 0.0.0.0:33929->1.183.72.226:12700: i/o timeout
+  f053140: 'dial, China, Shenzhen', // * [/ip4/119.147.149.191/tcp/40573] dial tcp4 0.0.0.0:33929->119.147.149.191:40573: i/o timeout
+  f053229: 'dial, NR', // * [/ip4/172.18.112.203/tcp/10241] dial tcp4 0.0.0.0:33929->172.18.112.203:10241: i/o timeout
+  f054499: 'dial, NR', // * [/ip4/0.0.0.0/tcp/5472] dial tcp4 0.0.0.0:5472: connect: connection refused
+  f054666: 'dial, China, Changsha', // * [/ip4/36.158.255.7/tcp/1024] dial tcp4 0.0.0.0:33929->36.158.255.7:1024: i/o timeout
+  f055522: 'dial, USA', // * [/ip4/207.2.201.158/tcp/24002] dial tcp4 0.0.0.0:33929->207.2.201.158:24002: i/o timeout
+  f057070: 'dial, NR', // * [/ip4/117.71.104.68/tcp/10240] dial tcp4 0.0.0.0:33929->117.71.104.68:10240: i/o timeout
   f057127: 'dial, China, Suzhou', // * [/ip4/58.211.213.210/tcp/20108] dial tcp4 58.211.213.210:20108: connect: connection refused
   f057466: 'dial, China, Guangzhou', // * [/ip4/116.21.71.7/tcp/24001] dial tcp4 0.0.0.0:46775->116.21.71.7:24001: i/o timeout
+  f057683: 'dial, NR', // * [/ip4/0.0.0.0/tcp/42545] dial tcp4 0.0.0.0:42545: connect: connection refused
+  f059740: 'dial, Germany, Bottrop', // * [/ip4/156.67.191.194/tcp/24001] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWR2iY2SFgjHM45NkQEJMmAathsCrgHWADbbCnPzsuS2bY, but remote key matches 12D3KooWR3EjX6z4ZkNRAbnF442tu5aCeLPQj62Xn7qCQ2KzPKwS
+  f059788: 'dial, China, Zhanjiang', // * [/ip4/183.2.149.76/tcp/33669] dial tcp4 0.0.0.0:33929->183.2.149.76:33669: i/o timeout
+  f061959: 'dial, NR', // * [/ip4/172.18.113.213/tcp/10241] dial tcp4 0.0.0.0:33929->172.18.113.213:10241: i/o timeout
+  f062931: 'dial, NR', // * [/ip4/115.231.84.133/tcp/14567] dial tcp4 0.0.0.0:33929->115.231.84.133:14567: i/o timeout
   f064668: 'dial, China, Hong Kong', // * [/ip4/203.34.199.23/tcp/46717] dial tcp4 203.34.199.23:46717: connect: connection refused
+  f066102: 'dial, NR', // * [/ip4/172.18.112.93/tcp/10241] dial tcp4 0.0.0.0:33929->172.18.112.93:10241: i/o timeout
+  f066259: 'dial, NR', // * [/ip4/172.19.101.33/tcp/10241] dial tcp4 0.0.0.0:33929->172.19.101.33:10241: i/o timeout
+  f068096: 'dial, China, Sichuan', // * [/ip4/222.213.23.200/tcp/38999] dial tcp4 0.0.0.0:33929->222.213.23.200:38999: i/o timeout
+  f068560: 'dial, China, Changsha', // * [/ip4/172.16.100.111/tcp/37929] dial tcp4 0.0.0.0:33929->172.16.100.111:37929: i/o timeout
+  f069391: 'dial, NR', // * [/ip4/192.168.1.10/tcp/32759] dial tcp4 0.0.0.0:33929->192.168.1.10:32759: i/o timeout
+  f070044: 'dial, China', // * [/ip4/47.57.185.52/tcp/12600] dial tcp4 0.0.0.0:33929->47.57.185.52:12600: i/o timeout
+  f070803: 'dial, NR', // * [/ip4/127.0.0.1/tcp/40573] dial tcp4 127.0.0.1:40573: connect: connection refused
+  f071287: 'dial, NR', // * [/ip4/127.0.0.1/tcp/37563] dial tcp4 127.0.0.1:37563: connect: connection refused  * [/ip6/::1/tcp/35683] dial tcp6 [::1]:35683: connect: connection refused  * [/ip4/118.112.243.148/tcp/37563] dial tcp4 0.0.0.0:33929->118.112.243.148:37563: i/o timeout  * [/ip4/172.17.0.120/tcp/37563] dial tcp4 0.0.0.0:33929->172.17.0.120:37563: i/o timeout
+  f071664: 'dial, China, Shangdong', // * [/ip4/10.133.8.210/tcp/32759] dial tcp4 0.0.0.0:33929->10.133.8.210:32759: i/o timeout
+  f079285: 'dial, NR', // * [/ip4/172.22.20.109/tcp/10241] dial tcp4 0.0.0.0:33929->172.22.20.109:10241: i/o timeout
+  f079426: 'dial, China, Shandong', // * [/ip4/106.74.7.6/tcp/32759] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWQBg2oErr3Mx2fky471oxpmQmVggaDsGGVNqFagL27HeY, but remote key matches 12D3KooWQtkXUECWx5MBUugczDBoDq6DJcse1m56FHLmhRkGLyHK
+  f081078: 'dial, Korea, Busan', // * [/ip4/220.84.94.10/tcp/23450] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWMW8ZvKgprKTTmt8cuoC5YYZeJtCn6iBuHWLg6J8rGUts, but remote key matches 12D3KooWLe7nwrhYUwgTjy7B92xgeuVZFVzgXHuM4wGzmcYg6asG
+  f082958: 'dial, NR', // * [/ip4/0.0.0.0/tcp/42547] dial tcp4 0.0.0.0:42547: connect: connection refused
   f086028: 'dial, NR', // * [/ip6/::1/tcp/38985] dial tcp6 [::1]:38985: connect: connection refused  * [/ip4/127.0.0.1/tcp/36033] dial tcp4 127.0.0.1:36033: connect: connection refused  * [/ip4/61.147.117.2/tcp/3445] dial tcp4 0.0.0.0:46775->61.147.117.2:3445: i/o timeout  * [/ip4/61.147.117.2/tcp/3591] dial tcp4 0.0.0.0:46775->61.147.117.2:3591: i/o timeout  * [/ip4/172.16.6.14/tcp/36033] dial tcp4 0.0.0.0:46775->172.16.6.14:36033: i/o timeout
+  f087965: 'dial, China, Suzhou', // * [/ip4/58.211.213.210/tcp/2251] dial tcp4 58.211.213.210:2251: connect: connection refused
+  f088125: 'dial, NR', // * [/ip4/172.22.22.101/tcp/10241] dial tcp4 0.0.0.0:33929->172.22.22.101:10241: i/o timeout
+  f088400: 'dial, NR', // * [/ip4/172.22.22.102/tcp/10241] dial tcp4 0.0.0.0:33929->172.22.22.102:10241: i/o timeout
+  f089173: 'dial, NR', // * [/ip4/172.19.108.155/tcp/10241] dial tcp4 0.0.0.0:33929->172.19.108.155:10241: i/o timeout
+  f089228: 'dial, NR', // * [/ip4/172.18.114.50/tcp/10241] dial tcp4 0.0.0.0:33929->172.18.114.50:10241: i/o timeout
+  f089358: 'dial, NR', // * [/ip4/172.22.7.106/tcp/10241] dial tcp4 0.0.0.0:33929->172.22.7.106:10241: i/o timeout
+  f089380: 'dial, NR', // * [/ip4/172.19.101.174/tcp/10241] dial tcp4 0.0.0.0:33929->172.19.101.174:10241: i/o timeout
+  f089551: 'dial, NR', // * [/ip4/121.40.135.72/tcp/26892] failed to negotiate security protocol: read tcp4 144.217.11.204:33929->121.40.135.72:26892: read: connection reset by peer
   f089767: 'dial, USA, Bowie', // * [/ip4/76.223.76.26/tcp/33905] dial tcp4 0.0.0.0:46775->76.223.76.26:33905: i/o timeout  * [/ip4/129.168.0.1/tcp/912] dial tcp4 0.0.0.0:46775->129.168.0.1:912: i/o timeout
   f090893: 'dial, USA', // * [/ip4/6.143.143.121/tcp/912] dial tcp4 0.0.0.0:46775->6.143.143.121:912: i/o timeout  * [/ip4/76.223.53.59/tcp/33912] dial tcp4 0.0.0.0:46775->76.223.53.59:33912: i/o timeout
+  f094765: 'dial, NR', // * [/ip4/218.68.85.213/tcp/12350] dial tcp4 218.68.85.213:12350: connect: connection refused
+  f094901: 'dial, Korea, Bucheon-si', // * [/ip4/119.197.20.28/tcp/24001] dial tcp4 0.0.0.0:33929->119.197.20.28:24001: i/o timeout
+  f095382: 'dial, China, Dongguan', // * [/ip4/125.93.73.102/tcp/2345] dial tcp4 125.93.73.102:2345: connect: connection refused
   f096133: 'dial, China, Changsha + Dazhou', // * [/ip4/175.6.66.78/tcp/14913] dial tcp4 0.0.0.0:46775->175.6.66.78:14913: i/o timeout  * [/ip4/175.6.68.154/tcp/14913] dial tcp4 0.0.0.0:46775->175.6.68.154:14913: i/o timeout
+  f096173: 'dial, Korea, Gangnam-gu', // * [/ip4/61.78.81.239/tcp/8800] dial tcp4 61.78.81.239:8800: connect: connection refused  * [/ip4/61.78.81.239/tcp/23456] dial tcp4 61.78.81.239:23456: connect: connection refused  * [/ip4/61.78.81.239/tcp/44444] dial tcp4 61.78.81.239:44444: connect: connection refused  * [/ip4/61.78.81.239/tcp/12345] dial tcp4 61.78.81.239:12345: connect: connection refused  * [/ip4/61.78.81.239/tcp/22222] dial tcp4 61.78.81.239:22222: connect: connection refused  * [/ip4/61.78.81.239/tcp/11111] dial tcp4 61.78.81.239:11111: connect: connection refused  * [/ip4/61.78.81.239/tcp/55555] dial tcp4 61.78.81.239:55555: connect: connection refused  * [/ip4/61.78.81.239/tcp/33333] dial tcp4 61.78.81.239:33333: connect: connection refused
+  f097182: 'dial, China, Chengdu', // * [/ip4/182.131.4.195/tcp/32759] dial tcp4 182.131.4.195:32759: connect: connection refused
+  f097687: 'dial, China, Yangzhou', // * [/ip4/61.147.81.133/tcp/16017] dial tcp4 61.147.81.133:16017: connect: connection refused
   f099387: 'dial, China, Shijiazhuang', // * [/ip4/124.239.180.3/tcp/24001] dial tcp4 124.239.180.3:24001: connect: connection refused
+  f099949: 'dial, China, Chengdu', // * [/ip4/182.131.4.195/tcp/32760] dial tcp4 182.131.4.195:32760: connect: connection refused
+  f0101403: 'dial, China, Chengdu', // * [/ip4/182.131.4.195/tcp/32761] dial tcp4 182.131.4.195:32761: connect: connection refused
+  f0103396: 'dial, China, Hangzhou', // * [/ip4/60.190.243.138/tcp/10240] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWLCnguS1TqxnrbCmDoAbJckjLEvo9xko2xvqmojc1ezxE, but remote key matches 12D3KooWJ9KC3jmmLpSk4pdrMA5Bn3VgCpvJs7QGQfXWGTVmTM2M
   f0106363: 'dial, NR', // * [/ip4/127.0.0.1/tcp/24001] dial tcp4 127.0.0.1:24001: connect: connection refused
   f0107118: 'dial, China, Hangzhou + Zhejiang', // * [/ip4/125.119.85.69/tcp/24001] dial tcp4 0.0.0.0:46775->125.119.85.69:24001: i/o timeout
   f0107127: 'dial, USA, Daytona Beach', // * [/ip4/172.3.161.97/tcp/24001] dial tcp4 172.3.161.97:24001: connect: connection refused
+  f0107536: 'dial, China, Bozhou', // * [/ip4/60.174.118.137/tcp/25469] dial tcp4 60.174.118.137:25469: connect: connection refused
+  f0109743: 'dial, China, Yangzhou', // * [/ip4/58.220.66.137/tcp/10000] dial tcp4 0.0.0.0:33929->58.220.66.137:10000: i/o timeout
+  f0110803: 'dial, Korea', // * [/ip4/211.48.169.253/tcp/23234] dial tcp4 211.48.169.253:23234: connect: connection refused
   f0110804: 'dial, USA, Santa Clara', // * [/ip4/147.92.91.26/tcp/56320] dial tcp4 0.0.0.0:46775->147.92.91.26:56320: i/o timeout
+  f0111499: 'dial, China, Chengdu', // * [/ip4/182.131.4.195/tcp/32762] dial tcp4 182.131.4.195:32762: connect: connection refused
+  f0111584: 'dial, NR', // * [/ip4/192.168.3.14/tcp/32759] dial tcp4 0.0.0.0:33929->192.168.3.14:32759: i/o timeout
+  f0112027: 'dial, France', // * [/ip4/109.238.12.125/tcp/24001] dial tcp4 0.0.0.0:33929->109.238.12.125:24001: i/o timeout
   f0113008: 'dial, China, Hong Kong', // * [/ip4/217.145.236.27/tcp/24001] dial tcp4 0.0.0.0:46775->217.145.236.27:24001: i/o timeout
+  f0113664: 'dial, France', // * [/ip4/178.170.47.28/tcp/24001] dial tcp4 0.0.0.0:33929->178.170.47.28:24001: i/o timeout
+  f0114153: 'dial, China, Changsha + Dazhou', // * [/ip4/175.6.68.154/tcp/24913] dial tcp4 0.0.0.0:33929->175.6.68.154:24913: i/o timeout  * [/ip4/175.6.66.78/tcp/24913] dial tcp4 0.0.0.0:33929->175.6.66.78:24913: i/o timeout
+  f0114338: 'dial, China, Maoming', // * [/ip4/61.143.232.26/tcp/12888] dial tcp4 61.143.232.26:12888: connect: connection refused
   f0114867: 'dial, NR', // * [/ip4/175.6.66.78/tcp/64913] dial tcp4 0.0.0.0:46775->175.6.66.78:64913: i/o timeout
+  f0115990: 'dial, Korea, Gangnam-gu', // * [/ip4/61.74.222.134/tcp/36849] dial tcp4 61.74.222.134:36849: connect: connection refused
+  f0116211: 'dial, China, Weifang', // * [/ip4/219.83.163.148/tcp/50666] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWF79gTgqr7VyLQu74NgBvCTuvDfp2CxGK8hxn2EYKzH6L, but remote key matches 12D3KooWRpggHrYWrczv3N2h5AAtdVFiX5zsW1duYpnfc1C8hjLa
+  f0116287: 'dial, China, Shanghai', // * [/ip4/172.18.5.97/tcp/2347] dial tcp4 0.0.0.0:33929->172.18.5.97:2347: i/o timeout
+  f0116766: 'dial, USA, Westford', // * [/ip4/173.76.173.245/tcp/23456] dial tcp4 0.0.0.0:33929->173.76.173.245:23456: i/o timeout
   f0117146: 'dial, China, Beijing', // * [/ip4/106.12.253.240/tcp/24001] dial tcp4 106.12.253.240:24001: connect: connection refused
+  f0119633: 'dial, NR', // * [/ip4/183.62.138.7/tcp/12358] dial tcp4 0.0.0.0:33929->183.62.138.7:12358: i/o timeout
   f0120909: 'dial, China, Changsha', // * [/ip4/127.0.0.1/tcp/7502] dial tcp4 127.0.0.1:7502: connect: connection refused
+  f0122410: 'dial, China, Shanghai', // * [/ip4/172.18.8.9/tcp/1025] dial tcp4 0.0.0.0:33929->172.18.8.9:1025: i/o timeout  * [/ip4/121.46.232.35/tcp/1025] dial tcp4 0.0.0.0:33929->121.46.232.35:1025: i/o timeout
   f0128191: 'dial, Korea, Gangnam-gu', // * [/ip4/222.121.76.41/tcp/24002] dial tcp4 0.0.0.0:46775->222.121.76.41:24002: i/o timeout
+  f0132461: 'dial, Korea, Daegu', // * [/ip4/221.164.197.96/tcp/40101] dial tcp4 221.164.197.96:40101: connect: connection refused
+  f0133957: 'dial, NR', // * [/ip4/172.19.108.156/tcp/10241] dial tcp4 0.0.0.0:33929->172.19.108.156:10241: i/o timeout
+  f0134006: 'dial, NR', // * [/ip4/10.140.8.12/tcp/32759] dial tcp4 0.0.0.0:33929->10.140.8.12:32759: i/o timeout
   f0141446: 'dial, China, Suzhou', // * [/ip4/172.18.6.127/tcp/2347] dial tcp4 0.0.0.0:46775->172.18.6.127:2347: i/o timeout  * [/ip4/61.155.145.103/tcp/2347] dial tcp4 0.0.0.0:46775->61.155.145.103:2347: i/o timeout
+  f0143858: 'dial, USA, Calistoga', // * [/ip4/72.52.116.228/tcp/12350] dial tcp4 0.0.0.0:33929->72.52.116.228:12350: i/o timeout
   f0144194: 'dial, NR', // * [/ip4/175.6.68.154/tcp/49913] dial tcp4 0.0.0.0:46775->175.6.68.154:49913: i/o timeout
+  f0144724: 'dial, USA, Los Angeles', // * [/ip4/67.201.8.203/tcp/24001] dial tcp4 67.201.8.203:24001: connect: connection refused
   f0145018: 'dial, Korea', // * [/ip4/203.248.27.91/tcp/45018] dial tcp4 0.0.0.0:46775->203.248.27.91:45018: i/o timeout
+  f0148627: 'dial, NR', // * [/ip4/175.6.68.154/tcp/15913] dial tcp4 0.0.0.0:33929->175.6.68.154:15913: i/o timeout
+  f0153986: 'dial, China, Changsha', // * [/ip4/127.0.0.1/tcp/7503] dial tcp4 127.0.0.1:7503: connect: connection refused
+  f0155983: 'dial, Japan', // * [/ip4/202.149.23.10/tcp/5472] dial tcp4 202.149.23.10:5472: connect: connection refused
+  f0157429: 'dial, Korea, Bucheon-si', // * [/ip4/119.197.20.18/tcp/24001] dial tcp4 0.0.0.0:33929->119.197.20.18:24001: i/o timeout
+  f0157513: 'dial, Korea, Geumcheon-gu', // * [/ip4/14.36.171.106/tcp/24000] dial tcp4 14.36.171.106:24000: connect: connection refused  * [/ip4/14.36.171.106/tcp/24001] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWM3h6YYYmmgzgiCfafqmna3mmGpqYDakjgDJvhztAWnX2, but remote key matches 12D3KooWJURGkgpCaB1qg655eCgUwPMfj2bLdKWbqGetgWputVrb
+  f0158133: 'dial, NR', // * [/ip4/10.33.1.17/tcp/6789] dial tcp4 0.0.0.0:33929->10.33.1.17:6789: i/o timeout
+  f0159632: 'dial, NR', // * [/ip4/10.140.8.32/tcp/32759] dial tcp4 0.0.0.0:33929->10.140.8.32:32759: i/o timeout
+  f0159883: 'dial, NR', // * [/ip4/10.133.9.111/tcp/32759] dial tcp4 0.0.0.0:33929->10.133.9.111:32759: i/o timeout
+  f0164326: 'dial, China, Beijing', // * [/ip4/106.12.253.161/tcp/18627] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWLeYKCy9eP14YioRHKBUGLDZU3aZsHbguqq5FAyfrwtY5, but remote key matches 12D3KooWENkvtMRTS5dpRUPJGR7L4tNso39o2XuJvXyz79nT6k4k
+  f0167137: 'dial, China, Shaoxing', // * [/ip4/115.239.191.45/tcp/24002] dial tcp4 0.0.0.0:33929->115.239.191.45:24002: i/o timeout
+  f0167505: 'dial, China, Beijing', // * [/ip4/39.104.208.101/tcp/39891] dial tcp4 0.0.0.0:33929->39.104.208.101:39891: i/o timeout
+  f0199223: 'dial, NR', // * [/ip4/110.188.25.20/tcp/24001] dial tcp4 110.188.25.20:24001: connect: connection refused
+  f0217805: 'dial, China, Taiwan, Taipei', // * [/ip4/220.130.154.127/tcp/2348] dial tcp4 0.0.0.0:33929->220.130.154.127:2348: i/o timeout
   f0225676: 'dial, Korea, Guro-gu', // * [/ip4/222.112.183.196/tcp/24001] dial tcp4 0.0.0.0:46775->222.112.183.196:24001: i/o timeout
+  f0238968: 'dial, NR', // * [/ip4/10.133.14.57/tcp/32759] dial tcp4 0.0.0.0:33929->10.133.14.57:32759: i/o timeout
   f0241022: 'dial, Korea, Geumcheon-gu', // * [/ip4/61.82.145.85/tcp/24001] dial tcp4 61.82.145.85:24001: connect: connection refused
+  f0241764: 'dial, China, Chengdu', // * [/ip4/182.131.4.195/tcp/32800] dial tcp4 182.131.4.195:32800: connect: connection refused
+  f0242152: 'dial, Korea, Guro-gu', // * [/ip4/222.112.183.193/tcp/24001] dial tcp4 222.112.183.193:24001: connect: connection refused
   f0392808: 'dial, NR', // * [/ip4/172.16.35.3/tcp/6789] dial tcp4 0.0.0.0:46775->172.16.35.3:6789: i/o timeout
+  f0392999: 'dial, NR', // * [/ip4/10.34.1.4/tcp/6789] dial tcp4 0.0.0.0:33929->10.34.1.4:6789: i/o timeout
+  f0393016: 'dial, NR', // * [/ip4/34.66.95.149/tcp/1024] dial tcp4 0.0.0.0:33929->34.66.95.149:1024: i/o timeout
   f0393119: 'dial, NR', // * [/ip4/172.16.35.5/tcp/6789] dial tcp4 0.0.0.0:46775->172.16.35.5:6789: i/o timeout
   f0393359: 'dial, China, Suzhou', // * [/ip4/58.240.235.162/tcp/24001] dial tcp4 0.0.0.0:46775->58.240.235.162:24001: i/o timeout
   f0397837: 'dial, China, Fuzhou', // * [/ip4/220.176.125.252/tcp/23450] dial tcp4 0.0.0.0:46775->220.176.125.252:23450: i/o timeout
   f0400681: 'dial, USA, Queens', // * [/ip4/72.80.136.205/tcp/24001] dial tcp4 0.0.0.0:46775->72.80.136.205:24001: i/o timeout
   f0401303: 'dial, Korea, Ulju-gun', // * [/ip4/61.76.2.99/tcp/24001] dial tcp4 0.0.0.0:46775->61.76.2.99:24001: i/o timeout
   f0403896: 'dial, USA, Huntersville', // * [/ip4/75.190.204.189/tcp/54998] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWBpuRHiQ2CAruoUG5kY79cGRJaS8XoV2tHGt4e8URJoVx, but remote key matches 12D3KooWPsKCyqHajqb2xnPYEWFwbTuXssARKG7dagKq85D3wc1J
+  f0422266: 'dial, NR', // * [/ip4/10.155.8.11/tcp/32759] dial tcp4 0.0.0.0:33929->10.155.8.11:32759: i/o timeout
   f0427967: 'dial, China, Changsha', // * [/ip4/113.246.243.77/tcp/6660] dial tcp4 113.246.243.77:6660: connect: connection refused
   f0427994: 'dial, China, Jinhua', // * [/ip4/115.209.22.14/tcp/24001] dial tcp4 0.0.0.0:46775->115.209.22.14:24001: i/o timeout
   f0427996: 'dial, Canada, Bois-des-Filion', // * [/ip4/142.116.36.123/tcp/51455] dial tcp4 0.0.0.0:46775->142.116.36.123:51455: i/o timeout
@@ -1739,70 +1059,747 @@ const annotations = {
 
   // XNR (Not routable)
 
+  f02388: 'xnr, Netherlands, Amersfoort, Kroketje',
   f02399: 'xnr, China, Shanghai',
+  f02416: 'xnr, China, Guangdong, 星际无限',
+  f02769: 'xnr, NR',
+  f02770: 'xnr, China, Hong Kong',
+  f02775: 'xnr, China, Hong Kong',
+  f02777: 'xnr, NR',
+  f02778: 'xnr, NR',
+  f02779: 'xnr, NR',
   f03344: 'xnr, China, Guangzhou',
+  f07749: 'xnr, NR',
+  f010202: 'xnr, Singapore',
+  f014335: 'xnr, NR',
+  f014686: 'xnr, Singapore',
   f014699: 'xnr, NR',
+  f015877: 'xnr, China, Jiaxing + USA',
+  f015885: 'xnr, China, Jiaxing',
+  f015932: 'xnr, NR',
+  f018538: 'xnr, China, Huzhou',
+  f020398: 'xnr, China, Zhangjiakou',
+  f020957: 'xnr, NR',
+  f021504: 'xnr, NR',
+  f021695: 'xnr, USA',
+  f021704: 'xnr, NR',
+  f021710: 'xnr, China, Shijiazhuang',
   f021870: 'xnr, China, Jieyang',
+  f022030: 'xnr, NR',
+  f022038: 'xnr, NR',
+  f022093: 'xnr, NR',
+  f022336: 'xnr, NR',
+  f022338: 'xnr, NR',
+  f022361: 'xnr, NR',
+  f022373: 'xnr, Singapore',
+  f022374: 'xnr, NR',
+  f022804: 'xnr, NR',
   f022922: 'xnr, China, Shenzhen, CAAP-MEG',
+  f023013: 'xnr, NR',
+  f023495: 'xnr, China, Karamay',
+  f023499: 'xnr, NR',
+  f023626: 'xnr, NR',
+  f023627: 'xnr, China, Zhongwei',
+  f023651: 'xnr, NR',
+  f023678: 'xnr, China, Jiaxing',
+  f023843: 'xnr, China, Zhangjiakou',
+  f023882: 'xnr, NR',
+  f023984: 'xnr, NR',
+  f024483: 'xnr, NR',
+  f024563: 'xnr, NR',
+  f024802: 'xnr, NR',
+  f024894: 'xnr, NR',
+  f024895: 'xnr, undefined',
+  f024972: 'xnr, undefined',
+  f025005: 'xnr, NR',
+  f025044: 'xnr, undefined',
   f029585: 'xnr, NR',
+  f030203: 'xnr, China, Shenzhen',
+  f030249: 'xnr, NR',
+  f030272: 'xnr, undefined',
+  f030331: 'xnr, NR',
+  f030347: 'xnr, China, Zhejiang',
+  f030509: 'xnr, undefined',
+  f030510: 'xnr, undefined',
+  f030511: 'xnr, undefined',
+  f030649: 'xnr, NR',
+  f032833: 'xnr, NR',
+  f032850: 'xnr, NR',
+  f032913: 'xnr, China, Shenzhen',
+  f033130: 'xnr, NR',
+  f033384: 'xnr, NR',
+  f033399: 'xnr, NR',
+  f033456: 'xnr, NR',
+  f033462: 'xnr, NR',
+  f033463: 'xnr, NR',
+  f033475: 'xnr, NR',
+  f033501: 'xnr, China, Shenzhen',
+  f033517: 'xnr, China, Changsha',
+  f034566: 'xnr, NR',
+  f034567: 'xnr, China, Shenzhen',
+  f034581: 'xnr, NR',
+  f034658: 'xnr, NR',
+  f034707: 'xnr, NR',
+  f034710: 'xnr, NR',
+  f035160: 'xnr, NR',
+  f035161: 'xnr, NR',
+  f035364: 'xnr, NR',
+  f039992: 'xnr, NR',
+  f040665: 'xnr, NR',
+  f042855: 'xnr, NR',
+  f043376: 'xnr, Korea, Incheon',
+  f045743: 'xnr, NR',
+  f045756: 'xnr, China, Hangzhou',
+  f046248: 'xnr, China, Dongguan',
+  f048975: 'xnr, NR',
+  f048986: 'xnr, NR',
+  f049911: 'xnr, China, Yunfu',
+  f053141: 'xnr, China, Shenzhen',
+  f053173: 'xnr, NR',
+  f053446: 'xnr, NR',
+  f054120: 'xnr, NR',
+  f054267: 'xnr, NR',
+  f054412: 'xnr, NR',
+  f054414: 'xnr, NR',
+  f054417: 'xnr, NR',
+  f054420: 'xnr, NR',
+  f054422: 'xnr, NR',
+  f054464: 'xnr, NR',
+  f054526: 'xnr, NR',
+  f055123: 'xnr, Korea, Busan',
+  f055446: 'xnr, NR',
+  f056227: 'xnr, NR',
+  f057618: 'xnr, NR',
+  f058349: 'xnr, NR',
+  f059813: 'xnr, NR',
+  f060114: 'xnr, China, Shenzhen',
+  f060693: 'xnr, NR',
+  f060754: 'xnr, NR',
+  f060805: 'xnr, NR',
+  f060975: 'xnr, NR',
+  f061051: 'xnr, NR',
+  f061170: 'xnr, NR',
+  f061174: 'xnr, NR',
+  f061407: 'xnr, China, Shenzhen',
+  f061503: 'xnr, NR',
+  f062245: 'xnr, NR',
+  f062475: 'xnr, NR',
+  f062619: 'xnr, NR',
+  f063996: 'xnr, China, Sichuan',
+  f064855: 'xnr, NR',
+  f064908: 'xnr, NR',
+  f065113: 'xnr, NR',
+  f065141: 'xnr, NR',
+  f065174: 'xnr, NR',
+  f065266: 'xnr, China, Hefei',
+  f065391: 'xnr, NR',
+  f065578: 'xnr, NR',
+  f065610: 'xnr, NR',
+  f065670: 'xnr, NR',
+  f065686: 'xnr, NR',
+  f065881: 'xnr, NR',
+  f065941: 'xnr, NR',
+  f066210: 'xnr, NR',
+  f066302: 'xnr, NR',
+  f066476: 'xnr, NR',
+  f066563: 'xnr, NR',
+  f067170: 'xnr, NR',
+  f067375: 'xnr, NR',
+  f067598: 'xnr, NR',
+  f068556: 'xnr, NR',
+  f068809: 'xnr, NR',
+  f069448: 'xnr, NR',
+  f070045: 'xnr, NR',
+  f070730: 'xnr, NR',
+  f070802: 'xnr, NR',
+  f070932: 'xnr, NR',
+  f073196: 'xnr, NR',
+  f073525: 'xnr, NR',
+  f073844: 'xnr, NR',
+  f073888: 'xnr, NR',
+  f073904: 'xnr, NR',
+  f077761: 'xnr, NR',
+  f078465: 'xnr, NR',
+  f079092: 'xnr, NR',
+  f079197: 'xnr, China, Karamay',
+  f079425: 'xnr, NR',
+  f079719: 'xnr, NR',
+  f080605: 'xnr, NR',
+  f080868: 'xnr, NR',
+  f081969: 'xnr, NR',
+  f082000: 'xnr, NR',
   f082001: 'xnr, NR',
+  f082635: 'xnr, NR',
+  f082730: 'xnr, NR',
+  f083419: 'xnr, NR',
+  f083474: 'xnr, NR',
+  f083542: 'xnr, NR',
+  f083983: 'xnr, NR',
+  f084135: 'xnr, NR',
+  f084155: 'xnr, NR',
+  f084419: 'xnr, NR',
+  f084907: 'xnr, NR',
+  f085435: 'xnr, NR',
+  f085437: 'xnr, NR',
+  f085486: 'xnr, NR',
+  f085735: "xnr, China, Ya'an",
+  f086204: 'xnr, NR',
+  f086222: 'xnr, NR',
+  f086240: 'xnr, NR',
+  f086381: 'xnr, NR',
+  f086439: 'xnr, NR',
+  f086442: 'xnr, NR',
+  f086572: 'xnr, NR',
+  f086988: 'xnr, NR',
+  f087096: 'xnr, NR',
+  f087256: 'xnr, China, Hangzhou',
+  f087868: 'xnr, NR',
+  f087879: 'xnr, NR',
   f087890: 'xnr, NR',
+  f087899: 'xnr, NR',
+  f087999: 'xnr, NR',
+  f088002: 'xnr, NR',
+  f088171: 'xnr, NR',
+  f088290: 'xnr, NR',
+  f089167: 'xnr, NR',
+  f089168: 'xnr, NR',
+  f089819: 'xnr, NR',
+  f089920: 'xnr, NR',
+  f090481: 'xnr, NR',
+  f090484: 'xnr, NR',
+  f090492: 'xnr, NR',
+  f090808: 'xnr, NR',
+  f090889: 'xnr, NR',
+  f091143: 'xnr, NR',
+  f091243: 'xnr, NR',
+  f091395: 'xnr, NR',
+  f091798: 'xnr, NR',
+  f091959: 'xnr, NR',
+  f091996: 'xnr, NR',
+  f091999: 'xnr, NR',
+  f092066: 'xnr, NR',
+  f092157: 'xnr, NR',
+  f092228: 'xnr, NR',
+  f092887: 'xnr, NR',
+  f093115: 'xnr, NR',
+  f093144: 'xnr, NR',
   f093658: 'xnr, China, Fujian',
+  f093686: 'xnr, NR',
+  f093701: 'xnr, NR',
+  f093907: 'xnr, NR',
+  f094003: 'xnr, NR',
+  f094625: 'xnr, NR',
   f094764: 'xnr, NR',
+  f094847: 'xnr, NR',
+  f095334: 'xnr, NR',
+  f095970: 'xnr, NR',
+  f095998: 'xnr, NR',
+  f096064: 'xnr, NR',
+  f096072: 'xnr, NR',
+  f096077: 'xnr, NR',
+  f096087: 'xnr, NR',
+  f096172: 'xnr, NR',
+  f096824: 'xnr, NR',
+  f096920: 'xnr, NR',
+  f097219: 'xnr, NR',
+  f097403: 'xnr, NR',
+  f097432: 'xnr, NR',
+  f097658: 'xnr, NR',
+  f097840: 'xnr, NR',
+  f097981: 'xnr, NR',
+  f098743: 'xnr, NR',
   f098770: 'xnr, USA, Pontiac',
+  f099082: 'xnr, NR',
+  f099132: 'xnr, NR',
+  f099239: 'xnr, China, Hong Kong',
+  f099247: 'xnr, NR',
+  f099369: 'xnr, NR',
+  f099884: 'xnr, China, Chengdu',
+  f0100033: 'xnr, NR',
+  f0100034: 'xnr, NR',
+  f0100786: 'xnr, NR',
+  f0101016: 'xnr, NR',
+  f0101017: 'xnr, NR',
+  f0101018: 'xnr, NR',
+  f0101019: 'xnr, NR',
   f0101069: 'xnr, NR',
+  f0101133: 'xnr, NR',
+  f0101570: 'xnr, NR',
+  f0101611: 'xnr, NR',
+  f0102187: 'xnr, NR',
   f0102313: 'xnr, Korea, Gangseo-gu',
+  f0103162: 'xnr, NR',
+  f0103282: 'xnr, NR',
+  f0103485: 'xnr, NR',
+  f0103665: 'xnr, NR',
+  f0103704: 'xnr, NR',
   f0103710: 'xnr, NR',
+  f0104001: 'xnr, NR',
+  f0104103: 'xnr, NR',
+  f0104398: 'xnr, NR',
+  f0104654: 'xnr, NR',
+  f0104888: 'xnr, NR',
+  f0105354: 'xnr, NR',
+  f0106090: 'xnr, NR',
+  f0106438: 'xnr, NR',
+  f0106901: 'xnr, NR',
+  f0107002: 'xnr, NR',
+  f0107053: 'xnr, NR',
+  f0107091: 'xnr, NR',
   f0107322: 'xnr, China, Chengdu',
+  f0107543: 'xnr, NR',
+  f0107656: 'xnr, NR',
+  f0107797: 'xnr, NR',
+  f0107903: 'xnr, NR',
+  f0108199: 'xnr, NR',
+  f0108672: 'xnr, NR',
+  f0109309: 'xnr, NR',
+  f0109606: 'xnr, NR',
+  f0109903: 'xnr, NR',
+  f0110110: 'xnr, NR',
+  f0110248: 'xnr, NR',
+  f0110261: 'xnr, NR',
   f0110283: 'xnr, China, Zhongshan',
+  f0110289: 'xnr, NR',
+  f0110695: 'xnr, NR',
+  f0110696: 'xnr, NR',
+  f0110808: 'xnr, NR',
+  f0110944: 'xnr, NR',
+  f0110996: 'xnr, NR',
+  f0111007: 'xnr, NR',
+  f0111384: 'xnr, NR',
+  f0111434: 'xnr, NR',
+  f0111467: 'xnr, NR',
+  f0111469: 'xnr, NR',
   f0111544: 'xnr, Korea, Seoul',
+  f0112593: 'xnr, NR',
+  f0112667: 'xnr, NR',
+  f0112680: 'xnr, NR',
   f0112691: 'xnr, Korea, Seoul',
+  f0112762: 'xnr, NR',
+  f0112781: 'xnr, NR',
+  f0112887: 'xnr, NR',
+  f0113659: 'xnr, NR',
+  f0113735: 'xnr, NR',
+  f0113754: 'xnr, NR',
+  f0113777: 'xnr, NR',
+  f0114118: 'xnr, NR',
+  f0114333: 'xnr, NR',
+  f0114350: 'xnr, NR',
+  f0114868: 'xnr, NR',
+  f0114885: 'xnr, NR',
+  f0115001: 'xnr, NR',
+  f0115117: 'xnr, NR',
   f0115238: 'xnr, China, Shenyang',
   f0117211: 'xnr, NR',
+  f0117318: 'xnr, NR',
+  f0117358: 'xnr, NR',
+  f0117405: 'xnr, NR',
+  f0117416: 'xnr, NR',
+  f0117434: 'xnr, NR',
+  f0117450: 'xnr, NR',
+  f0117541: 'xnr, NR',
+  f0117542: 'xnr, NR',
+  f0117543: 'xnr, NR',
   f0117556: 'xnr, NR',
+  f0117565: 'xnr, NR',
+  f0118028: 'xnr, NR',
+  f0118167: 'xnr, NR',
+  f0118641: 'xnr, NR',
+  f0118769: 'xnr, China, Fujian',
+  f0118799: 'xnr, NR',
   f0118837: 'xnr, Korea, Seoul',
+  f0118976: 'xnr, NR',
+  f0119146: 'xnr, NR',
+  f0119545: 'xnr, NR',
+  f0119828: 'xnr, NR',
+  f0119976: 'xnr, NR',
+  f0119997: 'xnr, NR',
+  f0120057: 'xnr, NR',
+  f0120702: 'xnr, NR',
+  f0120747: 'xnr, NR',
+  f0121584: 'xnr, NR',
+  f0121718: 'xnr, NR',
+  f0121771: 'xnr, NR',
+  f0121810: 'xnr, NR',
+  f0122215: 'xnr, NR',
+  f0122382: 'xnr, NR',
+  f0122496: 'xnr, NR',
+  f0122533: 'xnr, NR',
+  f0123245: 'xnr, NR',
+  f0123261: 'xnr, NR',
   f0123275: 'xnr, Korea, Seoul',
+  f0123346: 'xnr, NR',
+  f0123522: 'xnr, NR',
+  f0123535: 'xnr, NR',
+  f0124126: 'xnr, NR',
+  f0124158: 'xnr, NR',
   f0124904: 'xnr, NR',
+  f0124923: 'xnr, NR',
+  f0124944: 'xnr, NR',
+  f0125488: 'xnr, NR',
+  f0126097: 'xnr, NR',
+  f0126376: 'xnr, NR',
+  f0126478: 'xnr, China, Ningbo',
+  f0126661: 'xnr, NR',
+  f0126698: 'xnr, NR',
+  f0126702: 'xnr, NR',
+  f0126898: 'xnr, China, Harbin',
   f0127353: 'xnr, Korea, Seoul',
   f0127354: 'xnr, Korea, Seoul',
+  f0127378: 'xnr, NR',
+  f0127382: 'xnr, NR',
+  f0127569: 'xnr, NR',
+  f0127595: 'xnr, NR',
+  f0127612: 'xnr, NR',
   f0127627: 'xnr, NR',
   f0127628: 'xnr, NR',
   f0127629: 'xnr, NR',
+  f0127640: 'xnr, NR',
+  f0127721: 'xnr, NR',
+  f0127735: 'xnr, NR',
   f0127980: 'xnr, Korea, Seoul',
+  f0128011: 'xnr, NR',
+  f0128381: 'xnr, NR',
+  f0128499: 'xnr, NR',
+  f0128559: 'xnr, NR',
   f0128580: 'xnr, Korea, Seoul',
   f0128581: 'xnr, Korea, Seoul',
   f0128582: 'xnr, Korea, Seoul',
+  f0128761: 'xnr, NR',
+  f0128788: 'xnr, NR',
+  f0128815: 'xnr, NR',
+  f0128931: 'xnr, NR',
+  f0129226: 'xnr, NR',
+  f0129403: 'xnr, NR',
+  f0129422: 'xnr, NR',
+  f0129750: 'xnr, NR',
+  f0130094: 'xnr, NR',
+  f0130134: 'xnr, NR',
+  f0130556: 'xnr, NR',
+  f0130639: 'xnr, NR',
+  f0130686: 'xnr, NR',
+  f0130727: 'xnr, NR',
+  f0130791: 'xnr, NR',
   f0130868: 'xnr, NR',
+  f0130884: 'xnr, NR',
+  f0130906: 'xnr, NR',
+  f0131509: 'xnr, NR',
+  f0131767: 'xnr, NR',
+  f0131822: 'xnr, NR',
+  f0132178: 'xnr, China, Ningbo',
+  f0132313: 'xnr, NR',
+  f0132618: 'xnr, NR',
+  f0132638: 'xnr, NR',
+  f0132706: 'xnr, China, Beijing',
+  f0133235: 'xnr, NR',
+  f0133376: 'xnr, NR',
   f0133379: 'xnr, NR',
+  f0133501: 'xnr, NR',
+  f0133505: 'xnr, NR',
+  f0133509: 'xnr, NR',
+  f0133763: 'xnr, NR',
+  f0133833: 'xnr, NR',
+  f0134286: 'xnr, NR',
+  f0134552: 'xnr, NR',
+  f0134609: 'xnr, NR',
+  f0134867: 'xnr, NR',
+  f0135008: 'xnr, NR',
+  f0135066: 'xnr, NR',
+  f0135150: 'xnr, NR',
+  f0135414: 'xnr, NR',
+  f0135467: 'xnr, NR',
+  f0135469: 'xnr, NR',
+  f0135473: 'xnr, NR',
+  f0135474: 'xnr, NR',
+  f0135475: 'xnr, NR',
+  f0135551: 'xnr, NR',
+  f0135758: 'xnr, NR',
+  f0135779: 'xnr, NR',
+  f0135859: 'xnr, NR',
+  f0135906: 'xnr, NR',
+  f0135934: 'xnr, NR',
+  f0136033: 'xnr, NR',
+  f0136239: 'xnr, NR',
+  f0136399: 'xnr, NR',
+  f0136642: 'xnr, NR',
+  f0136808: 'xnr, NR',
+  f0136810: 'xnr, NR',
+  f0136868: 'xnr, NR',
+  f0137019: 'xnr, NR',
+  f0137594: 'xnr, NR',
+  f0137868: 'xnr, NR',
   f0141634: 'xnr, China, Changsha',
+  f0141761: 'xnr, NR',
+  f0141762: 'xnr, NR',
+  f0142059: 'xnr, NR',
+  f0142238: 'xnr, NR',
+  f0142245: 'xnr, NR',
+  f0142281: 'xnr, NR',
+  f0142337: 'xnr, NR',
+  f0142720: 'xnr, NR',
+  f0142721: 'xnr, NR',
+  f0142723: 'xnr, NR',
+  f0143032: 'xnr, NR',
   f0143110: 'xnr, NR',
+  f0143160: 'xnr, China, Ningbo',
+  f0143162: 'xnr, NR',
+  f0143361: 'xnr, NR',
+  f0143511: 'xnr, NR',
+  f0143666: 'xnr, NR',
+  f0143907: 'xnr, NR',
+  f0143999: 'xnr, NR',
+  f0144069: 'xnr, NR',
+  f0144304: 'xnr, NR',
+  f0144314: 'xnr, NR',
+  f0144316: 'xnr, NR',
+  f0144528: 'xnr, NR',
+  f0144530: 'xnr, NR',
+  f0144615: 'xnr, NR',
+  f0144618: 'xnr, NR',
+  f0144756: 'xnr, NR',
+  f0144952: 'xnr, NR',
+  f0145060: 'xnr, NR',
+  f0145249: 'xnr, NR',
+  f0145503: 'xnr, NR',
+  f0145687: 'xnr, NR',
+  f0145985: 'xnr, NR',
+  f0145986: 'xnr, NR',
+  f0146220: 'xnr, NR',
+  f0146224: 'xnr, NR',
+  f0146278: 'xnr, NR',
   f0146751: 'xnr, China, Jiangsu',
+  f0146956: 'xnr, NR',
+  f0147119: 'xnr, NR',
+  f0147214: 'xnr, NR',
+  f0147586: 'xnr, NR',
+  f0147657: 'xnr, NR',
+  f0147801: 'xnr, NR',
+  f0148151: 'xnr, NR',
+  f0148269: 'xnr, NR',
   f0148391: 'xnr, China, Changsha + Japan, Tokyo',
+  f0148452: 'xnr, NR',
+  f0149132: 'xnr, NR',
+  f0149753: 'xnr, NR',
+  f0149783: 'xnr, NR',
+  f0149937: 'xnr, NR',
+  f0150666: 'xnr, NR',
+  f0150748: 'xnr, NR',
+  f0150816: 'xnr, NR',
+  f0150860: 'xnr, NR',
+  f0150918: 'xnr, NR',
+  f0151371: 'xnr, NR',
+  f0151499: 'xnr, NR',
+  f0151706: 'xnr, NR',
+  f0151849: 'xnr, NR',
+  f0152134: 'xnr, NR',
+  f0152351: 'xnr, NR',
+  f0152799: 'xnr, NR',
+  f0152866: 'xnr, NR',
+  f0153024: 'xnr, NR',
+  f0153040: 'xnr, NR',
+  f0153078: 'xnr, NR',
+  f0153188: 'xnr, NR',
+  f0153565: 'xnr, NR',
+  f0153583: 'xnr, NR',
+  f0153775: 'xnr, NR',
+  f0153930: 'xnr, NR',
+  f0153932: 'xnr, NR',
+  f0153960: 'xnr, NR',
+  f0154152: 'xnr, NR',
+  f0154238: 'xnr, NR',
+  f0154294: 'xnr, NR',
+  f0154335: 'xnr, NR',
+  f0154597: 'xnr, NR',
+  f0154865: 'xnr, NR',
+  f0155049: 'xnr, NR',
+  f0155050: 'xnr, NR',
+  f0155258: 'xnr, NR',
+  f0155515: 'xnr, NR',
+  f0155829: 'xnr, NR',
+  f0156214: 'xnr, NR',
+  f0156333: 'xnr, China, Ningbo',
+  f0156342: 'xnr, NR',
+  f0156417: 'xnr, NR',
+  f0157025: 'xnr, NR',
+  f0157316: 'xnr, NR',
+  f0157502: 'xnr, NR',
+  f0157769: 'xnr, China, Changsha',
+  f0157917: 'xnr, NR',
+  f0157979: 'xnr, NR',
+  f0157991: 'xnr, NR',
+  f0158068: 'xnr, NR',
+  f0158156: 'xnr, NR',
+  f0158265: 'xnr, China, Hefei',
+  f0158276: 'xnr, NR',
+  f0158335: 'xnr, NR',
   f0158613: 'xnr, NR',
+  f0158728: 'xnr, NR',
+  f0159067: 'xnr, NR',
+  f0159333: 'xnr, NR',
+  f0159380: 'xnr, NR',
+  f0159449: 'xnr, NR',
+  f0159517: 'xnr, NR',
+  f0159654: 'xnr, NR',
+  f0159660: 'xnr, NR',
+  f0159689: 'xnr, NR',
+  f0160135: 'xnr, NR',
+  f0160137: 'xnr, NR',
+  f0160735: 'xnr, NR',
+  f0160819: 'xnr, NR',
+  f0160870: 'xnr, NR',
+  f0161468: 'xnr, NR',
+  f0161542: 'xnr, NR',
+  f0161819: 'xnr, NR',
+  f0163275: 'xnr, NR',
   f0164126: 'xnr, NR',
+  f0164260: 'xnr, NR',
   f0165533: 'xnr, NR',
+  f0166425: 'xnr, NR',
+  f0166843: 'xnr, NR',
+  f0166896: 'xnr, NR',
+  f0167458: 'xnr, NR',
+  f0168537: 'xnr, NR',
+  f0169053: 'xnr, NR',
+  f0169097: 'xnr, NR',
+  f0207949: 'xnr, NR',
   f0214181: 'xnr, Australia, Mosman',
+  f0214334: 'xnr, NR',
+  f0215461: 'xnr, NR',
+  f0216463: 'xnr, NR',
+  f0216822: 'xnr, NR',
+  f0217419: 'xnr, NR',
+  f0217789: 'xnr, NR',
+  f0218072: 'xnr, NR',
+  f0218092: 'xnr, NR',
+  f0218407: 'xnr, NR',
   f0218559: 'xnr, NR',
+  f0219106: 'xnr, NR',
+  f0220911: 'xnr, NR',
+  f0222611: 'xnr, NR',
+  f0222811: 'xnr, NR',
+  f0222947: 'xnr, NR',
+  f0223033: 'xnr, NR',
   f0223101: 'xnr, NR',
+  f0223102: 'xnr, NR',
+  f0223103: 'xnr, NR',
+  f0223104: 'xnr, NR',
+  f0223933: 'xnr, NR',
   f0224599: 'xnr, China, Fuzhou',
   f0224984: 'xnr, China, Wuhan',
+  f0225285: 'xnr, NR',
+  f0225880: 'xnr, NR',
+  f0226303: 'xnr, NR',
+  f0226418: 'xnr, NR',
+  f0226520: 'xnr, NR',
+  f0228232: 'xnr, NR',
+  f0229199: 'xnr, NR',
+  f0229437: 'xnr, NR',
+  f0230449: 'xnr, NR',
+  f0230799: 'xnr, NR',
+  f0230861: 'xnr, NR',
+  f0231112: 'xnr, NR',
+  f0231481: 'xnr, NR',
+  f0231782: 'xnr, NR',
+  f0232358: 'xnr, NR',
+  f0232459: 'xnr, NR',
+  f0232650: 'xnr, NR',
+  f0240035: 'xnr, NR',
+  f0240185: 'xnr, NR',
   f0240392: 'xnr, NR',
+  f0240456: 'xnr, NR',
   f0241536: 'xnr, NR',
+  f0241666: 'xnr, NR',
+  f0242156: 'xnr, NR',
+  f0242345: 'xnr, NR',
+  f0242373: 'xnr, NR',
   f0364983: 'xnr, Korea, Seoul',
+  f0364987: 'xnr, Korea, Seoul',
+  f0377277: 'xnr, NR',
+  f0391212: 'xnr, NR',
+  f0391214: 'xnr, NR',
+  f0391235: 'xnr, NR',
+  f0391381: 'xnr, NR',
+  f0391439: 'xnr, NR',
   f0392194: 'xnr, NR',
+  f0392430: 'xnr, NR',
+  f0392488: 'xnr, NR',
+  f0392924: 'xnr, NR',
+  f0393417: 'xnr, NR',
+  f0394102: 'xnr, NR',
+  f0395680: 'xnr, NR',
+  f0395994: 'xnr, NR',
+  f0396149: 'xnr, NR',
+  f0396217: 'xnr, NR',
+  f0396422: 'xnr, NR',
+  f0396452: 'xnr, NR',
+  f0396473: 'xnr, NR',
+  f0396705: 'xnr, NR',
+  f0397052: 'xnr, NR',
+  f0397083: 'xnr, NR',
+  f0397561: 'xnr, NR',
+  f0397794: 'xnr, NR',
+  f0397802: 'xnr, NR',
+  f0398999: 'xnr, NR',
+  f0399111: 'xnr, NR',
   f0399321: 'xnr, NR',
   f0399323: 'xnr, NR',
+  f0399743: 'xnr, NR',
+  f0399996: 'xnr, NR',
   f0400264: 'xnr, NR',
+  f0400307: 'xnr, NR',
+  f0402233: 'xnr, NR',
+  f0402314: 'xnr, NR',
+  f0402661: 'xnr, NR',
+  f0402822: 'xnr, NR',
+  f0403529: 'xnr, NR',
+  f0404193: 'xnr, NR',
+  f0404643: 'xnr, NR',
+  f0406478: 'xnr, NR',
+  f0406533: 'xnr, NR',
+  f0407244: 'xnr, NR',
   f0407287: 'xnr, NR',
   f0407410: 'xnr, NR',
+  f0407733: 'xnr, NR',
+  f0408582: 'xnr, NR',
+  f0408629: 'xnr, NR',
+  f0409172: 'xnr, NR',
+  f0409399: 'xnr, NR',
+  f0409499: 'xnr, NR',
+  f0410001: 'xnr, NR',
   f0410242: 'xnr, NR',
+  f0410941: 'xnr, NR',
+  f0419311: 'xnr, NR',
+  f0419331: 'xnr, NR',
+  f0419510: 'xnr, NR',
+  f0419662: 'xnr, NR',
+  f0419804: 'xnr, NR',
+  f0419944: 'xnr, NR',
+  f0419945: 'xnr, NR',
+  f0420508: 'xnr, NR',
+  f0421387: 'xnr, NR',
+  f0421858: 'xnr, NR',
+  f0422229: 'xnr, NR',
+  f0422737: 'xnr, NR',
+  f0423057: 'xnr, NR',
+  f0423329: 'xnr, NR',
   f0423371: 'xnr, Korea, Seoul',
   f0423381: 'xnr, Korea, Seoul',
   f0423713: 'xnr, China, Qingdao',
+  f0424761: 'xnr, NR',
+  f0427688: 'xnr, NR',
+  f0427839: 'xnr, NR',
+  f0427975: 'xnr, NR',
   f0428150: 'xnr, China, Xiamen',
+  f0428184: 'xnr, NR',
   f0428661: 'xnr, NR',
+  f0429063: 'xnr, NR',
+  f0429122: 'xnr, NR',
+  f0430101: 'xnr, NR',
+  f0432235: 'xnr, NR',
   f0432329: 'xnr, NR',
   f0432773: 'xnr, NR',
+  f0433892: 'xnr, NR',
   f0434411: 'xnr, NR',
   f0435045: 'xnr, Korea, Ulju-gun',
   f0435971: 'xnr, NR',
