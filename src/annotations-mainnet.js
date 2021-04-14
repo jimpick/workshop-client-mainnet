@@ -14,228 +14,181 @@ const annotations = {
 
   // New
 
-  f0399348: 'new, NR', // carry-over
-  f0408206: 'new, NR', // carry-over
-  f0410120: 'new, NR', // carry-over
-  f0413050: 'new, NR', // carry-over
-  f0417720: 'new, NR', // carry-over
-  f0417750: 'new, NR', // carry-over
-  f0417918: 'new, NR', // carry-over
-  f0441116: 'new, NR', // carry-over
-  f0441525: 'new, NR', // carry-over
-  f0441703: 'new, NR', // carry-over
-  f0470182: 'new, NR', // carry-over
-  f0473113: 'new, NR', // carry-over
-  f0478563: 'new, NR', // carry-over
-  f0480313: 'new, NR', // carry-over
-  f0497837: 'new, Korea, Gangnam-gu',
-  f0497771: 'new, NR',
-  f0498102: 'new, NR',
-  f0498868: 'new, NR',
-  f0498920: 'new, Korea, Icheon-si',
-  f0500685: 'new, NR',
-  f0501283: 'new, NR',
-  f0502198: 'new, NR',
-  f0502948: 'new, NR',
-  f0503010: 'new, NR',
-  f0503287: 'new, NR',
-  f0503420: 'new, China, Beijing',
-  f0503423: 'new, NR',
-  f0504054: 'new, China, Luzhou',
-  f0504467: 'new, Korea, Seoul',
-  f0504985: 'new, NR',
-  f0504929: 'new, NR',
-  f0505110: 'new, NR',
-  f0506630: 'new, China, Linyi',
-  f0506800: 'new, NR',
-  f0507420: 'new, NR',
-  f0507913: 'new, NR',
-  f0508328: 'new, NR',
-  f0508622: 'new, NR',
-  f0508988: 'new, Korea, Bucheon-si',
-  f0509980: 'new, NR',
-  f0509981: 'new, NR',
-  f0510010: 'new, Russia, Shchelkovo',
-  f0510610: 'new, China, Shangrao',
-  f0510701: 'new, NR',
-  f0510957: 'new, NR',
-  f0511385: 'new, NR',
-  f0511480: 'new, China, Yangzhou',
-  f0511732: 'new, China, Karamay',
-  f0512170: 'new, Korea, Bucheon-si',
-  f0512179: 'new, Korea, Bucheon-si',
-  f0513351: 'new, NR',
-  f0513878: 'new, China, Guizhou',
-  f0514000: 'new, NR',
-  f0514241: 'new, NR',
-  f0514235: 'new, NR',
-  f0514737: 'new, Korea, Busan',
-  f0515264: 'new, NR',
-  f0515389: 'new, NR',
-  f0515674: 'new, NR',
-  f0516456: 'new, Korea, Jung-gu',
-  f0517213: 'new, NR',
-  f0517655: 'new, Korea, Gwangju',
-  f0518641: 'new, China, Hangzhou',
-  f0518668: 'new, NR',
-  f0518877: 'new, China, Karamay',
-  f0519331: 'new, NR',
-  f0519376: 'new, NR',
-  f0520262: 'new, China, Fujian',
-  f0520520: 'new, NR',
-  f0521499: 'new, NR',
-  f0521569: 'new, Korea, Guro-go',
-  f0521831: 'new, NR',
-  f0521884: 'new, NR',
-  f0522078: 'new, China, Hangzhou',
-  f0522099: 'new, China, Shangrao',
-  f0522364: 'new, NR',
-  f0523396: 'new, NR',
-  f0523415: 'new, NR',
-  f0523711: 'new, NR',
-  f0524489: 'new, Korea, Pocheon-si',
-  f0524517: 'new, Korea, Uijeongbu-si',
-  f0524577: 'new, China, Foshan',
-  f0524589: 'new, Korea',
-  f0524945: 'new, China, Beijing',
-  f0533124: 'new, Korea, Seoul',
-  f0536177: 'new, NR',
-  f0587126: 'new, China, Shenyang',
-  f0592088: 'new, NR',
-  f0601975: 'new, Korea, Guro-gu',
-  f0601980: 'new, Korea, Seoul',
-  f0602011: 'new, NR',
-  f0607157: 'new, China, Jieyang',
-  f0646439: 'new, NR',
-  f0670902: 'new, NR',
-  f0674600: 'new, NR',
-  f0673645: 'new, China, Karamay',
-  f0674600: 'new, NR',
-  f0676048: 'new, China, Hangzhou',
-  f0677977: 'new, USA, Wenham',
-  f0678914: 'new, USA, San Diego',
-  f0680538: 'new, Korea, Bucheon-si',
-
   // Inflight
+
+  f0122398: 'inflight, NR', // FundsReserved: about 4 hours
+  f0135473: 'inflight, NR', // FundsReserved: about 1 hour
+  f0141634: 'inflight, China, Changsha', // FundsReserved: about 1 hour
+  f0144314: 'inflight, NR', // FundsReserved: about 1 hour
+  f0151371: 'inflight, NR', // FundsReserved: about 1 hour
+  f0157025: 'inflight, NR', // FundsReserved: about 1 hour
+  f0230449: 'inflight, NR', // FundsReserved: about 1 hour
+  f0397052: 'inflight, NR', // FundsReserved: about 1 hour
+  f0402822: 'inflight, NR', // FundsReserved: about 1 hour
+  f0407244: 'inflight, NR', // FundsReserved: about 1 hour
+  f0407287: 'inflight, NR', // FundsReserved: about 1 hour
+  f0407733: 'inflight, NR', // FundsReserved: about 1 hour
+  f0408582: 'inflight, NR', // FundsReserved: about 1 hour
+  f0408629: 'inflight, NR', // FundsReserved: about 1 hour
+  f0419311: 'inflight, NR', // FundsReserved: about 1 hour
+  f0419662: 'inflight, NR', // FundsReserved: about 1 hour
+  f0419804: 'inflight, NR', // FundsReserved: about 1 hour
+  f0419944: 'inflight, NR', // FundsReserved: about 1 hour
+  f0420508: 'inflight, NR', // FundsReserved: about 1 hour
+  f0422229: 'inflight, NR', // FundsReserved: about 1 hour
+  f0423371: 'inflight, Korea, Seoul', // FundsReserved: about 1 hour
+  f0428661: 'inflight, NR', // FundsReserved: about 1 hour
+  f0429122: 'inflight, NR', // FundsReserved: about 1 hour
+  f0430101: 'inflight, NR', // FundsReserved: about 1 hour
+  f0432235: 'inflight, NR', // FundsReserved: about 1 hour
+  f0433892: 'inflight, NR', // FundsReserved: about 1 hour
+  f0434411: 'inflight, NR', // FundsReserved: about 1 hour
+  f0435045: 'inflight, Korea, Ulju-gun', // FundsReserved: about 1 hour
+  f0435971: 'inflight, NR', // FundsReserved: about 1 hour
+  f0441020: 'inflight, NR', // FundsReserved: about 1 hour
+  f0441240: 'inflight, NR', // FundsReserved: about 1 hour
+  f0441372: 'inflight, NR', // FundsReserved: about 1 hour
+  f0447651: 'inflight, NR', // FundsReserved: about 1 hour
+  f0449072: 'inflight, Korea, Jung-gu', // FundsReserved: about 1 hour
+  f0449088: 'inflight, Korea, Jung-gu', // FundsReserved: about 1 hour
+  f0449196: 'inflight, NR', // FundsReserved: about 1 hour
+  f0465286: 'inflight, NR', // FundsReserved: about 1 hour
+  f0467640: 'inflight, NR', // FundsReserved: about 1 hour
+  f0492222: 'inflight, Canada, Vancouver', // FundsReserved: about 1 hour
 
   // Unknown
 
   // Active
 
-  f016398: 'active, China, Shanghai', // 1667943 about 2 hours
-  f024550: 'active, China, Wenzhou', // 1667890 about 3 hours
-  f042567: 'active, China, Jinhua', // 1667888 about 3 hours
-  f058369: 'active, USA, Boston', // 1668005 about 21 hours
-  f061158: 'active, China, Guangdong, phoenix', // 1667884 about 1 hour
-  f063628: 'active, NR', // 1667975 about 2 hours
-  f078621: 'active, Korea, Uiwang', // 1667885 about 3 hours
-  f081644: 'active, China, Wenzhou', // 1667886 about 3 hours
-  f094374: 'active, China, Nanyang', // 1667857 about 2 hours
-  f096974: 'active, China, Chongqing', // 1667889 about 3 hours
-  f097720: 'active, Korea, Bucheon-si', // 1667946 about 3 hours
-  f0106949: 'active, Korea, Seoul', // 1667936 about 2 hours
-  f0111885: 'active, Korea, Bucheon-si, WINNERS', // 1668004 about 3 hours
-  f0156207: 'active, Korea, Ulsan', // 1667896 about 3 hours
-  f0157265: 'active, China, Zhangjiakou', // 1667941 about 2 hours
-  f0159961: 'active, China, Chongqing', // 1667897 about 12 hours
-  f0215370: 'active, China, Hangzhou', // 1668077 about 5 hours
-  f0228575: 'active, Canada, Calgary', // 1667892 about 2 hours
-  f0230200: 'active, Korea, Gwanak-gu, G-mining', // 1667900 about 3 hours
-  f0239251: 'active, Korea, Uiwang', // 1667924 about 7 hours
-  f0395463: 'active, Korea, Daegu', // 1667894 about 3 hours
-  f0395472: 'active, Korea, Daegu', // 1667893 about 3 hours
-  f0395473: 'active, Korea, Daegu', // 1667938 about 3 hours
-  f0399814: "active, China, Ya'an", // 1667939 about 2 hours
-  f0402431: 'active, China, Hangzhou', // 1667913 about 2 hours
-  f0408717: 'active, Korea, Ansan-si', // 1668584 about 8 hours
-  f0419768: 'active, Korea, Seongnam-si', // 1667915 about 8 hours
-  f0471691: 'active, China, Fujian', // 1668042 about 2 hours
-
   // Active-sealing (active, with in-flight sealing)
 
-  f019806: 'active-sealing, China, Beijing', // 1667911
-  f0156452: 'active-sealing, Korea, Ulsan', // 1667887
-  f0165375: 'active-sealing, Korea, Seongnam-si', // 1667895
-  f0224894: 'active-sealing, China, Qingdao', // 1667891
-  f0413563: 'active-sealing, Korea, Gangnam-gu', // 1667898
+  f019806: 'active-sealing, China, Beijing', // 1734818
+  f024550: 'active-sealing, China, Wenzhou', // 1734821
+  f042567: 'active-sealing, China, Jinhua', // 1734797
+  f058369: 'active-sealing, USA, Boston', // 1735150
+  f061158: 'active-sealing, China, Guangdong, phoenix', // 1734796
+  f063628: 'active-sealing, NR', // 1734788
+  f078621: 'active-sealing, Korea, Uiwang', // 1734795
+  f094374: 'active-sealing, China, Nanyang', // 1734790
+  f096974: 'active-sealing, China, Chongqing', // 1734804
+  f097720: 'active-sealing, Korea, Bucheon-si', // 1734792
+  f0106949: 'active-sealing, Korea, Seoul', // 1734787
+  f0156207: 'active-sealing, Korea, Ulsan', // 1734789
+  f0157265: 'active-sealing, China, Zhangjiakou', // 1734816
+  f0159961: 'active-sealing, China, Chongqing', // 1734800
+  f0165375: 'active-sealing, Korea, Seongnam-si', // 1734805
+  f0224894: 'active-sealing, China, Qingdao', // 1734798
+  f0230200: 'active-sealing, Korea, Gwanak-gu, G-mining', // 1734791
+  f0395463: 'active-sealing, Korea, Daegu', // 1734794
+  f0395472: 'active-sealing, Korea, Daegu', // 1734793
+  f0399814: "active-sealing, China, Ya'an", // 1734806
+  f0413563: 'active-sealing, Korea, Gangnam-gu', // 1734801
+  f0419768: 'active-sealing, Korea, Seongnam-si', // 1734799
 
   // Sealing
 
-  f02540: 'sealing, USA, Mobile, Foundry', // 1667906
-  f015233: 'sealing, China, Nanjing', // 1667901
-  f015734: 'sealing, China, Qingdao', // 1667929
-  f016276: 'sealing, China, Beijing', // 1667912
-  f020489: 'sealing, China, Lioaning', // 1668417
-  f023219: 'sealing, China, Beijing + Zhangjiakou', // 1669491
-  f024468: 'sealing, China, Shenzhen', // 1667909
-  f030125: 'sealing, China, Nantong', // 1667966
-  f030408: 'sealing, NR', // 1667978
-  f033036: 'sealing, China, Liaoning', // 1667927
-  f044160: 'sealing, China, Guangzhou, muxing', // 1667922
-  f053088: 'sealing, China, Shanghai', // 1668076
-  f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1667903
-  f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 1667902
-  f080103: 'sealing, Korea, Seongnam-si', // 1667899
-  f086151: 'sealing, China, Dongguan', // 1667914
-  f0110133: 'sealing, China, Ningbo', // 1667908
-  f0112772: 'sealing, China, Nantong', // 1668046
-  f0113331: 'sealing, Korea, Jinju + USA', // 1667907
-  f0122940: 'sealing, NR', // 1668362
-  f0129805: 'sealing, China, Zhejiang + Australia, Adelaide', // 1667916
-  f0130912: 'sealing, China, Hong Kong', // 1669344
-  f0131901: 'sealing, Korea, Daejeon', // 1667905
-  f0134671: 'sealing, Korea, Gimpo-si', // 1667904
-  f0145843: 'sealing, NR', // 1668478
-  f0155687: 'sealing, China, Guangzhou', // 1668054
-  f0165643: 'sealing, China, Guangzhou', // 1667918
-  f0168058: 'sealing, China, Suzhou', // 1667910
-  f0220156: 'sealing, NR', // 1668059
-  f0242420: 'sealing, NR', // 1669348
-  f0396846: 'sealing, China, Zhongshan', // 1668062
-  f0401287: 'sealing, China, Yibin', // 1667923
-  f0434480: 'sealing, USA, Hummelstown', // 1667919
-  f0460440: 'sealing, Korea, Seongnam-si', // 1669584
-  f0463143: 'sealing, NR', // 1668127
-  f0478837: 'sealing, China, Zhangzhou', // 1667861
+  f02540: 'sealing, USA, Mobile, Foundry', // 1734803
+  f015734: 'sealing, China, Qingdao', // 1734829
+  f016276: 'sealing, China, Beijing', // 1734817
+  f020385: 'sealing, Korea, Incheon', // 1734828
+  f022261: 'sealing, China, Luzhou', // 1735502
+  f030125: 'sealing, China, Nantong', // 1734802
+  f033036: 'sealing, China, Liaoning', // 1734827
+  f044160: 'sealing, China, Guangzhou, muxing', // 1734825
+  f053088: 'sealing, China, Shanghai', // 1735169
+  f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1734812
+  f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 1734822
+  f065141: 'sealing, NR', // 1735024
+  f080103: 'sealing, Korea, Seongnam-si', // 1734809
+  f086151: 'sealing, China, Dongguan', // 1734819
+  f093658: 'sealing, China, Fujian', // 1735247
+  f097569: 'sealing, NR', // 1734930
+  f0110133: 'sealing, China, Ningbo', // 1734815
+  f0110768: 'sealing, Korea, Gwangju', // 1734918
+  f0112772: 'sealing, China, Nantong', // 1734808
+  f0113331: 'sealing, Korea, Jinju + USA', // 1734811
+  f0129805: 'sealing, China, Zhejiang + Australia, Adelaide', // 1734820
+  f0131901: 'sealing, Korea, Daejeon', // 1734810
+  f0145843: 'sealing, NR', // 1735524
+  f0149455: 'sealing, NR', // 1734919
+  f0157564: 'sealing, Korea, Daejeon', // 1734716
+  f0165643: 'sealing, China, Guangzhou', // 1734807
+  f0395462: 'sealing, Korea, Daegu', // 1734917
+  f0398326: 'sealing, China, Jiangmen', // 1735030
+  f0400920: 'sealing, China, Luzhou', // 1735187
+  f0401287: 'sealing, China, Yibin', // 1734826
+  f0401303: 'sealing, Korea, Ulju-gun', // 1735214
+  f0417750: 'sealing, NR', // 1734836
+  f0434480: 'sealing, USA, Hummelstown', // 1734813
+  f0458627: 'sealing, Korea, Seongnam-si', // 1734823
+  f0460440: 'sealing, Korea, Seongnam-si', // 1734814
+  f0492030: 'sealing, USA, Holmdel', // 1734949
+  f0508988: 'sealing, Korea, Bucheon-si', // 1735077
+  f0521569: 'sealing, Korea, Guro-go', // 1734902
 
   // Stuck
 
-  f02490: 'stuck, China, Fujian', // CheckForAcceptance: about 24 hours
-  f03339: 'stuck, China, Luzhou, benxun', // CheckForAcceptance: about 24 hours
-  f03345: 'stuck, China, Fuzhou, chh', // CheckForAcceptance: about 24 hours
-  f08019: 'stuck, China, Yantai, 三合', // CheckForAcceptance: about 24 hours
-  f010513: 'stuck, China, Chongqing', // CheckForAcceptance: about 24 hours
-  f022261: 'stuck, China, Luzhou', // CheckForAcceptance: about 24 hours
-  f025025: 'stuck, China, Qingdao', // CheckForAcceptance: about 24 hours
-  f033025: 'stuck, Korea, Daegu', // CheckForAcceptance: about 23 hours
-  f039515: 'stuck, China, Chongqing, valarhash', // CheckForAcceptance: about 24 hours
-  f0122815: 'stuck, Korea, Bucheon-si, Healthcarenavi_80', // CheckForAcceptance: about 24 hours
-  f0131857: 'stuck, China, Chongqing', // CheckForAcceptance: about 24 hours
-  f0157564: 'stuck, Korea, Daejeon', // CheckForAcceptance: about 24 hours
-  f0165539: 'stuck, Japan, Yokohama', // CheckForAcceptance: about 24 hours
-  f0231161: 'stuck, China, Qujing', // CheckForAcceptance: about 24 hours
-  f0398326: 'stuck, China, Jiangmen', // CheckForAcceptance: about 23 hours
-  f0401300: 'stuck, France, Deuil-la-Barre', // CheckForAcceptance: about 24 hours
-  f0402492: 'stuck, NR', // CheckForAcceptance: about 21 hours
-  f0411786: 'stuck, Korea, Busan', // CheckForAcceptance: about 24 hours
-  f0430997: 'stuck, Korea', // CheckForAcceptance: about 23 hours
-  f0458627: 'stuck, Korea, Seongnam-si', // CheckForAcceptance: about 24 hours
-  f0467217: 'stuck, China, Beijing', // CheckForAcceptance: about 24 hours
-  f0471266: 'stuck, Japan, Ageo', // CheckForAcceptance: about 24 hours
-  f0482619: 'stuck, Korea, Seongnam-si', // CheckForAcceptance: about 24 hours
-  f0490090: 'stuck, Korea, Seoul', // CheckForAcceptance: about 24 hours
-  f0492283: 'stuck, USA, Quail Valley', // CheckForAcceptance: about 24 hours
-  f0492295: 'stuck, China, Shenzhen', // CheckForAcceptance: about 24 hours
-  f0494174: 'stuck, Norway', // CheckForAcceptance: about 24 hours
-  f0494332: 'stuck, Ukraine, Sumy', // CheckForAcceptance: about 24 hours
+  f02490: 'stuck, China, Fujian', // CheckForAcceptance: about 4 hours
+  f03345: 'stuck, China, Fuzhou, chh', // CheckForAcceptance: about 4 hours
+  f08019: 'stuck, China, Yantai, 三合', // CheckForAcceptance: about 4 hours
+  f010513: 'stuck, China, Chongqing', // CheckForAcceptance: about 4 hours
+  f020489: 'stuck, China, Lioaning', // CheckForAcceptance: about 4 hours
+  f022093: 'stuck, NR', // CheckForAcceptance: about 4 hours
+  f023219: 'stuck, China, Beijing + Zhangjiakou', // CheckForAcceptance: about 4 hours
+  f039515: 'stuck, China, Chongqing, valarhash', // CheckForAcceptance: about 4 hours
+  f089840: 'stuck, Korea, Yeongdeungpo-gu', // CheckForAcceptance: about 4 hours
+  f0124554: 'stuck, Korea, Gimhae', // CheckForAcceptance: about 4 hours
+  f0130912: 'stuck, China, Hong Kong', // CheckForAcceptance: about 4 hours
+  f0131857: 'stuck, China, Chongqing', // CheckForAcceptance: about 4 hours
+  f0142606: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: about 4 hours
+  f0146751: 'stuck, China, Jiangsu', // CheckForAcceptance: about 1 hour
+  f0150744: 'stuck, Korea, Ulsan', // CheckForAcceptance: about 4 hours
+  f0215497: 'stuck, Korea, Gangseo-gu', // CheckForAcceptance: about 4 hours
+  f0229547: 'stuck, Japan, Yokohama', // CheckForAcceptance: about 4 hours
+  f0231161: 'stuck, China, Qujing', // CheckForAcceptance: about 4 hours
+  f0232650: 'stuck, NR', // CheckForAcceptance: about 1 hour
+  f0349810: 'stuck, China, Qinzhou', // CheckForAcceptance: about 4 hours
+  f0397728: 'stuck, China, Dongguan', // CheckForAcceptance: about 4 hours
+  f0403177: 'stuck, China, Huizhou', // CheckForAcceptance: about 4 hours
+  f0405129: 'stuck, China, Fujian', // CheckForAcceptance: about 4 hours
+  f0408717: 'stuck, Korea, Ansan-si', // CheckForAcceptance: about 4 hours
+  f0411786: 'stuck, Korea, Busan', // CheckForAcceptance: about 4 hours
+  f0414383: 'stuck, China, Dongguan', // CheckForAcceptance: about 4 hours
+  f0432345: 'stuck, China, Guangdong', // CheckForAcceptance: about 4 hours
+  f0437246: 'stuck, China, Hangzhou', // CheckForAcceptance: about 4 hours
+  f0456374: 'stuck, NR', // CheckForAcceptance: about 1 hour
+  f0461791: 'stuck, Korea, Gwangju', // CheckForAcceptance: about 4 hours
+  f0467217: 'stuck, China, Beijing', // CheckForAcceptance: about 4 hours
+  f0470972: 'stuck, China, Shanghai', // CheckForAcceptance: about 4 hours
+  f0482619: 'stuck, Korea, Seongnam-si', // CheckForAcceptance: about 4 hours
+  f0492295: 'stuck, China, Shenzhen', // CheckForAcceptance: about 4 hours
+  f0497031: 'stuck, China, Shangrao', // CheckForAcceptance: about 4 hours
+  f0497837: 'stuck, Korea, Gangnam-gu', // CheckForAcceptance: about 4 hours
+  f0504054: 'stuck, China, Luzhou', // CheckForAcceptance: about 4 hours
+  f0504467: 'stuck, Korea, Seoul', // CheckForAcceptance: about 4 hours
+  f0510010: 'stuck, Russia, Shchelkovo', // CheckForAcceptance: about 4 hours
+  f0510610: 'stuck, China, Shangrao', // CheckForAcceptance: about 4 hours
+  f0512179: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 4 hours
+  f0514737: 'stuck, Korea, Busan', // CheckForAcceptance: about 4 hours
+  f0518641: 'stuck, China, Hangzhou', // CheckForAcceptance: about 4 hours
+  f0520262: 'stuck, China, Fujian', // CheckForAcceptance: about 4 hours
+  f0524589: 'stuck, Korea', // CheckForAcceptance: about 4 hours
+  f0524945: 'stuck, China, Beijing', // CheckForAcceptance: about 4 hours
+  f0587126: 'stuck, China, Shenyang', // CheckForAcceptance: about 4 hours
+  f0607157: 'stuck, China, Jieyang', // CheckForAcceptance: about 4 hours
+  f0676048: 'stuck, China, Hangzhou', // CheckForAcceptance: about 4 hours
+  f0677977: 'stuck, USA, Wenham', // CheckForAcceptance: about 4 hours
+  f0678914: 'stuck, USA, San Diego', // CheckForAcceptance: about 4 hours
+  f0680538: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 4 hours
 
   // Busy
 
-  f022820: 'busy, China, Guangdong', // cannot seal a sector before 648480
+  f022820: 'busy, China, Guangdong', // cannot seal a sector before 676205
 
   // Min Size
 
   f01234: 'min-size, Belgium, Bonheiden, Eliovp', // 131072 < 5368709120
+  f01238: 'min-size, Vietnam, Hanoi, FILECOIN-VIETNAM', // 131072 < 134217728
   f01240: 'min-size, Netherlands, Dcent', // 131072 < 268435456
   f01247: 'min-size, Canada, Montreal, BigChungus', // 131072 < 67108864
   f01276: 'min-size, Canada, Brampton, NBFS Canada', // 131072 < 4294967296
@@ -244,43 +197,38 @@ const annotations = {
   f02387: 'min-size, Canada, Brampton, NBFS Canada', // 131072 < 17179869184
   f02401: 'min-size, Canada, Chambly, NBFS Canada', // 131072 < 17179869184
   f02419: 'min-size, China, Shanghai, yuantai', // 131072 < 268435456
-  f02500: 'min-size, Korea, Seongnam-si', // 131072 < 67108864
   f02576: 'min-size, Denmark, Gjerlev, BenjaminH', // 131072 < 17179869184
   f02619: 'min-size, China, Beijing, Blockcasting', // 131072 < 1048576
-  f02620: 'min-size, Poland, Krakow, @magik6k', // 131072 < 536870912
-  f03134: 'min-size, China, Cangzhou, QiaoMu', // 131072 < 1048576
   f03624: 'min-size, Germany, Chemnitz, ode', // 131072 < 8589934592
   f07998: 'min-size, China, Hangzhou, 安问', // 131072 < 17179869184
   f08240: 'min-size, Russia, Novosibirsk, Rabinovitch', // 131072 < 1073741824
-  f08399: 'min-size, USA, Sammamish, MiningMusing', // 131072 < 4294967296
+  f08399: 'min-size, USA, Sammamish, MiningMusing', // 131072 < 33554432
   f08403: 'min-size, UK, Lower Slaughter, TippyFlits', // 131072 < 134217728
   f010088: 'min-size, NR', // 131072 < 4294967296
   f010254: 'min-size, Japan, Minamata', // 131072 < 134217728
   f010446: 'min-size, Netherlands, Angelo', // 131072 < 8589934592
-  f010479: 'min-size, France, Fontenay-sous-Bois, s0nik42', // 131072 < 8589934592
+  f010479: 'min-size, France, Fontenay-sous-Bois, s0nik42', // 131072 < 34359738368
   f010507: 'min-size, China, Hangzhou', // 131072 < 1073741824
   f010558: 'min-size, NR', // 131072 < 134217728
-  f010617: 'min-size, Canada, Surrey, kernelogic2, @feiya200', // 131072 < 4294967296
+  f010617: 'min-size, Canada, Surrey, kernelogic2, @feiya200', // 131072 < 1048576
   f014569: 'min-size, China, Yangzhou', // 131072 < 104857600
   f014768: 'min-size, Singapore, Funktafide, @Funk', // 131072 < 536870912
+  f015927: 'min-size, USA, East Islip, CDImine', // 131072 < 8589934592
   f017242: 'min-size, China, Guangdong', // 131072 < 268435456
-  f018501: 'min-size, China, Beijing', // 131072 < 1073741824
   f019002: 'min-size, China, Xiamen', // 131072 < 1073741824
   f019104: 'min-size, Canada, Chambly, Northstar', // 131072 < 4294967296
-  f019362: 'min-size, China, Hangzhou, 青青子衿', // 131072 < 17179869184
   f019399: 'min-size, Korea, Busan', // 131072 < 268435456
   f019551: 'min-size, UK, Birmingham, Neonix', // 131072 < 134217728
   f020378: 'min-size, Bulgaria, Asenovgrad', // 131072 < 2147483648
-  f020385: 'min-size, Korea, Incheon', // 131072 < 536870912
   f020904: 'min-size, Korea, Uijeongbu-si, FILTop', // 131072 < 8589934592
   f021716: 'min-size, New Zealand, Wellington, Info.farm', // 131072 < 536870912
   f021961: 'min-size, China, Fuzhou', // 131072 < 17179869184
   f022142: 'min-size, USA, Queens, Nelson SR2', // 131072 < 2147483648
-  f022163: 'min-size, Switzerland, dns:fil.akasha.network', // 131072 < 536870912
+  f022163: 'min-size, Switzerland, dns:fil.akasha.network', // 131072 < 4294967296
   f022289: 'min-size, China, Mianyang', // 131072 < 4294967296
   f022352: 'min-size, Norway, Borgen, TechHedge, @Reiers', // 131072 < 17179869184
-  f022399: 'min-size, China, Beijing', // 131072 < 1573031772
-  f023467: 'min-size, Norway, Oslo, PhiMining.io', // 131072 < 134217728
+  f023467: 'min-size, Norway, Oslo, PhiMining.io', // 131072 < 133169152
+  f023565: 'min-size, China, Fuzhou', // 131072 < 1536000
   f023660: 'min-size, China, Fuzhou', // 131072 < 1572864000
   f023662: 'min-size, China, Fuzhou', // 131072 < 1572864000
   f023853: 'min-size, China, Fuzhou', // 131072 < 1572864000
@@ -313,21 +261,18 @@ const annotations = {
   f024146: 'min-size, China, Fuzhou', // 131072 < 1572864000
   f024147: 'min-size, China, Fuzhou', // 131072 < 1572864000
   f024148: 'min-size, China, Fuzhou', // 131072 < 1572864000
-  f024511: 'min-size, China, Shenzhen', // 131072 < 134217728
   f030335: 'min-size, China, Fujian', // 131072 < 134217728
   f032934: 'min-size, Korea, Incheon', // 131072 < 1073741824
   f033189: 'min-size, NR', // 131072 < 2147483648
   f034047: 'min-size, China, Hangzhou', // 131072 < 1073741824
   f039940: 'min-size, China, Mianyang', // 131072 < 134217728
   f047419: 'min-size, USA, Waukesha', // 131072 < 1073741824
-  f048669: 'min-size, NR', // 131072 < 1048576
   f049882: 'min-size, Netherlands, De Rijp, Chipz', // 131072 < 268435456
   f058000: 'min-size, China, Suzhou', // 131072 < 1073741824
   f062353: 'min-size, Germany, Frankfurt', // 131072 < 17179869184
   f064218: 'min-size, USA, Kirkland', // 131072 < 268435456
   f066596: 'min-size, USA, San Diego, PiKNiK & Company', // 131072 < 536870912
   f071624: 'min-size, USA, Boyne City, Adept', // 131072 < 4294967296
-  f074738: 'min-size, Korea, Icheon-si', // 131072 < 67108864
   f078522: 'min-size, NR', // 131072 < 4294967296
   f079007: 'min-size, China, Jinan', // 131072 < 104857600
   f079817: "min-size, Russia, Ul'yanovka", // 131072 < 1073741824
@@ -337,41 +282,36 @@ const annotations = {
   f096976: 'min-size, Russia', // 131072 < 1048576
   f097618: 'min-size, China, Suzhou', // 131072 < 524288000
   f097777: 'min-size, Ukraine, Ivano-Frankivsk', // 131072 < 104857600
-  f098706: 'min-size, Korea, Icheon-si', // 131072 < 67108864
   f099608: 'min-size, Latvia, Riga, stander', // 131072 < 268435456
   f0100116: 'min-size, Korea, Uljin County', // 131072 < 1073741824
   f0102641: 'min-size, China, Guangzhou', // 131072 < 1536163840
   f0102670: 'min-size, China, Xiamen', // 131072 < 1536163840
   f0104967: 'min-size, Ukraine, Ternopil', // 131072 < 2147483648
   f0109713: 'min-size, China, Beijing', // 131072 < 1536163840
+  f0113008: 'min-size, China, Hong Kong', // 131072 < 33554432
   f0116707: 'min-size, Germany, Dusseldorf', // 131072 < 4294967296
   f0118360: 'min-size, China, Hangzhou', // 131072 < 4294967296
+  f0120983: 'min-size, China, Fujian', // 131072 < 268435456
   f0121768: 'min-size, China, Guangdong', // 131072 < 1073741824
   f0121958: 'min-size, Korea, Seoul', // 131072 < 67108864
-  f0126824: 'min-size, Korea, Seongnam-si', // 131072 < 67108864
-  f0126868: 'min-size, Ukraine, Vinnytsia', // 131072 < 943718400
   f0127896: 'min-size, Bulgaria, Sofia, sofiaminer', // 131072 < 536870912
   f0131611: 'min-size, Korea, Jeju City', // 131072 < 67108864
+  f0134682: 'min-size, China, Beijing', // 131072 < 268435456
   f0134991: 'min-size, China, Foshan', // 131072 < 1536163840
   f0135078: 'min-size, USA, Denver', // 131072 < 4294967296
   f0142637: 'min-size, China, Mianyang', // 131072 < 4294967296
   f0145162: 'min-size, Japan, Kumamoto', // 131072 < 1073741824
   f0145874: 'min-size, Canada, Brampton', // 131072 < 4294967296
-  f0148143: 'min-size, China, Tianjin', // 131072 < 1048576
-  f0151993: 'min-size, Korea, Icheon-si', // 131072 < 33554432
-  f0155384: 'min-size, Korea, Seongnam-si', // 131072 < 67108864
+  f0149765: 'min-size, China, Beijing', // 131072 < 268435456
   f0157535: 'min-size, Canada, Brampton', // 131072 < 4294967296
   f0158468: 'min-size, China, Guangzhou', // 131072 < 1536163840
   f0161916: 'min-size, NR', // 131072 < 1536524550
-  f0165400: 'min-size, Canada, Brampton', // 131072 < 4294967296
+  f0165400: 'min-size, Canada, Brampton', // 131072 < 2147483648
   f0187709: 'min-size, Russia, Moscow', // 131072 < 134217728
-  f0221135: 'min-size, USA, Atlanta', // 131072 < 10485760
-  f0396607: 'min-size, Korea, Icheon-si', // 131072 < 67108864
-  f0396844: 'min-size, Korea, Icheon-si', // 131072 < 67108864
+  f0217771: 'min-size, NR', // 131072 < 4294967296
+  f0400307: 'min-size, NR', // 131072 < 1536524550
   f0406322: 'min-size, USA, Long Beach', // 131072 < 4294967296
   f0406703: 'min-size, USA, Scottsdale', // 131072 < 4294967296
-  f0409356: 'min-size, NR', // 131072 < 33554432
-  f0426531: 'min-size, Korea, Seongnam-si', // 131072 < 67108864
   f0440182: 'min-size, USA, Des Moines', // 131072 < 2097152
   f0440208: 'min-size, Netherlands, Amsterdam', // 131072 < 2097152
   f0447183: 'min-size, Canada, Montreal', // 131072 < 4294967296
@@ -382,14 +322,15 @@ const annotations = {
   // Min Ask
 
   f01241: 'min-ask, China, Karamay', // 20000000 < 122070312500000
-  f01279: 'min-ask, China, Sichuan', // 20000000 < 122070312
   f01280: 'min-ask, China, Wuxi', // 20000000 < 12207031250000000
   f02381: 'min-ask, China, Dongguan', // 20000000 < 6103515625000
   f02415:
     'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // 20000000 < 122070312500000
+  f02500: 'min-ask, Korea, Seongnam-si', // 20000000 < 121948242187500000
   f02501: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f02514: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f02606: 'min-ask, China, Zhejiang, DataX', // 20000000 < 122070312
+  f02620: 'min-ask, Poland, Krakow, @magik6k', // 20000000 < 40283203
   f02622: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f02623: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f02633:
@@ -402,32 +343,30 @@ const annotations = {
   f03274: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f03275: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f03364: 'min-ask, China, Inner Mongolia', // 20000000 < 12207031250000000
-  f03482: 'min-ask, China, Karamay', // 20000000 < 12207031250000000
   f03491:
     'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // 20000000 < 122070312500000
   f05315: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f05316: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f05317: 'min-ask, China, Karamay', // 20000000 < 122070312500000
-  f05664: 'min-ask, China, Hong Kong', // 20000000 < 24414062500000
+  f05664: 'min-ask, China, Hong Kong', // 20000000 < 12207031250
   f07850: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f07945: 'min-ask, China, Guangzhou', // 20000000 < 122070312500000000
   f07990:
     'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // 20000000 < 122070312500000
   f08025:
     'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // 20000000 < 122070312500000
-  f08103: 'min-ask, China, Foshan', // 20000000 < 610351562
+  f08103: 'min-ask, China, Foshan', // 20000000 < 122070312
   f08157: 'min-ask, China, Beijing + Germany, Frankfurt, 超星际', // 20000000 < 610351562500000
   f08257: 'min-ask, China, Zhejiang + Singapore', // 20000000 < 12207031250
   f08383: 'min-ask, China, Karamay', // 20000000 < 122070312500000
-  f09693: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f09696: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f09848: 'min-ask, USA, Irvine, BigBearLake', // 20000000 < 1220703125
   f010253: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f010405: 'min-ask, China, Foshan', // 20000000 < 61035156
+  f010491: 'min-ask, China, Shenzhen', // 20000000 < 1220703125
   f014365: 'min-ask, Australia, Turramurra + Sydney', // 20000000 < 120849609375000
   f014409: 'min-ask, USA, Monroe, Meatball Part III', // 20000000 < 122070312
   f015897: 'min-ask, China, Hong Kong', // 20000000 < 12207031250000000
-  f015927: 'min-ask, USA, East Islip, CDImine', // 20000000 < 61035156
   f015941: 'min-ask, Ukraine, Kyiv', // 20000000 < 24414062
   f017665: 'min-ask, China, Shenyang', // 20000000 < 122070312500000
   f018780:
@@ -444,11 +383,10 @@ const annotations = {
   f019041: 'min-ask, China, Zhejiang + Singapore, Zheng2', // 20000000 < 122070312
   f019240: 'min-ask, China, Beijing', // 20000000 < 122070312500000
   f019279: 'min-ask, Canada, Calgary', // 20000000 < 24414062
-  f020747: 'min-ask, China, Xiamen', // 20000000 < 122070312
   f022130: 'min-ask, Korea, Seodaemun-gu', // 20000000 < 61035156
   f022308: 'min-ask, China, Bozhou', // 20000000 < 12207031250
   f023152: 'min-ask, China, Shandong', // 20000000 < 12207031250000000000000000
-  f023565: 'min-ask, China, Fuzhou', // 20000000 < 12206909179687500000
+  f023495: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f023825: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f024015: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f024016: 'min-ask, China, Karamay', // 20000000 < 122070312500000
@@ -457,15 +395,14 @@ const annotations = {
   f029344: 'min-ask, Korea, Seongnam-si', // 20000000 < 1220703125000
   f029401: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f029404: 'min-ask, China, Karamay', // 20000000 < 122070312500000
-  f030379: 'min-ask, Korea, Uiwang', // 20000000 < 1220703125
   f030384: 'min-ask, China, Shenzhen', // 20000000 < 12207031250000
   f033123: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f033356: 'min-ask, Korea, Yeongdeungpo-dong', // 20000000 < 24414062500
   f039800: 'min-ask, China, Chengdu', // 20000000 < 122070312500000
+  f040218: 'min-ask, China, Wuxi', // 20000000 < 12207031250000000
   f042540: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f042558: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f042635: 'min-ask, China, Karamay', // 20000000 < 122070312500000
-  f050022: 'min-ask, China, Changsha', // 20000000 < 122070312500000
   f052447: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f054370: 'min-ask, China, Dongguan', // 20000000 < 12207031250
   f056611: 'min-ask, China, Karamay', // 20000000 < 122070312500000
@@ -488,83 +425,79 @@ const annotations = {
   f070501: 'min-ask, USA + China, Hong Kong + Guangzhou', // 20000000 < 122070312500000
   f070999: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f071980: 'min-ask, China, Karamay', // 20000000 < 122070312500000
-  f073448: 'min-ask, NR', // 20000000 < 12207031250000000
   f073552: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f073628: 'min-ask, USA, New Castle', // 20000000 < 122070312500000
+  f074738: 'min-ask, Korea, Icheon-si', // 20000000 < 121948242187500000
   f078772: 'min-ask, China, Karamay', // 20000000 < 122070312500000
+  f079197: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f079247: 'min-ask, USA + China, Guangzhou + Beijing + Dongguan + Shenzhen', // 20000000 < 122070312500000
   f079301: 'min-ask, China, Guangzhou + Dongguan + Shenzhen, USA', // 20000000 < 122070312500000
   f080480: 'min-ask, Ukraine, Lviv', // 20000000 < 122070312
-  f082356: 'min-ask, China, Jiaxing', // 20000000 < 610351562500
   f082452: 'min-ask, China, Dongguan', // 20000000 < 1220581054687500000
   f083625: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f083903: "min-ask, China, Xi'an", // 20000000 < 122192382812500
   f084879: 'min-ask, Korea, Seongnam-si', // 20000000 < 121948242187500000
-  f086366: 'min-ask, NR', // 20000000 < 122070312500000
   f092514: 'min-ask, China, Karamay', // 20000000 < 122070312500000
-  f094614: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f097370: 'min-ask, NR', // 20000000 < 122070312500000
   f097386: 'min-ask, China, Beijing', // 20000000 < 12206909179687500000
   f097914: 'min-ask, NR', // 20000000 < 12207031250000000000000
+  f098706: 'min-ask, Korea, Icheon-si', // 20000000 < 121948242187500000
+  f099239: 'min-ask, China, Hong Kong', // 20000000 < 12207031250000000
   f0100082: 'min-ask, Korea, Seongnam-si', // 20000000 < 121948242187500000
+  f0101069: 'min-ask, NR', // 20000000 < 61035156250000
   f0101087: 'min-ask, Korea', // 20000000 < 122070312500000
   f0102374: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0102375: 'min-ask, China, Karamay', // 20000000 < 122070312500000
-  f0102376: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0102513: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0103851: 'min-ask, China, Karamay', // 20000000 < 122070312500000
-  f0104671: 'min-ask, Japan, Ota-ku', // 20000000 < 122070312500
+  f0104671: 'min-ask, Japan, Ota-ku', // 20000000 < 1412850341
   f0105074: 'min-ask, China, Shanghai', // 20000000 < 12207031250000000000000
   f0107308: 'min-ask, China, Shenyang', // 20000000 < 1220581054687500000
-  f0107995: 'min-ask, NR', // 20000000 < 1220581054687500000
   f0109901: 'min-ask, China, Huludao', // 20000000 < 122070312500000
   f0110442: 'min-ask, China, Fujian', // 20000000 < 12206909179687500000
   f0110936: 'min-ask, China, Fujian', // 20000000 < 12206909179687500000
+  f0110944: 'min-ask, NR', // 20000000 < 61035156250000
   f0114808: 'min-ask, China, Shanghai', // 20000000 < 12207031250000000
   f0114924: 'min-ask, China, Fujian', // 20000000 < 12206909179687500000
   f0115744: 'min-ask, China, Karamay', // 20000000 < 122070312500000
-  f0120983: 'min-ask, China, Fujian', // 20000000 < 1220581054687500000
   f0121450: 'min-ask, China, Fujian', // 20000000 < 1220581054687500000
   f0123931: 'min-ask, China, Fujian', // 20000000 < 12206909179687500000
   f0124102: 'min-ask, China, Beijing', // 20000000 < 12206909179687500000
   f0124335: 'min-ask, Finland, Helsinki', // 20000000 < 24414062
+  f0126824: 'min-ask, Korea, Seongnam-si', // 20000000 < 121948242187500000
   f0128974: 'min-ask, Korea, Seoul', // 20000000 < 1220703125000
   f0129072: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0129976: 'min-ask, Korea, Gwangju', // 20000000 < 1220703125000
   f0131464: 'min-ask, USA, Ashburn', // 20000000 < 122070312500000000
   f0131654: 'min-ask, Korea, Seoul', // 20000000 < 1220703125000
   f0133886: 'min-ask, China, Guangdong', // 20000000 < 366210937500000
-  f0133999: 'min-ask, China, Changsha', // 20000000 < 122070312500000
-  f0134565: 'min-ask, China, Karamay', // 20000000 < 122070312500000
-  f0134682: 'min-ask, China, Beijing', // 20000000 < 12206909179687500000
   f0134778: 'min-ask, China, Beijing', // 20000000 < 12206909179687500000
   f0135738: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0136014: 'min-ask, China, Suzhou', // 20000000 < 12207031250000000
+  f0137168: 'min-ask, China, Beijing', // 20000000 < 1220703125
   f0141614: 'min-ask, China, Fujian', // 20000000 < 1220703124877929687500000
   f0145313: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0145385: 'min-ask, Malaysia, Petaling Jaya', // 20000000 < 122070324707031
   f0145784: 'min-ask, Korea, Seoul', // 20000000 < 1220703125000
   f0146165: 'min-ask, China, Huizhou', // 20000000 < 122070190429687500000
   f0146875: 'min-ask, China, Karamay', // 20000000 < 122070312500000
+  f0147284: 'min-ask, Korea, Seongnam-si', // 20000000 < 121948242187500000
   f0148399: 'min-ask, China, Karamay', // 20000000 < 122070312500000
-  f0149765: 'min-ask, China, Beijing', // 20000000 < 12206909179687500000
-  f0149768: 'min-ask, China, Dongguan', // 20000000 < 122070312500000
-  f0151034: 'min-ask, USA, Syracuse', // 20000000 < 1220703125000
+  f0149768: 'min-ask, China, Dongguan', // 20000000 < 1220703124999877929687500000
+  f0151034: 'min-ask, USA, Syracuse', // 20000000 < 123291015625000
   f0151281: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0151692: 'min-ask, China, Karamay', // 20000000 < 122070312500000
+  f0151993: 'min-ask, Korea, Icheon-si', // 20000000 < 121948242187500000
   f0152747: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0152854: 'min-ask, China, Huizhou', // 20000000 < 1220581054687500000
-  f0153176: 'min-ask, China, Fujian', // 20000000 < 12206909179687500000
   f0154988: 'min-ask, China, Dongguan', // 20000000 < 122070190429687500000
+  f0155384: 'min-ask, Korea, Seongnam-si', // 20000000 < 121948242187500000
   f0155467: 'min-ask, Korea, Seongnam-si', // 20000000 < 121948242187500000
-  f0157941: 'min-ask, China, Changsha', // 20000000 < 122070312500000
   f0158142: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0165111: 'min-ask, China, Guangzhou', // 20000000 < 1220703125000000000
   f0165135: 'min-ask, China, Guangzhou', // 20000000 < 1220703125000000000
-  f0215704: 'min-ask, Korea, Icheon-si', // 20000000 < 1220581054687500000
+  f0215704: 'min-ask, Korea, Icheon-si', // 20000000 < 121948242187500000
   f0216138: 'min-ask, China, Shenzhen', // 20000000 < 610351562500
-  f0216849: 'min-ask, China, Fujian', // 20000000 < 12207031249999999877929687500000
-  f0218293: 'min-ask, China, Fujian', // 20000000 < 1220703124877929687500000
   f0220004: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0220632: 'min-ask, China, Fuzhou', // 20000000 < 12206909179687500000
   f0220827: 'min-ask, NR', // 20000000 < 122070312
@@ -577,140 +510,134 @@ const annotations = {
   f0392785: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0395911: 'min-ask, NR', // 20000000 < 121948242187500000
   f0396188: 'min-ask, China, Karamay', // 20000000 < 122070312500000
+  f0396844: 'min-ask, Korea, Icheon-si', // 20000000 < 121948242187500000
   f0397855: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0400103: 'min-ask, China, Hong Kong', // 20000000 < 122070312
   f0401677: 'min-ask, NR', // 20000000 < 12207031250000000000000000
   f0406475: 'min-ask, China, Dongguan', // 20000000 < 122070312500000000
+  f0409356: 'min-ask, NR', // 20000000 < 121948242187500000
   f0409765: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0410506: 'min-ask, Korea, Seoul', // 20000000 < 1220703125000
   f0410701: 'min-ask, China, Changsha', // 20000000 < 61035156250000
   f0413684: 'min-ask, China, Fujian', // 20000000 < 12207031249999999877929687500000
   f0413801: 'min-ask, China, Fujian', // 20000000 < 122070312499999999877929687500000
   f0421061: 'min-ask, Korea, Seoul', // 20000000 < 1220703125000
+  f0426531: 'min-ask, Korea, Seongnam-si', // 20000000 < 121948242187500000
   f0426933: 'min-ask, China, Karamay', // 20000000 < 122070312500000
-  f0427393: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0428177: 'min-ask, China, Huizhou', // 20000000 < 122070190429687500000
   f0431665: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0449662: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0456740: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0456741: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0460078: 'min-ask, China, Shanghai', // 20000000 < 122070312500000000
-  f0461752: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0463950: 'min-ask, Korea, Seongnam-si', // 20000000 < 121948242187500000
   f0471007: 'min-ask, China, Karamay', // 20000000 < 122070312500000
+  f0488888: 'min-ask, China, Nanchang', // 20000000 < 122070312500000
   f0490173: 'min-ask, Korea, Jung-gu', // 20000000 < 1220703125000
+  f0498920: 'min-ask, Korea, Icheon-si', // 20000000 < 121948242187500000
+  f0503420: 'min-ask, China, Beijing', // 20000000 < 122070190429687500000
+  f0511732: 'min-ask, China, Karamay', // 20000000 < 122070312500000
+  f0518877: 'min-ask, China, Karamay', // 20000000 < 122070312500000
+  f0673645: 'min-ask, China, Karamay', // 20000000 < 122070312500000
 
   // Error
 
-  f01238: 'error, Vietnam, Hanoi, FILECOIN-VIETNAM', // error reading Response message from provider: EOF
   f01272: 'error, Singapore', // error reading Response message from provider: EOF
   f07709: 'error, Korea, Dongjak-gu', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals exit code: SysErrOutOfGas(7)
   f07830: 'error, China, Zhongshan', // error reading Response message from provider: EOF
-  f010241: 'error, China, Beijing + USA, Portland, 6Block-P', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.184466118032808896 FIL, balance: 1.070998210095834496 FIL): not enough funds to execute transaction
-  f010399: 'error, China, Guangzhou', // failed to complete data transfer: deal data transfer failed: data transfer channel 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWNaRz2GcsNETTGnZEp5zvJqUesc4Mq3kbrqkbizemRssT-1617589584474572487 failed to transfer data: graphsync response to peer 12D3KooWNaRz2GcsNETTGnZEp5zvJqUesc4Mq3kbrqkbizemRssT did not complete: response status code RequestFailedUnknown
+  f010241: 'error, China, Beijing + USA, Portland, 6Block-P', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 2.135523317677621204 FIL, balance: 1.070998210095834496 FIL): not enough funds to execute transaction
+  f015233: 'error, China, Nanjing', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.4999999999467432 FIL, balance: 0.260854704957945178 FIL): not enough funds to execute transaction
+  f016398: 'error, China, Shanghai', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f017193: "error, China, Xi'an + Singapore", // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
-  f019824: 'error, USA', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.179999999989837828 FIL, balance: 0.050352219286919909 FIL): not enough funds to execute transaction
+  f019824: 'error, USA', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.179999999969643656 FIL, balance: 0.050343921936835254 FIL): not enough funds to execute transaction
   f020928: 'error, China, Deyang + Singapore', // error reading Response message from provider: EOF
+  f021504: 'error, NR', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.298115117543446286 FIL, balance: 0.13 FIL): not enough funds to execute transaction
   f023198: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
-  f024944: 'error, Korea, Yeongdeungpo-dong', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: context deadline exceeded
-  f025007: 'error, Korea, Gyeonggi-do, PINBYTES-eCUBE', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999997019232 FIL, balance: 0.029146741475696545 FIL): not enough funds to execute transaction
-  f034350: 'error, NR', // sending proposal to storage provider failed: stream reset
+  f025007: 'error, Korea, Gyeonggi-do, PINBYTES-eCUBE', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999943074775 FIL, balance: 0.029028247367250971 FIL): not enough funds to execute transaction
+  f025025: 'error, China, Qingdao', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999980634479 FIL, balance: 0.02257347765355794 FIL): not enough funds to execute transaction
   f054415: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f054417: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f054418: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f054420: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f062937: 'error, NR', // error reading Response message from provider: EOF
   f063869: 'error, NR', // error reading Response message from provider: EOF
   f079370: 'error, China, Zhangzhou', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
-  f082095: 'error, NR', // error reading Response message from provider: stream reset
-  f082617: 'error, China, Fujian', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.249586530444476546 FIL, balance: 0.638997080942711885 FIL): not enough funds to execute transaction
+  f082617: 'error, China, Fujian', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 2.009133969362116531 FIL, balance: 0.437534490798471285 FIL): not enough funds to execute transaction
   f085777: 'error, China, Zhangzhou', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
-  f097214: 'error, Korea, Bucheon-si, CryptoHash', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999966222315 FIL, balance: 0.22964974465940677 FIL): not enough funds to execute transaction
-  f097569: 'error, NR', // error reading Response message from provider: stream reset
-  f098664: 'error, China, Jiangsu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.999999999965056648 FIL, balance: 0.434378824401831168 FIL): not enough funds to execute transaction
-  f099705: 'error, China, Zibo', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.49999999996880766 FIL, balance: 0.286292783407156821 FIL): not enough funds to execute transaction
-  f0108979: 'error, Korea, Bupyeong-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999946901296 FIL, balance: 0.232434605622797802 FIL): not enough funds to execute transaction
+  f097214: 'error, Korea, Bucheon-si, CryptoHash', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999999428864 FIL, balance: 0.228177617493460903 FIL): not enough funds to execute transaction
+  f098664: 'error, China, Jiangsu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.999999999952421368 FIL, balance: 0.434378824401831168 FIL): not enough funds to execute transaction
+  f0108979: 'error, Korea, Bupyeong-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999962462202 FIL, balance: 0.201702878551346503 FIL): not enough funds to execute transaction
   f0109040: 'error, China, Zhangzhou', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
-  f0109043: 'error, China, Karamay', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.233174604064038506 FIL, balance: 0.213511646962628839 FIL): not enough funds to execute transaction
-  f0111174: 'error, China, Guangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.226415993925651731 FIL, balance: 0.04198169572523634 FIL): not enough funds to execute transaction
-  f0112713: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999952759679 FIL, balance: 0.056229381562036481 FIL): not enough funds to execute transaction
-  f0115108: 'error, Korea, Yangcheon-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999972752432 FIL, balance: 0.316767326079961869 FIL): not enough funds to execute transaction
+  f0109043: 'error, China, Karamay', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.913577219148267561 FIL, balance: 0.207576945028802356 FIL): not enough funds to execute transaction
+  f0112679: 'error, NR', // error reading Response message from provider: EOF
+  f0112713: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.49999999999780416 FIL, balance: 0.056229381562036481 FIL): not enough funds to execute transaction
   f0116436: 'error, Singapore', // error reading Response message from provider: EOF
   f0116445: 'error, Singapore', // error reading Response message from provider: EOF
   f0118317: 'error, Singapore', // error reading Response message from provider: EOF
   f0118330: 'error, Singapore', // error reading Response message from provider: EOF
-  f0121533: 'error, China, Zhejiang', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.237154740911829929 FIL, balance: 0.246221359439492264 FIL): not enough funds to execute transaction
+  f0121533: 'error, China, Zhejiang', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.944557088407043264 FIL, balance: 0.246221359439492264 FIL): not enough funds to execute transaction
   f0134516: 'error, Singapore', // error reading Response message from provider: EOF
   f0134518: 'error, China, Guangdong', // error reading Response message from provider: EOF
-  f0137168: 'error, China, Beijing', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals errored: handler: websocket connection closed
-  f0137489: 'error, UK, Deeside', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999960252364 FIL, balance: 0.035441369245731903 FIL): not enough funds to execute transaction
-  f0149455: 'error, NR', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.999999999997014016 FIL, balance: 0.057067400372174404 FIL): not enough funds to execute transaction
-  f0150744: 'error, Korea, Ulsan', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals exit code: SysErrOutOfGas(7)
+  f0137489: 'error, UK, Deeside', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999951421058 FIL, balance: 0.015339184428711296 FIL): not enough funds to execute transaction
   f0150782: 'error, China, Xiamen', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0151341: 'error, China, Zhangzhou', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0151366: 'error, China, Fuzhou + Xiamen', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0151468: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0151487: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
-  f0152337: 'error, NR', // failed to complete data transfer: deal data transfer failed: data transfer channel 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWLWmfzgTnvSRefqqpyTCeHekCHZr4f4U1oKA1XoMkSkLV-1617589584474572496 failed to transfer data: graphsync response to peer 12D3KooWLWmfzgTnvSRefqqpyTCeHekCHZr4f4U1oKA1XoMkSkLV did not complete: response status code RequestFailedUnknown
-  f0152712: 'error, NR', // error reading Response message from provider: stream reset
+  f0156452: 'error, Korea, Ulsan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 2.110945386624749157 FIL, balance: 0.150616919094291019 FIL): not enough funds to execute transaction
   f0158993: 'error, China, Zhangzhou', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0162183: "error, China, Xi'an", // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
-  f0162394: 'error, China, Guangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.211860746620322108 FIL, balance: 0.045723826839724376 FIL): not enough funds to execute transaction
+  f0162394: 'error, China, Guangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.894385811514897632 FIL, balance: 0.045723826839724376 FIL): not enough funds to execute transaction
+  f0168058: 'error, China, Suzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.899999999972486409 FIL, balance: 0.818200177868246389 FIL): not enough funds to execute transaction
+  f0215370: 'error, China, Hangzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals exit code: SysErrOutOfGas(7)
   f0227660: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0228401: 'error, Japan', // error reading Response message from provider: EOF
-  f0349810: 'error, China, Qinzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.999999999954523891 FIL, balance: 0.967287249945350203 FIL): not enough funds to execute transaction
-  f0391143: 'error, China, Shanghai', // error reading Response message from provider: stream reset
-  f0395459: 'error, Korea, Daegu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.284702250507127796 FIL, balance: 1.073017095255018362 FIL): not enough funds to execute transaction
-  f0395462: 'error, Korea, Daegu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.265705875668179624 FIL, balance: 1.118543283950341767 FIL): not enough funds to execute transaction
+  f0228575: 'error, Canada, Calgary', // deal failed: (State=11) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.299999999998872895 FIL, balance: 0.264448241932950503 FIL): not enough funds to execute transaction
+  f0395459: 'error, Korea, Daegu', // error reading Response message from provider: EOF
   f0396352: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0396751: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f0396846: 'error, China, Zhongshan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999999532938 FIL, balance: 0.008334845386264151 FIL): not enough funds to execute transaction
   f0397332: 'error, NR', // deal failed: (State=26) error calling node: AddFunds errored: handler: websocket connection closed
-  f0397675: 'error, Korea, Guro-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.099999999961081446 FIL, balance: 0.045810061707734687 FIL): not enough funds to execute transaction
-  f0397728: 'error, China, Dongguan', // deal failed: (State=26) error calling node: AddFunds errored: handler: websocket connection closed
-  f0400920: 'error, China, Luzhou', // deal failed: (State=26) error calling node: reserving funds: handler: websocket connection closed
   f0401135: 'error, Singapore', // error reading Response message from provider: EOF
+  f0401300: 'error, France, Deuil-la-Barre', // deal failed: (State=26) error calling node: publishing deal: GasEstimateMessageGas error: estimating gas used: message execution failed: exit 16, reason: cannot publish duplicate deals (RetCode=16)
   f0402371: 'error, China, Shanghai', // error reading Response message from provider: EOF
-  f0403177: 'error, China, Huizhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals exit code: SysErrOutOfGas(7)
-  f0405129: 'error, China, Fujian', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.79999999994140704 FIL, balance: 0.540468854093788917 FIL): not enough funds to execute transaction
-  f0414383: 'error, China, Dongguan', // deal failed: (State=26) error calling node: AddFunds errored: handler: websocket connection closed
-  f0432345: 'error, China, Guangdong', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.370255978171123785 FIL, balance: 0.097510270225540741 FIL): not enough funds to execute transaction
-  f0437246: 'error, China, Hangzhou', // AddPiece failed: normal shutdown of state machine
-  f0494586: 'error, China, Nanchang', // error reading Response message from provider: EOF
+  f0417918: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f0511480: 'error, China, Yangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.326103765 FIL, balance: 0.111667664791134089 FIL): not enough funds to execute transaction
+  f0522099: 'error, China, Shangrao', // error reading Response message from provider: stream reset
+  f0524577: 'error, China, Foshan', // deal failed: (State=26) error calling node: AddFunds errored: handler: websocket connection closed
 
   // Dial backoff
 
-  f02520: 'backoff, China, Hong Kong + Dongguan',
+  f01248: 'backoff, Germany, Frankfurt',
   f058374: 'backoff, NR',
-  f0110768: 'backoff, Korea, Gwangju',
-  f0152563: 'backoff, China, Chongqing',
+  f066563: 'backoff, NR',
+  f094901: 'backoff, Korea, Bucheon-si',
   f0159649: 'backoff, NR',
-  f0228855: 'backoff, Korea, Guro-gu',
-  f0229547: 'backoff, Japan, Yokohama',
+  f0241022: 'backoff, Korea, Geumcheon-gu',
 
   // Rejected
 
   f01152: 'rejected, China, Beijing',
-  f01248: 'rejected, Germany, Frankfurt', // proposed provider collateral above maximum: 70929276268 > 70892439644
+  f01155: 'rejected, China, Shanghai', // proposed provider collateral above maximum: 68333489842 > 68331630832
   f01289: 'rejected, China, Ningbo', // no online
-  f01314: 'rejected, NR', // getting client market balance failed
+  f01314: 'rejected, NR', // proposed provider collateral above maximum: 68335170272 > 68333748548
   f02301: 'rejected, USA',
-  f02421: 'rejected, China, Deyang + Singapore', // proposed provider collateral above maximum: 70928753274 > 70926415948
+  f02303: 'rejected, Singapore',
+  f02421: 'rejected, China, Deyang + Singapore', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
   f02423: 'rejected, Ukraine, Kyiv', // no online
+  f02520: 'rejected, China, Hong Kong + Dongguan', // proposed provider collateral above maximum: 68335170272 > 68333823966
   f02529: 'rejected, China, Chongqing + Singapore',
   f02609: 'rejected, China, Shanghai', // no online
   f02613: 'rejected, China, Chongqing + Singapore',
-  f02625: 'rejected, China, Shanghai', // no online
-  f02626: 'rejected, Singapore', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
-  f02856: 'rejected, China, Chengdu', // no online
-  f03000: 'rejected, China, Chengdu', // no online
+  f02625: 'rejected, China, Shanghai', // proposed provider collateral above maximum: 68333748548 > 68330585196
   f03249: 'rejected, China, Yunfu',
+  f03339: 'rejected, China, Luzhou, benxun', // proposed provider collateral above maximum: 68339903844 > 68339734062
   f03347: 'rejected, China, Shenzhen', // no online
   f03362: 'rejected, Germany, Berlin',
-  f08094: 'rejected, China, Guangzhou', // no online
   f08197: 'rejected, China, Foshan',
-  f08264: 'rejected, China, Xianning', // no online
-  f09620: 'rejected, China, Weifang', // sh: 1: jq: not found
+  f09620: 'rejected, China, Weifang',
   f09642: 'rejected, Sweden, Alvsjo',
   f010035: 'rejected, Netherlands + China, Suzhou',
-  f010038: 'rejected, China, Hangzhou + Singapore', // proposed provider collateral above maximum: 70924281256 > 70897286790
   f010493: 'rejected, China, Shanghai', // no online
   f010498: 'rejected, China, Shenzhen', // no online
   f010505: 'rejected, China, Wuhan, Interstellar Roewe', // no online
@@ -718,11 +645,12 @@ const annotations = {
   f014233: 'rejected, China, Shanghai + USA', // no online
   f014327:
     'rejected, China, Ningbo + Japan, Heiwajima + Germany, Frankfurt + USA + Canada, Toronto', // no online
+  f014487: 'rejected, Singapore', // no online
   f014683: 'rejected, China, Dongguan',
   f015747: 'rejected, Japan, Setagaya-ku',
-  f017229: 'rejected, China, Sichuan',
-  f019099: 'rejected, China, Hong Kong + Guangzhou', // no online
-  f019354: 'rejected, Germany, Frankfurt', // proposed provider collateral above maximum: 70926494982 > 70911103638
+  f018501: 'rejected, China, Beijing', // proposed provider collateral above maximum: 68339832084 > 68337738260
+  f019354: 'rejected, Germany, Frankfurt', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
+  f019362: 'rejected, China, Hangzhou, 青青子衿', // proposed provider collateral above maximum: 68339832084 > 68337738260
   f019422: 'rejected, China, Guangzhou', // no online
   f020523: 'rejected, China, Suzhou, changjiang', // sh: 1: VerifiedDeal:true: not found
   f020940: 'rejected, USA, Bellevue',
@@ -741,11 +669,14 @@ const annotations = {
   f023534: 'rejected, China, Chongqing',
   f023982: 'rejected, China, Chengdu',
   f023983: 'rejected, China, Chongqing',
+  f023984: 'rejected, NR',
+  f023985: 'rejected, China, Chongqing',
+  f024468: 'rejected, China, Shenzhen', // proposed provider collateral above maximum: 68339846852 > 68331684104
+  f024944: 'rejected, Korea, Yeongdeungpo-dong', // proposed provider collateral above maximum: 68339256536 > 68328863192
   f029490: 'rejected, NR',
   f029649: 'rejected, China, Beijing',
   f032888: 'rejected, China, Weifang',
   f034258: 'rejected, China, Mianyang',
-  f034777: 'rejected, China, Chengdu', // no online
   f035436: 'rejected, China, Jiangsu', // no online
   f040332: 'rejected, China, Shenzhen', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
   f042391: 'rejected, China, Fuzhou', // no online
@@ -761,44 +692,50 @@ const annotations = {
   f055335: 'rejected, NR',
   f056226: 'rejected, NR',
   f056406: 'rejected, China, Taizhou', // no online
-  f056573: 'rejected, China, Sichuan', // proposed provider collateral above maximum: 70926799844 > 70900606754
-  f062473: 'rejected, NR', // no online
+  f056573: 'rejected, China, Sichuan', // no online
+  f057127: 'rejected, China, Suzhou', // proposed provider collateral above maximum: 68335836964 > 68334345334
+  f064668: 'rejected, China, Hong Kong', // proposed provider collateral above maximum: 68335836964 > 68331120758
   f066270: 'rejected, China, Dongguan', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
   f066781: 'rejected, China, Beijing',
   f066790: 'rejected, China, Beijing',
   f068528: 'rejected, China, Shanghai', // no online
+  f068560: 'rejected, China, Changsha', // proposed provider collateral above maximum: 68335836964 > 68328338268
   f073697: 'rejected, China, Karamay',
   f078899: 'rejected, NR',
   f079618: 'rejected, China, Beijing', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
   f079815: 'rejected, China, Hangzhou', // getting client market balance failed
-  f080444: 'rejected, China, Chengdu', // no online
   f080468: 'rejected, NR', // no online
-  f080628: 'rejected, NR', // no online
   f081323: 'rejected, UK, Cambridge', // no online
+  f082095: 'rejected, NR', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
   f083065: 'rejected, China, Taizhou', // no online
-  f083638: 'rejected, China, Chongqing',
-  f085710: 'rejected, China, Chengdu', // no online
+  f086028: 'rejected, NR', // proposed provider collateral above maximum: 68335677402 > 68330668392
   f086423: 'rejected, China, Chengdu', // no online
   f087530: 'rejected, China, Shenzhen', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
-  f089840: 'rejected, Korea, Yeongdeungpo-gu', // proposed provider collateral above maximum: 70966035742 > 70962596746
   f090387: 'rejected, China, Fuzhou', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
   f090864: 'rejected, NR',
   f094128: 'rejected, China, Shenzhen', // no online
-  f097126: 'rejected, NR',
+  f097126: 'rejected, NR', // sh: 1: jq: not found
+  f097840: 'rejected, NR', // proposed provider collateral above maximum: 68329450650 > 68328988282
+  f098770: 'rejected, USA, Pontiac', // no online
+  f099705: 'rejected, China, Zibo', // no online
   f0100066: 'rejected, NR', // no online
   f0101387: 'rejected, China, Shenzhen', // no online
   f0102358: 'rejected, China, Guizhou', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
+  f0106363: 'rejected, NR', // proposed provider collateral above maximum: 68335796726 > 68330015826
   f0107133: 'rejected, NR', // no online
-  f0107753: 'rejected, China, Shanghai', // no online
+  f0107753: 'rejected, China, Shanghai', // proposed provider collateral above maximum: 68333999896 > 68330290256
+  f0107995: 'rejected, NR', // proposed provider collateral above maximum: 68338566872 > 68338136702
   f0109272: 'rejected, China, Dongguan', // no online
   f0110762: 'rejected, Korea, Seoul', // no online
+  f0111174: 'rejected, China, Guangzhou', // proposed provider collateral above maximum: 68337236480 > 68337073866
+  f0111544: 'rejected, Korea, Seoul', // no online
   f0111658: 'rejected, China, Fuzhou', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
   f0112075: 'rejected, Korea, Seoul', // no online
   f0112087: 'rejected, China, Xiamen', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
-  f0112679: 'rejected, NR', // no online
   f0114043: 'rejected, Korea, Seoul', // no online
+  f0114118: 'rejected, NR', // proposed provider collateral above maximum: 68317709608 > 68313817426
   f0114687: 'rejected, China, Dongguan', // no online
-  f0116628: 'rejected, China, Shanghai', // no online
+  f0116628: 'rejected, China, Shanghai', // proposed provider collateral above maximum: 68333999896 > 68333601496
   f0117118: 'rejected, NR', // no online
   f0118695: 'rejected, Korea, Seoul', // no online
   f0118917: 'rejected, China, Shaoxing', // no online
@@ -806,54 +743,51 @@ const annotations = {
   f0120793: 'rejected, Korea, Seoul', // no online
   f0121260: 'rejected, China, Quinzhou', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
   f0121602: 'rejected, China, Hong Kong', // sh: 1: /root/.lotusminer/dealfilter.pl: not found
-  f0122398: 'rejected, NR', // no online
   f0122415: 'rejected, Korea, Seoul', // no online
   f0123281: 'rejected, Korea, Seoul', // no online
   f0123536: 'rejected, China, Fuzhou',
   f0124036: 'rejected, China, Nanchang', // no online
-  f0124554: 'rejected, Korea, Gimhae', // proposed provider collateral above maximum: 70958065178 > 70926415948
-  f0124696: 'rejected, NR',
+  f0124696: 'rejected, NR', // proposed provider collateral above maximum: 68333601496 > 68328491412
   f0125863: 'rejected, Korea, Seoul', // no online
   f0126037: 'rejected, Korea, Seoul', // no online
   f0126038: 'rejected, Korea, Seoul', // no online
   f0126039: 'rejected, NR', // no online
+  f0126868: 'rejected, Ukraine, Vinnytsia', // proposed provider collateral above maximum: 68337955604 > 68337503614
   f0127352: 'rejected, Korea, Seoul', // no online
+  f0127980: 'rejected, Korea, Seoul', // no online
+  f0128581: 'rejected, Korea, Seoul', // proposed provider collateral above maximum: 68317132786 > 68312595604
   f0130961: 'rejected, Korea, Seongnam-si',
   f0131331: 'rejected, China, Beijing',
   f0131419: 'rejected, China, Beijing',
-  f0134285: "rejected, China, Ya'an + USA", // no online
+  f0133999: 'rejected, China, Changsha', // proposed provider collateral above maximum: 68338136702 > 68336916394
+  f0134565: 'rejected, China, Karamay', // proposed provider collateral above maximum: 68338136702 > 68336916394
   f0142135: "rejected, China, Ya'an + USA", // no online
   f0142515: 'rejected, NR', // no online
-  f0142606: 'rejected, Korea, Gangseo-gu', // no online
-  f0143500: 'rejected, China, Zhejiang', // no online
   f0143928: 'rejected, China, Beijing',
   f0144313: 'rejected, NR', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
-  f0146301: 'rejected, China, Shenzhen', // no online
-  f0146393: 'rejected, China, Foshan', // no online
-  f0146428: 'rejected, NR', // proposed provider collateral above maximum: 70899256414 > 70898894338
-  f0147284: 'rejected, Korea, Seongnam-si', // proposed provider collateral above maximum: 70966921566 > 70964923872
-  f0147565: 'rejected, China, Shenzhen',
+  f0147565: 'rejected, China, Shenzhen', // proposed provider collateral above maximum: 68333386690 > 68333328240
   f0149026: 'rejected, China, Shenzhen',
   f0149444: 'rejected, Korea, Gangseo-gu', // no online
   f0151629: 'rejected, NR', // no online
+  f0152712: 'rejected, NR', // no online
   f0152943: 'rejected, NR', // sh: 1: jq: not found
-  f0153804: 'rejected, NR',
-  f0154039: 'rejected, NR', // proposed provider collateral above maximum: 70926088342 > 70911814694
+  f0153176: 'rejected, China, Fujian', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
+  f0154039: 'rejected, NR', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
   f0155004: 'rejected, Korea, Seoul', // no online
   f0156264: 'rejected, Korea, Seoul', // no online
-  f0158000: 'rejected, NR',
+  f0157941: 'rejected, China, Changsha', // proposed provider collateral above maximum: 68337045046 > 68331036576
   f0158666: 'rejected, China, Beijing',
   f0158950: 'rejected, China, Beijing',
   f0162385: 'rejected, China, Beijing',
   f0164291: 'rejected, China, Fujian', // no online
+  f0165539: 'rejected, Japan, Yokohama', // proposed provider collateral above maximum: 68339734062 > 68338619506
   f0166327: 'rejected, NR',
   f0166512: 'rejected, NR',
   f0169153: 'rejected, China, Chengdu',
   f0214631: 'rejected, Korea, Seoul', // no online
-  f0215497: 'rejected, Korea, Gangseo-gu', // no online
-  f0217771: 'rejected, NR', // miner is not accepting unverified storage deals
+  f0216849: 'rejected, China, Fujian', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
+  f0218293: 'rejected, China, Fujian', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
   f0222674: 'rejected, China, Quinzhou', // sh: 1: /root/.lotusminer/dealfilter.pl: not found
-  f0223316: 'rejected, NR', // no online
   f0223663: 'rejected, China, Beijing',
   f0226324: 'rejected, China, Guangxi', // getting client market balance failed
   f0228335: 'rejected, China, Beijing', // node error getting client market balance failed: resolve address f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q: actor not found
@@ -861,294 +795,334 @@ const annotations = {
   f0239688: 'rejected, China, Beijing',
   f0364957: 'rejected, China, Sichuan', // getting client market balance failed
   f0364982: 'rejected, Korea, Seoul', // no online
+  f0391143: 'rejected, China, Shanghai', // getting client market balance failed
   f0392458: 'rejected, China, Fuzhou', // no online
-  f0397428: 'rejected, Japan, Tokyo', // proposed provider collateral above maximum: 70924853040 > 70912829066
   f0398286: 'rejected, China, Beijing', // no online
   f0398863: 'rejected, Korea, Seoul', // no online
   f0398865: 'rejected, Korea, Seoul', // no online
-  f0399083: 'rejected, Korea, Seoul + Kwangmyong', // no online
   f0401254: 'rejected, Korea, Uijeongbu-si', // no online
   f0401348: 'rejected, Korea, Chuncheon', // no online
   f0401416: 'rejected, Japan, Fukuoka', // no online
   f0403858: 'rejected, China, Jiangmen', // no online
-  f0409069: 'rejected, NR', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
+  f0409069: 'rejected, NR', // proposed provider collateral above maximum: 68333485948 > 68330395330
   f0418632: 'rejected, Singapore', // miner is not accepting unverified storage deals
-  f0424969: 'rejected, China, Fuzhou', // incorrect provider for deal
-  f0427989: 'rejected, NR',
   f0432594: 'rejected, China, Zhengzhou', // no online
   f0451936: 'rejected, NR', // no online
-  f0461791: 'rejected, Korea, Gwangju', // proposed provider collateral above maximum: 70968178948 > 70900800020
+  f0463143: 'rejected, NR', // proposed provider collateral above maximum: 68339903844 > 68339734062
   f0466405: 'rejected, Germany, Niederaula', // no online
-  f0470972: 'rejected, China, Shanghai', // proposed provider collateral above maximum: 70968178948 > 70967470244
+  f0471691: 'rejected, China, Fujian', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
   f0475664: 'rejected, China, Zhejiang', // no online
   f0476476: 'rejected, Korea, Namyangju', // no online
+  f0478837: 'rejected, China, Zhangzhou', // proposed provider collateral above maximum: 68339903844 > 68339734062
   f0482136: 'rejected, China, Fuzhou', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
   f0485876: 'rejected, China, Changchun', // no online
-  f0492030: 'rejected, USA, Holmdel', // proposed provider collateral above maximum: 70967470244 > 70966631868
   f0492474: "rejected, China, Xi'an", // no online
-  f0497031: 'rejected, China, Shangrao', // proposed provider collateral above maximum: 70967470244 > 70966295716
+  f0513878: 'rejected, China, Guizhou', // sh: 1: /root/.lotusminer/dealfilter.pl: not found
+  f0516456: 'rejected, Korea, Jung-gu', // no online
+  f0522078: 'rejected, China, Hangzhou', // no online
+  f0524489: 'rejected, Korea, Pocheon-si', // no online
+  f0524517: 'rejected, Korea, Uijeongbu-si', // no online
+  f0533124: 'rejected, Korea, Seoul', // no online
 
   // Dial
 
-  f01012: 'dial, China, Guangzhou + Hong Kong', // * [/ip4/127.0.0.1/tcp/8888] dial tcp4 127.0.0.1:8888: connect: connection refused  * [/ip4/43.230.90.191/tcp/8888] dial tcp4 0.0.0.0:46775->43.230.90.191:8888: i/o timeout  * [/ip4/183.60.252.190/tcp/8888] dial tcp4 0.0.0.0:46775->183.60.252.190:8888: i/o timeout
-  f01154: 'dial, NR', // * [/ip4/192.168.2.50/tcp/1024] dial tcp4 0.0.0.0:46775->192.168.2.50:1024: i/o timeout
-  f01155: 'dial, China, Shanghai', // * [/ip4/203.107.44.156/tcp/39770] dial tcp4 0.0.0.0:46775->203.107.44.156:39770: i/o timeout
-  f01231: 'dial, Singapore', // * [/ip4/172.17.32.101/tcp/10241] dial tcp4 0.0.0.0:46775->172.17.32.101:10241: i/o timeout
-  f01235: 'dial, Singapore', // * [/ip4/170.33.12.95/tcp/16668] dial tcp4 0.0.0.0:46775->170.33.12.95:16668: i/o timeout
-  f01287: 'dial, China, Jiaxing, MaiTian', // * [/ip4/172.16.2.123/tcp/5472] dial tcp4 0.0.0.0:46775->172.16.2.123:5472: i/o timeout  * [/ip4/122.225.68.92/tcp/5472] dial tcp4 0.0.0.0:46775->122.225.68.92:5472: i/o timeout
-  f01475: 'dial, Singapore', // * [/ip4/170.33.12.186/tcp/17031] dial tcp4 0.0.0.0:46775->170.33.12.186:17031: i/o timeout
-  f01782: 'dial, China, Shanghai', // * [/ip4/139.196.240.164/tcp/11347] dial tcp4 0.0.0.0:46775->139.196.240.164:11347: i/o timeout
-  f01799: 'dial, China, Jinan + Singapore', // * [/ip4/115.236.22.207/tcp/63208] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWBSVJEJLvLCFVzhYEfLVmznbL4Horztx4W6bXuYa7w1VJ, but remote key matches 12D3KooWEpE1vGMP8CXc1MrhQh9o6yzWPkKiaLCd8FxefsLGriRh  * [/ip4/222.175.139.190/tcp/63208] dial tcp4 0.0.0.0:46775->222.175.139.190:63208: i/o timeout  * [/ip4/195.123.237.226/tcp/62333] dial tcp4 0.0.0.0:46775->195.123.237.226:62333: i/o timeout
-  f01800: 'dial, China, Shenzhen + Chengdu', // * [/ip4/182.131.4.48/tcp/33333] dial tcp4 0.0.0.0:46775->182.131.4.48:33333: i/o timeout
-  f02299: 'dial, China, Beijing', // * [/ip4/182.18.83.2/tcp/1024] dial tcp4 0.0.0.0:46775->182.18.83.2:1024: i/o timeout
-  f02303: 'dial, Singapore', // * [/ip4/8.209.76.63/tcp/48921] dial tcp4 0.0.0.0:46775->8.209.76.63:48921: i/o timeout
-  f02403: 'dial, UK, London + Manchester', // * [/ip4/2.58.47.71/tcp/18888] dial tcp4 0.0.0.0:46775->2.58.47.71:18888: i/o timeout  * [/ip4/2.58.45.33/tcp/18888] dial tcp4 0.0.0.0:46775->2.58.45.33:18888: i/o timeout
-  f02405: 'dial, China, Shenzhen', // * [/ip4/192.168.231.206/tcp/4123] dial tcp4 0.0.0.0:46775->192.168.231.206:4123: i/o timeout
-  f02417: 'dial, China, Zhangjiakou', // * [/ip4/116.132.221.10/tcp/10240] dial tcp4 0.0.0.0:46775->116.132.221.10:10240: i/o timeout
-  f02420: 'dial, USA', // * [/ip4/47.252.2.93/tcp/34571] dial tcp4 0.0.0.0:46775->47.252.2.93:34571: i/o timeout
-  f02422: "dial, China, Xi'an", // * [/ip4/117.38.4.82/tcp/22347] dial tcp4 0.0.0.0:46775->117.38.4.82:22347: i/o timeout
-  f02425: 'dial, China, Shanghai', // * [/ip4/103.78.229.73/tcp/14567] dial tcp4 0.0.0.0:46775->103.78.229.73:14567: i/o timeout
-  f02438: 'dial, China, Guangdong', // * [/ip4/47.115.10.99/tcp/14567] dial tcp4 0.0.0.0:46775->47.115.10.99:14567: i/o timeout
-  f02492: 'dial, China, Guangdong', // * [/ip4/103.142.248.7/tcp/3347] dial tcp4 0.0.0.0:46775->103.142.248.7:3347: i/o timeout
-  f02503: 'dial, Singapore', // * [/ip4/8.209.71.125/tcp/31432] dial tcp4 0.0.0.0:46775->8.209.71.125:31432: i/o timeout
-  f02528: 'dial, Singapore', // * [/ip4/8.209.70.199/tcp/58692] dial tcp4 0.0.0.0:46775->8.209.70.199:58692: i/o timeout
-  f02610: 'dial, Netherlands', // * [/ip4/213.227.129.197/tcp/14567] dial tcp4 0.0.0.0:46775->213.227.129.197:14567: i/o timeout
-  f02614: 'dial, Singapore', // * [/ip4/170.33.9.50/tcp/32633] dial tcp4 0.0.0.0:46775->170.33.9.50:32633: i/o timeout
-  f02654: 'dial, China, Shanghai', // * [/ip4/114.88.222.181/tcp/43355] dial tcp4 0.0.0.0:46775->114.88.222.181:43355: i/o timeout
-  f02721: 'dial, USA', // * [/ip4/135.90.74.200/tcp/14567] dial tcp4 0.0.0.0:46775->135.90.74.200:14567: i/o timeout
-  f02723: 'dial, China, Tongling', // * [/ip4/60.173.23.17/tcp/23456] dial tcp4 0.0.0.0:46775->60.173.23.17:23456: i/o timeout
-  f02725: 'dial, China, Hong Kong', // * [/ip4/101.32.38.57/tcp/18899] dial tcp4 0.0.0.0:46775->101.32.38.57:18899: i/o timeout
-  f02726: 'dial, USA, Brooklyn', // * [/ip4/169.62.51.212/tcp/14567] dial tcp4 0.0.0.0:46775->169.62.51.212:14567: i/o timeout
-  f02731: 'dial, NR', // * [/ip4/10.30.8.4/tcp/14567] dial tcp4 0.0.0.0:46775->10.30.8.4:14567: i/o timeout
-  f02767: 'dial, Germany, Frankfurt', // * [/ip4/18.192.27.227/tcp/37722] dial tcp4 0.0.0.0:46775->18.192.27.227:37722: i/o timeout
-  f02838: 'dial, China, Chengdu', // * [/ip4/118.123.228.9/tcp/48633] dial tcp4 0.0.0.0:46775->118.123.228.9:48633: i/o timeout
-  f03002: 'dial, China, Chongqing + Singapore', // * [/ip4/8.209.64.163/tcp/18880] dial tcp4 0.0.0.0:46775->8.209.64.163:18880: i/o timeout  * [/ip4/101.206.156.202/tcp/18880] dial tcp4 0.0.0.0:46775->101.206.156.202:18880: i/o timeout
-  f03144: 'dial, China, Hong Kong', // * [/ip4/103.214.41.38/tcp/23456] dial tcp4 0.0.0.0:46775->103.214.41.38:23456: i/o timeout
-  f03176: 'dial, USA, San Mateo', // * [/ip4/47.88.55.220/tcp/15470] dial tcp4 0.0.0.0:46775->47.88.55.220:15470: i/o timeout  * [/ip4/47.88.57.241/tcp/15470] dial tcp4 0.0.0.0:46775->47.88.57.241:15470: i/o timeout
+  f01012: 'dial, China, Guangzhou + Hong Kong', // * [/ip4/127.0.0.1/tcp/8888] dial tcp4 127.0.0.1:8888: connect: connection refused  * [/ip4/43.230.90.191/tcp/8888] dial tcp4 0.0.0.0:34919->43.230.90.191:8888: i/o timeout  * [/ip4/183.60.252.190/tcp/8888] dial tcp4 0.0.0.0:34919->183.60.252.190:8888: i/o timeout
+  f01154: 'dial, NR', // * [/ip4/192.168.2.50/tcp/1024] dial tcp4 0.0.0.0:34919->192.168.2.50:1024: i/o timeout
+  f01231: 'dial, Singapore', // * [/ip4/172.17.32.101/tcp/10241] dial tcp4 0.0.0.0:34919->172.17.32.101:10241: i/o timeout
+  f01235: 'dial, Singapore', // * [/ip4/170.33.12.95/tcp/16668] dial tcp4 0.0.0.0:34919->170.33.12.95:16668: i/o timeout
+  f01279: 'dial, China, Sichuan', // * [/ip4/118.116.2.66/tcp/40000] dial tcp4 0.0.0.0:34919->118.116.2.66:40000: i/o timeout
+  f01287: 'dial, China, Jiaxing, MaiTian', // * [/ip4/172.16.2.123/tcp/5472] dial tcp4 0.0.0.0:34919->172.16.2.123:5472: i/o timeout  * [/ip4/122.225.68.92/tcp/5472] dial tcp4 0.0.0.0:34919->122.225.68.92:5472: i/o timeout
+  f01475: 'dial, Singapore', // * [/ip4/170.33.12.186/tcp/17031] dial tcp4 0.0.0.0:34919->170.33.12.186:17031: i/o timeout
+  f01782: 'dial, China, Shanghai', // * [/ip4/139.196.240.164/tcp/11347] dial tcp4 0.0.0.0:34919->139.196.240.164:11347: i/o timeout
+  f01799: 'dial, China, Jinan + Singapore', // * [/ip4/222.175.139.190/tcp/63208] dial tcp4 0.0.0.0:34919->222.175.139.190:63208: i/o timeout  * [/ip4/195.123.237.226/tcp/62333] dial tcp4 0.0.0.0:34919->195.123.237.226:62333: i/o timeout
+  f01800: 'dial, China, Shenzhen + Chengdu', // * [/ip4/182.131.4.48/tcp/33333] dial tcp4 182.131.4.48:33333: connect: connection refused
+  f02299: 'dial, China, Beijing', // * [/ip4/182.18.83.2/tcp/1024] dial tcp4 0.0.0.0:34919->182.18.83.2:1024: i/o timeout
+  f02399: 'dial, China, Shanghai', // * [/ip4/175.24.25.61/tcp/44449] dial tcp4 0.0.0.0:34919->175.24.25.61:44449: i/o timeout
+  f02403: 'dial, UK, London + Manchester', // * [/ip4/2.58.45.33/tcp/18888] dial tcp4 0.0.0.0:34919->2.58.45.33:18888: i/o timeout  * [/ip4/2.58.47.71/tcp/18888] dial tcp4 0.0.0.0:34919->2.58.47.71:18888: i/o timeout
+  f02405: 'dial, China, Shenzhen', // * [/ip4/119.147.213.59/tcp/4123] dial tcp4 119.147.213.59:4123: connect: connection refused  * [/ip4/192.168.231.206/tcp/4123] dial tcp4 0.0.0.0:34919->192.168.231.206:4123: i/o timeout
+  f02417: 'dial, China, Zhangjiakou', // * [/ip4/116.132.221.10/tcp/10240] dial tcp4 116.132.221.10:10240: connect: connection refused
+  f02420: 'dial, USA', // * [/ip4/47.252.2.93/tcp/34571] dial tcp4 0.0.0.0:34919->47.252.2.93:34571: i/o timeout
+  f02422: "dial, China, Xi'an", // * [/ip4/117.38.4.82/tcp/22347] dial tcp4 0.0.0.0:34919->117.38.4.82:22347: i/o timeout
+  f02425: 'dial, China, Shanghai', // * [/ip4/103.78.229.73/tcp/14567] dial tcp4 0.0.0.0:34919->103.78.229.73:14567: i/o timeout
+  f02438: 'dial, China, Guangdong', // * [/ip4/47.115.10.99/tcp/14567] dial tcp4 0.0.0.0:34919->47.115.10.99:14567: i/o timeout
+  f02492: 'dial, China, Guangdong', // * [/ip4/103.142.248.7/tcp/3347] dial tcp4 0.0.0.0:34919->103.142.248.7:3347: i/o timeout
+  f02503: 'dial, Singapore', // * [/ip4/8.209.71.125/tcp/31432] dial tcp4 0.0.0.0:34919->8.209.71.125:31432: i/o timeout
+  f02528: 'dial, Singapore', // * [/ip4/8.209.70.199/tcp/58692] dial tcp4 0.0.0.0:34919->8.209.70.199:58692: i/o timeout
+  f02610: 'dial, Netherlands', // * [/ip4/213.227.129.197/tcp/14567] dial tcp4 0.0.0.0:34919->213.227.129.197:14567: i/o timeout
+  f02614: 'dial, Singapore', // * [/ip4/170.33.9.50/tcp/32633] dial tcp4 0.0.0.0:34919->170.33.9.50:32633: i/o timeout
+  f02626: 'dial, Singapore', // * [/ip4/8.209.115.161/tcp/58237] dial tcp4 0.0.0.0:34919->8.209.115.161:58237: i/o timeout
+  f02654: 'dial, China, Shanghai', // * [/ip4/114.88.222.181/tcp/43355] dial tcp4 0.0.0.0:34919->114.88.222.181:43355: i/o timeout
+  f02721: 'dial, USA', // * [/ip4/135.90.74.200/tcp/14567] dial tcp4 0.0.0.0:34919->135.90.74.200:14567: i/o timeout
+  f02723: 'dial, China, Tongling', // * [/ip4/60.173.23.17/tcp/23456] dial tcp4 0.0.0.0:34919->60.173.23.17:23456: i/o timeout
+  f02725: 'dial, China, Hong Kong', // * [/ip4/101.32.38.57/tcp/18899] dial tcp4 0.0.0.0:34919->101.32.38.57:18899: i/o timeout
+  f02726: 'dial, USA, Brooklyn', // * [/ip4/169.62.51.212/tcp/14567] dial tcp4 0.0.0.0:34919->169.62.51.212:14567: i/o timeout
+  f02731: 'dial, NR', // * [/ip4/10.30.8.4/tcp/14567] dial tcp4 0.0.0.0:34919->10.30.8.4:14567: i/o timeout
+  f02767: 'dial, Germany, Frankfurt', // * [/ip4/18.192.27.227/tcp/37722] dial tcp4 0.0.0.0:34919->18.192.27.227:37722: i/o timeout
+  f02838: 'dial, China, Chengdu', // * [/ip4/118.123.228.9/tcp/48633] dial tcp4 0.0.0.0:34919->118.123.228.9:48633: i/o timeout
+  f03002: 'dial, China, Chongqing + Singapore', // * [/ip4/8.209.64.163/tcp/18880] dial tcp4 0.0.0.0:34919->8.209.64.163:18880: i/o timeout  * [/ip4/101.206.156.202/tcp/18880] dial tcp4 0.0.0.0:34919->101.206.156.202:18880: i/o timeout
+  f03134: 'dial, China, Cangzhou, QiaoMu', // * [/ip4/111.161.72.108/tcp/4913] dial tcp4 0.0.0.0:34919->111.161.72.108:4913: i/o timeout
+  f03144: 'dial, China, Hong Kong', // * [/ip4/103.214.41.38/tcp/23456] dial tcp4 0.0.0.0:34919->103.214.41.38:23456: i/o timeout
+  f03176: 'dial, USA, San Mateo', // * [/ip4/47.88.57.241/tcp/15470] dial tcp4 0.0.0.0:34919->47.88.57.241:15470: i/o timeout  * [/ip4/47.88.55.220/tcp/15470] dial tcp4 0.0.0.0:34919->47.88.55.220:15470: i/o timeout
   f03224: 'dial, Ukraine, Kyiv', // * [/ip4/176.104.58.70/tcp/1348] dial tcp4 176.104.58.70:1348: i/o timeout
-  f03266: 'dial, USA', // * [/ip4/169.63.27.151/tcp/14567] dial tcp4 0.0.0.0:46775->169.63.27.151:14567: i/o timeout
-  f03287: 'dial, USA', // * [/ip4/149.81.122.165/tcp/14567] dial tcp4 0.0.0.0:46775->149.81.122.165:14567: i/o timeout
+  f03266: 'dial, USA', // * [/ip4/169.63.27.151/tcp/14567] dial tcp4 0.0.0.0:34919->169.63.27.151:14567: i/o timeout
+  f03287: 'dial, USA', // * [/ip4/149.81.122.165/tcp/14567] dial tcp4 0.0.0.0:34919->149.81.122.165:14567: i/o timeout
   f03325: 'dial, China, Guangdong', // * [/ip4/113.107.201.186/tcp/42243] dial tcp4 113.107.201.186:42243: connect: connection refused
-  f03328: 'dial, China, Xinxiang, Golden Miner', // * [/ip4/27.50.142.61/tcp/2347] dial tcp4 0.0.0.0:46775->27.50.142.61:2347: i/o timeout
-  f03358: 'dial, China, Ordos', // * [/ip4/1.183.72.211/tcp/30001] dial tcp4 0.0.0.0:46775->1.183.72.211:30001: i/o timeout
-  f03363: 'dial, China, Ordos', // * [/ip4/1.183.72.210/tcp/30003] dial tcp4 0.0.0.0:46775->1.183.72.210:30003: i/o timeout
-  f03367: 'dial, Singapore', // * [/ip4/8.209.99.1/tcp/14567] dial tcp4 0.0.0.0:46775->8.209.99.1:14567: i/o timeout
+  f03328: 'dial, China, Xinxiang, Golden Miner', // * [/ip4/27.50.142.61/tcp/2347] dial tcp4 0.0.0.0:34919->27.50.142.61:2347: i/o timeout
+  f03358: 'dial, China, Ordos', // * [/ip4/1.183.72.211/tcp/30001] dial tcp4 0.0.0.0:34919->1.183.72.211:30001: i/o timeout
+  f03363: 'dial, China, Ordos', // * [/ip4/1.183.72.210/tcp/30003] dial tcp4 0.0.0.0:34919->1.183.72.210:30003: i/o timeout
+  f03367: 'dial, Singapore', // * [/ip4/8.209.99.1/tcp/14567] dial tcp4 0.0.0.0:34919->8.209.99.1:14567: i/o timeout
+  f03482: 'dial, China, Karamay', // * [/ip4/221.228.238.110/tcp/23456] dial tcp4 221.228.238.110:23456: connect: connection refused
   f03488: 'dial, Korea, Yeongdeungpo-dong', // * [/ip4/112.216.168.42/tcp/10000] dial tcp4 112.216.168.42:10000: connect: connection refused
-  f04443: 'dial, China, Shanghai', // * [/ip4/116.229.183.166/tcp/29847] dial tcp4 0.0.0.0:46775->116.229.183.166:29847: i/o timeout
-  f07824: 'dial, NR', // * [/ip4/10.133.13.111/tcp/32759] dial tcp4 0.0.0.0:46775->10.133.13.111:32759: i/o timeout
-  f07919: 'dial, China, Beijing, Shanghai, Hunan', // * [/ip4/47.101.4.131/tcp/23456] failed to negotiate security protocol: read tcp4 144.217.11.204:46775->47.101.4.131:23456: read: connection reset by peer  * [/ip4/175.6.66.78/tcp/44913] dial tcp4 0.0.0.0:46775->175.6.66.78:44913: i/o timeout  * [/ip4/101.32.198.187/tcp/23456] dial tcp4 0.0.0.0:46775->101.32.198.187:23456: i/o timeout  * [/ip4/101.32.198.186/tcp/23456] dial tcp4 0.0.0.0:46775->101.32.198.186:23456: i/o timeout  * [/ip4/139.196.136.126/tcp/23456] failed to negotiate security protocol: read tcp4 144.217.11.204:46775->139.196.136.126:23456: read: connection reset by peer
-  f07969: 'dial, China, Hangzhou', // * [/ip4/121.52.246.48/tcp/5002] dial tcp4 0.0.0.0:46775->121.52.246.48:5002: i/o timeout
+  f04443: 'dial, China, Shanghai', // * [/ip4/116.229.183.166/tcp/29847] dial tcp4 0.0.0.0:34919->116.229.183.166:29847: i/o timeout
+  f07824: 'dial, NR', // * [/ip4/10.133.13.111/tcp/32759] dial tcp4 0.0.0.0:34919->10.133.13.111:32759: i/o timeout
+  f07919: 'dial, China, Beijing, Shanghai, Hunan', // * [/ip4/101.32.198.186/tcp/23456] dial tcp4 0.0.0.0:34919->101.32.198.186:23456: i/o timeout  * [/ip4/101.32.198.187/tcp/23456] dial tcp4 0.0.0.0:34919->101.32.198.187:23456: i/o timeout  * [/ip4/47.101.4.131/tcp/23456] dial tcp4 0.0.0.0:34919->47.101.4.131:23456: i/o timeout  * [/ip4/139.196.136.126/tcp/23456] failed to negotiate security protocol: read tcp4 144.217.11.204:34919->139.196.136.126:23456: read: connection reset by peer
+  f07969: 'dial, China, Hangzhou', // * [/ip4/121.52.246.48/tcp/5002] dial tcp4 0.0.0.0:34919->121.52.246.48:5002: i/o timeout
   f08091: 'dial, NR', // * [/ip4/0.0.0.0/tcp/5472] dial tcp4 0.0.0.0:5472: connect: connection refused
-  f08101: 'dial, NR', // * [/ip4/192.168.3.11/tcp/32759] dial tcp4 0.0.0.0:46775->192.168.3.11:32759: i/o timeout
-  f08148: 'dial, Hong Kong', // * [/ip4/103.108.182.27/tcp/30031] dial tcp4 0.0.0.0:46775->103.108.182.27:30031: i/o timeout
-  f08242: 'dial, USA', // * [/ip4/47.242.56.117/tcp/6789] dial tcp4 0.0.0.0:46775->47.242.56.117:6789: i/o timeout
-  f09002: "dial, China, Xi'an", // * [/ip4/113.200.194.196/tcp/32634] dial tcp4 0.0.0.0:46775->113.200.194.196:32634: i/o timeout
-  f09037: 'dial, Singapore', // * [/ip4/170.33.12.95/tcp/16666] dial tcp4 0.0.0.0:46775->170.33.12.95:16666: i/o timeout
-  f09589: 'dial, China, Changsha', // * [/ip4/175.10.162.119/tcp/5472] dial tcp4 0.0.0.0:46775->175.10.162.119:5472: i/o timeout
-  f09652: 'dial, Singapore', // * [/ip4/170.33.9.50/tcp/32632] dial tcp4 0.0.0.0:46775->170.33.9.50:32632: i/o timeout
-  f09675: 'dial, USA', // * [/ip4/47.242.94.248/tcp/9999] dial tcp4 0.0.0.0:46775->47.242.94.248:9999: i/o timeout  * [/ip4/58.57.65.61/tcp/9999] dial tcp4 0.0.0.0:46775->58.57.65.61:9999: i/o timeout
-  f09710: 'dial, China, Shenzhen', // * [/ip4/103.44.253.56/tcp/40573] dial tcp4 0.0.0.0:46775->103.44.253.56:40573: i/o timeout
-  f010010: 'dial, China, Changzhou', // * [/ip4/61.177.78.101/tcp/9981] dial tcp4 0.0.0.0:46775->61.177.78.101:9981: i/o timeout
-  f010048: 'dial, China, Shanghai', // * [/ip4/124.78.146.207/tcp/65500] dial tcp4 0.0.0.0:46775->124.78.146.207:65500: i/o timeout
-  f010056: 'dial, Singapore', // * [/ip4/8.209.82.79/tcp/14567] dial tcp4 0.0.0.0:46775->8.209.82.79:14567: i/o timeout
-  f010225: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12312] dial tcp4 0.0.0.0:46775->8.209.107.150:12312: i/o timeout
-  f010247: 'dial, China, Yantai', // * [/ip4/122.14.201.169/tcp/10240] dial tcp4 0.0.0.0:46775->122.14.201.169:10240: i/o timeout
-  f010400: 'dial, China, Shenyang', // * [/ip4/59.44.27.130/tcp/8787] dial tcp4 59.44.27.130:8787: connect: connection refused
-  f010424: 'dial, Australia, Sydney', // * [/ip4/43.241.189.214/tcp/39438] dial tcp4 0.0.0.0:46775->43.241.189.214:39438: i/o timeout
-  f010491: 'dial, China, Shenzhen', // * [/ip4/116.24.57.90/tcp/8888] dial tcp4 0.0.0.0:46775->116.24.57.90:8888: i/o timeout
-  f010501: 'dial, China, Hangzhou, Interstellar Roewe', // * [/ip4/183.134.218.26/tcp/21735] dial tcp4 0.0.0.0:46775->183.134.218.26:21735: i/o timeout
-  f010523: 'dial, China, Beijing, Interstellar Roewe', // * [/ip4/123.58.99.210/tcp/21735] dial tcp4 123.58.99.210:21735: connect: no route to host
-  f010538: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12320] dial tcp4 0.0.0.0:46775->8.209.107.150:12320: i/o timeout
-  f010616: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12313] dial tcp4 0.0.0.0:46775->8.209.107.150:12313: i/o timeout
-  f014251: 'dial, China, Shenzhen', // * [/ip4/58.220.66.66/tcp/46166] dial tcp4 0.0.0.0:46775->58.220.66.66:46166: i/o timeout
-  f014311: 'dial, Germany, Frankfurt', // * [/ip4/162.62.55.44/tcp/12309] dial tcp4 0.0.0.0:46775->162.62.55.44:12309: i/o timeout
-  f014386: 'dial, China, Panzhihua', // * [/ip4/180.149.130.16/tcp/9845] dial tcp4 0.0.0.0:46775->180.149.130.16:9845: i/o timeout
-  f014392: 'dial, USA + Russia, Khabarovsk + Japan, Heiwajima', // * [/ip4/66.42.38.110/tcp/9990] dial tcp4 0.0.0.0:46775->66.42.38.110:9990: i/o timeout  * [/ip4/172.247.228.122/tcp/9999] dial tcp4 0.0.0.0:46775->172.247.228.122:9999: i/o timeout  * [/ip4/92.223.72.130/tcp/9999] dial tcp4 0.0.0.0:46775->92.223.72.130:9999: i/o timeout
-  f014394: 'dial, China, Suzhou, IPFSCloud', // * [/ip4/222.92.5.147/tcp/42799] dial tcp4 0.0.0.0:46775->222.92.5.147:42799: i/o timeout
-  f014395: 'dial, China, Dongguan', // * [/ip4/125.93.73.102/tcp/51105] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWJyNmap2Z6WWb6xBqDwUpKeFkGHaBHDkMKhrkd6jj6FEY, but remote key matches 12D3KooWB6MM5Fda1RdDyTdJCPMpvHFq6HSJfPV9DeoqGSbfwe1d
+  f08094: 'dial, China, Guangzhou', // * [/ip4/183.2.154.179/tcp/23450] failed to negotiate security protocol: read tcp4 144.217.11.204:34919->183.2.154.179:23450: read: connection reset by peer
+  f08101: 'dial, NR', // * [/ip4/192.168.3.11/tcp/32759] dial tcp4 0.0.0.0:34919->192.168.3.11:32759: i/o timeout
+  f08148: 'dial, Hong Kong', // * [/ip4/103.108.182.27/tcp/30031] dial tcp4 0.0.0.0:34919->103.108.182.27:30031: i/o timeout
+  f08242: 'dial, USA', // * [/ip4/47.242.56.117/tcp/6789] dial tcp4 0.0.0.0:34919->47.242.56.117:6789: i/o timeout
+  f08264: 'dial, China, Xianning', // * [/ip4/103.222.191.115/tcp/1161] dial tcp4 0.0.0.0:34919->103.222.191.115:1161: i/o timeout
+  f09002: "dial, China, Xi'an", // * [/ip4/113.200.194.196/tcp/32634] dial tcp4 0.0.0.0:34919->113.200.194.196:32634: i/o timeout
+  f09037: 'dial, Singapore', // * [/ip4/170.33.12.95/tcp/16666] dial tcp4 0.0.0.0:34919->170.33.12.95:16666: i/o timeout
+  f09589: 'dial, China, Changsha', // * [/ip4/175.10.162.119/tcp/5472] dial tcp4 0.0.0.0:34919->175.10.162.119:5472: i/o timeout
+  f09652: 'dial, Singapore', // * [/ip4/170.33.9.50/tcp/32632] dial tcp4 0.0.0.0:34919->170.33.9.50:32632: i/o timeout
+  f09675: 'dial, USA', // * [/ip4/47.242.94.248/tcp/9999] dial tcp4 0.0.0.0:34919->47.242.94.248:9999: i/o timeout  * [/ip4/58.57.65.61/tcp/9999] dial tcp4 0.0.0.0:34919->58.57.65.61:9999: i/o timeout
+  f09710: 'dial, China, Shenzhen', // * [/ip4/103.44.253.56/tcp/40573] dial tcp4 0.0.0.0:34919->103.44.253.56:40573: i/o timeout
+  f010010: 'dial, China, Changzhou', // * [/ip4/61.177.78.101/tcp/9981] dial tcp4 0.0.0.0:34919->61.177.78.101:9981: i/o timeout
+  f010038: 'dial, China, Hangzhou + Singapore', // * [/ip4/10.10.20.109/tcp/39774] dial tcp4 0.0.0.0:34919->10.10.20.109:39774: i/o timeout  * [/ip4/170.33.12.166/tcp/39774] dial tcp4 0.0.0.0:34919->170.33.12.166:39774: i/o timeout
+  f010048: 'dial, China, Shanghai', // * [/ip4/124.78.146.207/tcp/65500] dial tcp4 0.0.0.0:34919->124.78.146.207:65500: i/o timeout
+  f010056: 'dial, Singapore', // * [/ip4/8.209.82.79/tcp/14567] dial tcp4 0.0.0.0:34919->8.209.82.79:14567: i/o timeout
+  f010225: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12312] dial tcp4 0.0.0.0:34919->8.209.107.150:12312: i/o timeout
+  f010247: 'dial, China, Yantai', // * [/ip4/122.14.201.169/tcp/10240] dial tcp4 0.0.0.0:34919->122.14.201.169:10240: i/o timeout
+  f010399: 'dial, China, Guangzhou', // * [/ip4/183.2.154.156/tcp/36699] dial tcp4 0.0.0.0:34919->183.2.154.156:36699: i/o timeout
+  f010400: 'dial, China, Shenyang', // * [/ip4/59.44.27.130/tcp/8787] dial tcp4 0.0.0.0:34919->59.44.27.130:8787: i/o timeout
+  f010424: 'dial, Australia, Sydney', // * [/ip4/43.241.189.214/tcp/39438] dial tcp4 0.0.0.0:34919->43.241.189.214:39438: i/o timeout
+  f010501: 'dial, China, Hangzhou, Interstellar Roewe', // * [/ip4/183.134.218.26/tcp/21735] dial tcp4 0.0.0.0:34919->183.134.218.26:21735: i/o timeout
+  f010523: 'dial, China, Beijing, Interstellar Roewe', // * [/ip4/123.58.99.210/tcp/21735] dial tcp4 0.0.0.0:34919->123.58.99.210:21735: i/o timeout
+  f010538: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12320] dial tcp4 0.0.0.0:34919->8.209.107.150:12320: i/o timeout
+  f010616: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12313] dial tcp4 0.0.0.0:34919->8.209.107.150:12313: i/o timeout
+  f014251: 'dial, China, Shenzhen', // * [/ip4/58.220.66.66/tcp/46166] dial tcp4 0.0.0.0:34919->58.220.66.66:46166: i/o timeout
+  f014311: 'dial, Germany, Frankfurt', // * [/ip4/162.62.55.44/tcp/12309] dial tcp4 0.0.0.0:34919->162.62.55.44:12309: i/o timeout
+  f014386: 'dial, China, Panzhihua', // * [/ip4/180.149.130.16/tcp/9845] dial tcp4 0.0.0.0:34919->180.149.130.16:9845: i/o timeout
+  f014392: 'dial, USA + Russia, Khabarovsk + Japan, Heiwajima', // * [/ip4/66.42.38.110/tcp/9990] dial tcp4 0.0.0.0:34919->66.42.38.110:9990: i/o timeout  * [/ip4/172.247.228.122/tcp/9999] dial tcp4 0.0.0.0:34919->172.247.228.122:9999: i/o timeout  * [/ip4/92.223.72.130/tcp/9999] dial tcp4 0.0.0.0:34919->92.223.72.130:9999: i/o timeout
+  f014394: 'dial, China, Suzhou, IPFSCloud', // * [/ip4/222.92.5.147/tcp/42799] dial tcp4 0.0.0.0:34919->222.92.5.147:42799: i/o timeout
+  f014395: 'dial, China, Dongguan', // * [/ip4/125.93.73.102/tcp/51105] dial tcp4 125.93.73.102:51105: connect: connection refused
   f014415: 'dial, USA', // * [/ip4/13.248.165.152/tcp/33612] failed to negotiate security protocol: EOF
-  f014487: 'dial, Singapore', // * [/ip4/47.241.59.58/tcp/45455] dial tcp4 0.0.0.0:46775->47.241.59.58:45455: i/o timeout
-  f014522: 'dial, China, Shanghai', // * [/ip4/81.68.170.164/tcp/5474] dial tcp4 0.0.0.0:46775->81.68.170.164:5474: i/o timeout
-  f014706: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12308] dial tcp4 0.0.0.0:46775->8.209.107.150:12308: i/o timeout
-  f014778: 'dial, Germany, Frankfurt', // * [/ip4/162.62.55.44/tcp/12310] dial tcp4 0.0.0.0:46775->162.62.55.44:12310: i/o timeout
-  f014804: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12314] dial tcp4 0.0.0.0:46775->8.209.107.150:12314: i/o timeout
-  f015685: 'dial, China, Shanghai', // * [/ip4/222.64.141.185/tcp/40321] dial tcp4 0.0.0.0:46775->222.64.141.185:40321: i/o timeout
-  f015731: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12329] dial tcp4 0.0.0.0:46775->8.209.107.150:12329: i/o timeout
-  f015767: 'dial, Russia, Khabarovsk + Japan, Khabarovsk + USA', // * [/ip4/66.42.38.110/tcp/9998] dial tcp4 0.0.0.0:46775->66.42.38.110:9998: i/o timeout  * [/ip4/92.223.72.130/tcp/9998] dial tcp4 0.0.0.0:46775->92.223.72.130:9998: i/o timeout  * [/ip4/172.247.228.122/tcp/9998] dial tcp4 0.0.0.0:46775->172.247.228.122:9998: i/o timeout
-  f015848: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12321] dial tcp4 0.0.0.0:46775->8.209.107.150:12321: i/o timeout
-  f015919: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12316] dial tcp4 0.0.0.0:46775->8.209.107.150:12316: i/o timeout
-  f015922: 'dial, Germany, Frankfurt', // * [/ip4/162.62.55.44/tcp/12317] dial tcp4 0.0.0.0:46775->162.62.55.44:12317: i/o timeout
-  f015925: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12318] dial tcp4 0.0.0.0:33929->8.209.107.150:12318: i/o timeout
-  f015926: 'dial, Germany, Frankfurt', // * [/ip4/162.62.55.44/tcp/12319] dial tcp4 0.0.0.0:46775->162.62.55.44:12319: i/o timeout
-  f016563: 'dial, China, Deyang + Singapore', // * [/ip4/125.64.78.27/tcp/8001] dial tcp4 125.64.78.27:8001: connect: connection refused  * [/ip4/161.117.186.53/tcp/8001] failed to negotiate security protocol: read tcp4 144.217.11.204:46775->161.117.186.53:8001: read: connection reset by peer  * [/ip4/192.168.109.1/tcp/8001] dial tcp4 0.0.0.0:46775->192.168.109.1:8001: i/o timeout
-  f019074: 'dial, NR', // * [/ip4/192.168.2.55/tcp/3000] dial tcp4 0.0.0.0:46775->192.168.2.55:3000: i/o timeout
-  f019100: 'dial, Romania, Cluj-Napoca, noisyfan', // * [/ip4/79.119.122.118/tcp/55555] dial tcp4 0.0.0.0:46775->79.119.122.118:55555: i/o timeout
-  f019638: 'dial, China, Ordos', // * [/ip4/1.183.72.210/tcp/30005] dial tcp4 0.0.0.0:46775->1.183.72.210:30005: i/o timeout
-  f020315: 'dial, China, Guangzhou', // * [/ip4/103.104.170.72/tcp/56432] dial tcp4 0.0.0.0:46775->103.104.170.72:56432: i/o timeout
-  f020330: 'dial, Singapore', // * [/ip4/8.130.24.60/tcp/14567] dial tcp4 0.0.0.0:46775->8.130.24.60:14567: i/o timeout
-  f020331: 'dial, China, Beijing', // * [/ip4/39.101.70.154/tcp/14567] dial tcp4 0.0.0.0:46775->39.101.70.154:14567: i/o timeout
-  f020436: 'dial, China, Beijing', // * [/ip4/111.197.6.57/tcp/24002] dial tcp4 0.0.0.0:46775->111.197.6.57:24002: i/o timeout
-  f020452: 'dial, Singapore', // * [/ip4/170.33.12.186/tcp/17012] dial tcp4 0.0.0.0:46775->170.33.12.186:17012: i/o timeout
-  f020522: 'dial, Singapore', // * [/ip4/8.211.49.16/tcp/14567] dial tcp4 0.0.0.0:46775->8.211.49.16:14567: i/o timeout
-  f020604: 'dial, Singapore', // * [/ip4/8.209.106.203/tcp/14567] dial tcp4 0.0.0.0:46775->8.209.106.203:14567: i/o timeout
-  f020618: 'dial, Singapore', // * [/ip4/170.33.12.186/tcp/17011] dial tcp4 0.0.0.0:46775->170.33.12.186:17011: i/o timeout
-  f020742: 'dial, China, Shanghai', // * [/ip4/175.24.25.61/tcp/53456] dial tcp4 0.0.0.0:46775->175.24.25.61:53456: i/o timeout
-  f021461: 'dial, Singapore', // * [/ip4/170.33.12.186/tcp/17361] dial tcp4 0.0.0.0:46775->170.33.12.186:17361: i/o timeout
-  f021479: 'dial, NR', // * [/ip4/172.18.130.45/tcp/10241] dial tcp4 0.0.0.0:46775->172.18.130.45:10241: i/o timeout
-  f021525: 'dial, China, Guangdong', // * [/ip4/121.201.41.87/tcp/14567] dial tcp4 0.0.0.0:46775->121.201.41.87:14567: i/o timeout
-  f021532: 'dial, China, Shanghai', // * [/ip4/121.46.237.2/tcp/23456] dial tcp4 0.0.0.0:46775->121.46.237.2:23456: i/o timeout
-  f021547: 'dial, Singapore', // * [/ip4/170.33.12.186/tcp/17329] dial tcp4 0.0.0.0:46775->170.33.12.186:17329: i/o timeout
-  f022111: 'dial, China, Quanzhou', // * [/ip4/112.47.13.98/tcp/8081] dial tcp4 0.0.0.0:46775->112.47.13.98:8081: i/o timeout
-  f022227: 'dial, China, Jiangsu', // * [/ip4/112.30.158.226/tcp/10240] dial tcp4 0.0.0.0:46775->112.30.158.226:10240: i/o timeout
-  f022522: 'dial, China, Dongguan', // * [/ip4/113.105.174.12/tcp/10000] dial tcp4 0.0.0.0:46775->113.105.174.12:10000: i/o timeout
-  f022687: 'dial, China, Chengdu', // * [/ip4/182.131.4.194/tcp/10080] dial tcp4 0.0.0.0:46775->182.131.4.194:10080: i/o timeout
+  f014522: 'dial, China, Shanghai', // * [/ip4/81.68.170.164/tcp/5474] dial tcp4 0.0.0.0:34919->81.68.170.164:5474: i/o timeout
+  f014706: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12308] dial tcp4 0.0.0.0:34919->8.209.107.150:12308: i/o timeout
+  f014778: 'dial, Germany, Frankfurt', // * [/ip4/162.62.55.44/tcp/12310] dial tcp4 0.0.0.0:34919->162.62.55.44:12310: i/o timeout
+  f014804: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12314] dial tcp4 0.0.0.0:34919->8.209.107.150:12314: i/o timeout
+  f015685: 'dial, China, Shanghai', // * [/ip4/222.64.141.185/tcp/40321] dial tcp4 0.0.0.0:34919->222.64.141.185:40321: i/o timeout
+  f015731: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12329] dial tcp4 0.0.0.0:34919->8.209.107.150:12329: i/o timeout
+  f015767: 'dial, Russia, Khabarovsk + Japan, Khabarovsk + USA', // * [/ip4/172.247.228.122/tcp/9998] dial tcp4 0.0.0.0:34919->172.247.228.122:9998: i/o timeout  * [/ip4/92.223.72.130/tcp/9998] dial tcp4 0.0.0.0:34919->92.223.72.130:9998: i/o timeout  * [/ip4/66.42.38.110/tcp/9998] dial tcp4 0.0.0.0:34919->66.42.38.110:9998: i/o timeout
+  f015848: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12321] dial tcp4 0.0.0.0:34919->8.209.107.150:12321: i/o timeout
+  f015919: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12316] dial tcp4 0.0.0.0:34919->8.209.107.150:12316: i/o timeout
+  f015922: 'dial, Germany, Frankfurt', // * [/ip4/162.62.55.44/tcp/12317] dial tcp4 0.0.0.0:34919->162.62.55.44:12317: i/o timeout
+  f015925: 'dial, Singapore', // * [/ip4/8.209.107.150/tcp/12318] dial tcp4 0.0.0.0:34919->8.209.107.150:12318: i/o timeout
+  f015926: 'dial, Germany, Frankfurt', // * [/ip4/162.62.55.44/tcp/12319] dial tcp4 0.0.0.0:34919->162.62.55.44:12319: i/o timeout
+  f016563: 'dial, China, Deyang + Singapore', // * [/ip4/161.117.186.53/tcp/8001] failed to negotiate security protocol: read tcp4 144.217.11.204:34919->161.117.186.53:8001: read: connection reset by peer  * [/ip4/125.64.78.27/tcp/8001] dial tcp4 125.64.78.27:8001: connect: connection refused  * [/ip4/192.168.109.1/tcp/8001] dial tcp4 0.0.0.0:34919->192.168.109.1:8001: i/o timeout
+  f017229: 'dial, China, Sichuan', // * [/ip4/118.116.2.60/tcp/6666] dial tcp4 118.116.2.60:6666: connect: no route to host  * [/ip4/183.221.215.195/tcp/21735] dial tcp4 0.0.0.0:34919->183.221.215.195:21735: i/o timeout
+  f019074: 'dial, NR', // * [/ip4/192.168.2.55/tcp/3000] dial tcp4 0.0.0.0:34919->192.168.2.55:3000: i/o timeout
+  f019099: 'dial, China, Hong Kong + Guangzhou', // * [/ip4/45.158.182.10/tcp/12345] dial tcp4 0.0.0.0:34919->45.158.182.10:12345: i/o timeout
+  f019100: 'dial, Romania, Cluj-Napoca, noisyfan', // * [/ip4/79.119.122.118/tcp/55555] dial tcp4 0.0.0.0:34919->79.119.122.118:55555: i/o timeout
+  f019638: 'dial, China, Ordos', // * [/ip4/1.183.72.210/tcp/30005] dial tcp4 0.0.0.0:34919->1.183.72.210:30005: i/o timeout
+  f020315: 'dial, China, Guangzhou', // * [/ip4/103.104.170.72/tcp/56432] dial tcp4 0.0.0.0:34919->103.104.170.72:56432: i/o timeout
+  f020330: 'dial, Singapore', // * [/ip4/8.130.24.60/tcp/14567] dial tcp4 0.0.0.0:34919->8.130.24.60:14567: i/o timeout
+  f020331: 'dial, China, Beijing', // * [/ip4/39.101.70.154/tcp/14567] dial tcp4 0.0.0.0:34919->39.101.70.154:14567: i/o timeout
+  f020436: 'dial, China, Beijing', // * [/ip4/111.192.87.239/tcp/24002] dial tcp4 0.0.0.0:34919->111.192.87.239:24002: i/o timeout
+  f020452: 'dial, Singapore', // * [/ip4/170.33.12.186/tcp/17012] dial tcp4 0.0.0.0:34919->170.33.12.186:17012: i/o timeout
+  f020522: 'dial, Singapore', // * [/ip4/8.211.49.16/tcp/14567] dial tcp4 0.0.0.0:34919->8.211.49.16:14567: i/o timeout
+  f020604: 'dial, Singapore', // * [/ip4/8.209.106.203/tcp/14567] dial tcp4 0.0.0.0:34919->8.209.106.203:14567: i/o timeout
+  f020618: 'dial, Singapore', // * [/ip4/170.33.12.186/tcp/17011] dial tcp4 0.0.0.0:34919->170.33.12.186:17011: i/o timeout
+  f020742: 'dial, China, Shanghai', // * [/ip4/175.24.25.61/tcp/53456] dial tcp4 0.0.0.0:34919->175.24.25.61:53456: i/o timeout
+  f021461: 'dial, Singapore', // * [/ip4/170.33.12.186/tcp/17361] dial tcp4 0.0.0.0:34919->170.33.12.186:17361: i/o timeout
+  f021479: 'dial, NR', // * [/ip4/172.18.117.166/tcp/10241] dial tcp4 0.0.0.0:34919->172.18.117.166:10241: i/o timeout
+  f021525: 'dial, China, Guangdong', // * [/ip4/121.201.41.87/tcp/14567] dial tcp4 0.0.0.0:34919->121.201.41.87:14567: i/o timeout
+  f021532: 'dial, China, Shanghai', // * [/ip4/121.46.237.2/tcp/23456] dial tcp4 0.0.0.0:34919->121.46.237.2:23456: i/o timeout
+  f021547: 'dial, Singapore', // * [/ip4/170.33.12.186/tcp/17329] dial tcp4 0.0.0.0:34919->170.33.12.186:17329: i/o timeout
+  f022111: 'dial, China, Quanzhou', // * [/ip4/112.47.13.98/tcp/8081] dial tcp4 0.0.0.0:34919->112.47.13.98:8081: i/o timeout
+  f022227: 'dial, China, Jiangsu', // * [/ip4/112.30.158.226/tcp/10240] dial tcp4 0.0.0.0:34919->112.30.158.226:10240: i/o timeout
+  f022399: 'dial, China, Beijing', // * [/ip4/123.125.194.158/tcp/5678] dial tcp4 123.125.194.158:5678: connect: connection refused
+  f022522: 'dial, China, Dongguan', // * [/ip4/113.105.174.12/tcp/10000] dial tcp4 0.0.0.0:34919->113.105.174.12:10000: i/o timeout
+  f022687: 'dial, China, Chengdu', // * [/ip4/182.131.4.194/tcp/10080] dial tcp4 0.0.0.0:34919->182.131.4.194:10080: i/o timeout
   f022853: 'dial, China, Fuzhou', // * [/ip4/150.242.97.226/tcp/11105] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWRrw3MpPrr5gaVyv9hHAyLosb76osgrGAKuByXycihWEY, but remote key matches 12D3KooWMarcqTkhZsmPHAZmZvaGNh6WC16hEfVhA6fvyJVe5HVB
-  f023001: 'dial, China, Changsha', // * [/ip4/192.168.1.236/tcp/34617] dial tcp4 0.0.0.0:33929->192.168.1.236:34617: i/o timeout
-  f023200: 'dial, China, Shanghai', // * [/ip4/175.24.25.61/tcp/13457] dial tcp4 0.0.0.0:46775->175.24.25.61:13457: i/o timeout
-  f023205: 'dial, Singapore', // * [/ip4/8.130.25.103/tcp/14567] dial tcp4 0.0.0.0:33929->8.130.25.103:14567: i/o timeout
+  f023001: 'dial, China, Changsha', // * [/ip4/192.168.1.236/tcp/34617] dial tcp4 0.0.0.0:34919->192.168.1.236:34617: i/o timeout
+  f023200: 'dial, China, Shanghai', // * [/ip6/::1/tcp/46315] dial tcp6 [::1]:46315: connect: connection refused  * [/ip4/127.0.0.1/tcp/23456] dial tcp4 127.0.0.1:23456: connect: connection refused  * [/ip4/43.240.207.211/tcp/23456] dial tcp4 43.240.207.211:23456: connect: connection refused  * [/ip4/175.24.25.61/tcp/13457] dial tcp4 0.0.0.0:34919->175.24.25.61:13457: i/o timeout  * [/ip4/172.31.92.4/tcp/23456] dial tcp4 0.0.0.0:34919->172.31.92.4:23456: i/o timeout
+  f023205: 'dial, Singapore', // * [/ip4/8.130.25.103/tcp/14567] dial tcp4 0.0.0.0:34919->8.130.25.103:14567: i/o timeout
   f023462: 'dial, China, Chongqing', // * [/ip4/101.206.156.202/tcp/23018] dial tcp4 101.206.156.202:23018: connect: connection refused
-  f023530: 'dial, China, Shanghai', // * [/ip4/172.17.32.53/tcp/10241] dial tcp4 0.0.0.0:33929->172.17.32.53:10241: i/o timeout
-  f023561: 'dial, China, Shenzhen', // * [/ip4/103.44.247.32/tcp/40573] dial tcp4 0.0.0.0:33929->103.44.247.32:40573: i/o timeout
-  f023985: 'dial, China, Chongqing', // * [/ip4/101.206.156.202/tcp/23152] dial tcp4 101.206.156.202:23152: connect: connection refused
-  f024066: 'dial, China, Chengdu', // * [/ip4/182.131.4.197/tcp/10080] dial tcp4 0.0.0.0:33929->182.131.4.197:10080: i/o timeout
-  f024089: 'dial, NR', // * [/ip4/10.11.4.210/tcp/1234] dial tcp4 0.0.0.0:33929->10.11.4.210:1234: i/o timeout
-  f024137: 'dial, Singapore', // * [/ip4/8.130.25.208/tcp/14567] dial tcp4 0.0.0.0:33929->8.130.25.208:14567: i/o timeout
+  f023530: 'dial, China, Shanghai', // * [/ip4/172.17.32.53/tcp/10241] dial tcp4 0.0.0.0:34919->172.17.32.53:10241: i/o timeout
+  f023561: 'dial, China, Shenzhen', // * [/ip4/103.44.247.32/tcp/40573] dial tcp4 0.0.0.0:34919->103.44.247.32:40573: i/o timeout
+  f024066: 'dial, China, Chengdu', // * [/ip4/182.131.4.197/tcp/10080] dial tcp4 0.0.0.0:34919->182.131.4.197:10080: i/o timeout
+  f024089: 'dial, NR', // * [/ip4/10.11.4.210/tcp/1234] dial tcp4 0.0.0.0:34919->10.11.4.210:1234: i/o timeout
+  f024137: 'dial, Singapore', // * [/ip4/8.130.25.208/tcp/14567] dial tcp4 0.0.0.0:34919->8.130.25.208:14567: i/o timeout
   f024182: 'dial, China, Hong Kong', // * [/ip4/14.136.246.136/tcp/46717] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWQFqPz3vvYGGxB259qZfg3qzoKEnafG8DbfMKUHEUQ26z, but remote key matches 12D3KooWHuQtiCKJykJscPMrNiXaguBWKuhBfKDfGP6ieR6SgwdF
-  f025002: 'dial, NR', // * [/ip4/10.30.8.211/tcp/14567] dial tcp4 0.0.0.0:33929->10.30.8.211:14567: i/o timeout
+  f024511: 'dial, China, Shenzhen', // * [/ip4/103.44.247.137/tcp/51105] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWMgkmvx3KwMPDLEw8QrSZbwhy7umbYpkhNGAg7wLgNKdM, but remote key matches 12D3KooWF5iYyjF8GMtEnjHuaASdQJVks9dPLVK8CYS57kT7NqRi
+  f025002: 'dial, NR', // * [/ip4/10.30.8.211/tcp/14567] dial tcp4 0.0.0.0:34919->10.30.8.211:14567: i/o timeout
   f025017: 'dial, China, Hefei, 一三科技-913', // * [/ip4/175.6.250.70/tcp/51105] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWBZeFG1c5zNwCCVnCa6g5TyrUQu5f9oLTYsZyvSigBEXu, but remote key matches 12D3KooWHNxRAA9LvkwDt5a1oQUAqoHzVYXqwueDHo1kGDxAHMQN
-  f025019: 'dial, China, Taiwan, Hsinchu', // * [/ip4/140.113.194.250/tcp/24002] dial tcp4 0.0.0.0:33929->140.113.194.250:24002: i/o timeout
+  f025019: 'dial, China, Taiwan, Hsinchu', // * [/ip4/140.113.194.250/tcp/24002] dial tcp4 0.0.0.0:34919->140.113.194.250:24002: i/o timeout
   f029416: 'dial, NR', // * [/ip4/0.0.0.0/tcp/1024] dial tcp4 0.0.0.0:1024: connect: connection refused
   f029665: 'dial, China, Shenyang', // * [/ip4/124.95.135.132/tcp/7000] dial tcp4 124.95.135.132:7000: connect: connection refused
-  f032824: 'dial, USA, Cedar Park', // * [/ip4/104.54.236.61/tcp/24001] dial tcp4 0.0.0.0:33929->104.54.236.61:24001: i/o timeout
-  f034544: 'dial, NR', // * [/ip4/183.131.58.134/tcp/14567] dial tcp4 0.0.0.0:33929->183.131.58.134:14567: i/o timeout
-  f034545: 'dial, NR', // * [/ip4/183.131.58.102/tcp/14567] dial tcp4 0.0.0.0:33929->183.131.58.102:14567: i/o timeout
-  f034548: 'dial, NR', // * [/ip4/183.131.58.70/tcp/14567] dial tcp4 0.0.0.0:33929->183.131.58.70:14567: i/o timeout
-  f034592: 'dial, NR', // * [/ip4/127.0.0.1/tcp/33679] dial tcp4 127.0.0.1:33679: connect: connection refused  * [/ip6/::1/tcp/45027] dial tcp6 [::1]:45027: connect: connection refused  * [/ip4/119.147.213.217/tcp/45137] dial tcp4 0.0.0.0:33929->119.147.213.217:45137: i/o timeout  * [/ip4/192.168.5.135/tcp/33679] dial tcp4 0.0.0.0:33929->192.168.5.135:33679: i/o timeout  * [/ip4/119.147.213.56/tcp/33679] dial tcp4 0.0.0.0:33929->119.147.213.56:33679: i/o timeout
-  f034701: 'dial, China, Shenzhen', // * [/ip4/103.44.247.136/tcp/51105] dial tcp4 0.0.0.0:33929->103.44.247.136:51105: i/o timeout
-  f040218: 'dial, China, Wuxi', // * [/ip4/58.215.14.146/tcp/30000] dial tcp4 0.0.0.0:46775->58.215.14.146:30000: i/o timeout
-  f043929: 'dial, NR', // * [/ip4/120.232.96.38/tcp/24001] dial tcp4 0.0.0.0:33929->120.232.96.38:24001: i/o timeout
-  f044315: 'dial, NR', // * [/ip4/127.0.0.1/tcp/23456] dial tcp4 127.0.0.1:23456: connect: connection refused  * [/ip4/183.136.238.136/tcp/2051] dial tcp4 183.136.238.136:2051: connect: connection refused  * [/ip4/183.136.238.136/tcp/2055] dial tcp4 183.136.238.136:2055: connect: connection refused  * [/ip4/172.16.0.10/tcp/23456] dial tcp4 0.0.0.0:33929->172.16.0.10:23456: i/o timeout
-  f045505: 'dial, China, Ordos', // * [/ip4/1.183.72.226/tcp/12700] dial tcp4 0.0.0.0:33929->1.183.72.226:12700: i/o timeout
-  f053140: 'dial, China, Shenzhen', // * [/ip4/119.147.149.191/tcp/40573] dial tcp4 0.0.0.0:33929->119.147.149.191:40573: i/o timeout
-  f053229: 'dial, NR', // * [/ip4/172.18.112.203/tcp/10241] dial tcp4 0.0.0.0:33929->172.18.112.203:10241: i/o timeout
+  f030379: 'dial, Korea, Uiwang', // * [/ip4/211.170.25.236/tcp/20000] dial tcp4 0.0.0.0:34919->211.170.25.236:20000: i/o timeout
+  f032824: 'dial, USA, Cedar Park', // * [/ip4/104.54.236.61/tcp/24001] dial tcp4 0.0.0.0:34919->104.54.236.61:24001: i/o timeout
+  f034544: 'dial, NR', // * [/ip4/183.131.58.134/tcp/14567] dial tcp4 0.0.0.0:34919->183.131.58.134:14567: i/o timeout
+  f034545: 'dial, NR', // * [/ip4/183.131.58.102/tcp/14567] dial tcp4 0.0.0.0:34919->183.131.58.102:14567: i/o timeout
+  f034548: 'dial, NR', // * [/ip4/183.131.58.70/tcp/14567] dial tcp4 0.0.0.0:34919->183.131.58.70:14567: i/o timeout
+  f034567: 'dial, China, Shenzhen', // * [/ip4/103.44.247.112/tcp/40573] dial tcp4 0.0.0.0:34919->103.44.247.112:40573: i/o timeout
+  f034592: 'dial, NR', // * [/ip4/119.147.213.217/tcp/45137] dial tcp4 0.0.0.0:34919->119.147.213.217:45137: i/o timeout
+  f034701: 'dial, China, Shenzhen', // * [/ip4/103.44.247.136/tcp/51105] dial tcp4 0.0.0.0:34919->103.44.247.136:51105: i/o timeout
+  f043929: 'dial, NR', // * [/ip4/120.232.96.38/tcp/24001] dial tcp4 0.0.0.0:34919->120.232.96.38:24001: i/o timeout
+  f045505: 'dial, China, Ordos', // * [/ip4/1.183.72.226/tcp/12700] dial tcp4 0.0.0.0:34919->1.183.72.226:12700: i/o timeout
+  f048669: 'dial, NR', // * [/ip4/58.220.66.88/tcp/22332] dial tcp4 0.0.0.0:34919->58.220.66.88:22332: i/o timeout
+  f050022: 'dial, China, Changsha', // * [/ip4/113.219.201.162/tcp/24001] dial tcp4 113.219.201.162:24001: connect: connection refused
+  f053229: 'dial, NR', // * [/ip4/172.18.112.203/tcp/10241] dial tcp4 0.0.0.0:34919->172.18.112.203:10241: i/o timeout
   f054499: 'dial, NR', // * [/ip4/0.0.0.0/tcp/5472] dial tcp4 0.0.0.0:5472: connect: connection refused
-  f054666: 'dial, China, Changsha', // * [/ip4/36.158.255.7/tcp/1024] dial tcp4 0.0.0.0:33929->36.158.255.7:1024: i/o timeout
-  f055522: 'dial, USA', // * [/ip4/207.2.201.158/tcp/24002] dial tcp4 0.0.0.0:33929->207.2.201.158:24002: i/o timeout
-  f057070: 'dial, NR', // * [/ip4/117.71.104.68/tcp/10240] dial tcp4 0.0.0.0:33929->117.71.104.68:10240: i/o timeout
-  f057127: 'dial, China, Suzhou', // * [/ip4/58.211.213.210/tcp/20108] dial tcp4 58.211.213.210:20108: connect: connection refused
-  f057466: 'dial, China, Guangzhou', // * [/ip4/116.21.71.7/tcp/24001] dial tcp4 0.0.0.0:46775->116.21.71.7:24001: i/o timeout
-  f057683: 'dial, NR', // * [/ip4/0.0.0.0/tcp/42545] dial tcp4 0.0.0.0:42545: connect: connection refused
+  f054666: 'dial, China, Changsha', // * [/ip4/36.158.255.7/tcp/1024] dial tcp4 0.0.0.0:34919->36.158.255.7:1024: i/o timeout
+  f055123: 'dial, Korea, Busan', // * [/ip4/125.143.130.70/tcp/24002] dial tcp4 0.0.0.0:34919->125.143.130.70:24002: i/o timeout
+  f055522: 'dial, USA', // * [/ip4/207.2.201.158/tcp/24002] dial tcp4 0.0.0.0:34919->207.2.201.158:24002: i/o timeout
+  f057070: 'dial, NR', // * [/ip4/117.71.104.68/tcp/10240] dial tcp4 0.0.0.0:34919->117.71.104.68:10240: i/o timeout
+  f057466: 'dial, China, Guangzhou', // * [/ip4/116.21.71.7/tcp/24001] dial tcp4 0.0.0.0:34919->116.21.71.7:24001: i/o timeout
   f059740: 'dial, Germany, Bottrop', // * [/ip4/156.67.191.194/tcp/24001] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWR2iY2SFgjHM45NkQEJMmAathsCrgHWADbbCnPzsuS2bY, but remote key matches 12D3KooWR3EjX6z4ZkNRAbnF442tu5aCeLPQj62Xn7qCQ2KzPKwS
-  f059788: 'dial, China, Zhanjiang', // * [/ip4/183.2.149.76/tcp/33669] dial tcp4 0.0.0.0:33929->183.2.149.76:33669: i/o timeout
-  f061959: 'dial, NR', // * [/ip4/172.18.113.213/tcp/10241] dial tcp4 0.0.0.0:33929->172.18.113.213:10241: i/o timeout
-  f062931: 'dial, NR', // * [/ip4/115.231.84.133/tcp/14567] dial tcp4 0.0.0.0:33929->115.231.84.133:14567: i/o timeout
-  f064668: 'dial, China, Hong Kong', // * [/ip4/203.34.199.23/tcp/46717] dial tcp4 203.34.199.23:46717: connect: connection refused
-  f066102: 'dial, NR', // * [/ip4/172.18.112.93/tcp/10241] dial tcp4 0.0.0.0:33929->172.18.112.93:10241: i/o timeout
-  f066259: 'dial, NR', // * [/ip4/172.19.101.33/tcp/10241] dial tcp4 0.0.0.0:33929->172.19.101.33:10241: i/o timeout
-  f068096: 'dial, China, Sichuan', // * [/ip4/222.213.23.200/tcp/38999] dial tcp4 0.0.0.0:33929->222.213.23.200:38999: i/o timeout
-  f068560: 'dial, China, Changsha', // * [/ip4/172.16.100.111/tcp/37929] dial tcp4 0.0.0.0:33929->172.16.100.111:37929: i/o timeout
-  f069391: 'dial, NR', // * [/ip4/192.168.1.10/tcp/32759] dial tcp4 0.0.0.0:33929->192.168.1.10:32759: i/o timeout
-  f070044: 'dial, China', // * [/ip4/47.57.185.52/tcp/12600] dial tcp4 0.0.0.0:33929->47.57.185.52:12600: i/o timeout
-  f070803: 'dial, NR', // * [/ip4/127.0.0.1/tcp/40573] dial tcp4 127.0.0.1:40573: connect: connection refused
-  f071287: 'dial, NR', // * [/ip4/127.0.0.1/tcp/37563] dial tcp4 127.0.0.1:37563: connect: connection refused  * [/ip6/::1/tcp/35683] dial tcp6 [::1]:35683: connect: connection refused  * [/ip4/118.112.243.148/tcp/37563] dial tcp4 0.0.0.0:33929->118.112.243.148:37563: i/o timeout  * [/ip4/172.17.0.120/tcp/37563] dial tcp4 0.0.0.0:33929->172.17.0.120:37563: i/o timeout
-  f071664: 'dial, China, Shangdong', // * [/ip4/10.133.8.210/tcp/32759] dial tcp4 0.0.0.0:33929->10.133.8.210:32759: i/o timeout
-  f079285: 'dial, NR', // * [/ip4/172.22.20.109/tcp/10241] dial tcp4 0.0.0.0:33929->172.22.20.109:10241: i/o timeout
+  f059788: 'dial, China, Zhanjiang', // * [/ip4/183.2.149.76/tcp/33669] dial tcp4 0.0.0.0:34919->183.2.149.76:33669: i/o timeout
+  f061959: 'dial, NR', // * [/ip4/172.18.113.213/tcp/10241] dial tcp4 0.0.0.0:34919->172.18.113.213:10241: i/o timeout
+  f062931: 'dial, NR', // * [/ip4/115.231.84.133/tcp/14567] dial tcp4 0.0.0.0:34919->115.231.84.133:14567: i/o timeout
+  f066102: 'dial, NR', // * [/ip4/172.18.112.93/tcp/10241] dial tcp4 0.0.0.0:34919->172.18.112.93:10241: i/o timeout
+  f066259: 'dial, NR', // * [/ip4/172.19.100.73/tcp/10241] dial tcp4 0.0.0.0:34919->172.19.100.73:10241: i/o timeout
+  f068096: 'dial, China, Sichuan', // * [/ip4/222.213.23.200/tcp/38999] dial tcp4 222.213.23.200:38999: connect: connection refused
+  f069391: 'dial, NR', // * [/ip4/192.168.1.10/tcp/32759] dial tcp4 0.0.0.0:34919->192.168.1.10:32759: i/o timeout
+  f070044: 'dial, China', // * [/ip4/47.57.185.52/tcp/12600] dial tcp4 0.0.0.0:34919->47.57.185.52:12600: i/o timeout
+  f070932: 'dial, NR', // * [/ip4/172.19.100.131/tcp/10241] dial tcp4 0.0.0.0:34919->172.19.100.131:10241: i/o timeout
+  f071664: 'dial, China, Shangdong', // * [/ip4/10.133.8.210/tcp/32759] dial tcp4 0.0.0.0:34919->10.133.8.210:32759: i/o timeout
+  f073448: 'dial, NR', // * [/ip6/::1/tcp/44351] dial tcp6 [::1]:44351: connect: connection refused  * [/ip4/127.0.0.1/tcp/45301] dial tcp4 127.0.0.1:45301: connect: connection refused  * [/ip4/192.168.231.156/tcp/45301] dial tcp4 0.0.0.0:34919->192.168.231.156:45301: i/o timeout  * [/ip4/119.147.213.56/tcp/45301] dial tcp4 0.0.0.0:34919->119.147.213.56:45301: i/o timeout
+  f078465: 'dial, NR', // * [/ip6/::1/tcp/38611] dial tcp6 [::1]:38611: connect: connection refused  * [/ip4/127.0.0.1/tcp/34491] dial tcp4 127.0.0.1:34491: connect: connection refused  * [/ip4/192.168.200.107/tcp/34491] dial tcp4 0.0.0.0:34919->192.168.200.107:34491: i/o timeout
+  f079285: 'dial, NR', // * [/ip4/172.22.20.109/tcp/10241] dial tcp4 0.0.0.0:34919->172.22.20.109:10241: i/o timeout
   f079426: 'dial, China, Shandong', // * [/ip4/106.74.7.6/tcp/32759] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWQBg2oErr3Mx2fky471oxpmQmVggaDsGGVNqFagL27HeY, but remote key matches 12D3KooWQtkXUECWx5MBUugczDBoDq6DJcse1m56FHLmhRkGLyHK
   f081078: 'dial, Korea, Busan', // * [/ip4/220.84.94.10/tcp/23450] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWMW8ZvKgprKTTmt8cuoC5YYZeJtCn6iBuHWLg6J8rGUts, but remote key matches 12D3KooWLe7nwrhYUwgTjy7B92xgeuVZFVzgXHuM4wGzmcYg6asG
+  f081644: 'dial, China, Wenzhou', // * [/ip4/61.164.110.247/tcp/24001] dial tcp4 61.164.110.247:24001: connect: connection refused
   f082958: 'dial, NR', // * [/ip4/0.0.0.0/tcp/42547] dial tcp4 0.0.0.0:42547: connect: connection refused
-  f086028: 'dial, NR', // * [/ip6/::1/tcp/38985] dial tcp6 [::1]:38985: connect: connection refused  * [/ip4/127.0.0.1/tcp/36033] dial tcp4 127.0.0.1:36033: connect: connection refused  * [/ip4/61.147.117.2/tcp/3445] dial tcp4 0.0.0.0:46775->61.147.117.2:3445: i/o timeout  * [/ip4/61.147.117.2/tcp/3591] dial tcp4 0.0.0.0:46775->61.147.117.2:3591: i/o timeout  * [/ip4/172.16.6.14/tcp/36033] dial tcp4 0.0.0.0:46775->172.16.6.14:36033: i/o timeout
   f087965: 'dial, China, Suzhou', // * [/ip4/58.211.213.210/tcp/2251] dial tcp4 58.211.213.210:2251: connect: connection refused
-  f088125: 'dial, NR', // * [/ip4/172.22.22.101/tcp/10241] dial tcp4 0.0.0.0:33929->172.22.22.101:10241: i/o timeout
-  f088400: 'dial, NR', // * [/ip4/172.22.22.102/tcp/10241] dial tcp4 0.0.0.0:33929->172.22.22.102:10241: i/o timeout
-  f089173: 'dial, NR', // * [/ip4/172.19.108.155/tcp/10241] dial tcp4 0.0.0.0:33929->172.19.108.155:10241: i/o timeout
-  f089228: 'dial, NR', // * [/ip4/172.18.114.50/tcp/10241] dial tcp4 0.0.0.0:33929->172.18.114.50:10241: i/o timeout
-  f089358: 'dial, NR', // * [/ip4/172.22.7.106/tcp/10241] dial tcp4 0.0.0.0:33929->172.22.7.106:10241: i/o timeout
-  f089380: 'dial, NR', // * [/ip4/172.19.101.174/tcp/10241] dial tcp4 0.0.0.0:33929->172.19.101.174:10241: i/o timeout
-  f089551: 'dial, NR', // * [/ip4/121.40.135.72/tcp/26892] failed to negotiate security protocol: read tcp4 144.217.11.204:33929->121.40.135.72:26892: read: connection reset by peer
-  f089767: 'dial, USA, Bowie', // * [/ip4/76.223.76.26/tcp/33905] dial tcp4 0.0.0.0:46775->76.223.76.26:33905: i/o timeout  * [/ip4/129.168.0.1/tcp/912] dial tcp4 0.0.0.0:46775->129.168.0.1:912: i/o timeout
-  f090893: 'dial, USA', // * [/ip4/6.143.143.121/tcp/912] dial tcp4 0.0.0.0:46775->6.143.143.121:912: i/o timeout  * [/ip4/76.223.53.59/tcp/33912] dial tcp4 0.0.0.0:46775->76.223.53.59:33912: i/o timeout
+  f088125: 'dial, NR', // * [/ip4/172.22.22.101/tcp/10241] dial tcp4 0.0.0.0:34919->172.22.22.101:10241: i/o timeout
+  f088400: 'dial, NR', // * [/ip4/172.22.22.102/tcp/10241] dial tcp4 0.0.0.0:34919->172.22.22.102:10241: i/o timeout
+  f089173: 'dial, NR', // * [/ip4/172.19.108.155/tcp/10241] dial tcp4 0.0.0.0:34919->172.19.108.155:10241: i/o timeout
+  f089228: 'dial, NR', // * [/ip4/172.18.114.50/tcp/10241] dial tcp4 0.0.0.0:34919->172.18.114.50:10241: i/o timeout
+  f089358: 'dial, NR', // * [/ip4/172.22.7.106/tcp/10241] dial tcp4 0.0.0.0:34919->172.22.7.106:10241: i/o timeout
+  f089380: 'dial, NR', // * [/ip4/172.19.100.76/tcp/10241] dial tcp4 0.0.0.0:34919->172.19.100.76:10241: i/o timeout
+  f089551: 'dial, NR', // * [/ip4/121.40.135.72/tcp/26892] failed to negotiate security protocol: read tcp4 144.217.11.204:34919->121.40.135.72:26892: read: connection reset by peer
+  f089767: 'dial, USA, Bowie', // * [/ip4/129.168.0.1/tcp/912] dial tcp4 0.0.0.0:34919->129.168.0.1:912: i/o timeout  * [/ip4/76.223.76.26/tcp/33905] dial tcp4 0.0.0.0:34919->76.223.76.26:33905: i/o timeout
+  f090893: 'dial, USA', // * [/ip4/76.223.53.59/tcp/33912] dial tcp4 0.0.0.0:34919->76.223.53.59:33912: i/o timeout  * [/ip4/6.143.143.121/tcp/912] dial tcp4 0.0.0.0:34919->6.143.143.121:912: i/o timeout
+  f094764: 'dial, NR', // * [/ip6/::1/tcp/34513] dial tcp6 [::1]:34513: connect: connection refused  * [/ip4/127.0.0.1/tcp/42473] dial tcp4 127.0.0.1:42473: connect: connection refused  * [/ip4/10.80.3.10/tcp/42473] dial tcp4 10.80.3.10:42473: i/o timeout  * [/ip4/61.164.212.140/tcp/42473] dial tcp4 0.0.0.0:34919->61.164.212.140:42473: i/o timeout
   f094765: 'dial, NR', // * [/ip4/218.68.85.213/tcp/12350] dial tcp4 218.68.85.213:12350: connect: connection refused
-  f094901: 'dial, Korea, Bucheon-si', // * [/ip4/119.197.20.28/tcp/24001] dial tcp4 0.0.0.0:33929->119.197.20.28:24001: i/o timeout
   f095382: 'dial, China, Dongguan', // * [/ip4/125.93.73.102/tcp/2345] dial tcp4 125.93.73.102:2345: connect: connection refused
-  f096133: 'dial, China, Changsha + Dazhou', // * [/ip4/175.6.66.78/tcp/14913] dial tcp4 0.0.0.0:46775->175.6.66.78:14913: i/o timeout  * [/ip4/175.6.68.154/tcp/14913] dial tcp4 0.0.0.0:46775->175.6.68.154:14913: i/o timeout
-  f096173: 'dial, Korea, Gangnam-gu', // * [/ip4/61.78.81.239/tcp/8800] dial tcp4 61.78.81.239:8800: connect: connection refused  * [/ip4/61.78.81.239/tcp/23456] dial tcp4 61.78.81.239:23456: connect: connection refused  * [/ip4/61.78.81.239/tcp/44444] dial tcp4 61.78.81.239:44444: connect: connection refused  * [/ip4/61.78.81.239/tcp/12345] dial tcp4 61.78.81.239:12345: connect: connection refused  * [/ip4/61.78.81.239/tcp/22222] dial tcp4 61.78.81.239:22222: connect: connection refused  * [/ip4/61.78.81.239/tcp/11111] dial tcp4 61.78.81.239:11111: connect: connection refused  * [/ip4/61.78.81.239/tcp/55555] dial tcp4 61.78.81.239:55555: connect: connection refused  * [/ip4/61.78.81.239/tcp/33333] dial tcp4 61.78.81.239:33333: connect: connection refused
+  f096133: 'dial, China, Changsha + Dazhou', // * [/ip4/175.6.66.78/tcp/14913] dial tcp4 0.0.0.0:34919->175.6.66.78:14913: i/o timeout  * [/ip4/175.6.68.154/tcp/14913] dial tcp4 0.0.0.0:34919->175.6.68.154:14913: i/o timeout
+  f096173: 'dial, Korea, Gangnam-gu', // * [/ip4/61.78.81.239/tcp/22222] dial tcp4 0.0.0.0:34919->61.78.81.239:22222: i/o timeout  * [/ip4/61.78.81.239/tcp/23456] dial tcp4 0.0.0.0:34919->61.78.81.239:23456: i/o timeout  * [/ip4/61.78.81.239/tcp/8800] dial tcp4 0.0.0.0:34919->61.78.81.239:8800: i/o timeout  * [/ip4/61.78.81.239/tcp/12345] dial tcp4 0.0.0.0:34919->61.78.81.239:12345: i/o timeout  * [/ip4/61.78.81.239/tcp/11111] dial tcp4 0.0.0.0:34919->61.78.81.239:11111: i/o timeout  * [/ip4/61.78.81.239/tcp/55555] dial tcp4 0.0.0.0:34919->61.78.81.239:55555: i/o timeout  * [/ip4/61.78.81.239/tcp/33333] dial tcp4 0.0.0.0:34919->61.78.81.239:33333: i/o timeout  * [/ip4/61.78.81.239/tcp/44444] dial tcp4 0.0.0.0:34919->61.78.81.239:44444: i/o timeout
   f097182: 'dial, China, Chengdu', // * [/ip4/182.131.4.195/tcp/32759] dial tcp4 182.131.4.195:32759: connect: connection refused
   f097687: 'dial, China, Yangzhou', // * [/ip4/61.147.81.133/tcp/16017] dial tcp4 61.147.81.133:16017: connect: connection refused
-  f099387: 'dial, China, Shijiazhuang', // * [/ip4/124.239.180.3/tcp/24001] dial tcp4 124.239.180.3:24001: connect: connection refused
+  f099387: 'dial, China, Shijiazhuang', // * [/ip4/124.239.180.3/tcp/24001] dial tcp4 0.0.0.0:34919->124.239.180.3:24001: i/o timeout
   f099949: 'dial, China, Chengdu', // * [/ip4/182.131.4.195/tcp/32760] dial tcp4 182.131.4.195:32760: connect: connection refused
   f0101403: 'dial, China, Chengdu', // * [/ip4/182.131.4.195/tcp/32761] dial tcp4 182.131.4.195:32761: connect: connection refused
+  f0101570: 'dial, NR', // * [/ip4/127.0.0.1/tcp/40573] dial tcp4 127.0.0.1:40573: connect: connection refused
   f0103396: 'dial, China, Hangzhou', // * [/ip4/60.190.243.138/tcp/10240] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWLCnguS1TqxnrbCmDoAbJckjLEvo9xko2xvqmojc1ezxE, but remote key matches 12D3KooWJ9KC3jmmLpSk4pdrMA5Bn3VgCpvJs7QGQfXWGTVmTM2M
-  f0106363: 'dial, NR', // * [/ip4/127.0.0.1/tcp/24001] dial tcp4 127.0.0.1:24001: connect: connection refused
-  f0107118: 'dial, China, Hangzhou + Zhejiang', // * [/ip4/125.119.85.69/tcp/24001] dial tcp4 0.0.0.0:46775->125.119.85.69:24001: i/o timeout
+  f0107118: 'dial, China, Hangzhou + Zhejiang', // * [/ip4/125.119.85.69/tcp/24001] dial tcp4 0.0.0.0:34919->125.119.85.69:24001: i/o timeout
   f0107127: 'dial, USA, Daytona Beach', // * [/ip4/172.3.161.97/tcp/24001] dial tcp4 172.3.161.97:24001: connect: connection refused
   f0107536: 'dial, China, Bozhou', // * [/ip4/60.174.118.137/tcp/25469] dial tcp4 60.174.118.137:25469: connect: connection refused
-  f0109743: 'dial, China, Yangzhou', // * [/ip4/58.220.66.137/tcp/10000] dial tcp4 0.0.0.0:33929->58.220.66.137:10000: i/o timeout
+  f0109743: 'dial, China, Yangzhou', // * [/ip4/58.220.66.137/tcp/10000] dial tcp4 0.0.0.0:34919->58.220.66.137:10000: i/o timeout
   f0110803: 'dial, Korea', // * [/ip4/211.48.169.253/tcp/23234] dial tcp4 211.48.169.253:23234: connect: connection refused
-  f0110804: 'dial, USA, Santa Clara', // * [/ip4/147.92.91.26/tcp/56320] dial tcp4 0.0.0.0:46775->147.92.91.26:56320: i/o timeout
+  f0110804: 'dial, USA, Santa Clara', // * [/ip4/147.92.91.26/tcp/56320] dial tcp4 0.0.0.0:34919->147.92.91.26:56320: i/o timeout
   f0111499: 'dial, China, Chengdu', // * [/ip4/182.131.4.195/tcp/32762] dial tcp4 182.131.4.195:32762: connect: connection refused
-  f0111584: 'dial, NR', // * [/ip4/192.168.3.14/tcp/32759] dial tcp4 0.0.0.0:33929->192.168.3.14:32759: i/o timeout
-  f0112027: 'dial, France', // * [/ip4/109.238.12.125/tcp/24001] dial tcp4 0.0.0.0:33929->109.238.12.125:24001: i/o timeout
-  f0113008: 'dial, China, Hong Kong', // * [/ip4/217.145.236.27/tcp/24001] dial tcp4 0.0.0.0:46775->217.145.236.27:24001: i/o timeout
-  f0113664: 'dial, France', // * [/ip4/178.170.47.28/tcp/24001] dial tcp4 0.0.0.0:33929->178.170.47.28:24001: i/o timeout
-  f0114153: 'dial, China, Changsha + Dazhou', // * [/ip4/175.6.68.154/tcp/24913] dial tcp4 0.0.0.0:33929->175.6.68.154:24913: i/o timeout  * [/ip4/175.6.66.78/tcp/24913] dial tcp4 0.0.0.0:33929->175.6.66.78:24913: i/o timeout
-  f0114338: 'dial, China, Maoming', // * [/ip4/61.143.232.26/tcp/12888] dial tcp4 61.143.232.26:12888: connect: connection refused
-  f0114867: 'dial, NR', // * [/ip4/175.6.66.78/tcp/64913] dial tcp4 0.0.0.0:46775->175.6.66.78:64913: i/o timeout
-  f0115990: 'dial, Korea, Gangnam-gu', // * [/ip4/61.74.222.134/tcp/36849] dial tcp4 61.74.222.134:36849: connect: connection refused
+  f0111584: 'dial, NR', // * [/ip4/192.168.3.14/tcp/32759] dial tcp4 0.0.0.0:34919->192.168.3.14:32759: i/o timeout
+  f0111885: 'dial, Korea, Bucheon-si, WINNERS', // * [/ip4/119.197.20.252/tcp/24001] dial tcp4 119.197.20.252:24001: connect: connection refused
+  f0112027: 'dial, France', // * [/ip4/109.238.12.125/tcp/24001] dial tcp4 0.0.0.0:34919->109.238.12.125:24001: i/o timeout
+  f0113664: 'dial, France', // * [/ip4/178.170.47.28/tcp/24001] dial tcp4 0.0.0.0:34919->178.170.47.28:24001: i/o timeout
+  f0114153: 'dial, China, Changsha + Dazhou', // * [/ip4/175.6.68.154/tcp/24913] dial tcp4 0.0.0.0:34919->175.6.68.154:24913: i/o timeout  * [/ip4/175.6.66.78/tcp/24913] dial tcp4 0.0.0.0:34919->175.6.66.78:24913: i/o timeout
+  f0114338: 'dial, China, Maoming', // * [/ip4/61.143.232.26/tcp/12888] dial tcp4 0.0.0.0:34919->61.143.232.26:12888: i/o timeout
+  f0115108: 'dial, Korea, Yangcheon-gu', // * [/ip4/119.197.20.35/tcp/24001] dial tcp4 0.0.0.0:34919->119.197.20.35:24001: i/o timeout
+  f0115990: 'dial, Korea, Gangnam-gu', // * [/ip4/61.74.222.134/tcp/36849] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWCH9QfkYAUcen5u2UsQrsBgRr6SXF1DzoxmejKC3MpMur, but remote key matches 12D3KooWFbbCe63pSrR7zwsx431Y51pjAc4oKTNdjCmAwwHKGjBY
   f0116211: 'dial, China, Weifang', // * [/ip4/219.83.163.148/tcp/50666] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWF79gTgqr7VyLQu74NgBvCTuvDfp2CxGK8hxn2EYKzH6L, but remote key matches 12D3KooWRpggHrYWrczv3N2h5AAtdVFiX5zsW1duYpnfc1C8hjLa
-  f0116287: 'dial, China, Shanghai', // * [/ip4/172.18.5.97/tcp/2347] dial tcp4 0.0.0.0:33929->172.18.5.97:2347: i/o timeout
-  f0116766: 'dial, USA, Westford', // * [/ip4/173.76.173.245/tcp/23456] dial tcp4 0.0.0.0:33929->173.76.173.245:23456: i/o timeout
-  f0117146: 'dial, China, Beijing', // * [/ip4/106.12.253.240/tcp/24001] dial tcp4 106.12.253.240:24001: connect: connection refused
-  f0119633: 'dial, NR', // * [/ip4/183.62.138.7/tcp/12358] dial tcp4 0.0.0.0:33929->183.62.138.7:12358: i/o timeout
+  f0116287: 'dial, China, Shanghai', // * [/ip4/172.18.5.97/tcp/2347] dial tcp4 0.0.0.0:34919->172.18.5.97:2347: i/o timeout
+  f0116766: 'dial, USA, Westford', // * [/ip4/173.76.173.245/tcp/23456] dial tcp4 0.0.0.0:34919->173.76.173.245:23456: i/o timeout
+  f0117146: 'dial, China, Beijing', // * [/ip4/106.12.253.240/tcp/24001] dial tcp4 0.0.0.0:34919->106.12.253.240:24001: i/o timeout
+  f0119545: 'dial, NR', // * [/ip6/::1/tcp/34911] dial tcp6 [::1]:34911: connect: connection refused  * [/ip4/127.0.0.1/tcp/38629] dial tcp4 127.0.0.1:38629: connect: connection refused  * [/ip4/120.233.45.242/tcp/38629] dial tcp4 0.0.0.0:34919->120.233.45.242:38629: i/o timeout  * [/ip4/120.233.45.244/tcp/38629] dial tcp4 0.0.0.0:34919->120.233.45.244:38629: i/o timeout  * [/ip4/120.233.45.243/tcp/38629] dial tcp4 0.0.0.0:34919->120.233.45.243:38629: i/o timeout  * [/ip4/120.233.45.245/tcp/38629] dial tcp4 0.0.0.0:34919->120.233.45.245:38629: i/o timeout  * [/ip4/10.0.0.21/tcp/38629] dial tcp4 0.0.0.0:34919->10.0.0.21:38629: i/o timeout
+  f0119633: 'dial, NR', // * [/ip4/183.62.138.7/tcp/12358] dial tcp4 0.0.0.0:34919->183.62.138.7:12358: i/o timeout
   f0120909: 'dial, China, Changsha', // * [/ip4/127.0.0.1/tcp/7502] dial tcp4 127.0.0.1:7502: connect: connection refused
-  f0122410: 'dial, China, Shanghai', // * [/ip4/172.18.8.9/tcp/1025] dial tcp4 0.0.0.0:33929->172.18.8.9:1025: i/o timeout  * [/ip4/121.46.232.35/tcp/1025] dial tcp4 0.0.0.0:33929->121.46.232.35:1025: i/o timeout
-  f0128191: 'dial, Korea, Gangnam-gu', // * [/ip4/222.121.76.41/tcp/24002] dial tcp4 0.0.0.0:46775->222.121.76.41:24002: i/o timeout
+  f0122410: 'dial, China, Shanghai', // * [/ip4/172.18.5.108/tcp/1347] dial tcp4 0.0.0.0:34919->172.18.5.108:1347: i/o timeout
+  f0122815: 'dial, Korea, Bucheon-si, Healthcarenavi_80', // * [/ip4/119.197.20.147/tcp/24001] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWHPFfTGdEy2ddAMDhp18ZoNiMuxD3BMqGZ2B2grYVWA3o, but remote key matches 12D3KooWJidsSojT5Eprts3nQJQCPbB1K4iZbmu7g1XM45q9n5ie
+  f0124923: 'dial, NR', // * [/ip4/127.0.0.1/tcp/40573] dial tcp4 127.0.0.1:40573: connect: connection refused
+  f0127354: 'dial, Korea, Seoul', // * [/ip6/::1/tcp/42961] dial tcp6 [::1]:42961: connect: connection refused  * [/ip4/127.0.0.1/tcp/34007] dial tcp4 127.0.0.1:34007: connect: connection refused  * [/ip4/59.6.127.250/tcp/34007] dial tcp4 0.0.0.0:34919->59.6.127.250:34007: i/o timeout  * [/ip4/192.168.24.1/tcp/34007] dial tcp4 0.0.0.0:34919->192.168.24.1:34007: i/o timeout
+  f0128191: 'dial, Korea, Gangnam-gu', // * [/ip4/222.121.76.41/tcp/24002] dial tcp4 0.0.0.0:34919->222.121.76.41:24002: i/o timeout
+  f0130134: 'dial, NR', // * [/ip6/::1/tcp/41925] dial tcp6 [::1]:41925: connect: connection refused  * [/ip4/127.0.0.1/tcp/42745] dial tcp4 127.0.0.1:42745: connect: connection refused  * [/ip4/10.80.5.10/tcp/42745] dial tcp4 0.0.0.0:34919->10.80.5.10:42745: i/o timeout  * [/ip4/61.164.212.140/tcp/42745] dial tcp4 0.0.0.0:34919->61.164.212.140:42745: i/o timeout
+  f0130639: 'dial, NR', // * [/ip4/10.64.1.8/tcp/39872] dial tcp4 0.0.0.0:34919->10.64.1.8:39872: i/o timeout
+  f0132178: 'dial, China, Ningbo', // * [/ip6/::1/tcp/46673] dial tcp6 [::1]:46673: connect: connection refused  * [/ip4/127.0.0.1/tcp/34237] dial tcp4 127.0.0.1:34237: connect: connection refused  * [/ip4/218.205.94.150/tcp/2117] dial tcp4 218.205.94.150:2117: connect: connection refused  * [/ip4/218.205.94.150/tcp/2101] dial tcp4 218.205.94.150:2101: connect: connection refused  * [/ip4/172.16.0.8/tcp/34237] dial tcp4 0.0.0.0:34919->172.16.0.8:34237: i/o timeout
   f0132461: 'dial, Korea, Daegu', // * [/ip4/221.164.197.96/tcp/40101] dial tcp4 221.164.197.96:40101: connect: connection refused
-  f0133957: 'dial, NR', // * [/ip4/172.19.108.156/tcp/10241] dial tcp4 0.0.0.0:33929->172.19.108.156:10241: i/o timeout
-  f0134006: 'dial, NR', // * [/ip4/10.140.8.12/tcp/32759] dial tcp4 0.0.0.0:33929->10.140.8.12:32759: i/o timeout
-  f0141446: 'dial, China, Suzhou', // * [/ip4/172.18.6.127/tcp/2347] dial tcp4 0.0.0.0:46775->172.18.6.127:2347: i/o timeout  * [/ip4/61.155.145.103/tcp/2347] dial tcp4 0.0.0.0:46775->61.155.145.103:2347: i/o timeout
-  f0143858: 'dial, USA, Calistoga', // * [/ip4/72.52.116.228/tcp/12350] dial tcp4 0.0.0.0:33929->72.52.116.228:12350: i/o timeout
-  f0144194: 'dial, NR', // * [/ip4/175.6.68.154/tcp/49913] dial tcp4 0.0.0.0:46775->175.6.68.154:49913: i/o timeout
-  f0144724: 'dial, USA, Los Angeles', // * [/ip4/67.201.8.203/tcp/24001] dial tcp4 67.201.8.203:24001: connect: connection refused
-  f0145018: 'dial, Korea', // * [/ip4/203.248.27.91/tcp/45018] dial tcp4 0.0.0.0:46775->203.248.27.91:45018: i/o timeout
-  f0148627: 'dial, NR', // * [/ip4/175.6.68.154/tcp/15913] dial tcp4 0.0.0.0:33929->175.6.68.154:15913: i/o timeout
+  f0132618: 'dial, NR', // * [/ip4/10.2.1.55/tcp/21665] dial tcp4 0.0.0.0:34919->10.2.1.55:21665: i/o timeout
+  f0133957: 'dial, NR', // * [/ip4/172.19.108.156/tcp/10241] dial tcp4 0.0.0.0:34919->172.19.108.156:10241: i/o timeout
+  f0134006: 'dial, NR', // * [/ip4/10.140.8.12/tcp/32759] dial tcp4 0.0.0.0:34919->10.140.8.12:32759: i/o timeout
+  f0135758: 'dial, NR', // * [/ip4/127.0.0.1/tcp/1346] dial tcp4 127.0.0.1:1346: connect: connection refused  * [/ip4/183.136.236.94/tcp/1346] dial tcp4 183.136.236.94:1346: connect: connection refused
+  f0141446: 'dial, China, Suzhou', // * [/ip4/61.155.145.103/tcp/2347] dial tcp4 0.0.0.0:34919->61.155.145.103:2347: i/o timeout  * [/ip4/172.18.6.127/tcp/2347] dial tcp4 0.0.0.0:34919->172.18.6.127:2347: i/o timeout
+  f0143858: 'dial, USA, Calistoga', // * [/ip4/72.52.116.228/tcp/12350] dial tcp4 0.0.0.0:34919->72.52.116.228:12350: i/o timeout
+  f0144194: 'dial, NR', // * [/ip4/175.6.68.154/tcp/49913] dial tcp4 0.0.0.0:34919->175.6.68.154:49913: i/o timeout
+  f0144724: 'dial, USA, Los Angeles', // * [/ip4/67.201.8.203/tcp/24001] dial tcp4 0.0.0.0:34919->67.201.8.203:24001: i/o timeout
+  f0145018: 'dial, Korea', // * [/ip4/203.248.27.91/tcp/45018] dial tcp4 203.248.27.91:45018: connect: connection refused
+  f0146393: 'dial, China, Foshan', // * [/ip4/183.2.233.3/tcp/24501] dial tcp4 0.0.0.0:34919->183.2.233.3:24501: i/o timeout
+  f0146428: 'dial, NR', // * [/ip4/172.16.2.105/tcp/6789] dial tcp4 0.0.0.0:34919->172.16.2.105:6789: i/o timeout
+  f0148391: 'dial, China, Changsha + Japan, Tokyo', // * [/ip4/23.10.7.187/tcp/912] dial tcp4 0.0.0.0:34919->23.10.7.187:912: i/o timeout
+  f0152337: 'dial, NR', // * [/ip4/172.17.34.55/tcp/10241] dial tcp4 0.0.0.0:34919->172.17.34.55:10241: i/o timeout
+  f0152563: 'dial, China, Chongqing', // * [/ip4/192.168.1.100/tcp/24001] dial tcp4 0.0.0.0:34919->192.168.1.100:24001: i/o timeout  * [/ip4/58.43.1.82/tcp/24001] dial tcp4 0.0.0.0:34919->58.43.1.82:24001: i/o timeout
+  f0153583: 'dial, NR', // * [/ip6/::1/tcp/45485] dial tcp6 [::1]:45485: connect: connection refused  * [/ip4/127.0.0.1/tcp/34315] dial tcp4 127.0.0.1:34315: connect: connection refused  * [/ip4/61.155.198.34/tcp/34315] dial tcp4 0.0.0.0:34919->61.155.198.34:34315: i/o timeout
+  f0153804: 'dial, NR', // * [/ip4/218.13.93.62/tcp/5502] dial tcp4 218.13.93.62:5502: connect: connection refused
   f0153986: 'dial, China, Changsha', // * [/ip4/127.0.0.1/tcp/7503] dial tcp4 127.0.0.1:7503: connect: connection refused
-  f0155983: 'dial, Japan', // * [/ip4/202.149.23.10/tcp/5472] dial tcp4 202.149.23.10:5472: connect: connection refused
-  f0157429: 'dial, Korea, Bucheon-si', // * [/ip4/119.197.20.18/tcp/24001] dial tcp4 0.0.0.0:33929->119.197.20.18:24001: i/o timeout
+  f0155983: 'dial, Japan', // * [/ip4/202.149.23.10/tcp/5472] dial tcp4 0.0.0.0:34919->202.149.23.10:5472: i/o timeout
+  f0157429: 'dial, Korea, Bucheon-si', // * [/ip4/119.197.20.118/tcp/24001] dial tcp4 119.197.20.118:24001: connect: connection refused
   f0157513: 'dial, Korea, Geumcheon-gu', // * [/ip4/14.36.171.106/tcp/24000] dial tcp4 14.36.171.106:24000: connect: connection refused  * [/ip4/14.36.171.106/tcp/24001] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWM3h6YYYmmgzgiCfafqmna3mmGpqYDakjgDJvhztAWnX2, but remote key matches 12D3KooWJURGkgpCaB1qg655eCgUwPMfj2bLdKWbqGetgWputVrb
-  f0158133: 'dial, NR', // * [/ip4/10.33.1.17/tcp/6789] dial tcp4 0.0.0.0:33929->10.33.1.17:6789: i/o timeout
-  f0159632: 'dial, NR', // * [/ip4/10.140.8.32/tcp/32759] dial tcp4 0.0.0.0:33929->10.140.8.32:32759: i/o timeout
-  f0159883: 'dial, NR', // * [/ip4/10.133.9.111/tcp/32759] dial tcp4 0.0.0.0:33929->10.133.9.111:32759: i/o timeout
-  f0164326: 'dial, China, Beijing', // * [/ip4/106.12.253.161/tcp/18627] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWLeYKCy9eP14YioRHKBUGLDZU3aZsHbguqq5FAyfrwtY5, but remote key matches 12D3KooWENkvtMRTS5dpRUPJGR7L4tNso39o2XuJvXyz79nT6k4k
-  f0167137: 'dial, China, Shaoxing', // * [/ip4/115.239.191.45/tcp/24002] dial tcp4 0.0.0.0:33929->115.239.191.45:24002: i/o timeout
-  f0167505: 'dial, China, Beijing', // * [/ip4/39.104.208.101/tcp/39891] dial tcp4 0.0.0.0:33929->39.104.208.101:39891: i/o timeout
+  f0158133: 'dial, NR', // * [/ip4/10.33.1.17/tcp/6789] dial tcp4 0.0.0.0:34919->10.33.1.17:6789: i/o timeout
+  f0159632: 'dial, NR', // * [/ip4/10.140.8.32/tcp/32759] dial tcp4 0.0.0.0:34919->10.140.8.32:32759: i/o timeout
+  f0159883: 'dial, NR', // * [/ip4/10.133.9.111/tcp/32759] dial tcp4 0.0.0.0:34919->10.133.9.111:32759: i/o timeout
+  f0164326: 'dial, China, Beijing', // * [/ip4/106.12.253.161/tcp/18627] dial tcp4 106.12.253.161:18627: connect: connection refused
+  f0167137: 'dial, China, Shaoxing', // * [/ip4/115.239.191.45/tcp/24002] dial tcp4 0.0.0.0:34919->115.239.191.45:24002: i/o timeout
+  f0167505: 'dial, China, Beijing', // * [/ip4/39.104.208.101/tcp/39891] dial tcp4 0.0.0.0:34919->39.104.208.101:39891: i/o timeout
   f0199223: 'dial, NR', // * [/ip4/110.188.25.20/tcp/24001] dial tcp4 110.188.25.20:24001: connect: connection refused
-  f0217805: 'dial, China, Taiwan, Taipei', // * [/ip4/220.130.154.127/tcp/2348] dial tcp4 0.0.0.0:33929->220.130.154.127:2348: i/o timeout
-  f0225676: 'dial, Korea, Guro-gu', // * [/ip4/222.112.183.196/tcp/24001] dial tcp4 0.0.0.0:46775->222.112.183.196:24001: i/o timeout
-  f0238968: 'dial, NR', // * [/ip4/10.133.14.57/tcp/32759] dial tcp4 0.0.0.0:33929->10.133.14.57:32759: i/o timeout
-  f0241022: 'dial, Korea, Geumcheon-gu', // * [/ip4/61.82.145.85/tcp/24001] dial tcp4 61.82.145.85:24001: connect: connection refused
+  f0217805: 'dial, China, Taiwan, Taipei', // * [/ip4/220.130.154.127/tcp/2348] dial tcp4 0.0.0.0:34919->220.130.154.127:2348: i/o timeout
+  f0218559: 'dial, NR', // * [/ip4/58.144.223.135/tcp/2347] dial tcp4 0.0.0.0:34919->58.144.223.135:2347: i/o timeout
+  f0221135: 'dial, USA, Atlanta', // * [/ip4/209.195.11.14/tcp/24001] dial tcp4 0.0.0.0:34919->209.195.11.14:24001: i/o timeout
+  f0225676: 'dial, Korea, Guro-gu', // * [/ip4/222.112.183.196/tcp/24001] dial tcp4 0.0.0.0:34919->222.112.183.196:24001: i/o timeout
+  f0228855: 'dial, Korea, Guro-gu', // * [/ip4/211.44.28.119/tcp/33185] dial tcp4 0.0.0.0:34919->211.44.28.119:33185: i/o timeout
+  f0238968: 'dial, NR', // * [/ip4/10.133.14.57/tcp/32759] dial tcp4 0.0.0.0:34919->10.133.14.57:32759: i/o timeout
   f0241764: 'dial, China, Chengdu', // * [/ip4/182.131.4.195/tcp/32800] dial tcp4 182.131.4.195:32800: connect: connection refused
   f0242152: 'dial, Korea, Guro-gu', // * [/ip4/222.112.183.193/tcp/24001] dial tcp4 222.112.183.193:24001: connect: connection refused
-  f0392808: 'dial, NR', // * [/ip4/172.16.35.3/tcp/6789] dial tcp4 0.0.0.0:46775->172.16.35.3:6789: i/o timeout
-  f0392999: 'dial, NR', // * [/ip4/10.34.1.4/tcp/6789] dial tcp4 0.0.0.0:33929->10.34.1.4:6789: i/o timeout
-  f0393016: 'dial, NR', // * [/ip4/34.66.95.149/tcp/1024] dial tcp4 0.0.0.0:33929->34.66.95.149:1024: i/o timeout
-  f0393119: 'dial, NR', // * [/ip4/172.16.35.5/tcp/6789] dial tcp4 0.0.0.0:46775->172.16.35.5:6789: i/o timeout
-  f0393359: 'dial, China, Suzhou', // * [/ip4/58.240.235.162/tcp/24001] dial tcp4 0.0.0.0:46775->58.240.235.162:24001: i/o timeout
-  f0397837: 'dial, China, Fuzhou', // * [/ip4/220.176.125.252/tcp/23450] dial tcp4 0.0.0.0:46775->220.176.125.252:23450: i/o timeout
-  f0400681: 'dial, USA, Queens', // * [/ip4/72.80.136.205/tcp/24001] dial tcp4 0.0.0.0:46775->72.80.136.205:24001: i/o timeout
-  f0401303: 'dial, Korea, Ulju-gun', // * [/ip4/61.76.2.99/tcp/24001] dial tcp4 0.0.0.0:46775->61.76.2.99:24001: i/o timeout
+  f0392808: 'dial, NR', // * [/ip4/172.16.35.3/tcp/6789] dial tcp4 0.0.0.0:34919->172.16.35.3:6789: i/o timeout
+  f0392999: 'dial, NR', // * [/ip4/10.34.1.4/tcp/6789] dial tcp4 0.0.0.0:34919->10.34.1.4:6789: i/o timeout
+  f0393016: 'dial, NR', // * [/ip4/34.66.95.149/tcp/1024] dial tcp4 0.0.0.0:34919->34.66.95.149:1024: i/o timeout
+  f0393119: 'dial, NR', // * [/ip4/172.16.35.5/tcp/6789] dial tcp4 0.0.0.0:34919->172.16.35.5:6789: i/o timeout
+  f0393359: 'dial, China, Suzhou', // * [/ip4/58.240.235.162/tcp/24001] dial tcp4 0.0.0.0:34919->58.240.235.162:24001: i/o timeout
+  f0395473: 'dial, Korea, Daegu', // * [/ip4/221.164.197.96/tcp/40202] dial tcp4 221.164.197.96:40202: connect: connection refused
+  f0397428: 'dial, Japan, Tokyo', // * [/ip4/153.150.113.227/tcp/24001] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWKzNv3fKhTfCkYkA7jdevQNVLvrAqj52tSwpgt4q2A8g3, but remote key matches 12D3KooWDe8rmdLMXxPJBwgRmnShwSUm2pzt5vmSm9AgwwXC2C9Q
+  f0397675: 'dial, Korea, Guro-gu', // * [/ip4/222.112.183.194/tcp/24001] dial tcp4 222.112.183.194:24001: connect: connection refused
+  f0397837: 'dial, China, Fuzhou', // * [/ip4/220.176.125.252/tcp/23450] dial tcp4 0.0.0.0:34919->220.176.125.252:23450: i/o timeout
+  f0400681: 'dial, USA, Queens', // * [/ip4/72.80.136.205/tcp/24001] dial tcp4 0.0.0.0:34919->72.80.136.205:24001: i/o timeout
   f0403896: 'dial, USA, Huntersville', // * [/ip4/75.190.204.189/tcp/54998] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWBpuRHiQ2CAruoUG5kY79cGRJaS8XoV2tHGt4e8URJoVx, but remote key matches 12D3KooWPsKCyqHajqb2xnPYEWFwbTuXssARKG7dagKq85D3wc1J
-  f0422266: 'dial, NR', // * [/ip4/10.155.8.11/tcp/32759] dial tcp4 0.0.0.0:33929->10.155.8.11:32759: i/o timeout
-  f0427967: 'dial, China, Changsha', // * [/ip4/113.246.243.77/tcp/6660] dial tcp4 113.246.243.77:6660: connect: connection refused
-  f0427994: 'dial, China, Jinhua', // * [/ip4/115.209.22.14/tcp/24001] dial tcp4 0.0.0.0:46775->115.209.22.14:24001: i/o timeout
-  f0427996: 'dial, Canada, Bois-des-Filion', // * [/ip4/142.116.36.123/tcp/51455] dial tcp4 0.0.0.0:46775->142.116.36.123:51455: i/o timeout
-  f0429006: 'dial, China, Zhangzhou', // * [/ip4/117.29.228.50/tcp/20001] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWRtij9cQeVVMi7MhNswmaAWVhuXAVWctTsjwoWpJsaou4, but remote key matches 12D3KooW9qbm7iYfBeaGxxDkovwAnYqb2o5GM7xqQSCAcHisC8H3
-  f0435140: 'dial, China, Yangzhou', // * [/ip4/58.220.66.161/tcp/1024] dial tcp4 0.0.0.0:46775->58.220.66.161:1024: i/o timeout
-  f0447181: 'dial, China, Zibo', // * [/ip4/218.56.104.202/tcp/24002] dial tcp4 0.0.0.0:46775->218.56.104.202:24002: i/o timeout
+  f0422266: 'dial, NR', // * [/ip4/10.155.8.11/tcp/32759] dial tcp4 0.0.0.0:34919->10.155.8.11:32759: i/o timeout
+  f0424969: 'dial, China, Fuzhou', // * [/ip4/220.176.125.163/tcp/23450] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWQUCM1czKhEULhs9RyywNxsxrsVng9LriwEUBnBWvQzf6, but remote key matches 12D3KooWS9kVW7betDDxyyW5jmDcfbhKM1Nr8VhJstDTNqAnbLSV
+  f0427967: 'dial, China, Changsha', // * [/ip4/113.246.243.77/tcp/6660] dial tcp4 0.0.0.0:34919->113.246.243.77:6660: i/o timeout
+  f0427989: 'dial, NR', // * [/ip4/127.0.0.1/tcp/33893] dial tcp4 127.0.0.1:33893: connect: connection refused  * [/ip6/::1/tcp/45021] dial tcp6 [::1]:45021: connect: connection refused  * [/ip4/192.168.110.3/tcp/33893] dial tcp4 0.0.0.0:34919->192.168.110.3:33893: i/o timeout  * [/ip4/119.167.140.133/tcp/33893] dial tcp4 0.0.0.0:34919->119.167.140.133:33893: i/o timeout
+  f0427994: 'dial, China, Jinhua', // * [/ip4/115.209.22.96/tcp/24001] dial tcp4 0.0.0.0:34919->115.209.22.96:24001: i/o timeout
+  f0427996: 'dial, Canada, Bois-des-Filion', // * [/ip4/142.116.36.123/tcp/51455] dial tcp4 0.0.0.0:34919->142.116.36.123:51455: i/o timeout
+  f0429006: 'dial, China, Zhangzhou', // * [/ip4/121.206.45.27/tcp/20001] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWRtij9cQeVVMi7MhNswmaAWVhuXAVWctTsjwoWpJsaou4, but remote key matches 12D3KooW9qbm7iYfBeaGxxDkovwAnYqb2o5GM7xqQSCAcHisC8H3
+  f0435045: 'dial, Korea, Ulju-gun', // * [/ip4/59.28.91.47/tcp/24001] dial tcp4 0.0.0.0:34919->59.28.91.47:24001: i/o timeout
+  f0435140: 'dial, China, Yangzhou', // * [/ip4/58.220.66.161/tcp/1024] dial tcp4 0.0.0.0:34919->58.220.66.161:1024: i/o timeout
+  f0447181: 'dial, China, Zibo', // * [/ip4/218.56.104.202/tcp/24002] dial tcp4 0.0.0.0:34919->218.56.104.202:24002: i/o timeout
+  f0471266: 'dial, Japan, Ageo', // * [/ip4/36.13.198.157/tcp/24001] dial tcp4 0.0.0.0:34919->36.13.198.157:24001: i/o timeout
+  f0490090: 'dial, Korea, Seoul', // * [/ip4/219.248.141.14/tcp/42991] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWQqfzADaZTjcXn1rHvQ3WFBcLW9MoJT9DmVHxX5K7r4jD, but remote key matches 12D3KooWSmaT9zAPhDLvE7siq57gjNHAYpc41KeN9nJePoFeJnPu
+  f0494332: 'dial, Ukraine, Sumy', // * [/ip4/193.34.94.74/tcp/24001] dial tcp4 193.34.94.74:24001: connect: connection refused
+  f0504985: 'dial, NR', // * [/ip6/::1/tcp/41645] dial tcp6 [::1]:41645: connect: connection refused  * [/ip4/127.0.0.1/tcp/34023] dial tcp4 127.0.0.1:34023: connect: connection refused  * [/ip4/180.114.225.42/tcp/2087] dial tcp4 180.114.225.42:2087: connect: connection refused  * [/ip4/180.114.225.42/tcp/2096] dial tcp4 180.114.225.42:2096: connect: connection refused  * [/ip4/172.28.0.184/tcp/34023] dial tcp4 0.0.0.0:34919->172.28.0.184:34023: i/o timeout
+  f0506630: 'dial, China, Linyi', // * [/ip4/222.174.187.42/tcp/20111] dial tcp4 222.174.187.42:20111: connect: connection refused
+  f0512170: 'dial, Korea, Bucheon-si', // * [/ip4/121.173.25.119/tcp/24001] dial tcp4 121.173.25.119:24001: connect: connection refused
+  f0514241: 'dial, NR', // * [/ip4/59.6.127.250/tcp/55037] failed to negotiate security protocol: read tcp4 144.217.11.204:34919->59.6.127.250:55037: read: connection reset by peer
+  f0517655: 'dial, Korea, Gwangju', // * [/ip4/121.179.79.12/tcp/55000] failed to negotiate security protocol: read tcp4 144.217.11.204:34919->121.179.79.12:55000: read: connection reset by peer
+  f0601975: 'dial, Korea, Guro-gu', // * [/ip4/211.44.28.120/tcp/34001] dial tcp4 0.0.0.0:34919->211.44.28.120:34001: i/o timeout
+  f0601980: 'dial, Korea, Seoul', // * [/ip4/58.226.35.77/tcp/34001] dial tcp4 0.0.0.0:34919->58.226.35.77:34001: i/o timeout
 
   // XNR (Not routable)
 
   f02388: 'xnr, Netherlands, Amersfoort, Kroketje',
-  f02399: 'xnr, China, Shanghai',
   f02416: 'xnr, China, Guangdong, 星际无限',
   f02769: 'xnr, NR',
   f02770: 'xnr, China, Hong Kong',
@@ -1156,8 +1130,11 @@ const annotations = {
   f02777: 'xnr, NR',
   f02778: 'xnr, NR',
   f02779: 'xnr, NR',
+  f02856: 'xnr, China, Chengdu',
+  f03000: 'xnr, China, Chengdu',
   f03344: 'xnr, China, Guangzhou',
   f07749: 'xnr, NR',
+  f09693: 'xnr, China, Karamay',
   f010202: 'xnr, Singapore',
   f014335: 'xnr, NR',
   f014686: 'xnr, Singapore',
@@ -1167,15 +1144,14 @@ const annotations = {
   f015932: 'xnr, NR',
   f018538: 'xnr, China, Huzhou',
   f020398: 'xnr, China, Zhangjiakou',
+  f020747: 'xnr, China, Xiamen',
   f020957: 'xnr, NR',
-  f021504: 'xnr, NR',
   f021695: 'xnr, USA',
   f021704: 'xnr, NR',
   f021710: 'xnr, China, Shijiazhuang',
   f021870: 'xnr, China, Jieyang',
   f022030: 'xnr, NR',
   f022038: 'xnr, NR',
-  f022093: 'xnr, NR',
   f022336: 'xnr, NR',
   f022338: 'xnr, NR',
   f022361: 'xnr, NR',
@@ -1184,7 +1160,6 @@ const annotations = {
   f022804: 'xnr, NR',
   f022922: 'xnr, China, Shenzhen, CAAP-MEG',
   f023013: 'xnr, NR',
-  f023495: 'xnr, China, Karamay',
   f023499: 'xnr, NR',
   f023626: 'xnr, NR',
   f023627: 'xnr, China, Zhongwei',
@@ -1192,7 +1167,6 @@ const annotations = {
   f023678: 'xnr, China, Jiaxing',
   f023843: 'xnr, China, Zhangjiakou',
   f023882: 'xnr, NR',
-  f023984: 'xnr, NR',
   f024483: 'xnr, NR',
   f024563: 'xnr, NR',
   f024802: 'xnr, NR',
@@ -1207,6 +1181,7 @@ const annotations = {
   f030272: 'xnr, undefined',
   f030331: 'xnr, NR',
   f030347: 'xnr, China, Zhejiang',
+  f030408: 'xnr, NR',
   f030509: 'xnr, undefined',
   f030510: 'xnr, undefined',
   f030511: 'xnr, undefined',
@@ -1214,6 +1189,7 @@ const annotations = {
   f032833: 'xnr, NR',
   f032850: 'xnr, NR',
   f032913: 'xnr, China, Shenzhen',
+  f033025: 'xnr, Korea, Daegu',
   f033130: 'xnr, NR',
   f033384: 'xnr, NR',
   f033399: 'xnr, NR',
@@ -1223,12 +1199,13 @@ const annotations = {
   f033475: 'xnr, NR',
   f033501: 'xnr, China, Shenzhen',
   f033517: 'xnr, China, Changsha',
+  f034350: 'xnr, NR',
   f034566: 'xnr, NR',
-  f034567: 'xnr, China, Shenzhen',
   f034581: 'xnr, NR',
   f034658: 'xnr, NR',
   f034707: 'xnr, NR',
   f034710: 'xnr, NR',
+  f034777: 'xnr, China, Chengdu',
   f035160: 'xnr, NR',
   f035161: 'xnr, NR',
   f035364: 'xnr, NR',
@@ -1236,12 +1213,14 @@ const annotations = {
   f040665: 'xnr, NR',
   f042855: 'xnr, NR',
   f043376: 'xnr, Korea, Incheon',
+  f044315: 'xnr, NR',
   f045743: 'xnr, NR',
   f045756: 'xnr, China, Hangzhou',
   f046248: 'xnr, China, Dongguan',
   f048975: 'xnr, NR',
   f048986: 'xnr, NR',
   f049911: 'xnr, China, Yunfu',
+  f053140: 'xnr, China, Shenzhen',
   f053141: 'xnr, China, Shenzhen',
   f053173: 'xnr, NR',
   f053446: 'xnr, NR',
@@ -1249,15 +1228,13 @@ const annotations = {
   f054267: 'xnr, NR',
   f054412: 'xnr, NR',
   f054414: 'xnr, NR',
-  f054417: 'xnr, NR',
-  f054420: 'xnr, NR',
   f054422: 'xnr, NR',
   f054464: 'xnr, NR',
   f054526: 'xnr, NR',
-  f055123: 'xnr, Korea, Busan',
   f055446: 'xnr, NR',
   f056227: 'xnr, NR',
   f057618: 'xnr, NR',
+  f057683: 'xnr, NR',
   f058349: 'xnr, NR',
   f059813: 'xnr, NR',
   f060114: 'xnr, China, Shenzhen',
@@ -1271,13 +1248,13 @@ const annotations = {
   f061407: 'xnr, China, Shenzhen',
   f061503: 'xnr, NR',
   f062245: 'xnr, NR',
+  f062473: 'xnr, NR',
   f062475: 'xnr, NR',
   f062619: 'xnr, NR',
   f063996: 'xnr, China, Sichuan',
   f064855: 'xnr, NR',
   f064908: 'xnr, NR',
   f065113: 'xnr, NR',
-  f065141: 'xnr, NR',
   f065174: 'xnr, NR',
   f065266: 'xnr, China, Hefei',
   f065391: 'xnr, NR',
@@ -1290,7 +1267,6 @@ const annotations = {
   f066210: 'xnr, NR',
   f066302: 'xnr, NR',
   f066476: 'xnr, NR',
-  f066563: 'xnr, NR',
   f067170: 'xnr, NR',
   f067375: 'xnr, NR',
   f067598: 'xnr, NR',
@@ -1300,28 +1276,31 @@ const annotations = {
   f070045: 'xnr, NR',
   f070730: 'xnr, NR',
   f070802: 'xnr, NR',
-  f070932: 'xnr, NR',
+  f070803: 'xnr, NR',
+  f071287: 'xnr, NR',
   f073196: 'xnr, NR',
   f073525: 'xnr, NR',
   f073844: 'xnr, NR',
   f073888: 'xnr, NR',
   f073904: 'xnr, NR',
   f077761: 'xnr, NR',
-  f078465: 'xnr, NR',
   f079092: 'xnr, NR',
-  f079197: 'xnr, China, Karamay',
   f079425: 'xnr, NR',
   f079719: 'xnr, NR',
+  f080444: 'xnr, China, Chengdu',
   f080605: 'xnr, NR',
+  f080628: 'xnr, NR',
   f080868: 'xnr, NR',
   f081969: 'xnr, NR',
   f082000: 'xnr, NR',
   f082001: 'xnr, NR',
+  f082356: 'xnr, China, Jiaxing',
   f082635: 'xnr, NR',
   f082730: 'xnr, NR',
   f083419: 'xnr, NR',
   f083474: 'xnr, NR',
   f083542: 'xnr, NR',
+  f083638: 'xnr, China, Chongqing',
   f083983: 'xnr, NR',
   f084135: 'xnr, NR',
   f084155: 'xnr, NR',
@@ -1330,10 +1309,12 @@ const annotations = {
   f085435: 'xnr, NR',
   f085437: 'xnr, NR',
   f085486: 'xnr, NR',
+  f085710: 'xnr, China, Chengdu',
   f085735: "xnr, China, Ya'an",
   f086204: 'xnr, NR',
   f086222: 'xnr, NR',
   f086240: 'xnr, NR',
+  f086366: 'xnr, NR',
   f086381: 'xnr, NR',
   f086439: 'xnr, NR',
   f086442: 'xnr, NR',
@@ -1371,13 +1352,12 @@ const annotations = {
   f092887: 'xnr, NR',
   f093115: 'xnr, NR',
   f093144: 'xnr, NR',
-  f093658: 'xnr, China, Fujian',
   f093686: 'xnr, NR',
   f093701: 'xnr, NR',
   f093907: 'xnr, NR',
   f094003: 'xnr, NR',
+  f094614: 'xnr, China, Karamay',
   f094625: 'xnr, NR',
-  f094764: 'xnr, NR',
   f094847: 'xnr, NR',
   f095334: 'xnr, NR',
   f095970: 'xnr, NR',
@@ -1393,13 +1373,10 @@ const annotations = {
   f097403: 'xnr, NR',
   f097432: 'xnr, NR',
   f097658: 'xnr, NR',
-  f097840: 'xnr, NR',
   f097981: 'xnr, NR',
   f098743: 'xnr, NR',
-  f098770: 'xnr, USA, Pontiac',
   f099082: 'xnr, NR',
   f099132: 'xnr, NR',
-  f099239: 'xnr, China, Hong Kong',
   f099247: 'xnr, NR',
   f099369: 'xnr, NR',
   f099884: 'xnr, China, Chengdu',
@@ -1410,12 +1387,11 @@ const annotations = {
   f0101017: 'xnr, NR',
   f0101018: 'xnr, NR',
   f0101019: 'xnr, NR',
-  f0101069: 'xnr, NR',
   f0101133: 'xnr, NR',
-  f0101570: 'xnr, NR',
   f0101611: 'xnr, NR',
   f0102187: 'xnr, NR',
   f0102313: 'xnr, Korea, Gangseo-gu',
+  f0102376: 'xnr, China, Karamay',
   f0103162: 'xnr, NR',
   f0103282: 'xnr, NR',
   f0103485: 'xnr, NR',
@@ -1452,14 +1428,12 @@ const annotations = {
   f0110695: 'xnr, NR',
   f0110696: 'xnr, NR',
   f0110808: 'xnr, NR',
-  f0110944: 'xnr, NR',
   f0110996: 'xnr, NR',
   f0111007: 'xnr, NR',
   f0111384: 'xnr, NR',
   f0111434: 'xnr, NR',
   f0111467: 'xnr, NR',
   f0111469: 'xnr, NR',
-  f0111544: 'xnr, Korea, Seoul',
   f0112593: 'xnr, NR',
   f0112667: 'xnr, NR',
   f0112680: 'xnr, NR',
@@ -1471,9 +1445,9 @@ const annotations = {
   f0113735: 'xnr, NR',
   f0113754: 'xnr, NR',
   f0113777: 'xnr, NR',
-  f0114118: 'xnr, NR',
   f0114333: 'xnr, NR',
   f0114350: 'xnr, NR',
+  f0114867: 'xnr, NR',
   f0114868: 'xnr, NR',
   f0114885: 'xnr, NR',
   f0115001: 'xnr, NR',
@@ -1499,7 +1473,6 @@ const annotations = {
   f0118837: 'xnr, Korea, Seoul',
   f0118976: 'xnr, NR',
   f0119146: 'xnr, NR',
-  f0119545: 'xnr, NR',
   f0119828: 'xnr, NR',
   f0119976: 'xnr, NR',
   f0119997: 'xnr, NR',
@@ -1514,6 +1487,7 @@ const annotations = {
   f0122382: 'xnr, NR',
   f0122496: 'xnr, NR',
   f0122533: 'xnr, NR',
+  f0122940: 'xnr, NR',
   f0123245: 'xnr, NR',
   f0123261: 'xnr, NR',
   f0123275: 'xnr, Korea, Seoul',
@@ -1523,7 +1497,6 @@ const annotations = {
   f0124126: 'xnr, NR',
   f0124158: 'xnr, NR',
   f0124904: 'xnr, NR',
-  f0124923: 'xnr, NR',
   f0124944: 'xnr, NR',
   f0125488: 'xnr, NR',
   f0126097: 'xnr, NR',
@@ -1534,7 +1507,6 @@ const annotations = {
   f0126702: 'xnr, NR',
   f0126898: 'xnr, China, Harbin',
   f0127353: 'xnr, Korea, Seoul',
-  f0127354: 'xnr, Korea, Seoul',
   f0127378: 'xnr, NR',
   f0127382: 'xnr, NR',
   f0127569: 'xnr, NR',
@@ -1546,13 +1518,11 @@ const annotations = {
   f0127640: 'xnr, NR',
   f0127721: 'xnr, NR',
   f0127735: 'xnr, NR',
-  f0127980: 'xnr, Korea, Seoul',
   f0128011: 'xnr, NR',
   f0128381: 'xnr, NR',
   f0128499: 'xnr, NR',
   f0128559: 'xnr, NR',
   f0128580: 'xnr, Korea, Seoul',
-  f0128581: 'xnr, Korea, Seoul',
   f0128582: 'xnr, Korea, Seoul',
   f0128761: 'xnr, NR',
   f0128788: 'xnr, NR',
@@ -1563,9 +1533,7 @@ const annotations = {
   f0129422: 'xnr, NR',
   f0129750: 'xnr, NR',
   f0130094: 'xnr, NR',
-  f0130134: 'xnr, NR',
   f0130556: 'xnr, NR',
-  f0130639: 'xnr, NR',
   f0130686: 'xnr, NR',
   f0130727: 'xnr, NR',
   f0130791: 'xnr, NR',
@@ -1575,9 +1543,7 @@ const annotations = {
   f0131509: 'xnr, NR',
   f0131767: 'xnr, NR',
   f0131822: 'xnr, NR',
-  f0132178: 'xnr, China, Ningbo',
   f0132313: 'xnr, NR',
-  f0132618: 'xnr, NR',
   f0132638: 'xnr, NR',
   f0132706: 'xnr, China, Beijing',
   f0133235: 'xnr, NR',
@@ -1588,9 +1554,11 @@ const annotations = {
   f0133509: 'xnr, NR',
   f0133763: 'xnr, NR',
   f0133833: 'xnr, NR',
+  f0134285: "xnr, China, Ya'an + USA",
   f0134286: 'xnr, NR',
   f0134552: 'xnr, NR',
   f0134609: 'xnr, NR',
+  f0134671: 'xnr, Korea, Gimpo-si',
   f0134867: 'xnr, NR',
   f0135008: 'xnr, NR',
   f0135066: 'xnr, NR',
@@ -1602,7 +1570,6 @@ const annotations = {
   f0135474: 'xnr, NR',
   f0135475: 'xnr, NR',
   f0135551: 'xnr, NR',
-  f0135758: 'xnr, NR',
   f0135779: 'xnr, NR',
   f0135859: 'xnr, NR',
   f0135906: 'xnr, NR',
@@ -1633,13 +1600,13 @@ const annotations = {
   f0143160: 'xnr, China, Ningbo',
   f0143162: 'xnr, NR',
   f0143361: 'xnr, NR',
+  f0143500: 'xnr, China, Zhejiang',
   f0143511: 'xnr, NR',
   f0143666: 'xnr, NR',
   f0143907: 'xnr, NR',
   f0143999: 'xnr, NR',
   f0144069: 'xnr, NR',
   f0144304: 'xnr, NR',
-  f0144314: 'xnr, NR',
   f0144316: 'xnr, NR',
   f0144528: 'xnr, NR',
   f0144530: 'xnr, NR',
@@ -1656,17 +1623,18 @@ const annotations = {
   f0146220: 'xnr, NR',
   f0146224: 'xnr, NR',
   f0146278: 'xnr, NR',
-  f0146751: 'xnr, China, Jiangsu',
+  f0146301: 'xnr, China, Shenzhen',
   f0146956: 'xnr, NR',
   f0147119: 'xnr, NR',
   f0147214: 'xnr, NR',
   f0147586: 'xnr, NR',
   f0147657: 'xnr, NR',
   f0147801: 'xnr, NR',
+  f0148143: 'xnr, China, Tianjin',
   f0148151: 'xnr, NR',
   f0148269: 'xnr, NR',
-  f0148391: 'xnr, China, Changsha + Japan, Tokyo',
   f0148452: 'xnr, NR',
+  f0148627: 'xnr, NR',
   f0149132: 'xnr, NR',
   f0149753: 'xnr, NR',
   f0149783: 'xnr, NR',
@@ -1676,7 +1644,6 @@ const annotations = {
   f0150816: 'xnr, NR',
   f0150860: 'xnr, NR',
   f0150918: 'xnr, NR',
-  f0151371: 'xnr, NR',
   f0151499: 'xnr, NR',
   f0151706: 'xnr, NR',
   f0151849: 'xnr, NR',
@@ -1689,7 +1656,6 @@ const annotations = {
   f0153078: 'xnr, NR',
   f0153188: 'xnr, NR',
   f0153565: 'xnr, NR',
-  f0153583: 'xnr, NR',
   f0153775: 'xnr, NR',
   f0153930: 'xnr, NR',
   f0153932: 'xnr, NR',
@@ -1704,6 +1670,7 @@ const annotations = {
   f0155050: 'xnr, NR',
   f0155258: 'xnr, NR',
   f0155515: 'xnr, NR',
+  f0155687: 'xnr, China, Guangzhou',
   f0155829: 'xnr, NR',
   f0156214: 'xnr, NR',
   f0156333: 'xnr, China, Ningbo',
@@ -1716,6 +1683,7 @@ const annotations = {
   f0157917: 'xnr, NR',
   f0157979: 'xnr, NR',
   f0157991: 'xnr, NR',
+  f0158000: 'xnr, NR',
   f0158068: 'xnr, NR',
   f0158156: 'xnr, NR',
   f0158265: 'xnr, China, Hefei',
@@ -1761,8 +1729,8 @@ const annotations = {
   f0218072: 'xnr, NR',
   f0218092: 'xnr, NR',
   f0218407: 'xnr, NR',
-  f0218559: 'xnr, NR',
   f0219106: 'xnr, NR',
+  f0220156: 'xnr, NR',
   f0220911: 'xnr, NR',
   f0222611: 'xnr, NR',
   f0222811: 'xnr, NR',
@@ -1772,6 +1740,7 @@ const annotations = {
   f0223102: 'xnr, NR',
   f0223103: 'xnr, NR',
   f0223104: 'xnr, NR',
+  f0223316: 'xnr, NR',
   f0223933: 'xnr, NR',
   f0224599: 'xnr, China, Fuzhou',
   f0224984: 'xnr, China, Wuhan',
@@ -1783,7 +1752,6 @@ const annotations = {
   f0228232: 'xnr, NR',
   f0229199: 'xnr, NR',
   f0229437: 'xnr, NR',
-  f0230449: 'xnr, NR',
   f0230799: 'xnr, NR',
   f0230861: 'xnr, NR',
   f0231112: 'xnr, NR',
@@ -1791,7 +1759,7 @@ const annotations = {
   f0231782: 'xnr, NR',
   f0232358: 'xnr, NR',
   f0232459: 'xnr, NR',
-  f0232650: 'xnr, NR',
+  f0239251: 'xnr, Korea, Uiwang',
   f0240035: 'xnr, NR',
   f0240185: 'xnr, NR',
   f0240392: 'xnr, NR',
@@ -1801,6 +1769,7 @@ const annotations = {
   f0242156: 'xnr, NR',
   f0242345: 'xnr, NR',
   f0242373: 'xnr, NR',
+  f0242420: 'xnr, NR',
   f0364983: 'xnr, Korea, Seoul',
   f0364987: 'xnr, Korea, Seoul',
   f0377277: 'xnr, NR',
@@ -1822,24 +1791,26 @@ const annotations = {
   f0396422: 'xnr, NR',
   f0396452: 'xnr, NR',
   f0396473: 'xnr, NR',
+  f0396607: 'xnr, Korea, Icheon-si',
   f0396705: 'xnr, NR',
-  f0397052: 'xnr, NR',
   f0397083: 'xnr, NR',
   f0397561: 'xnr, NR',
   f0397794: 'xnr, NR',
   f0397802: 'xnr, NR',
   f0398999: 'xnr, NR',
+  f0399083: 'xnr, Korea, Seoul + Kwangmyong',
   f0399111: 'xnr, NR',
   f0399321: 'xnr, NR',
   f0399323: 'xnr, NR',
+  f0399348: 'xnr, NR',
   f0399743: 'xnr, NR',
   f0399996: 'xnr, NR',
   f0400264: 'xnr, NR',
-  f0400307: 'xnr, NR',
   f0402233: 'xnr, NR',
   f0402314: 'xnr, NR',
+  f0402431: 'xnr, China, Hangzhou',
+  f0402492: 'xnr, NR',
   f0402661: 'xnr, NR',
-  f0402822: 'xnr, NR',
   f0403529: 'xnr, NR',
   f0404193: 'xnr, NR',
   f0404643: 'xnr, NR',
@@ -1849,20 +1820,22 @@ const annotations = {
   f0407287: 'xnr, NR',
   f0407410: 'xnr, NR',
   f0407733: 'xnr, NR',
-  f0408582: 'xnr, NR',
+  f0408206: 'xnr, NR',
   f0408629: 'xnr, NR',
   f0409172: 'xnr, NR',
   f0409399: 'xnr, NR',
   f0409499: 'xnr, NR',
   f0410001: 'xnr, NR',
+  f0410120: 'xnr, NR',
   f0410242: 'xnr, NR',
   f0410941: 'xnr, NR',
+  f0413050: 'xnr, NR',
+  f0417720: 'xnr, NR',
   f0419311: 'xnr, NR',
   f0419331: 'xnr, NR',
   f0419510: 'xnr, NR',
   f0419662: 'xnr, NR',
   f0419804: 'xnr, NR',
-  f0419944: 'xnr, NR',
   f0419945: 'xnr, NR',
   f0420508: 'xnr, NR',
   f0421387: 'xnr, NR',
@@ -1875,6 +1848,7 @@ const annotations = {
   f0423381: 'xnr, Korea, Seoul',
   f0423713: 'xnr, China, Qingdao',
   f0424761: 'xnr, NR',
+  f0427393: 'xnr, China, Karamay',
   f0427688: 'xnr, NR',
   f0427839: 'xnr, NR',
   f0427975: 'xnr, NR',
@@ -1883,30 +1857,78 @@ const annotations = {
   f0428661: 'xnr, NR',
   f0429063: 'xnr, NR',
   f0429122: 'xnr, NR',
-  f0430101: 'xnr, NR',
+  f0430997: 'xnr, Korea',
   f0432235: 'xnr, NR',
   f0432329: 'xnr, NR',
   f0432773: 'xnr, NR',
-  f0433892: 'xnr, NR',
   f0434411: 'xnr, NR',
-  f0435045: 'xnr, Korea, Ulju-gun',
-  f0435971: 'xnr, NR',
   f0436065: 'xnr, NR',
   f0441020: 'xnr, NR',
+  f0441116: 'xnr, NR',
   f0441240: 'xnr, NR',
   f0441372: 'xnr, NR',
+  f0441525: 'xnr, NR',
+  f0441703: 'xnr, NR',
   f0444122: 'xnr, NR',
   f0447651: 'xnr, NR',
   f0449072: 'xnr, Korea, Jung-gu',
-  f0449088: 'xnr, Korea, Jung-gu',
-  f0449196: 'xnr, NR',
-  f0456374: 'xnr, NR',
+  f0461752: 'xnr, China, Karamay',
   f0463030: 'xnr, NR',
   f0465286: 'xnr, NR',
-  f0467640: 'xnr, NR',
+  f0470182: 'xnr, NR',
   f0472061: 'xnr, NR',
-  f0488888: 'xnr, China, Nanchang',
-  f0492222: 'xnr, Canada, Vancouver',
+  f0473113: 'xnr, NR',
+  f0478563: 'xnr, NR',
+  f0480313: 'xnr, NR',
+  f0492283: 'xnr, USA, Quail Valley',
+  f0494174: 'xnr, Norway',
+  f0494586: 'xnr, China, Nanchang',
+  f0497771: 'xnr, NR',
+  f0498102: 'xnr, NR',
+  f0498868: 'xnr, NR',
+  f0500685: 'xnr, NR',
+  f0501283: 'xnr, NR',
+  f0502198: 'xnr, NR',
+  f0502948: 'xnr, NR',
+  f0503010: 'xnr, NR',
+  f0503287: 'xnr, NR',
+  f0503423: 'xnr, NR',
+  f0504929: 'xnr, NR',
+  f0505110: 'xnr, NR',
+  f0506800: 'xnr, NR',
+  f0507420: 'xnr, NR',
+  f0507913: 'xnr, NR',
+  f0508328: 'xnr, NR',
+  f0508622: 'xnr, NR',
+  f0509980: 'xnr, NR',
+  f0509981: 'xnr, NR',
+  f0510701: 'xnr, NR',
+  f0510957: 'xnr, NR',
+  f0511385: 'xnr, NR',
+  f0513351: 'xnr, NR',
+  f0514000: 'xnr, NR',
+  f0514235: 'xnr, NR',
+  f0515264: 'xnr, NR',
+  f0515389: 'xnr, NR',
+  f0515674: 'xnr, NR',
+  f0517213: 'xnr, NR',
+  f0518668: 'xnr, NR',
+  f0519331: 'xnr, NR',
+  f0519376: 'xnr, NR',
+  f0520520: 'xnr, NR',
+  f0521499: 'xnr, NR',
+  f0521831: 'xnr, NR',
+  f0521884: 'xnr, NR',
+  f0522364: 'xnr, NR',
+  f0523396: 'xnr, NR',
+  f0523415: 'xnr, NR',
+  f0523711: 'xnr, NR',
+  f0536177: 'xnr, NR',
+  f0592088: 'xnr, NR',
+  f0602011: 'xnr, NR',
+  f0646439: 'xnr, NR',
+  f0670902: 'xnr, NR',
+  f0674600: 'xnr, NR',
 
   // Delisted
 
