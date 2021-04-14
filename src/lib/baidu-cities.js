@@ -63,6 +63,7 @@ const baiduCities = {
   224: 'Suzhou', // 苏州市
   226: 'Fuzhou', // 抚州市
   233: 'Xi\'an', // 西安市
+  234: 'Linyi', // 临沂市
   236: 'Qingdao', // 青岛市
   240: 'Mianyang', // 绵阳市
   243: 'Quzhou', // 衢州市
