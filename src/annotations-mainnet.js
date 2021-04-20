@@ -14,6 +14,41 @@ const annotations = {
 
   // New
 
+  f0683965: 'new, NR',
+  f0685007: 'new, NR',
+  f0685231: 'new, NR',
+  f0685539: 'new, NR',
+  f0685706: 'new, NR',
+  f0685829: 'new, NR',
+  f0686111: 'new, Korea, Jung-gu',
+  f0686816: 'new, NR',
+  f0687206: 'new, China, Hangzhou',
+  f0687211: 'new, NR',
+  f0688165: 'new, NR',
+  f0688935: 'new, China, Yangzhou',
+  f0690459: 'new, China, Beijing',
+  f0690736: 'new, NR',
+  f0691310: 'new, NR',
+  f0693008: 'new, China, Shanghai',
+  f0693127: 'new, NR',
+  f0694099: 'new, NR',
+  f0694149: 'new, NR',
+  f0694232: 'new, NR',
+  f0694396: 'new, UK, Dudley',
+  f0694881: 'new, China, Hangzhou',
+  f0693131: 'new, China, Zhongshan',
+  f0694172: 'new, China, Luzhou',
+  f0694999: 'new, NR',
+  f0695289: 'new, NR',
+  f0697132: 'new, Korea, Busan',
+  f0697162: 'new, Finland, Helsinki',
+  f0697249: 'new, NR',
+  f0697462: 'new, Korea, Dalseo-gu',
+  f0697913: 'new, NR',
+  f0698866: 'new, Finland, Helsinki',
+  f0700207: 'new, China, Harbin',
+  f0700999: 'new, China, Chengdu',
+
   // Inflight
 
   f0122398: 'inflight, NR', // FundsReserved: about 5 hours
