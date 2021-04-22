@@ -41,6 +41,7 @@ const baiduCities = {
   148: 'Qinhuangdao', // 秦皇岛市
   149: 'Cangzhou', // 沧州市
   150: 'Shijiazhuang', // 石家庄市
+  151: 'Handan', // 邯郸市
   152: 'Xinxiang', // 新乡市
   158: 'Changsha', // 长沙市
   161: 'Nantong', // 南通市

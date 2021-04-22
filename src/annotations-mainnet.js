@@ -14,6 +14,17 @@ const annotations = {
 
   // New
 
+  f0705118: 'new, Korea, Seongnam-si',
+  f0705704: 'new, China, Karamay',
+  f0706937: 'new, Korea, Bucheon-si',
+  f0707721: 'new, Netherlands',
+  f0709325: 'new, Korea, Jung-gu',
+  f0709739: 'new, China, Handan',
+  f0709896: 'new, NR',
+  f0713585: 'new, Russia',
+  f0715235: 'new, Korea, Jung-gu',
+  f0715707: 'new, Japan, Yokohama',
+
   // Inflight
 
   // Unknown
