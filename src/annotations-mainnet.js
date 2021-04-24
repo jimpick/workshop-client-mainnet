@@ -14,6 +14,14 @@ const annotations = {
 
   // New
 
+  f0717254: 'new, Korea, Seongnam-si',
+  f0717913: 'new, Korea, Jung-gu',
+  f0717969: 'new, USA, Los Angeles',
+  f0718079: 'new, NR',
+  f0718665: 'new, NR',
+  f0720716: 'new, Korea, Seoul',
+  f0720762: 'new, Korea, Incheon',
+
   // Inflight
 
   // Unknown
