@@ -14,6 +14,12 @@ const annotations = {
 
   // New
 
+  f0723538: 'new, China, Handan',
+  f0723827: 'new, China, Guizhou',
+  f0724179: 'new, China, Wenzhou',
+  f0724192: 'new, Korea, Hwaseong-si',
+  f0724219: 'new, Spain, Vilanova del Cami',
+
   // Inflight
 
   // Unknown
