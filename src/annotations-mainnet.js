@@ -14,12 +14,6 @@ const annotations = {
 
   // New
 
-  f0723538: 'new, China, Handan',
-  f0723827: 'new, China, Guizhou',
-  f0724179: 'new, China, Wenzhou',
-  f0724192: 'new, Korea, Hwaseong-si',
-  f0724219: 'new, Spain, Vilanova del Cami',
-
   // Inflight
 
   // Unknown
@@ -29,19 +23,23 @@ const annotations = {
   f03339: 'active, China, Luzhou, benxun', // 1813099 about 2 hours
   f020489: 'active, China, Lioaning', // 1813113 about 2 hours
   f022261: 'active, China, Luzhou', // 1813115 about 2 hours
+  f023219: 'active, China, Beijing + Zhangjiakou', // 1815043 about 2 hours
   f024550: 'active, China, Wenzhou', // 1813073 about 3 hours
   f033025: 'active, Korea, Daegu', // 1813437 about 2 hours
   f033036: 'active, China, Liaoning', // 1813116 about 2 hours
   f042567: 'active, China, Jinhua', // 1813123 about 3 hours
+  f053088: 'active, China, Shanghai', // 1813143 about 3 hours
   f063628: 'active, NR', // 1813133 about 2 hours
   f080103: 'active, Korea, Seongnam-si', // 1813080 about 2 hours
   f081644: 'active, China, Wenzhou', // 1813134 about 3 hours
   f094374: 'active, China, Nanyang', // 1813107 about 2 hours
   f097720: 'active, Korea, Bucheon-si', // 1813072 about 3 hours
   f0106949: 'active, Korea, Seoul', // 1813102 about 3 hours
+  f0124554: 'active, Korea, Gimhae', // 1813057 about 3 hours
   f0124944: 'active, NR', // 1813434 about 2 hours
   f0132461: 'active, Korea, Daegu', // 1813048 about 3 hours
   f0149455: 'active, NR', // 1813146 about 2 hours
+  f0156207: 'active, Korea, Ulsan', // 1813420 about 2 hours
   f0157265: 'active, China, Zhangjiakou', // 1813249 about 2 hours
   f0157564: 'active, Korea, Daejeon', // 1813060 about 2 hours
   f0165375: 'active, Korea, Seongnam-si', // 1813050 about 2 hours
@@ -53,8 +51,12 @@ const annotations = {
   f0397728: 'active, China, Dongguan', // 1813089 about 2 hours
   f0400920: 'active, China, Luzhou', // 1813260 about 2 hours
   f0413563: 'active, Korea, Gangnam-gu', // 1813051 about 2 hours
+  f0417750: 'active, NR', // 1813151 about 2 hours
+  f0419768: 'active, Korea, Seongnam-si', // 1813063 about 2 hours
   f0437246: 'active, China, Hangzhou', // 1813153 about 2 hours
   f0460440: 'active, Korea, Seongnam-si', // 1813049 about 2 hours
+  f0470972: 'active, China, Shanghai', // 1813156 about 2 hours
+  f0478837: 'active, China, Zhangzhou', // 1813014 about 3 hours
   f0504054: 'active, China, Luzhou', // 1813433 about 2 hours
   f0513351: 'active, NR', // 1813284 about 2 hours
   f0675287: 'active, NR', // 1813412 about 2 hours
@@ -65,17 +67,18 @@ const annotations = {
   f0694881: 'active, China, Hangzhou', // 1813157 about 3 hours
   f0700999: 'active, China, Chengdu', // 1813158 about 2 hours
   f0706937: 'active, Korea, Bucheon-si', // 1813414 about 2 hours
+  f0709366: 'active, China, Hangzhou', // 1813092 about 3 hours
   f0709739: 'active, China, Handan', // 1813173 about 3 hours
   f0715561: 'active, NR', // 1813425 about 2 hours
+  f0715707: 'active, Japan, Yokohama', // 1813438 about 2 hours
   f0717913: 'active, Korea, Jung-gu', // 1813410 about 2 hours
+  f0717969: 'active, USA, Los Angeles', // 1813147 about 4 hours
   f0722515: 'active, Korea, Geumcheon-gu', // 1813268 about 2 hours
   f0723006: 'active, Korea, Bucheon-si', // 1813096 about 2 hours
   f0723162: 'active, Korea, Bucheon-si', // 1813503 about 3 hours
 
   // Active-sealing (active, with in-flight sealing)
 
-  f0124554: 'active-sealing, Korea, Gimhae', // 1813057
-  f0419768: 'active-sealing, Korea, Seongnam-si', // 1813063
   f0435045: 'active-sealing, Korea, Ulju-gun', // 1813054
   f0458627: 'active-sealing, Korea, Seongnam-si', // 1813059
   f0707721: 'active-sealing, Netherlands', // 1815042
@@ -92,12 +95,10 @@ const annotations = {
   f015233: 'sealing, China, Nanjing', // 1813091
   f016276: 'sealing, China, Beijing', // 1813110
   f019806: 'sealing, China, Beijing', // 1813163
-  f023219: 'sealing, China, Beijing + Zhangjiakou', // 1815043
   f024944: 'sealing, Korea, Yeongdeungpo-dong', // 1813078
   f030408: 'sealing, NR', // 1813341
   f039515: 'sealing, China, Chongqing, valarhash', // 1813171
   f044160: 'sealing, China, Guangzhou, muxing', // 1813130
-  f053088: 'sealing, China, Shanghai', // 1813143
   f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1813081
   f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 1813077
   f078621: 'sealing, Korea, Uiwang', // 1813079
@@ -114,7 +115,6 @@ const annotations = {
   f0147214: 'sealing, NR', // 1813441
   f0150744: 'sealing, Korea, Ulsan', // 1813427
   f0155687: 'sealing, China, Guangzhou', // 1813182
-  f0156207: 'sealing, Korea, Ulsan', // 1813420
   f0156452: 'sealing, Korea, Ulsan', // 1813084
   f0165643: 'sealing, China, Guangzhou', // 1813149
   f0168058: 'sealing, China, Suzhou', // 1813148
@@ -126,13 +126,10 @@ const annotations = {
   f0407410: 'sealing, NR', // 1813317
   f0411786: 'sealing, Korea, Busan', // 1813088
   f0414383: 'sealing, China, Dongguan', // 1813416
-  f0417750: 'sealing, NR', // 1813151
   f0432329: 'sealing, NR', // 1813435
   f0456374: 'sealing, NR', // 1813152
   f0461791: 'sealing, Korea, Gwangju', // 1813436
   f0467217: 'sealing, China, Beijing', // 1813423
-  f0470972: 'sealing, China, Shanghai', // 1813156
-  f0478837: 'sealing, China, Zhangzhou', // 1813014
   f0482619: 'sealing, Korea, Seongnam-si', // 1813086
   f0514737: 'sealing, Korea, Busan', // 1813085
   f0520262: 'sealing, China, Fujian', // 1813405
@@ -143,15 +140,13 @@ const annotations = {
   f0693765: 'sealing, NR', // 1813266
   f0697162: 'sealing, Finland, Helsinki', // 1813424
   f0698866: 'sealing, Finland, Helsinki', // 1813415
-  f0709366: 'sealing, China, Hangzhou', // 1813092
-  f0715707: 'sealing, Japan, Yokohama', // 1813438
-  f0717969: 'sealing, USA, Los Angeles', // 1813147
   f0720716: 'sealing, Korea, Seoul', // 1813300
 
   // Stuck
 
-  f0430997: 'stuck, Korea', // CheckForAcceptance: about 17 hours
-  f0524589: 'stuck, Korea', // CheckForAcceptance: about 18 hours
+  f0524589: 'stuck, Korea', // CheckForAcceptance: 1 day
+  f0724179: 'stuck, China, Wenzhou', // CheckForAcceptance: about 6 hours
+  f0724219: 'stuck, Spain, Vilanova del Cami', // CheckForAcceptance: about 6 hours
 
   // Busy
 
@@ -611,6 +606,7 @@ const annotations = {
   f0402371: 'error, China, Shanghai', // error reading Response message from provider: EOF
   f0405129: 'error, China, Fujian', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.722000652949703849 FIL, balance: 0.540468854093788917 FIL): not enough funds to execute transaction
   f0417918: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f0430997: 'error, Korea', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals errored: handler: websocket connection closed
   f0434480: 'error, USA, Hummelstown', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.29999999999362682 FIL, balance: 0.109026690171336256 FIL): not enough funds to execute transaction
   f0444122: 'error, NR', // error reading Response message from provider: EOF
   f0497837: 'error, Korea, Gangnam-gu', // AddPiece failed: writing piece: storage call error 0: creating unsealed sector file: fallocate '/mnt/md0/storage/unsealed/s-t0497837-31': structure needs cleaning
@@ -824,6 +820,8 @@ const annotations = {
   f0709325: 'rejected, Korea, Jung-gu', // no online
   f0715235: 'rejected, Korea, Jung-gu', // no online
   f0722658: 'rejected, China, Chengdu', // no online
+  f0723538: 'rejected, China, Handan', // no online
+  f0723827: 'rejected, China, Guizhou', // sh: 1: /root/.lotusminer/dealfilter.pl: not found
 
   // Dial
 
@@ -1089,6 +1087,7 @@ const annotations = {
   f0682032: 'dial, China, Shenzhen', // * [/ip4/103.39.230.113/tcp/51105] dial tcp4 103.39.230.113:51105: connect: connection refused
   f0697132: 'dial, Korea, Busan', // * [/ip4/121.174.79.213/tcp/24001] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWRQnA6xKX2m2ttEbGY6FXw28EhjJKfibEM3TSLibi3ySL, but remote key matches 12D3KooWGY3ZAoGG1XfVF9wyU9KB7XhsMJG14XRyqZZoyPAwXWfg
   f0720762: 'dial, Korea, Incheon', // * [/ip4/175.207.93.3/tcp/41763] dial tcp4 0.0.0.0:46549->175.207.93.3:41763: i/o timeout
+  f0724192: 'dial, Korea, Hwaseong-si', // * [/ip4/121.136.168.225/tcp/38887] dial tcp4 0.0.0.0:46549->121.136.168.225:38887: i/o timeout
 
   // XNR (Not routable)
 
