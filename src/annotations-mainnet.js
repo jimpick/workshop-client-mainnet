@@ -14,6 +14,11 @@ const annotations = {
 
   // New
 
+  f0729674: 'new, Canada, Vancouver',
+  f0730266: 'new, China, Chongqing',
+  f0730353: 'new, Korea, Uijeongbu-si',
+  f0730529: 'new, USA, Boardman',
+
   // Inflight
 
   // Unknown
