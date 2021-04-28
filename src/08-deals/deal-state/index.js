@@ -117,6 +117,9 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
   if (lastDealState === 'FundsReserved') {
     return ['inflight', `FundsReserved: ${elapsedNow}`]
   }
+  if (lastDealState === 'Slashed') {
+      return ['slashed', '']
+  }
   if (lastDealState === 'Error' || lastDealState === 'Failing') {
     const matchFailingDataTransferProvider = dealMessage.match(/channel removed due to inactivity/)
     if (matchFailingDataTransferProvider) {
@@ -500,6 +503,7 @@ export default function DealList ({ appState, cid, dealType }) {
       'max-size',
       'min-ask',
       'xfr-failed',
+      'slashed',
       'error',
       'backoff',
       'rejected',
@@ -524,6 +528,7 @@ export default function DealList ({ appState, cid, dealType }) {
       'max-size',
       'min-ask',
       'xfr-failed',
+      'slashed',
       'error',
       'backoff',
       'rejected',
@@ -549,6 +554,7 @@ export default function DealList ({ appState, cid, dealType }) {
       'max-size',
       'min-ask',
       'xfr-failed',
+      'slashed',
       'error',
       'backoff',
       'rejected',
