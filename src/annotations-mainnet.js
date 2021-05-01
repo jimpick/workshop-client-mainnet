@@ -14,9 +14,6 @@ const annotations = {
 
   // New
 
-  f0751590: 'new, USA',
-  f0751619: 'new, Korea, Ulsan',
-
   // Inflight
 
   // Unknown
@@ -24,6 +21,7 @@ const annotations = {
   // Active
 
   f082635: 'active, NR', // 1858484 about 2 hours
+  f094374: 'active, China, Nanyang', // 1858490 about 2 hours
   f0106949: 'active, Korea, Seoul', // 1858482 about 2 hours
 
   // Active-sealing (active, with in-flight sealing)
@@ -33,7 +31,6 @@ const annotations = {
   f024550: 'active-sealing, China, Wenzhou', // 1858485
   f042567: 'active-sealing, China, Jinhua', // 1858479
   f081644: 'active-sealing, China, Wenzhou', // 1858480
-  f094374: 'active-sealing, China, Nanyang', // 1858490
   f0137168: 'active-sealing, China, Beijing', // 1858489
   f0149455: 'active-sealing, NR', // 1858487
   f0230200: 'active-sealing, Korea, Gwanak-gu, G-mining', // 1858491
@@ -52,7 +49,9 @@ const annotations = {
   f019806: 'sealing, China, Beijing', // 1858536
   f024944: 'sealing, Korea, Yeongdeungpo-dong', // 1858530
   f030125: 'sealing, China, Nantong', // 1858531
+  f033025: 'sealing, Korea, Daegu', // 1860104
   f033036: 'sealing, China, Liaoning', // 1858521
+  f053088: 'sealing, China, Shanghai', // 1860146
   f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1858533
   f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 1858534
   f078621: 'sealing, Korea, Uiwang', // 1858532
@@ -66,6 +65,7 @@ const annotations = {
   f0157429: 'sealing, Korea, Bucheon-si', // 1858601
   f0157564: 'sealing, Korea, Daejeon', // 1858493
   f0165375: 'sealing, Korea, Seongnam-si', // 1858543
+  f0165539: 'sealing, Japan, Yokohama', // 1860145
   f0165643: 'sealing, China, Guangzhou', // 1858544
   f0166327: 'sealing, NR', // 1858576
   f0220156: 'sealing, NR', // 1858608
@@ -93,50 +93,45 @@ const annotations = {
 
   // Stuck
 
-  f02490: 'stuck, China, Fujian', // CheckForAcceptance: about 8 hours
-  f03339: 'stuck, China, Luzhou, benxun', // CheckForAcceptance: about 8 hours
-  f03345: 'stuck, China, Fuzhou, chh', // CheckForAcceptance: about 8 hours
-  f08019: 'stuck, China, Yantai, 三合', // CheckForAcceptance: about 8 hours
-  f010513: 'stuck, China, Chongqing', // CheckForAcceptance: about 8 hours
-  f022261: 'stuck, China, Luzhou', // CheckForAcceptance: about 8 hours
-  f025025: 'stuck, China, Qingdao', // CheckForAcceptance: about 8 hours
-  f033025: 'stuck, Korea, Daegu', // CheckForAcceptance: about 8 hours
-  f039515: 'stuck, China, Chongqing, valarhash', // CheckForAcceptance: about 8 hours
-  f044160: 'stuck, China, Guangzhou, muxing', // CheckForAcceptance: about 8 hours
-  f053088: 'stuck, China, Shanghai', // CheckForAcceptance: about 8 hours
-  f063628: 'stuck, NR', // CheckForAcceptance: about 8 hours
-  f097720: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 8 hours
-  f099082: 'stuck, NR', // CheckForAcceptance: about 7 hours
-  f0102187: 'stuck, NR', // CheckForAcceptance: about 7 hours
-  f0110804: 'stuck, USA, Santa Clara', // CheckForAcceptance: about 8 hours
-  f0119997: 'stuck, NR', // CheckForAcceptance: about 7 hours
-  f0130912: 'stuck, China, Hong Kong', // CheckForAcceptance: about 8 hours
-  f0150744: 'stuck, Korea, Ulsan', // CheckForAcceptance: about 8 hours
-  f0165539: 'stuck, Japan, Yokohama', // CheckForAcceptance: about 8 hours
-  f0166512: 'stuck, NR', // CheckForAcceptance: about 8 hours
-  f0396705: 'stuck, NR', // CheckForAcceptance: about 8 hours
-  f0399610: 'stuck, Ukraine', // CheckForAcceptance: about 8 hours
-  f0400920: 'stuck, China, Luzhou', // CheckForAcceptance: about 8 hours
-  f0401135: 'stuck, Singapore', // CheckForAcceptance: about 8 hours
-  f0402371: 'stuck, China, Shanghai', // CheckForAcceptance: about 8 hours
-  f0417750: 'stuck, NR', // CheckForAcceptance: about 8 hours
-  f0430997: 'stuck, Korea', // CheckForAcceptance: about 8 hours
-  f0458627: 'stuck, Korea, Seongnam-si', // CheckForAcceptance: about 8 hours
-  f0461791: 'stuck, Korea, Gwangju', // CheckForAcceptance: about 8 hours
-  f0497837: 'stuck, Korea, Gangnam-gu', // CheckForAcceptance: about 8 hours
-  f0504054: 'stuck, China, Luzhou', // CheckForAcceptance: about 8 hours
-  f0521569: 'stuck, Korea, Guro-go', // CheckForAcceptance: about 8 hours
-  f0524589: 'stuck, Korea', // CheckForAcceptance: about 8 hours
-  f0694172: 'stuck, China, Luzhou', // CheckForAcceptance: about 8 hours
-  f0709739: 'stuck, China, Handan', // CheckForAcceptance: about 8 hours
-  f0715707: 'stuck, Japan, Yokohama', // CheckForAcceptance: about 8 hours
-  f0722515: 'stuck, Korea, Geumcheon-gu', // CheckForAcceptance: about 8 hours
-  f0723006: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 8 hours
-  f0723162: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 8 hours
-  f0729674: 'stuck, Canada, Vancouver', // CheckForAcceptance: about 8 hours
-  f0734051: 'stuck, Korea, Hwaseong-si', // CheckForAcceptance: about 8 hours
-  f0744199: 'stuck, China, Taiwan, Hsinchu', // CheckForAcceptance: about 8 hours
-  f0746416: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 8 hours
+  f02490: 'stuck, China, Fujian', // CheckForAcceptance: about 11 hours
+  f03345: 'stuck, China, Fuzhou, chh', // CheckForAcceptance: about 11 hours
+  f08019: 'stuck, China, Yantai, 三合', // CheckForAcceptance: about 11 hours
+  f010513: 'stuck, China, Chongqing', // CheckForAcceptance: about 11 hours
+  f022261: 'stuck, China, Luzhou', // CheckForAcceptance: about 11 hours
+  f025025: 'stuck, China, Qingdao', // CheckForAcceptance: about 11 hours
+  f039515: 'stuck, China, Chongqing, valarhash', // CheckForAcceptance: about 11 hours
+  f044160: 'stuck, China, Guangzhou, muxing', // CheckForAcceptance: about 11 hours
+  f063628: 'stuck, NR', // CheckForAcceptance: about 11 hours
+  f097720: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 11 hours
+  f099082: 'stuck, NR', // CheckForAcceptance: about 10 hours
+  f0102187: 'stuck, NR', // CheckForAcceptance: about 10 hours
+  f0110804: 'stuck, USA, Santa Clara', // CheckForAcceptance: about 11 hours
+  f0119997: 'stuck, NR', // CheckForAcceptance: about 10 hours
+  f0130912: 'stuck, China, Hong Kong', // CheckForAcceptance: about 11 hours
+  f0166512: 'stuck, NR', // CheckForAcceptance: about 11 hours
+  f0396705: 'stuck, NR', // CheckForAcceptance: about 11 hours
+  f0399610: 'stuck, Ukraine', // CheckForAcceptance: about 11 hours
+  f0400920: 'stuck, China, Luzhou', // CheckForAcceptance: about 11 hours
+  f0401135: 'stuck, Singapore', // CheckForAcceptance: about 11 hours
+  f0402371: 'stuck, China, Shanghai', // CheckForAcceptance: about 11 hours
+  f0417750: 'stuck, NR', // CheckForAcceptance: about 11 hours
+  f0430997: 'stuck, Korea', // CheckForAcceptance: about 11 hours
+  f0458627: 'stuck, Korea, Seongnam-si', // CheckForAcceptance: about 11 hours
+  f0461791: 'stuck, Korea, Gwangju', // CheckForAcceptance: about 11 hours
+  f0497837: 'stuck, Korea, Gangnam-gu', // CheckForAcceptance: about 11 hours
+  f0504054: 'stuck, China, Luzhou', // CheckForAcceptance: about 11 hours
+  f0521569: 'stuck, Korea, Guro-go', // CheckForAcceptance: about 11 hours
+  f0524589: 'stuck, Korea', // CheckForAcceptance: about 11 hours
+  f0694172: 'stuck, China, Luzhou', // CheckForAcceptance: about 11 hours
+  f0715707: 'stuck, Japan, Yokohama', // CheckForAcceptance: about 11 hours
+  f0722515: 'stuck, Korea, Geumcheon-gu', // CheckForAcceptance: about 11 hours
+  f0723006: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 11 hours
+  f0723162: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 11 hours
+  f0729674: 'stuck, Canada, Vancouver', // CheckForAcceptance: about 11 hours
+  f0734051: 'stuck, Korea, Hwaseong-si', // CheckForAcceptance: about 11 hours
+  f0744199: 'stuck, China, Taiwan, Hsinchu', // CheckForAcceptance: about 11 hours
+  f0746416: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: about 11 hours
+  f0751619: 'stuck, Korea, Ulsan', // CheckForAcceptance: 3 minutes
 
   // Busy
 
@@ -513,11 +508,13 @@ const annotations = {
   f0730266: 'min-ask, China, Chongqing', // 20000000 < 122070312500000
   f0730353: 'min-ask, Korea, Uijeongbu-si', // 20000000 < 122070190429687500000
   f0746542: 'min-ask, Korea, Seongnam-si', // 20000000 < 121948242187500000
+  f0751590: 'min-ask, USA', // 20000000 < 610351562500000
 
   // Slashed
 
   // Error
 
+  f03339: 'error, China, Luzhou, benxun', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals exit code: SysErrOutOfGas(7)
   f07709: 'error, Korea, Dongjak-gu', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals exit code: SysErrOutOfGas(7)
   f07830: 'error, China, Zhongshan', // error reading Response message from provider: EOF
   f014365: 'error, Australia, Turramurra + Sydney', // error reading Response message from provider: stream reset
@@ -555,6 +552,7 @@ const annotations = {
   f0137489: 'error, UK, Deeside', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999938859476 FIL, balance: 0.015297478264802077 FIL): not enough funds to execute transaction
   f0144528: 'error, NR', // deal failed: (State=26) error calling node: reserving funds: failed to sign message: Don't allow transfer from f3sws2i5yuuwu53aoy7rekbslp7oni22yathzw5o446l7jdo4wb3jefmkyyybvnibihegts4mjhqpv5slyo7la to f05 : Does not exist in the whitelist.
   f0146751: 'error, China, Jiangsu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.999999999956517168 FIL, balance: 0.124884421850587082 FIL): not enough funds to execute transaction
+  f0150744: 'error, Korea, Ulsan', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals errored: handler: websocket connection closed
   f0150782: 'error, China, Xiamen', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0151341: 'error, China, Zhangzhou', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0151366: 'error, China, Fuzhou + Xiamen', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
@@ -583,6 +581,7 @@ const annotations = {
   f0512170: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.4999999999640916 FIL, balance: 0.212705742888073507 FIL): not enough funds to execute transaction
   f0512179: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999953163752 FIL, balance: 0.023392076813467113 FIL): not enough funds to execute transaction
   f0513351: 'error, NR', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999968139074 FIL, balance: 0.046060475836710078 FIL): not enough funds to execute transaction
+  f0709739: 'error, China, Handan', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals errored: handler: websocket connection closed
   f0732291: 'error, Korea, Incheon', // deal failed: (State=26) deal data verification failed: error generating CommP: failed to build treeCaused by:    0: failed to create data store    1: No such file or directory (os error 2)
   f0744513: 'error, China, Guangzhou', // deal failed: (State=26) deal data verification failed: error generating CommP: failed to build treeCaused by:    0: failed to populate data    1: No space left on device (os error 28)
 
