@@ -14,6 +14,16 @@ const annotations = {
 
   // New
 
+  f0750779: 'new, NR',
+  f0751831: 'new, NR',
+  f0752215: 'new, USA, Huntersville',
+  f0752322: 'new, USA, Watsonville',
+  f0752458: 'new, Australia, Sydney',
+  f0752620: 'new, NR',
+  f0752695: 'new, Korea, Seongnam-si',
+  f0753569: 'new, China, Beijing',
+
+
   // Inflight
 
   // Unknown
