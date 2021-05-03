@@ -45,6 +45,8 @@ const annotations = {
   f0165375: 'active, Korea, Seongnam-si', // 1858543 1 day
   f0165539: 'active, Japan, Yokohama', // 1860145 1 day
   f0166327: 'active, NR', // 1858576 about 24 hours
+  f0239251: 'active, Korea, Uiwang', // 1865603 about 3 hours
+  f0399610: 'active, Ukraine', // 1865210 about 2 hours
   f0399814: "active, China, Ya'an", // 1858528 1 day
   f0400920: 'active, China, Luzhou', // 1861360 1 day
   f0401300: 'active, France, Deuil-la-Barre', // 1859349 1 day
@@ -52,6 +54,7 @@ const annotations = {
   f0419768: 'active, Korea, Seongnam-si', // 1858551 1 day
   f0437246: 'active, China, Hangzhou', // 1858494 1 day
   f0447181: 'active, China, Zibo', // 1858548 1 day
+  f0461791: 'active, Korea, Gwangju', // 1865528 about 3 hours
   f0470972: 'active, China, Shanghai', // 1858550 1 day
   f0478837: 'active, China, Zhangzhou', // 1858381 1 day
   f0482619: 'active, Korea, Seongnam-si', // 1858545 1 day
@@ -61,11 +64,15 @@ const annotations = {
   f0680538: 'active, Korea, Bucheon-si', // 1858483 1 day
   f0687206: 'active, China, Hangzhou', // 1858600 1 day
   f0693131: 'active, China, Zhongshan', // 1858538 1 day
+  f0694172: 'active, China, Luzhou', // 1865191 about 2 hours
   f0694881: 'active, China, Hangzhou', // 1858492 1 day
   f0706937: 'active, Korea, Bucheon-si', // 1858486 about 2 hours
   f0717913: 'active, Korea, Jung-gu', // 1858552 1 day
   f0717969: 'active, USA, Los Angeles', // 1858553 1 day
+  f0723006: 'active, Korea, Bucheon-si', // 1865236 about 2 hours
   f0745116: 'active, China, Beijing', // 1859135 1 day
+  f0751619: 'active, Korea, Ulsan', // 1865519 about 2 hours
+  f0752322: 'active, USA, Watsonville', // 1865678 about 3 hours
 
   // Active-sealing (active, with in-flight sealing)
 
@@ -77,7 +84,6 @@ const annotations = {
 
   f01231: 'sealing, Singapore', // 1858450
   f02490: 'sealing, China, Fujian', // 1865230
-  f02540: 'sealing, USA, Mobile, Foundry', // 1858522
   f03345: 'sealing, China, Fuzhou, chh', // 1865225
   f08019: 'sealing, China, Yantai, 三合', // 1865274
   f010513: 'sealing, China, Chongqing', // 1865227
@@ -86,9 +92,9 @@ const annotations = {
   f019806: 'sealing, China, Beijing', // 1858536
   f025025: 'sealing, China, Qingdao', // 1865202
   f030125: 'sealing, China, Nantong', // 1858531
-  f033025: 'sealing, Korea, Daegu', // 1860104
   f033036: 'sealing, China, Liaoning', // 1858521
   f039515: 'sealing, China, Chongqing, valarhash', // 1865229
+  f044160: 'sealing, China, Guangzhou, muxing', // 1878142
   f053088: 'sealing, China, Shanghai', // 1860146
   f055102: 'sealing, Vietman, Ho Chi Minh City + China', // 1858533
   f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 1858534
@@ -105,45 +111,29 @@ const annotations = {
   f0157564: 'sealing, Korea, Daejeon', // 1858493
   f0165643: 'sealing, China, Guangzhou', // 1858544
   f0166512: 'sealing, NR', // 1865517
-  f0220156: 'sealing, NR', // 1858608
   f0228855: 'sealing, Korea, Guro-gu', // 1858607
-  f0239251: 'sealing, Korea, Uiwang', // 1865603
   f0396846: 'sealing, China, Zhongshan', // 1858566
-  f0399610: 'sealing, Ukraine', // 1865210
   f0401135: 'sealing, Singapore', // 1864620
   f0402371: 'sealing, China, Shanghai', // 1864719
   f0402431: 'sealing, China, Hangzhou', // 1858542
   f0417750: 'sealing, NR', // 1865226
   f0458627: 'sealing, Korea, Seongnam-si', // 1865505
-  f0461791: 'sealing, Korea, Gwangju', // 1865528
-  f0507913: 'sealing, NR', // 1859005
-  f0521569: 'sealing, Korea, Guro-go', // 1861361
   f0524589: 'sealing, Korea', // 1865234
   f0693765: 'sealing, NR', // 1858609
-  f0694172: 'sealing, China, Luzhou', // 1865191
   f0700207: 'sealing, China, Harbin', // 1859627
   f0715707: 'sealing, Japan, Yokohama', // 1865232
   f0722515: 'sealing, Korea, Geumcheon-gu', // 1859688
-  f0723006: 'sealing, Korea, Bucheon-si', // 1865236
   f0723162: 'sealing, Korea, Bucheon-si', // 1865231
+  f0729674: 'sealing, Canada, Vancouver', // 1865498
   f0734051: 'sealing, Korea, Hwaseong-si', // 1865516
   f0744199: 'sealing, China, Taiwan, Hsinchu', // 1865529
   f0746416: 'sealing, Korea, Gyeonggi-do', // 1865518
   f0749380: 'sealing, China, Dongguan', // 1858995
-  f0751619: 'sealing, Korea, Ulsan', // 1865519
-  f0752322: 'sealing, USA, Watsonville', // 1865678
   f0752458: 'sealing, Australia, Sydney', // 1865676
   f0752695: 'sealing, Korea, Seongnam-si', // 1865623
   f0753569: 'sealing, China, Beijing', // 1865677
 
   // Stuck
-
-  f044160: 'stuck, China, Guangzhou, muxing', // CheckForAcceptance: 1 day
-  f0102187: 'stuck, NR', // CheckForAcceptance: 1 day
-  f0130912: 'stuck, China, Hong Kong', // CheckForAcceptance: 1 day
-  f0430997: 'stuck, Korea', // CheckForAcceptance: 1 day
-  f0497837: 'stuck, Korea, Gangnam-gu', // CheckForAcceptance: 1 day
-  f0729674: 'stuck, Canada, Vancouver', // CheckForAcceptance: 1 day
 
   // Busy
 
@@ -528,6 +518,7 @@ const annotations = {
 
   // Error
 
+  f02540: 'error, USA, Mobile, Foundry', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1858522 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f03339: 'error, China, Luzhou, benxun', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals exit code: SysErrOutOfGas(7)
   f07709: 'error, Korea, Dongjak-gu', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals exit code: SysErrOutOfGas(7)
   f07830: 'error, China, Zhongshan', // error reading Response message from provider: EOF
@@ -539,6 +530,7 @@ const annotations = {
   f022261: 'error, China, Luzhou', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals errored: handler: websocket connection closed
   f023198: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f025007: 'error, Korea, Gyeonggi-do, PINBYTES-eCUBE', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999980563204 FIL, balance: 0.029000504103530159 FIL): not enough funds to execute transaction
+  f033025: 'error, Korea, Daegu', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1860104 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f047666: 'error, China, Suihua', // error reading Response message from provider: EOF
   f054415: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f054417: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
@@ -555,6 +547,7 @@ const annotations = {
   f096976: 'error, Russia', // error reading Response message from provider: stream reset
   f097214: 'error, Korea, Bucheon-si, CryptoHash', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999984571192 FIL, balance: 0.1909639102288523 FIL): not enough funds to execute transaction
   f0101387: 'error, China, Shenzhen', // error reading Response message from provider: unmarshaling t.Response: stream reset
+  f0102187: 'error, NR', // deal failed: (State=13) start epoch already elapsed
   f0108979: 'error, Korea, Bupyeong-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999962358201 FIL, balance: 0.18132394170790174 FIL): not enough funds to execute transaction
   f0109040: 'error, China, Zhangzhou', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0109901: 'error, China, Huludao', // error reading Response message from provider: stream reset
@@ -564,6 +557,7 @@ const annotations = {
   f0115108: 'error, Korea, Yangcheon-gu', // deal failed: (State=11) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999953021139 FIL, balance: 0.193628632138369601 FIL): not enough funds to execute transaction
   f0122410: 'error, China, Shanghai', // error reading Response message from provider: stream reset
   f0124335: 'error, Finland, Helsinki', // error reading Response message from provider: stream reset
+  f0130912: 'error, China, Hong Kong', // deal failed: (State=13) start epoch already elapsed
   f0137489: 'error, UK, Deeside', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999938859476 FIL, balance: 0.015297478264802077 FIL): not enough funds to execute transaction
   f0144528: 'error, NR', // deal failed: (State=26) error calling node: reserving funds: failed to sign message: Don't allow transfer from f3sws2i5yuuwu53aoy7rekbslp7oni22yathzw5o446l7jdo4wb3jefmkyyybvnibihegts4mjhqpv5slyo7la to f05 : Does not exist in the whitelist.
   f0146751: 'error, China, Jiangsu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.999999999956517168 FIL, balance: 0.124884421850587082 FIL): not enough funds to execute transaction
@@ -580,6 +574,7 @@ const annotations = {
   f0162183: "error, China, Xi'an", // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0162394: 'error, China, Guangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.948084087880313312 FIL, balance: 0.045723826839724376 FIL): not enough funds to execute transaction
   f0168058: 'error, China, Suzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.89999999996991669 FIL, balance: 0.720953319819954913 FIL): not enough funds to execute transaction
+  f0220156: 'error, NR', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1858608 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0225676: 'error, Korea, Guro-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.49999999994936004 FIL, balance: 0.248139758455419828 FIL): not enough funds to execute transaction
   f0227660: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0228575: 'error, Canada, Calgary', // deal failed: (State=11) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.299999999975349256 FIL, balance: 0.259034404175539069 FIL): not enough funds to execute transaction
@@ -593,11 +588,15 @@ const annotations = {
   f0403896: 'error, USA, Huntersville', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0405129: 'error, China, Fujian', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.999999999994980401 FIL, balance: 0.520316501585853518 FIL): not enough funds to execute transaction
   f0417918: 'error, NR', // sending proposal to storage provider failed: exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f0430997: 'error, Korea', // deal failed: (State=13) start epoch already elapsed
   f0435045: 'error, Korea, Ulju-gun', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.099999999951570095 FIL, balance: 0.007308045058405276 FIL): not enough funds to execute transaction
   f0460440: 'error, Korea, Seongnam-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 2.430934106695938675 FIL, balance: 1.195030619422896906 FIL): not enough funds to execute transaction
+  f0497837: 'error, Korea, Gangnam-gu', // deal failed: (State=13) start epoch already elapsed
+  f0507913: 'error, NR', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1859005 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0512170: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.4999999999640916 FIL, balance: 0.212705742888073507 FIL): not enough funds to execute transaction
   f0512179: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999953163752 FIL, balance: 0.023392076813467113 FIL): not enough funds to execute transaction
   f0513351: 'error, NR', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999968139074 FIL, balance: 0.046060475836710078 FIL): not enough funds to execute transaction
+  f0521569: 'error, Korea, Guro-go', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1861361 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0709739: 'error, China, Handan', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals errored: handler: websocket connection closed
   f0732291: 'error, Korea, Incheon', // deal failed: (State=26) deal data verification failed: error generating CommP: failed to build treeCaused by:    0: failed to create data store    1: No such file or directory (os error 2)
   f0744513: 'error, China, Guangzhou', // deal failed: (State=26) deal data verification failed: error generating CommP: failed to build treeCaused by:    0: failed to populate data    1: No space left on device (os error 28)
