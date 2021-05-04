@@ -21,6 +21,11 @@ const annotations = {
   f0755645: 'new, Korea, Jung-gu',
   f0756207: 'new, Korea',
   f0756242: 'new, China, Taiwan, Taipei',
+  f0757509: 'new, Ukraine, Odessa',
+  f0757610: 'new, NR',
+  f0758143: 'new, Canada',
+  f0758230: 'new, Korea, Geumcheon-gu',
+  f0758390: 'new, USA, Phoenix',
 
   // Inflight
 
@@ -130,7 +135,7 @@ const annotations = {
   f0746416: 'sealing, Korea, Gyeonggi-do', // 1865518
   f0749380: 'sealing, China, Dongguan', // 1858995
   f0752458: 'sealing, Australia, Sydney', // 1865676
-  f0752695: 'sealing, Korea, Seongnam-si', // 1865623
+  f0752695: 'active, Korea, Seongnam-si', // 1865623
   f0753569: 'sealing, China, Beijing', // 1865677
 
   // Stuck
