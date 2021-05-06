@@ -18,6 +18,9 @@ const annotations = {
   f0761445: 'new, Ukraine, Odessa',
   f0761728: 'new, China, Yichun',
   f0764041: 'new, China, Dongguan',
+  f0764901: 'new, NR',
+  f0765545: 'new, China, Hangzhou',
+  f0766622: 'new, China, Hangzhou',
 
   // Inflight
 
