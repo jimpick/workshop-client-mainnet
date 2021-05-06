@@ -13,6 +13,11 @@ const annotations = {
   // Retest
 
   // New
+  
+  f0761358: 'new, China, Chengdu',
+  f0761445: 'new, Ukraine, Odessa',
+  f0761728: 'new, China, Yichun',
+  f0764041: 'new, China, Dongguan',
 
   // Inflight
 
