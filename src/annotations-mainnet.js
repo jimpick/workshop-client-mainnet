@@ -12,9 +12,13 @@
 const annotations = {
   // Retest
 
+
   // New
 
   // Inflight
+
+  f097219: 'inflight, NR',
+  f0127627: 'inflight, NR',
 
   // Unknown
 
