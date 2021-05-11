@@ -972,7 +972,7 @@ const annotations = {
   f024511: 'dial, China, Shenzhen', // * [/ip4/103.44.247.137/tcp/51105] dial tcp4 0.0.0.0:45751->103.44.247.137:51105: i/o timeout
   f025002: 'dial, NR', // * [/ip4/10.30.8.211/tcp/14567] dial tcp4 0.0.0.0:45751->10.30.8.211:14567: i/o timeout
   f025017: 'dial, China, Hefei, 一三科技-913', // * [/ip4/175.6.250.70/tcp/51105] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWBZeFG1c5zNwCCVnCa6g5TyrUQu5f9oLTYsZyvSigBEXu, but remote key matches 12D3KooWHNxRAA9LvkwDt5a1oQUAqoHzVYXqwueDHo1kGDxAHMQN
-  f025019: 'dial, China, Taiwan, Hsinchu', // * [/ip4/140.113.194.250/tcp/24002] dial tcp4 0.0.0.0:45751->140.113.194.250:24002: i/o timeout
+  f025019: 'delist, China, Taiwan, Hsinchu', // * [/ip4/140.113.194.250/tcp/24002] dial tcp4 0.0.0.0:45751->140.113.194.250:24002: i/o timeout
   f029416: 'dial, NR', // * [/ip4/0.0.0.0/tcp/1024] dial tcp4 0.0.0.0:1024: connect: connection refused
   f029665: 'dial, China, Shenyang', // * [/ip4/124.95.135.132/tcp/7000] dial tcp4 124.95.135.132:7000: connect: connection refused
   f030379: 'dial, Korea, Uiwang', // * [/ip4/211.170.25.236/tcp/20000] dial tcp4 0.0.0.0:45751->211.170.25.236:20000: i/o timeout
@@ -1026,11 +1026,11 @@ const annotations = {
   f089551: 'dial, NR', // * [/ip4/121.40.135.72/tcp/26892] dial tcp4 0.0.0.0:45751->121.40.135.72:26892: i/o timeout
   f090893: 'dial, USA', // * [/ip4/6.143.143.121/tcp/912] dial tcp4 0.0.0.0:45751->6.143.143.121:912: i/o timeout  * [/ip4/76.223.53.59/tcp/33912] dial tcp4 0.0.0.0:45751->76.223.53.59:33912: i/o timeout
   f094765: 'dial, NR', // * [/ip4/218.68.85.213/tcp/12350] dial tcp4 218.68.85.213:12350: connect: connection refused
-  f094901: 'dial, Korea, Bucheon-si', // * [/ip4/119.197.20.28/tcp/24001] dial tcp4 0.0.0.0:45751->119.197.20.28:24001: i/o timeout
+  f094901: 'delist, Korea, Bucheon-si', // * [/ip4/119.197.20.28/tcp/24001] dial tcp4 0.0.0.0:45751->119.197.20.28:24001: i/o timeout
   f095382: 'dial, China, Dongguan', // * [/ip4/125.93.73.102/tcp/2345] dial tcp4 125.93.73.102:2345: connect: connection refused
   f096133: 'dial, China, Changsha + Dazhou', // * [/ip4/175.6.68.154/tcp/14913] dial tcp4 0.0.0.0:45751->175.6.68.154:14913: i/o timeout  * [/ip4/175.6.66.78/tcp/14913] dial tcp4 0.0.0.0:45751->175.6.66.78:14913: i/o timeout
   f096173: 'dial, Korea, Gangnam-gu', // * [/ip4/61.78.81.239/tcp/22222] dial tcp4 0.0.0.0:45751->61.78.81.239:22222: i/o timeout  * [/ip4/61.78.81.239/tcp/8800] dial tcp4 0.0.0.0:45751->61.78.81.239:8800: i/o timeout  * [/ip4/61.78.81.239/tcp/33333] dial tcp4 0.0.0.0:45751->61.78.81.239:33333: i/o timeout  * [/ip4/61.78.81.239/tcp/11111] dial tcp4 0.0.0.0:45751->61.78.81.239:11111: i/o timeout  * [/ip4/61.78.81.239/tcp/44444] dial tcp4 0.0.0.0:45751->61.78.81.239:44444: i/o timeout  * [/ip4/61.78.81.239/tcp/23456] dial tcp4 0.0.0.0:45751->61.78.81.239:23456: i/o timeout  * [/ip4/61.78.81.239/tcp/55555] dial tcp4 0.0.0.0:45751->61.78.81.239:55555: i/o timeout  * [/ip4/61.78.81.239/tcp/12345] dial tcp4 0.0.0.0:45751->61.78.81.239:12345: i/o timeout
-  f096976: 'dial, Russia', // * [/ip4/81.163.20.65/tcp/24001] dial tcp4 0.0.0.0:45751->81.163.20.65:24001: i/o timeout
+  f096976: 'delist, Russia', // * [/ip4/81.163.20.65/tcp/24001] dial tcp4 0.0.0.0:45751->81.163.20.65:24001: i/o timeout
   f097182: 'dial, China, Chengdu', // * [/ip4/182.131.4.195/tcp/32759] dial tcp4 182.131.4.195:32759: connect: connection refused
   f097687: 'dial, China, Yangzhou', // * [/ip4/61.147.81.133/tcp/16017] dial tcp4 61.147.81.133:16017: connect: connection refused
   f099705: 'dial, China, Zibo', // * [/ip4/218.201.173.80/tcp/24001] dial tcp4 0.0.0.0:45751->218.201.173.80:24001: i/o timeout
@@ -1063,7 +1063,7 @@ const annotations = {
   f0142723: 'dial, NR', // * [/ip4/10.4.104.11/tcp/12288] dial tcp4 0.0.0.0:45751->10.4.104.11:12288: i/o timeout
   f0143858: 'dial, USA, Calistoga', // * [/ip4/72.52.116.228/tcp/12350] dial tcp4 0.0.0.0:45751->72.52.116.228:12350: i/o timeout
   f0144313: 'dial, NR', // * [/ip4/10.5.101.90/tcp/12288] dial tcp4 0.0.0.0:45751->10.5.101.90:12288: i/o timeout  * [/ip4/106.74.20.7/tcp/12288] dial tcp4 0.0.0.0:45751->106.74.20.7:12288: i/o timeout
-  f0144724: 'dial, USA, Los Angeles', // * [/ip4/209.170.228.251/tcp/24001] dial tcp4 209.170.228.251:24001: connect: connection refused
+  f0144724: 'delist, USA, Los Angeles', // * [/ip4/209.170.228.251/tcp/24001] dial tcp4 209.170.228.251:24001: connect: connection refused
   f0146393: 'dial, China, Foshan', // * [/ip4/183.2.233.3/tcp/24501] dial tcp4 0.0.0.0:45751->183.2.233.3:24501: i/o timeout
   f0146428: 'dial, NR', // * [/ip4/172.16.2.105/tcp/6789] dial tcp4 0.0.0.0:45751->172.16.2.105:6789: i/o timeout
   f0152563: 'dial, China, Chongqing', // * [/ip4/58.43.1.82/tcp/24001] dial tcp4 0.0.0.0:45751->58.43.1.82:24001: i/o timeout  * [/ip4/192.168.1.100/tcp/24001] dial tcp4 0.0.0.0:45751->192.168.1.100:24001: i/o timeout
@@ -1114,8 +1114,8 @@ const annotations = {
   f0732272: 'dial, NR', // * [/ip4/172.18.7.146/tcp/2347] dial tcp4 0.0.0.0:45751->172.18.7.146:2347: i/o timeout
   f0734051: 'dial, Korea, Hwaseong-si', // * [/ip4/121.136.168.225/tcp/56939] dial tcp4 0.0.0.0:45751->121.136.168.225:56939: i/o timeout
   f0751831: 'dial, NR', // * [/ip4/115.238.101.186/tcp/36662] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWGTR6KcXHjMoLib2LD48556JJBo3fYRG5SESZ4xeEb3DB, but remote key matches 12D3KooWFpfyn6VsypyaRmLJbYguwStdJtLYtMmyzP7fLKDvxCFe
-  f0757509: 'dial, Ukraine, Odessa', // * [/ip4/195.140.246.135/tcp/24001] dial tcp4 0.0.0.0:45751->195.140.246.135:24001: i/o timeout
-  f0761445: 'dial, Ukraine, Odessa', // * [/ip4/195.140.246.136/tcp/24001] dial tcp4 0.0.0.0:45751->195.140.246.136:24001: i/o timeout
+  f0757509: 'delist, Ukraine, Odessa', // * [/ip4/195.140.246.135/tcp/24001] dial tcp4 0.0.0.0:45751->195.140.246.135:24001: i/o timeout
+  f0761445: 'delist, Ukraine, Odessa', // * [/ip4/195.140.246.136/tcp/24001] dial tcp4 0.0.0.0:45751->195.140.246.136:24001: i/o timeout
 
   // XNR (Not routable)
 
@@ -1320,7 +1320,7 @@ const annotations = {
   f086442: 'xnr, NR',
   f086572: 'xnr, NR',
   f086988: 'xnr, NR',
-  f087096: 'xnr, NR',
+  f087096: 'delist, NR',
   f087256: 'xnr, China, Hangzhou',
   f087868: 'xnr, NR',
   f087879: 'xnr, NR',
@@ -1771,7 +1771,7 @@ const annotations = {
   f0241536: 'xnr, NR',
   f0241666: 'xnr, NR',
   f0242156: 'xnr, NR',
-  f0242345: 'xnr, NR',
+  f0242345: 'delist, NR',
   f0242373: 'xnr, NR',
   f0242420: 'xnr, NR',
   f0349810: 'xnr, China, Qinzhou',
@@ -1877,7 +1877,7 @@ const annotations = {
   f0463030: 'xnr, NR',
   f0465286: 'xnr, NR',
   f0466405: 'xnr, Germany, Niederaula',
-  f0467217: 'xnr, China, Beijing',
+  f0467217: 'delist, China, Beijing',
   f0467640: 'xnr, NR',
   f0470182: 'xnr, NR',
   f0472061: 'xnr, NR',
@@ -1911,7 +1911,7 @@ const annotations = {
   f0515264: 'xnr, NR',
   f0515389: 'xnr, NR',
   f0515674: 'xnr, NR',
-  f0518668: 'xnr, NR',
+  f0518668: 'delist, NR',
   f0519331: 'xnr, NR',
   f0519376: 'xnr, NR',
   f0520262: 'xnr, China, Fujian',
@@ -1997,10 +1997,10 @@ const annotations = {
   f0735027: 'xnr, NR',
   f0750779: 'xnr, NR',
   f0752620: 'xnr, NR',
-  f0756242: 'xnr, China, Taiwan, Taipei',
+  f0756242: 'delist, China, Taiwan, Taipei',
   f0757610: 'xnr, NR',
   f0764901: 'xnr, NR',
-  f0765545: 'xnr, China, Hangzhou',
+  f0765545: 'delist, China, Hangzhou',
 
   // Delisted
 
@@ -2010,7 +2010,7 @@ const annotations = {
   f01013: 'delist, NR', // carry-over
   f01101: 'delist, China, Shanghai', // carry-over
   f01102: 'delist, China, Shandong', // carry-over
-  f01154: 'delist, NR', // carry-over
+  f01154: 'retest, NR', // carry-over
   f01156: 'delist, China, Hangzhou', // carry-over
   f01232: 'delist, China, Hangzhou', // carry-over
   f01274: 'delist, China, Guangdong', // carry-over
@@ -2655,7 +2655,7 @@ const annotations = {
   f065259: 'delist, NR', // carry-over
   f065426: 'delist, Korea, Gimpo-si', // carry-over
   f065477: 'delist, NR', // carry-over
-  f065578: 'delist, NR', // carry-over
+  f065578: 'retest, NR', // carry-over
   f065689: 'delist, NR', // carry-over
   f065718: 'delist, China, Taiwan, Hsinchu', // carry-over
   f065732: 'delist, Korea, Gyeonggi-do', // carry-over
@@ -2755,7 +2755,7 @@ const annotations = {
   f0107171: 'delist, China, Karamay', // carry-over
   f0109163: 'delist, Korea, Songpa-gu', // carry-over
   f0109349: 'delist, NR', // carry-over
-  f0109901: 'delist, China, Huludao', // carry-over
+  f0109901: 'retest, China, Huludao', // carry-over
   f0110101: 'delist, Korea, Goyang-si', // carry-over
   f0110198: 'delist, Korea, Hwaseong-si', // carry-over
   f0110488: 'delist, China, Chongqing', // carry-over
@@ -2776,7 +2776,7 @@ const annotations = {
   f0128242: 'delist, Korea, Yongin-si', // carry-over
   f0131359: 'delist, China, Fuzhou', // carry-over
   f0131857: 'delist, China, Chongqing', // carry-over
-  f0132461: 'delist, Korea, Daegu', // carry-over
+  f0132461: 'retest, Korea, Daegu', // carry-over
   f0132765: 'delist, NR', // carry-over
   f0133486: 'delist, China, Shenzhen', // carry-over
   f0135906: 'delist, NR', // carry-over
@@ -2787,7 +2787,7 @@ const annotations = {
   f0147676: 'delist, Korea, Seoul', // carry-over
   f0149670: 'delist, NR', // carry-over
   f0149783: 'delist, NR', // carry-over
-  f0153583: 'delist, NR', // carry-over
+  f0153583: 'retest, NR', // carry-over
   f0156232: 'delist, China, Fuzhou', // carry-over
   f0160291: 'delist, USA', // carry-over
   f0164326: 'delist, China, Beijing', // carry-over
@@ -2803,7 +2803,7 @@ const annotations = {
   f0219415: 'delist, USA, Boardman', // carry-over
   f0219631: 'delist, USA, Council Bluffs', // carry-over
   f0220911: 'delist, NR', // carry-over
-  f0223033: 'delist, NR', // carry-over
+  f0223033: 'retest, NR', // carry-over
   f0224599: 'delist, China, Fuzhou', // carry-over
   f0224782: 'delist, USA', // carry-over
   f0225880: 'delist, NR', // carry-over
@@ -2833,8 +2833,8 @@ const annotations = {
   f0392733: 'delist, USA, Huntersville', // carry-over
   f0393359: 'delist, China, Suzhou', // carry-over
   f0394461: 'delist, Korea, Seoul', // carry-over
-  f0395459: 'delist, Korea, Daegu', // carry-over
-  f0395472: 'delist, Korea, Daegu', // carry-over
+  f0395459: 'retest, Korea, Daegu', // carry-over
+  f0395472: 'retest, Korea, Daegu', // carry-over
   f0397675: 'delist, Korea, Guro-gu', // carry-over
   f0398326: 'delist, China, Jiangmen', // carry-over
   f0398338: 'delist, USA, Cleveland', // carry-over
@@ -2845,7 +2845,7 @@ const annotations = {
   f0403858: 'delist, China, Jiangmen', // carry-over
   f0408184: 'delist, Switzerland', // carry-over
   f0408696: 'delist, China, Taiwan, Taipei', // carry-over
-  f0410941: 'delist, NR', // carry-over
+  f0410941: 'retest, NR', // carry-over
   f0411786: 'delist, Korea, Busan', // carry-over
   f0413178: 'delist, China, Suqian', // carry-over
   f0414184: 'delist, Spain, Madrid', // carry-over
