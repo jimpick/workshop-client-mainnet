@@ -94,6 +94,7 @@ const baiduCities = {
   307: 'Baoding', // 保定市
   309: 'Nanyang', // 南阳市
   315: 'Nanjing', // 南京市
+  316: 'Xuzhou', // 徐州市
   317: 'Wuxi', // 无锡市
   319: 'Huludao', // 葫芦岛市
   326: 'Yantai', // 山东省 烟台市
