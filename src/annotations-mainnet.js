@@ -14,7 +14,10 @@ const annotations = {
 
   // New
 
+  f0835613: 'new, NR',
   f0839509: 'new, China, Beijing',
+  f0839767: 'new, Korea, Suwon',
+  f0840060: 'new, China, Changchun',
 
   // Inflight
 
