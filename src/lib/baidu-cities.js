@@ -14,6 +14,7 @@ const baiduCities = {
   27: 'Shaanxi', // 陕西省
   28: 'Yunnan', // 云南省
   29: 'Zhejiang', // 浙江省
+  30: 'Henan', // 河南省
   32: 'Sichuan', // 四川省
   41: 'Qiqihar', // 齐齐哈尔市
   44: 'Suihua', // 绥化市
