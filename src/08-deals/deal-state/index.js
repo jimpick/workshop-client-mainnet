@@ -146,12 +146,16 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
     if (/Provider message: deal rejected: false/.test(dealMessage)) {
       return ['rejected', '']
     }
-    const matchDial = dealMessage.match(/all dials failed (.*)/)
+    if (/dial backoff/.test(dealMessage)) {
+      return ['backoff', '']
+    }
+    // const matchDial = dealMessage.match(/all dials failed (.*)/)
+    const matchDial = dealMessage.match(/sending proposal to storage provider failed: (.*)/)
     if (matchDial) {
-      return ['dial', matchDial[1].trim()]
+      return ['fail', matchDial[1].trim()]
     }
     if (/err: routing: not found/.test(dealMessage)) {
-      return ['xnr', '']
+      return ['fail', '']
     }
     const matchMinSize = dealMessage.match(
       /piece size less than minimum required size: (.*)/
@@ -174,9 +178,6 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
     const matchRejected = dealMessage.match(/deal rejected: (.*)/)
     if (matchRejected) {
       return ['rejected', matchRejected[1].trim()]
-    }
-    if (/dial backoff/.test(dealMessage)) {
-      return ['backoff', '']
     }
     const matchErrorProvider = dealMessage.match(/Provider message: (.*)/)
     if (matchErrorProvider) {
@@ -507,8 +508,7 @@ export default function DealList ({ appState, cid, dealType }) {
       'error',
       'backoff',
       'rejected',
-      'dial',
-      'xnr',
+      'fail',
       'delist',
     ]
   } else if (dealType === '128mib-unverified') {
@@ -532,8 +532,7 @@ export default function DealList ({ appState, cid, dealType }) {
       'error',
       'backoff',
       'rejected',
-      'dial',
-      'xnr',
+      'fail',
       'error-ask',
       'delist',
     ]
@@ -558,8 +557,7 @@ export default function DealList ({ appState, cid, dealType }) {
       'error',
       'backoff',
       'rejected',
-      'dial',
-      'xnr',
+      'fail',
       'error-ask',
       'delist',
     ]
