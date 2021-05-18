@@ -14,6 +14,11 @@ const annotations = {
 
   // New
 
+  f0845245: 'new, Korea, Busan',
+  f0844439: 'new, China, Karamay',
+  f0846681: 'new, Korea, Seongnam-si',
+  f0846716: 'new, USA, Santa Clara',
+
   // Inflight
 
   f021961: 'inflight, China, Fuzhou', // FundsReserved: about 17 hours
