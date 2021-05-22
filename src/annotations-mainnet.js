@@ -17,6 +17,8 @@ const annotations = {
   f0849079: 'new, NR', // carry-over
   f0849554: 'new, China, Beijing', // carry-over
   f0853597: 'new, Korea, Gimpo-si', // carry-over
+  f0857779: 'new, Korea, Dongjak-gu',
+  f0858038: 'new, China, Shanghai',
 
   // Inflight
 
@@ -885,7 +887,7 @@ const annotations = {
   f03002: 'fail, China, Chongqing + Singapore', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWAwqepwZRwQPyBew1FWZo7BvQ6tTP3nyjG8skVU9uWEwL:  * [/ip4/101.206.156.202/tcp/18880] dial tcp4 0.0.0.0:44699->101.206.156.202:18880: i/o timeout  * [/ip4/8.209.64.163/tcp/18880] dial tcp4 0.0.0.0:44699->8.209.64.163:18880: i/o timeout
   f03144: 'fail, China, Hong Kong', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWFMK8Vg4SH5Wsrvp76JpJvwiuxdXpRyPrWa76Jrj6K4tc:  * [/ip4/103.214.41.38/tcp/23456] dial tcp4 0.0.0.0:44699->103.214.41.38:23456: i/o timeout
   f03176: 'fail, USA, San Mateo', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWPDyDeAQWj4kSEkVog1NAHJVu9cWpur3uGzH8H92THWPp:  * [/ip4/47.88.55.220/tcp/15470] dial tcp4 0.0.0.0:44699->47.88.55.220:15470: i/o timeout  * [/ip4/47.88.57.241/tcp/15470] dial tcp4 0.0.0.0:44699->47.88.57.241:15470: i/o timeout
-  f03224: 'fail, Ukraine, Kyiv', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWPQURCRZFxop8t7RKBwPiHSQNn2DYRbtFvz6AzZgaEQ2U:  * [/ip4/176.104.58.70/tcp/1348] dial tcp4 176.104.58.70:1348: i/o timeout
+  f03224: 'delist, Ukraine, Kyiv', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWPQURCRZFxop8t7RKBwPiHSQNn2DYRbtFvz6AzZgaEQ2U:  * [/ip4/176.104.58.70/tcp/1348] dial tcp4 176.104.58.70:1348: i/o timeout
   f03266: 'fail, USA', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWRTVB3ued6YhMdyJ2qoQ6cKkVE7pPbfmETAmz61dz8cDj:  * [/ip4/169.63.27.151/tcp/14567] dial tcp4 0.0.0.0:44699->169.63.27.151:14567: i/o timeout
   f03287: 'fail, USA', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWPLKQae57X1Wh9afjjBZbujq6qS53GdNbLULuyMARgxPC:  * [/ip4/149.81.122.165/tcp/14567] dial tcp4 0.0.0.0:44699->149.81.122.165:14567: i/o timeout
   f03325: 'fail, China, Guangdong', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWMY9qD6HqyujzkBMXZFUiVLUjYhL89fF6nexr8T4KS8Mf:  * [/ip4/113.107.201.186/tcp/42243] dial tcp4 113.107.201.186:42243: connect: connection refused
@@ -977,7 +979,7 @@ const annotations = {
   f021704: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f021710: 'fail, China, Shijiazhuang', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f021870: 'fail, China, Jieyang', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f022030: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f022030: 'delist, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f022038: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f022111: 'fail, China, Quanzhou', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWHjd2Mn9oXSg6Anuw5LtXyEtHoqsMSeK8gH495zukLjiQ:  * [/ip4/112.47.13.98/tcp/8081] dial tcp4 0.0.0.0:44699->112.47.13.98:8081: i/o timeout
   f022125: 'fail, China, Shenzhen', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWFqVmmKFirUS75Y28bK4kGTFEydBgo2esUGEhK8oQznQT:  * [/ip4/103.44.253.58/tcp/33455] dial tcp4 0.0.0.0:44699->103.44.253.58:33455: i/o timeout
@@ -1104,11 +1106,11 @@ const annotations = {
   f056406: 'fail, China, Taizhou', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWFjfWgPNNiuxHwratpW5WU8mkF9zb3Q4co4TXB7mRuwdN:  * [/ip4/221.130.79.154/tcp/1347] dial tcp4 0.0.0.0:44699->221.130.79.154:1347: i/o timeout
   f057070: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWKBNGqopBvTEmD15SwX6JapLJ34cv9cCEoWPtUsxQpu4Z:  * [/ip4/117.71.104.68/tcp/10240] dial tcp4 0.0.0.0:44699->117.71.104.68:10240: i/o timeout
   f057127: 'fail, China, Suzhou', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJvcvRJQHTrxjwH1NqPJnd5HnMQp1mWWzp9LHwBULp7pb:  * [/ip4/58.211.213.210/tcp/20108] dial tcp4 58.211.213.210:20108: connect: connection refused
-  f057466: 'fail, China, Guangzhou', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWBqHsZhnafaeyU5RLWc5KzyRMXWnW2gEc37cXD9v1gDD6:  * [/ip4/116.21.71.7/tcp/24001] dial tcp4 0.0.0.0:44699->116.21.71.7:24001: i/o timeout
+  f057466: 'delist, China, Guangzhou', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWBqHsZhnafaeyU5RLWc5KzyRMXWnW2gEc37cXD9v1gDD6:  * [/ip4/116.21.71.7/tcp/24001] dial tcp4 0.0.0.0:44699->116.21.71.7:24001: i/o timeout
   f057618: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: protocol not supported
   f057683: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f058349: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f059740: 'fail, Germany, Bottrop', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWR2iY2SFgjHM45NkQEJMmAathsCrgHWADbbCnPzsuS2bY:  * [/ip4/156.67.191.194/tcp/24001] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWR2iY2SFgjHM45NkQEJMmAathsCrgHWADbbCnPzsuS2bY, but remote key matches 12D3KooWR3EjX6z4ZkNRAbnF442tu5aCeLPQj62Xn7qCQ2KzPKwS
+  f059740: 'delist, Germany, Bottrop', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWR2iY2SFgjHM45NkQEJMmAathsCrgHWADbbCnPzsuS2bY:  * [/ip4/156.67.191.194/tcp/24001] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWR2iY2SFgjHM45NkQEJMmAathsCrgHWADbbCnPzsuS2bY, but remote key matches 12D3KooWR3EjX6z4ZkNRAbnF442tu5aCeLPQj62Xn7qCQ2KzPKwS
   f059788: 'fail, China, Zhanjiang', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWEhZ3xDvecQ7K14ByYanCewzQqufzX6P2xFaMQu64x3C8:  * [/ip4/183.2.149.76/tcp/33669] dial tcp4 0.0.0.0:44699->183.2.149.76:33669: i/o timeout
   f059813: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f060114: 'fail, China, Shenzhen', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -1193,7 +1195,7 @@ const annotations = {
   f082730: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f082958: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWDravhMyWjyuK4TjaVaUvubwhpameXwWCuoixczAwFhsV:  * [/ip4/0.0.0.0/tcp/42547] dial tcp4 0.0.0.0:42547: connect: connection refused
   f083419: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f083474: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f083474: 'delist, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f083542: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f083638: 'fail, China, Chongqing', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f083983: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -1404,7 +1406,7 @@ const annotations = {
   f0117541: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0117542: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0117543: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0117556: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0117556: 'delist, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0117565: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0118028: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0118167: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -1649,7 +1651,7 @@ const annotations = {
   f0157025: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0157316: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0157502: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0157513: 'fail, Korea, Geumcheon-gu', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWM3h6YYYmmgzgiCfafqmna3mmGpqYDakjgDJvhztAWnX2:  * [/ip4/14.36.171.106/tcp/24000] dial tcp4 0.0.0.0:44699->14.36.171.106:24000: i/o timeout
+  f0157513: 'delist, Korea, Geumcheon-gu', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWM3h6YYYmmgzgiCfafqmna3mmGpqYDakjgDJvhztAWnX2:  * [/ip4/14.36.171.106/tcp/24000] dial tcp4 0.0.0.0:44699->14.36.171.106:24000: i/o timeout
   f0157769: 'fail, China, Changsha', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0157917: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0157941: 'fail, China, Changsha', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWPD76F57jRDCxa3H3CseZFB89tTU6wiuWb6MHb2jJpqxL:  * [/ip4/127.0.0.1/tcp/4913] dial tcp4 127.0.0.1:4913: connect: connection refused  * [/ip4/113.219.198.33/tcp/34108] dial tcp4 113.219.198.33:34108: connect: connection refused  * [/ip4/113.219.198.32/tcp/27209] dial tcp4 113.219.198.32:27209: connect: connection refused  * [/ip4/113.219.198.34/tcp/1092] dial tcp4 113.219.198.34:1092: connect: connection refused  * [/ip4/113.219.198.31/tcp/4913] failed to negotiate security protocol: message did not have trailing newline  * [/ip4/113.219.198.37/tcp/4913] failed to negotiate security protocol: message did not have trailing newline  * [/ip4/113.219.198.36/tcp/4913] failed to negotiate security protocol: message did not have trailing newline  * [/ip4/113.219.198.2/tcp/4913] failed to negotiate security protocol: message did not have trailing newline  * [/ip4/113.219.198.35/tcp/7081] dial tcp4 113.219.198.35:7081: connect: connection refused  * [/ip4/192.168.143.169/tcp/4913] dial tcp4 0.0.0.0:33727->192.168.143.169:4913: i/o timeout
@@ -1871,7 +1873,7 @@ const annotations = {
   f0451936: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0463030: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0465286: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0466405: 'fail, Germany, Niederaula', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0466405: 'delist, Germany, Niederaula', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0467640: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0470182: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0472061: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2004,7 +2006,7 @@ const annotations = {
   f0811662: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0813061: 'fail, China, Shanghai', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0818428: 'fail, China, Yichang', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWB5fTJhsaHNUVALvngbCqcZtfJyJfRaw2YCWwiheqvpeq:  * [/ip4/119.36.140.201/tcp/24001] dial tcp4 0.0.0.0:44699->119.36.140.201:24001: i/o timeout
-  f0825528: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0825528: 'delist, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0826272: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0826566: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0829506: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
