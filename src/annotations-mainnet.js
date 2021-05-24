@@ -12,12 +12,25 @@
 const annotations = {
   // Retest
 
+  f03224: 'retest, Ukraine, Kyiv', // carry-over
+  f022030: 'retest, NR', // carry-over
+  f083474: 'retest, NR', // carry-over
+  f0107127: 'retest, USA, Daytona Beach', // carry-over
+  f0115238: 'retest, China, Shenyang', // carry-over
+  f0117556: 'retest, NR', // carry-over
+  f0157513: 'retest, Korea, Geumcheon-gu', // carry-over
+  f0223663: 'retest, China, Beijing', // carry-over
+  f0396705: 'retest, NR', // carry-over
+  f0466405: 'retest, Germany, Niederaula', // carry-over
+  f0825528: 'retest, NR', // carry-over
+  f0826452: 'retest, NR', // carry-over
+
   // New
 
-  f0857779: 'new, Korea, Dongjak-gu',
-  f0858038: 'new, China, Shanghai',
-  f0862933: 'new, USA, Huntersville',
-  f0864910: 'new, Korea, Gwangjin-gu',
+  f0857779: 'new, Korea, Dongjak-gu', // carry-over
+  f0858038: 'new, China, Shanghai', // carry-over
+  f0862933: 'new, USA, Huntersville', // carry-over
+  f0864910: 'new, Korea, Gwangjin-gu', // carry-over
 
   // Inflight
 
@@ -44,6 +57,7 @@ const annotations = {
   f0131901: 'active, Korea, Daejeon', // 1934105 2 days
   f0137168: 'active, China, Beijing', // 1934103 2 days
   f0145843: 'active, NR', // 1934224 2 days
+  f0146956: 'active, NR', // 1934182 2 days
   f0149132: 'active, NR', // 1934179 about 4 hours
   f0150744: 'active, Korea, Ulsan', // 1934247 2 days
   f0156207: 'active, Korea, Ulsan', // 1934232 2 days
@@ -95,7 +109,6 @@ const annotations = {
 
   f0113331: 'active-sealing, Korea, Jinju + USA', // 1934131
   f0149455: 'active-sealing, NR', // 1934112
-  f0504054: 'active-sealing, China, Luzhou', // 1934107
   f0717913: 'active-sealing, Korea, Jung-gu', // 1934117
 
   // Sealing
@@ -103,49 +116,30 @@ const annotations = {
   f01231: 'sealing, Singapore', // 1934087
   f02490: 'sealing, China, Fujian', // 1934277
   f02540: 'sealing, USA, Mobile, Foundry', // 1934134
-  f08019: 'sealing, China, Yantai, 三合', // 1934273
   f010513: 'sealing, China, Chongqing', // 1934271
   f014683: 'sealing, China, Dongguan', // 1934276
-  f015233: 'sealing, China, Nanjing', // 1934133
   f016276: 'sealing, China, Beijing', // 1934149
   f016398: 'sealing, China, Shanghai', // 1934081
   f021479: 'sealing, NR', // 1934083
-  f030408: 'sealing, NR', // 1934166
   f033036: 'sealing, China, Liaoning', // 1934275
   f039515: 'sealing, China, Chongqing, valarhash', // 1934270
-  f044160: 'sealing, China, Guangzhou, muxing', // 1934285
-  f053088: 'sealing, China, Shanghai', // 1934269
-  f053229: 'sealing, NR', // 1934141
   f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 1934137
   f061158: 'sealing, China, Guangdong, phoenix', // 1934136
   f066102: 'sealing, NR', // 1934085
   f066259: 'sealing, NR', // 1934082
   f070932: 'sealing, NR', // 1934145
-  f087965: 'sealing, China, Suzhou', // 1934245
-  f089380: 'sealing, NR', // 1934084
-  f0104888: 'sealing, NR', // 1934289
   f0110133: 'sealing, China, Ningbo', // 1934146
   f0121533: 'sealing, China, Zhejiang', // 1934144
-  f0124554: 'sealing, Korea, Gimhae', // 1934143
   f0134671: 'sealing, Korea, Gimpo-si', // 1934140
-  f0146956: 'sealing, NR', // 1934182
   f0152337: 'sealing, NR', // 1934086
-  f0165643: 'sealing, China, Guangzhou', // 1934150
   f0166327: 'sealing, NR', // 1934159
   f0168058: 'sealing, China, Suzhou', // 1934148
   f0396846: 'sealing, China, Zhongshan', // 1934164
   f0397728: 'sealing, China, Dongguan', // 1934161
-  f0407733: 'sealing, NR', // 1934160
-  f0429063: 'sealing, NR', // 1934156
-  f0447181: 'sealing, China, Zibo', // 1934155
   f0521569: 'sealing, Korea, Guro-go', // 1934152
-  f0693765: 'sealing, NR', // 1934168
   f0723006: 'sealing, Korea, Bucheon-si', // 1934265
   f0808705: 'sealing, China, Wenzhou', // 1934268
-  f0822032: 'sealing, Korea, Incheon', // 1934238
   f0822203: 'sealing, Korea, Seoul', // 1934219
-  f0843728: 'sealing, France', // 1934279
-  f0849554: 'sealing, China, Beijing', // 1934171
   f0853597: 'sealing, Korea, Gimpo-si', // 1934129
 
   // Stuck
@@ -553,42 +547,53 @@ const annotations = {
   f01314: 'error, NR', // error reading Response message from provider: stream reset
   f03345: 'error, China, Fuzhou, chh', // error reading Response message from provider: stream reset
   f07830: 'error, China, Zhongshan', // error reading Response message from provider: EOF
+  f08019: 'error, China, Yantai, 三合', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934273 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f015233: 'error, China, Nanjing', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934133 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f019806: 'error, China, Beijing', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1934151 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f020928: 'error, China, Deyang + Singapore', // error reading Response message from provider: EOF
-  f025007: 'delist, Korea, Gyeonggi-do, PINBYTES-eCUBE', // error reading Response message from provider: stream reset
   f025025: 'error, China, Qingdao', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.04999999997470157 FIL, balance: 0.024146610335701862 FIL): not enough funds to execute transaction
+  f030408: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934166 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f044160: 'error, China, Guangzhou, muxing', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934285 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f053088: 'error, China, Shanghai', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 784120): failed to look up deal on chain: deal 1934269 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f053229: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934141 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f062937: 'error, NR', // error reading Response message from provider: EOF
   f063869: 'error, NR', // error reading Response message from provider: EOF
   f080103: 'error, Korea, Seongnam-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.20017571550261341 FIL, balance: 0.799087119734320102 FIL): not enough funds to execute transaction
   f082635: 'error, NR', // failed to complete data transfer: deal data transfer failed: 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWRFCAN9smEuacnJ4TeKACRDU2SCUuy11G5TBQCpnVskHo-1621582226593541286: after 4 consecutive restarts failed to transfer any data
+  f087965: 'error, China, Suzhou', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934245 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f089380: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934084 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f094901: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999990905664 FIL, balance: 0.17204379632953801 FIL): not enough funds to execute transaction
   f097214: 'error, Korea, Bucheon-si, CryptoHash', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999954885278 FIL, balance: 0.115573702739662079 FIL): not enough funds to execute transaction
-  f0108979: 'delist, Korea, Bupyeong-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.49999999999032646 FIL, balance: 0.051582459639460787 FIL): not enough funds to execute transaction
+  f0104888: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934289 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0109901: 'error, China, Huludao', // error reading Response message from provider: stream reset
   f0110804: 'error, USA, Santa Clara', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999939298695 FIL, balance: 0.047585116707062544 FIL): not enough funds to execute transaction
   f0111885: 'error, Korea, Bucheon-si, WINNERS', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999980564636 FIL, balance: 0.188092423951643212 FIL): not enough funds to execute transaction
   f0112713: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999946013504 FIL, balance: 0.055820267418463221 FIL): not enough funds to execute transaction
   f0115108: 'error, Korea, Yangcheon-gu', // deal failed: (State=11) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999954045257 FIL, balance: 0.163757087012727163 FIL): not enough funds to execute transaction
+  f0124554: 'error, Korea, Gimhae', // error in deal activation: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934143 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0129805: 'error, China, Zhejiang + Australia, Adelaide', // deal failed: (State=26) no such proposal
   f0130912: 'error, China, Hong Kong', // failed to complete data transfer: deal data transfer failed: 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWBtqhxFAqHUJnURKG66qFNYZHER4LkNy5rRN4w2o4qZN1-1621582226593541289: after 4 consecutive restarts failed to transfer any data
   f0133957: 'error, NR', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1934139 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f0137489: 'delist, UK, Deeside', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999984168944 FIL, balance: 0.015256167046968852 FIL): not enough funds to execute transaction
   f0142059: 'error, NR', // deal failed: (State=13) start epoch already elapsed
   f0146751: 'error, China, Jiangsu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.99999999999989922 FIL, balance: 0.124884421850587082 FIL): not enough funds to execute transaction
   f0151371: 'error, NR', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.069999999993275264 FIL, balance: 0.051290235531253546 FIL): not enough funds to execute transaction
   f0155687: 'error, China, Guangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999971555119 FIL, balance: 0.007750567532626106 FIL): not enough funds to execute transaction
   f0156452: 'error, Korea, Ulsan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.05589896230128149 FIL, balance: 0.948676189990640177 FIL): not enough funds to execute transaction
+  f0165643: 'error, China, Guangzhou', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934150 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0221135: 'error, USA, Atlanta', // error reading Response message from provider: stream reset
   f0225676: 'error, Korea, Guro-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.49999999999355595 FIL, balance: 0.432865372136503294 FIL): not enough funds to execute transaction
   f0228712: 'error, USA', // error reading Response message from provider: stream reset
   f0241022: 'error, Korea, Geumcheon-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999985282715 FIL, balance: 0.086445698620825264 FIL): not enough funds to execute transaction
   f0402431: 'error, China, Hangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999964143572 FIL, balance: 0.048297688965882951 FIL): not enough funds to execute transaction
   f0405129: 'error, China, Fujian', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.080122701749156632 FIL, balance: 0.505391210063331454 FIL): not enough funds to execute transaction
+  f0407733: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934160 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0409069: 'error, NR', // error reading Response message from provider: stream reset
   f0410001: 'error, NR', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1934157 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
-  f0410023: 'delist, NR', // error reading Response message from provider: stream reset
+  f0429063: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934156 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0447181: 'error, China, Zibo', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934155 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0461791: 'error, Korea, Gwangju', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999975772545 FIL, balance: 0.38480168515244323 FIL): not enough funds to execute transaction
   f0488888: 'error, China, Nanchang', // error reading Response message from provider: EOF
+  f0504054: 'error, China, Luzhou', // error in deal activation: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934107 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0508328: 'error, NR', // deal failed: (State=26) error calling node: publishing deal: GasEstimateMessageGas error: estimating gas used: CallWithGas failed: computing tipset state: failed to build receipts amt: array set failed to set index 8 in root &{0 8 {[255] [] [0xc06af4e400 0xc06af4e420 0xc06af4e440 0xc06af4e460 0xc06af4e580 0xc06af4e5a0 0xc06af4e5c0 0xc06af4e5e0] [] [0xc06af4e400 0xc06af4e420 0xc06af4e440 0xc06af4e460 0xc06af4e580 0xc06af4e5a0 0xc06af4e5c0 0xc06af4e5e0] []} 0xc06af4e1e0}: failed to put block in badger blockstore: Unable to write to value log file: "/home/ipfsunion/.lotus/datastore/chain/000669.vlog": write /home/ipfsunion/.lotus/datastore/chain/000669.vlog: no space left on device
   f0512170: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999955420673 FIL, balance: 0.406441323355872338 FIL): not enough funds to execute transaction
   f0512179: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.49999999998810542 FIL, balance: 0.02337722784905694 FIL): not enough funds to execute transaction
@@ -596,15 +601,15 @@ const annotations = {
   f0514737: 'error, Korea, Busan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.05432532369325856 FIL, balance: 0.654245777606102677 FIL): not enough funds to execute transaction
   f0673920: 'error, NR', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.255946135 FIL, balance: 0.235479499038328329 FIL): not enough funds to execute transaction
   f0674600: 'error, NR', // deal failed: (State=26) error calling node: reserving funds: failed to sign message: Don't allow transfer from f3vmhcs4luq7izg2etu2nhdafo6dbecidyghfj7v3ench2jwozo56g2bkqphrug7ividek7zewiuv62evyf7dq to f05 : Does not exist in the whitelist.
+  f0693765: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934168 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0751590: 'error, USA', // error reading Response message from provider: EOF
   f0754373: 'error, Netherlands, Rijssen', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals errored: handler: websocket connection closed
-  f0758390: 'delist, USA, Phoenix', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999971228034 FIL, balance: 0.049913003273117752 FIL): not enough funds to execute transaction
   f0805872: 'error, China, Hangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.089843313044860168 FIL, balance: 0.411729214072574874 FIL): not enough funds to execute transaction
   f0813086: 'error, Korea, Jung-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.084471337374908224 FIL, balance: 0.787765092275075486 FIL): not enough funds to execute transaction
-  f0816232: 'delist, Korea, Seoul', // failed to complete data transfer: deal data transfer failed: 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWAzZvcoxPsnw35dYrUqPHbjA1E36HFifsidjqZPdFjkBB-1621582226593541332: after 4 consecutive restarts failed to transfer any data
-  f0839767: 'delist, Korea, Suwon', // failed to complete data transfer: deal data transfer failed: 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWDcXp31C52k3GqW98ZmRhH4uNhhokQKGommGuKu2k6pdz-1621582226593541418: after 4 consecutive restarts failed to transfer any data
+  f0822032: 'error, Korea, Incheon', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934238 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0843255: 'error, China, Yibin', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals exit code: SysErrOutOfGas(7)
-  f0846716: 'delist, USA, Santa Clara', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999992933688 FIL, balance: 0.004341875459991126 FIL): not enough funds to execute transaction
+  f0843728: 'error, France', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934279 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0849554: 'error, China, Beijing', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934171 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
 
   // Dial backoff
 
@@ -945,7 +950,6 @@ const annotations = {
   f019074: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWLM1TeB6wiFXdKgHPRh5W6wve8NXC13mEk3seDqVttKqg: all dials failed  * [/ip4/192.168.2.55/tcp/3000] dial tcp4 0.0.0.0:39773->192.168.2.55:3000: i/o timeout
   f019099: 'fail, China, Hong Kong + Guangzhou', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWPXNsG3BG7yGEBQVncw6Du279ESDyYHBX3v3kN23zSKsG: all dials failed  * [/ip4/45.158.182.10/tcp/12345] dial tcp4 0.0.0.0:39773->45.158.182.10:12345: i/o timeout
   f019100: 'fail, Romania, Cluj-Napoca, noisyfan', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJFAe3K8ENQMmtZzSYsRoCNfvf8N3Ky15EVhCSoXjMhnP: all dials failed  * [/ip4/79.119.122.118/tcp/55555] dial tcp4 0.0.0.0:39773->79.119.122.118:55555: i/o timeout
-  f019279: 'delist, Canada, Calgary', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWNPbyqVXuPQQR3vocTMUbjipL95qHxGjoug56do1r2SCZ: all dials failed  * [/ip4/70.77.238.98/tcp/46717] dial tcp4 0.0.0.0:39773->70.77.238.98:46717: i/o timeout
   f019354: 'fail, Germany, Frankfurt', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWLYorbezhim25zw5oAaPH6hpzKajEg4qiD7QcEFTNa1vJ: all dials failed  * [/ip4/128.1.78.98/tcp/31437] dial tcp4 0.0.0.0:39773->128.1.78.98:31437: i/o timeout
   f019422: 'fail, China, Guangzhou', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f019638: 'fail, China, Ordos', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWPPZz5WJkMn9GG87FYy6WwNE2LseU7KDo5DEA9H4ReWPP: all dials failed  * [/ip4/1.183.72.210/tcp/30005] dial tcp4 0.0.0.0:39773->1.183.72.210:30005: i/o timeout
@@ -1347,7 +1351,6 @@ const annotations = {
   f0111174: 'fail, China, Guangzhou', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0111384: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0111434: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0111467: 'delist, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0111469: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0111499: 'fail, China, Chengdu', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWEy4PYMX2HMEnL2JEoThNZ2vaTfFyfYxpPXXc6cnSsGPr: all dials failed  * [/ip4/182.131.4.195/tcp/32762] dial tcp4 182.131.4.195:32762: connect: connection refused
   f0111584: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWFYYs51hFrAnZ9qjSBc6NjXtrrwVKKT6oqjgexxDxZXLH: all dials failed  * [/ip4/192.168.3.14/tcp/32759] dial tcp4 0.0.0.0:39773->192.168.3.14:32759: i/o timeout
@@ -1633,7 +1636,6 @@ const annotations = {
   f0155983: 'fail, Japan', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWCiSxAQf3Hp6t1sFJdRotppHwUUBa6jQaA1bcJd4YEbJ1: all dials failed  * [/ip4/202.149.23.10/tcp/5472] dial tcp4 202.149.23.10:5472: connect: connection refused
   f0156214: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0156333: 'fail, China, Ningbo', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0156342: 'delist, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0156417: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0157025: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0157316: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -1743,7 +1745,6 @@ const annotations = {
   f0242345: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0242373: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0349810: 'fail, China, Qinzhou', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0364987: 'delist, Korea, Seoul', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0377277: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0391212: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0391214: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -1774,7 +1775,6 @@ const annotations = {
   f0396751: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0397083: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0397332: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0397428: 'delist, Japan, Tokyo', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWKHj8ZWEa3NRZNvk5sts8Dw6sToLUi31M4kKGkyqZMbqi: all dials failed  * [/ip4/153.150.113.227/tcp/24001] dial tcp4 0.0.0.0:39773->153.150.113.227:24001: i/o timeout
   f0397561: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0397794: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0397802: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -1975,7 +1975,6 @@ const annotations = {
   f0712676: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0715561: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0715639: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0715707: 'delist, Japan, Yokohama', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJ1U5mXXp4GZQxvkfi24KSceiK6V9DoM3bN3iMWTGNxq2: all dials failed  * [/ip4/118.240.40.56/tcp/24001] dial tcp4 0.0.0.0:39773->118.240.40.56:24001: i/o timeout
   f0716283: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0717969: 'fail, USA, Los Angeles', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWFwkhRmWA7c58D9FbDxrNz555gyoSmvNHpVdzHWbzrwoN: all dials failed  * [/ip4/76.169.178.143/tcp/23789] dial tcp4 0.0.0.0:39773->76.169.178.143:23789: i/o timeout
   f0718079: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -1988,9 +1987,7 @@ const annotations = {
   f0735027: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0744513: 'fail, China, Guangzhou', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWK18YecHFy5KA9kHu7uY1JYccCcesgKvCXjMgijX66GcY: all dials failed  * [/ip4/14.119.111.133/tcp/36284] dial tcp4 14.119.111.133:36284: connect: connection refused  * [/ip4/10.9.3.32/tcp/36284] dial tcp4 0.0.0.0:39773->10.9.3.32:36284: i/o timeout
   f0750779: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0752215: 'delist, USA, Huntersville', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0752620: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0755645: 'delist, Korea, Jung-gu', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWFx323rUW6tTActLc4qB27CFKNzqDxx6Hsow4SXTHgr2n: all dials failed  * [/ip4/218.146.170.19/tcp/24001] dial tcp4 0.0.0.0:39773->218.146.170.19:24001: i/o timeout
   f0757610: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0764901: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0809570: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2002,7 +1999,6 @@ const annotations = {
   f0826566: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0829506: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0829836: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0832312: 'delist, USA, Auburn', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWAyEpEwHQfVYEZCuK5jmCfK5APfvtVfXR3zMCDTCnATo4: all dials failed  * [/ip4/63.226.227.182/tcp/24001] dial tcp4 63.226.227.182:24001: connect: connection refused
   f0835613: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0837434: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0838467: 'fail, Korea, Incheon', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJt7236FkcMKoDsxP9DDDMZzayunW7iyVWVPVUJq9ThHp: all dials failed  * [/ip4/175.207.91.35/tcp/24001] dial tcp4 0.0.0.0:39773->175.207.91.35:24001: i/o timeout
@@ -2041,7 +2037,6 @@ const annotations = {
   f02774: 'delist, Australia, Sydney', // carry-over
   f02822: 'delist, China, Chengdu', // carry-over
   f02824: 'delist, China, Chengdu', // carry-over
-  f03224: 'retest, Ukraine, Kyiv', // carry-over
   f03225: 'delist, China, Guyuan', // carry-over
   f03264: 'delist, Korea, Bucheon-si', // carry-over
   f03269: 'delist, Australia', // carry-over
@@ -2366,6 +2361,7 @@ const annotations = {
   f019218: 'delist, China, Dali', // carry-over
   f019239: 'delist, China, Jiaxing', // carry-over
   f019264: 'delist, NR', // carry-over
+  f019279: 'delist, Canada, Calgary',
   f019284: 'delist, China, Foshan', // carry-over
   f019376: 'delist, NR', // carry-over
   f019378: 'delist, China, Changzhou', // carry-over
@@ -2461,7 +2457,6 @@ const annotations = {
   f021976: 'delist, NR', // carry-over
   f022015: 'delist, China, Hangzhou', // carry-over
   f022016: 'delist, NR', // carry-over
-  f022030: 'retest, NR', // carry-over
   f022033: 'delist, NR', // carry-over
   f022070: 'delist, China, Jieyang', // carry-over
   f022084: 'delist, China, Shaanxi', // carry-over
@@ -2561,6 +2556,7 @@ const annotations = {
   f024902: 'delist, Korea, Incheon', // carry-over
   f024903: 'delist, undefined', // carry-over
   f024969: 'delist, NR', // carry-over
+  f025007: 'delist, Korea, Gyeonggi-do, PINBYTES-eCUBE',
   f025028: 'delist, NR', // carry-over
   f025032: 'delist, China, Beijing', // carry-over
   f029368: 'delist, Korea, Gangseo-gu', // carry-over
@@ -2719,7 +2715,6 @@ const annotations = {
   f082669: 'delist, USA, Daytona Beach', // carry-over
   f082698: "delist, USA, Xi'an", // carry-over
   f083235: 'delist, Serbia, Belgrade', // carry-over
-  f083474: 'retest, NR', // carry-over
   f085226: 'delist, Korea, Busan', // carry-over
   f085415: 'delist, NR', // carry-over
   f085682: 'delist, NR', // carry-over
@@ -2765,18 +2760,17 @@ const annotations = {
   f096976: 'delist, Russia', // carry-over
   f0106090: 'delist, NR', // carry-over
   f0107118: 'delist, China, Hangzhou + Zhejiang', // carry-over
-  f0107127: 'retest, USA, Daytona Beach', // carry-over
   f0107171: 'delist, China, Karamay', // carry-over
+  f0108979: 'delist, Korea, Bupyeong-gu',
   f0109163: 'delist, Korea, Songpa-gu', // carry-over
   f0109349: 'delist, NR', // carry-over
   f0110101: 'delist, Korea, Goyang-si', // carry-over
   f0110198: 'delist, Korea, Hwaseong-si', // carry-over
   f0110488: 'delist, China, Chongqing', // carry-over
   f0110803: 'delist, Korea', // carry-over
+  f0111467: 'delist, NR',
   f0112027: 'delist, France', // carry-over
-  f0115238: 'retest, China, Shenyang', // carry-over
   f0116513: 'delist, NR', // carry-over
-  f0117556: 'retest, NR', // carry-over
   f0119336: 'delist, Canada, Ottawa', // carry-over
   f0120141: 'delist, Korea, Gangnam-gu', // carry-over
   f0122815: 'delist, Korea, Bucheon-si, Healthcarenavi_80', // carry-over
@@ -2798,13 +2792,14 @@ const annotations = {
   f0135906: 'delist, NR', // carry-over
   f0136425: 'delist, Korea, Busan', // carry-over
   f0137475: 'delist, China, Beijing', // carry-over
+  f0137489: 'delist, UK, Deeside',
   f0144304: 'delist, NR', // carry-over
   f0145018: 'delist, Korea', // carry-over
   f0147676: 'delist, Korea, Seoul', // carry-over
   f0149670: 'delist, NR', // carry-over
   f0149783: 'delist, NR', // carry-over
   f0156232: 'delist, China, Fuzhou', // carry-over
-  f0157513: 'retest, Korea, Geumcheon-gu', // carry-over
+  f0156342: 'delist, NR',
   f0160291: 'delist, USA', // carry-over
   f0164326: 'delist, China, Beijing', // carry-over
   f0165533: 'delist, NR', // carry-over
@@ -2819,7 +2814,6 @@ const annotations = {
   f0219415: 'delist, USA, Boardman', // carry-over
   f0219631: 'delist, USA, Council Bluffs', // carry-over
   f0220911: 'delist, NR', // carry-over
-  f0223663: 'retest, China, Beijing', // carry-over
   f0224599: 'delist, China, Fuzhou', // carry-over
   f0224782: 'delist, USA', // carry-over
   f0225880: 'delist, NR', // carry-over
@@ -2842,6 +2836,7 @@ const annotations = {
   f0242260: 'delist, USA, St. Louis', // carry-over
   f0242416: 'delist, USA, Morganville', // carry-over
   f0347476: 'delist, China, Zhengzhou', // carry-over
+  f0364987: 'delist, Korea, Seoul',
   f0391370: 'delist, USA, Queens', // carry-over
   f0391520: 'delist, China, Guangzhou', // carry-over
   f0392707: 'delist, Korea, Chuncheon', // carry-over
@@ -2850,7 +2845,7 @@ const annotations = {
   f0393359: 'delist, China, Suzhou', // carry-over
   f0394461: 'delist, Korea, Seoul', // carry-over
   f0395473: 'delist, Korea, Daegu', // carry-over
-  f0396705: 'retest, NR', // carry-over
+  f0397428: 'delist, Japan, Tokyo',
   f0397675: 'delist, Korea, Guro-gu', // carry-over
   f0398326: 'delist, China, Jiangmen', // carry-over
   f0398338: 'delist, USA, Cleveland', // carry-over
@@ -2862,6 +2857,7 @@ const annotations = {
   f0403896: 'delist, USA, Huntersville', // carry-over
   f0408184: 'delist, Switzerland', // carry-over
   f0408696: 'delist, China, Taiwan, Taipei', // carry-over
+  f0410023: 'delist, NR',
   f0411786: 'delist, Korea, Busan', // carry-over
   f0413178: 'delist, China, Suqian', // carry-over
   f0414184: 'delist, Spain, Madrid', // carry-over
@@ -2874,7 +2870,6 @@ const annotations = {
   f0429006: 'delist, China, Zhangzhou', // carry-over
   f0430997: 'delist, Korea', // carry-over
   f0434480: 'delist, USA, Hummelstown', // carry-over
-  f0466405: 'retest, Germany, Niederaula', // carry-over
   f0467217: 'delist, China, Beijing', // carry-over
   f0471266: 'delist, Japan, Ageo', // carry-over
   f0482136: 'delist, China, Fuzhou', // carry-over
@@ -2903,6 +2898,7 @@ const annotations = {
   f0697132: 'delist, Korea, Busan', // carry-over
   f0697162: 'delist, Finland, Helsinki', // carry-over
   f0698866: 'delist, Finland, Helsinki', // carry-over
+  f0715707: 'delist, Japan, Yokohama',
   f0720716: 'delist, Korea, Seoul', // carry-over
   f0720762: 'delist, Korea, Incheon', // carry-over
   f0724179: 'delist, China, Wenzhou', // carry-over
@@ -2911,19 +2907,24 @@ const annotations = {
   f0732291: 'delist, Korea, Incheon', // carry-over
   f0744199: 'delist, China, Taiwan, Hsinchu', // carry-over
   f0751619: 'delist, Korea, Ulsan', // carry-over
+  f0752215: 'delist, USA, Huntersville',
   f0752458: 'delist, Australia, Sydney', // carry-over
   f0755598: 'delist, Korea, Incheon', // carry-over
   f0755602: 'delist, Korea, Incheon', // carry-over
   f0755605: 'delist, Korea, Incheon', // carry-over
+  f0755645: 'delist, Korea, Jung-gu',
   f0756242: 'delist, China, Taiwan, Taipei', // carry-over
   f0757509: 'delist, Ukraine, Odessa', // carry-over
   f0758143: 'delist, Canada', // carry-over
+  f0758390: 'delist, USA, Phoenix',
   f0761445: 'delist, Ukraine, Odessa', // carry-over
   f0765545: 'delist, China, Hangzhou', // carry-over
   f0810756: 'delist, Romania, Bucharest', // carry-over
+  f0816232: 'delist, Korea, Seoul',
   f0818665: 'delist, Romania, Bucharest', // carry-over
-  f0825528: 'retest, NR', // carry-over
-  f0826452: 'retest, NR' // carry-over
+  f0832312: 'delist, USA, Auburn',
+  f0839767: 'delist, Korea, Suwon',
+  f0846716: 'delist, USA, Santa Clara'
 }
 
 export default annotations
