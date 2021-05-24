@@ -2558,7 +2558,7 @@ const annotations = {
   f024902: 'delist, Korea, Incheon', // carry-over
   f024903: 'delist, undefined', // carry-over
   f024969: 'delist, NR', // carry-over
-  f025007: 'delist, Korea, Gyeonggi-do, PINBYTES-eCUBE',
+  f025007: 'retest, Korea, Gyeonggi-do, PINBYTES-eCUBE',
   f025028: 'delist, NR', // carry-over
   f025032: 'delist, China, Beijing', // carry-over
   f029368: 'delist, Korea, Gangseo-gu', // carry-over
@@ -2641,7 +2641,7 @@ const annotations = {
   f059280: 'delist, China, Shenzhen', // carry-over
   f059652: 'delist, China, Beijing', // carry-over
   f059705: 'delist, Korea, Naju', // carry-over
-  f059740: 'delist, Germany, Bottrop', // carry-over
+  f059740: 'retest, Germany, Bottrop', // carry-over
   f060780: 'delist, Korea, Goyang-si', // carry-over
   f061043: 'delist, China, Changsha', // carry-over
   f061059: 'delist, China, Beijing', // carry-over
@@ -2794,14 +2794,14 @@ const annotations = {
   f0135906: 'delist, NR', // carry-over
   f0136425: 'delist, Korea, Busan', // carry-over
   f0137475: 'delist, China, Beijing', // carry-over
-  f0137489: 'delist, UK, Deeside',
+  f0137489: 'retest, UK, Deeside',
   f0144304: 'delist, NR', // carry-over
   f0145018: 'delist, Korea', // carry-over
   f0147676: 'delist, Korea, Seoul', // carry-over
   f0149670: 'delist, NR', // carry-over
   f0149783: 'delist, NR', // carry-over
   f0156232: 'delist, China, Fuzhou', // carry-over
-  f0156342: 'delist, NR',
+  f0156342: 'retest, NR',
   f0160291: 'delist, USA', // carry-over
   f0164326: 'delist, China, Beijing', // carry-over
   f0165533: 'delist, NR', // carry-over
@@ -2838,7 +2838,7 @@ const annotations = {
   f0242260: 'delist, USA, St. Louis', // carry-over
   f0242416: 'delist, USA, Morganville', // carry-over
   f0347476: 'delist, China, Zhengzhou', // carry-over
-  f0364987: 'delist, Korea, Seoul',
+  f0364987: 'retest, Korea, Seoul',
   f0391370: 'delist, USA, Queens', // carry-over
   f0391520: 'delist, China, Guangzhou', // carry-over
   f0392707: 'delist, Korea, Chuncheon', // carry-over
