@@ -109,15 +109,12 @@ const annotations = {
 
   // Active-sealing (active, with in-flight sealing)
 
-  f0113331: 'active-sealing, Korea, Jinju + USA', // 1934131
   f0149455: 'active-sealing, NR', // 1934112
-  f0717913: 'active-sealing, Korea, Jung-gu', // 1934117
 
   // Sealing
 
   f01231: 'sealing, Singapore', // 1934087
   f02490: 'sealing, China, Fujian', // 1934277
-  f02540: 'sealing, USA, Mobile, Foundry', // 1934134
   f010513: 'sealing, China, Chongqing', // 1934271
   f014683: 'sealing, China, Dongguan', // 1934276
   f016276: 'sealing, China, Beijing', // 1934149
@@ -141,7 +138,6 @@ const annotations = {
   f0521569: 'sealing, Korea, Guro-go', // 1934152
   f0723006: 'sealing, Korea, Bucheon-si', // 1934265
   f0808705: 'sealing, China, Wenzhou', // 1934268
-  f0822203: 'sealing, Korea, Seoul', // 1934219
   f0853597: 'sealing, Korea, Gimpo-si', // 1934129
 
   // Stuck
@@ -547,6 +543,7 @@ const annotations = {
   // Error
 
   f01314: 'error, NR', // error reading Response message from provider: stream reset
+  f02540: 'error, USA, Mobile, Foundry', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1934134 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f03345: 'error, China, Fuzhou, chh', // error reading Response message from provider: stream reset
   f07830: 'error, China, Zhongshan', // error reading Response message from provider: EOF
   f08019: 'error, China, Yantai, 三合', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934273 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
@@ -571,6 +568,7 @@ const annotations = {
   f0110804: 'error, USA, Santa Clara', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999939298695 FIL, balance: 0.047585116707062544 FIL): not enough funds to execute transaction
   f0111885: 'error, Korea, Bucheon-si, WINNERS', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999980564636 FIL, balance: 0.188092423951643212 FIL): not enough funds to execute transaction
   f0112713: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999946013504 FIL, balance: 0.055820267418463221 FIL): not enough funds to execute transaction
+  f0113331: 'error, Korea, Jinju + USA', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1934131 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0115108: 'error, Korea, Yangcheon-gu', // deal failed: (State=11) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999954045257 FIL, balance: 0.163757087012727163 FIL): not enough funds to execute transaction
   f0124554: 'error, Korea, Gimhae', // error in deal activation: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934143 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0129805: 'error, China, Zhejiang + Australia, Adelaide', // deal failed: (State=26) no such proposal
@@ -604,11 +602,13 @@ const annotations = {
   f0673920: 'error, NR', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.255946135 FIL, balance: 0.235479499038328329 FIL): not enough funds to execute transaction
   f0674600: 'error, NR', // deal failed: (State=26) error calling node: reserving funds: failed to sign message: Don't allow transfer from f3vmhcs4luq7izg2etu2nhdafo6dbecidyghfj7v3ench2jwozo56g2bkqphrug7ividek7zewiuv62evyf7dq to f05 : Does not exist in the whitelist.
   f0693765: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934168 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0717913: 'error, Korea, Jung-gu', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1934117 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0751590: 'error, USA', // error reading Response message from provider: EOF
   f0754373: 'error, Netherlands, Rijssen', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals errored: handler: websocket connection closed
   f0805872: 'error, China, Hangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.089843313044860168 FIL, balance: 0.411729214072574874 FIL): not enough funds to execute transaction
   f0813086: 'error, Korea, Jung-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.084471337374908224 FIL, balance: 0.787765092275075486 FIL): not enough funds to execute transaction
   f0822032: 'error, Korea, Incheon', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934238 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0822203: 'error, Korea, Seoul', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1934219 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0843255: 'error, China, Yibin', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals exit code: SysErrOutOfGas(7)
   f0843728: 'error, France', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934279 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0849554: 'error, China, Beijing', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 784123): failed to look up deal on chain: deal 1934171 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
