@@ -16,6 +16,8 @@ const annotations = {
 
   f0857779: 'new, Korea, Dongjak-gu',
   f0858038: 'new, China, Shanghai',
+  f0862933: 'new, USA, Huntersville',
+  f0864910: 'new, Korea, Gwangjin-gu',
 
   // Inflight
 
