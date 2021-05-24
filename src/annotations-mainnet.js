@@ -25,136 +25,130 @@ const annotations = {
 
   // Active
 
+  f03339: 'active, China, Luzhou, benxun', // 1934097 about 4 hours
+  f07709: 'active, Korea, Dongjak-gu', // 1934153 about 4 hours
+  f020489: 'active, China, Lioaning', // 1934274 2 days
+  f022125: 'active, China, Shenzhen', // 1934165 2 days
+  f022261: 'active, China, Luzhou', // 1934094 2 days
+  f023219: 'active, China, Beijing + Zhangjiakou', // 1934267 2 days
+  f024550: 'active, China, Wenzhou', // 1934093 about 2 hours
+  f030125: 'active, China, Nantong', // 1934135 2 days
+  f042567: 'active, China, Jinhua', // 1934096 about 2 hours
+  f048135: 'active, China, Chongqing, password interstellar', // 1934246 2 days
+  f062318: 'active, Korea, Naju', // 1934142 2 days
+  f063628: 'active, NR', // 1934130 2 days
+  f081644: 'active, China, Wenzhou', // 1934095 2 days
+  f082095: 'active, NR', // 1934104 about 2 hours
+  f097720: 'active, Korea, Bucheon-si', // 1934106 2 days
   f0106949: 'active, Korea, Seoul', // 1934098 about 2 hours
+  f0131901: 'active, Korea, Daejeon', // 1934105 2 days
+  f0137168: 'active, China, Beijing', // 1934103 2 days
+  f0145843: 'active, NR', // 1934224 2 days
+  f0149132: 'active, NR', // 1934179 about 4 hours
+  f0150744: 'active, Korea, Ulsan', // 1934247 2 days
+  f0156207: 'active, Korea, Ulsan', // 1934232 2 days
+  f0157265: 'active, China, Zhangjiakou', // 1934266 2 days
+  f0157429: 'active, Korea, Bucheon-si', // 1934126 2 days
+  f0157564: 'active, Korea, Daejeon', // 1934099 2 days
+  f0165375: 'active, Korea, Seongnam-si', // 1934125 2 days
+  f0165539: 'active, Japan, Yokohama', // 1934102 2 days
+  f0215370: 'active, China, Hangzhou', // 1934154 2 days
+  f0228232: 'active, NR', // 1934127 2 days
+  f0228855: 'active, Korea, Guro-gu', // 1934147 2 days
+  f0399814: "active, China, Ya'an", // 1934100 2 days
+  f0400920: 'active, China, Luzhou', // 1934101 2 days
+  f0401300: 'active, France, Deuil-la-Barre', // 1934177 2 days
+  f0413563: 'active, Korea, Gangnam-gu', // 1934121 2 days
+  f0417750: 'active, NR', // 1934163 2 days
+  f0419768: 'active, Korea, Seongnam-si', // 1934110 2 days
+  f0437246: 'active, China, Hangzhou', // 1934115 2 days
+  f0458627: 'active, Korea, Seongnam-si', // 1934128 2 days
+  f0460440: 'active, Korea, Seongnam-si', // 1934122 2 days
+  f0478837: 'active, China, Zhangzhou', // 1934080 2 days
+  f0482619: 'active, Korea, Seongnam-si', // 1934108 2 days
+  f0675909: 'active, NR', // 1934124 2 days
+  f0680538: 'active, Korea, Bucheon-si', // 1934116 2 days
+  f0693131: 'active, China, Zhongshan', // 1934132 2 days
+  f0694172: 'active, China, Luzhou', // 1934264 2 days
+  f0694881: 'active, China, Hangzhou', // 1934118 2 days
+  f0700999: 'active, China, Chengdu', // 1934213 2 days
+  f0706937: 'active, Korea, Bucheon-si', // 1934162 2 days
+  f0709739: 'active, China, Handan', // 1934158 2 days
+  f0722515: 'active, Korea, Geumcheon-gu', // 1934114 2 days
+  f0723162: 'active, Korea, Bucheon-si', // 1934280 2 days
+  f0724219: 'active, Spain, Vilanova del Cami', // 1934221 2 days
+  f0726405: 'active, Korea, Seoul', // 1934272 2 days
+  f0729674: 'active, Canada, Vancouver', // 1934123 2 days
+  f0746416: 'active, Korea, Gyeonggi-do', // 1934113 2 days
+  f0752695: 'active, Korea, Seongnam-si', // 1934120 2 days
+  f0756207: 'active, Korea', // 1934278 2 days
+  f0758230: 'active, Korea, Geumcheon-gu', // 1934109 2 days
+  f0805568: 'active, Korea, Gangnam-gu', // 1934111 2 days
+  f0810358: 'active, Japan, Tokyo', // 1934214 2 days
+  f0833793: 'active, China, Henan', // 1934119 about 11 hours
+  f0835643: 'active, Korea, Songpa-gu', // 1934234 2 days
+  f0839509: 'active, China, Beijing', // 1934229 2 days
+  f0842171: 'active, China, Huizhou', // 1934170 about 10 hours
+  f0845245: 'active, Korea, Busan', // 1934288 2 days
 
   // Active-sealing (active, with in-flight sealing)
 
-  f03339: 'active-sealing, China, Luzhou, benxun', // 1934097
-  f022261: 'active-sealing, China, Luzhou', // 1934094
-  f024550: 'active-sealing, China, Wenzhou', // 1934093
-  f042567: 'active-sealing, China, Jinhua', // 1934096
-  f063628: 'active-sealing, NR', // 1934130
-  f081644: 'active-sealing, China, Wenzhou', // 1934095
-  f082095: 'active-sealing, NR', // 1934104
-  f097720: 'active-sealing, Korea, Bucheon-si', // 1934106
   f0113331: 'active-sealing, Korea, Jinju + USA', // 1934131
-  f0131901: 'active-sealing, Korea, Daejeon', // 1934105
-  f0137168: 'active-sealing, China, Beijing', // 1934103
   f0149455: 'active-sealing, NR', // 1934112
-  f0157429: 'active-sealing, Korea, Bucheon-si', // 1934126
-  f0157564: 'active-sealing, Korea, Daejeon', // 1934099
-  f0165375: 'active-sealing, Korea, Seongnam-si', // 1934125
-  f0165539: 'active-sealing, Japan, Yokohama', // 1934102
-  f0215370: 'active-sealing, China, Hangzhou', // 1934154
-  f0228232: 'active-sealing, NR', // 1934127
-  f0399814: "active-sealing, China, Ya'an", // 1934100
-  f0400920: 'active-sealing, China, Luzhou', // 1934101
-  f0413563: 'active-sealing, Korea, Gangnam-gu', // 1934121
-  f0419768: 'active-sealing, Korea, Seongnam-si', // 1934110
-  f0437246: 'active-sealing, China, Hangzhou', // 1934115
-  f0458627: 'active-sealing, Korea, Seongnam-si', // 1934128
-  f0460440: 'active-sealing, Korea, Seongnam-si', // 1934122
-  f0478837: 'active-sealing, China, Zhangzhou', // 1934080
-  f0482619: 'active-sealing, Korea, Seongnam-si', // 1934108
   f0504054: 'active-sealing, China, Luzhou', // 1934107
-  f0675909: 'active-sealing, NR', // 1934124
-  f0680538: 'active-sealing, Korea, Bucheon-si', // 1934116
-  f0693131: 'active-sealing, China, Zhongshan', // 1934132
-  f0694881: 'active-sealing, China, Hangzhou', // 1934118
-  f0709739: 'active-sealing, China, Handan', // 1934158
   f0717913: 'active-sealing, Korea, Jung-gu', // 1934117
-  f0722515: 'active-sealing, Korea, Geumcheon-gu', // 1934114
-  f0729674: 'active-sealing, Canada, Vancouver', // 1934123
-  f0746416: 'active-sealing, Korea, Gyeonggi-do', // 1934113
-  f0752695: 'active-sealing, Korea, Seongnam-si', // 1934120
-  f0758230: 'active-sealing, Korea, Geumcheon-gu', // 1934109
-  f0805568: 'active-sealing, Korea, Gangnam-gu', // 1934111
-  f0833793: 'active-sealing, China, Henan', // 1934119
-  f0842171: 'active-sealing, China, Huizhou', // 1934170
 
   // Sealing
 
   f01231: 'sealing, Singapore', // 1934087
+  f02490: 'sealing, China, Fujian', // 1934277
   f02540: 'sealing, USA, Mobile, Foundry', // 1934134
-  f07709: 'sealing, Korea, Dongjak-gu', // 1934153
+  f08019: 'sealing, China, Yantai, 三合', // 1934273
+  f010513: 'sealing, China, Chongqing', // 1934271
+  f014683: 'sealing, China, Dongguan', // 1934276
   f015233: 'sealing, China, Nanjing', // 1934133
   f016276: 'sealing, China, Beijing', // 1934149
   f016398: 'sealing, China, Shanghai', // 1934081
-  f019806: 'sealing, China, Beijing', // 1934151
   f021479: 'sealing, NR', // 1934083
-  f022125: 'sealing, China, Shenzhen', // 1934165
-  f030125: 'sealing, China, Nantong', // 1934135
   f030408: 'sealing, NR', // 1934166
+  f033036: 'sealing, China, Liaoning', // 1934275
+  f039515: 'sealing, China, Chongqing, valarhash', // 1934270
+  f044160: 'sealing, China, Guangzhou, muxing', // 1934285
+  f053088: 'sealing, China, Shanghai', // 1934269
   f053229: 'sealing, NR', // 1934141
   f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 1934137
   f061158: 'sealing, China, Guangdong, phoenix', // 1934136
-  f062318: 'sealing, Korea, Naju', // 1934142
   f066102: 'sealing, NR', // 1934085
   f066259: 'sealing, NR', // 1934082
   f070932: 'sealing, NR', // 1934145
+  f087965: 'sealing, China, Suzhou', // 1934245
   f089380: 'sealing, NR', // 1934084
+  f0104888: 'sealing, NR', // 1934289
   f0110133: 'sealing, China, Ningbo', // 1934146
   f0121533: 'sealing, China, Zhejiang', // 1934144
   f0124554: 'sealing, Korea, Gimhae', // 1934143
-  f0133957: 'sealing, NR', // 1934139
   f0134671: 'sealing, Korea, Gimpo-si', // 1934140
   f0146956: 'sealing, NR', // 1934182
-  f0149132: 'sealing, NR', // 1934179
   f0152337: 'sealing, NR', // 1934086
   f0165643: 'sealing, China, Guangzhou', // 1934150
   f0166327: 'sealing, NR', // 1934159
   f0168058: 'sealing, China, Suzhou', // 1934148
-  f0228855: 'sealing, Korea, Guro-gu', // 1934147
   f0396846: 'sealing, China, Zhongshan', // 1934164
   f0397728: 'sealing, China, Dongguan', // 1934161
-  f0401300: 'sealing, France, Deuil-la-Barre', // 1934177
   f0407733: 'sealing, NR', // 1934160
-  f0410001: 'sealing, NR', // 1934157
-  f0417750: 'sealing, NR', // 1934163
   f0429063: 'sealing, NR', // 1934156
   f0447181: 'sealing, China, Zibo', // 1934155
   f0521569: 'sealing, Korea, Guro-go', // 1934152
   f0693765: 'sealing, NR', // 1934168
-  f0706937: 'sealing, Korea, Bucheon-si', // 1934162
+  f0723006: 'sealing, Korea, Bucheon-si', // 1934265
+  f0808705: 'sealing, China, Wenzhou', // 1934268
+  f0822032: 'sealing, Korea, Incheon', // 1934238
+  f0822203: 'sealing, Korea, Seoul', // 1934219
+  f0843728: 'sealing, France', // 1934279
   f0849554: 'sealing, China, Beijing', // 1934171
   f0853597: 'sealing, Korea, Gimpo-si', // 1934129
 
   // Stuck
-
-  f02490: 'stuck, China, Fujian', // CheckForAcceptance: about 7 hours
-  f08019: 'stuck, China, Yantai, 三合', // CheckForAcceptance: about 7 hours
-  f010513: 'stuck, China, Chongqing', // CheckForAcceptance: about 7 hours
-  f014683: 'stuck, China, Dongguan', // CheckForAcceptance: about 7 hours
-  f020489: 'stuck, China, Lioaning', // CheckForAcceptance: about 7 hours
-  f023219: 'stuck, China, Beijing + Zhangjiakou', // CheckForAcceptance: about 7 hours
-  f033036: 'stuck, China, Liaoning', // CheckForAcceptance: about 7 hours
-  f039515: 'stuck, China, Chongqing, valarhash', // CheckForAcceptance: about 7 hours
-  f044160: 'stuck, China, Guangzhou, muxing', // CheckForAcceptance: about 7 hours
-  f048135: 'stuck, China, Chongqing, password interstellar', // CheckForAcceptance: about 7 hours
-  f053088: 'stuck, China, Shanghai', // CheckForAcceptance: about 7 hours
-  f087965: 'stuck, China, Suzhou', // CheckForAcceptance: about 7 hours
-  f0104888: 'stuck, NR', // CheckForAcceptance: about 7 hours
-  f0142059: 'stuck, NR', // CheckForAcceptance: about 4 hours
-  f0145843: 'stuck, NR', // CheckForAcceptance: about 7 hours
-  f0150744: 'stuck, Korea, Ulsan', // CheckForAcceptance: about 4 hours
-  f0156207: 'stuck, Korea, Ulsan', // CheckForAcceptance: about 7 hours
-  f0157265: 'stuck, China, Zhangjiakou', // CheckForAcceptance: about 7 hours
-  f0694172: 'stuck, China, Luzhou', // CheckForAcceptance: about 7 hours
-  f0700999: 'stuck, China, Chengdu', // CheckForAcceptance: about 7 hours
-  f0723006: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 7 hours
-  f0723162: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 7 hours
-  f0724219: 'stuck, Spain, Vilanova del Cami', // CheckForAcceptance: about 7 hours
-  f0726405: 'stuck, Korea, Seoul', // CheckForAcceptance: about 7 hours
-  f0756207: 'stuck, Korea', // CheckForAcceptance: about 7 hours
-  f0808705: 'stuck, China, Wenzhou', // CheckForAcceptance: about 7 hours
-  f0810358: 'stuck, Japan, Tokyo', // CheckForAcceptance: about 7 hours
-  f0822032: 'stuck, Korea, Incheon', // CheckForAcceptance: about 7 hours
-  f0822203: 'stuck, Korea, Seoul', // CheckForAcceptance: about 7 hours
-  f0835643: 'stuck, Korea, Songpa-gu', // CheckForAcceptance: about 7 hours
-  f0839509: 'stuck, China, Beijing', // CheckForAcceptance: about 7 hours
-  f0843255: 'stuck, China, Yibin', // CheckForAcceptance: about 7 hours
-  f0843728: 'stuck, France', // CheckForAcceptance: about 7 hours
-  f0845245: 'stuck, Korea, Busan', // CheckForAcceptance: about 7 hours
 
   // Busy
 
@@ -559,6 +553,7 @@ const annotations = {
   f01314: 'error, NR', // error reading Response message from provider: stream reset
   f03345: 'error, China, Fuzhou, chh', // error reading Response message from provider: stream reset
   f07830: 'error, China, Zhongshan', // error reading Response message from provider: EOF
+  f019806: 'error, China, Beijing', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1934151 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f020928: 'error, China, Deyang + Singapore', // error reading Response message from provider: EOF
   f025007: 'error, Korea, Gyeonggi-do, PINBYTES-eCUBE', // error reading Response message from provider: stream reset
   f025025: 'error, China, Qingdao', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.04999999997470157 FIL, balance: 0.024146610335701862 FIL): not enough funds to execute transaction
@@ -576,7 +571,9 @@ const annotations = {
   f0115108: 'error, Korea, Yangcheon-gu', // deal failed: (State=11) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999954045257 FIL, balance: 0.163757087012727163 FIL): not enough funds to execute transaction
   f0129805: 'error, China, Zhejiang + Australia, Adelaide', // deal failed: (State=26) no such proposal
   f0130912: 'error, China, Hong Kong', // failed to complete data transfer: deal data transfer failed: 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWBtqhxFAqHUJnURKG66qFNYZHER4LkNy5rRN4w2o4qZN1-1621582226593541289: after 4 consecutive restarts failed to transfer any data
+  f0133957: 'error, NR', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1934139 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0137489: 'error, UK, Deeside', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999984168944 FIL, balance: 0.015256167046968852 FIL): not enough funds to execute transaction
+  f0142059: 'error, NR', // deal failed: (State=13) start epoch already elapsed
   f0146751: 'error, China, Jiangsu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.99999999999989922 FIL, balance: 0.124884421850587082 FIL): not enough funds to execute transaction
   f0151371: 'error, NR', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.069999999993275264 FIL, balance: 0.051290235531253546 FIL): not enough funds to execute transaction
   f0155687: 'error, China, Guangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999971555119 FIL, balance: 0.007750567532626106 FIL): not enough funds to execute transaction
@@ -588,6 +585,7 @@ const annotations = {
   f0402431: 'error, China, Hangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999964143572 FIL, balance: 0.048297688965882951 FIL): not enough funds to execute transaction
   f0405129: 'error, China, Fujian', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.080122701749156632 FIL, balance: 0.505391210063331454 FIL): not enough funds to execute transaction
   f0409069: 'error, NR', // error reading Response message from provider: stream reset
+  f0410001: 'error, NR', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1934157 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0410023: 'error, NR', // error reading Response message from provider: stream reset
   f0461791: 'error, Korea, Gwangju', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999975772545 FIL, balance: 0.38480168515244323 FIL): not enough funds to execute transaction
   f0488888: 'error, China, Nanchang', // error reading Response message from provider: EOF
@@ -605,6 +603,7 @@ const annotations = {
   f0813086: 'error, Korea, Jung-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.084471337374908224 FIL, balance: 0.787765092275075486 FIL): not enough funds to execute transaction
   f0816232: 'error, Korea, Seoul', // failed to complete data transfer: deal data transfer failed: 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWAzZvcoxPsnw35dYrUqPHbjA1E36HFifsidjqZPdFjkBB-1621582226593541332: after 4 consecutive restarts failed to transfer any data
   f0839767: 'error, Korea, Suwon', // failed to complete data transfer: deal data transfer failed: 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWDcXp31C52k3GqW98ZmRhH4uNhhokQKGommGuKu2k6pdz-1621582226593541418: after 4 consecutive restarts failed to transfer any data
+  f0843255: 'error, China, Yibin', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals exit code: SysErrOutOfGas(7)
   f0846716: 'error, USA, Santa Clara', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999992933688 FIL, balance: 0.004341875459991126 FIL): not enough funds to execute transaction
 
   // Dial backoff
