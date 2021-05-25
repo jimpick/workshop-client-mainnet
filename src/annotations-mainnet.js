@@ -14,6 +14,9 @@ const annotations = {
 
   // New
 
+  f0869590: 'new, USA, Salt Lake City',
+  f0870005: 'new, Korea, Seongnam-si',
+
   // Inflight
 
   f0849079: 'inflight, NR', // FundsReserved: 5 minutes
