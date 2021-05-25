@@ -16,6 +16,7 @@ const annotations = {
 
   f0869590: 'new, USA, Salt Lake City',
   f0870005: 'new, Korea, Seongnam-si',
+  f0871928: 'new, China, Taiwan, Taipei',
 
   // Inflight
 
