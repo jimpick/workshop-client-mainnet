@@ -17,15 +17,15 @@ const annotations = {
   f0869590: 'new, USA, Salt Lake City', // carry-over
   f0870005: 'new, Korea, Seongnam-si', // carry-over
   f0871928: 'new, China, Taiwan, Taipei', // carry-over
-  f0873601: 'new, Romania, Bucharest',
-  f0873852: 'new, China, Yangzhou',
-  f0873874: 'new, NR',
-  f0874057: 'new, NR',
-  f0874231: 'new, China, Yichun',
-  f0875411: 'new, Korea',
-  f0875769: 'new, USA, Salt Lake City',
-  f0877545: 'new, China, Ningbo',
-  f0877555: 'new, USA, Queens',
+  f0873601: 'new, Romania, Bucharest', // carry-over
+  f0873852: 'new, China, Yangzhou', // carry-over
+  f0873874: 'new, NR', // carry-over
+  f0874057: 'new, NR', // carry-over
+  f0874231: 'new, China, Yichun', // carry-over
+  f0875411: 'new, Korea', // carry-over
+  f0875769: 'new, USA, Salt Lake City', // carry-over
+  f0877545: 'new, China, Ningbo', // carry-over
+  f0877555: 'new, USA, Queens', // carry-over
 
   // Inflight
 
@@ -111,7 +111,6 @@ const annotations = {
   f0149132: 'active-sealing, NR', // 1934915
   f0149455: 'active-sealing, NR', // 1934949
   f0399814: "active-sealing, China, Ya'an", // 1934912
-  f0417750: 'active-sealing, NR', // 1934946
   f0675909: 'active-sealing, NR', // 1934920
   f0706937: 'active-sealing, Korea, Bucheon-si', // 1934930
   f0839509: 'active-sealing, China, Beijing', // 1934938
@@ -128,7 +127,6 @@ const annotations = {
   f015233: 'sealing, China, Nanjing', // 1934961
   f016276: 'sealing, China, Beijing', // 1934945
   f016398: 'sealing, China, Shanghai', // 1934822
-  f019806: 'sealing, China, Beijing', // 1934978
   f021479: 'sealing, NR', // 1934821
   f033036: 'sealing, China, Liaoning', // 1935601
   f039515: 'sealing, China, Chongqing, valarhash', // 1934959
@@ -144,25 +142,21 @@ const annotations = {
   f089380: 'sealing, NR', // 1934830
   f0104888: 'sealing, NR', // 1937034
   f0121533: 'sealing, China, Zhejiang', // 1934952
-  f0129805: 'sealing, China, Zhejiang + Australia, Adelaide', // 1934963
   f0133957: 'sealing, NR', // 1934970
   f0134671: 'sealing, Korea, Gimpo-si', // 1934957
   f0152337: 'sealing, NR', // 1934828
   f0156452: 'sealing, Korea, Ulsan', // 1934968
-  f0157513: 'sealing, Korea, Geumcheon-gu', // 1934960
   f0162394: 'sealing, China, Guangzhou', // 1935022
   f0165643: 'sealing, China, Guangzhou', // 1934965
   f0166327: 'sealing, NR', // 1934955
   f0396846: 'sealing, China, Zhongshan', // 1934979
   f0407733: 'sealing, NR', // 1934967
-  f0410001: 'sealing, NR', // 1935035
   f0429063: 'sealing, NR', // 1934976
   f0447181: 'sealing, China, Zibo', // 1934977
   f0521569: 'sealing, Korea, Guro-go', // 1934958
   f0693765: 'sealing, NR', // 1934990
   f0723006: 'sealing, Korea, Bucheon-si', // 1934956
   f0808705: 'sealing, China, Wenzhou', // 1935101
-  f0838467: 'sealing, Korea, Incheon', // 1935100
   f0843728: 'sealing, France', // 1935012
   f0866680: 'sealing, China, Henan', // 1935599
 
@@ -571,6 +565,7 @@ const annotations = {
 
   f01314: 'error, NR', // error reading Response message from provider: stream reset
   f07830: 'error, China, Zhongshan', // error reading Response message from provider: EOF
+  f019806: 'error, China, Beijing', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1934978 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f020928: 'error, China, Deyang + Singapore', // error reading Response message from provider: EOF
   f025007: 'error, Korea, Gyeonggi-do, PINBYTES-eCUBE', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.0499999999683114 FIL, balance: 0.027206058969137636 FIL): not enough funds to execute transaction
   f025025: 'error, China, Qingdao', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999955948049 FIL, balance: 0.024146610335701862 FIL): not enough funds to execute transaction
@@ -585,17 +580,21 @@ const annotations = {
   f0111885: 'error, Korea, Bucheon-si, WINNERS', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.49999999996495584 FIL, balance: 0.186644099998263399 FIL): not enough funds to execute transaction
   f0112713: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.49999999998187561 FIL, balance: 0.055714400378931665 FIL): not enough funds to execute transaction
   f0115108: 'error, Korea, Yangcheon-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999944639276 FIL, balance: 0.162016708804609361 FIL): not enough funds to execute transaction
+  f0129805: 'error, China, Zhejiang + Australia, Adelaide', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1934963 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0130912: 'error, China, Hong Kong', // failed to complete data transfer: deal data transfer failed: 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWBtqhxFAqHUJnURKG66qFNYZHER4LkNy5rRN4w2o4qZN1-1621887416538169757: after 4 consecutive restarts failed to transfer any data
   f0137168: 'error, China, Beijing', // error reading Response message from provider: stream reset
   f0137489: 'error, UK, Deeside', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.04999999999540203 FIL, balance: 0.015256167046968852 FIL): not enough funds to execute transaction
   f0146751: 'error, China, Jiangsu', // deal failed: (State=11) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.674629647973181824 FIL, balance: 0.124884421850587082 FIL): not enough funds to execute transaction
   f0155687: 'error, China, Guangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.04999999999775028 FIL, balance: 0.007737368295019859 FIL): not enough funds to execute transaction
+  f0157513: 'error, Korea, Geumcheon-gu', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1934960 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0225676: 'error, Korea, Guro-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999966630504 FIL, balance: 0.432025873613179833 FIL): not enough funds to execute transaction
   f0241022: 'error, Korea, Geumcheon-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999970682696 FIL, balance: 0.082341975676728091 FIL): not enough funds to execute transaction
   f0396705: 'error, NR', // failed to complete data transfer: deal data transfer failed: 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWPBwe1zjfh5busocJHRzMdRGee73RJjkZ4gaMYxGrZ86o-1621887416538169644: after 4 consecutive restarts failed to transfer any data
   f0397332: 'error, NR', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1935103 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0402431: 'error, China, Hangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999959641285 FIL, balance: 0.048297688965882951 FIL): not enough funds to execute transaction
   f0405129: 'error, China, Fujian', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.721221632928287673 FIL, balance: 0.505391210063331454 FIL): not enough funds to execute transaction
+  f0410001: 'error, NR', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1935035 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0417750: 'error, NR', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1934946 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0461791: 'error, Korea, Gwangju', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999950556809 FIL, balance: 0.38480168515244323 FIL): not enough funds to execute transaction
   f0512170: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999960854784 FIL, balance: 0.377440623108881977 FIL): not enough funds to execute transaction
   f0512179: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.499999999970033719 FIL, balance: 0.023329317418499852 FIL): not enough funds to execute transaction
@@ -605,6 +604,7 @@ const annotations = {
   f0673920: 'error, NR', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.26223238 FIL, balance: 0.235479499038328329 FIL): not enough funds to execute transaction
   f0751590: 'error, USA', // error reading Response message from provider: EOF
   f0822032: 'error, Korea, Incheon', // deal failed: (State=26) error calling node: AddFunds errored: handler: websocket connection closed
+  f0838467: 'error, Korea, Incheon', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1935100 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0853597: 'error, Korea, Gimpo-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.49999999994442057 FIL, balance: 0.365312126180036703 FIL): not enough funds to execute transaction
 
   // Dial backoff
