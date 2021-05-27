@@ -17,6 +17,13 @@ const annotations = {
   f0869590: 'new, USA, Salt Lake City', // carry-over
   f0870005: 'new, Korea, Seongnam-si', // carry-over
   f0871928: 'new, China, Taiwan, Taipei', // carry-over
+  f0873601: 'new, Romania, Bucharest',
+  f0873852: 'new, China, Yangzhou',
+  f0873874: 'new, NR',
+  f0874057: 'new, NR',
+  f0874231: 'new, China, Yichun',
+  f0875411: 'new, Korea',
+  f0875769: 'new, USA, Salt Lake City',
 
   // Inflight
 
