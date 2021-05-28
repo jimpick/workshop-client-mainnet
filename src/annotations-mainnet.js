@@ -26,6 +26,7 @@ const annotations = {
   f0875769: 'new, USA, Salt Lake City', // carry-over
   f0877545: 'new, China, Ningbo', // carry-over
   f0877555: 'new, USA, Queens', // carry-over
+  f0879756: 'new, China, Xinjiang',
 
   // Inflight
 
