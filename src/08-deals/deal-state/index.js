@@ -509,6 +509,7 @@ export default function DealList ({ appState, cid, dealType }) {
       'backoff',
       'rejected',
       'fail',
+      'nopeer',
       'delist',
     ]
   } else if (dealType === '128mib-unverified') {
@@ -534,6 +535,7 @@ export default function DealList ({ appState, cid, dealType }) {
       'rejected',
       'fail',
       'error-ask',
+      'nopeer',
       'delist',
     ]
   } else if (dealType === '128mib-verified') {
@@ -559,6 +561,7 @@ export default function DealList ({ appState, cid, dealType }) {
       'rejected',
       'fail',
       'error-ask',
+      'nopeer',
       'delist',
     ]
   } else {
