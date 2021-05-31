@@ -55,7 +55,11 @@ export default function ProposeDeal ({ appState, updateAppState }) {
 
   const nonDelistedMiners = useMemo(() => {
     if (miners) {
-      return miners.filter(miner => !annotations[miner].match(/^delist/))
+      return miners.filter(
+        miner =>
+          !annotations[miner].match(/^delist/) &&
+          !annotations[miner].match(/^nopeer/)
+      )
     }
     return miners
   }, [miners])
@@ -337,7 +341,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
       {filteredMiners && dealMiners && (
         <div>
           Miners: {filteredMiners.filter(miner => dealMiners.has(miner)).length}{' '}
-          / {filteredMiners.length} {' '}
+          / {filteredMiners.length}{' '}
           <button onClick={() => proposeBatch(10)}>Propose 10</button>
           <button onClick={() => proposeBatch(100)}>Propose 100</button>
           <button onClick={() => proposeBatch(1000)}>Propose 1000</button>

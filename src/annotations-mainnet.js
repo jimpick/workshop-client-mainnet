@@ -14,14 +14,14 @@ const annotations = {
 
   // New
 
-  f0106256: 'new, NR', // carry-over
-  f0107916: 'new, NR', // carry-over
-  f0232830: 'new, NR', // carry-over
-  f0685126: 'new, NR', // carry-over
-  f0690971: 'new, NR', // carry-over
-  f0701089: 'new, NR', // carry-over
-  f0702301: 'new, NR', // carry-over
-  f0858986: 'new, NR', // carry-over
+  f0106256: 'nopeer, NR', // carry-over
+  f0107916: 'nopeer, NR', // carry-over
+  f0232830: 'nopeer, NR', // carry-over
+  f0685126: 'nopeer, NR', // carry-over
+  f0690971: 'nopeer, NR', // carry-over
+  f0701089: 'nopeer, NR', // carry-over
+  f0702301: 'nopeer, NR', // carry-over
+  f0858986: 'nopeer, NR', // carry-over
   f0986118: 'new, Korea, Incheon', // carry-over
   f01002224: 'new, Korea', // carry-over
   f01015491: 'new, Canada, Montreal', // carry-over
