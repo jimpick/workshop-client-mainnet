@@ -13,61 +13,60 @@ const annotations = {
   // Retest
 
   // New
-  f0883732: 'new, Korea, Yeongdeungpo-gu',
-  f0884747: 'new, UK, London',
-  f0985013: 'new, Korea, Incheon',
 
-  // Unlisted
-  f0469168: 'new, NR',
-  f0441225: 'new, NR',
-  f0106256: 'new, NR',
-  f0701089: 'new, NR',
-  f0443480: 'new, NR',
-  f0807472: 'new, NR',
-  f0751450: 'new, NR',
-  f0730917: 'new, NR',
-  f0808766: 'new, NR',
-  f0747777: 'new, NR',
-  f0680929: 'new, NR',
-  f0493237: 'new, NR',
-  f0232830: 'new, NR',
-  f0396720: 'new, NR',
-  f0494841: 'new, China, Beijing',
-  f0480944: 'new, NR',
-  f0480936: 'new, NR',
-  f0463184: 'new, NR',
-  f0690971: 'new, NR',
-  f0663311: 'new, NR',
-  f0418652: 'new, NR',
-  f0521273: 'new, NR',
-  f0818235: 'new, NR',
-  f0601583: 'new, NR',
-  f0473677: 'new, NR',
-  f0452808: 'new, NR',
-  f0666315: 'new, NR',
-  f0723950: 'new, NR',
-  f0870333: 'new, NR',
-  f0711289: 'new, NR',
-  f0428075: 'new, NR',
-  f0432661: 'new, NR',
-  f0724023: 'new, NR',
-  f0828538: 'new, NR',
-  f0844916: 'new, NR',
-  f0807386: 'new, NR',
-  f0746628: 'new, NR',
-  f0832373: 'new, NR',
-  f0692371: 'new, Malaysia',
-  f0763337: 'new, USA, San Diego',
-  f0448660: 'new, NR',
-  f0840040: 'new, NR',
-  f0475095: 'new, NR',
-  f0836160: 'new, Korea, Seodaemun-gu',
-  f0754993: 'new, NR',
-  f0461779: 'new, NR',
-  f0838852: 'new, NR',
-  f0465993: 'new, NR',
-  f0856508: 'new, China, Taiwan, Taoyuan District',
-  f0884795: 'new, NR',
+  f0106256: 'new, NR', // carry-over
+  f0232830: 'new, NR', // carry-over
+  f0396720: 'new, NR', // carry-over
+  f0418652: 'new, NR', // carry-over
+  f0428075: 'new, NR', // carry-over
+  f0432661: 'new, NR', // carry-over
+  f0441225: 'new, NR', // carry-over
+  f0443480: 'new, NR', // carry-over
+  f0448660: 'new, NR', // carry-over
+  f0452808: 'new, NR', // carry-over
+  f0461779: 'new, NR', // carry-over
+  f0463184: 'new, NR', // carry-over
+  f0465993: 'new, NR', // carry-over
+  f0469168: 'new, NR', // carry-over
+  f0473677: 'new, NR', // carry-over
+  f0475095: 'new, NR', // carry-over
+  f0480936: 'new, NR', // carry-over
+  f0480944: 'new, NR', // carry-over
+  f0493237: 'new, NR', // carry-over
+  f0494841: 'new, China, Beijing', // carry-over
+  f0521273: 'new, NR', // carry-over
+  f0601583: 'new, NR', // carry-over
+  f0663311: 'new, NR', // carry-over
+  f0666315: 'new, NR', // carry-over
+  f0680929: 'new, NR', // carry-over
+  f0690971: 'new, NR', // carry-over
+  f0692371: 'new, Malaysia', // carry-over
+  f0701089: 'new, NR', // carry-over
+  f0711289: 'new, NR', // carry-over
+  f0723950: 'new, NR', // carry-over
+  f0724023: 'new, NR', // carry-over
+  f0730917: 'new, NR', // carry-over
+  f0746628: 'new, NR', // carry-over
+  f0747777: 'new, NR', // carry-over
+  f0751450: 'new, NR', // carry-over
+  f0754993: 'new, NR', // carry-over
+  f0763337: 'new, USA, San Diego', // carry-over
+  f0807386: 'new, NR', // carry-over
+  f0807472: 'new, NR', // carry-over
+  f0808766: 'new, NR', // carry-over
+  f0818235: 'new, NR', // carry-over
+  f0828538: 'new, NR', // carry-over
+  f0832373: 'new, NR', // carry-over
+  f0836160: 'new, Korea, Seodaemun-gu', // carry-over
+  f0838852: 'new, NR', // carry-over
+  f0840040: 'new, NR', // carry-over
+  f0844916: 'new, NR', // carry-over
+  f0856508: 'new, China, Taiwan, Taoyuan District', // carry-over
+  f0870333: 'new, NR', // carry-over
+  f0883732: 'new, Korea, Yeongdeungpo-gu', // carry-over
+  f0884747: 'new, UK, London', // carry-over
+  f0884795: 'new, NR', // carry-over
+  f0985013: 'new, Korea, Incheon', // carry-over
 
   // Inflight
 
@@ -118,11 +117,13 @@ const annotations = {
   f0419768: 'active, Korea, Seongnam-si', // 1942029 about 2 hours
   f0437246: 'active, China, Hangzhou', // 1942038 about 3 hours
   f0460440: 'active, Korea, Seongnam-si', // 1942028 about 3 hours
+  f0478837: 'active, China, Zhangzhou', // 1941930 1 day
   f0482619: 'active, Korea, Seongnam-si', // 1942026 about 3 hours
   f0504054: 'active, China, Luzhou', // 1942025 about 2 hours
   f0512170: 'active, Korea, Bucheon-si', // 1944622 about 1 hour
   f0514737: 'active, Korea, Busan', // 1942322 about 2 hours
   f0675909: 'active, NR', // 1942160 about 3 hours
+  f0680538: 'active, Korea, Bucheon-si', // 1942102 1 day
   f0693131: 'active, China, Zhongshan', // 1942032 about 2 hours
   f0694172: 'active, China, Luzhou', // 1942035 about 2 hours
   f0694881: 'active, China, Hangzhou', // 1942040 about 2 hours
@@ -141,6 +142,7 @@ const annotations = {
   f0813086: 'active, Korea, Jung-gu', // 1942052 about 2 hours
   f0833793: 'active, China, Henan', // 1942066 about 1 hour
   f0835643: 'active, Korea, Songpa-gu', // 1942045 about 4 hours
+  f0838467: 'active, Korea, Incheon', // 1944621 about 2 hours
   f0845245: 'active, Korea, Busan', // 1942044 about 2 hours
   f0862933: 'active, USA, Huntersville', // 1942080 about 4 hours
   f0864910: 'active, Korea, Gwangjin-gu', // 1943288 about 2 hours
@@ -152,30 +154,23 @@ const annotations = {
   // Active-sealing (active, with in-flight sealing)
 
   f022125: 'active-sealing, China, Shenzhen', // 1942079
-  f030125: 'active-sealing, China, Nantong', // 1942056
   f0149455: 'active-sealing, NR', // 1942057
   f0228232: 'active-sealing, NR', // 1942106
-  f0458627: 'active-sealing, Korea, Seongnam-si', // 1942030
-  f0478837: 'active-sealing, China, Zhangzhou', // 1941930
-  f0680538: 'active-sealing, Korea, Bucheon-si', // 1942102
   f0700999: 'active-sealing, China, Chengdu', // 1942024
   f0723162: 'active-sealing, Korea, Bucheon-si', // 1942041
   f0756207: 'active-sealing, Korea', // 1942049
   f0810358: 'active-sealing, Japan, Tokyo', // 1942047
-  f0839509: 'active-sealing, China, Beijing', // 1942065
 
   // Sealing
 
   f01231: 'sealing, Singapore', // 1941947
   f02490: 'sealing, China, Fujian', // 1942147
-  f02540: 'sealing, USA, Mobile, Foundry', // 1942054
   f03345: 'sealing, China, Fuzhou, chh', // 1942092
   f08019: 'sealing, China, Yantai, 三合', // 1942064
   f010513: 'sealing, China, Chongqing', // 1942081
   f014683: 'sealing, China, Dongguan', // 1942068
   f015233: 'sealing, China, Nanjing', // 1942082
   f016398: 'sealing, China, Shanghai', // 1941931
-  f019806: 'sealing, China, Beijing', // 1942294
   f021479: 'sealing, NR', // 1941932
   f033036: 'sealing, China, Liaoning', // 1942088
   f039515: 'sealing, China, Chongqing, valarhash', // 1942078
@@ -189,28 +184,22 @@ const annotations = {
   f070932: 'sealing, NR', // 1942087
   f080103: 'sealing, Korea, Seongnam-si', // 1942091
   f082635: 'sealing, NR', // 1942295
-  f086028: 'sealing, NR', // 1942567
   f087868: 'sealing, NR', // 1942539
   f089380: 'sealing, NR', // 1941933
   f097840: 'sealing, NR', // 1942684
-  f0101087: 'sealing, Korea', // 1942215
   f0104888: 'sealing, NR', // 1942157
   f0121533: 'sealing, China, Zhejiang', // 1942089
-  f0129805: 'sealing, China, Zhejiang + Australia, Adelaide', // 1942305
   f0133957: 'sealing, NR', // 1942094
   f0134671: 'sealing, Korea, Gimpo-si', // 1942093
   f0152337: 'sealing, NR', // 1941946
   f0156452: 'sealing, Korea, Ulsan', // 1942095
   f0162394: 'sealing, China, Guangzhou', // 1942096
   f0166327: 'sealing, NR', // 1942097
-  f0187709: 'sealing, Russia, Moscow', // 1942170
   f0225676: 'sealing, Korea, Guro-gu', // 1942318
   f0396846: 'sealing, China, Zhongshan', // 1942158
-  f0397332: 'sealing, NR', // 1942319
   f0397728: 'sealing, China, Dongguan', // 1942916
   f0405129: 'sealing, China, Fujian', // 1942375
   f0407733: 'sealing, NR', // 1942098
-  f0410001: 'sealing, NR', // 1942320
   f0429063: 'sealing, NR', // 1942100
   f0461791: 'sealing, Korea, Gwangju', // 1942308
   f0521569: 'sealing, Korea, Guro-go', // 1942099
@@ -218,7 +207,6 @@ const annotations = {
   f0715639: 'sealing, NR', // 1943184
   f0808705: 'sealing, China, Wenzhou', // 1942145
   f0822032: 'sealing, Korea, Incheon', // 1942321
-  f0838467: 'sealing, Korea, Incheon', // 1944621
   f0843728: 'sealing, France', // 1942146
   f0873601: 'sealing, Romania, Bucharest', // 1942104
 
@@ -626,32 +614,43 @@ const annotations = {
 
   // Error
 
+  f02540: 'error, USA, Mobile, Foundry', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1942054 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f07830: 'error, China, Zhongshan', // error reading Response message from provider: EOF
+  f019806: 'error, China, Beijing', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1942294 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f020928: 'error, China, Deyang + Singapore', // error reading Response message from provider: EOF
   f025007: 'error, Korea, Gyeonggi-do, PINBYTES-eCUBE', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999942403832 FIL, balance: 0.027139650356555191 FIL): not enough funds to execute transaction
   f025025: 'error, China, Qingdao', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.0499999999469291 FIL, balance: 0.024146610335701862 FIL): not enough funds to execute transaction
+  f030125: 'error, China, Nantong', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1942056 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f030408: 'error, NR', // error reading Response message from provider: stream reset
   f062937: 'error, NR', // error reading Response message from provider: EOF
   f063869: 'error, NR', // error reading Response message from provider: EOF
+  f086028: 'error, NR', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1942567 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f094901: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.233186111661374592 FIL, balance: 0.168542829097125624 FIL): not enough funds to execute transaction
   f097214: 'error, Korea, Bucheon-si, CryptoHash', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.204782732323825772 FIL, balance: 0.114954637000414755 FIL): not enough funds to execute transaction
   f099608: 'error, Latvia, Riga, stander', // error reading Response message from provider: EOF
+  f0101087: 'error, Korea', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1942215 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0110133: 'error, China, Ningbo', // AddPiece failed: normal shutdown of state machine
   f0110804: 'error, USA, Santa Clara', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.04999999994885434 FIL, balance: 0.047585116707062544 FIL): not enough funds to execute transaction
   f0111885: 'error, Korea, Bucheon-si, WINNERS', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.1994436840051009 FIL, balance: 0.18578931987121527 FIL): not enough funds to execute transaction
   f0112713: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.317044019468941018 FIL, balance: 0.055647677948514682 FIL): not enough funds to execute transaction
   f0115108: 'error, Korea, Yangcheon-gu', // deal failed: (State=11) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.382778623691018088 FIL, balance: 0.16050944510982978 FIL): not enough funds to execute transaction
+  f0129805: 'error, China, Zhejiang + Australia, Adelaide', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1942305 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0130912: 'error, China, Hong Kong', // failed to complete data transfer: deal data transfer failed: 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWBtqhxFAqHUJnURKG66qFNYZHER4LkNy5rRN4w2o4qZN1-1622172231134071683: after 4 consecutive restarts failed to transfer any data
   f0137489: 'error, UK, Deeside', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999953071427 FIL, balance: 0.015256167046968852 FIL): not enough funds to execute transaction
   f0146751: 'error, China, Jiangsu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.168117653312960277 FIL, balance: 0.124884421850587082 FIL): not enough funds to execute transaction
   f0155687: 'error, China, Guangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999987813968 FIL, balance: 0.007737368295019859 FIL): not enough funds to execute transaction
+  f0187709: 'error, Russia, Moscow', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1942170 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0396705: 'error, NR', // failed to complete data transfer: deal data transfer failed: 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWPBwe1zjfh5busocJHRzMdRGee73RJjkZ4gaMYxGrZ86o-1622172231134071689: after 4 consecutive restarts failed to transfer any data
+  f0397332: 'error, NR', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1942319 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0402431: 'error, China, Hangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999950679384 FIL, balance: 0.048297688965882951 FIL): not enough funds to execute transaction
+  f0410001: 'error, NR', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1942320 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f0458627: 'error, Korea, Seongnam-si', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1942030 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0512179: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.210981444266374152 FIL, balance: 0.023329317418499852 FIL): not enough funds to execute transaction
   f0513351: 'error, NR', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999944937934 FIL, balance: 0.046060475836710078 FIL): not enough funds to execute transaction
   f0673920: 'error, NR', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.29454953 FIL, balance: 0.235479499038328329 FIL): not enough funds to execute transaction
   f0706937: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.209149659244324375 FIL, balance: 0.208092258420874635 FIL): not enough funds to execute transaction
   f0751590: 'error, USA', // error reading Response message from provider: EOF
+  f0839509: 'error, China, Beijing', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1942065 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0866680: 'error, China, Henan', // error reading Response message from provider: EOF
 
   // Dial backoff
