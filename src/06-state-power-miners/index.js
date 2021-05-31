@@ -425,7 +425,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       const processingOrder = [...filteredAnnotationKeys, ...reversed]
       for (const miner of processingOrder) {
         queue.add(async () => {
-          // console.log('Miner Power', miner, annotations[miner])
+          console.log('Miner Power', miner, annotations[miner])
           if (state.canceled) return
           setMinersScanned(++state.count)
           const result = await client.stateMinerPower(miner, tipsetKey)
@@ -491,7 +491,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             idbSet(`minerAddrs:${genesisCid}:${miner}`, cacheRecord)
             processMinerAddrsUpdates()
             // console.log('Jim processed', miner)
-            return
+            // return
+            peerId = null
           } else if (isIPFS.multihash(wirePeerId)) {
             peerId = wirePeerId
           } else {
