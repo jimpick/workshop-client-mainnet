@@ -1,6 +1,7 @@
 import React from 'react'
 import DealList from './deal-list'
 import useLotusClient from '../lib/use-lotus-client'
+import annotations from '../annotations'
 
 export default function Deals ({ appState, updateAppState }) {
   const { deals, dealData, selectedNode, filterErrors } = appState
@@ -14,6 +15,12 @@ export default function Deals ({ appState, updateAppState }) {
           onClick={clearAll}
         >
           Clear
+        </button>
+        <button
+          style={{ height: '2rem', marginBottom: '1rem' }}
+          onClick={clearBackoff}
+        >
+          Clear Backoff
         </button>
         <button
           style={{ height: '2rem', marginBottom: '1rem' }}
@@ -67,6 +74,19 @@ export default function Deals ({ appState, updateAppState }) {
       draft.deals = []
       draft.dealData = {}
       draft.dealHistory = {}
+    })
+  }
+
+  function clearBackoff () {
+    updateAppState(draft => {
+      const newDeals = []
+      for (const deal of draft.deals) {
+        const annotation = annotations[deal.miner]
+        if (!annotation.match(/^backoff,/)) {
+          newDeals.push(deal)
+        }
+      }
+      draft.deals = newDeals
     })
   }
 
