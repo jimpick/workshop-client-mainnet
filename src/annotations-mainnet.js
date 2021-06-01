@@ -94,6 +94,11 @@ const annotations = {
   f0872002: 'new, NR',
   f0984680: 'new, Korea, Jung-gu',
 
+  f0154020: 'nopeer, NR',
+  f0807446: 'new, NR',
+  f0472863: 'new, NR',
+  f0519513: 'new, NR',
+
   // Inflight
 
   f0133689: 'inflight, NR', // FundsReserved: about 4 hours
