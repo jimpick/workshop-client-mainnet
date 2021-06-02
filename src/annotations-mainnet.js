@@ -14,6 +14,7 @@ const annotations = {
 
   // New
 
+  f0690964: 'nopeer, NR',
   f0880167: 'new, NR', // carry-over
   f01016451: 'new, NR', // carry-over
   f01019892: 'new, USA, Lake Elsinore', // carry-over
