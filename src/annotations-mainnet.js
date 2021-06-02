@@ -14,6 +14,11 @@ const annotations = {
 
   // New
 
+  f0880167: 'new, NR',
+  f01016451: 'new, NR',
+  f01019892: 'new, USA, Lake Elsinore',
+  f01021204: 'new, China, Hangzhou',
+
   // Inflight
 
   f023534: 'inflight, China, Chongqing', // FundsReserved: about 22 hours
