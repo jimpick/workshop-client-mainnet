@@ -14,35 +14,12 @@ const annotations = {
 
   // New
 
-  f0880167: 'new, NR',
-  f01016451: 'new, NR',
-  f01019892: 'new, USA, Lake Elsinore',
-  f01021204: 'new, China, Hangzhou',
+  f0880167: 'new, NR', // carry-over
+  f01016451: 'new, NR', // carry-over
+  f01019892: 'new, USA, Lake Elsinore', // carry-over
+  f01021204: 'new, China, Hangzhou', // carry-over
 
   // Inflight
-
-  f023534: 'inflight, China, Chongqing', // FundsReserved: about 22 hours
-  f0133689: 'inflight, NR', // FundsReserved: 1 day
-  f0393135: 'inflight, NR', // FundsReserved: 1 day
-  f0408688: 'inflight, NR', // FundsReserved: 1 day
-  f0436661: 'inflight, NR', // FundsReserved: 1 day
-  f0442375: 'inflight, NR', // FundsReserved: 1 day
-  f0442671: 'inflight, NR', // FundsReserved: 1 day
-  f0461612: 'inflight, NR', // FundsReserved: 1 day
-  f0475305: 'inflight, NR', // FundsReserved: 1 day
-  f0488733: 'inflight, NR', // FundsReserved: 1 day
-  f0494268: 'inflight, NR', // FundsReserved: 1 day
-  f0690699: 'inflight, NR', // FundsReserved: 1 day
-  f0729412: 'inflight, NR', // FundsReserved: 1 day
-  f0733076: 'inflight, NR', // FundsReserved: 1 day
-  f0755327: 'inflight, NR', // FundsReserved: 1 day
-  f0756338: 'inflight, NR', // FundsReserved: 1 day
-  f0765173: 'inflight, NR', // FundsReserved: 1 day
-  f0806395: 'inflight, NR', // FundsReserved: 1 day
-  f0822441: 'inflight, NR', // FundsReserved: 1 day
-  f0848972: 'inflight, NR', // FundsReserved: 1 day
-  f0867253: 'inflight, NR', // FundsReserved: 1 day
-  f0870973: 'inflight, NR', // FundsReserved: 1 day
 
   // Unknown
 
@@ -57,6 +34,7 @@ const annotations = {
   f061158: 'active, China, Guangdong, phoenix', // 1950563 about 15 hours
   f079817: "active, Russia, Ul'yanovka", // 1948045 about 1 hour
   f082635: 'active, NR', // 1950564 about 15 hours
+  f0104671: 'active, Japan, Ota-ku', // 1949322 2 days
   f0106949: 'active, Korea, Seoul', // 1947937 about 10 hours
   f0112713: 'active, Korea, Bucheon-si', // 1948091 about 2 hours
   f0115108: 'active, Korea, Yangcheon-gu', // 1948094 about 2 hours
@@ -65,6 +43,7 @@ const annotations = {
   f0159961: 'active, China, Chongqing', // 1950586 about 15 hours
   f0228855: 'active, Korea, Guro-gu', // 1947956 about 2 hours
   f0399814: "active, China, Ya'an", // 1950588 about 15 hours
+  f0417748: 'active, China, Changsha', // 1949995 1 minute
   f0437246: 'active, China, Hangzhou', // 1950591 about 15 hours
   f0513351: 'active, NR', // 1948100 16 minutes
   f0602553: 'active, China, Suqian', // 1949994 about 3 hours
@@ -79,6 +58,7 @@ const annotations = {
   f0754373: 'active, Netherlands, Rijssen', // 1947974 about 3 hours
   f0758230: 'active, Korea, Geumcheon-gu', // 1947965 about 2 hours
   f0763981: 'active, China, Tianjin', // 1949992 about 19 hours
+  f0816420: 'active, China, Harbin', // 1949988 1 minute
   f0827934: 'active, USA, Port Jefferson', // 1950177 about 18 hours
   f0828066: 'active, USA, San Digeo', // 1950419 about 16 hours
   f0832373: 'active, NR', // 1950596 about 14 hours
@@ -87,87 +67,34 @@ const annotations = {
   f0857798: 'active, China, Wenzhou', // 1949996 about 19 hours
   f0859013: 'active, China, Nanjing', // 1950199 about 18 hours
   f0875411: 'active, Korea', // 1948047 39 minutes
+  f0984680: 'active, Korea, Jung-gu', // 1950837 about 7 hours
+  f0986118: 'active, Korea, Incheon', // 1949991 1 minute
+  f01002224: 'active, Korea', // 1949989 1 minute
 
   // Active-sealing (active, with in-flight sealing)
-
-  f033025: 'active-sealing, Korea, Daegu', // 1948102
-  f062318: 'active-sealing, Korea, Naju', // 1947939
-  f097720: 'active-sealing, Korea, Bucheon-si', // 1947940
-  f0104671: 'active-sealing, Japan, Ota-ku', // 1949322
-  f0113331: 'active-sealing, Korea, Jinju + USA', // 1947948
-  f0157429: 'active-sealing, Korea, Bucheon-si', // 1947952
-  f0165375: 'active-sealing, Korea, Seongnam-si', // 1947942
-  f0221135: 'active-sealing, USA, Atlanta', // 1947945
-  f0230200: 'active-sealing, Korea, Gwanak-gu, G-mining', // 1947944
-  f0413563: 'active-sealing, Korea, Gangnam-gu', // 1947946
-  f0419768: 'active-sealing, Korea, Seongnam-si', // 1947955
-  f0514737: 'active-sealing, Korea, Busan', // 1947954
-  f0693131: 'active-sealing, China, Zhongshan', // 1947957
-  f0717913: 'active-sealing, Korea, Jung-gu', // 1947963
-  f0723162: 'active-sealing, Korea, Bucheon-si', // 1947975
-  f0746416: 'active-sealing, Korea, Gyeonggi-do', // 1947961
-  f0752695: 'active-sealing, Korea, Seongnam-si', // 1947970
-  f0756207: 'active-sealing, Korea', // 1947973
-  f0805568: 'active-sealing, Korea, Gangnam-gu', // 1947964
-  f0810358: 'active-sealing, Japan, Tokyo', // 1948186
-  f0813086: 'active-sealing, Korea, Jung-gu', // 1947962
-  f0835643: 'active-sealing, Korea, Songpa-gu', // 1947972
-  f0845245: 'active-sealing, Korea, Busan', // 1947980
-  f0862933: 'active-sealing, USA, Huntersville', // 1947967
 
   // Sealing
 
   f02490: 'sealing, China, Fujian', // 1950554
-  f02540: 'sealing, USA, Mobile, Foundry', // 1948087
   f014683: 'sealing, China, Dongguan', // 1950555
   f015233: 'sealing, China, Nanjing', // 1950556
   f019806: 'sealing, China, Beijing', // 1950557
-  f021479: 'sealing, NR', // 1947899
-  f024944: 'sealing, Korea, Yeongdeungpo-dong', // 1948110
-  f025007: 'sealing, Korea, Gyeonggi-do, PINBYTES-eCUBE', // 1948088
-  f053229: 'sealing, NR', // 1947978
-  f066102: 'sealing, NR', // 1947903
-  f066259: 'sealing, NR', // 1947898
-  f070932: 'sealing, NR', // 1947979
-  f089380: 'sealing, NR', // 1947901
-  f0101087: 'sealing, Korea', // 1948090
-  f0111885: 'sealing, Korea, Bucheon-si, WINNERS', // 1948093
   f0121533: 'sealing, China, Zhejiang', // 1950567
-  f0133957: 'sealing, NR', // 1947981
-  f0134671: 'sealing, Korea, Gimpo-si', // 1947992
-  f0137489: 'sealing, UK, Deeside', // 1948096
-  f0152337: 'sealing, NR', // 1947904
-  f0156452: 'sealing, Korea, Ulsan', // 1947982
-  f0187709: 'sealing, Russia, Moscow', // 1948095
-  f0225676: 'sealing, Korea, Guro-gu', // 1947993
   f0397332: 'sealing, NR', // 1950589
   f0402431: 'sealing, China, Hangzhou', // 1950587
-  f0407733: 'sealing, NR', // 1948004
   f0414383: 'sealing, China, Dongguan', // 1950590
   f0428306: 'sealing, NR', // 1950594
-  f0429063: 'sealing, NR', // 1948023
-  f0458627: 'sealing, Korea, Seongnam-si', // 1948098
   f0478837: 'sealing, China, Zhangzhou', // 1950482
-  f0512179: 'sealing, Korea, Bucheon-si', // 1948099
-  f0521569: 'sealing, Korea, Guro-go', // 1948003
   f0723600: 'sealing, China, Taiwan, Hsinchu', // 1950200
   f0727453: 'sealing, Korea, Ulsan', // 1950196
+  f0772766: 'sealing, China, Guangzhou', // 1949990
   f0808705: 'sealing, China, Wenzhou', // 1950595
-  f0822674: 'sealing, Korea, Seoul', // 1948214
-  f0843728: 'sealing, France', // 1948057
   f0859880: "sealing, China, Ya'an", // 1950198
   f0870558: 'sealing, China, Hong Kong', // 1950836
-  f0984680: 'sealing, Korea, Jung-gu', // 1950837
 
   // Stuck
 
-  f0417748: 'stuck, China, Changsha', // CheckForAcceptance: 1 day
-  f0772766: 'stuck, China, Guangzhou', // CheckForAcceptance: 1 day
-  f0816420: 'stuck, China, Harbin', // CheckForAcceptance: 1 day
-  f0864910: 'stuck, Korea, Gwangjin-gu', // CheckForAcceptance: 1 day
-  f0986118: 'stuck, Korea, Incheon', // CheckForAcceptance: 1 day
-  f01002224: 'stuck, Korea', // CheckForAcceptance: 1 day
-  f01015491: 'stuck, Canada, Montreal', // CheckForAcceptance: 1 day
+  f01015491: 'stuck, Canada, Montreal', // CheckForAcceptance: 2 days
 
   // Busy
 
@@ -177,6 +104,7 @@ const annotations = {
   // Min Size
 
   f01234: 'min-size, Belgium, Bonheiden, Eliovp', // 131072 < 5368709120
+  f01238: 'min-size, Vietnam, Hanoi, FILECOIN-VIETNAM', // 131072 < 134217728
   f01240: 'min-size, Netherlands, Dcent', // 131072 < 67108864
   f01247: 'min-size, Canada, Montreal, BigChungus', // 131072 < 67108864
   f01276: 'min-size, Canada, Brampton, NBFS Canada', // 131072 < 4294967296
@@ -299,8 +227,6 @@ const annotations = {
 
   // Max Size
 
-  // Min Ask
-
   f01241: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f02381: 'min-ask, China, Dongguan', // 20000000 < 6103515625000
   f02415:
@@ -350,6 +276,7 @@ const annotations = {
   f018785:
     'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // 20000000 < 122070312500000
   f019240: 'min-ask, China, Beijing', // 20000000 < 122070312500000
+  f019279: 'min-ask, Canada, Calgary', // 20000000 < 24414062
   f020378: 'min-ask, Bulgaria, Asenovgrad', // 20000000 < 122070312
   f020747: 'min-ask, China, Xiamen', // 20000000 < 122070312
   f021504: 'min-ask, NR', // 20000000 < 122070190429687500000
@@ -495,6 +422,8 @@ const annotations = {
   f0874231: 'min-ask, China, Yichun', // 20000000 < 122070312377929687500000
   f01016365: 'min-ask, China, Shanghai', // 20000000 < 1220703125000000000
 
+  // Min Ask
+
   // Slashed
 
   f0145843: 'slashed, NR',
@@ -505,40 +434,91 @@ const annotations = {
   // Error
 
   f01231: 'error, Singapore', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzacec3d5xivyi7n3pvzrugg24zj3g4jakmqqubticjayuacrnoijwuli: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f02540: 'error, USA, Mobile, Foundry', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacedp6hpvd7ojm4e6mnx2fafkgec4xxo5tmhpvodzknc4fz7k3enkca: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f016398: 'error, China, Shanghai', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzaceaswpbj3bdwlrodwte3ryghaagngu2p5krcd3ixgh3d4n4f5sux2i: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f020928: 'error, China, Deyang + Singapore', // error reading Response message from provider: EOF
+  f021479: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceaodfqfpa2tg4eldn5isn5fftcq6nmmomqlh56dqkxpoqjy7cpehy: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f023534: 'error, China, Chongqing', // error reading Response message from provider: stream reset
   f024012: 'error, China, Fuzhou', // error reading Response message from provider: stream reset
   f024081: 'error, undefined', // error reading Response message from provider: stream reset
+  f024944: 'error, Korea, Yeongdeungpo-dong', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceaxo2rqxoh6aifsnb3gdtpqyhj4zbhxibflzelf5nsonthexhc6ua: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f025007: 'error, Korea, Gyeonggi-do, PINBYTES-eCUBE', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceaz7ymljb2bqcq3jrjj7ap42fcjjzq5ktxarddt5jgdmjwteqmo32: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f033025: 'error, Korea, Daegu', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceas42kozgjhotyyt4qxgikvgrihsz23ugpbjdrmmiwvtyf6yte4de: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f053229: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacedcqr67xb4eou2xf2jn542227mrsgf6x4fsv5hzna6vwfldy2yndw: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f055132: 'error, Vietman, Ho Chi Minh City + China', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzaceavrfp7t3xt656fdo4arnwll4ksg4wtzvuvsxfbuhhmbrmk6qs7t2: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f062318: 'error, Korea, Naju', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceboq2ihjqi6xaq26esrgbn3qmxw7qhpqyrxoqhrgvtupfazc5fhyi: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f062937: 'error, NR', // error reading Response message from provider: EOF
+  f066102: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacedbgu4d5j7wkmwl5qmoi2itmwcnkltsnl3ltm4brx37cfneg6zstk: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f066259: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceayln3qqevw7get4hl7xhdmx76hnl4may4ctzfqcqpagitapwxj34: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f070932: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacebsvj7qugm3ezrzjkg6zgmbdr244jxmp7ud6b5pglrflpz6ganbuo: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f080103: 'error, Korea, Seongnam-si', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzaced2d7kdkpjkdv7bsrpv4ijdiniulpcrfyj3fnj37kov6le2e7eo6k: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f089380: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceciwuhwnkxddkqvfuth3eeztjcgl64jxeeucyfca5es4t5wm5dazy: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f094901: 'error, Korea, Bucheon-si', // error reading Response message from provider: stream reset
   f097214: 'error, Korea, Bucheon-si, CryptoHash', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzacedtmkp4fsybdxr4czwi6stglkexejvwmvvisshygvlxrzhq24tfq6: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f097720: 'error, Korea, Bucheon-si', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacebnrw626pdglm3c2cyiuodvdtslzv7lvu3bhtbkl66utdu3tjw7xq: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0101087: 'error, Korea', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceaph7y7axpdi23lj66oovxnx2p764r7qlnshr3l62sx7hg6qihct4: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0110133: 'error, China, Ningbo', // AddPiece failed: normal shutdown of state machine
   f0110804: 'error, USA, Santa Clara', // deal failed: (State=26) error calling node: publishing deal: handler: websocket connection closed
+  f0111885: 'error, Korea, Bucheon-si, WINNERS', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacecthq2fbk4q76gxskknkehy3ouzulirk4wkiowum6kdrb45t3l27w: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0113331: 'error, Korea, Jinju + USA', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacedxorvfbrzforchxnea4jcr57f3ljbsbxu7dprknskhz4payymfq2: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0129805: 'error, China, Zhejiang + Australia, Adelaide', // error reading Response message from provider: stream reset
   f0130912: 'error, China, Hong Kong', // failed to complete data transfer: deal data transfer failed: 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWBtqhxFAqHUJnURKG66qFNYZHER4LkNy5rRN4w2o4qZN1-1622172231134071791: after 4 consecutive restarts failed to transfer any data
+  f0133957: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceb6ttp3j3ebgzyniqkamgeu5s4hff4yqnfvnyz37xfn5hfrynrvzc: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0134671: 'error, Korea, Gimpo-si', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacecdjhhdeoktqnvqj3lu7fl7w57txrfceklvjkhjdrqc5erbg2zpko: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0137489: 'error, UK, Deeside', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceb54twfywke3t7pgeb7wwqy2q2jgyoolaorllkqggb4pezmxmjs2q: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0149455: 'error, NR', // error reading Response message from provider: EOF
   f0152224: 'error, Korea, Yongdu-dong', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzacecg5vrulp3d7gnzlsf33eaqntriqk2kpypls6p53hcqjul23hu5wo: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0152337: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaced45gte3r6afszc3xqv6xnxhd36lljhmmxc2jihqdyfsxnfbjqmkc: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0156207: 'error, Korea, Ulsan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzacecuazq2f5ay6gmhubh4e6qghzh6uszlgxdp7iux2pzph3f7qytwr6: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0156452: 'error, Korea, Ulsan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacecdl2m7nvob3q6ldjx6zo7swgqu5sdv2jv3y2veqgcxr5ejdjx77q: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0157429: 'error, Korea, Bucheon-si', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacedoxv2wsgnevnpfzyiydnxfev755sh74hcr7iclv6ncbkjlauthcs: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0157513: 'error, Korea, Geumcheon-gu', // error in deal activation: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzacea7q3fqd5m62sjx7aztelrsojahdttwmx6rnyjbfwcfoouux4asb2: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0157564: 'error, Korea, Daejeon', // error in deal activation: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzacecci5gfjprz3jgu54wtk3pft457z3r75st4uhpgopaznwkkcxwhgo: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0165375: 'error, Korea, Seongnam-si', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacec6fsv6hfmkpcdjdqqc4ecwemzqv26yfc3ms254jl5nlycm3f6ums: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0187709: 'error, Russia, Moscow', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceaaza3hmnyaehqt7ltrb2d2e2owbwrltauvajdypr55rvlmda7fy6: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0221135: 'error, USA, Atlanta', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceamzlczapqvuf3pvdhtpxcug6wodzdsio5424gs3xmttpjaypwbge: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0225676: 'error, Korea, Guro-gu', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceah556dhpjmhvwwmr2iqg4bhj44v4cwpyspx5jtiqbffud3ath6e6: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0230200: 'error, Korea, Gwanak-gu, G-mining', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceccgkv74msfqphb3mpttyqgygrj66pnk4pxan2oge762a4h2ahbia: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0396705: 'error, NR', // failed to complete data transfer: deal data transfer failed: 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWPBwe1zjfh5busocJHRzMdRGee73RJjkZ4gaMYxGrZ86o-1622495069172729781: after 4 consecutive restarts failed to transfer any data
   f0401300: 'error, France, Deuil-la-Barre', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzaceclfk55ijoer65qsjujdvm5iqgmb62rwyetytqheeehchusmm5hgi: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0407733: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacednrjsoxu5lc64qq4ahhiravt5crw2mm43iffrwcqt3zohw7uislg: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0410001: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzacearznax37p2upfgrbsmr5slbhiqjlldf4dfxc7pq3krrhqkizqg6a: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0413563: 'error, Korea, Gangnam-gu', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaced5wfyjdv3tx64zubpplp5iuvutlil6p4bp2vcxrmpefrt27mhceo: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0419768: 'error, Korea, Seongnam-si', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacecyje7bfjpbjcwzjphdbz3lvwdcc5h4n54rqredp4nlvlgnqcxvbq: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0421392: 'error, China, Foshan', // AddPiece failed: normal shutdown of state machine
+  f0429063: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacecphbo3yi5z6klfcw6l2xipherf255fthsnfcmiyk6ehhkvrblan4: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0447181: 'error, China, Zibo', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals errored: handler: websocket connection closed
+  f0458627: 'error, Korea, Seongnam-si', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacebsnpoejgrkgvf63co7qyigp3ksggvavcz2uy4vzbfeuovt4hmt2o: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0460440: 'error, Korea, Seongnam-si', // error in deal activation: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzaceb4aoqbvstz2lvk7k5nhgu4khzn4dbpt27e64oft23zfgqyyxck3g: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0461791: 'error, Korea, Gwangju', // error reading Response message from provider: stream reset
   f0482619: 'error, Korea, Seongnam-si', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzaced7g6fck7ss3kbcrezcwm4ppekandfoqrqiqlqjuylvrkckwyu7ry: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0488889: 'error, China, Nanchang', // error reading Response message from provider: EOF
+  f0512179: 'error, Korea, Bucheon-si', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaced6kqerlwr4dtdbezbxqznlsbdjqkuncbnzhuaqd4vhbglexm2iso: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0514737: 'error, Korea, Busan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacebyawte7c6up2xvsprwdmwacjnscpb6vhaukft73drqud6t7bdvug: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0521569: 'error, Korea, Guro-go', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacebuvx6ghjocplqcl3tpth6mzhqacbhfqm7cgec3lm6cwii5doikns: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0673920: 'error, NR', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.30437191 FIL, balance: 0.235479499038328329 FIL): not enough funds to execute transaction
+  f0693131: 'error, China, Zhongshan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacecztvtg45x5en7ogtahbm273lmjrtavqt7hzkgfusdptjmav43c3y: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0712678: 'error, Korea, Gangseo-gu', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzaceazidxh4tmbnodcnbekpwfvhm77mxmjplqcbkfly2aoebx6pahkia: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0717913: 'error, Korea, Jung-gu', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacedz46qgn7qtyoqh7uuwzliw67hiopux5d2nbaytwbcubohl4f36ds: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0720636: 'error, Belgium, Bonheiden', // failed to complete data transfer: deal data transfer failed: 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWEi1QNph6VZvKbP8EJmYzq59F77tai9TgaL3ENEDbkWsD-1622495069172729793: after 4 consecutive restarts failed to transfer any data
+  f0723162: 'error, Korea, Bucheon-si', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacec7c3vnbhb4m5ui2uk2dxm44b55nc6rx2ym33a2jomjosd2db3urm: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0727067: 'error, Norway', // error reading Response message from provider: stream reset
   f0729674: 'error, Canada, Vancouver', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.009354314011960452 FIL, balance: 0.006806576789174987 FIL): not enough funds to execute transaction
+  f0746416: 'error, Korea, Gyeonggi-do', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceaw3hozzoqkdjgmrg4342xpe2crascb6ug45qarcuavqnxhyatkek: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0751590: 'error, USA', // error reading Response message from provider: EOF
+  f0752695: 'error, Korea, Seongnam-si', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceaf5sm3ztjl3aorg4nhy5sca7nu5utbmbhvyp73scu3emfvxad4ga: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0756207: 'error, Korea', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacedznjd2ustdgnzj73ywnym63raatmewlivdycvvi6tiskelvafupm: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0805568: 'error, Korea, Gangnam-gu', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacedaov6zzbw25t2hnf2ankznftnsz25s5adhzb5kktrth7z5almbxw: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0810358: 'error, Japan, Tokyo', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacebj5kdnkhzpk45bb75ppdlonlm6ciryivmip6sw2pca7vij2fn27q: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0813086: 'error, Korea, Jung-gu', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacebcz5vj5olgef2yalqpa6dzzpxfkeeovirtmak2agkyvhbxqu5nb6: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0822674: 'error, Korea, Seoul', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacedrcroxrm7aywnbsd6kmpwadv7u7lcllykmv2k5pd5rqw5taippwc: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0835643: 'error, Korea, Songpa-gu', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacebmbp7tigvznvbqj4efzn3xdg7xs22ovprf6uwue4maqs32zunzxa: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0838467: 'error, Korea, Incheon', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzaceae7awa4e43rhqi7kx5jtrtz35u4cg5ixdorzvisf55nczdgtw6ca: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0839509: 'error, China, Beijing', // error reading Response message from provider: stream reset
+  f0843728: 'error, France', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacecnw3sqrhq5r55enf26eoxe22ik2j7opbozf5brf6qvvdwloz3vza: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0845245: 'error, Korea, Busan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacedjrdl2ecbsnbu2pkrib65dxrtxbh7vzyi6v7iijm2vbiv2siq6c2: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0862933: 'error, USA, Huntersville', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceawqyibcafeddzgcxk2pkqvss7schzskyefmhtomr4clqj2isujgm: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0864910: 'error, Korea, Gwangjin-gu', // deal failed: (State=13) start epoch already elapsed
   f0871928: 'error, China, Taiwan, Taipei', // error in deal activation: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzacecneknv3a72gpqjiwx4dnxkbvnxal6dgxtcucqgs6d47dmyotfriy: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0873601: 'error, Romania, Bucharest', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzacebvny3bwe64j376hvj2vnoyvxmxsvzrsag7tlndeevez45gylscsk: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0884747: 'error, UK, London', // failed to complete data transfer: deal data transfer failed: response rejected
@@ -671,6 +651,7 @@ const annotations = {
   f0401348: 'rejected, Korea, Chuncheon', // no online
   f0401416: 'rejected, Japan, Fukuoka', // no online
   f0402371: 'rejected, China, Shanghai', // miner is not accepting unverified storage deals
+  f0410023: 'rejected, NR', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
   f0432594: 'rejected, China, Zhengzhou', // no online
   f0435045: 'rejected, Korea, Ulju-gun', // no online
   f0444122: 'rejected, NR',
@@ -712,6 +693,7 @@ const annotations = {
   f0761358: 'rejected, China, Chengdu', // sh: 1: jq: not found
   f0813083: 'rejected, Korea, Jung-gu', // no online
   f0816782: 'rejected, Korea, Jung-gu', // no online
+  f0816783: 'rejected, Korea, Jung-gu', // no online
   f0827006: 'rejected, China, Xuzhou', // no online
   f0836164: 'rejected, USA', // no online
   f0840770: 'rejected, USA, Dallas', // no online
@@ -869,6 +851,7 @@ const annotations = {
   f015925: 'fail, Singapore', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWMPTWy68Cpoy7YzGrWE5oJhDmZQ7wqzfaocv8w5eNsLit: all dials failed  * [/ip4/8.209.107.150/tcp/12318] dial tcp4 0.0.0.0:33147->8.209.107.150:12318: i/o timeout
   f015926: 'fail, Germany, Frankfurt', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWFGsaBTVoaXyJLGMtdghwdUt6eRgLzT8Y7MYTpyU2U3V6: all dials failed  * [/ip4/162.62.55.44/tcp/12319] dial tcp4 0.0.0.0:33147->162.62.55.44:12319: i/o timeout
   f015932: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f015941: 'fail, Ukraine, Kyiv', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWGVdc5QckTCXzDNQ7UgjpoBTUfaXoh662YnXQs281EToA: all dials failed  * [/ip4/176.37.167.219/tcp/1347] dial tcp4 0.0.0.0:43375->176.37.167.219:1347: i/o timeout
   f016276: 'fail, China, Beijing', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f016563: 'fail, China, Deyang + Singapore', // exhausted 15 attempts but failed to open stream, err: context deadline exceeded
   f017193: "fail, China, Xi'an + Singapore", // exhausted 15 attempts but failed to open stream, err: protocol not supported
@@ -991,6 +974,7 @@ const annotations = {
   f030510: 'fail, undefined', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f030511: 'fail, undefined', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f030649: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f032833: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f032850: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f032913: 'fail, China, Shenzhen', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f033036: 'fail, China, Liaoning', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJPmZKGzgjenB2jkvrpmL7N8YA4jbxM8Es8VYEb5cMtub: all dials failed  * [/ip4/106.8.149.167/tcp/40888] dial tcp4 0.0.0.0:33147->106.8.149.167:40888: i/o timeout  * [/ip4/182.18.83.55/tcp/40888] dial tcp4 0.0.0.0:33147->182.18.83.55:40888: i/o timeout  * [/ip4/116.132.221.23/tcp/40888] dial tcp4 0.0.0.0:33147->116.132.221.23:40888: i/o timeout
@@ -1196,6 +1180,7 @@ const annotations = {
   f086028: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f086151: 'fail, China, Dongguan', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWPZJP4ufASEoq3S2y6644QqU78TGi6phCVefcyg8YgZgy: all dials failed  * [/ip4/183.240.203.136/tcp/5472] dial tcp4 0.0.0.0:33147->183.240.203.136:5472: i/o timeout
   f086204: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f086222: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f086240: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f086366: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f086381: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -1290,6 +1275,7 @@ const annotations = {
   f099247: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f099369: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f099387: 'fail, China, Shijiazhuang', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWG5CzuwyhZ4vpEn7DCvSpmurKi2QjTRLNLKGwo44A6MRo: all dials failed  * [/ip4/124.239.180.3/tcp/24001] dial tcp4 0.0.0.0:33147->124.239.180.3:24001: i/o timeout
+  f099705: 'fail, China, Zibo', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWQjQn7oVZwMLeHFyFEvEAfuPjktyZgo6Haunp9Xi34MCf: all dials failed  * [/ip4/218.201.173.80/tcp/24001] dial tcp4 0.0.0.0:43375->218.201.173.80:24001: i/o timeout
   f099884: 'fail, China, Chengdu', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f099949: 'fail, China, Chengdu', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWNbRUwiuhnaRMRqzRXG4zAvtXvaTkbuQW2rQMZY34YEpC: all dials failed  * [/ip4/182.131.4.195/tcp/32760] dial tcp4 0.0.0.0:33147->182.131.4.195:32760: i/o timeout
   f0100033: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -1514,6 +1500,7 @@ const annotations = {
   f0133501: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0133505: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0133509: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0133689: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0133763: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0133833: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0133999: 'fail, China, Changsha', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWNa6nuK3ysmqgPsoVYTycM3JMK23A8E4qEGAU4fo63NE8: all dials failed  * [/ip4/113.219.201.172/tcp/24001] dial tcp4 0.0.0.0:33147->113.219.201.172:24001: i/o timeout
@@ -1829,6 +1816,7 @@ const annotations = {
   f0392999: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWGmQYeDiZRhAMBdmV36spYQGYLbzA11dsHYz2eXkj93Em: all dials failed  * [/ip4/10.34.1.4/tcp/6789] dial tcp4 0.0.0.0:33147->10.34.1.4:6789: i/o timeout
   f0393016: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWLGRUEmvdGKCi9AkHN4UbhRiubs9p1hrNCWMbyNEZNHBg: all dials failed  * [/ip4/34.66.95.149/tcp/1024] dial tcp4 0.0.0.0:33147->34.66.95.149:1024: i/o timeout
   f0393119: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWNnobNqKiP2pSc5fA1c9BuR9G1kwPayN51ixrHeovVnWv: all dials failed  * [/ip4/172.16.35.5/tcp/6789] dial tcp4 0.0.0.0:33147->172.16.35.5:6789: i/o timeout
+  f0393135: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0393417: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0394102: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0395461: 'fail, Korea, Suseong-gu', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWDc5m4c3nUo8ka3fLo7CEpa7U2Q7wwYB37KGvWXrymkox: all dials failed  * [/ip4/112.165.106.216/tcp/40203] dial tcp4 112.165.106.216:40203: connect: connection refused
@@ -1848,6 +1836,7 @@ const annotations = {
   f0396751: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWP5TuJaeK1oEDsYbFmfAKxVovnbPbSayPUNsLSkVRLqUB: all dials failed  * [/ip6/::1/tcp/1329] dial tcp6 [::1]:1329: connect: connection refused  * [/ip4/127.0.0.1/tcp/13559] dial tcp4 127.0.0.1:13559: connect: connection refused  * [/ip4/125.77.198.235/tcp/29494] dial tcp4 0.0.0.0:33147->125.77.198.235:29494: i/o timeout  * [/ip4/125.77.198.234/tcp/29494] dial tcp4 0.0.0.0:33147->125.77.198.234:29494: i/o timeout  * [/ip4/125.77.198.235/tcp/20054] dial tcp4 0.0.0.0:33147->125.77.198.235:20054: i/o timeout  * [/ip4/112.48.155.114/tcp/20054] dial tcp4 0.0.0.0:33147->112.48.155.114:20054: i/o timeout  * [/ip4/10.1.17.78/tcp/13559] dial tcp4 0.0.0.0:33147->10.1.17.78:13559: i/o timeout  * [/ip4/125.77.198.234/tcp/20054] dial tcp4 0.0.0.0:33147->125.77.198.234:20054: i/o timeout  * [/ip4/112.48.155.114/tcp/29494] dial tcp4 0.0.0.0:33147->112.48.155.114:29494: i/o timeout
   f0396846: 'fail, China, Zhongshan', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJLaZCfWGiuPKvkjmpgqegkHreQfLGeBjHfcC3ScYiZWA: all dials failed  * [/ip4/116.6.131.194/tcp/24001] dial tcp4 0.0.0.0:43375->116.6.131.194:24001: i/o timeout
   f0397083: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0397428: 'fail, Japan, Tokyo', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWKHj8ZWEa3NRZNvk5sts8Dw6sToLUi31M4kKGkyqZMbqi: all dials failed  * [/ip4/153.150.113.227/tcp/24001] dial tcp4 0.0.0.0:43375->153.150.113.227:24001: i/o timeout
   f0397561: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0397728: 'fail, China, Dongguan', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0397794: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -1892,6 +1881,7 @@ const annotations = {
   f0408208: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0408582: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0408629: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0408688: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0408717: 'fail, Korea, Ansan-si', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWQN7ZQq8R2sizywZuP75u1hesjaTTLkQox6WdNb77gqBP: all dials failed  * [/ip4/1.224.35.165/tcp/24001] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWQN7ZQq8R2sizywZuP75u1hesjaTTLkQox6WdNb77gqBP, but remote key matches 12D3KooWKau3vkSsfbb3ngFmEt8fmGzogVUbfp4Zx7c1zuUwKXXg
   f0408833: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0409069: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -1970,6 +1960,7 @@ const annotations = {
   f0435140: 'fail, China, Yangzhou', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWLPo6bJJ2mzLWc8kXHfYyYcNBVhSYG6MtmNLWJQLpeAeS: all dials failed  * [/ip4/58.220.66.161/tcp/1024] dial tcp4 0.0.0.0:33147->58.220.66.161:1024: i/o timeout
   f0435971: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0436065: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0436661: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0437158: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0440919: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0441020: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -1983,9 +1974,11 @@ const annotations = {
   f0442370: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0442371: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0442374: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0442375: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0442383: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWPezoBtgHhfwqcUj1mJX9FbodKDxjNfJbFSWUz2emkfgy: all dials failed  * [/ip4/10.5.101.10/tcp/12288] dial tcp4 0.0.0.0:43375->10.5.101.10:12288: i/o timeout
   f0442550: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0442670: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0442671: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0443179: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0443180: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0443184: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2008,6 +2001,7 @@ const annotations = {
   f0459325: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0460078: 'fail, China, Shanghai', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWKJXjKqwi7WgUUaRN4SW9FBXHW1FNyazo9jE4BRSzKPRT: all dials failed  * [/ip6/::1/tcp/36143] dial tcp6 [::1]:36143: connect: connection refused  * [/ip4/127.0.0.1/tcp/42481] dial tcp4 127.0.0.1:42481: connect: connection refused  * [/ip4/10.10.11.21/tcp/42481] dial tcp4 0.0.0.0:33147->10.10.11.21:42481: i/o timeout  * [/ip4/122.9.63.73/tcp/42481] dial tcp4 0.0.0.0:33147->122.9.63.73:42481: i/o timeout
   f0460660: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0461612: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0461752: 'fail, China, Karamay', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWBD9MPB7DCbhUpMLruhF9MieYsDGmDuC6ndXpbngoCTeC: all dials failed  * [/ip4/127.0.0.1/tcp/38279] dial tcp4 127.0.0.1:38279: connect: connection refused  * [/ip6/::1/tcp/39645] dial tcp6 [::1]:39645: connect: connection refused  * [/ip4/172.18.55.86/tcp/38279] dial tcp4 0.0.0.0:33147->172.18.55.86:38279: i/o timeout  * [/ip4/36.189.234.182/tcp/49288] dial tcp4 0.0.0.0:33147->36.189.234.182:49288: i/o timeout  * [/ip4/36.189.234.182/tcp/60733] dial tcp4 0.0.0.0:33147->36.189.234.182:60733: i/o timeout
   f0461779: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0463030: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2036,6 +2030,7 @@ const annotations = {
   f0473677: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0473956: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0475095: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0475305: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0478563: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0479677: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0480195: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2051,6 +2046,7 @@ const annotations = {
   f0487098: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0488215: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0488689: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0488733: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0488851: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0491919: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0492009: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2060,6 +2056,8 @@ const annotations = {
   f0492601: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0492737: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0493237: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0494174: 'fail, Norway', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0494268: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0494603: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0494733: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0495421: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWEAJqbaqoNNK4uizoWzghEUhGK7hwmfaXswCKhgL6LF5k: all dials failed  * [/ip4/218.86.19.11/tcp/20007] dial tcp4 218.86.19.11:20007: connect: connection refused
@@ -2182,12 +2180,14 @@ const annotations = {
   f0688165: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0689753: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0690459: 'fail, China, Beijing', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJge2NWwFWNdz3LCYkuVL4QSbTRJh3QhYqDinsYEvs4Z4: all dials failed  * [/ip4/127.0.0.1/tcp/23450] dial tcp4 127.0.0.1:23450: connect: connection refused  * [/ip6/::1/tcp/23450] dial tcp6 [::1]:23450: connect: connection refused  * [/ip4/120.232.253.52/tcp/23450] dial tcp4 0.0.0.0:33147->120.232.253.52:23450: i/o timeout
+  f0690699: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0690736: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0691310: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0693008: 'fail, China, Shanghai', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWDod3XA7NN2NpaJghywvW9wpjoZZREVtwDwnTTDF26f9K: all dials failed  * [/ip6/::1/tcp/37111] dial tcp6 [::1]:37111: connect: connection refused  * [/ip4/127.0.0.1/tcp/36871] dial tcp4 127.0.0.1:36871: connect: connection refused  * [/ip4/10.10.11.31/tcp/36871] dial tcp4 0.0.0.0:33147->10.10.11.31:36871: i/o timeout  * [/ip4/122.9.63.75/tcp/36871] dial tcp4 0.0.0.0:33147->122.9.63.75:36871: i/o timeout
   f0693127: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0693765: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0693793: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0693817: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0694099: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0694149: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0694172: 'fail, China, Luzhou', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJPdKmNiZeSzhBJKod1cSB5ibsuKukG4rUVxwe84eSwLM: all dials failed  * [/ip4/127.0.0.1/tcp/38033] dial tcp4 127.0.0.1:38033: connect: connection refused  * [/ip6/::1/tcp/37729] dial tcp6 [::1]:37729: connect: connection refused  * [/ip4/10.0.0.6/tcp/38033] dial tcp4 0.0.0.0:33147->10.0.0.6:38033: i/o timeout  * [/ip4/175.155.178.195/tcp/25441] dial tcp4 0.0.0.0:33147->175.155.178.195:25441: i/o timeout  * [/ip4/175.155.178.195/tcp/20907] dial tcp4 0.0.0.0:33147->175.155.178.195:20907: i/o timeout
@@ -2202,6 +2202,7 @@ const annotations = {
   f0699115: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0699181: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0700033: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0700207: 'fail, China, Harbin', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0700999: 'fail, China, Chengdu', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWBXkJYgb2CF1dpoBeiV5B8YULdkf3YPAjxGWgZjbk2gFS: all dials failed  * [/ip4/221.236.22.9/tcp/53456] dial tcp4 0.0.0.0:33147->221.236.22.9:53456: i/o timeout
   f0701056: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0701144: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2264,6 +2265,7 @@ const annotations = {
   f0726841: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0727962: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0728817: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0729412: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0730670: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0730917: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0730942: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2271,6 +2273,7 @@ const annotations = {
   f0731150: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0732272: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWL2n7opE3PS2fxEZeFqc4SCGNfFKKWzG61ijk4gBYboLa: all dials failed  * [/ip4/172.18.7.146/tcp/2347] dial tcp4 0.0.0.0:33147->172.18.7.146:2347: i/o timeout
   f0732862: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0733076: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0733242: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0733626: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0733692: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2305,7 +2308,9 @@ const annotations = {
   f0753959: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0754755: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0754993: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0755327: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0755650: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0756338: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0756840: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0757233: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0757610: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2317,6 +2322,7 @@ const annotations = {
   f0764901: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0765036: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0765071: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0765173: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0766038: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0766177: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0766756: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2328,6 +2334,7 @@ const annotations = {
   f0805937: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0806336: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0806347: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0806395: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0806758: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0806904: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0807386: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2361,6 +2368,7 @@ const annotations = {
   f0822032: 'fail, Korea, Incheon', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWBzEy5p5da3C2XqBxNcrvd59yyzWaeyGpiz9fjYYs9XWy: all dials failed  * [/ip4/175.207.91.34/tcp/24001] dial tcp4 175.207.91.34:24001: connect: connection refused
   f0822151: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0822203: 'fail, Korea, Seoul', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWR85pE3KANxi49fu1pNSeSWPTkePHqnBBt6aP8X6NBse5: all dials failed  * [/ip4/210.223.11.70/tcp/25001] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWR85pE3KANxi49fu1pNSeSWPTkePHqnBBt6aP8X6NBse5, but remote key matches 12D3KooWPMVpKPyN82J8dX9CBWK9TJneQbv1kNXgC3nwjqygmjgc
+  f0822441: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0822818: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0823127: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0825528: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2400,6 +2408,7 @@ const annotations = {
   f0845602: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0846191: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0847138: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0848972: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0849079: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0849554: 'fail, China, Beijing', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWBUJZTafAWxwzzKCdsBiM4YfMAsoVUN9wNtcnCPfyrmbV: all dials failed  * [/ip4/120.232.253.20/tcp/23450] dial tcp4 0.0.0.0:33147->120.232.253.20:23450: i/o timeout
   f0850130: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2413,10 +2422,12 @@ const annotations = {
   f0863576: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0866501: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0866680: 'fail, China, Henan', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWEgZCAhsmRr341QjWZ7D8vKg5xJyTVMK7aeVYECH8BVGk: all dials failed  * [/ip4/42.236.7.235/tcp/21000] dial tcp4 0.0.0.0:33147->42.236.7.235:21000: i/o timeout
+  f0867253: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0867312: 'fail, China, Foshan', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0868971: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0870189: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0870333: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0870973: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0871511: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0871719: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0872002: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
