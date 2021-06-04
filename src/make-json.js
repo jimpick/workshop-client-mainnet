@@ -18,5 +18,8 @@ const annotations = eval(modified)
 const minerIndexes = Object.keys(annotations)
   .map(miner => Number(miner.slice(2)))
   .sort((a, b) => a - b)
+const minerIndexesIgnoringDelisted = [...minerIndexes].filter(index => !annotations[`f0${index}`].match(/^delist,/))
+
 fs.writeFileSync('./annotated-miner-indexes.json', JSON.stringify(minerIndexes, null, 2))
+fs.writeFileSync('./annotated-miner-indexes-ignoring-delisted.json', JSON.stringify(minerIndexesIgnoringDelisted, null, 2))
 fs.writeFileSync('./annotations-mainnet.json', JSON.stringify(annotations, null, 2))

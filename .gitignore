@@ -30,3 +30,5 @@ ngrok.private.yml
 *-previous.js
 .vscode
 *.swp
+
+dist
