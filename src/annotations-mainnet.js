@@ -16,6 +16,7 @@ const annotations = {
 
   f01025894: 'new, China, Zhengzhou',
   f01027268: 'new, Korea, Busan',
+  f0984915: 'new, China, Tianjin',
 
   // Inflight
 
