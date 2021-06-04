@@ -14,6 +14,7 @@ import Multiaddr from 'multiaddr'
 import useLotusClient from '../lib/use-lotus-client'
 // import useMiners from '../lib/use-miners-all'
 import useMiners from '../lib/use-miners'
+import useMinerReportPowerDailyAverage from '../lib/use-mr-power-daily-avg'
 import baiduCities from '../lib/baidu-cities'
 import { geoApi, geoSecure, networkName, useGeoIp2, useBaidu } from '../config'
 
@@ -233,6 +234,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   const [ipScanJobs] = useState({})
   const [nonRoutableSetUpdated, setNonRoutableSetUpdated] = useState(false)
   const [quickMode, setQuickMode] = useState(true)
+  const avgPowerReport = useMinerReportPowerDailyAverage()
 
   useEffect(() => {
     idbGet(nonRoutableSetKey).then(data => {
@@ -1021,6 +1023,16 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   return (
     <div>
       <h1>Miners: Height {height}</h1>
+      <div>
+        {avgPowerReport ? (
+          <>
+            Cached Avg. Power: {avgPowerReport.date}{' '}
+            ({Object.keys(avgPowerReport.miners).length} records)
+          </>
+        ) : (
+          'Loading Cached Avg. Power'
+        )}
+      </div>
       {quickMode || (
         <div style={{ color: 'red' }}>
           Slowing down screen updates to speed up large scan...
@@ -1197,6 +1209,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                     )}
                   </td>
                   <td>
+                    {avgPowerReport && avgPowerReport.miners[miner] && 
+                    `[Avg Power: ${bytes(avgPowerReport.miners[miner].qualityAdjPower, { mode: 'binary'})}] ` }
                     {minerPower[miner] && (
                       <>
                         {bytes(Number(minerPower[miner].QualityAdjPower), {
