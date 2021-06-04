@@ -20,17 +20,30 @@ const annotations = {
 
   // Active
 
+  f01231: 'active, Singapore', // 1959850 about 12 hours
+  f016398: 'active, China, Shanghai', // 1959825 about 13 hours
+  f021479: 'active, NR', // 1959919 about 12 hours
+  f022261: 'active, China, Luzhou', // 1959867 about 12 hours
+  f048135: 'active, China, Chongqing, password interstellar', // 1959866 about 12 hours
+  f061158: 'active, China, Guangdong, phoenix', // 1959869 about 12 hours
+  f066102: 'active, NR', // 1959944 about 12 hours
+  f094901: 'active, Korea, Bucheon-si', // 1959937 about 12 hours
+  f0137168: 'active, China, Beijing', // 1959879 about 12 hours
+  f0145843: 'active, NR', // 1959924 about 12 hours
+  f0230200: 'active, Korea, Gwanak-gu, G-mining', // 1959947 about 12 hours
+  f0428306: 'active, NR', // 1960035 about 12 hours
+  f0706937: 'active, Korea, Bucheon-si', // 1960013 about 12 hours
+  f0723006: 'active, Korea, Bucheon-si', // 1959922 about 12 hours
+  f0839509: 'active, China, Beijing', // 1960003 about 12 hours
+  f01019009: 'active, China, Henan', // 1960234 about 11 hours
+
   // Active-sealing (active, with in-flight sealing)
 
   f020489: 'active-sealing, China, Lioaning', // 1959878
-  f022261: 'active-sealing, China, Luzhou', // 1959867
   f023219: 'active-sealing, China, Beijing + Zhangjiakou', // 1959868
-  f048135: 'active-sealing, China, Chongqing, password interstellar', // 1959866
-  f061158: 'active-sealing, China, Guangdong, phoenix', // 1959869
   f0112713: 'active-sealing, Korea, Bucheon-si', // 1959890
   f0115108: 'active-sealing, Korea, Yangcheon-gu', // 1959877
   f0124554: 'active-sealing, Korea, Gimhae', // 1959870
-  f0137168: 'active-sealing, China, Beijing', // 1959879
   f0159961: 'active-sealing, China, Chongqing', // 1959875
   f0228855: 'active-sealing, Korea, Guro-gu', // 1959899
   f0399814: "active-sealing, China, Ya'an", // 1959874
@@ -52,14 +65,11 @@ const annotations = {
 
   // Sealing
 
-  f01231: 'sealing, Singapore', // 1959850
   f03345: 'sealing, China, Fuzhou, chh', // 1960062
   f08019: 'sealing, China, Yantai, 三合', // 1960063
   f014683: 'sealing, China, Dongguan', // 1959920
   f015233: 'sealing, China, Nanjing', // 1959918
-  f016398: 'sealing, China, Shanghai', // 1959825
   f019806: 'sealing, China, Beijing', // 1959942
-  f021479: 'sealing, NR', // 1959919
   f024944: 'sealing, Korea, Yeongdeungpo-dong', // 1959921
   f025025: 'sealing, China, Qingdao', // 1960102
   f030125: 'sealing, China, Nantong', // 1960101
@@ -70,12 +80,11 @@ const annotations = {
   f053229: 'sealing, NR', // 1959827
   f062318: 'sealing, Korea, Naju', // 1959923
   f063628: 'sealing, NR', // 1960124
-  f066102: 'sealing, NR', // 1959944
   f066259: 'sealing, NR', // 1959823
   f070932: 'sealing, NR', // 1959925
   f080103: 'sealing, Korea, Seongnam-si', // 1959945
   f089380: 'sealing, NR', // 1959824
-  f094901: 'sealing, Korea, Bucheon-si', // 1959937
+  f097214: 'sealing, Korea, Bucheon-si, CryptoHash', // 1960362
   f097720: 'sealing, Korea, Bucheon-si', // 1959936
   f0101087: 'sealing, Korea', // 1959940
   f0104888: 'sealing, NR', // 1960203
@@ -85,8 +94,8 @@ const annotations = {
   f0121533: 'sealing, China, Zhejiang', // 1959962
   f0130912: 'sealing, China, Hong Kong', // 1959964
   f0133957: 'sealing, NR', // 1959943
-  f0145843: 'sealing, NR', // 1959924
   f0146751: 'sealing, China, Jiangsu', // 1960236
+  f0149132: 'sealing, NR', // 1960350
   f0152224: 'sealing, Korea, Yongdu-dong', // 1960034
   f0152337: 'sealing, NR', // 1959829
   f0156207: 'sealing, Korea, Ulsan', // 1959939
@@ -100,7 +109,6 @@ const annotations = {
   f0166512: 'sealing, NR', // 1960240
   f0221135: 'sealing, USA, Atlanta', // 1959946
   f0228232: 'sealing, NR', // 1960251
-  f0230200: 'sealing, Korea, Gwanak-gu, G-mining', // 1959947
   f0396705: 'sealing, NR', // 1959969
   f0396846: 'sealing, China, Zhongshan', // 1960285
   f0397332: 'sealing, NR', // 1960040
@@ -115,7 +123,6 @@ const annotations = {
   f0417750: 'sealing, NR', // 1960284
   f0419768: 'sealing, Korea, Seongnam-si', // 1959948
   f0421392: 'sealing, China, Foshan', // 1959981
-  f0428306: 'sealing, NR', // 1960035
   f0429063: 'sealing, NR', // 1959989
   f0458627: 'sealing, Korea, Seongnam-si', // 1959985
   f0460440: 'sealing, Korea, Seongnam-si', // 1959970
@@ -126,14 +133,14 @@ const annotations = {
   f0512170: 'sealing, Korea, Bucheon-si', // 1960296
   f0512179: 'sealing, Korea, Bucheon-si', // 1959986
   f0514737: 'sealing, Korea, Busan', // 1959967
+  f0519331: 'sealing, NR', // 1960369
+  f0602553: 'sealing, China, Suqian', // 1960332
   f0673920: 'sealing, NR', // 1959971
   f0693131: 'sealing, China, Zhongshan', // 1959996
   f0694172: 'sealing, China, Luzhou', // 1960297
   f0700999: 'sealing, China, Chengdu', // 1960298
-  f0706937: 'sealing, Korea, Bucheon-si', // 1960013
   f0712678: 'sealing, Korea, Gangseo-gu', // 1960061
   f0717913: 'sealing, Korea, Jung-gu', // 1959987
-  f0723006: 'sealing, Korea, Bucheon-si', // 1959922
   f0723162: 'sealing, Korea, Bucheon-si', // 1960002
   f0723600: 'sealing, China, Taiwan, Hsinchu', // 1960037
   f0727453: 'sealing, Korea, Ulsan', // 1960041
@@ -147,7 +154,6 @@ const annotations = {
   f0808705: 'sealing, China, Wenzhou', // 1960039
   f0813086: 'sealing, Korea, Jung-gu', // 1960000
   f0822674: 'sealing, Korea, Seoul', // 1959994
-  f0839509: 'sealing, China, Beijing', // 1960003
   f0845245: 'sealing, Korea, Busan', // 1960001
   f0859880: "sealing, China, Ya'an", // 1960042
   f0862933: 'sealing, USA, Huntersville', // 1959995
@@ -157,17 +163,11 @@ const annotations = {
   f0873601: 'sealing, Romania, Bucharest', // 1959992
   f0877545: 'sealing, China, Ningbo', // 1960301
   f0883511: 'sealing, Korea, Guro-gu', // 1960235
-  f01019009: 'sealing, China, Henan', // 1960234
   f01019892: 'sealing, USA, Lake Elsinore', // 1959897
   f01021204: 'sealing, China, Hangzhou', // 1959898
   f01023503: 'sealing, Korea, Busan', // 1960323
 
   // Stuck
-
-  f097214: 'stuck, Korea, Bucheon-si, CryptoHash', // CheckForAcceptance: about 2 hours
-  f0149132: 'stuck, NR', // CheckForAcceptance: about 1 hour
-  f0519331: 'stuck, NR', // CheckForAcceptance: 42 minutes
-  f0602553: 'stuck, China, Suqian', // CheckForAcceptance: about 3 hours
 
   // Busy
 
