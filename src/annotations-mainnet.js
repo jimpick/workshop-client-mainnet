@@ -21,6 +21,18 @@ const annotations = {
   f01021896: 'new, Korea, Seoul', // carry-over
   f01023503: 'new, Korea, Busan', // carry-over
 
+  f0805567: 'new, NR',
+  f0652414: 'new, NR',
+  f0885079: 'new, NR',
+  f0807387: 'new, NR',
+  f01016882: 'new, NR',
+  f01016806: 'new, NR',
+  f0984905: 'new, NR',
+  f0871546: 'new, NR',
+  f0871563: 'new, NR',
+  f01019009: 'new, China, Henan',
+  f0883511: 'new, Korea, Guro-gu',
+
   // Inflight
 
   // Unknown
