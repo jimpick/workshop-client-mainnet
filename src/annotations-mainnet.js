@@ -18,8 +18,8 @@ const annotations = {
   f01016451: 'new, NR', // carry-over
   f01019892: 'new, USA, Lake Elsinore', // carry-over
   f01021204: 'new, China, Hangzhou', // carry-over
-  f01021896: 'new, Korea, Seoul',
-  f01023503: 'new, Korea, Busan',
+  f01021896: 'new, Korea, Seoul', // carry-over
+  f01023503: 'new, Korea, Busan', // carry-over
 
   // Inflight
 
@@ -77,26 +77,7 @@ const annotations = {
 
   // Sealing
 
-  f02490: 'sealing, China, Fujian', // 1950554
-  f014683: 'sealing, China, Dongguan', // 1950555
-  f015233: 'sealing, China, Nanjing', // 1950556
-  f019806: 'sealing, China, Beijing', // 1950557
-  f0121533: 'sealing, China, Zhejiang', // 1950567
-  f0397332: 'sealing, NR', // 1950589
-  f0402431: 'sealing, China, Hangzhou', // 1950587
-  f0414383: 'sealing, China, Dongguan', // 1950590
-  f0428306: 'sealing, NR', // 1950594
-  f0478837: 'sealing, China, Zhangzhou', // 1950482
-  f0723600: 'sealing, China, Taiwan, Hsinchu', // 1950200
-  f0727453: 'sealing, Korea, Ulsan', // 1950196
-  f0772766: 'sealing, China, Guangzhou', // 1949990
-  f0808705: 'sealing, China, Wenzhou', // 1950595
-  f0859880: "sealing, China, Ya'an", // 1950198
-  f0870558: 'sealing, China, Hong Kong', // 1950836
-
   // Stuck
-
-  f01015491: 'stuck, Canada, Montreal', // CheckForAcceptance: 2 days
 
   // Busy
 
@@ -436,8 +417,12 @@ const annotations = {
   // Error
 
   f01231: 'error, Singapore', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzacec3d5xivyi7n3pvzrugg24zj3g4jakmqqubticjayuacrnoijwuli: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f02490: 'error, China, Fujian', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 814800): failed to look up deal on chain: looking for publish deal message bafy2bzacebozgajv2lv2nn5qnz5fhmhhsah47p4rrirt7zw7a7efb5fgr2q2q: search msg failed: failed to load message: blockstore: block not found
   f02540: 'error, USA, Mobile, Foundry', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacedp6hpvd7ojm4e6mnx2fafkgec4xxo5tmhpvodzknc4fz7k3enkca: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f014683: 'error, China, Dongguan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 814800): failed to look up deal on chain: looking for publish deal message bafy2bzacec5uq5v6wffsnfrmiyvsmzq36g72hl3xfqaqdis3lf73jlhlg2tvu: search msg failed: failed to load message: blockstore: block not found
+  f015233: 'error, China, Nanjing', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 814800): failed to look up deal on chain: looking for publish deal message bafy2bzaceapuaqxyhpuw5rg2xfq75mjtqox36bpuzhxununkvmkqop47g5v6c: search msg failed: failed to load message: blockstore: block not found
   f016398: 'error, China, Shanghai', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzaceaswpbj3bdwlrodwte3ryghaagngu2p5krcd3ixgh3d4n4f5sux2i: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f019806: 'error, China, Beijing', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 814800): failed to look up deal on chain: looking for publish deal message bafy2bzaceadpzcugge7gannhaixm5uf2wyrt5ooydvgek7c2ymwz7aylyrlk6: search msg failed: failed to load message: blockstore: block not found
   f020928: 'error, China, Deyang + Singapore', // error reading Response message from provider: EOF
   f021479: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceaodfqfpa2tg4eldn5isn5fftcq6nmmomqlh56dqkxpoqjy7cpehy: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f023534: 'error, China, Chongqing', // error reading Response message from provider: stream reset
@@ -463,6 +448,7 @@ const annotations = {
   f0110804: 'error, USA, Santa Clara', // deal failed: (State=26) error calling node: publishing deal: handler: websocket connection closed
   f0111885: 'error, Korea, Bucheon-si, WINNERS', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacecthq2fbk4q76gxskknkehy3ouzulirk4wkiowum6kdrb45t3l27w: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0113331: 'error, Korea, Jinju + USA', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacedxorvfbrzforchxnea4jcr57f3ljbsbxu7dprknskhz4payymfq2: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0121533: 'error, China, Zhejiang', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 814800): failed to look up deal on chain: looking for publish deal message bafy2bzaceadtirgt4vmhrxt66pukt2mfsxlbxvm3xxjqy5fu3emzp5kjne7je: search msg failed: failed to load message: blockstore: block not found
   f0129805: 'error, China, Zhejiang + Australia, Adelaide', // error reading Response message from provider: stream reset
   f0130912: 'error, China, Hong Kong', // failed to complete data transfer: deal data transfer failed: 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWBtqhxFAqHUJnURKG66qFNYZHER4LkNy5rRN4w2o4qZN1-1622172231134071791: after 4 consecutive restarts failed to transfer any data
   f0133957: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceb6ttp3j3ebgzyniqkamgeu5s4hff4yqnfvnyz37xfn5hfrynrvzc: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
@@ -482,17 +468,22 @@ const annotations = {
   f0225676: 'error, Korea, Guro-gu', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceah556dhpjmhvwwmr2iqg4bhj44v4cwpyspx5jtiqbffud3ath6e6: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0230200: 'error, Korea, Gwanak-gu, G-mining', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceccgkv74msfqphb3mpttyqgygrj66pnk4pxan2oge762a4h2ahbia: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0396705: 'error, NR', // failed to complete data transfer: deal data transfer failed: 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWPBwe1zjfh5busocJHRzMdRGee73RJjkZ4gaMYxGrZ86o-1622495069172729781: after 4 consecutive restarts failed to transfer any data
+  f0397332: 'error, NR', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1950589 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0401300: 'error, France, Deuil-la-Barre', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzaceclfk55ijoer65qsjujdvm5iqgmb62rwyetytqheeehchusmm5hgi: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0402431: 'error, China, Hangzhou', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 814800): failed to look up deal on chain: looking for publish deal message bafy2bzacedtqk5ypsriikexdlwcygepzqrishvzr3jz35xojij5j67c5nleoe: search msg failed: failed to load message: blockstore: block not found
   f0407733: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacednrjsoxu5lc64qq4ahhiravt5crw2mm43iffrwcqt3zohw7uislg: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0410001: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzacearznax37p2upfgrbsmr5slbhiqjlldf4dfxc7pq3krrhqkizqg6a: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0413563: 'error, Korea, Gangnam-gu', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaced5wfyjdv3tx64zubpplp5iuvutlil6p4bp2vcxrmpefrt27mhceo: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0414383: 'error, China, Dongguan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 814800): failed to look up deal on chain: looking for publish deal message bafy2bzacedjrz5uq4lplintbpw6d524rvp5lzfg3xqrxd6vd3n6wr7ezj47fa: search msg failed: failed to load message: blockstore: block not found
   f0419768: 'error, Korea, Seongnam-si', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacecyje7bfjpbjcwzjphdbz3lvwdcc5h4n54rqredp4nlvlgnqcxvbq: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0421392: 'error, China, Foshan', // AddPiece failed: normal shutdown of state machine
+  f0428306: 'error, NR', // error in deal activation: failed to set up called handler: called check error (h: 814800): failed to look up deal on chain: looking for publish deal message bafy2bzacea6xmqtn7l3hjn7p6z5x2sgf3qs6mfnsbh5k7av6qa6fys3a2qvmm: search msg failed: failed to load message: blockstore: block not found
   f0429063: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacecphbo3yi5z6klfcw6l2xipherf255fthsnfcmiyk6ehhkvrblan4: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0447181: 'error, China, Zibo', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals errored: handler: websocket connection closed
   f0458627: 'error, Korea, Seongnam-si', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacebsnpoejgrkgvf63co7qyigp3ksggvavcz2uy4vzbfeuovt4hmt2o: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0460440: 'error, Korea, Seongnam-si', // error in deal activation: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzaceb4aoqbvstz2lvk7k5nhgu4khzn4dbpt27e64oft23zfgqyyxck3g: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0461791: 'error, Korea, Gwangju', // error reading Response message from provider: stream reset
+  f0478837: 'error, China, Zhangzhou', // error in deal activation: failed to set up called handler: called check error (h: 814800): failed to look up deal on chain: looking for publish deal message bafy2bzacebzzy2rlw2d5p7e4gjwmlzydwt5ymarfmdkbcbtmr24tuogsw43vk: search msg failed: failed to load message: blockstore: block not found
   f0482619: 'error, Korea, Seongnam-si', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzaced7g6fck7ss3kbcrezcwm4ppekandfoqrqiqlqjuylvrkckwyu7ry: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0488889: 'error, China, Nanchang', // error reading Response message from provider: EOF
   f0512179: 'error, Korea, Bucheon-si', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaced6kqerlwr4dtdbezbxqznlsbdjqkuncbnzhuaqd4vhbglexm2iso: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
@@ -504,13 +495,17 @@ const annotations = {
   f0717913: 'error, Korea, Jung-gu', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacedz46qgn7qtyoqh7uuwzliw67hiopux5d2nbaytwbcubohl4f36ds: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0720636: 'error, Belgium, Bonheiden', // failed to complete data transfer: deal data transfer failed: 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWEi1QNph6VZvKbP8EJmYzq59F77tai9TgaL3ENEDbkWsD-1622495069172729793: after 4 consecutive restarts failed to transfer any data
   f0723162: 'error, Korea, Bucheon-si', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacec7c3vnbhb4m5ui2uk2dxm44b55nc6rx2ym33a2jomjosd2db3urm: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0723600: 'error, China, Taiwan, Hsinchu', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 812686): failed to look up deal on chain: deal 1950200 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0727067: 'error, Norway', // error reading Response message from provider: stream reset
+  f0727453: 'error, Korea, Ulsan', // error in deal activation: failed to set up called handler: called check error (h: 812685): failed to look up deal on chain: deal 1950196 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0729674: 'error, Canada, Vancouver', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.009354314011960452 FIL, balance: 0.006806576789174987 FIL): not enough funds to execute transaction
   f0746416: 'error, Korea, Gyeonggi-do', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceaw3hozzoqkdjgmrg4342xpe2crascb6ug45qarcuavqnxhyatkek: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0751590: 'error, USA', // error reading Response message from provider: EOF
   f0752695: 'error, Korea, Seongnam-si', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceaf5sm3ztjl3aorg4nhy5sca7nu5utbmbhvyp73scu3emfvxad4ga: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0756207: 'error, Korea', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacedznjd2ustdgnzj73ywnym63raatmewlivdycvvi6tiskelvafupm: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0772766: 'error, China, Guangzhou', // error waiting for deal pre-commit message to appear on chain: handling applied event: deal 1949990 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0805568: 'error, Korea, Gangnam-gu', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacedaov6zzbw25t2hnf2ankznftnsz25s5adhzb5kktrth7z5almbxw: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0808705: 'error, China, Wenzhou', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 814800): failed to look up deal on chain: looking for publish deal message bafy2bzaceat4u43i5yjdfft7od6oiswubssl2ch3dsitwvrnhrwzyaagsz3qe: search msg failed: failed to load message: blockstore: block not found
   f0810358: 'error, Japan, Tokyo', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacebj5kdnkhzpk45bb75ppdlonlm6ciryivmip6sw2pca7vij2fn27q: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0813086: 'error, Korea, Jung-gu', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacebcz5vj5olgef2yalqpa6dzzpxfkeeovirtmak2agkyvhbxqu5nb6: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0822674: 'error, Korea, Seoul', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacedrcroxrm7aywnbsd6kmpwadv7u7lcllykmv2k5pd5rqw5taippwc: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
@@ -519,11 +514,14 @@ const annotations = {
   f0839509: 'error, China, Beijing', // error reading Response message from provider: stream reset
   f0843728: 'error, France', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacecnw3sqrhq5r55enf26eoxe22ik2j7opbozf5brf6qvvdwloz3vza: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0845245: 'error, Korea, Busan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzacedjrdl2ecbsnbu2pkrib65dxrtxbh7vzyi6v7iijm2vbiv2siq6c2: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
+  f0859880: "error, China, Ya'an", // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 812686): failed to look up deal on chain: deal 1950198 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0862933: 'error, USA, Huntersville', // error in deal activation: failed to set up called handler: called check error (h: 811598): failed to look up deal on chain: looking for publish deal message bafy2bzaceawqyibcafeddzgcxk2pkqvss7schzskyefmhtomr4clqj2isujgm: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0864910: 'error, Korea, Gwangjin-gu', // deal failed: (State=13) start epoch already elapsed
+  f0870558: 'error, China, Hong Kong', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 814800): failed to look up deal on chain: looking for publish deal message bafy2bzacedmc53uofweta6vlr7x2agexz2bfhpop3ojmabvvwqb44a4eaaud6: search msg failed: failed to load message: blockstore: block not found
   f0871928: 'error, China, Taiwan, Taipei', // error in deal activation: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzacecneknv3a72gpqjiwx4dnxkbvnxal6dgxtcucqgs6d47dmyotfriy: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0873601: 'error, Romania, Bucharest', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 805320): failed to look up deal on chain: looking for publish deal message bafy2bzacebvny3bwe64j376hvj2vnoyvxmxsvzrsag7tlndeevez45gylscsk: search msg failed: checking for message execution during lookback: amt load: failed to root: blockstore: block not found
   f0884747: 'error, UK, London', // failed to complete data transfer: deal data transfer failed: response rejected
+  f01015491: 'error, Canada, Montreal', // deal failed: (State=13) start epoch already elapsed
 
   // Dial backoff
 
@@ -1060,7 +1058,6 @@ const annotations = {
   f057683: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f058349: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f058374: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f059740: 'delist, Germany, Bottrop', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWR2iY2SFgjHM45NkQEJMmAathsCrgHWADbbCnPzsuS2bY: all dials failed  * [/ip4/156.67.191.194/tcp/24001] dial tcp4 0.0.0.0:33147->156.67.191.194:24001: i/o timeout
   f059788: 'fail, China, Zhanjiang', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWEhZ3xDvecQ7K14ByYanCewzQqufzX6P2xFaMQu64x3C8: all dials failed  * [/ip4/183.2.149.76/tcp/33669] dial tcp4 0.0.0.0:33147->183.2.149.76:33669: i/o timeout
   f059813: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f060114: 'fail, China, Shenzhen', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -1380,7 +1377,6 @@ const annotations = {
   f0116211: 'fail, China, Weifang', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWF79gTgqr7VyLQu74NgBvCTuvDfp2CxGK8hxn2EYKzH6L: all dials failed  * [/ip4/219.83.163.148/tcp/50666] dial tcp4 0.0.0.0:33147->219.83.163.148:50666: i/o timeout
   f0116287: 'fail, China, Shanghai', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWFfHAMm4kNbBTJGDqrakZgV8Kw9Y234RddjNNTNd3GFn5: all dials failed  * [/ip4/172.18.5.97/tcp/2347] dial tcp4 0.0.0.0:33147->172.18.5.97:2347: i/o timeout
   f0116628: 'fail, China, Shanghai', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJCiw24Vz15iyWUAaMsULsu6qXXjjQpcE4GD45mRPLaFq: all dials failed  * [/ip6/::1/tcp/45987] dial tcp6 [::1]:45987: connect: connection refused  * [/ip4/127.0.0.1/tcp/23456] dial tcp4 127.0.0.1:23456: connect: connection refused  * [/ip6/::1/tcp/46483] dial tcp6 [::1]:46483: connect: connection refused  * [/ip4/172.26.0.180/tcp/23456] dial tcp4 0.0.0.0:33147->172.26.0.180:23456: i/o timeout  * [/ip4/121.46.250.172/tcp/23456] dial tcp4 0.0.0.0:33147->121.46.250.172:23456: i/o timeout  * [/ip4/121.46.250.180/tcp/23456] dial tcp4 0.0.0.0:33147->121.46.250.180:23456: i/o timeout
-  f0116707: 'delist, Germany, Dusseldorf', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWKrpq1UCyrRGc5MyiCJ7g5oipr3PY6nLKZq2nWictkCGb: all dials failed  * [/ip4/89.163.144.60/tcp/24001] dial tcp4 0.0.0.0:33147->89.163.144.60:24001: i/o timeout
   f0116766: 'fail, USA, Westford', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWBfmSEjenJCp9XPzHbTqmUB8xshZP5FSoJXvzTUYn6m6f: all dials failed  * [/ip4/173.76.173.245/tcp/23456] dial tcp4 0.0.0.0:33147->173.76.173.245:23456: i/o timeout
   f0117146: 'fail, China, Beijing', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWQ1wxB3gfZJGxydfCyCJzmeP2YJFTysjLfCEHv9PJ6NW9: all dials failed  * [/ip4/106.12.253.240/tcp/24001] dial tcp4 0.0.0.0:33147->106.12.253.240:24001: i/o timeout
   f0117211: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -1977,7 +1973,6 @@ const annotations = {
   f0442371: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0442374: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0442375: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0442383: 'delist, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWPezoBtgHhfwqcUj1mJX9FbodKDxjNfJbFSWUz2emkfgy: all dials failed  * [/ip4/10.5.101.10/tcp/12288] dial tcp4 0.0.0.0:43375->10.5.101.10:12288: i/o timeout
   f0442550: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0442670: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0442671: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2367,7 +2362,6 @@ const annotations = {
   f0818625: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0820770: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0821595: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0822032: 'delist, Korea, Incheon', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWBzEy5p5da3C2XqBxNcrvd59yyzWaeyGpiz9fjYYs9XWy: all dials failed  * [/ip4/175.207.91.34/tcp/24001] dial tcp4 175.207.91.34:24001: connect: connection refused
   f0822151: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0822203: 'fail, Korea, Seoul', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWR85pE3KANxi49fu1pNSeSWPTkePHqnBBt6aP8X6NBse5: all dials failed  * [/ip4/210.223.11.70/tcp/25001] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWR85pE3KANxi49fu1pNSeSWPTkePHqnBBt6aP8X6NBse5, but remote key matches 12D3KooWPMVpKPyN82J8dX9CBWK9TJneQbv1kNXgC3nwjqygmjgc
   f0822441: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2407,11 +2401,9 @@ const annotations = {
   f0845186: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0845296: 'fail, China, Hong Kong', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWDiQzhqk1pZWdkcTGHxuUsTkV1cPXW7Hts11CKwgUiccH: all dials failed  * [/ip4/10.3.0.24/tcp/36666] dial tcp4 0.0.0.0:43375->10.3.0.24:36666: i/o timeout  * [/ip4/14.136.232.51/tcp/36666] dial tcp4 0.0.0.0:43375->14.136.232.51:36666: i/o timeout
   f0845552: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0845602: 'delist, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0846191: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0847138: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0848972: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0849079: 'delist, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0849554: 'fail, China, Beijing', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWBUJZTafAWxwzzKCdsBiM4YfMAsoVUN9wNtcnCPfyrmbV: all dials failed  * [/ip4/120.232.253.20/tcp/23450] dial tcp4 0.0.0.0:33147->120.232.253.20:23450: i/o timeout
   f0850130: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0851322: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2422,8 +2414,6 @@ const annotations = {
   f0856912: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0863013: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0863576: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0866501: 'delist, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0866680: 'delist, China, Henan', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWEgZCAhsmRr341QjWZ7D8vKg5xJyTVMK7aeVYECH8BVGk: all dials failed  * [/ip4/42.236.7.235/tcp/21000] dial tcp4 0.0.0.0:33147->42.236.7.235:21000: i/o timeout
   f0867253: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0867312: 'fail, China, Foshan', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0868971: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2447,8 +2437,6 @@ const annotations = {
   f0884455: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0884781: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0884795: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0985013: 'delist, Korea, Incheon', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01016847: 'delist, China, Henan', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWHZSnv1jjPPvKCUWprtPb3yTh4mAdF9DAuZpbdRmCJNRu: all dials failed  * [/ip4/42.236.7.235/tcp/21001] dial tcp4 42.236.7.235:21001: i/o timeout
 
   // No Peer
 
@@ -3132,6 +3120,7 @@ const annotations = {
   f059280: 'delist, China, Shenzhen', // carry-over
   f059652: 'delist, China, Beijing', // carry-over
   f059705: 'delist, Korea, Naju', // carry-over
+  f059740: 'delist, Germany, Bottrop',
   f060780: 'delist, Korea, Goyang-si', // carry-over
   f061043: 'delist, China, Changsha', // carry-over
   f061059: 'delist, China, Beijing', // carry-over
@@ -3263,6 +3252,7 @@ const annotations = {
   f0110803: 'delist, Korea', // carry-over
   f0112027: 'delist, France', // carry-over
   f0116513: 'delist, NR', // carry-over
+  f0116707: 'delist, Germany, Dusseldorf',
   f0119336: 'delist, Canada, Ottawa', // carry-over
   f0120141: 'delist, Korea, Gangnam-gu', // carry-over
   f0122815: 'delist, Korea, Bucheon-si, Healthcarenavi_80', // carry-over
@@ -3358,6 +3348,7 @@ const annotations = {
   f0429006: 'delist, China, Zhangzhou', // carry-over
   f0430997: 'delist, Korea', // carry-over
   f0434480: 'delist, USA, Hummelstown', // carry-over
+  f0442383: 'delist, NR',
   f0467217: 'delist, China, Beijing', // carry-over
   f0471266: 'delist, Japan, Ageo', // carry-over
   f0482136: 'delist, China, Fuzhou', // carry-over
@@ -3410,14 +3401,21 @@ const annotations = {
   f0810756: 'delist, Romania, Bucharest', // carry-over
   f0816232: 'delist, Korea, Seoul', // carry-over
   f0818665: 'delist, Romania, Bucharest', // carry-over
+  f0822032: 'delist, Korea, Incheon',
   f0832312: 'delist, USA, Auburn', // carry-over
   f0839767: 'delist, Korea, Suwon', // carry-over
+  f0845602: 'delist, NR',
   f0846716: 'delist, USA, Santa Clara', // carry-over
+  f0849079: 'delist, NR',
   f0853597: 'delist, Korea, Gimpo-si', // carry-over
   f0857779: 'delist, Korea, Dongjak-gu', // carry-over
+  f0866501: 'delist, NR',
+  f0866680: 'delist, China, Henan',
   f0869590: 'delist, USA, Salt Lake City', // carry-over
   f0873852: 'delist, China, Yangzhou', // carry-over
-  f0877555: 'delist, USA, Queens' // carry-over
+  f0877555: 'delist, USA, Queens', // carry-over
+  f0985013: 'delist, Korea, Incheon',
+  f01016847: 'delist, China, Henan'
 }
 
 export default annotations
