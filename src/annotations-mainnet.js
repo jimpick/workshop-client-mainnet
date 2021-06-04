@@ -14,6 +14,9 @@ const annotations = {
 
   // New
 
+  f01025894: 'new, China, Zhengzhou',
+  f01027268: 'new, Korea, Busan',
+
   // Inflight
 
   // Unknown
