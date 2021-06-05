@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
 import annotations from '../annotations'
 
-export default function useMiners (client, tipsetKey) {
+export default function useMiners (client, tipsetKey, options) {
   const [miners, setMiners] = useState()
+  const [triggerFunc, setTriggerFunc] = useState()
 
   useEffect(() => {
     if (!client) return
@@ -27,11 +28,18 @@ export default function useMiners (client, tipsetKey) {
       if (state.canceled) return
       setMiners([...annotated, ...notAnnotated])
     }
-    run()
+    if (options && options.waitForTrigger) {
+      // setTriggerFunc(run)
+      setTriggerFunc(() => {
+        console.log('Trigger load miners')
+      })
+    } else {
+      run()
+    }
     return () => {
       state.canceled = true
     }
-  }, [client, tipsetKey])
+  }, [client, tipsetKey, options])
 
-  return [miners, annotations]
+  return [miners, annotations, triggerFunc]
 }

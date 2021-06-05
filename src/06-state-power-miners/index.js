@@ -221,7 +221,11 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   const [height, setHeight] = useState()
   const [tipsetKey, setTipsetKey] = useState(null)
   const [totalPower, setTotalPower] = useState()
-  const [miners, annotations] = useMiners(client, tipsetKey)
+  const [miners, annotations, triggerLoadMiners] = useMiners(
+    client,
+    tipsetKey,
+    { waitForTrigger: true }
+  )
   const [minerPower, updateMinerPower] = useImmer({})
   const [minerInfo, updateMinerInfo] = useImmer({})
   const [minerAddrs, updateMinerAddrs] = useImmer({})
@@ -1023,21 +1027,24 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   return (
     <div>
       <h1>Miners: Height {height}</h1>
-      <div>
-        {avgPowerReport ? (
-          <>
-            Cached Avg. Power: {avgPowerReport.date}{' '}
-            ({Object.keys(avgPowerReport.miners).length} records)
-          </>
-        ) : (
-          'Loading Cached Avg. Power'
-        )}
-      </div>
       {quickMode || (
         <div style={{ color: 'red' }}>
           Slowing down screen updates to speed up large scan...
         </div>
       )}
+      <div>
+        <button>Load Miners</button>
+      </div>
+      <div>
+        {avgPowerReport ? (
+          <>
+            Cached Avg. Power: {avgPowerReport.date} (
+            {Object.keys(avgPowerReport.miners).length} records)
+          </>
+        ) : (
+          'Loading Cached Avg. Power'
+        )}
+      </div>
       <div>
         <h3>
           RawBytePower:{' '}
@@ -1209,8 +1216,12 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                     )}
                   </td>
                   <td>
-                    {avgPowerReport && avgPowerReport.miners[miner] && 
-                    `[Avg Power: ${bytes(avgPowerReport.miners[miner].qualityAdjPower, { mode: 'binary'})}] ` }
+                    {avgPowerReport &&
+                      avgPowerReport.miners[miner] &&
+                      `[Avg Power: ${bytes(
+                        avgPowerReport.miners[miner].qualityAdjPower,
+                        { mode: 'binary' }
+                      )}] `}
                     {minerPower[miner] && (
                       <>
                         {bytes(Number(minerPower[miner].QualityAdjPower), {
