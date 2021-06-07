@@ -16,21 +16,17 @@ const annotations = {
 
   // Inflight
 
-  f090900: 'inflight, NR', // FundsReserved: 2 minutes
-  f0157127: 'inflight, NR', // FundsReserved: 2 minutes
-  f0520555: 'inflight, NR', // FundsReserved: 2 minutes
-  f0807384: 'inflight, NR', // FundsReserved: 2 minutes
-  f0871532: 'inflight, NR', // FundsReserved: 2 minutes
-  f0878807: 'inflight, NR', // FundsReserved: 2 minutes
-  f0984163: "inflight, China, Ma'anshan", // FundsReserved: 2 minutes
-  f01019391: 'inflight, NR', // FundsReserved: 2 minutes
-  f01019869: 'inflight, NR', // FundsReserved: 2 minutes
-  f01024317: 'inflight, NR', // FundsReserved: 2 minutes
-  f01026560: 'inflight, NR', // FundsReserved: 2 minutes
-
   // Unknown
 
   // Active
+
+  f094901: 'active, Korea, Bucheon-si', // 1980178 about 2 hours
+  f0230200: 'active, Korea, Gwanak-gu, G-mining', // 1980153 about 2 hours
+  f0400920: 'active, China, Luzhou', // 1980268 about 2 hours
+  f0413563: 'active, Korea, Gangnam-gu', // 1980165 about 2 hours
+  f0729674: 'active, Canada, Vancouver', // 1980167 about 2 hours
+  f01019009: 'active, China, Henan', // 1980217 about 2 hours
+  f01031325: 'active, Korea, Busan', // 1980209 about 2 hours
 
   // Active-sealing (active, with in-flight sealing)
 
@@ -41,7 +37,6 @@ const annotations = {
   f048135: 'active-sealing, China, Chongqing, password interstellar', // 1980143
   f062318: 'active-sealing, Korea, Naju', // 1980184
   f063628: 'active-sealing, NR', // 1980141
-  f094901: 'active-sealing, Korea, Bucheon-si', // 1980178
   f097720: 'active-sealing, Korea, Bucheon-si', // 1980147
   f0111885: 'active-sealing, Korea, Bucheon-si, WINNERS', // 1980144
   f0113331: 'active-sealing, Korea, Jinju + USA', // 1980208
@@ -56,11 +51,9 @@ const annotations = {
   f0166512: 'active-sealing, NR', // 1980164
   f0221135: 'active-sealing, USA, Atlanta', // 1980151
   f0228855: 'active-sealing, Korea, Guro-gu', // 1980190
-  f0230200: 'active-sealing, Korea, Gwanak-gu, G-mining', // 1980153
   f0397728: 'active-sealing, China, Dongguan', // 1980156
   f0399814: "active-sealing, China, Ya'an", // 1980158
   f0401416: 'active-sealing, Japan, Fukuoka', // 1980161
-  f0413563: 'active-sealing, Korea, Gangnam-gu', // 1980165
   f0417748: 'active-sealing, China, Changsha', // 1980162
   f0419768: 'active-sealing, Korea, Seongnam-si', // 1980192
   f0421392: 'active-sealing, China, Foshan', // 1980166
@@ -80,7 +73,6 @@ const annotations = {
   f0723006: 'active-sealing, Korea, Bucheon-si', // 1980171
   f0723162: 'active-sealing, Korea, Bucheon-si', // 1980170
   f0723600: 'active-sealing, China, Taiwan, Hsinchu', // 1980216
-  f0729674: 'active-sealing, Canada, Vancouver', // 1980167
   f0746416: 'active-sealing, Korea, Gyeonggi-do', // 1980175
   f0752695: 'active-sealing, Korea, Seongnam-si', // 1980179
   f0756207: 'active-sealing, Korea', // 1980168
@@ -92,7 +84,6 @@ const annotations = {
   f0857798: 'active-sealing, China, Wenzhou', // 1980187
   f0871928: 'active-sealing, China, Taiwan, Taipei', // 1980189
   f0877545: 'active-sealing, China, Ningbo', // 1980185
-  f01019009: 'active-sealing, China, Henan', // 1980217
   f01023503: 'active-sealing, Korea, Busan', // 1980218
 
   // Sealing
@@ -125,7 +116,6 @@ const annotations = {
   f0166327: 'sealing, NR', // 1980315
   f0396846: 'sealing, China, Zhongshan', // 1980347
   f0397332: 'sealing, NR', // 1980362
-  f0400920: 'sealing, China, Luzhou', // 1980268
   f0414383: 'sealing, China, Dongguan', // 1980360
   f0417750: 'sealing, NR', // 1980314
   f0447181: 'sealing, China, Zibo', // 1980453
@@ -153,12 +143,11 @@ const annotations = {
   f01027268: 'sealing, Korea, Busan', // 1980559
   f01029201: 'sealing, China, Beijing', // 1980210
   f01029682: 'sealing, USA, Palm Harbour', // 1980212
-  f01031325: 'sealing, Korea, Busan', // 1980209
   f01031351: 'sealing, USA, Palm Harbour', // 1980213
 
   // Stuck
 
-  f0144618: 'stuck, NR', // CheckForAcceptance: about 2 hours
+  f0144618: 'stuck, NR', // CheckForAcceptance: about 4 hours
 
   // Busy
 
@@ -1308,6 +1297,7 @@ const annotations = {
   f090808: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f090889: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f090893: 'fail, USA', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWMh6qvtA63P9fB2bQKuR68vDHm8TD3hj85zqKBNKUKmjN: all dials failed  * [/ip4/6.143.143.121/tcp/912] dial tcp4 0.0.0.0:34187->6.143.143.121:912: i/o timeout
+  f090900: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f091143: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f091243: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f091395: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -1721,6 +1711,7 @@ const annotations = {
   f0156342: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0156417: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0157025: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0157127: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0157316: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0157502: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0157769: 'fail, China, Changsha', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2147,6 +2138,7 @@ const annotations = {
   f0520262: 'fail, China, Fujian', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0520500: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0520520: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0520555: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0520688: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0521273: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0521499: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2353,6 +2345,7 @@ const annotations = {
   f0806395: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0806758: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0806904: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0807384: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0807386: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0807387: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0807388: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2439,6 +2432,7 @@ const annotations = {
   f0870333: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0870973: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0871511: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0871532: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0871546: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0871563: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0871719: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2451,12 +2445,14 @@ const annotations = {
   f0876800: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0878005: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0878351: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0878807: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0880167: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJjzgpw9e5YSQPciFwWShgd3WeKe4qTVpMcFEtsndXVGd: all dials failed  * [/ip4/73.222.115.201/tcp/2222] dial tcp4 0.0.0.0:34187->73.222.115.201:2222: i/o timeout
   f0881687: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0884455: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0884781: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0884795: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0885079: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0984163: "fail, China, Ma'anshan", // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWGqytnKiDeYwAAYo4XHVgQ3vNonsweTFwqTR2TwsfZzG1: all dials failed  * [/ip4/117.68.154.6/tcp/24001] dial tcp4 0.0.0.0:34187->117.68.154.6:24001: i/o timeout
   f0984905: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0984915: 'fail, China, Tianjin', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWK8C3CyVKFdjQNo7jpu4n7oJjeu6MkB2ZQ5tXoapEvKKB: all dials failed  * [/ip4/36.106.68.145/tcp/24001] dial tcp4 0.0.0.0:34187->36.106.68.145:24001: i/o timeout
   f01002302: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2464,10 +2460,14 @@ const annotations = {
   f01016806: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01016882: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01017980: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01019391: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01019418: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01019869: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01021204: 'fail, China, Hangzhou', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01021898: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01023982: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01024317: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01026560: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01027747: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01028659: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01029008: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
