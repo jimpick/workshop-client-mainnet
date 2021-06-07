@@ -33,6 +33,20 @@ const annotations = {
   f01023982: 'new, NR',
   f01025778: 'new, China, Fujian',
   f01021898: 'new, NR',
+  f090900: 'new, NR',
+  f0157127: 'new, NR',
+  f0520555: 'new, NR',
+  f0807384: 'new, NR',
+  f0867429: 'nopeer, NR',
+  f0871532: 'new, NR',
+  f0878807: 'new, NR',
+  f0984163: "new, China, Ma'anshan",
+  f01016239: 'nopeer, NR',
+  f01019391: 'new, NR',
+  f01019869: 'new, NR',
+  f01024317: 'new, NR',
+  f01024569: 'new, China, Hangzhou',
+  f01026560: 'new, NR',
 
   // Inflight
 

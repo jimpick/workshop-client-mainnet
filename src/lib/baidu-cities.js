@@ -110,6 +110,7 @@ const baiduCities = {
   348: 'Changzhou', // 常州市
   352: 'Hanzhong', // 汉中市
   354: 'Zibo', // 淄博市
+  358: "Ma'anshan", // 马鞍山市
   362: 'Xianning', // 咸宁市
   363: 'Huaihua', // 怀化市
   364: 'Shangrao', // 上饶市
