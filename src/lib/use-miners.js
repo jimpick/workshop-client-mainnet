@@ -5,11 +5,14 @@ export default function useMiners (client, tipsetKey, options) {
   const [miners, setMiners] = useState()
   const [triggerFunc, setTriggerFunc] = useState()
 
+  const waitForTrigger = options && options.waitForTrigger
+
   useEffect(() => {
     if (!client) return
     if (tipsetKey === null) return
     let state = { canceled: false }
     async function run () {
+      /*
       if (state.canceled) return
       const result = await client.stateListMiners(tipsetKey ? tipsetKey : [])
       // Whitelisted
@@ -27,10 +30,12 @@ export default function useMiners (client, tipsetKey, options) {
       // const notAnnotated = []
       if (state.canceled) return
       setMiners([...annotated, ...notAnnotated])
+      */
     }
-    if (options && options.waitForTrigger) {
+    if (waitForTrigger) {
       // setTriggerFunc(run)
-      setTriggerFunc(() => {
+      console.log('waitForTrigger')
+      setTriggerFunc(() => () => {
         console.log('Trigger load miners')
       })
     } else {
@@ -39,7 +44,7 @@ export default function useMiners (client, tipsetKey, options) {
     return () => {
       state.canceled = true
     }
-  }, [client, tipsetKey, options])
+  }, [client, tipsetKey, waitForTrigger])
 
   return [miners, annotations, triggerFunc]
 }
