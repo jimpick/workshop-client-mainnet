@@ -15,6 +15,7 @@ import useLotusClient from '../lib/use-lotus-client'
 // import useMiners from '../lib/use-miners-all'
 import useMiners from '../lib/use-miners'
 import useMinerReportPowerDailyAverage from '../lib/use-mr-power-daily-avg'
+import useMinerReportPowerMultidayAverage from '../lib/use-mr-power-multiday-avg'
 import baiduCities from '../lib/baidu-cities'
 import { geoApi, geoSecure, networkName, useGeoIp2, useBaidu } from '../config'
 
@@ -235,6 +236,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   const [nonRoutableSetUpdated, setNonRoutableSetUpdated] = useState(false)
   const [quickMode, setQuickMode] = useState(true)
   const avgPowerReport = useMinerReportPowerDailyAverage()
+  const avgMultiPowerReport = useMinerReportPowerMultidayAverage()
 
   useEffect(() => {
     idbGet(nonRoutableSetKey).then(data => {
@@ -1026,11 +1028,21 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       <div>
         {avgPowerReport ? (
           <>
-            Cached Avg. Power: {avgPowerReport.date}{' '}
-            ({Object.keys(avgPowerReport.miners).length} records)
+            Cached Daily Avg. Power: {avgPowerReport.date} (
+            {Object.keys(avgPowerReport.miners).length} records)
           </>
         ) : (
-          'Loading Cached Avg. Power'
+          'Loading Cached Daily Avg. Power'
+        )}
+      </div>
+      <div>
+        {avgMultiPowerReport ? (
+          <>
+            Cached Multiday Avg. Power: {avgMultiPowerReport.date} (
+            {Object.keys(avgMultiPowerReport.miners).length} records)
+          </>
+        ) : (
+          'Loading Cached Multiday Avg. Power'
         )}
       </div>
       {quickMode || (
@@ -1209,8 +1221,20 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                     )}
                   </td>
                   <td>
-                    {avgPowerReport && avgPowerReport.miners[miner] && 
-                    `[Avg Power: ${bytes(avgPowerReport.miners[miner].qualityAdjPower, { mode: 'binary'})}] ` }
+                    {avgPowerReport && avgMultiPowerReport && 
+                      avgPowerReport.miners[miner] &&
+                      avgMultiPowerReport.miners[miner] &&
+                      `[Avg Power: ` +
+                        avgPowerReport.miners[miner].qualityAdjPower + ' / ' +
+                        avgMultiPowerReport.miners[miner].qualityAdjPower +
+                      /*
+                        bytes(avgPowerReport.miners[miner].qualityAdjPower, {
+                          mode: 'binary'
+                        }) + ` / ` +
+                        bytes(avgMultiPowerReport.miners[miner].qualityAdjPower, {
+                          mode: 'binary'
+                        }) + */
+                        `] `}
                     {minerPower[miner] && (
                       <>
                         {bytes(Number(minerPower[miner].QualityAdjPower), {
