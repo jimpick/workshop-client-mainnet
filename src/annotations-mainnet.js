@@ -18,6 +18,7 @@ const annotations = {
   f01025366: 'new, NR',
   f01021773: 'new, NR',
   f01021756: 'new, Korea, Yeongdeungpo-gu',
+  f01033119: 'new, France, Paris',
 
 
   // Inflight
