@@ -14,10 +14,11 @@ const annotations = {
 
   // New
 
-  f0157115: 'new, unlisted',
-  f01025366: 'new, unlisted',
-  f01021773: 'new, unlisted',
+  f0157115: 'new, NR',
+  f01025366: 'new, NR',
+  f01021773: 'new, NR',
   f01021756: 'new, Korea, Yeongdeungpo-gu',
+
 
   // Inflight
 
