@@ -14,6 +14,8 @@ const annotations = {
 
   // New
 
+  f01036234: 'new, China, Xinjiang',
+
   // Inflight
 
   f0101570: 'inflight, NR', // FundsReserved: about 2 hours
@@ -2485,14 +2487,14 @@ const annotations = {
   f0719301: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0728347: 'fail, USA, Queens', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0810223: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0871928: 'fail, China, Taiwan, Taipei', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWAThJgb1Eho5YLRxLYHUGPra6qGRYDq9xfyQLwrpLhqSp: all dials failed  * [/ip4/61.65.191.105/tcp/24001] dial tcp4 61.65.191.105:24001: connect: connection refused
+  f0871928: 'delist, China, Taiwan, Taipei', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWAThJgb1Eho5YLRxLYHUGPra6qGRYDq9xfyQLwrpLhqSp: all dials failed  * [/ip4/61.65.191.105/tcp/24001] dial tcp4 61.65.191.105:24001: connect: connection refused
   f0984680: 'fail, Korea, Jung-gu', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01015491: 'fail, Canada, Montreal', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWCXcZqxTWHTsSCqKQDkj6Gvuj7ZpMcyvJ49Zqf9cC8gQr: all dials failed  * [/ip4/158.69.22.187/tcp/24001] dial tcp4 158.69.22.187:24001: connect: connection refused
   f01021317: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01021773: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01025366: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01028902: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01031351: 'fail, USA, Palm Harbour', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01031351: 'delist, USA, Palm Harbour', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01032903: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
 
   // No Peer
@@ -3181,7 +3183,7 @@ const annotations = {
   f059280: 'delist, China, Shenzhen', // carry-over
   f059652: 'delist, China, Beijing', // carry-over
   f059705: 'delist, Korea, Naju', // carry-over
-  f059740: 'delist, Germany, Bottrop', // carry-over
+  f059740: 'retest, Germany, Bottrop', // carry-over
   f060780: 'delist, Korea, Goyang-si', // carry-over
   f061043: 'delist, China, Changsha', // carry-over
   f061059: 'delist, China, Beijing', // carry-over
@@ -3472,7 +3474,7 @@ const annotations = {
   f0832312: 'delist, USA, Auburn', // carry-over
   f0839767: 'delist, Korea, Suwon', // carry-over
   f0843728: 'delist, France', // carry-over
-  f0845602: 'delist, NR', // carry-over
+  f0845602: 'retest, NR', // carry-over
   f0846716: 'delist, USA, Santa Clara', // carry-over
   f0853597: 'delist, Korea, Gimpo-si', // carry-over
   f0857779: 'delist, Korea, Dongjak-gu', // carry-over
