@@ -14,51 +14,54 @@ const annotations = {
 
   // New
 
-  f087888: 'new, NR',
-  f0867298: 'nopeer, NR',
-  f01030442: 'new, NR',
-  f01032314: 'new, NR',
-  f01033805: 'new, NR',
-  f01033926: 'new, Korea, Yongin-si',
-  f01036391: 'new, Korea, Jung-gu', // carry-over
-
   // Inflight
-
-  f01029682: 'inflight, USA, Palm Harbour', // FundsReserved: about 3 hours
 
   // Unknown
 
   // Active
 
+  f020489: 'active, China, Lioaning', // 1996884 about 3 hours
+  f023219: 'active, China, Beijing + Zhangjiakou', // 1996887 about 3 hours
+  f033025: 'active, Korea, Daegu', // 1996910 about 2 hours
+  f048135: 'active, China, Chongqing, password interstellar', // 1996879 about 1 hour
+  f063628: 'active, NR', // 1996959 about 2 hours
+  f0113331: 'active, Korea, Jinju + USA', // 1996931 about 2 hours
   f0137168: 'active, China, Beijing', // 1996890 about 11 hours
+  f0145843: 'active, NR', // 1996882 about 1 hour
+  f0157564: 'active, Korea, Daejeon', // 1996892 about 2 hours
+  f0159961: 'active, China, Chongqing', // 1996912 about 1 hour
+  f0165539: 'active, Japan, Yokohama', // 1997241 about 2 hours
+  f0166512: 'active, NR', // 1996941 about 3 hours
+  f0228855: 'active, Korea, Guro-gu', // 1996911 about 1 hour
   f0230200: 'active, Korea, Gwanak-gu, G-mining', // 1996895 about 11 hours
+  f0399814: "active, China, Ya'an", // 1996913 about 2 hours
+  f0428306: 'active, NR', // 1996979 about 1 hour
+  f0504054: 'active, China, Luzhou', // 1996922 about 1 hour
+  f0513351: 'active, NR', // 1996898 about 2 hours
+  f0675909: 'active, NR', // 1997298 about 3 hours
+  f0720629: 'active, NR', // 1996907 about 2 hours
+  f0723006: 'active, Korea, Bucheon-si', // 1996940 about 1 hour
+  f0731235: 'active, Ukraine, Odessa', // 1997078 about 2 hours
+  f0756207: 'active, Korea', // 1996918 about 3 hours
+  f0763981: 'active, China, Tianjin', // 1996917 about 2 hours
+  f0813086: 'active, Korea, Jung-gu', // 1996954 about 2 hours
   f01019009: 'active, China, Henan', // 1996981 about 11 hours
+  f01029201: 'active, China, Beijing', // 1996983 43 minutes
+  f01033119: 'active, France, Paris', // 1997226 about 3 hours
 
   // Active-sealing (active, with in-flight sealing)
 
-  f020489: 'active-sealing, China, Lioaning', // 1996884
-  f023219: 'active-sealing, China, Beijing + Zhangjiakou', // 1996887
   f024944: 'active-sealing, Korea, Yeongdeungpo-dong', // 1996880
   f030125: 'active-sealing, China, Nantong', // 1996885
-  f033025: 'active-sealing, Korea, Daegu', // 1996910
-  f048135: 'active-sealing, China, Chongqing, password interstellar', // 1996879
   f062318: 'active-sealing, Korea, Naju', // 1996883
-  f063628: 'active-sealing, NR', // 1996959
   f097720: 'active-sealing, Korea, Bucheon-si', // 1996881
-  f0113331: 'active-sealing, Korea, Jinju + USA', // 1996931
   f0131901: 'active-sealing, Korea, Daejeon', // 1996886
-  f0145843: 'active-sealing, NR', // 1996882
   f0156207: 'active-sealing, Korea, Ulsan', // 1996888
   f0157265: 'active-sealing, China, Zhangjiakou', // 1996914
   f0157429: 'active-sealing, Korea, Bucheon-si', // 1997010
-  f0157564: 'active-sealing, Korea, Daejeon', // 1996892
-  f0159961: 'active-sealing, China, Chongqing', // 1996912
   f0165375: 'active-sealing, Korea, Seongnam-si', // 1996919
-  f0166512: 'active-sealing, NR', // 1996941
   f0221135: 'active-sealing, USA, Atlanta', // 1996916
-  f0228855: 'active-sealing, Korea, Guro-gu', // 1996911
   f0397728: 'active-sealing, China, Dongguan', // 1996899
-  f0399814: "active-sealing, China, Ya'an", // 1996913
   f0400920: 'active-sealing, China, Luzhou', // 1996896
   f0401416: 'active-sealing, Japan, Fukuoka', // 1996889
   f0413563: 'active-sealing, Korea, Gangnam-gu', // 1996894
@@ -66,31 +69,23 @@ const annotations = {
   f0417750: 'active-sealing, NR', // 1996905
   f0419768: 'active-sealing, Korea, Seongnam-si', // 1996908
   f0421392: 'active-sealing, China, Foshan', // 1996891
-  f0428306: 'active-sealing, NR', // 1996979
   f0458627: 'active-sealing, Korea, Seongnam-si', // 1996915
   f0460440: 'active-sealing, Korea, Seongnam-si', // 1996980
   f0482619: 'active-sealing, Korea, Seongnam-si', // 1996951
   f0488889: 'active-sealing, China, Nanchang', // 1996978
-  f0504054: 'active-sealing, China, Luzhou', // 1996922
-  f0513351: 'active-sealing, NR', // 1996898
   f0602553: 'active-sealing, China, Suqian', // 1996906
   f0693131: 'active-sealing, China, Zhongshan', // 1996920
   f0694172: 'active-sealing, China, Luzhou', // 1996956
   f0709739: 'active-sealing, China, Handan', // 1996904
   f0717913: 'active-sealing, Korea, Jung-gu', // 1996950
-  f0720629: 'active-sealing, NR', // 1996907
-  f0723006: 'active-sealing, Korea, Bucheon-si', // 1996940
   f0723162: 'active-sealing, Korea, Bucheon-si', // 1996939
   f0723600: 'active-sealing, China, Taiwan, Hsinchu', // 1997240
   f0727453: 'active-sealing, Korea, Ulsan', // 1997227
   f0729674: 'active-sealing, Canada, Vancouver', // 1996953
   f0746416: 'active-sealing, Korea, Gyeonggi-do', // 1996893
   f0752695: 'active-sealing, Korea, Seongnam-si', // 1996942
-  f0756207: 'active-sealing, Korea', // 1996918
-  f0763981: 'active-sealing, China, Tianjin', // 1996917
   f0805568: 'active-sealing, Korea, Gangnam-gu', // 1996945
   f0805872: 'active-sealing, China, Hangzhou', // 1996923
-  f0813086: 'active-sealing, Korea, Jung-gu', // 1996954
   f0839509: 'active-sealing, China, Beijing', // 1996928
   f0845245: 'active-sealing, Korea, Busan', // 1996903
   f0857798: 'active-sealing, China, Wenzhou', // 1996902
@@ -99,7 +94,6 @@ const annotations = {
   f0877545: 'active-sealing, China, Ningbo', // 1996925
   f01023503: 'active-sealing, Korea, Busan', // 1996986
   f01027268: 'active-sealing, Korea, Busan', // 1996982
-  f01029201: 'active-sealing, China, Beijing', // 1996983
   f01031325: 'active-sealing, Korea, Busan', // 1996984
 
   // Sealing
@@ -124,7 +118,6 @@ const annotations = {
   f0156452: 'sealing, Korea, Ulsan', // 1996948
   f0157513: 'sealing, Korea, Geumcheon-gu', // 1997008
   f0162394: 'sealing, China, Guangzhou', // 1996932
-  f0165539: 'sealing, Japan, Yokohama', // 1997241
   f0166327: 'sealing, NR', // 1996930
   f0179096: 'sealing, China, Fuzhou', // 1997263
   f0396846: 'sealing, China, Zhongshan', // 1997128
@@ -133,12 +126,10 @@ const annotations = {
   f0447181: 'sealing, China, Zibo', // 1996936
   f0514737: 'sealing, Korea, Busan', // 1996938
   f0519331: 'sealing, NR', // 1997364
-  f0675909: 'sealing, NR', // 1997298
   f0680538: 'sealing, Korea, Bucheon-si', // 1997239
   f0693765: 'sealing, NR', // 1997356
   f0717969: 'sealing, USA, Los Angeles', // 1997299
   f0722515: 'sealing, Korea, Geumcheon-gu', // 1996944
-  f0731235: 'sealing, Ukraine, Odessa', // 1997078
   f0758230: 'sealing, Korea, Geumcheon-gu', // 1996937
   f0808705: 'sealing, China, Wenzhou', // 1996990
   f0832373: 'sealing, NR', // 1997009
@@ -147,14 +138,14 @@ const annotations = {
   f0873601: 'sealing, Romania, Bucharest', // 1996957
   f01019892: 'sealing, USA, Lake Elsinore', // 1996987
   f01025894: 'sealing, China, Zhengzhou', // 1996988
-  f01033119: 'sealing, France, Paris', // 1997226
   f01034337: 'sealing, Japan, Tokyo', // 1996958
+  f01036391: 'sealing, Korea, Jung-gu', // 2003060
 
   // Stuck
 
-  f019551: 'stuck, UK, Birmingham, Neonix', // CheckForAcceptance: about 12 hours
-  f0403177: 'stuck, China, Huizhou', // CheckForAcceptance: about 12 hours
-  f0700999: 'stuck, China, Chengdu', // Transferring: about 12 hours
+  f0403177: 'stuck, China, Huizhou', // CheckForAcceptance: about 16 hours
+  f0700999: 'stuck, China, Chengdu', // Transferring: about 15 hours
+  f01033805: 'stuck, NR', // CheckForAcceptance: 8 minutes
 
   // Busy
 
@@ -575,6 +566,7 @@ const annotations = {
   f01016365: 'min-ask, China, Shanghai', // 20000000 < 1220703125000000000
   f01021756: 'min-ask, Korea, Yeongdeungpo-gu', // 20000000 < 121948242187500000
   f01025778: 'min-ask, China, Fujian', // 20000000 < 1220703124877929687500000
+  f01033926: 'min-ask, Korea, Yongin-si', // 20000000 < 122070190429687500000
   f01036234: 'min-ask, China, Xinjiang', // 20000000 < 122070312500000
 
   // Slashed
@@ -582,6 +574,7 @@ const annotations = {
   // Error
 
   f07830: 'error, China, Zhongshan', // error reading Response message from provider: EOF
+  f019551: 'error, UK, Birmingham, Neonix', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.099999999936054588 FIL, balance: 0.044773299739917483 FIL): not enough funds to execute transaction
   f020928: 'error, China, Deyang + Singapore', // error reading Response message from provider: EOF
   f022820: 'error, China, Guangdong', // failed to complete data transfer: deal data transfer failed: response rejected
   f062937: 'error, NR', // error reading Response message from provider: EOF
@@ -605,6 +598,7 @@ const annotations = {
   f0840060: 'error, China, Changchun', // error reading Response message from provider: stream reset
   f0870558: 'error, China, Hong Kong', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.069999999990594938 FIL, balance: 0.064481947164420402 FIL): not enough funds to execute transaction
   f0883511: 'error, Korea, Guro-gu', // error reading Response message from provider: stream reset
+  f01029682: 'error, USA, Palm Harbour', // error reading Response message from provider: stream reset
 
   // Dial backoff
 
@@ -1286,6 +1280,7 @@ const annotations = {
   f087868: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f087871: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f087879: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f087888: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f087890: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f087899: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f087965: 'fail, China, Suzhou', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWGbhbr32oPyCfLTgv1GoQmwx1V7u5AdquFNPjjm85iHPe: all dials failed  * [/ip4/58.211.213.210/tcp/2251] dial tcp4 0.0.0.0:34187->58.211.213.210:2251: i/o timeout
@@ -2488,6 +2483,8 @@ const annotations = {
   f01028659: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01028902: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01029008: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01030442: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01032314: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01032903: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
 
   // No Peer
@@ -2541,6 +2538,7 @@ const annotations = {
   f0761676: 'nopeer, NR', // carry-over
   f0834426: 'nopeer, NR', // carry-over
   f0858986: 'nopeer, NR', // carry-over
+  f0867298: 'nopeer, NR', // carry-over
   f0867429: 'nopeer, NR', // carry-over
   f01016239: 'nopeer, NR', // carry-over
 
