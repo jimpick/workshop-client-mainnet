@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
 import annotations from '../annotations'
 
-export default function useMiners (client, tipsetKey) {
+export default function useMiners (client, tipsetKey, enabled) {
   const [miners, setMiners] = useState()
 
   useEffect(() => {
+    if (!enabled) return
     if (!client) return
     if (tipsetKey === null) return
     let state = { canceled: false }
@@ -31,7 +32,7 @@ export default function useMiners (client, tipsetKey) {
     return () => {
       state.canceled = true
     }
-  }, [client, tipsetKey])
+  }, [client, tipsetKey, enabled])
 
   return [miners, annotations]
 }

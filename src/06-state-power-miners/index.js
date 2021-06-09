@@ -222,7 +222,8 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   const [height, setHeight] = useState()
   const [tipsetKey, setTipsetKey] = useState(null)
   const [totalPower, setTotalPower] = useState()
-  const [miners, annotations] = useMiners(client, tipsetKey)
+  const [loadMiners, setLoadMiners] = useState()
+  const [miners, annotations] = useMiners(client, tipsetKey, loadMiners)
   const [minerPower, updateMinerPower] = useImmer({})
   const [minerInfo, updateMinerInfo] = useImmer({})
   const [minerAddrs, updateMinerAddrs] = useImmer({})
@@ -1025,6 +1026,11 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   return (
     <div>
       <h1>Miners: Height {height}</h1>
+      {quickMode || (
+        <div style={{ color: 'red' }}>
+          Slowing down screen updates to speed up large scan...
+        </div>
+      )}
       <div>
         {avgPowerReport ? (
           <>
@@ -1045,11 +1051,6 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           'Loading Cached Multiday Avg. Power'
         )}
       </div>
-      {quickMode || (
-        <div style={{ color: 'red' }}>
-          Slowing down screen updates to speed up large scan...
-        </div>
-      )}
       <div>
         <h3>
           RawBytePower:{' '}
@@ -1060,7 +1061,16 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           {bytes(Number(totalPower.QualityAdjPower), { mode: 'binary' })}
         </h3>
       </div>
-      {!miners && <div>Loading miner list...</div>}
+      <div>
+        <button
+          onClick={() => {
+            setLoadMiners(true)
+          }}
+        >
+          Load Miners
+        </button>
+      </div>
+      {!miners && loadMiners && <div>Loading miner list...</div>}
       {miners && minersScanned !== sortedMinersByName.length && (
         <div style={{ marginBottom: '1rem' }}>
           Scanning {minersScanned} of {sortedMinersByName.length} miners,{' '}
