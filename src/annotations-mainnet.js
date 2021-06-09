@@ -24,7 +24,9 @@ const annotations = {
   f01032903: 'new, NR', // carry-over
   f01033119: 'new, France, Paris', // carry-over
 
-  f0107999: 'new, unlisted',
+  f0107999: 'new, NR',
+  f01034337: 'new, Japan, Tokyo',
+  f01035680: 'new, USA, Denver',
 
   // Inflight
 
@@ -587,7 +589,7 @@ const annotations = {
   // Error
 
   f07830: 'error, China, Zhongshan', // error reading Response message from provider: EOF
-  f019279: 'error, Canada, Calgary', // error reading Response message from provider: stream reset
+  f019279: 'delist, Canada, Calgary', // error reading Response message from provider: stream reset
   f020928: 'error, China, Deyang + Singapore', // error reading Response message from provider: EOF
   f022820: 'error, China, Guangdong', // failed to complete data transfer: deal data transfer failed: response rejected
   f062937: 'error, NR', // error reading Response message from provider: EOF
@@ -601,7 +603,7 @@ const annotations = {
   f0396705: 'error, NR', // failed to complete data transfer: deal data transfer failed: 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWPBwe1zjfh5busocJHRzMdRGee73RJjkZ4gaMYxGrZ86o-1623035079800825364: after 4 consecutive restarts failed to transfer any data
   f0402431: 'error, China, Hangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999944678344 FIL, balance: 0.047219547338798012 FIL): not enough funds to execute transaction
   f0700999: 'error, China, Chengdu', // failed to complete data transfer: deal data transfer failed: 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWBXkJYgb2CF1dpoBeiV5B8YULdkf3YPAjxGWgZjbk2gFS-1623035079800825384: after 4 consecutive restarts failed to transfer any data
-  f0727067: 'error, Norway', // error reading Response message from provider: EOF
+  f0727067: 'delist, Norway', // error reading Response message from provider: EOF
   f0753213: 'error, China, Xiamen', // error reading Response message from provider: stream reset
   f0772766: 'error, China, Guangzhou', // deal failed: (State=26) error awaiting deal pre-commit: failed to set up called handler: called check error (h: 824887): failed to look up deal on chain: deal 1980371 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f0822674: 'error, Korea, Seoul', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.0499999999587291 FIL, balance: 0.012394603939909104 FIL): not enough funds to execute transaction
@@ -2129,7 +2131,7 @@ const annotations = {
   f0511318: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0511385: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0512066: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0512179: 'fail, Korea, Bucheon-si', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWBBcrU2hF14VhZ5AsnuL9ZeEwgnXeYFkVyefzfApz5PJ3: all dials failed  * [/ip4/211.192.248.211/tcp/34001] dial tcp4 0.0.0.0:34187->211.192.248.211:34001: i/o timeout
+  f0512179: 'delist, Korea, Bucheon-si', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWBBcrU2hF14VhZ5AsnuL9ZeEwgnXeYFkVyefzfApz5PJ3: all dials failed  * [/ip4/211.192.248.211/tcp/34001] dial tcp4 0.0.0.0:34187->211.192.248.211:34001: i/o timeout
   f0512693: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0513685: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0514000: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
