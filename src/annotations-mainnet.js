@@ -18,6 +18,8 @@ const annotations = {
 
   // Inflight
 
+  f01029682: 'inflight, USA, Palm Harbour', // FundsReserved: about 3 hours
+
   // Unknown
 
   // Active
