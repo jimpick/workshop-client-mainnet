@@ -223,7 +223,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   const [tipsetKey, setTipsetKey] = useState(null)
   const [totalPower, setTotalPower] = useState()
   const [loadMiners, setLoadMiners] = useState()
-  const [miners, annotations] = useMiners(client, tipsetKey, loadMiners)
+  const [minersLive, annotations] = useMiners(client, tipsetKey, loadMiners)
   const [minerPower, updateMinerPower] = useImmer({})
   const [minerInfo, updateMinerInfo] = useImmer({})
   const [minerAddrs, updateMinerAddrs] = useImmer({})
@@ -290,6 +290,18 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     ),
     [updateDhtMinerAddrs, dhtMinerAddrsUpdates, quickMode]
   )
+
+  const miners = useMemo(() => {
+    if (loadMiners && minersLive) return minersLive
+    if (avgPowerReport) {
+      return Object.keys(avgPowerReport.miners)
+    }
+    return null
+  }, [
+    minersLive,
+    loadMiners,
+    avgPowerReport
+  ])
 
   const filteredNonRoutableMiners = useMemo(() => {
     if (queryAllMinersWithPower) return miners
@@ -1070,7 +1082,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           Load Miners
         </button>
       </div>
-      {!miners && loadMiners && <div>Loading miner list...</div>}
+      {!miners && <div>Loading miner list...</div>}
       {miners && minersScanned !== sortedMinersByName.length && (
         <div style={{ marginBottom: '1rem' }}>
           Scanning {minersScanned} of {sortedMinersByName.length} miners,{' '}
