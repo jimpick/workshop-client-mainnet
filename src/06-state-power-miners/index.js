@@ -1221,19 +1221,21 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
                     )}
                   </td>
                   <td>
-                    {avgPowerReport && avgMultiPowerReport && 
+                    {avgPowerReport &&
+                      avgMultiPowerReport &&
                       avgPowerReport.miners[miner] &&
                       avgMultiPowerReport.miners[miner] &&
                       `[Avg Power: ` +
-                        avgPowerReport.miners[miner].qualityAdjPower + ' / ' +
-                        avgMultiPowerReport.miners[miner].qualityAdjPower +
-                      /*
                         bytes(avgPowerReport.miners[miner].qualityAdjPower, {
                           mode: 'binary'
-                        }) + ` / ` +
-                        bytes(avgMultiPowerReport.miners[miner].qualityAdjPower, {
-                          mode: 'binary'
-                        }) + */
+                        }) +
+                        ` / ` +
+                        bytes(
+                          avgMultiPowerReport.miners[miner].qualityAdjPower,
+                          {
+                            mode: 'binary'
+                          }
+                        ) +
                         `] `}
                     {minerPower[miner] && (
                       <>
