@@ -14,6 +14,12 @@ const annotations = {
 
   // New
 
+  f087888: 'new, NR',
+  f0867298: 'nopeer, NR',
+  f01030442: 'new, NR',
+  f01032314: 'new, NR',
+  f01033805: 'new, NR',
+  f01033926: 'new, Korea, Yongin-si',
   f01036391: 'new, Korea, Jung-gu', // carry-over
 
   // Inflight
