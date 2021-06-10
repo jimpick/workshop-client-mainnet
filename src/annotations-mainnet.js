@@ -14,11 +14,10 @@ const annotations = {
 
   // New
 
-  f01037829: 'new, USA, Palm Harbour',
-  f01038099: 'new, China, Xinjiang',
-  f01038170: 'new, China, Shenzhen',
-  f01039753: 'new, China, Suqian',
-  
+  f01037829: 'new, USA, Palm Harbour', // carry-over
+  f01038099: 'new, China, Xinjiang', // carry-over
+  f01038170: 'new, China, Shenzhen', // carry-over
+  f01039753: 'new, China, Suqian', // carry-over
 
   // Inflight
 
@@ -90,63 +89,7 @@ const annotations = {
 
   // Active-sealing (active, with in-flight sealing)
 
-  f0157265: 'active-sealing, China, Zhangjiakou', // 1996914
-  f0400920: 'active-sealing, China, Luzhou', // 1996896
-  f0417748: 'active-sealing, China, Changsha', // 1996909
-  f0419768: 'active-sealing, Korea, Seongnam-si', // 1996908
-  f0421392: 'active-sealing, China, Foshan', // 1996891
-  f0488889: 'active-sealing, China, Nanchang', // 1996978
-  f0602553: 'active-sealing, China, Suqian', // 1996906
-  f0693131: 'active-sealing, China, Zhongshan', // 1996920
-  f0723162: 'active-sealing, Korea, Bucheon-si', // 1996939
-  f0723600: 'active-sealing, China, Taiwan, Hsinchu', // 1997240
-  f0727453: 'active-sealing, Korea, Ulsan', // 1997227
-  f0729674: 'active-sealing, Canada, Vancouver', // 1996953
-  f0805568: 'active-sealing, Korea, Gangnam-gu', // 1996945
-  f01027268: 'active-sealing, Korea, Busan', // 1996982
-
   // Sealing
-
-  f03345: 'sealing, China, Fuzhou, chh', // 1996901
-  f08019: 'sealing, China, Yantai, 三合', // 1996900
-  f014683: 'sealing, China, Dongguan', // 1996927
-  f015233: 'sealing, China, Nanjing', // 1996934
-  f025025: 'sealing, China, Qingdao', // 1996935
-  f033036: 'sealing, China, Liaoning', // 1996943
-  f044160: 'sealing, China, Guangzhou, muxing', // 1997059
-  f053088: 'sealing, China, Shanghai', // 1996924
-  f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 1996933
-  f080103: 'sealing, Korea, Seongnam-si', // 1996926
-  f0101087: 'sealing, Korea', // 1996929
-  f0104888: 'sealing, NR', // 1997228
-  f0111174: 'sealing, China, Guangzhou', // 1997276
-  f0121533: 'sealing, China, Zhejiang', // 1996952
-  f0137019: 'sealing, NR', // 1997708
-  f0146751: 'sealing, China, Jiangsu', // 1996946
-  f0152224: 'sealing, Korea, Yongdu-dong', // 1997229
-  f0156452: 'sealing, Korea, Ulsan', // 1996948
-  f0162394: 'sealing, China, Guangzhou', // 1996932
-  f0166327: 'sealing, NR', // 1996930
-  f0396846: 'sealing, China, Zhongshan', // 1997128
-  f0397332: 'sealing, NR', // 1996985
-  f0414383: 'sealing, China, Dongguan', // 1996989
-  f0447181: 'sealing, China, Zibo', // 1996936
-  f0514737: 'sealing, Korea, Busan', // 1996938
-  f0519331: 'sealing, NR', // 1997364
-  f0680538: 'sealing, Korea, Bucheon-si', // 1997239
-  f0693765: 'sealing, NR', // 1997356
-  f0722515: 'sealing, Korea, Geumcheon-gu', // 1996944
-  f0758230: 'sealing, Korea, Geumcheon-gu', // 1996937
-  f0808705: 'sealing, China, Wenzhou', // 1996990
-  f0832373: 'sealing, NR', // 1997009
-  f0835643: 'sealing, Korea, Songpa-gu', // 1996955
-  f0859880: "sealing, China, Ya'an", // 1997127
-  f0873601: 'sealing, Romania, Bucharest', // 1996957
-  f01019892: 'sealing, USA, Lake Elsinore', // 1996987
-  f01025894: 'sealing, China, Zhengzhou', // 1996988
-  f01033805: 'sealing, NR', // 2003647
-  f01034337: 'sealing, Japan, Tokyo', // 1996958
-  f01036391: 'sealing, Korea, Jung-gu', // 2003060
 
   // Stuck
 
@@ -577,32 +520,87 @@ const annotations = {
 
   // Slashed
 
+  f0832373: 'slashed, NR',
+
   // Error
 
+  f03345: 'error, China, Fuzhou, chh', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacea6gx6jwdh4z6nmy7vnx54fgyllj7mnn53pgwy5quh26nq4gb5xfg: search msg failed: failed to load message: blockstore: block not found
   f07830: 'error, China, Zhongshan', // error reading Response message from provider: EOF
+  f08019: 'error, China, Yantai, 三合', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzaceaoohfnpodusy6wkiqiui7jgohh4cxaqhbdhd4t5axn5drdwsuers: search msg failed: failed to load message: blockstore: block not found
+  f014683: 'error, China, Dongguan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacealkgbjaffgc4i3usxe52lbn4kywgv2im2f2u3nu4rpmmiddicjd4: search msg failed: failed to load message: blockstore: block not found
+  f015233: 'error, China, Nanjing', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacedtvk7hwroyz56l6hkis2zqs566twf5c4h54frtyyques3uanjkgc: search msg failed: failed to load message: blockstore: block not found
   f019551: 'error, UK, Birmingham, Neonix', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.099999999936054588 FIL, balance: 0.044773299739917483 FIL): not enough funds to execute transaction
   f020928: 'error, China, Deyang + Singapore', // error reading Response message from provider: EOF
   f022820: 'error, China, Guangdong', // failed to complete data transfer: deal data transfer failed: response rejected
+  f025025: 'error, China, Qingdao', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzaceatzr4hv2m52beaiyan3jeiqtgm4duz6fob3ckcslgofei7ajitn4: search msg failed: failed to load message: blockstore: block not found
+  f033036: 'error, China, Liaoning', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzaceb2ofoqdccaccewb5dfth3c3hwkazbfosjal2splymble7jgnrdjk: search msg failed: failed to load message: blockstore: block not found
+  f044160: 'error, China, Guangzhou, muxing', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacebimabdjm6iow4bldefctu62a2axua3uwzalceowt3boxeuyicu74: search msg failed: failed to load message: blockstore: block not found
+  f053088: 'error, China, Shanghai', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacebfkasitfr5pnh3kci42mgkey2i62q346rsrq4nlocaeezbeeu7kk: search msg failed: failed to load message: blockstore: block not found
+  f055132: 'error, Vietman, Ho Chi Minh City + China', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzaceb6wayynsqq6tfa4yhzcvgt4zmequs5is7xs624soi6ldnbjdnroo: search msg failed: failed to load message: blockstore: block not found
   f062937: 'error, NR', // error reading Response message from provider: EOF
+  f080103: 'error, Korea, Seongnam-si', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacebgbsffsrrpiyf5tjgsmjw3ajucic25blvxam56m5xc3p2w55wf5s: search msg failed: failed to load message: blockstore: block not found
   f094901: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.370746507091842027 FIL, balance: 0.157612621188120751 FIL): not enough funds to execute transaction
+  f0101087: 'error, Korea', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacedzsyd5js7bgtzdwsvprciddz2gzqdzt2kmezef4xrkylp2mqu5x2: search msg failed: failed to load message: blockstore: block not found
+  f0104888: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacebtet4g4jdrmzpympwkipwiwo72yqym3uvzzo2ylsuh5gk7v7uxrm: search msg failed: failed to load message: blockstore: block not found
   f0110804: 'error, USA, Santa Clara', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999936416306 FIL, balance: 0.044222289871096049 FIL): not enough funds to execute transaction
+  f0111174: 'error, China, Guangzhou', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacecmplgqq73mrbkf2dssj4ryikkmcrjezgnoqstwzopdwdfsdacgau: search msg failed: failed to load message: blockstore: block not found
   f0111885: 'error, Korea, Bucheon-si, WINNERS', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.37161884353044815 FIL, balance: 0.170681625580195311 FIL): not enough funds to execute transaction
   f0112713: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.429165134100668988 FIL, balance: 0.05202910036823539 FIL): not enough funds to execute transaction
   f0115108: 'error, Korea, Yangcheon-gu', // deal failed: (State=11) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.349198621608499641 FIL, balance: 0.136225419185458376 FIL): not enough funds to execute transaction
+  f0121533: 'error, China, Zhejiang', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacecvaqx3woxgqzdsza6llsy5fmhotu6o67pch2c5xj3kihixoyedfg: search msg failed: failed to load message: blockstore: block not found
   f0130912: 'error, China, Hong Kong', // failed to complete data transfer: deal data transfer failed: 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWBtqhxFAqHUJnURKG66qFNYZHER4LkNy5rRN4w2o4qZN1-1623035079800825578: after 4 consecutive restarts failed to transfer any data
+  f0137019: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacebzhbypu5yhxoqfe46dyz47lqsyyvnqk2ii5ujwrem2cdfo5ou2vs: search msg failed: failed to load message: blockstore: block not found
   f0144530: 'error, NR', // deal failed: (State=26) error calling node: reserving funds: failed to sign message: Don't allow transfer from f3xgyk6mgris6mfvxn3ucgbggyczu3slcuciofgp5mjvrxjz65alrwjuivweg2f4mttfm247ybyv57l3ic7cza to f05 : Does not exist in the whitelist.
+  f0146751: 'error, China, Jiangsu', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzaceauy2dwvvcdsr3a7phxz4hrga7zjkwxcw7aqayrxdd3opscobmcw4: search msg failed: failed to load message: blockstore: block not found
   f0149455: 'error, NR', // error reading Response message from provider: EOF
+  f0152224: 'error, Korea, Yongdu-dong', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacebsdjvpj2yof6cj6ogbyyhtp4hgx2r5hqrlrf3wnglsiisl4i5yac: search msg failed: failed to load message: blockstore: block not found
+  f0156452: 'error, Korea, Ulsan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzaceccfx7ngyjjil2iel5cgjwlutbde2xtmndm3gtfy5aqyquxls22iq: search msg failed: failed to load message: blockstore: block not found
+  f0157265: 'error, China, Zhangjiakou', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzaceau4pqmxmxk4yzxtphlqrxos3rn5ldg6imoogqsxinqxusxgcwyzw: search msg failed: failed to load message: blockstore: block not found
+  f0162394: 'error, China, Guangzhou', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzaceays6jqqkfrkekqhpq2kcntmku6oy6wlutenfn6jj5sx5a77vqmxq: search msg failed: failed to load message: blockstore: block not found
+  f0166327: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacedell5cpsywwwwfytwlimfhfeov4hvvsp7a4io5mlcxkvellr4nis: search msg failed: failed to load message: blockstore: block not found
   f0391143: 'error, China, Shanghai', // error reading Response message from provider: stream reset
   f0395462: 'error, Korea, Daegu', // error reading Response message from provider: stream reset
   f0396705: 'error, NR', // failed to complete data transfer: deal data transfer failed: 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWPBwe1zjfh5busocJHRzMdRGee73RJjkZ4gaMYxGrZ86o-1623035079800825580: after 4 consecutive restarts failed to transfer any data
+  f0396846: 'error, China, Zhongshan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacec4cnwoarwvgbp66bks3s2hhjfvhif7kkpjldmlv6sh42d3nrs3zu: search msg failed: failed to load message: blockstore: block not found
+  f0397332: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacecytjl266jrjupkmmcg2i4tez7r2ihhwwm4djjc56tf2nrfeazknm: search msg failed: failed to load message: blockstore: block not found
+  f0400920: 'error, China, Luzhou', // error in deal activation: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzaceatptkrt7k4bnxff2sdt32nsydjjhvrr6w3ihpxn6tplzqxbbi2ny: search msg failed: failed to load message: blockstore: block not found
   f0402431: 'error, China, Hangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999964141754 FIL, balance: 0.047219547338798012 FIL): not enough funds to execute transaction
+  f0414383: 'error, China, Dongguan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzaceadx27ixfob7rwdpp4cav5hbpfw5fahmnf3lg3ge6deuuzx5s7zym: search msg failed: failed to load message: blockstore: block not found
+  f0417748: 'error, China, Changsha', // error in deal activation: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacecv5axtghgb6wg2gn74oiopf6f6fp7dknhjxsxojeriuf223mzmpg: search msg failed: failed to load message: blockstore: block not found
+  f0419768: 'error, Korea, Seongnam-si', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacec5bze7jxsmytfta2cvsxewrkfvz23jbv25aurgwwnsrbywwu3v2c: search msg failed: failed to load message: blockstore: block not found
+  f0421392: 'error, China, Foshan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzaceabgpmtujh2rn2ko6sk6q67cvy4smgbfar24e2tltut4jtsr7hyey: search msg failed: failed to load message: blockstore: block not found
+  f0447181: 'error, China, Zibo', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzaceccsnwktjsfvdyn5yqgv6lw7up6a3el42qd3sqi5fgqxsirfdypru: search msg failed: failed to load message: blockstore: block not found
+  f0488889: 'error, China, Nanchang', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzaceazzilnckfehghztkzrah2fjhypvef4fgchqr7lwxb6543qiy7weo: search msg failed: failed to load message: blockstore: block not found
   f0512170: 'error, Korea, Bucheon-si', // deal failed: (State=11) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.339922411181985675 FIL, balance: 0.318977436342562359 FIL): not enough funds to execute transaction
+  f0514737: 'error, Korea, Busan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacebrnwmxs3m22hschqjxxeg4n27dlodpi2z3lcsrqvrtkuceely3z4: search msg failed: failed to load message: blockstore: block not found
+  f0519331: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzaceavusz7mtzvmrtbdxgxv6f47gueyqab7cn3jcaupbzawao53vglqo: search msg failed: failed to load message: blockstore: block not found
+  f0602553: 'error, China, Suqian', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacebkafyxkyuayxnpsnnhqebggeyba2zhqk22crczk5q2pmgvv72aei: search msg failed: failed to load message: blockstore: block not found
+  f0680538: 'error, Korea, Bucheon-si', // error in deal activation: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacebyz2cxpmvvry6wnhuz3mvufq5azmbxg42vjlpk6mtszz37ewwtlw: search msg failed: failed to load message: blockstore: block not found
+  f0693131: 'error, China, Zhongshan', // error in deal activation: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacecf5ciojqczpjuql2pidtx3pm5lterjyn7clt52szqqtkewdud6ic: search msg failed: failed to load message: blockstore: block not found
+  f0693765: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzaceaor73ucveld4ao2mgq64qulkyxd6exsu3w3yuoekozmmimg6rj3y: search msg failed: failed to load message: blockstore: block not found
   f0712678: 'error, Korea, Gangseo-gu', // deal failed: (State=11) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.069999999999766524 FIL, balance: 0.059913485455355547 FIL): not enough funds to execute transaction
+  f0722515: 'error, Korea, Geumcheon-gu', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacebhw6gs7uchjlhyiln3h2zqs7dlhfwmnvtqhvr2tdoferfb3cfelm: search msg failed: failed to load message: blockstore: block not found
+  f0723162: 'error, Korea, Bucheon-si', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacechinqv5cxd26bu42slzwtb457dih3qnasct66r4ommged6tw5zjg: search msg failed: failed to load message: blockstore: block not found
+  f0723600: 'error, China, Taiwan, Hsinchu', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzaceazzx2h7ikgiewnt2hw4bbmvsd2h6xmhchxmhcypzmynn7i6ale7q: search msg failed: failed to load message: blockstore: block not found
+  f0727453: 'error, Korea, Ulsan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacebystkccqb6y5z24dsxpg2vvppvue5jvyzqhizr5odlvxi7hhb2qc: search msg failed: failed to load message: blockstore: block not found
+  f0729674: 'error, Canada, Vancouver', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacedp7i3so3pfqwhu5gwijb4bfxvtmov3cwkddafrdp5gdulj76q4gu: search msg failed: failed to load message: blockstore: block not found
+  f0758230: 'error, Korea, Geumcheon-gu', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacecuykepyh527mntp72dg3acumq57bbfnzq2bbbjjucrmmkqfs3lz2: search msg failed: failed to load message: blockstore: block not found
   f0772766: 'error, China, Guangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 1.074778294728912345 FIL, balance: 0.979347824859239729 FIL): not enough funds to execute transaction
+  f0805568: 'error, Korea, Gangnam-gu', // error in deal activation: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzaced4o76rs7hr33g3e56mgx7h7d62sfilvwceiarogg7tqa3iuti3xa: search msg failed: failed to load message: blockstore: block not found
+  f0808705: 'error, China, Wenzhou', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacebdqg4bwsy3jbkd3nxmrb4zh5gd6kv6am5ihwx4lud6j5bleunhuy: search msg failed: failed to load message: blockstore: block not found
   f0822674: 'error, Korea, Seoul', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999990551925 FIL, balance: 0.004593553855815902 FIL): not enough funds to execute transaction
+  f0835643: 'error, Korea, Songpa-gu', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzaceakwpk2u66o7wipydz4ekqbeggq35agmmw4qhibw2wakcpfyjj6qa: search msg failed: failed to load message: blockstore: block not found
   f0840060: 'error, China, Changchun', // error reading Response message from provider: stream reset
+  f0859880: "error, China, Ya'an", // error in deal activation: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzaceafjirjfcopymwjpessnqi7ikqzuxnlvlnplv5etc52bxgvjlzsli: search msg failed: failed to load message: blockstore: block not found
   f0870558: 'error, China, Hong Kong', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.069999999990594938 FIL, balance: 0.064481947164420402 FIL): not enough funds to execute transaction
+  f0873601: 'error, Romania, Bucharest', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacebaaa6tat3lx4vyd7sgcjyqaw63f6yfwglbsr5fquxbbn3kcbnjuq: search msg failed: failed to load message: blockstore: block not found
   f0883511: 'error, Korea, Guro-gu', // error reading Response message from provider: stream reset
+  f01019892: 'error, USA, Lake Elsinore', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzaceaxge5bf7l62ubaczsptkq4r742zhgusybhhda5pgezrvtozeuxoy: search msg failed: failed to load message: blockstore: block not found
+  f01025894: 'error, China, Zhengzhou', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacecte2tc36ncidhxnoav36xxu5wltau6ywihpm5ajrgwfwub3pr5oo: search msg failed: failed to load message: blockstore: block not found
+  f01027268: 'error, Korea, Busan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacedo7xbpp2hp6iwtjppogu6ah3ngr7u4h2bppaocrxxspb5rsotkz4: search msg failed: failed to load message: blockstore: block not found
+  f01033805: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzaceac5bn2iaiil54a4vuqo7p6jdxrkrk5mddtlqxdp5u5w6lmzlifay: search msg failed: failed to load message: blockstore: block not found
+  f01034337: 'error, Japan, Tokyo', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacea7o2gxdp6wmjyx5ec3mncoqa4s5kcgjjmtnh4ufcuuyy4g56e5es: search msg failed: failed to load message: blockstore: block not found
+  f01036391: 'error, Korea, Jung-gu', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 834599): failed to look up deal on chain: looking for publish deal message bafy2bzacebzf3v3h2c3pkh72bhnjsi65txsjgvt5xch753vm37t4m7rotukz6: search msg failed: failed to load message: blockstore: block not found
 
   // Dial backoff
 
