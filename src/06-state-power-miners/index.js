@@ -445,6 +445,26 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           // console.log('Miner Power', miner, annotations[miner])
           if (state.canceled) return
           setMinersScanned(++state.count)
+          if (!loadMiners && miners) {
+            state.minerPowerUpdates.push(draft => {
+              draft[miner] = {
+                QualityAdjPower: avgPowerReport.miners[miner].qualityAdjPower,
+                RawBytePower: avgPowerReport.miners[miner].rawBytePower
+              }
+            })
+            processMinerPowerUpdates()
+            state.minerInfoUpdates.push(draft => {
+              if (!draft[miner]) {
+                draft[miner] = {}
+              }
+              const minerData = draft[miner]
+              minerData.sectorSize = 0
+              minerData.peerId = ''
+              minerData.addresses = []
+            })
+            processMinerInfoUpdates()
+            return
+          }
           const result = await client.stateMinerPower(miner, tipsetKey)
           if (state.canceled) return
           const sectorCount = await client.stateMinerSectorCount(
@@ -937,7 +957,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     sortedMinersByPower.filter(miner => {
       // if (miner === 't01000') return true
       if (!minerPower[miner] || !minerInfo[miner]) return false
-      if (minerInfo[miner] && !dhtMinerAddrs[miner]) {
+      if (loadMiners && minerInfo[miner] && !dhtMinerAddrs[miner]) {
         ipLookupPendingCount++
         return false
       }
@@ -1003,7 +1023,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     filteredMiners &&
     filteredMiners.map(miner => {
       let lng, lat
-      if (!dhtMinerAddrs[miner].addrs) return null
+      if (!loadMiners || !dhtMinerAddrs[miner].addrs) return null
       for (const addr of dhtMinerAddrs[miner].addrs) {
         const { geo, geo2, geoBaidu } = addr
         if (geoBaidu && geoBaidu.content && geoBaidu.content.point) {
