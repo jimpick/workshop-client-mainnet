@@ -589,7 +589,7 @@ const annotations = {
   f0391143: 'error, China, Shanghai', // error reading Response message from provider: stream reset
   f0395462: 'error, Korea, Daegu', // error reading Response message from provider: stream reset
   f0396705: 'error, NR', // failed to complete data transfer: deal data transfer failed: 12D3KooWSrVTGNQP7UaXJYB8r6a2bfEcHzt2gnrHrrqwu5zYK1AD-12D3KooWPBwe1zjfh5busocJHRzMdRGee73RJjkZ4gaMYxGrZ86o-1623035079800825580: after 4 consecutive restarts failed to transfer any data
-  f0401348: 'error, Korea, Chuncheon', // error reading Response message from provider: stream reset
+  f0401348: 'delist, Korea, Chuncheon', // error reading Response message from provider: stream reset
   f0402431: 'error, China, Hangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999964141754 FIL, balance: 0.047219547338798012 FIL): not enough funds to execute transaction
   f0512170: 'error, Korea, Bucheon-si', // deal failed: (State=11) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.339922411181985675 FIL, balance: 0.318977436342562359 FIL): not enough funds to execute transaction
   f0712678: 'error, Korea, Gangseo-gu', // deal failed: (State=11) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.069999999999766524 FIL, balance: 0.059913485455355547 FIL): not enough funds to execute transaction
@@ -598,7 +598,7 @@ const annotations = {
   f0840060: 'error, China, Changchun', // error reading Response message from provider: stream reset
   f0870558: 'error, China, Hong Kong', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.069999999990594938 FIL, balance: 0.064481947164420402 FIL): not enough funds to execute transaction
   f0883511: 'error, Korea, Guro-gu', // error reading Response message from provider: stream reset
-  f01029682: 'error, USA, Palm Harbour', // error reading Response message from provider: stream reset
+  f01029682: 'delist, USA, Palm Harbour', // error reading Response message from provider: stream reset
 
   // Dial backoff
 
@@ -2290,7 +2290,7 @@ const annotations = {
   f0733242: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0733626: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0733692: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0734051: 'fail, Korea, Hwaseong-si', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWHWtKitQx2MNAEk5hWAorzRugmoP9ExKkdsEaCrCc4NCM: all dials failed  * [/ip4/121.136.168.225/tcp/23843] dial tcp4 0.0.0.0:34187->121.136.168.225:23843: i/o timeout
+  f0734051: 'delist, Korea, Hwaseong-si', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWHWtKitQx2MNAEk5hWAorzRugmoP9ExKkdsEaCrCc4NCM: all dials failed  * [/ip4/121.136.168.225/tcp/23843] dial tcp4 0.0.0.0:34187->121.136.168.225:23843: i/o timeout
   f0734053: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0734759: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0735027: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
