@@ -447,9 +447,10 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           setMinersScanned(++state.count)
           if (!loadMiners && miners) {
             state.minerPowerUpdates.push(draft => {
+              const minerReport = avgPowerReport.miners[miner]
               draft[miner] = {
-                QualityAdjPower: avgPowerReport.miners[miner].qualityAdjPower,
-                RawBytePower: avgPowerReport.miners[miner].rawBytePower
+                QualityAdjPower: minerReport ? minerReport.qualityAdjPower : null,
+                RawBytePower: minerReport ? minerReport.rawBytePower : null
               }
             })
             processMinerPowerUpdates()
