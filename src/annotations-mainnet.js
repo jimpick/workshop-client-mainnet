@@ -14,6 +14,9 @@ const annotations = {
 
   // New
 
+  f01040006: 'new, Korea, Jung-gu',
+  f01040469: 'new, Korea',
+
   // Inflight
 
   // Unknown
