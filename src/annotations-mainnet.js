@@ -17,6 +17,7 @@ const annotations = {
   f01040006: 'new, Korea, Jung-gu',
   f01040469: 'new, Korea',
   f01041703: 'new, China, Taiwan, New Taipei',
+  f01039327: 'new, Indonesia, Denpasar',
 
   // Inflight
 
@@ -599,7 +600,7 @@ const annotations = {
   f0772766: 'error, China, Guangzhou', // deal failed: (State=26) error calling node: reserving funds: failed to sign message: sign message has error%!(EXTRA string=f3rrdbktkt4sh4hdivg46d4jysscf6onrdujgeplbenynunclluu6okwdf4c253pn6uh52xypppeqxo7qc4dbq, *errors.errorString=Could not sign this message!)
   f0813086: 'error, Korea, Jung-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 2.139061327855310313 FIL, balance: 0.843429038569094354 FIL): not enough funds to execute transaction
   f0822674: 'error, Korea, Seoul', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.04999999999347045 FIL, balance: 0.004593553855815902 FIL): not enough funds to execute transaction
-  f0840060: 'error, China, Changchun', // error reading Response message from provider: stream reset
+  f0840060: 'delist, China, Changchun', // error reading Response message from provider: stream reset
   f0862933: 'error, USA, Huntersville', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals errored: handler: websocket connection closed
   f0870558: 'error, China, Hong Kong', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.069999999990594938 FIL, balance: 0.064481947164420402 FIL): not enough funds to execute transaction
   f01039753: 'error, China, Suqian', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals errored: handler: websocket connection closed
@@ -873,7 +874,7 @@ const annotations = {
   f0859013: 'rejected, China, Nanjing', // no online
   f0859880: "rejected, China, Ya'an", // deal start epoch is too far in the future: 857996 > 857995
   f0872282: 'rejected, China, Guangzhou', // no online
-  f0873601: 'rejected, Romania, Bucharest', // no online
+  f0873601: 'delist, Romania, Bucharest', // no online
   f0875769: 'rejected, USA, Salt Lake City', // miner is not accepting unverified storage deals
   f0986118: 'rejected, Korea, Incheon', // no online
   f01024569: 'rejected, China, Hangzhou', // no online
@@ -2380,7 +2381,7 @@ const annotations = {
   f0820770: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0821595: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0822151: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0822203: 'fail, Korea, Seoul', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWR85pE3KANxi49fu1pNSeSWPTkePHqnBBt6aP8X6NBse5:  * [/ip4/210.223.11.70/tcp/25001] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWR85pE3KANxi49fu1pNSeSWPTkePHqnBBt6aP8X6NBse5, but remote key matches 12D3KooWPMVpKPyN82J8dX9CBWK9TJneQbv1kNXgC3nwjqygmjgc
+  f0822203: 'delist, Korea, Seoul', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWR85pE3KANxi49fu1pNSeSWPTkePHqnBBt6aP8X6NBse5:  * [/ip4/210.223.11.70/tcp/25001] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWR85pE3KANxi49fu1pNSeSWPTkePHqnBBt6aP8X6NBse5, but remote key matches 12D3KooWPMVpKPyN82J8dX9CBWK9TJneQbv1kNXgC3nwjqygmjgc
   f0822441: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0822818: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0823127: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
