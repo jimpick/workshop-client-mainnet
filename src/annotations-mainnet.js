@@ -16,6 +16,7 @@ const annotations = {
 
   f01040006: 'new, Korea, Jung-gu',
   f01040469: 'new, Korea',
+  f01041703: 'new, China, Taiwan, New Taipei',
 
   // Inflight
 
