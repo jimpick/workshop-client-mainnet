@@ -18,6 +18,9 @@ const annotations = {
   f01040469: 'new, Korea',
   f01041703: 'new, China, Taiwan, New Taipei',
   f01039327: 'new, Indonesia, Denpasar',
+  f0867288: 'nopeer, NR',
+  f0838893: 'new, USA, Des Moines',
+  f01033857: 'new, China, Xinjiang',
 
   // Inflight
 
