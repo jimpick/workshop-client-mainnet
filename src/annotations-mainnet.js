@@ -29,6 +29,11 @@ const annotations = {
   f01042552: 'new, Japan, Tokyo', // carry-over
   f01043041: 'new, Germany, Oberursel', // carry-over
 
+  f0685797: 'new, NR',
+  f01016255: 'nopeer, NR',
+  f01032657: 'new, NR',
+  f01036920: 'new, NR',
+
   // Inflight
 
   // Unknown
