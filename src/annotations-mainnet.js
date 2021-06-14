@@ -14,6 +14,8 @@ const annotations = {
 
   // New
 
+  f01045812: 'new, China, Taiwan, New Taipei',
+
   // Inflight
 
   // Unknown
