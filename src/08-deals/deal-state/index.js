@@ -250,7 +250,9 @@ function BucketDealList ({
   dealHistory,
   height,
   now,
-  annotations
+  annotations,
+  copyMessage,
+  setCopyMessage
 }) {
   const minerEntries = []
   const toAnnotationsMap = {}
@@ -423,7 +425,7 @@ function BucketDealList ({
           <summary>
             New entries (
             {toAnnotationsOut === '' ? 0 : toAnnotationsOut.split('\n').length}){' '}
-            <button onClick={copyNewEntries}>Copy to Clipboard</button>{' '}
+            <button onClick={copyNewEntries}>Copy to Clipboard</button>{' '}{copyMessage}{' '}
             {nextBucket && <a href={`#${nextBucket}`}>⇨ {nextBucket}</a>}
           </summary>
           <pre>{toAnnotationsOut}</pre>
@@ -436,7 +438,9 @@ function BucketDealList ({
   async function copyNewEntries () {
     console.log('Copying to clipboard', toAnnotationsOut)
     await copy(toAnnotationsOut)
-    console.log('Copied.')
+    const copyMessage = `Copied ${bucket}.`
+    setCopyMessage(copyMessage)
+    console.log(copyMessage)
   }
 }
 
@@ -444,6 +448,7 @@ export default function DealList ({ appState, cid, dealType }) {
   const { selectedNode, deals: originalDeals } = appState
   const [now, setNow] = useState(Date.now())
   const [height, setHeight] = useState()
+  const [copyMessage, setCopyMessage] = useState()
   const client = useLotusClient(selectedNode, 'node')
   const scrollEl = useRef(null)
 
@@ -611,7 +616,9 @@ export default function DealList ({ appState, cid, dealType }) {
                   dealHistory,
                   height,
                   now,
-                  annotations
+                  annotations,
+                  copyMessage,
+                  setCopyMessage
                 })}
               </div>
             ))}
