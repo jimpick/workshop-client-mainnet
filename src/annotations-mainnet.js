@@ -14,6 +14,11 @@ const annotations = {
 
   // New
 
+  f01024886: 'new, China, Wenzhou',
+  f01044351: 'new, Korea, Gwangju',
+  f01044658: 'new, USA, Fremont',
+  f01044820: 'new, Japan, Tokyo',
+
   // Inflight
 
   f01154: 'inflight, NR', // FundsReserved: about 12 hours
