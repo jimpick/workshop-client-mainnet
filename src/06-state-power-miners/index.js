@@ -298,11 +298,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
       return Object.keys(avgPowerReport.miners)
     }
     return null
-  }, [
-    minersLive,
-    loadMiners,
-    avgPowerReport
-  ])
+  }, [minersLive, loadMiners, avgPowerReport])
 
   const filteredNonRoutableMiners = useMemo(() => {
     if (queryAllMinersWithPower) return miners
@@ -450,22 +446,98 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
             state.minerPowerUpdates.push(draft => {
               const minerReport = avgPowerReport.miners[miner]
               draft[miner] = {
-                QualityAdjPower: minerReport ? minerReport.qualityAdjPower : null,
+                QualityAdjPower: minerReport
+                  ? minerReport.qualityAdjPower
+                  : null,
                 RawBytePower: minerReport ? minerReport.rawBytePower : null
               }
             })
             processMinerPowerUpdates()
+            const minerReport = minerInfoReport.miners[miner]
+            const maddrsFromReport = minerReport ? minerReport.multiaddrsDecoded : null
             state.minerInfoUpdates.push(draft => {
               if (!draft[miner]) {
                 draft[miner] = {}
               }
-              const minerReport = minerInfoReport.miners[miner]
               const minerData = draft[miner]
               minerData.sectorSize = minerReport ? minerReport.sectorSize : null
               minerData.peerId = minerReport ? minerReport.peerId : null
-              minerData.addresses = []
+              minerData.addresses = maddrsFromReport
             })
             processMinerInfoUpdates()
+            if (minerReport) {
+              const wirePeerId = minerReport.peerId
+              if (!wirePeerId) {
+                // FIXME: This doesn't show in the UI
+                minerAddrsUpdates.push(draft => {
+                  draft[miner] = {}
+                  draft[miner].state = 'scanned'
+                  draft[miner].end = Date.now()
+                  draft[miner].error = 'Falsey PeerId'
+                })
+                processMinerAddrsUpdates()
+                return
+              }
+
+              const addresses = []
+              if (maddrsFromReport) {
+                // console.log('Miner Info:', miner, minerInfo)
+                const ips = new Set()
+                let addrsError
+                for (const maddr of maddrsFromReport) {
+                  console.log(`Miner: ${miner} maddr ${maddr}`)
+                  addresses.push(maddr)
+                  const matchIpv4 = maddr.match(/^\/ip4\/(\d+\.\d+\.\d+\.\d+)/)
+                  if (matchIpv4) {
+                    const ipv4Address = matchIpv4[1]
+                    if (
+                      !ip.isPrivate(ipv4Address) &&
+                      ipv4Address !== '0.0.0.0'
+                    ) {
+                      console.log(`    ${ipv4Address}`)
+                      ips.add(ipv4Address)
+                    }
+                    // FIXME: IPv6
+                  }
+                  const matchDns4 = maddr.match(/^\/dns4\/([^/]+)/)
+                  if (matchDns4) {
+                    console.log(`    FIXME: ${miner} Resolve ${matchDns4[1]}`)
+                    // Look up IPv4 using geoip-server endpoint
+                  }
+                }
+                const geoIp = {}
+                for (const ipAddr of ips) {
+                  try {
+                    const url =
+                      (geoSecure ? 'https://' : 'http://') +
+                      `${geoApi}/geoip/ipv4/${ipAddr}`
+                    const response = await fetch(url)
+                    geoIp[ipAddr] = await response.json()
+                  } catch (e) {
+                    console.error(`GeoIP error`, e)
+                  }
+                }
+                // await new Promise(resolve => setTimeout(resolve, 5000))
+                minerAddrsUpdates.push(draft => {
+                  draft[miner] = {}
+                  draft[miner].state = 'scanned'
+                  draft[miner].end = Date.now()
+                  if (addrsError) {
+                    draft[miner].error = addrsError
+                  } else {
+                    draft[miner].addrs = []
+                    for (const ipAddr of ips) {
+                      console.log('geoip', ipAddr, geoIp[ipAddr])
+                      draft[miner].addrs.push({
+                        ip: ipAddr,
+                        geo: geoIp[ipAddr]
+                      })
+                    }
+                  }
+                })
+                processMinerAddrsUpdates()
+              }
+            }
             return
           }
           const result = await client.stateMinerPower(miner, tipsetKey)
@@ -536,7 +608,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           } else if (isIPFS.multihash(wirePeerId)) {
             peerId = wirePeerId
           } else {
-            // PeerID is bas634 encoded binary (bug in interopnet)
+            // PeerID is base64 encoded binary (bug in interopnet)
             const binPeerId = Buffer.from(wirePeerId, 'base64')
             // console.log('Jim binPeerId', binPeerId)
             try {
