@@ -17,10 +17,15 @@ const annotations = {
 
   // New
 
+  f0167254: 'new, Russia, St. Petersburg',
   f0838923: 'new, Netherlands, Amsterdam', // carry-over
   f01028552: 'new, NR', // carry-over
   f01033923: 'new, Korea, Yongin-si', // carry-over
+  f01035021: 'new, NR',
   f01045812: 'new, China, Taiwan, New Taipei', // carry-over
+  f01045985: 'new, Russia',
+  f01045592: 'new, NR',
+  f01046865: 'new, China, Shenzhen',
 
   // Inflight
 
