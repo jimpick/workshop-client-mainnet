@@ -12,10 +12,10 @@ import PeerId from 'peer-id'
 import isIPFS from 'is-ipfs'
 import Multiaddr from 'multiaddr'
 import useLotusClient from '../lib/use-lotus-client'
-// import useMiners from '../lib/use-miners-all'
 import useMiners from '../lib/use-miners'
 import useMinerReportPowerDailyAverage from '../lib/use-mr-power-daily-avg'
 import useMinerReportPowerMultidayAverage from '../lib/use-mr-power-multiday-avg'
+import useMinerReportInfo from '../lib/use-mr-info-subset'
 import baiduCities from '../lib/baidu-cities'
 import { geoApi, geoSecure, networkName, useGeoIp2, useBaidu } from '../config'
 
@@ -238,6 +238,7 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
   const [quickMode, setQuickMode] = useState(true)
   const avgPowerReport = useMinerReportPowerDailyAverage()
   const avgMultiPowerReport = useMinerReportPowerMultidayAverage()
+  const minerInfoReport = useMinerReportInfo()
 
   useEffect(() => {
     idbGet(nonRoutableSetKey).then(data => {
@@ -458,9 +459,10 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
               if (!draft[miner]) {
                 draft[miner] = {}
               }
+              const minerReport = minerInfoReport.miners[miner]
               const minerData = draft[miner]
-              minerData.sectorSize = 0
-              minerData.peerId = ''
+              minerData.sectorSize = minerReport ? minerReport.sectorSize : null
+              minerData.peerId = minerReport ? minerReport.peerId : null
               minerData.addresses = []
             })
             processMinerInfoUpdates()
@@ -690,7 +692,16 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
     updateIpLookupList,
     setMinersScanned,
     tipsetKey,
-    quickMode
+    quickMode,
+    avgPowerReport,
+    minerInfoReport,
+    loadMiners,
+    genesisCid,
+    miners,
+    queryAllMinersWithAnnotations,
+    minerAddrsUpdates,
+    processMinerAddrsUpdates,
+    nonRoutableSet
   ])
 
   // Process ipLookupList
@@ -1079,6 +1090,16 @@ export default function StatePowerMiners ({ appState, updateAppState }) {
           <>
             Cached Multiday Avg. Power: {avgMultiPowerReport.date} (
             {Object.keys(avgMultiPowerReport.miners).length} records)
+          </>
+        ) : (
+          'Loading Cached Multiday Avg. Power'
+        )}
+      </div>
+      <div>
+        {minerInfoReport ? (
+          <>
+            Miner Info Report: {minerInfoReport.date} (
+            {Object.keys(minerInfoReport.miners).length} records)
           </>
         ) : (
           'Loading Cached Multiday Avg. Power'
