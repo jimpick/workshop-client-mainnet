@@ -156,7 +156,7 @@ const annotations = {
   f0447181: 'sealing, China, Zibo', // 2047457
   f0514737: 'sealing, Korea, Busan', // 2047471
   f0519331: 'sealing, NR', // 2049491
-  f0521569: 'sealing, Korea, Guro-go', // 2047545
+  f0521569: 'active, Korea, Guro-go', // 2047545
   f0646439: 'sealing, NR', // 2049533
   f0693131: 'sealing, China, Zhongshan', // 2047460
   f0720636: 'sealing, Belgium, Bonheiden', // 2047574
