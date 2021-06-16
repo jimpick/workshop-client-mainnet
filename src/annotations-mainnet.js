@@ -2448,7 +2448,7 @@ const annotations = {
   f0878351: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0878807: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0881687: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0883511: 'fail, Korea, Guro-gu', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWLW5w9Hgv8BTdL7TsSscQnweuDNLdaAoa1kF2kJcjYfMs:  * [/ip4/59.6.138.33/tcp/24001] dial tcp4 59.6.138.33:24001: connect: connection refused
+  f0883511: 'delist, Korea, Guro-gu', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWLW5w9Hgv8BTdL7TsSscQnweuDNLdaAoa1kF2kJcjYfMs:  * [/ip4/59.6.138.33/tcp/24001] dial tcp4 59.6.138.33:24001: connect: connection refused
   f0884455: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0884781: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0884795: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
