@@ -3344,7 +3344,7 @@ const annotations = {
   f0147676: 'delist, Korea, Seoul', // carry-over
   f0149670: 'delist, NR', // carry-over
   f0149783: 'delist, NR', // carry-over
-  f0155687: 'delist, China, Guangzhou', // carry-over
+  f0155687: 'retest, China, Guangzhou', // carry-over
   f0156232: 'delist, China, Fuzhou', // carry-over
   f0160291: 'delist, USA', // carry-over
   f0164326: 'delist, China, Beijing', // carry-over
