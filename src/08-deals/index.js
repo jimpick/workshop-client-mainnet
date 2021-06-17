@@ -18,6 +18,12 @@ export default function Deals ({ appState, updateAppState }) {
         </button>
         <button
           style={{ height: '2rem', marginBottom: '1rem' }}
+          onClick={clearError}
+        >
+          Clear Error
+        </button>
+        <button
+          style={{ height: '2rem', marginBottom: '1rem' }}
           onClick={clearBackoff}
         >
           Clear Backoff
@@ -74,6 +80,19 @@ export default function Deals ({ appState, updateAppState }) {
       draft.deals = []
       draft.dealData = {}
       draft.dealHistory = {}
+    })
+  }
+
+  function clearError () {
+    updateAppState(draft => {
+      const newDeals = []
+      for (const deal of draft.deals) {
+        const annotation = annotations[deal.miner]
+        if (!annotation.match(/^error,/)) {
+          newDeals.push(deal)
+        }
+      }
+      draft.deals = newDeals
     })
   }
 
