@@ -601,7 +601,7 @@ const annotations = {
   f03362: 'rejected, Germany, Berlin',
   f07709: 'rejected, Korea, Dongjak-gu', // deal start epoch is too far in the future: 873734 > 872774
   f08197: 'rejected, China, Foshan', // deal start epoch is too far in the future: 873763 > 872323
-  f09642: 'rejected, Sweden, Alvsjo', // deal start epoch is too far in the future: 877783 > 877765
+  f09642: 'delist, Sweden, Alvsjo', // deal start epoch is too far in the future: 877783 > 877765
   f010035: 'rejected, Netherlands + China, Suzhou',
   f010241: 'rejected, China, Beijing + USA, Portland, 6Block-P', // no online
   f010405: 'rejected, China, Foshan',
@@ -689,7 +689,7 @@ const annotations = {
   f0109272: 'rejected, China, Dongguan', // no online
   f0110133: 'rejected, China, Ningbo', // no online
   f0110762: 'rejected, Korea, Seoul', // no online
-  f0111544: 'rejected, Korea, Seoul', // no online
+  f0111544: 'retest, Korea, Seoul', // no online
   f0111658: 'rejected, China, Fuzhou', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
   f0112075: 'rejected, Korea, Seoul', // no online
   f0112087: 'rejected, China, Xiamen', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
@@ -2324,7 +2324,7 @@ const annotations = {
   f0756840: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0757233: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0757610: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0758230: 'fail, Korea, Geumcheon-gu', // exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f0758230: 'delist, Korea, Geumcheon-gu', // exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0763048: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0763082: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0763093: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -3449,12 +3449,12 @@ const annotations = {
   f0697132: 'delist, Korea, Busan', // carry-over
   f0697162: 'delist, Finland, Helsinki', // carry-over
   f0698866: 'delist, Finland, Helsinki', // carry-over
-  f0705521: 'delist, NR', // carry-over
+  f0705521: 'retest, NR', // carry-over
   f0715707: 'delist, Japan, Yokohama', // carry-over
   f0720716: 'delist, Korea, Seoul', // carry-over
   f0720762: 'delist, Korea, Incheon', // carry-over
   f0721545: 'delist, Korea, Seo-gu', // carry-over
-  f0723162: 'delist, Korea, Bucheon-si', // carry-over
+  f0723162: 'retest, Korea, Bucheon-si', // carry-over
   f0724179: 'delist, China, Wenzhou', // carry-over
   f0724192: 'delist, Korea, Hwaseong-si', // carry-over
   f0727067: 'delist, Norway', // carry-over
