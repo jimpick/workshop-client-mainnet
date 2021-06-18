@@ -86,6 +86,7 @@ const annotations = {
   // Sealing
 
   f08103: 'sealing, China, Foshan', // 2081345
+  f053088: 'sealing, China, Shanghai', // 2083483
   f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 2081444
   f0101087: 'sealing, Korea', // 2081440
   f0121533: 'sealing, China, Zhejiang', // 2081437
@@ -97,33 +98,30 @@ const annotations = {
   f0166327: 'sealing, NR', // 2081448
   f0396846: 'sealing, China, Zhongshan', // 2081469
   f0400920: 'sealing, China, Luzhou', // 2081446
+  f0433689: 'sealing, NR', // 2081842
   f0447181: 'sealing, China, Zibo', // 2081435
   f0460440: 'sealing, Korea, Seongnam-si', // 2081441
   f0693131: 'sealing, China, Zhongshan', // 2081449
+  f0756207: 'sealing, Korea', // 2083484
   f0805568: 'sealing, Korea, Gangnam-gu', // 2081442
+  f0835643: 'sealing, Korea, Songpa-gu', // 2083485
   f0857798: 'sealing, China, Wenzhou', // 2081445
   f01024886: 'sealing, China, Wenzhou', // 2081468
 
   // Stuck
 
-  f03345: 'stuck, China, Fuzhou, chh', // CheckForAcceptance: about 7 hours
-  f08019: 'stuck, China, Yantai, 三合', // CheckForAcceptance: about 7 hours
-  f033036: 'stuck, China, Liaoning', // CheckForAcceptance: about 7 hours
-  f044160: 'stuck, China, Guangzhou, muxing', // CheckForAcceptance: about 7 hours
-  f053088: 'stuck, China, Shanghai', // CheckForAcceptance: about 7 hours
+  f03345: 'stuck, China, Fuzhou, chh', // CheckForAcceptance: about 11 hours
+  f08019: 'stuck, China, Yantai, 三合', // CheckForAcceptance: about 11 hours
+  f033036: 'stuck, China, Liaoning', // CheckForAcceptance: about 10 hours
+  f044160: 'stuck, China, Guangzhou, muxing', // CheckForAcceptance: about 10 hours
   f086028: 'stuck, NR', // CheckForAcceptance: 1 day
-  f0104888: 'stuck, NR', // CheckForAcceptance: about 7 hours
-  f0119997: 'stuck, NR', // CheckForAcceptance: about 6 hours
-  f0130912: 'stuck, China, Hong Kong', // CheckForAcceptance: about 7 hours
+  f0104888: 'stuck, NR', // CheckForAcceptance: about 10 hours
+  f0119997: 'stuck, NR', // CheckForAcceptance: about 10 hours
+  f0130912: 'stuck, China, Hong Kong', // CheckForAcceptance: about 10 hours
   f0142059: 'stuck, NR', // CheckForAcceptance: 1 day
-  f0166512: 'stuck, NR', // CheckForAcceptance: about 7 hours
-  f0221135: 'stuck, USA, Atlanta', // CheckForAcceptance: about 7 hours
-  f0433689: 'stuck, NR', // CheckForAcceptance: about 7 hours
-  f0723600: 'stuck, China, Taiwan, Hsinchu', // CheckForAcceptance: about 7 hours
-  f0727453: 'stuck, Korea, Ulsan', // CheckForAcceptance: about 7 hours
-  f0756207: 'stuck, Korea', // CheckForAcceptance: about 7 hours
-  f0835643: 'stuck, Korea, Songpa-gu', // CheckForAcceptance: about 7 hours
-  f01045985: 'stuck, Russia', // CheckForAcceptance: about 7 hours
+  f0166512: 'stuck, NR', // CheckForAcceptance: about 10 hours
+  f0221135: 'stuck, USA, Atlanta', // CheckForAcceptance: about 10 hours
+  f01045985: 'stuck, Russia', // CheckForAcceptance: about 10 hours
 
   // Busy
 
@@ -574,6 +572,8 @@ const annotations = {
   f0514737: 'error, Korea, Busan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.738904791116970328 FIL, balance: 0.207563518026980456 FIL): not enough funds to execute transaction
   f0700999: 'error, China, Chengdu', // failed to complete data transfer: deal data transfer failed: 12D3KooWDr1z64V5VHNuXcKsLhDRg4U2A8K3nmKfo8RCb15s3m3K-12D3KooWBXkJYgb2CF1dpoBeiV5B8YULdkf3YPAjxGWgZjbk2gFS-1623946918662083076: after 4 consecutive restarts failed to transfer any data
   f0712678: 'error, Korea, Gangseo-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999949519488 FIL, balance: 0.022431547141715629 FIL): not enough funds to execute transaction
+  f0723600: 'error, China, Taiwan, Hsinchu', // AddPiece failed: normal shutdown of state machine
+  f0727453: 'error, Korea, Ulsan', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals exit code: SysErrOutOfGas(7)
   f0753213: 'error, China, Xiamen', // error reading Response message from provider: stream reset
   f0772766: 'error, China, Guangzhou', // deal failed: (State=26) error calling node: publishing deal: failed to sign message: sign message has error%!(EXTRA string=f3rrdbktkt4sh4hdivg46d4jysscf6onrdujgeplbenynunclluu6okwdf4c253pn6uh52xypppeqxo7qc4dbq, *errors.errorString=Could not sign this message!)
   f0864910: 'error, Korea, Gwangjin-gu', // AddPiece failed: normal shutdown of state machine
