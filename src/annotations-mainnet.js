@@ -797,7 +797,7 @@ const annotations = {
   f0485876: 'rejected, China, Changchun', // no online
   f0497031: 'rejected, China, Shangrao',
   f0510610: 'rejected, China, Shangrao',
-  f0512179: 'rejected, Korea, Bucheon-si', // deal start epoch is too far in the future: 873762 > 873655
+  f0512179: 'delist, Korea, Bucheon-si', // deal start epoch is too far in the future: 873762 > 873655
   f0513878: 'rejected, China, Guizhou', // sh: 1: /root/.lotusminer/dealfilter.pl: not found
   f0515360: 'rejected, NR', // no online
   f0516456: 'rejected, Korea, Jung-gu', // no online
@@ -849,7 +849,7 @@ const annotations = {
   f0845976: 'rejected, China, Jiaxing',
   f0859880: "rejected, China, Ya'an", // deal start epoch is too far in the future: 873740 > 873739
   f0872282: 'rejected, China, Guangzhou', // no online
-  f0873601: 'rejected, Romania, Bucharest', // deal start epoch is too far in the future: 873740 > 873737
+  f0873601: 'delist, Romania, Bucharest', // deal start epoch is too far in the future: 873740 > 873737
   f0875769: 'rejected, USA, Salt Lake City', // miner is not accepting unverified storage deals
   f01015491: 'rejected, Canada, Montreal', // no online
   f01024569: 'rejected, China, Hangzhou', // no online
@@ -2563,7 +2563,7 @@ const annotations = {
   f01013: 'delist, NR', // carry-over
   f01101: 'delist, China, Shanghai', // carry-over
   f01102: 'delist, China, Shandong', // carry-over
-  f01154: 'delist, NR', // carry-over
+  f01154: 'retest, NR', // carry-over
   f01156: 'delist, China, Hangzhou', // carry-over
   f01232: 'delist, China, Hangzhou', // carry-over
   f01274: 'delist, China, Guangdong', // carry-over
@@ -2679,7 +2679,7 @@ const annotations = {
   f09594: 'delist, NR', // carry-over
   f09610: 'delist, China, Beijing', // carry-over
   f09629: 'delist, NR', // carry-over
-  f09642: 'delist, Sweden, Alvsjo',
+  f09642: 'retest, Sweden, Alvsjo',
   f09662: 'delist, Canada, Surrey', // carry-over
   f09675: 'delist, USA', // carry-over
   f09689: 'delist, USA, Portland', // carry-over
@@ -3513,7 +3513,7 @@ const annotations = {
   f01017177: 'delist, Japan, Tokyo', // carry-over
   f01019892: 'delist, USA, Lake Elsinore', // carry-over
   f01021896: 'delist, Korea, Seoul', // carry-over
-  f01025894: 'delist, China, Zhengzhou', // carry-over
+  f01025894: 'retest, China, Zhengzhou', // carry-over
   f01029682: 'delist, USA, Palm Harbour', // carry-over
   f01031351: 'delist, USA, Palm Harbour', // carry-over
   f01034337: 'delist, Japan, Tokyo', // carry-over
