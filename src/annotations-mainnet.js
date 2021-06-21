@@ -17,7 +17,37 @@ const annotations = {
 
   // New
 
+  f0111175: 'new, unlisted',
   f0870354: 'new, NR', // carry-over
+  f01017269: 'new, USA, Fort Lauterdale',
+  f01022733: 'new, NR',
+  f01040516: 'new, NR',
+  f01045957: 'new, NR',
+  f01046069: 'new, NR',
+  f01047011: 'new, NR',
+  f01047445: 'new, NR',
+  f01048770: 'new, NR',
+  f01048957: 'new, Korea, Gangnam-gu',
+  f01049102: 'new, NR',
+  f01049468: 'new, NR',
+  f01049739: 'new, NR',
+  f01049918: 'new, USA, Bothell',
+  f01050158: 'new, China, Xinjiang',
+  f01050286: 'new, China, Guangzhou',
+  f01051151: 'new, Korea, Jung-ang',
+  f01051152: 'new, Korea, Jung-ang',
+  f01051178: 'new, NR',
+  f01051301: 'new, NR',
+  f01051828: 'new, USA, San Diego',
+  f01052311: 'new, NR',
+  f01052991: 'new, Korea, Jung-ang',
+  f01053334: 'new, Korea, Mapo-gu',
+  f01053413: 'new, NR',
+  f01054527: 'new, NR',
+  f01056782: 'new, China, Huizhou',
+  f01057303: 'new, China, Huizhou',
+
+
 
   // Inflight
 
