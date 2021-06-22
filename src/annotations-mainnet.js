@@ -14,6 +14,8 @@ const annotations = {
 
   // New
 
+  f01052556: 'new, NR',
+
   // Inflight
 
   // Unknown
