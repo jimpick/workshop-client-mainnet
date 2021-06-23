@@ -21,7 +21,10 @@ const annotations = {
   f01052556: 'new, NR', // carry-over
   f01056608: 'new, NR',
   f01057193: 'new, NR',
+  f01059620: 'new, NR',
   f01060045: 'new, China, Foshan',
+  f01060792: 'new, USA, London',
+  f01061522: 'new, NR',
   f01062232: 'new, NR',
   f01062274: 'new, Korea, Busan',
   f01062833: 'new, China, Foshan',
