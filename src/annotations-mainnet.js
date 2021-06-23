@@ -620,7 +620,7 @@ const annotations = {
   f0818428: 'error, China, Yichang', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.006999999999141174 FIL, balance: 0.004233845266470354 FIL): not enough funds to execute transaction
   f0870558: 'error, China, Hong Kong', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.04265553382170357 FIL, balance: 0.020115637239989648 FIL): not enough funds to execute transaction
   f01027268: 'error, Korea, Busan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.334037923545148341 FIL, balance: 0.201915375970153208 FIL): not enough funds to execute transaction
-  f01044820: 'error, Japan, Tokyo', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.042225181610464692 FIL, balance: 0.03987802080619036 FIL): not enough funds to execute transaction
+  f01044820: 'delist, Japan, Tokyo', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.042225181610464692 FIL, balance: 0.03987802080619036 FIL): not enough funds to execute transaction
   f01051828: 'error, USA, San Diego', // deal failed: (State=26) error calling node: publishing deal: handler: websocket connection closed
 
   // Dial backoff
@@ -2516,20 +2516,20 @@ const annotations = {
   f01038389: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01039327: 'fail, Indonesia, Denpasar', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWBEt5yq5SaaZbmxokqHCT78HQjkYQVWotbSgfm51LSZw1:  * [/ip4/182.253.74.213/tcp/36087] dial tcp4 0.0.0.0:43897->182.253.74.213:36087: i/o timeout
   f01039576: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01040006: 'fail, Korea, Jung-gu', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01040006: 'delist, Korea, Jung-gu', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01040516: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01040707: 'fail, China, Tianjin', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWD6q85b77FELfxCckkCcNkPK5sGAZu17wN5LEJg2w1zCP:  * [/ip4/36.106.26.23/tcp/24001] dial tcp4 0.0.0.0:43897->36.106.26.23:24001: i/o timeout
   f01040817: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWDCVnKZDF54aTAqEK5T53stLd6T3quBSepb2UJepyNb4a:  * [/ip4/221.163.91.163/tcp/14224] dial tcp4 0.0.0.0:43897->221.163.91.163:14224: i/o timeout
-  f01041703: 'fail, China, Taiwan, New Taipei', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01041703: 'delist, China, Taiwan, New Taipei', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01042409: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01042552: 'fail, Japan, Tokyo', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01043041: 'fail, Germany, Oberursel', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWFaQefd4gQQy74GSJWLeXyoCYUK5fcu8DJyu8yGLSEKZB:  * [/ip4/192.168.178.88/tcp/43223] dial tcp4 0.0.0.0:43897->192.168.178.88:43223: i/o timeout
+  f01042552: 'delist, Japan, Tokyo', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01043041: 'delist, Germany, Oberursel', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWFaQefd4gQQy74GSJWLeXyoCYUK5fcu8DJyu8yGLSEKZB:  * [/ip4/192.168.178.88/tcp/43223] dial tcp4 0.0.0.0:43897->192.168.178.88:43223: i/o timeout
   f01043193: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01044658: 'fail, USA, Fremont', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01044658: 'delist, USA, Fremont', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01045592: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01045812: 'fail, China, Taiwan, New Taipei', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01046069: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01046865: 'fail, China, Shenzhen', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01046865: 'delist, China, Shenzhen', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01047011: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01047445: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01048770: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
