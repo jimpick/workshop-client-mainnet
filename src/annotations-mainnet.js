@@ -17,19 +17,19 @@ const annotations = {
   // New
 
   f01034007: 'new, NR', // carry-over
-  f01050978: 'new, NR',
+  f01050978: 'new, NR', // carry-over
   f01052556: 'new, NR', // carry-over
-  f01056608: 'new, NR',
-  f01057193: 'new, NR',
-  f01059620: 'new, NR',
-  f01060045: 'new, China, Foshan',
-  f01060792: 'new, USA, London',
-  f01061522: 'new, NR',
-  f01062232: 'new, NR',
-  f01062274: 'new, Korea, Busan',
-  f01062833: 'new, China, Foshan',
-  f01063173: 'new, Korea, Kayang-dong',
-  f01063481: 'new, USA, London',
+  f01056608: 'new, NR', // carry-over
+  f01057193: 'new, NR', // carry-over
+  f01059620: 'new, NR', // carry-over
+  f01060045: 'new, China, Foshan', // carry-over
+  f01060792: 'new, USA, London', // carry-over
+  f01061522: 'new, NR', // carry-over
+  f01062232: 'new, NR', // carry-over
+  f01062274: 'new, Korea, Busan', // carry-over
+  f01062833: 'new, China, Foshan', // carry-over
+  f01063173: 'new, Korea, Kayang-dong', // carry-over
+  f01063481: 'new, USA, London', // carry-over
 
   // Inflight
 
@@ -47,6 +47,7 @@ const annotations = {
   f079817: "active, Russia, Ul'yanovka", // 2120104 about 3 hours
   f080103: 'active, Korea, Seongnam-si', // 2120105 about 2 hours
   f097720: 'active, Korea, Bucheon-si', // 2120106 about 3 hours
+  f0101087: 'active, Korea', // 2120038 2 days
   f0104671: 'active, Japan, Ota-ku', // 2120311 about 3 hours
   f0110804: 'active, USA, Santa Clara', // 2119999 about 3 hours
   f0113331: 'active, Korea, Jinju + USA', // 2119990 about 2 hours
@@ -74,6 +75,7 @@ const annotations = {
   f0482619: 'active, Korea, Seongnam-si', // 2120004 about 2 hours
   f0488889: 'active, China, Nanchang', // 2120196 about 2 hours
   f0512170: 'active, Korea, Bucheon-si', // 2120103 about 3 hours
+  f0513351: 'active, NR', // 2120002 2 days
   f0675909: 'active, NR', // 2120012 about 3 hours
   f0706937: 'active, Korea, Bucheon-si', // 2120018 about 3 hours
   f0709739: 'active, China, Handan', // 2122758 1 day
@@ -105,7 +107,6 @@ const annotations = {
   f030125: 'active-sealing, China, Nantong', // 2119975
   f0157265: 'active-sealing, China, Zhangjiakou', // 2119998
   f0400920: 'active-sealing, China, Luzhou', // 2120008
-  f0513351: 'active-sealing, NR', // 2120002
   f0746416: 'active-sealing, Korea, Gyeonggi-do', // 2120015
   f0752695: 'active-sealing, Korea, Seongnam-si', // 2120020
   f0756207: 'active-sealing, Korea', // 2120010
@@ -125,7 +126,6 @@ const annotations = {
   f053088: 'sealing, China, Shanghai', // 2120045
   f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 2120047
   f097840: 'sealing, NR', // 2120251
-  f0101087: 'sealing, Korea', // 2120038
   f0104888: 'sealing, NR', // 2120059
   f0119997: 'sealing, NR', // 2120107
   f0121533: 'sealing, China, Zhejiang', // 2120056
@@ -153,7 +153,7 @@ const annotations = {
 
   // Stuck
 
-  f060754: 'stuck, NR', // CheckForAcceptance: 1 day
+  f060754: 'stuck, NR', // CheckForAcceptance: 3 days
 
   // Busy
 
@@ -620,7 +620,6 @@ const annotations = {
   f0818428: 'error, China, Yichang', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.006999999999141174 FIL, balance: 0.004233845266470354 FIL): not enough funds to execute transaction
   f0870558: 'error, China, Hong Kong', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.04265553382170357 FIL, balance: 0.020115637239989648 FIL): not enough funds to execute transaction
   f01027268: 'error, Korea, Busan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.334037923545148341 FIL, balance: 0.201915375970153208 FIL): not enough funds to execute transaction
-  f01044820: 'delist, Japan, Tokyo', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.042225181610464692 FIL, balance: 0.03987802080619036 FIL): not enough funds to execute transaction
   f01051828: 'error, USA, San Diego', // deal failed: (State=26) error calling node: publishing deal: handler: websocket connection closed
 
   // Dial backoff
@@ -2516,20 +2515,14 @@ const annotations = {
   f01038389: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01039327: 'fail, Indonesia, Denpasar', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWBEt5yq5SaaZbmxokqHCT78HQjkYQVWotbSgfm51LSZw1:  * [/ip4/182.253.74.213/tcp/36087] dial tcp4 0.0.0.0:43897->182.253.74.213:36087: i/o timeout
   f01039576: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01040006: 'delist, Korea, Jung-gu', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01040516: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01040707: 'fail, China, Tianjin', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWD6q85b77FELfxCckkCcNkPK5sGAZu17wN5LEJg2w1zCP:  * [/ip4/36.106.26.23/tcp/24001] dial tcp4 0.0.0.0:43897->36.106.26.23:24001: i/o timeout
   f01040817: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWDCVnKZDF54aTAqEK5T53stLd6T3quBSepb2UJepyNb4a:  * [/ip4/221.163.91.163/tcp/14224] dial tcp4 0.0.0.0:43897->221.163.91.163:14224: i/o timeout
-  f01041703: 'delist, China, Taiwan, New Taipei', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01042409: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01042552: 'delist, Japan, Tokyo', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01043041: 'delist, Germany, Oberursel', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWFaQefd4gQQy74GSJWLeXyoCYUK5fcu8DJyu8yGLSEKZB:  * [/ip4/192.168.178.88/tcp/43223] dial tcp4 0.0.0.0:43897->192.168.178.88:43223: i/o timeout
   f01043193: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01044658: 'delist, USA, Fremont', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01045592: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01045812: 'fail, China, Taiwan, New Taipei', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01046069: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01046865: 'delist, China, Shenzhen', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01047011: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01047445: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01048770: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -3562,7 +3555,14 @@ const annotations = {
   f01034337: 'delist, Japan, Tokyo', // carry-over
   f01036391: 'delist, Korea, Jung-gu', // carry-over
   f01037829: 'delist, USA, Palm Harbour',
-  f01038170: 'delist, China, Shenzhen'
+  f01038170: 'delist, China, Shenzhen',
+  f01040006: 'delist, Korea, Jung-gu',
+  f01041703: 'delist, China, Taiwan, New Taipei',
+  f01042552: 'delist, Japan, Tokyo',
+  f01043041: 'delist, Germany, Oberursel',
+  f01044658: 'delist, USA, Fremont',
+  f01044820: 'delist, Japan, Tokyo',
+  f01046865: 'delist, China, Shenzhen'
 }
 
 export default annotations
