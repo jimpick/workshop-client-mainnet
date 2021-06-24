@@ -31,6 +31,9 @@ const annotations = {
   f01063173: 'new, Korea, Kayang-dong', // carry-over
   f01063481: 'new, USA, London', // carry-over
 
+  f01030435: 'new, NR',
+  f01045078: 'new, NR',
+
   // Inflight
 
   // Unknown
