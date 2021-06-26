@@ -96,7 +96,7 @@ const annotations = {
 
   // Sealing
 
-  f0458627: 'sealing, Korea, Seongnam-si', // 2166147
+  f0458627: 'active, Korea, Seongnam-si', // 2166147
 
   // Stuck
 
