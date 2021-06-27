@@ -14,9 +14,9 @@ const annotations = {
 
   // New
 
-  f0857612: 'new, NR',
-  f0881262: 'new, NR',
-  f01064991: 'new, NR',
+  f0857612: 'new, NR', // carry-over
+  f0881262: 'new, NR', // carry-over
+  f01064991: 'new, NR', // carry-over
 
   // Inflight
 
@@ -24,74 +24,79 @@ const annotations = {
 
   // Active
 
+  f01277: 'active, Sweden, Stockholm, tvsthlm', // 2179465 about 15 hours
   f022352: 'active, Norway, Borgen, TechHedge, @Reiers', // 2179471 about 2 hours
+  f033025: 'active, Korea, Daegu', // 2179299 about 15 hours
   f079817: "active, Russia, Ul'yanovka", // 2179300 about 2 hours
+  f097214: 'active, Korea, Bucheon-si, CryptoHash', // 2179292 about 6 hours
+  f0104671: 'active, Japan, Ota-ku', // 2182494 about 12 hours
+  f0111885: 'active, Korea, Bucheon-si, WINNERS', // 2179291 about 15 hours
+  f0112713: 'active, Korea, Bucheon-si', // 2179338 about 6 hours
+  f0113331: 'active, Korea, Jinju + USA', // 2179312 about 15 hours
+  f0115108: 'active, Korea, Yangcheon-gu', // 2179296 about 15 hours
+  f0131901: 'active, Korea, Daejeon', // 2179309 about 15 hours
   f0137168: 'active, China, Beijing', // 2179303 about 2 hours
+  f0145843: 'active, NR', // 2179311 about 15 hours
+  f0156207: 'active, Korea, Ulsan', // 2179313 about 15 hours
+  f0157513: 'active, Korea, Geumcheon-gu', // 2179316 about 15 hours
+  f0157564: 'active, Korea, Daejeon', // 2179310 about 15 hours
+  f0165539: 'active, Japan, Yokohama', // 2179485 about 15 hours
+  f0228855: 'active, Korea, Guro-gu', // 2179323 about 15 hours
+  f0230200: 'active, Korea, Gwanak-gu, G-mining', // 2179315 about 7 hours
   f0408717: 'active, Korea, Ansan-si', // 2179317 about 2 hours
+  f0482619: 'active, Korea, Seongnam-si', // 2179496 about 15 hours
+  f0512170: 'active, Korea, Bucheon-si', // 2179326 about 6 hours
+  f0512179: 'active, Korea, Bucheon-si', // 2179388 about 6 hours
+  f0513351: 'active, NR', // 2179322 about 15 hours
+  f0675909: 'active, NR', // 2179319 about 6 hours
+  f0729674: 'active, Canada, Vancouver', // 2179498 about 15 hours
   f0731235: 'active, Ukraine, Odessa', // 2179325 about 2 hours
+  f0756207: 'active, Korea', // 2179333 about 15 hours
+  f0805568: 'active, Korea, Gangnam-gu', // 2179332 about 15 hours
+  f0813086: 'active, Korea, Jung-gu', // 2179348 about 15 hours
   f01019009: 'active, China, Henan', // 2179081 about 2 hours
+  f01023503: 'active, Korea, Busan', // 2179349 about 15 hours
+  f01039327: 'active, Indonesia, Denpasar', // 2181131 about 14 hours
+  f01049918: 'active, USA, Bothell', // 2182896 about 7 hours
+  f01051828: 'active, USA, San Diego', // 2179393 about 15 hours
+  f01062274: 'active, Korea, Busan', // 2179390 about 7 hours
+  f01071194: 'active, USA, San Jose', // 2179381 about 15 hours
+  f01072221: 'active, USA, San Diego', // 2179382 about 15 hours
 
   // Active-sealing (active, with in-flight sealing)
 
   f024944: 'active-sealing, Korea, Yeongdeungpo-dong', // 2179297
-  f033025: 'active-sealing, Korea, Daegu', // 2179299
   f062318: 'active-sealing, Korea, Naju', // 2179298
-  f097214: 'active-sealing, Korea, Bucheon-si, CryptoHash', // 2179292
   f097720: 'active-sealing, Korea, Bucheon-si', // 2179306
   f0110804: 'active-sealing, USA, Santa Clara', // 2179294
-  f0111885: 'active-sealing, Korea, Bucheon-si, WINNERS', // 2179291
-  f0112713: 'active-sealing, Korea, Bucheon-si', // 2179338
-  f0113331: 'active-sealing, Korea, Jinju + USA', // 2179312
-  f0115108: 'active-sealing, Korea, Yangcheon-gu', // 2179296
   f0124554: 'active-sealing, Korea, Gimhae', // 2179428
   f0130912: 'active-sealing, China, Hong Kong', // 2179304
-  f0131901: 'active-sealing, Korea, Daejeon', // 2179309
-  f0145843: 'active-sealing, NR', // 2179311
-  f0156207: 'active-sealing, Korea, Ulsan', // 2179313
   f0157265: 'active-sealing, China, Zhangjiakou', // 2179314
-  f0157513: 'active-sealing, Korea, Geumcheon-gu', // 2179316
-  f0157564: 'active-sealing, Korea, Daejeon', // 2179310
   f0165375: 'active-sealing, Korea, Seongnam-si', // 2179308
-  f0228855: 'active-sealing, Korea, Guro-gu', // 2179323
-  f0230200: 'active-sealing, Korea, Gwanak-gu, G-mining', // 2179315
   f0401416: 'active-sealing, Japan, Fukuoka', // 2179320
   f0460440: 'active-sealing, Korea, Seongnam-si', // 2179329
-  f0482619: 'active-sealing, Korea, Seongnam-si', // 2179496
-  f0512170: 'active-sealing, Korea, Bucheon-si', // 2179326
-  f0512179: 'active-sealing, Korea, Bucheon-si', // 2179388
-  f0513351: 'active-sealing, NR', // 2179322
-  f0675909: 'active-sealing, NR', // 2179319
   f0709739: 'active-sealing, China, Handan', // 2179334
   f0712678: 'active-sealing, Korea, Gangseo-gu', // 2179328
   f0717913: 'active-sealing, Korea, Jung-gu', // 2179321
   f0727453: 'active-sealing, Korea, Ulsan', // 2179327
-  f0729674: 'active-sealing, Canada, Vancouver', // 2179498
   f0752695: 'active-sealing, Korea, Seongnam-si', // 2179331
-  f0756207: 'active-sealing, Korea', // 2179333
-  f0805568: 'active-sealing, Korea, Gangnam-gu', // 2179332
-  f0813086: 'active-sealing, Korea, Jung-gu', // 2179348
   f0822674: 'active-sealing, Korea, Seoul', // 2179342
   f0845245: 'active-sealing, Korea, Busan', // 2179346
-  f01023503: 'active-sealing, Korea, Busan', // 2179349
   f01033119: 'active-sealing, France, Paris', // 2179351
   f01050286: 'active-sealing, China, Guangzhou', // 2179385
-  f01051828: 'active-sealing, USA, San Diego', // 2179393
   f01053334: 'active-sealing, Korea, Mapo-gu', // 2179386
-  f01062274: 'active-sealing, Korea, Busan', // 2179390
 
   // Sealing
 
-  f01277: 'sealing, Sweden, Stockholm, tvsthlm', // 2179465
+  f025025: 'sealing, China, Qingdao', // 2179352
   f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 2179357
   f080103: 'sealing, Korea, Seongnam-si', // 2179364
   f094901: 'sealing, Korea, Bucheon-si', // 2179494
   f0101087: 'sealing, Korea', // 2179359
-  f0104671: 'sealing, Japan, Ota-ku', // 2182494
   f0110768: 'sealing, Korea, Gwangju', // 2179483
   f0134671: 'sealing, Korea, Gimpo-si', // 2179358
   f0152224: 'sealing, Korea, Yongdu-dong', // 2179387
   f0156452: 'sealing, Korea, Ulsan', // 2179365
-  f0165539: 'sealing, Japan, Yokohama', // 2179485
   f0166512: 'sealing, NR', // 2179355
   f0396846: 'sealing, China, Zhongshan', // 2179392
   f0399814: "sealing, China, Ya'an", // 2179368
@@ -108,58 +113,52 @@ const annotations = {
   f0746416: 'sealing, Korea, Gyeonggi-do', // 2179370
   f0835643: 'sealing, Korea, Songpa-gu', // 2179372
   f0855584: 'sealing, NR', // 2181165
+  f0862933: 'sealing, USA, Huntersville', // 2186692
   f0870558: 'sealing, China, Hong Kong', // 2179412
   f01027268: 'sealing, Korea, Busan', // 2179369
-  f01039327: 'sealing, Indonesia, Denpasar', // 2181131
   f01040469: 'sealing, Korea', // 2179377
-  f01049918: 'sealing, USA, Bothell', // 2182896
-  f01071194: 'sealing, USA, San Jose', // 2179381
-  f01072221: 'sealing, USA, San Diego', // 2179382
 
   // Stuck
 
-  f03345: 'stuck, China, Fuzhou, chh', // CheckForAcceptance: about 9 hours
-  f08019: 'stuck, China, Yantai, 三合', // CheckForAcceptance: about 9 hours
-  f014683: 'stuck, China, Dongguan', // CheckForAcceptance: about 9 hours
-  f020489: 'stuck, China, Lioaning', // CheckForAcceptance: about 9 hours
-  f023219: 'stuck, China, Beijing + Zhangjiakou', // CheckForAcceptance: about 9 hours
-  f025025: 'stuck, China, Qingdao', // CheckForAcceptance: about 9 hours
-  f030125: 'stuck, China, Nantong', // CheckForAcceptance: about 9 hours
-  f033036: 'stuck, China, Liaoning', // CheckForAcceptance: about 9 hours
-  f044160: 'stuck, China, Guangzhou, muxing', // CheckForAcceptance: about 9 hours
-  f053088: 'stuck, China, Shanghai', // CheckForAcceptance: about 9 hours
-  f063628: 'stuck, NR', // CheckForAcceptance: about 9 hours
-  f082635: 'stuck, NR', // CheckForAcceptance: about 9 hours
-  f0121533: 'stuck, China, Zhejiang', // CheckForAcceptance: about 9 hours
-  f0137019: 'stuck, NR', // CheckForAcceptance: about 9 hours
-  f0149455: 'stuck, NR', // CheckForAcceptance: about 9 hours
-  f0159961: 'stuck, China, Chongqing', // CheckForAcceptance: about 9 hours
-  f0162394: 'stuck, China, Guangzhou', // CheckForAcceptance: about 9 hours
-  f0166327: 'stuck, NR', // CheckForAcceptance: about 9 hours
-  f0179096: 'stuck, China, Fuzhou', // CheckForAcceptance: about 9 hours
-  f0215370: 'stuck, China, Hangzhou', // CheckForAcceptance: about 9 hours
-  f0400920: 'stuck, China, Luzhou', // CheckForAcceptance: about 9 hours
-  f0421392: 'stuck, China, Foshan', // CheckForAcceptance: about 9 hours
-  f0428306: 'stuck, NR', // CheckForAcceptance: about 9 hours
-  f0433689: 'stuck, NR', // CheckForAcceptance: about 9 hours
-  f0447181: 'stuck, China, Zibo', // CheckForAcceptance: about 9 hours
-  f0488889: 'stuck, China, Nanchang', // CheckForAcceptance: about 9 hours
-  f0504054: 'stuck, China, Luzhou', // CheckForAcceptance: about 9 hours
-  f0693131: 'stuck, China, Zhongshan', // CheckForAcceptance: about 9 hours
-  f0763981: 'stuck, China, Tianjin', // CheckForAcceptance: about 9 hours
-  f0772766: 'stuck, China, Guangzhou', // CheckForAcceptance: about 9 hours
-  f0805872: 'stuck, China, Hangzhou', // CheckForAcceptance: about 9 hours
-  f0810223: 'stuck, NR', // CheckForAcceptance: about 9 hours
-  f0832373: 'stuck, NR', // CheckForAcceptance: about 9 hours
-  f0839509: 'stuck, China, Beijing', // CheckForAcceptance: about 9 hours
-  f0857798: 'stuck, China, Wenzhou', // CheckForAcceptance: about 9 hours
-  f0862933: 'stuck, USA, Huntersville', // CheckForAcceptance: about 9 hours
-  f0876800: 'stuck, NR', // CheckForAcceptance: about 9 hours
-  f0877545: 'stuck, China, Ningbo', // CheckForAcceptance: about 9 hours
-  f01024886: 'stuck, China, Wenzhou', // CheckForAcceptance: about 9 hours
-  f01025894: 'stuck, China, Zhengzhou', // CheckForAcceptance: about 9 hours
-  f01039753: 'stuck, China, Suqian', // CheckForAcceptance: about 9 hours
-  f01067047: 'stuck, China, Foshan', // CheckForAcceptance: about 9 hours
+  f03345: 'stuck, China, Fuzhou, chh', // CheckForAcceptance: about 16 hours
+  f08019: 'stuck, China, Yantai, 三合', // CheckForAcceptance: about 16 hours
+  f014683: 'stuck, China, Dongguan', // CheckForAcceptance: about 16 hours
+  f020489: 'stuck, China, Lioaning', // CheckForAcceptance: about 16 hours
+  f023219: 'stuck, China, Beijing + Zhangjiakou', // CheckForAcceptance: about 16 hours
+  f030125: 'stuck, China, Nantong', // CheckForAcceptance: about 16 hours
+  f033036: 'stuck, China, Liaoning', // CheckForAcceptance: about 16 hours
+  f044160: 'stuck, China, Guangzhou, muxing', // CheckForAcceptance: about 16 hours
+  f053088: 'stuck, China, Shanghai', // CheckForAcceptance: about 16 hours
+  f063628: 'stuck, NR', // CheckForAcceptance: about 16 hours
+  f082635: 'stuck, NR', // CheckForAcceptance: about 16 hours
+  f0121533: 'stuck, China, Zhejiang', // CheckForAcceptance: about 16 hours
+  f0137019: 'stuck, NR', // CheckForAcceptance: about 16 hours
+  f0149455: 'stuck, NR', // CheckForAcceptance: about 16 hours
+  f0159961: 'stuck, China, Chongqing', // CheckForAcceptance: about 16 hours
+  f0162394: 'stuck, China, Guangzhou', // CheckForAcceptance: about 16 hours
+  f0166327: 'stuck, NR', // CheckForAcceptance: about 16 hours
+  f0179096: 'stuck, China, Fuzhou', // CheckForAcceptance: about 16 hours
+  f0215370: 'stuck, China, Hangzhou', // CheckForAcceptance: about 16 hours
+  f0400920: 'stuck, China, Luzhou', // CheckForAcceptance: about 16 hours
+  f0421392: 'stuck, China, Foshan', // CheckForAcceptance: about 16 hours
+  f0428306: 'stuck, NR', // CheckForAcceptance: about 16 hours
+  f0447181: 'stuck, China, Zibo', // CheckForAcceptance: about 16 hours
+  f0488889: 'stuck, China, Nanchang', // CheckForAcceptance: about 16 hours
+  f0504054: 'stuck, China, Luzhou', // CheckForAcceptance: about 16 hours
+  f0693131: 'stuck, China, Zhongshan', // CheckForAcceptance: about 16 hours
+  f0763981: 'stuck, China, Tianjin', // CheckForAcceptance: about 16 hours
+  f0772766: 'stuck, China, Guangzhou', // CheckForAcceptance: about 16 hours
+  f0805872: 'stuck, China, Hangzhou', // CheckForAcceptance: about 16 hours
+  f0810223: 'stuck, NR', // CheckForAcceptance: about 16 hours
+  f0832373: 'stuck, NR', // CheckForAcceptance: about 16 hours
+  f0839509: 'stuck, China, Beijing', // CheckForAcceptance: about 16 hours
+  f0857798: 'stuck, China, Wenzhou', // CheckForAcceptance: about 16 hours
+  f0876800: 'stuck, NR', // CheckForAcceptance: about 16 hours
+  f0877545: 'stuck, China, Ningbo', // CheckForAcceptance: about 16 hours
+  f01024886: 'stuck, China, Wenzhou', // CheckForAcceptance: about 16 hours
+  f01025894: 'stuck, China, Zhengzhou', // CheckForAcceptance: about 16 hours
+  f01039753: 'stuck, China, Suqian', // CheckForAcceptance: about 16 hours
+  f01067047: 'stuck, China, Foshan', // CheckForAcceptance: about 16 hours
 
   // Busy
 
@@ -603,6 +602,7 @@ const annotations = {
   f0146751: 'error, China, Jiangsu', // failed to complete data transfer: deal data transfer failed: 12D3KooWDr1z64V5VHNuXcKsLhDRg4U2A8K3nmKfo8RCb15s3m3K-12D3KooWGHmskoNX6BtSd8UvkEzAQFxckSg82iYerLta12uDa55T-1624679010656450935: after 4 consecutive restarts failed to transfer any data
   f0396705: 'error, NR', // failed to complete data transfer: deal data transfer failed: 12D3KooWDr1z64V5VHNuXcKsLhDRg4U2A8K3nmKfo8RCb15s3m3K-12D3KooWPBwe1zjfh5busocJHRzMdRGee73RJjkZ4gaMYxGrZ86o-1624679010656450936: after 4 consecutive restarts failed to transfer any data
   f0398865: 'error, Korea, Seoul', // error reading Response message from provider: stream reset
+  f0433689: 'error, NR', // AddPiece failed: normal shutdown of state machine
   f0717969: 'error, USA, Los Angeles', // deal failed: (State=26) deal data verification failed: error generating CommP: failed to build treeCaused by:    0: failed to create data store    1: No such file or directory (os error 2)
   f0723006: 'error, Korea, Bucheon-si', // AddPiece failed: normal shutdown of state machine
   f0723600: 'error, China, Taiwan, Hsinchu', // AddPiece failed: normal shutdown of state machine
