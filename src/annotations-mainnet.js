@@ -16,8 +16,7 @@ const annotations = {
 
   // Inflight
 
-  f0116445: 'inflight, Singapore', // FundsReserved: about 1 hour
-  f0134516: 'inflight, Singapore', // FundsReserved: about 1 hour
+  f0116445: 'inflight, Singapore', // FundsReserved: about 18 hours
 
   // Unknown
 
@@ -27,17 +26,22 @@ const annotations = {
   f020489: 'active, China, Lioaning', // 2179375 about 16 hours
   f022352: 'active, Norway, Borgen, TechHedge, @Reiers', // 2179471 about 2 hours
   f023219: 'active, China, Beijing + Zhangjiakou', // 2179295 about 16 hours
+  f024944: 'active, Korea, Yeongdeungpo-dong', // 2179297 about 2 hours
   f030125: 'active, China, Nantong', // 2179473 about 16 hours
   f033025: 'active, Korea, Daegu', // 2179299 about 15 hours
   f033036: 'active, China, Liaoning', // 2179495 about 16 hours
   f062318: 'active, Korea, Naju', // 2179298 42 minutes
+  f063628: 'active, NR', // 2179301 about 6 hours
   f079817: "active, Russia, Ul'yanovka", // 2179300 about 2 hours
   f097214: 'active, Korea, Bucheon-si, CryptoHash', // 2179292 about 6 hours
+  f097720: 'active, Korea, Bucheon-si', // 2179306 about 4 hours
   f0104671: 'active, Japan, Ota-ku', // 2182494 about 12 hours
+  f0110804: 'active, USA, Santa Clara', // 2179294 about 3 hours
   f0111885: 'active, Korea, Bucheon-si, WINNERS', // 2179291 about 15 hours
   f0112713: 'active, Korea, Bucheon-si', // 2179338 about 6 hours
   f0113331: 'active, Korea, Jinju + USA', // 2179312 about 15 hours
   f0115108: 'active, Korea, Yangcheon-gu', // 2179296 about 15 hours
+  f0124554: 'active, Korea, Gimhae', // 2179428 about 3 hours
   f0131901: 'active, Korea, Daejeon', // 2179309 about 15 hours
   f0137168: 'active, China, Beijing', // 2179303 about 2 hours
   f0145843: 'active, NR', // 2179311 about 15 hours
@@ -52,53 +56,56 @@ const annotations = {
   f0215370: 'active, China, Hangzhou', // 2179484 6 minutes
   f0228855: 'active, Korea, Guro-gu', // 2179323 about 15 hours
   f0230200: 'active, Korea, Gwanak-gu, G-mining', // 2179315 about 7 hours
+  f0401416: 'active, Japan, Fukuoka', // 2179320 about 3 hours
   f0408717: 'active, Korea, Ansan-si', // 2179317 about 2 hours
+  f0421392: 'active, China, Foshan', // 2179305 about 2 hours
   f0428306: 'active, NR', // 2179318 about 16 hours
   f0460440: 'active, Korea, Seongnam-si', // 2179329 about 1 hour
   f0482619: 'active, Korea, Seongnam-si', // 2179496 about 15 hours
+  f0488889: 'active, China, Nanchang', // 2179330 about 2 hours
   f0504054: 'active, China, Luzhou', // 2179324 about 16 hours
   f0512170: 'active, Korea, Bucheon-si', // 2179326 about 6 hours
   f0512179: 'active, Korea, Bucheon-si', // 2179388 about 6 hours
   f0513351: 'active, NR', // 2179322 about 15 hours
+  f0521569: 'active, Korea, Guro-go', // 2179492 about 2 hours
   f0675909: 'active, NR', // 2179319 about 6 hours
   f0709739: 'active, China, Handan', // 2179334 16 minutes
+  f0717913: 'active, Korea, Jung-gu', // 2179321 about 2 hours
   f0729674: 'active, Canada, Vancouver', // 2179498 about 15 hours
   f0731235: 'active, Ukraine, Odessa', // 2179325 about 2 hours
   f0752695: 'active, Korea, Seongnam-si', // 2179331 about 1 hour
   f0756207: 'active, Korea', // 2179333 about 15 hours
   f0763981: 'active, China, Tianjin', // 2179341 about 16 hours
   f0805568: 'active, Korea, Gangnam-gu', // 2179332 about 15 hours
+  f0805872: 'active, China, Hangzhou', // 2179340 about 2 hours
   f0813086: 'active, Korea, Jung-gu', // 2179348 about 15 hours
   f0832373: 'active, NR', // 2179347 about 16 hours
   f0839509: 'active, China, Beijing', // 2179343 about 16 hours
+  f0845245: 'active, Korea, Busan', // 2179346 about 18 hours
+  f0857798: 'active, China, Wenzhou', // 2179344 about 2 hours
+  f0862933: 'active, USA, Huntersville', // 2186692 about 5 hours
   f0877545: 'active, China, Ningbo', // 2179337 34 minutes
   f01019009: 'active, China, Henan', // 2179081 about 2 hours
   f01023503: 'active, Korea, Busan', // 2179349 about 15 hours
+  f01033119: 'active, France, Paris', // 2179351 about 3 hours
   f01039327: 'active, Indonesia, Denpasar', // 2181131 about 14 hours
   f01039753: 'active, China, Suqian', // 2179336 about 16 hours
   f01049918: 'active, USA, Bothell', // 2182896 about 7 hours
   f01050286: 'active, China, Guangzhou', // 2179385 28 minutes
   f01051828: 'active, USA, San Diego', // 2179393 about 15 hours
+  f01053334: 'active, Korea, Mapo-gu', // 2179386 about 2 hours
   f01062274: 'active, Korea, Busan', // 2179390 about 7 hours
+  f01067047: 'active, China, Foshan', // 2179391 about 3 hours
   f01071194: 'active, USA, San Jose', // 2179381 about 15 hours
   f01072221: 'active, USA, San Diego', // 2179382 about 15 hours
 
   // Active-sealing (active, with in-flight sealing)
 
-  f024944: 'active-sealing, Korea, Yeongdeungpo-dong', // 2179297
-  f097720: 'active-sealing, Korea, Bucheon-si', // 2179306
-  f0110804: 'active-sealing, USA, Santa Clara', // 2179294
-  f0124554: 'active-sealing, Korea, Gimhae', // 2179428
   f0130912: 'active-sealing, China, Hong Kong', // 2179304
   f0157265: 'active-sealing, China, Zhangjiakou', // 2179314
-  f0401416: 'active-sealing, Japan, Fukuoka', // 2179320
   f0712678: 'active-sealing, Korea, Gangseo-gu', // 2179328
-  f0717913: 'active-sealing, Korea, Jung-gu', // 2179321
   f0727453: 'active-sealing, Korea, Ulsan', // 2179327
   f0822674: 'active-sealing, Korea, Seoul', // 2179342
-  f0845245: 'active-sealing, Korea, Busan', // 2179346
-  f01033119: 'active-sealing, France, Paris', // 2179351
-  f01053334: 'active-sealing, Korea, Mapo-gu', // 2179386
 
   // Sealing
 
@@ -106,9 +113,9 @@ const annotations = {
   f08019: 'sealing, China, Yantai, 三合', // 2179350
   f014683: 'sealing, China, Dongguan', // 2179339
   f025025: 'sealing, China, Qingdao', // 2179352
+  f044160: 'sealing, China, Guangzhou, muxing', // 2179356
   f053088: 'sealing, China, Shanghai', // 2179354
   f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 2179357
-  f063628: 'sealing, NR', // 2179301
   f080103: 'sealing, Korea, Seongnam-si', // 2179364
   f082635: 'sealing, NR', // 2179482
   f094901: 'sealing, Korea, Bucheon-si', // 2179494
@@ -116,6 +123,7 @@ const annotations = {
   f0110768: 'sealing, Korea, Gwangju', // 2179483
   f0121533: 'sealing, China, Zhejiang', // 2179361
   f0134671: 'sealing, Korea, Gimpo-si', // 2179358
+  f0137019: 'sealing, NR', // 2180241
   f0146751: 'sealing, China, Jiangsu', // 2187072
   f0149455: 'sealing, NR', // 2179376
   f0152224: 'sealing, Korea, Yongdu-dong', // 2179387
@@ -132,33 +140,23 @@ const annotations = {
   f0413563: 'sealing, Korea, Gangnam-gu', // 2179360
   f0414383: 'sealing, China, Dongguan', // 2179389
   f0419768: 'sealing, Korea, Seongnam-si', // 2179371
-  f0421392: 'sealing, China, Foshan', // 2179305
   f0447181: 'sealing, China, Zibo', // 2179353
   f0452303: 'sealing, NR', // 2181108
-  f0488889: 'sealing, China, Nanchang', // 2179330
   f0513685: 'sealing, NR', // 2180235
   f0514737: 'sealing, Korea, Busan', // 2179367
-  f0521569: 'sealing, Korea, Guro-go', // 2179492
+  f0693131: 'sealing, China, Zhongshan', // 2179374
   f0700999: 'sealing, China, Chengdu', // 2179466
   f0715639: 'sealing, NR', // 2187095
   f0746416: 'sealing, Korea, Gyeonggi-do', // 2179370
-  f0805872: 'sealing, China, Hangzhou', // 2179340
   f0810223: 'sealing, NR', // 2179345
   f0835643: 'sealing, Korea, Songpa-gu', // 2179372
   f0855584: 'sealing, NR', // 2181165
-  f0857798: 'sealing, China, Wenzhou', // 2179344
-  f0862933: 'sealing, USA, Huntersville', // 2186692
   f0870558: 'sealing, China, Hong Kong', // 2179412
   f0876800: 'sealing, NR', // 2179373
   f01027268: 'sealing, Korea, Busan', // 2179369
   f01040469: 'sealing, Korea', // 2179377
-  f01067047: 'sealing, China, Foshan', // 2179391
 
   // Stuck
-
-  f044160: 'stuck, China, Guangzhou, muxing', // CheckForAcceptance: about 18 hours
-  f0137019: 'stuck, NR', // CheckForAcceptance: about 17 hours
-  f0693131: 'stuck, China, Zhongshan', // CheckForAcceptance: about 18 hours
 
   // Busy
 
@@ -597,6 +595,7 @@ const annotations = {
   f020928: 'error, China, Deyang + Singapore', // error reading Response message from provider: EOF
   f022820: 'error, China, Guangdong', // failed to complete data transfer: deal data transfer failed: response rejected
   f062937: 'error, NR', // error reading Response message from provider: EOF
+  f0134516: 'error, Singapore', // error reading Response message from provider: stream reset
   f0433689: 'error, NR', // AddPiece failed: normal shutdown of state machine
   f0717969: 'error, USA, Los Angeles', // deal failed: (State=26) deal data verification failed: error generating CommP: failed to build treeCaused by:    0: failed to create data store    1: No such file or directory (os error 2)
   f0723006: 'error, Korea, Bucheon-si', // AddPiece failed: normal shutdown of state machine
@@ -2617,7 +2616,6 @@ const annotations = {
   f01016255: 'nopeer, NR', // carry-over
 
   // Delist
-
   f01000: 'delist, NR - bootstrap', // carry-over
   f01001: 'delist, NR - bootstrap', // carry-over
   f01002: 'delist, NR - bootstrap', // carry-over
