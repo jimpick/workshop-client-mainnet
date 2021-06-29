@@ -18,6 +18,11 @@ const annotations = {
   f01075514: 'new, Korea, Jung-ang', // carry-over
   f01075517: 'new, Korea, Jung-ang', // carry-over
   f01076600: 'new, Korea, Seongnam-si', // carry-over
+  f01076629: 'new, NR',
+  f01076644: 'new, NR',
+  f01077708: 'new, NR',
+  f01077777: 'new, NR',
+  f01080779: 'new, China, Sichuan',
 
   // Inflight
 
