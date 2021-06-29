@@ -15,6 +15,8 @@ const annotations = {
   // New
 
   f01043023: 'new, NR', // carry-over
+  f01045784: 'new, USA, Ridgewood',
+  f01059489: 'new, NR',
   f01075514: 'new, Korea, Jung-ang', // carry-over
   f01075517: 'new, Korea, Jung-ang', // carry-over
   f01076600: 'new, Korea, Seongnam-si', // carry-over
