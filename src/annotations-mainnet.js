@@ -870,7 +870,7 @@ const annotations = {
   f0859880: "rejected, China, Ya'an", // deal start epoch is too far in the future: 905286 > 905273
   f0867312: 'rejected, China, Foshan', // no online
   f0872282: 'rejected, China, Guangzhou', // no online
-  f01015491: 'rejected, Canada, Montreal', // deal start epoch is too far in the future: 905287 > 903267
+  f01015491: 'delist, Canada, Montreal', // deal start epoch is too far in the future: 905287 > 903267
   f01024569: 'rejected, China, Hangzhou', // no online
   f01037628: 'rejected, NR', // deal start epoch is too far in the future: 905287 > 903367
   f01044351: 'rejected, Korea, Gwangju', // deal start epoch is too far in the future: 905287 > 903367
@@ -2553,11 +2553,11 @@ const annotations = {
   f01056608: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01057193: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01059620: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01060045: 'fail, China, Foshan', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01060045: 'delist, China, Foshan', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01060792: 'fail, USA, London', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWPw6ykido59BxBpQYGVCLznu9YAsfpBJCADYNU5ErMKVr:  * [/ip4/74.143.156.90/tcp/24001] dial tcp4 74.143.156.90:24001: connect: connection refused
   f01061522: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01062232: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01062833: 'fail, China, Foshan', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01062833: 'delist, China, Foshan', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01063481: 'fail, USA, London', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWNPnruVmv1dGA33RRVLHToqauSJ2tnJEWv6qiL9nXhQce:  * [/ip4/74.143.156.87/tcp/24001] dial tcp4 0.0.0.0:35971->74.143.156.87:24001: i/o timeout
   f01064991: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01065505: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
