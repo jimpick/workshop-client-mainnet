@@ -14,6 +14,9 @@ const annotations = {
 
   // New
 
+  f01071852: 'new, NR',
+  f01075904: 'new, NR',
+
   // Inflight
 
   f0116445: 'inflight, Singapore', // FundsReserved: 43 minutes
