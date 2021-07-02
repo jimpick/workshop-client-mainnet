@@ -14,6 +14,10 @@ const annotations = {
 
   // New
 
+  f01089898: 'new, Korea, Jung-gu',
+  f01090043: 'new, Korea, Bucheon-si',
+  f01090578: 'new, Russia, Lipetsk',
+
   // Inflight
 
   f0116445: 'inflight, Singapore', // FundsReserved: about 12 hours
