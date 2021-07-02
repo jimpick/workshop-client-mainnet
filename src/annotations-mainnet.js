@@ -888,7 +888,7 @@ const annotations = {
   f0878005: 'rejected, NR', // no online
   f01024569: 'rejected, China, Hangzhou', // no online
   f01024886: 'rejected, China, Wenzhou', // no online
-  f01045985: 'rejected, Russia', // no online
+  f01045985: 'delist, Russia', // no online
   f01051151: 'rejected, Korea, Jung-ang', // no online
   f01051152: 'rejected, Korea, Jung-ang', // no online
   f01052991: 'rejected, Korea, Jung-ang', // no online
