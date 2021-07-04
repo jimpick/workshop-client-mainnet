@@ -690,7 +690,7 @@ const annotations = {
   f023985: 'rejected, China, Chongqing',
   f024468: 'rejected, China, Shenzhen', // no online
   f024550: 'rejected, China, Wenzhou', // proposed provider collateral below minimum: 30634515849 < 39270127834
-  f025025: 'rejected, China, Qingdao', // proposed provider collateral below minimum: 30636062762 < 39270127834
+  f025025: 'delist, China, Qingdao', // proposed provider collateral below minimum: 30636062762 < 39270127834
   f032888: 'rejected, China, Weifang',
   f034258: 'rejected, China, Mianyang', // no online
   f035436: 'rejected, China, Jiangsu', // no online
@@ -701,7 +701,7 @@ const annotations = {
   f047857: 'rejected, China, Fuzhou', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
   f047868: 'rejected, China, Fuzhou', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
   f048968: 'rejected, NR', // no online
-  f049882: 'rejected, Netherlands, De Rijp, Chipz', // proposed provider collateral below minimum: 30636939739 < 39270127834
+  f049882: 'delist, Netherlands, De Rijp, Chipz', // proposed provider collateral below minimum: 30636939739 < 39270127834
   f050260: 'rejected, China, Suzhou', // proposed provider collateral below minimum: 30634326001 < 39270127834
   f052701: 'rejected, China, Beijing',
   f053229: 'rejected, NR',
@@ -756,8 +756,8 @@ const annotations = {
   f0118360: 'rejected, China, Hangzhou', // no online
   f0118695: 'rejected, Korea, Seoul', // no online
   f0118917: 'rejected, China, Shaoxing', // no online
-  f0120546: 'rejected, Korea, Seoul', // proposed provider collateral below minimum: 30634079150 < 39270127834
-  f0120793: 'rejected, Korea, Seoul', // proposed provider collateral below minimum: 30634079150 < 39270127834
+  f0120546: 'delist, Korea, Seoul', // proposed provider collateral below minimum: 30634079150 < 39270127834
+  f0120793: 'delist, Korea, Seoul', // proposed provider collateral below minimum: 30634079150 < 39270127834
   f0121260: 'rejected, China, Quinzhou', // Deals from client wallet f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q are not welcome
   f0121602: 'rejected, China, Hong Kong', // sh: 1: /root/.lotusminer/dealfilter.pl: not found
   f0122398: 'rejected, NR', // no online
@@ -765,7 +765,7 @@ const annotations = {
   f0123281: 'rejected, Korea, Seoul', // no online
   f0124036: 'rejected, China, Nanchang', // no online
   f0126037: 'rejected, Korea, Seoul', // no online
-  f0126038: 'rejected, Korea, Seoul', // proposed provider collateral below minimum: 30634079602 < 39270127834
+  f0126038: 'delist, Korea, Seoul', // proposed provider collateral below minimum: 30634079602 < 39270127834
   f0126039: 'rejected, NR', // no online
   f0127352: 'rejected, Korea, Seoul', // no online
   f0128582: 'rejected, Korea, Seoul', // no online
@@ -773,7 +773,7 @@ const annotations = {
   f0130961: 'rejected, Korea, Seongnam-si',
   f0131331: 'rejected, China, Beijing',
   f0131419: 'rejected, China, Beijing',
-  f0132461: 'rejected, Korea, Daegu', // proposed provider collateral below minimum: 30634079602 < 39270127834
+  f0132461: 'delist, Korea, Daegu', // proposed provider collateral below minimum: 30634079602 < 39270127834
   f0133957: 'rejected, NR', // forbid f3sml2wt7uzarci2pjvzra64mapi2hgslhtuwyvxgkxi2dbbazxux5eunb5imdo2v2hyylfr3cpe5qjxvrsj3q
   f0134518: 'rejected, China, Guangdong', // deal start epoch is too far in the future: 919456 > 918016
   f0142515: 'rejected, NR', // no online
@@ -1032,7 +1032,7 @@ const annotations = {
   f018538: 'fail, China, Huzhou', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f019074: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWLM1TeB6wiFXdKgHPRh5W6wve8NXC13mEk3seDqVttKqg:  * [/ip4/192.168.2.55/tcp/3000] dial tcp4 0.0.0.0:43141->192.168.2.55:3000: i/o timeout
   f019099: 'fail, China, Hong Kong + Guangzhou', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWPXNsG3BG7yGEBQVncw6Du279ESDyYHBX3v3kN23zSKsG:  * [/ip4/45.158.182.10/tcp/12345] dial tcp4 0.0.0.0:43141->45.158.182.10:12345: i/o timeout
-  f019100: 'fail, Romania, Cluj-Napoca, noisyfan', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJFAe3K8ENQMmtZzSYsRoCNfvf8N3Ky15EVhCSoXjMhnP:  * [/ip4/79.119.122.118/tcp/55555] dial tcp4 0.0.0.0:43141->79.119.122.118:55555: i/o timeout
+  f019100: 'delist, Romania, Cluj-Napoca, noisyfan', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJFAe3K8ENQMmtZzSYsRoCNfvf8N3Ky15EVhCSoXjMhnP:  * [/ip4/79.119.122.118/tcp/55555] dial tcp4 0.0.0.0:43141->79.119.122.118:55555: i/o timeout
   f019399: 'fail, Korea, Busan', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWGUmNdKgz8SS4q2UENRF9EDAhW4UVQRoXW92vBMWRnSpZ:  * [/ip4/59.20.180.200/tcp/38703] dial tcp4 0.0.0.0:43141->59.20.180.200:38703: i/o timeout
   f019422: 'fail, China, Guangzhou', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f019638: 'fail, China, Ordos', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWPPZz5WJkMn9GG87FYy6WwNE2LseU7KDo5DEA9H4ReWPP:  * [/ip4/1.183.72.210/tcp/30005] dial tcp4 0.0.0.0:43141->1.183.72.210:30005: i/o timeout
@@ -1460,7 +1460,7 @@ const annotations = {
   f0112593: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0112667: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0112680: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0112691: 'fail, Korea, Seoul', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0112691: 'delist, Korea, Seoul', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0112762: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0112772: 'fail, China, Nantong', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0112781: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -1852,7 +1852,7 @@ const annotations = {
   f0231782: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0232358: 'delist, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0238968: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWHeKLiTPg5Fk6bPxMVJCzGE1uYbwWJwUGq1rkArFXZdSu:  * [/ip4/10.133.13.111/tcp/32759] dial tcp4 0.0.0.0:43141->10.133.13.111:32759: i/o timeout
-  f0239251: 'fail, Korea, Uiwang', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0239251: 'delist, Korea, Uiwang', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0240035: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWPZSFGhykg4TBEpKa5LBMNwzmkE8iWLHoR2kCzgQuAhC9:  * [/ip4/115.236.46.164/tcp/20004] dial tcp4 0.0.0.0:43141->115.236.46.164:20004: i/o timeout
   f0240185: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0240392: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -1907,7 +1907,7 @@ const annotations = {
   f0396751: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0397083: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0397332: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0397428: 'fail, Japan, Tokyo', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWKHj8ZWEa3NRZNvk5sts8Dw6sToLUi31M4kKGkyqZMbqi:  * [/ip4/153.150.113.227/tcp/24001] dial tcp4 0.0.0.0:43141->153.150.113.227:24001: i/o timeout
+  f0397428: 'delist, Japan, Tokyo', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWKHj8ZWEa3NRZNvk5sts8Dw6sToLUi31M4kKGkyqZMbqi:  * [/ip4/153.150.113.227/tcp/24001] dial tcp4 0.0.0.0:43141->153.150.113.227:24001: i/o timeout
   f0397561: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0397794: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0397802: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2154,7 +2154,7 @@ const annotations = {
   f0509062: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0509980: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0509981: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0510610: 'fail, China, Shangrao', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0510610: 'delist, China, Shangrao', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0510701: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0510957: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0511070: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2191,7 +2191,7 @@ const annotations = {
   f0521508: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0521831: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0521884: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0522099: 'fail, China, Shangrao', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0522099: 'delist, China, Shangrao', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0523396: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0523415: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0523711: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2568,11 +2568,11 @@ const annotations = {
   f01062232: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01064991: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01065505: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01067047: 'fail, China, Foshan', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01067047: 'delist, China, Foshan', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01068111: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01070395: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01071852: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01072655: 'fail, Sweden, Gothenburg', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01072655: 'delist, Sweden, Gothenburg', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01073166: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01076629: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01076644: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
