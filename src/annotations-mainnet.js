@@ -26,6 +26,12 @@ const annotations = {
   f01095171: 'new, USA, Covina', // carry-over
   f01095191: 'new, USA, Rockledge', // carry-over
 
+  f01062230: 'new, NR',
+  f01067573: 'new, NR',
+  f01077516: 'new, NR',
+  f01087561: 'new, NR',
+  f01071282: 'new, NR',
+
   // Inflight
 
   // Unknown
