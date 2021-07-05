@@ -18,6 +18,13 @@ const annotations = {
   f01096465: 'new, USA',
   f01096727: 'new, Korea, Gangseo-gu',
 
+  f0705937: 'new, NR',
+  f0805622: 'new, NR',
+  f01038861: 'new, NR',
+  f01051743: 'new, NR',
+  f01069894: 'new, NR',
+  f01074953: 'new, NR',
+
   // Inflight
 
   f014327:
