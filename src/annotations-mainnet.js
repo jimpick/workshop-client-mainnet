@@ -3158,7 +3158,7 @@ const annotations = {
   f024902: 'delist, Korea, Incheon', // carry-over
   f024903: 'delist, undefined', // carry-over
   f024969: 'delist, NR', // carry-over
-  f025025: 'delist, China, Qingdao', // carry-over
+  f025025: 'retest, China, Qingdao', // carry-over
   f025028: 'delist, NR', // carry-over
   f025032: 'delist, China, Beijing', // carry-over
   f029368: 'delist, Korea, Gangseo-gu', // carry-over
@@ -3306,7 +3306,7 @@ const annotations = {
   f073931: 'delist, NR', // carry-over
   f078425: 'delist, Korea, Bucheon-si', // carry-over
   f078516: 'delist, NR', // carry-over
-  f078621: 'delist, Korea, Uiwang', // carry-over
+  f078621: 'retest, Korea, Uiwang', // carry-over
   f078770: 'delist, China, Karamay', // carry-over
   f080131: 'delist, NR', // carry-over
   f080945: 'delist, China, Shenzhen', // carry-over
@@ -3380,7 +3380,7 @@ const annotations = {
   f0116707: 'delist, Germany, Dusseldorf', // carry-over
   f0119336: 'delist, Canada, Ottawa', // carry-over
   f0120141: 'delist, Korea, Gangnam-gu', // carry-over
-  f0120546: 'delist, Korea, Seoul', // carry-over
+  f0120546: 'retest, Korea, Seoul', // carry-over
   f0120747: 'delist, NR', // carry-over
   f0120793: 'delist, Korea, Seoul', // carry-over
   f0122815: 'delist, Korea, Bucheon-si, Healthcarenavi_80', // carry-over
@@ -3551,7 +3551,7 @@ const annotations = {
   f0758390: 'delist, USA, Phoenix', // carry-over
   f0761445: 'delist, Ukraine, Odessa', // carry-over
   f0765545: 'delist, China, Hangzhou', // carry-over
-  f0805343: 'delist, NR', // carry-over
+  f0805343: 'retest, NR', // carry-over
   f0808705: 'delist, China, Wenzhou', // carry-over
   f0810358: 'delist, Japan, Tokyo', // carry-over
   f0810756: 'delist, Romania, Bucharest', // carry-over
