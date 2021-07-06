@@ -14,6 +14,14 @@ const annotations = {
 
   // New
 
+  f01097836: 'new, China, Xinjiang',
+  f01097957: 'new, China, Xinjiang',
+  f01098514: 'new, China, Xinjiang',
+  f01098845: 'new, USA',
+  f01099052: 'new, Korea, Seodaemun-gu',
+  f01099312: 'new, China, Shenzhen',
+  f01099820: 'new, China, Wenzhou',
+
   // Inflight
 
   f0116445: 'inflight, Singapore', // FundsReserved: about 4 hours
@@ -405,7 +413,7 @@ const annotations = {
   f023825: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f024015: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f024016: 'min-ask, China, Karamay', // 20000000 < 122070312500000
-  f029344: 'min-ask, Korea, Seongnam-si', // 20000000 < 1220703125000
+  f029344: 'delist, Korea, Seongnam-si', // 20000000 < 1220703125000
   f029401: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f029404: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f030384: 'min-ask, China, Shenzhen', // 20000000 < 12207031250000
@@ -927,7 +935,7 @@ const annotations = {
   f02503: 'fail, Singapore', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWEvy6gDEmVj8P6rE5HvzSyZzXkeezu6EV3nDcNpDG142T:  * [/ip4/8.209.71.125/tcp/31432] dial tcp4 0.0.0.0:40401->8.209.71.125:31432: i/o timeout
   f02514: 'fail, China, Karamay', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f02529: 'fail, China, Chongqing + Singapore', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWFEZiYoJxqyuANeLtn7tDytRkYzcc9HS6gbaymHgMijWc:  * [/ip4/8.209.64.163/tcp/23004] dial tcp4 0.0.0.0:40401->8.209.64.163:23004: i/o timeout  * [/ip4/101.206.156.202/tcp/23004] dial tcp4 0.0.0.0:40401->101.206.156.202:23004: i/o timeout
-  f02540: 'fail, USA, Mobile, Foundry', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWReckK7ttS73V77eenBAkXRiePprT3fSfz9U8E1kagSAd:  * [/ip4/66.32.20.172/tcp/10240] dial tcp4 0.0.0.0:40401->66.32.20.172:10240: i/o timeout
+  f02540: 'delist, USA, Mobile, Foundry', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWReckK7ttS73V77eenBAkXRiePprT3fSfz9U8E1kagSAd:  * [/ip4/66.32.20.172/tcp/10240] dial tcp4 0.0.0.0:40401->66.32.20.172:10240: i/o timeout
   f02610: 'fail, Netherlands', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWMnLT8D5yNAdEQbt2fXHFhUVQT2crdGLVktpSo7RCXtnk:  * [/ip4/213.227.129.197/tcp/14567] dial tcp4 0.0.0.0:40401->213.227.129.197:14567: i/o timeout
   f02613: 'fail, China, Chongqing + Singapore', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWSHE6LnRd5b8GdWaCAfBz5NQhq4uZafybStUnYeabgwRB:  * [/ip4/101.206.156.202/tcp/23027] dial tcp4 0.0.0.0:40401->101.206.156.202:23027: i/o timeout  * [/ip4/8.209.64.163/tcp/23027] dial tcp4 0.0.0.0:40401->8.209.64.163:23027: i/o timeout
   f02614: 'fail, Singapore', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWE6JfBTMyjirNPSRi4AfZjCseRHGzXZvXUmKMsdHViyif:  * [/ip4/170.33.9.50/tcp/32633] dial tcp4 0.0.0.0:40401->170.33.9.50:32633: i/o timeout
