@@ -27,6 +27,12 @@ const annotations = {
   f01099312: 'new, China, Shenzhen', // carry-over
   f01099820: 'new, China, Wenzhou', // carry-over
 
+  f01097535: 'new, NR',
+  f01098580: 'new, NR',
+  f01097758: 'new, NR',
+  f01099967: 'new, USA, London',
+  f01101298: 'new, Korea, Yongin-si',
+
   // Inflight
 
   f0116445: 'inflight, Singapore', // FundsReserved: 2 days
