@@ -33,6 +33,24 @@ const annotations = {
   f01099967: 'new, USA, London',
   f01101298: 'new, Korea, Yongin-si',
 
+  f0867300: 'nopeer, NR',
+  f01081786: 'new, NR',
+  f01088088: 'new, NR',
+  f01077547: 'new, NR',
+  f01093419: 'new, NR',
+  f01095915: 'new, NR',
+  f01089169: 'new, NR',
+
+  f0433690: 'new, NR',
+  f01038625: 'new, NR',
+  f01042229: 'new, NR',
+  f01069268: 'new, NR',
+  f0805402: 'new, Korea, Bucheon-si',
+
+  f01084913: 'new, NR',
+  f01043666: 'new, NR',
+  f01086616: 'new, NR',
+
   // Inflight
 
   f0116445: 'inflight, Singapore', // FundsReserved: 2 days
