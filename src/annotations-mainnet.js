@@ -14,96 +14,105 @@ const annotations = {
 
   // New
 
-  f01097836: 'new, China, Xinjiang',
-  f01097957: 'new, China, Xinjiang',
-  f01098514: 'new, China, Xinjiang',
-  f01098845: 'new, USA',
-  f01099052: 'new, Korea, Seodaemun-gu',
-  f01099312: 'new, China, Shenzhen',
-  f01099820: 'new, China, Wenzhou',
-
-  f01038199: 'new, NR',
-  f01039350: 'new, NR',
-  f01068331: 'new, NR',
-  f01085801: 'new, NR',
-  f01092768: 'new, NR',
+  f01038199: 'new, NR', // carry-over
+  f01039350: 'new, NR', // carry-over
+  f01068331: 'new, NR', // carry-over
+  f01085801: 'new, NR', // carry-over
+  f01092768: 'new, NR', // carry-over
+  f01097836: 'new, China, Xinjiang', // carry-over
+  f01097957: 'new, China, Xinjiang', // carry-over
+  f01098514: 'new, China, Xinjiang', // carry-over
+  f01098845: 'new, USA', // carry-over
+  f01099052: 'new, Korea, Seodaemun-gu', // carry-over
+  f01099312: 'new, China, Shenzhen', // carry-over
+  f01099820: 'new, China, Wenzhou', // carry-over
 
   // Inflight
 
-  f0116445: 'inflight, Singapore', // FundsReserved: about 4 hours
-  f0134516: 'inflight, Singapore', // FundsReserved: about 4 hours
+  f0116445: 'inflight, Singapore', // FundsReserved: 1 day
+  f0134516: 'inflight, Singapore', // FundsReserved: 1 day
 
   // Unknown
 
   // Active
 
+  f07709: 'active, Korea, Dongjak-gu', // 2202662 1 day
+  f063628: 'active, NR', // 2202663 1 day
+  f079817: "active, Russia, Ul'yanovka", // 2202672 1 day
+  f082635: 'active, NR', // 2202797 1 day
+  f094374: 'active, China, Nanyang', // 2202666 1 day
+  f097720: 'active, Korea, Bucheon-si', // 2202670 1 day
+  f0101087: 'active, Korea', // 2202669 1 day
+  f0110804: 'active, USA, Santa Clara', // 2202676 1 day
+  f0131901: 'active, Korea, Daejeon', // 2202734 1 day
+  f0156207: 'active, Korea, Ulsan', // 2202680 1 day
+  f0157564: 'active, Korea, Daejeon', // 2202675 1 day
+  f0165375: 'active, Korea, Seongnam-si', // 2202700 1 day
+  f0165539: 'active, Japan, Yokohama', // 2202674 1 day
+  f0166327: 'active, NR', // 2202679 1 day
+  f0215370: 'active, China, Hangzhou', // 2202698 1 day
+  f0228855: 'active, Korea, Guro-gu', // 2202685 1 day
+  f0230200: 'active, Korea, Gwanak-gu, G-mining', // 2202691 1 day
+  f0400920: 'active, China, Luzhou', // 2202754 1 day
+  f0417750: 'active, NR', // 2202712 1 day
+  f0421392: 'active, China, Foshan', // 2202690 1 day
+  f0428306: 'active, NR', // 2202683 1 day
+  f0433689: 'active, NR', // 2202781 1 day
+  f0437246: 'active, China, Hangzhou', // 2202695 1 day
+  f0458627: 'active, Korea, Seongnam-si', // 2202692 1 day
+  f0461791: 'active, Korea, Gwangju', // 2202710 1 day
+  f0478837: 'active, China, Zhangzhou', // 2202622 1 day
+  f0488689: 'active, NR', // 2202751 1 day
+  f0488889: 'active, China, Nanchang', // 2202752 1 day
+  f0513351: 'active, NR', // 2202687 1 day
+  f0675909: 'active, NR', // 2202684 1 day
+  f0694881: 'active, China, Hangzhou', // 2202686 1 day
+  f0717913: 'active, Korea, Jung-gu', // 2202688 1 day
+  f0720629: 'active, NR', // 2202699 1 day
+  f0724219: 'active, Spain, Vilanova del Cami', // 2202706 1 day
+  f0731235: 'active, Ukraine, Odessa', // 2202759 1 day
+  f0756207: 'active, Korea', // 2202737 1 day
+  f0763981: 'active, China, Tianjin', // 2202713 1 day
+  f0805568: 'active, Korea, Gangnam-gu', // 2202727 1 day
+  f0862933: 'active, USA, Huntersville', // 2202830 1 day
+  f0877545: 'active, China, Ningbo', // 2202761 1 day
+  f01019009: 'active, China, Henan', // 2202939 1 day
+  f01039753: 'active, China, Suqian', // 2202702 1 day
+  f01050286: 'active, China, Guangzhou', // 2202715 1 day
+  f01057303: 'active, China, Huizhou', // 2202860 1 day
+  f01071194: 'active, USA, San Jose', // 2202784 1 day
+  f01071719: 'active, China, Beijing', // 2202783 1 day
+  f01094066: 'active, China, Beijing', // 2202793 1 day
+
   // Active-sealing (active, with in-flight sealing)
 
-  f07709: 'active-sealing, Korea, Dongjak-gu', // 2202662
   f020489: 'active-sealing, China, Lioaning', // 2202667
   f023219: 'active-sealing, China, Beijing + Zhangjiakou', // 2202661
   f024944: 'active-sealing, Korea, Yeongdeungpo-dong', // 2202671
   f030125: 'active-sealing, China, Nantong', // 2202665
-  f063628: 'active-sealing, NR', // 2202663
-  f079817: "active-sealing, Russia, Ul'yanovka", // 2202672
-  f094374: 'active-sealing, China, Nanyang', // 2202666
-  f097720: 'active-sealing, Korea, Bucheon-si', // 2202670
-  f0101087: 'active-sealing, Korea', // 2202669
-  f0110804: 'active-sealing, USA, Santa Clara', // 2202676
   f0130912: 'active-sealing, China, Hong Kong', // 2202678
   f0137168: 'active-sealing, China, Beijing', // 2202800
   f0137489: 'active-sealing, UK, Deeside', // 2202743
-  f0156207: 'active-sealing, Korea, Ulsan', // 2202680
   f0157265: 'active-sealing, China, Zhangjiakou', // 2202677
-  f0157564: 'active-sealing, Korea, Daejeon', // 2202675
-  f0165375: 'active-sealing, Korea, Seongnam-si', // 2202700
-  f0165539: 'active-sealing, Japan, Yokohama', // 2202674
-  f0166327: 'active-sealing, NR', // 2202679
   f0166512: 'active-sealing, NR', // 2202628
   f0179096: 'active-sealing, China, Fuzhou', // 2202673
-  f0215370: 'active-sealing, China, Hangzhou', // 2202698
-  f0228855: 'active-sealing, Korea, Guro-gu', // 2202685
-  f0230200: 'active-sealing, Korea, Gwanak-gu, G-mining', // 2202691
   f0401300: 'active-sealing, France, Deuil-la-Barre', // 2202711
   f0401416: 'active-sealing, Japan, Fukuoka', // 2202682
-  f0417750: 'active-sealing, NR', // 2202712
-  f0421392: 'active-sealing, China, Foshan', // 2202690
-  f0428306: 'active-sealing, NR', // 2202683
-  f0433689: 'active-sealing, NR', // 2202781
-  f0437246: 'active-sealing, China, Hangzhou', // 2202695
-  f0458627: 'active-sealing, Korea, Seongnam-si', // 2202692
   f0460440: 'active-sealing, Korea, Seongnam-si', // 2202681
-  f0461791: 'active-sealing, Korea, Gwangju', // 2202710
-  f0478837: 'active-sealing, China, Zhangzhou', // 2202622
   f0482619: 'active-sealing, Korea, Seongnam-si', // 2202708
   f0512170: 'active-sealing, Korea, Bucheon-si', // 2202689
-  f0513351: 'active-sealing, NR', // 2202687
-  f0675909: 'active-sealing, NR', // 2202684
-  f0694881: 'active-sealing, China, Hangzhou', // 2202686
-  f0717913: 'active-sealing, Korea, Jung-gu', // 2202688
-  f0720629: 'active-sealing, NR', // 2202699
   f0723006: 'active-sealing, Korea, Bucheon-si', // 2202693
   f0723600: 'active-sealing, China, Taiwan, Hsinchu', // 2202694
-  f0724219: 'active-sealing, Spain, Vilanova del Cami', // 2202706
   f0729674: 'active-sealing, Canada, Vancouver', // 2202709
   f0752695: 'active-sealing, Korea, Seongnam-si', // 2202703
-  f0756207: 'active-sealing, Korea', // 2202737
-  f0763981: 'active-sealing, China, Tianjin', // 2202713
-  f0805568: 'active-sealing, Korea, Gangnam-gu', // 2202727
   f0813086: 'active-sealing, Korea, Jung-gu', // 2202696
   f0832373: 'active-sealing, NR', // 2202697
   f0835643: 'active-sealing, Korea, Songpa-gu', // 2202705
   f0839509: 'active-sealing, China, Beijing', // 2202701
   f0845245: 'active-sealing, Korea, Busan', // 2202714
-  f0862933: 'active-sealing, USA, Huntersville', // 2202830
   f01023503: 'active-sealing, Korea, Busan', // 2202704
   f01033119: 'active-sealing, France, Paris', // 2202707
-  f01039753: 'active-sealing, China, Suqian', // 2202702
-  f01050286: 'active-sealing, China, Guangzhou', // 2202715
   f01053334: 'active-sealing, Korea, Mapo-gu', // 2202724
-  f01057303: 'active-sealing, China, Huizhou', // 2202860
-  f01071194: 'active-sealing, USA, San Jose', // 2202784
-  f01071719: 'active-sealing, China, Beijing', // 2202783
   f01081349: 'active-sealing, China, Foshan', // 2202786
   f01086762: 'active-sealing, Korea, Seoul', // 2202782
 
@@ -125,20 +134,19 @@ const annotations = {
   f055132: 'sealing, Vietman, Ho Chi Minh City + China', // 2202719
   f080103: 'sealing, Korea, Seongnam-si', // 2202720
   f081644: 'sealing, China, Wenzhou', // 2202730
-  f082635: 'sealing, NR', // 2202797
   f085435: 'sealing, NR', // 2202802
   f097569: 'sealing, NR', // 2202729
   f0110768: 'sealing, Korea, Gwangju', // 2202722
   f0112772: 'sealing, China, Nantong', // 2202733
   f0119997: 'sealing, NR', // 2202891
   f0121533: 'sealing, China, Zhejiang', // 2202717
-  f0131901: 'sealing, Korea, Daejeon', // 2202734
   f0134671: 'sealing, Korea, Gimpo-si', // 2202744
   f0149132: 'sealing, NR', // 2202636
   f0149455: 'sealing, NR', // 2202739
   f0152224: 'sealing, Korea, Yongdu-dong', // 2202798
   f0153278: 'sealing, NR', // 2202788
   f0156452: 'sealing, Korea, Ulsan', // 2202742
+  f0157513: 'sealing, Korea, Geumcheon-gu', // 2203143
   f0162394: 'sealing, China, Guangzhou', // 2202736
   f0187709: 'sealing, Russia, Moscow', // 2202740
   f0215461: 'sealing, NR', // 2202789
@@ -146,40 +154,32 @@ const annotations = {
   f0396705: 'sealing, NR', // 2202801
   f0397728: 'sealing, China, Dongguan', // 2202738
   f0399814: "sealing, China, Ya'an", // 2202755
-  f0400920: 'sealing, China, Luzhou', // 2202754
   f0405129: 'sealing, China, Fujian', // 2202854
   f0413563: 'sealing, Korea, Gangnam-gu', // 2202756
   f0414383: 'sealing, China, Dongguan', // 2202787
   f0419768: 'sealing, Korea, Seongnam-si', // 2202757
   f0447181: 'sealing, China, Zibo', // 2202765
-  f0488689: 'sealing, NR', // 2202751
-  f0488889: 'sealing, China, Nanchang', // 2202752
   f0514737: 'sealing, Korea, Busan', // 2202753
   f0521569: 'sealing, Korea, Guro-go', // 2202763
   f0676272: 'sealing, NR', // 2202859
   f0690699: 'sealing, NR', // 2202790
   f0709739: 'sealing, China, Handan', // 2202795
   f0722515: 'sealing, Korea, Geumcheon-gu', // 2202764
-  f0731235: 'sealing, Ukraine, Odessa', // 2202759
   f0746416: 'sealing, Korea, Gyeonggi-do', // 2202762
   f0805622: 'sealing, NR', // 2202778
-  f0877545: 'sealing, China, Ningbo', // 2202761
-  f01019009: 'sealing, China, Henan', // 2202939
   f01027268: 'sealing, Korea, Busan', // 2202758
   f01037628: 'sealing, NR', // 2202861
   f01039327: 'sealing, Indonesia, Denpasar', // 2202918
   f01040469: 'sealing, Korea', // 2202760
   f01063173: 'sealing, Korea, Kayang-dong', // 2202862
-  f01094066: 'sealing, China, Beijing', // 2202793
+  f01086553: 'sealing, China, Zhongshan', // 2203448
   f01095171: 'sealing, USA, Covina', // 2202791
   f01095191: 'sealing, USA, Rockledge', // 2202792
 
   // Stuck
 
-  f062318: 'stuck, Korea, Naju', // CheckForAcceptance: about 4 hours
-  f0157513: 'stuck, Korea, Geumcheon-gu', // CheckForAcceptance: about 4 hours
-  f01086553: 'stuck, China, Zhongshan', // CheckForAcceptance: about 4 hours
-  f01090043: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 4 hours
+  f062318: 'stuck, Korea, Naju', // CheckForAcceptance: 1 day
+  f01090043: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: 1 day
 
   // Busy
 
@@ -419,7 +419,6 @@ const annotations = {
   f023825: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f024015: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f024016: 'min-ask, China, Karamay', // 20000000 < 122070312500000
-  f029344: 'delist, Korea, Seongnam-si', // 20000000 < 1220703125000
   f029401: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f029404: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f030384: 'min-ask, China, Shenzhen', // 20000000 < 12207031250000
@@ -941,7 +940,6 @@ const annotations = {
   f02503: 'fail, Singapore', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWEvy6gDEmVj8P6rE5HvzSyZzXkeezu6EV3nDcNpDG142T:  * [/ip4/8.209.71.125/tcp/31432] dial tcp4 0.0.0.0:40401->8.209.71.125:31432: i/o timeout
   f02514: 'fail, China, Karamay', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f02529: 'fail, China, Chongqing + Singapore', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWFEZiYoJxqyuANeLtn7tDytRkYzcc9HS6gbaymHgMijWc:  * [/ip4/8.209.64.163/tcp/23004] dial tcp4 0.0.0.0:40401->8.209.64.163:23004: i/o timeout  * [/ip4/101.206.156.202/tcp/23004] dial tcp4 0.0.0.0:40401->101.206.156.202:23004: i/o timeout
-  f02540: 'delist, USA, Mobile, Foundry', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWReckK7ttS73V77eenBAkXRiePprT3fSfz9U8E1kagSAd:  * [/ip4/66.32.20.172/tcp/10240] dial tcp4 0.0.0.0:40401->66.32.20.172:10240: i/o timeout
   f02610: 'fail, Netherlands', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWMnLT8D5yNAdEQbt2fXHFhUVQT2crdGLVktpSo7RCXtnk:  * [/ip4/213.227.129.197/tcp/14567] dial tcp4 0.0.0.0:40401->213.227.129.197:14567: i/o timeout
   f02613: 'fail, China, Chongqing + Singapore', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWSHE6LnRd5b8GdWaCAfBz5NQhq4uZafybStUnYeabgwRB:  * [/ip4/101.206.156.202/tcp/23027] dial tcp4 0.0.0.0:40401->101.206.156.202:23027: i/o timeout  * [/ip4/8.209.64.163/tcp/23027] dial tcp4 0.0.0.0:40401->8.209.64.163:23027: i/o timeout
   f02614: 'fail, Singapore', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWE6JfBTMyjirNPSRi4AfZjCseRHGzXZvXUmKMsdHViyif:  * [/ip4/170.33.9.50/tcp/32633] dial tcp4 0.0.0.0:40401->170.33.9.50:32633: i/o timeout
@@ -2656,6 +2654,7 @@ const annotations = {
   f02506: 'delist, USA, Clarksville', // carry-over
   f02515: 'delist, China, Hangzhou', // carry-over
   f02518: 'delist, China, Shaanxi', // carry-over
+  f02540: 'delist, USA, Mobile, Foundry',
   f02575: 'delist, USA, Davis', // carry-over
   f02608: 'delist, USA, San Jose', // carry-over
   f02665: 'delist, Netherlands, Amsterdam, fm-ops', // carry-over
@@ -3187,6 +3186,7 @@ const annotations = {
   f024969: 'delist, NR', // carry-over
   f025028: 'delist, NR', // carry-over
   f025032: 'delist, China, Beijing', // carry-over
+  f029344: 'delist, Korea, Seongnam-si',
   f029368: 'delist, Korea, Gangseo-gu', // carry-over
   f029421: 'delist, undefined', // carry-over
   f029477: 'delist, undefined', // carry-over
