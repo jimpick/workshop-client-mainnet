@@ -2589,7 +2589,7 @@ const annotations = {
   f01057193: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01059489: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01059620: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01060792: 'fail, USA, London', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWPw6ykido59BxBpQYGVCLznu9YAsfpBJCADYNU5ErMKVr:  * [/ip4/74.143.156.90/tcp/24001] dial tcp4 0.0.0.0:40401->74.143.156.90:24001: i/o timeout
+  f01060792: 'delist, USA, London', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWPw6ykido59BxBpQYGVCLznu9YAsfpBJCADYNU5ErMKVr:  * [/ip4/74.143.156.90/tcp/24001] dial tcp4 0.0.0.0:40401->74.143.156.90:24001: i/o timeout
   f01062232: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01064991: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01065505: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2606,7 +2606,7 @@ const annotations = {
   f01077516: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01077708: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01077777: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01080779: 'fail, China, Sichuan', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01080779: 'delist, China, Sichuan', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01087561: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01089422: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01090578: 'fail, Russia, Lipetsk', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2688,7 +2688,7 @@ const annotations = {
   f02304: 'delist, USA, Mountain View', // carry-over
   f02382: 'delist, China, Zhongshan-cfa', // carry-over
   f02385: 'delist, USA, East Islip', // carry-over
-  f02388: 'delist, Netherlands, Amersfoort, Kroketje', // carry-over
+  f02388: 'retest, Netherlands, Amersfoort, Kroketje', // carry-over
   f02398: 'delist, China, Hong Kong', // carry-over
   f02404: 'delist, Korea, Seoul', // carry-over
   f02424: 'delist, Korea, Wanju', // carry-over
@@ -2696,7 +2696,7 @@ const annotations = {
   f02506: 'delist, USA, Clarksville', // carry-over
   f02515: 'delist, China, Hangzhou', // carry-over
   f02518: 'delist, China, Shaanxi', // carry-over
-  f02540: 'delist, USA, Mobile, Foundry',
+  f02540: 'retest, USA, Mobile, Foundry',
   f02575: 'delist, USA, Davis', // carry-over
   f02608: 'delist, USA, San Jose', // carry-over
   f02665: 'delist, Netherlands, Amsterdam, fm-ops', // carry-over
@@ -3020,7 +3020,7 @@ const annotations = {
   f019048: 'delist, Brazil, Sao Paulo', // carry-over
   f019062: 'delist, Germany', // carry-over
   f019069: 'delist, NR', // carry-over
-  f019100: 'delist, Romania, Cluj-Napoca, noisyfan', // carry-over
+  f019100: 'retest, Romania, Cluj-Napoca, noisyfan', // carry-over
   f019109: 'delist, USA, Howell', // carry-over
   f019114: 'delist, USA, Howell', // carry-over
   f019118: 'delist, China, Jiaxing', // carry-over
@@ -3290,7 +3290,7 @@ const annotations = {
   f048172: 'delist, China, Suzhou', // carry-over
   f048192: 'delist, China, Suzhou', // carry-over
   f048545: 'delist, China, Chengdu', // carry-over
-  f049882: 'delist, Netherlands, De Rijp, Chipz', // carry-over
+  f049882: 'retest, Netherlands, De Rijp, Chipz', // carry-over
   f049990: 'delist, Korea, Incheon', // carry-over
   f052503: 'delist, NR', // carry-over
   f052562: 'delist, NR', // carry-over
@@ -3302,7 +3302,7 @@ const annotations = {
   f055522: 'delist, USA', // carry-over
   f056393: 'delist, NR', // carry-over
   f057115: 'delist, China, Nanyang', // carry-over
-  f057466: 'delist, China, Guangzhou', // carry-over
+  f057466: 'retest, China, Guangzhou', // carry-over
   f057560: 'delist, NR', // carry-over
   f057842: 'delist, Korea, Gyeonggi-do', // carry-over
   f058003: 'delist, China, Shenzhen', // carry-over
@@ -3441,18 +3441,18 @@ const annotations = {
   f0110488: 'delist, China, Chongqing', // carry-over
   f0110803: 'delist, Korea', // carry-over
   f0112027: 'delist, France', // carry-over
-  f0112691: 'delist, Korea, Seoul', // carry-over
+  f0112691: 'retest, Korea, Seoul', // carry-over
   f0113664: 'delist, France', // carry-over
   f0116513: 'delist, NR', // carry-over
   f0116707: 'delist, Germany, Dusseldorf', // carry-over
   f0119336: 'delist, Canada, Ottawa', // carry-over
   f0120141: 'delist, Korea, Gangnam-gu', // carry-over
-  f0120747: 'delist, NR', // carry-over
-  f0120793: 'delist, Korea, Seoul', // carry-over
+  f0120747: 'retest, NR', // carry-over
+  f0120793: 'retest, Korea, Seoul', // carry-over
   f0122815: 'delist, Korea, Bucheon-si, Healthcarenavi_80', // carry-over
   f0124335: 'delist, Finland, Helsinki', // carry-over
   f0125962: 'delist, Korea, Yongin-si', // carry-over
-  f0126038: 'delist, Korea, Seoul', // carry-over
+  f0126038: 'retest, Korea, Seoul', // carry-over
   f0126376: 'delist, NR', // carry-over
   f0126535: 'delist, China, Hong Kong', // carry-over
   f0127151: 'delist, Korea, Yongin-si', // carry-over
@@ -3464,7 +3464,7 @@ const annotations = {
   f0128242: 'delist, Korea, Yongin-si', // carry-over
   f0131359: 'delist, China, Fuzhou', // carry-over
   f0131857: 'delist, China, Chongqing', // carry-over
-  f0132461: 'delist, Korea, Daegu', // carry-over
+  f0132461: 'retest, Korea, Daegu', // carry-over
   f0132765: 'delist, NR', // carry-over
   f0133486: 'delist, China, Shenzhen', // carry-over
   f0135906: 'delist, NR', // carry-over
@@ -3488,7 +3488,7 @@ const annotations = {
   f0215404: 'delist, China, Suzhou', // carry-over
   f0216068: 'delist, Romania, Iasi', // carry-over
   f0216139: 'delist, Korea, Goyang-si', // carry-over
-  f0217805: 'delist, China, Taiwan, Taipei', // carry-over
+  f0217805: 'retest, China, Taiwan, Taipei', // carry-over
   f0219415: 'delist, USA, Boardman', // carry-over
   f0219631: 'delist, USA, Council Bluffs', // carry-over
   f0220911: 'delist, NR', // carry-over
@@ -3508,7 +3508,7 @@ const annotations = {
   f0232136: 'delist, NR', // carry-over
   f0232358: 'delist, NR', // carry-over
   f0232437: 'delist, NR', // carry-over
-  f0239251: 'delist, Korea, Uiwang', // carry-over
+  f0239251: 'retest, Korea, Uiwang', // carry-over
   f0239266: 'delist, NR', // carry-over
   f0240893: 'delist, USA, Queens', // carry-over
   f0241272: 'delist, France, Deuil-la-Barre', // carry-over
@@ -3531,7 +3531,7 @@ const annotations = {
   f0395463: 'delist, Korea, Daegu', // carry-over
   f0395472: 'delist, Korea, Daegu', // carry-over
   f0395473: 'delist, Korea, Daegu', // carry-over
-  f0397083: 'delist, NR', // carry-over
+  f0397083: 'retest, NR', // carry-over
   f0397428: 'delist, Japan, Tokyo', // carry-over
   f0397675: 'delist, Korea, Guro-gu', // carry-over
   f0398326: 'delist, China, Jiangmen', // carry-over
@@ -3558,7 +3558,7 @@ const annotations = {
   f0434480: 'delist, USA, Hummelstown', // carry-over
   f0467217: 'delist, China, Beijing', // carry-over
   f0471266: 'delist, Japan, Ageo', // carry-over
-  f0472720: 'delist, NR', // carry-over
+  f0472720: 'retest, NR', // carry-over
   f0482136: 'delist, China, Fuzhou', // carry-over
   f0490090: 'delist, Korea, Seoul', // carry-over
   f0492222: 'delist, Canada, Vancouver', // carry-over
@@ -3682,7 +3682,7 @@ const annotations = {
   f01048957: 'delist, Korea, Gangnam-gu', // carry-over
   f01051301: 'delist, NR', // carry-over
   f01060045: 'delist, China, Foshan', // carry-over
-  f01061522: 'delist, NR', // carry-over
+  f01061522: 'retest, NR', // carry-over
   f01062833: 'delist, China, Foshan', // carry-over
   f01063481: 'delist, USA, London', // carry-over
   f01067047: 'delist, China, Foshan', // carry-over
