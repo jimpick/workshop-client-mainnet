@@ -46,6 +46,21 @@ const annotations = {
   f01099967: 'new, USA, London', // carry-over
   f01101298: 'new, Korea, Yongin-si', // carry-over
 
+  f01098835: 'new, NR',
+  f01100914: 'new, NR',
+  f01100636: 'new, NR',
+  f01101397: 'new, NR',
+  f01101884: 'new, NR',
+  f01103281: 'new, China, Taizhou',
+  f01104053: 'new, USA',
+  f01104210: 'new, China, Changsha',
+  f01104909: 'new, China, Shanghai',
+
+
+  f01098119: 'new, unlisted',
+  f01098124: 'new, unlisted',
+  f01098931: 'new, unlisted',
+
   // Inflight
 
   // Unknown
