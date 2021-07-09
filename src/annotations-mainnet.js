@@ -14,54 +14,51 @@ const annotations = {
 
   // New
 
+  f0433690: 'new, NR', // carry-over
+  f0805402: 'new, Korea, Bucheon-si', // carry-over
   f01038199: 'new, NR', // carry-over
+  f01038625: 'new, NR', // carry-over
   f01039350: 'new, NR', // carry-over
+  f01042229: 'new, NR', // carry-over
+  f01043666: 'new, NR', // carry-over
   f01068331: 'new, NR', // carry-over
+  f01069268: 'new, NR', // carry-over
+  f01077547: 'new, NR', // carry-over
+  f01081786: 'new, NR', // carry-over
+  f01084913: 'new, NR', // carry-over
   f01085801: 'new, NR', // carry-over
+  f01086616: 'new, NR', // carry-over
+  f01088088: 'new, NR', // carry-over
+  f01089169: 'new, NR', // carry-over
   f01092768: 'new, NR', // carry-over
+  f01093419: 'new, NR', // carry-over
+  f01095915: 'new, NR', // carry-over
+  f01097535: 'new, NR', // carry-over
+  f01097758: 'new, NR', // carry-over
   f01097836: 'new, China, Xinjiang', // carry-over
   f01097957: 'new, China, Xinjiang', // carry-over
   f01098514: 'new, China, Xinjiang', // carry-over
+  f01098580: 'new, NR', // carry-over
   f01098845: 'new, USA', // carry-over
   f01099052: 'new, Korea, Seodaemun-gu', // carry-over
   f01099312: 'new, China, Shenzhen', // carry-over
   f01099820: 'new, China, Wenzhou', // carry-over
-
-  f01097535: 'new, NR',
-  f01098580: 'new, NR',
-  f01097758: 'new, NR',
-  f01099967: 'new, USA, London',
-  f01101298: 'new, Korea, Yongin-si',
-
-  f0867300: 'nopeer, NR',
-  f01081786: 'new, NR',
-  f01088088: 'new, NR',
-  f01077547: 'new, NR',
-  f01093419: 'new, NR',
-  f01095915: 'new, NR',
-  f01089169: 'new, NR',
-
-  f0433690: 'new, NR',
-  f01038625: 'new, NR',
-  f01042229: 'new, NR',
-  f01069268: 'new, NR',
-  f0805402: 'new, Korea, Bucheon-si',
-
-  f01084913: 'new, NR',
-  f01043666: 'new, NR',
-  f01086616: 'new, NR',
+  f01099967: 'new, USA, London', // carry-over
+  f01101298: 'new, Korea, Yongin-si', // carry-over
 
   // Inflight
-
-  f0116445: 'inflight, Singapore', // FundsReserved: 2 days
-  f0134516: 'inflight, Singapore', // FundsReserved: 2 days
 
   // Unknown
 
   // Active
 
   f07709: 'active, Korea, Dongjak-gu', // 2202662 1 day
+  f020489: 'active, China, Lioaning', // 2202667 2 days
+  f023219: 'active, China, Beijing + Zhangjiakou', // 2202661 1 day
   f024550: 'active, China, Wenzhou', // 2202731 about 18 hours
+  f024944: 'active, Korea, Yeongdeungpo-dong', // 2202671 1 day
+  f030125: 'active, China, Nantong', // 2202665 2 days
+  f042567: 'active, China, Jinhua', // 2202725 about 23 hours
   f063628: 'active, NR', // 2202663 1 day
   f079817: "active, Russia, Ul'yanovka", // 2202672 1 day
   f081644: 'active, China, Wenzhou', // 2202730 about 18 hours
@@ -72,6 +69,7 @@ const annotations = {
   f0110804: 'active, USA, Santa Clara', // 2202676 1 day
   f0131901: 'active, Korea, Daejeon', // 2202734 1 day
   f0137168: 'active, China, Beijing', // 2202800 about 18 hours
+  f0137489: 'active, UK, Deeside', // 2202743 1 day
   f0156207: 'active, Korea, Ulsan', // 2202680 1 day
   f0156452: 'active, Korea, Ulsan', // 2202742 about 18 hours
   f0157513: 'active, Korea, Geumcheon-gu', // 2203143 about 18 hours
@@ -79,6 +77,7 @@ const annotations = {
   f0165375: 'active, Korea, Seongnam-si', // 2202700 1 day
   f0165539: 'active, Japan, Yokohama', // 2202674 1 day
   f0166327: 'active, NR', // 2202679 1 day
+  f0166512: 'active, NR', // 2202628 1 day
   f0215370: 'active, China, Hangzhou', // 2202698 1 day
   f0228855: 'active, Korea, Guro-gu', // 2202685 1 day
   f0230200: 'active, Korea, Gwanak-gu, G-mining', // 2202691 1 day
@@ -103,8 +102,10 @@ const annotations = {
   f0717913: 'active, Korea, Jung-gu', // 2202688 1 day
   f0720629: 'active, NR', // 2202699 1 day
   f0723006: 'active, Korea, Bucheon-si', // 2202693 about 18 hours
+  f0723600: 'active, China, Taiwan, Hsinchu', // 2202694 2 days
   f0724219: 'active, Spain, Vilanova del Cami', // 2202706 1 day
   f0731235: 'active, Ukraine, Odessa', // 2202759 1 day
+  f0752695: 'active, Korea, Seongnam-si', // 2202703 about 3 hours
   f0756207: 'active, Korea', // 2202737 1 day
   f0763981: 'active, China, Tianjin', // 2202713 1 day
   f0805568: 'active, Korea, Gangnam-gu', // 2202727 1 day
@@ -114,6 +115,8 @@ const annotations = {
   f0877545: 'active, China, Ningbo', // 2202761 1 day
   f01019009: 'active, China, Henan', // 2202939 1 day
   f01023503: 'active, Korea, Busan', // 2202704 about 18 hours
+  f01037628: 'active, NR', // 2202861 3 days
+  f01039327: 'active, Indonesia, Denpasar', // 2202918 1 day
   f01039753: 'active, China, Suqian', // 2202702 1 day
   f01050286: 'active, China, Guangzhou', // 2202715 1 day
   f01053334: 'active, Korea, Mapo-gu', // 2202724 2 days
@@ -128,19 +131,11 @@ const annotations = {
 
   // Active-sealing (active, with in-flight sealing)
 
-  f020489: 'active-sealing, China, Lioaning', // 2202667
-  f023219: 'active-sealing, China, Beijing + Zhangjiakou', // 2202661
-  f024944: 'active-sealing, Korea, Yeongdeungpo-dong', // 2202671
-  f030125: 'active-sealing, China, Nantong', // 2202665
   f0130912: 'active-sealing, China, Hong Kong', // 2202678
-  f0137489: 'active-sealing, UK, Deeside', // 2202743
   f0157265: 'active-sealing, China, Zhangjiakou', // 2202677
-  f0166512: 'active-sealing, NR', // 2202628
   f0179096: 'active-sealing, China, Fuzhou', // 2202673
   f0401300: 'active-sealing, France, Deuil-la-Barre', // 2202711
-  f0723600: 'active-sealing, China, Taiwan, Hsinchu', // 2202694
   f0729674: 'active-sealing, Canada, Vancouver', // 2202709
-  f0752695: 'active-sealing, Korea, Seongnam-si', // 2202703
   f0832373: 'active-sealing, NR', // 2202697
   f0835643: 'active-sealing, Korea, Songpa-gu', // 2202705
   f0839509: 'active-sealing, China, Beijing', // 2202701
@@ -156,7 +151,6 @@ const annotations = {
   f015877: 'sealing, China, Jiaxing + USA', // 2202716
   f025025: 'sealing, China, Qingdao', // 2202919
   f039515: 'sealing, China, Chongqing, valarhash', // 2202726
-  f042567: 'sealing, China, Jinhua', // 2202725
   f044160: 'sealing, China, Guangzhou, muxing', // 2202732
   f053088: 'sealing, China, Shanghai', // 2202741
   f054417: 'sealing, NR', // 2202785
@@ -194,16 +188,12 @@ const annotations = {
   f0746416: 'sealing, Korea, Gyeonggi-do', // 2202762
   f0805622: 'sealing, NR', // 2202778
   f01027268: 'sealing, Korea, Busan', // 2202758
-  f01037628: 'sealing, NR', // 2202861
-  f01039327: 'sealing, Indonesia, Denpasar', // 2202918
   f01040469: 'sealing, Korea', // 2202760
   f01086553: 'sealing, China, Zhongshan', // 2203448
   f01095171: 'sealing, USA, Covina', // 2202791
   f01095191: 'sealing, USA, Rockledge', // 2202792
 
   // Stuck
-
-  f062318: 'stuck, Korea, Naju', // CheckForAcceptance: 2 days
 
   // Busy
 
@@ -648,6 +638,7 @@ const annotations = {
   f020928: 'error, China, Deyang + Singapore', // error reading Response message from provider: EOF
   f022820: 'error, China, Guangdong', // failed to complete data transfer: deal data transfer failed: response rejected
   f033036: 'error, China, Liaoning', // error reading Response message from provider: stream reset
+  f062318: 'error, Korea, Naju', // deal failed: (State=11) error calling node: publishing deal: GasEstimateMessageGas error: estimating gas used: message execution failed: exit 16, reason: cannot publish duplicate deals (RetCode=16)
   f062937: 'error, NR', // error reading Response message from provider: EOF
   f085486: 'error, NR', // error reading Response message from provider: stream reset
   f094128: 'error, China, Shenzhen', // error reading Response message from provider: stream reset
@@ -657,6 +648,8 @@ const annotations = {
   f0112713: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.098394057208039203 FIL, balance: 0.073002325787865852 FIL): not enough funds to execute transaction
   f0113331: 'error, Korea, Jinju + USA', // error reading Response message from provider: stream reset
   f0115108: 'error, Korea, Yangcheon-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.06878843475084504 FIL, balance: 0.026027176230698784 FIL): not enough funds to execute transaction
+  f0116445: 'error, Singapore', // error reading Response message from provider: stream reset
+  f0134516: 'error, Singapore', // error reading Response message from provider: stream reset
   f0136811: 'error, China, Guangdong', // error reading Response message from provider: EOF
   f0146751: 'error, China, Jiangsu', // failed to complete data transfer: deal data transfer failed: 12D3KooWDr1z64V5VHNuXcKsLhDRg4U2A8K3nmKfo8RCb15s3m3K-12D3KooWGHmskoNX6BtSd8UvkEzAQFxckSg82iYerLta12uDa55T-1625504407423470344: after 4 consecutive restarts failed to transfer any data
   f0402431: 'error, China, Hangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999986317528 FIL, balance: 0.045453062210936852 FIL): not enough funds to execute transaction
@@ -2651,6 +2644,7 @@ const annotations = {
   f0867288: 'nopeer, NR', // carry-over
   f0867296: 'nopeer, NR', // carry-over
   f0867298: 'nopeer, NR', // carry-over
+  f0867300: 'nopeer, NR', // carry-over
   f0867429: 'nopeer, NR', // carry-over
   f01016239: 'nopeer, NR', // carry-over
   f01016255: 'nopeer, NR', // carry-over
