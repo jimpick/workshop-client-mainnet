@@ -2605,17 +2605,17 @@ const annotations = {
   f01088088: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01089169: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01089422: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01090043: 'fail, Korea, Bucheon-si', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01090578: 'fail, Russia, Lipetsk', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01090043: 'delist, Korea, Bucheon-si', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01090578: 'delist, Russia, Lipetsk', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01090983: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01091851: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01092768: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01093419: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01094066: 'fail, China, Beijing', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01094788: 'fail, Bulgaria, Sofia', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWM1HcU4c2idvGZKFXp5EYVh2rzTKE58tBxPvRro6qGKj3:  * [/ip4/31.7.175.220/tcp/24001] dial tcp4 31.7.175.220:24001: connect: connection refused
+  f01094788: 'delist, Bulgaria, Sofia', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWM1HcU4c2idvGZKFXp5EYVh2rzTKE58tBxPvRro6qGKj3:  * [/ip4/31.7.175.220/tcp/24001] dial tcp4 31.7.175.220:24001: connect: connection refused
   f01095915: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01096056: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01096465: 'fail, USA', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01096465: 'delist, USA', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01097535: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01097758: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01098119: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2623,7 +2623,7 @@ const annotations = {
   f01098580: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01098835: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01098931: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01099312: 'fail, China, Shenzhen', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01099312: 'delist, China, Shenzhen', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01100636: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01100914: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01101397: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
