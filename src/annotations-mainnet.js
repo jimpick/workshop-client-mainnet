@@ -1490,7 +1490,7 @@ const annotations = {
   f0112772: 'fail, China, Nantong', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0112781: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0112887: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0113659: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0113659: 'delist, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0113735: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0113754: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0113777: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -1879,7 +1879,7 @@ const annotations = {
   f0240185: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0240392: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0240456: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0241022: 'fail, Korea, Geumcheon-gu', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWLrReaPmCLq3JiprzMx1SvzcZBqrCPTKNTdvoraapwVdY:  * [/ip4/175.198.74.38/tcp/24001] dial tcp4 0.0.0.0:34921->175.198.74.38:24001: i/o timeout
+  f0241022: 'delist, Korea, Geumcheon-gu', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWLrReaPmCLq3JiprzMx1SvzcZBqrCPTKNTdvoraapwVdY:  * [/ip4/175.198.74.38/tcp/24001] dial tcp4 0.0.0.0:34921->175.198.74.38:24001: i/o timeout
   f0241536: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0241666: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0241764: 'fail, China, Chengdu', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWAqoRsdJxx1zaAMFQWG3XV9Y3M3xYV1gTcU3MryCZywfa:  * [/ip4/182.131.4.195/tcp/32800] dial tcp4 182.131.4.195:32800: connect: connection refused
@@ -3242,7 +3242,7 @@ const annotations = {
   f024969: 'delist, NR', // carry-over
   f025028: 'delist, NR', // carry-over
   f025032: 'delist, China, Beijing', // carry-over
-  f029344: 'delist, Korea, Seongnam-si', // carry-over
+  f029344: 'retest, Korea, Seongnam-si', // carry-over
   f029368: 'delist, Korea, Gangseo-gu', // carry-over
   f029421: 'delist, undefined', // carry-over
   f029477: 'delist, undefined', // carry-over
@@ -3486,7 +3486,7 @@ const annotations = {
   f0160291: 'delist, USA', // carry-over
   f0164326: 'delist, China, Beijing', // carry-over
   f0165533: 'delist, NR', // carry-over
-  f0167254: 'delist, Russia, St. Petersburg', // carry-over
+  f0167254: 'retest, Russia, St. Petersburg', // carry-over
   f0167458: 'delist, NR', // carry-over
   f0168371: 'delist, Korea, Namyangju', // carry-over
   f0213894: 'delist, China, Hangzhou', // carry-over
@@ -3645,7 +3645,7 @@ const annotations = {
   f0872002: 'delist, NR', // carry-over
   f0873601: 'delist, Romania, Bucharest', // carry-over
   f0873852: 'delist, China, Yangzhou', // carry-over
-  f0873874: 'delist, NR', // carry-over
+  f0873874: 'retest, NR', // carry-over
   f0875458: 'delist, NR', // carry-over
   f0877555: 'delist, USA, Queens', // carry-over
   f0880167: 'delist, NR', // carry-over
@@ -3685,7 +3685,7 @@ const annotations = {
   f01048957: 'delist, Korea, Gangnam-gu', // carry-over
   f01051301: 'delist, NR', // carry-over
   f01060045: 'delist, China, Foshan', // carry-over
-  f01060792: 'delist, USA, London', // carry-over
+  f01060792: 'retest, USA, London', // carry-over
   f01062833: 'delist, China, Foshan', // carry-over
   f01063481: 'delist, USA, London', // carry-over
   f01067047: 'delist, China, Foshan', // carry-over
