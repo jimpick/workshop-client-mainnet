@@ -14,36 +14,16 @@ const annotations = {
 
   // New
 
-  f01097059: 'new, NR',
-  f01098271: 'new, NR',
-  f01101881: 'new, NR',
-  f01102085: 'new, NR',
-  f01103160: 'new, NR',
-  f01104012: 'new, NR',
-  f01104018: 'new, China, Beijing',
-  f01104889: 'new, NR',
-  f01105825: 'new, NR',
-  f01107129: 'new, USA',
-
-  f0567567: 'new, China, Beijing',
-  f0807383: 'new, NR',
-  f0881531: 'new, NR',
-  f01032858: 'new, NR',
-  f01053601: 'new, NR',
-  f01058790: 'new, Japan',
-  f01061547: 'new, China, Fujian',
-  f01063832: 'new, NR',
-  f01074227: 'new, NR',
-  f01096124: 'new, Korea, Uiwang',
-  f01096590: 'new, Russia, Lipetsk',
-
   // Inflight
+
+  f0116445: 'inflight, Singapore', // FundsReserved: about 9 hours
 
   // Unknown
 
   // Active
 
   f07709: 'active, Korea, Dongjak-gu', // 2205098 about 13 hours
+  f042567: 'active, China, Jinhua', // 2205071 1 day
   f063628: 'active, NR', // 2205175 about 3 hours
   f079817: "active, Russia, Ul'yanovka", // 2205069 about 8 hours
   f082635: 'active, NR', // 2205184 about 12 hours
@@ -52,6 +32,7 @@ const annotations = {
   f097720: 'active, Korea, Bucheon-si', // 2205077 about 11 hours
   f0101087: 'active, Korea', // 2205080 about 13 hours
   f0113331: 'active, Korea, Jinju + USA', // 2205177 about 1 hour
+  f0130912: 'active, China, Hong Kong', // 2205138 about 8 hours
   f0157513: 'active, Korea, Geumcheon-gu', // 2205085 about 4 hours
   f0157564: 'active, Korea, Daejeon', // 2205074 about 2 hours
   f0165375: 'active, Korea, Seongnam-si', // 2205084 about 2 hours
@@ -92,14 +73,17 @@ const annotations = {
   f0864910: 'active, Korea, Gwangjin-gu', // 2205336 about 2 hours
   f0877545: 'active, China, Ningbo', // 2205116 about 3 hours
   f01023503: 'active, Korea, Busan', // 2205109 about 3 hours
+  f01033119: 'active, France, Paris', // 2205130 about 21 hours
   f01039753: 'active, China, Suqian', // 2205125 about 13 hours
   f01050286: 'active, China, Guangzhou', // 2205120 about 2 hours
   f01053334: 'active, Korea, Mapo-gu', // 2205110 about 11 hours
   f01057303: 'active, China, Huizhou', // 2205192 about 8 hours
   f01063173: 'active, Korea, Kayang-dong', // 2205194 about 14 hours
   f01071194: 'active, USA, San Jose', // 2205121 about 4 hours
+  f01071719: 'active, China, Beijing', // 2205831 about 2 hours
   f01081349: 'active, China, Foshan', // 2205164 about 4 hours
   f01086762: 'active, Korea, Seoul', // 2205163 about 13 hours
+  f01105829: 'active, Korea', // 2205837 about 2 hours
 
   // Active-sealing (active, with in-flight sealing)
 
@@ -108,10 +92,8 @@ const annotations = {
   f024550: 'active-sealing, China, Wenzhou', // 2205072
   f024944: 'active-sealing, Korea, Yeongdeungpo-dong', // 2205079
   f030125: 'active-sealing, China, Nantong', // 2205081
-  f042567: 'active-sealing, China, Jinhua', // 2205071
   f081644: 'active-sealing, China, Wenzhou', // 2205070
   f0110804: 'active-sealing, USA, Santa Clara', // 2205083
-  f0130912: 'active-sealing, China, Hong Kong', // 2205138
   f0131901: 'active-sealing, Korea, Daejeon', // 2205076
   f0137168: 'active-sealing, China, Beijing', // 2205082
   f0137489: 'active-sealing, UK, Deeside', // 2205073
@@ -124,7 +106,6 @@ const annotations = {
   f0832373: 'active-sealing, NR', // 2205128
   f0835643: 'active-sealing, Korea, Songpa-gu', // 2205126
   f0839509: 'active-sealing, China, Beijing', // 2205139
-  f01033119: 'active-sealing, France, Paris', // 2205130
   f01037628: 'active-sealing, NR', // 2205193
   f01039327: 'active-sealing, Indonesia, Denpasar', // 2205113
 
@@ -169,30 +150,32 @@ const annotations = {
   f0447181: 'sealing, China, Zibo', // 2205148
   f0514737: 'sealing, Korea, Busan', // 2205158
   f0521569: 'sealing, Korea, Guro-go', // 2205159
+  f0567567: 'sealing, China, Beijing', // 2206000
   f0690699: 'sealing, NR', // 2205172
   f0691310: 'sealing, NR', // 2205356
+  f0700999: 'sealing, China, Chengdu', // 2205999
   f0709739: 'sealing, China, Handan', // 2205147
   f0746416: 'sealing, Korea, Gyeonggi-do', // 2205198
   f0805622: 'sealing, NR', // 2205171
   f0818428: 'sealing, China, Yichang', // 2205183
+  f01019009: 'sealing, China, Henan', // 2205986
   f01025894: 'sealing, China, Zhengzhou', // 2205830
   f01027268: 'sealing, Korea, Busan', // 2205154
   f01040469: 'sealing, Korea', // 2205157
-  f01071719: 'sealing, China, Beijing', // 2205831
+  f01058790: 'sealing, Japan', // 2205979
   f01086553: 'sealing, China, Zhongshan', // 2205173
   f01095171: 'sealing, USA, Covina', // 2205174
   f01095191: 'sealing, USA, Rockledge', // 2205169
+  f01096124: 'sealing, Korea, Uiwang', // 2206002
   f01103281: 'sealing, China, Taizhou', // 2205313
   f01104053: 'sealing, USA', // 2205161
   f01104210: 'sealing, China, Changsha', // 2205842
+  f01104889: 'sealing, NR', // 2206001
   f01105377: 'sealing, Korea, Jung-gu', // 2205838
-  f01105829: 'sealing, Korea', // 2205837
   f01106369: 'sealing, China, Hangzhou', // 2205836
   f01106730: 'sealing, China, Yunfu', // 2205835
 
   // Stuck
-
-  f01019009: 'stuck, China, Henan', // CheckForAcceptance: 1 day
 
   // Busy
 
@@ -627,6 +610,7 @@ const annotations = {
   f01050158: 'min-ask, China, Xinjiang', // 20000000 < 122070312500000
   f01056782: 'min-ask, China, Huizhou', // 20000000 < 121948242187500000
   f01060792: 'min-ask, USA, London', // 20000000 < 36621093
+  f01061547: 'min-ask, China, Fujian', // 20000000 < 1220703124999999999999999877929687500000
   f01062230: 'min-ask, NR', // 20000000 < 121948242187500000
   f01062274: 'min-ask, Korea, Busan', // 20000000 < 12207031250
   f01070558: 'min-ask, China, Jinan', // 20000000 < 122070190429687500000
@@ -643,28 +627,27 @@ const annotations = {
   // Error
 
   f07830: 'error, China, Zhongshan', // error reading Response message from provider: EOF
-  f08019: 'error, China, Yantai, 三合', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999944423648 FIL, balance: 0.030376631475953794 FIL): not enough funds to execute transaction
+  f08019: 'error, China, Yantai, 三合', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.04999999994070207 FIL, balance: 0.030376631475953794 FIL): not enough funds to execute transaction
   f020928: 'error, China, Deyang + Singapore', // error reading Response message from provider: EOF
   f022820: 'error, China, Guangdong', // failed to complete data transfer: deal data transfer failed: response rejected
   f033036: 'error, China, Liaoning', // error reading Response message from provider: stream reset
   f062937: 'error, NR', // error reading Response message from provider: EOF
-  f094901: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.12491869329193548 FIL, balance: 0.044993090496780895 FIL): not enough funds to execute transaction
-  f097214: 'error, Korea, Bucheon-si, CryptoHash', // deal failed: (State=11) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.093723045358313133 FIL, balance: 0.016390403568521252 FIL): not enough funds to execute transaction
-  f097569: 'error, NR', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.094088214566707854 FIL, balance: 0.014863905282048064 FIL): not enough funds to execute transaction
-  f0111885: 'error, Korea, Bucheon-si, WINNERS', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.095520783644840275 FIL, balance: 0.023273237154083736 FIL): not enough funds to execute transaction
-  f0112713: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.094712675442592365 FIL, balance: 0.060027560457236195 FIL): not enough funds to execute transaction
-  f0115108: 'error, Korea, Yangcheon-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.094737865858609089 FIL, balance: 0.018739592882587723 FIL): not enough funds to execute transaction
-  f0116445: 'error, Singapore', // error reading Response message from provider: stream reset
+  f094901: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.104221061126651891 FIL, balance: 0.041341341915321899 FIL): not enough funds to execute transaction
+  f097214: 'error, Korea, Bucheon-si, CryptoHash', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.104187531909475378 FIL, balance: 0.01518153944899663 FIL): not enough funds to execute transaction
+  f097569: 'error, NR', // deal failed: (State=11) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.102357377649559116 FIL, balance: 0.014863905282048064 FIL): not enough funds to execute transaction
+  f0111885: 'error, Korea, Bucheon-si, WINNERS', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.1052957817706662 FIL, balance: 0.022469066658259567 FIL): not enough funds to execute transaction
+  f0112713: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.104750919630334296 FIL, balance: 0.056489071048790052 FIL): not enough funds to execute transaction
+  f0115108: 'error, Korea, Yangcheon-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.101598832115272668 FIL, balance: 0.018739592882587723 FIL): not enough funds to execute transaction
   f0136811: 'error, China, Guangdong', // error reading Response message from provider: EOF
-  f0402431: 'error, China, Hangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999989068892 FIL, balance: 0.045453062210936852 FIL): not enough funds to execute transaction
-  f0504054: 'error, China, Luzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.09313823288193568 FIL, balance: 0.012623892884177775 FIL): not enough funds to execute transaction
-  f0512170: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.09476259573511735 FIL, balance: 0.057926696465992307 FIL): not enough funds to execute transaction
-  f0512179: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.094603059748735636 FIL, balance: 0.034245493566523908 FIL): not enough funds to execute transaction
-  f0700999: 'error, China, Chengdu', // failed to complete data transfer: deal data transfer failed: 12D3KooWDr1z64V5VHNuXcKsLhDRg4U2A8K3nmKfo8RCb15s3m3K-12D3KooWBXkJYgb2CF1dpoBeiV5B8YULdkf3YPAjxGWgZjbk2gFS-1625895176189738422: after 4 consecutive restarts failed to transfer any data
+  f0402431: 'error, China, Hangzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999965560728 FIL, balance: 0.045453062210936852 FIL): not enough funds to execute transaction
+  f0504054: 'error, China, Luzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.099999999963700088 FIL, balance: 0.012623892884177775 FIL): not enough funds to execute transaction
+  f0512170: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.0821169301671691 FIL, balance: 0.053108814598267819 FIL): not enough funds to execute transaction
+  f0512179: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.102471860797589934 FIL, balance: 0.034245493566523908 FIL): not enough funds to execute transaction
   f0717969: 'error, USA, Los Angeles', // deal failed: (State=26) deal data verification failed: error generating CommP: failed to build treeCaused by:    0: failed to create data store    1: No such file or directory (os error 2)
-  f0870558: 'error, China, Hong Kong', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999977645191 FIL, balance: 0.012803278936807429 FIL): not enough funds to execute transaction
-  f01044351: 'error, Korea, Gwangju', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.094370288353648878 FIL, balance: 0.004432781861985863 FIL): not enough funds to execute transaction
-  f01098845: 'error, USA', // failed to complete data transfer: deal data transfer failed: response rejected
+  f0870558: 'error, China, Hong Kong', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999972041062 FIL, balance: 0.012803278936807429 FIL): not enough funds to execute transaction
+  f01044351: 'error, Korea, Gwangju', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.10667025522747074 FIL, balance: 0.004432781861985863 FIL): not enough funds to execute transaction
+  f01096590: 'error, Russia, Lipetsk', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.015825521258443533 FIL, balance: 0.00082635149705334 FIL): not enough funds to execute transaction
+  f01098845: 'error, USA', // error reading Response message from provider: EOF
   f01104909: 'error, China, Shanghai', // deal failed: (State=26) error calling node: reserving funds: GasEstimateMessageGas error: estimating gas used: message execution failed: exit SysErrSenderStateInvalid(2), reason: actor balance less than needed: 0 FIL < 0.00000101 FIL (RetCode=2)
 
   // Dial backoff
@@ -2412,6 +2395,7 @@ const annotations = {
   f0806395: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0806758: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0806904: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0807383: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0807384: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0807386: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0807387: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2515,6 +2499,7 @@ const annotations = {
   f0881262: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0881281: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0881321: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0881531: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0881687: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0883083: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0884781: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2551,6 +2536,7 @@ const annotations = {
   f01032055: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01032314: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01032657: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01032858: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01032903: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01033390: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01033805: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2591,6 +2577,7 @@ const annotations = {
   f01052311: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01052556: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01053413: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01053601: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01054527: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01056608: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01057193: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2598,6 +2585,7 @@ const annotations = {
   f01059620: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01061522: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01062232: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01063832: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01064991: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01065505: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01067573: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2609,6 +2597,7 @@ const annotations = {
   f01071282: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01071852: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01073166: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01074227: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01074953: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01076629: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01076644: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2633,10 +2622,12 @@ const annotations = {
   f01094066: 'fail, China, Beijing', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01095915: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01096056: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01097059: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01097535: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01097758: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01098119: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01098124: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01098271: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01098580: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01098835: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01098931: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2644,9 +2635,16 @@ const annotations = {
   f01100914: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01101397: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01101426: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01101881: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01101884: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01102085: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01103160: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01103850: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01104012: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01104018: 'fail, China, Beijing', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWGMXT24ecaKrHNcpRY4eUrwR5qnu2qwyGnZr8cfxacGZJ:  * [/ip4/103.52.172.50/tcp/33690] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWGMXT24ecaKrHNcpRY4eUrwR5qnu2qwyGnZr8cfxacGZJ, but remote key matches 12D3KooWFaBcpEdCfe8wLM3jv4M3KqMSRTCqN7Aigsu4VpDQ6uF1
   f01104310: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01105825: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01107129: 'fail, USA', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWEQoNQFb5V2wF4qYhWFfoShYkzw2hZiBogMYW45qjL4kz:  * [/ip4/135.148.35.36/tcp/24002] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWEQoNQFb5V2wF4qYhWFfoShYkzw2hZiBogMYW45qjL4kz, but remote key matches 12D3KooWRoSUfKk1JHvn3tqUFz5ebc4AXgqrp5ioMA7CHZCYK2BB
 
   // No Peer
 
