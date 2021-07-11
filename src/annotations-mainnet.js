@@ -14,6 +14,13 @@ const annotations = {
 
   // New
 
+  f01105927: "new, China, Xi'an",
+  f01106668: 'new, NR',
+  f01108129: 'new, NR',
+  f01108733: 'new, China, Jieyang',
+  f01108749: 'new, USA',
+  f01109622: 'new, Bulgaria, Sofia',
+
   // Inflight
 
   f0116445: 'inflight, Singapore', // FundsReserved: about 9 hours
