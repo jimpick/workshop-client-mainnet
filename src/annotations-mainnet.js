@@ -35,6 +35,11 @@ const annotations = {
   f01112547: 'new, USA',
   f01112647: "new, China, Xi'an",
 
+  f0417767: 'new, unlisted',
+  f01095710: 'new, unlisted',
+  f01075086: 'new, unlisted',
+  f01038663: 'new, unlisted',
+
 
   // Inflight
 
@@ -2339,7 +2344,7 @@ const annotations = {
   f0721721: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0723381: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0723538: 'fail, China, Handan', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWCdb7C2xNDAh6zbTwPhjL7PF8yZEiq3HDL4otE2HtoUaJ:  * [/ip4/111.62.109.66/tcp/24001] dial tcp4 0.0.0.0:46451->111.62.109.66:24001: i/o timeout
-  f0723600: 'fail, China, Taiwan, Hsinchu', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJkkTMfZjgSk886TVQ7fMyCHZyVqtTqgP1CGYgfuAnyGj:  * [/ip4/125.227.180.210/tcp/44682] dial tcp4 125.227.180.210:44682: connect: connection refused
+  f0723600: 'delist, China, Taiwan, Hsinchu', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJkkTMfZjgSk886TVQ7fMyCHZyVqtTqgP1CGYgfuAnyGj:  * [/ip4/125.227.180.210/tcp/44682] dial tcp4 125.227.180.210:44682: connect: connection refused
   f0723604: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0723950: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0724023: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2452,7 +2457,7 @@ const annotations = {
   f0821595: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0822151: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0822441: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0822674: 'fail, Korea, Seoul', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWC8Cu7xxR39uQ3MYTJ8jGqbfiui54aYw6Dhvf9nrFuKRH:  * [/ip4/106.255.244.140/tcp/24001] dial tcp4 106.255.244.140:24001: connect: connection refused
+  f0822674: 'delist, Korea, Seoul', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWC8Cu7xxR39uQ3MYTJ8jGqbfiui54aYw6Dhvf9nrFuKRH:  * [/ip4/106.255.244.140/tcp/24001] dial tcp4 106.255.244.140:24001: connect: connection refused
   f0822818: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0823127: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0825528: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2549,7 +2554,7 @@ const annotations = {
   f01022733: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01023982: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01024317: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01024814: 'fail, USA, Wilson', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01024814: 'delist, USA, Wilson', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01025366: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01026560: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01027747: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2610,7 +2615,7 @@ const annotations = {
   f01057303: 'fail, China, Huizhou', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01059489: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01059620: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01061522: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01061522: 'delist, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01062232: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01063832: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01064991: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2644,9 +2649,9 @@ const annotations = {
   f01091851: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01092768: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01093419: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01094066: 'fail, China, Beijing', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01094066: 'delist, China, Beijing', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01095171: 'fail, USA, Covina', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWFbZoVc3sXcH6wP6zT7AiwuUW4KMmN71XVj7HnitwND6s:  * [/ip4/104.174.203.168/tcp/24001] dial tcp4 0.0.0.0:46451->104.174.203.168:24001: i/o timeout
-  f01095191: 'fail, USA, Rockledge', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWG4397uVcYth8TjYCt23i3R3xXR1VpARqpsicGmWdwPPQ:  * [/ip4/184.89.6.62/tcp/24001] dial tcp4 0.0.0.0:46451->184.89.6.62:24001: i/o timeout
+  f01095191: 'delist, USA, Rockledge', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWG4397uVcYth8TjYCt23i3R3xXR1VpARqpsicGmWdwPPQ:  * [/ip4/184.89.6.62/tcp/24001] dial tcp4 0.0.0.0:46451->184.89.6.62:24001: i/o timeout
   f01095915: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01096056: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01097059: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -3675,7 +3680,7 @@ const annotations = {
   f0818665: 'delist, Romania, Bucharest', // carry-over
   f0822032: 'delist, Korea, Incheon', // carry-over
   f0822203: 'delist, Korea, Seoul', // carry-over
-  f0827934: 'delist, USA, Port Jefferson', // carry-over
+  f0827934: 'retest, USA, Port Jefferson', // carry-over
   f0832312: 'delist, USA, Auburn', // carry-over
   f0839767: 'delist, Korea, Suwon', // carry-over
   f0843728: 'delist, France', // carry-over
