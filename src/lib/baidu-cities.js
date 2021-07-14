@@ -64,6 +64,7 @@ const baiduCities = {
   218: 'Wuhan', // 武汉市
   224: 'Suzhou', // 苏州市
   226: 'Fuzhou', // 抚州市
+  229: 'Baotou', // 包头市
   233: 'Xi\'an', // 西安市
   234: 'Linyi', // 临沂市
   236: 'Qingdao', // 青岛市
