@@ -208,7 +208,7 @@ const annotations = {
   f08399: 'min-size, USA, Sammamish, MiningMusing', // 131072 < 4294967296
   f08403: 'min-size, UK, Lower Slaughter, TippyFlits', // 131072 < 134217728
   f09848: 'min-size, USA, Irvine, BigBearLake', // 131072 < 8589934592
-  f010088: 'min-size, NR', // 131072 < 1048576
+  f010088: 'min-size, USA, Kirkland', // 131072 < 1048576
   f010254: 'min-size, Japan, Minamata', // 131072 < 134217728
   f010446: 'min-size, Netherlands, Angelo', // 131072 < 1073741824
   f010479: 'min-size, France, Fontenay-sous-Bois, s0nik42', // 131072 < 1073741824
