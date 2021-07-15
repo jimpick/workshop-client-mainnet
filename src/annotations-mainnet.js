@@ -45,6 +45,13 @@ const annotations = {
   f01115166: 'new, Korea, Seongnam-si', // carry-over
   f01115274: 'new, Japan, Yokohama', // carry-over
 
+  f01116725: 'new, USA, Gilbert',
+  f01116796: 'new, USA, Gilbert',
+  f01117206: 'new, China, Jieyang',
+  f01117775: 'new, Korea, Seongnam-si',
+  f01118185: 'new, USA, Gilbert',
+  f01118739: 'new, China, Karamay',
+
   // Inflight
 
   // Unknown
