@@ -52,6 +52,14 @@ const annotations = {
   f01118185: 'new, USA, Gilbert',
   f01118739: 'new, China, Karamay',
 
+  f01118032: 'new, NR',
+  f01118563: 'new, USA, Gilbert',
+
+  f0442672: 'new, unlisted',
+  f01070205: 'new, unlisted',
+  f01111111: 'new, unlisted',
+  f01066009: 'new, unlisted',
+
   // Inflight
 
   // Unknown
