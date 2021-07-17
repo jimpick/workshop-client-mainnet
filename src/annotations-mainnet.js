@@ -24,6 +24,10 @@ const annotations = {
 
   f01122412: 'new, China',
 
+  f01070158: 'new, NR',
+  f01112782: 'new, NR',
+  f01112955: 'new, China, Sichuan',
+
   // Inflight
 
   // Unknown
