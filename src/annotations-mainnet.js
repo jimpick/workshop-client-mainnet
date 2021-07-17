@@ -28,6 +28,11 @@ const annotations = {
   f01112782: 'new, NR',
   f01112955: 'new, China, Sichuan',
 
+  f0433691: 'new, unlisted',
+  f01100182: 'new, unlisted',
+  f01113378: 'new, unlisted',
+  f01112287: 'new, unlisted',
+
   // Inflight
 
   // Unknown
@@ -1275,7 +1280,7 @@ const annotations = {
   f057683: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f058349: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f058374: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f059740: 'fail, Germany, Bottrop', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWR2iY2SFgjHM45NkQEJMmAathsCrgHWADbbCnPzsuS2bY:  * [/ip4/156.67.191.194/tcp/24001] dial tcp4 156.67.191.194:24001: connect: connection refused
+  f059740: 'delist, Germany, Bottrop', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWR2iY2SFgjHM45NkQEJMmAathsCrgHWADbbCnPzsuS2bY:  * [/ip4/156.67.191.194/tcp/24001] dial tcp4 156.67.191.194:24001: connect: connection refused
   f059788: 'fail, China, Zhanjiang', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWEhZ3xDvecQ7K14ByYanCewzQqufzX6P2xFaMQu64x3C8:  * [/ip4/183.2.149.76/tcp/33669] dial tcp4 0.0.0.0:42433->183.2.149.76:33669: i/o timeout
   f059813: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f060114: 'fail, China, Shenzhen', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2040,7 +2045,7 @@ const annotations = {
   f0417133: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0417709: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: stream reset
   f0417720: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0417748: 'fail, China, Changsha', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0417748: 'delist, China, Changsha', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0417767: 'fail, China, Zhangzhou', // exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0417893: 'fail, China, Xiamen', // exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0418086: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWP5VxNssfCKZy2Hv8CEbbVbuDni7Rqw6LVsuRWpYjSLoC:  * [/ip4/10.155.8.31/tcp/32759] dial tcp4 0.0.0.0:42433->10.155.8.31:32759: i/o timeout
@@ -2695,31 +2700,31 @@ const annotations = {
   f01101397: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01101426: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01101881: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01101884: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01101884: 'delist, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01102006: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01102085: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01102936: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01103160: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWAZyf6RWfHJ1A7rCxiCvoMqxWWZN5MYZaUD7qRofx8KVx:  * [/ip4/220.117.173.3/tcp/24001] dial tcp4 220.117.173.3:24001: connect: connection refused
-  f01103281: 'fail, China, Taizhou', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWFo7K1SE8orxPaY49E3MGzRhaQqLbmbYdKMAPqc6gfj7t:  * [/ip4/220.185.147.82/tcp/24001] dial tcp4 0.0.0.0:42433->220.185.147.82:24001: i/o timeout
+  f01103281: 'delist, China, Taizhou', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWFo7K1SE8orxPaY49E3MGzRhaQqLbmbYdKMAPqc6gfj7t:  * [/ip4/220.185.147.82/tcp/24001] dial tcp4 0.0.0.0:42433->220.185.147.82:24001: i/o timeout
   f01103850: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01104012: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01104018: 'fail, China, Beijing', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWGMXT24ecaKrHNcpRY4eUrwR5qnu2qwyGnZr8cfxacGZJ:  * [/ip4/103.52.172.50/tcp/33690] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWGMXT24ecaKrHNcpRY4eUrwR5qnu2qwyGnZr8cfxacGZJ, but remote key matches 12D3KooWFaBcpEdCfe8wLM3jv4M3KqMSRTCqN7Aigsu4VpDQ6uF1
-  f01104053: 'fail, USA', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWSJ6UpqNsLRmaynY6SS71rR9y5mSJA8KS2UXBksZxCmbb:  * [/ip4/135.148.35.36/tcp/24002] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWSJ6UpqNsLRmaynY6SS71rR9y5mSJA8KS2UXBksZxCmbb, but remote key matches 12D3KooWJvbM1Aa7EbSQuS715Lsai7bfEEgYvP5DuVwFwR83YYDS
-  f01104210: 'fail, China, Changsha', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01104053: 'delist, USA', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWSJ6UpqNsLRmaynY6SS71rR9y5mSJA8KS2UXBksZxCmbb:  * [/ip4/135.148.35.36/tcp/24002] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWSJ6UpqNsLRmaynY6SS71rR9y5mSJA8KS2UXBksZxCmbb, but remote key matches 12D3KooWJvbM1Aa7EbSQuS715Lsai7bfEEgYvP5DuVwFwR83YYDS
+  f01104210: 'delist, China, Changsha', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01104310: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01105079: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01105825: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01105927: "fail, China, Xi'an", // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWENsfcLm3e62dFcr3gEdpiQf1nmTKR6hbJcj5md9iJeYt:  * [/ip4/113.142.1.78/tcp/3000] dial tcp4 113.142.1.78:3000: connect: connection refused
   f01106117: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01106369: 'fail, China, Hangzhou', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01106369: 'delist, China, Hangzhou', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01106668: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01107129: 'fail, USA', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWEQoNQFb5V2wF4qYhWFfoShYkzw2hZiBogMYW45qjL4kz:  * [/ip4/135.148.35.36/tcp/24002] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWEQoNQFb5V2wF4qYhWFfoShYkzw2hZiBogMYW45qjL4kz, but remote key matches 12D3KooWJvbM1Aa7EbSQuS715Lsai7bfEEgYvP5DuVwFwR83YYDS
+  f01107129: 'delist, USA', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWEQoNQFb5V2wF4qYhWFfoShYkzw2hZiBogMYW45qjL4kz:  * [/ip4/135.148.35.36/tcp/24002] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWEQoNQFb5V2wF4qYhWFfoShYkzw2hZiBogMYW45qjL4kz, but remote key matches 12D3KooWJvbM1Aa7EbSQuS715Lsai7bfEEgYvP5DuVwFwR83YYDS
   f01108096: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01108594: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01108733: 'fail, China, Jieyang', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01108749: 'fail, USA', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWRoSUfKk1JHvn3tqUFz5ebc4AXgqrp5ioMA7CHZCYK2BB:  * [/ip4/135.148.35.36/tcp/24002] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWRoSUfKk1JHvn3tqUFz5ebc4AXgqrp5ioMA7CHZCYK2BB, but remote key matches 12D3KooWJvbM1Aa7EbSQuS715Lsai7bfEEgYvP5DuVwFwR83YYDS
+  f01108749: 'delist, USA', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWRoSUfKk1JHvn3tqUFz5ebc4AXgqrp5ioMA7CHZCYK2BB:  * [/ip4/135.148.35.36/tcp/24002] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWRoSUfKk1JHvn3tqUFz5ebc4AXgqrp5ioMA7CHZCYK2BB, but remote key matches 12D3KooWJvbM1Aa7EbSQuS715Lsai7bfEEgYvP5DuVwFwR83YYDS
   f01109196: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01109622: 'fail, Bulgaria, Sofia', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01109622: 'delist, Bulgaria, Sofia', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01110284: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01110660: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01111111: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -3730,7 +3735,7 @@ const annotations = {
   f0818665: 'delist, Romania, Bucharest', // carry-over
   f0822032: 'delist, Korea, Incheon', // carry-over
   f0822203: 'delist, Korea, Seoul', // carry-over
-  f0822674: 'delist, Korea, Seoul', // carry-over
+  f0822674: 'retest, Korea, Seoul', // carry-over
   f0832312: 'delist, USA, Auburn', // carry-over
   f0839767: 'delist, Korea, Suwon', // carry-over
   f0843728: 'delist, France', // carry-over
@@ -3763,7 +3768,7 @@ const annotations = {
   f01017177: 'delist, Japan, Tokyo', // carry-over
   f01019892: 'delist, USA, Lake Elsinore', // carry-over
   f01021896: 'delist, Korea, Seoul', // carry-over
-  f01024814: 'delist, USA, Wilson', // carry-over
+  f01024814: 'retest, USA, Wilson', // carry-over
   f01029201: 'delist, China, Beijing', // carry-over
   f01029682: 'delist, USA, Palm Harbour', // carry-over
   f01031325: 'delist, Korea, Busan', // carry-over
@@ -3773,7 +3778,7 @@ const annotations = {
   f01037829: 'delist, USA, Palm Harbour', // carry-over
   f01038170: 'delist, China, Shenzhen', // carry-over
   f01040006: 'delist, Korea, Jung-gu', // carry-over
-  f01040707: 'delist, China, Tianjin', // carry-over
+  f01040707: 'retest, China, Tianjin', // carry-over
   f01041703: 'delist, China, Taiwan, New Taipei', // carry-over
   f01042552: 'delist, Japan, Tokyo', // carry-over
   f01043023: 'delist, NR', // carry-over
