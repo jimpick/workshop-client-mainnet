@@ -18,6 +18,12 @@ const annotations = {
   f01119939: 'new, USA, Baxter', // carry-over
   f01120547: 'new, USA, Gilbert', // carry-over
 
+  f01120248: 'new, NR',
+  f01120291: 'new, NR',
+  f01121994: 'new, China, Nanning',
+
+  f01122412: 'new, China',
+
   // Inflight
 
   // Unknown

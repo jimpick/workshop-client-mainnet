@@ -77,6 +77,7 @@ const baiduCities = {
   257: 'Guangzhou', // 广州市
   258: 'Yunfu', // 云浮市
   259: 'Jieyang', // 揭阳市
+  261: 'Nanning', // 南宁市 
   264: 'Zhangjiakou', // 张家口市
   268: 'Zhengzhou', // 郑州市
   270: 'Yichang', // 宜昌市
