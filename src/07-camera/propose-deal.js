@@ -436,7 +436,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
       })
     } catch (e) {
       setStatus(`Error ${targetMiner}: ` + e.message)
-      console.log('Exception', e)
+      console.log('Exception', targetMiner, e)
     }
   }
 
