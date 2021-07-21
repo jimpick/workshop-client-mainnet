@@ -17,6 +17,12 @@ const annotations = {
   f01016240: 'new, auto', // carry-over
   f01075157: 'new, auto', // carry-over
 
+  f0143332: 'new, unlisted',
+  f01123232: 'new, unlisted',
+  f01125783: 'new, unlisted',
+  f01126768: 'new, unlisted',
+  f01127273: 'new, unlisted',
+
   // Inflight
 
   // Unknown
@@ -619,7 +625,7 @@ const annotations = {
   f01045957: 'min-ask, NR', // 20000000 < 121948242187500000
   f01050158: 'min-ask, China, Xinjiang', // 20000000 < 122070312500000
   f01056782: 'min-ask, China, Huizhou', // 20000000 < 121948242187500000
-  f01060792: 'min-ask, USA, London', // 20000000 < 36621093
+  f01060792: 'delist, USA, London', // 20000000 < 36621093
   f01061547: 'min-ask, China, Fujian', // 20000000 < 1220703124999999999999999877929687500000
   f01062230: 'min-ask, NR', // 20000000 < 121948242187500000
   f01062274: 'min-ask, Korea, Busan', // 20000000 < 12207031250
