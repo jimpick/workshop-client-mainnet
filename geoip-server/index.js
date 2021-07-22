@@ -18,7 +18,7 @@ let reader
 
 fastify.register(require('fastify-cors'))
 
-fastify.get('/ipv4/:ip', async (request, reply) => {
+fastify.get('/geolite2/:ip', async (request, reply) => {
   console.log('IP:', request.params.ip)
   try {
     const response = reader.city(request.params.ip)
@@ -30,7 +30,7 @@ fastify.get('/ipv4/:ip', async (request, reply) => {
 })
 
 if (client) {
-  fastify.get('/ipv4-via-api/:ip', async (request, reply) => {
+  fastify.get('/geoip2/:ip', async (request, reply) => {
     console.log('IP via API:', request.params.ip)
     try {
       const response = await client.city(request.params.ip)
@@ -43,7 +43,7 @@ if (client) {
 }
 
 if (process.env.BAIDU_KEY) {
-  fastify.get('/ipv4-via-baidu/:ip', async (request, reply) => {
+  fastify.get('/baidu/:ip', async (request, reply) => {
     console.log('IP via Baidu:', request.params.ip)
     try {
       const url =
