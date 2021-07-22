@@ -14,13 +14,18 @@ const annotations = {
 
   // New
 
-  f0143332: 'new, unlisted', // carry-over
+  f0143332: 'new, autolisted', // carry-over
   f01016240: 'new, auto', // carry-over
   f01075157: 'new, auto', // carry-over
-  f01123232: 'new, unlisted', // carry-over
-  f01125783: 'new, unlisted', // carry-over
-  f01126768: 'new, unlisted', // carry-over
-  f01127273: 'new, unlisted', // carry-over
+  f01123232: 'new, autolisted', // carry-over
+  f01125783: 'new, autolisted', // carry-over
+  f01126768: 'new, autolisted', // carry-over
+  f01127273: 'new, autolisted', // carry-over
+
+  f01070319: 'new, autolisted',
+  f01124710: 'new, autolisted',
+  f01128462: 'new, autolisted',
+  f01128709: 'new, autolisted',
 
   // Inflight
 
