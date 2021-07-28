@@ -20,1161 +20,91 @@ const annotations = {
 
   // Inflight
 
-  f010446: 'inflight, Netherlands, Angelo', // FundsReserved: about 2 hours
-  f010505: 'inflight, China, Wuhan, Interstellar Roewe', // FundsReserved: about 2 hours
-  f0119146: 'inflight, NR', // FundsReserved: about 1 hour
-  f0123536: 'inflight, China, Fuzhou', // FundsReserved: about 1 hour
-  f0127628: 'inflight, NR', // FundsReserved: about 1 hour
-  f0128381: 'inflight, NR', // FundsReserved: about 1 hour
-  f0128499: 'inflight, NR', // FundsReserved: about 1 hour
-  f0130906: 'inflight, NR', // FundsReserved: about 1 hour
-  f0132313: 'inflight, NR', // FundsReserved: about 1 hour
-  f0134609: 'inflight, NR', // FundsReserved: about 1 hour
-  f0134839: 'inflight, NR', // FundsReserved: about 1 hour
-  f0135469: 'inflight, NR', // FundsReserved: about 1 hour
-  f0135551: 'inflight, NR', // FundsReserved: about 1 hour
-  f0135934: 'inflight, NR', // FundsReserved: about 1 hour
-  f0136138: 'inflight, NR', // FundsReserved: about 1 hour
-  f0136399: 'inflight, NR', // FundsReserved: about 1 hour
-  f0136668: 'inflight, NR', // FundsReserved: about 1 hour
-  f0137594: 'inflight, NR', // FundsReserved: about 1 hour
-  f0141761: 'inflight, NR', // FundsReserved: about 1 hour
-  f0142245: 'inflight, NR', // FundsReserved: about 1 hour
-  f0143666: 'inflight, NR', // FundsReserved: about 1 hour
-  f0143999: 'inflight, NR', // FundsReserved: about 1 hour
-  f0144069: 'inflight, NR', // FundsReserved: about 1 hour
-  f0144316: 'inflight, NR', // FundsReserved: about 1 hour
-  f0144756: 'inflight, NR', // FundsReserved: about 1 hour
-  f0144952: 'inflight, NR', // FundsReserved: about 1 hour
-  f0145060: 'inflight, NR', // FundsReserved: about 1 hour
-  f0145985: 'inflight, NR', // FundsReserved: about 1 hour
-  f0145986: 'inflight, NR', // FundsReserved: about 1 hour
-  f0147119: 'inflight, NR', // FundsReserved: about 1 hour
-  f0147214: 'inflight, NR', // FundsReserved: about 1 hour
-  f0147586: 'inflight, NR', // FundsReserved: about 1 hour
-  f0148143: 'inflight, China, Tianjin', // FundsReserved: about 1 hour
-  f0148151: 'inflight, NR', // FundsReserved: about 1 hour
-  f0148269: 'inflight, NR', // FundsReserved: about 1 hour
-  f0148452: 'inflight, NR', // FundsReserved: about 1 hour
-  f0148494: 'inflight, NR', // FundsReserved: about 1 hour
-  f0149753: 'inflight, NR', // FundsReserved: about 1 hour
-  f0150816: 'inflight, NR', // FundsReserved: about 1 hour
-  f0150918: 'inflight, NR', // FundsReserved: about 1 hour
-  f0151706: 'inflight, NR', // FundsReserved: about 1 hour
-  f0151849: 'inflight, NR', // FundsReserved: about 1 hour
-  f0152134: 'inflight, NR', // FundsReserved: about 1 hour
-  f0152563: 'inflight, China, Chongqing', // FundsReserved: about 1 hour
-  f0152799: 'inflight, NR', // FundsReserved: about 1 hour
-  f0152866: 'inflight, NR', // FundsReserved: about 1 hour
-  f0153024: 'inflight, NR', // FundsReserved: about 1 hour
-  f0153040: 'inflight, NR', // FundsReserved: about 1 hour
-  f0153188: 'inflight, NR', // FundsReserved: about 1 hour
-  f0153565: 'inflight, NR', // FundsReserved: about 1 hour
-  f0153583: 'inflight, NR', // FundsReserved: about 1 hour
-  f0153775: 'inflight, NR', // FundsReserved: about 1 hour
-  f0153960: 'inflight, NR', // FundsReserved: about 1 hour
-  f0154152: 'inflight, NR', // FundsReserved: about 1 hour
-  f0154294: 'inflight, NR', // FundsReserved: about 1 hour
-  f0155049: 'inflight, NR', // FundsReserved: about 1 hour
-  f0155258: 'inflight, NR', // FundsReserved: about 1 hour
-  f0155515: 'inflight, NR', // FundsReserved: about 1 hour
-  f0155687: 'inflight, China, Guangzhou', // FundsReserved: about 1 hour
-  f0155829: 'inflight, NR', // FundsReserved: about 1 hour
-  f0155983: 'inflight, Japan', // FundsReserved: about 1 hour
-  f0156214: 'inflight, NR', // FundsReserved: about 1 hour
-  f0156333: 'inflight, China, Ningbo', // FundsReserved: about 1 hour
-  f0156342: 'inflight, NR', // FundsReserved: about 1 hour
-  f0156417: 'inflight, NR', // FundsReserved: about 1 hour
-  f0157025: 'inflight, NR', // FundsReserved: about 1 hour
-  f0157115: 'inflight, NR', // FundsReserved: about 1 hour
-  f0157127: 'inflight, NR', // FundsReserved: about 1 hour
-  f0157316: 'inflight, NR', // FundsReserved: about 1 hour
-  f0157502: 'inflight, NR', // FundsReserved: about 1 hour
-  f0157769: 'inflight, China, Changsha', // FundsReserved: about 1 hour
-  f0157917: 'inflight, NR', // FundsReserved: about 1 hour
-  f0157979: 'inflight, NR', // FundsReserved: about 1 hour
-  f0157991: 'inflight, NR', // FundsReserved: about 1 hour
-  f0158000: 'inflight, NR', // FundsReserved: about 1 hour
-  f0158133: 'inflight, NR', // FundsReserved: about 1 hour
-  f0158142: 'inflight, China, Karamay', // FundsReserved: about 1 hour
-  f0158156: 'inflight, NR', // FundsReserved: about 1 hour
-  f0158265: 'inflight, China, Hefei', // FundsReserved: about 1 hour
-  f0158335: 'inflight, NR', // FundsReserved: about 1 hour
-  f0158613: 'inflight, NR', // FundsReserved: about 1 hour
-  f0158728: 'inflight, NR', // FundsReserved: about 1 hour
-  f0159067: 'inflight, NR', // FundsReserved: about 1 hour
-  f0159333: 'inflight, NR', // FundsReserved: about 1 hour
-  f0159449: 'inflight, NR', // FundsReserved: about 1 hour
-  f0159517: 'inflight, NR', // FundsReserved: about 1 hour
-  f0159632: 'inflight, NR', // FundsReserved: about 1 hour
-  f0159654: 'inflight, NR', // FundsReserved: about 1 hour
-  f0159660: 'inflight, NR', // FundsReserved: about 1 hour
-  f0159689: 'inflight, NR', // FundsReserved: about 1 hour
-  f0159883: 'inflight, NR', // FundsReserved: about 1 hour
-  f0160137: 'inflight, NR', // FundsReserved: about 1 hour
-  f0160735: 'inflight, NR', // FundsReserved: about 1 hour
-  f0160819: 'inflight, NR', // FundsReserved: about 1 hour
-  f0160870: 'inflight, NR', // FundsReserved: about 1 hour
-  f0161468: 'inflight, NR', // FundsReserved: about 1 hour
-  f0161819: 'inflight, NR', // FundsReserved: about 1 hour
-  f0161916: 'inflight, NR', // FundsReserved: about 1 hour
-  f0162183: "inflight, China, Xi'an", // FundsReserved: about 1 hour
-  f0163275: 'inflight, NR', // FundsReserved: about 1 hour
-  f0165643: 'inflight, China, Guangzhou', // FundsReserved: about 1 hour
-  f0166327: 'inflight, NR', // FundsReserved: about 1 hour
-  f0166425: 'inflight, NR', // FundsReserved: about 1 hour
-  f0166512: 'inflight, NR', // FundsReserved: about 1 hour
-  f0166843: 'inflight, NR', // FundsReserved: about 1 hour
-  f0166896: 'inflight, NR', // FundsReserved: about 1 hour
-  f0167137: 'inflight, China, Shaoxing', // FundsReserved: about 1 hour
-  f0167505: 'inflight, China, Beijing', // FundsReserved: about 1 hour
-  f0168537: 'inflight, NR', // FundsReserved: about 1 hour
-  f0169053: 'inflight, NR', // FundsReserved: about 1 hour
-  f0169097: 'inflight, NR', // FundsReserved: about 1 hour
-  f0172300: 'inflight, NR', // FundsReserved: about 1 hour
-  f0179096: 'inflight, China, Fuzhou', // FundsReserved: about 1 hour
-  f0207949: 'inflight, NR', // FundsReserved: about 1 hour
-  f0216463: 'inflight, NR', // FundsReserved: about 1 hour
-  f0216822: 'inflight, NR', // FundsReserved: about 1 hour
-  f0217419: 'inflight, NR', // FundsReserved: about 1 hour
-  f0217771: 'inflight, NR', // FundsReserved: about 1 hour
-  f0217789: 'inflight, NR', // FundsReserved: about 1 hour
-  f0217805: 'inflight, China, Taiwan, Taipei', // FundsReserved: about 1 hour
-  f0218072: 'inflight, NR', // FundsReserved: about 1 hour
-  f0218092: 'inflight, NR', // FundsReserved: about 1 hour
-  f0218407: 'inflight, NR', // FundsReserved: about 1 hour
-  f0219106: 'inflight, NR', // FundsReserved: about 1 hour
-  f0220156: 'inflight, NR', // FundsReserved: about 1 hour
-  f0220632: 'inflight, China, Fuzhou', // FundsReserved: about 1 hour
-  f0222611: 'inflight, NR', // FundsReserved: about 1 hour
-  f0222811: 'inflight, NR', // FundsReserved: about 1 hour
-  f0222947: 'inflight, NR', // FundsReserved: about 1 hour
-  f0223033: 'inflight, NR', // FundsReserved: about 1 hour
-  f0223101: 'inflight, NR', // FundsReserved: about 1 hour
-  f0223102: 'inflight, NR', // FundsReserved: about 1 hour
-  f0223103: 'inflight, NR', // FundsReserved: about 1 hour
-  f0223104: 'inflight, NR', // FundsReserved: about 1 hour
-  f0223106: 'inflight, NR', // FundsReserved: about 1 hour
-  f0223316: 'inflight, NR', // FundsReserved: about 1 hour
-  f0223933: 'inflight, NR', // FundsReserved: about 1 hour
-  f0224894: 'inflight, China, Qingdao', // FundsReserved: about 1 hour
-  f0224984: 'inflight, China, Wuhan', // FundsReserved: about 1 hour
-  f0225058: 'inflight, China, Fuzhou', // FundsReserved: about 1 hour
-  f0225285: 'inflight, NR', // FundsReserved: about 1 hour
-  f0226324: 'inflight, China, Guangxi', // FundsReserved: about 1 hour
-  f0226418: 'inflight, NR', // FundsReserved: about 1 hour
-  f0226520: 'inflight, NR', // FundsReserved: about 1 hour
-  f0227472: 'inflight, China, Xiamen', // FundsReserved: about 1 hour
-  f0227531: 'inflight, China, Xiamen', // FundsReserved: about 1 hour
-  f0227567: 'inflight, China, Zhangzhou', // FundsReserved: about 1 hour
-  f0227660: 'inflight, NR', // FundsReserved: about 1 hour
-  f0227684: 'inflight, China, Xiamen', // FundsReserved: about 1 hour
-  f0228712: 'inflight, USA', // FundsReserved: about 1 hour
-  f0229199: 'inflight, NR', // FundsReserved: about 1 hour
-  f0229437: 'inflight, NR', // FundsReserved: about 1 hour
-  f0230449: 'inflight, NR', // FundsReserved: about 1 hour
-  f0230799: 'inflight, NR', // FundsReserved: about 1 hour
-  f0230861: 'inflight, NR', // FundsReserved: about 1 hour
-  f0231112: 'inflight, NR', // FundsReserved: about 1 hour
-  f0231481: 'inflight, NR', // FundsReserved: about 1 hour
-  f0231782: 'inflight, NR', // FundsReserved: about 1 hour
-  f0232459: 'inflight, NR', // FundsReserved: about 1 hour
-  f0239251: 'inflight, Korea, Uiwang', // FundsReserved: about 1 hour
-  f0240035: 'inflight, NR', // FundsReserved: about 1 hour
-  f0240185: 'inflight, NR', // FundsReserved: about 1 hour
-  f0240392: 'inflight, NR', // FundsReserved: about 1 hour
-  f0240456: 'inflight, NR', // FundsReserved: about 1 hour
-  f0241536: 'inflight, NR', // FundsReserved: about 1 hour
-  f0241666: 'inflight, NR', // FundsReserved: about 1 hour
-  f0241764: 'inflight, China, Chengdu', // FundsReserved: about 1 hour
-  f0242373: 'inflight, NR', // FundsReserved: about 1 hour
-  f0242420: 'inflight, NR', // FundsReserved: about 1 hour
-  f0349810: 'inflight, China, Qinzhou', // FundsReserved: about 1 hour
-  f0364957: 'inflight, China, Sichuan', // FundsReserved: about 1 hour
-  f0377277: 'inflight, NR', // FundsReserved: about 1 hour
-  f0391143: 'inflight, China, Shanghai', // FundsReserved: about 1 hour
-  f0391212: 'inflight, NR', // FundsReserved: about 1 hour
-  f0391214: 'inflight, NR', // FundsReserved: about 1 hour
-  f0391235: 'inflight, NR', // FundsReserved: about 1 hour
-  f0391381: 'inflight, NR', // FundsReserved: about 1 hour
-  f0391439: 'inflight, NR', // FundsReserved: about 1 hour
-  f0392194: 'inflight, NR', // FundsReserved: about 1 hour
-  f0392430: 'inflight, NR', // FundsReserved: about 1 hour
-  f0392488: 'inflight, NR', // FundsReserved: about 1 hour
-  f0392734: 'inflight, Korea, Icheon-si', // FundsReserved: about 1 hour
-  f0392799: 'inflight, NR', // FundsReserved: about 1 hour
-  f0392808: 'inflight, NR', // FundsReserved: about 1 hour
-  f0392813: 'inflight, NR', // FundsReserved: about 1 hour
-  f0392924: 'inflight, NR', // FundsReserved: about 1 hour
-  f0392959: 'inflight, NR', // FundsReserved: about 1 hour
-  f0392980: 'inflight, NR', // FundsReserved: about 1 hour
-  f0392992: 'inflight, NR', // FundsReserved: about 1 hour
-  f0392999: 'inflight, NR', // FundsReserved: about 1 hour
-  f0393016: 'inflight, NR', // FundsReserved: about 1 hour
-  f0393119: 'inflight, NR', // FundsReserved: about 1 hour
-  f0393135: 'inflight, NR', // FundsReserved: about 1 hour
-  f0393417: 'inflight, NR', // FundsReserved: about 1 hour
-  f0394102: 'inflight, NR', // FundsReserved: about 1 hour
-  f0395680: 'inflight, NR', // FundsReserved: about 1 hour
-  f0395994: 'inflight, NR', // FundsReserved: about 1 hour
-  f0396149: 'inflight, NR', // FundsReserved: about 1 hour
-  f0396217: 'inflight, NR', // FundsReserved: about 1 hour
-  f0396352: 'inflight, NR', // FundsReserved: about 1 hour
-  f0396422: 'inflight, NR', // FundsReserved: about 1 hour
-  f0396452: 'inflight, NR', // FundsReserved: about 1 hour
-  f0396473: 'inflight, NR', // FundsReserved: about 1 hour
-  f0396684: 'inflight, China, Xiamen', // FundsReserved: about 1 hour
-  f0396720: 'inflight, NR', // FundsReserved: about 1 hour
-  f0396732: 'inflight, NR', // FundsReserved: about 1 hour
-  f0396751: 'inflight, NR', // FundsReserved: about 1 hour
-  f0397083: 'inflight, NR', // FundsReserved: about 1 hour
-  f0397561: 'inflight, NR', // FundsReserved: about 1 hour
-  f0397794: 'inflight, NR', // FundsReserved: about 1 hour
-  f0397802: 'inflight, NR', // FundsReserved: about 1 hour
-  f0397837: 'inflight, China, Fuzhou', // FundsReserved: about 1 hour
-  f0398286: 'inflight, China, Beijing', // FundsReserved: about 1 hour
-  f0398999: 'inflight, NR', // FundsReserved: about 1 hour
-  f0399111: 'inflight, NR', // FundsReserved: about 1 hour
-  f0399319: 'inflight, NR', // FundsReserved: about 1 hour
-  f0399320: 'inflight, NR', // FundsReserved: about 1 hour
-  f0399321: 'inflight, NR', // FundsReserved: about 1 hour
-  f0399322: 'inflight, NR', // FundsReserved: about 1 hour
-  f0399323: 'inflight, NR', // FundsReserved: about 1 hour
-  f0399342: 'inflight, NR', // FundsReserved: about 1 hour
-  f0399343: 'inflight, NR', // FundsReserved: about 1 hour
-  f0399346: 'inflight, NR', // FundsReserved: about 1 hour
-  f0399348: 'inflight, NR', // FundsReserved: about 1 hour
-  f0399743: 'inflight, NR', // FundsReserved: about 1 hour
-  f0399765: 'inflight, NR', // FundsReserved: about 1 hour
-  f0399996: 'inflight, NR', // FundsReserved: about 1 hour
-  f0400264: 'inflight, NR', // FundsReserved: about 1 hour
-  f0400307: 'inflight, NR', // FundsReserved: about 1 hour
-  f0400644: 'inflight, NR', // FundsReserved: about 1 hour
-  f0400920: 'inflight, China, Luzhou', // FundsReserved: about 1 hour
-  f0401287: 'inflight, China, Yibin', // FundsReserved: about 1 hour
-  f0402233: 'inflight, NR', // FundsReserved: about 1 hour
-  f0402431: 'inflight, China, Hangzhou', // FundsReserved: about 1 hour
-  f0402661: 'inflight, NR', // FundsReserved: about 1 hour
-  f0402822: 'inflight, NR', // FundsReserved: about 1 hour
-  f0403050: 'inflight, NR', // FundsReserved: about 1 hour
-  f0403529: 'inflight, NR', // FundsReserved: about 1 hour
-  f0404193: 'inflight, NR', // FundsReserved: about 1 hour
-  f0404643: 'inflight, NR', // FundsReserved: about 1 hour
-  f0406478: 'inflight, NR', // FundsReserved: about 1 hour
-  f0406533: 'inflight, NR', // FundsReserved: about 1 hour
-  f0407244: 'inflight, NR', // FundsReserved: about 1 hour
-  f0407287: 'inflight, NR', // FundsReserved: about 1 hour
-  f0407410: 'inflight, NR', // FundsReserved: about 1 hour
-  f0407733: 'inflight, NR', // FundsReserved: about 1 hour
-  f0408205: 'inflight, NR', // FundsReserved: about 1 hour
-  f0408206: 'inflight, NR', // FundsReserved: about 1 hour
-  f0408208: 'inflight, NR', // FundsReserved: about 1 hour
-  f0408582: 'inflight, NR', // FundsReserved: about 1 hour
-  f0408629: 'inflight, NR', // FundsReserved: about 1 hour
-  f0408688: 'inflight, NR', // FundsReserved: about 1 hour
-  f0408833: 'inflight, NR', // FundsReserved: about 1 hour
-  f0409172: 'inflight, NR', // FundsReserved: about 1 hour
-  f0409272: 'inflight, NR', // FundsReserved: about 1 hour
-  f0409399: 'inflight, NR', // FundsReserved: about 1 hour
-  f0409499: 'inflight, NR', // FundsReserved: about 1 hour
-  f0409600: 'inflight, NR', // FundsReserved: about 1 hour
-  f0410120: 'inflight, NR', // FundsReserved: about 1 hour
-  f0410180: 'inflight, NR', // FundsReserved: about 1 hour
-  f0410242: 'inflight, NR', // FundsReserved: about 1 hour
-  f0410319: 'inflight, NR', // FundsReserved: about 1 hour
-  f0410431: 'inflight, NR', // FundsReserved: about 1 hour
-  f0410941: 'inflight, NR', // FundsReserved: about 1 hour
-  f0411314: 'inflight, NR', // FundsReserved: about 1 hour
-  f0411877: 'inflight, NR', // FundsReserved: about 1 hour
-  f0413050: 'inflight, NR', // FundsReserved: about 1 hour
-  f0413323: 'inflight, NR', // FundsReserved: about 1 hour
-  f0413419: 'inflight, NR', // FundsReserved: about 1 hour
-  f0413456: 'inflight, NR', // FundsReserved: about 1 hour
-  f0413801: 'inflight, China, Fujian', // FundsReserved: about 1 hour
-  f0417133: 'inflight, NR', // FundsReserved: about 1 hour
-  f0417709: 'inflight, NR', // FundsReserved: about 1 hour
-  f0417720: 'inflight, NR', // FundsReserved: about 1 hour
-  f0417767: 'inflight, China, Zhangzhou', // FundsReserved: about 1 hour
-  f0417893: 'inflight, China, Xiamen', // FundsReserved: about 1 hour
-  f0418086: 'inflight, NR', // FundsReserved: about 1 hour
-  f0418632: 'inflight, Singapore', // FundsReserved: about 1 hour
-  f0418652: 'inflight, NR', // FundsReserved: about 1 hour
-  f0419311: 'inflight, NR', // FundsReserved: about 1 hour
-  f0419331: 'inflight, NR', // FundsReserved: about 1 hour
-  f0419414: 'inflight, NR', // FundsReserved: about 1 hour
-  f0419510: 'inflight, NR', // FundsReserved: about 1 hour
-  f0419662: 'inflight, NR', // FundsReserved: about 1 hour
-  f0419944: 'inflight, NR', // FundsReserved: about 1 hour
-  f0419945: 'inflight, NR', // FundsReserved: about 1 hour
-  f0420189: 'inflight, NR', // FundsReserved: about 1 hour
-  f0420508: 'inflight, NR', // FundsReserved: about 1 hour
-  f0421387: 'inflight, NR', // FundsReserved: about 1 hour
-  f0421858: 'inflight, NR', // FundsReserved: about 1 hour
-  f0422266: 'inflight, NR', // FundsReserved: about 1 hour
-  f0422737: 'inflight, NR', // FundsReserved: about 1 hour
-  f0423050: 'inflight, NR', // FundsReserved: about 1 hour
-  f0423057: 'inflight, NR', // FundsReserved: about 1 hour
-  f0423329: 'inflight, NR', // FundsReserved: about 1 hour
-  f0424761: 'inflight, NR', // FundsReserved: about 1 hour
-  f0424837: 'inflight, NR', // FundsReserved: about 1 hour
-  f0425447: 'inflight, NR', // FundsReserved: about 1 hour
-  f0427688: 'inflight, NR', // FundsReserved: about 1 hour
-  f0427839: 'inflight, NR', // FundsReserved: about 1 hour
-  f0427975: 'inflight, NR', // FundsReserved: about 1 hour
-  f0427989: 'inflight, NR', // FundsReserved: about 1 hour
-  f0428075: 'inflight, NR', // FundsReserved: about 1 hour
-  f0428184: 'inflight, NR', // FundsReserved: about 1 hour
-  f0428306: 'inflight, NR', // FundsReserved: about 1 hour
-  f0428661: 'inflight, NR', // FundsReserved: about 1 hour
-  f0429063: 'inflight, NR', // FundsReserved: about 1 hour
-  f0429122: 'inflight, NR', // FundsReserved: about 1 hour
-  f0430101: 'inflight, NR', // FundsReserved: about 1 hour
-  f0432235: 'inflight, NR', // FundsReserved: about 1 hour
-  f0432329: 'inflight, NR', // FundsReserved: about 1 hour
-  f0432375: 'inflight, NR', // FundsReserved: about 1 hour
-  f0432382: 'inflight, NR', // FundsReserved: about 1 hour
-  f0432570: 'inflight, NR', // FundsReserved: about 1 hour
-  f0432661: 'inflight, NR', // FundsReserved: about 1 hour
-  f0432773: 'inflight, NR', // FundsReserved: about 1 hour
-  f0433688: 'inflight, NR', // FundsReserved: about 1 hour
-  f0433892: 'inflight, NR', // FundsReserved: about 1 hour
-  f0434411: 'inflight, NR', // FundsReserved: about 1 hour
-  f0435140: 'inflight, China, Yangzhou', // FundsReserved: about 1 hour
-  f0435971: 'inflight, NR', // FundsReserved: about 1 hour
-  f0436065: 'inflight, NR', // FundsReserved: about 1 hour
-  f0436661: 'inflight, NR', // FundsReserved: about 1 hour
-  f0437158: 'inflight, NR', // FundsReserved: about 1 hour
-  f0441020: 'inflight, NR', // FundsReserved: about 1 hour
-  f0441116: 'inflight, NR', // FundsReserved: about 1 hour
-  f0441240: 'inflight, NR', // FundsReserved: about 1 hour
-  f0441372: 'inflight, NR', // FundsReserved: about 1 hour
-  f0441525: 'inflight, NR', // FundsReserved: about 1 hour
-  f0441699: 'inflight, NR', // FundsReserved: about 1 hour
-  f0441703: 'inflight, NR', // FundsReserved: about 1 hour
-  f0442370: 'inflight, NR', // FundsReserved: about 1 hour
-  f0442371: 'inflight, NR', // FundsReserved: about 1 hour
-  f0442374: 'inflight, NR', // FundsReserved: about 1 hour
-  f0442375: 'inflight, NR', // FundsReserved: about 1 hour
-  f0442376: 'inflight, NR', // FundsReserved: about 1 hour
-  f0442383: 'inflight, NR', // FundsReserved: about 1 hour
-  f0442550: 'inflight, NR', // FundsReserved: about 1 hour
-  f0442670: 'inflight, NR', // FundsReserved: about 1 hour
-  f0442671: 'inflight, NR', // FundsReserved: about 1 hour
-  f0442672: 'inflight, NR', // FundsReserved: about 1 hour
-  f0443179: 'inflight, NR', // FundsReserved: about 1 hour
-  f0443180: 'inflight, NR', // FundsReserved: about 1 hour
-  f0443184: 'inflight, NR', // FundsReserved: about 1 hour
-  f0443303: 'inflight, NR', // FundsReserved: about 1 hour
-  f0443480: 'inflight, NR', // FundsReserved: about 1 hour
-  f0447106: 'inflight, NR', // FundsReserved: about 1 hour
-  f0447651: 'inflight, NR', // FundsReserved: about 1 hour
-  f0448660: 'inflight, NR', // FundsReserved: about 1 hour
-  f0449196: 'inflight, NR', // FundsReserved: about 1 hour
-  f0449296: 'inflight, NR', // FundsReserved: about 1 hour
-  f0450959: 'inflight, NR', // FundsReserved: about 1 hour
-  f0451341: 'inflight, NR', // FundsReserved: about 1 hour
-  f0451936: 'inflight, NR', // FundsReserved: about 1 hour
-  f0452303: 'inflight, NR', // FundsReserved: about 1 hour
-  f0452808: 'inflight, NR', // FundsReserved: about 1 hour
-  f0455968: 'inflight, NR', // FundsReserved: about 1 hour
-  f0457168: 'inflight, NR', // FundsReserved: about 1 hour
-  f0459325: 'inflight, NR', // FundsReserved: about 1 hour
-  f0460660: 'inflight, NR', // FundsReserved: about 1 hour
-  f0461612: 'inflight, NR', // FundsReserved: about 1 hour
-  f0461779: 'inflight, NR', // FundsReserved: about 1 hour
-  f0463030: 'inflight, NR', // FundsReserved: about 1 hour
-  f0463184: 'inflight, NR', // FundsReserved: about 1 hour
-  f0464884: 'inflight, NR', // FundsReserved: about 1 hour
-  f0465286: 'inflight, NR', // FundsReserved: about 1 hour
-  f0465477: 'inflight, NR', // FundsReserved: about 1 hour
-  f0465677: 'inflight, NR', // FundsReserved: about 1 hour
-  f0465993: 'inflight, NR', // FundsReserved: about 1 hour
-  f0466405: 'inflight, Germany, Niederaula', // FundsReserved: about 1 hour
-  f0466426: 'inflight, NR', // FundsReserved: about 1 hour
-  f0466990: 'inflight, NR', // FundsReserved: about 1 hour
-  f0467640: 'inflight, NR', // FundsReserved: about 1 hour
-  f0467809: 'inflight, NR', // FundsReserved: about 1 hour
-  f0468210: 'inflight, NR', // FundsReserved: about 1 hour
-  f0468966: 'inflight, NR', // FundsReserved: about 1 hour
-  f0469055: 'inflight, NR', // FundsReserved: about 1 hour
-  f0469578: 'inflight, NR', // FundsReserved: about 1 hour
-  f0469959: 'inflight, NR', // FundsReserved: about 1 hour
-  f0470182: 'inflight, NR', // FundsReserved: about 1 hour
-  f0470608: 'inflight, NR', // FundsReserved: about 1 hour
-  f0472061: 'inflight, NR', // FundsReserved: about 1 hour
-  f0472720: 'inflight, NR', // FundsReserved: about 1 hour
-  f0472863: 'inflight, NR', // FundsReserved: about 1 hour
-  f0473113: 'inflight, NR', // FundsReserved: about 1 hour
-  f0473677: 'inflight, NR', // FundsReserved: about 1 hour
-  f0473956: 'inflight, NR', // FundsReserved: about 1 hour
-  f0475095: 'inflight, NR', // FundsReserved: about 1 hour
-  f0475305: 'inflight, NR', // FundsReserved: about 1 hour
-  f0475664: 'inflight, China, Zhejiang', // FundsReserved: about 1 hour
-  f0478563: 'inflight, NR', // FundsReserved: about 1 hour
-  f0479677: 'inflight, NR', // FundsReserved: about 1 hour
-  f0480195: 'inflight, NR', // FundsReserved: about 1 hour
-  f0480313: 'inflight, NR', // FundsReserved: about 1 hour
-  f0480936: 'inflight, NR', // FundsReserved: about 1 hour
-  f0480944: 'inflight, NR', // FundsReserved: about 1 hour
-  f0481938: 'inflight, NR', // FundsReserved: about 1 hour
-  f0482494: 'inflight, NR', // FundsReserved: about 1 hour
-  f0483206: 'inflight, NR', // FundsReserved: about 1 hour
-  f0484990: 'inflight, NR', // FundsReserved: about 1 hour
-  f0485876: 'inflight, China, Changchun', // FundsReserved: about 1 hour
-  f0486952: 'inflight, NR', // FundsReserved: about 1 hour
-  f0487097: 'inflight, NR', // FundsReserved: about 1 hour
-  f0487098: 'inflight, NR', // FundsReserved: about 1 hour
-  f0488215: 'inflight, NR', // FundsReserved: about 1 hour
-  f0488689: 'inflight, NR', // FundsReserved: about 1 hour
-  f0488733: 'inflight, NR', // FundsReserved: about 1 hour
-  f0488851: 'inflight, NR', // FundsReserved: about 1 hour
-  f0491919: 'inflight, NR', // FundsReserved: about 1 hour
-  f0492009: 'inflight, NR', // FundsReserved: about 1 hour
-  f0492360: 'inflight, NR', // FundsReserved: about 1 hour
-  f0492474: "inflight, China, Xi'an", // FundsReserved: about 1 hour
-  f0492481: 'inflight, NR', // FundsReserved: 44 minutes
-  f0492601: 'inflight, NR', // FundsReserved: 44 minutes
-  f0492737: 'inflight, NR', // FundsReserved: 44 minutes
-  f0493237: 'inflight, NR', // FundsReserved: 44 minutes
-  f0494268: 'inflight, NR', // FundsReserved: 44 minutes
-  f0494603: 'inflight, NR', // FundsReserved: 44 minutes
-  f0494733: 'inflight, NR', // FundsReserved: 44 minutes
-  f0496068: 'inflight, NR', // FundsReserved: 44 minutes
-  f0496897: 'inflight, NR', // FundsReserved: 44 minutes
-  f0497254: 'inflight, NR', // FundsReserved: 44 minutes
-  f0497636: 'inflight, China, Harbin', // FundsReserved: 44 minutes
-  f0497771: 'inflight, NR', // FundsReserved: 44 minutes
-  f0498868: 'inflight, NR', // FundsReserved: 44 minutes
-  f0500003: 'inflight, NR', // FundsReserved: 44 minutes
-  f0500685: 'inflight, NR', // FundsReserved: 44 minutes
-  f0500878: 'inflight, NR', // FundsReserved: 44 minutes
-  f0501283: 'inflight, NR', // FundsReserved: 44 minutes
-  f0501662: 'inflight, NR', // FundsReserved: 44 minutes
-  f0502198: 'inflight, NR', // FundsReserved: 44 minutes
-  f0502948: 'inflight, NR', // FundsReserved: 44 minutes
-  f0503010: 'inflight, NR', // FundsReserved: 44 minutes
-  f0503287: 'inflight, NR', // FundsReserved: 44 minutes
-  f0503494: 'inflight, NR', // FundsReserved: 44 minutes
-  f0504097: 'inflight, NR', // FundsReserved: 44 minutes
-  f0504929: 'inflight, NR', // FundsReserved: 44 minutes
-  f0504985: 'inflight, NR', // FundsReserved: 43 minutes
-  f0505001: 'inflight, NR', // FundsReserved: 43 minutes
-  f0505110: 'inflight, NR', // FundsReserved: 43 minutes
-  f0505593: 'inflight, NR', // FundsReserved: 43 minutes
-  f0506630: 'inflight, China, Linyi', // FundsReserved: 43 minutes
-  f0506800: 'inflight, NR', // FundsReserved: 43 minutes
-  f0507913: 'inflight, NR', // FundsReserved: 43 minutes
-  f0508328: 'inflight, NR', // FundsReserved: 43 minutes
-  f0508622: 'inflight, NR', // FundsReserved: 43 minutes
-  f0508892: 'inflight, NR', // FundsReserved: 43 minutes
-  f0509062: 'inflight, NR', // FundsReserved: 43 minutes
-  f0509980: 'inflight, NR', // FundsReserved: 43 minutes
-  f0509981: 'inflight, NR', // FundsReserved: 43 minutes
-  f0510701: 'inflight, NR', // FundsReserved: 43 minutes
-  f0510957: 'inflight, NR', // FundsReserved: 43 minutes
-  f0511070: 'inflight, NR', // FundsReserved: 43 minutes
-  f0511318: 'inflight, NR', // FundsReserved: 43 minutes
-  f0511385: 'inflight, NR', // FundsReserved: 43 minutes
-  f0512066: 'inflight, NR', // FundsReserved: 43 minutes
-  f0512693: 'inflight, NR', // FundsReserved: 43 minutes
-  f0513685: 'inflight, NR', // FundsReserved: 43 minutes
-  f0514000: 'inflight, NR', // FundsReserved: 43 minutes
-  f0514235: 'inflight, NR', // FundsReserved: 43 minutes
-  f0514241: 'inflight, NR', // FundsReserved: 43 minutes
-  f0515264: 'inflight, NR', // FundsReserved: 43 minutes
-  f0515360: 'inflight, NR', // FundsReserved: 43 minutes
-  f0515389: 'inflight, NR', // FundsReserved: 43 minutes
-  f0515461: 'inflight, NR', // FundsReserved: 43 minutes
-  f0515626: 'inflight, NR', // FundsReserved: 42 minutes
-  f0515674: 'inflight, NR', // FundsReserved: 42 minutes
-  f0517655: 'inflight, Korea, Gwangju', // FundsReserved: 42 minutes
-  f0518668: 'inflight, NR', // FundsReserved: 42 minutes
-  f0518713: 'inflight, NR', // FundsReserved: 42 minutes
-  f0519333: 'inflight, NR', // FundsReserved: 42 minutes
-  f0519376: 'inflight, NR', // FundsReserved: 42 minutes
-  f0519513: 'inflight, NR', // FundsReserved: 42 minutes
-  f0520262: 'inflight, China, Fujian', // FundsReserved: 42 minutes
-  f0520500: 'inflight, NR', // FundsReserved: 42 minutes
-  f0520520: 'inflight, NR', // FundsReserved: 42 minutes
-  f0520555: 'inflight, NR', // FundsReserved: 42 minutes
-  f0520666: 'inflight, NR', // FundsReserved: 42 minutes
-  f0520688: 'inflight, NR', // FundsReserved: 42 minutes
-  f0521273: 'inflight, NR', // FundsReserved: 42 minutes
-  f0521499: 'inflight, NR', // FundsReserved: 42 minutes
-  f0521508: 'inflight, NR', // FundsReserved: 42 minutes
-  f0521884: 'inflight, NR', // FundsReserved: 42 minutes
-  f0522099: 'inflight, China, Shangrao', // FundsReserved: 42 minutes
-  f0523396: 'inflight, NR', // FundsReserved: 42 minutes
-  f0523415: 'inflight, NR', // FundsReserved: 42 minutes
-  f0523711: 'inflight, NR', // FundsReserved: 42 minutes
-  f0536177: 'inflight, NR', // FundsReserved: 42 minutes
-  f0592088: 'inflight, NR', // FundsReserved: 42 minutes
-  f0601583: 'inflight, NR', // FundsReserved: 41 minutes
-  f0602011: 'inflight, NR', // FundsReserved: 41 minutes
-  f0646439: 'inflight, NR', // FundsReserved: 41 minutes
-  f0652413: 'inflight, NR', // FundsReserved: 41 minutes
-  f0652414: 'inflight, NR', // FundsReserved: 41 minutes
-  f0663311: 'inflight, NR', // FundsReserved: 41 minutes
-  f0665666: 'inflight, NR', // FundsReserved: 41 minutes
-  f0666315: 'inflight, NR', // FundsReserved: 41 minutes
-  f0670491: 'inflight, NR', // FundsReserved: 41 minutes
-  f0671368: 'inflight, NR', // FundsReserved: 41 minutes
-  f0671982: 'inflight, NR', // FundsReserved: 41 minutes
-  f0672951: 'inflight, NR', // FundsReserved: 41 minutes
-  f0673613: 'inflight, NR', // FundsReserved: 41 minutes
-  f0673920: 'inflight, NR', // FundsReserved: 41 minutes
-  f0673990: 'inflight, NR', // FundsReserved: 41 minutes
-  f0674600: 'inflight, NR', // FundsReserved: 41 minutes
-  f0674756: 'inflight, NR', // FundsReserved: 41 minutes
-  f0674889: 'inflight, NR', // FundsReserved: 41 minutes
-  f0675459: 'inflight, NR', // FundsReserved: 41 minutes
-  f0675675: 'inflight, NR', // FundsReserved: 41 minutes
-  f0676183: 'inflight, NR', // FundsReserved: 41 minutes
-  f0676272: 'inflight, NR', // FundsReserved: 41 minutes
-  f0678781: 'inflight, NR', // FundsReserved: 41 minutes
-  f0679376: 'inflight, NR', // FundsReserved: 41 minutes
-  f0680529: 'inflight, NR', // FundsReserved: 41 minutes
-  f0680677: 'inflight, NR', // FundsReserved: 40 minutes
-  f0680929: 'inflight, NR', // FundsReserved: 40 minutes
-  f0680977: 'inflight, NR', // FundsReserved: 40 minutes
-  f0681063: 'inflight, NR', // FundsReserved: 40 minutes
-  f0681068: 'inflight, NR', // FundsReserved: 40 minutes
-  f0682032: 'inflight, China, Shenzhen', // FundsReserved: 40 minutes
-  f0683965: 'inflight, NR', // FundsReserved: 40 minutes
-  f0684618: 'inflight, NR', // FundsReserved: 40 minutes
-  f0685007: 'inflight, NR', // FundsReserved: 40 minutes
-  f0685231: 'inflight, NR', // FundsReserved: 40 minutes
-  f0685539: 'inflight, NR', // FundsReserved: 40 minutes
-  f0685706: 'inflight, NR', // FundsReserved: 40 minutes
-  f0685829: 'inflight, NR', // FundsReserved: 40 minutes
-  f0686816: 'inflight, NR', // FundsReserved: 40 minutes
-  f0687211: 'inflight, NR', // FundsReserved: 40 minutes
-  f0688165: 'inflight, NR', // FundsReserved: 40 minutes
-  f0689753: 'inflight, NR', // FundsReserved: 40 minutes
-  f0690736: 'inflight, NR', // FundsReserved: 40 minutes
-  f0690779: 'inflight, NR', // FundsReserved: 40 minutes
-  f0691310: 'inflight, NR', // FundsReserved: 40 minutes
-  f0693008: 'inflight, China, Shanghai', // FundsReserved: 40 minutes
-  f0693127: 'inflight, NR', // FundsReserved: 40 minutes
-  f0693765: 'inflight, NR', // FundsReserved: 40 minutes
-  f0693793: 'inflight, NR', // FundsReserved: 40 minutes
-  f0693817: 'inflight, NR', // FundsReserved: 39 minutes
-  f0694099: 'inflight, NR', // FundsReserved: 39 minutes
-  f0694149: 'inflight, NR', // FundsReserved: 39 minutes
-  f0694232: 'inflight, NR', // FundsReserved: 39 minutes
-  f0694999: 'inflight, NR', // FundsReserved: 39 minutes
-  f0695289: 'inflight, NR', // FundsReserved: 39 minutes
-  f0697249: 'inflight, NR', // FundsReserved: 39 minutes
-  f0697913: 'inflight, NR', // FundsReserved: 39 minutes
-  f0698688: 'inflight, China, Xinyang', // FundsReserved: 39 minutes
-  f0699021: 'inflight, NR', // FundsReserved: 39 minutes
-  f0699115: 'inflight, NR', // FundsReserved: 39 minutes
-  f0699181: 'inflight, NR', // FundsReserved: 39 minutes
-  f0700033: 'inflight, NR', // FundsReserved: 39 minutes
-  f0700207: 'inflight, China, Harbin', // FundsReserved: 39 minutes
-  f0701056: 'inflight, NR', // FundsReserved: 38 minutes
-  f0701144: 'inflight, NR', // FundsReserved: 38 minutes
-  f0701226: 'inflight, NR', // FundsReserved: 38 minutes
-  f0702010: 'inflight, NR', // FundsReserved: 38 minutes
-  f0702054: 'inflight, NR', // FundsReserved: 38 minutes
-  f0702377: 'inflight, NR', // FundsReserved: 38 minutes
-  f0702810: 'inflight, NR', // FundsReserved: 38 minutes
-  f0704898: 'inflight, NR', // FundsReserved: 38 minutes
-  f0704940: 'inflight, NR', // FundsReserved: 38 minutes
-  f0704941: 'inflight, NR', // FundsReserved: 38 minutes
-  f0704966: 'inflight, NR', // FundsReserved: 38 minutes
-  f0705136: 'inflight, NR', // FundsReserved: 38 minutes
-  f0705521: 'inflight, NR', // FundsReserved: 38 minutes
-  f0705937: 'inflight, NR', // FundsReserved: 38 minutes
-  f0706206: 'inflight, NR', // FundsReserved: 38 minutes
-  f0706999: 'inflight, NR', // FundsReserved: 38 minutes
-  f0707159: 'inflight, NR', // FundsReserved: 38 minutes
-  f0707197: 'inflight, NR', // FundsReserved: 38 minutes
-  f0707777: 'inflight, NR', // FundsReserved: 38 minutes
-  f0709896: 'inflight, NR', // FundsReserved: 38 minutes
-  f0711266: 'inflight, NR', // FundsReserved: 37 minutes
-  f0711289: 'inflight, NR', // FundsReserved: 37 minutes
-  f0711445: 'inflight, NR', // FundsReserved: 37 minutes
-  f0712676: 'inflight, NR', // FundsReserved: 37 minutes
-  f0715209: 'inflight, NR', // FundsReserved: 37 minutes
-  f0715446: 'inflight, NR', // FundsReserved: 37 minutes
-  f0715561: 'inflight, NR', // FundsReserved: 37 minutes
-  f0715639: 'inflight, NR', // FundsReserved: 37 minutes
-  f0715904: 'inflight, NR', // FundsReserved: 37 minutes
-  f0716103: 'inflight, NR', // FundsReserved: 37 minutes
-  f0716170: 'inflight, NR', // FundsReserved: 37 minutes
-  f0716283: 'inflight, NR', // FundsReserved: 37 minutes
-  f0716775: 'inflight, NR', // FundsReserved: 37 minutes
-  f0717289: 'inflight, NR', // FundsReserved: 37 minutes
-  f0717905: 'inflight, NR', // FundsReserved: 37 minutes
-  f0717987: 'inflight, NR', // FundsReserved: 37 minutes
-  f0718311: 'inflight, NR', // FundsReserved: 37 minutes
-  f0718313: 'inflight, NR', // FundsReserved: 36 minutes
-  f0718366: 'inflight, NR', // FundsReserved: 36 minutes
-  f0718552: 'inflight, NR', // FundsReserved: 36 minutes
-  f0718962: 'inflight, NR', // FundsReserved: 36 minutes
-  f0719301: 'inflight, NR', // FundsReserved: 36 minutes
-  f0720785: 'inflight, NR', // FundsReserved: 36 minutes
-  f0721721: 'inflight, NR', // FundsReserved: 36 minutes
-  f0723381: 'inflight, NR', // FundsReserved: 36 minutes
-  f0723538: 'inflight, China, Handan', // FundsReserved: 36 minutes
-  f0723604: 'inflight, NR', // FundsReserved: 36 minutes
-  f0723950: 'inflight, NR', // FundsReserved: 36 minutes
-  f0724023: 'inflight, NR', // FundsReserved: 36 minutes
-  f0724097: 'inflight, NR', // FundsReserved: 36 minutes
-  f0724216: 'inflight, NR', // FundsReserved: 36 minutes
-  f0724728: 'inflight, NR', // FundsReserved: 36 minutes
-  f0726270: 'inflight, NR', // FundsReserved: 36 minutes
-  f0726841: 'inflight, NR', // FundsReserved: 36 minutes
-  f0727962: 'inflight, NR', // FundsReserved: 36 minutes
-  f0728817: 'inflight, NR', // FundsReserved: 36 minutes
-  f0729412: 'inflight, NR', // FundsReserved: 36 minutes
-  f0730670: 'inflight, NR', // FundsReserved: 36 minutes
-  f0730917: 'inflight, NR', // FundsReserved: 36 minutes
-  f0730942: 'inflight, NR', // FundsReserved: 35 minutes
-  f0731061: 'inflight, NR', // FundsReserved: 35 minutes
-  f0731150: 'inflight, NR', // FundsReserved: 35 minutes
-  f0732272: 'inflight, NR', // FundsReserved: 35 minutes
-  f0732862: 'inflight, NR', // FundsReserved: 35 minutes
-  f0733076: 'inflight, NR', // FundsReserved: 35 minutes
-  f0733242: 'inflight, NR', // FundsReserved: 35 minutes
-  f0733626: 'inflight, NR', // FundsReserved: 35 minutes
-  f0733692: 'inflight, NR', // FundsReserved: 35 minutes
-  f0734053: 'inflight, NR', // FundsReserved: 35 minutes
-  f0734759: 'inflight, NR', // FundsReserved: 35 minutes
-  f0735027: 'inflight, NR', // FundsReserved: 35 minutes
-  f0744093: 'inflight, NR', // FundsReserved: 35 minutes
-  f0744513: 'inflight, China, Guangzhou', // FundsReserved: 35 minutes
-  f0744622: 'inflight, NR', // FundsReserved: 35 minutes
-  f0745068: 'inflight, NR', // FundsReserved: 35 minutes
-  f0745192: 'inflight, NR', // FundsReserved: 35 minutes
-  f0746628: 'inflight, NR', // FundsReserved: 35 minutes
-  f0746945: 'inflight, NR', // FundsReserved: 35 minutes
-  f0746991: 'inflight, NR', // FundsReserved: 35 minutes
-  f0747522: 'inflight, NR', // FundsReserved: 35 minutes
-  f0747777: 'inflight, NR', // FundsReserved: 35 minutes
-  f0748101: 'inflight, NR', // FundsReserved: 35 minutes
-  f0748137: 'inflight, NR', // FundsReserved: 34 minutes
-  f0748179: 'inflight, NR', // FundsReserved: 34 minutes
-  f0748875: 'inflight, NR', // FundsReserved: 34 minutes
-  f0750779: 'inflight, NR', // FundsReserved: 34 minutes
-  f0751099: 'inflight, NR', // FundsReserved: 34 minutes
-  f0751450: 'inflight, NR', // FundsReserved: 34 minutes
-  f0752442: 'inflight, NR', // FundsReserved: 34 minutes
-  f0752620: 'inflight, NR', // FundsReserved: 34 minutes
-  f0752635: 'inflight, NR', // FundsReserved: 34 minutes
-  f0753027: 'inflight, NR', // FundsReserved: 34 minutes
-  f0753228: 'inflight, NR', // FundsReserved: 34 minutes
-  f0753402: 'inflight, NR', // FundsReserved: 34 minutes
-  f0754755: 'inflight, NR', // FundsReserved: 34 minutes
-  f0754993: 'inflight, NR', // FundsReserved: 34 minutes
-  f0755327: 'inflight, NR', // FundsReserved: 34 minutes
-  f0755650: 'inflight, NR', // FundsReserved: 34 minutes
-  f0756840: 'inflight, NR', // FundsReserved: 34 minutes
-  f0757233: 'inflight, NR', // FundsReserved: 34 minutes
-  f0757610: 'inflight, NR', // FundsReserved: 34 minutes
-  f0763048: 'inflight, NR', // FundsReserved: 34 minutes
-  f0763082: 'inflight, NR', // FundsReserved: 34 minutes
-  f0763093: 'inflight, NR', // FundsReserved: 34 minutes
-  f0764901: 'inflight, NR', // FundsReserved: 34 minutes
-  f0765036: 'inflight, NR', // FundsReserved: 33 minutes
-  f0765071: 'inflight, NR', // FundsReserved: 33 minutes
-  f0765173: 'inflight, NR', // FundsReserved: 33 minutes
-  f0766038: 'inflight, NR', // FundsReserved: 33 minutes
-  f0766177: 'inflight, NR', // FundsReserved: 33 minutes
-  f0766756: 'inflight, NR', // FundsReserved: 33 minutes
-  f0805343: 'inflight, NR', // FundsReserved: 33 minutes
-  f0805402: 'inflight, Korea, Bucheon-si', // FundsReserved: 33 minutes
-  f0805486: 'inflight, NR', // FundsReserved: 33 minutes
-  f0805567: 'inflight, NR', // FundsReserved: 33 minutes
-  f0805612: 'inflight, NR', // FundsReserved: 33 minutes
-  f0805622: 'inflight, NR', // FundsReserved: 33 minutes
-  f0805666: 'inflight, NR', // FundsReserved: 33 minutes
-  f0805872: 'inflight, China, Hangzhou', // FundsReserved: 33 minutes
-  f0805937: 'inflight, NR', // FundsReserved: 33 minutes
-  f0806336: 'inflight, NR', // FundsReserved: 33 minutes
-  f0806347: 'inflight, NR', // FundsReserved: 33 minutes
-  f0806395: 'inflight, NR', // FundsReserved: 33 minutes
-  f0806758: 'inflight, NR', // FundsReserved: 33 minutes
-  f0806904: 'inflight, NR', // FundsReserved: 33 minutes
-  f0807383: 'inflight, NR', // FundsReserved: 33 minutes
-  f0807384: 'inflight, NR', // FundsReserved: 32 minutes
-  f0807385: 'inflight, auto', // FundsReserved: 32 minutes
-  f0807386: 'inflight, NR', // FundsReserved: 32 minutes
-  f0807387: 'inflight, NR', // FundsReserved: 32 minutes
-  f0807388: 'inflight, NR', // FundsReserved: 32 minutes
-  f0807389: 'inflight, NR', // FundsReserved: 32 minutes
-  f0807390: 'inflight, NR', // FundsReserved: 32 minutes
-  f0807392: 'inflight, NR', // FundsReserved: 32 minutes
-  f0807446: 'inflight, NR', // FundsReserved: 32 minutes
-  f0807472: 'inflight, NR', // FundsReserved: 32 minutes
-  f0807839: 'inflight, NR', // FundsReserved: 32 minutes
-  f0808766: 'inflight, NR', // FundsReserved: 32 minutes
-  f0809570: 'inflight, NR', // FundsReserved: 32 minutes
-  f0809927: 'inflight, NR', // FundsReserved: 32 minutes
-  f0811662: 'inflight, NR', // FundsReserved: 32 minutes
-  f0811878: 'inflight, NR', // FundsReserved: 32 minutes
-  f0813061: 'inflight, China, Shanghai', // FundsReserved: 32 minutes
-  f0813825: 'inflight, NR', // FundsReserved: 32 minutes
-  f0813992: 'inflight, NR', // FundsReserved: 32 minutes
-  f0814012: 'inflight, NR', // FundsReserved: 32 minutes
-  f0814049: 'inflight, NR', // FundsReserved: 32 minutes
-  f0814155: 'inflight, NR', // FundsReserved: 32 minutes
-  f0815838: 'inflight, NR', // FundsReserved: 31 minutes
-  f0816168: 'inflight, NR', // FundsReserved: 31 minutes
-  f0818235: 'inflight, NR', // FundsReserved: 31 minutes
-  f0818428: 'inflight, China, Yichang', // FundsReserved: 31 minutes
-  f0818625: 'inflight, NR', // FundsReserved: 31 minutes
-  f0820770: 'inflight, NR', // FundsReserved: 31 minutes
-  f0821595: 'inflight, NR', // FundsReserved: 31 minutes
-  f0822151: 'inflight, NR', // FundsReserved: 31 minutes
-  f0822441: 'inflight, NR', // FundsReserved: 31 minutes
-  f0822818: 'inflight, NR', // FundsReserved: 31 minutes
-  f0823127: 'inflight, NR', // FundsReserved: 31 minutes
-  f0825528: 'inflight, NR', // FundsReserved: 31 minutes
-  f0826272: 'inflight, NR', // FundsReserved: 31 minutes
-  f0826566: 'inflight, NR', // FundsReserved: 31 minutes
-  f0828538: 'inflight, NR', // FundsReserved: 31 minutes
-  f0829506: 'inflight, NR', // FundsReserved: 31 minutes
-  f0829765: 'inflight, NR', // FundsReserved: 31 minutes
-  f0829836: 'inflight, NR', // FundsReserved: 31 minutes
-  f0832131: 'inflight, NR', // FundsReserved: 31 minutes
-  f0834841: 'inflight, NR', // FundsReserved: 31 minutes
-  f0835180: 'inflight, NR', // FundsReserved: 31 minutes
-  f0835613: 'inflight, NR', // FundsReserved: 31 minutes
-  f0836160: 'inflight, Korea, Seodaemun-gu', // FundsReserved: 31 minutes
-  f0836990: 'inflight, NR', // FundsReserved: 31 minutes
-  f0837056: 'inflight, NR', // FundsReserved: 30 minutes
-  f0837434: 'inflight, NR', // FundsReserved: 30 minutes
-  f0839084: 'inflight, NR', // FundsReserved: 30 minutes
-  f0839133: 'inflight, NR', // FundsReserved: 30 minutes
-  f0839436: 'inflight, NR', // FundsReserved: 30 minutes
-  f0839448: 'inflight, NR', // FundsReserved: 30 minutes
-  f0840040: 'inflight, NR', // FundsReserved: 30 minutes
-  f0840430: 'inflight, NR', // FundsReserved: 30 minutes
-  f0841453: 'inflight, NR', // FundsReserved: 30 minutes
-  f0842266: 'inflight, NR', // FundsReserved: 30 minutes
-  f0843255: 'inflight, China, Yibin', // FundsReserved: 30 minutes
-  f0843558: 'inflight, NR', // FundsReserved: 30 minutes
-  f0843713: 'inflight, China, Shaanxi', // FundsReserved: 30 minutes
-  f0844271: 'inflight, NR', // FundsReserved: 30 minutes
-  f0844849: 'inflight, NR', // FundsReserved: 30 minutes
-  f0844916: 'inflight, NR', // FundsReserved: 30 minutes
-  f0845186: 'inflight, NR', // FundsReserved: 30 minutes
-  f0845296: 'inflight, China, Hong Kong', // FundsReserved: 30 minutes
-  f0846191: 'inflight, NR', // FundsReserved: 30 minutes
-  f0847138: 'inflight, NR', // FundsReserved: 30 minutes
-  f0848972: 'inflight, NR', // FundsReserved: 29 minutes
-  f0849079: 'inflight, NR', // FundsReserved: 29 minutes
-  f0850130: 'inflight, NR', // FundsReserved: 29 minutes
-  f0851322: 'inflight, NR', // FundsReserved: 29 minutes
-  f0855056: 'inflight, NR', // FundsReserved: 29 minutes
-  f0855584: 'inflight, NR', // FundsReserved: 29 minutes
-  f0856336: 'inflight, NR', // FundsReserved: 29 minutes
-  f0856508: 'inflight, China, Taiwan, Taoyuan District', // FundsReserved: 29 minutes
-  f0856912: 'inflight, NR', // FundsReserved: 29 minutes
-  f0857612: 'inflight, NR', // FundsReserved: 29 minutes
-  f0858038: 'inflight, China, Shanghai', // FundsReserved: 29 minutes
-  f0859013: 'inflight, China, Nanjing', // FundsReserved: 29 minutes
-  f0863013: 'inflight, NR', // FundsReserved: 29 minutes
-  f0863576: 'inflight, NR', // FundsReserved: 29 minutes
-  f0866508: 'inflight, auto', // FundsReserved: 29 minutes
-  f0867253: 'inflight, NR', // FundsReserved: 29 minutes
-  f0868971: 'inflight, NR', // FundsReserved: 29 minutes
-  f0870189: 'inflight, NR', // FundsReserved: 29 minutes
-  f0870333: 'inflight, NR', // FundsReserved: 29 minutes
-  f0870354: 'inflight, NR', // FundsReserved: 29 minutes
-  f0870973: 'inflight, NR', // FundsReserved: 29 minutes
-  f0871511: 'inflight, NR', // FundsReserved: 29 minutes
-  f0871532: 'inflight, NR', // FundsReserved: 29 minutes
-  f0871546: 'inflight, NR', // FundsReserved: 28 minutes
-  f0871719: 'inflight, NR', // FundsReserved: 28 minutes
-  f0873699: 'inflight, NR', // FundsReserved: 28 minutes
-  f0873874: 'inflight, NR', // FundsReserved: 28 minutes
-  f0874057: 'inflight, NR', // FundsReserved: 28 minutes
-  f0876581: 'inflight, NR', // FundsReserved: 28 minutes
-  f0878351: 'inflight, NR', // FundsReserved: 28 minutes
-  f0878807: 'inflight, NR', // FundsReserved: 28 minutes
-  f0881262: 'inflight, NR', // FundsReserved: 28 minutes
-  f0881281: 'inflight, NR', // FundsReserved: 28 minutes
-  f0881321: 'inflight, NR', // FundsReserved: 28 minutes
-  f0881531: 'inflight, NR', // FundsReserved: 28 minutes
-  f0881687: 'inflight, NR', // FundsReserved: 28 minutes
-  f0883083: 'inflight, NR', // FundsReserved: 28 minutes
-  f0884455: 'inflight, NR', // FundsReserved: 28 minutes
-  f0884781: 'inflight, NR', // FundsReserved: 28 minutes
-  f0984680: 'inflight, Korea, Jung-gu', // FundsReserved: 28 minutes
-  f0984905: 'inflight, NR', // FundsReserved: 28 minutes
-  f01001984: 'inflight, NR', // FundsReserved: 28 minutes
-  f01002302: 'inflight, NR', // FundsReserved: 28 minutes
-  f01016451: 'inflight, NR', // FundsReserved: 28 minutes
-  f01016806: 'inflight, NR', // FundsReserved: 28 minutes
-  f01016882: 'inflight, NR', // FundsReserved: 28 minutes
-  f01017269: 'inflight, USA, Fort Lauterdale', // FundsReserved: 27 minutes
-  f01017980: 'inflight, NR', // FundsReserved: 27 minutes
-  f01019009: 'inflight, China, Henan', // FundsReserved: 27 minutes
-  f01019391: 'inflight, NR', // FundsReserved: 27 minutes
-  f01019418: 'inflight, NR', // FundsReserved: 27 minutes
-  f01019869: 'inflight, NR', // FundsReserved: 27 minutes
-  f01021204: 'inflight, China, Hangzhou', // FundsReserved: 27 minutes
-  f01021317: 'inflight, NR', // FundsReserved: 27 minutes
-  f01021773: 'inflight, NR', // FundsReserved: 27 minutes
-  f01021898: 'inflight, NR', // FundsReserved: 27 minutes
-  f01022733: 'inflight, NR', // FundsReserved: 27 minutes
-  f01023982: 'inflight, NR', // FundsReserved: 27 minutes
-  f01024317: 'inflight, NR', // FundsReserved: 27 minutes
-  f01025366: 'inflight, NR', // FundsReserved: 27 minutes
-  f01025894: 'inflight, China, Zhengzhou', // FundsReserved: 27 minutes
-  f01026560: 'inflight, NR', // FundsReserved: 27 minutes
-  f01027747: 'inflight, NR', // FundsReserved: 27 minutes
-  f01028552: 'inflight, NR', // FundsReserved: 27 minutes
-  f01028659: 'inflight, NR', // FundsReserved: 27 minutes
-  f01028902: 'inflight, NR', // FundsReserved: 27 minutes
-  f01029008: 'inflight, NR', // FundsReserved: 27 minutes
-  f01030424: 'inflight, NR', // FundsReserved: 27 minutes
-  f01030435: 'inflight, NR', // FundsReserved: 27 minutes
-  f01030442: 'inflight, NR', // FundsReserved: 27 minutes
-  f01031823: 'inflight, auto', // FundsReserved: 26 minutes
-  f01031867: 'inflight, NR', // FundsReserved: 26 minutes
-  f01032055: 'inflight, NR', // FundsReserved: 26 minutes
-  f01032314: 'inflight, NR', // FundsReserved: 26 minutes
-  f01032657: 'inflight, NR', // FundsReserved: 26 minutes
-  f01032858: 'inflight, NR', // FundsReserved: 26 minutes
-  f01032903: 'inflight, NR', // FundsReserved: 26 minutes
-  f01033096: 'inflight, NR', // FundsReserved: 26 minutes
-  f01033119: 'inflight, France, Paris', // FundsReserved: 26 minutes
-  f01033390: 'inflight, NR', // FundsReserved: 26 minutes
-  f01033805: 'inflight, NR', // FundsReserved: 26 minutes
-  f01034007: 'inflight, NR', // FundsReserved: 26 minutes
-  f01035021: 'inflight, NR', // FundsReserved: 26 minutes
-  f01036920: 'inflight, NR', // FundsReserved: 26 minutes
-  f01038189: 'inflight, auto', // FundsReserved: 26 minutes
-  f01038199: 'inflight, NR', // FundsReserved: 26 minutes
-  f01038389: 'inflight, NR', // FundsReserved: 26 minutes
-  f01038625: 'inflight, NR', // FundsReserved: 26 minutes
-  f01038663: 'inflight, NR', // FundsReserved: 26 minutes
-  f01038679: 'inflight, auto', // FundsReserved: 26 minutes
-  f01038861: 'inflight, NR', // FundsReserved: 26 minutes
-  f01039350: 'inflight, NR', // FundsReserved: 26 minutes
-  f01039576: 'inflight, NR', // FundsReserved: 26 minutes
-  f01040516: 'inflight, NR', // FundsReserved: 25 minutes
-  f01040817: 'inflight, NR', // FundsReserved: 25 minutes
-  f01042229: 'inflight, NR', // FundsReserved: 25 minutes
-  f01042276: 'inflight, NR', // FundsReserved: 25 minutes
-  f01042409: 'inflight, NR', // FundsReserved: 25 minutes
-  f01043193: 'inflight, NR', // FundsReserved: 25 minutes
-  f01043666: 'inflight, NR', // FundsReserved: 25 minutes
-  f01043780: 'inflight, NR', // FundsReserved: 25 minutes
-  f01044086: 'inflight, NR', // FundsReserved: 25 minutes
-  f01044297: 'inflight, auto', // FundsReserved: 25 minutes
-  f01045078: 'inflight, NR', // FundsReserved: 25 minutes
-  f01045198: 'inflight, NR', // FundsReserved: 25 minutes
-  f01045784: 'inflight, USA, Ridgewood', // FundsReserved: 25 minutes
-  f01045812: 'inflight, China, Taiwan, New Taipei', // FundsReserved: 25 minutes
-  f01046069: 'inflight, NR', // FundsReserved: 25 minutes
-  f01047011: 'inflight, NR', // FundsReserved: 25 minutes
-  f01047445: 'inflight, NR', // FundsReserved: 25 minutes
-  f01048770: 'inflight, NR', // FundsReserved: 25 minutes
-  f01049102: 'inflight, NR', // FundsReserved: 25 minutes
-  f01049468: 'inflight, NR', // FundsReserved: 25 minutes
-  f01049739: 'inflight, NR', // FundsReserved: 25 minutes
-  f01050978: 'inflight, NR', // FundsReserved: 25 minutes
-  f01051178: 'inflight, NR', // FundsReserved: 25 minutes
-  f01051743: 'inflight, NR', // FundsReserved: 24 minutes
-  f01052311: 'inflight, NR', // FundsReserved: 24 minutes
-  f01052556: 'inflight, NR', // FundsReserved: 24 minutes
-  f01053413: 'inflight, NR', // FundsReserved: 24 minutes
-  f01053601: 'inflight, NR', // FundsReserved: 24 minutes
-  f01054527: 'inflight, NR', // FundsReserved: 24 minutes
-  f01055821: 'inflight, NR', // FundsReserved: 24 minutes
-  f01056608: 'inflight, NR', // FundsReserved: 24 minutes
-  f01057193: 'inflight, NR', // FundsReserved: 24 minutes
-  f01059489: 'inflight, NR', // FundsReserved: 24 minutes
-  f01059620: 'inflight, NR', // FundsReserved: 24 minutes
-  f01062232: 'inflight, NR', // FundsReserved: 24 minutes
-  f01063832: 'inflight, NR', // FundsReserved: 24 minutes
-  f01063833: 'inflight, auto', // FundsReserved: 24 minutes
-  f01064991: 'inflight, NR', // FundsReserved: 24 minutes
-  f01065505: 'inflight, NR', // FundsReserved: 24 minutes
-  f01066009: 'inflight, NR', // FundsReserved: 24 minutes
-  f01066517: 'inflight, NR', // FundsReserved: 24 minutes
-  f01067573: 'inflight, NR', // FundsReserved: 24 minutes
-  f01068111: 'inflight, NR', // FundsReserved: 24 minutes
-  f01068287: 'inflight, auto', // FundsReserved: 24 minutes
-  f01068331: 'inflight, NR', // FundsReserved: 24 minutes
-  f01069894: 'inflight, NR', // FundsReserved: 23 minutes
-  f01070040: 'inflight, NR', // FundsReserved: 23 minutes
-  f01070149: 'inflight, China, Chengdu', // FundsReserved: 23 minutes
-  f01070158: 'inflight, NR', // FundsReserved: 23 minutes
-  f01070205: 'inflight, NR', // FundsReserved: 23 minutes
-  f01070395: 'inflight, NR', // FundsReserved: 23 minutes
-  f01071282: 'inflight, NR', // FundsReserved: 23 minutes
-  f01071852: 'inflight, NR', // FundsReserved: 23 minutes
-  f01073166: 'inflight, NR', // FundsReserved: 23 minutes
-  f01073851: 'inflight, auto', // FundsReserved: 23 minutes
-  f01074227: 'inflight, NR', // FundsReserved: 23 minutes
-  f01075086: 'inflight, NR', // FundsReserved: 23 minutes
-  f01076629: 'inflight, NR', // FundsReserved: 23 minutes
-  f01076644: 'inflight, NR', // FundsReserved: 23 minutes
-  f01077516: 'inflight, NR', // FundsReserved: 23 minutes
-  f01077547: 'inflight, NR', // FundsReserved: 23 minutes
-  f01077777: 'inflight, NR', // FundsReserved: 23 minutes
-  f01079999: 'inflight, NR', // FundsReserved: 23 minutes
-  f01081449: 'inflight, NR', // FundsReserved: 23 minutes
-  f01081786: 'inflight, NR', // FundsReserved: 23 minutes
-  f01082277: 'inflight, NR', // FundsReserved: 23 minutes
-  f01082888: 'inflight, NR', // FundsReserved: 23 minutes
-  f01083999: 'inflight, NR', // FundsReserved: 22 minutes
-  f01084913: 'inflight, NR', // FundsReserved: 22 minutes
-  f01085688: 'inflight, auto', // FundsReserved: 22 minutes
-  f01085801: 'inflight, NR', // FundsReserved: 22 minutes
-  f01086350: 'inflight, NR', // FundsReserved: 22 minutes
-  f01086616: 'inflight, NR', // FundsReserved: 22 minutes
-  f01087002: 'inflight, auto', // FundsReserved: 22 minutes
-  f01087243: 'inflight, NR', // FundsReserved: 22 minutes
-  f01087561: 'inflight, NR', // FundsReserved: 22 minutes
-  f01088018: 'inflight, auto', // FundsReserved: 22 minutes
-  f01088088: 'inflight, NR', // FundsReserved: 22 minutes
-  f01089169: 'inflight, NR', // FundsReserved: 22 minutes
-  f01089422: 'inflight, NR', // FundsReserved: 22 minutes
-  f01089828: 'inflight, auto', // FundsReserved: 22 minutes
-  f01090983: 'inflight, NR', // FundsReserved: 22 minutes
-  f01091851: 'inflight, NR', // FundsReserved: 22 minutes
-  f01092768: 'inflight, NR', // FundsReserved: 22 minutes
-  f01093254: 'inflight, NR', // FundsReserved: 21 minutes
-  f01093419: 'inflight, NR', // FundsReserved: 21 minutes
-  f01095558: 'inflight, NR', // FundsReserved: 21 minutes
-  f01095694: 'inflight, NR', // FundsReserved: 21 minutes
-  f01095710: 'inflight, NR', // FundsReserved: 21 minutes
-  f01095973: 'inflight, auto', // FundsReserved: 21 minutes
-  f01096056: 'inflight, NR', // FundsReserved: 21 minutes
-  f01096672: 'inflight, auto', // FundsReserved: 21 minutes
-  f01097059: 'inflight, NR', // FundsReserved: 21 minutes
-  f01097535: 'inflight, NR', // FundsReserved: 21 minutes
-  f01097758: 'inflight, NR', // FundsReserved: 21 minutes
-  f01098119: 'inflight, NR', // FundsReserved: 21 minutes
-  f01098124: 'inflight, NR', // FundsReserved: 21 minutes
-  f01098271: 'inflight, NR', // FundsReserved: 21 minutes
-  f01098580: 'inflight, NR', // FundsReserved: 21 minutes
-  f01098810: 'inflight, NR', // FundsReserved: 21 minutes
-  f01098835: 'inflight, NR', // FundsReserved: 21 minutes
-  f01098931: 'inflight, NR', // FundsReserved: 21 minutes
-  f01099362: 'inflight, China, Baotou', // FundsReserved: 21 minutes
-  f01100262: 'inflight, auto', // FundsReserved: 21 minutes
-  f01100636: 'inflight, NR', // FundsReserved: 21 minutes
-  f01100914: 'inflight, NR', // FundsReserved: 21 minutes
-  f01101196: 'inflight, auto', // FundsReserved: 21 minutes
-  f01101397: 'inflight, NR', // FundsReserved: 21 minutes
-  f01101426: 'inflight, NR', // FundsReserved: 21 minutes
-  f01101881: 'inflight, NR', // FundsReserved: 21 minutes
-  f01102006: 'inflight, NR', // FundsReserved: 21 minutes
-  f01102085: 'inflight, NR', // FundsReserved: 21 minutes
-  f01102936: 'inflight, NR', // FundsReserved: 21 minutes
-  f01103850: 'inflight, NR', // FundsReserved: 21 minutes
-  f01104012: 'inflight, NR', // FundsReserved: 21 minutes
-  f01104018: 'inflight, China, Beijing', // FundsReserved: 21 minutes
-  f01104310: 'inflight, NR', // FundsReserved: 21 minutes
-  f01105079: 'inflight, NR', // FundsReserved: 21 minutes
-  f01105647: 'inflight, auto', // FundsReserved: 21 minutes
-  f01105825: 'inflight, NR', // FundsReserved: 21 minutes
-  f01105927: "inflight, China, Xi'an", // FundsReserved: 20 minutes
-  f01106117: 'inflight, NR', // FundsReserved: 20 minutes
-  f01106668: 'inflight, NR', // FundsReserved: 20 minutes
-  f01107585: 'inflight, auto', // FundsReserved: 20 minutes
-  f01108096: 'inflight, NR', // FundsReserved: 20 minutes
-  f01108594: 'inflight, NR', // FundsReserved: 20 minutes
-  f01109196: 'inflight, NR', // FundsReserved: 20 minutes
-  f01110284: 'inflight, NR', // FundsReserved: 20 minutes
-  f01110660: 'inflight, NR', // FundsReserved: 20 minutes
-  f01111111: 'inflight, NR', // FundsReserved: 20 minutes
-  f01111673: 'inflight, China, Changsha', // FundsReserved: 20 minutes
-  f01111831: 'inflight, auto', // FundsReserved: 20 minutes
-  f01111881: 'inflight, NR', // FundsReserved: 20 minutes
-  f01112163: 'inflight, auto', // FundsReserved: 20 minutes
-  f01112504: 'inflight, USA, Gilbert', // FundsReserved: 20 minutes
-  f01112541: 'inflight, USA, Fremont', // FundsReserved: 20 minutes
-  f01112782: 'inflight, NR', // FundsReserved: 20 minutes
-  f01113378: 'inflight, NR', // FundsReserved: 20 minutes
-  f01113597: 'inflight, NR', // FundsReserved: 20 minutes
-  f01114364: 'inflight, USA, Allentown', // FundsReserved: 20 minutes
-  f01114516: 'inflight, NR', // FundsReserved: 20 minutes
-  f01114577: 'inflight, NR', // FundsReserved: 20 minutes
-  f01115274: 'inflight, Japan, Yokohama', // FundsReserved: 20 minutes
-  f01115279: 'inflight, auto', // FundsReserved: 20 minutes
-  f01117889: 'inflight, auto', // FundsReserved: 20 minutes
-  f01117949: 'inflight, auto', // FundsReserved: 20 minutes
-  f01118032: 'inflight, NR', // FundsReserved: 20 minutes
-  f01118788: 'inflight, auto', // FundsReserved: 20 minutes
-  f01118970: 'inflight, auto', // FundsReserved: 20 minutes
-  f01119631: 'inflight, auto', // FundsReserved: 20 minutes
-  f01120248: 'inflight, NR', // FundsReserved: 19 minutes
-  f01120291: 'inflight, NR', // FundsReserved: 19 minutes
-  f01121887: 'inflight, NR', // FundsReserved: 19 minutes
-  f01122339: 'inflight, NR', // FundsReserved: 19 minutes
-  f01122412: 'inflight, China', // FundsReserved: 19 minutes
-  f01123400: 'inflight, auto', // FundsReserved: 19 minutes
-  f01123833: 'inflight, auto', // FundsReserved: 19 minutes
-  f01125834: 'inflight, auto', // FundsReserved: 19 minutes
-
   // Unknown
 
   // Active
 
-  // Active-sealing (active - with in-flight sealing)
+  f07709: 'active, Korea, Dongjak-gu', // 2212157 about 2 hours
+  f020489: 'active, China, Lioaning', // 2212226 4 days
+  f023219: 'active, China, Beijing + Zhangjiakou', // 2212231 4 days
+  f024944: 'active, Korea, Yeongdeungpo-dong', // 2212230 5 days
+  f042567: 'active, China, Jinhua', // 2212234 4 days
+  f043376: 'active, Korea, Incheon', // 2212205 about 2 hours
+  f062318: 'active, Korea, Naju', // 2212156 about 2 hours
+  f063628: 'active, NR', // 2212155 about 2 hours
+  f079817: "active, Russia, Ul'yanovka", // 2212154 about 2 hours
+  f081644: 'active, China, Wenzhou', // 2212239 4 days
+  f094374: 'active, China, Nanyang', // 2212237 about 2 hours
+  f097720: 'active, Korea, Bucheon-si', // 2212167 about 7 hours
+  f0110804: 'active, USA, Santa Clara', // 2212161 about 6 hours
+  f0130912: 'active, China, Hong Kong', // 2212246 4 days
+  f0131901: 'active, Korea, Daejeon', // 2212319 5 days
+  f0137168: 'active, China, Beijing', // 2212199 4 days
+  f0157513: 'active, Korea, Geumcheon-gu', // 2212165 4 days
+  f0157564: 'active, Korea, Daejeon', // 2212530 about 2 hours
+  f0159380: 'active, NR', // 2212321 about 2 hours
+  f0162394: 'active, China, Guangzhou', // 2212171 about 2 hours
+  f0165375: 'active, Korea, Seongnam-si', // 2212159 about 2 hours
+  f0165539: 'active, Japan, Yokohama', // 2212160 about 2 hours
+  f0167254: 'active, Russia, St. Petersburg', // 2212168 5 days
+  f0214334: 'active, NR', // 2212204 about 2 hours
+  f0215370: 'active, China, Hangzhou', // 2212170 about 3 hours
+  f0221135: 'active, USA, Atlanta', // 2212164 5 days
+  f0228855: 'active, Korea, Guro-gu', // 2212162 4 days
+  f0230200: 'active, Korea, Gwanak-gu, G-mining', // 2212175 about 2 hours
+  f0396705: 'active, NR', // 2212251 4 days
+  f0397052: 'active, NR', // 2212207 about 3 hours
+  f0401416: 'active, Japan, Fukuoka', // 2212163 about 3 hours
+  f0433689: 'active, NR', // 2212182 about 2 hours
+  f0433690: 'active, NR', // 2212206 about 2 hours
+  f0433691: 'active, China, Wuxi', // 2212208 about 2 hours
+  f0437246: 'active, China, Hangzhou', // 2212169 about 2 hours
+  f0458627: 'active, Korea, Seongnam-si', // 2212166 about 2 hours
+  f0460440: 'active, Korea, Seongnam-si', // 2212172 about 3 hours
+  f0461791: 'active, Korea, Gwangju', // 2212266 about 3 hours
+  f0478837: 'active, China, Zhangzhou', // 2212127 4 days
+  f0482619: 'active, Korea, Seongnam-si', // 2212448 about 2 hours
+  f0675909: 'active, NR', // 2212176 about 5 hours
+  f0693131: 'active, China, Zhongshan', // 2212177 about 3 hours
+  f0694881: 'active, China, Hangzhou', // 2212191 about 2 hours
+  f0709739: 'active, China, Handan', // 2212283 4 days
+  f0717913: 'active, Korea, Jung-gu', // 2212186 about 2 hours
+  f0720629: 'active, NR', // 2212174 about 2 hours
+  f0722515: 'active, Korea, Geumcheon-gu', // 2212274 about 7 hours
+  f0724219: 'active, Spain, Vilanova del Cami', // 2212179 about 2 hours
+  f0729674: 'active, Canada, Vancouver', // 2212229 about 2 hours
+  f0731235: 'active, Ukraine, Odessa', // 2212223 4 days
+  f0747617: 'active, NR', // 2212181 about 2 hours
+  f0756207: 'active, Korea', // 2212356 about 2 hours
+  f0805568: 'active, Korea, Gangnam-gu', // 2212194 about 5 hours
+  f0813086: 'active, Korea, Jung-gu', // 2212260 about 2 hours
+  f0838467: 'active, Korea, Incheon', // 2212185 about 2 hours
+  f0845245: 'active, Korea, Busan', // 2212183 4 days
+  f0862933: 'active, USA, Huntersville', // 2212180 about 3 hours
+  f0864910: 'active, Korea, Gwangjin-gu', // 2212198 about 2 hours
+  f01023503: 'active, Korea, Busan', // 2212178 4 days
+  f01039327: 'active, Indonesia, Denpasar', // 2212278 4 days
+  f01039753: 'active, China, Suqian', // 2212188 about 2 hours
+  f01050286: 'active, China, Guangzhou', // 2212184 about 2 hours
+  f01071719: 'active, China, Beijing', // 2212196 about 2 hours
+  f01081349: 'active, China, Foshan', // 2212200 about 3 hours
+  f01086762: 'active, Korea, Seoul', // 2212203 4 days
+  f01099967: 'active, USA, London', // 2212221 4 days
+  f01104889: 'active, NR', // 2212195 about 2 hours
+  f01105829: 'active, Korea', // 2212193 about 4 hours
+  f01106888: 'active, China, Beijing', // 2212282 about 8 hours
+  f01110276: 'active, Korea, Bucheon-si', // 2212201 about 2 hours
+  f01112335: 'active, China, Taiwan, Taoyuan District', // 2212281 about 3 hours
+  f01117341: 'active, auto', // 2212293 about 10 hours
+  f01122113: 'active, Japan, Tokyo', // 2212220 about 2 hours
+  f01124409: 'active, China, Hangzhou', // 2212209 about 6 hours
+  f01128326: 'active, autolisted', // 2212202 about 4 hours
 
-  f07709: 'active-sealing, Korea, Dongjak-gu', // 2212157
-  f043376: 'active-sealing, Korea, Incheon', // 2212205
-  f062318: 'active-sealing, Korea, Naju', // 2212156
-  f063628: 'active-sealing, NR', // 2212155
-  f079817: "active-sealing, Russia, Ul'yanovka", // 2212154
-  f097720: 'active-sealing, Korea, Bucheon-si', // 2212167
-  f0110804: 'active-sealing, USA, Santa Clara', // 2212161
-  f0113331: 'active-sealing, Korea, Jinju + USA', // 2212158
-  f0137168: 'active-sealing, China, Beijing', // 2212199
-  f0156207: 'active-sealing, Korea, Ulsan', // 2212280
-  f0157513: 'active-sealing, Korea, Geumcheon-gu', // 2212165
-  f0162394: 'active-sealing, China, Guangzhou', // 2212171
-  f0165375: 'active-sealing, Korea, Seongnam-si', // 2212159
-  f0165539: 'active-sealing, Japan, Yokohama', // 2212160
-  f0167254: 'active-sealing, Russia, St. Petersburg', // 2212168
-  f0214334: 'active-sealing, NR', // 2212204
-  f0215370: 'active-sealing, China, Hangzhou', // 2212170
-  f0221135: 'active-sealing, USA, Atlanta', // 2212164
-  f0228855: 'active-sealing, Korea, Guro-gu', // 2212162
-  f0230200: 'active-sealing, Korea, Gwanak-gu, G-mining', // 2212175
-  f0397052: 'active-sealing, NR', // 2212207
-  f0401416: 'active-sealing, Japan, Fukuoka', // 2212163
-  f0433689: 'active-sealing, NR', // 2212182
-  f0433690: 'active-sealing, NR', // 2212206
-  f0433691: 'active-sealing, China, Wuxi', // 2212208
-  f0437246: 'active-sealing, China, Hangzhou', // 2212169
-  f0458627: 'active-sealing, Korea, Seongnam-si', // 2212166
-  f0460440: 'active-sealing, Korea, Seongnam-si', // 2212172
-  f0478837: 'active-sealing, China, Zhangzhou', // 2212127
-  f0675909: 'active-sealing, NR', // 2212176
-  f0693131: 'active-sealing, China, Zhongshan', // 2212177
-  f0694881: 'active-sealing, China, Hangzhou', // 2212191
-  f0717913: 'active-sealing, Korea, Jung-gu', // 2212186
-  f0720629: 'active-sealing, NR', // 2212174
-  f0724219: 'active-sealing, Spain, Vilanova del Cami', // 2212179
-  f0747617: 'active-sealing, NR', // 2212181
-  f0752695: 'active-sealing, Korea, Seongnam-si', // 2212189
-  f0805568: 'active-sealing, Korea, Gangnam-gu', // 2212194
-  f0838467: 'active-sealing, Korea, Incheon', // 2212185
-  f0845245: 'active-sealing, Korea, Busan', // 2212183
-  f0862933: 'active-sealing, USA, Huntersville', // 2212180
-  f0864910: 'active-sealing, Korea, Gwangjin-gu', // 2212198
-  f0877545: 'active-sealing, China, Ningbo', // 2212173
-  f01023503: 'active-sealing, Korea, Busan', // 2212178
-  f01039753: 'active-sealing, China, Suqian', // 2212188
-  f01050286: 'active-sealing, China, Guangzhou', // 2212184
-  f01053334: 'active-sealing, Korea, Mapo-gu', // 2212192
-  f01071194: 'active-sealing, USA, San Jose', // 2212190
-  f01071719: 'active-sealing, China, Beijing', // 2212196
-  f01081349: 'active-sealing, China, Foshan', // 2212200
-  f01086762: 'active-sealing, Korea, Seoul', // 2212203
-  f01099967: 'active-sealing, USA, London', // 2212221
-  f01104889: 'active-sealing, NR', // 2212195
-  f01105829: 'active-sealing, Korea', // 2212193
-  f01108129: 'active-sealing, NR', // 2212197
-  f01110276: 'active-sealing, Korea, Bucheon-si', // 2212201
-  f01122113: 'active-sealing, Japan, Tokyo', // 2212220
-  f01124409: 'active-sealing, China, Hangzhou', // 2212209
+  // Active-sealing (active - with in-flight sealing)
 
   // Sealing
 
-  f02490: 'sealing, China, Fujian', // 2212236
-  f02540: 'sealing, USA, Mobile, Foundry', // 2212235
-  f03345: 'sealing, China, Fuzhou, chh', // 2212224
-  f014683: 'sealing, China, Dongguan', // 2212286
-  f015233: 'sealing, China, Nanjing', // 2212227
-  f015877: 'sealing, China, Jiaxing + USA', // 2212225
-  f016276: 'sealing, China, Beijing', // 2212241
-  f020489: 'sealing, China, Lioaning', // 2212226
-  f023219: 'sealing, China, Beijing + Zhangjiakou', // 2212231
-  f024550: 'sealing, China, Wenzhou', // 2212233
-  f024944: 'sealing, Korea, Yeongdeungpo-dong', // 2212230
-  f025025: 'sealing, China, Qingdao', // 2212240
-  f039515: 'sealing, China, Chongqing, valarhash', // 2212232
-  f042567: 'sealing, China, Jinhua', // 2212234
-  f044160: 'sealing, China, Guangzhou, muxing', // 2212228
-  f053088: 'sealing, China, Shanghai', // 2212238
-  f065610: 'sealing, NR', // 2212303
-  f080103: 'sealing, Korea, Seongnam-si', // 2212242
-  f081644: 'sealing, China, Wenzhou', // 2212239
-  f082635: 'sealing, NR', // 2212243
-  f094374: 'sealing, China, Nanyang', // 2212237
-  f0110768: 'sealing, Korea, Gwangju', // 2212244
-  f0111174: 'sealing, China, Guangzhou', // 2212245
-  f0111885: 'sealing, Korea, Bucheon-si, WINNERS', // 2212247
-  f0121533: 'sealing, China, Zhejiang', // 2212249
-  f0130912: 'sealing, China, Hong Kong', // 2212246
-  f0134671: 'sealing, Korea, Gimpo-si', // 2212254
-  f0136033: 'sealing, NR', // 2212287
-  f0137489: 'sealing, UK, Deeside', // 2212256
-  f0146751: 'sealing, China, Jiangsu', // 2212253
-  f0149132: 'sealing, NR', // 2212252
-  f0149455: 'sealing, NR', // 2212265
-  f0156452: 'sealing, Korea, Ulsan', // 2212262
-  f0157265: 'sealing, China, Zhangjiakou', // 2212255
-  f0187709: 'sealing, Russia, Moscow', // 2212263
-  f0215461: 'sealing, NR', // 2212289
-  f0396705: 'sealing, NR', // 2212251
-  f0397728: 'sealing, China, Dongguan', // 2212248
-  f0399814: "sealing, China, Ya'an", // 2212250
-  f0401300: 'sealing, France, Deuil-la-Barre', // 2212257
-  f0413563: 'sealing, Korea, Gangnam-gu', // 2212259
-  f0414383: 'sealing, China, Dongguan', // 2212288
-  f0417750: 'sealing, NR', // 2212261
-  f0447181: 'sealing, China, Zibo', // 2212264
-  f0461791: 'sealing, Korea, Gwangju', // 2212266
-  f0514737: 'sealing, Korea, Busan', // 2212268
-  f0521569: 'sealing, Korea, Guro-go', // 2212267
-  f0690699: 'sealing, NR', // 2212290
-  f0722515: 'sealing, Korea, Geumcheon-gu', // 2212274
-  f0729674: 'sealing, Canada, Vancouver', // 2212229
-  f0731235: 'sealing, Ukraine, Odessa', // 2212223
-  f0746416: 'sealing, Korea, Gyeonggi-do', // 2212272
-  f0763981: 'sealing, China, Tianjin', // 2212271
-  f0813086: 'sealing, Korea, Jung-gu', // 2212260
-  f0827934: 'sealing, USA, Port Jefferson', // 2212258
-  f0832373: 'sealing, NR', // 2212269
-  f0835643: 'sealing, Korea, Songpa-gu', // 2212276
-  f0839509: 'sealing, China, Beijing', // 2212273
-  f01027268: 'sealing, Korea, Busan', // 2212270
-  f01039327: 'sealing, Indonesia, Denpasar', // 2212278
-  f01040469: 'sealing, Korea', // 2212275
-  f01058790: 'sealing, Japan', // 2212128
-  f01069268: 'sealing, NR', // 2212292
-  f01079646: 'sealing, China, Shenzhen', // 2212291
-  f01086720: 'sealing, Thailand, Bangkok', // 2212302
-  f01096590: 'sealing, Russia, Lipetsk', // 2212277
-  f01105377: 'sealing, Korea, Jung-gu', // 2212279
-  f01106888: 'sealing, China, Beijing', // 2212282
-  f01110407: 'sealing, Bulgaria', // 2212296
-  f01112335: 'sealing, China, Taiwan, Taoyuan District', // 2212281
-  f01112647: "sealing, China, Xi'an", // 2212294
-  f01114420: 'sealing, Bulgaria, Sofia', // 2212297
-  f01117341: 'sealing, auto', // 2212293
-  f01124728: 'sealing, Japan, Yokohama', // 2212295
-  f01128326: 'sealing, autolisted', // 2212202
-
   // Stuck
-
-  f078465: 'stuck, NR', // CheckForAcceptance: 42 minutes
-  f085437: 'stuck, NR', // CheckForAcceptance: about 1 hour
-  f0119997: 'stuck, NR', // CheckForAcceptance: about 1 hour
-  f0131901: 'stuck, Korea, Daejeon', // CheckForAcceptance: about 2 hours
-  f0151371: 'stuck, NR', // CheckForAcceptance: 26 minutes
-  f0157564: 'stuck, Korea, Daejeon', // CheckForAcceptance: about 2 hours
-  f0159380: 'stuck, NR', // CheckForAcceptance: 43 minutes
-  f0405129: 'stuck, China, Fujian', // CheckForAcceptance: about 2 hours
-  f0482619: 'stuck, Korea, Seongnam-si', // CheckForAcceptance: about 2 hours
-  f0709739: 'stuck, China, Handan', // CheckForAcceptance: about 2 hours
-  f0723006: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: 37 minutes
-  f0756207: 'stuck, Korea', // CheckForAcceptance: about 1 hour
-  f0822674: 'stuck, Korea, Seoul', // CheckForAcceptance: 32 minutes
-  f01090043: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: 23 minutes
 
   // Busy
 
@@ -1642,36 +572,111 @@ const annotations = {
   // Error
 
   f01279: 'error, China, Sichuan', // error reading Response message from provider: stream reset
+  f02490: 'error, China, Fujian', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaceajrenkntgmeyhfoufszrihsofaxahjzdeodpnu5d4kxuijtc7jqa: search msg failed: failed to load message: blockstore: block not found
+  f02540: 'error, USA, Mobile, Foundry', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacec3rqsnxtmacsejkpwk7iuwgo3svlmxjg3mtkbfl45o5nk3majgng: search msg failed: failed to load message: blockstore: block not found
+  f03345: 'error, China, Fuzhou, chh', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacecw6m5jl4fnzwv7evsdfieyroyqky6azsqi3cmadh654wmx5qzhrw: search msg failed: failed to load message: blockstore: block not found
   f08019: 'error, China, Yantai, 三合', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999988780121 FIL, balance: 0.030376631475953794 FIL): not enough funds to execute transaction
+  f010446: 'error, Netherlands, Angelo', // sending response to deal: failed to sign response message: couldn't get chain head: handler: websocket connection closed
+  f010505: 'error, China, Wuhan, Interstellar Roewe', // error reading Response message from provider: stream reset
   f010513: 'error, China, Chongqing', // error reading Response message from provider: stream reset
+  f014683: 'error, China, Dongguan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaceck6uiloxwitglmdxnnheshvwhfzyedrcbgvl23wrnbileqpbgqou: search msg failed: failed to load message: blockstore: block not found
+  f015233: 'error, China, Nanjing', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaceaufvq5wudiqlomz6dd74z65m7gokpwudpfy6otaw42cmkshzxnmc: search msg failed: failed to load message: blockstore: block not found
+  f015877: 'error, China, Jiaxing + USA', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaceak2mool5ocwf6t2akunfvitl7bsv5yzwijnnh5gku2as3zxb77h6: search msg failed: failed to load message: blockstore: block not found
+  f016276: 'error, China, Beijing', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaceciytji2cb2he6ynpinh32vbkknsi6ki7kqtlu5wepx57eoom47nu: search msg failed: failed to load message: blockstore: block not found
   f020928: 'error, China, Deyang + Singapore', // error reading Response message from provider: EOF
   f022820: 'error, China, Guangdong', // failed to complete data transfer: deal data transfer failed: response rejected
+  f024550: 'error, China, Wenzhou', // error in deal activation: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacedczdqvmmpvejncliucu3h4ihglyx7dcudvubsvmaskwrnqcmtb4q: search msg failed: failed to load message: blockstore: block not found
   f025007: 'error, Korea, Gyeonggi-do, PINBYTES-eCUBE', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999961342944 FIL, balance: 0.008946636075267192 FIL): not enough funds to execute transaction
+  f025025: 'error, China, Qingdao', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacedwcd2keodkhbvumpgtnhss6ciqhk6ps5litsomn5xtnsfdeueuby: search msg failed: failed to load message: blockstore: block not found
   f033036: 'error, China, Liaoning', // error reading Response message from provider: stream reset
+  f039515: 'error, China, Chongqing, valarhash', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacecgyanbi3a7hm7bq25k6iaitl37pjrr7e54dga6sncb5tg55ci6bo: search msg failed: failed to load message: blockstore: block not found
+  f044160: 'error, China, Guangzhou, muxing', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaceaehpn55e6gnanvncae522houffmft43cr7ue7w5ufswrjbogzspg: search msg failed: failed to load message: blockstore: block not found
+  f053088: 'error, China, Shanghai', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacedxrppferczcmyqocm2ldrzf6olai6m4ac6sqtfrz7hbgmu2ebjmc: search msg failed: failed to load message: blockstore: block not found
   f062937: 'error, NR', // error reading Response message from provider: EOF
+  f065610: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaceaqwgxhhaogmgjxp4pzkebtugdxjewgumnb3pno5xuxzir2hsikp4: search msg failed: failed to load message: blockstore: block not found
+  f078465: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacecihmxjoxztitgju2u4kzzugd7vywanlx7qq4ey4xh6kjkz5x765c: search msg failed: failed to load message: blockstore: block not found
+  f080103: 'error, Korea, Seongnam-si', // error in deal activation: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacecih54hzauhbdfkckkype3ltptkored4ydxlyf4i7hnuuwdn2p27a: search msg failed: failed to load message: blockstore: block not found
+  f082635: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaceboujksl2prtpsrom6ljwwi5xxu6voifqfdbz3wzdlags6io24xl4: search msg failed: failed to load message: blockstore: block not found
+  f085437: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaceddjh37odngbqjbbmdm5harpaj4wajhcc7hhdca3jbaevduikrmqw: search msg failed: failed to load message: blockstore: block not found
   f094901: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.077981846797200733 FIL, balance: 0.01584377081099717 FIL): not enough funds to execute transaction
   f097214: 'error, Korea, Bucheon-si, CryptoHash', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.0775348801069468 FIL, balance: 0.010900785209436825 FIL): not enough funds to execute transaction
+  f0110768: 'error, Korea, Gwangju', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaceci2rctj5n427uvxhn4tsyh4bojwddbmhc63jy5tethz7ebqnr5i2: search msg failed: failed to load message: blockstore: block not found
+  f0111174: 'error, China, Guangzhou', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacedj6xjc5ixr2w2euayj7mo6cbgddhh2gefnfrzer4donhdb2a5vfs: search msg failed: failed to load message: blockstore: block not found
+  f0111885: 'error, Korea, Bucheon-si, WINNERS', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacecdmf5tt7ijmjrjgu3lswqwuo27ydgauhr6kwfxwniffrrga55jfw: search msg failed: failed to load message: blockstore: block not found
   f0112713: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.078077481613765185 FIL, balance: 0.024095982252665369 FIL): not enough funds to execute transaction
+  f0113331: 'error, Korea, Jinju + USA', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaceadzd3xvfzy55em4v2v2lhbktcqgjdpp45gqnkz2bboqp56g3mlw2: search msg failed: failed to load message: blockstore: block not found
   f0115108: 'error, Korea, Yangcheon-gu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.077738597359808056 FIL, balance: 0.01310340203354941 FIL): not enough funds to execute transaction
+  f0119997: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacecefz537pjvtgiifrsxxhopnxmlbkodwrftv7gsjkz43ys4sm6mvq: search msg failed: failed to load message: blockstore: block not found
+  f0121533: 'error, China, Zhejiang', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacecuxs3todtvh33k5nnvpfzch4zorcvhgrd7whj6dfdvyaxg3l7mks: search msg failed: failed to load message: blockstore: block not found
   f0132461: 'error, Korea, Daegu', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.077075051806990546 FIL, balance: 0.060396128107900918 FIL): not enough funds to execute transaction
+  f0134671: 'error, Korea, Gimpo-si', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacebk5akolsbnw3gmd6yk3362urvdesjswahaxeepcv5o6qgnhaa74k: search msg failed: failed to load message: blockstore: block not found
+  f0136033: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacecuxfpcgdbpc6opjmkhjg6m2btvvc6y6dofjyxx2svh2t2t65cx7y: search msg failed: failed to load message: blockstore: block not found
   f0136811: 'error, China, Guangdong', // error reading Response message from provider: EOF
+  f0137489: 'error, UK, Deeside', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacebgqqtoyvjbcehrcdcbzll65anrxpzy7iikwmkkrwhkzdm3qw2cok: search msg failed: failed to load message: blockstore: block not found
+  f0146751: 'error, China, Jiangsu', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaceb2nfofjy4dzqxak56ublwbqogn5giynf26lxkt4ycgmqo55jrih2: search msg failed: failed to load message: blockstore: block not found
+  f0149132: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacebtwv7ywoqtco7ta5rl66q5mhlx4ns2alsyrez7u42q6riek7y6wk: search msg failed: failed to load message: blockstore: block not found
+  f0149455: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaceb4lqchooq4g4mharsymo7l54vcgnlowi7jxw2rihaoaf2cwbddhe: search msg failed: failed to load message: blockstore: block not found
+  f0151371: 'error, NR', // deal failed: (State=26) no such proposal
+  f0156207: 'error, Korea, Ulsan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacebk5g2hlxgx2r6ttcbmyzatposuyywt4r67fglppnwlp7h6jtqzgk: search msg failed: failed to load message: blockstore: block not found
+  f0156452: 'error, Korea, Ulsan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacebjy3suceq543bytfqqdkjtobt3qqhz32qvmylrj6a2q7x6fgkab6: search msg failed: failed to load message: blockstore: block not found
+  f0157265: 'error, China, Zhangjiakou', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacecalxnsrwhk5u5vjtvvb2meaxisjdek7ncqjv6yplja2yuyhqm5uw: search msg failed: failed to load message: blockstore: block not found
+  f0187709: 'error, Russia, Moscow', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacearqbclqxzxflz2pozhst6agcvuvrzfb6vtvmrta4miufxvbzrham: search msg failed: failed to load message: blockstore: block not found
+  f0215461: 'error, NR', // error in deal activation: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacedovgiwpnpieoy5uj7i3oab6dkhjoblebxgf7svgssvtj7p23kdyc: search msg failed: failed to load message: blockstore: block not found
+  f0397728: 'error, China, Dongguan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacedzsb6o2uun6u7iyf5wjinijnxxoiysye2s2zj65ahezx2zwzebny: search msg failed: failed to load message: blockstore: block not found
+  f0399814: "error, China, Ya'an", // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacea4tfvkov5qkpnyjnr5kftmo4lzeza4bekkvu7vlbwgh72bnvkdbc: search msg failed: failed to load message: blockstore: block not found
+  f0401300: 'error, France, Deuil-la-Barre', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaceaf74gzvpkeip2chjejqzctzrummy3sbz7cogsgzkohhsxj2quqjq: search msg failed: failed to load message: blockstore: block not found
+  f0405129: 'error, China, Fujian', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaceafpp5yfawovmv3bchsogqxftaxsa7rlfh4b6qjrcboplx7y2jwxi: search msg failed: failed to load message: blockstore: block not found
+  f0413563: 'error, Korea, Gangnam-gu', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacedk6fazl6cgz4zkxeewnvpiksvalgxha2eiff3gfdgd5w66weglju: search msg failed: failed to load message: blockstore: block not found
+  f0414383: 'error, China, Dongguan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacedrgkk4mfzvg7g7rlx2dogiquomfb3cubcb2gpmjp5bbe65q4d7zq: search msg failed: failed to load message: blockstore: block not found
+  f0417750: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacebvkuvjd53to2mlabvg56ql6itpnjingjx54sg5yfptgcvcffxhog: search msg failed: failed to load message: blockstore: block not found
+  f0442550: 'error, NR', // error reading Response message from provider: stream reset
+  f0447181: 'error, China, Zibo', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaceabqkvwn4qij7htbvjuuw7venztul3ukt7krvtldjqes66knkkjye: search msg failed: failed to load message: blockstore: block not found
   f0488889: 'error, China, Nanchang', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals errored: handler: websocket connection closed
   f0504054: 'error, China, Luzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.069563733411830854 FIL, balance: 0.012623892884177775 FIL): not enough funds to execute transaction
   f0512170: 'error, Korea, Bucheon-si', // deal failed: (State=11) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.0708372311385182 FIL, balance: 0.015016137011332578 FIL): not enough funds to execute transaction
   f0512179: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.066097339476956721 FIL, balance: 0.010405374478160531 FIL): not enough funds to execute transaction
+  f0514737: 'error, Korea, Busan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacedt3zsl5j4izxoiy7q76b72av46uboo2jjlmzltnhzfsvjkg5nstm: search msg failed: failed to load message: blockstore: block not found
+  f0521569: 'error, Korea, Guro-go', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacecutwzl3cvaqbo7dtz6c2qn3eerm5vjluxcjbiwsbuc32pe4trt2q: search msg failed: failed to load message: blockstore: block not found
+  f0690699: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacebdgbnx6stsgp3cqkgzop4owxvdzymwsdxyrm2xbvwxjls3ibkvis: search msg failed: failed to load message: blockstore: block not found
   f0700999: 'error, China, Chengdu', // error reading Response message from provider: stream reset
   f0713585: 'error, Russia', // error reading Response message from provider: stream reset
   f0717969: 'error, USA, Los Angeles', // deal failed: (State=26) deal data verification failed: error generating CommP: failed to build treeCaused by:    0: failed to create data store    1: No such file or directory (os error 2)
+  f0723006: 'error, Korea, Bucheon-si', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacediztyxqjjortysn2zbqpkse7nxdb66hkfv74vyc2kebe4mcpiefs: search msg failed: failed to load message: blockstore: block not found
+  f0746416: 'error, Korea, Gyeonggi-do', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaceawml6ir3ipspygmpdrztwky2laxmlolvemtq6kba7emj7hq23agc: search msg failed: failed to load message: blockstore: block not found
+  f0752695: 'error, Korea, Seongnam-si', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaceautd55efu6lzymxapug64qol2qg5cdf2odmpwnwsbzxbu4ayanyq: search msg failed: failed to load message: blockstore: block not found
+  f0763981: 'error, China, Tianjin', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaceaymad6vwd6vdbxsux7gcvsvev7c5hy5ntehrjac3vcaa5oldyvqm: search msg failed: failed to load message: blockstore: block not found
+  f0822674: 'error, Korea, Seoul', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacedtwkhm4zudre7dcyoowck5z3radpybi7qlrc5x37hxngce7x3n5a: search msg failed: failed to load message: blockstore: block not found
+  f0827934: 'error, USA, Port Jefferson', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacebcbrx2slwhdlvff4urivk2fwi5u6k3qbtvcfs2watoql63q6o2cg: search msg failed: failed to load message: blockstore: block not found
+  f0832373: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacec5lhv3lo7xelyoh3ncwcbfrg65cevhl7zis2d3s2b7o7degdew3w: search msg failed: failed to load message: blockstore: block not found
+  f0835643: 'error, Korea, Songpa-gu', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacedyzydidfrytabhu43dbc25oisdwibsgglujim3xydrsjoz7zklly: search msg failed: failed to load message: blockstore: block not found
+  f0839509: 'error, China, Beijing', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacea2b66sq5zbbegwwx544kfm5qvs72x6j6bzji2ozhveelptnxdi3o: search msg failed: failed to load message: blockstore: block not found
   f0870558: 'error, China, Hong Kong', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999999905956 FIL, balance: 0.012803278936807429 FIL): not enough funds to execute transaction
   f0871563: 'error, NR', // deal failed: (State=26) error calling node: publishing deal: GasEstimateMessageGas error: estimating gas used: CallWithGas failed: computing tipset state: [from=f3rp5cajfdudwysf3jtgsdeeujo6uh4i4y5uhmx6bqhytmyljxp6535eotsd4wyq5e2f5ous6o7j6hmei4ndva,to=f03144,n=14544,m=5,h=956978] fatal error: failed to get cbor object bafy2bzacedf6zd3vqhgvwssgs3xevfxie7ffr4t7k6nu77v5abkkrv7lhmrsu: blockstore: block not found (FATAL)
+  f0877545: 'error, China, Ningbo', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacedwlaufo6lokcf5zjj23d4jdvawjdwow7dnyzix7k2ih3aiohfq44: search msg failed: failed to load message: blockstore: block not found
+  f01027268: 'error, Korea, Busan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacecckyty6wzdwm3m6f6wx5nzrie643zogc2xbtep42cx44zglk2hkg: search msg failed: failed to load message: blockstore: block not found
+  f01040469: 'error, Korea', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaceav74amfum55dk5uuzudgd5a3xtxetwqdikkooiqr2hw6feczq3ew: search msg failed: failed to load message: blockstore: block not found
   f01044351: 'error, Korea, Gwangju', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.069624486455893703 FIL, balance: 0.004432781861985863 FIL): not enough funds to execute transaction
+  f01053334: 'error, Korea, Mapo-gu', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacece4o77wx62dy6w2nluczae2tz3v57kkzhbj5vftczptsyjmv44ym: search msg failed: failed to load message: blockstore: block not found
+  f01058790: 'error, Japan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacebiu5ujbgx2ypuvtilb5egbrzp5vem2ia27r2toajqqhsucyvpirg: search msg failed: failed to load message: blockstore: block not found
+  f01069268: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacea7y65hwykfiz2dokbldeic37tlrypeqzp7ave3uanijqtefb4byi: search msg failed: failed to load message: blockstore: block not found
+  f01071194: 'error, USA, San Jose', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacedibdzpkakqpt4mcjevqwlxzkis4ddyc4u4zjxzshs26btwoe7nm6: search msg failed: failed to load message: blockstore: block not found
+  f01079646: 'error, China, Shenzhen', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaced3mrtqagypszhtoe6q2vmxtq23vbpmqafzamej6ihoifdcb5o7q4: search msg failed: failed to load message: blockstore: block not found
+  f01086720: 'error, Thailand, Bangkok', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacedsrvn4s24m27qdftfplrmkfle32qekuh7gjogttq6hdtufr4kvtg: search msg failed: failed to load message: blockstore: block not found
+  f01090043: 'error, Korea, Bucheon-si', // error in deal activation: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacebbnunqq6dlzi4uafwk7yll6vkla75odapqcwd2w5v6od7twhdw3a: search msg failed: failed to load message: blockstore: block not found
+  f01096590: 'error, Russia, Lipetsk', // error in deal activation: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacebkihy4vfp2rt56ptcqpiqejih2dddwixecwdp22sxwp2kbowspmk: search msg failed: failed to load message: blockstore: block not found
+  f01105377: 'error, Korea, Jung-gu', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacectsfacrf6oewtzlpjxqhihg3sgflfea47ux3do3oxjk7lelyhlly: search msg failed: failed to load message: blockstore: block not found
+  f01108129: 'error, NR', // error in deal activation: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaceaq6d3s3v57bn2yneyipro6xgwwl2r74w5jjt2abnro2fo6kxfgdo: search msg failed: failed to load message: blockstore: block not found
+  f01110407: 'error, Bulgaria', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacedn3hemrcxenqxtldrrhxgz2jyuobdvc537lfkcssqodsgwuh4kau: search msg failed: failed to load message: blockstore: block not found
+  f01112647: "error, China, Xi'an", // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacedmrfucjrnwkmxlswy7cfb64jtegg2ul2ozqwte7yasb43pjvr6vy: search msg failed: failed to load message: blockstore: block not found
   f01112955: 'error, China, Sichuan', // failed to complete data transfer: deal data transfer failed: 12D3KooWDr1z64V5VHNuXcKsLhDRg4U2A8K3nmKfo8RCb15s3m3K-12D3KooWSDxbkm3RK55zWZMuDWFoL7yguG74TRfBHG9zT2cLxPea-1626977271546893488: after 4 consecutive restarts failed to transfer any data
   f01113723: 'error, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.01357908110182615 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
+  f01114420: 'error, Bulgaria, Sofia', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacedvjjkfhlbu6652mkqdymzmktyamt2yaf56vdtvqpg6nczlurgowq: search msg failed: failed to load message: blockstore: block not found
   f01116725: 'error, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.014167492386184192 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
   f01116796: 'error, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.013633163947446432 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
   f01118185: 'error, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.013631543523815728 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
   f01118563: 'error, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.0139675290180949 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
   f01120547: 'error, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.013425096972411248 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
+  f01124728: 'error, Japan, Yokohama', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacebrljezgjunnpz5eq5h6xjkiykd5cjdzogvkb73rmpq2gyic3oa44: search msg failed: failed to load message: blockstore: block not found
 
   // Dial backoff
 
@@ -1692,6 +697,8 @@ const annotations = {
   f0159649: 'backoff, NR',
   f0218293: 'backoff, China, Fujian',
   f0218559: 'backoff, NR',
+  f0514241: 'backoff, NR',
+  f0715639: 'backoff, NR',
 
   // Rejected
 
@@ -1889,6 +896,7 @@ const annotations = {
   f0432594: 'rejected, China, Zhengzhou', // no online
   f0435045: 'rejected, Korea, Ulju-gun', // no online
   f0444122: 'rejected, NR', // deal start epoch is too far in the future: 981306 > 979866
+  f0448660: 'rejected, NR', // no online
   f0449072: 'rejected, Korea, Jung-gu', // no online
   f0449088: 'rejected, Korea, Jung-gu', // no online
   f0456374: 'rejected, NR', // no online
@@ -1955,6 +963,7 @@ const annotations = {
   f0878005: 'rejected, NR', // no online
   f01024569: 'rejected, China, Hangzhou', // no online
   f01024886: 'rejected, China, Wenzhou', // no online
+  f01028659: 'rejected, NR', // deal start epoch is too far in the future: 981432 > 958517
   f01051151: 'rejected, Korea, Jung-ang', // no online
   f01051152: 'rejected, Korea, Jung-ang', // no online
   f01052991: 'rejected, Korea, Jung-ang', // no online
@@ -2570,6 +1579,7 @@ const annotations = {
   f0118769: 'fail, China, Fujian', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0118799: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0118976: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0119146: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0119545: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0119633: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWC9KSsd16NN33UvF4FTfZHkwwVXnEEvT921B2ZjnfF6JZ:  * [/ip4/183.62.138.7/tcp/12358] dial tcp4 0.0.0.0:43351->183.62.138.7:12358: i/o timeout
   f0119828: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2593,6 +1603,7 @@ const annotations = {
   f0123275: 'fail, Korea, Seoul', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0123346: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0123535: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0123536: 'fail, China, Fuzhou', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0124126: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0124158: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0124904: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2610,12 +1621,14 @@ const annotations = {
   f0127595: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0127612: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0127627: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0127628: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0127629: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0127640: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0127721: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0127735: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0128011: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0128381: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0128499: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0128559: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0128761: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0128788: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2636,11 +1649,13 @@ const annotations = {
   f0130791: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0130868: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0130884: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0130906: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0131509: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0131654: 'fail, Korea, Seoul', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0131767: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0131822: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0132178: 'fail, China, Ningbo', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0132313: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0132618: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0132638: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0132706: 'fail, China, Beijing', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2656,12 +1671,15 @@ const annotations = {
   f0134006: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWRLr5Efqy61nSerZXi5aorAL28qLDVphNovoYSgvpgm7t:  * [/ip4/10.140.8.12/tcp/32759] dial tcp4 0.0.0.0:43351->10.140.8.12:32759: i/o timeout
   f0134285: "fail, China, Ya'an + USA", // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0134552: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0134609: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0134839: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0134867: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0135008: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0135066: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0135150: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0135414: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0135467: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0135469: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0135473: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0135474: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0135475: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2671,12 +1689,15 @@ const annotations = {
   f0135859: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0135885: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0135934: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0136138: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0136239: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0136399: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0136642: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0136668: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0136808: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0136868: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0137019: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0137594: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0137868: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0141634: 'fail, China, Changsha', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0141761: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2698,19 +1719,27 @@ const annotations = {
   f0143361: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0143500: 'fail, China, Zhejiang', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0143511: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0143666: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0143858: 'fail, USA, Calistoga', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJvQftXwBGoquXhiJxviZ2YJnxnSYCaD8WTe8uVWvXhf2:  * [/ip4/72.52.116.228/tcp/12350] dial tcp4 0.0.0.0:43351->72.52.116.228:12350: i/o timeout
   f0143907: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0143999: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0144069: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0144194: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0144313: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWRGhsq49BP7fSr84fuJZpUWe3TxEs1f2HNbeuifyWVRbH:  * [/ip4/10.5.101.90/tcp/12288] dial tcp4 0.0.0.0:43351->10.5.101.90:12288: i/o timeout  * [/ip4/106.74.20.7/tcp/12288] dial tcp4 0.0.0.0:43351->106.74.20.7:12288: i/o timeout
   f0144314: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0144316: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0144528: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0144530: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0144615: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0144618: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0144724: 'fail, USA, Los Angeles', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWQG8mBpQNBfK8sLeJ71Di4n7hwKfW6UHxXXEW3sZZPgiC:  * [/ip4/209.170.228.251/tcp/24001] dial tcp4 0.0.0.0:43351->209.170.228.251:24001: i/o timeout
+  f0144756: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0144952: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0145060: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0145249: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0145503: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0145687: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0145985: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0145986: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0146220: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0146224: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2718,14 +1747,18 @@ const annotations = {
   f0146393: 'fail, China, Foshan', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWPBraDH4aCJTMCjaZ1JBe7nDCJUioSHtkJZ6VWseSumiQ:  * [/ip4/183.2.233.3/tcp/24501] dial tcp4 0.0.0.0:43351->183.2.233.3:24501: i/o timeout
   f0146428: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJqyLnffd3YFB2NrsTw2Y6Rzj869YfmN18GPQbEtBYeTh:  * [/ip4/172.16.2.105/tcp/6789] dial tcp4 0.0.0.0:43351->172.16.2.105:6789: i/o timeout
   f0146956: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0147119: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0147214: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0147586: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0147657: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0147801: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0148143: 'fail, China, Tianjin', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0148151: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0148269: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0148452: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0148494: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0148627: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0149753: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0149937: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0150666: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0150744: 'fail, Korea, Ulsan', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWFQaZfLj9xLZfKqo5h8PDT4qq5aeLXEzrNjqqFQLYfYuA:  * [/ip4/61.77.31.17/tcp/25246] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWFQaZfLj9xLZfKqo5h8PDT4qq5aeLXEzrNjqqFQLYfYuA, but remote key matches 12D3KooWChiUCJkNLKiz4ybu3Bp3tHvzUmC7DHLntYQtAcjKTYyB
@@ -2741,74 +1774,1009 @@ const annotations = {
   f0151498: 'fail, China, Jinan', // exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0151499: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0151536: 'fail, China, Xiamen', // exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f0151706: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0151849: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0152134: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0152351: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0152563: 'fail, China, Chongqing', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWAwo844dWRZkHcMjdGQX6TLCHqqjWaYNWRpqjNhtbMnXT:  * [/ip4/192.168.1.100/tcp/24001] dial tcp4 0.0.0.0:43351->192.168.1.100:24001: i/o timeout  * [/ip4/58.43.1.82/tcp/24001] dial tcp4 0.0.0.0:43351->58.43.1.82:24001: i/o timeout
   f0152799: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0152866: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0153024: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0153040: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0153078: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0153188: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0153278: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWMFj42RqecNujzB5mk7qrDPPpVGst2yAA4k9kxdkCUeaV:  * [/ip6/::1/tcp/36069] dial tcp6 [::1]:36069: connect: connection refused  * [/ip4/127.0.0.1/tcp/41945] dial tcp4 127.0.0.1:41945: connect: connection refused  * [/ip4/113.200.194.201/tcp/2306] dial tcp4 113.200.194.201:2306: connect: connection refused  * [/ip4/113.200.194.201/tcp/2165] dial tcp4 113.200.194.201:2165: connect: connection refused  * [/ip4/192.168.2.8/tcp/41945] dial tcp4 0.0.0.0:43351->192.168.2.8:41945: i/o timeout
+  f0153565: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0153583: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0153775: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0153804: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWRYzvW7FieB4gDbRJMU9FRbFd3R6An7FtVBhcaK59mT2g:  * [/ip4/218.13.93.62/tcp/5502] dial tcp4 0.0.0.0:43351->218.13.93.62:5502: i/o timeout
   f0153930: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0153932: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0153960: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0153986: 'fail, China, Changsha', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWG4ngcStum65vCcnjVLEzHziUTdtNcAR4EvXu8QhBGR1H:  * [/ip4/127.0.0.1/tcp/7503] dial tcp4 127.0.0.1:7503: connect: connection refused
   f0154152: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0154238: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0154294: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0154335: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0154597: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0154865: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0155049: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0155050: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0155258: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0155515: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0155687: 'fail, China, Guangzhou', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0155829: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0155983: 'fail, Japan', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWCiSxAQf3Hp6t1sFJdRotppHwUUBa6jQaA1bcJd4YEbJ1:  * [/ip4/202.149.23.10/tcp/5472] dial tcp4 0.0.0.0:43351->202.149.23.10:5472: i/o timeout
+  f0156214: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0156333: 'fail, China, Ningbo', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0156342: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0156417: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0157025: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0157115: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0157127: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0157316: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0157502: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0157769: 'fail, China, Changsha', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0157917: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0157979: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0157991: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0158000: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0158068: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0158133: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWHw1ytuA6ia2c2wQ7NAmSm7vStuTgeDhhKCpL7t4bY3da:  * [/ip4/10.33.1.17/tcp/6789] dial tcp4 0.0.0.0:43351->10.33.1.17:6789: i/o timeout
+  f0158142: 'fail, China, Karamay', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0158156: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0158265: 'fail, China, Hefei', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0158276: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0158335: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0158613: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0158728: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0159067: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0159333: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0159449: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0159517: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0159632: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWDPAdiHZY2J46XsioY41wEghorpiaJxjGFiR7Sru6B7pk:  * [/ip4/10.140.8.11/tcp/32759] dial tcp4 0.0.0.0:43351->10.140.8.11:32759: i/o timeout
+  f0159654: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0159660: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0159689: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0159883: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWKkHESE49gxVjwHSP1Pk5tXFGfAv8LuzDakUZd42SViFU:  * [/ip4/10.133.9.111/tcp/32759] dial tcp4 0.0.0.0:43351->10.133.9.111:32759: i/o timeout
   f0160135: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0160137: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0160735: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0160819: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0160870: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0161468: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0161819: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0161916: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWNepasPf214kWmhHRTUS3GGcSgg2HzJBS2gWrnWVwdpse:  * [/ip4/61.147.97.82/tcp/55556] dial tcp4 0.0.0.0:43351->61.147.97.82:55556: i/o timeout
+  f0162183: "fail, China, Xi'an", // exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0163275: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0165643: 'fail, China, Guangzhou', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0166327: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0166425: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0166512: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0166843: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0166896: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0167137: 'fail, China, Shaoxing', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWBNZWmyu93EsfFKRWaunU1ykXxK1ontQcjY5nvEh29kvs:  * [/ip4/115.239.191.45/tcp/24002] dial tcp4 0.0.0.0:43351->115.239.191.45:24002: i/o timeout
+  f0167505: 'fail, China, Beijing', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWSRFer5yWxcyjXWwa5FSNLZpZcNWxkfi1PqdNjh8EYuYj:  * [/ip4/10.10.8.90/tcp/7002] dial tcp4 0.0.0.0:43351->10.10.8.90:7002: i/o timeout
   f0168058: 'fail, China, Suzhou', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWMM38722xUgBthsFgQBF8s2HuokVbV5R1jWgQbGrDjmTr:  * [/ip4/58.211.213.210/tcp/22122] dial tcp4 58.211.213.210:22122: connect: connection refused
+  f0168537: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0169053: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0169097: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0172300: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0179096: 'fail, China, Fuzhou', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0199223: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWFnLArFiK8JWmiChXEutsTd1tGw8t5ZNciuST8FNDQ85j:  * [/ip4/110.188.25.20/tcp/24001] dial tcp4 0.0.0.0:43351->110.188.25.20:24001: i/o timeout
+  f0207949: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0216463: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0216822: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0217419: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0217771: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJibSxo5yq7eoAH3vvKuhvrEkVxaBK28DChqjhEtJ2CwV:  * [/ip4/103.44.253.105/tcp/12358] dial tcp4 0.0.0.0:43351->103.44.253.105:12358: i/o timeout
+  f0217789: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0217805: 'fail, China, Taiwan, Taipei', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWE1znzJYLvWnCd3xB1Y6X8AimQL1x2WXsC6R5JDmCHQYS:  * [/ip4/220.130.154.127/tcp/2348] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWE1znzJYLvWnCd3xB1Y6X8AimQL1x2WXsC6R5JDmCHQYS, but remote key matches 12D3KooWL1927LDwXR6UibSv9hhNgQhWbqb1B8RHqNqYWgA3kHGY
+  f0218072: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0218092: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0218407: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWAB4rhLmMptbUNNpJdYL8d4fm5oEW6gab4WujxSQtAPgq:  * [/ip4/61.240.206.153/tcp/50667] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWAB4rhLmMptbUNNpJdYL8d4fm5oEW6gab4WujxSQtAPgq, but remote key matches 12D3KooWF824mw7DBr8XKx5nfDdpnZNnvtRQ2YJ3tzbEN5qRhD8t
+  f0219106: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0220156: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0220632: 'fail, China, Fuzhou', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0222611: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0222811: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0222947: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0223033: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0223101: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0223102: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0223103: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0223104: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0223106: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0223316: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0223933: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0224894: 'fail, China, Qingdao', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0224984: 'fail, China, Wuhan', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0225058: 'fail, China, Fuzhou', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0225285: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0226303: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0226324: 'fail, China, Guangxi', // exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f0226418: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0226520: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0227472: 'fail, China, Xiamen', // exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f0227531: 'fail, China, Xiamen', // exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f0227567: 'fail, China, Zhangzhou', // exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0227660: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f0227684: 'fail, China, Xiamen', // exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0228232: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWEZAh3WfxSFS6trQZYHHU8N8HdJPZhvMYBo281yhTDwQA:  * [/ip4/183.204.60.235/tcp/16017] dial tcp4 0.0.0.0:43351->183.204.60.235:16017: i/o timeout
+  f0228712: 'fail, USA', // exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f0229199: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0229437: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0230449: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0230799: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0230861: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0231112: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWSVBeGTDfyqY3rS8RBhnusdikSLyEPfrkBkoEhLUWgY1Z:  * [/ip4/112.194.96.134/tcp/24001] dial tcp4 112.194.96.134:24001: connect: connection refused
+  f0231481: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0231782: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0232459: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0234567: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0239251: 'fail, Korea, Uiwang', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0240035: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWPZSFGhykg4TBEpKa5LBMNwzmkE8iWLHoR2kCzgQuAhC9:  * [/ip4/115.236.46.164/tcp/20004] dial tcp4 0.0.0.0:43351->115.236.46.164:20004: i/o timeout
+  f0240185: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0240392: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0240456: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0241536: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0241666: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0241764: 'fail, China, Chengdu', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWAqoRsdJxx1zaAMFQWG3XV9Y3M3xYV1gTcU3MryCZywfa:  * [/ip4/182.131.4.195/tcp/32800] dial tcp4 182.131.4.195:32800: connect: connection refused
   f0242156: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0242373: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0242420: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0349810: 'fail, China, Qinzhou', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0364957: 'fail, China, Sichuan', // exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f0377277: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0391143: 'fail, China, Shanghai', // exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f0391212: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0391214: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0391235: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0391381: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0391439: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0392194: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0392430: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0392488: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0392734: 'fail, Korea, Icheon-si', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWMRRvqGs1NbCBQWPqW6gq1erGN7xVNVqpviFXVRjonDWe:  * [/ip4/210.97.12.180/tcp/21306] dial tcp4 210.97.12.180:21306: connect: connection refused
+  f0392799: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0392808: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWR7WJ7MStK5W1vv7eEVxuzCYdUHZfoARfBVwogkszfteE:  * [/ip4/172.16.35.3/tcp/6789] dial tcp4 0.0.0.0:43351->172.16.35.3:6789: i/o timeout
+  f0392813: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWKQa9PSaH2wWh1e8SVvDNtCVrcL1nSVWeE582bmDETeku:  * [/ip4/172.16.35.25/tcp/6789] dial tcp4 0.0.0.0:43351->172.16.35.25:6789: i/o timeout
+  f0392924: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0392959: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0392980: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0392992: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0392999: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWGmQYeDiZRhAMBdmV36spYQGYLbzA11dsHYz2eXkj93Em:  * [/ip4/10.34.1.4/tcp/6789] dial tcp4 0.0.0.0:43351->10.34.1.4:6789: i/o timeout
+  f0393016: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWLGRUEmvdGKCi9AkHN4UbhRiubs9p1hrNCWMbyNEZNHBg:  * [/ip4/34.66.95.149/tcp/1024] dial tcp4 0.0.0.0:43351->34.66.95.149:1024: i/o timeout
+  f0393119: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWNnobNqKiP2pSc5fA1c9BuR9G1kwPayN51ixrHeovVnWv:  * [/ip4/172.16.35.5/tcp/6789] dial tcp4 0.0.0.0:43351->172.16.35.5:6789: i/o timeout
+  f0393135: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0393417: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0394102: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0395680: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0395994: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWHVvLeZq9iYKhwr1cNmZ82ayqNcSyXzcUWQ278dxvf2NE:  * [/ip4/10.10.8.116/tcp/8123] dial tcp4 0.0.0.0:43351->10.10.8.116:8123: i/o timeout
+  f0396149: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0396217: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0396352: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f0396422: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0396452: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0396473: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0396684: 'fail, China, Xiamen', // exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f0396720: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f0396732: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: stream reset
+  f0396751: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: protocol not supported
   f0396846: 'fail, China, Zhongshan', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJLaZCfWGiuPKvkjmpgqegkHreQfLGeBjHfcC3ScYiZWA:  * [/ip4/116.6.131.194/tcp/24001] dial tcp4 0.0.0.0:43351->116.6.131.194:24001: i/o timeout
+  f0397083: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0397332: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0397561: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0397794: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0397802: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0397837: 'fail, China, Fuzhou', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWEratU2MQneMbEAL9o8kdXcRxM5RyQpU5wPsivnmJUVFa:  * [/ip4/220.176.125.252/tcp/23450] dial tcp4 0.0.0.0:43351->220.176.125.252:23450: i/o timeout
+  f0398286: 'fail, China, Beijing', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0398999: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0399111: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0399319: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0399320: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0399321: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0399322: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0399323: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0399342: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0399343: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0399346: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0399348: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0399743: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0399765: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0399996: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0400264: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0400307: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWN3wNopyr2kSic3t6TaAPAsRGF9FU5jdeGDzKDmX1qH1Y:  * [/ip4/101.227.175.10/tcp/31347] dial tcp4 0.0.0.0:43351->101.227.175.10:31347: i/o timeout
+  f0400644: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0400920: 'fail, China, Luzhou', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0401287: 'fail, China, Yibin', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0402233: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0402431: 'fail, China, Hangzhou', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0402661: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0402822: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0403050: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0403529: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0404193: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0404643: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0406478: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0406533: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0407244: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0407287: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0407410: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0407733: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWMfqyyWZPU7rfHcz34FtBJbZgWWHQayBPmSQNUugJcEB3:  * [/ip4/8.209.65.6/tcp/30130] failed to negotiate security protocol: EOF
+  f0408205: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0408206: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0408208: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0408582: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0408629: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0408688: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0408833: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0409172: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWEdvErGEyk7iwpMnJdJkWhBXjVSqKX8WgNHTWasbiwsiQ:  * [/ip4/172.20.100.36/tcp/10241] dial tcp4 0.0.0.0:43351->172.20.100.36:10241: i/o timeout
+  f0409272: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0409399: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0409499: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0409600: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0410120: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0410180: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0410242: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0410319: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0410431: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0410941: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0411314: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0411877: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0413050: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0413323: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0413419: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0413456: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0413801: 'fail, China, Fujian', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0417133: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0417709: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f0417720: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0417767: 'fail, China, Zhangzhou', // exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f0417893: 'fail, China, Xiamen', // exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f0418086: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWP5VxNssfCKZy2Hv8CEbbVbuDni7Rqw6LVsuRWpYjSLoC:  * [/ip4/10.155.8.31/tcp/32759] dial tcp4 0.0.0.0:43351->10.155.8.31:32759: i/o timeout
+  f0418632: 'fail, Singapore', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWNqenLnPxHHVwzUxTZN3SS8Ca53qY4SBaMm973X3oVy4c:  * [/ip4/103.94.227.210/tcp/15001] dial tcp4 103.94.227.210:15001: connect: connection refused
+  f0418652: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0419311: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0419331: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0419414: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0419510: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0419662: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0419804: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0419944: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0419945: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWBzsbHafdeXwkHyjRSapH5gQvgCVGmFT9auBsBgyC1KSM:  * [/ip4/115.236.22.226/tcp/24001] dial tcp4 115.236.22.226:24001: connect: connection refused
+  f0420189: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0420508: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJVqJxVpMeJ2bLzVXe325uBsTkyx3A6xWat9vv4gK79L6:  * [/ip4/127.0.0.1/tcp/34005] dial tcp4 127.0.0.1:34005: connect: connection refused  * [/ip6/::1/tcp/46715] dial tcp6 [::1]:46715: connect: connection refused  * [/ip4/113.219.228.194/tcp/34005] dial tcp4 113.219.228.194:34005: connect: connection refused  * [/ip4/192.168.3.101/tcp/34005] dial tcp4 0.0.0.0:43351->192.168.3.101:34005: i/o timeout
+  f0421387: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0421392: 'fail, China, Foshan', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0421858: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0422266: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWAikAHtM6w5s7qqBarGmk7pt5i84Pc6aubiWFwAi8QLLU:  * [/ip4/10.177.5.31/tcp/32759] dial tcp4 0.0.0.0:43351->10.177.5.31:32759: i/o timeout
+  f0422737: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0423050: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0423057: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0423329: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0424761: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0424837: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0425447: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0427688: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0427839: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0427975: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0427989: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0428075: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0428184: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0428306: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0428661: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0429063: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWAuYNMj4P9cHtrXJHv66TLyW8UAdvYXriwKiXv3d2cWE9:  * [/ip4/8.209.65.6/tcp/30131] failed to negotiate security protocol: EOF
+  f0429122: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0430101: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0432235: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0432329: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0432375: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0432382: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0432570: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0432661: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0432773: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0433688: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0433892: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0434411: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0435140: 'fail, China, Yangzhou', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWLPo6bJJ2mzLWc8kXHfYyYcNBVhSYG6MtmNLWJQLpeAeS:  * [/ip4/58.220.66.161/tcp/1024] dial tcp4 0.0.0.0:43351->58.220.66.161:1024: i/o timeout
+  f0435971: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0436065: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0436661: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0437158: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0440919: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0441020: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0441116: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0441225: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0441240: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0441372: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0441525: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0441699: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0441703: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0442370: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0442371: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0442374: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0442375: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0442376: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0442383: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWPezoBtgHhfwqcUj1mJX9FbodKDxjNfJbFSWUz2emkfgy:  * [/ip4/10.5.101.10/tcp/12288] dial tcp4 0.0.0.0:43351->10.5.101.10:12288: i/o timeout
+  f0442670: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0442671: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0442672: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0443179: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0443180: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0443184: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0443303: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0443480: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0447106: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0447651: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0449196: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0449296: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0450959: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0451341: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0451936: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0452303: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0452808: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0455968: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0457168: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0459325: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0460660: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0461612: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0461779: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0463030: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0463184: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0464884: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0465286: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0465477: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0465677: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0465993: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0466405: 'fail, Germany, Niederaula', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWPdzsAN3aiWo48D6sjbp2tiDC9bvBK4ByQ4NFvv1mYsZL:  * [/ip4/212.102.118.102/tcp/20036] dial tcp4 0.0.0.0:43351->212.102.118.102:20036: i/o timeout
+  f0466426: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0466990: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0467640: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0467809: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0468210: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0468966: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0469055: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0469578: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0469959: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0470182: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0470608: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0472061: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0472720: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0472863: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0473113: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0473677: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0473956: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0475095: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0475305: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0475664: 'fail, China, Zhejiang', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0478563: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0479677: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0480195: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0480313: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0480936: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0480944: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0481938: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0482494: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0483206: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0484990: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0485876: 'fail, China, Changchun', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0486952: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0487097: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0487098: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0488215: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0488689: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0488733: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0488851: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0491919: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0492009: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0492030: 'fail, USA, Holmdel', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWLHF3hbaBVf6av1gu4UM47GRrsf1PH1g6ynH2rts71BCp:  * [/ip4/98.109.104.16/tcp/48001] dial tcp4 98.109.104.16:48001: connect: connection refused
+  f0492360: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0492474: "fail, China, Xi'an", // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0492481: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0492601: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0492737: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0493237: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0494268: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0494603: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0494733: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0496068: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0496897: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0497254: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0497636: 'fail, China, Harbin', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWEwmdbv9vkcdMHk2mw621fKY9V1Ve3L425RwBwmNpyK2h:  * [/ip4/123.166.135.30/tcp/26635] dial tcp4 0.0.0.0:43351->123.166.135.30:26635: i/o timeout
+  f0497771: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0498868: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0500003: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0500685: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0500878: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0501283: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0501662: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0502198: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0502948: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0503010: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0503287: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWDEzAweHTj5wZPseRBDhA5ibZQ18YH3FTT5r2Wmxndeye:  * [/ip4/172.18.49.152/tcp/7000] dial tcp4 0.0.0.0:43351->172.18.49.152:7000: i/o timeout
+  f0503494: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0504097: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0504929: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0504985: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0505001: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0505110: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0505593: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0506630: 'fail, China, Linyi', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWAbKEcHLWGs66jR818bSxuZTpCabn1ecF2s4u3kUy8bJr:  * [/ip4/222.174.187.42/tcp/20111] dial tcp4 222.174.187.42:20111: connect: connection refused
+  f0506800: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0507913: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0508328: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWRYNizkRTsja2Jn6Gssv4gkoc9yB32vpn5K7tMTFXZhvA:  * [/ip4/8.209.65.6/tcp/30132] failed to negotiate security protocol: EOF
+  f0508622: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0508892: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0509062: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0509980: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0509981: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0510701: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0510957: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0511070: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0511318: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0511385: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0512066: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0512693: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0513685: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0514000: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0514235: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0515264: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0515360: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0515389: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0515461: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0515626: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWRXsoLv5SA7YhLdgMbL3L45tQnkMnfkmWdLnfLnDrG4dr:  * [/ip4/10.155.8.115/tcp/32759] dial tcp4 0.0.0.0:43351->10.155.8.115:32759: i/o timeout
+  f0515674: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0517655: 'fail, Korea, Gwangju', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWFJm5NeNhiQL4htxCSBKsgB7uS3TZ2dZff5YNeQ1n6uFy:  * [/ip4/121.179.79.12/tcp/55000] failed to negotiate security protocol: read tcp4 144.217.11.204:43351->121.179.79.12:55000: read: connection reset by peer
+  f0518668: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0518713: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWChVQC5exGpKVj45HBidg994GyhRqE1a9R8gWvxpsMrdm:  * [/ip6/::1/tcp/34511] dial tcp6 [::1]:34511: connect: connection refused  * [/ip4/127.0.0.1/tcp/37911] dial tcp4 127.0.0.1:37911: connect: connection refused  * [/ip4/175.6.25.83/tcp/37911] dial tcp4 0.0.0.0:43351->175.6.25.83:37911: i/o timeout  * [/ip4/192.168.194.187/tcp/37911] dial tcp4 0.0.0.0:43351->192.168.194.187:37911: i/o timeout  * [/ip4/175.6.25.82/tcp/37911] dial tcp4 0.0.0.0:43351->175.6.25.82:37911: i/o timeout  * [/ip4/175.6.25.94/tcp/37911] dial tcp4 0.0.0.0:43351->175.6.25.94:37911: i/o timeout  * [/ip4/175.6.25.84/tcp/37911] dial tcp4 0.0.0.0:43351->175.6.25.84:37911: i/o timeout  * [/ip4/175.6.25.85/tcp/37911] dial tcp4 0.0.0.0:43351->175.6.25.85:37911: i/o timeout  * [/ip4/175.6.25.81/tcp/37911] dial tcp4 0.0.0.0:43351->175.6.25.81:37911: i/o timeout
   f0519331: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0519333: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0519376: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0519513: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0520262: 'fail, China, Fujian', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0520500: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0520520: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0520555: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0520666: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0520688: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0521273: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0521499: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0521508: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0521831: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0521884: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0522099: 'fail, China, Shangrao', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0523396: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0523415: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0523711: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0536177: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0592088: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0601583: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0602011: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0646439: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0652413: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0652414: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0663311: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0665666: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0666315: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0670491: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0671368: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0671982: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0672951: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0673613: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0673920: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWNqsbphQowDfnYtKjp1qv2HH4AYs7m8uQfFt2RegLJx5X:  * [/ip4/8.209.65.6/tcp/30133] failed to negotiate security protocol: EOF
+  f0673990: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0674600: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0674756: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0674889: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0675459: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0675675: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0676183: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0676272: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0678781: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0679376: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0680529: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0680677: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0680929: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0680977: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0681063: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0681068: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0682032: 'fail, China, Shenzhen', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWSBp35iwToBkDFKcBjtafn2QbyabmA7ysVVcpNwLqnX9U:  * [/ip4/103.39.230.113/tcp/51105] dial tcp4 103.39.230.113:51105: connect: connection refused
+  f0683965: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0684618: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0685007: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0685231: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0685539: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0685706: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0685797: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWNgjEWefHYd3BhA4AmJ4ET1g6uAUBkCRYkSebZCn33gDZ:  * [/ip4/220.176.125.163/tcp/23450] dial tcp4 0.0.0.0:43351->220.176.125.163:23450: i/o timeout
+  f0685829: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0686816: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0687211: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0688165: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0689753: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0690736: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0690779: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0691310: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0693008: 'fail, China, Shanghai', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0693127: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0693765: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0693793: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0693817: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0694099: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0694149: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0694172: 'fail, China, Luzhou', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0694232: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0694999: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0695289: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0697249: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0697913: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0698688: 'fail, China, Xinyang', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWGFhWLfQZD8xgY3K4cbDN5aiTLVPy9jADfknj7dEbpCSf:  * [/ip4/183.204.60.235/tcp/24001] dial tcp4 0.0.0.0:43351->183.204.60.235:24001: i/o timeout
+  f0699021: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0699115: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0699181: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0700033: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0700207: 'fail, China, Harbin', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0701056: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0701144: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0701226: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0702010: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0702054: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0702377: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0702810: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0704898: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0704940: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0704941: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0704966: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0705136: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0705521: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0705937: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0706206: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0706999: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWNHh5wxLbNfnGTtqX3N4JoTnj32MoBoPZwLXL4xSPhoRh:  * [/ip4/125.122.66.43/tcp/24001] failed to negotiate security protocol: message did not have trailing newline
+  f0707159: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0707197: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0707777: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0709896: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0711266: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0711289: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0711445: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0712676: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0715209: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0715446: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0715561: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0715904: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0716103: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0716170: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0716283: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0716775: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0717289: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0717905: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0717987: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0718311: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0718313: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0718366: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWNSXKvF3rDjqK5owHyz5YvToLupwEX9tB8SxR3pfBHJCS:  * [/ip4/115.238.239.190/tcp/34395] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWNSXKvF3rDjqK5owHyz5YvToLupwEX9tB8SxR3pfBHJCS, but remote key matches 12D3KooWM7Q7x7293jYzujzPMvsBMvghpYeXyDz2vaxTtEM7T8oZ
+  f0718552: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0718962: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0719301: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0720785: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0721721: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0723381: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0723538: 'fail, China, Handan', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWCdb7C2xNDAh6zbTwPhjL7PF8yZEiq3HDL4otE2HtoUaJ:  * [/ip4/111.62.109.66/tcp/24001] dial tcp4 0.0.0.0:43351->111.62.109.66:24001: i/o timeout
+  f0723604: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0723950: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0724023: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0724097: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0724216: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0724728: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0726270: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0726841: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0727962: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0728817: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0729412: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0730670: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0730917: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0730942: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0731061: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0731150: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0732272: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWL2n7opE3PS2fxEZeFqc4SCGNfFKKWzG61ijk4gBYboLa:  * [/ip4/172.18.7.146/tcp/2347] dial tcp4 0.0.0.0:43351->172.18.7.146:2347: i/o timeout
+  f0732862: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0733076: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0733242: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0733626: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0733692: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0734053: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0734759: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0735027: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0744093: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0744513: 'fail, China, Guangzhou', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWK18YecHFy5KA9kHu7uY1JYccCcesgKvCXjMgijX66GcY:  * [/ip4/14.119.111.133/tcp/36284] dial tcp4 14.119.111.133:36284: connect: connection refused  * [/ip4/10.9.3.32/tcp/36284] dial tcp4 0.0.0.0:43351->10.9.3.32:36284: i/o timeout
+  f0744622: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0745068: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0745192: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0746628: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0746945: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0746991: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0747522: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0747777: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0748101: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0748137: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0748179: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0748875: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0750779: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0751099: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0751450: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0752442: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0752620: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0752635: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0753027: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0753228: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0753402: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0754755: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0754993: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0755327: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0755650: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0756840: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0757233: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0757610: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0763048: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0763082: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0763093: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0764901: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0765036: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0765071: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0765173: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0766038: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0766177: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0766756: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0805343: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0805402: 'fail, Korea, Bucheon-si', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJXhpstx2AEsQihMrP6vWRtbzzVoW89dPShnAraUQF3Fh:  * [/ip4/211.192.248.213/tcp/34001] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWJXhpstx2AEsQihMrP6vWRtbzzVoW89dPShnAraUQF3Fh, but remote key matches 12D3KooWLwAJ4dZ6H4SjnuwFkKE5GBXsmvG17KmKu3fnkfLZpsZF
+  f0805486: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0805567: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0805612: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0805622: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0805666: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0805872: 'fail, China, Hangzhou', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0805937: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0806336: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0806347: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0806395: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0806758: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0806904: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0807383: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0807384: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0807385: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0807386: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0807387: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0807388: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0807389: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0807390: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0807392: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0807446: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: protocol not supported
+  f0807472: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0807839: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0808766: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0809570: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0809927: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0811662: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0811878: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0813061: 'fail, China, Shanghai', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0813825: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0813992: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0814012: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0814049: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0814155: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0815838: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0816168: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0818235: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0818428: 'fail, China, Yichang', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWB5fTJhsaHNUVALvngbCqcZtfJyJfRaw2YCWwiheqvpeq:  * [/ip4/119.36.140.201/tcp/24001] dial tcp4 0.0.0.0:43351->119.36.140.201:24001: i/o timeout
+  f0818625: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0820770: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0821595: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0822151: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0822441: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0822818: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0823127: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0825528: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0826272: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0826566: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0828538: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0829506: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0829765: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0829836: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0832131: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWQsVz6W83mxyLgWLzj7Rsr7yaL8DDFvQ1x7GMxQ4ZGQNA:  * [/ip4/10.177.5.12/tcp/32759] dial tcp4 0.0.0.0:43351->10.177.5.12:32759: i/o timeout
+  f0834841: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0835180: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0835613: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0836160: 'fail, Korea, Seodaemun-gu', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWHwRmkj4Jxfo2YnKJC4YBzTNEGDW6Et4E68r7RYVXk46h:  * [/ip4/211.48.44.88/tcp/24001] dial tcp4 211.48.44.88:24001: connect: connection refused
+  f0836990: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0837056: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0837434: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0839084: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0839133: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0839436: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0839448: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0840040: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0840430: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0841453: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0842266: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0843255: 'fail, China, Yibin', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0843558: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0843713: 'fail, China, Shaanxi', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0844271: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0844849: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0844916: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0845186: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0845296: 'fail, China, Hong Kong', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWDiQzhqk1pZWdkcTGHxuUsTkV1cPXW7Hts11CKwgUiccH:  * [/ip4/14.136.232.51/tcp/36666] dial tcp4 0.0.0.0:43351->14.136.232.51:36666: i/o timeout  * [/ip4/10.3.0.24/tcp/36666] dial tcp4 0.0.0.0:43351->10.3.0.24:36666: i/o timeout
   f0845552: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWF8C8n4KeK7qfx1hjjhZMqEQPrjvRTBbBjJPuyPRvrhnG:  * [/ip4/10.21.10.63/tcp/36863] dial tcp4 0.0.0.0:43351->10.21.10.63:36863: i/o timeout
   f0845976: 'fail, China, Jiaxing', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWNe7iCaSsvRxqnLVAjqWNpw6BbALY1zj6FCBubTMPvYEM:  * [/ip4/61.164.212.154/tcp/29013] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWNe7iCaSsvRxqnLVAjqWNpw6BbALY1zj6FCBubTMPvYEM, but remote key matches 12D3KooWFEZiYoJxqyuANeLtn7tDytRkYzcc9HS6gbaymHgMijWc
+  f0846191: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0847138: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0848972: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0849079: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0850130: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0851322: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0855056: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0855584: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0856336: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0856508: 'fail, China, Taiwan, Taoyuan District', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWLSAeUmariCgq3MYgJVQAorZibNzkigxjajsAK8pXBmWp:  * [/ip4/220.135.231.28/tcp/24001] dial tcp4 0.0.0.0:43351->220.135.231.28:24001: i/o timeout
+  f0856912: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0857612: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0858038: 'fail, China, Shanghai', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0859013: 'fail, China, Nanjing', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWQAppdVVbGSQ84HZLJ9hpGYddyewC7kAQMNmpGz4VtwGs:  * [/ip4/221.226.219.122/tcp/24001] dial tcp4 221.226.219.122:24001: connect: connection refused
+  f0863013: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0863576: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0866508: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0866966: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0867253: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0868971: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0870189: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0870333: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0870354: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0870973: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0871511: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0871532: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0871546: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0871719: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0873699: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0873874: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0874057: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0876581: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0878351: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0878807: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0881262: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0881281: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0881321: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0881531: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0881687: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0883083: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0884455: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWKQFomzn9uMhvcuEfZNeFq55qw5R1nwB9m2g3xyHUkPTJ:  * [/ip6/2409:8a1e:8fc3:d690:20c:29ff:fef9:9e90/tcp/46833] dial tcp6 [2409:8a1e:8fc3:d690:20c:29ff:fef9:9e90]:46833: connect: network is unreachable  * [/ip6/::1/tcp/46833] dial tcp6 [::1]:46833: connect: connection refused  * [/ip4/127.0.0.1/tcp/45705] dial tcp4 127.0.0.1:45705: connect: connection refused  * [/ip4/183.195.8.56/tcp/5430] dial tcp4 0.0.0.0:43351->183.195.8.56:5430: i/o timeout  * [/ip4/192.168.1.7/tcp/45705] dial tcp4 0.0.0.0:43351->192.168.1.7:45705: i/o timeout
+  f0884781: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0984680: 'fail, Korea, Jung-gu', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWBvZ7DkY3YWdnzuBFMc8gBtnddv3ZSMywYi32wvndCWL1:  * [/ip4/211.196.161.124/tcp/24001] dial tcp4 0.0.0.0:43351->211.196.161.124:24001: i/o timeout
+  f0984905: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01001984: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01002302: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01016451: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01016806: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01016882: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01017269: 'fail, USA, Fort Lauterdale', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWKifDpQWWWJgiZDedWCzL6NC5GZUwJuTDYD9gfw7vyyBd:  * [/ip4/184.105.151.130/tcp/23453] dial tcp4 0.0.0.0:43351->184.105.151.130:23453: i/o timeout
+  f01017980: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01019009: 'fail, China, Henan', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooW9z4Q6Q21MRwSSW2ruQkUhw77vednPuQodDZMKu1DktDZ:  * [/ip4/42.236.7.235/tcp/21001] dial tcp4 42.236.7.235:21001: i/o timeout
+  f01019391: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01019418: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01019869: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01021204: 'fail, China, Hangzhou', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01021317: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01021773: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01021898: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01022733: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01023982: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01024317: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01025366: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01025894: 'fail, China, Zhengzhou', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01026560: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01027747: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01028552: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01028902: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01029008: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01030424: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01030435: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01030442: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01031823: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01031867: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01032055: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01032314: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01032657: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01032858: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01032903: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01033096: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01033119: 'fail, France, Paris', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWRYpcprWqMFnPUKNY7DvLFGuNNpAwLnSdeLdqocyxjPTP:  * [/ip4/62.210.46.194/tcp/24001] dial tcp4 0.0.0.0:43351->62.210.46.194:24001: i/o timeout
+  f01033390: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01033805: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01034007: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01035021: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01036920: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01038189: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01038199: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01038389: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01038625: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01038663: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01038679: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01038861: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01039350: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWA8ahB9qMYWZ7RRD6PJFht3mC8zBbWYn378S5x1sTcB9E:  * [/ip6/::1/tcp/36419] dial tcp6 [::1]:36419: connect: connection refused  * [/ip4/127.0.0.1/tcp/39171] dial tcp4 127.0.0.1:39171: connect: connection refused  * [/ip4/61.164.212.140/tcp/39171] dial tcp4 0.0.0.0:43351->61.164.212.140:39171: i/o timeout  * [/ip4/10.80.3.216/tcp/39171] dial tcp4 10.80.3.216:39171: i/o timeout
+  f01039576: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01040516: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01040707: 'fail, China, Tianjin', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWD6q85b77FELfxCckkCcNkPK5sGAZu17wN5LEJg2w1zCP:  * [/ip4/36.106.26.23/tcp/24001] dial tcp4 0.0.0.0:43351->36.106.26.23:24001: i/o timeout
+  f01040817: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWDCVnKZDF54aTAqEK5T53stLd6T3quBSepb2UJepyNb4a:  * [/ip4/221.163.91.165/tcp/14224] dial tcp4 0.0.0.0:43351->221.163.91.165:14224: i/o timeout
+  f01042229: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01042276: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01042409: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01043193: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01043666: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01043780: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01044086: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01044297: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01045078: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01045198: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01045784: 'fail, USA, Ridgewood', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWN6sgT14BuSMSmvt9nbM9deBJWjzDMeNVGgmtwJEibpCN:  * [/ip4/184.152.161.170/tcp/24001] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWN6sgT14BuSMSmvt9nbM9deBJWjzDMeNVGgmtwJEibpCN, but remote key matches 12D3KooWA4bPTdQWZ9MpShDrieu9NCWqpcu64rraja6SYgS2Zdzu  * [/ip4/184.152.161.179/tcp/24002] dial tcp4 0.0.0.0:43351->184.152.161.179:24002: i/o timeout
+  f01045812: 'fail, China, Taiwan, New Taipei', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01046069: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01047011: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01047445: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01048770: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01049102: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01049468: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01049739: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01050978: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01051178: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01051743: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01052311: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01052556: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01053413: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01053601: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01054527: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01055821: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01056608: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01057193: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01057303: 'fail, China, Huizhou', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWRauh5L4cp8ZgECxihY7LHXqZRaagmgYrz88KwR3qWg9u:  * [/ip6/::1/tcp/23450] dial tcp6 [::1]:23450: connect: connection refused  * [/ip4/127.0.0.1/tcp/23450] dial tcp4 127.0.0.1:23450: connect: connection refused  * [/ip4/121.11.216.28/tcp/23450] dial tcp4 0.0.0.0:43351->121.11.216.28:23450: i/o timeout
+  f01059489: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01059620: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01062232: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01063832: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01063833: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01064991: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01065505: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01065930: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01066009: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01066517: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01067573: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01068111: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01068287: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01068331: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01069894: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01070040: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01070149: 'fail, China, Chengdu', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWCPrJpPFTcYNy9iNSErBsHUWuLaVHkvThh1DmcDRt5TYf:  * [/ip4/125.64.33.80/tcp/33167] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWCPrJpPFTcYNy9iNSErBsHUWuLaVHkvThh1DmcDRt5TYf, but remote key matches 12D3KooWApbR1a1aCfyJsHAjD2NDYeeBMWQZrBrqb21ZmbqiixLj
+  f01070158: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01070205: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWLuxZVLbEL4YaUDsiFziDoLZ327C9ujR25cBwMpo393K2:  * [/ip4/127.0.0.1/tcp/23450] dial tcp4 127.0.0.1:23450: connect: connection refused  * [/ip6/::1/tcp/23450] dial tcp6 [::1]:23450: connect: connection refused  * [/ip4/10.60.10.6/tcp/23450] dial tcp4 0.0.0.0:43351->10.60.10.6:23450: i/o timeout  * [/ip4/58.17.73.41/tcp/23450] dial tcp4 0.0.0.0:43351->58.17.73.41:23450: i/o timeout
   f01070319: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01070395: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01071282: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01071852: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01073166: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01073851: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01074227: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01075086: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01076629: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01076644: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01077516: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01077547: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01077777: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01079999: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01081449: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01081786: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01082277: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01082888: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01083999: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01084913: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01085688: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWLc7i9VwqBKfSETERepHNrP39rog5GM7c29nBvNbgT8MS:  * [/ip4/113.89.33.37/tcp/24001] dial tcp4 0.0.0.0:43351->113.89.33.37:24001: i/o timeout
+  f01085801: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01086350: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01086616: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01087002: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01087243: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01087561: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01088018: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01088088: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01089169: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01089422: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01089828: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01090983: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01091851: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01092768: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01093254: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01093419: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01094602: 'fail, China, Harbin', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01095558: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01095694: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01095710: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01095915: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01095973: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01096056: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01096672: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01097059: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01097535: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01097758: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01098119: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01098124: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01098271: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01098580: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01098810: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01098835: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01098931: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01099312: 'fail, China, Shenzhen', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01099362: 'fail, China, Baotou', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWGuqWKv4tb1PqFCMpjYf3crtMr56VGqrxXYBLB8P8Mqq5:  * [/ip4/1.24.191.98/tcp/3201] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWGuqWKv4tb1PqFCMpjYf3crtMr56VGqrxXYBLB8P8Mqq5, but remote key matches 12D3KooWLaprZ5WUpSoZJRdWG46zzoSdvsyq9DTTEWHhAo3ekut3
+  f01100262: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01100636: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01100914: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01101196: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01101397: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01101426: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01101881: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01102006: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01102085: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01102936: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01103160: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWAZyf6RWfHJ1A7rCxiCvoMqxWWZN5MYZaUD7qRofx8KVx:  * [/ip4/220.117.173.3/tcp/24001] dial tcp4 220.117.173.3:24001: connect: connection refused
+  f01103850: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01104012: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01104018: 'fail, China, Beijing', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWGMXT24ecaKrHNcpRY4eUrwR5qnu2qwyGnZr8cfxacGZJ:  * [/ip4/103.52.172.50/tcp/33690] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWGMXT24ecaKrHNcpRY4eUrwR5qnu2qwyGnZr8cfxacGZJ, but remote key matches 12D3KooWFaBcpEdCfe8wLM3jv4M3KqMSRTCqN7Aigsu4VpDQ6uF1
+  f01104310: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01105079: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01105647: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01105825: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01105927: "fail, China, Xi'an", // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWENsfcLm3e62dFcr3gEdpiQf1nmTKR6hbJcj5md9iJeYt:  * [/ip4/113.142.1.78/tcp/3000] dial tcp4 0.0.0.0:43351->113.142.1.78:3000: i/o timeout
+  f01106117: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01106668: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01106730: 'fail, China, Yunfu', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01107585: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01108096: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01108594: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01109196: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01110284: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01110660: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01111111: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01111131: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01111673: 'fail, China, Changsha', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01111831: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01111881: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01112163: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01112287: 'fail, Ukraine, Kyiv', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWEMSiVo8dk4B3AGhiw8JUrRg2boVfxk9XXHLMfRUjy1Gk:  * [/ip4/31.134.121.232/tcp/24001] dial tcp4 0.0.0.0:43351->31.134.121.232:24001: i/o timeout
+  f01112504: 'fail, USA, Gilbert', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01112541: 'fail, USA, Fremont', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01112782: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01113378: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01113597: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWQXxJ2cP2GyjUXzEUFiy9m4NW3jPLJULeEnoLWBBe5WFN:  * [/ip4/192.168.2.75/tcp/24001] dial tcp4 0.0.0.0:43351->192.168.2.75:24001: i/o timeout
+  f01114364: 'fail, USA, Allentown', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01114516: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01114577: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01115274: 'fail, Japan, Yokohama', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01115279: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01115949: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01117889: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01117949: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01118032: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01118499: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01118788: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01118970: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01119631: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01120248: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01120291: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01121887: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01122339: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01122412: 'fail, China', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWR3evydQfKXyxBTUjwiF6jCazFWynQEBr6D8x6ZCkwTb8:  * [/ip4/172.19.0.13/tcp/24001] dial tcp4 0.0.0.0:43351->172.19.0.13:24001: i/o timeout
   f01122448: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01123232: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01123400: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01123833: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01124710: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01125371: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01125521: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01125834: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01125913: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01126419: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01126799: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
