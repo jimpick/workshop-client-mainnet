@@ -18,6 +18,57 @@ const annotations = {
   f01016246: 'new, autolisted', // carry-over
   f01075157: 'new, auto', // carry-over
 
+  f081985: 'new, autolisted',
+  f0490501: 'new, autolisted',
+  f0845528: 'new, autolisted',
+  f01016245: 'new, autolisted',
+  f01103923: 'new, autolisted',
+  f01106820: 'new, autolisted',
+  f01115686: 'new, autolisted',
+  f01116666: 'new, autolisted',
+  f01119039: 'new, autolisted',
+  f01119890: 'new, autolisted',
+  f01125858: 'new, autolisted',
+  f01126517: 'new, autolisted',
+  f01127529: 'new, autolisted',
+  f01127678: 'new, autolisted',
+  f01128206: 'new, autolisted',
+  f01128320: 'new, autolisted',
+  f01128468: 'new, autolisted',
+  f01128844: 'new, autolisted',
+  f01129455: 'new, autolisted',
+  f01129528: 'new, autolisted',
+  f01129867: 'new, autolisted',
+  f01130100: 'new, autolisted',
+  f01130543: 'new, autolisted',
+  f01130544: 'new, autolisted',
+  f01130671: 'new, autolisted',
+  f01130682: 'new, autolisted',
+  f01130927: 'new, autolisted',
+  f01131460: 'new, autolisted',
+  f01131466: 'new, autolisted',
+  f01131751: 'new, autolisted',
+  f01131867: 'new, autolisted',
+  f01132015: 'new, autolisted',
+  f01132323: 'new, autolisted',
+  f01132416: 'new, autolisted',
+  f01132422: 'new, autolisted',
+  f01132516: 'new, autolisted',
+  f01132656: 'new, autolisted',
+  f01132686: 'new, autolisted',
+  f01133080: 'new, autolisted',
+  f01133130: 'new, autolisted',
+  f01133532: 'new, autolisted',
+  f01133668: 'new, autolisted',
+  f01134586: 'new, autolisted',
+  f01135819: 'new, autolisted',
+  f01136165: 'new, autolisted',
+  f01136467: 'new, autolisted',
+  f01136493: 'new, autolisted',
+  f01136592: 'new, autolisted',
+  f01137229: 'new, autolisted',
+  f01137297: 'new, autolisted',
+
   // Inflight
 
   // Unknown
@@ -546,7 +597,7 @@ const annotations = {
   f01045957: 'min-ask, NR', // 20000000 < 121948242187500000
   f01050158: 'min-ask, China, Xinjiang', // 20000000 < 122070312500000
   f01056782: 'min-ask, China, Huizhou', // 20000000 < 121948242187500000
-  f01060792: 'min-ask, USA, London', // 20000000 < 36621093
+  f01060792: 'delist, USA, London', // 20000000 < 36621093
   f01061547: 'min-ask, China, Fujian', // 20000000 < 1220703124999999999999999877929687500000
   f01062230: 'min-ask, NR', // 20000000 < 121948242187500000
   f01062274: 'min-ask, Korea, Busan', // 20000000 < 12207031250
@@ -666,7 +717,7 @@ const annotations = {
   f01096590: 'error, Russia, Lipetsk', // error in deal activation: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacebkihy4vfp2rt56ptcqpiqejih2dddwixecwdp22sxwp2kbowspmk: search msg failed: failed to load message: blockstore: block not found
   f01105377: 'error, Korea, Jung-gu', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacectsfacrf6oewtzlpjxqhihg3sgflfea47ux3do3oxjk7lelyhlly: search msg failed: failed to load message: blockstore: block not found
   f01108129: 'error, NR', // error in deal activation: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzaceaq6d3s3v57bn2yneyipro6xgwwl2r74w5jjt2abnro2fo6kxfgdo: search msg failed: failed to load message: blockstore: block not found
-  f01110407: 'error, Bulgaria', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacedn3hemrcxenqxtldrrhxgz2jyuobdvc537lfkcssqodsgwuh4kau: search msg failed: failed to load message: blockstore: block not found
+  f01110407: 'delist, Bulgaria', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacedn3hemrcxenqxtldrrhxgz2jyuobdvc537lfkcssqodsgwuh4kau: search msg failed: failed to load message: blockstore: block not found
   f01112647: "error, China, Xi'an", // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 966720): failed to look up deal on chain: looking for publish deal message bafy2bzacedmrfucjrnwkmxlswy7cfb64jtegg2ul2ozqwte7yasb43pjvr6vy: search msg failed: failed to load message: blockstore: block not found
   f01112955: 'error, China, Sichuan', // failed to complete data transfer: deal data transfer failed: 12D3KooWDr1z64V5VHNuXcKsLhDRg4U2A8K3nmKfo8RCb15s3m3K-12D3KooWSDxbkm3RK55zWZMuDWFoL7yguG74TRfBHG9zT2cLxPea-1626977271546893488: after 4 consecutive restarts failed to transfer any data
   f01113723: 'error, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.01357908110182615 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
@@ -3794,7 +3845,7 @@ const annotations = {
   f0818665: 'delist, Romania, Bucharest', // carry-over
   f0822032: 'delist, Korea, Incheon', // carry-over
   f0822203: 'delist, Korea, Seoul', // carry-over
-  f0826452: 'delist, NR', // carry-over
+  f0826452: 'retest, NR', // carry-over
   f0832312: 'delist, USA, Auburn', // carry-over
   f0839767: 'delist, Korea, Suwon', // carry-over
   f0843728: 'delist, France', // carry-over
@@ -3846,7 +3897,7 @@ const annotations = {
   f01045985: 'delist, Russia', // carry-over
   f01046865: 'delist, China, Shenzhen', // carry-over
   f01048957: 'delist, Korea, Gangnam-gu', // carry-over
-  f01051301: 'delist, NR', // carry-over
+  f01051301: 'retest, NR', // carry-over
   f01060045: 'delist, China, Foshan', // carry-over
   f01061522: 'delist, NR', // carry-over
   f01062833: 'delist, China, Foshan', // carry-over
