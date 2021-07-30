@@ -14,44 +14,43 @@ const annotations = {
 
   // New
 
+  f081995: 'new, autolisted', // carry-over
+  f0689917: 'new, autolisted', // carry-over
+  f0757234: 'new, autolisted', // carry-over
   f01016240: 'new, auto', // carry-over
   f01016245: 'new, autolisted', // carry-over
   f01016246: 'new, autolisted', // carry-over
+  f01016249: 'new, autolisted', // carry-over
   f01075157: 'new, auto', // carry-over
-
-  f081995: 'new, autolisted',
-  f0689917: 'new, autolisted',
-  f0757234: 'new, autolisted',
-  f01016249: 'new, autolisted',
-  f01099739: 'new, autolisted',
-  f01100187: 'new, autolisted',
-  f01101315: 'new, autolisted',
-  f01103841: 'new, autolisted',
-  f01108193: 'new, autolisted',
-  f01125552: 'new, autolisted',
-  f01128302: 'new, autolisted',
-  f01129431: 'new, autolisted',
-  f01131653: 'new, autolisted',
-  f01136274: 'new, autolisted',
-  f01136391: 'new, autolisted',
-  f01137656: 'new, autolisted',
-  f01137855: 'new, autolisted',
-  f01138014: 'new, autolisted',
-  f01138034: 'new, autolisted',
-  f01138139: 'new, autolisted',
-  f01138209: 'new, autolisted',
-  f01138496: 'new, autolisted',
-  f01138709: 'new, autolisted',
-  f01139232: 'new, autolisted',
-  f01139313: 'new, autolisted',
-  f01139383: 'new, autolisted',
-  f01139870: 'new, autolisted',
-  f01139961: 'new, autolisted',
-  f01140256: 'new, autolisted',
-  f01141077: 'new, autolisted',
-  f01141633: 'new, autolisted',
-  f01141810: 'new, autolisted',
-  f01141947: 'new, autolisted',
+  f01099739: 'new, autolisted', // carry-over
+  f01100187: 'new, autolisted', // carry-over
+  f01101315: 'new, autolisted', // carry-over
+  f01103841: 'new, autolisted', // carry-over
+  f01108193: 'new, autolisted', // carry-over
+  f01125552: 'new, autolisted', // carry-over
+  f01128302: 'new, autolisted', // carry-over
+  f01129431: 'new, autolisted', // carry-over
+  f01131653: 'new, autolisted', // carry-over
+  f01136274: 'new, autolisted', // carry-over
+  f01136391: 'new, autolisted', // carry-over
+  f01137656: 'new, autolisted', // carry-over
+  f01137855: 'new, autolisted', // carry-over
+  f01138014: 'new, autolisted', // carry-over
+  f01138034: 'new, autolisted', // carry-over
+  f01138139: 'new, autolisted', // carry-over
+  f01138209: 'new, autolisted', // carry-over
+  f01138496: 'new, autolisted', // carry-over
+  f01138709: 'new, autolisted', // carry-over
+  f01139232: 'new, autolisted', // carry-over
+  f01139313: 'new, autolisted', // carry-over
+  f01139383: 'new, autolisted', // carry-over
+  f01139870: 'new, autolisted', // carry-over
+  f01139961: 'new, autolisted', // carry-over
+  f01140256: 'new, autolisted', // carry-over
+  f01141077: 'new, autolisted', // carry-over
+  f01141633: 'new, autolisted', // carry-over
+  f01141810: 'new, autolisted', // carry-over
+  f01141947: 'new, autolisted', // carry-over
 
   // Inflight
 
@@ -59,15 +58,19 @@ const annotations = {
 
   // Active
 
+  f01278: 'active, USA, Grand Rapids, MiMiner', // 2217150 1 day
   f07709: 'active, Korea, Dongjak-gu', // 2216607 about 3 hours
   f043376: 'active, Korea, Incheon', // 2216664 about 2 hours
   f062318: 'active, Korea, Naju', // 2216615 about 2 hours
+  f063628: 'active, NR', // 2216662 1 day
   f079817: "active, Russia, Ul'yanovka", // 2216611 about 2 hours
   f080103: 'active, Korea, Seongnam-si', // 2216688 about 2 hours
   f094374: 'active, China, Nanyang', // 2216612 about 2 hours
   f097840: 'active, NR', // 2216767 about 2 hours
   f0110804: 'active, USA, Santa Clara', // 2216620 about 7 hours
+  f0130912: 'active, China, Hong Kong', // 2216608 2 days
   f0131901: 'active, Korea, Daejeon', // 2216617 about 2 hours
+  f0157513: 'active, Korea, Geumcheon-gu', // 2216616 2 days
   f0157564: 'active, Korea, Daejeon', // 2216614 about 2 hours
   f0157991: 'active, NR', // 2216839 about 2 hours
   f0162394: 'active, China, Guangzhou', // 2216624 about 2 hours
@@ -75,7 +78,10 @@ const annotations = {
   f0165539: 'active, Japan, Yokohama', // 2216629 about 7 hours
   f0214334: 'active, NR', // 2216668 about 2 hours
   f0215370: 'active, China, Hangzhou', // 2216682 about 3 hours
+  f0218407: 'active, NR', // 2216787 about 23 hours
+  f0228855: 'active, Korea, Guro-gu', // 2216622 2 days
   f0397052: 'active, NR', // 2216669 about 3 hours
+  f0401416: 'active, Japan, Fukuoka', // 2216630 about 23 hours
   f0433689: 'active, NR', // 2216637 about 2 hours
   f0433690: 'active, NR', // 2216626 about 7 hours
   f0433691: 'active, China, Wuxi', // 2216651 about 2 hours
@@ -83,9 +89,11 @@ const annotations = {
   f0458627: 'active, Korea, Seongnam-si', // 2216628 about 2 hours
   f0460440: 'active, Korea, Seongnam-si', // 2216627 about 2 hours
   f0461791: 'active, Korea, Gwangju', // 2216645 about 2 hours
+  f0478837: 'active, China, Zhangzhou', // 2216580 1 day
   f0482619: 'active, Korea, Seongnam-si', // 2216625 about 2 hours
   f0488889: 'active, China, Nanchang', // 2216705 about 2 hours
   f0520555: 'active, NR', // 2216829 about 2 hours
+  f0521569: 'active, Korea, Guro-go', // 2216716 2 days
   f0675909: 'active, NR', // 2216652 about 7 hours
   f0694881: 'active, China, Hangzhou', // 2216631 about 2 hours
   f0717913: 'active, Korea, Jung-gu', // 2216633 about 2 hours
@@ -97,10 +105,12 @@ const annotations = {
   f0756207: 'active, Korea', // 2216656 about 2 hours
   f0805568: 'active, Korea, Gangnam-gu', // 2216650 about 4 hours
   f0809927: 'active, NR', // 2216885 about 2 hours
+  f0845245: 'active, Korea, Busan', // 2216653 2 days
   f0864910: 'active, Korea, Gwangjin-gu', // 2216640 about 2 hours
   f01023503: 'active, Korea, Busan', // 2216638 about 2 hours
   f01039753: 'active, China, Suqian', // 2216758 about 2 hours
   f01050286: 'active, China, Guangzhou', // 2216644 about 2 hours
+  f01051301: 'active, NR', // 2216842 about 23 hours
   f01071194: 'active, USA, San Jose', // 2216722 about 2 hours
   f01071719: 'active, China, Beijing', // 2216636 about 2 hours
   f01086762: 'active, Korea, Seoul', // 2216643 about 3 hours
@@ -109,12 +119,15 @@ const annotations = {
   f01105829: 'active, Korea', // 2216647 about 4 hours
   f01106820: 'active, autolisted', // 2216657 about 2 hours
   f01110276: 'active, Korea, Bucheon-si', // 2216654 about 2 hours
+  f01117341: 'active, auto', // 2216678 1 day
   f01119631: 'active, auto', // 2216921 about 2 hours
   f01128462: 'active, autolisted', // 2216840 about 2 hours
+  f01128844: 'active, autolisted', // 2216658 2 days
   f01131751: 'active, autolisted', // 2216660 about 2 hours
   f01132686: 'active, autolisted', // 2216667 about 2 hours
   f01133080: 'active, autolisted', // 2216661 about 2 hours
   f01136592: 'active, autolisted', // 2216666 about 2 hours
+  f01137229: 'active, autolisted', // 2216665 1 day
 
   // Active-sealing (active - with in-flight sealing)
 
@@ -122,28 +135,19 @@ const annotations = {
   f023219: 'active-sealing, China, Beijing + Zhangjiakou', // 2216606
   f024944: 'active-sealing, Korea, Yeongdeungpo-dong', // 2216609
   f042567: 'active-sealing, China, Jinhua', // 2216618
-  f063628: 'active-sealing, NR', // 2216662
   f081644: 'active-sealing, China, Wenzhou', // 2216613
   f097720: 'active-sealing, Korea, Bucheon-si', // 2216619
-  f0130912: 'active-sealing, China, Hong Kong', // 2216608
-  f0157513: 'active-sealing, Korea, Geumcheon-gu', // 2216616
   f0167254: 'active-sealing, Russia, St. Petersburg', // 2216623
-  f0228855: 'active-sealing, Korea, Guro-gu', // 2216622
   f0396705: 'active-sealing, NR', // 2216728
-  f0401416: 'active-sealing, Japan, Fukuoka', // 2216630
-  f0478837: 'active-sealing, China, Zhangzhou', // 2216580
   f0693131: 'active-sealing, China, Zhongshan', // 2216634
   f0729674: 'active-sealing, Canada, Vancouver', // 2216635
-  f0845245: 'active-sealing, Korea, Busan', // 2216653
   f01039327: 'active-sealing, Indonesia, Denpasar', // 2216648
   f01099967: 'active-sealing, USA, London', // 2216679
   f01112335: 'active-sealing, China, Taiwan, Taoyuan District', // 2216649
-  f01117341: 'active-sealing, auto', // 2216678
   f01122113: 'active-sealing, Japan, Tokyo', // 2216680
 
   // Sealing
 
-  f01278: 'sealing, USA, Grand Rapids, MiMiner', // 2217150
   f02490: 'sealing, China, Fujian', // 2216691
   f02540: 'sealing, USA, Mobile, Foundry', // 2216685
   f03345: 'sealing, China, Fuzhou, chh', // 2216698
@@ -160,6 +164,7 @@ const annotations = {
   f0110768: 'sealing, Korea, Gwangju', // 2216689
   f0111174: 'sealing, China, Guangzhou', // 2216696
   f0113331: 'sealing, Korea, Jinju + USA', // 2216699
+  f0119146: 'sealing, NR', // 2216801
   f0119997: 'sealing, NR', // 2216788
   f0121533: 'sealing, China, Zhejiang', // 2216695
   f0134671: 'sealing, Korea, Gimpo-si', // 2216697
@@ -171,7 +176,6 @@ const annotations = {
   f0156452: 'sealing, Korea, Ulsan', // 2216704
   f0157265: 'sealing, China, Zhangjiakou', // 2216707
   f0215461: 'sealing, NR', // 2216738
-  f0218407: 'sealing, NR', // 2216787
   f0396846: 'sealing, China, Zhongshan', // 2216790
   f0397728: 'sealing, China, Dongguan', // 2216701
   f0399814: "sealing, China, Ya'an", // 2216711
@@ -186,7 +190,6 @@ const annotations = {
   f0452303: 'sealing, NR', // 2216852
   f0501283: 'sealing, NR', // 2216817
   f0514737: 'sealing, Korea, Busan', // 2216717
-  f0521569: 'sealing, Korea, Guro-go', // 2216716
   f0676272: 'sealing, NR', // 2216816
   f0690699: 'sealing, NR', // 2216740
   f0746416: 'sealing, Korea, Gyeonggi-do', // 2216725
@@ -200,21 +203,15 @@ const annotations = {
   f01019009: 'sealing, China, Henan', // 2216819
   f01027268: 'sealing, Korea, Busan', // 2216714
   f01040469: 'sealing, Korea', // 2216721
-  f01051301: 'sealing, NR', // 2216842
   f01053334: 'sealing, Korea, Mapo-gu', // 2216720
   f01096590: 'sealing, Russia, Lipetsk', // 2216739
   f01099362: 'sealing, China, Baotou', // 2216830
   f01108129: 'sealing, NR', // 2216723
   f01114420: 'sealing, Bulgaria, Sofia', // 2216749
-  f01128844: 'sealing, autolisted', // 2216658
   f01132416: 'sealing, autolisted', // 2216659
   f01133130: 'sealing, autolisted', // 2216663
-  f01137229: 'sealing, autolisted', // 2216665
 
   // Stuck
-
-  f0119146: 'stuck, NR', // CheckForAcceptance: about 21 hours
-  f01099312: 'stuck, China, Shenzhen', // CheckForAcceptance: about 20 hours
 
   // Busy
 
@@ -709,15 +706,11 @@ const annotations = {
   f01069268: 'error, NR', // deal failed: (State=26) deal data verification failed: error generating CommP: failed to build treeCaused by:    0: failed to create data store    1: No such file or directory (os error 2)
   f01079646: 'error, China, Shenzhen', // AddPiece failed: writing piece: storage call error 0: generating piece commitment: failed to build treeCaused by:    0: failed to create data store    1: No such file or directory (os error 2)Stack backtrace:   0: <merkletree::store::disk::DiskStore<E> as merkletree::store::Store<E>>::new   1: merkletree::merkle::MerkleTree<E,A,S,BaseTreeArity,SubTreeArity,TopTreeArity>::try_from_iter   2: storage_proofs_core::pieces::generate_piece_commitment_bytes_from_source   3: storage_proofs_core::measurements::measure_op   4: <std::panic::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once   5: ffi_toolkit::catch_panic_response   6: fil_generate_piece_commitment   7: _cgo_c8a539579dfc_Cfunc_fil_generate_piece_commitment             at /tmp/go-build/cgo-gcc-prolog:604:11   8: runtime.asmcgocall             at /usr/local/go/src/runtime/asm_amd64.s:667
   f01087243: 'error, NR', // error reading Response message from provider: EOF
+  f01099312: 'error, China, Shenzhen', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals errored: handler: websocket connection closed
   f01106730: 'error, China, Yunfu', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.013103364445110696 FIL, balance: 0.012713604577638541 FIL): not enough funds to execute transaction
   f01112955: 'error, China, Sichuan', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.037885097845544472 FIL, balance: 0.004725925450380642 FIL): not enough funds to execute transaction
-  f01113723: 'delist, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.036112063826360823 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
   f01115279: 'error, auto', // deal failed: (State=26) error calling node: reserving funds: failed to sign message: send from f3siey2eeahwsq76hkhsrjaczwimjwho6ddcbxyhm35bvocxegbmrirvdx4c7avi436cxicxvkpesrk2lzgj4q to f05 27852379449, err:Don't allow transfer from f3siey2eeahwsq76hkhsrjaczwimjwho6ddcbxyhm35bvocxegbmrirvdx4c7avi436cxicxvkpesrk2lzgj4q to f05 : Does not exist in the whitelist.
-  f01116725: 'delist, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.037473161725598386 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
   f01116796: 'error, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.036051374895746189 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
-  f01118185: 'delist, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.036047034872182032 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
-  f01118563: 'delist, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.036939996830653888 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
-  f01120547: 'delist, USA, Gilbert', // deal failed: (State=11) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.03526583462566668 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
 
   // Dial backoff
 
@@ -2804,14 +2797,11 @@ const annotations = {
   f01111881: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01112163: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01112287: 'fail, Ukraine, Kyiv', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWEMSiVo8dk4B3AGhiw8JUrRg2boVfxk9XXHLMfRUjy1Gk:  * [/ip4/31.134.121.232/tcp/24001] dial tcp4 31.134.121.232:24001: connect: connection refused
-  f01112504: 'delist, USA, Gilbert', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01112541: 'fail, USA, Fremont', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01112547: 'delist, USA', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJvbM1Aa7EbSQuS715Lsai7bfEEgYvP5DuVwFwR83YYDS:  * [/ip4/135.148.35.36/tcp/24002] dial tcp4 0.0.0.0:40089->135.148.35.36:24002: i/o timeout
   f01112647: "fail, China, Xi'an", // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01112782: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01113378: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01113597: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWQXxJ2cP2GyjUXzEUFiy9m4NW3jPLJULeEnoLWBBe5WFN:  * [/ip4/192.168.2.75/tcp/24001] dial tcp4 0.0.0.0:40089->192.168.2.75:24001: i/o timeout
-  f01114364: 'delist, USA, Allentown', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01114516: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01114577: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01115274: 'fail, Japan, Yokohama', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -3956,7 +3946,15 @@ const annotations = {
   f01108733: 'delist, China, Jieyang', // carry-over
   f01108749: 'delist, USA', // carry-over
   f01109622: 'delist, Bulgaria, Sofia', // carry-over
-  f01110407: 'delist, Bulgaria' // carry-over
+  f01110407: 'delist, Bulgaria', // carry-over
+  f01112504: 'delist, USA, Gilbert',
+  f01112547: 'delist, USA',
+  f01113723: 'delist, USA, Gilbert',
+  f01114364: 'delist, USA, Allentown',
+  f01116725: 'delist, USA, Gilbert',
+  f01118185: 'delist, USA, Gilbert',
+  f01118563: 'delist, USA, Gilbert',
+  f01120547: 'delist, USA, Gilbert'
 }
 
 export default annotations
