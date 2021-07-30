@@ -19,6 +19,40 @@ const annotations = {
   f01016246: 'new, autolisted', // carry-over
   f01075157: 'new, auto', // carry-over
 
+  f081995: 'new, autolisted',
+  f0689917: 'new, autolisted',
+  f0757234: 'new, autolisted',
+  f01016249: 'new, autolisted',
+  f01099739: 'new, autolisted',
+  f01100187: 'new, autolisted',
+  f01101315: 'new, autolisted',
+  f01103841: 'new, autolisted',
+  f01108193: 'new, autolisted',
+  f01125552: 'new, autolisted',
+  f01128302: 'new, autolisted',
+  f01129431: 'new, autolisted',
+  f01131653: 'new, autolisted',
+  f01136274: 'new, autolisted',
+  f01136391: 'new, autolisted',
+  f01137656: 'new, autolisted',
+  f01137855: 'new, autolisted',
+  f01138014: 'new, autolisted',
+  f01138034: 'new, autolisted',
+  f01138139: 'new, autolisted',
+  f01138209: 'new, autolisted',
+  f01138496: 'new, autolisted',
+  f01138709: 'new, autolisted',
+  f01139232: 'new, autolisted',
+  f01139313: 'new, autolisted',
+  f01139383: 'new, autolisted',
+  f01139870: 'new, autolisted',
+  f01139961: 'new, autolisted',
+  f01140256: 'new, autolisted',
+  f01141077: 'new, autolisted',
+  f01141633: 'new, autolisted',
+  f01141810: 'new, autolisted',
+  f01141947: 'new, autolisted',
+
   // Inflight
 
   // Unknown
@@ -677,13 +711,13 @@ const annotations = {
   f01087243: 'error, NR', // error reading Response message from provider: EOF
   f01106730: 'error, China, Yunfu', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.013103364445110696 FIL, balance: 0.012713604577638541 FIL): not enough funds to execute transaction
   f01112955: 'error, China, Sichuan', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.037885097845544472 FIL, balance: 0.004725925450380642 FIL): not enough funds to execute transaction
-  f01113723: 'error, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.036112063826360823 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
+  f01113723: 'delist, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.036112063826360823 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
   f01115279: 'error, auto', // deal failed: (State=26) error calling node: reserving funds: failed to sign message: send from f3siey2eeahwsq76hkhsrjaczwimjwho6ddcbxyhm35bvocxegbmrirvdx4c7avi436cxicxvkpesrk2lzgj4q to f05 27852379449, err:Don't allow transfer from f3siey2eeahwsq76hkhsrjaczwimjwho6ddcbxyhm35bvocxegbmrirvdx4c7avi436cxicxvkpesrk2lzgj4q to f05 : Does not exist in the whitelist.
-  f01116725: 'error, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.037473161725598386 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
+  f01116725: 'delist, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.037473161725598386 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
   f01116796: 'error, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.036051374895746189 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
-  f01118185: 'error, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.036047034872182032 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
-  f01118563: 'error, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.036939996830653888 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
-  f01120547: 'error, USA, Gilbert', // deal failed: (State=11) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.03526583462566668 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
+  f01118185: 'delist, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.036047034872182032 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
+  f01118563: 'delist, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.036939996830653888 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
+  f01120547: 'delist, USA, Gilbert', // deal failed: (State=11) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.03526583462566668 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
 
   // Dial backoff
 
@@ -2770,14 +2804,14 @@ const annotations = {
   f01111881: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01112163: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01112287: 'fail, Ukraine, Kyiv', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWEMSiVo8dk4B3AGhiw8JUrRg2boVfxk9XXHLMfRUjy1Gk:  * [/ip4/31.134.121.232/tcp/24001] dial tcp4 31.134.121.232:24001: connect: connection refused
-  f01112504: 'fail, USA, Gilbert', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01112504: 'delist, USA, Gilbert', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01112541: 'fail, USA, Fremont', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01112547: 'fail, USA', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJvbM1Aa7EbSQuS715Lsai7bfEEgYvP5DuVwFwR83YYDS:  * [/ip4/135.148.35.36/tcp/24002] dial tcp4 0.0.0.0:40089->135.148.35.36:24002: i/o timeout
+  f01112547: 'delist, USA', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJvbM1Aa7EbSQuS715Lsai7bfEEgYvP5DuVwFwR83YYDS:  * [/ip4/135.148.35.36/tcp/24002] dial tcp4 0.0.0.0:40089->135.148.35.36:24002: i/o timeout
   f01112647: "fail, China, Xi'an", // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01112782: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01113378: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01113597: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWQXxJ2cP2GyjUXzEUFiy9m4NW3jPLJULeEnoLWBBe5WFN:  * [/ip4/192.168.2.75/tcp/24001] dial tcp4 0.0.0.0:40089->192.168.2.75:24001: i/o timeout
-  f01114364: 'fail, USA, Allentown', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01114364: 'delist, USA, Allentown', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01114516: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01114577: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01115274: 'fail, Japan, Yokohama', // exhausted 15 attempts but failed to open stream, err: routing: not found
