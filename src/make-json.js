@@ -23,3 +23,9 @@ const minerIndexesExcludingDelisted = [...minerIndexes].filter(index => !annotat
 fs.writeFileSync('./annotated-miner-indexes.json', JSON.stringify(minerIndexes, null, 2))
 fs.writeFileSync('./annotated-miner-indexes-excluding-delisted.json', JSON.stringify(minerIndexesExcludingDelisted, null, 2))
 fs.writeFileSync('./annotations-mainnet.json', JSON.stringify(annotations, null, 2))
+
+const baiduCitiesText = fs.readFileSync('./lib/baidu-cities.js', 'utf8')
+const modifiedBaiduCities = baiduCitiesText.replace(/export.*/, '').replace('const baiduCities = ', 'x = ')
+const baiduCities = eval(modifiedBaiduCities)
+fs.writeFileSync('./baidu-cities.json', JSON.stringify(baiduCities, null, 2))
+
