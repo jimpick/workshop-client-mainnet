@@ -10,6 +10,15 @@ geoip.miner.report {
 
   log
 
+  @get_api_geoip_baidu {
+      path_regexp baidu ^/api/geoip/baidu/(.*)$
+      method GET
+  }
+
+  #basicauth @get_api_geoip_baidu {
+  #  {$BAIDU_WEB_USER} {$HASHED_BAIDU_WEB_PASSWORD}
+  #}
+
   @api_geoip_options {
       path_regexp api ^/api/geoip/(.*)$
       method OPTIONS
@@ -24,12 +33,29 @@ geoip.miner.report {
       respond "" 204
   }
 
-  @api_geoip {
-      path_regexp api ^/api/geoip/(.*)$
+  @api_geoip_geolite2 {
+      path_regexp api ^/api/geoip/geolite2/(.*)$
   }
 
-  route @api_geoip {
+  route @api_geoip_geolite2 {
     uri strip_prefix /api/geoip
+
+    reverse_proxy localhost:3003 {
+      header_down Access-Control-Allow-Origin "*"
+    }
+  }
+
+  @api_geoip_baidu {
+      path_regexp api ^/api/geoip/baidu/(.*)$
+  }
+
+  route @api_geoip_baidu {
+    uri strip_prefix /api/geoip
+
+    basicauth * {
+      {$BAIDU_WEB_USER} {$HASHED_BAIDU_WEB_PASSWORD}
+    }
+
     reverse_proxy localhost:3003 {
       header_down Access-Control-Allow-Origin "*"
     }
