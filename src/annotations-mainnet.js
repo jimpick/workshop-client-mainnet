@@ -21,6 +21,106 @@ const annotations = {
   f01075157: 'new, auto', // carry-over
   f01100187: 'new, autolisted', // carry-over
 
+  f089169: 'new, autolisted',
+f089220: 'new, autolisted',
+f0112787: 'new, autolisted',
+f0117585: 'new, autolisted',
+f0117586: 'new, autolisted',
+f0117587: 'new, autolisted',
+f0127616: 'new, autolisted',
+f0127617: 'new, autolisted',
+f0127618: 'new, autolisted',
+f0239678: 'new, autolisted',
+f0807382: 'new, autolisted',
+f0845539: 'new, autolisted',
+f0883201: 'new, autolisted',
+f0883202: 'new, autolisted',
+f0883203: 'new, autolisted',
+f0883205: 'new, autolisted',
+f0883206: 'new, autolisted',
+f01016247: 'new, autolisted',
+f01101543: 'new, autolisted',
+f01102194: 'new, autolisted',
+f01107182: 'new, autolisted',
+f01110844: 'new, autolisted',
+f01122841: 'new, autolisted',
+f01125168: 'new, autolisted',
+f01130193: 'new, autolisted',
+f01130288: 'new, autolisted',
+f01132058: 'new, autolisted',
+f01132085: 'new, autolisted',
+f01132093: 'new, autolisted',
+f01132094: 'new, autolisted',
+f01132178: 'new, autolisted',
+f01134282: 'new, autolisted',
+f01136283: 'new, autolisted',
+f01137150: 'new, autolisted',
+f01137729: 'new, autolisted',
+f01140707: 'new, autolisted',
+f01140920: 'new, autolisted',
+f01141603: 'new, autolisted',
+f01142476: 'new, autolisted',
+f01142483: 'new, autolisted',
+f01143635: 'new, autolisted',
+f01143914: 'new, autolisted',
+f01144275: 'new, autolisted',
+f01144331: 'new, autolisted',
+f01145144: 'new, autolisted',
+f01145192: 'new, autolisted',
+f01145325: 'new, autolisted',
+f01145505: 'new, autolisted',
+f01146045: 'new, autolisted',
+f01146327: 'new, autolisted',
+f01146522: 'new, autolisted',
+f01146660: 'new, autolisted',
+f01147907: 'new, autolisted',
+f01147989: 'new, autolisted',
+f01148129: 'new, autolisted',
+f01148258: 'new, autolisted',
+f01148814: 'new, autolisted',
+f01149094: 'new, autolisted',
+f01149098: 'new, autolisted',
+f01149230: 'new, autolisted',
+f01149485: 'new, autolisted',
+f01149873: 'new, autolisted',
+f01150329: 'new, autolisted',
+f01150686: 'new, autolisted',
+f01152097: 'new, autolisted',
+f01152162: 'new, autolisted',
+f01152332: 'new, autolisted',
+f01152462: 'new, autolisted',
+f01153105: 'new, autolisted',
+f01153758: 'new, autolisted',
+f01153833: 'new, autolisted',
+f01154081: 'new, autolisted',
+f01154295: 'new, autolisted',
+f01154375: 'new, autolisted',
+f01154394: 'new, autolisted',
+f01154618: 'new, autolisted',
+f01154819: 'new, autolisted',
+f01154827: 'new, autolisted',
+f01154901: 'new, autolisted',
+f01155052: 'new, autolisted',
+f01155864: 'new, autolisted',
+f01155977: 'new, autolisted',
+f01156228: 'new, autolisted',
+f01156568: 'new, autolisted',
+f01157445: 'new, autolisted',
+f01157880: 'new, autolisted',
+f01157952: 'new, autolisted',
+f01158296: 'new, autolisted',
+f01158681: 'new, autolisted',
+f01158684: 'new, autolisted',
+f01159190: 'new, autolisted',
+f01159240: 'new, autolisted',
+f01159866: 'new, autolisted',
+f01159979: 'new, autolisted',
+f01160021: 'new, autolisted',
+f01160571: 'new, autolisted',
+f01162201: 'new, autolisted',
+f01162221: 'new, autolisted',
+f01162678: 'new, autolisted',
+
   // Inflight
 
   // Unknown
@@ -671,7 +771,7 @@ const annotations = {
   f01108129: 'error, NR', // error in deal activation: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacedrgzwvttx5qhpd5z2ltgzph6jp7u2l4mb2oudooiyyshj54ftpxu: search msg failed: failed to load message: blockstore: block not found
   f01112335: 'error, China, Taiwan, Taoyuan District', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacectfpkheewxk2z2ocdsk3bzqunnmplaraurc4ifndzxqkppg22guo: search msg failed: failed to load message: blockstore: block not found
   f01112955: 'error, China, Sichuan', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.02744679611145876 FIL, balance: 0.004725925450380642 FIL): not enough funds to execute transaction
-  f01114420: 'error, Bulgaria, Sofia', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacednh7t55ileqvg4hwjygygdcyrvs6yoyetd6yutuhimeyf3j6rk26: search msg failed: failed to load message: blockstore: block not found
+  f01114420: 'delist, Bulgaria, Sofia', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacednh7t55ileqvg4hwjygygdcyrvs6yoyetd6yutuhimeyf3j6rk26: search msg failed: failed to load message: blockstore: block not found
   f01116796: 'error, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.026160217934607841 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
   f01122113: 'error, Japan, Tokyo', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzaceahtv457itc7y4jo7e7gdj3eyhohhkrepbccze2emv6ibeunk3fs2: search msg failed: failed to load message: blockstore: block not found
   f01132416: 'error, autolisted', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacebzphkmhzada3wqbngtzs5xvrz3t22stqxy73qddc6g55kkvgh3de: search msg failed: failed to load message: blockstore: block not found
@@ -967,7 +1067,7 @@ const annotations = {
   f01117206: 'rejected, China, Jieyang', // no online
   f01119890: 'rejected, autolisted', // sh: 1: /data/storage/lotuswork/lotusstorage/dealfilter.pl: not found
   f01119939: 'rejected, USA, Baxter', // no online
-  f01121994: 'rejected, China, Nanning', // no online
+  f01121994: 'delist, China, Nanning', // no online
   f01122640: 'rejected, auto', // no online
   f01128709: 'rejected, autolisted', // no online
   f01131466: 'rejected, autolisted', // no online
@@ -2788,7 +2888,7 @@ const annotations = {
   f01113597: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWQXxJ2cP2GyjUXzEUFiy9m4NW3jPLJULeEnoLWBBe5WFN:  * [/ip4/192.168.2.75/tcp/24001] dial tcp4 0.0.0.0:40089->192.168.2.75:24001: i/o timeout
   f01114516: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01114577: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01115274: 'fail, Japan, Yokohama', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01115274: 'delist, Japan, Yokohama', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01115279: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01115686: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01115949: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2804,7 +2904,7 @@ const annotations = {
   f01120291: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01121887: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01122339: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01122412: 'fail, China', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWR3evydQfKXyxBTUjwiF6jCazFWynQEBr6D8x6ZCkwTb8:  * [/ip4/172.19.0.13/tcp/24001] dial tcp4 0.0.0.0:40089->172.19.0.13:24001: i/o timeout
+  f01122412: 'delist, China', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWR3evydQfKXyxBTUjwiF6jCazFWynQEBr6D8x6ZCkwTb8:  * [/ip4/172.19.0.13/tcp/24001] dial tcp4 0.0.0.0:40089->172.19.0.13:24001: i/o timeout
   f01122448: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01123232: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01123400: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -3695,7 +3795,7 @@ const annotations = {
   f0116707: 'delist, Germany, Dusseldorf', // carry-over
   f0119336: 'delist, Canada, Ottawa', // carry-over
   f0120141: 'delist, Korea, Gangnam-gu', // carry-over
-  f0122815: 'delist, Korea, Bucheon-si, Healthcarenavi_80', // carry-over
+  f0122815: 'retest, Korea, Bucheon-si, Healthcarenavi_80', // carry-over
   f0124335: 'delist, Finland, Helsinki', // carry-over
   f0125962: 'delist, Korea, Yongin-si', // carry-over
   f0126376: 'delist, NR', // carry-over
@@ -3950,8 +4050,8 @@ const annotations = {
   f01113723: 'delist, USA, Gilbert',
   f01114364: 'delist, USA, Allentown',
   f01116725: 'delist, USA, Gilbert',
-  f01118185: 'delist, USA, Gilbert',
-  f01118563: 'delist, USA, Gilbert',
+  f01118185: 'retest, USA, Gilbert',
+  f01118563: 'retest, USA, Gilbert',
   f01120547: 'delist, USA, Gilbert'
 }
 
