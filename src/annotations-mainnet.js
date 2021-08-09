@@ -32,7 +32,7 @@ f0127617: 'new, autolisted',
 f0127618: 'new, autolisted',
 f0239678: 'new, autolisted',
 f0807382: 'new, autolisted',
-f0845539: 'new, autolisted',
+f0845539: 'new, Korea, Busan',
 f0883201: 'new, autolisted',
 f0883202: 'new, autolisted',
 f0883203: 'new, autolisted',
@@ -55,7 +55,7 @@ f01132178: 'new, autolisted',
 f01134282: 'new, autolisted',
 f01136283: 'new, autolisted',
 f01137150: 'new, autolisted',
-f01137729: 'new, autolisted',
+f01137729: 'new, USA, Lynnwood + Chicago',
 f01140707: 'new, autolisted',
 f01140920: 'new, autolisted',
 f01141603: 'new, autolisted',
@@ -78,14 +78,14 @@ f01147989: 'new, autolisted',
 f01148129: 'new, autolisted',
 f01148258: 'new, autolisted',
 f01148814: 'new, autolisted',
-f01149094: 'new, autolisted',
+f01149094: 'new, USA, Lynnwood',
 f01149098: 'new, autolisted',
 f01149230: 'new, autolisted',
 f01149485: 'new, autolisted',
 f01149873: 'new, autolisted',
 f01150329: 'new, autolisted',
 f01150686: 'new, autolisted',
-f01152097: 'new, autolisted',
+f01152097: 'new, Vietnam, Hanoi',
 f01152162: 'new, autolisted',
 f01152332: 'new, autolisted',
 f01152462: 'new, autolisted',
@@ -131,11 +131,11 @@ f01162678: 'new, autolisted',
   f07709: 'active, Korea, Dongjak-gu', // 2216607 about 3 hours
   f043376: 'active, Korea, Incheon', // 2216664 about 2 hours
   f062318: 'active, Korea, Naju', // 2216615 about 2 hours
-  f063628: 'active, NR', // 2216662 1 day
+  f063628: 'active, China, Hefei', // 2216662 1 day
   f079817: "active, Russia, Ul'yanovka", // 2216611 about 2 hours
   f080103: 'active, Korea, Seongnam-si', // 2216688 about 2 hours
   f094374: 'active, China, Nanyang', // 2216612 about 2 hours
-  f097840: 'active, NR', // 2216767 about 2 hours
+  f097840: "active, China, Ya'an", // 2216767 about 2 hours
   f0110804: 'active, USA, Santa Clara', // 2216620 about 7 hours
   f0130912: 'active, China, Hong Kong', // 2216608 2 days
   f0131901: 'active, Korea, Daejeon', // 2216617 about 2 hours
@@ -147,12 +147,12 @@ f01162678: 'new, autolisted',
   f0165539: 'active, Japan, Yokohama', // 2216629 about 7 hours
   f0214334: 'active, NR', // 2216668 about 2 hours
   f0215370: 'active, China, Hangzhou', // 2216682 about 3 hours
-  f0218407: 'active, NR', // 2216787 about 23 hours
+  f0218407: 'active, China, Shanghai', // 2216787 about 23 hours
   f0228855: 'active, Korea, Guro-gu', // 2216622 2 days
-  f0397052: 'active, NR', // 2216669 about 3 hours
+  f0397052: 'active, Korea, Eunpyeong-gu', // 2216669 about 3 hours
   f0401416: 'active, Japan, Fukuoka', // 2216630 about 23 hours
-  f0433689: 'active, NR', // 2216637 about 2 hours
-  f0433690: 'active, NR', // 2216626 about 7 hours
+  f0433689: 'active, China, Wuxi', // 2216637 about 2 hours
+  f0433690: 'active, China, Wuxi', // 2216626 about 7 hours
   f0433691: 'active, China, Wuxi', // 2216651 about 2 hours
   f0437246: 'active, China, Hangzhou', // 2216642 about 2 hours
   f0458627: 'active, Korea, Seongnam-si', // 2216628 about 2 hours
@@ -163,13 +163,13 @@ f01162678: 'new, autolisted',
   f0488889: 'active, China, Nanchang', // 2216705 about 2 hours
   f0520555: 'active, NR', // 2216829 about 2 hours
   f0521569: 'active, Korea, Guro-go', // 2216716 2 days
-  f0675909: 'active, NR', // 2216652 about 7 hours
+  f0675909: 'active, Korea, Seocho-gu', // 2216652 about 7 hours
   f0694881: 'active, China, Hangzhou', // 2216631 about 2 hours
   f0717913: 'active, Korea, Jung-gu', // 2216633 about 2 hours
   f0722515: 'active, Korea, Geumcheon-gu', // 2216632 about 2 hours
   f0724219: 'active, Spain, Vilanova del Cami', // 2216639 about 2 hours
   f0731235: 'active, Ukraine, Odessa', // 2216646 about 3 hours
-  f0747617: 'active, NR', // 2216641 about 2 hours
+  f0747617: 'active, China, Jiangmen', // 2216641 about 2 hours
   f0752695: 'active, Korea, Seongnam-si', // 2216712 about 3 hours
   f0756207: 'active, Korea', // 2216656 about 2 hours
   f0805568: 'active, Korea, Gangnam-gu', // 2216650 about 4 hours
@@ -179,29 +179,29 @@ f01162678: 'new, autolisted',
   f01023503: 'active, Korea, Busan', // 2216638 about 2 hours
   f01039753: 'active, China, Suqian', // 2216758 about 2 hours
   f01050286: 'active, China, Guangzhou', // 2216644 about 2 hours
-  f01051301: 'active, NR', // 2216842 about 23 hours
-  f01069268: 'active, NR', // 2218464 9 days
+  f01051301: 'active, Korea, Siheung-si', // 2216842 about 23 hours
+  f01069268: 'active, China, Shanghai', // 2218464 9 days
   f01071194: 'active, USA, San Jose', // 2216722 about 2 hours
   f01071719: 'active, China, Beijing', // 2216636 about 2 hours
   f01086762: 'active, Korea, Seoul', // 2216643 about 3 hours
   f01090043: 'active, Korea, Bucheon-si', // 2216747 about 3 hours
-  f01104889: 'active, NR', // 2216655 about 2 hours
+  f01104889: 'active, China, Yibin', // 2216655 about 2 hours
   f01105829: 'active, Korea', // 2216647 about 4 hours
-  f01106820: 'active, autolisted', // 2216657 about 2 hours
+  f01106820: "active, China, Xi'an", // 2216657 about 2 hours
   f01110276: 'active, Korea, Bucheon-si', // 2216654 about 2 hours
-  f01117341: 'active, auto', // 2216678 1 day
+  f01117341: 'active, Korea', // 2216678 1 day
   f01119631: 'active, auto', // 2216921 about 2 hours
-  f01125552: 'active, autolisted', // 2218459 9 days
-  f01128462: 'active, autolisted', // 2216840 about 2 hours
-  f01128844: 'active, autolisted', // 2216658 2 days
-  f01131751: 'active, autolisted', // 2216660 about 2 hours
-  f01132686: 'active, autolisted', // 2216667 about 2 hours
-  f01136274: 'active, autolisted', // 2218460 9 days
-  f01136592: 'active, autolisted', // 2216666 about 2 hours
-  f01137229: 'active, autolisted', // 2216665 1 day
-  f01140256: 'active, autolisted', // 2218463 9 days
-  f01141810: 'active, autolisted', // 2218462 9 days
-  f01141947: 'active, autolisted', // 2218461 9 days
+  f01125552: 'active, Korea, Jung-gu', // 2218459 9 days
+  f01128462: 'active, China, Changsha', // 2216840 about 2 hours
+  f01128844: 'active, Spain, Pozuelo de Alarcon', // 2216658 2 days
+  f01131751: 'active, China, Hangzhou', // 2216660 about 2 hours
+  f01132686: 'active, China, Taiwan, Taoyuan City', // 2216667 about 2 hours
+  f01136274: 'active, USA, Orlando', // 2218460 9 days
+  f01136592: 'active, Korea, Seongnam-si', // 2216666 about 2 hours
+  f01137229: 'active, Korea, Dongducheon-si', // 2216665 1 day
+  f01140256: 'active, Vietnam, Hanoi', // 2218463 9 days
+  f01141810: 'active, Korea', // 2218462 9 days
+  f01141947: 'active, Korea, Uiwang', // 2218461 9 days
 
   // Active-sealing (active - with in-flight sealing)
 
@@ -283,7 +283,7 @@ f01162678: 'new, autolisted',
   f024012: 'min-size, China, Fuzhou', // 131072 < 1572864000
   f024013: 'min-size, China, Fuzhou', // 131072 < 1572864000
   f024014: 'min-size, China, Fuzhou', // 131072 < 1572864000
-  f024081: 'min-size, undefined', // 131072 < 1572864000
+  f024081: 'min-size, China, Fuzhou', // 131072 < 1572864000
   f024084: 'min-size, China, Fuzhou', // 131072 < 1572864000
   f024085: 'min-size, China, Fuzhou', // 131072 < 1572864000
   f024136: 'min-size, China, Fuzhou', // 131072 < 1572864000
@@ -299,7 +299,7 @@ f01162678: 'new, autolisted',
   f034047: 'min-size, China, Hangzhou', // 131072 < 1073741824
   f039940: 'min-size, China, Mianyang', // 131072 < 134217728
   f047419: 'min-size, USA, Waukesha', // 131072 < 17179869184
-  f048669: 'min-size, NR', // 131072 < 1048576
+  f048669: 'min-size, China, Jiangsu + Yangzhou', // 131072 < 1048576
   f049882: 'min-size, Netherlands, De Rijp, Chipz', // 131072 < 268435456
   f058369: 'min-size, USA, Boston', // 131072 < 536870912
   f062353: 'min-size, Germany, Frankfurt', // 131072 < 8589934592
@@ -371,7 +371,7 @@ f01162678: 'new, autolisted',
   f01049918: 'min-size, USA, Bothell', // 131072 < 1048576
   f01051828: 'min-size, USA, San Diego', // 131072 < 536870912
   f01063173: 'min-size, Korea, Kayang-dong', // 131072 < 31457280
-  f01087243: 'min-size, NR', // 131072 < 16777216
+  f01087243: 'min-size, China', // 131072 < 16777216
   f01091840: 'min-size, NR', // 131072 < 4294967296
   f01096124: 'min-size, Korea, Uiwang', // 131072 < 1073741824
   f01096727: 'min-size, Korea, Gangseo-gu', // 131072 < 104857600
@@ -698,7 +698,7 @@ f01162678: 'new, autolisted',
   f062937: 'error, NR', // error reading Response message from provider: EOF
   f073904: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzaceb534kcsf3hnit2lripqny4ep3sh5uiuporsirvckqkljjprgisya: search msg failed: failed to load message: blockstore: block not found
   f081644: 'error, China, Wenzhou', // error in deal activation: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacedmv47kerucwue4s5qofn6l7gkvrrolkangkdlkbwydpwjhaeutws: search msg failed: failed to load message: blockstore: block not found
-  f082635: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacea3n45zg2jmviqkn33he3quvftxexar5ld6jbm5xijhnjp3zxx3a2: search msg failed: failed to load message: blockstore: block not found
+  f082635: 'error, China, Yibin', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacea3n45zg2jmviqkn33he3quvftxexar5ld6jbm5xijhnjp3zxx3a2: search msg failed: failed to load message: blockstore: block not found
   f097214: 'error, Korea, Bucheon-si, CryptoHash', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.227484150111199266 FIL, balance: 0.010014836770168697 FIL): not enough funds to execute transaction
   f097720: 'error, Korea, Bucheon-si', // error in deal activation: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacedfmx477ldi5gd56d6laskxprapk52c73zptkhcks4a6edavdzmqs: search msg failed: failed to load message: blockstore: block not found
   f0110768: 'error, Korea, Gwangju', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzaceaim6jqitm6ybkpw3leayyfrucxnka5ge7fyg2gl7l3qksk7hq7jc: search msg failed: failed to load message: blockstore: block not found
@@ -720,8 +720,8 @@ f01162678: 'new, autolisted',
   f0156452: 'error, Korea, Ulsan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacedkj565bjhqoj7exmr5zkjp2v7yir7qx4vahyg2a7a7s3flvosrva: search msg failed: failed to load message: blockstore: block not found
   f0157265: 'error, China, Zhangjiakou', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacedg7pqqe2ll3bjbhkqxakuub6xj4x5alxuutr6qsqqkx2jidfxmom: search msg failed: failed to load message: blockstore: block not found
   f0167254: 'error, Russia, St. Petersburg', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacearld4c6ftslk44feyzwlljqszkzrpfl4lme2wxvdqqlcg6p77zlw: search msg failed: failed to load message: blockstore: block not found
-  f0215461: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacedy67skysu7hbcuzp6r3bio6jugqpnlkoeznjdiumss7wlyrk5fqs: search msg failed: failed to load message: blockstore: block not found
-  f0396705: 'error, NR', // error in deal activation: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacecb3epxzdja25hmhu5l7z23brz5ahg4idvjpmvbdaoid2ymgx6336: search msg failed: failed to load message: blockstore: block not found
+  f0215461: 'error, Korea, Gimhae', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacedy67skysu7hbcuzp6r3bio6jugqpnlkoeznjdiumss7wlyrk5fqs: search msg failed: failed to load message: blockstore: block not found
+  f0396705: 'error, China, Shenzhen', // error in deal activation: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacecb3epxzdja25hmhu5l7z23brz5ahg4idvjpmvbdaoid2ymgx6336: search msg failed: failed to load message: blockstore: block not found
   f0396846: 'error, China, Zhongshan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzaceaoozacr3odb6vsthx7l5bkrmt4vudvwgkwe236tacp32h4vcchj2: search msg failed: failed to load message: blockstore: block not found
   f0397728: 'error, China, Dongguan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacedpxt43ffrnr65yuinjlzgfz4fadunfgfbpmwfhkxsbicllhiqrtu: search msg failed: failed to load message: blockstore: block not found
   f0399814: "error, China, Ya'an", // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacebrenk6hjwv4jjf2ormvf6kx62s2clcqkcpqjjv2yahn7r4nmeqzm: search msg failed: failed to load message: blockstore: block not found
@@ -732,7 +732,7 @@ f01162678: 'new, autolisted',
   f0417750: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzaced2pzpkewqq6xmm53euyct2nlw42u5rizre5qsm2fhvmlv56ymf5a: search msg failed: failed to load message: blockstore: block not found
   f0419768: 'error, Korea, Seongnam-si', // AddPiece failed: normal shutdown of state machine
   f0421392: 'error, China, Foshan', // error in deal activation: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacedfqvu7iyvffrnhzmirkkyrdnq6i7uyglblmsnq7fe3g42i4uxcik: search msg failed: failed to load message: blockstore: block not found
-  f0422737: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacedebsimpo6e7u55epjzgfad7hlin2iykwmbqasxrx64txsl7tzimy: search msg failed: failed to load message: blockstore: block not found
+  f0422737: 'error, Korea, Namyangju', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacedebsimpo6e7u55epjzgfad7hlin2iykwmbqasxrx64txsl7tzimy: search msg failed: failed to load message: blockstore: block not found
   f0447181: 'error, China, Zibo', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzaced6ovuqdu6iz5ewq5xbshka2ynzbcjpbxvfcwuzymspgvqpflgiae: search msg failed: failed to load message: blockstore: block not found
   f0452303: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacebkcmiizkopgjvhng5cns3i3yn7sx4vxyqpo3re4qi5bu6aooaggw: search msg failed: failed to load message: blockstore: block not found
   f0501283: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacebdal2bdkza4nsecvv7urrok6jmmykyowrbutgvbvuslamkq3mmys: search msg failed: failed to load message: blockstore: block not found
@@ -741,7 +741,7 @@ f01162678: 'new, autolisted',
   f0512179: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.217984482670433525 FIL, balance: 0.009748932759559661 FIL): not enough funds to execute transaction
   f0514737: 'error, Korea, Busan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacecbio2gwa5eoa66pi7ib2aelgybkoccjo4efaiopiqnlphso67iyo: search msg failed: failed to load message: blockstore: block not found
   f0676272: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacebf7vbe4fxm6yogqb2igpuiewvijwyigub5esewqne7pct73nevg4: search msg failed: failed to load message: blockstore: block not found
-  f0690699: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacea7h23jpbgtnkdkhc55jv6z4wa7pwu5ume77cntgervtfd7uz4alu: search msg failed: failed to load message: blockstore: block not found
+  f0690699: 'error, China, Chongqing', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacea7h23jpbgtnkdkhc55jv6z4wa7pwu5ume77cntgervtfd7uz4alu: search msg failed: failed to load message: blockstore: block not found
   f0693131: 'error, China, Zhongshan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacecdohdiru6yihycrtq25tnj5fpnctgapypjad45gewd2vpegxjlag: search msg failed: failed to load message: blockstore: block not found
   f0700999: 'error, China, Chengdu', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1001520): failed to look up deal on chain: looking for publish deal message bafy2bzacecfv45w7p6ba4tfko6d2o46emapq3dildg5v2ymfqsp5ard5xakvy: search msg failed: failed to load message: blockstore: block not found
   f0717969: 'error, USA, Los Angeles', // deal failed: (State=26) deal data verification failed: error generating CommP: failed to build treeCaused by:    0: failed to create data store    1: No such file or directory (os error 2)
@@ -750,11 +750,11 @@ f01162678: 'new, autolisted',
   f0763981: 'error, China, Tianjin', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacecjo6apdth6bgceytfmo2ze2yqwgnbs5raau6wdg6ure7h7chavce: search msg failed: failed to load message: blockstore: block not found
   f0813086: 'error, Korea, Jung-gu', // deal failed: (State=11) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.219393441467773704 FIL, balance: 0.072876227042401514 FIL): not enough funds to execute transaction
   f0822674: 'error, Korea, Seoul', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacec3yoqj4laceqq7gk6mtv5bndwbl73upd4f2qltpqfrggt4oameku: search msg failed: failed to load message: blockstore: block not found
-  f0832373: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzaceb64jhwg5halfibd7jzuqsjtcv6jwf5gpmi6wr7dk3x6bq2jduxdg: search msg failed: failed to load message: blockstore: block not found
+  f0832373: 'error, China, Yibin', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzaceb64jhwg5halfibd7jzuqsjtcv6jwf5gpmi6wr7dk3x6bq2jduxdg: search msg failed: failed to load message: blockstore: block not found
   f0835643: 'error, Korea, Songpa-gu', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacea7sjvlrjmk6d75rle3zl2lhxhvazne6eyn4wnfk42v7f2ifghvhw: search msg failed: failed to load message: blockstore: block not found
   f0839509: 'error, China, Beijing', // error in deal activation: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzaceb6axvdrjtwhce7ee3yny3fpaeau7t5tqgdrxeleskoipnxq5lnj6: search msg failed: failed to load message: blockstore: block not found
   f0870558: 'error, China, Hong Kong', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999977758776 FIL, balance: 0.012803278936807429 FIL): not enough funds to execute transaction
-  f0871563: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzaceaah4o6wdxg4stqm3oqlldozfvlhycaulnneb7xheu2ktxfpqjmyy: search msg failed: failed to load message: blockstore: block not found
+  f0871563: "error, China, Xi'an", // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzaceaah4o6wdxg4stqm3oqlldozfvlhycaulnneb7xheu2ktxfpqjmyy: search msg failed: failed to load message: blockstore: block not found
   f0877545: 'error, China, Ningbo', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzaceaoqkkmzbepw6sya3eqpvdnklxe7ti7nakmn7qgsig27soselxayw: search msg failed: failed to load message: blockstore: block not found
   f01019009: 'error, China, Henan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzaced74zenv7vrok7n7h3jgnpiym3uf7cds4c25hufkx6abibavouqda: search msg failed: failed to load message: blockstore: block not found
   f01027268: 'error, Korea, Busan', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacedfcb2h7ebwj5lyfmraxwzwqavywlwrxcufrdodflepsqh2wbqdqi: search msg failed: failed to load message: blockstore: block not found
@@ -775,7 +775,7 @@ f01162678: 'new, autolisted',
   f01116796: 'error, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.026160217934607841 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
   f01122113: 'error, Japan, Tokyo', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzaceahtv457itc7y4jo7e7gdj3eyhohhkrepbccze2emv6ibeunk3fs2: search msg failed: failed to load message: blockstore: block not found
   f01132416: 'error, autolisted', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacebzphkmhzada3wqbngtzs5xvrz3t22stqxy73qddc6g55kkvgh3de: search msg failed: failed to load message: blockstore: block not found
-  f01133080: 'error, autolisted', // error waiting for deal completion: client: failed to look up deal 2216661 on chain: deal 2216661 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
+  f01133080: 'error, Korea, Mokpo', // error waiting for deal completion: client: failed to look up deal 2216661 on chain: deal 2216661 not found - deal may not have completed sealing before deal proposal start epoch, or deal may have been slashed
   f01133130: 'error, autolisted', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 978480): failed to look up deal on chain: looking for publish deal message bafy2bzacedph74wm5kz2ginsk4itlvo3ws4wrw52drtwo44cwlrr47ya5ppnw: search msg failed: failed to load message: blockstore: block not found
   f01138034: 'error, autolisted', // deal failed: (State=26) error calling node: AddFunds errored: found message with equal nonce as the one we are looking for (F:bafy2bzacebdkmdqk2lkrgyh5fehqu7esq6orvaethjmrxa4zob2jeelhwwzfq n 3323, TS: bafy2bzacedtr5vurgsrjzanevpd3nktsb5bxdussxwju7qsdk3zijocudghhu n3323)
 
@@ -1268,7 +1268,7 @@ f01162678: 'new, autolisted',
   f023651: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f023843: 'fail, China, Zhangjiakou', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f023882: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f023984: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWMvACeFSqXarKUTKFGwmZ5HheSgGssRV6hTafxKg1ZEEP:  * [/ip4/61.164.212.154/tcp/28013] dial tcp4 61.164.212.154:28013: connect: connection refused
+  f023984: 'fail, China, Jiaxing', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWMvACeFSqXarKUTKFGwmZ5HheSgGssRV6hTafxKg1ZEEP:  * [/ip4/61.164.212.154/tcp/28013] dial tcp4 61.164.212.154:28013: connect: connection refused
   f024066: 'fail, China, Chengdu', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWMjX9ZBRijeCWy8vVJhkar73WYmed1Sa137NZ3W56aHsc:  * [/ip4/182.131.4.197/tcp/10080] dial tcp4 0.0.0.0:40089->182.131.4.197:10080: i/o timeout
   f024089: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWL9BpZhuAK5XLcTozTvCmwnCVL7BL4AisXBJgjfDBovpc:  * [/ip4/10.11.4.210/tcp/1234] dial tcp4 0.0.0.0:40089->10.11.4.210:1234: i/o timeout
   f024137: 'fail, Singapore', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJLMF5W4wheCZMaVuBe57eLV93Wx9azEJhv1mZ1BWk6Js:  * [/ip4/195.146.128.172/tcp/11223] dial tcp4 0.0.0.0:40089->195.146.128.172:11223: i/o timeout
@@ -1962,7 +1962,7 @@ f01162678: 'new, autolisted',
   f0159689: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0159883: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWKkHESE49gxVjwHSP1Pk5tXFGfAv8LuzDakUZd42SViFU:  * [/ip4/10.133.9.111/tcp/32759] dial tcp4 0.0.0.0:40089->10.133.9.111:32759: i/o timeout
   f0160135: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0160137: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0160137: 'fail, China, Shanghai', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0160735: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0160819: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0160870: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2539,7 +2539,7 @@ f01162678: 'new, autolisted',
   f0754755: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0754993: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0755327: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0755650: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0755650: 'fail, China', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0756840: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0757233: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0757234: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2668,7 +2668,7 @@ f01162678: 'new, autolisted',
   f0873874: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0874057: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0876581: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0878351: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0878351: 'fail, USA, Vancouver', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0878807: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0881262: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0881281: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2827,7 +2827,7 @@ f01162678: 'new, autolisted',
   f01094602: 'fail, China, Harbin', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01095558: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01095694: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01095915: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01095915: 'fail, China', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01095973: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01096056: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01096672: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2931,7 +2931,7 @@ f01162678: 'new, autolisted',
   f01129431: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01129455: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01129528: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01129570: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01129570: 'fail, China, Beijing', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01129866: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01129867: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01130100: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -3016,11 +3016,11 @@ f01162678: 'new, autolisted',
   f0858986: 'nopeer, NR', // carry-over
   f0867288: 'nopeer, NR', // carry-over
   f0867296: 'nopeer, NR', // carry-over
-  f0867298: 'nopeer, NR', // carry-over
+  f0867298: 'retest, China, Beijing + Sri Lanka, Rajagiriya', // carry-over
   f0867300: 'nopeer, NR', // carry-over
   f0867429: 'nopeer, NR', // carry-over
   f01016239: 'nopeer, NR', // carry-over
-  f01016255: 'nopeer, NR', // carry-over
+  f01016255: 'retest, China, Beijing + Norway, Grimstad', // carry-over
   f01075153: 'nopeer, NR', // carry-over
   f01075159: 'nopeer, NR', // carry-over
   f01100139: 'nopeer, NR', // carry-over
