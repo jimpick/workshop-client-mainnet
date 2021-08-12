@@ -23,6 +23,36 @@ const annotations = {
   f01100187: 'new, autolisted', // carry-over
   f01101543: 'new, autolisted', // carry-over
 
+  f087896: 'new, autolisted',
+f01016248: 'new, autolisted',
+f01032989: 'new, autolisted',
+f01132095: 'new, autolisted',
+f01132096: 'new, autolisted',
+f01152731: 'new, autolisted',
+f01157868: 'new, autolisted',
+f01157884: 'new, autolisted',
+f01157913: 'new, autolisted',
+f01158696: 'new, autolisted',
+f01159754: 'new, autolisted',
+f01161077: 'new, autolisted',
+f01161910: 'new, autolisted',
+f01163272: 'new, autolisted',
+f01163640: 'new, autolisted',
+f01163657: 'new, autolisted',
+f01164271: 'new, autolisted',
+f01164500: 'new, autolisted',
+f01166098: 'new, autolisted',
+f01166620: 'new, autolisted',
+f01166697: 'new, autolisted',
+f01167231: 'new, autolisted',
+f01167330: 'new, autolisted',
+f01167426: 'new, autolisted',
+f01168015: 'new, autolisted',
+f01168901: 'new, autolisted',
+f01169194: 'new, autolisted',
+f01169380: 'new, autolisted',
+f01169592: 'new, autolisted',
+
   // Inflight
 
   f0116436: 'inflight, Singapore', // FundsReserved: about 12 hours
@@ -4052,7 +4082,7 @@ const annotations = {
   f01114364: 'delist, USA, Allentown', // carry-over
   f01114420: 'delist, Bulgaria, Sofia', // carry-over
   f01115274: 'delist, Japan, Yokohama', // carry-over
-  f01116725: 'delist, USA, Gilbert', // carry-over
+  f01116725: 'retest, USA, Gilbert', // carry-over
   f01120547: 'delist, USA, Gilbert', // carry-over
   f01121994: 'delist, China, Nanning', // carry-over
   f01122412: 'delist, China' // carry-over
