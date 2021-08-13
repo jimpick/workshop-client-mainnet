@@ -54,6 +54,27 @@ const annotations = {
   f01169380: 'new, autolisted', // carry-over
   f01169592: 'new, autolisted', // carry-over
 
+  f065877: 'new, autolisted',
+  f081978: 'new, autolisted',
+  f081979: 'new, autolisted',
+  f0443185: 'new, autolisted',
+  f01016254: 'new, autolisted',
+  f01114589: 'new, autolisted',
+  f01160668: 'new, autolisted',
+  f01162286: 'new, autolisted',
+  f01167953: 'new, autolisted',
+  f01168055: 'new, autolisted',
+  f01168321: 'new, autolisted',
+  f01168661: 'new, autolisted',
+  f01168710: 'new, autolisted',
+  f01169790: 'new, autolisted',
+  f01170200: 'new, autolisted',
+  f01170321: 'new, autolisted',
+  f01170399: 'new, autolisted',
+  f01171440: 'new, autolisted',
+  f01171920: 'new, autolisted',
+  f01172521: 'new, autolisted',
+
   // Inflight
 
   // Unknown
