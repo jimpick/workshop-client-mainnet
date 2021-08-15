@@ -290,7 +290,7 @@ const annotations = {
   f030379: 'min-size, Korea, Uiwang', // 131072 < 1073741824
   f032824: 'min-size, USA, Cedar Park', // 131072 < 134217728
   f032934: 'min-size, Korea, Incheon', // 131072 < 1073741824
-  f033189: 'min-size, NR', // 131072 < 2147483648
+  f033189: 'min-size, China, Xiamen', // 131072 < 2147483648
   f034047: 'min-size, China, Hangzhou', // 131072 < 1073741824
   f039940: 'min-size, China, Mianyang', // 131072 < 134217728
   f043376: 'min-size, Korea, Incheon', // 131072 < 4294967296
@@ -331,7 +331,7 @@ const annotations = {
   f0157535: 'min-size, Canada, Brampton', // 131072 < 4294967296
   f0158468: 'min-size, China, Guangzhou', // 131072 < 1536163840
   f0165400: 'min-size, Canada, Brampton', // 131072 < 2147483648
-  f0214334: 'min-size, NR', // 131072 < 4294967296
+  f0214334: 'min-size, Korea, Namyangju', // 131072 < 4294967296
   f0215497: 'min-size, Korea, Gangseo-gu', // 131072 < 31457280
   f0220827: 'min-size, NR', // 131072 < 8589934592
   f0399083: 'min-size, Korea, Seoul + Kwangmyong', // 131072 < 31457280
@@ -609,7 +609,7 @@ const annotations = {
   f0705118: 'min-ask, Korea, Seongnam-si', // 20000000 < 121948242187500000
   f0705704: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0717254: 'min-ask, Korea, Seongnam-si', // 20000000 < 121948242187500000
-  f0720629: 'min-ask, NR', // 20000000 < 61035156
+  f0720629: 'min-ask, Germany, Berlin', // 20000000 < 61035156
   f0720636: 'min-ask, Belgium, Bonheiden', // 20000000 < 61035156250000
   f0726742: 'min-ask, China, Fujian', // 20000000 < 1220703124999999999999877929687500000
   f0730266: 'min-ask, China, Chongqing', // 20000000 < 12207031250000000
@@ -712,8 +712,8 @@ const annotations = {
   f0504054: 'error, China, Luzhou', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.099999999947385045 FIL, balance: 0.012623892884177775 FIL): not enough funds to execute transaction
   f0512170: 'error, Korea, Bucheon-si', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.12417146024552014 FIL, balance: 0.011154393765263715 FIL): not enough funds to execute transaction
   f0514737: 'error, Korea, Busan', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.121784954366493294 FIL, balance: 0.090446367383283472 FIL): not enough funds to execute transaction
-  f0517213: 'error, NR', // error reading Response message from provider: stream reset
-  f0522364: 'error, NR', // error reading Response message from provider: stream reset
+  f0517213: 'error, China, Guangdong + Argentina, La Plata', // error reading Response message from provider: stream reset
+  f0522364: 'error, China, Beijing + UAE, Al Ain City', // error reading Response message from provider: stream reset
   f0522949: 'error, China, Beijing', // error reading Response message from provider: stream reset
   f0690699: 'error, China, Chongqing', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.019480002750516616 FIL, balance: 0.00856756456982041 FIL): not enough funds to execute transaction
   f0867298: 'error, China, Beijing + Sri Lanka, Rajagiriya', // error reading Response message from provider: stream reset
@@ -722,7 +722,7 @@ const annotations = {
   f01016255: 'error, China, Beijing + Norway, Grimstad', // error reading Response message from provider: stream reset
   f01105647: 'error, auto', // deal failed: (State=26) error calling node: reserving funds: failed to sign message: send from f3wut4ukhb2a2o26s7bohvgtvksbksj26zvgihu72hpzqvy4j6onu5xledvhoanjifuqzkqzgjzwyc7wbad2eq to f05 26263180119, err:Don't allow transfer from f3wut4ukhb2a2o26s7bohvgtvksbksj26zvgihu72hpzqvy4j6onu5xledvhoanjifuqzkqzgjzwyc7wbad2eq to f05 : Does not exist in the whitelist.
   f01106730: 'error, China, Yunfu', // error reading Response message from provider: EOF
-  f01108129: 'error, NR', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999960315967 FIL, balance: 0.037239253495699427 FIL): not enough funds to execute transaction
+  f01108129: 'error, Korea, Namyangju', // deal failed: (State=26) error calling node: publishing deal: mpool push: failed to push message: not enough funds (required: 0.049999999960315967 FIL, balance: 0.037239253495699427 FIL): not enough funds to execute transaction
   f01112955: 'error, China, Sichuan', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.019458123942675116 FIL, balance: 0.004725925450380642 FIL): not enough funds to execute transaction
   f01116725: 'error, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.031390932893126292 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
   f01116796: 'error, USA, Gilbert', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.01848314656953522 FIL, balance: 0.00133305765300682 FIL): not enough funds to execute transaction
@@ -2624,7 +2624,7 @@ const annotations = {
   f0871719: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0873699: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0873874: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0874057: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0874057: 'fail, Korea, Daejeon', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0876581: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0878807: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0881262: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2784,7 +2784,7 @@ const annotations = {
   f01089422: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01089828: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01090983: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01091840: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWQZrUqwzThuspddpLM2vM8FoT6C3sSk4ri1mf6NLCopBN:  * [/ip4/67.212.85.202/tcp/10906] dial tcp4 0.0.0.0:44501->67.212.85.202:10906: i/o timeout
+  f01091840: 'fail, Canada, Saint-Hyacinthe', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWQZrUqwzThuspddpLM2vM8FoT6C3sSk4ri1mf6NLCopBN:  * [/ip4/67.212.85.202/tcp/10906] dial tcp4 0.0.0.0:44501->67.212.85.202:10906: i/o timeout
   f01091851: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01092768: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01093254: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2926,7 +2926,7 @@ const annotations = {
   f01132516: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01132656: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWEVw9QkzkxQk3nXEmaK9vAj5wExdTi8VQuHzk6JvaUtkp:  * [/ip4/103.252.204.90/tcp/18768] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWEVw9QkzkxQk3nXEmaK9vAj5wExdTi8VQuHzk6JvaUtkp, but remote key matches 12D3KooWPrjiyLXdne3zFVyAsxWZRLYiENM36HchU8D78TyhSTpx
   f01133532: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01133668: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWSRue6GeefwdzxTRSNNssaacd6smGRSdX6qeMsVGmYCdQ:  * [/ip4/60.188.130.148/tcp/24001] dial tcp4 0.0.0.0:44501->60.188.130.148:24001: i/o timeout
+  f01133668: 'fail, China, Zhejiang', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWSRue6GeefwdzxTRSNNssaacd6smGRSdX6qeMsVGmYCdQ:  * [/ip4/60.188.130.148/tcp/24001] dial tcp4 0.0.0.0:44501->60.188.130.148:24001: i/o timeout
   f01134282: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWARQRhwZpY99EpkQrueUVM1A5EAGFjhtSpRa41xNqrTfw:  * [/ip4/69.94.200.160/tcp/2400] dial tcp4 0.0.0.0:44501->69.94.200.160:2400: i/o timeout
   f01134586: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01136283: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2954,11 +2954,11 @@ const annotations = {
   f01143635: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01143914: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01145144: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01145192: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWHvybFbRLTFX6yV3XF3HwcYoHwEKa2T5NGCQUuhqKDMfR:  * [/ip4/60.205.56.131/tcp/3333] dial tcp4 0.0.0.0:44501->60.205.56.131:3333: i/o timeout
+  f01145192: 'fail, China, Zhejiang', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWHvybFbRLTFX6yV3XF3HwcYoHwEKa2T5NGCQUuhqKDMfR:  * [/ip4/60.205.56.131/tcp/3333] dial tcp4 0.0.0.0:44501->60.205.56.131:3333: i/o timeout
   f01145325: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01145505: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01146045: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWFMB4w6gP1uVkgTTUXeoVxkBuoNTfDNbtDjiHTBpUxFDY:  * [/ip4/10.167.5.11/tcp/32759] dial tcp4 0.0.0.0:44501->10.167.5.11:32759: i/o timeout
-  f01146327: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWMwNAaGESr4pq46A6ho22gDCeTUJnmCWTBWs3E3i7suyW:  * [/ip4/218.95.29.145/tcp/12349] dial tcp4 218.95.29.145:12349: connect: connection refused
+  f01146327: 'fail, China, Fuzhou', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWMwNAaGESr4pq46A6ho22gDCeTUJnmCWTBWs3E3i7suyW:  * [/ip4/218.95.29.145/tcp/12349] dial tcp4 218.95.29.145:12349: connect: connection refused
   f01146522: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01146660: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01147907: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2991,7 +2991,7 @@ const annotations = {
   f01157880: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01157884: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01157913: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01157952: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWK9FxcneyZkRRwSNshu3fy771fuNshg3P5sUrB7yNfNtB:  * [/ip4/62.65.78.157/tcp/24001] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWK9FxcneyZkRRwSNshu3fy771fuNshg3P5sUrB7yNfNtB, but remote key matches 12D3KooWSbtMJrfRnsGAxy5PR16wi83tphmjXUmNzDGLCiTt5P7a
+  f01157952: 'fail, Sweden, Gothenburg', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWK9FxcneyZkRRwSNshu3fy771fuNshg3P5sUrB7yNfNtB:  * [/ip4/62.65.78.157/tcp/24001] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWK9FxcneyZkRRwSNshu3fy771fuNshg3P5sUrB7yNfNtB, but remote key matches 12D3KooWSbtMJrfRnsGAxy5PR16wi83tphmjXUmNzDGLCiTt5P7a
   f01158296: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01158681: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01158684: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
