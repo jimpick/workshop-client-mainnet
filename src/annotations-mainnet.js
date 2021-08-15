@@ -26,6 +26,15 @@ const annotations = {
   f01101543: 'new, autolisted', // carry-over
   f01114589: 'new, autolisted', // carry-over
 
+  f089180: 'new, autolisted',
+  f01148221: 'new, autolisted',
+  f01152593: 'new, autolisted',
+  f01170291: 'new, autolisted',
+  f01171513: 'new, autolisted',
+  f01172955: 'new, autolisted',
+  f01173906: 'new, autolisted',
+  f01176154: 'new, autolisted',
+
   // Inflight
 
   f01154: 'inflight, NR', // FundsReserved: 1 day
