@@ -104,11 +104,11 @@ const annotations = {
   f01132686: 'active, China, Taiwan, Taoyuan City', // 2269800 1 day
   f01136592: 'active, Korea, Seongnam-si', // 2269808 1 day
   f01141810: 'active, Korea', // 2269802 1 day
-  f01158696: 'active, autolisted', // 2269806 about 19 hours
-  f01159240: 'active, autolisted', // 2269828 1 day
-  f01160021: 'active, autolisted', // 2269829 1 day
-  f01161910: 'active, autolisted', // 2269801 about 19 hours
-  f01162678: 'active, autolisted', // 2269827 1 day
+  f01158696: 'active, Vietnam', // 2269806 about 19 hours
+  f01159240: 'active, China, Taizhou', // 2269828 1 day
+  f01160021: 'active, China, Guangdong', // 2269829 1 day
+  f01161910: 'active, USA, Ashburn', // 2269801 about 19 hours
+  f01162678: 'active, China, Hangzhou', // 2269827 1 day
 
   // Active-sealing (active - with in-flight sealing)
 
@@ -147,24 +147,24 @@ const annotations = {
   f039515: 'sealing, China, Chongqing, valarhash', // 2269884
   f044160: 'sealing, China, Guangzhou, muxing', // 2269885
   f053088: 'sealing, China, Shanghai', // 2269881
-  f085437: 'sealing, NR', // 2270018
+  f085437: 'sealing, China, Jiaxing', // 2270018
   f086028: 'sealing, NR', // 2270112
   f0111174: 'sealing, China, Guangzhou', // 2269883
-  f0119997: 'sealing, NR', // 2270126
+  f0119997: 'sealing, China, Shanghai', // 2270126
   f0121533: 'sealing, China, Zhejiang', // 2269888
   f0134671: 'sealing, Korea, Gimpo-si', // 2269891
   f0137168: 'sealing, China, Beijing', // 2270295
   f0146751: 'sealing, China, Jiangsu', // 2269890
-  f0149455: 'sealing, NR', // 2269887
-  f0151371: 'sealing, NR', // 2270444
-  f0153278: 'sealing, NR', // 2270379
+  f0149455: "sealing, China, Xi'an", // 2269887
+  f0151371: 'sealing, China, Yangzhou', // 2270444
+  f0153278: "sealing, China, Xi'an", // 2270379
   f0157265: 'sealing, China, Zhangjiakou', // 2269889
   f0160137: 'sealing, China, Shanghai', // 2269939
   f0167254: 'sealing, Russia, St. Petersburg', // 2269893
   f0187709: 'sealing, Russia, Moscow', // 2270296
   f0215461: 'sealing, Korea, Gimhae', // 2269941
   f0239678: 'sealing, autolisted', // 2269942
-  f0241666: 'sealing, NR', // 2270338
+  f0241666: "sealing, China, Xi'an", // 2270338
   f0399814: "sealing, China, Ya'an", // 2269892
   f0401300: 'sealing, France, Deuil-la-Barre', // 2269895
   f0405129: 'sealing, China, Fujian', // 2270138
@@ -194,10 +194,10 @@ const annotations = {
   f01129570: 'sealing, China, Beijing', // 2269946
   f01133130: 'sealing, China, Shanghai', // 2270545
   f01136274: 'sealing, USA, Orlando', // 2269915
-  f01159754: 'sealing, autolisted', // 2269807
-  f01160668: 'sealing, autolisted', // 2269810
-  f01167953: 'sealing, autolisted', // 2269809
-  f01171920: 'sealing, autolisted', // 2269819
+  f01159754: 'sealing, China, Dongguan', // 2269807
+  f01160668: 'sealing, China, Guangdong', // 2269810
+  f01167953: 'sealing, China, Shanghai', // 2269809
+  f01171920: 'sealing, Sweden, Gothenburg', // 2269819
 
   // Stuck
 
@@ -378,11 +378,11 @@ const annotations = {
   f01099052: 'min-size, Korea, Seodaemun-gu', // 131072 < 31457280
   f01110276: 'min-size, Korea, Bucheon-si', // 131072 < 1073741824
   f01126768: 'min-size, autolisted', // 131072 < 104857600
-  f01130682: 'min-size, autolisted', // 131072 < 134217728
+  f01130682: 'min-size, China, Qinzhou', // 131072 < 134217728
   f01133080: 'min-size, Korea, Mokpo', // 131072 < 4294967296
   f01140256: 'min-size, Vietnam, Hanoi', // 131072 < 134217728
   f01152097: 'min-size, Vietnam, Hanoi', // 131072 < 134217728
-  f01164500: 'min-size, autolisted', // 131072 < 314572800
+  f01164500: 'min-size, China, Henan', // 131072 < 314572800
 
   // Max Size
 
