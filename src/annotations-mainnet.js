@@ -242,13 +242,13 @@ const annotations = {
   f01152097: 'min-size, Vietnam, Hanoi', // 131072 < 134217728
   f01163272: 'min-size, autolisted', // 131072 < 1048576
   f01179972: 'min-size, autolisted', // 131072 < 134217728
-  f01186444: 'min-size, autolisted', // 131072 < 31457280
+  f01186444: 'min-size, Korea, Seoul', // 131072 < 31457280
   f01190509: 'min-size, autolisted', // 131072 < 1073741824
-  f01199430: 'min-size, autolisted', // 131072 < 33554432
-  f01199442: 'min-size, autolisted', // 131072 < 33554432
-  f01201327: 'min-size, autolisted', // 131072 < 33554432
-  f01207045: 'min-size, autolisted', // 131072 < 33554432
-  f01208862: 'min-size, autolisted', // 131072 < 33554432
+  f01199430: 'min-size, Netherlands', // 131072 < 33554432
+  f01199442: 'min-size, Netherlands', // 131072 < 33554432
+  f01201327: 'min-size, Netherlands', // 131072 < 33554432
+  f01207045: 'min-size, Netherlands', // 131072 < 33554432
+  f01208862: 'min-size, Netherlands', // 131072 < 33554432
 
   // Max Size
 
@@ -1190,7 +1190,7 @@ const annotations = {
   f081995: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f082000: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWAA9cTR5WgUtx3z5nsU4vFmBDWFNUSVYNnDPtktGeLKvA:  * [/ip4/172.16.3.52/tcp/60352] dial tcp4 0.0.0.0:42459->172.16.3.52:60352: i/o timeout  * [/ip4/113.142.2.198/tcp/60352] dial tcp4 0.0.0.0:42459->113.142.2.198:60352: i/o timeout
   f082001: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f082095: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWHxhkbyWBx154RjFzU2bd6PVPuH1jGZRy91U3GnYwaSMs:  * [/ip4/10.3.103.15/tcp/12288] dial tcp4 0.0.0.0:42459->10.3.103.15:12288: i/o timeout  * [/ip4/182.140.253.81/tcp/12288] dial tcp4 0.0.0.0:42459->182.140.253.81:12288: i/o timeout
+  f082095: 'fail, China, Chengdu', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWHxhkbyWBx154RjFzU2bd6PVPuH1jGZRy91U3GnYwaSMs:  * [/ip4/10.3.103.15/tcp/12288] dial tcp4 0.0.0.0:42459->10.3.103.15:12288: i/o timeout  * [/ip4/182.140.253.81/tcp/12288] dial tcp4 0.0.0.0:42459->182.140.253.81:12288: i/o timeout
   f082356: 'fail, China, Jiaxing', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f082452: 'fail, China, Dongguan', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWHkWrJ691PW6KBeXvnjEdd5R6vo2SZ4TL44QtSLtE6E2x:  * [/ip4/113.105.174.41/tcp/23450] dial tcp4 0.0.0.0:42459->113.105.174.41:23450: i/o timeout
   f082617: 'fail, China, Fujian', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWQoXM8qWNsKEDyb67AmKZCnASvQspN6BLsTuRbBzY999n:  * [/ip4/45.119.63.131/tcp/51105] dial tcp4 0.0.0.0:42459->45.119.63.131:51105: i/o timeout
