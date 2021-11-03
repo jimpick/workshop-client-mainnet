@@ -12,7 +12,7 @@ export const downloadDir = '/home/lotus1/downloads'
 */
 
 const mainnetLocalConfig = {
-  api: 'lotus.jimpick.com/mainnet_api',
+  api: 'lotus.miner.report/mainnet_api',
   // api: 'spacerace.localhost:9000/api',
   secure: true,
   downloadDir: '/home/ubuntu/downloads',
@@ -24,7 +24,7 @@ const mainnetLocalConfig = {
 }
 
 const mainnetPublicConfig = {
-  api: 'lotus.jimpick.com/mainnet_api',
+  api: 'lotus.miner.report/mainnet_api',
   secure: true,
   downloadDir: '/home/ubuntu/downloads',
   geoApi: 'lotus.jimpick.com/api',
