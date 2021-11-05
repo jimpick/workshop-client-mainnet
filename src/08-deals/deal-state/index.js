@@ -293,10 +293,10 @@ function BucketDealList ({
       clientDealStatus &&
       dealStateNames[clientDealStatus.State] === 'Active' &&
       `(TIMESTAMP=\`date +%s\`; /usr/bin/time timeout -k 11m 10m ` +
-        `lotus client retrieve --miner=${miner} ${cidDeal} ` +
-        `/home/lotus1/downloads/${miner}-` +
+        `lotus client retrieve --miner=${miner} --maxPrice=0.000050000000000000 ${cidDeal} ` +
+        `/home/ubuntu/tmp/downloads/${miner}-` +
         `${clientDealStatus && clientDealStatus.DealID}-$TIMESTAMP.jpg ` +
-        `2>&1 | tee /home/lotus1/downloads/${miner}-` +
+        `2>&1 | tee /home/ubuntu/tmp/downloads/${miner}-` +
         `${clientDealStatus && clientDealStatus.DealID}-$TIMESTAMP.log); ` +
         `sleep 5`
 
