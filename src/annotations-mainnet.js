@@ -105,7 +105,7 @@ const annotations = {
   f0857798: 'active-sealing, China, Wenzhou', // 2776372
   f0871563: "active-sealing, China, Xi'an", // 2776295
   f01058790: 'active-sealing, Japan', // 2776285
-  f01063833: 'active-sealing, auto', // 2776355
+  f01063833: 'active-sealing, China, Hangzhou, Nanjing', // 2776355
   f01071194: 'active-sealing, USA, San Jose', // 2776373
   f01086762: 'active-sealing, Korea, Seoul', // 2776384
   f01099820: 'active-sealing, China, Wenzhou', // 2776371
@@ -117,14 +117,14 @@ const annotations = {
   f01141810: 'active-sealing, Korea', // 2776375
   f01158696: 'active-sealing, Vietnam', // 2776370
   f01160668: 'active-sealing, China, Guangdong', // 2776380
-  f01168710: 'active-sealing, autolisted', // 2776391
-  f01175453: 'active-sealing, autolisted', // 2776379
+  f01168710: 'active-sealing, China, Beijing', // 2776391
+  f01175453: 'active-sealing, China, Guangzhou', // 2776379
   f01178915: 'active-sealing, autolisted', // 2776393
   f01202106: 'active-sealing, autolisted', // 2776392
-  f01203603: 'active-sealing, autolisted', // 2776401
+  f01203603: 'active-sealing, China, Shenzhen', // 2776401
   f01207671: 'active-sealing, autolisted', // 2776377
-  f01212031: 'active-sealing, autolisted', // 2776378
-  f01227505: 'active-sealing, autolisted', // 2776399
+  f01212031: 'active-sealing, China, Wenzhou', // 2776378
+  f01227505: 'active-sealing, Korea', // 2776399
   f01251209: 'active-sealing, autolisted', // 2776400
   f01251721: 'active-sealing, autolisted', // 2776376
   f01268426: 'active-sealing, autolisted', // 2776382
@@ -136,7 +136,7 @@ const annotations = {
   f01328084: 'active-sealing, autolisted', // 2776386
   f01337533: 'active-sealing, autolisted', // 2776381
   f01353593: 'active-sealing, autolisted', // 2776433
-  f01354898: 'active-sealing, autolisted', // 2776398
+  f01354898: 'active-sealing, Korea, Gwangsan-gu', // 2776398
   f01361111: 'active-sealing, autolisted', // 2776403
   f01369314: 'active-sealing, autolisted', // 2776383
   f01386984: 'active-sealing, autolisted', // 2776411
@@ -145,7 +145,7 @@ const annotations = {
   f01393827: 'active-sealing, autolisted', // 2776412
   f01394448: 'active-sealing, autolisted', // 2776397
   f01395673: 'active-sealing, autolisted', // 2776405
-  f01396576: 'active-sealing, autolisted', // 2776434
+  f01396576: 'active-sealing, China, Ordos', // 2776434
   f01398391: 'active-sealing, autolisted', // 2776413
   f01407260: 'active-sealing, autolisted', // 2776406
   f01412953: 'active-sealing, autolisted', // 2776410
@@ -172,7 +172,7 @@ const annotations = {
   f087896: 'sealing, autolisted', // 2776508
   f0110110: 'sealing, NR', // 2776525
   f0115108: 'sealing, Korea, Yangcheon-gu', // 2776456
-  f0124944: 'sealing, NR', // 2776633
+  f0124944: 'sealing, China, Henan', // 2776633
   f0127896: 'sealing, Bulgaria, Sofia, sofiaminer', // 2776550
   f0130912: 'sealing, China, Hong Kong', // 2776641
   f0131901: 'sealing, Korea, Daejeon', // 2776459
@@ -189,7 +189,7 @@ const annotations = {
   f0217805: 'sealing, China, Taiwan, Taipei', // 2776755
   f0228855: 'sealing, Korea, Guro-gu', // 2776462
   f0239251: 'sealing, Korea, Uiwang', // 2776733
-  f0397802: 'sealing, NR', // 2776522
+  f0397802: 'sealing, China, Chengdu', // 2776522
   f0399814: "sealing, China, Ya'an", // 2776466
   f0403177: 'sealing, China, Huizhou', // 2776465
   f0406478: 'sealing, NR', // 2776471
@@ -203,7 +203,7 @@ const annotations = {
   f0482619: 'sealing, Korea, Seongnam-si', // 2776481
   f0488689: 'sealing, NR', // 2776477
   f0488887: 'sealing, autolisted', // 2776478
-  f0495421: 'sealing, NR', // 2776300
+  f0495421: 'sealing, China, Zhangzhou, Zhejiang, Xiamen', // 2776300
   f0498868: 'sealing, NR', // 2776533
   f0514737: 'sealing, Korea, Busan', // 2776479
   f0692371: 'sealing, Malaysia', // 2776524
@@ -245,11 +245,11 @@ const annotations = {
   f01164500: 'sealing, China, Henan', // 2776900
   f01190002: 'sealing, autolisted', // 2776291
   f01191451: 'sealing, autolisted', // 2776918
-  f01191967: 'sealing, autolisted', // 2776496
-  f01198070: 'sealing, autolisted', // 2776408
+  f01191967: 'sealing, Korea, Ulju-gun, Seongbuk-gu', // 2776496
+  f01198070: 'sealing, Korea, Bucheon-si, Gimpo-si', // 2776408
   f01198583: 'sealing, autolisted', // 2776553
-  f01203985: 'sealing, autolisted', // 2776552
-  f01213229: 'sealing, autolisted', // 2776554
+  f01203985: 'sealing, China, Guangdong, Shanghai', // 2776552
+  f01213229: 'sealing, China, Nanjing, Hangzhou', // 2776554
   f01215282: 'sealing, autolisted', // 2776946
   f01259059: 'sealing, autolisted', // 2776559
   f01259449: 'sealing, autolisted', // 2776961
@@ -261,7 +261,7 @@ const annotations = {
   f01320931: 'sealing, autolisted', // 2776558
   f01324392: 'sealing, autolisted', // 2776563
   f01333861: 'sealing, autolisted', // 2776414
-  f01349435: 'sealing, autolisted', // 2776561
+  f01349435: 'sealing, China, Yuncheong', // 2776561
   f01392850: 'sealing, autolisted', // 2776564
   f01410857: 'sealing, autolisted', // 2776416
   f01414904: 'sealing, autolisted', // 2776565
@@ -1058,7 +1058,7 @@ const annotations = {
   f0827006: 'rejected, China, Xuzhou', // no online
   f0836164: 'rejected, USA', // no online
   f0838684: 'rejected, Czechia, Prague', // total deal price less than currently accepted minimum: 0.00001155078 FIL < 0.00092 FIL
-  f0838852: 'rejected, NR', // no online
+  f0838852: 'rejected, USA, Lynnwood, Ashburn', // no online
   f0838873: 'rejected, USA, Washington', // no online
   f0838893: 'rejected, USA, Des Moines', // no online
   f0838923: 'rejected, Netherlands, Amsterdam', // no online
