@@ -44,25 +44,33 @@ const annotations = {
 
   // Inflight
 
-  f0116445: 'inflight, Singapore', // FundsReserved: about 8 hours
-  f0118317: 'inflight, Singapore', // FundsReserved: about 8 hours
-  f0118330: 'inflight, Singapore', // FundsReserved: about 8 hours
-  f0134516: 'inflight, Singapore', // FundsReserved: about 8 hours
-  f0522949: 'inflight, China, Beijing', // FundsReserved: about 8 hours
-  f0867298: 'inflight, China, Beijing + Sri Lanka, Rajagiriya', // FundsReserved: about 8 hours
+  f0116445: 'inflight, Singapore', // FundsReserved: about 11 hours
+  f0118317: 'inflight, Singapore', // FundsReserved: about 11 hours
+  f0118330: 'inflight, Singapore', // FundsReserved: about 11 hours
+  f0134516: 'inflight, Singapore', // FundsReserved: about 11 hours
+  f0522949: 'inflight, China, Beijing', // FundsReserved: about 11 hours
+  f0867298: 'inflight, China, Beijing + Sri Lanka, Rajagiriya', // FundsReserved: about 11 hours
 
   // Unknown
 
   // Active
 
+  f07709: 'active, Korea, Dongjak-gu', // 2776338 about 3 hours
+  f0101087: 'active, Korea', // 2776327 about 3 hours
+  f0127896: 'active, Bulgaria, Sofia, sofiaminer', // 2776550 about 3 hours
   f01159240: 'active, China, Taizhou', // 2776385 about 3 hours
+  f01190002: 'active, autolisted', // 2776291 about 3 hours
   f01216923: 'active, autolisted', // 2776645 about 2 hours
+  f01269152: 'active, autolisted', // 2776646 about 5 hours
   f01360268: 'active, autolisted', // 2776402 about 2 hours
+  f01396576: 'active, China, Ordos', // 2776434 about 3 hours
+  f01414904: 'active, autolisted', // 2776565 about 5 hours
+  f01423116: 'active, autolisted', // 2776417 about 6 hours
+  f01437863: 'active, autolisted', // 2776422 about 3 hours
   f01475317: 'active, autolisted', // 2776427 about 2 hours
 
   // Active-sealing (active - with in-flight sealing)
 
-  f07709: 'active-sealing, Korea, Dongjak-gu', // 2776338
   f020489: 'active-sealing, China, Lioaning', // 2776329
   f023219: 'active-sealing, China, Beijing + Zhangjiakou', // 2776333
   f042567: 'active-sealing, China, Jinhua', // 2776328
@@ -72,7 +80,6 @@ const annotations = {
   f087883: 'active-sealing, autolisted', // 2776325
   f094374: 'active-sealing, China, Nanyang', // 2776324
   f097720: 'active-sealing, Korea, Bucheon-si', // 2776341
-  f0101087: 'active-sealing, Korea', // 2776327
   f0110804: 'active-sealing, USA, Santa Clara', // 2776340
   f0113331: 'active-sealing, Korea, Jinju + USA', // 2776335
   f0122815: 'active-sealing, Korea, Bucheon-si, Healthcarenavi_80', // 2776330
@@ -128,7 +135,6 @@ const annotations = {
   f01251209: 'active-sealing, autolisted', // 2776400
   f01251721: 'active-sealing, autolisted', // 2776376
   f01268426: 'active-sealing, autolisted', // 2776382
-  f01269152: 'active-sealing, autolisted', // 2776646
   f01279864: 'active-sealing, autolisted', // 2776390
   f01285363: 'active-sealing, autolisted', // 2776387
   f01315486: 'active-sealing, autolisted', // 2776388
@@ -145,7 +151,6 @@ const annotations = {
   f01393827: 'active-sealing, autolisted', // 2776412
   f01394448: 'active-sealing, autolisted', // 2776397
   f01395673: 'active-sealing, autolisted', // 2776405
-  f01396576: 'active-sealing, China, Ordos', // 2776434
   f01398391: 'active-sealing, autolisted', // 2776413
   f01407260: 'active-sealing, autolisted', // 2776406
   f01412953: 'active-sealing, autolisted', // 2776410
@@ -153,6 +158,7 @@ const annotations = {
   // Sealing
 
   f02490: 'sealing, China, Fujian', // 2776448
+  f02540: 'sealing, USA, Mobile, Foundry', // 2777611
   f03345: 'sealing, China, Fuzhou, chh', // 2776447
   f08019: 'sealing, China, Yantai, 三合', // 2776446
   f015233: 'sealing, China, Nanjing', // 2776441
@@ -173,7 +179,6 @@ const annotations = {
   f0110110: 'sealing, NR', // 2776525
   f0115108: 'sealing, Korea, Yangcheon-gu', // 2776456
   f0124944: 'sealing, China, Henan', // 2776633
-  f0127896: 'sealing, Bulgaria, Sofia, sofiaminer', // 2776550
   f0130912: 'sealing, China, Hong Kong', // 2776641
   f0131901: 'sealing, Korea, Daejeon', // 2776459
   f0134671: 'sealing, Korea, Gimpo-si', // 2776551
@@ -243,7 +248,6 @@ const annotations = {
   f01142318: 'sealing, autolisted', // 2776876
   f01160029: 'sealing, autolisted', // 2776562
   f01164500: 'sealing, China, Henan', // 2776900
-  f01190002: 'sealing, autolisted', // 2776291
   f01191451: 'sealing, autolisted', // 2776918
   f01191967: 'sealing, Korea, Ulju-gun, Seongbuk-gu', // 2776496
   f01198070: 'sealing, Korea, Bucheon-si, Gimpo-si', // 2776408
@@ -264,11 +268,8 @@ const annotations = {
   f01349435: 'sealing, China, Yuncheong', // 2776561
   f01392850: 'sealing, autolisted', // 2776564
   f01410857: 'sealing, autolisted', // 2776416
-  f01414904: 'sealing, autolisted', // 2776565
-  f01423116: 'sealing, autolisted', // 2776417
   f01423546: 'sealing, autolisted', // 2776419
   f01424323: 'sealing, autolisted', // 2776418
-  f01437863: 'sealing, autolisted', // 2776422
   f01443744: 'sealing, autolisted', // 2776421
   f01445517: 'sealing, autolisted', // 2776423
   f01448847: 'sealing, autolisted', // 2776420
@@ -279,18 +280,19 @@ const annotations = {
 
   // Stuck
 
-  f062811: 'stuck, China, Fuzhou', // CheckForAcceptance: about 8 hours
-  f0146751: 'stuck, China, Jiangsu', // StartDataTransfer: about 8 hours
-  f0149132: 'stuck, NR', // CheckForAcceptance: about 8 hours
-  f0458627: 'stuck, Korea, Seongnam-si', // StartDataTransfer: about 8 hours
-  f01202111: 'stuck, autolisted', // CheckForAcceptance: about 8 hours
-  f01292110: 'stuck, autolisted', // Transferring: about 8 hours
+  f062811: 'stuck, China, Fuzhou', // CheckForAcceptance: about 11 hours
+  f0146751: 'stuck, China, Jiangsu', // StartDataTransfer: about 11 hours
+  f0149132: 'stuck, NR', // CheckForAcceptance: about 11 hours
+  f0458627: 'stuck, Korea, Seongnam-si', // StartDataTransfer: about 11 hours
+  f01202111: 'stuck, autolisted', // CheckForAcceptance: about 11 hours
+  f01292110: 'stuck, autolisted', // Transferring: about 11 hours
 
   // Busy
 
   // Min Size
 
   f01238: 'min-size, Vietnam, Hanoi, FILECOIN-VIETNAM', // 131072 < 134217728
+  f01247: 'min-size, Canada, Montreal, BigChungus', // 131072 < 67108864
   f01276: 'min-size, Canada, Brampton, NBFS Canada', // 131072 < 4294967296
   f01277: 'min-size, Sweden, Stockholm, tvsthlm', // 131072 < 1073741824
   f02387: 'min-size, Canada, Brampton, NBFS Canada', // 131072 < 17179869184
@@ -777,6 +779,7 @@ const annotations = {
   f0116436: 'error, Singapore', // error reading Response message from provider: stream reset
   f0134518: 'error, China, Guangdong', // error reading Response message from provider: stream reset
   f0157127: 'error, NR', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.005897632469331069 FIL, balance: 0.003223572658334199 FIL): not enough funds to execute transaction
+  f0215461: 'error, Korea, Gimhae', // error reading Response message from provider: stream reset
   f0241858: 'error, China, Fuzhou', // error reading Response message from provider: EOF
   f0401135: 'error, Singapore', // error reading Response message from provider: stream reset
   f0402371: 'error, China, Shanghai', // error reading Response message from provider: stream reset
@@ -936,6 +939,7 @@ const annotations = {
   f0126039: 'rejected, NR', // no online
   f0127352: 'rejected, Korea, Seoul', // no online
   f0127353: 'rejected, Korea, Seoul', // no online
+  f0127354: 'rejected, Korea, Seoul', // no online
   f0128580: 'rejected, Korea, Seoul', // no online
   f0128581: 'rejected, Korea, Seoul', // no online
   f0128582: 'rejected, Korea, Seoul', // no online
@@ -1381,6 +1385,7 @@ const annotations = {
   f025017: 'fail, China, Hefei, 一三科技-913', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWBZeFG1c5zNwCCVnCa6g5TyrUQu5f9oLTYsZyvSigBEXu:  * [/ip4/175.6.250.70/tcp/51105] dial tcp4 0.0.0.0:46077->175.6.250.70:51105: i/o timeout
   f025019: 'fail, China, Taiwan, Hsinchu', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWPcST189CRdZ2BLrE5NhFz2YQwcfCWdabj12FWwVNBjYj:  * [/ip4/210.208.106.228/tcp/24001] dial tcp4 210.208.106.228:24001: connect: connection refused
   f025044: 'fail, undefined', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f029344: 'fail, Korea, Seongnam-si', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWG8v7932PySmGWKus91R3qSbe43GU8fbXieSsaRcjpKwX:  * [/ip4/221.163.91.162/tcp/33230] dial tcp4 0.0.0.0:46077->221.163.91.162:33230: i/o timeout
   f029416: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWM5kp2XVhVakYkZEbNo86dXjxfQWDVUwVDMRBU8WhMyTB:  * [/ip4/0.0.0.0/tcp/1024] dial tcp4 0.0.0.0:1024: connect: connection refused
   f029490: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f029585: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -1666,6 +1671,7 @@ const annotations = {
   f094764: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f094765: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWDidvy8zSZgUZabmKFXzy42g2LV7en7QYG79D3TLgAtcV:  * [/ip4/218.68.85.213/tcp/12350] dial tcp4 0.0.0.0:46077->218.68.85.213:12350: i/o timeout
   f094847: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f094901: 'fail, Korea, Bucheon-si', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWG7fkPkNeeJrUkDA5MPotNMKtSTzbMFtm727MAXS4BES3:  * [/ip4/119.197.20.51/tcp/24001] dial tcp4 0.0.0.0:46077->119.197.20.51:24001: i/o timeout
   f095334: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f095382: 'fail, China, Dongguan', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f095888: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -1721,7 +1727,6 @@ const annotations = {
   f0103704: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0103710: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0104001: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0104103: 'delist, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0104398: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0104654: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0104888: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -1772,7 +1777,9 @@ const annotations = {
   f0112593: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0112667: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0112680: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0112713: 'fail, Korea, Bucheon-si', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWQN75kXUWDj39zx1DDAKrvM5hcdermcxCA8ZJMApVx8HF:  * [/ip4/119.197.20.139/tcp/34001] dial tcp4 0.0.0.0:46077->119.197.20.139:34001: i/o timeout
   f0112762: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0112772: 'fail, China, Nantong', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0112781: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0112787: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0112887: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -2975,6 +2982,7 @@ const annotations = {
   f01106117: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01106276: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWBjLAvPUAXC4wfBRVy9izbyfdTWh5ZYc4Ss8Zvp4wQTjk:  * [/ip4/103.252.204.93/tcp/38768] failed to negotiate security protocol: peer id mismatch: expected 12D3KooWBjLAvPUAXC4wfBRVy9izbyfdTWh5ZYc4Ss8Zvp4wQTjk, but remote key matches 12D3KooWQSpwDj8ZVmXZqpevGmNBygShmu2mBVKvgYsnxfYTVrPi
   f01106668: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01106888: 'fail, China, Beijing', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWM1D7TkZ1mzZSSZGyopddLzAmaD1NdNNA5c1S2Vw6wvUj:  * [/ip4/39.105.217.71/tcp/10851] dial tcp4 0.0.0.0:46077->39.105.217.71:10851: i/o timeout
   f01107182: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01107192: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01107585: 'fail, auto', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -3091,7 +3099,6 @@ const annotations = {
   f01140256: 'fail, Vietnam, Hanoi', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01140707: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01141077: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01141603: 'delist, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01142483: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01143635: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01143914: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -3103,7 +3110,6 @@ const annotations = {
   f01147907: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01147989: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWLiktyTpSupd5aSb33X59mWAxVJfYGwzZNihfDCX6LUx7:  * [/ip4/172.21.108.179/tcp/32759] dial tcp4 0.0.0.0:46077->172.21.108.179:32759: i/o timeout
   f01148129: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01148221: 'delist, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01149098: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01149230: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01149485: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -3275,7 +3281,6 @@ const annotations = {
   f01198966: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01199028: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01199873: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01199962: 'delist, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01201012: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01201224: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01201505: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWGVv7XFZvpB7Q1YnFf5FMVh7tuiwrTcBD4KNGQ8qN55RZ:  * [/ip4/222.180.164.151/tcp/8008] dial tcp4 0.0.0.0:46077->222.180.164.151:8008: i/o timeout
@@ -3308,7 +3313,6 @@ const annotations = {
   f01210575: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01210614: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01211187: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01211218: 'delist, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01211558: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01211859: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWKtGKU9s5GNBi2dFei4tJMEBqexgpqekEnV7GnmTbc3bW:  * [/ip4/10.166.12.92/tcp/32759] dial tcp4 0.0.0.0:46077->10.166.12.92:32759: i/o timeout
   f01212159: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -3450,7 +3454,6 @@ const annotations = {
   f01292160: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01292475: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01293938: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01298698: 'delist, autolisted', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWRNRwhfYKACLs3KDqw7VR3wZWbi7DUL2BYrhiDh6uRkZK:  * [/ip4/122.116.215.176/tcp/24001] dial tcp4 0.0.0.0:46077->122.116.215.176:24001: i/o timeout
   f01301491: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01302086: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWG73GuA57HvxdqZnnci2f9WrfLnt8GDVD3iXbkwfy9WL6:  * [/ip6/::1/tcp/44895] dial tcp6 [::1]:44895: connect: connection refused  * [/ip4/127.0.0.1/tcp/33427] dial tcp4 127.0.0.1:33427: connect: connection refused  * [/ip4/192.168.105.101/tcp/33427] dial tcp4 0.0.0.0:46077->192.168.105.101:33427: i/o timeout
   f01302188: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -3497,8 +3500,6 @@ const annotations = {
   f01344282: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01344987: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01347200: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01347355: 'delist, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01347695: 'delist, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01348489: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01348517: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01349048: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -3530,7 +3531,6 @@ const annotations = {
   f01383328: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01384139: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01384193: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01384461: 'delist, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01385207: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01386812: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01387247: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -3699,7 +3699,6 @@ const annotations = {
   f01154: 'delist, NR', // carry-over
   f01156: 'delist, China, Hangzhou', // carry-over
   f01232: 'delist, China, Hangzhou', // carry-over
-  f01247: 'retest, Canada, Montreal, BigChungus', // carry-over
   f01274: 'delist, China, Guangdong', // carry-over
   f01291: 'delist, Sweden, Stockholm, tvsthlm', // carry-over
   f02304: 'delist, USA, Mountain View', // carry-over
@@ -3712,7 +3711,6 @@ const annotations = {
   f02506: 'delist, USA, Clarksville', // carry-over
   f02515: 'delist, China, Hangzhou', // carry-over
   f02518: 'delist, China, Shaanxi', // carry-over
-  f02540: 'retest, USA, Mobile, Foundry', // carry-over
   f02575: 'delist, USA, Davis', // carry-over
   f02608: 'delist, USA, San Jose', // carry-over
   f02665: 'delist, Netherlands, Amsterdam, fm-ops', // carry-over
@@ -4247,7 +4245,6 @@ const annotations = {
   f025007: 'delist, Korea, Gyeonggi-do, PINBYTES-eCUBE', // carry-over
   f025028: 'delist, NR', // carry-over
   f025032: 'delist, China, Beijing', // carry-over
-  f029344: 'retest, Korea, Seongnam-si', // carry-over
   f029368: 'delist, Korea, Gangseo-gu', // carry-over
   f029421: 'delist, undefined', // carry-over
   f029477: 'delist, undefined', // carry-over
@@ -4438,7 +4435,6 @@ const annotations = {
   f094869: 'delist, China, Shanghai', // carry-over
   f094894: 'delist, Korea, Gwangju', // carry-over
   f094899: 'delist, Korea', // carry-over
-  f094901: 'retest, Korea, Bucheon-si', // carry-over
   f095049: 'delist, Korea, Bucheon-si', // carry-over
   f095296: 'delist, China, Suqian', // carry-over
   f095398: 'delist, Korea, Sejong', // carry-over
@@ -4448,6 +4444,7 @@ const annotations = {
   f096224: 'delist, China, Chongqing', // carry-over
   f096976: 'delist, Russia', // carry-over
   f097403: 'delist, NR', // carry-over
+  f0104103: 'delist, NR',
   f0106090: 'delist, NR', // carry-over
   f0107118: 'delist, China, Hangzhou + Zhejiang', // carry-over
   f0107171: 'delist, China, Karamay', // carry-over
@@ -4461,8 +4458,6 @@ const annotations = {
   f0110803: 'delist, Korea', // carry-over
   f0111885: 'delist, Korea, Bucheon-si, WINNERS', // carry-over
   f0112027: 'delist, France', // carry-over
-  f0112713: 'retest, Korea, Bucheon-si', // carry-over
-  f0112772: 'retest, China, Nantong', // carry-over
   f0113659: 'delist, NR', // carry-over
   f0113664: 'delist, France', // carry-over
   f0114885: 'delist, NR', // carry-over
@@ -4479,7 +4474,6 @@ const annotations = {
   f0127151: 'delist, Korea, Yongin-si', // carry-over
   f0127157: 'delist, Korea, Yongin-si', // carry-over
   f0127256: 'delist, Korea, Yongin-si', // carry-over
-  f0127354: 'retest, Korea, Seoul', // carry-over
   f0127569: 'delist, NR', // carry-over
   f0128191: 'delist, Korea, Gangnam-gu', // carry-over
   f0128238: 'delist, Korea, Yongin-si', // carry-over
@@ -4510,7 +4504,6 @@ const annotations = {
   f0214181: 'delist, Australia, Mosman', // carry-over
   f0215360: 'delist, France', // carry-over
   f0215404: 'delist, China, Suzhou', // carry-over
-  f0215461: 'retest, Korea, Gimhae', // carry-over
   f0216068: 'delist, Romania, Iasi', // carry-over
   f0216139: 'delist, Korea, Goyang-si', // carry-over
   f0219415: 'delist, USA, Boardman', // carry-over
@@ -4767,7 +4760,6 @@ const annotations = {
   f01105377: 'delist, Korea, Jung-gu', // carry-over
   f01106369: 'delist, China, Hangzhou', // carry-over
   f01106730: 'delist, China, Yunfu', // carry-over
-  f01106888: 'retest, China, Beijing', // carry-over
   f01107129: 'delist, USA', // carry-over
   f01108193: 'delist, autolisted', // carry-over
   f01108733: 'delist, China, Jieyang', // carry-over
@@ -4807,11 +4799,13 @@ const annotations = {
   f01136467: 'delist, autolisted', // carry-over
   f01139870: 'delist, autolisted', // carry-over
   f01140920: 'delist, autolisted', // carry-over
+  f01141603: 'delist, autolisted',
   f01141947: 'delist, Korea, Uiwang', // carry-over
   f01142476: 'delist, autolisted', // carry-over
   f01145192: 'delist, China, Zhejiang', // carry-over
   f01145325: 'delist, autolisted', // carry-over
   f01146327: 'delist, China, Fuzhou', // carry-over
+  f01148221: 'delist, autolisted',
   f01148258: 'delist, autolisted', // carry-over
   f01148814: 'delist, autolisted', // carry-over
   f01153758: 'delist, autolisted', // carry-over
@@ -4846,12 +4840,18 @@ const annotations = {
   f01192833: 'delist, autolisted', // carry-over
   f01195263: 'delist, autolisted', // carry-over
   f01195493: 'delist, autolisted', // carry-over
+  f01199962: 'delist, autolisted',
   f01200082: 'delist, autolisted', // carry-over
   f01203627: 'delist, autolisted', // carry-over
   f01209085: 'delist, autolisted', // carry-over
   f01209607: 'delist, autolisted', // carry-over
+  f01211218: 'delist, autolisted',
   f01213157: 'delist, autolisted', // carry-over
-  f01215615: 'delist, autolisted' // carry-over
+  f01215615: 'delist, autolisted', // carry-over
+  f01298698: 'delist, autolisted',
+  f01347355: 'delist, autolisted',
+  f01347695: 'delist, autolisted',
+  f01384461: 'delist, autolisted'
 }
 
 export default annotations
