@@ -61,7 +61,7 @@ const annotations = {
   f0127896: 'active, Bulgaria, Sofia, sofiaminer', // 2776550 about 3 hours
   f0130912: 'active, China, Hong Kong', // 2776641 2 days
   f0134839: 'active, NR', // 2776511 2 days
-  f0135758: 'active, NR', // 2776346 1 day
+  f0135758: 'active, China, Nanjing, Hangzhou', // 2776346 1 day
   f0137489: 'active, UK, Deeside', // 2776344 2 days
   f0156207: 'active, Korea, Ulsan', // 2776342 2 days
   f0156452: 'active, Korea, Ulsan', // 2776347 2 days
@@ -102,7 +102,7 @@ const annotations = {
   f01168710: 'active, China, Beijing', // 2776391 2 days
   f01175453: 'active, China, Guangzhou', // 2776379 2 days
   f01178915: 'active, autolisted', // 2776393 2 days
-  f01190002: 'active, autolisted', // 2776291 about 3 hours
+  f01190002: 'active, Korea, Songpa-gu', // 2776291 about 3 hours
   f01191451: 'active, autolisted', // 2776918 2 days
   f01202106: 'active, autolisted', // 2776392 2 days
   f01203603: 'active, China, Shenzhen', // 2776401 2 days
@@ -126,7 +126,7 @@ const annotations = {
   f01391982: 'active, autolisted', // 2776404 2 days
   f01393827: 'active, autolisted', // 2776412 2 days
   f01396576: 'active, China, Ordos', // 2776434 about 3 hours
-  f01398391: 'active, autolisted', // 2776413 2 days
+  f01398391: 'active, China, Chengdu', // 2776413 2 days
   f01410857: 'active, autolisted', // 2776416 2 days
   f01412953: 'active, autolisted', // 2776410 2 days
   f01414904: 'active, autolisted', // 2776565 about 5 hours
@@ -316,7 +316,7 @@ const annotations = {
   f01186444: 'min-size, Korea, Seoul', // 131072 < 31457280
   f01190509: 'min-size, autolisted', // 131072 < 1073741824
   f01221675: 'min-size, autolisted', // 131072 < 52428800
-  f01222595: 'min-size, autolisted', // 131072 < 67108864
+  f01222595: 'min-size, Russia, Moscow', // 131072 < 67108864
   f01255977: 'min-size, autolisted', // 131072 < 4294967296
   f01376386: 'min-size, autolisted', // 131072 < 31457280
   f01396100: 'min-size, autolisted', // 131072 < 104857600
