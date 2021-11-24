@@ -42,6 +42,15 @@ const annotations = {
   f01228015: 'new, autolisted', // carry-over
   f01228088: 'new, autolisted', // carry-over
 
+  f01108043: 'new, autolisted',
+  f01114824: 'new, autolisted',
+  f01340457: 'new, autolisted',
+  f01384127: 'new, autolisted',
+  f01452645: 'new, autolisted',
+  f01471667: 'new, autolisted',
+  f01474721: 'new, autolisted',
+  f01479781: 'new, autolisted',
+
   // Inflight
 
   // Unknown
@@ -675,7 +684,7 @@ const annotations = {
   f0131901: 'error, Korea, Daejeon', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacec2qwhizvfu7qmvclntk4atufyi5pmugd2b4jw2wdv4tvj2y7wsmo: search msg failed: failed to load message: blockstore: block not found
   f0134516: 'error, Singapore', // error reading Response message from provider: stream reset
   f0134518: 'error, China, Guangdong', // error reading Response message from provider: stream reset
-  f0134671: 'error, Korea, Gimpo-si', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzaceaqtonmx3p3n7h2tqjm7mbnywvqulx5rdgfcliakmbmfqhtnrn6ie: search msg failed: failed to load message: blockstore: block not found
+  f0134671: 'delist, Korea, Gimpo-si', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzaceaqtonmx3p3n7h2tqjm7mbnywvqulx5rdgfcliakmbmfqhtnrn6ie: search msg failed: failed to load message: blockstore: block not found
   f0135779: 'error, China, Nanjing, Hangzhou', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacedhnrszyamgvxiwik47jh5zpsijz3c5gizmbh47lv4yfiz7zq5fvy: search msg failed: failed to load message: blockstore: block not found
   f0137168: 'error, China, Beijing', // error in deal activation: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacebrkriesicshw2spjrvvpqurn4xob5lzke6e2ea7lcc5dhpaf6urq: search msg failed: failed to load message: blockstore: block not found
   f0153278: "error, China, Xi'an", // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacedb44ylewuhoculrkfcqheaobld4pimwiaw5xcbjtgda5vk4rpiyy: search msg failed: failed to load message: blockstore: block not found
@@ -1569,7 +1578,7 @@ const annotations = {
   f081984: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f081986: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f081988: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f081989: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f081989: 'delist, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f081993: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f081995: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f082000: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -3161,7 +3170,7 @@ const annotations = {
   f01160571: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01161077: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01161245: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01161992: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWRsSrUcSt7vqZFW7gK4P3JrecamCrpSGbzBvNa5oq47bB:  * [/ip4/14.152.49.228/tcp/13330] dial tcp4 0.0.0.0:46077->14.152.49.228:13330: i/o timeout
+  f01161992: 'delist, autolisted', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWRsSrUcSt7vqZFW7gK4P3JrecamCrpSGbzBvNa5oq47bB:  * [/ip4/14.152.49.228/tcp/13330] dial tcp4 0.0.0.0:46077->14.152.49.228:13330: i/o timeout
   f01162201: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01162678: 'fail, China, Hangzhou', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWJp1HWcTcGEWchy9HrNroWSsTnRysbXBtFD6FCvyMmvEw:  * [/ip4/127.0.0.1/tcp/34993] dial tcp4 127.0.0.1:34993: connect: connection refused  * [/ip6/::1/tcp/35701] dial tcp6 [::1]:35701: connect: connection refused  * [/ip4/115.236.46.163/tcp/2049] dial tcp4 115.236.46.163:2049: connect: connection refused  * [/ip4/115.236.46.163/tcp/2054] dial tcp4 115.236.46.163:2054: connect: connection refused  * [/ip4/192.168.100.1/tcp/34993] dial tcp4 0.0.0.0:46077->192.168.100.1:34993: i/o timeout
   f01163640: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -3357,7 +3366,7 @@ const annotations = {
   f01240218: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01240398: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01240603: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01241194: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01241194: 'delist, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01242770: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01242788: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01243219: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -4580,7 +4589,7 @@ const annotations = {
   f0492283: 'delist, USA, Quail Valley', // carry-over
   f0492295: 'delist, China, Shenzhen', // carry-over
   f0492481: 'delist, NR', // carry-over
-  f0494174: 'delist, Norway', // carry-over
+  f0494174: 'retest, Norway', // carry-over
   f0494332: 'delist, Ukraine, Sumy', // carry-over
   f0494586: 'delist, China, Nanchang', // carry-over
   f0497837: 'delist, Korea, Gangnam-gu', // carry-over
