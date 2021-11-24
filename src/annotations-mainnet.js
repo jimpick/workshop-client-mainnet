@@ -109,8 +109,8 @@ const annotations = {
   f01212031: 'active, China, Wenzhou', // 2776378 2 days
   f01216923: 'active, China, Huizhou', // 2776645 about 2 hours
   f01227505: 'active, Korea', // 2776399 2 days
-  f01251209: 'active, autolisted', // 2776400 2 days
-  f01251721: 'active, autolisted', // 2776376 2 days
+  f01251209: 'active, China, Wuxi', // 2776400 2 days
+  f01251721: 'active, Japan', // 2776376 2 days
   f01259449: 'active, China, Chengdu', // 2776961 2 days
   f01268426: 'active, China, Hangzhou', // 2776382 1 day
   f01269152: 'active, China, Huizhou', // 2776646 about 5 hours
@@ -120,26 +120,26 @@ const annotations = {
   f01315486: 'active, USA, San Antonio', // 2776388 2 days
   f01323287: 'active, autolisted', // 2776396 1 day
   f01337533: 'active, Bulgaria, Varna', // 2776381 2 days
-  f01360268: 'active, autolisted', // 2776402 about 2 hours
-  f01386984: 'active, autolisted', // 2776411 2 days
-  f01390330: 'active, autolisted', // 2776395 2 days
-  f01391982: 'active, autolisted', // 2776404 2 days
+  f01360268: 'active, Korea, Gimhae, Songpa-gu', // 2776402 about 2 hours
+  f01386984: 'active, China, Bozhou', // 2776411 2 days
+  f01390330: "active, China, Xi'an", // 2776395 2 days
+  f01391982: 'active, Korea, Ulju-gun', // 2776404 2 days
   f01393827: 'active, Korea, Icheon-si', // 2776412 2 days
   f01396576: 'active, China, Ordos', // 2776434 about 3 hours
   f01398391: 'active, China, Chengdu', // 2776413 2 days
-  f01410857: 'active, autolisted', // 2776416 2 days
-  f01412953: 'active, autolisted', // 2776410 2 days
+  f01410857: 'active, France', // 2776416 2 days
+  f01412953: 'active, Japan', // 2776410 2 days
   f01414904: 'active, autolisted', // 2776565 about 5 hours
   f01423116: 'active, Norway, Skjetten', // 2776417 about 6 hours
-  f01424323: 'active, autolisted', // 2776418 2 days
-  f01437863: 'active, autolisted', // 2776422 about 3 hours
-  f01443744: 'active, autolisted', // 2776421 1 day
-  f01448847: 'active, autolisted', // 2776420 2 days
-  f01461671: 'active, autolisted', // 2776425 1 day
-  f01461725: 'active, autolisted', // 2776424 2 days
-  f01474735: 'active, autolisted', // 2776428 2 days
-  f01474838: 'active, autolisted', // 2776426 1 day
-  f01475317: 'active, autolisted', // 2776427 about 2 hours
+  f01424323: 'active, Korea, Ulju-gun', // 2776418 2 days
+  f01437863: 'active, Korea, Wonju', // 2776422 about 3 hours
+  f01443744: 'active, Finland, Helsinki', // 2776421 1 day
+  f01448847: 'active, China, Sichuan', // 2776420 2 days
+  f01461671: 'active, Korea, Bucheon-si', // 2776425 1 day
+  f01461725: 'active, Korea, Bucheon-si', // 2776424 2 days
+  f01474735: 'active, Korea, Hanam', // 2776428 2 days
+  f01474838: 'active, Taiwan, New Taipei', // 2776426 1 day
+  f01475317: 'active, Korea, Namyangju', // 2776427 about 2 hours
 
   // Active-sealing (active - with in-flight sealing)
 
@@ -231,7 +231,7 @@ const annotations = {
   f048669: 'min-size, China, Jiangsu + Yangzhou', // 131072 < 1048576
   f058369: 'min-size, USA, Boston', // 131072 < 268435456
   f058374: 'min-size, NR', // 131072 < 17179869184
-  f061616: 'min-size, autolisted', // 131072 < 4294967296
+  f061616: 'min-size, China', // 131072 < 4294967296
   f061666: 'min-size, autolisted', // 131072 < 1573031772
   f062353: 'min-size, Germany, Frankfurt', // 131072 < 4294967296
   f066596: 'min-size, USA, San Diego, PiKNiK & Company', // 131072 < 536870912
@@ -317,10 +317,10 @@ const annotations = {
   f01190509: 'min-size, autolisted', // 131072 < 1073741824
   f01221675: 'min-size, autolisted', // 131072 < 52428800
   f01222595: 'min-size, Russia, Moscow', // 131072 < 67108864
-  f01255977: 'min-size, autolisted', // 131072 < 4294967296
+  f01255977: 'min-size, China, Foshan', // 131072 < 4294967296
   f01376386: 'min-size, autolisted', // 131072 < 31457280
   f01396100: 'min-size, Korea, Gwangju', // 131072 < 104857600
-  f01402814: 'min-size, autolisted', // 131072 < 5368709120
+  f01402814: 'min-size, China, Hong Kong', // 131072 < 5368709120
   f01419959: 'min-size, autolisted', // 131072 < 536870912
   f01424825: 'min-size, autolisted', // 131072 < 4294967296
 
@@ -654,7 +654,7 @@ const annotations = {
   f044160: 'error, China, Guangzhou, muxing', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacecolwajodtpipa4nioy5n6rqzj3bykt3n2jyn3rryjxe3pcooodxw: search msg failed: failed to load message: blockstore: block not found
   f053088: 'error, China, Shanghai', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzaceblloxw36ryvm36vlsikgwjras4orhsuxkon2y5txwec5exkrp4ni: search msg failed: failed to load message: blockstore: block not found
   f062318: 'error, Korea, Naju', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacebttigtp5hju3azlczdfjhufx25i5gl7444ucma62a2hy4x3zhrhs: search msg failed: failed to load message: blockstore: block not found
-  f065610: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacebzxdbafxbcxtu7qrndo2gv3cdgrhvwkmwuy6vk6uaktoci73oo5s: search msg failed: failed to load message: blockstore: block not found
+  f065610: "error, China, Xi'an", // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacebzxdbafxbcxtu7qrndo2gv3cdgrhvwkmwuy6vk6uaktoci73oo5s: search msg failed: failed to load message: blockstore: block not found
   f078465: 'error, NR', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacea6ewlfpkmbv7tfvbfdunbnrjqtsimascay3r7k2hbfccjlzscmfi: search msg failed: failed to load message: blockstore: block not found
   f080103: 'error, Korea, Seongnam-si', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacedrmquz5owudcguak2ipu4hxuwfqq5uht4nkpfpo3ckenihbatqbc: search msg failed: failed to load message: blockstore: block not found
   f081644: 'error, China, Wenzhou', // error in deal activation: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacec7w7dn7gialu2yvhs6wpjmlsmsosdnlpzkwbqlxqeuwmil664oyg: search msg failed: failed to load message: blockstore: block not found
@@ -770,7 +770,7 @@ const annotations = {
   f01213229: 'error, China, Nanjing, Hangzhou', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacedrn7yd333hb3vw5ngkwg6k343y2ymp6hpw4zhp5gpie4uit32tla: search msg failed: failed to load message: blockstore: block not found
   f01215282: 'error, UAE, Dubai', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacebzlw63qsrbg4obg7arfqzdpk5gkswotplzmplqsr77i3eegzylyg: search msg failed: failed to load message: blockstore: block not found
   f01216339: 'error, autolisted', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.00446185668998076 FIL, balance: 0.001420134413835591 FIL): not enough funds to execute transaction
-  f01259059: 'error, autolisted', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacebuv457lx4bd7p4zxb7yk7ycrwvgaucfgca6nxy64mwjo4kqy6t44: search msg failed: failed to load message: blockstore: block not found
+  f01259059: 'error, Portugal, Lisbon', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacebuv457lx4bd7p4zxb7yk7ycrwvgaucfgca6nxy64mwjo4kqy6t44: search msg failed: failed to load message: blockstore: block not found
   f01267516: 'error, China, Taizhou', // AddPiece failed: writing piece: storage call error 0: generating piece commitment: failed to build treeCaused by:    0: failed to create data store    1: No such file or directory (os error 2)
   f01269025: 'error, China, Nanjing', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacebinp4ceg3qo33sccmhk52cx3danydot4u7hurjjajlrodktnonns: search msg failed: failed to load message: blockstore: block not found
   f01271898: 'error, autolisted', // deal failed: (State=26) error calling node: reserving funds: mpool push: failed to push message: not enough funds (required: 0.004397968410164202 FIL, balance: 0.002375530076559127 FIL): not enough funds to execute transaction
@@ -783,16 +783,16 @@ const annotations = {
   f01328084: 'error, Korea, Jung-ang', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzaceaors4owi2b2g76soqa4w7qyw3erampginbgy5elvojxjf5okhszg: search msg failed: failed to load message: blockstore: block not found
   f01333861: 'error, autolisted', // error in deal activation: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacedfg5cuejqmldd4urnr345hxz2tpgihcvjpnkcyq4aw34ngooaroq: search msg failed: failed to load message: blockstore: block not found
   f01349435: 'error, China, Yuncheong', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzaceaulnkgdqw6ckunw3ez2cjh3nwllm77qim3dxbhwf7wlngvsvs2vu: search msg failed: failed to load message: blockstore: block not found
-  f01353593: 'error, autolisted', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacecuriokk6gmsmqablfqqy7x6zlq22wl47giplcshz5pow25cl7abq: search msg failed: failed to load message: blockstore: block not found
+  f01353593: 'error, China, Nanjing, Hangzhou', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacecuriokk6gmsmqablfqqy7x6zlq22wl47giplcshz5pow25cl7abq: search msg failed: failed to load message: blockstore: block not found
   f01354898: 'error, Korea, Gwangsan-gu', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacecaxddxzuq6iyasq3h4bispeay42erfzld4l4ehiduhb7b2ktctgw: search msg failed: failed to load message: blockstore: block not found
-  f01361111: 'error, autolisted', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacedxz6a6ea2izidnhbowp6ajoxreoak5tq2ulnvz4fjqcogjmqwnf6: search msg failed: failed to load message: blockstore: block not found
-  f01369314: 'error, autolisted', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacebldhlvqegcbw7qzec2hqxcsadnzrrghncvlciummbxn4z7bpdbme: search msg failed: failed to load message: blockstore: block not found
-  f01392850: 'error, autolisted', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacec2ke7cbn4tr42mozl5c5idyi2ez3gc3lseudmtfvxfeptynbtbni: search msg failed: failed to load message: blockstore: block not found
+  f01361111: 'error, China, Shanghai', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacedxz6a6ea2izidnhbowp6ajoxreoak5tq2ulnvz4fjqcogjmqwnf6: search msg failed: failed to load message: blockstore: block not found
+  f01369314: 'error, China, Nanning', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacebldhlvqegcbw7qzec2hqxcsadnzrrghncvlciummbxn4z7bpdbme: search msg failed: failed to load message: blockstore: block not found
+  f01392850: 'error, China, Baotou', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacec2ke7cbn4tr42mozl5c5idyi2ez3gc3lseudmtfvxfeptynbtbni: search msg failed: failed to load message: blockstore: block not found
   f01394448: 'error, autolisted', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacecwpxjp4n7s4sntxtjwpzts2ohc7thtfkdo4okwntbt7a2vmw5wzi: search msg failed: failed to load message: blockstore: block not found
   f01395673: 'error, China, Fuzhou', // error in deal activation: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzaced5hdhsokv6uhg6fhc64ga4o6yvkg7as3sydhb3dw2lyswy25vzse: search msg failed: failed to load message: blockstore: block not found
-  f01407260: 'error, autolisted', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacebtmhg3arfb3jekypklri4mgsmomifjin4wvgt346i5xqp4ol4ypc: search msg failed: failed to load message: blockstore: block not found
-  f01423546: 'error, autolisted', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacedtdjpstf5ac3pjf2o5nuqgyfe66bbaz35z4esmmevqzqrvxd6uge: search msg failed: failed to load message: blockstore: block not found
-  f01445517: 'error, autolisted', // error in deal activation: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacecg5mwg7dh3blf2ps7lq3nigvri3vffkdq2xkqszzslslp6gpak3y: search msg failed: failed to load message: blockstore: block not found
+  f01407260: 'error, Korea, Gangnam-gu', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacebtmhg3arfb3jekypklri4mgsmomifjin4wvgt346i5xqp4ol4ypc: search msg failed: failed to load message: blockstore: block not found
+  f01423546: 'error, China, Guangdong', // error waiting for deal pre-commit message to appear on chain: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacedtdjpstf5ac3pjf2o5nuqgyfe66bbaz35z4esmmevqzqrvxd6uge: search msg failed: failed to load message: blockstore: block not found
+  f01445517: 'error, China, Chongqing', // error in deal activation: failed to set up called handler: called check error (h: 1315200): failed to look up deal on chain: looking for publish deal message bafy2bzacecg5mwg7dh3blf2ps7lq3nigvri3vffkdq2xkqszzslslp6gpak3y: search msg failed: failed to load message: blockstore: block not found
 
   // Dial backoff
 
