@@ -16,24 +16,60 @@ const annotations = {
 
   // Inflight
 
-  f0118317: 'inflight, Singapore', // FundsReserved: about 1 hour
-  f0118330: 'inflight, Singapore', // FundsReserved: about 1 hour
-  f0522364: 'inflight, China, Beijing + UAE, Al Ain City', // FundsReserved: about 1 hour
-  f0867298: 'inflight, China, Beijing + Sri Lanka, Rajagiriya', // FundsReserved: about 1 hour
-  f01275559: 'inflight, autolisted', // FundsReserved: about 1 hour
+  f0118330: 'inflight, Singapore', // FundsReserved: about 15 hours
+  f0522364: 'inflight, China, Beijing + UAE, Al Ain City', // FundsReserved: about 15 hours
 
   // Unknown
 
   // Active
 
+  f07709: 'active, Korea, Dongjak-gu', // 2822464 about 14 hours
+  f063628: 'active, China, Hefei', // 2822515 about 14 hours
+  f087890: 'active, NR', // 2822519 about 14 hours
+  f094374: 'active, China, Nanyang', // 2822504 about 14 hours
+  f097720: 'active, Korea, Bucheon-si', // 2822498 about 14 hours
+  f0101087: 'active, Korea', // 2822502 about 14 hours
+  f0115108: 'active, Korea, Yangcheon-gu', // 2822488 about 14 hours
+  f0122815: 'active, Korea, Bucheon-si, Healthcarenavi_80', // 2822508 about 14 hours
+  f0124554: 'active, Korea, Gimhae', // 2822511 about 14 hours
+  f0135758: 'active, China, Nanjing, Hangzhou', // 2822521 about 14 hours
+  f0157115: 'active, NR', // 2822761 about 14 hours
+  f0158156: 'active, Korea, Gangbuk-gu', // 2822436 about 14 hours
+  f0164291: 'active, China, Fujian', // 2822547 about 14 hours
+  f0228855: 'active, Korea, Guro-gu', // 2822545 about 14 hours
+  f0230200: 'active, Korea, Gwanak-gu, G-mining', // 2822543 about 14 hours
+  f0401416: 'active, Japan, Fukuoka', // 2822553 about 14 hours
+  f0512179: 'active, Korea, Bucheon-si', // 2822580 about 14 hours
+  f0723722: 'active, USA, New York', // 2822603 about 14 hours
+  f0724219: 'active, Spain, Vilanova del Cami', // 2822611 about 14 hours
   f0838684: 'active, Czechia, Prague', // 2804218 3 days
   f0870354: 'active, NR', // 2804375 3 days
   f01128844: 'active, Spain, Pozuelo de Alarcon', // 2805383 3 days
+  f01158696: 'active, Vietnam', // 2822685 about 14 hours
+  f01159240: 'active, China, Taizhou', // 2822659 about 14 hours
+  f01160668: 'active, China, Guangdong', // 2822653 about 14 hours
+  f01175453: 'active, China, Guangzhou', // 2822669 about 14 hours
   f01186391: 'active, autolisted', // 2804440 3 days
+  f01190002: 'active, Korea, Songpa-gu', // 2822358 about 14 hours
+  f01191451: 'active, Korea, Bucheon-si', // 2822657 about 14 hours
   f01201505: 'active, autolisted', // 2804399 3 days
+  f01268426: 'active, China, Hangzhou', // 2822715 about 14 hours
   f01269152: 'active, China, Huizhou', // 2804207 3 days
+  f01271898: 'active, autolisted', // 2822826 about 14 hours
   f01279864: 'active, Korea, Icheon-si, Seongnam-si', // 2804189 3 days
   f01292110: 'active, China, Beijing', // 2804340 3 days
+  f01323287: 'active, autolisted', // 2822701 about 14 hours
+  f01337533: 'active, Bulgaria, Varna', // 2822707 about 14 hours
+  f01353593: 'active, China, Nanjing, Hangzhou', // 2822822 about 14 hours
+  f01396576: 'active, China, Ordos', // 2822838 about 14 hours
+  f01443744: 'active, Finland, Helsinki', // 2822727 about 14 hours
+  f01444561: 'active, autolisted', // 2822744 about 14 hours
+  f01461671: 'active, Korea, Bucheon-si', // 2822742 about 14 hours
+  f01461725: 'active, Korea, Bucheon-si', // 2822748 about 14 hours
+  f01472022: 'active, autolisted', // 2822377 about 14 hours
+  f01482290: 'active, autolisted', // 2822842 about 14 hours
+  f01501611: 'active, autolisted', // 2822840 about 14 hours
+  f01516894: 'active, autolisted', // 2822401 about 14 hours
 
   // Active-sealing (active - with in-flight sealing)
 
@@ -42,7 +78,6 @@ const annotations = {
   f02490: 'sealing, China, Fujian', // 2822458
   f02540: 'sealing, USA, Mobile, Foundry', // 2822679
   f03345: 'sealing, China, Fuzhou, chh', // 2822460
-  f07709: 'sealing, Korea, Dongjak-gu', // 2822464
   f08019: 'sealing, China, Yantai, 三合', // 2822466
   f015233: 'sealing, China, Nanjing', // 2822474
   f020489: 'sealing, China, Lioaning', // 2822472
@@ -54,46 +89,44 @@ const annotations = {
   f042567: 'sealing, China, Jinhua', // 2822480
   f044160: 'sealing, China, Guangzhou, muxing', // 2822462
   f062318: 'sealing, Korea, Naju', // 2822478
-  f063628: 'sealing, China, Hefei', // 2822515
   f065610: "sealing, China, Xi'an", // 2822517
+  f078465: 'sealing, NR', // 2822759
   f080103: 'sealing, Korea, Seongnam-si', // 2822482
   f081644: 'sealing, China, Wenzhou', // 2822484
+  f081985: 'sealing, autolisted', // 2822750
   f082635: 'sealing, China, Yibin', // 2822476
   f087871: 'sealing, NR', // 2822492
   f087883: 'sealing, autolisted', // 2822513
-  f087890: 'sealing, NR', // 2822519
+  f087896: 'sealing, autolisted', // 2822757
   f093658: 'sealing, China, Fujian', // 2822496
-  f094374: 'sealing, China, Nanyang', // 2822504
   f097214: 'sealing, Korea, Bucheon-si, CryptoHash', // 2822490
-  f097720: 'sealing, Korea, Bucheon-si', // 2822498
-  f0101087: 'sealing, Korea', // 2822502
   f0113331: 'sealing, Korea, Jinju + USA', // 2822494
-  f0115108: 'sealing, Korea, Yangcheon-gu', // 2822488
-  f0122815: 'sealing, Korea, Bucheon-si, Healthcarenavi_80', // 2822508
-  f0124554: 'sealing, Korea, Gimhae', // 2822511
   f0130912: 'sealing, China, Hong Kong', // 2822486
   f0131901: 'sealing, Korea, Daejeon', // 2822523
   f0134671: 'sealing, Korea, Gimpo-si', // 2822525
   f0134839: 'sealing, NR', // 2822537
-  f0135758: 'sealing, China, Nanjing, Hangzhou', // 2822521
+  f0135779: 'sealing, China, Nanjing, Hangzhou', // 2822763
   f0137168: 'sealing, China, Beijing', // 2822531
   f0137489: 'sealing, UK, Deeside', // 2822533
+  f0153278: "sealing, China, Xi'an", // 2822767
   f0156207: 'sealing, Korea, Ulsan', // 2822529
   f0156452: 'sealing, Korea, Ulsan', // 2822535
+  f0157127: 'sealing, NR', // 2822765
   f0157564: 'sealing, Korea, Daejeon', // 2822506
-  f0158156: 'sealing, Korea, Gangbuk-gu', // 2822436
   f0159380: 'sealing, China, Dongsheng', // 2822527
-  f0164291: 'sealing, China, Fujian', // 2822547
+  f0162394: 'sealing, China, Guangzhou', // 2822857
   f0167254: 'sealing, Russia, St. Petersburg', // 2822551
   f0172300: 'sealing, NR', // 2822539
-  f0228855: 'sealing, Korea, Guro-gu', // 2822545
-  f0230200: 'sealing, Korea, Gwanak-gu, G-mining', // 2822543
+  f0215461: 'sealing, Korea, Gimhae', // 2822771
+  f0217805: 'sealing, China, Taiwan, Taipei', // 2822797
   f0239251: 'sealing, Korea, Uiwang', // 2822549
+  f0241666: "sealing, China, Xi'an", // 2822775
   f0397052: 'sealing, Korea, Eunpyeong-gu', // 2822541
+  f0397802: 'sealing, China, Chengdu', // 2822773
   f0399814: "sealing, China, Ya'an", // 2822567
-  f0401416: 'sealing, Japan, Fukuoka', // 2822553
   f0403177: 'sealing, China, Huizhou', // 2822576
   f0406478: 'sealing, China, Nanjing', // 2822563
+  f0406533: 'sealing, China, Nanjing, Hangzhou', // 2822769
   f0413563: 'sealing, Korea, Gangnam-gu', // 2822584
   f0433689: 'sealing, China, Wuxi', // 2822586
   f0433690: 'sealing, China, Wuxi', // 2822565
@@ -105,22 +138,29 @@ const annotations = {
   f0488887: 'sealing, China, Shanghai, Guangdong', // 2822559
   f0488889: 'sealing, China, Nanchang', // 2822561
   f0495421: 'sealing, China, Zhangzhou, Zhejiang, Xiamen', // 2822382
-  f0512179: 'sealing, Korea, Bucheon-si', // 2822580
+  f0498868: 'sealing, China, Nanjing', // 2822787
   f0514737: 'sealing, Korea, Busan', // 2822557
+  f0692371: 'sealing, Malaysia', // 2822785
   f0694881: 'sealing, China, Hangzhou', // 2822578
   f0717913: 'sealing, Korea, Jung-gu', // 2822569
   f0717969: 'sealing, USA, Los Angeles', // 2822571
   f0722515: 'sealing, Korea, Geumcheon-gu', // 2822639
-  f0723722: 'sealing, USA, New York', // 2822603
-  f0724219: 'sealing, Spain, Vilanova del Cami', // 2822611
+  f0735027: 'sealing, China, Nanjing, Hangzhou', // 2822789
   f0746416: 'sealing, Korea, Gyeonggi-do', // 2822605
+  f0750779: 'sealing, China, Meishan', // 2822801
+  f0752620: 'sealing, China, Nanjing, Hangzhou', // 2822783
+  f0752635: 'sealing, China, Nanjing, Hangzhou', // 2822799
   f0757233: 'sealing, Spain, Gipuzkoa', // 2822595
   f0805568: 'sealing, Korea, Gangnam-gu', // 2822613
   f0813086: 'sealing, Korea, Jung-gu', // 2822601
+  f0813992: 'sealing, NR', // 2822777
+  f0814012: 'sealing, NR', // 2822779
+  f0814049: 'sealing, China, Nanjing, Hangzhou', // 2822795
   f0832373: 'sealing, China, Yibin', // 2822593
   f0845245: 'sealing, Korea, Busan', // 2822597
   f0857798: 'sealing, China, Wenzhou', // 2822599
   f0864910: 'sealing, Korea, Gwangjin-gu', // 2822609
+  f0870558: 'sealing, China, Hong Kong', // 2822781
   f0871563: "sealing, China, Xi'an", // 2822367
   f01023503: 'sealing, Korea, Busan', // 2822631
   f01024886: 'sealing, China, Wenzhou', // 2822627
@@ -129,10 +169,14 @@ const annotations = {
   f01040469: 'sealing, Korea', // 2822635
   f01045812: 'sealing, China, Taiwan, New Taipei', // 2822633
   f01053334: 'sealing, Korea, Mapo-gu', // 2822709
+  f01057303: 'sealing, China, Huizhou', // 2822980
   f01058790: 'sealing, Japan', // 2822296
+  f01063832: 'sealing, China, Nanjing, Hangzhou', // 2822803
   f01063833: 'sealing, China, Hangzhou, Nanjing', // 2822651
   f01071194: 'sealing, USA, San Jose', // 2822637
   f01086762: 'sealing, Korea, Seoul', // 2822683
+  f01087002: "sealing, China, Xi'an", // 2822793
+  f01089422: 'sealing, NR', // 2822806
   f01095915: 'sealing, China', // 2822641
   f01099820: 'sealing, China, Wenzhou', // 2822649
   f01104018: 'sealing, China, Beijing', // 2822661
@@ -140,111 +184,61 @@ const annotations = {
   f01108043: 'sealing, autolisted', // 2822647
   f01121232: 'sealing, autolisted', // 2822643
   f01128462: 'sealing, China, Changsha', // 2822663
+  f01129570: 'sealing, China, Beijing', // 2822791
   f01131751: 'sealing, China, Hangzhou', // 2822667
+  f01136409: 'sealing, autolisted', // 2822808
   f01136592: 'sealing, Korea, Seongnam-si', // 2822673
   f01141810: 'sealing, Korea', // 2822665
   f01142318: 'sealing, China, Chongqing', // 2822675
-  f01158696: 'sealing, Vietnam', // 2822685
-  f01159240: 'sealing, China, Taizhou', // 2822659
   f01160029: 'sealing, China, Shenzhen', // 2822671
-  f01160668: 'sealing, China, Guangdong', // 2822653
-  f01175453: 'sealing, China, Guangzhou', // 2822669
   f01178915: 'sealing, Korea, Ulju-gun', // 2822655
-  f01190002: 'sealing, Korea, Songpa-gu', // 2822358
-  f01191451: 'sealing, Korea, Bucheon-si', // 2822657
   f01191967: 'sealing, Korea, Ulju-gun, Seongbuk-gu', // 2822681
+  f01198583: 'sealing, China, Hong Kong', // 2822814
+  f01203550: 'sealing, autolisted', // 2822818
   f01203603: 'sealing, China, Shenzhen', // 2822693
   f01203985: 'sealing, China, Guangdong, Shanghai', // 2822699
   f01207671: 'sealing, China, Guangdong', // 2822697
   f01212031: 'sealing, China, Wenzhou', // 2822695
+  f01213229: 'sealing, China, Nanjing, Hangzhou', // 2822812
+  f01215282: 'sealing, UAE, Dubai', // 2822810
+  f01216339: 'sealing, autolisted', // 2822816
+  f01216923: 'sealing, China, Huizhou', // 2822982
   f01227505: 'sealing, Korea', // 2822689
   f01251721: 'sealing, Japan', // 2822687
   f01259449: 'sealing, China, Chengdu', // 2822691
-  f01268426: 'sealing, China, Hangzhou', // 2822715
+  f01269025: 'sealing, China, Nanjing', // 2822830
+  f01275219: 'sealing, China, Shenzhen', // 2822824
   f01285363: 'sealing, Korea, Ulju-gun', // 2822746
   f01291138: 'sealing, autolisted', // 2822717
-  f01323287: 'sealing, autolisted', // 2822701
+  f01315486: 'sealing, USA, San Antonio', // 2822753
+  f01320931: 'sealing, China, Nanjing', // 2822828
+  f01324392: 'sealing, China', // 2822820
   f01328084: 'sealing, Korea, Jung-ang', // 2822705
-  f01337533: 'sealing, Bulgaria, Varna', // 2822707
   f01354898: 'sealing, Korea, Gwangsan-gu', // 2822711
   f01386984: 'sealing, China, Bozhou', // 2822703
   f01390330: "sealing, China, Xi'an", // 2822725
   f01391982: 'sealing, Korea, Ulju-gun', // 2822713
   f01392850: 'sealing, China, Baotou', // 2822732
+  f01393827: 'sealing, Korea, Icheon-si', // 2822874
   f01394448: 'sealing, autolisted', // 2822734
   f01398391: 'sealing, China, Chengdu', // 2822736
   f01407260: 'sealing, Korea, Gangnam-gu', // 2822723
   f01412953: 'sealing, Japan', // 2822740
+  f01423116: 'sealing, Norway, Skjetten', // 2822721
+  f01423546: 'sealing, China, Guangdong', // 2822835
   f01424323: 'sealing, Korea, Ulju-gun', // 2822730
-  f01443744: 'sealing, Finland, Helsinki', // 2822727
-  f01444561: 'sealing, autolisted', // 2822744
-  f01461671: 'sealing, Korea, Bucheon-si', // 2822742
-  f01472022: 'sealing, autolisted', // 2822377
   f01474735: 'sealing, Korea, Hanam', // 2822719
-  f01516894: 'sealing, autolisted', // 2822401
+  f01497836: 'sealing, autolisted', // 2822837
 
   // Stuck
 
-  f062811: 'stuck, China, Fuzhou', // CheckForAcceptance: about 1 hour
-  f078465: 'stuck, NR', // CheckForAcceptance: about 1 hour
-  f081985: 'stuck, autolisted', // CheckForAcceptance: about 1 hour
-  f087879: "stuck, China, Xi'an", // CheckForAcceptance: about 1 hour
-  f087896: 'stuck, autolisted', // CheckForAcceptance: about 1 hour
-  f0127896: 'stuck, Bulgaria, Sofia, sofiaminer', // StartDataTransfer: about 1 hour
-  f0135779: 'stuck, China, Nanjing, Hangzhou', // CheckForAcceptance: about 1 hour
-  f0146751: 'stuck, China, Jiangsu', // StartDataTransfer: about 1 hour
-  f0153278: "stuck, China, Xi'an", // CheckForAcceptance: about 1 hour
-  f0157115: 'stuck, NR', // CheckForAcceptance: about 1 hour
-  f0157127: 'stuck, NR', // CheckForAcceptance: about 1 hour
-  f0162394: 'stuck, China, Guangzhou', // CheckForAcceptance: about 1 hour
-  f0215461: 'stuck, Korea, Gimhae', // CheckForAcceptance: about 1 hour
-  f0217805: 'stuck, China, Taiwan, Taipei', // CheckForAcceptance: about 1 hour
-  f0241666: "stuck, China, Xi'an", // CheckForAcceptance: about 1 hour
-  f0397802: 'stuck, China, Chengdu', // CheckForAcceptance: about 1 hour
-  f0406533: 'stuck, China, Nanjing, Hangzhou', // CheckForAcceptance: about 1 hour
-  f0419768: 'stuck, Korea, Seongnam-si', // StartDataTransfer: about 1 hour
-  f0458627: 'stuck, Korea, Seongnam-si', // StartDataTransfer: about 1 hour
-  f0498868: 'stuck, China, Nanjing', // CheckForAcceptance: about 1 hour
-  f0692371: 'stuck, Malaysia', // CheckForAcceptance: about 1 hour
-  f0735027: 'stuck, China, Nanjing, Hangzhou', // CheckForAcceptance: about 1 hour
-  f0750779: 'stuck, China, Meishan', // CheckForAcceptance: about 1 hour
-  f0752620: 'stuck, China, Nanjing, Hangzhou', // CheckForAcceptance: about 1 hour
-  f0752635: 'stuck, China, Nanjing, Hangzhou', // CheckForAcceptance: about 1 hour
-  f0752695: 'stuck, Korea, Seongnam-si', // StartDataTransfer: about 1 hour
-  f0813992: 'stuck, NR', // CheckForAcceptance: about 1 hour
-  f0814012: 'stuck, NR', // CheckForAcceptance: about 1 hour
-  f0814049: 'stuck, China, Nanjing, Hangzhou', // CheckForAcceptance: about 1 hour
-  f0870558: 'stuck, China, Hong Kong', // CheckForAcceptance: about 1 hour
-  f01057303: 'stuck, China, Huizhou', // CheckForAcceptance: about 1 hour
-  f01063832: 'stuck, China, Nanjing, Hangzhou', // CheckForAcceptance: about 1 hour
-  f01087002: "stuck, China, Xi'an", // CheckForAcceptance: about 1 hour
-  f01089422: 'stuck, NR', // CheckForAcceptance: about 1 hour
-  f01129570: 'stuck, China, Beijing', // CheckForAcceptance: about 1 hour
-  f01136409: 'stuck, autolisted', // CheckForAcceptance: about 1 hour
-  f01198070: 'stuck, Korea, Bucheon-si, Gimpo-si', // CheckForAcceptance: about 1 hour
-  f01198583: 'stuck, China, Hong Kong', // CheckForAcceptance: about 1 hour
-  f01203550: 'stuck, autolisted', // CheckForAcceptance: about 1 hour
-  f01213229: 'stuck, China, Nanjing, Hangzhou', // CheckForAcceptance: about 1 hour
-  f01215282: 'stuck, UAE, Dubai', // CheckForAcceptance: about 1 hour
-  f01216339: 'stuck, autolisted', // CheckForAcceptance: about 1 hour
-  f01216923: 'stuck, China, Huizhou', // CheckForAcceptance: about 1 hour
-  f01267516: 'stuck, China, Taizhou', // CheckForAcceptance: about 1 hour
-  f01269025: 'stuck, China, Nanjing', // CheckForAcceptance: about 1 hour
-  f01271898: 'stuck, autolisted', // CheckForAcceptance: about 1 hour
-  f01275219: 'stuck, China, Shenzhen', // CheckForAcceptance: about 1 hour
-  f01289763: 'stuck, France', // CheckForAcceptance: about 1 hour
-  f01315486: 'stuck, USA, San Antonio', // CheckForAcceptance: about 1 hour
-  f01320931: 'stuck, China, Nanjing', // CheckForAcceptance: about 1 hour
-  f01324392: 'stuck, China', // CheckForAcceptance: about 1 hour
-  f01353593: 'stuck, China, Nanjing, Hangzhou', // CheckForAcceptance: about 1 hour
-  f01393827: 'stuck, Korea, Icheon-si', // CheckForAcceptance: 42 minutes
-  f01396576: 'stuck, China, Ordos', // CheckForAcceptance: about 1 hour
-  f01423116: 'stuck, Norway, Skjetten', // CheckForAcceptance: about 1 hour
-  f01423546: 'stuck, China, Guangdong', // CheckForAcceptance: about 1 hour
-  f01461725: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: about 1 hour
-  f01482290: 'stuck, autolisted', // CheckForAcceptance: about 1 hour
-  f01497836: 'stuck, autolisted', // CheckForAcceptance: about 1 hour
-  f01501611: 'stuck, autolisted', // CheckForAcceptance: about 1 hour
+  f062811: 'stuck, China, Fuzhou', // CheckForAcceptance: about 15 hours
+  f0127896: 'stuck, Bulgaria, Sofia, sofiaminer', // StartDataTransfer: about 15 hours
+  f0146751: 'stuck, China, Jiangsu', // StartDataTransfer: about 15 hours
+  f0419768: 'stuck, Korea, Seongnam-si', // StartDataTransfer: about 15 hours
+  f0458627: 'stuck, Korea, Seongnam-si', // StartDataTransfer: about 15 hours
+  f0752695: 'stuck, Korea, Seongnam-si', // StartDataTransfer: about 15 hours
+  f01198070: 'stuck, Korea, Bucheon-si, Gimpo-si', // CheckForAcceptance: about 15 hours
 
   // Busy
 
@@ -711,6 +705,7 @@ const annotations = {
   f0111174: 'error, China, Guangzhou', // deal failed: (State=26) no such proposal
   f0116436: 'error, Singapore', // error reading Response message from provider: stream reset
   f0116445: 'error, Singapore', // error reading Response message from provider: stream reset
+  f0118317: 'error, Singapore', // error reading Response message from provider: stream reset
   f0134516: 'error, Singapore', // error reading Response message from provider: stream reset
   f0134518: 'error, China, Guangdong', // error reading Response message from provider: stream reset
   f0401135: 'error, Singapore', // error reading Response message from provider: stream reset
@@ -719,8 +714,12 @@ const annotations = {
   f0478837: 'error, China, Zhangzhou', // error reading Response message from provider: stream reset
   f0517213: 'error, China, Guangdong + Argentina, La Plata', // error reading Response message from provider: stream reset
   f0522949: 'error, China, Beijing', // error reading Response message from provider: stream reset
+  f0867298: 'error, China, Beijing + Sri Lanka, Rajagiriya', // error reading Response message from provider: stream reset
   f01164500: 'error, China, Henan', // error reading Response message from provider: EOF
   f01168710: 'error, China, Beijing', // error reading Response message from provider: EOF
+  f01267516: 'error, China, Taizhou', // AddPiece failed: writing piece: storage call error 0: generating piece commitment: failed to build treeCaused by:    0: failed to create data store    1: No such file or directory (os error 2)
+  f01275559: 'error, autolisted', // error reading Response message from provider: stream reset
+  f01289763: 'error, France', // deal failed: (State=26) PublishStorageDeal error: PublishStorageDeals errored: WaitForPublishDeals errored: handler: websocket connection closed
   f01361111: 'error, China, Shanghai', // error reading Response message from provider: stream reset
 
   // Dial backoff
