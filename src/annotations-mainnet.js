@@ -43,19 +43,19 @@ const annotations = {
   f0723722: 'active, USA, New York', // 2822603 about 14 hours
   f0724219: 'active, Spain, Vilanova del Cami', // 2822611 about 14 hours
   f0838684: 'active, Czechia, Prague', // 2804218 3 days
-  f0870354: 'active, NR', // 2804375 3 days
+  f0870354: 'active, China, Beijing', // 2804375 3 days
   f01128844: 'active, Spain, Pozuelo de Alarcon', // 2805383 3 days
   f01158696: 'active, Vietnam', // 2822685 about 14 hours
   f01159240: 'active, China, Taizhou', // 2822659 about 14 hours
   f01160668: 'active, China, Guangdong', // 2822653 about 14 hours
   f01175453: 'active, China, Guangzhou', // 2822669 about 14 hours
-  f01186391: 'active, autolisted', // 2804440 3 days
+  f01186391: 'active, China, Shenzhen', // 2804440 3 days
   f01190002: 'active, Korea, Songpa-gu', // 2822358 about 14 hours
   f01191451: 'active, Korea, Bucheon-si', // 2822657 about 14 hours
-  f01201505: 'active, autolisted', // 2804399 3 days
+  f01201505: 'active, China, Chongqing', // 2804399 3 days
   f01268426: 'active, China, Hangzhou', // 2822715 about 14 hours
   f01269152: 'active, China, Huizhou', // 2804207 3 days
-  f01271898: 'active, autolisted', // 2822826 about 14 hours
+  f01271898: 'active, China, Wuxi', // 2822826 about 14 hours
   f01279864: 'active, Korea, Icheon-si, Seongnam-si', // 2804189 3 days
   f01292110: 'active, China, Beijing', // 2804340 3 days
   f01323287: 'active, autolisted', // 2822701 about 14 hours
@@ -66,10 +66,10 @@ const annotations = {
   f01444561: 'active, autolisted', // 2822744 about 14 hours
   f01461671: 'active, Korea, Bucheon-si', // 2822742 about 14 hours
   f01461725: 'active, Korea, Bucheon-si', // 2822748 about 14 hours
-  f01472022: 'active, autolisted', // 2822377 about 14 hours
-  f01482290: 'active, autolisted', // 2822842 about 14 hours
-  f01501611: 'active, autolisted', // 2822840 about 14 hours
-  f01516894: 'active, autolisted', // 2822401 about 14 hours
+  f01472022: 'active, Korea, Seongbuk-gu, Icheon-si', // 2822377 about 14 hours
+  f01482290: 'active, China, Nanjing', // 2822842 about 14 hours
+  f01501611: 'active, Singapore', // 2822840 about 14 hours
+  f01516894: 'active, Korea, Icheon-si', // 2822401 about 14 hours
 
   // Active-sealing (active - with in-flight sealing)
 
@@ -111,7 +111,7 @@ const annotations = {
   f0153278: "sealing, China, Xi'an", // 2822767
   f0156207: 'sealing, Korea, Ulsan', // 2822529
   f0156452: 'sealing, Korea, Ulsan', // 2822535
-  f0157127: 'sealing, NR', // 2822765
+  f0157127: "sealing, China, Xi'an", // 2822765
   f0157564: 'sealing, Korea, Daejeon', // 2822506
   f0159380: 'sealing, China, Dongsheng', // 2822527
   f0162394: 'sealing, China, Guangzhou', // 2822857
@@ -153,7 +153,7 @@ const annotations = {
   f0757233: 'sealing, Spain, Gipuzkoa', // 2822595
   f0805568: 'sealing, Korea, Gangnam-gu', // 2822613
   f0813086: 'sealing, Korea, Jung-gu', // 2822601
-  f0813992: 'sealing, NR', // 2822777
+  f0813992: 'sealing, China, Nanjing, Hangzhou', // 2822777
   f0814012: 'sealing, NR', // 2822779
   f0814049: 'sealing, China, Nanjing, Hangzhou', // 2822795
   f0832373: 'sealing, China, Yibin', // 2822593
@@ -181,12 +181,12 @@ const annotations = {
   f01099820: 'sealing, China, Wenzhou', // 2822649
   f01104018: 'sealing, China, Beijing', // 2822661
   f01105829: 'sealing, Korea', // 2822645
-  f01108043: 'sealing, autolisted', // 2822647
+  f01108043: 'sealing, Korea, Goyang-si', // 2822647
   f01121232: 'sealing, autolisted', // 2822643
   f01128462: 'sealing, China, Changsha', // 2822663
   f01129570: 'sealing, China, Beijing', // 2822791
   f01131751: 'sealing, China, Hangzhou', // 2822667
-  f01136409: 'sealing, autolisted', // 2822808
+  f01136409: 'sealing, China, Beijing', // 2822808
   f01136592: 'sealing, Korea, Seongnam-si', // 2822673
   f01141810: 'sealing, Korea', // 2822665
   f01142318: 'sealing, China, Chongqing', // 2822675
@@ -194,14 +194,14 @@ const annotations = {
   f01178915: 'sealing, Korea, Ulju-gun', // 2822655
   f01191967: 'sealing, Korea, Ulju-gun, Seongbuk-gu', // 2822681
   f01198583: 'sealing, China, Hong Kong', // 2822814
-  f01203550: 'sealing, autolisted', // 2822818
+  f01203550: 'sealing, China, Sichuan', // 2822818
   f01203603: 'sealing, China, Shenzhen', // 2822693
   f01203985: 'sealing, China, Guangdong, Shanghai', // 2822699
   f01207671: 'sealing, China, Guangdong', // 2822697
   f01212031: 'sealing, China, Wenzhou', // 2822695
   f01213229: 'sealing, China, Nanjing, Hangzhou', // 2822812
   f01215282: 'sealing, UAE, Dubai', // 2822810
-  f01216339: 'sealing, autolisted', // 2822816
+  f01216339: 'sealing, China, Beijing', // 2822816
   f01216923: 'sealing, China, Huizhou', // 2822982
   f01227505: 'sealing, Korea', // 2822689
   f01251721: 'sealing, Japan', // 2822687
@@ -220,7 +220,7 @@ const annotations = {
   f01391982: 'sealing, Korea, Ulju-gun', // 2822713
   f01392850: 'sealing, China, Baotou', // 2822732
   f01393827: 'sealing, Korea, Icheon-si', // 2822874
-  f01394448: 'sealing, autolisted', // 2822734
+  f01394448: 'sealing, Korea, Hanam', // 2822734
   f01398391: 'sealing, China, Chengdu', // 2822736
   f01407260: 'sealing, Korea, Gangnam-gu', // 2822723
   f01412953: 'sealing, Japan', // 2822740
@@ -228,7 +228,7 @@ const annotations = {
   f01423546: 'sealing, China, Guangdong', // 2822835
   f01424323: 'sealing, Korea, Ulju-gun', // 2822730
   f01474735: 'sealing, Korea, Hanam', // 2822719
-  f01497836: 'sealing, autolisted', // 2822837
+  f01497836: 'sealing, Korea, Ulju-gun', // 2822837
 
   // Stuck
 
@@ -3013,7 +3013,7 @@ const annotations = {
   f01128213: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01128225: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01128302: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01128320: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01128320: 'fail, China, Chengdu', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01128326: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01128800: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01129431: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -3596,7 +3596,7 @@ const annotations = {
   f01438277: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01438656: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01442089: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01442572: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01442572: 'fail, China, Shenzhen', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01443113: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01443898: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01444106: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -3638,7 +3638,7 @@ const annotations = {
   f01475418: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01478558: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01479628: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01479781: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01479781: 'fail, Singapore', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01482593: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01487740: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01491738: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
