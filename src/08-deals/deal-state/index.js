@@ -71,6 +71,9 @@ function proposedNewBucket (deal, previous, dealData, dealHistory) {
   if (previous.startsWith('delist')) {
       return ['delist', '']
   }
+  if (previous.startsWith('skip')) {
+      return ['skip', '']
+  }
 
   if (previous.startsWith('active')) {
     if (lastDealState === 'Sealing' || lastDealState === 'AwaitingPreCommit') {
@@ -515,6 +518,7 @@ export default function DealList ({ appState, cid, dealType }) {
       'rejected',
       'fail',
       'nopeer',
+      'skip',
       'delist',
     ]
   } else if (dealType === '128mib-unverified') {
@@ -541,6 +545,7 @@ export default function DealList ({ appState, cid, dealType }) {
       'fail',
       'error-ask',
       'nopeer',
+      'skip',
       'delist',
     ]
   } else if (dealType === '128mib-verified') {
@@ -567,6 +572,7 @@ export default function DealList ({ appState, cid, dealType }) {
       'fail',
       'error-ask',
       'nopeer',
+      'skip',
       'delist',
     ]
   } else {

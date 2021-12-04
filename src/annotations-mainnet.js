@@ -14,7 +14,7 @@ const annotations = {
 
   // New
 
-  f01114928: 'new, autolisted',
+  f01114928: 'skip, autolisted',
   f01157271: 'new, autolisted',
   f01157288: 'new, autolisted',
   f01157349: 'new, autolisted',

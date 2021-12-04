@@ -58,6 +58,7 @@ export default function ProposeDeal ({ appState, updateAppState }) {
       return miners.filter(
         miner =>
           !annotations[miner].match(/^delist/) &&
+          !annotations[miner].match(/^skip/) &&
           !annotations[miner].match(/^nopeer/)
       )
     }
