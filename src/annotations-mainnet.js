@@ -25,7 +25,7 @@ const annotations = {
 
   f07709: 'active, Korea, Dongjak-gu', // 2822464 about 14 hours
   f063628: 'active, China, Hefei', // 2822515 about 14 hours
-  f087890: 'active, NR', // 2822519 about 14 hours
+  f087890: "active, China, Xi'an", // 2822519 about 14 hours
   f094374: 'active, China, Nanyang', // 2822504 about 14 hours
   f097720: 'active, Korea, Bucheon-si', // 2822498 about 14 hours
   f0101087: 'active, Korea', // 2822502 about 14 hours
@@ -33,7 +33,7 @@ const annotations = {
   f0122815: 'active, Korea, Bucheon-si, Healthcarenavi_80', // 2822508 about 14 hours
   f0124554: 'active, Korea, Gimhae', // 2822511 about 14 hours
   f0135758: 'active, China, Nanjing, Hangzhou', // 2822521 about 14 hours
-  f0157115: 'active, NR', // 2822761 about 14 hours
+  f0157115: "active, China, Xi'an", // 2822761 about 14 hours
   f0158156: 'active, Korea, Gangbuk-gu', // 2822436 about 14 hours
   f0164291: 'active, China, Fujian', // 2822547 about 14 hours
   f0228855: 'active, Korea, Guro-gu', // 2822545 about 14 hours
@@ -58,12 +58,12 @@ const annotations = {
   f01271898: 'active, China, Wuxi', // 2822826 about 14 hours
   f01279864: 'active, Korea, Icheon-si, Seongnam-si', // 2804189 3 days
   f01292110: 'active, China, Beijing', // 2804340 3 days
-  f01323287: 'active, autolisted', // 2822701 about 14 hours
+  f01323287: 'active, Korea, Gyeyang-gu', // 2822701 about 14 hours
   f01337533: 'active, Bulgaria, Varna', // 2822707 about 14 hours
   f01353593: 'active, China, Nanjing, Hangzhou', // 2822822 about 14 hours
   f01396576: 'active, China, Ordos', // 2822838 about 14 hours
   f01443744: 'active, Finland, Helsinki', // 2822727 about 14 hours
-  f01444561: 'active, autolisted', // 2822744 about 14 hours
+  f01444561: 'active, Romania, Iasi', // 2822744 about 14 hours
   f01461671: 'active, Korea, Bucheon-si', // 2822742 about 14 hours
   f01461725: 'active, Korea, Bucheon-si', // 2822748 about 14 hours
   f01472022: 'active, Korea, Seongbuk-gu, Icheon-si', // 2822377 about 14 hours
@@ -84,27 +84,27 @@ const annotations = {
   f023219: 'sealing, China, Beijing + Zhangjiakou', // 2822456
   f024550: 'sealing, China, Wenzhou', // 2822470
   f025025: 'sealing, China, Qingdao', // 2822452
-  f033463: 'sealing, NR', // 2822468
+  f033463: 'sealing, China, Nanjing, Hangzhou', // 2822468
   f039515: 'sealing, China, Chongqing, valarhash', // 2822454
   f042567: 'sealing, China, Jinhua', // 2822480
   f044160: 'sealing, China, Guangzhou, muxing', // 2822462
   f062318: 'sealing, Korea, Naju', // 2822478
   f065610: "sealing, China, Xi'an", // 2822517
-  f078465: 'sealing, NR', // 2822759
+  f078465: "sealing, China, Xi'an", // 2822759
   f080103: 'sealing, Korea, Seongnam-si', // 2822482
   f081644: 'sealing, China, Wenzhou', // 2822484
   f081985: 'sealing, autolisted', // 2822750
   f082635: 'sealing, China, Yibin', // 2822476
-  f087871: 'sealing, NR', // 2822492
-  f087883: 'sealing, autolisted', // 2822513
-  f087896: 'sealing, autolisted', // 2822757
+  f087871: "sealing, China, Xi'an", // 2822492
+  f087883: "sealing, China, Xi'an", // 2822513
+  f087896: "sealing, China, Xi'an", // 2822757
   f093658: 'sealing, China, Fujian', // 2822496
   f097214: 'sealing, Korea, Bucheon-si, CryptoHash', // 2822490
   f0113331: 'sealing, Korea, Jinju + USA', // 2822494
   f0130912: 'sealing, China, Hong Kong', // 2822486
   f0131901: 'sealing, Korea, Daejeon', // 2822523
   f0134671: 'sealing, Korea, Gimpo-si', // 2822525
-  f0134839: 'sealing, NR', // 2822537
+  f0134839: "sealing, China, Xi'an", // 2822537
   f0135779: 'sealing, China, Nanjing, Hangzhou', // 2822763
   f0137168: 'sealing, China, Beijing', // 2822531
   f0137489: 'sealing, UK, Deeside', // 2822533
@@ -116,7 +116,7 @@ const annotations = {
   f0159380: 'sealing, China, Dongsheng', // 2822527
   f0162394: 'sealing, China, Guangzhou', // 2822857
   f0167254: 'sealing, Russia, St. Petersburg', // 2822551
-  f0172300: 'sealing, NR', // 2822539
+  f0172300: "sealing, China, Shenzhen", // 2822539
   f0215461: 'sealing, Korea, Gimhae', // 2822771
   f0217805: 'sealing, China, Taiwan, Taipei', // 2822797
   f0239251: 'sealing, Korea, Uiwang', // 2822549
@@ -134,7 +134,7 @@ const annotations = {
   f0447181: 'sealing, China, Zibo', // 2822607
   f0460440: 'sealing, Korea, Seongnam-si', // 2822573
   f0482619: 'sealing, Korea, Seongnam-si', // 2822555
-  f0488689: 'sealing, NR', // 2822582
+  f0488689: 'sealing, China, Guangdong, Shanghai', // 2822582
   f0488887: 'sealing, China, Shanghai, Guangdong', // 2822559
   f0488889: 'sealing, China, Nanchang', // 2822561
   f0495421: 'sealing, China, Zhangzhou, Zhejiang, Xiamen', // 2822382
@@ -154,7 +154,7 @@ const annotations = {
   f0805568: 'sealing, Korea, Gangnam-gu', // 2822613
   f0813086: 'sealing, Korea, Jung-gu', // 2822601
   f0813992: 'sealing, China, Nanjing, Hangzhou', // 2822777
-  f0814012: 'sealing, NR', // 2822779
+  f0814012: 'sealing, China, Nanjing', // 2822779
   f0814049: 'sealing, China, Nanjing, Hangzhou', // 2822795
   f0832373: 'sealing, China, Yibin', // 2822593
   f0845245: 'sealing, Korea, Busan', // 2822597
@@ -176,13 +176,13 @@ const annotations = {
   f01071194: 'sealing, USA, San Jose', // 2822637
   f01086762: 'sealing, Korea, Seoul', // 2822683
   f01087002: "sealing, China, Xi'an", // 2822793
-  f01089422: 'sealing, NR', // 2822806
+  f01089422: 'sealing, China, Beijing', // 2822806
   f01095915: 'sealing, China', // 2822641
   f01099820: 'sealing, China, Wenzhou', // 2822649
   f01104018: 'sealing, China, Beijing', // 2822661
   f01105829: 'sealing, Korea', // 2822645
   f01108043: 'sealing, Korea, Goyang-si', // 2822647
-  f01121232: 'sealing, autolisted', // 2822643
+  f01121232: 'sealing, Finland, Helsinki', // 2822643
   f01128462: 'sealing, China, Changsha', // 2822663
   f01129570: 'sealing, China, Beijing', // 2822791
   f01131751: 'sealing, China, Hangzhou', // 2822667
@@ -209,7 +209,7 @@ const annotations = {
   f01269025: 'sealing, China, Nanjing', // 2822830
   f01275219: 'sealing, China, Shenzhen', // 2822824
   f01285363: 'sealing, Korea, Ulju-gun', // 2822746
-  f01291138: 'sealing, autolisted', // 2822717
+  f01291138: 'sealing, China, Suzhou', // 2822717
   f01315486: 'sealing, USA, San Antonio', // 2822753
   f01320931: 'sealing, China, Nanjing', // 2822828
   f01324392: 'sealing, China', // 2822820
@@ -288,8 +288,8 @@ const annotations = {
   f047419: 'min-size, USA, Waukesha', // 131072 < 4294967296
   f048669: 'min-size, China, Jiangsu + Yangzhou', // 131072 < 1048576
   f058369: 'min-size, USA, Boston', // 131072 < 268435456
-  f058374: 'min-size, NR', // 131072 < 17179869184
-  f061666: 'min-size, autolisted', // 131072 < 1573031772
+  f058374: 'min-size, USA, Lincoln', // 131072 < 17179869184
+  f061666: 'min-size, China, Qinzhou', // 131072 < 1573031772
   f065266: 'min-size, China, Hefei', // 131072 < 134217728
   f066596: 'min-size, USA, San Diego, PiKNiK & Company', // 131072 < 536870912
   f071624: 'min-size, USA, Boyne City, Adept', // 131072 < 4294967296
@@ -321,8 +321,8 @@ const annotations = {
   f0165400: 'min-size, Canada, Brampton', // 131072 < 2147483648
   f0187709: 'min-size, Russia, Moscow', // 131072 < 4294967296
   f0215497: 'min-size, Korea, Gangseo-gu', // 131072 < 31457280
-  f0220827: 'min-size, NR', // 131072 < 8589934592
-  f0397083: 'min-size, NR', // 131072 < 4294967296
+  f0220827: 'min-size, Netherlands, Heerhugowaard', // 131072 < 8589934592
+  f0397083: 'min-size, China, Beijing', // 131072 < 4294967296
   f0399083: 'min-size, Korea, Seoul + Kwangmyong', // 131072 < 31457280
   f0400103: 'min-size, China, Hong Kong', // 131072 < 1048576
   f0400920: 'min-size, China, Luzhou', // 131072 < 1048576
@@ -348,7 +348,7 @@ const annotations = {
   f0828066: 'min-size, USA, San Digeo', // 131072 < 536870912
   f0835643: 'min-size, Korea, Songpa-gu', // 131072 < 1048576
   f0842485: 'min-size, Korea, Seoul', // 131072 < 31457280
-  f0847138: 'min-size, NR', // 131072 < 1573031772
+  f0847138: 'min-size, China, Qinzhou', // 131072 < 1573031772
   f0875769: 'min-size, USA, Salt Lake City', // 131072 < 8589934592
   f01024814: 'min-size, USA, Wilson', // 131072 < 34359738368
   f01035680: 'min-size, USA, Denver', // 131072 < 8589934592
@@ -362,25 +362,25 @@ const annotations = {
   f01096727: 'min-size, Korea, Gangseo-gu', // 131072 < 34359738368
   f01099052: 'min-size, Korea, Seodaemun-gu', // 131072 < 31457280
   f01110276: 'min-size, Korea, Bucheon-si', // 131072 < 1073741824
-  f01126768: 'min-size, autolisted', // 131072 < 31457280
+  f01126768: 'min-size, Korea, Seoul, Gunpo', // 131072 < 31457280
   f01133080: 'min-size, Korea, Mokpo', // 131072 < 104857600
   f01152097: 'min-size, Vietnam, Hanoi', // 131072 < 134217728
-  f01169314: 'min-size, autolisted', // 131072 < 1048576
-  f01175097: 'min-size, autolisted', // 131072 < 536870912
-  f01179972: 'min-size, autolisted', // 131072 < 134217728
+  f01169314: 'min-size, Germany, Munich', // 131072 < 1048576
+  f01175097: 'min-size, USA, San Diego', // 131072 < 536870912
+  f01179972: 'min-size, Russia, Tomsk', // 131072 < 134217728
   f01186444: 'min-size, Korea, Seoul', // 131072 < 31457280
-  f01190509: 'min-size, autolisted', // 131072 < 1073741824
-  f01221675: 'min-size, autolisted', // 131072 < 52428800
+  f01190509: 'min-size, Korea, Gimhae', // 131072 < 1073741824
+  f01221675: 'min-size, Korea, Uijeongbu-si', // 131072 < 52428800
   f01222595: 'min-size, Russia, Moscow', // 131072 < 67108864
   f01255977: 'min-size, China, Foshan', // 131072 < 4294967296
   f01259059: 'min-size, Portugal, Lisbon', // 131072 < 2147483648
-  f01376386: 'min-size, autolisted', // 131072 < 1073741824
+  f01376386: 'min-size, Korea, Hwaseong-si', // 131072 < 1073741824
   f01396100: 'min-size, Korea, Gwangju', // 131072 < 104857600
   f01402814: 'min-size, China, Hong Kong', // 131072 < 5368709120
   f01410857: 'min-size, France', // 131072 < 134217728
-  f01414904: 'min-size, autolisted', // 131072 < 1073741824
-  f01419959: 'min-size, autolisted', // 131072 < 536870912
-  f01424825: 'min-size, autolisted', // 131072 < 4294967296
+  f01414904: 'min-size, Korea', // 131072 < 1073741824
+  f01419959: 'min-size, USA, San Diego', // 131072 < 536870912
+  f01424825: 'min-size, China, Guangzhou', // 131072 < 4294967296
   f01437863: 'min-size, Korea, Wonju', // 131072 < 1073741824
 
   // Max Size
@@ -427,8 +427,8 @@ const annotations = {
   f018785:
     'min-ask, Singapore + USA + Germany, Frankfurt + UK, London + China, Dongguan', // 20000000 < 122070312500000
   f020747: 'min-ask, China, Xiamen', // 20000000 < 122070312
-  f021504: 'min-ask, NR', // 20000000 < 122070190429687500000
-  f022093: 'min-ask, NR', // 20000000 < 122070190429687500000
+  f021504: 'min-ask, China, Beijing', // 20000000 < 122070190429687500000
+  f022093: 'min-ask, China, Beijing', // 20000000 < 122070190429687500000
   f022130: 'min-ask, Korea, Seodaemun-gu', // 20000000 < 61035156
   f022289: 'min-ask, China, Mianyang', // 20000000 < 12207031250000
   f022308: 'min-ask, China, Bozhou', // 20000000 < 12207031250
@@ -476,7 +476,7 @@ const annotations = {
   f086151: 'min-ask, China, Dongguan', // 20000000 < 122070324707031
   f092514: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f094614: 'min-ask, China, Karamay', // 20000000 < 122070312500000
-  f097370: 'min-ask, NR', // 20000000 < 122070312500000
+  f097370: 'min-ask, China, Zhengzhou', // 20000000 < 122070312500000
   f097386: 'min-ask, China, Beijing', // 20000000 < 12206909179687500000
   f098706: 'min-ask, Korea, Icheon-si', // 20000000 < 121948242187500000
   f098770: 'min-ask, USA, Pontiac', // 20000000 < 12207031250000000
@@ -487,14 +487,14 @@ const annotations = {
   f0102375: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0102376: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0102513: 'min-ask, China, Karamay', // 20000000 < 122070312500000
-  f0103282: 'min-ask, NR', // 20000000 < 61035156250000
+  f0103282: 'min-ask, China, Maoming', // 20000000 < 61035156250000
   f0103851: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0106949: 'min-ask, Korea, Seoul', // 20000000 < 366210937
-  f0107995: 'min-ask, NR', // 20000000 < 121948242187500000
+  f0107995: 'min-ask, Korea, Sejong', // 20000000 < 121948242187500000
   f0110283: 'min-ask, China, Zhongshan', // 20000000 < 12207031250000000000000000
   f0110442: 'min-ask, China, Fujian', // 20000000 < 12206909179687500000
   f0110936: 'min-ask, China, Fujian', // 20000000 < 12206909179687500000
-  f0110944: 'min-ask, NR', // 20000000 < 61035156250000
+  f0110944: 'min-ask, China, Guangzhou', // 20000000 < 61035156250000
   f0114808: 'min-ask, China, Shanghai', // 20000000 < 12207031250000000
   f0114868: 'min-ask, NR', // 20000000 < 122070312500000
   f0114924: 'min-ask, China, Fujian', // 20000000 < 12206909179687500000
@@ -538,9 +538,9 @@ const annotations = {
   f0222962: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0224144: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0224841: 'min-ask, China, Guangzhou', // 20000000 < 12206909179687500000
-  f0232650: 'min-ask, NR', // 20000000 < 1208496093750000000000000
-  f0240185: 'min-ask, NR', // 20000000 < 122070312500000
-  f0392488: 'min-ask, NR', // 20000000 < 1220703002929687500000
+  f0232650: 'min-ask, China, Zhongshan', // 20000000 < 1208496093750000000000000
+  f0240185: 'min-ask, USA, Clifton', // 20000000 < 122070312500000
+  f0392488: 'min-ask, Indonesia, Medan + China, Shenyang', // 20000000 < 1220703002929687500000
   f0392734: 'min-ask, Korea, Icheon-si', // 20000000 < 122070190429687500000
   f0392785: 'min-ask, China, Karamay', // 20000000 < 122070312500000
   f0395911: 'min-ask, NR', // 20000000 < 121948242187500000
@@ -673,7 +673,7 @@ const annotations = {
   f01310053: 'min-ask, autolisted', // 20000000 < 121948242187500000
   f01317155: 'min-ask, autolisted', // 20000000 < 121948242187500000
   f01317157: 'min-ask, autolisted', // 20000000 < 121948242187500000
-  f01319989: 'min-ask, autolisted', // 20000000 < 12207031250
+  f01319989: 'min-ask, Korea, Busan', // 20000000 < 12207031250
   f01321804: 'min-ask, autolisted', // 20000000 < 121948242187500000
   f01323699: 'min-ask, autolisted', // 20000000 < 122070312500000
   f01334686: 'min-ask, autolisted', // 20000000 < 24414062
@@ -1029,7 +1029,7 @@ const annotations = {
   f01448847: 'rejected, China, Sichuan', // no online
   f01461183: 'rejected, autolisted', // deal start epoch is too far in the future: 1356319 > 1333291
   f01466582: 'rejected, autolisted', // no online
-  f01483143: 'rejected, autolisted',
+  f01483143: 'rejected, China, Hong Kong',
   f01484864: 'rejected, autolisted', // no online
 
   // Fail
