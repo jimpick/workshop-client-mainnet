@@ -128,209 +128,209 @@ const annotations = {
 
   // Stuck
 
-  f02490: 'stuck, China, Fujian', // CheckForAcceptance: 11 minutes
-  f02540: 'stuck, USA, Mobile, Foundry', // CheckForAcceptance: 11 minutes
-  f03345: 'stuck, China, Fuzhou, chh', // CheckForAcceptance: 11 minutes
-  f07709: 'stuck, Korea, Dongjak-gu', // CheckForAcceptance: 11 minutes
-  f08019: 'stuck, China, Yantai, 三合', // CheckForAcceptance: 11 minutes
-  f015233: 'stuck, China, Nanjing', // CheckForAcceptance: 11 minutes
-  f020489: 'stuck, China, Lioaning', // CheckForAcceptance: 11 minutes
-  f023219: 'stuck, China, Beijing + Zhangjiakou', // CheckForAcceptance: 11 minutes
-  f024550: 'stuck, China, Wenzhou', // CheckForAcceptance: 11 minutes
-  f025025: 'stuck, China, Qingdao', // CheckForAcceptance: 11 minutes
-  f033463: 'stuck, NR', // CheckForAcceptance: 11 minutes
-  f039515: 'stuck, China, Chongqing, valarhash', // CheckForAcceptance: 11 minutes
-  f042567: 'stuck, China, Jinhua', // CheckForAcceptance: 11 minutes
-  f044160: 'stuck, China, Guangzhou, muxing', // CheckForAcceptance: 11 minutes
-  f062318: 'stuck, Korea, Naju', // CheckForAcceptance: 11 minutes
-  f062811: 'stuck, China, Fuzhou', // CheckForAcceptance: 11 minutes
-  f063628: 'stuck, China, Hefei', // CheckForAcceptance: 11 minutes
-  f065610: "stuck, China, Xi'an", // CheckForAcceptance: 10 minutes
-  f078465: 'stuck, NR', // CheckForAcceptance: 11 minutes
-  f080103: 'stuck, Korea, Seongnam-si', // CheckForAcceptance: 11 minutes
-  f081644: 'stuck, China, Wenzhou', // CheckForAcceptance: 11 minutes
-  f081985: 'stuck, autolisted', // CheckForAcceptance: 11 minutes
-  f082635: 'stuck, China, Yibin', // CheckForAcceptance: 11 minutes
-  f087871: 'stuck, NR', // CheckForAcceptance: 11 minutes
-  f087879: "stuck, China, Xi'an", // CheckForAcceptance: 11 minutes
-  f087883: 'stuck, autolisted', // CheckForAcceptance: 10 minutes
-  f087890: 'stuck, NR', // CheckForAcceptance: 10 minutes
-  f087896: 'stuck, autolisted', // CheckForAcceptance: 11 minutes
-  f093658: 'stuck, China, Fujian', // CheckForAcceptance: 11 minutes
-  f094374: 'stuck, China, Nanyang', // CheckForAcceptance: 11 minutes
-  f097214: 'stuck, Korea, Bucheon-si, CryptoHash', // CheckForAcceptance: 11 minutes
-  f097720: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: 11 minutes
-  f0101087: 'stuck, Korea', // CheckForAcceptance: 11 minutes
-  f0111174: 'stuck, China, Guangzhou', // CheckForAcceptance: 10 minutes
-  f0113331: 'stuck, Korea, Jinju + USA', // CheckForAcceptance: 10 minutes
-  f0115108: 'stuck, Korea, Yangcheon-gu', // CheckForAcceptance: 10 minutes
-  f0122815: 'stuck, Korea, Bucheon-si, Healthcarenavi_80', // CheckForAcceptance: 10 minutes
-  f0124554: 'stuck, Korea, Gimhae', // CheckForAcceptance: 10 minutes
-  f0127896: 'stuck, Bulgaria, Sofia, sofiaminer', // StartDataTransfer: 10 minutes
-  f0130912: 'stuck, China, Hong Kong', // CheckForAcceptance: 10 minutes
-  f0131901: 'stuck, Korea, Daejeon', // CheckForAcceptance: 10 minutes
-  f0134671: 'stuck, Korea, Gimpo-si', // CheckForAcceptance: 10 minutes
-  f0134839: 'stuck, NR', // CheckForAcceptance: 10 minutes
-  f0135758: 'stuck, China, Nanjing, Hangzhou', // CheckForAcceptance: 10 minutes
-  f0135779: 'stuck, China, Nanjing, Hangzhou', // CheckForAcceptance: 10 minutes
-  f0137168: 'stuck, China, Beijing', // CheckForAcceptance: 10 minutes
-  f0137489: 'stuck, UK, Deeside', // CheckForAcceptance: 10 minutes
-  f0146751: 'stuck, China, Jiangsu', // StartDataTransfer: 3 days
-  f0153278: "stuck, China, Xi'an", // CheckForAcceptance: 10 minutes
-  f0156207: 'stuck, Korea, Ulsan', // CheckForAcceptance: 10 minutes
-  f0156452: 'stuck, Korea, Ulsan', // CheckForAcceptance: 10 minutes
-  f0157115: 'stuck, NR', // CheckForAcceptance: 10 minutes
-  f0157127: 'stuck, NR', // CheckForAcceptance: 10 minutes
-  f0157564: 'stuck, Korea, Daejeon', // CheckForAcceptance: 10 minutes
-  f0158156: 'stuck, Korea, Gangbuk-gu', // CheckForAcceptance: 10 minutes
-  f0159380: 'stuck, China, Dongsheng', // CheckForAcceptance: 10 minutes
-  f0162394: 'stuck, China, Guangzhou', // CheckForAcceptance: 10 minutes
-  f0164291: 'stuck, China, Fujian', // CheckForAcceptance: 10 minutes
-  f0167254: 'stuck, Russia, St. Petersburg', // CheckForAcceptance: 10 minutes
-  f0172300: 'stuck, NR', // CheckForAcceptance: 10 minutes
-  f0215461: 'stuck, Korea, Gimhae', // CheckForAcceptance: 10 minutes
-  f0217805: 'stuck, China, Taiwan, Taipei', // CheckForAcceptance: 10 minutes
-  f0228855: 'stuck, Korea, Guro-gu', // CheckForAcceptance: 10 minutes
-  f0230200: 'stuck, Korea, Gwanak-gu, G-mining', // CheckForAcceptance: 10 minutes
-  f0239251: 'stuck, Korea, Uiwang', // CheckForAcceptance: 10 minutes
-  f0241666: "stuck, China, Xi'an", // CheckForAcceptance: 10 minutes
-  f0397052: 'stuck, Korea, Eunpyeong-gu', // CheckForAcceptance: 10 minutes
-  f0397802: 'stuck, China, Chengdu', // CheckForAcceptance: 10 minutes
-  f0399814: "stuck, China, Ya'an", // CheckForAcceptance: 10 minutes
-  f0401416: 'stuck, Japan, Fukuoka', // CheckForAcceptance: 10 minutes
-  f0403177: 'stuck, China, Huizhou', // CheckForAcceptance: 10 minutes
-  f0406478: 'stuck, China, Nanjing', // CheckForAcceptance: 10 minutes
-  f0406533: 'stuck, China, Nanjing, Hangzhou', // CheckForAcceptance: 10 minutes
-  f0413563: 'stuck, Korea, Gangnam-gu', // CheckForAcceptance: 10 minutes
-  f0419768: 'stuck, Korea, Seongnam-si', // StartDataTransfer: 3 days
-  f0433689: 'stuck, China, Wuxi', // CheckForAcceptance: 10 minutes
-  f0433690: 'stuck, China, Wuxi', // CheckForAcceptance: 10 minutes
-  f0433691: 'stuck, China, Wuxi', // CheckForAcceptance: 10 minutes
-  f0447181: 'stuck, China, Zibo', // CheckForAcceptance: 10 minutes
-  f0458627: 'stuck, Korea, Seongnam-si', // StartDataTransfer: 3 days
-  f0460440: 'stuck, Korea, Seongnam-si', // CheckForAcceptance: 10 minutes
-  f0478837: 'stuck, China, Zhangzhou', // CheckForAcceptance: 9 minutes
-  f0482619: 'stuck, Korea, Seongnam-si', // CheckForAcceptance: 10 minutes
-  f0488689: 'stuck, NR', // CheckForAcceptance: 10 minutes
-  f0488887: 'stuck, China, Shanghai, Guangdong', // CheckForAcceptance: 10 minutes
-  f0488889: 'stuck, China, Nanchang', // CheckForAcceptance: 10 minutes
-  f0495421: 'stuck, China, Zhangzhou, Zhejiang, Xiamen', // CheckForAcceptance: 10 minutes
-  f0498868: 'stuck, China, Nanjing', // CheckForAcceptance: 9 minutes
-  f0512179: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: 9 minutes
-  f0514737: 'stuck, Korea, Busan', // CheckForAcceptance: 9 minutes
-  f0692371: 'stuck, Malaysia', // CheckForAcceptance: 9 minutes
-  f0694881: 'stuck, China, Hangzhou', // CheckForAcceptance: 9 minutes
-  f0717913: 'stuck, Korea, Jung-gu', // CheckForAcceptance: 9 minutes
-  f0717969: 'stuck, USA, Los Angeles', // CheckForAcceptance: 9 minutes
-  f0722515: 'stuck, Korea, Geumcheon-gu', // CheckForAcceptance: 9 minutes
-  f0723722: 'stuck, USA, New York', // CheckForAcceptance: 9 minutes
-  f0724219: 'stuck, Spain, Vilanova del Cami', // CheckForAcceptance: 9 minutes
-  f0735027: 'stuck, China, Nanjing, Hangzhou', // CheckForAcceptance: 9 minutes
-  f0746416: 'stuck, Korea, Gyeonggi-do', // CheckForAcceptance: 9 minutes
-  f0750779: 'stuck, China, Meishan', // CheckForAcceptance: 9 minutes
-  f0752620: 'stuck, China, Nanjing, Hangzhou', // CheckForAcceptance: 9 minutes
-  f0752635: 'stuck, China, Nanjing, Hangzhou', // CheckForAcceptance: 9 minutes
-  f0752695: 'stuck, Korea, Seongnam-si', // StartDataTransfer: 3 days
-  f0757233: 'stuck, Spain, Gipuzkoa', // CheckForAcceptance: 9 minutes
-  f0805568: 'stuck, Korea, Gangnam-gu', // CheckForAcceptance: 9 minutes
-  f0813086: 'stuck, Korea, Jung-gu', // CheckForAcceptance: 9 minutes
-  f0813992: 'stuck, NR', // CheckForAcceptance: 9 minutes
-  f0814012: 'stuck, NR', // CheckForAcceptance: 9 minutes
-  f0814049: 'stuck, China, Nanjing, Hangzhou', // CheckForAcceptance: 9 minutes
-  f0832373: 'stuck, China, Yibin', // CheckForAcceptance: 9 minutes
-  f0845245: 'stuck, Korea, Busan', // CheckForAcceptance: 9 minutes
-  f0857798: 'stuck, China, Wenzhou', // CheckForAcceptance: 9 minutes
-  f0864910: 'stuck, Korea, Gwangjin-gu', // CheckForAcceptance: 9 minutes
-  f0870558: 'stuck, China, Hong Kong', // CheckForAcceptance: 9 minutes
-  f0871563: "stuck, China, Xi'an", // CheckForAcceptance: 9 minutes
-  f01023503: 'stuck, Korea, Busan', // CheckForAcceptance: 9 minutes
-  f01024886: 'stuck, China, Wenzhou', // CheckForAcceptance: 9 minutes
-  f01027268: 'stuck, Korea, Busan', // CheckForAcceptance: 7 minutes
-  f01033119: 'stuck, France, Paris', // CheckForAcceptance: 9 minutes
-  f01040469: 'stuck, Korea', // CheckForAcceptance: 9 minutes
-  f01045812: 'stuck, China, Taiwan, New Taipei', // CheckForAcceptance: 9 minutes
-  f01053334: 'stuck, Korea, Mapo-gu', // CheckForAcceptance: 9 minutes
-  f01057303: 'stuck, China, Huizhou', // CheckForAcceptance: 9 minutes
-  f01063832: 'stuck, China, Nanjing, Hangzhou', // CheckForAcceptance: 9 minutes
-  f01063833: 'stuck, China, Hangzhou, Nanjing', // CheckForAcceptance: 9 minutes
-  f01071194: 'stuck, USA, San Jose', // CheckForAcceptance: 9 minutes
-  f01086762: 'stuck, Korea, Seoul', // CheckForAcceptance: 9 minutes
-  f01087002: "stuck, China, Xi'an", // CheckForAcceptance: 9 minutes
-  f01089422: 'stuck, NR', // CheckForAcceptance: 9 minutes
-  f01095915: 'stuck, China', // CheckForAcceptance: 9 minutes
-  f01099820: 'stuck, China, Wenzhou', // CheckForAcceptance: 9 minutes
-  f01104018: 'stuck, China, Beijing', // CheckForAcceptance: 7 minutes
-  f01105829: 'stuck, Korea', // CheckForAcceptance: 7 minutes
-  f01108043: 'stuck, autolisted', // CheckForAcceptance: 7 minutes
-  f01121232: 'stuck, autolisted', // CheckForAcceptance: 7 minutes
-  f01128462: 'stuck, China, Changsha', // CheckForAcceptance: 7 minutes
-  f01129570: 'stuck, China, Beijing', // CheckForAcceptance: 7 minutes
-  f01131751: 'stuck, China, Hangzhou', // CheckForAcceptance: 7 minutes
-  f01136409: 'stuck, autolisted', // CheckForAcceptance: 7 minutes
-  f01136592: 'stuck, Korea, Seongnam-si', // CheckForAcceptance: 7 minutes
-  f01141810: 'stuck, Korea', // CheckForAcceptance: 7 minutes
-  f01142318: 'stuck, China, Chongqing', // CheckForAcceptance: 7 minutes
-  f01158696: 'stuck, Vietnam', // CheckForAcceptance: 7 minutes
-  f01159240: 'stuck, China, Taizhou', // CheckForAcceptance: 7 minutes
-  f01160029: 'stuck, China, Shenzhen', // CheckForAcceptance: 7 minutes
-  f01160668: 'stuck, China, Guangdong', // CheckForAcceptance: 7 minutes
-  f01175453: 'stuck, China, Guangzhou', // CheckForAcceptance: 7 minutes
-  f01178915: 'stuck, Korea, Ulju-gun', // CheckForAcceptance: 7 minutes
-  f01190002: 'stuck, Korea, Songpa-gu', // CheckForAcceptance: 7 minutes
-  f01191451: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: 7 minutes
-  f01191967: 'stuck, Korea, Ulju-gun, Seongbuk-gu', // CheckForAcceptance: 7 minutes
-  f01198070: 'stuck, Korea, Bucheon-si, Gimpo-si', // CheckForAcceptance: 3 minutes
-  f01198583: 'stuck, China, Hong Kong', // CheckForAcceptance: 7 minutes
-  f01203550: 'stuck, autolisted', // CheckForAcceptance: 7 minutes
-  f01203603: 'stuck, China, Shenzhen', // CheckForAcceptance: 7 minutes
-  f01203985: 'stuck, China, Guangdong, Shanghai', // CheckForAcceptance: 7 minutes
-  f01207671: 'stuck, China, Guangdong', // CheckForAcceptance: 7 minutes
-  f01212031: 'stuck, China, Wenzhou', // CheckForAcceptance: 7 minutes
-  f01213229: 'stuck, China, Nanjing, Hangzhou', // CheckForAcceptance: 7 minutes
-  f01215282: 'stuck, UAE, Dubai', // CheckForAcceptance: 7 minutes
-  f01216339: 'stuck, autolisted', // CheckForAcceptance: 7 minutes
-  f01216923: 'stuck, China, Huizhou', // CheckForAcceptance: 7 minutes
-  f01227505: 'stuck, Korea', // CheckForAcceptance: 7 minutes
-  f01251721: 'stuck, Japan', // CheckForAcceptance: 7 minutes
-  f01259449: 'stuck, China, Chengdu', // CheckForAcceptance: 7 minutes
-  f01267516: 'stuck, China, Taizhou', // CheckForAcceptance: 4 minutes
-  f01268426: 'stuck, China, Hangzhou', // CheckForAcceptance: 4 minutes
-  f01269025: 'stuck, China, Nanjing', // CheckForAcceptance: 7 minutes
-  f01271898: 'stuck, autolisted', // CheckForAcceptance: 7 minutes
-  f01275219: 'stuck, China, Shenzhen', // CheckForAcceptance: 4 minutes
-  f01285363: 'stuck, Korea, Ulju-gun', // CheckForAcceptance: 4 minutes
-  f01289763: 'stuck, France', // CheckForAcceptance: 4 minutes
-  f01291138: 'stuck, autolisted', // CheckForAcceptance: 4 minutes
-  f01315486: 'stuck, USA, San Antonio', // CheckForAcceptance: 4 minutes
-  f01320931: 'stuck, China, Nanjing', // CheckForAcceptance: 4 minutes
-  f01323287: 'stuck, autolisted', // CheckForAcceptance: 4 minutes
-  f01324392: 'stuck, China', // CheckForAcceptance: 4 minutes
-  f01328084: 'stuck, Korea, Jung-ang', // CheckForAcceptance: 4 minutes
-  f01337533: 'stuck, Bulgaria, Varna', // CheckForAcceptance: 4 minutes
-  f01353593: 'stuck, China, Nanjing, Hangzhou', // CheckForAcceptance: 4 minutes
-  f01354898: 'stuck, Korea, Gwangsan-gu', // CheckForAcceptance: 4 minutes
-  f01361111: 'stuck, China, Shanghai', // CheckForAcceptance: 4 minutes
-  f01386984: 'stuck, China, Bozhou', // CheckForAcceptance: 4 minutes
-  f01390330: "stuck, China, Xi'an", // CheckForAcceptance: 4 minutes
-  f01391982: 'stuck, Korea, Ulju-gun', // CheckForAcceptance: 4 minutes
-  f01392850: 'stuck, China, Baotou', // CheckForAcceptance: 4 minutes
-  f01394448: 'stuck, autolisted', // CheckForAcceptance: 4 minutes
-  f01398391: 'stuck, China, Chengdu', // CheckForAcceptance: 4 minutes
-  f01407260: 'stuck, Korea, Gangnam-gu', // CheckForAcceptance: 4 minutes
-  f01412953: 'stuck, Japan', // CheckForAcceptance: 4 minutes
-  f01423116: 'stuck, Norway, Skjetten', // CheckForAcceptance: 4 minutes
-  f01423546: 'stuck, China, Guangdong', // CheckForAcceptance: 4 minutes
-  f01424323: 'stuck, Korea, Ulju-gun', // CheckForAcceptance: 4 minutes
-  f01443744: 'stuck, Finland, Helsinki', // CheckForAcceptance: 4 minutes
-  f01444561: 'stuck, autolisted', // CheckForAcceptance: 12 minutes
-  f01461671: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: 4 minutes
-  f01461725: 'stuck, Korea, Bucheon-si', // CheckForAcceptance: 4 minutes
-  f01472022: 'stuck, autolisted', // CheckForAcceptance: 12 minutes
-  f01474735: 'stuck, Korea, Hanam', // CheckForAcceptance: 4 minutes
-  f01482290: 'stuck, autolisted', // CheckForAcceptance: 4 minutes
-  f01497836: 'stuck, autolisted', // CheckForAcceptance: 4 minutes
-  f01501611: 'stuck, autolisted', // CheckForAcceptance: 4 minutes
-  f01516894: 'stuck, autolisted', // CheckForAcceptance: 12 minutes
+  f02490: 'retest, China, Fujian', // CheckForAcceptance: 11 minutes
+  f02540: 'retest, USA, Mobile, Foundry', // CheckForAcceptance: 11 minutes
+  f03345: 'retest, China, Fuzhou, chh', // CheckForAcceptance: 11 minutes
+  f07709: 'retest, Korea, Dongjak-gu', // CheckForAcceptance: 11 minutes
+  f08019: 'retest, China, Yantai, 三合', // CheckForAcceptance: 11 minutes
+  f015233: 'retest, China, Nanjing', // CheckForAcceptance: 11 minutes
+  f020489: 'retest, China, Lioaning', // CheckForAcceptance: 11 minutes
+  f023219: 'retest, China, Beijing + Zhangjiakou', // CheckForAcceptance: 11 minutes
+  f024550: 'retest, China, Wenzhou', // CheckForAcceptance: 11 minutes
+  f025025: 'retest, China, Qingdao', // CheckForAcceptance: 11 minutes
+  f033463: 'retest, NR', // CheckForAcceptance: 11 minutes
+  f039515: 'retest, China, Chongqing, valarhash', // CheckForAcceptance: 11 minutes
+  f042567: 'retest, China, Jinhua', // CheckForAcceptance: 11 minutes
+  f044160: 'retest, China, Guangzhou, muxing', // CheckForAcceptance: 11 minutes
+  f062318: 'retest, Korea, Naju', // CheckForAcceptance: 11 minutes
+  f062811: 'retest, China, Fuzhou', // CheckForAcceptance: 11 minutes
+  f063628: 'retest, China, Hefei', // CheckForAcceptance: 11 minutes
+  f065610: "retest, China, Xi'an", // CheckForAcceptance: 10 minutes
+  f078465: 'retest, NR', // CheckForAcceptance: 11 minutes
+  f080103: 'retest, Korea, Seongnam-si', // CheckForAcceptance: 11 minutes
+  f081644: 'retest, China, Wenzhou', // CheckForAcceptance: 11 minutes
+  f081985: 'retest, autolisted', // CheckForAcceptance: 11 minutes
+  f082635: 'retest, China, Yibin', // CheckForAcceptance: 11 minutes
+  f087871: 'retest, NR', // CheckForAcceptance: 11 minutes
+  f087879: "retest, China, Xi'an", // CheckForAcceptance: 11 minutes
+  f087883: 'retest, autolisted', // CheckForAcceptance: 10 minutes
+  f087890: 'retest, NR', // CheckForAcceptance: 10 minutes
+  f087896: 'retest, autolisted', // CheckForAcceptance: 11 minutes
+  f093658: 'retest, China, Fujian', // CheckForAcceptance: 11 minutes
+  f094374: 'retest, China, Nanyang', // CheckForAcceptance: 11 minutes
+  f097214: 'retest, Korea, Bucheon-si, CryptoHash', // CheckForAcceptance: 11 minutes
+  f097720: 'retest, Korea, Bucheon-si', // CheckForAcceptance: 11 minutes
+  f0101087: 'retest, Korea', // CheckForAcceptance: 11 minutes
+  f0111174: 'retest, China, Guangzhou', // CheckForAcceptance: 10 minutes
+  f0113331: 'retest, Korea, Jinju + USA', // CheckForAcceptance: 10 minutes
+  f0115108: 'retest, Korea, Yangcheon-gu', // CheckForAcceptance: 10 minutes
+  f0122815: 'retest, Korea, Bucheon-si, Healthcarenavi_80', // CheckForAcceptance: 10 minutes
+  f0124554: 'retest, Korea, Gimhae', // CheckForAcceptance: 10 minutes
+  f0127896: 'retest, Bulgaria, Sofia, sofiaminer', // StartDataTransfer: 10 minutes
+  f0130912: 'retest, China, Hong Kong', // CheckForAcceptance: 10 minutes
+  f0131901: 'retest, Korea, Daejeon', // CheckForAcceptance: 10 minutes
+  f0134671: 'retest, Korea, Gimpo-si', // CheckForAcceptance: 10 minutes
+  f0134839: 'retest, NR', // CheckForAcceptance: 10 minutes
+  f0135758: 'retest, China, Nanjing, Hangzhou', // CheckForAcceptance: 10 minutes
+  f0135779: 'retest, China, Nanjing, Hangzhou', // CheckForAcceptance: 10 minutes
+  f0137168: 'retest, China, Beijing', // CheckForAcceptance: 10 minutes
+  f0137489: 'retest, UK, Deeside', // CheckForAcceptance: 10 minutes
+  f0146751: 'retest, China, Jiangsu', // StartDataTransfer: 3 days
+  f0153278: "retest, China, Xi'an", // CheckForAcceptance: 10 minutes
+  f0156207: 'retest, Korea, Ulsan', // CheckForAcceptance: 10 minutes
+  f0156452: 'retest, Korea, Ulsan', // CheckForAcceptance: 10 minutes
+  f0157115: 'retest, NR', // CheckForAcceptance: 10 minutes
+  f0157127: 'retest, NR', // CheckForAcceptance: 10 minutes
+  f0157564: 'retest, Korea, Daejeon', // CheckForAcceptance: 10 minutes
+  f0158156: 'retest, Korea, Gangbuk-gu', // CheckForAcceptance: 10 minutes
+  f0159380: 'retest, China, Dongsheng', // CheckForAcceptance: 10 minutes
+  f0162394: 'retest, China, Guangzhou', // CheckForAcceptance: 10 minutes
+  f0164291: 'retest, China, Fujian', // CheckForAcceptance: 10 minutes
+  f0167254: 'retest, Russia, St. Petersburg', // CheckForAcceptance: 10 minutes
+  f0172300: 'retest, NR', // CheckForAcceptance: 10 minutes
+  f0215461: 'retest, Korea, Gimhae', // CheckForAcceptance: 10 minutes
+  f0217805: 'retest, China, Taiwan, Taipei', // CheckForAcceptance: 10 minutes
+  f0228855: 'retest, Korea, Guro-gu', // CheckForAcceptance: 10 minutes
+  f0230200: 'retest, Korea, Gwanak-gu, G-mining', // CheckForAcceptance: 10 minutes
+  f0239251: 'retest, Korea, Uiwang', // CheckForAcceptance: 10 minutes
+  f0241666: "retest, China, Xi'an", // CheckForAcceptance: 10 minutes
+  f0397052: 'retest, Korea, Eunpyeong-gu', // CheckForAcceptance: 10 minutes
+  f0397802: 'retest, China, Chengdu', // CheckForAcceptance: 10 minutes
+  f0399814: "retest, China, Ya'an", // CheckForAcceptance: 10 minutes
+  f0401416: 'retest, Japan, Fukuoka', // CheckForAcceptance: 10 minutes
+  f0403177: 'retest, China, Huizhou', // CheckForAcceptance: 10 minutes
+  f0406478: 'retest, China, Nanjing', // CheckForAcceptance: 10 minutes
+  f0406533: 'retest, China, Nanjing, Hangzhou', // CheckForAcceptance: 10 minutes
+  f0413563: 'retest, Korea, Gangnam-gu', // CheckForAcceptance: 10 minutes
+  f0419768: 'retest, Korea, Seongnam-si', // StartDataTransfer: 3 days
+  f0433689: 'retest, China, Wuxi', // CheckForAcceptance: 10 minutes
+  f0433690: 'retest, China, Wuxi', // CheckForAcceptance: 10 minutes
+  f0433691: 'retest, China, Wuxi', // CheckForAcceptance: 10 minutes
+  f0447181: 'retest, China, Zibo', // CheckForAcceptance: 10 minutes
+  f0458627: 'retest, Korea, Seongnam-si', // StartDataTransfer: 3 days
+  f0460440: 'retest, Korea, Seongnam-si', // CheckForAcceptance: 10 minutes
+  f0478837: 'retest, China, Zhangzhou', // CheckForAcceptance: 9 minutes
+  f0482619: 'retest, Korea, Seongnam-si', // CheckForAcceptance: 10 minutes
+  f0488689: 'retest, NR', // CheckForAcceptance: 10 minutes
+  f0488887: 'retest, China, Shanghai, Guangdong', // CheckForAcceptance: 10 minutes
+  f0488889: 'retest, China, Nanchang', // CheckForAcceptance: 10 minutes
+  f0495421: 'retest, China, Zhangzhou, Zhejiang, Xiamen', // CheckForAcceptance: 10 minutes
+  f0498868: 'retest, China, Nanjing', // CheckForAcceptance: 9 minutes
+  f0512179: 'retest, Korea, Bucheon-si', // CheckForAcceptance: 9 minutes
+  f0514737: 'retest, Korea, Busan', // CheckForAcceptance: 9 minutes
+  f0692371: 'retest, Malaysia', // CheckForAcceptance: 9 minutes
+  f0694881: 'retest, China, Hangzhou', // CheckForAcceptance: 9 minutes
+  f0717913: 'retest, Korea, Jung-gu', // CheckForAcceptance: 9 minutes
+  f0717969: 'retest, USA, Los Angeles', // CheckForAcceptance: 9 minutes
+  f0722515: 'retest, Korea, Geumcheon-gu', // CheckForAcceptance: 9 minutes
+  f0723722: 'retest, USA, New York', // CheckForAcceptance: 9 minutes
+  f0724219: 'retest, Spain, Vilanova del Cami', // CheckForAcceptance: 9 minutes
+  f0735027: 'retest, China, Nanjing, Hangzhou', // CheckForAcceptance: 9 minutes
+  f0746416: 'retest, Korea, Gyeonggi-do', // CheckForAcceptance: 9 minutes
+  f0750779: 'retest, China, Meishan', // CheckForAcceptance: 9 minutes
+  f0752620: 'retest, China, Nanjing, Hangzhou', // CheckForAcceptance: 9 minutes
+  f0752635: 'retest, China, Nanjing, Hangzhou', // CheckForAcceptance: 9 minutes
+  f0752695: 'retest, Korea, Seongnam-si', // StartDataTransfer: 3 days
+  f0757233: 'retest, Spain, Gipuzkoa', // CheckForAcceptance: 9 minutes
+  f0805568: 'retest, Korea, Gangnam-gu', // CheckForAcceptance: 9 minutes
+  f0813086: 'retest, Korea, Jung-gu', // CheckForAcceptance: 9 minutes
+  f0813992: 'retest, NR', // CheckForAcceptance: 9 minutes
+  f0814012: 'retest, NR', // CheckForAcceptance: 9 minutes
+  f0814049: 'retest, China, Nanjing, Hangzhou', // CheckForAcceptance: 9 minutes
+  f0832373: 'retest, China, Yibin', // CheckForAcceptance: 9 minutes
+  f0845245: 'retest, Korea, Busan', // CheckForAcceptance: 9 minutes
+  f0857798: 'retest, China, Wenzhou', // CheckForAcceptance: 9 minutes
+  f0864910: 'retest, Korea, Gwangjin-gu', // CheckForAcceptance: 9 minutes
+  f0870558: 'retest, China, Hong Kong', // CheckForAcceptance: 9 minutes
+  f0871563: "retest, China, Xi'an", // CheckForAcceptance: 9 minutes
+  f01023503: 'retest, Korea, Busan', // CheckForAcceptance: 9 minutes
+  f01024886: 'retest, China, Wenzhou', // CheckForAcceptance: 9 minutes
+  f01027268: 'retest, Korea, Busan', // CheckForAcceptance: 7 minutes
+  f01033119: 'retest, France, Paris', // CheckForAcceptance: 9 minutes
+  f01040469: 'retest, Korea', // CheckForAcceptance: 9 minutes
+  f01045812: 'retest, China, Taiwan, New Taipei', // CheckForAcceptance: 9 minutes
+  f01053334: 'retest, Korea, Mapo-gu', // CheckForAcceptance: 9 minutes
+  f01057303: 'retest, China, Huizhou', // CheckForAcceptance: 9 minutes
+  f01063832: 'retest, China, Nanjing, Hangzhou', // CheckForAcceptance: 9 minutes
+  f01063833: 'retest, China, Hangzhou, Nanjing', // CheckForAcceptance: 9 minutes
+  f01071194: 'retest, USA, San Jose', // CheckForAcceptance: 9 minutes
+  f01086762: 'retest, Korea, Seoul', // CheckForAcceptance: 9 minutes
+  f01087002: "retest, China, Xi'an", // CheckForAcceptance: 9 minutes
+  f01089422: 'retest, NR', // CheckForAcceptance: 9 minutes
+  f01095915: 'retest, China', // CheckForAcceptance: 9 minutes
+  f01099820: 'retest, China, Wenzhou', // CheckForAcceptance: 9 minutes
+  f01104018: 'retest, China, Beijing', // CheckForAcceptance: 7 minutes
+  f01105829: 'retest, Korea', // CheckForAcceptance: 7 minutes
+  f01108043: 'retest, autolisted', // CheckForAcceptance: 7 minutes
+  f01121232: 'retest, autolisted', // CheckForAcceptance: 7 minutes
+  f01128462: 'retest, China, Changsha', // CheckForAcceptance: 7 minutes
+  f01129570: 'retest, China, Beijing', // CheckForAcceptance: 7 minutes
+  f01131751: 'retest, China, Hangzhou', // CheckForAcceptance: 7 minutes
+  f01136409: 'retest, autolisted', // CheckForAcceptance: 7 minutes
+  f01136592: 'retest, Korea, Seongnam-si', // CheckForAcceptance: 7 minutes
+  f01141810: 'retest, Korea', // CheckForAcceptance: 7 minutes
+  f01142318: 'retest, China, Chongqing', // CheckForAcceptance: 7 minutes
+  f01158696: 'retest, Vietnam', // CheckForAcceptance: 7 minutes
+  f01159240: 'retest, China, Taizhou', // CheckForAcceptance: 7 minutes
+  f01160029: 'retest, China, Shenzhen', // CheckForAcceptance: 7 minutes
+  f01160668: 'retest, China, Guangdong', // CheckForAcceptance: 7 minutes
+  f01175453: 'retest, China, Guangzhou', // CheckForAcceptance: 7 minutes
+  f01178915: 'retest, Korea, Ulju-gun', // CheckForAcceptance: 7 minutes
+  f01190002: 'retest, Korea, Songpa-gu', // CheckForAcceptance: 7 minutes
+  f01191451: 'retest, Korea, Bucheon-si', // CheckForAcceptance: 7 minutes
+  f01191967: 'retest, Korea, Ulju-gun, Seongbuk-gu', // CheckForAcceptance: 7 minutes
+  f01198070: 'retest, Korea, Bucheon-si, Gimpo-si', // CheckForAcceptance: 3 minutes
+  f01198583: 'retest, China, Hong Kong', // CheckForAcceptance: 7 minutes
+  f01203550: 'retest, autolisted', // CheckForAcceptance: 7 minutes
+  f01203603: 'retest, China, Shenzhen', // CheckForAcceptance: 7 minutes
+  f01203985: 'retest, China, Guangdong, Shanghai', // CheckForAcceptance: 7 minutes
+  f01207671: 'retest, China, Guangdong', // CheckForAcceptance: 7 minutes
+  f01212031: 'retest, China, Wenzhou', // CheckForAcceptance: 7 minutes
+  f01213229: 'retest, China, Nanjing, Hangzhou', // CheckForAcceptance: 7 minutes
+  f01215282: 'retest, UAE, Dubai', // CheckForAcceptance: 7 minutes
+  f01216339: 'retest, autolisted', // CheckForAcceptance: 7 minutes
+  f01216923: 'retest, China, Huizhou', // CheckForAcceptance: 7 minutes
+  f01227505: 'retest, Korea', // CheckForAcceptance: 7 minutes
+  f01251721: 'retest, Japan', // CheckForAcceptance: 7 minutes
+  f01259449: 'retest, China, Chengdu', // CheckForAcceptance: 7 minutes
+  f01267516: 'retest, China, Taizhou', // CheckForAcceptance: 4 minutes
+  f01268426: 'retest, China, Hangzhou', // CheckForAcceptance: 4 minutes
+  f01269025: 'retest, China, Nanjing', // CheckForAcceptance: 7 minutes
+  f01271898: 'retest, autolisted', // CheckForAcceptance: 7 minutes
+  f01275219: 'retest, China, Shenzhen', // CheckForAcceptance: 4 minutes
+  f01285363: 'retest, Korea, Ulju-gun', // CheckForAcceptance: 4 minutes
+  f01289763: 'retest, France', // CheckForAcceptance: 4 minutes
+  f01291138: 'retest, autolisted', // CheckForAcceptance: 4 minutes
+  f01315486: 'retest, USA, San Antonio', // CheckForAcceptance: 4 minutes
+  f01320931: 'retest, China, Nanjing', // CheckForAcceptance: 4 minutes
+  f01323287: 'retest, autolisted', // CheckForAcceptance: 4 minutes
+  f01324392: 'retest, China', // CheckForAcceptance: 4 minutes
+  f01328084: 'retest, Korea, Jung-ang', // CheckForAcceptance: 4 minutes
+  f01337533: 'retest, Bulgaria, Varna', // CheckForAcceptance: 4 minutes
+  f01353593: 'retest, China, Nanjing, Hangzhou', // CheckForAcceptance: 4 minutes
+  f01354898: 'retest, Korea, Gwangsan-gu', // CheckForAcceptance: 4 minutes
+  f01361111: 'retest, China, Shanghai', // CheckForAcceptance: 4 minutes
+  f01386984: 'retest, China, Bozhou', // CheckForAcceptance: 4 minutes
+  f01390330: "retest, China, Xi'an", // CheckForAcceptance: 4 minutes
+  f01391982: 'retest, Korea, Ulju-gun', // CheckForAcceptance: 4 minutes
+  f01392850: 'retest, China, Baotou', // CheckForAcceptance: 4 minutes
+  f01394448: 'retest, autolisted', // CheckForAcceptance: 4 minutes
+  f01398391: 'retest, China, Chengdu', // CheckForAcceptance: 4 minutes
+  f01407260: 'retest, Korea, Gangnam-gu', // CheckForAcceptance: 4 minutes
+  f01412953: 'retest, Japan', // CheckForAcceptance: 4 minutes
+  f01423116: 'retest, Norway, Skjetten', // CheckForAcceptance: 4 minutes
+  f01423546: 'retest, China, Guangdong', // CheckForAcceptance: 4 minutes
+  f01424323: 'retest, Korea, Ulju-gun', // CheckForAcceptance: 4 minutes
+  f01443744: 'retest, Finland, Helsinki', // CheckForAcceptance: 4 minutes
+  f01444561: 'retest, autolisted', // CheckForAcceptance: 12 minutes
+  f01461671: 'retest, Korea, Bucheon-si', // CheckForAcceptance: 4 minutes
+  f01461725: 'retest, Korea, Bucheon-si', // CheckForAcceptance: 4 minutes
+  f01472022: 'retest, autolisted', // CheckForAcceptance: 12 minutes
+  f01474735: 'retest, Korea, Hanam', // CheckForAcceptance: 4 minutes
+  f01482290: 'retest, autolisted', // CheckForAcceptance: 4 minutes
+  f01497836: 'retest, autolisted', // CheckForAcceptance: 4 minutes
+  f01501611: 'retest, autolisted', // CheckForAcceptance: 4 minutes
+  f01516894: 'retest, autolisted', // CheckForAcceptance: 12 minutes
 
   // Busy
 

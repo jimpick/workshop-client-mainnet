@@ -18,6 +18,12 @@ export default function Deals ({ appState, updateAppState }) {
         </button>
         <button
           style={{ height: '2rem', marginBottom: '1rem' }}
+          onClick={clearRetest}
+        >
+          Clear Retest
+        </button>
+        <button
+          style={{ height: '2rem', marginBottom: '1rem' }}
           onClick={clearError}
         >
           Clear Error
@@ -80,6 +86,19 @@ export default function Deals ({ appState, updateAppState }) {
       draft.deals = []
       draft.dealData = {}
       draft.dealHistory = {}
+    })
+  }
+
+  function clearRetest () {
+    updateAppState(draft => {
+      const newDeals = []
+      for (const deal of draft.deals) {
+        const annotation = annotations[deal.miner]
+        if (!annotation.match(/^retest,/)) {
+          newDeals.push(deal)
+        }
+      }
+      draft.deals = newDeals
     })
   }
 
