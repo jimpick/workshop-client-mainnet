@@ -17,6 +17,15 @@ const annotations = {
   f01114586: 'new, autolisted', // carry-over
   f01114587: 'new, autolisted', // carry-over
 
+  f01114600: 'new, autolisted',
+  f01552492: 'new, autolisted',
+  f01589943: 'new, autolisted',
+  f01594224: 'new, autolisted',
+  f01597766: 'new, autolisted',
+  f01598033: 'new, autolisted',
+  f01602479: 'new, autolisted',
+  f01603232: 'new, autolisted',
+
   // Inflight
 
   f014409: 'inflight, USA, Monroe, Meatball Part III', // FundsReserved: about 19 hours
@@ -3587,7 +3596,7 @@ const annotations = {
   f01445415: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01445517: 'fail, China, Chongqing', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWRNk4J1BiA2ZVobERWnubouwVswDVCXJ9wf2QAEdaMDVu:  * [/ip4/222.180.202.98/tcp/24004] dial tcp4 222.180.202.98:24004: connect: connection refused
   f01446978: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWEbK3ycK4eBXbU4z8Cd47MAniNNkHqkR3KMiKpjE4MdcF:  * [/ip4/14.35.92.2/tcp/10310] dial tcp4 0.0.0.0:35233->14.35.92.2:10310: i/o timeout
-  f01449500: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01449500: 'delist, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01449869: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01450277: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01451690: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -3611,7 +3620,7 @@ const annotations = {
   f01470426: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01471413: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01472508: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01473510: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01473510: 'delist, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01474721: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01475317: 'fail, Korea, Namyangju', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01475418: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -3920,7 +3929,7 @@ const annotations = {
   f010293: 'delist, China, Xiamen', // carry-over
   f010297: 'delist, USA, Howell', // carry-over
   f010303: 'delist, China, Guangdong', // carry-over
-  f010305: 'delist, NR', // carry-over
+  f010305: 'retest, NR', // carry-over
   f010310: 'delist, Canada, Surrey', // carry-over
   f010313: 'delist, NR', // carry-over
   f010315: 'delist, Canada, Surrey', // carry-over
