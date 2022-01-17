@@ -51,6 +51,7 @@ const annotations = {
   f01114587: 'new, autolisted', // carry-over
   f01114600: 'new, autolisted', // carry-over
   f01227975: 'new, autolisted', // carry-over
+  f01691327: 'new, autolisted',
 
   // Inflight
 
@@ -3754,7 +3755,7 @@ const annotations = {
   f01639032: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01641655: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01644444: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01644938: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWLqk8ERfkwLD2nqcdn9ujWNnmox2mcKu7KS6yWo3S6joW:  * [/ip4/112.24.96.170/tcp/24001] dial tcp4 0.0.0.0:37529->112.24.96.170:24001: i/o timeout
+  f01644938: 'delist, autolisted', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWLqk8ERfkwLD2nqcdn9ujWNnmox2mcKu7KS6yWo3S6joW:  * [/ip4/112.24.96.170/tcp/24001] dial tcp4 0.0.0.0:37529->112.24.96.170:24001: i/o timeout
   f01645816: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01653068: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01653777: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
