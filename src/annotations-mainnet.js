@@ -14,6 +14,30 @@ const annotations = {
 
   // New
 
+  f01114922: 'skip, autolisted',
+  f01227976: 'skip, autolisted',
+  f01621721: 'new, autolisted',
+  f01682529: 'new, autolisted',
+  f01690363: 'new, autolisted',
+  f01690816: 'new, autolisted',
+  f01692831: 'new, autolisted',
+  f01693124: 'new, autolisted',
+  f01693299: 'new, autolisted',
+  f01694118: 'new, autolisted',
+  f01694304: 'new, autolisted',
+  f01694476: 'new, autolisted',
+  f01694564: 'new, autolisted',
+  f01695888: 'new, autolisted',
+  f01697248: 'new, autolisted',
+  f01697265: 'new, autolisted',
+  f01698865: 'new, autolisted',
+  f01698940: 'new, autolisted',
+  f01700436: 'new, autolisted',
+  f01700446: 'new, autolisted',
+  f01702971: 'new, autolisted',
+  f01703011: 'new, autolisted',
+  f01703655: 'new, autolisted',
+
   // Inflight
 
   // Unknown
@@ -113,7 +137,7 @@ const annotations = {
   f01472022: 'active, Korea, Seongbuk-gu, Icheon-si', // 3410425 about 20 hours
   f01474735: 'active, Korea, Hanam', // 3410336 about 20 hours
   f01497836: 'active, Korea, Ulju-gun', // 3410330 about 20 hours
-  f01509552: 'active, autolisted', // 3410343 6 days
+  f01509552: 'delist, autolisted', // 3410343 6 days
   f01516894: 'active, Korea, Icheon-si', // 3410349 about 20 hours
   f01537511: 'active, autolisted', // 3410577 about 20 hours
   f01543586: 'active, autolisted', // 3410493 6 days
@@ -2760,7 +2784,7 @@ const annotations = {
   f0844849: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0844916: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0845186: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f0845456: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f0845456: 'delist, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0845528: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f0845976: 'fail, China, Jiaxing', // exhausted 15 attempts but failed to open stream, err: failed to dial 12D3KooWNe7iCaSsvRxqnLVAjqWNpw6BbALY1zj6FCBubTMPvYEM:  * [/ip4/61.164.212.154/tcp/29013] dial tcp4 0.0.0.0:37529->61.164.212.154:29013: i/o timeout
   f0846191: 'fail, NR', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -3632,7 +3656,7 @@ const annotations = {
   f01438277: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01438656: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01442089: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01442572: 'fail, China, Shenzhen', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01442572: 'delist, China, Shenzhen', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01443113: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01443898: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01444106: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -3766,7 +3790,7 @@ const annotations = {
   f01668871: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01669481: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01670145: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
-  f01671570: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
+  f01671570: 'delist, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01674133: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01674728: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
   f01674967: 'fail, autolisted', // exhausted 15 attempts but failed to open stream, err: routing: not found
@@ -4082,7 +4106,7 @@ const annotations = {
   f014314: 'delist, Korea, Bucheon-si', // carry-over
   f014331: 'delist, China, Chongqing', // carry-over
   f014354: 'delist, USA, Concord', // carry-over
-  f014365: 'delist, Australia, Turramurra + Sydney', // carry-over
+  f014365: 'retest, Australia, Turramurra + Sydney', // carry-over
   f014366: 'delist, USA, Mountain View', // carry-over
   f014388: 'delist, China, Guangdong', // carry-over
   f014389: 'delist, China, Chongqing', // carry-over
@@ -4587,7 +4611,7 @@ const annotations = {
   f073931: 'delist, NR', // carry-over
   f078425: 'delist, Korea, Bucheon-si', // carry-over
   f078516: 'delist, NR', // carry-over
-  f078770: 'delist, China, Karamay', // carry-over
+  f078770: 'retest, China, Karamay', // carry-over
   f080131: 'delist, NR', // carry-over
   f080945: 'delist, China, Shenzhen', // carry-over
   f081987: 'delist, NR', // carry-over
@@ -5015,7 +5039,7 @@ const annotations = {
   f01145192: 'delist, China, Zhejiang', // carry-over
   f01145325: 'delist, autolisted', // carry-over
   f01146327: 'delist, China, Fuzhou', // carry-over
-  f01147907: 'delist, autolisted', // carry-over
+  f01147907: 'retest, autolisted', // carry-over
   f01148221: 'delist, autolisted', // carry-over
   f01148258: 'delist, autolisted', // carry-over
   f01148814: 'delist, autolisted', // carry-over
